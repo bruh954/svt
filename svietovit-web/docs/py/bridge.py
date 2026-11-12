@@ -276,6 +276,31 @@ def set_goal(goal):
     return True
 
 
+def tone_map():
+    """Chiński: {zapis znakami: [tony kolejnych znaków]} dla słów kursu (do kolorowania wg tonu)."""
+    E = _cur["E"]
+    out = {}
+    cid = _cur["cid"]
+    try:
+        if cid == "hanzi_hero":
+            for w in E.WORDS.values():
+                tones = [t for _s, t in w["syllables"]]
+                if len(tones) == len(w["hanzi"]):
+                    out[w["hanzi"]] = tones
+            for k, v in getattr(E, "CHAT_EXTRA", {}).items():
+                tones = [E.split_syllable(x)[1] for x in str(v[0]).split()]
+                if len(tones) == len(k):
+                    out.setdefault(k, tones)
+        elif cid == "han":
+            for w in E.WORDS.values():
+                pn = w.get("pn")
+                if pn and not w.get("letter") and len(pn.split()) == len(w["form"]):
+                    out[w["form"]] = [int(x[-1]) if x[-1].isdigit() else 5 for x in pn.split()]
+    except Exception:
+        pass
+    return json.dumps(out, ensure_ascii=False)
+
+
 def set_setting(key, value):
     st = _cur["state"]
     st.data["settings"][key] = bool(value)

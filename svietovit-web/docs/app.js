@@ -25,7 +25,7 @@ const store = {
 /* ---------------- teksty interfejsu ---------------- */
 const TX = {
   pl: {
-    motto: "szkoła języków dawnych i dalekich", learn_in: "Uczę się po", script: "Pismo ćwiczeń", size: "Litery", theme: "Motyw", th_navy: "Granat", th_sky: "Jasny", new: "nowy", xp: "XP",
+    motto: "szkoła języków dawnych i dalekich", learn_in: "Uczę się po", tonecolor: "Kolory tonów", script: "Pismo ćwiczeń", size: "Litery", theme: "Motyw", th_navy: "Granat", th_sky: "Jasny", new: "nowy", xp: "XP",
     foot: "Postęp zapisuje się w tej przeglądarce. Dodaj stronę do ekranu głównego, żeby działała jak aplikacja.",
     reports: "Zgłoszone błędy: %d", copy: "SKOPIUJ", clear: "WYCZYŚĆ", copied: "Skopiowano. Wklej zgłoszenia w rozmowie z Claude'em.",
     rep_title: "Zgłoś błąd w ćwiczeniu", rep_hint: "Opis (nie musisz nic pisać)", rep_send: "ZAPISZ", rep_cancel: "ANULUJ",
@@ -55,7 +55,7 @@ const TX = {
     installed: "Dodaj do ekranu głównego, żeby uruchamiać jak aplikację.", err: "Coś poszło nie tak:", retry: "Spróbuj ponownie",
   },
   en: {
-    motto: "a school of ancient and faraway languages", learn_in: "I learn in", script: "Exercise script", size: "Text size", theme: "Theme", th_navy: "Navy", th_sky: "Light", new: "new", xp: "XP",
+    motto: "a school of ancient and faraway languages", learn_in: "I learn in", tonecolor: "Tone colours", script: "Exercise script", size: "Text size", theme: "Theme", th_navy: "Navy", th_sky: "Light", new: "new", xp: "XP",
     foot: "Progress is saved in this browser. Add the page to your home screen to use it like an app.",
     reports: "Reported mistakes: %d", copy: "COPY", clear: "CLEAR", copied: "Copied. Paste the reports into your chat with Claude.",
     rep_title: "Report a mistake in this exercise", rep_hint: "Description (optional)", rep_send: "SAVE", rep_cancel: "CANCEL",
@@ -324,6 +324,8 @@ function profileTab() {
     h("div", { class: "card" }, h("h4", {}, t("week")), h("div", { class: "week" }, H.week.map(([d, v]) => h("div", {}, h("i", { style: `height:${Math.round(70 * v / mx)}px` }), d)))),
     h("div", { class: "card" }, h("h4", {}, t("daily_goal")), h("div", { class: "grid2" }, H.goals.map(([n, v]) => h("button", { class: "btn" + (v === H.goal ? "" : " ghost"), onclick: () => { B.set_goal(v); renderHome(); } }, `${v} XP`)))),
     h("div", { class: "card" }, h("h4", {}, t("settings")), tog("pron", t("pron")), tog("sound", t("sound")),
+      TONE_COURSES.includes(cur.cid) ? tog("tonecolor", t("tonecolor")) : null,
+      TONE_COURSES.includes(cur.cid) && H.settings.tonecolor !== false ? h("div", { class: "tone-legend" }, ...[[1, "ā"], [2, "á"], [3, "ǎ"], [4, "à"], [5, "a"]].map(([n, s]) => h("span", { class: "tn t" + n }, (n < 5 ? n + " " : "· ") + s))) : null,
       h("div", { class: "sw", onclick: () => { store.set("sv_voice", voiceOn() ? "0" : "1"); renderHome(); } }, t("voice"), h("div", { class: "tg" + (voiceOn() ? " on" : "") }))),
     h("div", { class: "card" }, h("h4", {}, t("shop")),
       h("button", { class: "btn blue", disabled: H.gems < H.freeze_cost || H.freezes >= H.max_freezes, onclick: () => { if (B.buy("freeze")) { toast("✓"); renderHome(); } } }, `${t("freeze")} (${H.freezes}/${H.max_freezes}) ◆ ${H.freeze_cost}`),
@@ -675,3 +677,43 @@ window.__back = () => {
   const bk = document.querySelector(".top .back"); if (bk) { bk.click(); return true; }
   return false;
 };
+
+/* ---------------- chiński: znaki w kolorze tonu ---------------- */
+const TONE_COURSES = ["hanzi_hero", "han"];
+const toneState = { cid: null, map: null, max: 1 };
+const HAN_RE = /[\u3400-\u9fff]/;
+function toneOn() { return TONE_COURSES.includes(cur.cid) && cur.home && cur.home.settings && cur.home.settings.tonecolor !== false; }
+function toneMap() {
+  if (toneState.cid !== cur.cid) {
+    try { toneState.map = J(B.tone_map()); } catch (e) { toneState.map = {}; }
+    toneState.cid = cur.cid; toneState.max = Math.max(1, ...Object.keys(toneState.map).map(k => k.length));
+  }
+  return toneState.map;
+}
+function colorText(node) {
+  const txt = node.nodeValue; if (!txt || !HAN_RE.test(txt)) return;
+  const par = node.parentNode; if (!par || (par.classList && (par.classList.contains("tcw") || par.classList.contains("tn"))) || /^(TEXTAREA|INPUT|SCRIPT|STYLE)$/.test(par.nodeName)) return;
+  const map = toneMap(), wrap = document.createElement("span"); wrap.className = "tcw";
+  let i = 0, plain = "";
+  const flush = () => { if (plain) { wrap.append(plain); plain = ""; } };
+  while (i < txt.length) {
+    let hit = null;
+    if (HAN_RE.test(txt[i])) for (let n = Math.min(toneState.max, txt.length - i); n >= 1; n--) { const w = txt.substr(i, n); if (map[w]) { hit = w; break; } }
+    if (!hit) { plain += txt[i++]; continue; }
+    flush();
+    map[hit].forEach((tone, k) => { const s = document.createElement("span"); s.className = "tn t" + tone; s.textContent = hit[k]; wrap.append(s); });
+    i += hit.length;
+  }
+  flush(); par.replaceChild(wrap, node);
+}
+function colorTree(root) {
+  if (root.nodeType === 3) return colorText(root);
+  if (root.nodeType !== 1 || root.classList.contains("tcw")) return;
+  const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT), list = []; let n;
+  while ((n = w.nextNode())) list.push(n);
+  list.forEach(colorText);
+}
+new MutationObserver((muts) => {
+  if (!toneOn()) return;
+  for (const m of muts) m.addedNodes.forEach(colorTree);
+}).observe(document.getElementById("app"), { childList: true, subtree: true });
