@@ -25,7 +25,7 @@ const store = {
 /* ---------------- teksty interfejsu ---------------- */
 const TX = {
   pl: {
-    motto: "szkoła języków dawnych i dalekich", learn_in: "Uczę się po", grammar: "Gramatyka", gr_intro: "Przejdź cały wzór: najpierw tabela, potem wszystkie formy po kolei i na wyrywki.", gr_conj: "Koniugacje i czasy", gr_decl: "Deklinacje i zaimki", gr_form: "Imiesłowy i inne formy", gr_pit: "Na co uważać", gr_pit_d: "%d typowych trudności w tym języku", gr_table: "Wzór", gr_start: "Ćwicz", gr_order: "Po kolei", gr_random: "Na wyrywki", gr_done: "Wzór zaliczony!", gr_back: "Wróć do gramatyki", gr_mist: "Błędy: %d", gr_tap: "Dotknij formy, żeby ją usłyszeć.", no_voice: "To urządzenie nie ma głosu dla języka %s. Zainstaluj go w ustawieniach syntezy mowy.", no_chats: "Ten kurs uczy samych znaków. Zdania i rozmowy ćwiczysz w kursie %s.", larps: "Larpy", larps_d: "Sceny ze stawką: płacisz wpisowe w XP i możesz je stracić.", larp_enter: "Wchodzę", larp_rules: "Wpisowe %d XP. Wygrana: +%d XP. Udało się mimo potknięć: zwrot wpisowego. Porażka: tracisz wpisowe. Zła odpowiedź zabiera punkt cierpliwości, a pytanie z ☠ kończy scenę od razu.", larp_need: "Potrzebujesz %d XP, żeby wejść.", larp_goal: "Cel", larp_deadly: "☠ Jedna szansa: zła odpowiedź kończy scenę.", larp_weak: "Niezręcznie.", larp_win: "Sukces!", larp_partial: "Udało się, ale…", larp_fail: "Porażka", larp_quit_t: "Wyjść ze sceny?", larp_quit_d: "Stracisz wpisowe.", larp_refund: "Wpisowe zwrócone", larp_patience: "Cierpliwość", larp_correct: "Poprawnie: ", tonecolor: "Kolory tonów", script: "Pismo ćwiczeń", size: "Litery", theme: "Motyw", th_navy: "Granat", th_sky: "Jasny", new: "nowy", xp: "XP",
+    motto: "szkoła języków dawnych i dalekich", learn_in: "Uczę się po", grammar: "Gramatyka", gr_intro: "Przejdź cały wzór: najpierw tabela, potem wszystkie formy po kolei i na wyrywki.", gr_conj: "Koniugacje i czasy", gr_decl: "Deklinacje i zaimki", gr_form: "Imiesłowy i inne formy", gr_pit: "Typowe trudności", gr_table: "Wzór", gr_start: "Ćwicz", gr_order: "Po kolei", gr_random: "Na wyrywki", gr_done: "Wzór zaliczony!", gr_back: "Wróć do gramatyki", gr_mist: "Błędy: %d", gr_tap: "Dotknij formy, żeby ją usłyszeć.", no_voice: "To urządzenie nie ma głosu dla języka %s. Zainstaluj go w ustawieniach syntezy mowy.", no_chats: "Ten kurs uczy samych znaków. Zdania i rozmowy ćwiczysz w kursie %s.", larps: "Larpy", larps_d: "Sceny ze stawką: płacisz wpisowe w XP i możesz je stracić.", larp_enter: "Wchodzę", larp_rules: "Wpisowe %d XP. Wygrana: +%d XP. Udało się mimo potknięć: zwrot wpisowego. Porażka: tracisz wpisowe. Zła odpowiedź zabiera punkt cierpliwości, a pytanie z ☠ kończy scenę od razu.", larp_need: "Potrzebujesz %d XP, żeby wejść.", larp_goal: "Cel", larp_deadly: "☠ Jedna szansa: zła odpowiedź kończy scenę.", larp_weak: "Niezręcznie.", larp_win: "Sukces!", larp_partial: "Udało się, ale…", larp_fail: "Porażka", larp_quit_t: "Wyjść ze sceny?", larp_quit_d: "Stracisz wpisowe.", larp_refund: "Wpisowe zwrócone", larp_patience: "Cierpliwość", larp_correct: "Poprawnie: ", tonecolor: "Kolory tonów", script: "Pismo ćwiczeń", size: "Litery", theme: "Motyw", th_navy: "Granat", th_sky: "Jasny", new: "nowy", xp: "XP",
     foot: "Postęp zapisuje się w tej przeglądarce. Dodaj stronę do ekranu głównego, żeby działała jak aplikacja.",
     reports: "Zgłoszone błędy: %d", copy: "SKOPIUJ", clear: "WYCZYŚĆ", copied: "Skopiowano. Wklej zgłoszenia w rozmowie z Claude'em.",
     rep_title: "Zgłoś błąd w ćwiczeniu", rep_hint: "Opis (nie musisz nic pisać)", rep_send: "ZAPISZ", rep_cancel: "ANULUJ",
@@ -55,7 +55,7 @@ const TX = {
     installed: "Dodaj do ekranu głównego, żeby uruchamiać jak aplikację.", err: "Coś poszło nie tak:", retry: "Spróbuj ponownie",
   },
   en: {
-    motto: "a school of ancient and faraway languages", learn_in: "I learn in", grammar: "Grammar", gr_intro: "Go through the whole pattern: first the table, then every form in order and at random.", gr_conj: "Conjugations and tenses", gr_decl: "Declensions and pronouns", gr_form: "Participles and other forms", gr_pit: "What to watch out for", gr_pit_d: "%d typical difficulties in this language", gr_table: "Pattern", gr_start: "Practise", gr_order: "In order", gr_random: "At random", gr_done: "Pattern complete!", gr_back: "Back to grammar", gr_mist: "Mistakes: %d", gr_tap: "Tap a form to hear it.", no_voice: "This device has no voice for %s. Install it in the text-to-speech settings.", no_chats: "This course teaches characters only. Practise sentences and conversations in the %s course.", larps: "Larps", larps_d: "Scenes with stakes: you pay an XP entry fee and can lose it.", larp_enter: "Enter", larp_rules: "Entry fee %d XP. Win: +%d XP. Made it despite slips: fee refunded. Fail: you lose the fee. A wrong reply costs a point of patience, and a ☠ question ends the scene at once.", larp_need: "You need %d XP to enter.", larp_goal: "Goal", larp_deadly: "☠ One chance: a wrong reply ends the scene.", larp_weak: "Awkward.", larp_win: "Success!", larp_partial: "You made it, but…", larp_fail: "Failed", larp_quit_t: "Leave the scene?", larp_quit_d: "You will lose the entry fee.", larp_refund: "Entry fee refunded", larp_patience: "Patience", larp_correct: "Correct: ", tonecolor: "Tone colours", script: "Exercise script", size: "Text size", theme: "Theme", th_navy: "Navy", th_sky: "Light", new: "new", xp: "XP",
+    motto: "a school of ancient and faraway languages", learn_in: "I learn in", grammar: "Grammar", gr_intro: "Go through the whole pattern: first the table, then every form in order and at random.", gr_conj: "Conjugations and tenses", gr_decl: "Declensions and pronouns", gr_form: "Participles and other forms", gr_pit: "Common difficulties", gr_table: "Pattern", gr_start: "Practise", gr_order: "In order", gr_random: "At random", gr_done: "Pattern complete!", gr_back: "Back to grammar", gr_mist: "Mistakes: %d", gr_tap: "Tap a form to hear it.", no_voice: "This device has no voice for %s. Install it in the text-to-speech settings.", no_chats: "This course teaches characters only. Practise sentences and conversations in the %s course.", larps: "Larps", larps_d: "Scenes with stakes: you pay an XP entry fee and can lose it.", larp_enter: "Enter", larp_rules: "Entry fee %d XP. Win: +%d XP. Made it despite slips: fee refunded. Fail: you lose the fee. A wrong reply costs a point of patience, and a ☠ question ends the scene at once.", larp_need: "You need %d XP to enter.", larp_goal: "Goal", larp_deadly: "☠ One chance: a wrong reply ends the scene.", larp_weak: "Awkward.", larp_win: "Success!", larp_partial: "You made it, but…", larp_fail: "Failed", larp_quit_t: "Leave the scene?", larp_quit_d: "You will lose the entry fee.", larp_refund: "Entry fee refunded", larp_patience: "Patience", larp_correct: "Correct: ", tonecolor: "Tone colours", script: "Exercise script", size: "Text size", theme: "Theme", th_navy: "Navy", th_sky: "Light", new: "new", xp: "XP",
     foot: "Progress is saved in this browser. Add the page to your home screen to use it like an app.",
     reports: "Reported mistakes: %d", copy: "COPY", clear: "CLEAR", copied: "Copied. Paste the reports into your chat with Claude.",
     rep_title: "Report a mistake in this exercise", rep_hint: "Description (optional)", rep_send: "SAVE", rep_cancel: "CANCEL",
@@ -291,13 +291,13 @@ function topbar() {
     h("span", { class: "stat s-streak" }, "☀ " + H.streak), h("span", { class: "stat s-gem" }, "◆ " + H.gems), h("span", { class: "stat s-heart" }, "♥ " + H.hearts));
 }
 function navbar() {
-  const items = [["path", "◉", t("path")], ["chats", "✉", t("chats")], ...(((cur.home.paradigms || []).length || (cur.home.pitfalls || []).length) ? [["grammar", "Aa", t("grammar")]] : []), ["practice", "↻", t("practice")], ["profile", "☺", t("profile")]];
+  const items = [["path", "◉", t("path")], ["chats", "✉", t("chats")], ...((cur.home.paradigms || []).length ? [["grammar", "Aa", t("grammar")]] : []), ["practice", "↻", t("practice")], ["profile", "☺", t("profile")]];
   return h("div", { class: "nav" }, items.map(([k, ic, lb]) => h("button", { class: cur.tab === k ? "on" : "", onclick: () => { cur.tab = k; renderHome(); } }, h("b", {}, ic), lb)));
 }
 function renderHome() {
   refreshHome();
   const H = cur.home, m = BYID[cur.cid];
-  if (cur.tab === "grammar" && !(H.paradigms || []).length && !(H.pitfalls || []).length) cur.tab = "path";
+  if (cur.tab === "grammar" && !(H.paradigms || []).length) cur.tab = "path";
   const body = { path: pathTab, chats: chatsTab, grammar: grammarTab, practice: practiceTab, profile: profileTab }[cur.tab]();
   const goal = h("div", { class: "goal" }, `${t("goal_day")}  ${Math.min(H.xp_today, H.goal)}/${H.goal} XP`, h("div", { class: "bar" }, h("i", { style: `width:${Math.min(100, 100 * H.xp_today / H.goal)}%` })));
   const scr = show([topbar(), goal, h("div", { class: "scroll", id: "tabbody" }, body), navbar()], "course");
@@ -821,29 +821,22 @@ function openLarp(lid) {
 const NN = (...xs) => xs.filter(x => x != null && x !== false);
 function grammarTab() {
   const H = cur.home, out = [];
-  if ((H.pitfalls || []).length) out.push(h("button", { class: "chat-item gr-item gr-pit", onclick: openPitfalls },
-    h("div", { class: "av", style: "background:var(--accent);color:var(--btnt)" }, "!"),
-    h("div", {}, h("div", { class: "t" }, t("gr_pit")), h("div", { class: "s" }, t("gr_pit_d").replace("%d", H.pitfalls.length)))));
   if ((H.paradigms || []).length) out.push(h("div", { class: "card" }, h("p", { style: "margin:0" }, t("gr_intro"))));
+  const TR = ["Typowe trudności", "Common difficulties"], item = p => h("button", { class: "chat-item gr-item", onclick: () => openParadigm(p.id) },
+    h("div", {}, h("div", { class: "t", dir: "auto" }, p.title), h("div", { class: "s" }, p.n + " " + (LANG === "pl" ? "form" : "forms"))),
+    h("div", { class: "stars" }, p.best ? "★".repeat(p.best) + "☆".repeat(3 - p.best) : ""));
+  const hard = H.paradigms.filter(p => TR.includes(p.group));
+  if (hard.length) { out.push(h("div", { class: "track" }, "· " + t("gr_pit") + " ·")); hard.forEach(p => out.push(item(p))); }
   for (const kind of ["conj", "decl", "form"]) {
-    const list = H.paradigms.filter(p => p.kind === kind); if (!list.length) continue;
+    const list = H.paradigms.filter(p => p.kind === kind && !TR.includes(p.group)); if (!list.length) continue;
     out.push(h("div", { class: "track" }, "· " + t({ conj: "gr_conj", decl: "gr_decl", form: "gr_form" }[kind]) + " ·"));
     let group = null;
     list.forEach(p => {
       if (p.group !== group) { group = p.group; out.push(h("div", { class: "gr-group" }, group)); }
-      out.push(h("button", { class: "chat-item gr-item", onclick: () => openParadigm(p.id) },
-        h("div", {}, h("div", { class: "t", dir: "auto" }, p.title), h("div", { class: "s" }, p.n + " " + (LANG === "pl" ? "form" : "forms"))),
-        h("div", { class: "stars" }, p.best ? "★".repeat(p.best) + "☆".repeat(3 - p.best) : "")));
+      out.push(item(p));
     });
   }
   return out;
-}
-function openPitfalls() {
-  const H = cur.home, back = () => { cur.tab = "grammar"; renderHome(); };
-  const scr = show([h("div", { class: "top" }, h("button", { class: "back", onclick: back }, "‹"), h("div", { class: "ttl" }, t("gr_pit"))),
-    h("div", { class: "scroll gr-body" }, ...H.pitfalls.map((x, i) => h("div", { class: "card", style: "margin:0" }, h("h4", {}, (i + 1) + ". " + x.title), h("div", { dir: "auto" }, x.text))),
-      h("button", { class: "btn", onclick: back }, t("gr_back")))], "course");
-  scr.style.cssText = themeStyle();
 }
 function openParadigm(pid) {
   const P = J(B.paradigm_get(pid)), n = P.forms.length;

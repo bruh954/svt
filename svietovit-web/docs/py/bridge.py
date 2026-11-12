@@ -255,7 +255,7 @@ def home():
         larps.append({"id": lp["id"], "title": lp["title"], "partner": lp["partner"], "avatar": lp["avatar"],
                       "fee": lp["fee"], "scene": lp["scene"], "goal": lp["goal"], "unlocked": un,
                       "best": d.get("larps", {}).get(lp["id"]), "can_pay": d["xp_total"] >= lp["fee"]})
-    return json.dumps({"larps": larps, "paradigms": _paradigm_list(), "pitfalls": _pitfalls(),
+    return json.dumps({"larps": larps, "paradigms": _paradigm_list(),
         "units": units, "tracks": getattr(C, "TRACKS", {}), "current": current, "chats": chats,
         "hearts": st.hearts(), "heart_max": E.HEART_MAX, "next_heart": st.seconds_to_next_heart(),
         "gems": d["gems"], "streak": d["streak"], "longest": d["longest_streak"], "freezes": d["freezes"],
@@ -703,10 +703,6 @@ def _by_lang(x):
 
 def _paradigms():
     return list(_by_lang(getattr(_cur["C"], "PARADIGMS", [])) or [])
-
-
-def _pitfalls():
-    return [{"title": a, "text": t} for a, t in (_by_lang(getattr(_cur["C"], "PITFALLS", [])) or [])]
 
 
 def _paradigm_list():
