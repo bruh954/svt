@@ -25,7 +25,7 @@ const store = {
 /* ---------------- teksty interfejsu ---------------- */
 const TX = {
   pl: {
-    motto: "szkoła języków dawnych i dalekich", learn_in: "Uczę się po", size: "Litery", theme: "Motyw", th_navy: "Granat", th_sky: "Jasny", new: "nowy", xp: "XP",
+    motto: "szkoła języków dawnych i dalekich", learn_in: "Uczę się po", script: "Pismo ćwiczeń", size: "Litery", theme: "Motyw", th_navy: "Granat", th_sky: "Jasny", new: "nowy", xp: "XP",
     foot: "Postęp zapisuje się w tej przeglądarce. Dodaj stronę do ekranu głównego, żeby działała jak aplikacja.",
     reports: "Zgłoszone błędy: %d", copy: "SKOPIUJ", clear: "WYCZYŚĆ", copied: "Skopiowano. Wklej zgłoszenia w rozmowie z Claude'em.",
     rep_title: "Zgłoś błąd w ćwiczeniu", rep_hint: "Opis (nie musisz nic pisać)", rep_send: "ZAPISZ", rep_cancel: "ANULUJ",
@@ -55,7 +55,7 @@ const TX = {
     installed: "Dodaj do ekranu głównego, żeby uruchamiać jak aplikację.", err: "Coś poszło nie tak:", retry: "Spróbuj ponownie",
   },
   en: {
-    motto: "a school of ancient and faraway languages", learn_in: "I learn in", size: "Text size", theme: "Theme", th_navy: "Navy", th_sky: "Light", new: "new", xp: "XP",
+    motto: "a school of ancient and faraway languages", learn_in: "I learn in", script: "Exercise script", size: "Text size", theme: "Theme", th_navy: "Navy", th_sky: "Light", new: "new", xp: "XP",
     foot: "Progress is saved in this browser. Add the page to your home screen to use it like an app.",
     reports: "Reported mistakes: %d", copy: "COPY", clear: "CLEAR", copied: "Copied. Paste the reports into your chat with Claude.",
     rep_title: "Report a mistake in this exercise", rep_hint: "Description (optional)", rep_send: "SAVE", rep_cancel: "CANCEL",
@@ -94,6 +94,15 @@ setTheme(THEME);
 let FS = parseFloat(store.get("sv_fs", "1")); if (![1, 1.2, 1.4].includes(FS)) FS = 1;
 function setFs(v) { FS = v; store.set("sv_fs", String(v)); document.documentElement.style.setProperty("--fs", String(v)); }
 setFs(FS);
+function eyesEl() {   // siedmioro oczu, każde mruga w swoim losowym rytmie
+  const pos = [[35, 20], [65, 20], [20, 50], [50, 50], [80, 50], [35, 80], [65, 80]];
+  const el = document.createElement("div"); el.className = "emb-svg";
+  el.innerHTML = '<svg class="eyes" viewBox="0 0 100 100" aria-hidden="true">' + pos.map(([x, y]) => {
+    const d = (3 + Math.random() * 6).toFixed(2), dl = (-Math.random() * 8).toFixed(2);
+    return `<g class="eye" style="animation-duration:${d}s;animation-delay:${dl}s"><ellipse cx="${x}" cy="${y}" rx="12.5" ry="15" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="${x}" cy="${y}" r="3.6" fill="currentColor"/></g>`;
+  }).join("") + "</svg>";
+  return el;
+}
 function sizeRow(after) {
   return h("div", { class: "size-row" }, t("size"),
     ...[[1, "A"], [1.2, "A+"], [1.4, "A++"]].map(([v, n]) => h("button", { class: "chip" + (v === FS ? " on" : ""), onclick: () => { setFs(v); (after || showHub)(); } }, n)));
@@ -231,7 +240,7 @@ function showHub() {
   });
   const reps = persistReports();
   show(h("div", { class: "scroll hubscroll" },
-    h("div", { class: "hub-head" }, h("div", { class: "emb" }, "ꙮ"), h("h1", {}, "Śviętovit"), h("p", {}, t("motto"))),
+    h("div", { class: "hub-head" }, eyesEl(), h("h1", {}, "Śviętovit"), h("p", {}, t("motto"))),
     h("div", { class: "theme-row" }, t("theme"),
       ...[["navy", t("th_navy")], ["sky", t("th_sky")]].map(([k, n]) => h("button", { class: "chip" + (k === THEME ? " on" : ""), onclick: () => { setTheme(k); showHub(); } }, n))),
     sizeRow(),
@@ -306,6 +315,9 @@ function profileTab() {
   const tog = (key, label) => h("div", { class: "sw", onclick: () => { B.set_setting(key, !H.settings[key]); if (key === "sound") SOUND_ON = !H.settings[key]; renderHome(); } }, label, h("div", { class: "tg" + (H.settings[key] !== false ? " on" : "") }));
   return [
     h("div", { class: "card" }, sizeRow(renderHome)),
+    cur.cid === "serbian" ? h("div", { class: "card" }, h("div", { class: "size-row" }, t("script"),
+      ...[[false, "Latinica"], [true, "Ћирилица"]].map(([v, n]) => h("button", { class: "chip" + (!!H.settings.cyr === v ? " on" : ""), onclick: () => {
+        B.set_setting("cyr", v); B.open_course(cur.cid, LANG, store.get(SAVE_PREFIX + cur.cid, "")); renderHome(); } }, n)))) : null,
     h("div", { class: "card" }, h("h4", {}, t("stats")),
       [[t("level"), `${H.level}  (${H.level_xp}/${H.level_need})`], [t("xp_total"), H.xp_total], [t("best_streak"), H.longest], [t("words"), `${H.words_learned}/${H.words_total}`], [t("lessons"), H.lessons_completed]]
         .map(([a, b]) => h("div", { class: "kv" }, h("span", {}, a), h("b", {}, b)))),

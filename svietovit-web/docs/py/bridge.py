@@ -30,12 +30,17 @@ def _now():
     return time.time() - tz_shift
 
 
-def _load(cid, lang):
-    key = (cid, lang)
+def _load(cid, lang, variant=None):
+    key = (cid, lang, variant)
     if key in _modules:
         return _modules[key]
     src = SOURCE_LANG.get(cid, "pl")
     suffix = "" if lang == src else "_" + lang
+    if variant:   # np. serbski cyrylicą: courses/serbian/engine_cyr.py
+        E = importlib.import_module("courses.%s.engine_%s" % (cid, variant))
+        C = importlib.import_module("courses.%s.content_%s" % (cid, variant))
+        _modules[key] = (E, C)
+        return E, C
     try:
         E = importlib.import_module("courses.%s.engine%s" % (cid, suffix))
         C = importlib.import_module("courses.%s.content%s" % (cid, suffix))
@@ -46,6 +51,43 @@ def _load(cid, lang):
     return E, C
 
 
+# Serbski: łacinka <-> cyrylica (identyfikatory słów w zapisie postępu są zawsze łacińskie)
+_SR = [("lj", "љ"), ("nj", "њ"), ("dž", "џ"), ("a", "а"), ("b", "б"), ("v", "в"), ("g", "г"), ("d", "д"), ("đ", "ђ"),
+       ("e", "е"), ("ž", "ж"), ("z", "з"), ("i", "и"), ("j", "ј"), ("k", "к"), ("l", "л"), ("m", "м"), ("n", "н"),
+       ("o", "о"), ("p", "п"), ("r", "р"), ("s", "с"), ("t", "т"), ("ć", "ћ"), ("u", "у"), ("f", "ф"), ("h", "х"),
+       ("c", "ц"), ("č", "ч"), ("š", "ш")]
+
+
+def _sr_cyr(text):
+    out, i, low = "", 0, text.lower()
+    while i < len(text):
+        for a, b in _SR:
+            if low.startswith(a, i):
+                out += b.upper() if text[i].isupper() else b
+                i += len(a)
+                break
+        else:
+            out += text[i]
+            i += 1
+    return out
+
+
+def _sr_lat(text):
+    out = ""
+    for ch in text:
+        for a, b in _SR:
+            if ch.lower() == b:
+                out += (a[0].upper() + a[1:]) if ch.isupper() else a
+                break
+        else:
+            out += ch
+    return out
+
+
+def _bare(t):
+    return t.replace("\u0301", "")
+
+
 def _is_hanzi():
     return _cur["cid"] == "hanzi_hero"
 
@@ -53,22 +95,37 @@ def _is_hanzi():
 # ---------------------------------------------------------------------------
 # Otwieranie kursu / zapis
 # ---------------------------------------------------------------------------
+
+
 def open_course(cid, lang, saved_json=None):
-    E, C = _load(cid, lang)
-    st = E.State(path=None, now=_now)
+    loaded = None
     if saved_json:
         try:
             loaded = json.loads(saved_json)
-            d = E._default()
-            d.update(loaded)
-            d["settings"] = {**E._default()["settings"], **loaded.get("settings", {})}
-            st.data = d
         except ValueError:
-            pass
+            loaded = None
+    cyr = cid == "serbian" and bool(loaded and loaded.get("settings", {}).get("cyr"))
+    E, C = _load(cid, lang, "cyr" if cyr else None)
+    st = E.State(path=None, now=_now)
+    if loaded:
+        d = E._default()
+        d.update(loaded)
+        d["settings"] = {**E._default()["settings"], **loaded.get("settings", {})}
+        words = d.get("words") or {}
+        if cyr:
+            words = {(k if k.startswith("lit:") else _sr_cyr(k)): v for k, v in words.items()}
+        if any(k not in E.WORDS for k in words):   # starsze zapisy: słowa bez znaku akcentu
+            by_bare = {_bare(k): k for k in E.WORDS}
+            words = {(k if k in E.WORDS else by_bare.get(_bare(k), k)): v for k, v in words.items()}
+        d["words"] = words
+        st.data = d
 
     def save():
         if save_hook:
-            save_hook(cid, json.dumps(st.data, ensure_ascii=False))
+            data = st.data
+            if cyr:
+                data = dict(data, words={(k if k.startswith("lit:") else _sr_lat(k)): v for k, v in data["words"].items()})
+            save_hook(cid, json.dumps(data, ensure_ascii=False))
     st.save = save
     _cur.update(cid=cid, lang=lang, E=E, C=C, state=st, session=None, kind=None)
     st.check_streak()
