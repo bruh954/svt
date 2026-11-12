@@ -178,6 +178,7 @@ function playTone(tone) {
 const voiceOn = () => store.get("sv_voice", "1") === "1";
 function speak(text, auto) {
   const m = BYID[cur.cid]; if (!m || !m.tts || !text) return;
+  text = String(text).replace(/\u0301/g, "");   // znak akcentu (rosyjski) nie jest do czytania
   if (window.AndroidTTS) { if (auto === true && !voiceOn()) return; try { AndroidTTS.speak(String(text), m.tts, 0.85); } catch (e) { /* brak głosu */ } return; }
   if (!window.speechSynthesis) return;
   if (auto === true && !voiceOn()) return;

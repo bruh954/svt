@@ -1,4 +1,4 @@
-const CACHE = "sviet-2237b628ab";
+const CACHE = "sviet-e7b5d30b23";
 const FILES = ["./", "app.js", "config.js", "courses.json", "fonts.css", "fonts/Sviet-Bold.ttf", "fonts/Sviet-Regular.ttf", "icon-192.png", "icon-512.png", "index.html", "manifest.webmanifest", "py/bridge.py", "py/core.zip", "pyodide/pyodide-lock.json", "pyodide/pyodide.asm.js", "pyodide/pyodide.asm.wasm", "pyodide/pyodide.js", "pyodide/python_stdlib.zip", "style.css"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
