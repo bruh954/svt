@@ -634,7 +634,7 @@ function pressMain() {
     return;
   }
   L.phase = "feedback"; L.lastOk = !!r.ok;
-  if (r.ok) { sfx.correct(); feedback("good", t("praise")[Math.floor(Math.random() * 5)], r.solution && type === "type" && r.solution.startsWith("Pełny") ? r.solution : ""); L.main.className = "btn green"; }
+  if (r.ok) { sfx.correct(); feedback("good", t("praise")[Math.floor(Math.random() * 5)], r.note || (r.solution && type === "type" && r.solution.startsWith("Pełny") ? r.solution : "")); L.main.className = "btn green"; }
   else { sfx.wrong(); feedback("bad", t("correct_answer"), (r.solution || "") + (r.why ? "\n\n" + t("think") + " " + r.why : "")); L.main.className = "btn red"; }
   L.main.textContent = t("next"); L.main.disabled = false;
 }
@@ -825,12 +825,12 @@ function grammarTab() {
   const TR = ["Typowe trudności", "Common difficulties"], item = p => h("button", { class: "chat-item gr-item", onclick: () => openParadigm(p.id) },
     h("div", {}, h("div", { class: "t", dir: "auto" }, p.title), h("div", { class: "s" }, p.n + " " + (LANG === "pl" ? "form" : "forms"))),
     h("div", { class: "stars" }, p.best ? "★".repeat(p.best) + "☆".repeat(3 - p.best) : ""));
-  TR.push("Klasyfikatory", "Measure words", "Liczniki", "Liczba mnoga");
+  TR.push("Klasyfikatory", "Measure words", "Liczniki", "Liczba mnoga", "Szyk zdania", "Word order");
   const hard = H.paradigms.filter(p => TR.includes(p.group));
   if (hard.length) {
     out.push(h("div", { class: "track" }, "· " + t("gr_pit") + " ·"));
     const many = new Set(hard.map(p => p.group)).size > 1; let g = null;
-    hard.forEach(p => { if (many && p.group !== g) { g = p.group; out.push(h("div", { class: "gr-group" }, g)); } out.push(item(p)); });
+    hard.forEach(p => { if (many && p.group !== g && p.group !== t("gr_pit")) { g = p.group; out.push(h("div", { class: "gr-group" }, g)); } out.push(item(p)); });
   }
   for (const kind of ["conj", "decl", "form"]) {
     const list = H.paradigms.filter(p => p.kind === kind && !TR.includes(p.group)); if (!list.length) continue;

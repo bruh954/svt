@@ -1,0 +1,345 @@
+"""Treść kursu: francuski dla Polaków.
+
+Słowo:    (forma, znaczenie, polskie słowo pokrewne lub None, skojarzenie lub None, wymowa polskimi literami)
+Wymowa: ü = francuskie u (usta jak do „u”, mów „i”), ö = francuskie eu, ń po samogłosce = nosowe (jak w „bon”).
+"""
+
+PUNCT = {"!", "?", ".", ",", ":"}
+
+TRACKS = {"wymowa": "PRONONCIATION · WYMOWA", "jezyk": "LANGUE · JĘZYK"}
+
+UNITS = [
+    {"id": "wymowa", "title": "Wymowa", "icon": "É", "track": "wymowa",
+     "letters": [
+         ("ou", "[u]: jak polskie u", "nous (my)"),
+         ("oi", "[wa]: jak polskie ła", "moi (ja)"),
+         ("eu, œu", "[ø]: usta jak do „o”, mów „e”", "deux (dwa)"),
+         ("ch", "[ʃ]: jak polskie sz", "chat (kot)"),
+         ("gn", "[ɲ]: jak polskie ń", "montagne (góra)"),
+         ("ç", "[s]: jak polskie s", "français (francuski)"),
+         ("an, en", "[ɑ̃]: nosowe, jak „an” w „bądź”", "enfant (dziecko)"),
+         ("on", "[ɔ̃]: nosowe, jak „oń”", "bon (dobry)"),
+         ("in, ain", "[ɛ̃]: nosowe, jak „eń”", "pain (chleb)"),
+         ("é", "[e]: jak polskie e, zamknięte", "été (lato)"),
+         ("u", "[y]: usta jak do „u”, mów „i”", "tu (ty)"),
+         ("au, eau", "[o]: jak polskie o", "eau (woda)"),
+         ("j, ge", "[ʒ]: jak polskie ż", "jour (dzień)"),
+         ("h", "nie czytasz go wcale", "homme (mężczyzna)"),
+         ("-s, -t, -d, -x", "na końcu słowa zwykle milczą", "petit (mały)"),
+     ]},
+    {"id": "slowa", "title": "Pierwsze słowa", "icon": "B", "track": "jezyk", "requires": "wymowa",
+     "words": [
+         ("bonjour", "dzień dobry", None, "Dosłownie „dobry dzień”."),
+         ("bonsoir", "dobry wieczór", None, None),
+         ("bonne", "dobra (przed nuit)", None, "Nuit jest żeńskie, więc bonne."),
+         ("nuit", "noc", None, None),
+         ("salut", "cześć", None, "Od łacińskiego salus: zdrowie. Jak polskie „salut”."),
+         ("merci", "dziękuję", None, None),
+         ("s'il", "jeśli (to) (część „s'il vous plaît”)", None, None),
+         ("vous", "wy; pan, pani", None, None),
+         ("plaît", "podoba się (część „s'il vous plaît”)", None, None),
+         ("oui", "tak", None, None),
+         ("non", "nie", None, None),
+         ("beaucoup", "bardzo; dużo", None, None),
+         ("pardon", "przepraszam", "pardon", None),
+         ("au", "do; w (au revoir)", None, None),
+         ("revoir", "zobaczyć znów (au revoir = do widzenia)", None, None),
+     ],
+     "sentences": [
+         (["salut", "!"], "Cześć!", {"bonjour": "bonjour to „dzień dobry”. Wśród znajomych: salut."}),
+         (["bonjour", "!"], "Dzień dobry!", {"bonsoir": "bonsoir to „dobry wieczór”."}),
+         (["bonsoir", "!"], "Dobry wieczór!", {"bonjour": "bonjour to „dzień dobry”."}),
+         (["bonne", "nuit", "!"], "Dobranoc!", {"bon": "Nuit jest żeńskie: bonne."}),
+         (["merci", "beaucoup"], "Dziękuję bardzo.", {}),
+         (["s'il", "vous", "plaît"], "Proszę.", {"merci": "merci to „dziękuję”."}),
+         (["oui", ",", "merci"], "Tak, dziękuję.", {"non": "non to „nie”."}),
+         (["non", ",", "merci"], "Nie, dziękuję.", {"oui": "oui to „tak”."}),
+         (["au", "revoir", "!"], "Do widzenia!", {}),
+         (["pardon", "!"], "Przepraszam!", {}),
+     ]},
+    {"id": "ja", "title": "Ja, ty, on", "icon": "J", "track": "jezyk",
+     "words": [
+         ("je", "ja", None, None),
+         ("tu", "ty", None, None),
+         ("il", "on", None, None),
+         ("elle", "ona", None, None),
+         ("suis", "jestem", None, "Je suis czytasz „że süi”."),
+         ("es", "jesteś", None, None),
+         ("est", "jest", None, "Brzmi tak samo jak „es”: [e]."),
+         ("polonais", "Polak; polski", None, None),
+         ("polonaise", "Polka; polska", None, None),
+         ("étudiant", "student", None, None),
+         ("professeur", "nauczyciel; profesor", "profesor", None),
+         ("de", "z; od", None, None),
+         ("Pologne", "Polska", None, None),
+         ("France", "Francja", None, None),
+     ],
+     "sentences": [
+         (["je", "suis", "étudiant"], "Jestem studentem.", {"es": "es to „jesteś”. O sobie: suis."}),
+         (["tu", "es", "professeur"], "Jesteś nauczycielem.", {"suis": "suis to „jestem”. Do „tu”: es."}),
+         (["il", "est", "polonais"], "On jest Polakiem.", {"polonaise": "Dla mężczyzny: polonais."}),
+         (["elle", "est", "polonaise"], "Ona jest Polką.", {"polonais": "Dla kobiety: polonaise."}),
+         (["je", "suis", "de", "Pologne"], "Jestem z Polski.", {"France": "France to Francja."}),
+         (["elle", "est", "de", "France"], "Ona jest z Francji.", {}),
+     ]},
+    {"id": "ludzie", "title": "Ludzie i rodzina", "icon": "L", "track": "jezyk",
+     "words": [
+         ("le", "(rodzajnik męski)", None, "Le père, le frère."),
+         ("la", "(rodzajnik żeński)", None, "La mère, la sœur."),
+         ("un", "jakiś; jeden (męski)", None, None),
+         ("une", "jakaś; jedna (żeński)", None, None),
+         ("mère", "matka", None, None),
+         ("père", "ojciec", None, None),
+         ("l'enfant", "dziecko", None, "Przed samogłoską le/la skracają się do l'."),
+         ("ami", "przyjaciel", None, None),
+         ("femme", "kobieta; żona", None, None),
+         ("homme", "mężczyzna", None, "H nie czytamy: [om]."),
+         ("frère", "brat", None, None),
+         ("sœur", "siostra", None, None),
+         ("j'ai", "mam", None, "Je + ai: skrócone do j'ai."),
+         ("as", "masz", None, None),
+         ("petit", "mały", None, None),
+         ("bon", "dobry", None, None),
+     ],
+     "sentences": [
+         (["le", "frère", "est", "petit"], "Brat jest mały.", {"la": "frère jest męski: le."}),
+         (["la", "mère", "est", "une", "femme"], "Matka jest kobietą.", {"le": "mère jest żeńska: la."}),
+         (["l'enfant", "est", "petit"], "Dziecko jest małe.", {}),
+         (["j'ai", "un", "frère"], "Mam brata.", {"as": "as to „masz”. O sobie: j'ai.", "une": "frère jest męski: un."}),
+         (["tu", "as", "une", "sœur"], "Masz siostrę.", {"j'ai": "j'ai to „mam”. Do „tu”: as.", "un": "sœur jest żeńska: une."}),
+         (["le", "père", "est", "un", "homme"], "Ojciec jest mężczyzną.", {}),
+         (["l'enfant", "est", "bon"], "Dziecko jest dobre.", {}),
+     ]},
+    {"id": "jedzenie", "title": "Jedzenie i picie", "icon": "K", "track": "jezyk",
+     "words": [
+         ("eau", "woda", None, "Eau czytasz [o]."),
+         ("café", "kawa; kawiarnia", None, "Stąd „kafejka”."),
+         ("thé", "herbata", None, None),
+         ("pain", "chleb", None, None),
+         ("fromage", "ser", None, None),
+         ("vin", "wino", None, None),
+         ("lait", "mleko", None, None),
+         ("poisson", "ryba", None, None),
+         ("pomme", "jabłko", None, None),
+         ("pommes", "jabłka", None, "Mnoga: dodajesz -s, ale go nie czytasz."),
+         ("voudrais", "chciałbym; chciałabym", None, "Grzeczne „chcę”."),
+         ("très", "bardzo", None, None),
+         ("maintenant", "teraz", None, None),
+     ],
+     "sentences": [
+         (["je", "voudrais", "un", "café"], "Poproszę kawę.", {"une": "café jest męski: un."}),
+         (["je", "voudrais", "un", "thé", ",", "s'il", "vous", "plaît"], "Poproszę herbatę.", {}),
+         (["tu", "voudrais", "une", "pomme"], "Chciałbyś jabłko.", {"un": "pomme jest żeńskie: une."}),
+         (["je", "voudrais", "un", "pain"], "Poproszę chleb.", {}),
+         (["le", "poisson", "est", "très", "bon"], "Ryba jest bardzo dobra.", {}),
+         (["je", "voudrais", "une", "eau", "maintenant"], "Chcę teraz wodę.", {}),
+     ]},
+    {"id": "liczby", "title": "Liczby i czas", "icon": "1", "track": "jezyk",
+     "words": [
+         ("deux", "dwa", "duet", None),
+         ("trois", "trzy", "trio", None),
+         ("quatre", "cztery", None, None),
+         ("cinq", "pięć", None, None),
+         ("dix", "dziesięć", "dekada (z greki)", None),
+         ("enfants", "dzieci", None, None),
+         ("aujourd'hui", "dziś", None, None),
+         ("demain", "jutro", None, None),
+         ("hier", "wczoraj", None, None),
+         ("heure", "godzina", None, "H nie czytamy: [ör]."),
+         ("heures", "godziny (po liczbie)", None, None),
+         ("quelle", "jaka", None, None),
+         ("est-il", "czy jest on (pytanie)", None, "Odwracasz szyk: il est → est-il."),
+     ],
+     "sentences": [
+         (["j'ai", "deux", "enfants"], "Mam dwoje dzieci.", {}),
+         (["je", "voudrais", "trois", "pommes"], "Chcę trzy jabłka.", {"deux": "deux to „dwa”. Chcesz trzy: trois."}),
+         (["quelle", "heure", "est-il", "?"], "Która jest godzina?", {}),
+         (["il", "est", "dix", "heures"], "Jest dziesiąta.", {}),
+         (["aujourd'hui", "je", "voudrais", "un", "café"], "Dziś chcę kawę.", {"demain": "demain to „jutro”. Tu „dziś”."}),
+         (["demain", "je", "voudrais", "un", "poisson"], "Jutro chcę rybę.", {"hier": "hier to „wczoraj”."}),
+     ]},
+    {"id": "miejsca", "title": "Miejsca i podróż", "icon": "V", "track": "jezyk",
+     "words": [
+         ("maison", "dom", None, None),
+         ("ville", "miasto", None, None),
+         ("rue", "ulica", None, None),
+         ("l'école", "szkoła", None, None),
+         ("mer", "morze", None, None),
+         ("taxi", "taksówka", "taksówka", None),
+         ("l'hôtel", "hotel", "hotel", None),
+         ("où", "gdzie", None, None),
+         ("ici", "tu", None, None),
+         ("là", "tam", None, None),
+         ("vais", "idę; jadę", None, None),
+         ("à", "do; w", None, None),
+         ("Paris", "Paryż", None, None),
+         ("droite", "prawa; w prawo (à droite)", None, None),
+         ("gauche", "lewa; w lewo (à gauche)", None, "Gauche to także „lewicowy” (lewica w polityce)."),
+     ],
+     "sentences": [
+         (["où", "est", "l'hôtel", "?"], "Gdzie jest hotel?", {"ici": "ici to „tu”, a pytasz „gdzie”: où."}),
+         (["l'hôtel", "est", "là"], "Hotel jest tam.", {"ici": "ici to „tu”. Tu mówimy „tam”: là."}),
+         (["je", "vais", "à", "la", "maison"], "Idę do domu.", {"le": "maison jest żeńskie: la."}),
+         (["je", "vais", "à", "Paris"], "Jadę do Paryża.", {}),
+         (["le", "taxi", "est", "à", "droite"], "Taksówka jest po prawej.", {"gauche": "gauche to „lewa”."}),
+         (["l'école", "est", "là"], "Szkoła jest tam.", {}),
+     ]},
+]
+
+INSIGHTS = {
+    "wymowa": [{"title": "Pisze się więcej, niż się czyta", "chain": [],
+                "text": "Po francusku na końcu słowa zwykle nie czytasz spółgłosek: petit to [pəti], vous to [vu]. Kilka grup liter warto znać: é czytasz [e], ou [u], oi [wa]. Reszty nauczysz się z przykładów."}],
+    "ja": [{"title": "Je suis, tu es, il est", "chain": [
+                ("Jestem studentem.", ["je", "suis", "étudiant"], "Do „je” pasuje suis."),
+                ("Jesteś nauczycielem.", ["tu", "es", "professeur"], "Do „tu” pasuje es."),
+            ],
+            "text": "Zaimek jest obowiązkowy: je suis, tu es, il est. Es i est brzmią tak samo ([e]), więc słuchaj kontekstu."}],
+    "ludzie": [{"title": "Le, la, l'", "chain": [],
+                "text": "Rzeczowniki są męskie (le, un) lub żeńskie (la, une). Przed samogłoską le i la zlewają się w l': l'enfant, l'ami. Uczysz się słowa razem z rodzajnikiem."}],
+    "jedzenie": [{"title": "Grzecznie: je voudrais", "chain": [],
+                  "text": "Zamiast „je veux” (chcę) w sklepie mówi się grzecznie „je voudrais” (chciałbym). Do tego „s'il vous plaît” i masz poprawne zamówienie."}],
+}
+
+ENDINGS_INSIGHT = {"title": "Rodzajniki i formy czasowników",
+                   "text": "Po francusku ćwiczysz rodzaj (le/la, un/une) i formy czasownika (suis, es, est). Tu to robisz."}
+
+ENDINGS = [
+    ("", "bon", "jour", "", ["jour", "soir", "nuit"], "dzień dobry", "jour to „dzień”, soir „wieczór”, nuit „noc”.", "slowa"),
+    ("", "bon", "soir", "", ["jour", "soir", "nuit"], "dobry wieczór", "soir to „wieczór”.", "slowa"),
+    ("", "bonne ", "nuit", "", ["jour", "soir", "nuit"], "dobranoc", "nuit to „noc” (żeńskie, więc bonne).", "slowa"),
+    ("je ", "", "suis", " étudiant", ["suis", "es", "est"], "ja jestem", "Do „je” pasuje suis.", "ja"),
+    ("tu ", "", "es", " professeur", ["suis", "es", "est"], "ty jesteś", "Do „tu” pasuje es.", "ja"),
+    ("il ", "", "est", " polonais", ["suis", "es", "est"], "on jest", "Do „il” pasuje est.", "ja"),
+    ("", "", "le", " père", ["le", "la"], "ten ojciec", "père jest męski: le.", "ludzie"),
+    ("", "", "la", " mère", ["le", "la"], "ta matka", "mère jest żeńska: la.", "ludzie"),
+    ("j'ai ", "", "un", " frère", ["un", "une"], "jakiś brat", "frère jest męski: un.", "ludzie"),
+    ("tu as ", "", "une", " sœur", ["un", "une"], "jakaś siostra", "sœur jest żeńska: une.", "ludzie"),
+    ("je voudrais ", "", "un", " café", ["un", "une"], "jakaś kawa (męski)", "café jest męski: un.", "jedzenie"),
+    ("je voudrais ", "", "une", " pomme", ["un", "une"], "jakieś jabłko (żeński)", "pomme jest żeńskie: une.", "jedzenie"),
+    ("je voudrais ", "", "un", " pain", ["un", "une"], "jakiś chleb (męski)", "pain jest męski: un.", "jedzenie"),
+    ("je vais ", "", "à", " Paris", ["à", "de"], "do Paryża", "à to „do, w”, de to „z”.", "miejsca"),
+    ("je suis ", "", "de", " Pologne", ["à", "de"], "z Polski", "de to „z”.", "miejsca"),
+]
+
+CHAT_EXTRA = {"Marie": "Marie (imię)", "Luc": "Luc (imię)", "monsieur": "pan", "quoi": "co", "veux": "chcesz (tu veux)",
+              "allez": "idziecie; jedziecie", "où": "gdzie", "et": "i", "bien": "dobrze"}
+
+CHATS = [
+    {"id": "cafe", "title": "W kawiarni", "partner": "Marie", "avatar": "M", "requires": "jedzenie",
+     "turns": [
+         {"bot": ["bonjour", "!"], "en": "Dzień dobry!",
+          "options": [(["bonjour", "!"], True, None), (["bonne", "nuit", "!"], False, "bonne nuit to „dobranoc”. Jest dzień.")]},
+         {"bot": ["un", "café", "?"], "en": "Kawę?",
+          "options": [(["oui", ",", "je", "voudrais", "un", "café"], True, None),
+                      (["oui", ",", "je", "voudrais", "une", "café"], False, "café jest męski: un, nie une.")]},
+         {"bot": ["et", "un", "pain", "?"], "en": "I chleb?",
+          "options": [(["non", ",", "merci"], True, None),
+                      (["s'il", "vous", "plaît"], False, "s'il vous plaît to „proszę”. Odmów: non, merci.")]},
+         {"bot": ["très", "bien", "!"], "build": (["merci", "beaucoup"], "Dziękuję bardzo."), "en": "Bardzo dobrze!"},
+     ]},
+    {"id": "rencontre", "title": "Poznajemy się", "partner": "Luc", "avatar": "L", "requires": "ludzie",
+     "turns": [
+         {"bot": ["salut", "!"], "en": "Cześć!",
+          "options": [(["salut", "!"], True, None), (["pardon", "!"], False, "pardon to „przepraszam”. Powitaj: salut.")]},
+         {"bot": ["tu", "es", "de", "France", "?"], "en": "Jesteś z Francji?",
+          "options": [(["non", ",", "je", "suis", "de", "Pologne"], True, None),
+                      (["non", ",", "je", "es", "de", "Pologne"], False, "es jest do „tu”. O sobie: suis.")]},
+         {"bot": ["tu", "as", "un", "frère", "?"], "en": "Masz brata?",
+          "options": [(["oui", ",", "j'ai", "un", "frère"], True, None),
+                      (["oui", ",", "j'ai", "une", "frère"], False, "frère jest męski: un.")]},
+         {"bot": ["bonsoir", "!"], "build": (["bonsoir"], "Dobry wieczór."), "en": "Dobry wieczór!"},
+     ]},
+    {"id": "taxi", "title": "W taksówce", "partner": "monsieur", "avatar": "T", "requires": "miejsca",
+     "turns": [
+         {"bot": ["bonsoir", "!"], "en": "Dobry wieczór!",
+          "options": [(["bonsoir", "!"], True, None), (["bonjour", "!"], False, "bonjour to „dzień dobry”. Jest wieczór.")]},
+         {"bot": ["où", "allez", "?"], "en": "Dokąd jedziecie?",
+          "options": [(["je", "vais", "à", "Paris"], True, None),
+                      (["je", "suis", "à", "Paris"], False, "suis to „jestem”. Jedziesz: je vais.")]},
+         {"bot": ["l'hôtel", "est", "là", "."], "en": "Hotel jest tam.",
+          "options": [(["à", "droite", "?"], True, None), (["ici", "?"], False, "Pytasz o kierunek: à droite (w prawo).")]},
+         {"bot": ["oui", "!"], "build": (["merci", "beaucoup"], "Dziękuję bardzo."), "en": "Tak!"},
+     ]},
+]
+
+
+# ---------------------------------------------------------------------------
+# Gramatyka.
+# PARADIGMS: ("conj" | "decl" | "form", grupa, tytuł, klucz etykiet, formy rozdzielone „; ”, uwaga lub None)
+# conj = koniugacje i czasy, decl = deklinacje, zaimki i liczebniki, form = imiesłowy, formy podstawowe, ćwiczenia celowane.
+# Liczba form musi być równa liczbie etykiet. Uczeń przechodzi cały wzór: tabela, po kolei, na wyrywki.
+# ---------------------------------------------------------------------------
+
+PARADIGM_LABELS = {
+    'os': ['je', 'tu', 'il/elle', 'nous', 'vous', 'ils/elles'],
+    'rodz': ['męski lp.', 'żeński lp.', 'męski lm.', 'żeński lm.'],
+    'dzier': ['przed rzecz. męskim', 'przed rzecz. żeńskim', 'przed liczbą mnogą'],
+    'pp': ['parler', 'finir', 'vendre', 'être', 'avoir', 'faire', 'prendre', 'venir', 'voir', 'pouvoir'],
+    'ppres': ['parler', 'finir', 'vendre', 'être', 'avoir', 'faire'],
+    'rozk': ['tu', 'nous', 'vous'],
+    't_aux': ['aller', 'manger', 'venir', 'voir', 'partir', 'faire', 'rester', 'prendre'],
+    't_rodz': ['problème (problem)', 'maison (dom)', 'livre (książka)', 'voiture (samochód)', 'musée (muzeum)', 'mer (morze)', 'soleil (słońce)', 'lune (księżyc)'],
+}
+
+PARADIGMS = [
+    ('conj', 'Wzory koniugacji', 'parler (mówić)', 'os', 'parle; parles; parle; parlons; parlez; parlent', 'Grupa -er: -e, -es, -e, -ons, -ez, -ent. Końcówek -e, -es, -ent nie słychać.'),
+    ('conj', 'Wzory koniugacji', 'aimer (lubić, kochać)', 'os', 'aime; aimes; aime; aimons; aimez; aiment', None),
+    ('conj', 'Wzory koniugacji', 'finir (kończyć)', 'os', 'finis; finis; finit; finissons; finissez; finissent', 'Grupa -ir: w liczbie mnogiej pojawia się -iss-.'),
+    ('conj', 'Wzory koniugacji', 'vendre (sprzedawać)', 'os', 'vends; vends; vend; vendons; vendez; vendent', 'Grupa -re: w 3. osobie lp. brak końcówki.'),
+    ('conj', 'Wyjątki', 'manger (jeść)', 'os', 'mange; manges; mange; mangeons; mangez; mangent', 'Przed -ons zostaje e, żeby g brzmiało miękko: mangeons.'),
+    ('conj', 'Czasowniki nieregularne', 'être (być)', 'os', 'suis; es; est; sommes; êtes; sont', None),
+    ('conj', 'Czasowniki nieregularne', 'avoir (mieć)', 'os', 'ai; as; a; avons; avez; ont', None),
+    ('conj', 'Czasowniki nieregularne', 'aller (iść)', 'os', 'vais; vas; va; allons; allez; vont', None),
+    ('conj', 'Czasowniki nieregularne', 'faire (robić)', 'os', 'fais; fais; fait; faisons; faites; font', None),
+    ('conj', 'Czasowniki nieregularne', 'vouloir (chcieć)', 'os', 'veux; veux; veut; voulons; voulez; veulent', None),
+    ('conj', 'Czasowniki nieregularne', 'pouvoir (móc)', 'os', 'peux; peux; peut; pouvons; pouvez; peuvent', None),
+    ('conj', 'Czasowniki nieregularne', 'venir (przychodzić)', 'os', 'viens; viens; vient; venons; venez; viennent', None),
+    ('conj', 'Czasowniki nieregularne', 'prendre (brać)', 'os', 'prends; prends; prend; prenons; prenez; prennent', None),
+    ('decl', 'Przymiotniki: rodzaj i liczba', 'petit (mały)', 'rodz', 'petit; petite; petits; petites', 'Żeński: +e. Mnoga: +s.'),
+    ('decl', 'Przymiotniki: rodzaj i liczba', 'grand (duży)', 'rodz', 'grand; grande; grands; grandes', None),
+    ('decl', 'Wyjątki', 'beau (piękny)', 'rodz', 'beau; belle; beaux; belles', None),
+    ('decl', 'Wyjątki', 'bon (dobry)', 'rodz', 'bon; bonne; bons; bonnes', 'Podwojenie spółgłoski w rodzaju żeńskim.'),
+    ('decl', 'Zaimki dzierżawcze', 'mon (mój)', 'dzier', 'mon; ma; mes', None),
+    ('decl', 'Zaimki dzierżawcze', 'ton (twój)', 'dzier', 'ton; ta; tes', None),
+    ('decl', 'Zaimki dzierżawcze', 'son (jego, jej)', 'dzier', 'son; sa; ses', None),
+    ('form', 'Imiesłowy', 'Participe passé', 'pp', 'parlé; fini; vendu; été; eu; fait; pris; venu; vu; pu', '-er → -é, -ir → -i, -re → -u. Częste czasowniki mają formy nieregularne.'),
+    ('form', 'Imiesłowy', 'Participe présent', 'ppres', 'parlant; finissant; vendant; étant; ayant; faisant', 'Temat od nous + -ant.'),
+    ('conj', 'Czas przeszły', 'parler: passé composé', 'os', 'ai parlé; as parlé; a parlé; avons parlé; avez parlé; ont parlé', 'avoir w czasie teraźniejszym + participe passé.'),
+    ('conj', 'Czas przeszły', 'aller: passé composé', 'os', 'suis allé; es allé; est allé; sommes allés; êtes allés; sont allés', 'Czasowniki ruchu łączą się z être, a participe zgadza się z podmiotem (allé, allée, allés, allées).'),
+    ('conj', 'Czas przeszły', 'parler: imparfait', 'os', 'parlais; parlais; parlait; parlions; parliez; parlaient', None),
+    ('conj', 'Czas przeszły', 'être: imparfait', 'os', 'étais; étais; était; étions; étiez; étaient', None),
+    ('conj', 'Czas przyszły', 'parler: futur simple', 'os', 'parlerai; parleras; parlera; parlerons; parlerez; parleront', 'Bezokolicznik + końcówki avoir: -ai, -as, -a, -ons, -ez, -ont.'),
+    ('conj', 'Czas przyszły', 'être: futur simple', 'os', 'serai; seras; sera; serons; serez; seront', None),
+    ('conj', 'Czas przyszły', 'avoir: futur simple', 'os', 'aurai; auras; aura; aurons; aurez; auront', None),
+    ('conj', 'Czas przyszły', 'parler: futur proche', 'os', 'vais parler; vas parler; va parler; allons parler; allez parler; vont parler', 'aller + bezokolicznik.'),
+    ('conj', 'Czasowniki zwrotne', 'se laver (myć się)', 'os', 'me lave; te laves; se lave; nous lavons; vous lavez; se lavent', None),
+    ('form', 'Tryb rozkazujący', 'parler', 'rozk', 'parle; parlons; parlez', 'W 2. osobie lp. czasowniki na -er tracą -s.'),
+    ('form', 'Tryb rozkazujący', 'être', 'rozk', 'sois; soyons; soyez', None),
+    ('form', 'Tryb rozkazujący', 'avoir', 'rozk', 'aie; ayons; ayez', None),
+    ('form', 'Typowe trudności', 'Passé composé: être czy avoir?', 't_aux', 'être; avoir; être; avoir; être; avoir; être; avoir', 'Z être łączą się czasowniki ruchu i zmiany stanu oraz wszystkie zwrotne.'),
+    ('form', 'Typowe trudności', 'Rodzaj: le czy la?', 't_rodz', 'le; la; le; la; le; la; le; la', 'Rzeczowniki na -age, -ment, -eau są zwykle męskie; na -tion, -té, -ure żeńskie.'),
+]
+
+# Więcej ćwiczeń celowanych w typowe trudności
+PARADIGM_LABELS.update({
+    't_m0': ["penser ___ quelqu'un (myśleć o kimś)", 'parler ___ quelque chose (mówić o czymś)', 'jouer ___ un jeu (grać w grę)', 'avoir besoin ___ (potrzebować)', "téléphoner ___ quelqu'un (dzwonić do)", "s'occuper ___ (zajmować się)"],
+    't_m1': ['Je bois ___ café.', 'Je mange ___ salade.', "J'aime ___ café. (lubię w ogóle)", "J'achète ___ pommes.", 'Je ne bois pas ___ café.', 'Je bois ___ eau.'],
+    't_m2': ['tu', 'tout', 'rue', 'roue', 'vu', 'vous', 'dessus', 'dessous'],
+    't_m3': ['je parle, tu parles, il parle, ils parlent', 'nous parlons', 'vous parlez', 'il est, tu es', 'ils sont, ils ont', 'a, à'],
+})
+PARADIGMS += [
+    ('form', 'Typowe trudności', 'Czasownik + przyimek: à czy de?', 't_m0', 'à; de; à; de; à; de', 'Przyimka nie tłumaczy się z polskiego: trzeba go znać razem z czasownikiem.'),
+    ('form', 'Typowe trudności', 'Rodzajnik: du, de la, des, le czy de?', 't_m1', "du; de la; le; des; de; de l'", 'Nieokreślona ilość: du, de la, des. Po przeczeniu samo de. Po aimer rodzajnik określony.'),
+    ('form', 'Typowe trudności', 'u czy ou: co to znaczy?', 't_m2', 'ty; wszystko; ulica; koło; widziany; wy; na wierzchu; pod spodem', 'u [y] i ou [u] to dwa różne dźwięki.'),
+    ('form', 'Typowe trudności', 'Czyta się tak samo? Liczba form w mowie', 't_m3', 'jedna wymowa; inna; inna; jedna wymowa; różne (s i z); jedna wymowa', 'Końcówek -e, -es, -ent się nie czyta. Ils sont [s] i ils ont [z] różni tylko łączenie.'),
+]
+
+# Szyk zdania
+PARADIGM_LABELS.update({
+    't_s0': ['Widzę go.', 'Nie mówię po francusku.', 'Daję mu książkę.', 'Chcę to zjeść.'],
+    't_s1': ['To duży dom.', 'To czerwony samochód.', 'To dobry film.', 'Mam francuską książkę.'],
+})
+PARADIGMS += [
+    ('form', 'Szyk zdania', 'Szyk: zaimki i przeczenie', 't_s0', 'Je le vois.|Je vois le.|Le je vois.|Je vois lui.; Je ne parle pas français.|Je parle ne pas français.|Je ne pas parle français.|Je parle pas ne français.; Je lui donne le livre.|Je donne lui le livre.|Je lui le livre donne.|Je donne le livre lui.; Je veux le manger.|Je le veux manger.|Je veux manger le.|Je veux manger lui.', 'Zaimek dopełnienia stoi przed czasownikiem, do którego się odnosi. Przeczenie ne … pas otacza odmieniony czasownik.'),
+    ('form', 'Szyk zdania', 'Szyk: przymiotnik przed czy po?', 't_s1', "C'est une grande maison.|C'est une maison grande.|C'est grande une maison.|C'est maison une grande.; C'est une voiture rouge.|C'est une rouge voiture.|C'est rouge une voiture.|C'est voiture une rouge.; C'est un bon film.|C'est un film bon.|C'est bon un film.|C'est film un bon.; J'ai un livre français.|J'ai un français livre.|J'ai français un livre.|J'ai livre un français.", 'Krótkie, częste przymiotniki (grand, petit, bon, beau, nouveau) stoją przed rzeczownikiem. Kolory i narodowości po nim.'),
+]

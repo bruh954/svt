@@ -1,0 +1,408 @@
+== Małe słowa | M
+w nicht | nie
+w auch | też
+w aber | ale
+w oder | albo, czy
+w nur | tylko
+w noch | jeszcze
+w schon | już
+w immer | zawsze
+w wieder | znów
+w viel | dużo
+w mehr | więcej
+w viele | wiele
+w hat | ma (on, ona, ono)
+s Ich bin nicht klein. | Nie jestem mały.
+s Du bist auch gut. | Ty też jesteś dobry.
+s Ich habe Kaffee, aber du hast Tee. | Ja mam kawę, ale ty masz herbatę.
+s Möchtest du Kaffee oder Tee? | Chcesz kawę czy herbatę?
+s Ich habe nur Wasser. | Mam tylko wodę.
+s Er hat noch Milch. | On ma jeszcze mleko.
+s Das Kind hat schon Brot. | Dziecko ma już chleb.
+s Ich habe immer Kaffee. | Zawsze mam kawę.
+s Ich habe viel Wasser. | Mam dużo wody.
+s Möchtest du mehr Käse? | Chcesz więcej sera?
+s Heute bin ich wieder hier. | Dzisiaj znów tu jestem.
+s Es ist nicht gut. | To nie jest dobre.
+s Die Frau hat auch Tee. | Kobieta też ma herbatę.
+s Er ist noch klein, aber sehr gut. | On jest jeszcze mały, ale bardzo dobry.
+s Ich bin schon hier. | Jestem już tutaj.
+s Du hast nur Brot und Käse. | Masz tylko chleb i ser.
+s Hat er auch Wein? | Czy on też ma wino?
+s Sie hat nicht viel Milch. | Ona nie ma dużo mleka.
+
+== My, wy i mój | W
+w wir | my
+w ihr | wy
+w sind | są, jesteśmy
+w seid | jesteście
+w haben | mamy, mają
+w habt | macie
+w mein | mój
+w meine | moja, moje
+w dein | twój
+w deine | twoja, twoje
+w unser | nasz
+s Wir sind hier. | Jesteśmy tutaj.
+s Wir haben Kaffee. | Mamy kawę.
+s Ihr seid gut. | Jesteście dobrzy.
+s Habt ihr Wasser? | Macie wodę?
+s Sie sind Lehrer. | Oni są nauczycielami.
+s Meine Mutter ist hier. | Moja mama jest tutaj.
+s Mein Vater hat ein Haus. | Mój tata ma dom.
+s Dein Bruder ist nicht hier. | Twojego brata tu nie ma.
+s Deine Schwester hat noch Milch. | Twoja siostra ma jeszcze mleko.
+s Wir haben ein Kind. | Mamy dziecko.
+s Unser Haus ist klein. | Nasz dom jest mały.
+s Mein Freund ist nicht hier. | Mojego przyjaciela tu nie ma.
+s Ihr habt viel Brot. | Macie dużo chleba.
+s Wir sind schon in der Stadt. | Jesteśmy już w mieście.
+s Sie haben auch ein Haus. | Oni też mają dom.
+s Meine Schwester und mein Bruder sind Lehrer. | Moja siostra i mój brat są nauczycielami.
+
+== Pytania | P
+w was | co
+w wer | kto
+w wann | kiedy
+w warum | dlaczego
+w kein | żaden, nie (przed rzeczownikiem rodzaju męskiego i nijakiego)
+w keine | nie (przed rzeczownikiem rodzaju żeńskiego i w lm.)
+w keinen | nie (przed rzeczownikiem rodzaju męskiego, biernik)
+s Was ist das? | Co to jest?
+s Wer ist das? | Kto to jest?
+s Wer bist du? | Kim jesteś?
+s Was hast du? | Co masz?
+s Wann bist du hier? | Kiedy tu jesteś?
+s Warum bist du nicht hier? | Dlaczego cię tu nie ma?
+s Was möchtest du? | Czego chcesz?
+s Wo ist mein Kaffee? | Gdzie jest moja kawa?
+s Wer hat Milch? | Kto ma mleko?
+s Warum hast du nur Wasser? | Dlaczego masz tylko wodę?
+s Was haben wir heute? | Co mamy dzisiaj?
+s Wo ist die Schule? | Gdzie jest szkoła?
+s Wer ist die Frau? | Kim jest ta kobieta?
+s Ich habe kein Brot. | Nie mam chleba.
+s Wir haben keine Milch. | Nie mamy mleka.
+s Er hat kein Haus. | On nie ma domu.
+s Wann habt ihr Schule? | Kiedy macie szkołę?
+s Warum hat er keinen Kaffee? | Dlaczego on nie ma kawy?
+
+== Przyimki | Z
+w mit | z
+w für | dla
+w von | od, z
+w zu | do, u, na
+w den | (rodzajnik: biernik r. męskiego, celownik lm.)
+w auf | na
+w bei | u, przy
+w im | w (w + dem)
+w am | przy, nad (an + dem)
+w zum | do (zu + dem)
+w zur | do (zu + der)
+w dem | temu (celownik: der, das)
+s Ich bin mit dem Bruder in der Stadt. | Jestem z bratem w mieście.
+s Das Brot ist für das Kind. | Chleb jest dla dziecka.
+s Der Kaffee ist für die Frau. | Kawa jest dla kobiety.
+s Das Haus von dem Lehrer ist klein. | Dom nauczyciela jest mały.
+s Ich gehe zum Hotel. | Idę do hotelu.
+s Ich gehe zur Schule. | Idę do szkoły.
+s Ich bin am Meer. | Jestem nad morzem.
+s Wir sind im Hotel. | Jesteśmy w hotelu.
+s Das Kind ist bei der Mutter. | Dziecko jest u mamy.
+s Der Käse ist auf dem Brot. | Ser jest na chlebie.
+s Ich gehe zu dem Lehrer. | Idę do nauczyciela.
+s Der Student ist im Haus. | Student jest w domu.
+s Ich bin am Abend zu Hause. | Wieczorem jestem w domu.
+s Ich habe Brot mit Käse. | Mam chleb z serem.
+s Ich gehe mit dem Freund in die Schule. | Idę z kolegą do szkoły.
+s Das Wasser ist für den Vater. | Woda jest dla taty.
+s Meine Mutter ist im Hotel. | Moja mama jest w hotelu.
+
+== Ja, ty i inni w zdaniu | J
+w mich | mnie
+w dich | ciebie
+w mir | mi, mnie
+w dir | ci, tobie
+w uns | nas, nam
+w ihn | jego (biernik)
+w ihm | jemu, nim
+w gehst | idziesz
+w geht | idzie, idzie się
+w gehen | iść, idziemy, idą
+s Der Kaffee ist für mich. | Kawa jest dla mnie.
+s Das Wasser ist für dich. | Woda jest dla ciebie.
+s Das Brot ist für uns. | Chleb jest dla nas.
+s Die Milch ist für ihn. | Mleko jest dla niego.
+s Ich bin bei dir. | Jestem u ciebie.
+s Er ist bei mir. | On jest u mnie.
+s Das Kind ist bei ihm. | Dziecko jest u niego.
+s Ich gehe mit dir. | Idę z tobą.
+s Gehst du mit mir? | Idziesz ze mną?
+s Wir gehen mit ihm. | Idziemy z nim.
+s Er geht mit uns in die Stadt. | On idzie z nami do miasta.
+s Mein Bruder geht mit dir in die Schule. | Mój brat chodzi z tobą do szkoły.
+s Wie geht es dir? | Jak się masz?
+s Es geht mir gut. | Mam się dobrze.
+s Wie geht es ihm? | Jak on się ma?
+s Das Taxi ist für uns. | Taksówka jest dla nas.
+s Ich habe ihn und dich. | Mam jego i ciebie.
+s Gehen wir in die Stadt? | Idziemy do miasta?
+
+== Codzienne czasowniki | C
+w komme | przychodzę, pochodzę
+w kommst | przychodzisz, pochodzisz
+w kommt | przychodzi, przychodzicie
+w kommen | przychodzić, przychodzimy
+w mache | robię
+w machst | robisz
+w macht | robi, robicie
+w machen | robić, robimy
+w trinke | piję
+w trinkst | pijesz
+w trinkt | pije, pijecie
+w trinken | pić, pijemy
+w esse | jem
+w isst | jesz, je
+w essen | jeść, jemy
+w esst | jecie
+s Ich komme aus Polen. | Pochodzę z Polski.
+s Kommst du aus Deutschland? | Pochodzisz z Niemiec?
+s Er kommt heute nicht. | On dzisiaj nie przyjdzie.
+s Wir kommen am Abend. | Przyjdziemy wieczorem.
+s Kommt ihr mit uns? | Przyjdziecie z nami?
+s Was machst du? | Co robisz?
+s Was macht er? | Co on robi?
+s Ich mache Kaffee. | Robię kawę.
+s Wir machen Tee. | Robimy herbatę.
+s Was machen wir heute? | Co robimy dzisiaj?
+s Ich trinke Wasser. | Piję wodę.
+s Du trinkst viel Kaffee. | Pijesz dużo kawy.
+s Das Kind trinkt Milch. | Dziecko pije mleko.
+s Sie trinken Tee. | Oni piją herbatę.
+s Ich esse Brot mit Käse. | Jem chleb z serem.
+s Er isst einen Apfel. | On je jabłko.
+s Was isst du? | Co jesz?
+s Wir essen Fisch. | Jemy rybę.
+s Ihr trinkt und ihr esst. | Pijecie i jecie.
+s Er kommt auch aus Polen. | On też pochodzi z Polski.
+
+== Jaki? | J
+w alt | stary
+w neu | nowy
+w groß | duży, wysoki
+w lang | długi
+w lange | długi (przed rzeczownikiem żeńskim); długo
+w schön | piękny
+w schnell | szybki, szybko
+w jung | młody
+w großes | duży (przed rzeczownikiem nijakim)
+w neues | nowy (przed rzeczownikiem nijakim)
+w schönes | piękny (przed rzeczownikiem nijakim)
+s Das Haus ist groß. | Dom jest duży.
+s Das Hotel ist neu. | Hotel jest nowy.
+s Mein Vater ist alt, aber nicht sehr alt. | Mój tata jest stary, ale niezbyt.
+s Die Stadt ist groß und schön. | Miasto jest duże i piękne.
+s Das Meer ist schön. | Morze jest piękne.
+s Das Taxi ist schnell. | Taksówka jest szybka.
+s Die Nacht ist lang. | Noc jest długa.
+s Der Tag ist lang. | Dzień jest długi.
+s Meine Schwester ist jung. | Moja siostra jest młoda.
+s Das ist ein großes Haus. | To jest duży dom.
+s Das ist ein neues Hotel. | To jest nowy hotel.
+s Das ist ein schönes Kind. | To jest piękne dziecko.
+s Ich bin zu klein. | Jestem za mały.
+s Er ist jung und schön. | On jest młody i przystojny.
+s Der Mann ist alt. | Mężczyzna jest stary.
+s Das Haus ist alt, aber schön. | Dom jest stary, ale piękny.
+
+== Czas | Z
+w Zeit | czas | die | –
+w Jahr | rok | das | die Jahre
+w Jahre | lata
+w Woche | tydzień | die | die Wochen
+w Stunde | godzina | die | die Stunden
+w Stunden | godziny
+w früh | wcześnie
+w oft | często
+w nie | nigdy
+w manchmal | czasem
+s Ich habe heute keine Zeit. | Nie mam dzisiaj czasu.
+s Hast du morgen Zeit? | Masz jutro czas?
+s Wir haben viel Zeit. | Mamy dużo czasu.
+s Ein Jahr ist eine lange Zeit. | Rok to długi czas.
+s Zwei Jahre sind lang. | Dwa lata to długo.
+s Ich bin eine Woche in der Stadt. | Jestem w mieście tydzień.
+s Ich bin zwei Stunden in der Schule. | Jestem w szkole dwie godziny.
+s Ich komme morgen früh. | Przyjdę jutro rano.
+s Er kommt oft zu mir. | On często do mnie przychodzi.
+s Ich esse nie Fisch. | Nigdy nie jem ryby.
+s Manchmal trinke ich Wein. | Czasem piję wino.
+s Mein Vater ist oft früh hier. | Mój tata jest często wcześnie tutaj.
+s Der Lehrer hat nie Zeit. | Nauczyciel nigdy nie ma czasu.
+s Wir gehen morgen zur Schule. | Jutro idziemy do szkoły.
+s Ich trinke immer Kaffee am Morgen. | Zawsze piję kawę rano.
+s Das Kind ist drei Jahre alt. | Dziecko ma trzy lata.
+s Ich habe viele Stunden Zeit. | Mam wiele godzin czasu.
+
+== Móc, musieć, chcieć | M
+w kann | mogę, może
+w kannst | możesz
+w können | móc, możemy, mogą
+w könnt | możecie
+w muss | muszę, musi
+w musst | musisz
+w müssen | musieć, musimy, muszą
+w müsst | musicie
+w will | chcę, chce
+w willst | chcesz
+w wollen | chcieć, chcemy, chcą
+s Ich kann kommen. | Mogę przyjść.
+s Kannst du morgen kommen? | Możesz jutro przyjść?
+s Wir können heute nicht kommen. | Nie możemy dzisiaj przyjść.
+s Ich muss zur Schule gehen. | Muszę iść do szkoły.
+s Du musst viel Wasser trinken. | Musisz pić dużo wody.
+s Er muss heute früh kommen. | On musi dziś przyjść wcześnie.
+s Wir müssen zu Hause essen. | Musimy jeść w domu.
+s Ihr müsst nicht kommen. | Nie musicie przychodzić.
+s Ich will Kaffee trinken. | Chcę pić kawę.
+s Willst du mit uns essen? | Chcesz jeść z nami?
+s Das Kind will nicht essen. | Dziecko nie chce jeść.
+s Wir wollen am Meer essen. | Chcemy jeść nad morzem.
+s Kann ich Wasser haben? | Czy mogę dostać wodę?
+s Was willst du machen? | Co chcesz robić?
+s Was kann ich für dich machen? | Co mogę dla ciebie zrobić?
+s Er kann nicht gehen. | On nie może iść.
+s Könnt ihr mit uns kommen? | Możecie pójść z nami?
+s Ich muss auch essen. | Ja też muszę jeść.
+s Wollt ihr Kaffee? | Chcecie kawy?
+w wollt | chcecie
+
+== Jedzenie 2 | J
+w Bier | piwo | das | die Biere
+w Suppe | zupa | die | die Suppen
+w Fleisch | mięso | das | –
+w Salat | sałatka, sałata | der | die Salate
+w Kuchen | ciasto | der | die Kuchen
+w Ei | jajko | das | die Eier
+w Hunger | głód | der | –
+w Durst | pragnienie | der | –
+s Ich habe Hunger. | Jestem głodny.
+s Hast du Durst? | Chce ci się pić?
+s Wir haben Hunger und Durst. | Jesteśmy głodni i spragnieni.
+s Ich möchte Suppe und Brot. | Poproszę zupę i chleb.
+s Er isst Fleisch und Salat. | On je mięso i sałatkę.
+s Ich esse kein Fleisch. | Nie jem mięsa.
+s Das Kind möchte Kuchen. | Dziecko chce ciasto.
+s Möchtest du ein Ei? | Chcesz jajko?
+s Ich trinke Bier. | Piję piwo.
+s Mein Vater trinkt oft Bier. | Mój tata często pije piwo.
+s Die Suppe ist sehr gut. | Zupa jest bardzo dobra.
+s Der Kuchen ist für das Kind. | Ciasto jest dla dziecka.
+s Ich habe Hunger, aber ich habe kein Brot. | Jestem głodny, ale nie mam chleba.
+s Ich habe Durst, ich möchte Wasser. | Chce mi się pić, chcę wody.
+s Wir essen am Abend Suppe. | Wieczorem jemy zupę.
+s Möchtest du Fleisch oder Fisch? | Chcesz mięso czy rybę?
+s Das Ei ist für mich. | Jajko jest dla mnie.
+s Der Salat ist nicht groß. | Sałatka nie jest duża.
+
+== W domu | D
+w Zimmer | pokój | das | die Zimmer
+w Tür | drzwi | die | die Türen
+w Tisch | stół | der | die Tische
+w Stuhl | krzesło | der | die Stühle
+w Fenster | okno | das | die Fenster
+w Bett | łóżko | das | die Betten
+w Stühle | krzesła
+w Küche | kuchnia | die | die Küchen
+w Wohnung | mieszkanie | die | die Wohnungen
+s Das Zimmer ist klein, aber schön. | Pokój jest mały, ale ładny.
+s Die Küche ist groß. | Kuchnia jest duża.
+s Das Brot ist auf dem Tisch. | Chleb jest na stole.
+s Der Stuhl ist neu. | Krzesło jest nowe.
+s Die Tür ist links. | Drzwi są po lewej.
+s Das Fenster ist rechts. | Okno jest po prawej.
+s Das Bett ist im Zimmer. | Łóżko jest w pokoju.
+s Mein Zimmer hat ein Fenster und eine Tür. | Mój pokój ma okno i drzwi.
+s Die Wohnung ist in der Stadt. | Mieszkanie jest w mieście.
+s Wir haben eine Wohnung und ein Haus. | Mamy mieszkanie i dom.
+s Die Wohnung hat drei Zimmer. | Mieszkanie ma trzy pokoje.
+s Ich bin in der Küche. | Jestem w kuchni.
+s Der Tisch ist zu klein. | Stół jest za mały.
+s Meine Schwester ist im Zimmer. | Moja siostra jest w pokoju.
+s Wo ist der Stuhl? | Gdzie jest krzesło?
+s Das Kind ist auf dem Bett. | Dziecko jest na łóżku.
+s Der Tisch und der Stuhl sind neu. | Stół i krzesło są nowe.
+s Er isst in der Küche. | On je w kuchni.
+s Das Zimmer hat zwei Fenster. | Pokój ma dwa okna.
+s Die Küche hat einen Tisch und vier Stühle. | Kuchnia ma stół i cztery krzesła.
+
+== Szkoła i język | S
+w Arbeit | praca | die | –
+w Buch | książka | das | die Bücher
+w Name | imię, nazwa | der | die Namen
+w Wort | słowo | das | die Wörter
+w Wörter | słowa
+w Frage | pytanie | die | die Fragen
+w Antwort | odpowiedź | die | die Antworten
+w Sprache | język | die | die Sprachen
+w Deutsch | niemiecki (język)
+w Anna | Anna
+w lerne | uczę się
+w lernst | uczysz się
+w lernt | uczy się, uczycie się
+w lernen | uczyć się, uczymy się
+w spreche | mówię
+w sprichst | mówisz
+w spricht | mówi
+w sprechen | mówić, mówimy
+s Ich lerne Deutsch. | Uczę się niemieckiego.
+s Du lernst Deutsch. | Uczysz się niemieckiego.
+s Meine Schwester lernt in der Schule. | Moja siostra uczy się w szkole.
+s Wir lernen am Abend. | Uczymy się wieczorem.
+s Ich spreche Deutsch. | Mówię po niemiecku.
+s Sprichst du Deutsch? | Mówisz po niemiecku?
+s Der Lehrer spricht schnell. | Nauczyciel mówi szybko.
+s Wir sprechen nicht viel. | Nie mówimy dużo.
+s Das Wort ist neu. | To słowo jest nowe.
+s Das Buch ist alt. | Książka jest stara.
+s Ich habe eine Frage. | Mam pytanie.
+s Die Antwort ist gut. | Odpowiedź jest dobra.
+s Wie ist dein Name? | Jak masz na imię?
+s Mein Name ist Anna. | Mam na imię Anna.
+s Die Sprache ist schön. | Język jest piękny.
+s Meine Arbeit ist in der Stadt. | Moja praca jest w mieście.
+s Ich habe viel Arbeit. | Mam dużo pracy.
+s Hast du eine Frage zum Buch? | Masz pytanie do książki?
+s Wir lernen viele Wörter. | Uczymy się wielu słów.
+s Er spricht gut Deutsch. | On dobrze mówi po niemiecku.
+s Der Student lernt Deutsch in der Schule. | Student uczy się niemieckiego w szkole.
+
+== Spójniki i myślenie | S
+w dass | że
+w wenn | jeśli, kiedy
+w weil | ponieważ, bo
+w denn | bo, gdyż
+w dann | potem, wtedy
+w also | więc, no
+w doch | przecież, jednak
+w ob | czy (w zdaniu podrzędnym)
+w weiß | wiem, wie
+w glaube | wierzę, myślę
+s Ich weiß, dass du Hunger hast. | Wiem, że jesteś głodny.
+s Ich glaube, dass er morgen kommt. | Myślę, że on jutro przyjdzie.
+s Ich weiß nicht, ob er kommt. | Nie wiem, czy on przyjdzie.
+s Wenn du Hunger hast, isst du Brot. | Jeśli jesteś głodny, jesz chleb.
+s Ich esse nicht, weil ich keine Zeit habe. | Nie jem, bo nie mam czasu.
+s Ich kann nicht kommen, denn ich habe Arbeit. | Nie mogę przyjść, bo mam pracę.
+s Ich esse Brot und dann trinke ich Kaffee. | Jem chleb, a potem piję kawę.
+s Also gut, ich komme. | No dobrze, przyjdę.
+s Das ist doch gut! | Przecież to dobre!
+s Wenn ich Zeit habe, komme ich. | Jeśli będę miał czas, przyjdę.
+s Ich weiß, dass das Kind Hunger hat. | Wiem, że dziecko jest głodne.
+s Wenn es heute nicht geht, komme ich morgen. | Jeśli dziś się nie da, przyjdę jutro.
+s Ich weiß nicht, was er macht. | Nie wiem, co on robi.
+s Ich weiß nicht, wo die Schule ist. | Nie wiem, gdzie jest szkoła.
+s Sie weiß, dass ich hier bin. | Ona wie, że tu jestem.
+s Ich glaube, dass du Durst hast. | Myślę, że chce ci się pić.
+s Wenn du kannst, kommst du morgen. | Jeśli możesz, przyjdziesz jutro.
+s Er kommt nicht, weil er keine Zeit hat. | On nie przyjdzie, bo nie ma czasu.

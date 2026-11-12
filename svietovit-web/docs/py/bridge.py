@@ -430,8 +430,18 @@ def check(payload_json):
         return json.dumps({"ok": ok, "solution": solution, "answer_pair": list(ex["answer"])}, ensure_ascii=False)
     elif t == "build":
         given = p.get("tokens", [])
+        note = None
         if _join(given) == _join(ex["answer"]):
             ok = True
+        elif _join(_no_punct(given)) == _join(_no_punct(ex["answer"])):
+            ok = True        # brak interpunkcji nie jest błędem, ale zwracamy uwagę
+            pl = _cur["lang"] == "pl"
+            comma = "," in ex["answer"]
+            note = (("Zaliczone, ale w zdaniu powinien być %s: %s\nPrzecinek bywa ważny: „Idziemy jeść, babciu” to nie to samo co „Idziemy jeść babciu”."
+                     if comma else "Zaliczone, ale pamiętaj o interpunkcji: %s")
+                    if pl else
+                    ("Accepted, but the sentence needs a %s: %s\nA comma can change the meaning: “Let's eat, grandma” is not “Let's eat grandma”."
+                     if comma else "Accepted, but mind the punctuation: %s")) % ((("przecinek" if pl else "comma"), _join(ex["answer"])) if comma else (_join(ex["answer"]),))
         else:
             ok = False
             try:
@@ -457,7 +467,7 @@ def check(payload_json):
         ok = True
     elif t == "draw":
         return json.dumps({"ok": "self", "solution": ex["answer"]}, ensure_ascii=False)
-    return json.dumps({"ok": ok, "why": why, "solution": solution, "answer": ex.get("answer") if t in ("choice",) else None},
+    return json.dumps({"ok": ok, "why": why, "solution": solution, "note": locals().get("note"), "answer": ex.get("answer") if t in ("choice",) else None},
                       ensure_ascii=False)
 
 
