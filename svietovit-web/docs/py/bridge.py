@@ -409,6 +409,18 @@ def _chat(cid):
     return next(c for c in _cur["C"].CHATS if c["id"] == cid)
 
 
+def _punct():
+    E, C = _cur["E"], _cur["C"]
+    out = set(getattr(C, "PUNCT", None) or getattr(E, "PUNCT", None) or ())
+    out |= set(getattr(E, "OPEN_PUNCT", ()) or ())
+    return out | set("!?.,:;¿¡。！？，、")
+
+
+def _no_punct(toks):
+    p = _punct()
+    return [t for t in toks if t not in p]
+
+
 def chat_get(cid):
     c = _chat(cid)
     E, st = _cur["E"], _cur["state"]
@@ -424,7 +436,7 @@ def chat_get(cid):
             toks, pl = t["build"]
             extra = [h for h in learned if h not in toks]
             random.shuffle(extra)
-            bank = list(toks) + extra[:2]
+            bank = _no_punct(toks) + extra[:2]   # interpunkcji nie trzeba układać
             random.shuffle(bank)
             item["build"] = {"prompt": pl, "bank": _tiles(bank), "answer": list(toks), "text": _join(toks)}
         turns.append(item)
@@ -437,14 +449,14 @@ def chat_check(cid, turn, tokens):
     E = _cur["E"]
     toks, _pl = c["turns"][int(turn)]["build"]
     given = list(tokens)
-    ok = _join(given) == _join(toks)
+    ok = _join(_no_punct(given)) == _join(_no_punct(toks))
     why = None
     if not ok:
         try:
             why = E.explain_mistake(given, toks) if _is_hanzi() else E.explain_mistake(given, toks)
         except TypeError:
             why = None
-    return json.dumps({"ok": ok, "why": why, "text": _join(given), "sub": _sent_sub(given) if given else ""}, ensure_ascii=False)
+    return json.dumps({"ok": ok, "why": why, "text": _join(toks) if ok else _join(given), "sub": _sent_sub(toks if ok else given) if given else ""}, ensure_ascii=False)
 
 
 def chat_finish(cid, mistakes):
