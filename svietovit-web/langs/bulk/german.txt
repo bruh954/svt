@@ -407,6 +407,38 @@ s Ich glaube, dass du Durst hast. | Myślę, że chce ci się pić.
 s Wenn du kannst, kommst du morgen. | Jeśli możesz, przyjdziesz jutro.
 s Er kommt nicht, weil er keine Zeit hat. | On nie przyjdzie, bo nie ma czasu.
 
+== Słowa złożone | Z
+n W niemieckim słowa skleja się w jedno, a rodzaj całego złożenia bierze ostatni człon: das Zimmer → das Kinderzimmer. Pod kartą nowego słowa zobaczysz, z czego się składa.
+w Haustür | drzwi wejściowe | die | die Haustüren | Haus (dom) + Tür (drzwi) → „drzwi domu”
+w Schulbuch | podręcznik | das | die Schulbücher | Schule (szkoła) + Buch (książka) → „książka szkolna”
+w Kinderzimmer | pokój dziecięcy | das | die Kinderzimmer | Kinder (dzieci) + Zimmer (pokój) → „pokój dzieci”
+w Käsebrot | kanapka z serem | das | die Käsebrote | Käse (ser) + Brot (chleb) → „chleb z serem”
+w Apfelkuchen | szarlotka | der | die Apfelkuchen | Apfel (jabłko) + Kuchen (ciasto) → „ciasto jabłkowe”
+w Fischsuppe | zupa rybna | die | die Fischsuppen | Fisch (ryba) + Suppe (zupa) → „zupa z ryby”
+w Milchkaffee | kawa z mlekiem | der | die Milchkaffees | Milch (mleko) + Kaffee (kawa) → „kawa z mlekiem”
+w Lehrerzimmer | pokój nauczycielski | das | die Lehrerzimmer | Lehrer (nauczyciel) + Zimmer (pokój) → „pokój nauczycieli”
+w Hotelzimmer | pokój hotelowy | das | die Hotelzimmer | Hotel (hotel) + Zimmer (pokój) → „pokój w hotelu”
+w Wochentag | dzień tygodnia | der | die Wochentage | Woche (tydzień) + Tag (dzień) → „dzień tygodnia”
+w Abendbrot | kolacja | das | – | Abend (wieczór) + Brot (chleb) → „wieczorny chleb”, czyli kolacja
+w Wohnzimmer | salon | das | die Wohnzimmer | wohnen (mieszkać) + Zimmer (pokój) → „pokój do mieszkania”
+w Küchentisch | stół kuchenny | der | die Küchentische | Küche (kuchnia) + Tisch (stół) → „stół z kuchni”
+s Die Haustür ist klein. | Drzwi wejściowe są małe.
+s Das Kind hat ein Schulbuch. | Dziecko ma podręcznik.
+s Das Kinderzimmer ist schön. | Pokój dziecięcy jest ładny.
+s Ich esse ein Käsebrot. | Jem kanapkę z serem.
+s Ich möchte Apfelkuchen. | Chcę szarlotkę.
+s Die Fischsuppe ist gut. | Zupa rybna jest dobra.
+s Er trinkt einen Milchkaffee. | On pije kawę z mlekiem.
+s Das Lehrerzimmer ist dort. | Pokój nauczycielski jest tam.
+s Das Hotelzimmer ist groß. | Pokój hotelowy jest duży.
+s Was ist ein Wochentag? | Co to jest dzień tygodnia?
+s Wir essen Abendbrot. | Jemy kolację.
+s Das Wohnzimmer ist groß. | Salon jest duży.
+s Der Küchentisch ist klein. | Stół kuchenny jest mały.
+s Das Kind ist im Kinderzimmer. | Dziecko jest w pokoju dziecięcym.
+s Ich habe ein Buch im Wohnzimmer. | Mam książkę w salonie.
+s Die Lehrer essen im Lehrerzimmer. | Nauczyciele jedzą w pokoju nauczycielskim.
+
 == Wzór: Ich möchte … i Ich habe … | W
 n Szkielet jest ten sam, zmieniasz tylko to, czego chcesz albo co masz. Rzeczownik po einen, ein, eine dostaje rodzaj: der Kaffee → einen Kaffee, das Brot → ein Brot.
 p Ich möchte {0}. | Poproszę {0}. | einen Kaffee=kawę ; ein Brot=chleb ; einen Tee=herbatę ; Wasser=wodę ; Suppe=zupę ; einen Apfel=jabłko ; ein Ei=jajko ; Kuchen=ciasto ; einen Fisch=rybę ; ein Bier=piwo

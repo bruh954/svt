@@ -197,7 +197,8 @@ def _word_view(h):
         return {"form": w["hanzi"], "tr": w["pinyin"], "meaning": w["english"], "cog": None, "hook": w.get("hook"),
                 "letter": False, "name": None}
     ipa = _ipa(_cur.get("cid"), w)
-    return {"form": w["form"], "tr": (w["tr"] + "   " + ipa) if ipa else w["tr"], "meaning": w["pl"], "cog": w.get("cog"), "hook": w.get("hook"),
+    parts = (_by_lang(getattr(_cur["C"], "PARTS", {})) or {}).get(h)
+    return {"parts": parts, "form": w["form"], "tr": (w["tr"] + "   " + ipa) if ipa else w["tr"], "meaning": w["pl"], "cog": w.get("cog"), "hook": w.get("hook"),
             "letter": bool(w.get("letter")), "name": w.get("name")}
 
 

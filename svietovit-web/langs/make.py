@@ -250,7 +250,7 @@ def transform(C, tok, expl):
         chats.append(dict(c, partner=tok(c["partner"]), avatar=tok(c["avatar"]), turns=turns))
     return {"PUNCT": set(C.PUNCT), "TRACKS": dict(C.TRACKS), "UNITS": units, "INSIGHTS": ins,
             "ENDINGS_INSIGHT": dict(C.ENDINGS_INSIGHT), "ENDINGS": ends, "CHAT_EXTRA": extra, "CHATS": chats,
-            "ARTICLES": dict(getattr(C, "ARTICLES", {})), "PLURALS": dict(getattr(C, "PLURALS", {})),
+            "ARTICLES": dict(getattr(C, "ARTICLES", {})), "PLURALS": dict(getattr(C, "PLURALS", {})), "PARTS": dict(getattr(C, "PARTS", {})),
             "PARADIGM_LABELS": {k: ([tok(x) for x in v] if k in ("os", "t_ff") or k.startswith("t_m") else list(v)) for k, v in getattr(C, "PARADIGM_LABELS", {}).items()},
             "PARADIGMS": [(p[0], p[1], _ptitle(p, tok), p[3], (p[4] if p[3] == "t_ff" else "; ".join(tok(f) for f in p[4].split("; "))), expl(p[5]) if p[5] else p[5])
                           for p in getattr(C, "PARADIGMS", [])]}
@@ -287,6 +287,8 @@ def dump(D, doc):
         o += ["", "ARTICLES = %r" % D["ARTICLES"]]
     if D.get("PLURALS"):
         o += ["", "PLURALS = %r" % D["PLURALS"]]
+    if D.get("PARTS"):
+        o += ["", "PARTS = %r" % D["PARTS"]]
     if D.get("PARADIGMS"):
         o += ["", "PARADIGM_LABELS = {"] + ["    %r: %r," % kv for kv in D["PARADIGM_LABELS"].items()] + ["}", "", "PARADIGMS = ["]
         o += ["    %r," % (p,) for p in D["PARADIGMS"]] + ["]"]

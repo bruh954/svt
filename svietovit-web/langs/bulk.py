@@ -103,6 +103,7 @@ def build(cid):
     existing = set(known)
     secs = parse(os.path.join(HERE, "bulk", cid + ".txt"))
     units, art, plu, errors, insights = [], {}, {}, [], []
+    prt = {}
     seen = {x[1] for u in C.UNITS for x in u.get("sentences", [])}   # tłumaczenia muszą być unikalne
     seen_tok = {tuple(x[0]) for u in C.UNITS for x in u.get("sentences", [])}
     skipped = []
@@ -116,6 +117,8 @@ def build(cid):
                 art[p[0]] = p[2]
             if len(p) > 3 and p[3]:
                 plu[p[0]] = p[3]
+            if len(p) > 4 and p[4]:
+                prt[p[0]] = p[4]
         known |= {w[0] for w in words}
         sents = []
         for n, p in sec["p"]:
@@ -152,11 +155,11 @@ def build(cid):
         units.append({"id": "f%02d" % i, "title": sec["title"], "icon": sec["icon"], "track": "jezyk", "words": words, "sentences": sents})
     if skipped:
         print("pominięto %d zdań, których tłumaczenie już jest: %s" % (len(skipped), "; ".join(skipped[:6])))
-    return src, base, units, art, plu, errors, C, insights
+    return src, base, units, art, plu, errors, C, insights, prt
 
 
 def write(cid):
-    src, base, units, art, plu, errors, C, insights = build(cid)
+    src, base, units, art, plu, errors, C, insights, prt = build(cid)
     if errors:
         print("\n".join(errors[:60])); print("błędów: %d (nic nie zapisano)" % len(errors)); sys.exit(1)
     block = START % cid + "UNITS += %r\n" % (units,)
@@ -164,6 +167,8 @@ def write(cid):
         block += "ARTICLES.update(%r)\n" % (art,)
     if plu:
         block += "PLURALS.update(%r)\n" % (plu,)
+    if prt:
+        block += "PARTS.update(%r)\n" % (prt,)
     for uid, ins in insights:
         block += "INSIGHTS.setdefault(%r, []).append(%r)\n" % (uid, ins)
     block += END

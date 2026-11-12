@@ -41,7 +41,7 @@ const TX = {
     chat_unlocked: "Odblokowano rozmowę", back_home: "Wróć", chat_done: "Rozmowa ukończona!", back_chats: "Wróć do rozmów",
     again: "Jeszcze raz", tap_tr: "Dotknij wiadomości, żeby zobaczyć tłumaczenie.", pick_answer: "Wybierz odpowiedź", say: "Powiedz:",
     send: "Wyślij", practice_t: "Powtórka", practice_d: "Mieszane ćwiczenia ze słów, które już znasz. Odzyskujesz serce.",
-    sound_t: "Trening dźwięków", sound_t_h: "Trening tonów", sound_d: "Samo słuchanie i rozpoznawanie.",
+    parts: "Składa się z:", sound_t: "Trening dźwięków", sound_t_h: "Trening tonów", sound_d: "Samo słuchanie i rozpoznawanie.",
     stats: "Statystyki", level: "Poziom", xp_total: "XP łącznie", best_streak: "Najdłuższa seria", words: "Poznane słowa", lessons: "Lekcje",
     week: "Ostatnie 7 dni", daily_goal: "Cel dzienny", settings: "Ustawienia", pron: "Pokazuj wymowę", sound: "Dźwięki", voice: "Czytaj na głos",
     shop: "Sklep", freeze: "Zamrożenie serii", refill_hearts: "Uzupełnij serca", gems: "klejnoty", reset: "Zeruj postęp w tym kursie",
@@ -71,7 +71,7 @@ const TX = {
     chat_unlocked: "Unlocked conversation", back_home: "Back", chat_done: "Conversation complete!", back_chats: "Back to chats",
     again: "Again", tap_tr: "Tap a message to see its translation.", pick_answer: "Choose a reply", say: "Say:",
     send: "Send", practice_t: "Practice", practice_d: "Mixed exercises from words you already know. Earns a heart back.",
-    sound_t: "Sound training", sound_t_h: "Tone training", sound_d: "Just listening and recognising.",
+    parts: "Built from:", sound_t: "Sound training", sound_t_h: "Tone training", sound_d: "Just listening and recognising.",
     stats: "Stats", level: "Level", xp_total: "Total XP", best_streak: "Best streak", words: "Words learned", lessons: "Lessons",
     week: "Last 7 days", daily_goal: "Daily goal", settings: "Settings", pron: "Show pronunciation", sound: "Sounds", voice: "Read aloud",
     shop: "Shop", freeze: "Streak freeze", refill_hearts: "Refill hearts", gems: "gems", reset: "Reset progress in this course",
@@ -486,7 +486,8 @@ const RENDER = {
         !ex.letter && pron && ex.tr ? h("div", { class: "sub", style: "font-style:italic" }, t("read") + ": " + ex.tr) : null,
         h("div", { style: "font-size:calc(19px*var(--k));margin-top:6px", dir: "auto" }, ex.meaning)),
       speakBtn(ex.audio || ex.form),
-      ex.cog ? h("div", { class: "cog" }, h("b", {}, t("know_pl") + " "), ex.cog) : null, hookEl(ex.hook));
+      ex.cog ? h("div", { class: "cog" }, h("b", {}, t("know_pl") + " "), ex.cog) : null,
+      ex.parts ? h("div", { class: "cog" }, h("b", {}, t("parts") + " "), ex.parts) : null, hookEl(ex.hook));
     setTimeout(() => speak(ex.audio || ex.form, true), 200);
   },
   insight(ex, L) {
