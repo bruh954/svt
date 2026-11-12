@@ -184,3 +184,8 @@ textarea.input{font-size:calc(16px*var(--k));min-height:90px}
 .tn.t1{color:var(--t1)}.tn.t2{color:var(--t2)}.tn.t3{color:var(--t3)}.tn.t4{color:var(--t4)}.tn.t5{color:var(--t5)}
 .tone-legend{display:flex;gap:14px;justify-content:center;padding:6px 0 2px;font-size:calc(17px*var(--k));font-weight:700}
 .msg.me .tn{color:inherit}
+
+/* larpy */
+.larp-item{border-color:var(--tagc)}
+.note.deadly{background:var(--redl);color:var(--badt);font-weight:700}
+.larp-end.win{background:var(--greenl);border-color:var(--green)}.larp-end.partial{background:var(--yelll)}.larp-end.fail{background:var(--redl);border-color:var(--red)}

@@ -25,7 +25,7 @@ const store = {
 /* ---------------- teksty interfejsu ---------------- */
 const TX = {
   pl: {
-    motto: "szkoła języków dawnych i dalekich", learn_in: "Uczę się po", tonecolor: "Kolory tonów", script: "Pismo ćwiczeń", size: "Litery", theme: "Motyw", th_navy: "Granat", th_sky: "Jasny", new: "nowy", xp: "XP",
+    motto: "szkoła języków dawnych i dalekich", learn_in: "Uczę się po", larps: "Larpy", larps_d: "Sceny ze stawką: płacisz wpisowe w XP i możesz je stracić.", larp_enter: "Wchodzę", larp_rules: "Wpisowe %d XP. Wygrana: +%d XP. Udało się mimo potknięć: zwrot wpisowego. Porażka: tracisz wpisowe. Zła odpowiedź zabiera punkt cierpliwości, a pytanie z ☠ kończy scenę od razu.", larp_need: "Potrzebujesz %d XP, żeby wejść.", larp_goal: "Cel", larp_deadly: "☠ Jedna szansa: zła odpowiedź kończy scenę.", larp_weak: "Niezręcznie.", larp_win: "Sukces!", larp_partial: "Udało się, ale…", larp_fail: "Porażka", larp_quit_t: "Wyjść ze sceny?", larp_quit_d: "Stracisz wpisowe.", larp_refund: "Wpisowe zwrócone", larp_patience: "Cierpliwość", larp_correct: "Poprawnie: ", tonecolor: "Kolory tonów", script: "Pismo ćwiczeń", size: "Litery", theme: "Motyw", th_navy: "Granat", th_sky: "Jasny", new: "nowy", xp: "XP",
     foot: "Postęp zapisuje się w tej przeglądarce. Dodaj stronę do ekranu głównego, żeby działała jak aplikacja.",
     reports: "Zgłoszone błędy: %d", copy: "SKOPIUJ", clear: "WYCZYŚĆ", copied: "Skopiowano. Wklej zgłoszenia w rozmowie z Claude'em.",
     rep_title: "Zgłoś błąd w ćwiczeniu", rep_hint: "Opis (nie musisz nic pisać)", rep_send: "ZAPISZ", rep_cancel: "ANULUJ",
@@ -55,7 +55,7 @@ const TX = {
     installed: "Dodaj do ekranu głównego, żeby uruchamiać jak aplikację.", err: "Coś poszło nie tak:", retry: "Spróbuj ponownie",
   },
   en: {
-    motto: "a school of ancient and faraway languages", learn_in: "I learn in", tonecolor: "Tone colours", script: "Exercise script", size: "Text size", theme: "Theme", th_navy: "Navy", th_sky: "Light", new: "new", xp: "XP",
+    motto: "a school of ancient and faraway languages", learn_in: "I learn in", larps: "Larps", larps_d: "Scenes with stakes: you pay an XP entry fee and can lose it.", larp_enter: "Enter", larp_rules: "Entry fee %d XP. Win: +%d XP. Made it despite slips: fee refunded. Fail: you lose the fee. A wrong reply costs a point of patience, and a ☠ question ends the scene at once.", larp_need: "You need %d XP to enter.", larp_goal: "Goal", larp_deadly: "☠ One chance: a wrong reply ends the scene.", larp_weak: "Awkward.", larp_win: "Success!", larp_partial: "You made it, but…", larp_fail: "Failed", larp_quit_t: "Leave the scene?", larp_quit_d: "You will lose the entry fee.", larp_refund: "Entry fee refunded", larp_patience: "Patience", larp_correct: "Correct: ", tonecolor: "Tone colours", script: "Exercise script", size: "Text size", theme: "Theme", th_navy: "Navy", th_sky: "Light", new: "new", xp: "XP",
     foot: "Progress is saved in this browser. Add the page to your home screen to use it like an app.",
     reports: "Reported mistakes: %d", copy: "COPY", clear: "CLEAR", copied: "Copied. Paste the reports into your chat with Claude.",
     rep_title: "Report a mistake in this exercise", rep_hint: "Description (optional)", rep_send: "SAVE", rep_cancel: "CANCEL",
@@ -349,10 +349,15 @@ function showWelcome() {
 function chatsTab() {
   const H = cur.home;
   const cols = ["#B3261E", "#2A6FB0", "#4F8A3A", "#8C3B9E", "#D26A12", "#1F7A78"];
-  return H.chats.map((c, i) => h("button", { class: "chat-item" + (c.unlocked ? "" : " locked"), onclick: () => c.unlocked && openChat(c.id, i) },
+  const larps = (H.larps || []).length ? [h("div", { class: "track", style: "margin-top:22px" }, "· " + t("larps") + " ·", h("small", {}, t("larps_d"))),
+    ...H.larps.map(l => h("button", { class: "chat-item larp-item" + (l.unlocked ? "" : " locked"), onclick: () => l.unlocked && larpSheet(l) },
+      h("div", { class: "av", style: "background:#7A2E5E" }, l.avatar),
+      h("div", {}, h("div", { class: "t" }, l.title), h("div", { class: "s" }, l.partner + " · −" + l.fee + " XP")),
+      h("div", { class: "stars" }, l.best === 2 ? "★" : l.best === 1 ? "◐" : l.best === 0 ? "✕" : "")))] : [];
+  return [...H.chats.map((c, i) => h("button", { class: "chat-item" + (c.unlocked ? "" : " locked"), onclick: () => c.unlocked && openChat(c.id, i) },
     h("div", { class: "av", style: `background:${cols[i % cols.length]}` }, c.avatar),
     h("div", {}, h("div", { class: "t" }, c.partner), h("div", { class: "s" }, c.title)),
-    h("div", { class: "stars" }, "★".repeat(c.stars) + "☆".repeat(3 - c.stars))));
+    h("div", { class: "stars" }, "★".repeat(c.stars) + "☆".repeat(3 - c.stars)))), ...larps];
 }
 function openChat(cid, idx) {
   const chat = J(B.chat_get(cid)), color = ["#B3261E", "#2A6FB0", "#4F8A3A", "#8C3B9E", "#D26A12", "#1F7A78"][idx % 6];
@@ -717,3 +722,77 @@ new MutationObserver((muts) => {
   if (!toneOn()) return;
   for (const m of muts) m.addedNodes.forEach(colorTree);
 }).observe(document.getElementById("app"), { childList: true, subtree: true });
+
+/* ---------------- larpy: sceny ze stawką ---------------- */
+function larpSheet(l) {
+  const close = sheet([h("h3", {}, l.title), h("p", {}, l.scene), h("p", {}, h("b", {}, t("larp_goal") + ": "), l.goal),
+    h("p", { style: "font-size:calc(13.5px*var(--k))" }, t("larp_rules").replace("%d", l.fee).replace("%d", l.fee * 3)),
+    l.can_pay ? h("button", { class: "btn", onclick: () => { close(); openLarp(l.id); } }, t("larp_enter") + " (−" + l.fee + " XP)")
+      : h("p", { style: "color:var(--bad2);font-weight:700" }, t("larp_need").replace("%d", l.fee)),
+    h("button", { class: "btn ghost", onclick: () => close() }, t("close"))]);
+}
+function openLarp(lid) {
+  const S = J(B.larp_start(lid)); if (!S.ok) { toast(t("larp_need").replace("%d", "")); return; }
+  track("larp_start", { course: cur.cid, larp: lid });
+  let node = S.node, patience = S.patience, over = false; const excluded = new Set();
+  const log = h("div", { class: "log" }), reply = h("div", { class: "reply" }), pips = h("span", { class: "stat s-heart", title: t("larp_patience") });
+  const drawPips = () => { pips.textContent = "◆".repeat(Math.max(0, patience)) + "◇".repeat(Math.max(0, S.max_patience - patience)); };
+  const leave = () => { if (over) { cur.tab = "chats"; return renderHome(); } confirmBox(t("larp_quit_t"), t("larp_quit_d"), t("quit"), t("keep"), () => { B.larp_abandon(); cur.tab = "chats"; renderHome(); }); };
+  const scr = show([h("div", { class: "top" }, h("button", { class: "back", onclick: leave }, "‹"),
+    h("div", { class: "av", style: "background:#7A2E5E;width:38px;height:38px;font-size:calc(19px*var(--k))" }, S.avatar),
+    h("div", { class: "ttl", dir: "auto" }, S.partner), pips),
+    h("div", { class: "goal", style: "font-weight:400" }, h("b", {}, t("larp_goal") + ": "), S.goal), log, reply], "course");
+  scr.style.cssText = themeStyle(); drawPips();
+  const toBottom = () => setTimeout(() => log.scrollTo({ top: log.scrollHeight, behavior: "smooth" }), 30);
+  const bubble = (text, sub, pl, mine, wrong) => {
+    const b = h("div", { class: "msg" + (mine ? " me" : "") + (wrong ? " wrong" : ""), dir: "auto", onclick: () => b.classList.toggle("open") }, text, sub ? h("small", {}, sub) : null, pl ? h("div", { class: "en" }, pl) : null);
+    log.append(b); toBottom(); return b;
+  };
+  const note = (txt, cls) => { log.append(h("div", { class: "note" + (cls ? " " + cls : "") }, txt)); toBottom(); };
+  note(S.scene); note(t("tap_tr"));
+  const botSay = () => {
+    reply.replaceChildren(); excluded.clear();
+    const typing = h("div", { class: "msg" }, "…"); log.append(typing); toBottom();
+    setTimeout(() => { typing.remove(); bubble(node.bot_text, node.bot_sub, node.pl); speak(node.bot_text, true); if (node.note) note(node.note); if (node.deadly) note(t("larp_deadly"), "deadly"); showReply(); }, 600);
+  };
+  const finish = (ev) => {
+    over = true; reply.replaceChildren(); (ev.outcome === "fail" ? sfx.wrong : sfx.done)(); track("larp_end", { course: cur.cid, larp: lid, outcome: ev.outcome });
+    const xp = ev.outcome === "win" ? `+${ev.gain} XP (${t("larp_enter") === "Enter" ? "net" : "zysk"} +${ev.net}) · ◆ +${ev.gems}` : ev.outcome === "partial" ? t("larp_refund") : `−${ev.fee} XP`;
+    log.append(h("div", { class: "card larp-end " + ev.outcome, style: "text-align:center" }, h("b", { style: "font-size:calc(20px*var(--k))" }, t("larp_" + ev.outcome)), h("div", { style: "margin:6px 0" }, ev.text), h("div", { style: "font-weight:700" }, xp),
+      ev.streak_extended ? h("div", { style: "color:var(--bad2);font-weight:700" }, "☀ " + t("streak_days", ev.streak)) : null)); toBottom();
+    refreshHome(); const me = (cur.home.larps || []).find(x => x.id === lid);
+    reply.append(h("button", { class: "btn", onclick: () => { cur.tab = "chats"; renderHome(); } }, t("back_chats")),
+      me && me.can_pay ? h("button", { class: "btn ghost", onclick: () => openLarp(lid) }, t("again") + " (−" + me.fee + " XP)") : null);
+  };
+  const handle = (r) => {
+    patience = r.patience; drawPips();
+    bubble(r.text || "…", r.sub, null, true, r.verdict === "bad");
+    reply.replaceChildren();
+    if (r.verdict === "bad") { sfx.wrong(); if (r.why) note(t("think") + " " + r.why); if (r.answer && !r.end) note(t("larp_correct") + r.answer); }
+    else if (r.verdict === "weak") { sfx.tap(); note(t("larp_weak") + (r.why ? " " + r.why : "")); }
+    else sfx.correct();
+    if (r.end) return setTimeout(() => { if (r.node && r.node.end) { bubble(r.node.bot_text, r.node.bot_sub, r.node.pl); speak(r.node.bot_text, true); } finish(r.end); }, 700);
+    if (r.node) { node = r.node; return setTimeout(botSay, 500); }
+    setTimeout(showReply, 900);
+  };
+  const showReply = () => {
+    reply.replaceChildren();
+    if (node.options) {
+      reply.append(h("div", { class: "sub", style: "text-align:left" }, t("pick_answer")));
+      node.options.filter(o => !excluded.has(o.i)).sort(() => Math.random() - 0.5).forEach(o => reply.append(h("button", { class: "opt", dir: "auto", onclick: () => {
+        speak(o.text, true); excluded.add(o.i); handle(J(B.larp_answer(JSON.stringify({ option: o.i })))); } }, o.text, o.sub ? h("small", {}, o.sub) : null)));
+    } else {
+      const bd = node.build, picked = [];
+      const ans = h("div", { class: "tiles answer", style: "background:var(--white);border-radius:12px;padding:8px;min-height:60px" }), bank = h("div", { class: "tiles" });
+      const send = h("button", { class: "btn", disabled: true }, t("send"));
+      const render = () => {
+        ans.replaceChildren(...picked.map(p => tile(p, () => { picked.splice(picked.indexOf(p), 1); render(); })));
+        bank.replaceChildren(...bd.bank.filter(b => !picked.includes(b)).map(b => tile(b, () => { picked.push(b); render(); })));
+        send.disabled = !picked.length;
+      };
+      send.onclick = () => handle(J(B.larp_answer(JSON.stringify({ tokens: picked.map(p => p.v) }))));
+      reply.append(h("div", {}, h("b", {}, t("say") + " "), `„${bd.prompt}”`), ans, bank, send); render();
+    }
+  };
+  botSay();
+}
