@@ -8,7 +8,9 @@ import json
 import random
 import time
 
-COURSE_IDS = ["hanzi_hero", "glagol", "ave", "logos", "abba", "kaszeby", "hangeul", "han", "kana", "nihon"]
+COURSE_IDS = ["hanzi_hero", "glagol", "ave", "logos", "abba", "kaszeby", "hangeul", "han", "kana", "nihon",
+              "greek", "german", "french", "italian", "spanish", "russian", "turkish", "norse", "estonian", "serbian", "finnish"]
+NEW = {"greek", "german", "french", "italian", "spanish", "russian", "turkish", "norse", "estonian", "serbian", "finnish"}
 SOURCE_LANG = {"hanzi_hero": "en"}  # pozostałe kursy mają treść źródłową po polsku
 
 save_hook = None   # ustawia JavaScript: save_hook(course_id, json_string)
@@ -28,16 +30,62 @@ def _now():
     return time.time() - tz_shift
 
 
-def _load(cid, lang):
-    key = (cid, lang)
+def _load(cid, lang, variant=None):
+    key = (cid, lang, variant)
     if key in _modules:
         return _modules[key]
     src = SOURCE_LANG.get(cid, "pl")
     suffix = "" if lang == src else "_" + lang
-    E = importlib.import_module("courses.%s.engine%s" % (cid, suffix))
-    C = importlib.import_module("courses.%s.content%s" % (cid, suffix))
+    if variant:   # np. serbski cyrylicą: courses/serbian/engine_cyr.py
+        E = importlib.import_module("courses.%s.engine_%s" % (cid, variant))
+        C = importlib.import_module("courses.%s.content_%s" % (cid, variant))
+        _modules[key] = (E, C)
+        return E, C
+    try:
+        E = importlib.import_module("courses.%s.engine%s" % (cid, suffix))
+        C = importlib.import_module("courses.%s.content%s" % (cid, suffix))
+    except ImportError:  # kurs bez wersji w tym języku: używamy podstawowej
+        E = importlib.import_module("courses.%s.engine" % cid)
+        C = importlib.import_module("courses.%s.content" % cid)
     _modules[key] = (E, C)
     return E, C
+
+
+# Serbski: łacinka <-> cyrylica (identyfikatory słów w zapisie postępu są zawsze łacińskie)
+_SR = [("lj", "љ"), ("nj", "њ"), ("dž", "џ"), ("a", "а"), ("b", "б"), ("v", "в"), ("g", "г"), ("d", "д"), ("đ", "ђ"),
+       ("e", "е"), ("ž", "ж"), ("z", "з"), ("i", "и"), ("j", "ј"), ("k", "к"), ("l", "л"), ("m", "м"), ("n", "н"),
+       ("o", "о"), ("p", "п"), ("r", "р"), ("s", "с"), ("t", "т"), ("ć", "ћ"), ("u", "у"), ("f", "ф"), ("h", "х"),
+       ("c", "ц"), ("č", "ч"), ("š", "ш")]
+
+
+def _sr_cyr(text):
+    out, i, low = "", 0, text.lower()
+    while i < len(text):
+        for a, b in _SR:
+            if low.startswith(a, i):
+                out += b.upper() if text[i].isupper() else b
+                i += len(a)
+                break
+        else:
+            out += text[i]
+            i += 1
+    return out
+
+
+def _sr_lat(text):
+    out = ""
+    for ch in text:
+        for a, b in _SR:
+            if ch.lower() == b:
+                out += (a[0].upper() + a[1:]) if ch.isupper() else a
+                break
+        else:
+            out += ch
+    return out
+
+
+def _bare(t):
+    return t.replace("\u0301", "")
 
 
 def _is_hanzi():
@@ -47,22 +95,37 @@ def _is_hanzi():
 # ---------------------------------------------------------------------------
 # Otwieranie kursu / zapis
 # ---------------------------------------------------------------------------
+
+
 def open_course(cid, lang, saved_json=None):
-    E, C = _load(cid, lang)
-    st = E.State(path=None, now=_now)
+    loaded = None
     if saved_json:
         try:
             loaded = json.loads(saved_json)
-            d = E._default()
-            d.update(loaded)
-            d["settings"] = {**E._default()["settings"], **loaded.get("settings", {})}
-            st.data = d
         except ValueError:
-            pass
+            loaded = None
+    cyr = cid == "serbian" and bool(loaded and loaded.get("settings", {}).get("cyr"))
+    E, C = _load(cid, lang, "cyr" if cyr else None)
+    st = E.State(path=None, now=_now)
+    if loaded:
+        d = E._default()
+        d.update(loaded)
+        d["settings"] = {**E._default()["settings"], **loaded.get("settings", {})}
+        words = d.get("words") or {}
+        if cyr:
+            words = {(k if k.startswith("lit:") else _sr_cyr(k)): v for k, v in words.items()}
+        if any(k not in E.WORDS for k in words):   # starsze zapisy: słowa bez znaku akcentu
+            by_bare = {_bare(k): k for k in E.WORDS}
+            words = {(k if k in E.WORDS else by_bare.get(_bare(k), k)): v for k, v in words.items()}
+        d["words"] = words
+        st.data = d
 
     def save():
         if save_hook:
-            save_hook(cid, json.dumps(st.data, ensure_ascii=False))
+            data = st.data
+            if cyr:
+                data = dict(data, words={(k if k.startswith("lit:") else _sr_lat(k)): v for k, v in data["words"].items()})
+            save_hook(cid, json.dumps(data, ensure_ascii=False))
     st.save = save
     _cur.update(cid=cid, lang=lang, E=E, C=C, state=st, session=None, kind=None)
     st.check_streak()
@@ -83,13 +146,58 @@ def course_progress(cid, saved_json):
 # ---------------------------------------------------------------------------
 # Słowa i tokeny
 # ---------------------------------------------------------------------------
+
+# ---------------------------------------------------------------------------
+# IPA dla kursów bez syntezatora mowy, w których zapis (transliteracja) jest częścią nauki
+# ---------------------------------------------------------------------------
+_OCS_IPA = [("ль", "ʎ"), ("нь", "ɲ"), ("рь", "rʲ"), ("оу", "u"), ("ꙋ", "u"), ("ѹ", "u"), ("у", "u"), ("а", "a"),
+            ("б", "b"), ("в", "v"), ("г", "ɡ"), ("д", "d"), ("ѥ", "jɛ"), ("е", "ɛ"), ("ж", "ʒ"), ("ѕ", "dz"),
+            ("ꙃ", "dz"), ("з", "z"), ("ꙁ", "z"), ("и", "i"), ("і", "i"), ("к", "k"), ("л", "l"), ("м", "m"),
+            ("н", "n"), ("о", "ɔ"), ("п", "p"), ("р", "r"), ("с", "s"), ("т", "t"), ("ф", "f"), ("х", "x"),
+            ("ѡ", "ɔː"), ("щ", "ʃt"), ("ц", "ts"), ("ч", "tʃ"), ("ш", "ʃ"), ("ъ", "ʊ"), ("ꙑ", "ɨ"), ("ь", "ɪ"),
+            ("ѣ", "æ"), ("ю", "ju"), ("ꙗ", "ja"), ("ѩ", "jɛ̃"), ("ѧ", "ɛ̃"), ("ѭ", "jɔ̃"), ("ѫ", "ɔ̃"),
+            ("ѯ", "ks"), ("ѱ", "ps"), ("ѳ", "f"), ("ѵ", "i")]
+_SYR_IPA = [("p̄", "f"), ("ʾ", "ʔ"), ("ʿ", "ʕ"), ("ḥ", "ħ"), ("ṭ", "tˤ"), ("ṣ", "sˤ"), ("š", "ʃ"), ("ḇ", "v"),
+            ("ḡ", "ɣ"), ("ḏ", "ð"), ("ḵ", "x"), ("ṯ", "θ"), ("ĕ", "ə"), ("ə", "ə"), ("ă", "a"), ("ā", "ɑː"),
+            ("ē", "eː"), ("ī", "iː"), ("ō", "oː"), ("ū", "uː"), ("e", "ɛ"), ("y", "j"), ("g", "ɡ")]
+
+
+def _ipa_convert(text, table):
+    out, i, low = "", 0, text.lower()
+    while i < len(low):
+        for src, dst in table:
+            if low.startswith(src, i):
+                out += dst; i += len(src); break
+        else:
+            out += low[i]; i += 1
+    return out
+
+
+def _ipa(cid, w):
+    """IPA słowa (przybliżona rekonstrukcja) albo None."""
+    if w.get("letter"):
+        return None
+    try:
+        if cid == "glagol":
+            return "/" + _ipa_convert(w["form"], _OCS_IPA) + "/"
+        if cid == "abba":
+            t = _ipa_convert(w["tr"], _SYR_IPA)
+            import re as _re
+            t = _re.sub(r"([bdkpstzlmnrqfʃħɡ])\1", r"\1ː", t)
+            return "/" + t + "/"
+    except Exception:
+        return None
+    return None
+
+
 def _word_view(h):
     E = _cur["E"]
     w = E.WORDS[h]
     if _is_hanzi():
         return {"form": w["hanzi"], "tr": w["pinyin"], "meaning": w["english"], "cog": None, "hook": w.get("hook"),
                 "letter": False, "name": None}
-    return {"form": w["form"], "tr": w["tr"], "meaning": w["pl"], "cog": w.get("cog"), "hook": w.get("hook"),
+    ipa = _ipa(_cur.get("cid"), w)
+    return {"form": w["form"], "tr": (w["tr"] + "   " + ipa) if ipa else w["tr"], "meaning": w["pl"], "cog": w.get("cog"), "hook": w.get("hook"),
             "letter": bool(w.get("letter")), "name": w.get("name")}
 
 
@@ -166,6 +274,31 @@ def set_goal(goal):
     st.data["daily_goal"] = int(goal)
     st.save()
     return True
+
+
+def tone_map():
+    """Chiński: {zapis znakami: [tony kolejnych znaków]} dla słów kursu (do kolorowania wg tonu)."""
+    E = _cur["E"]
+    out = {}
+    cid = _cur["cid"]
+    try:
+        if cid == "hanzi_hero":
+            for w in E.WORDS.values():
+                tones = [t for _s, t in w["syllables"]]
+                if len(tones) == len(w["hanzi"]):
+                    out[w["hanzi"]] = tones
+            for k, v in getattr(E, "CHAT_EXTRA", {}).items():
+                tones = [E.split_syllable(x)[1] for x in str(v[0]).split()]
+                if len(tones) == len(k):
+                    out.setdefault(k, tones)
+        elif cid == "han":
+            for w in E.WORDS.values():
+                pn = w.get("pn")
+                if pn and not w.get("letter") and len(pn.split()) == len(w["form"]):
+                    out[w["form"]] = [int(x[-1]) if x[-1].isdigit() else 5 for x in pn.split()]
+    except Exception:
+        pass
+    return json.dumps(out, ensure_ascii=False)
 
 
 def set_setting(key, value):
@@ -358,6 +491,18 @@ def _chat(cid):
     return next(c for c in _cur["C"].CHATS if c["id"] == cid)
 
 
+def _punct():
+    E, C = _cur["E"], _cur["C"]
+    out = set(getattr(C, "PUNCT", None) or getattr(E, "PUNCT", None) or ())
+    out |= set(getattr(E, "OPEN_PUNCT", ()) or ())
+    return out | set("!?.,:;¿¡。！？，、")
+
+
+def _no_punct(toks):
+    p = _punct()
+    return [t for t in toks if t not in p]
+
+
 def chat_get(cid):
     c = _chat(cid)
     E, st = _cur["E"], _cur["state"]
@@ -373,7 +518,7 @@ def chat_get(cid):
             toks, pl = t["build"]
             extra = [h for h in learned if h not in toks]
             random.shuffle(extra)
-            bank = list(toks) + extra[:2]
+            bank = _no_punct(toks) + extra[:2]   # interpunkcji nie trzeba układać
             random.shuffle(bank)
             item["build"] = {"prompt": pl, "bank": _tiles(bank), "answer": list(toks), "text": _join(toks)}
         turns.append(item)
@@ -386,14 +531,14 @@ def chat_check(cid, turn, tokens):
     E = _cur["E"]
     toks, _pl = c["turns"][int(turn)]["build"]
     given = list(tokens)
-    ok = _join(given) == _join(toks)
+    ok = _join(_no_punct(given)) == _join(_no_punct(toks))
     why = None
     if not ok:
         try:
             why = E.explain_mistake(given, toks) if _is_hanzi() else E.explain_mistake(given, toks)
         except TypeError:
             why = None
-    return json.dumps({"ok": ok, "why": why, "sub": _sent_sub(given) if given else ""}, ensure_ascii=False)
+    return json.dumps({"ok": ok, "why": why, "text": _join(toks) if ok else _join(given), "sub": _sent_sub(toks if ok else given) if given else ""}, ensure_ascii=False)
 
 
 def chat_finish(cid, mistakes):
