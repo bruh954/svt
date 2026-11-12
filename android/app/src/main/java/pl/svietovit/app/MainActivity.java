@@ -98,13 +98,18 @@ public class MainActivity extends Activity {
     /** Mowa: WebView nie ma speechSynthesis, więc strona woła systemowy syntezator. */
     private class Tts {
         @JavascriptInterface
-        public void speak(String text, String lang, float rate) {
-            if (!ttsReady || text == null) return;
+        public boolean speak(String text, String lang, float rate) {
+            if (!ttsReady || text == null) return true;
             try {
-                tts.setLanguage(Locale.forLanguageTag(lang));
+                Locale loc = Locale.forLanguageTag(lang);
+                int r = tts.setLanguage(loc);
+                if (r == TextToSpeech.LANG_MISSING_DATA || r == TextToSpeech.LANG_NOT_SUPPORTED) {
+                    return false;   // brak głosu dla tego języka: strona pokaże komunikat zamiast czytać obcym głosem
+                }
                 tts.setSpeechRate(rate);
                 tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, "sv");
             } catch (Exception ignored) { }
+            return true;
         }
     }
 }

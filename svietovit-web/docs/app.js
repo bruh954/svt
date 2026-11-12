@@ -25,7 +25,7 @@ const store = {
 /* ---------------- teksty interfejsu ---------------- */
 const TX = {
   pl: {
-    motto: "szkoła języków dawnych i dalekich", learn_in: "Uczę się po", no_chats: "Ten kurs uczy samych znaków. Zdania i rozmowy ćwiczysz w kursie %s.", larps: "Larpy", larps_d: "Sceny ze stawką: płacisz wpisowe w XP i możesz je stracić.", larp_enter: "Wchodzę", larp_rules: "Wpisowe %d XP. Wygrana: +%d XP. Udało się mimo potknięć: zwrot wpisowego. Porażka: tracisz wpisowe. Zła odpowiedź zabiera punkt cierpliwości, a pytanie z ☠ kończy scenę od razu.", larp_need: "Potrzebujesz %d XP, żeby wejść.", larp_goal: "Cel", larp_deadly: "☠ Jedna szansa: zła odpowiedź kończy scenę.", larp_weak: "Niezręcznie.", larp_win: "Sukces!", larp_partial: "Udało się, ale…", larp_fail: "Porażka", larp_quit_t: "Wyjść ze sceny?", larp_quit_d: "Stracisz wpisowe.", larp_refund: "Wpisowe zwrócone", larp_patience: "Cierpliwość", larp_correct: "Poprawnie: ", tonecolor: "Kolory tonów", script: "Pismo ćwiczeń", size: "Litery", theme: "Motyw", th_navy: "Granat", th_sky: "Jasny", new: "nowy", xp: "XP",
+    motto: "szkoła języków dawnych i dalekich", learn_in: "Uczę się po", no_voice: "To urządzenie nie ma głosu dla języka %s. Zainstaluj go w ustawieniach syntezy mowy.", no_chats: "Ten kurs uczy samych znaków. Zdania i rozmowy ćwiczysz w kursie %s.", larps: "Larpy", larps_d: "Sceny ze stawką: płacisz wpisowe w XP i możesz je stracić.", larp_enter: "Wchodzę", larp_rules: "Wpisowe %d XP. Wygrana: +%d XP. Udało się mimo potknięć: zwrot wpisowego. Porażka: tracisz wpisowe. Zła odpowiedź zabiera punkt cierpliwości, a pytanie z ☠ kończy scenę od razu.", larp_need: "Potrzebujesz %d XP, żeby wejść.", larp_goal: "Cel", larp_deadly: "☠ Jedna szansa: zła odpowiedź kończy scenę.", larp_weak: "Niezręcznie.", larp_win: "Sukces!", larp_partial: "Udało się, ale…", larp_fail: "Porażka", larp_quit_t: "Wyjść ze sceny?", larp_quit_d: "Stracisz wpisowe.", larp_refund: "Wpisowe zwrócone", larp_patience: "Cierpliwość", larp_correct: "Poprawnie: ", tonecolor: "Kolory tonów", script: "Pismo ćwiczeń", size: "Litery", theme: "Motyw", th_navy: "Granat", th_sky: "Jasny", new: "nowy", xp: "XP",
     foot: "Postęp zapisuje się w tej przeglądarce. Dodaj stronę do ekranu głównego, żeby działała jak aplikacja.",
     reports: "Zgłoszone błędy: %d", copy: "SKOPIUJ", clear: "WYCZYŚĆ", copied: "Skopiowano. Wklej zgłoszenia w rozmowie z Claude'em.",
     rep_title: "Zgłoś błąd w ćwiczeniu", rep_hint: "Opis (nie musisz nic pisać)", rep_send: "ZAPISZ", rep_cancel: "ANULUJ",
@@ -55,7 +55,7 @@ const TX = {
     installed: "Dodaj do ekranu głównego, żeby uruchamiać jak aplikację.", err: "Coś poszło nie tak:", retry: "Spróbuj ponownie",
   },
   en: {
-    motto: "a school of ancient and faraway languages", learn_in: "I learn in", no_chats: "This course teaches characters only. Practise sentences and conversations in the %s course.", larps: "Larps", larps_d: "Scenes with stakes: you pay an XP entry fee and can lose it.", larp_enter: "Enter", larp_rules: "Entry fee %d XP. Win: +%d XP. Made it despite slips: fee refunded. Fail: you lose the fee. A wrong reply costs a point of patience, and a ☠ question ends the scene at once.", larp_need: "You need %d XP to enter.", larp_goal: "Goal", larp_deadly: "☠ One chance: a wrong reply ends the scene.", larp_weak: "Awkward.", larp_win: "Success!", larp_partial: "You made it, but…", larp_fail: "Failed", larp_quit_t: "Leave the scene?", larp_quit_d: "You will lose the entry fee.", larp_refund: "Entry fee refunded", larp_patience: "Patience", larp_correct: "Correct: ", tonecolor: "Tone colours", script: "Exercise script", size: "Text size", theme: "Theme", th_navy: "Navy", th_sky: "Light", new: "new", xp: "XP",
+    motto: "a school of ancient and faraway languages", learn_in: "I learn in", no_voice: "This device has no voice for %s. Install it in the text-to-speech settings.", no_chats: "This course teaches characters only. Practise sentences and conversations in the %s course.", larps: "Larps", larps_d: "Scenes with stakes: you pay an XP entry fee and can lose it.", larp_enter: "Enter", larp_rules: "Entry fee %d XP. Win: +%d XP. Made it despite slips: fee refunded. Fail: you lose the fee. A wrong reply costs a point of patience, and a ☠ question ends the scene at once.", larp_need: "You need %d XP to enter.", larp_goal: "Goal", larp_deadly: "☠ One chance: a wrong reply ends the scene.", larp_weak: "Awkward.", larp_win: "Success!", larp_partial: "You made it, but…", larp_fail: "Failed", larp_quit_t: "Leave the scene?", larp_quit_d: "You will lose the entry fee.", larp_refund: "Entry fee refunded", larp_patience: "Patience", larp_correct: "Correct: ", tonecolor: "Tone colours", script: "Exercise script", size: "Text size", theme: "Theme", th_navy: "Navy", th_sky: "Light", new: "new", xp: "XP",
     foot: "Progress is saved in this browser. Add the page to your home screen to use it like an app.",
     reports: "Reported mistakes: %d", copy: "COPY", clear: "CLEAR", copied: "Copied. Paste the reports into your chat with Claude.",
     rep_title: "Report a mistake in this exercise", rep_hint: "Description (optional)", rep_send: "SAVE", rep_cancel: "CANCEL",
@@ -185,14 +185,27 @@ function playTone(tone) {
   o.connect(g).connect(c.destination); o.start(now); o.stop(now + dur + 0.02);
 }
 const voiceOn = () => store.get("sv_voice", "1") === "1";
+const noVoiceTold = new Set();
+function noVoice(lang) { if (noVoiceTold.has(lang)) return; noVoiceTold.add(lang); toast(t("no_voice").replace("%s", lang), 4500); }
+function pickVoice(lang) {   // głos dokładnie dla języka kursu; null = urządzenie go nie ma; undefined = lista jeszcze pusta
+  let vs = []; try { vs = speechSynthesis.getVoices() || []; } catch (e) { vs = []; }
+  if (!vs.length) return undefined;
+  const norm = s => String(s || "").replace("_", "-").toLowerCase(), want = norm(lang), base = want.split("-")[0];
+  return vs.find(v => norm(v.lang) === want) || vs.find(v => norm(v.lang).split("-")[0] === base) || null;
+}
 function speak(text, auto) {
   const m = BYID[cur.cid]; if (!m || !m.tts || !text) return;
-  text = String(text).replace(/\u0301/g, "");   // znak akcentu (rosyjski) nie jest do czytania
-  if (window.AndroidTTS) { if (auto === true && !voiceOn()) return; try { AndroidTTS.speak(String(text), m.tts, 0.85); } catch (e) { /* brak głosu */ } return; }
-  if (!window.speechSynthesis) return;
+  text = String(text).replace(/\u0301/g, "");   // znak akcentu (rosyjski, serbski) nie jest do czytania
   if (auto === true && !voiceOn()) return;
-  try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = m.tts; u.rate = 0.85; speechSynthesis.speak(u); } catch (e) { /* brak głosu */ }
+  if (window.AndroidTTS) { try { if (AndroidTTS.speak(text, m.tts, 0.85) === false) noVoice(m.tts); } catch (e) { /* brak głosu */ } return; }
+  if (!window.speechSynthesis) return;
+  try {
+    const v = pickVoice(m.tts);
+    if (v === null) return noVoice(m.tts);   // lepiej milczeć, niż czytać obcym głosem
+    speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = m.tts; if (v) u.voice = v; u.rate = 0.85; speechSynthesis.speak(u);
+  } catch (e) { /* brak głosu */ }
 }
+try { if (window.speechSynthesis) speechSynthesis.getVoices(); } catch (e) { /* wczytanie listy głosów */ }
 const canSpeak = () => !!((window.speechSynthesis || window.AndroidTTS) && BYID[cur.cid] && BYID[cur.cid].tts);
 
 /* ---------------- UI pomocnicze ---------------- */
