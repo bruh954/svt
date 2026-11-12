@@ -184,3 +184,19 @@ textarea.input{font-size:calc(16px*var(--k));min-height:90px}
 .tn.t1{color:var(--t1)}.tn.t2{color:var(--t2)}.tn.t3{color:var(--t3)}.tn.t4{color:var(--t4)}.tn.t5{color:var(--t5)}
 .tone-legend{display:flex;gap:14px;justify-content:center;padding:6px 0 2px;font-size:calc(17px*var(--k));font-weight:700}
 .msg.me .tn{color:inherit}
+
+/* larpy */
+.larp-item{border-color:var(--tagc)}
+.note.deadly{background:var(--redl);color:var(--badt);font-weight:700}
+.larp-end.win{background:var(--greenl);border-color:var(--green)}.larp-end.partial{background:var(--yelll)}.larp-end.fail{background:var(--redl);border-color:var(--red)}
+.node .tn,.btn .tn,.chip .tn{color:inherit}
+
+/* gramatyka */
+.gr-group{font-weight:700;margin:14px 2px 6px;color:var(--sub)}
+.gr-item{padding:8px 12px;margin-bottom:8px}
+.gr-body{display:flex;flex-direction:column;gap:12px}
+.ptable{background:var(--white);border:2px solid var(--line);border-radius:14px;overflow:hidden}
+.prow{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 14px;border-bottom:1px solid var(--line);min-height:calc(40px*var(--k))}
+.prow:last-child{border-bottom:0}.prow.cur{background:var(--bluel)}
+.plab{color:var(--sub);font-size:calc(15px*var(--k))}.pform{font-size:calc(20px*var(--k));text-align:right}
+.gr-body .opt{min-height:52px}

@@ -9,8 +9,8 @@ import random
 import time
 
 COURSE_IDS = ["hanzi_hero", "glagol", "ave", "logos", "abba", "kaszeby", "hangeul", "han", "kana", "nihon",
-              "greek", "german", "french", "italian", "spanish", "russian", "turkish", "norse", "estonian", "serbian", "finnish"]
-NEW = {"greek", "german", "french", "italian", "spanish", "russian", "turkish", "norse", "estonian", "serbian", "finnish"}
+              "greek", "german", "french", "italian", "spanish", "russian", "turkish", "norse", "estonian", "serbian", "finnish", "czech", "slovak"]
+NEW = {"greek", "german", "french", "italian", "spanish", "russian", "turkish", "norse", "estonian", "serbian", "finnish", "czech", "slovak"}
 SOURCE_LANG = {"hanzi_hero": "en"}  # pozostałe kursy mają treść źródłową po polsku
 
 save_hook = None   # ustawia JavaScript: save_hook(course_id, json_string)
@@ -246,7 +246,16 @@ def home():
               "stars": st.chat_stars(c["id"]), "unlocked": bool(st.chat_unlocked(c))} for c in C.CHATS]
     d = st.data
     lvl, lxp, lneed = st.level()
-    return json.dumps({
+    larps = []
+    for lp in getattr(C, "LARPS", []):
+        try:
+            un = bool(st.chat_unlocked(lp))
+        except Exception:
+            un = True
+        larps.append({"id": lp["id"], "title": lp["title"], "partner": lp["partner"], "avatar": lp["avatar"],
+                      "fee": lp["fee"], "scene": lp["scene"], "goal": lp["goal"], "unlocked": un,
+                      "best": d.get("larps", {}).get(lp["id"]), "can_pay": d["xp_total"] >= lp["fee"]})
+    return json.dumps({"larps": larps, "paradigms": _paradigm_list(),
         "units": units, "tracks": getattr(C, "TRACKS", {}), "current": current, "chats": chats,
         "hearts": st.hearts(), "heart_max": E.HEART_MAX, "next_heart": st.seconds_to_next_heart(),
         "gems": d["gems"], "streak": d["streak"], "longest": d["longest_streak"], "freezes": d["freezes"],
@@ -421,8 +430,18 @@ def check(payload_json):
         return json.dumps({"ok": ok, "solution": solution, "answer_pair": list(ex["answer"])}, ensure_ascii=False)
     elif t == "build":
         given = p.get("tokens", [])
+        note = None
         if _join(given) == _join(ex["answer"]):
             ok = True
+        elif _join(_no_punct(given)) == _join(_no_punct(ex["answer"])):
+            ok = True        # brak interpunkcji nie jest błędem, ale zwracamy uwagę
+            pl = _cur["lang"] == "pl"
+            comma = "," in ex["answer"]
+            note = (("Zaliczone, ale w zdaniu powinien być %s: %s\nPrzecinek bywa ważny: „Idziemy jeść, babciu” to nie to samo co „Idziemy jeść babciu”."
+                     if comma else "Zaliczone, ale pamiętaj o interpunkcji: %s")
+                    if pl else
+                    ("Accepted, but the sentence needs a %s: %s\nA comma can change the meaning: “Let's eat, grandma” is not “Let's eat grandma”."
+                     if comma else "Accepted, but mind the punctuation: %s")) % ((("przecinek" if pl else "comma"), _join(ex["answer"])) if comma else (_join(ex["answer"]),))
         else:
             ok = False
             try:
@@ -448,7 +467,7 @@ def check(payload_json):
         ok = True
     elif t == "draw":
         return json.dumps({"ok": "self", "solution": ex["answer"]}, ensure_ascii=False)
-    return json.dumps({"ok": ok, "why": why, "solution": solution, "answer": ex.get("answer") if t in ("choice",) else None},
+    return json.dumps({"ok": ok, "why": why, "solution": solution, "note": locals().get("note"), "answer": ex.get("answer") if t in ("choice",) else None},
                       ensure_ascii=False)
 
 
@@ -555,3 +574,189 @@ def chat_finish(cid, mistakes):
 def tone_contours():
     return json.dumps({"1": [[0, 5], [1, 5]], "2": [[0, 3], [1, 5]], "3": [[0, 2], [0.5, 1], [1, 4]],
                        "4": [[0, 5], [1, 1]]})
+
+
+# ---------------------------------------------------------------------------
+# Larpy: scena ze stawką (wpisowe w XP, cierpliwość rozmówcy, pytania „jedna szansa")
+# ---------------------------------------------------------------------------
+_larp = {"id": None, "node": None, "patience": 0, "weak": 0, "mistakes": 0, "done": True}
+
+
+def _larp_def(lid):
+    return next(x for x in _cur["C"].LARPS if x["id"] == lid)
+
+
+def _larp_node(lp, key):
+    n = lp["nodes"][key]
+    out = {"key": key, "bot_text": _join(n["bot"]), "bot_sub": _sent_sub(n["bot"]), "pl": n.get("pl"),
+           "deadly": bool(n.get("deadly")), "note": n.get("note")}
+    if n.get("end"):
+        out["end"] = True
+    elif "options" in n:
+        out["options"] = [{"i": i, "text": _join(o[0]), "sub": _sent_sub(o[0])} for i, o in enumerate(n["options"])]
+    else:
+        toks, pl = n["build"]
+        st = _cur["state"]
+        E = _cur["E"]
+        learned = [h for h in st.learned_words() if (_is_hanzi() or not E.WORDS[h].get("letter"))]
+        extra = [h for h in learned if h not in toks]
+        random.shuffle(extra)
+        bank = _no_punct(toks) + extra[:3]
+        random.shuffle(bank)
+        out["build"] = {"prompt": pl, "bank": _tiles(bank)}
+    return out
+
+
+def larp_start(lid):
+    lp = _larp_def(lid)
+    st = _cur["state"]
+    d = st.data
+    if d["xp_total"] < lp["fee"]:
+        return json.dumps({"ok": False, "reason": "xp"})
+    d["xp_total"] -= lp["fee"]
+    st.save()
+    _larp.update(id=lid, node=lp["start"], patience=lp.get("patience", 3), weak=0, mistakes=0, done=False)
+    return json.dumps({"ok": True, "fee": lp["fee"], "patience": _larp["patience"], "max_patience": _larp["patience"],
+                       "scene": lp["scene"], "goal": lp["goal"], "partner": lp["partner"], "avatar": lp["avatar"],
+                       "title": lp["title"], "node": _larp_node(lp, lp["start"])}, ensure_ascii=False)
+
+
+def _larp_finish(lp, outcome):
+    st = _cur["state"]
+    d = st.data
+    fee = lp["fee"]
+    gain = 0
+    streak = False
+    if outcome == "win":
+        gain = fee * 3
+        streak = st.add_xp(gain)
+        d["gems"] += 5
+    elif outcome == "partial":
+        gain = fee
+        d["xp_total"] += fee           # sam zwrot wpisowego
+    rank = {"fail": 0, "partial": 1, "win": 2}[outcome]
+    best = d.setdefault("larps", {})
+    best[lp["id"]] = max(rank, best.get(lp["id"], 0))
+    _larp["done"] = True
+    st.save()
+    return {"outcome": outcome, "fee": fee, "gain": gain, "net": gain - fee, "text": lp["endings"][outcome],
+            "gems": 5 if outcome == "win" else 0, "streak_extended": bool(streak), "streak": d["streak"],
+            "mistakes": _larp["mistakes"], "weak": _larp["weak"]}
+
+
+def larp_answer(payload_json):
+    """Odpowiedź w bieżącym węźle: {"option": i} albo {"tokens": [...]}."""
+    if _larp["done"]:
+        return json.dumps({"error": "done"})
+    lp = _larp_def(_larp["id"])
+    n = lp["nodes"][_larp["node"]]
+    p = json.loads(payload_json)
+    res = {"verdict": None, "why": None, "text": None, "sub": None}
+    nxt = None
+    if "options" in n:
+        toks, verdict, target, why = n["options"][int(p["option"])]
+        res.update(verdict=verdict, why=why, text=_join(toks), sub=_sent_sub(toks))
+        if verdict != "bad":
+            nxt = target
+    else:
+        toks, _pl = n["build"]
+        given = list(p.get("tokens", []))
+        ok = _join(_no_punct(given)) == _join(_no_punct(toks))
+        res.update(verdict="good" if ok else "bad", text=_join(toks) if ok else _join(given),
+                   sub=_sent_sub(toks if ok else given) if given else "")
+        if ok:
+            nxt = n["next"]
+        else:
+            res["why"] = n.get("why") or None
+            res["answer"] = _join(toks)
+    if res["verdict"] == "weak":
+        _larp["weak"] += 1
+    if res["verdict"] == "bad":
+        _larp["mistakes"] += 1
+        if n.get("deadly"):
+            _larp["patience"] = 0
+        else:
+            _larp["patience"] -= 1
+        if _larp["patience"] <= 0:
+            res["patience"] = 0
+            res["end"] = _larp_finish(lp, "fail")
+            return json.dumps(res, ensure_ascii=False)
+    res["patience"] = _larp["patience"]
+    if nxt:
+        _larp["node"] = nxt
+        node = _larp_node(lp, nxt)
+        res["node"] = node
+        if node.get("end"):
+            res["end"] = _larp_finish(lp, "win" if _larp["weak"] == 0 else "partial")
+    return json.dumps(res, ensure_ascii=False)
+
+
+def larp_abandon():
+    _larp["done"] = True
+    return True
+
+
+# ---------------------------------------------------------------------------
+# Gramatyka: wzory odmian (koniugacje, deklinacje, wyjątki)
+# ---------------------------------------------------------------------------
+def _pid(p):
+    pid = p[0] + ":" + p[2]
+    return _sr_lat(pid) if _cur["E"].__name__.endswith("_cyr") else pid
+
+
+def _by_lang(x):
+    """Treść gramatyki może być słownikiem {język: ...} (kurs chiński ma źródło po angielsku)."""
+    if isinstance(x, dict) and ("pl" in x or "en" in x):
+        return x.get(_cur["lang"]) or x.get("pl") or x.get("en")
+    return x
+
+
+def _paradigms():
+    return list(_by_lang(getattr(_cur["C"], "PARADIGMS", [])) or [])
+
+
+def _paradigm_list():
+    d = _cur["state"].data
+    best = d.get("paradigms", {})
+    return [{"id": _pid(p), "kind": p[0], "group": p[1], "title": p[2], "n": len(p[4].split("; ")),
+             "best": best.get(_pid(p))} for p in _paradigms()]
+
+
+def paradigm_get(pid):
+    C = _cur["C"]
+    ps = _paradigms()
+    p = next(x for x in ps if _pid(x) == pid)
+    labels = p[3] if isinstance(p[3], (list, tuple)) else _by_lang(C.PARADIGM_LABELS)[p[3]]
+    raw = [f.split("|") for f in p[4].split("; ")]     # „dobra|zła|zła”: własne błędne odpowiedzi
+    forms = [r[0] for r in raw]
+    alts = [r[1:] for r in raw]
+    same, kind = [], []                        # dystraktory: najpierw z wzorów o tych samych etykietach
+    for x in ps:
+        if x is p:
+            continue
+        if x[3] == p[3]:
+            same += [f.split("|")[0] for f in x[4].split("; ")]
+        elif x[0] == p[0]:
+            kind += [f.split("|")[0] for f in x[4].split("; ")]
+    random.shuffle(same)
+    random.shuffle(kind)
+    pool = [f for f in dict.fromkeys(same + kind) if f not in forms][:8]
+    if isinstance(p[3], str) and p[3].startswith("t_") and len(set(forms)) > 1:
+        pool = []          # ćwiczenie celowane: wybór tylko spośród własnych odpowiedzi
+    return json.dumps({"id": pid, "kind": p[0], "group": p[1], "title": p[2], "note": p[5],
+                       "labels": list(labels), "forms": forms, "alts": alts, "extra": pool}, ensure_ascii=False)
+
+
+def paradigm_done(pid, mistakes):
+    """Zalicza przejście całego wzoru: XP i gwiazdki (3 = bez błędu)."""
+    st = _cur["state"]
+    d = st.data
+    mistakes = int(mistakes)
+    stars = 3 if mistakes == 0 else (2 if mistakes <= 2 else 1)
+    best = d.setdefault("paradigms", {})
+    first = pid not in best
+    best[pid] = max(stars, best.get(pid, 0))
+    xp = (8 if first else 4) + (2 if mistakes == 0 else 0)
+    streak = st.add_xp(xp)
+    st.save()
+    return json.dumps({"xp": xp, "stars": stars, "streak_extended": bool(streak), "streak": d["streak"]}, ensure_ascii=False)

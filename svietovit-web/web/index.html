@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pl" data-theme="navy">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#0A1430">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Śviętovit</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<script>(function(){try{if(localStorage.getItem("sv_theme")==="sky")document.documentElement.dataset.theme="sky"}catch(e){}})()</script>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app"><div class="boot"><div class="emb-svg"><svg class="eyes" viewBox="0 0 100 100" aria-hidden="true"><g class="eye" style="animation-duration:4.3s;animation-delay:-0.4s"><ellipse cx="35" cy="20" rx="12.5" ry="15" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="35" cy="20" r="3.6" fill="currentColor"/></g><g class="eye" style="animation-duration:5.9s;animation-delay:-2.9s"><ellipse cx="65" cy="20" rx="12.5" ry="15" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="65" cy="20" r="3.6" fill="currentColor"/></g><g class="eye" style="animation-duration:3.7s;animation-delay:-1.7s"><ellipse cx="20" cy="50" rx="12.5" ry="15" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="20" cy="50" r="3.6" fill="currentColor"/></g><g class="eye" style="animation-duration:7.1s;animation-delay:-5.2s"><ellipse cx="50" cy="50" rx="12.5" ry="15" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="50" cy="50" r="3.6" fill="currentColor"/></g><g class="eye" style="animation-duration:6.3s;animation-delay:-3.3s"><ellipse cx="80" cy="50" rx="12.5" ry="15" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="80" cy="50" r="3.6" fill="currentColor"/></g><g class="eye" style="animation-duration:5.1s;animation-delay:-0.9s"><ellipse cx="35" cy="80" rx="12.5" ry="15" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="35" cy="80" r="3.6" fill="currentColor"/></g><g class="eye" style="animation-duration:8.3s;animation-delay:-6.1s"><ellipse cx="65" cy="80" rx="12.5" ry="15" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="65" cy="80" r="3.6" fill="currentColor"/></g></svg></div><div id="boot-msg">Śviętovit</div><div class="boot-bar"><i id="boot-fill"></i></div></div></div>
+<div id="toast" role="status"></div>
+<div id="modal-root"></div>
+<script src="config.js"></script>
+<script src="pyodide/pyodide.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
