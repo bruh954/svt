@@ -8,7 +8,9 @@ import json
 import random
 import time
 
-COURSE_IDS = ["hanzi_hero", "glagol", "ave", "logos", "abba", "kaszeby", "hangeul", "han", "kana", "nihon"]
+COURSE_IDS = ["hanzi_hero", "glagol", "ave", "logos", "abba", "kaszeby", "hangeul", "han", "kana", "nihon",
+              "greek", "german", "french", "italian", "spanish", "russian", "turkish", "norse", "estonian", "serbian", "finnish"]
+NEW = {"greek", "german", "french", "italian", "spanish", "russian", "turkish", "norse", "estonian", "serbian", "finnish"}
 SOURCE_LANG = {"hanzi_hero": "en"}  # pozostałe kursy mają treść źródłową po polsku
 
 save_hook = None   # ustawia JavaScript: save_hook(course_id, json_string)
@@ -34,8 +36,12 @@ def _load(cid, lang):
         return _modules[key]
     src = SOURCE_LANG.get(cid, "pl")
     suffix = "" if lang == src else "_" + lang
-    E = importlib.import_module("courses.%s.engine%s" % (cid, suffix))
-    C = importlib.import_module("courses.%s.content%s" % (cid, suffix))
+    try:
+        E = importlib.import_module("courses.%s.engine%s" % (cid, suffix))
+        C = importlib.import_module("courses.%s.content%s" % (cid, suffix))
+    except ImportError:  # kurs bez wersji w tym języku: używamy podstawowej
+        E = importlib.import_module("courses.%s.engine" % cid)
+        C = importlib.import_module("courses.%s.content" % cid)
     _modules[key] = (E, C)
     return E, C
 
@@ -83,13 +89,58 @@ def course_progress(cid, saved_json):
 # ---------------------------------------------------------------------------
 # Słowa i tokeny
 # ---------------------------------------------------------------------------
+
+# ---------------------------------------------------------------------------
+# IPA dla kursów bez syntezatora mowy, w których zapis (transliteracja) jest częścią nauki
+# ---------------------------------------------------------------------------
+_OCS_IPA = [("ль", "ʎ"), ("нь", "ɲ"), ("рь", "rʲ"), ("оу", "u"), ("ꙋ", "u"), ("ѹ", "u"), ("у", "u"), ("а", "a"),
+            ("б", "b"), ("в", "v"), ("г", "ɡ"), ("д", "d"), ("ѥ", "jɛ"), ("е", "ɛ"), ("ж", "ʒ"), ("ѕ", "dz"),
+            ("ꙃ", "dz"), ("з", "z"), ("ꙁ", "z"), ("и", "i"), ("і", "i"), ("к", "k"), ("л", "l"), ("м", "m"),
+            ("н", "n"), ("о", "ɔ"), ("п", "p"), ("р", "r"), ("с", "s"), ("т", "t"), ("ф", "f"), ("х", "x"),
+            ("ѡ", "ɔː"), ("щ", "ʃt"), ("ц", "ts"), ("ч", "tʃ"), ("ш", "ʃ"), ("ъ", "ʊ"), ("ꙑ", "ɨ"), ("ь", "ɪ"),
+            ("ѣ", "æ"), ("ю", "ju"), ("ꙗ", "ja"), ("ѩ", "jɛ̃"), ("ѧ", "ɛ̃"), ("ѭ", "jɔ̃"), ("ѫ", "ɔ̃"),
+            ("ѯ", "ks"), ("ѱ", "ps"), ("ѳ", "f"), ("ѵ", "i")]
+_SYR_IPA = [("p̄", "f"), ("ʾ", "ʔ"), ("ʿ", "ʕ"), ("ḥ", "ħ"), ("ṭ", "tˤ"), ("ṣ", "sˤ"), ("š", "ʃ"), ("ḇ", "v"),
+            ("ḡ", "ɣ"), ("ḏ", "ð"), ("ḵ", "x"), ("ṯ", "θ"), ("ĕ", "ə"), ("ə", "ə"), ("ă", "a"), ("ā", "ɑː"),
+            ("ē", "eː"), ("ī", "iː"), ("ō", "oː"), ("ū", "uː"), ("e", "ɛ"), ("y", "j"), ("g", "ɡ")]
+
+
+def _ipa_convert(text, table):
+    out, i, low = "", 0, text.lower()
+    while i < len(low):
+        for src, dst in table:
+            if low.startswith(src, i):
+                out += dst; i += len(src); break
+        else:
+            out += low[i]; i += 1
+    return out
+
+
+def _ipa(cid, w):
+    """IPA słowa (przybliżona rekonstrukcja) albo None."""
+    if w.get("letter"):
+        return None
+    try:
+        if cid == "glagol":
+            return "/" + _ipa_convert(w["form"], _OCS_IPA) + "/"
+        if cid == "abba":
+            t = _ipa_convert(w["tr"], _SYR_IPA)
+            import re as _re
+            t = _re.sub(r"([bdkpstzlmnrqfʃħɡ])\1", r"\1ː", t)
+            return "/" + t + "/"
+    except Exception:
+        return None
+    return None
+
+
 def _word_view(h):
     E = _cur["E"]
     w = E.WORDS[h]
     if _is_hanzi():
         return {"form": w["hanzi"], "tr": w["pinyin"], "meaning": w["english"], "cog": None, "hook": w.get("hook"),
                 "letter": False, "name": None}
-    return {"form": w["form"], "tr": w["tr"], "meaning": w["pl"], "cog": w.get("cog"), "hook": w.get("hook"),
+    ipa = _ipa(_cur.get("cid"), w)
+    return {"form": w["form"], "tr": (w["tr"] + "   " + ipa) if ipa else w["tr"], "meaning": w["pl"], "cog": w.get("cog"), "hook": w.get("hook"),
             "letter": bool(w.get("letter")), "name": w.get("name")}
 
 
@@ -393,7 +444,7 @@ def chat_check(cid, turn, tokens):
             why = E.explain_mistake(given, toks) if _is_hanzi() else E.explain_mistake(given, toks)
         except TypeError:
             why = None
-    return json.dumps({"ok": ok, "why": why, "sub": _sent_sub(given) if given else ""}, ensure_ascii=False)
+    return json.dumps({"ok": ok, "why": why, "text": _join(given), "sub": _sent_sub(given) if given else ""}, ensure_ascii=False)
 
 
 def chat_finish(cid, mistakes):

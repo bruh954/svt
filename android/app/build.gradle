@@ -1,0 +1,30 @@
+plugins { id "com.android.application" }
+
+android {
+    namespace "pl.svietovit.app"
+    compileSdk 34
+    defaultConfig {
+        applicationId "pl.svietovit.app"
+        minSdk 24
+        targetSdk 34
+        versionCode 7
+        versionName "7.0"
+    }
+    signingConfigs {
+        // Stały klucz, żeby kolejne wersje instalowały się jako aktualizacja (postęp nauki zostaje).
+        // Wystarcza do instalacji z pliku; do Sklepu Play potrzebny będzie osobny, tajny klucz.
+        fixed {
+            storeFile file("svietovit.keystore")
+            storePassword "svietovit"
+            keyAlias "svietovit"
+            keyPassword "svietovit"
+        }
+    }
+    buildTypes {
+        debug { signingConfig signingConfigs.fixed }
+        release { minifyEnabled false; signingConfig signingConfigs.fixed }
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    // pliki strony są już skompresowane albo muszą być czytane strumieniowo
+    androidResources { noCompress "wasm", "zip", "ttf" }
+}

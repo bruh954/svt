@@ -25,7 +25,7 @@ const store = {
 /* ---------------- teksty interfejsu ---------------- */
 const TX = {
   pl: {
-    motto: "szkoła języków dawnych i dalekich", learn_in: "Uczę się po", new: "nowy", xp: "XP",
+    motto: "szkoła języków dawnych i dalekich", learn_in: "Uczę się po", size: "Litery", theme: "Motyw", th_navy: "Granat", th_sky: "Jasny", new: "nowy", xp: "XP",
     foot: "Postęp zapisuje się w tej przeglądarce. Dodaj stronę do ekranu głównego, żeby działała jak aplikacja.",
     reports: "Zgłoszone błędy: %d", copy: "SKOPIUJ", clear: "WYCZYŚĆ", copied: "Skopiowano. Wklej zgłoszenia w rozmowie z Claude'em.",
     rep_title: "Zgłoś błąd w ćwiczeniu", rep_hint: "Opis (nie musisz nic pisać)", rep_send: "ZAPISZ", rep_cancel: "ANULUJ",
@@ -43,7 +43,7 @@ const TX = {
     send: "Wyślij", practice_t: "Powtórka", practice_d: "Mieszane ćwiczenia ze słów, które już znasz. Odzyskujesz serce.",
     sound_t: "Trening dźwięków", sound_t_h: "Trening tonów", sound_d: "Samo słuchanie i rozpoznawanie.",
     stats: "Statystyki", level: "Poziom", xp_total: "XP łącznie", best_streak: "Najdłuższa seria", words: "Poznane słowa", lessons: "Lekcje",
-    week: "Ostatnie 7 dni", daily_goal: "Cel dzienny", settings: "Ustawienia", pron: "Pokazuj wymowę", sound: "Dźwięki",
+    week: "Ostatnie 7 dni", daily_goal: "Cel dzienny", settings: "Ustawienia", pron: "Pokazuj wymowę", sound: "Dźwięki", voice: "Czytaj na głos",
     shop: "Sklep", freeze: "Zamrożenie serii", refill_hearts: "Uzupełnij serca", gems: "klejnoty", reset: "Zeruj postęp w tym kursie",
     reset_q: "Na pewno? Cały postęp tego kursu zniknie.", yes: "Tak", no: "Nie", language: "Język interfejsu",
     welcome: "Witaj w kursie", welcome_d: "Ile chcesz się uczyć każdego dnia?", flag: "Zgłoś błąd", over: "Powtórka dziś nie dała serca",
@@ -55,7 +55,7 @@ const TX = {
     installed: "Dodaj do ekranu głównego, żeby uruchamiać jak aplikację.", err: "Coś poszło nie tak:", retry: "Spróbuj ponownie",
   },
   en: {
-    motto: "a school of ancient and faraway languages", learn_in: "I learn in", new: "new", xp: "XP",
+    motto: "a school of ancient and faraway languages", learn_in: "I learn in", size: "Text size", theme: "Theme", th_navy: "Navy", th_sky: "Light", new: "new", xp: "XP",
     foot: "Progress is saved in this browser. Add the page to your home screen to use it like an app.",
     reports: "Reported mistakes: %d", copy: "COPY", clear: "CLEAR", copied: "Copied. Paste the reports into your chat with Claude.",
     rep_title: "Report a mistake in this exercise", rep_hint: "Description (optional)", rep_send: "SAVE", rep_cancel: "CANCEL",
@@ -73,7 +73,7 @@ const TX = {
     send: "Send", practice_t: "Practice", practice_d: "Mixed exercises from words you already know. Earns a heart back.",
     sound_t: "Sound training", sound_t_h: "Tone training", sound_d: "Just listening and recognising.",
     stats: "Stats", level: "Level", xp_total: "Total XP", best_streak: "Best streak", words: "Words learned", lessons: "Lessons",
-    week: "Last 7 days", daily_goal: "Daily goal", settings: "Settings", pron: "Show pronunciation", sound: "Sounds",
+    week: "Last 7 days", daily_goal: "Daily goal", settings: "Settings", pron: "Show pronunciation", sound: "Sounds", voice: "Read aloud",
     shop: "Shop", freeze: "Streak freeze", refill_hearts: "Refill hearts", gems: "gems", reset: "Reset progress in this course",
     reset_q: "Really? All progress in this course will be erased.", yes: "Yes", no: "No", language: "Interface language",
     welcome: "Welcome to", welcome_d: "How much do you want to study each day?", flag: "Report a mistake", over: "",
@@ -85,19 +85,56 @@ const TX = {
     installed: "Add it to your home screen to launch it like an app.", err: "Something went wrong:", retry: "Try again",
   },
 };
+let THEME = store.get("sv_theme", "navy"); if (THEME !== "sky") THEME = "navy";
+function setTheme(k) {
+  THEME = k; store.set("sv_theme", k); document.documentElement.dataset.theme = k;
+  const mt = document.querySelector('meta[name="theme-color"]'); if (mt) mt.content = k === "sky" ? "#D9E7F8" : "#0A1430";
+}
+setTheme(THEME);
+let FS = parseFloat(store.get("sv_fs", "1")); if (![1, 1.2, 1.4].includes(FS)) FS = 1;
+function setFs(v) { FS = v; store.set("sv_fs", String(v)); document.documentElement.style.setProperty("--fs", String(v)); }
+setFs(FS);
+function sizeRow(after) {
+  return h("div", { class: "size-row" }, t("size"),
+    ...[[1, "A"], [1.2, "A+"], [1.4, "A++"]].map(([v, n]) => h("button", { class: "chip" + (v === FS ? " on" : ""), onclick: () => { setFs(v); (after || showHub)(); } }, n)));
+}
 let LANG = store.get("sv_lang", (navigator.language || "pl").startsWith("pl") ? "pl" : "en");
 const t = (k, ...a) => { let s = (TX[LANG][k] ?? k); if (typeof s === "string") a.forEach(v => s = s.replace("%d", v)); return s; };
 
+/* ---------------- statystyki i reklamy (domyślnie wyłączone, patrz config.js) ---------------- */
+const CFG = window.SV_CONFIG || {};
+function initAnalytics() {
+  const a = CFG.analytics; if (!a || !a.domain) return;
+  window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments); };
+  const sc = document.createElement("script"); sc.defer = true; sc.dataset.domain = a.domain; sc.src = a.src; document.head.append(sc);
+}
+function track(name, props) { try { if (window.plausible) window.plausible(name, { props: props || {} }); } catch (e) { /* statystyki są opcjonalne */ } }
+let adsLoaded = false;
+function adSlot(slot) {
+  const a = CFG.ads; if (!a || !a.enabled || !slot) return null;
+  if (!adsLoaded) { adsLoaded = true; window.adsbygoogle = window.adsbygoogle || []; window.adsbygoogle.requestNonPersonalizedAds = 1;
+    const sc = document.createElement("script"); sc.async = true; sc.crossOrigin = "anonymous"; sc.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + a.client; document.head.append(sc); }
+  const ins = h("ins", { class: "adsbygoogle", style: "display:block;min-height:90px", "data-ad-client": a.client, "data-ad-slot": slot, "data-ad-format": "auto", "data-full-width-responsive": "true" });
+  setTimeout(() => { try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) { /* brak reklamy */ } }, 50);
+  return h("div", { class: "adbox" }, h("small", {}, "Reklama"), ins);
+}
+
 /* ---------------- Python ---------------- */
-let B = null, META = [], BYID = {};
+let B = null, PY = null, META = [], BYID = {};
+const loadedCourses = new Set();
+async function ensureCourse(cid) {
+  if (loadedCourses.has(cid)) return;
+  PY.unpackArchive(await (await fetch("py/" + cid + ".zip")).arrayBuffer(), "zip", { extractDir: "/home/pyodide" });
+  loadedCourses.add(cid);
+}
 const SAVE_PREFIX = "sv:";
 function bootMsg(msg, pct) { const m = $("#boot-msg"), f = $("#boot-fill"); if (m) m.textContent = msg; if (f && pct != null) f.style.width = pct + "%"; }
 async function initPython() {
   bootMsg(t("loading"), 5);
   const py = await loadPyodide({ indexURL: "pyodide/" }); window.__py = py;
   bootMsg(t("loading"), 55);
-  const buf = await (await fetch("py/courses.zip")).arrayBuffer();
-  py.unpackArchive(buf, "zip", { extractDir: "/home/pyodide" });
+  PY = py;
+  py.unpackArchive(await (await fetch("py/core.zip")).arrayBuffer(), "zip", { extractDir: "/home/pyodide" });
   const code = await (await fetch("py/bridge.py")).text();
   py.FS.writeFile("/home/pyodide/bridge.py", code);
   py.runPython("import sys; sys.path.insert(0, '/home/pyodide')");
@@ -138,11 +175,15 @@ function playTone(tone) {
   g.gain.setValueAtTime(0.0001, now); g.gain.linearRampToValueAtTime(0.25, now + 0.05); g.gain.setValueAtTime(0.25, now + dur - 0.08); g.gain.linearRampToValueAtTime(0.0001, now + dur);
   o.connect(g).connect(c.destination); o.start(now); o.stop(now + dur + 0.02);
 }
-function speak(text, cid) {
-  const m = BYID[cid || cur.cid]; if (!m || !m.tts || !window.speechSynthesis || !text) return;
+const voiceOn = () => store.get("sv_voice", "1") === "1";
+function speak(text, auto) {
+  const m = BYID[cur.cid]; if (!m || !m.tts || !text) return;
+  if (window.AndroidTTS) { if (auto === true && !voiceOn()) return; try { AndroidTTS.speak(String(text), m.tts, 0.85); } catch (e) { /* brak głosu */ } return; }
+  if (!window.speechSynthesis) return;
+  if (auto === true && !voiceOn()) return;
   try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = m.tts; u.rate = 0.85; speechSynthesis.speak(u); } catch (e) { /* brak głosu */ }
 }
-const canSpeak = () => !!(window.speechSynthesis && BYID[cur.cid] && BYID[cur.cid].tts);
+const canSpeak = () => !!((window.speechSynthesis || window.AndroidTTS) && BYID[cur.cid] && BYID[cur.cid].tts);
 
 /* ---------------- UI pomocnicze ---------------- */
 function put(parent, ...kids) { parent.append(...kids.flat().filter(k => k != null && k !== false)); }
@@ -157,7 +198,7 @@ function sheet(content, { mid = false } = {}) {
   const close = () => bg.remove();
   return close;
 }
-function themeStyle() { const m = BYID[cur.cid]; return m ? `--paper:${m.paper};--accent:${m.accent};--cfont:${cfont(m)}` : ""; }
+function themeStyle() { const m = BYID[cur.cid]; return m ? `--cfont:${cfont(m)}` : ""; }
 function cfont(m) { return `"F-${m.id}","F-${m.id}-x","Sviet",Georgia,serif`; }
 function confirmBox(title, text, yes, no, onYes, onNo) {
   const close = sheet([h("h3", {}, title), h("p", {}, text),
@@ -179,7 +220,6 @@ const rtl = () => (cur.cid === "abba");
 /* ---------------- ekran główny (arka) ---------------- */
 function showHub() {
   cur.cid = null; document.body.classList.remove("rtl-course"); SOUND_ON = true;
-  document.documentElement.style.setProperty("--paper", "#F3EAE4");
   const cards = META.map(m => {
     const pr = J(B.course_progress(m.id, store.get(SAVE_PREFIX + m.id, "")));
     const info = pr.xp ? `${pr.xp} ${t("xp")} · ${"●".repeat(Math.min(pr.crowns, 5))}${pr.crowns > 5 ? "+" + (pr.crowns - 5) : ""}` : t("new");
@@ -189,18 +229,23 @@ function showHub() {
         h("div", { class: "sb" }, m.sub[LANG]), h("div", { class: "pr" }, info)));
   });
   const reps = persistReports();
-  show(h("div", { class: "scroll" },
+  show(h("div", { class: "scroll hubscroll" },
     h("div", { class: "hub-head" }, h("div", { class: "emb" }, "ꙮ"), h("h1", {}, "Śviętovit"), h("p", {}, t("motto"))),
+    h("div", { class: "theme-row" }, t("theme"),
+      ...[["navy", t("th_navy")], ["sky", t("th_sky")]].map(([k, n]) => h("button", { class: "chip" + (k === THEME ? " on" : ""), onclick: () => { setTheme(k); showHub(); } }, n))),
+    sizeRow(),
     h("div", { class: "langs" }, t("learn_in"),
       ...["pl", "en"].map(l => h("button", { class: "chip" + (l === LANG ? " on" : ""), onclick: () => { LANG = l; store.set("sv_lang", l); showHub(); } }, l.toUpperCase()))),
-    ...cards, h("div", { class: "hub-foot" }, t("foot")),
+    ...cards, adSlot(CFG.ads && CFG.ads.slotHome), h("div", { class: "hub-foot" }, t("foot")),
     reps.length ? h("div", { class: "rep-box" }, t("reports").replace("%d", reps.length),
       h("div", {}, h("button", { onclick: async () => { const txt = "Śviętovit: zgłoszone błędy (" + reps.length + ")\n" + reps.map((r, i) => "#" + (i + 1) + " " + JSON.stringify(r)).join("\n"); try { await navigator.clipboard.writeText(txt); toast(t("copied")); } catch (e) { prompt("", txt); } } }, t("copy")),
         h("button", { onclick: () => { store.set("sv_reports", "[]"); showHub(); } }, t("clear")))) : null));
 }
 
 /* ---------------- kurs ---------------- */
-function enterCourse(cid) {
+async function enterCourse(cid) {
+  if (!loadedCourses.has(cid)) { const m = BYID[cid]; show(h("div", { class: "boot", style: "color:" + m.accent }, h("div", { class: "boot-glyph", dir: "auto" }, m.glyph), h("div", {}, m.native))); try { await ensureCourse(cid); } catch (e) { toast(t("err") + " " + e); return showHub(); } }
+  track("course_open", { course: cid });
   cur.cid = cid; cur.tab = "path";
   B.open_course(cid, LANG, store.get(SAVE_PREFIX + cid, ""));
   document.body.classList.toggle("rtl-course", rtl());
@@ -227,7 +272,7 @@ function renderHome() {
   const body = { path: pathTab, chats: chatsTab, practice: practiceTab, profile: profileTab }[cur.tab]();
   const goal = h("div", { class: "goal" }, `${t("goal_day")}  ${Math.min(H.xp_today, H.goal)}/${H.goal} XP`, h("div", { class: "bar" }, h("i", { style: `width:${Math.min(100, 100 * H.xp_today / H.goal)}%` })));
   const scr = show([topbar(), goal, h("div", { class: "scroll", id: "tabbody" }, body), navbar()], "course");
-  scr.style.cssText = themeStyle(); scr.style.background = m.paper;
+  scr.style.cssText = themeStyle();
 }
 function pathTab() {
   const H = cur.home, out = [];
@@ -259,12 +304,14 @@ function profileTab() {
   const mx = Math.max(1, ...H.week.map(w => w[1]));
   const tog = (key, label) => h("div", { class: "sw", onclick: () => { B.set_setting(key, !H.settings[key]); if (key === "sound") SOUND_ON = !H.settings[key]; renderHome(); } }, label, h("div", { class: "tg" + (H.settings[key] !== false ? " on" : "") }));
   return [
+    h("div", { class: "card" }, sizeRow(renderHome)),
     h("div", { class: "card" }, h("h4", {}, t("stats")),
       [[t("level"), `${H.level}  (${H.level_xp}/${H.level_need})`], [t("xp_total"), H.xp_total], [t("best_streak"), H.longest], [t("words"), `${H.words_learned}/${H.words_total}`], [t("lessons"), H.lessons_completed]]
         .map(([a, b]) => h("div", { class: "kv" }, h("span", {}, a), h("b", {}, b)))),
     h("div", { class: "card" }, h("h4", {}, t("week")), h("div", { class: "week" }, H.week.map(([d, v]) => h("div", {}, h("i", { style: `height:${Math.round(70 * v / mx)}px` }), d)))),
     h("div", { class: "card" }, h("h4", {}, t("daily_goal")), h("div", { class: "grid2" }, H.goals.map(([n, v]) => h("button", { class: "btn" + (v === H.goal ? "" : " ghost"), onclick: () => { B.set_goal(v); renderHome(); } }, `${v} XP`)))),
-    h("div", { class: "card" }, h("h4", {}, t("settings")), tog("pron", t("pron")), tog("sound", t("sound"))),
+    h("div", { class: "card" }, h("h4", {}, t("settings")), tog("pron", t("pron")), tog("sound", t("sound")),
+      h("div", { class: "sw", onclick: () => { store.set("sv_voice", voiceOn() ? "0" : "1"); renderHome(); } }, t("voice"), h("div", { class: "tg" + (voiceOn() ? " on" : "") }))),
     h("div", { class: "card" }, h("h4", {}, t("shop")),
       h("button", { class: "btn blue", disabled: H.gems < H.freeze_cost || H.freezes >= H.max_freezes, onclick: () => { if (B.buy("freeze")) { toast("✓"); renderHome(); } } }, `${t("freeze")} (${H.freezes}/${H.max_freezes}) ◆ ${H.freeze_cost}`),
       h("div", { style: "height:8px" }),
@@ -280,7 +327,7 @@ function showWelcome() {
     h("div", { class: "big", style: `color:${m.accent}`, dir: "auto" }, m.glyph),
     h("h2", {}, t("welcome") + " " + m.native), h("p", {}, t("welcome_d")),
     ...H.goals.map(([n, v]) => h("button", { class: "btn", onclick: () => { B.onboard(v); renderHome(); } }, `${n} · ${v} XP`))), "course");
-  scr.style.cssText = themeStyle(); scr.style.background = m.paper;
+  scr.style.cssText = themeStyle();
 }
 
 /* ---------------- rozmowy ---------------- */
@@ -296,8 +343,8 @@ function openChat(cid, idx) {
   const chat = J(B.chat_get(cid)), color = ["#B3261E", "#2A6FB0", "#4F8A3A", "#8C3B9E", "#D26A12", "#1F7A78"][idx % 6];
   let turn = 0, mistakes = 0, attempts = 0, excluded = new Set();
   const log = h("div", { class: "log" }), reply = h("div", { class: "reply" });
-  const scr = show([h("div", { class: "top" }, h("button", { class: "back", onclick: renderHome }, "‹"), h("div", { class: "av", style: `background:${color};width:38px;height:38px;font-size:19px` }, chat.avatar), h("div", { class: "ttl" }, chat.partner)), log, reply], "course");
-  scr.style.cssText = themeStyle(); scr.style.background = BYID[cur.cid].paper;
+  const scr = show([h("div", { class: "top" }, h("button", { class: "back", onclick: renderHome }, "‹"), h("div", { class: "av", style: `background:${color};width:38px;height:38px;font-size:calc(19px*var(--k))` }, chat.avatar), h("div", { class: "ttl" }, chat.partner)), log, reply], "course");
+  scr.style.cssText = themeStyle();
   const toBottom = () => setTimeout(() => log.scrollTo({ top: log.scrollHeight, behavior: "smooth" }), 30);
   const bubble = (text, sub, en, mine, wrong) => {
     const b = h("div", { class: "msg" + (mine ? " me" : "") + (wrong ? " wrong" : ""), dir: "auto", onclick: () => b.classList.toggle("open") }, text, sub ? h("small", {}, sub) : null, en ? h("div", { class: "en" }, en) : null);
@@ -309,7 +356,7 @@ function openChat(cid, idx) {
     if (turn >= chat.turns.length) return finish();
     const tr = chat.turns[turn]; reply.replaceChildren();
     const typing = h("div", { class: "msg" }, "…"); log.append(typing); toBottom();
-    setTimeout(() => { typing.remove(); bubble(tr.bot_text, tr.bot_sub, tr.en); if (tr.note) note(tr.note); attempts = 0; showReply(tr); speak(tr.bot_text); }, 500 + 60 * tr.bot.length);
+    setTimeout(() => { typing.remove(); bubble(tr.bot_text, tr.bot_sub, tr.en); if (tr.note) note(tr.note); attempts = 0; showReply(tr); speak(tr.bot_text, true); }, 500 + 60 * tr.bot.length);
   };
   const showReply = (tr) => {
     reply.replaceChildren();
@@ -317,13 +364,13 @@ function openChat(cid, idx) {
       reply.append(h("div", { class: "sub", style: "text-align:left" }, t("pick_answer")));
       const opts = tr.options.filter(o => !excluded.has(o.text)).sort(() => Math.random() - 0.5);
       opts.forEach(o => reply.append(h("button", { class: "opt", dir: "auto", onclick: () => {
-        bubble(o.text, o.sub, null, true, !o.ok); reply.replaceChildren();
+        speak(o.text, true); bubble(o.text, o.sub, null, true, !o.ok); reply.replaceChildren();
         if (o.ok) { sfx.correct(); excluded = new Set(); turn++; setTimeout(botTurn, 450); }
         else { sfx.wrong(); mistakes++; confused(o.why); excluded.add(o.text); setTimeout(() => showReply(tr), 900); }
       } }, o.text, h("small", {}, o.sub))));
     } else {
       const bd = tr.build, picked = [];
-      const ans = h("div", { class: "tiles answer", style: "background:#fff;border-radius:12px;padding:8px;min-height:60px" }), bank = h("div", { class: "tiles" });
+      const ans = h("div", { class: "tiles answer", style: "background:var(--white);border-radius:12px;padding:8px;min-height:60px" }), bank = h("div", { class: "tiles" });
       const send = h("button", { class: "btn", disabled: true }, t("send"));
       const render = () => {
         ans.replaceChildren(...picked.map(p => tile(p, () => { picked.splice(picked.indexOf(p), 1); render(); })));
@@ -332,7 +379,7 @@ function openChat(cid, idx) {
       };
       send.onclick = () => {
         const given = picked.map(p => p.v), r = J(B.chat_check(cid, turn, given));
-        bubble(given.join(""), r.sub, null, true, !r.ok); reply.replaceChildren();
+        bubble(r.text || given.join(" "), r.sub, null, true, !r.ok); reply.replaceChildren();
         if (r.ok) { sfx.correct(); turn++; setTimeout(botTurn, 450); }
         else { sfx.wrong(); mistakes++; attempts++; let w = r.why || ""; if (attempts >= 2) w += "\n" + bd.text; confused(w); setTimeout(() => showReply(tr), 900); }
       };
@@ -341,8 +388,8 @@ function openChat(cid, idx) {
   };
   const confused = (why) => { bubble("?"); if (why) note(t("think") + " " + why); };
   const finish = () => {
-    const ev = J(B.chat_finish(cid, mistakes)); sfx.done(); reply.replaceChildren();
-    log.append(h("div", { class: "card", style: "text-align:center;background:var(--yelll)" }, h("b", {}, t("chat_done")), h("div", { style: "font-size:30px;color:#83611F" }, "★".repeat(ev.stars) + "☆".repeat(3 - ev.stars)),
+    const ev = J(B.chat_finish(cid, mistakes)); sfx.done(); track("chat_done", { course: cur.cid }); reply.replaceChildren();
+    log.append(h("div", { class: "card", style: "text-align:center;background:var(--yelll)" }, h("b", {}, t("chat_done")), h("div", { style: "font-size:calc(30px*var(--k));color:#83611F" }, "★".repeat(ev.stars) + "☆".repeat(3 - ev.stars)),
       `+${ev.xp} XP · ◆ +${ev.gems}` + (ev.had_full ? "" : " · ♥ +1"), ev.streak_extended ? h("div", { style: "color:#9E2B25;font-weight:700" }, "☀ " + t("streak_days", ev.streak)) : null)); toBottom();
     reply.append(h("button", { class: "btn", onclick: () => { cur.tab = "chats"; renderHome(); } }, t("back_chats")), h("button", { class: "btn ghost", onclick: () => openChat(cid, idx) }, t("again")));
   };
@@ -352,6 +399,7 @@ function tile(tk, onclick) { return h("button", { class: "tile", dir: "auto", on
 
 /* ---------------- lekcja ---------------- */
 function startSession(kind, unit) {
+  track("lesson_start", { course: cur.cid, kind });
   B.start(kind, unit == null ? -1 : unit);
   const L = cur.L = { kind, phase: "answer", ready: false, getPayload: null, lastOk: null, ex: null };
   const bar = h("i", { style: "width:0" }), combo = h("div", { class: "combo" }), hearts = h("span", { class: "stat s-heart" });
@@ -359,10 +407,10 @@ function startSession(kind, unit) {
   L.body = h("div", { class: "lbody" }); L.foot = h("div", { class: "lfoot" });
   L.main = h("button", { class: "btn", onclick: pressMain }, t("check"));
   const scr = show([h("div", { class: "lhead" },
-    h("button", { class: "x", onclick: () => confirmBox(t("wait"), t("lose"), t("quit"), t("keep"), () => { B.abandon(); renderHome(); }) }, "✕"),
+    h("button", { class: "x", onclick: () => confirmBox(t("wait"), t("lose"), t("quit"), t("keep"), () => { track("lesson_abandon", { course: cur.cid, kind: L.kind }); B.abandon(); renderHome(); }) }, "✕"),
     h("div", { class: "bar" }, bar), hearts,
-    h("button", { class: "x", style: "font-size:20px", title: t("flag"), onclick: () => reportDialog({ cwiczenie: L.ex }) }, "⚑")), combo, L.body, L.foot], "course");
-  scr.style.cssText = themeStyle(); scr.style.background = BYID[cur.cid].paper;
+    h("button", { class: "x", style: "font-size:calc(20px*var(--k))", title: t("flag"), onclick: () => reportDialog({ cwiczenie: L.ex }) }, "⚑")), combo, L.body, L.foot], "course");
+  scr.style.cssText = themeStyle();
   showCurrent();
 }
 function updateHeader(c) {
@@ -387,6 +435,8 @@ function setReady(v) { cur.L.ready = v; cur.L.main.disabled = !v; }
 const hookEl = (txt) => txt ? h("div", { class: "hook", dir: "auto" }, h("b", {}, t("remember")), txt) : null;
 const speakBtn = (txt) => canSpeak() ? h("button", { class: "btn ghost", style: "width:auto;margin:0 auto;padding:8px 18px", onclick: () => speak(txt) }, "🔊 " + t("listen")) : null;
 
+const SPEAK_OPT = new Set(["form", "hanzi", "listen"]);
+const AUTO_PROMPT = new Set(["meaning", "reading", "sentence", "cognate"]);
 const RENDER = {
   intro(ex, L) {
     const pron = cur.home.settings.pron !== false;
@@ -394,20 +444,20 @@ const RENDER = {
       h("div", { class: "card", style: "text-align:center" },
         h("div", { class: ex.letter ? "big" : "mid2", dir: "auto" }, ex.form),
         !ex.letter && pron && ex.tr ? h("div", { class: "sub", style: "font-style:italic" }, t("read") + ": " + ex.tr) : null,
-        h("div", { style: "font-size:19px;margin-top:6px", dir: "auto" }, ex.meaning)),
+        h("div", { style: "font-size:calc(19px*var(--k));margin-top:6px", dir: "auto" }, ex.meaning)),
       speakBtn(ex.audio || ex.form),
       ex.cog ? h("div", { class: "cog" }, h("b", {}, t("know_pl") + " "), ex.cog) : null, hookEl(ex.hook));
-    if (ex.audio) speak(ex.audio);
+    setTimeout(() => speak(ex.audio || ex.form, true), 200);
   },
   insight(ex, L) {
-    put(L.body, h("div", { class: "insight" }, h("div", { class: "tag" }, t("insight")), h("h2", {}, ex.title), ex.text), h("div", { class: "sub", style: "font-size:13px" }, t("insight_note")));
+    put(L.body, h("div", { class: "insight" }, h("div", { class: "tag" }, t("insight")), h("h2", {}, ex.title), ex.text), h("div", { class: "sub", style: "font-size:calc(13px*var(--k))" }, t("insight_note")));
   },
   choice(ex, L) {
     const m = ex.mode, state = { v: null };
     if (m === "listen") put(L.body, h("div", { style: "text-align:center" }, h("button", { class: "btn blue", style: "width:auto;display:inline-block;padding:14px 28px", onclick: () => speak(ex.audio) }, "🔊 " + t("listen"))));
     else if (m === "sentence") put(L.body, h("div", { class: "sentence", dir: "auto", onclick: () => speak(ex.audio || ex.sentence) }, ex.sentence), h("div", { class: "sub", style: "text-align:left;font-style:italic" }, ex.sentence_sub));
     else if (m === "form" || m === "hanzi") put(L.body, h("div", { class: "bubble", style: "text-align:center" }, `„${ex.prompt}”`));
-    else if (m === "cloze") put(L.body, h("div", { class: "mid2", style: "font-size:36px", dir: "auto" }, ex.prompt), ex.prompt_sub ? h("div", { class: "sub g" }, ex.prompt_sub) : null);
+    else if (m === "cloze") put(L.body, h("div", { class: "mid2", style: "font-size:calc(36px*var(--k))", dir: "auto" }, ex.prompt), ex.prompt_sub ? h("div", { class: "sub g" }, ex.prompt_sub) : null);
     else {
       const big = ex.word_view && ex.word_view.letter;
       put(L.body, h("div", { class: big ? "big" : "mid2", dir: "auto", onclick: () => speak(ex.audio || ex.prompt) }, ex.prompt),
@@ -419,7 +469,7 @@ const RENDER = {
     const grid = h("div", { class: "opts" + (long ? " one" : "") });
     const btns = ex.options.map((o, k) => {
       const b = h("button", { class: "opt" + (oldStyle ? " big2" : ""), dir: "auto", onclick: () => {
-        if (L.phase !== "answer") return; sfx.tap(); if (m === "hanzi") speak(o);
+        if (L.phase !== "answer") return; sfx.tap(); if (SPEAK_OPT.has(m) || (m === "reading" && ["kaszeby", "ave"].includes(cur.cid))) speak(o, true);
         btns.forEach(x => x.classList.remove("sel")); b.classList.add("sel"); state.v = o; setReady(true);
       } }, m === "cloze" ? "-" + o : o, ex.option_subs ? h("small", {}, ex.option_subs[k]) : null);
       b._v = o; return b;
@@ -427,12 +477,13 @@ const RENDER = {
     grid.append(...btns); put(L.body, grid);
     L.getPayload = () => ({ value: state.v });
     L.afterCheck = (r) => btns.forEach(b => { b.disabled = true; if (b._v === r.answer) b.classList.add("ok"); else if (b._v === state.v) { b.classList.remove("sel"); b.classList.add("no"); } });
-    if (ex.autoplay || m === "listen") setTimeout(() => speak(ex.audio), 250);
+    if (ex.autoplay || m === "listen") setTimeout(() => speak(ex.audio, true), 250);
+    else if (AUTO_PROMPT.has(m)) setTimeout(() => speak(ex.audio || (m === "sentence" ? ex.sentence : ex.prompt), true), 250);
   },
   tone(ex, L) {
     const state = { v: null };
-    if (ex.hum) { put(L.body, h("div", { style: "text-align:center" }, h("button", { class: "btn blue", style: "width:auto;display:inline-block;padding:14px 28px", onclick: () => playTone(ex.hum) }, "▶ " + t("play_pitch"))), h("div", { class: "sub", style: "font-size:14px" }, t("hum_hint"))); setTimeout(() => playTone(ex.hum), 350); }
-    else { put(L.body, h("div", { class: "big", style: "font-size:72px", onclick: () => speak(ex.prompt) }, ex.prompt), h("div", { class: "sub", style: "font-size:24px" }, ex.prompt_sub), speakBtn(ex.prompt), ex.meaning ? h("div", { class: "sub", style: "font-size:14px" }, "(" + ex.meaning + ")") : null); setTimeout(() => speak(ex.prompt), 250); }
+    if (ex.hum) { put(L.body, h("div", { style: "text-align:center" }, h("button", { class: "btn blue", style: "width:auto;display:inline-block;padding:14px 28px", onclick: () => playTone(ex.hum) }, "▶ " + t("play_pitch"))), h("div", { class: "sub", style: "font-size:calc(14px*var(--k))" }, t("hum_hint"))); setTimeout(() => playTone(ex.hum), 350); }
+    else { put(L.body, h("div", { class: "big", style: "font-size:calc(72px*var(--k))", onclick: () => speak(ex.prompt) }, ex.prompt), h("div", { class: "sub", style: "font-size:calc(24px*var(--k))" }, ex.prompt_sub), speakBtn(ex.prompt), ex.meaning ? h("div", { class: "sub", style: "font-size:calc(14px*var(--k))" }, "(" + ex.meaning + ")") : null); setTimeout(() => speak(ex.prompt, true), 250); }
     const btns = [1, 2, 3, 4].map(n => { const b = h("button", { class: "opt tone-btn", onclick: () => { if (L.phase !== "answer") return; playTone(n); btns.forEach(x => x.classList.remove("sel")); b.classList.add("sel"); state.v = n; setReady(true); } }, contourSvg([n], 56), h("b", {}, String(n))); b._v = n; return b; });
     put(L.body, h("div", { class: "opts" }, btns));
     L.getPayload = () => ({ value: state.v });
@@ -440,8 +491,8 @@ const RENDER = {
   },
   tone_pair(ex, L) {
     const state = { v: null };
-    put(L.body, h("div", { class: "big", style: "font-size:64px", onclick: () => speak(ex.prompt) }, ex.prompt), h("div", { class: "sub", style: "font-size:22px" }, ex.prompt_sub), speakBtn(ex.prompt), ex.meaning ? h("div", { class: "sub", style: "font-size:14px" }, "(" + ex.meaning + ")") : null);
-    setTimeout(() => speak(ex.prompt), 250);
+    put(L.body, h("div", { class: "big", style: "font-size:calc(64px*var(--k))", onclick: () => speak(ex.prompt) }, ex.prompt), h("div", { class: "sub", style: "font-size:calc(22px*var(--k))" }, ex.prompt_sub), speakBtn(ex.prompt), ex.meaning ? h("div", { class: "sub", style: "font-size:calc(14px*var(--k))" }, "(" + ex.meaning + ")") : null);
+    setTimeout(() => speak(ex.prompt, true), 250);
     const btns = ex.options.map(p => { const b = h("button", { class: "opt tone-btn", onclick: () => { if (L.phase !== "answer") return; sfx.tap(); btns.forEach(x => x.classList.remove("sel")); b.classList.add("sel"); state.v = p; setReady(true); } }, contourSvg(p, 56), h("b", {}, p.join(" + "))); b._v = p; return b; });
     put(L.body, h("div", { class: "opts" }, btns));
     L.getPayload = () => ({ value: state.v });
@@ -450,7 +501,7 @@ const RENDER = {
   match(ex, L) {
     const left = ex.pairs.map(p => p[0]).sort(() => Math.random() - 0.5), right = ex.pairs.map(p => p[1]).sort(() => Math.random() - 0.5);
     const ans = Object.fromEntries(ex.pairs), sel = { l: null, r: null }; let matched = 0, mistakes = 0;
-    const mk = (v, side) => { const b = h("button", { class: "opt", dir: "auto", style: side === "l" ? "font-size:24px" : "font-size:15px", onclick: () => pick(b) }, v); b._v = v; b._s = side; return b; };
+    const mk = (v, side) => { const b = h("button", { class: "opt", dir: "auto", style: side === "l" ? "font-size:calc(24px*var(--k))" : "font-size:calc(15px*var(--k))", onclick: () => pick(b) }, v); b._v = v; b._s = side; return b; };
     const lb = left.map(v => mk(v, "l")), rb = right.map(v => mk(v, "r"));
     const grid = h("div", { class: "match" }); lb.forEach((b, i) => grid.append(b, rb[i])); put(L.body, grid);
     const pick = (b) => {
@@ -475,10 +526,10 @@ const RENDER = {
     };
     put(L.body, ans, bank); render();
     L.getPayload = () => ({ tokens: picked.map(p => p.v) });
-    if (ex.audio) L.afterCheck = (r) => { if (r.ok) speak(ex.audio); };
+    L.afterCheck = (r) => { if (r.ok) { const sep = ["hanzi_hero", "han", "kana", "nihon"].includes(cur.cid) ? "" : " "; speak(ex.audio || picked.map(p => p.v).join(sep), true); } };
   },
   type(ex, L) {
-    put(L.body, h("div", { class: "mid2", style: "font-size:34px", dir: "auto", onclick: () => speak(ex.prompt) }, `„${ex.prompt}”`), ex.prompt_sub ? h("div", { class: "sub g" }, ex.prompt_sub) : null);
+    put(L.body, h("div", { class: "mid2", style: "font-size:calc(34px*var(--k))", dir: "auto", onclick: () => speak(ex.prompt) }, `„${ex.prompt}”`), ex.prompt_sub ? h("div", { class: "sub g" }, ex.prompt_sub) : null);
     const inp = h("input", { class: "input", placeholder: t("placeholder_type"), autocomplete: "off", autocapitalize: "off", spellcheck: "false", dir: "auto", oninput: () => setReady(inp.value.trim().length > 0), onkeydown: e => { if (e.key === "Enter") pressMain(); } });
     put(L.body, inp); setTimeout(() => inp.focus(), 300);
     L.getPayload = () => ({ text: inp.value });
@@ -522,7 +573,7 @@ function contourSvg(tones, hgt) {
 /* ---------------- przebieg lekcji ---------------- */
 function feedback(kind, title, text) {
   const L = cur.L; L.foot.className = "lfoot " + kind;
-  L.foot.replaceChildren(h("div", { class: "fb-t" }, title), text ? h("div", { class: "fb-x", dir: "auto" }, text) : null, L.main);
+  L.foot.replaceChildren(...[h("div", { class: "fb-t" }, title), text ? h("div", { class: "fb-x", dir: "auto" }, text) : null, L.main].filter(Boolean));
 }
 function autoComplete(perfect) {
   const L = cur.L; if (L.phase !== "answer") return; sfx.correct(); L.phase = "feedback"; L.lastOk = true;
@@ -557,14 +608,14 @@ function advance(ok) {
 }
 function outOfHearts() {
   refreshHome(); const H = cur.home;
-  const close = sheet([h("div", { style: "font-size:44px;text-align:center;color:var(--red)" }, "♥ 0"), h("h3", { style: "text-align:center" }, t("no_hearts")),
+  const close = sheet([h("div", { style: "font-size:calc(44px*var(--k));text-align:center;color:var(--red)" }, "♥ 0"), h("h3", { style: "text-align:center" }, t("no_hearts")),
     h("p", { style: "text-align:center" }, t("hearts_hint", Math.floor(H.next_heart / 60) + 1)),
     h("button", { class: "btn blue", disabled: H.gems < H.refill_cost, onclick: () => { if (B.buy("refill")) { close(); showCurrent(); } } }, `${t("refill")} ◆ ${H.refill_cost}`),
     h("button", { class: "btn green", onclick: () => { close(); B.abandon(); startSession("practice"); } }, t("practice_heart")),
     h("button", { class: "btn ghost", onclick: () => { close(); B.abandon(); renderHome(); } }, t("leave"))], { mid: true });
 }
 function finishSession() {
-  const ev = J(B.finish()); sfx.done(); refreshHome(); const H = cur.home;
+  const ev = J(B.finish()); sfx.done(); track("lesson_done", { course: cur.cid, kind: ev.kind }); refreshHome(); const H = cur.home;
   const names = (ev.unlocked || []).map(i => H.units[i] && H.units[i].title);
   const scr = show(h("div", { class: "scroll res" },
     h("div", { class: "coin" }, ev.crown_up ? "♛" : "✓"), h("h2", {}, ev.crown_up ? t("crown_up") : t("lesson_done")),
@@ -574,21 +625,40 @@ function finishSession() {
     ev.heart_back ? h("div", { style: "color:var(--red)" }, "♥ +1") : null,
     ...names.map(n => h("div", { class: "card" }, "🔓 " + t("unlocked") + ": ", h("b", {}, n))),
     ...(ev.chats || []).map(n => h("div", { class: "card" }, "✉ " + t("chat_unlocked") + ": ", h("b", {}, n))),
+    adSlot(CFG.ads && CFG.ads.slotResult),
     h("button", { class: "btn", onclick: () => { cur.tab = "path"; renderHome(); } }, t("back_home"))), "course");
-  scr.style.cssText = themeStyle(); scr.style.background = BYID[cur.cid].paper;
+  scr.style.cssText = themeStyle();
 }
 
 /* ---------------- start ---------------- */
 async function main() {
   try {
     META = await (await fetch("courses.json")).json(); META.forEach(m => BYID[m.id] = m);
+    initAnalytics();
     await initPython();
     if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
     showHub();
     window.__ready = true;
   } catch (e) {
     console.error(e);
-    app().replaceChildren(h("div", { class: "boot" }, h("div", {}, t("err")), h("pre", { style: "white-space:pre-wrap;font-size:12px;padding:0 16px" }, String(e && e.stack || e)), h("button", { class: "chip on", onclick: () => location.reload() }, t("retry"))));
+    app().replaceChildren(h("div", { class: "boot" }, h("div", {}, t("err")), h("pre", { style: "white-space:pre-wrap;font-size:calc(12px*var(--k));padding:0 16px" }, String(e && e.stack || e)), h("button", { class: "chip on", onclick: () => location.reload() }, t("retry"))));
   }
 }
 window.addEventListener("load", main);
+
+/* skróty klawiszowe (komputer): Enter = Sprawdź/Dalej, 1–9 = odpowiedź */
+document.addEventListener("keydown", (e) => {
+  if (!cur.L || e.ctrlKey || e.metaKey || e.altKey) return;
+  const tg = e.target && e.target.tagName;
+  if (tg === "INPUT" || tg === "TEXTAREA") { if (e.key === "Enter" && tg === "INPUT" && !e.shiftKey) { const b = document.querySelector(".lfoot .btn"); if (b && !b.disabled) b.click(); } return; }
+  if (e.key === "Enter" && tg !== "BUTTON") { const b = document.querySelector(".lfoot .btn"); if (b && !b.disabled) { e.preventDefault(); b.click(); } }
+  else if (/^[1-9]$/.test(e.key) && cur.L.phase === "answer") { const o = document.querySelectorAll(".lbody .opts .opt, .lbody .opt"); const el = o[parseInt(e.key, 10) - 1]; if (el && !el.disabled) el.click(); }
+});
+
+/* przycisk „wstecz” w aplikacji na Androida: zwraca true, gdy obsłużony */
+window.__back = () => {
+  const sh = document.querySelector(".sheet-bg"); if (sh) { sh.remove(); return true; }
+  const x = document.querySelector(".lhead .x"); if (x) { x.click(); return true; }
+  const bk = document.querySelector(".top .back"); if (bk) { bk.click(); return true; }
+  return false;
+};
