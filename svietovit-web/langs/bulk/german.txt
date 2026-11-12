@@ -406,3 +406,42 @@ s Sie weiß, dass ich hier bin. | Ona wie, że tu jestem.
 s Ich glaube, dass du Durst hast. | Myślę, że chce ci się pić.
 s Wenn du kannst, kommst du morgen. | Jeśli możesz, przyjdziesz jutro.
 s Er kommt nicht, weil er keine Zeit hat. | On nie przyjdzie, bo nie ma czasu.
+
+== Wzór: Ich möchte … i Ich habe … | W
+n Szkielet jest ten sam, zmieniasz tylko to, czego chcesz albo co masz. Rzeczownik po einen, ein, eine dostaje rodzaj: der Kaffee → einen Kaffee, das Brot → ein Brot.
+p Ich möchte {0}. | Poproszę {0}. | einen Kaffee=kawę ; ein Brot=chleb ; einen Tee=herbatę ; Wasser=wodę ; Suppe=zupę ; einen Apfel=jabłko ; ein Ei=jajko ; Kuchen=ciasto ; einen Fisch=rybę ; ein Bier=piwo
+p Ich habe {0}. | Mam {0}. | ein Haus=dom ; eine Schwester=siostrę ; einen Bruder=brata ; eine Frage=pytanie ; einen Freund=przyjaciela ; ein Kind=dziecko ; ein Zimmer=pokój ; eine Wohnung=mieszkanie ; ein Buch=książkę ; viel Arbeit=dużo pracy
+
+== Wzór: okolicznik, czasownik, ja | W
+n Na początku może stać czas albo miejsce, ale odmieniony czasownik zawsze jest drugi. Podmiot idzie za nim: Heute trinke ich Kaffee. Pierwsze słowo możesz podmienić na inne bez zmiany reszty.
+p {0} {1} ich {2}. | {0} {1} {2}. | heute+trinke+Kaffee=dziś+piję+kawę ; morgen+esse+Brot=jutro+jem+chleb ; jetzt+habe+Zeit=teraz+mam+czas ; manchmal+trinke+Bier=czasem+piję+piwo ; oft+trinke+Tee=często+piję+herbatę ; heute+lerne+Deutsch=dziś+uczę się+niemieckiego ; morgen+habe+Zeit=jutro+mam+czas ; immer+trinke+Wasser=zawsze+piję+wodę ; manchmal+esse+Fisch=czasem+jem+rybę
+p {0} {1} {2} {3}. | {0} {1} {2} {3}. | heute+gehen+wir+zur Schule=dziś+idziemy+do+szkoły ; morgen+kommt+er+früh=jutro+przychodzi+on+wcześnie ; jetzt+essen+wir+Suppe=teraz+jemy+my+zupę ; am Abend+trinken+sie+Tee=wieczorem+piją+oni+herbatę ; oft+kommt+mein+Vater=często+przychodzi+mój+tata
+
+== Wzór: czasownik modalny + bezokolicznik | W
+n Czasownik modalny jest drugi, a drugi czasownik idzie na sam koniec: Ich kann morgen kommen. Z innymi osobami zmienia się tylko forma modalnego.
+p Ich {0} {1}. | {0} {1}. | kann+morgen kommen=mogę+przyjść jutro ; muss+zur Schule gehen=muszę+iść do szkoły ; will+Fisch essen=chcę+jeść rybę ; kann+Deutsch sprechen=mogę+mówić po niemiecku ; muss+viel lernen=muszę+dużo się uczyć ; will+mit dir gehen=chcę+iść z tobą ; kann+Kaffee machen=mogę+zrobić kawę ; will+in die Stadt gehen=chcę+iść do miasta ; muss+Wasser trinken=muszę+pić wodę
+p {0} {1} {2}. | {0} {1} {2}. | wir+können+heute kommen=my+możemy+przyjść dzisiaj ; er+muss+früh kommen=on+musi+przyjść wcześnie ; du+kannst+Deutsch sprechen=ty+możesz+mówić po niemiecku ; ihr+müsst+viel lernen=wy+musicie+dużo się uczyć ; sie+wollen+am Meer essen=oni+chcą+jeść nad morzem ; das Kind+will nicht+essen=dziecko+nie chce+jeść ; wir+müssen+zu Hause essen=my+musimy+jeść w domu ; ihr+könnt+mit uns kommen=wy+możecie+iść z nami
+
+== Wzór: pytania | P
+n Pytanie bez słowa pytającego zaczyna się od czasownika: Hast du Zeit? Ze słowem pytającym czasownik jest drugi: Wo ist die Schule?
+p Wo ist {0}? | Gdzie jest {0}? | die Schule=szkoła ; mein Kaffee=moja kawa ; der Stuhl=krzesło ; das Hotel=hotel ; die Küche=kuchnia ; deine Schwester=twoja siostra ; das Taxi=taksówka ; mein Buch=moja książka
+p Hast du {0}? | Masz {0}? | Zeit=czas ; ein Haus=dom ; eine Frage=pytanie ; Wasser=wodę ; einen Bruder=brata ; Kaffee=kawę ; ein Zimmer=pokój ; eine Wohnung=mieszkanie
+p Möchtest du {0}? | Chcesz {0}? | Kaffee=kawę ; Tee=herbatę ; Suppe=zupę ; mehr Käse=więcej sera ; ein Ei=jajko ; Kuchen=ciasto ; Fleisch=mięso ; Wein=wino
+
+== Zdania złożone: dass i ob | Z
+n Po dass, ob i słowach pytających zaczyna się zdanie podrzędne: odmieniony czasownik odchodzi na sam koniec. Dlatego Ich weiß, dass er morgen kommt, a nie „dass er kommt morgen”. Przed dass zawsze stoi przecinek.
+p Ich weiß, dass {0}. | Wiem, że {0}. | er morgen kommt=on jutro przyjdzie ; du Hunger hast=jesteś głodny ; das Kind Hunger hat=dziecko jest głodne ; wir keine Zeit haben=nie mamy czasu ; sie Lehrer sind=oni są nauczycielami ; die Schule links ist=szkoła jest po lewej ; er nicht kommen kann=on nie może przyjść ; du viel Arbeit hast=masz dużo pracy
+p Ich glaube, dass {0}. | Myślę, że {0}. | er heute kommt=on dziś przyjdzie ; das Hotel neu ist=hotel jest nowy ; sie in der Stadt ist=ona jest w mieście ; wir zu Hause essen müssen=musimy jeść w domu
+p Ich weiß nicht, ob {0}. | Nie wiem, czy {0}. | er kommt=on przyjdzie ; er Zeit hat=on ma czas ; das Kind hier ist=dziecko jest tutaj ; du Hunger hast=jesteś głodny ; die Schule groß ist=szkoła jest duża
+
+== Zdania złożone: weil, wenn, denn | Z
+n Weil i wenn wysyłają czasownik na koniec: Ich komme nicht, weil ich keine Zeit habe. Denn jest inne: po nim szyk jak w zwykłym zdaniu: Ich komme nicht, denn ich habe Arbeit. Dwa zdania łączysz przecinkiem.
+p Ich komme nicht, weil {0}. | Nie przyjdę, bo {0}. | ich keine Zeit habe=nie mam czasu ; ich Hunger habe=jestem głodny ; mein Vater nicht hier ist=mojego taty nie ma ; ich Arbeit habe=mam pracę ; das Kind klein ist=dziecko jest małe ; ich nicht kann=nie mogę
+p Wenn {0}, {1}. | Jeśli {0}, {1}. | ich Zeit habe+komme ich=mam czas+przyjdę ; du Hunger hast+isst du Brot=jesteś głodny+jesz chleb ; es heute nicht geht+komme ich morgen=dziś się nie da+przyjdę jutro ; ich Durst habe+trinke ich Wasser=chce mi się pić+piję wodę ; wir Zeit haben+gehen wir zum Meer=mamy czas+idziemy nad morze
+p {0}, denn {1}. | {0}, bo {1}. | ich komme nicht+ich habe Arbeit=nie przyjdę+mam pracę ; ich esse viel+ich habe Hunger=dużo jem+jestem głodny ; wir gehen zur Schule+wir lernen Deutsch=idziemy do szkoły+uczymy się niemieckiego
+p {0}, aber {1}. | {0}, ale {1}. | ich habe Durst+ich habe kein Wasser=chce mi się pić+nie mam wody ; er ist klein+er ist sehr gut=jest mały+jest bardzo dobry ; das Haus ist alt+es ist schön=dom jest stary+jest piękny ; ich möchte Kaffee+ich habe nur Wasser=chcę kawy+mam tylko wodę
+
+== Zdania złożone: wszystko razem | Z
+n Teraz łączysz wszystko: modalny, podrzędne i przecinki. Zawsze zapytaj najpierw: gdzie jest odmieniony czasownik w każdej części?
+p Ich weiß, dass {0}, weil {1}. | Wiem, że {0}, bo {1}. | er nicht kommen kann+er Arbeit hat=on nie może przyjść+ma pracę ; das Kind essen will+es Hunger hat=dziecko chce jeść+jest głodne ; wir zu Hause essen müssen+wir keine Zeit haben=musimy jeść w domu+nie mamy czasu ; du Deutsch lernen musst+das Wort neu ist=musisz uczyć się niemieckiego+to słowo jest nowe
+p Wenn {0}, dann {1}. | Jeśli {0}, to {1}. | ich Zeit habe+komme ich morgen=mam czas+przyjdę jutro ; du Hunger hast+kannst du Brot essen=jesteś głodny+możesz jeść chleb ; es heute nicht geht+müssen wir morgen kommen=dziś się nie da+musimy przyjść jutro

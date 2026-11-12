@@ -1,0 +1,14 @@
+== Wzór: Vorrei … i Ho … | W
+n Ten sam szkielet, inne komponenty: Vorrei + to, co chcesz zamówić. Ho + to, co masz. Rodzajnik: un (męski), una (żeński).
+p Vorrei {0}. | Poproszę {0}. | un caffè=kawę ; un tè=herbatę ; un pane=chleb ; un formaggio=ser ; una mela=jabłko ; un pesce=rybę ; due mele=dwa jabłka ; un vino=wino
+p Ho {0}. | Mam {0}. | un fratello=brata ; una sorella=siostrę ; un amico=przyjaciela ; una casa=dom ; due bambini=dwoje dzieci ; tre mele=trzy jabłka ; cinque mele=pięć jabłek
+
+== Wzór: Dov'è …? i Vado a … | W
+n Pytanie o miejsce: Dov'è + rzeczownik? Kierunek: Vado a + miejsce. Zmieniasz tylko miejsce.
+p Dov'è {0}? | Gdzie jest {0}? | la scuola=szkoła ; l'albergo=hotel ; la casa=dom ; la strada=ulica ; la città=miasto ; il taxi=taksówka ; il mare=morze ; Roma=Rzym
+p Vado a {0}. | Idę do {0}. | Roma=Rzymu ; casa=domu ; scuola=szkoły
+p {0} vado a {1}. | {0} idę do {1}. | oggi+casa=dziś+domu ; domani+Roma=jutro+Rzymu ; adesso+scuola=teraz+szkoły ; oggi+scuola=dziś+szkoły
+
+== Wzór: Sono … Sei … È … | W
+n Kto jest kim: osoba + essere + zawód lub narodowość. Sono (ja), sei (ty), è (on, ona).
+p {0} {1}. | {0} {1}. | io+sono polacco=ja+jestem Polakiem ; tu+sei studente=ty+jesteś studentem ; lui+è insegnante=on+jest nauczycielem ; lei+è polacca=ona+jest Polką ; io+sono studente=ja+jestem studentem ; tu+sei polacco=ty+jesteś Polakiem ; lui+è polacco=on+jest Polakiem

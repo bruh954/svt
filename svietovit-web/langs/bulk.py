@@ -9,6 +9,11 @@ Format pliku bulk/<kurs>.txt (puste linie i # ignorowane):
   == Tytuł działu | ikona
   w Haus | dom | das | die Häuser     słowo | znaczenie | (rodzajnik) | (liczba mnoga, tylko niemiecki)
   s Ich habe ein Haus. | Mam dom.     zdanie | tłumaczenie
+  n Objaśnienie wzoru (karta „Wzór” na początku działu)
+  p Ich möchte {0}. | Poproszę {0}. | Kaffee=kawę ; Tee=herbatę     wzór z jedną luką: ramka | ramka po polsku | wypełnienia
+  p Ich {0} {1}. | {0} {1}. | esse+Brot=jem+chleb ; trinke+Wasser=piję+wodę   wzór z dwiema lukami (części łączy +)
+Wzory uczą się tak: najpierw karta z objaśnieniem, potem to samo zdanie ułożone z różnych komponentów,
+a na końcu wzory ze zdaniami podrzędnymi ({0} może być całym zdaniem: Ich weiß, dass {0}.).
 Zdanie może używać tylko słów z wcześniejszych działów i z własnego działu.
 Każda forma fleksyjna to osobne słowo (habe, hast, hat).
 """
@@ -50,8 +55,10 @@ def parse(path):
             continue
         if line.startswith("=="):
             parts = [x.strip() for x in line[2:].split("|")]
-            secs.append({"title": parts[0], "icon": (parts[1] if len(parts) > 1 else parts[0][:1]), "w": [], "s": []})
-        elif line[:2] in ("w ", "s ") and secs:
+            secs.append({"title": parts[0], "icon": (parts[1] if len(parts) > 1 else parts[0][:1]), "w": [], "s": [], "p": [], "n": []})
+        elif line[:2] in ("w ", "s ", "p ", "n ") and secs:
+            if line[0] == "n":
+                secs[-1]["n"].append(line[2:].strip()); continue
             parts = [x.strip() for x in line[2:].split("|")]
             if len(parts) < 2 or not parts[0] or not parts[1]:
                 raise SystemExit("linia %d: brak znaczenia/tłumaczenia: %s" % (n, line))
@@ -78,6 +85,14 @@ def tokenize(text, known, punct):
     return toks
 
 
+def join_example(sent):
+    toks, pl, _ = sent
+    out = ""
+    for t in toks:
+        out += t if (not out or t in ",.?!:;") else " " + t
+    return out[:1].upper() + out[1:], pl
+
+
 def build(cid):
     path = os.path.join(HERE, "content_%s.py" % cid)
     src = open(path, encoding="utf-8").read()
@@ -87,7 +102,10 @@ def build(cid):
     known = {w[0] for u in C.UNITS for w in u.get("words", [])}
     existing = set(known)
     secs = parse(os.path.join(HERE, "bulk", cid + ".txt"))
-    units, art, plu, errors = [], {}, {}, []
+    units, art, plu, errors, insights = [], {}, {}, [], []
+    seen = {x[1] for u in C.UNITS for x in u.get("sentences", [])}   # tłumaczenia muszą być unikalne
+    seen_tok = {tuple(x[0]) for u in C.UNITS for x in u.get("sentences", [])}
+    skipped = []
     for i, sec in enumerate(secs, 1):
         words = []
         for n, p in sec["w"]:
@@ -100,18 +118,45 @@ def build(cid):
                 plu[p[0]] = p[3]
         known |= {w[0] for w in words}
         sents = []
+        for n, p in sec["p"]:
+            if len(p) < 3:
+                errors.append("linia %d: wzór wymaga: ramka | ramka po polsku | wypełnienia" % n); continue
+            for fill in p[2].split(";"):
+                fill = fill.strip()
+                if "=" not in fill:
+                    errors.append("linia %d: wypełnienie bez „=”: %s" % (n, fill)); continue
+                a, b = fill.split("=", 1)
+                try:
+                    tg = p[0].format(*[x.strip() for x in a.split("+")]); pl = p[1].format(*[x.strip() for x in b.split("+")])
+                except (IndexError, KeyError):
+                    errors.append("linia %d: zła liczba części w: %s" % (n, fill)); continue
+                toks = tokenize(tg, known, punct)
+                bad = [t for t in toks if t not in known and t not in punct]
+                if bad:
+                    errors.append("linia %d: nieznane słowa %s w: %s" % (n, bad, tg)); continue
+                pl = pl[:1].upper() + pl[1:]
+                if pl in seen or tuple(toks) in seen_tok:
+                    skipped.append(pl); continue
+                seen.add(pl); seen_tok.add(tuple(toks)); sents.append((toks, pl, {}))
+        if sec["n"] and sents:
+            ex_t, ex_pl = join_example(sents[0])
+            insights.append((("f%02d" % i), {"title": sec["title"], "text": " ".join(sec["n"]) + "\n\nPrzykład: " + ex_t + " = " + ex_pl, "chain": []}))
         for n, p in sec["s"]:
             toks = tokenize(p[0], known, punct)
             bad = [t for t in toks if t not in known and t not in punct]
             if bad:
                 errors.append("linia %d: nieznane słowa %s w: %s" % (n, bad, p[0])); continue
-            sents.append((toks, p[1], {}))
+            if p[1] in seen or tuple(toks) in seen_tok:
+                skipped.append(p[1]); continue
+            seen.add(p[1]); seen_tok.add(tuple(toks)); sents.append((toks, p[1], {}))
         units.append({"id": "f%02d" % i, "title": sec["title"], "icon": sec["icon"], "track": "jezyk", "words": words, "sentences": sents})
-    return src, base, units, art, plu, errors, C
+    if skipped:
+        print("pominięto %d zdań, których tłumaczenie już jest: %s" % (len(skipped), "; ".join(skipped[:6])))
+    return src, base, units, art, plu, errors, C, insights
 
 
 def write(cid):
-    src, base, units, art, plu, errors, C = build(cid)
+    src, base, units, art, plu, errors, C, insights = build(cid)
     if errors:
         print("\n".join(errors[:60])); print("błędów: %d (nic nie zapisano)" % len(errors)); sys.exit(1)
     block = START % cid + "UNITS += %r\n" % (units,)
@@ -119,6 +164,8 @@ def write(cid):
         block += "ARTICLES.update(%r)\n" % (art,)
     if plu:
         block += "PLURALS.update(%r)\n" % (plu,)
+    for uid, ins in insights:
+        block += "INSIGHTS.setdefault(%r, []).append(%r)\n" % (uid, ins)
     block += END
     i = base.find(GRAM)
     out = (base[:i].rstrip("\n") + "\n\n" + block + base[i:]) if i >= 0 else base.rstrip("\n") + "\n\n" + block

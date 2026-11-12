@@ -1,0 +1,14 @@
+== Wzór: Je voudrais … i J'ai … | W
+n Ten sam szkielet, inne komponenty: Je voudrais + to, co chcesz zamówić. J'ai + to, co masz. Rodzajnik: un (męski), une (żeński).
+p Je voudrais {0}. | Poproszę {0}. | un café=kawę ; un thé=herbatę ; un pain=chleb ; un fromage=ser ; une pomme=jabłko ; un poisson=rybę ; deux pommes=dwa jabłka ; un vin=wino ; un lait=mleko
+p J'ai {0}. | Mam {0}. | un frère=brata ; une sœur=siostrę ; un ami=przyjaciela ; une maison=dom ; deux enfants=dwoje dzieci ; trois pommes=trzy jabłka ; cinq pommes=pięć jabłek
+
+== Wzór: Où est …? i Je vais à … | W
+n Pytanie o miejsce: Où est + rzeczownik ? Kierunek: Je vais à + miejsce. Zmieniasz tylko miejsce.
+p Où est {0} ? | Gdzie jest {0}? | l'école=szkoła ; l'hôtel=hotel ; la maison=dom ; la rue=ulica ; la ville=miasto ; le taxi=taksówka ; la mer=morze ; Paris=Paryż
+p Je vais à {0}. | Idę do {0}. | l'école=szkoły ; la maison=domu ; la mer=morza ; Paris=Paryża ; l'hôtel=hotelu ; la ville=miasta
+p {0} je vais à {1}. | {0} idę do {1}. | aujourd'hui+la maison=dziś+domu ; demain+Paris=jutro+Paryża ; maintenant+l'école=teraz+szkoły ; aujourd'hui+la mer=dziś+morza
+
+== Wzór: Je suis … Tu es … Il est … | W
+n Kto jest kim: osoba + être + zawód lub narodowość. Je suis (ja), tu es (ty), il est (on), elle est (ona).
+p {0} {1}. | {0} {1}. | je+suis polonais=ja+jestem Polakiem ; tu+es étudiant=ty+jesteś studentem ; il+est professeur=on+jest nauczycielem ; elle+est polonaise=ona+jest Polką ; je+suis étudiant=ja+jestem studentem ; tu+es polonais=ty+jesteś Polakiem ; il+est polonais=on+jest Polakiem
