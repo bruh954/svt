@@ -189,3 +189,4 @@ textarea.input{font-size:calc(16px*var(--k));min-height:90px}
 .larp-item{border-color:var(--tagc)}
 .note.deadly{background:var(--redl);color:var(--badt);font-weight:700}
 .larp-end.win{background:var(--greenl);border-color:var(--green)}.larp-end.partial{background:var(--yelll)}.larp-end.fail{background:var(--redl);border-color:var(--red)}
+.node .tn,.btn .tn,.chip .tn{color:inherit}
