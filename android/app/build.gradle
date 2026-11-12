@@ -7,8 +7,8 @@ android {
         applicationId "pl.svietovit.app"
         minSdk 24
         targetSdk 34
-        versionCode 15
-        versionName "15.0"
+        versionCode 16
+        versionName "16.0"
     }
     signingConfigs {
         // Stały klucz, żeby kolejne wersje instalowały się jako aktualizacja (postęp nauki zostaje).

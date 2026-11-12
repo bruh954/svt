@@ -255,7 +255,7 @@ def home():
         larps.append({"id": lp["id"], "title": lp["title"], "partner": lp["partner"], "avatar": lp["avatar"],
                       "fee": lp["fee"], "scene": lp["scene"], "goal": lp["goal"], "unlocked": un,
                       "best": d.get("larps", {}).get(lp["id"]), "can_pay": d["xp_total"] >= lp["fee"]})
-    return json.dumps({"larps": larps, "paradigms": _paradigm_list(),
+    return json.dumps({"larps": larps, "paradigms": _paradigm_list(), "pitfalls": _pitfalls(),
         "units": units, "tracks": getattr(C, "TRACKS", {}), "current": current, "chats": chats,
         "hearts": st.hearts(), "heart_max": E.HEART_MAX, "next_heart": st.seconds_to_next_heart(),
         "gems": d["gems"], "streak": d["streak"], "longest": d["longest_streak"], "freezes": d["freezes"],
@@ -694,8 +694,19 @@ def _pid(p):
     return _sr_lat(pid) if _cur["E"].__name__.endswith("_cyr") else pid
 
 
+def _by_lang(x):
+    """Treść gramatyki może być słownikiem {język: ...} (kurs chiński ma źródło po angielsku)."""
+    if isinstance(x, dict) and ("pl" in x or "en" in x):
+        return x.get(_cur["lang"]) or x.get("pl") or x.get("en")
+    return x
+
+
 def _paradigms():
-    return list(getattr(_cur["C"], "PARADIGMS", []) or [])
+    return list(_by_lang(getattr(_cur["C"], "PARADIGMS", [])) or [])
+
+
+def _pitfalls():
+    return [{"title": a, "text": t} for a, t in (_by_lang(getattr(_cur["C"], "PITFALLS", [])) or [])]
 
 
 def _paradigm_list():
@@ -709,7 +720,7 @@ def paradigm_get(pid):
     C = _cur["C"]
     ps = _paradigms()
     p = next(x for x in ps if _pid(x) == pid)
-    labels = p[3] if isinstance(p[3], (list, tuple)) else C.PARADIGM_LABELS[p[3]]
+    labels = p[3] if isinstance(p[3], (list, tuple)) else _by_lang(C.PARADIGM_LABELS)[p[3]]
     forms = p[4].split("; ")
     same, kind = [], []                        # dystraktory: najpierw z wzorów o tych samych etykietach
     for x in ps:
@@ -722,6 +733,8 @@ def paradigm_get(pid):
     random.shuffle(same)
     random.shuffle(kind)
     pool = [f for f in dict.fromkeys(same + kind) if f not in forms][:8]
+    if isinstance(p[3], str) and p[3].startswith("t_") and len(set(forms)) > 1:
+        pool = []          # ćwiczenie celowane: wybór tylko spośród własnych odpowiedzi
     return json.dumps({"id": pid, "kind": p[0], "group": p[1], "title": p[2], "note": p[5],
                        "labels": list(labels), "forms": forms, "extra": pool}, ensure_ascii=False)
 
