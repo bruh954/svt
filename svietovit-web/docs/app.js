@@ -25,7 +25,7 @@ const store = {
 /* ---------------- teksty interfejsu ---------------- */
 const TX = {
   pl: {
-    motto: "szkoła języków dawnych i dalekich", learn_in: "Uczę się po", no_voice: "To urządzenie nie ma głosu dla języka %s. Zainstaluj go w ustawieniach syntezy mowy.", no_chats: "Ten kurs uczy samych znaków. Zdania i rozmowy ćwiczysz w kursie %s.", larps: "Larpy", larps_d: "Sceny ze stawką: płacisz wpisowe w XP i możesz je stracić.", larp_enter: "Wchodzę", larp_rules: "Wpisowe %d XP. Wygrana: +%d XP. Udało się mimo potknięć: zwrot wpisowego. Porażka: tracisz wpisowe. Zła odpowiedź zabiera punkt cierpliwości, a pytanie z ☠ kończy scenę od razu.", larp_need: "Potrzebujesz %d XP, żeby wejść.", larp_goal: "Cel", larp_deadly: "☠ Jedna szansa: zła odpowiedź kończy scenę.", larp_weak: "Niezręcznie.", larp_win: "Sukces!", larp_partial: "Udało się, ale…", larp_fail: "Porażka", larp_quit_t: "Wyjść ze sceny?", larp_quit_d: "Stracisz wpisowe.", larp_refund: "Wpisowe zwrócone", larp_patience: "Cierpliwość", larp_correct: "Poprawnie: ", tonecolor: "Kolory tonów", script: "Pismo ćwiczeń", size: "Litery", theme: "Motyw", th_navy: "Granat", th_sky: "Jasny", new: "nowy", xp: "XP",
+    motto: "szkoła języków dawnych i dalekich", learn_in: "Uczę się po", grammar: "Gramatyka", gr_intro: "Przejdź cały wzór: najpierw tabela, potem wszystkie formy po kolei i na wyrywki.", gr_conj: "Koniugacje i czasy", gr_decl: "Deklinacje i zaimki", gr_form: "Imiesłowy i inne formy", gr_table: "Wzór", gr_start: "Ćwicz", gr_order: "Po kolei", gr_random: "Na wyrywki", gr_done: "Wzór zaliczony!", gr_back: "Wróć do gramatyki", gr_mist: "Błędy: %d", gr_tap: "Dotknij formy, żeby ją usłyszeć.", no_voice: "To urządzenie nie ma głosu dla języka %s. Zainstaluj go w ustawieniach syntezy mowy.", no_chats: "Ten kurs uczy samych znaków. Zdania i rozmowy ćwiczysz w kursie %s.", larps: "Larpy", larps_d: "Sceny ze stawką: płacisz wpisowe w XP i możesz je stracić.", larp_enter: "Wchodzę", larp_rules: "Wpisowe %d XP. Wygrana: +%d XP. Udało się mimo potknięć: zwrot wpisowego. Porażka: tracisz wpisowe. Zła odpowiedź zabiera punkt cierpliwości, a pytanie z ☠ kończy scenę od razu.", larp_need: "Potrzebujesz %d XP, żeby wejść.", larp_goal: "Cel", larp_deadly: "☠ Jedna szansa: zła odpowiedź kończy scenę.", larp_weak: "Niezręcznie.", larp_win: "Sukces!", larp_partial: "Udało się, ale…", larp_fail: "Porażka", larp_quit_t: "Wyjść ze sceny?", larp_quit_d: "Stracisz wpisowe.", larp_refund: "Wpisowe zwrócone", larp_patience: "Cierpliwość", larp_correct: "Poprawnie: ", tonecolor: "Kolory tonów", script: "Pismo ćwiczeń", size: "Litery", theme: "Motyw", th_navy: "Granat", th_sky: "Jasny", new: "nowy", xp: "XP",
     foot: "Postęp zapisuje się w tej przeglądarce. Dodaj stronę do ekranu głównego, żeby działała jak aplikacja.",
     reports: "Zgłoszone błędy: %d", copy: "SKOPIUJ", clear: "WYCZYŚĆ", copied: "Skopiowano. Wklej zgłoszenia w rozmowie z Claude'em.",
     rep_title: "Zgłoś błąd w ćwiczeniu", rep_hint: "Opis (nie musisz nic pisać)", rep_send: "ZAPISZ", rep_cancel: "ANULUJ",
@@ -55,7 +55,7 @@ const TX = {
     installed: "Dodaj do ekranu głównego, żeby uruchamiać jak aplikację.", err: "Coś poszło nie tak:", retry: "Spróbuj ponownie",
   },
   en: {
-    motto: "a school of ancient and faraway languages", learn_in: "I learn in", no_voice: "This device has no voice for %s. Install it in the text-to-speech settings.", no_chats: "This course teaches characters only. Practise sentences and conversations in the %s course.", larps: "Larps", larps_d: "Scenes with stakes: you pay an XP entry fee and can lose it.", larp_enter: "Enter", larp_rules: "Entry fee %d XP. Win: +%d XP. Made it despite slips: fee refunded. Fail: you lose the fee. A wrong reply costs a point of patience, and a ☠ question ends the scene at once.", larp_need: "You need %d XP to enter.", larp_goal: "Goal", larp_deadly: "☠ One chance: a wrong reply ends the scene.", larp_weak: "Awkward.", larp_win: "Success!", larp_partial: "You made it, but…", larp_fail: "Failed", larp_quit_t: "Leave the scene?", larp_quit_d: "You will lose the entry fee.", larp_refund: "Entry fee refunded", larp_patience: "Patience", larp_correct: "Correct: ", tonecolor: "Tone colours", script: "Exercise script", size: "Text size", theme: "Theme", th_navy: "Navy", th_sky: "Light", new: "new", xp: "XP",
+    motto: "a school of ancient and faraway languages", learn_in: "I learn in", grammar: "Grammar", gr_intro: "Go through the whole pattern: first the table, then every form in order and at random.", gr_conj: "Conjugations and tenses", gr_decl: "Declensions and pronouns", gr_form: "Participles and other forms", gr_table: "Pattern", gr_start: "Practise", gr_order: "In order", gr_random: "At random", gr_done: "Pattern complete!", gr_back: "Back to grammar", gr_mist: "Mistakes: %d", gr_tap: "Tap a form to hear it.", no_voice: "This device has no voice for %s. Install it in the text-to-speech settings.", no_chats: "This course teaches characters only. Practise sentences and conversations in the %s course.", larps: "Larps", larps_d: "Scenes with stakes: you pay an XP entry fee and can lose it.", larp_enter: "Enter", larp_rules: "Entry fee %d XP. Win: +%d XP. Made it despite slips: fee refunded. Fail: you lose the fee. A wrong reply costs a point of patience, and a ☠ question ends the scene at once.", larp_need: "You need %d XP to enter.", larp_goal: "Goal", larp_deadly: "☠ One chance: a wrong reply ends the scene.", larp_weak: "Awkward.", larp_win: "Success!", larp_partial: "You made it, but…", larp_fail: "Failed", larp_quit_t: "Leave the scene?", larp_quit_d: "You will lose the entry fee.", larp_refund: "Entry fee refunded", larp_patience: "Patience", larp_correct: "Correct: ", tonecolor: "Tone colours", script: "Exercise script", size: "Text size", theme: "Theme", th_navy: "Navy", th_sky: "Light", new: "new", xp: "XP",
     foot: "Progress is saved in this browser. Add the page to your home screen to use it like an app.",
     reports: "Reported mistakes: %d", copy: "COPY", clear: "CLEAR", copied: "Copied. Paste the reports into your chat with Claude.",
     rep_title: "Report a mistake in this exercise", rep_hint: "Description (optional)", rep_send: "SAVE", rep_cancel: "CANCEL",
@@ -202,7 +202,12 @@ function speak(text, auto) {
   try {
     const v = pickVoice(m.tts);
     if (v === null) return noVoice(m.tts);   // lepiej milczeć, niż czytać obcym głosem
-    speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = m.tts; if (v) u.voice = v; u.rate = 0.85; speechSynthesis.speak(u);
+    const u = new SpeechSynthesisUtterance(text); u.lang = m.tts; if (v) u.voice = v; u.rate = 0.85;
+    const busy = speechSynthesis.speaking || speechSynthesis.pending;
+    if (busy) speechSynthesis.cancel();
+    try { speechSynthesis.resume(); } catch (e) { /* nie wszędzie jest */ }
+    // część przeglądarek na komputerze gubi wypowiedź wywołaną tuż po cancel()
+    if (busy) setTimeout(() => { try { speechSynthesis.speak(u); } catch (e) { /* brak głosu */ } }, 80); else speechSynthesis.speak(u);
   } catch (e) { /* brak głosu */ }
 }
 try { if (window.speechSynthesis) speechSynthesis.getVoices(); } catch (e) { /* wczytanie listy głosów */ }
@@ -286,13 +291,14 @@ function topbar() {
     h("span", { class: "stat s-streak" }, "☀ " + H.streak), h("span", { class: "stat s-gem" }, "◆ " + H.gems), h("span", { class: "stat s-heart" }, "♥ " + H.hearts));
 }
 function navbar() {
-  const items = [["path", "◉", t("path")], ["chats", "✉", t("chats")], ["practice", "↻", t("practice")], ["profile", "☺", t("profile")]];
+  const items = [["path", "◉", t("path")], ["chats", "✉", t("chats")], ...((cur.home.paradigms || []).length ? [["grammar", "Aa", t("grammar")]] : []), ["practice", "↻", t("practice")], ["profile", "☺", t("profile")]];
   return h("div", { class: "nav" }, items.map(([k, ic, lb]) => h("button", { class: cur.tab === k ? "on" : "", onclick: () => { cur.tab = k; renderHome(); } }, h("b", {}, ic), lb)));
 }
 function renderHome() {
   refreshHome();
   const H = cur.home, m = BYID[cur.cid];
-  const body = { path: pathTab, chats: chatsTab, practice: practiceTab, profile: profileTab }[cur.tab]();
+  if (cur.tab === "grammar" && !(H.paradigms || []).length) cur.tab = "path";
+  const body = { path: pathTab, chats: chatsTab, grammar: grammarTab, practice: practiceTab, profile: profileTab }[cur.tab]();
   const goal = h("div", { class: "goal" }, `${t("goal_day")}  ${Math.min(H.xp_today, H.goal)}/${H.goal} XP`, h("div", { class: "bar" }, h("i", { style: `width:${Math.min(100, 100 * H.xp_today / H.goal)}%` })));
   const scr = show([topbar(), goal, h("div", { class: "scroll", id: "tabbody" }, body), navbar()], "course");
   scr.style.cssText = themeStyle();
@@ -775,8 +781,8 @@ function openLarp(lid) {
     log.append(h("div", { class: "card larp-end " + ev.outcome, style: "text-align:center" }, h("b", { style: "font-size:calc(20px*var(--k))" }, t("larp_" + ev.outcome)), h("div", { style: "margin:6px 0" }, ev.text), h("div", { style: "font-weight:700" }, xp),
       ev.streak_extended ? h("div", { style: "color:var(--bad2);font-weight:700" }, "☀ " + t("streak_days", ev.streak)) : null)); toBottom();
     refreshHome(); const me = (cur.home.larps || []).find(x => x.id === lid);
-    reply.append(h("button", { class: "btn", onclick: () => { cur.tab = "chats"; renderHome(); } }, t("back_chats")),
-      me && me.can_pay ? h("button", { class: "btn ghost", onclick: () => openLarp(lid) }, t("again") + " (−" + me.fee + " XP)") : null);
+    reply.append(h("button", { class: "btn", onclick: () => { cur.tab = "chats"; renderHome(); } }, t("back_chats")));
+    if (me && me.can_pay) reply.append(h("button", { class: "btn ghost", onclick: () => openLarp(lid) }, t("again") + " (−" + me.fee + " XP)"));
   };
   const handle = (r) => {
     patience = r.patience; drawPips();
@@ -809,4 +815,77 @@ function openLarp(lid) {
     }
   };
   botSay();
+}
+
+/* ---------------- gramatyka: wzory odmian ---------------- */
+const NN = (...xs) => xs.filter(x => x != null && x !== false);
+function grammarTab() {
+  const H = cur.home, out = [h("div", { class: "card" }, h("p", { style: "margin:0" }, t("gr_intro")))];
+  for (const kind of ["conj", "decl", "form"]) {
+    const list = H.paradigms.filter(p => p.kind === kind); if (!list.length) continue;
+    out.push(h("div", { class: "track" }, "· " + t({ conj: "gr_conj", decl: "gr_decl", form: "gr_form" }[kind]) + " ·"));
+    let group = null;
+    list.forEach(p => {
+      if (p.group !== group) { group = p.group; out.push(h("div", { class: "gr-group" }, group)); }
+      out.push(h("button", { class: "chat-item gr-item", onclick: () => openParadigm(p.id) },
+        h("div", {}, h("div", { class: "t", dir: "auto" }, p.title), h("div", { class: "s" }, p.n + " " + (LANG === "pl" ? "form" : "forms"))),
+        h("div", { class: "stars" }, p.best ? "★".repeat(p.best) + "☆".repeat(3 - p.best) : "")));
+    });
+  }
+  return out;
+}
+function openParadigm(pid) {
+  const P = J(B.paradigm_get(pid)), n = P.forms.length;
+  let stage = "table", queue = [], pos = 0, mistakes = 0, pass = 1, filled = new Set(), lock = false;
+  const body = h("div", { class: "scroll gr-body" }), bar = h("i", { style: "width:0" });
+  const back = () => { cur.tab = "grammar"; renderHome(); };
+  const scr = show([h("div", { class: "top" }, h("button", { class: "back", onclick: back }, "‹"), h("div", { class: "ttl", dir: "auto" }, P.title)),
+    h("div", { class: "goal" }, h("div", { class: "bar" }, bar)), body], "course");
+  scr.style.cssText = themeStyle();
+  const table = (curIdx, showAll) => h("div", { class: "ptable" }, P.labels.map((lb, i) =>
+    h("div", { class: "prow" + (i === curIdx ? " cur" : ""), onclick: () => (showAll || filled.has(i)) && speak(P.forms[i]) },
+      h("span", { class: "plab", dir: "auto" }, lb), h("b", { class: "pform", dir: "auto" }, showAll || filled.has(i) ? P.forms[i] : (i === curIdx ? "?" : "")))));
+  const shuffle = (arr) => arr.map(x => [Math.random(), x]).sort((x, y) => x[0] - y[0]).map(x => x[1]);
+  const options = (i) => {
+    const right = P.forms[i], own = shuffle([...new Set(P.forms)].filter(f => f !== right)), extra = P.extra.filter(f => f !== right && !own.includes(f));
+    const others = own.slice(0, 5); for (const e of extra) { if (others.length >= 3) break; others.push(e); }
+    return shuffle([right, ...others.slice(0, 5)]);
+  };
+  const total = () => 2 * n;
+  const done = () => (pass - 1) * n + pos;
+  const draw = () => {
+    bar.style.width = Math.min(100, 100 * done() / total()) + "%";
+    if (stage === "table") {
+      body.replaceChildren(...NN(h("div", { class: "tag" }, t("gr_table")), P.note ? h("div", { class: "think" }, P.note) : null, table(-1, true),
+        h("div", { class: "sub", style: "font-size:calc(13px*var(--k))" }, canSpeak() ? t("gr_tap") : ""),
+        h("button", { class: "btn", onclick: () => { stage = "drill"; pass = 1; queue = P.forms.map((_, i) => i); pos = 0; filled = new Set(); draw(); } }, t("gr_start"))));
+      return;
+    }
+    if (pos >= queue.length) {
+      if (pass === 1) { pass = 2; queue = shuffle(P.forms.map((_, i) => i)); pos = 0; filled = new Set(); return draw(); }
+      return finish();
+    }
+    const i = queue[pos]; lock = false;
+    const grid = h("div", { class: "opts" });
+    const btns = options(i).map(f => { const b = h("button", { class: "opt", dir: "auto", onclick: () => {
+      if (lock) return; lock = true;
+      const ok = f === P.forms[i];
+      btns.forEach(x => { x.disabled = true; if (x._v === P.forms[i]) x.classList.add("ok"); });
+      if (ok) { sfx.correct(); filled.add(i); pos++; speak(P.forms[i]); setTimeout(draw, 650); }
+      else { sfx.wrong(); b.classList.add("no"); mistakes++; queue.push(i); pos++; speak(P.forms[i]); setTimeout(draw, 1500); }
+    } }, f); b._v = f; return b; });
+    grid.append(...btns);
+    body.replaceChildren(...NN(h("div", { class: "tag" }, (pass === 1 ? t("gr_order") : t("gr_random")) + " · " + Math.min(pos + 1, queue.length) + "/" + queue.length),
+      table(i, false), grid));
+    const curRow = body.querySelector(".prow.cur"); if (curRow && curRow.scrollIntoView) curRow.scrollIntoView({ block: "nearest" });
+  };
+  const finish = () => {
+    bar.style.width = "100%";
+    const ev = J(B.paradigm_done(pid, mistakes)); sfx.done(); track("grammar_done", { course: cur.cid });
+    body.replaceChildren(...NN(h("div", { class: "card", style: "text-align:center;background:var(--yelll)" }, h("b", { style: "font-size:calc(20px*var(--k))" }, t("gr_done")),
+      h("div", { style: "font-size:calc(30px*var(--k));color:var(--hookk)" }, "★".repeat(ev.stars) + "☆".repeat(3 - ev.stars)), `+${ev.xp} XP · ` + t("gr_mist").replace("%d", mistakes),
+      ev.streak_extended ? h("div", { style: "color:var(--bad2);font-weight:700" }, "☀ " + t("streak_days", ev.streak)) : null), table(-1, true),
+      h("button", { class: "btn", onclick: back }, t("gr_back")), h("button", { class: "btn ghost", onclick: () => openParadigm(pid) }, t("again"))));
+  };
+  draw();
 }

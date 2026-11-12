@@ -255,7 +255,7 @@ def home():
         larps.append({"id": lp["id"], "title": lp["title"], "partner": lp["partner"], "avatar": lp["avatar"],
                       "fee": lp["fee"], "scene": lp["scene"], "goal": lp["goal"], "unlocked": un,
                       "best": d.get("larps", {}).get(lp["id"]), "can_pay": d["xp_total"] >= lp["fee"]})
-    return json.dumps({"larps": larps,
+    return json.dumps({"larps": larps, "paradigms": _paradigm_list(),
         "units": units, "tracks": getattr(C, "TRACKS", {}), "current": current, "chats": chats,
         "hearts": st.hearts(), "heart_max": E.HEART_MAX, "next_heart": st.seconds_to_next_heart(),
         "gems": d["gems"], "streak": d["streak"], "longest": d["longest_streak"], "freezes": d["freezes"],
@@ -684,3 +684,58 @@ def larp_answer(payload_json):
 def larp_abandon():
     _larp["done"] = True
     return True
+
+
+# ---------------------------------------------------------------------------
+# Gramatyka: wzory odmian (koniugacje, deklinacje, wyjątki)
+# ---------------------------------------------------------------------------
+def _pid(p):
+    pid = p[0] + ":" + p[2]
+    return _sr_lat(pid) if _cur["E"].__name__.endswith("_cyr") else pid
+
+
+def _paradigms():
+    return list(getattr(_cur["C"], "PARADIGMS", []) or [])
+
+
+def _paradigm_list():
+    d = _cur["state"].data
+    best = d.get("paradigms", {})
+    return [{"id": _pid(p), "kind": p[0], "group": p[1], "title": p[2], "n": len(p[4].split("; ")),
+             "best": best.get(_pid(p))} for p in _paradigms()]
+
+
+def paradigm_get(pid):
+    C = _cur["C"]
+    ps = _paradigms()
+    p = next(x for x in ps if _pid(x) == pid)
+    labels = p[3] if isinstance(p[3], (list, tuple)) else C.PARADIGM_LABELS[p[3]]
+    forms = p[4].split("; ")
+    same, kind = [], []                        # dystraktory: najpierw z wzorów o tych samych etykietach
+    for x in ps:
+        if x is p:
+            continue
+        if x[3] == p[3]:
+            same += x[4].split("; ")
+        elif x[0] == p[0]:
+            kind += x[4].split("; ")
+    random.shuffle(same)
+    random.shuffle(kind)
+    pool = [f for f in dict.fromkeys(same + kind) if f not in forms][:8]
+    return json.dumps({"id": pid, "kind": p[0], "group": p[1], "title": p[2], "note": p[5],
+                       "labels": list(labels), "forms": forms, "extra": pool}, ensure_ascii=False)
+
+
+def paradigm_done(pid, mistakes):
+    """Zalicza przejście całego wzoru: XP i gwiazdki (3 = bez błędu)."""
+    st = _cur["state"]
+    d = st.data
+    mistakes = int(mistakes)
+    stars = 3 if mistakes == 0 else (2 if mistakes <= 2 else 1)
+    best = d.setdefault("paradigms", {})
+    first = pid not in best
+    best[pid] = max(stars, best.get(pid, 0))
+    xp = (8 if first else 4) + (2 if mistakes == 0 else 0)
+    streak = st.add_xp(xp)
+    st.save()
+    return json.dumps({"xp": xp, "stars": stars, "streak_extended": bool(streak), "streak": d["streak"]}, ensure_ascii=False)
