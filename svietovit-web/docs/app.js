@@ -825,8 +825,13 @@ function grammarTab() {
   const TR = ["Typowe trudności", "Common difficulties"], item = p => h("button", { class: "chat-item gr-item", onclick: () => openParadigm(p.id) },
     h("div", {}, h("div", { class: "t", dir: "auto" }, p.title), h("div", { class: "s" }, p.n + " " + (LANG === "pl" ? "form" : "forms"))),
     h("div", { class: "stars" }, p.best ? "★".repeat(p.best) + "☆".repeat(3 - p.best) : ""));
+  TR.push("Klasyfikatory", "Measure words", "Liczniki", "Liczba mnoga");
   const hard = H.paradigms.filter(p => TR.includes(p.group));
-  if (hard.length) { out.push(h("div", { class: "track" }, "· " + t("gr_pit") + " ·")); hard.forEach(p => out.push(item(p))); }
+  if (hard.length) {
+    out.push(h("div", { class: "track" }, "· " + t("gr_pit") + " ·"));
+    const many = new Set(hard.map(p => p.group)).size > 1; let g = null;
+    hard.forEach(p => { if (many && p.group !== g) { g = p.group; out.push(h("div", { class: "gr-group" }, g)); } out.push(item(p)); });
+  }
   for (const kind of ["conj", "decl", "form"]) {
     const list = H.paradigms.filter(p => p.kind === kind && !TR.includes(p.group)); if (!list.length) continue;
     out.push(h("div", { class: "track" }, "· " + t({ conj: "gr_conj", decl: "gr_decl", form: "gr_form" }[kind]) + " ·"));
@@ -851,6 +856,7 @@ function openParadigm(pid) {
       h("span", { class: "plab", dir: "auto" }, lb), h("b", { class: "pform", dir: "auto" }, showAll || filled.has(i) ? P.forms[i] : (i === curIdx ? "?" : "")))));
   const shuffle = (arr) => arr.map(x => [Math.random(), x]).sort((x, y) => x[0] - y[0]).map(x => x[1]);
   const options = (i) => {
+    if ((P.alts || [])[i] && P.alts[i].length) return shuffle([P.forms[i], ...P.alts[i]]);
     const right = P.forms[i], own = shuffle([...new Set(P.forms)].filter(f => f !== right)), extra = P.extra.filter(f => f !== right && !own.includes(f));
     const others = own.slice(0, 5); for (const e of extra) { if (others.length >= 3) break; others.push(e); }   // extra jest puste w ćwiczeniach celowanych
     return shuffle([right, ...others.slice(0, 5)]);

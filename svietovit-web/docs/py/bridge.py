@@ -717,22 +717,24 @@ def paradigm_get(pid):
     ps = _paradigms()
     p = next(x for x in ps if _pid(x) == pid)
     labels = p[3] if isinstance(p[3], (list, tuple)) else _by_lang(C.PARADIGM_LABELS)[p[3]]
-    forms = p[4].split("; ")
+    raw = [f.split("|") for f in p[4].split("; ")]     # „dobra|zła|zła”: własne błędne odpowiedzi
+    forms = [r[0] for r in raw]
+    alts = [r[1:] for r in raw]
     same, kind = [], []                        # dystraktory: najpierw z wzorów o tych samych etykietach
     for x in ps:
         if x is p:
             continue
         if x[3] == p[3]:
-            same += x[4].split("; ")
+            same += [f.split("|")[0] for f in x[4].split("; ")]
         elif x[0] == p[0]:
-            kind += x[4].split("; ")
+            kind += [f.split("|")[0] for f in x[4].split("; ")]
     random.shuffle(same)
     random.shuffle(kind)
     pool = [f for f in dict.fromkeys(same + kind) if f not in forms][:8]
     if isinstance(p[3], str) and p[3].startswith("t_") and len(set(forms)) > 1:
         pool = []          # ćwiczenie celowane: wybór tylko spośród własnych odpowiedzi
     return json.dumps({"id": pid, "kind": p[0], "group": p[1], "title": p[2], "note": p[5],
-                       "labels": list(labels), "forms": forms, "extra": pool}, ensure_ascii=False)
+                       "labels": list(labels), "forms": forms, "alts": alts, "extra": pool}, ensure_ascii=False)
 
 
 def paradigm_done(pid, mistakes):
