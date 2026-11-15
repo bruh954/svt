@@ -11,7 +11,7 @@ Sprawdź naturalność, formę grzecznościową, pisownię i czy wyjaśnienia s�
 
 ### Poziom 1: Kawa i bułka  (typed=0, hint=none, cierpliwość 6)
 
-Nowe słowa: Kellner = kelner, Sie = pan, pani, państwo (grzecznie), möchten = chcą · chcecie · forma grzecznościowa „chce pan(i)”, Ihr = pański, pani, państwa, Brötchen = bułka, Appetit = apetyt, gern = chętnie
+Nowe słowa: Kellner = kelner, Sie = pan, pani, państwo (grzecznie), möchten = chcą · chcecie · forma grzecznościowa „chce pan(i)”, Brötchen = bułka, gern = chętnie, Ihr = pański, pani, państwa, Appetit = apetyt
 
 | # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
 |---|---|---|---|
@@ -34,7 +34,7 @@ Nowe słowa: Speisekarte = karta dań, Stück = kawałek, Schokoladenkuchen = ci
 
 ### Poziom 3: Stolik i pytania  (typed=0.5, hint=bank, cierpliwość 5)
 
-Nowe słowa: Glas = szklanka, kieliszek, Saft = sok, natürlich = oczywiście, lecker = pyszny, kostet = kosztuje (kosten), Euro = euro, sonst = poza tym, Essen = jedzenie
+Nowe słowa: Glas = szklanka, kieliszek, Saft = sok, Essen = jedzenie, natürlich = oczywiście, lecker = pyszny, kostet = kosztuje (kosten), sonst = poza tym, Euro = euro
 
 | # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
 |---|---|---|---|
@@ -47,7 +47,7 @@ Nowe słowa: Glas = szklanka, kieliszek, Saft = sok, natürlich = oczywiście, l
 
 ### Poziom 4: Rozmowa przy stole  (typed=0.75, hint=letters, cierpliwość 5)
 
-Nowe słowa: woher = skąd, alles = wszystko, ohne = bez
+Nowe słowa: woher = skąd, ohne = bez, alles = wszystko
 
 | # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
 |---|---|---|---|

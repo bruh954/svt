@@ -26,11 +26,32 @@ def strip(src, cid):
     return src[:a].rstrip("\n") + "\n" + src[b:]
 
 
+import unicodedata
+MISSING = None          # tryb --missing: zbiera nieznane słowa (poziom -> lista)
+PLAIN = {}              # forma bez akcentów -> forma z kursu (np. serbskie „dobar” -> „dóbar”)
+
+
+def _plain(w):
+    return "".join(c for c in unicodedata.normalize("NFD", w) if unicodedata.category(c) != "Mn")
+
+
+def canon(w, known):
+    if w in known:
+        return w
+    c = PLAIN.get(_plain(w))
+    return c if c and c in known else w
+
+
 def tok(text, known, punct):
     t = bulk.tokenize(text, known, punct)
     for i in range(1, len(t)):
         if t[i - 1] in ".!?" and t[i] not in known and t[i].lower() in known:
             t[i] = t[i].lower()
+    t = [x if x in punct else canon(x, known) for x in t]
+    if MISSING is not None:
+        for x in t:
+            if x not in known and x not in punct:
+                MISSING.append(x); known.add(x)
     return t
 
 
@@ -64,7 +85,7 @@ def parse(path):
                 cur[k] = v.strip()
             else:
                 raise SystemExit("linia %d: nieznane ustawienie: %s" % (n, line))
-        elif lv is not None and line[:2] in ("w ", "t ", "e "):
+        elif lv is not None and line[:2] in ("w ", "t ", "e ", "x "):
             lv["rows"].append((n, line[0], [x.strip() for x in line[2:].split("|")]))
         else:
             raise SystemExit("linia %d: nieznany format: %s" % (n, line))
@@ -77,6 +98,9 @@ def build(cid):
     C = bulk.load(path, base)
     punct = set(C.PUNCT) | bulk.OPEN
     known = {w[0] for u in C.UNITS for w in u.get("words", [])}
+    PLAIN.clear()
+    for k in known:
+        PLAIN.setdefault(_plain(k), k)
     seen = {x[1] for u in C.UNITS for x in u.get("sentences", [])}
     seen_tok = {tuple(x[0]) for u in C.UNITS for x in u.get("sentences", [])}
     larps = parse(os.path.join(HERE, "larps", cid + ".txt"))
@@ -88,21 +112,33 @@ def build(cid):
             lp["title"], lp["id"], lp["scene"], lp["goal"], lp["partner"], lp["endings"].get("win"), lp["endings"].get("partial"), lp["endings"].get("fail")))
         for lv in sorted(lp["levels"], key=lambda x: x["n"]):
             words, lex, sents, nodes, order = [], [], [], {}, []
+            if MISSING is not None:
+                MISSING.append("== poziom %d:" % lv["n"])
+            rows = [r for r in lv["rows"] if r[1] in ("t", "e")]
+            keys = ["n%d" % i for i in range(len(rows))]
+            beat = {"new": [], "pool": [], "sents": []}      # to, co wpisano od poprzedniej kwestii (w, x)
+            ri = 0
             for n, kind, p in lv["rows"]:
                 if kind == "w":
-                    if len(p) == 1:
+                    p[0] = canon(p[0], known)
+                    if len(p) == 1 or p[0] in known:
                         if p[0] not in known:
                             errors.append("linia %d: „%s” nie ma w kursie (podaj znaczenie)" % (n, p[0]))
-                        lex.append(p[0]); continue
-                    if p[0] in known:
-                        lex.append(p[0]); continue          # już jest w kursie: tylko wchodzi do lekcji larpa
-                    known.add(p[0]); words.append((p[0], p[1], None, None)); lex.append(p[0])
+                        beat["pool"].append(p[0]); lex.append(p[0]); continue
+                    known.add(p[0]); beat["new"].append((p[0], p[1], None, None)); beat["pool"].append(p[0]); lex.append(p[0])
                     if len(p) > 2 and p[2]: art[p[0]] = p[2]
                     if len(p) > 3 and p[3]: plu[p[0]] = p[3]
                     if len(p) > 4 and p[4]: prt[p[0]] = p[4]
-            rows = [r for r in lv["rows"] if r[1] != "w"]
-            keys = ["n%d" % i for i in range(len(rows))]
-            for i, (n, kind, p) in enumerate(rows):
+                    continue
+                if kind == "x":
+                    if len(p) < 2:
+                        errors.append("linia %d: x zdanie | tłumaczenie" % n); continue
+                    xt = tok(p[0], known, punct)
+                    badx = [t for t in xt if t not in known and t not in punct]
+                    if badx:
+                        errors.append("linia %d: nieznane słowa %s w: %s" % (n, badx, p[0])); continue
+                    beat["sents"].append((xt, p[1], {})); continue
+                i = ri; ri += 1
                 need = 2 if kind == "e" else 4
                 if len(p) < need:
                     errors.append("linia %d: za mało pól" % n); continue
@@ -112,6 +148,7 @@ def build(cid):
                     errors.append("linia %d: nieznane słowa %s w: %s" % (n, bad, p[0])); continue
                 node = {"bot": bt, "pl": p[1]}
                 key = keys[i]
+                bsents = list(beat["sents"])
                 if kind == "e":
                     node["end"] = True
                 else:
@@ -124,37 +161,47 @@ def build(cid):
                     if len(p) > 4 and p[4]:
                         node["why"] = p[4]
                     alts = []
-                    for a in (p[5].split(";") if len(p) > 5 and p[5] else []):
-                        ta = tok(a.strip(), known, punct)
+                    for a_ in (p[5].split(";") if len(p) > 5 and p[5] else []):
+                        ta = tok(a_.strip(), known, punct)
                         badt = [t for t in ta if t not in known and t not in punct]
                         if badt:
-                            errors.append("linia %d: nieznane słowa %s w wariancie: %s" % (n, badt, a)); continue
+                            errors.append("linia %d: nieznane słowa %s w wariancie: %s" % (n, badt, a_)); continue
                         alts.append(ta)
                     if alts:
                         node["alts"] = alts
-                    for toks, pl in ((at, p[3]),):
-                        if pl not in seen and tuple(toks) not in seen_tok:
-                            seen.add(pl); seen_tok.add(tuple(toks)); sents.append((toks, pl, {}))
+                    bsents += [(at, p[3], {})]
                 if kind == "t":
-                    pl = p[1]
-                    if pl not in seen and tuple(bt) not in seen_tok:
-                        seen.add(pl); seen_tok.add(tuple(bt)); sents.append((bt, pl, {}))
+                    bsents += [(bt, p[1], {})]
+                uniq = []
+                for tk, pl, tr in bsents:
+                    if pl not in seen and tuple(tk) not in seen_tok:
+                        seen.add(pl); seen_tok.add(tuple(tk)); uniq.append((tk, pl, tr))
+                if kind == "t" and not beat["pool"]:       # kwestia bez nowych słów: ćwiczymy słowa z odpowiedzi
+                    beat["pool"] = list(dict.fromkeys(t for t in at if t not in punct and len(t) > 2))
+                if beat["pool"] and (kind == "t" or beat["new"]):
+                    uid = "lp_%s_%d_%d" % (lp["id"], lv["n"], i + 1)
+                    units.append({"id": uid, "title": "%s · poziom %d · kwestia %d" % (lp["title"], lv["n"], i + 1), "icon": "🎭", "track": "jezyk", "hidden": True,
+                                  "words": beat["new"], "sentences": uniq})
+                    if kind == "t":
+                        node["unit"] = uid
+                        node["pool"] = list(beat["pool"])
+                words += beat["new"]; sents += uniq
+                beat = {"new": [], "pool": [], "sents": []}
                 nodes[key] = node; order.append(key)
             if not order or not nodes[order[-1]].get("end"):
                 errors.append("poziom %d larpa %s: ostatni wiersz musi być „e” (zakończenie)" % (lv["n"], lp["id"]))
             cfg = {"title": lv["title"], "start": order[0] if order else None, "nodes": nodes, "lexicon": lex,
                    "patience": int(lv.get("patience", 5)), "typed": float(lv.get("typed", 0)), "extra": int(lv.get("extra", 3))}
+            cfg["lexicon"] = []
             if lv.get("hint", "none") != "none":
                 cfg["hint"] = lv["hint"]
             if lv.get("reward"):
                 cfg["reward"] = int(lv["reward"])
             levels.append(cfg)
-            uid = "lp_%s_%d" % (lp["id"], lv["n"])
-            if words or sents:
-                units.append({"id": uid, "title": "%s · poziom %d" % (lp["title"], lv["n"]), "icon": "🎭", "track": "jezyk", "hidden": True, "words": words, "sentences": sents})
             review.append("\n### Poziom %d: %s  (typed=%s, hint=%s, cierpliwość %s)\n\nNowe słowa: %s\n\n| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |\n|---|---|---|---|\n" % (
                 lv["n"], lv["title"], lv.get("typed", 0), lv.get("hint", "none"), lv.get("patience", 5),
                 ", ".join("%s = %s" % (w[0], w[1]) for w in words) or "(brak)"))
+            rows = [r for r in rows if r[1] in ("t", "e")]
             for i, (n, kind, p) in enumerate(rows, 1):
                 review.append("| %d | %s *(%s)* | %s | %s |\n" % (i, p[0], p[1], ("**" + p[2] + "** *(" + p[3] + ")*" + (" · warianty: " + p[5] if len(p) > 5 and p[5] else "")) if kind == "t" else "—", (p[4] if len(p) > 4 and kind == "t" else "") or ""))
         lp2 = {k: v for k, v in lp.items() if k != "levels"}
@@ -184,4 +231,8 @@ def write(cid):
 
 
 if __name__ == "__main__":
+    if "--missing" in sys.argv:
+        MISSING = []
+        r = build(sys.argv[1])
+        print("\n".join(r[6])); print(" ".join(MISSING).replace(" == ", "\n== ")); sys.exit(0)
     write(sys.argv[1])

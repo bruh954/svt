@@ -336,9 +336,80 @@ def reset_progress():
 # ---------------------------------------------------------------------------
 # Sesje
 # ---------------------------------------------------------------------------
+def _larp_round_exs(rng):
+    """Seria ćwiczeń (jak w zwykłej lekcji) z tematu bieżącej kwestii larpa: karty nowych słów + ok. 10 ćwiczeń."""
+    E, st = _cur["E"], _cur["state"]
+    cfg, lvl = _larp["cfg"], _larp["lvl"]
+    n = cfg["nodes"][_larp["node"]]
+    uidx = next(i for i, u in enumerate(E.UNITS) if u["id"] == n["unit"])
+    pool = [h for h in n["pool"] if h in E.WORDS]
+    known = list(dict.fromkeys([h for h in E.WORDS if E.WORDS[h]["unit"] < uidx] + pool))
+    gen = E.Gen(known, rng)
+    learned = set(st.learned_words())
+    exs = [gen.intro(h) for h in pool if h not in learned]
+    P = set(_cur["C"].PUNCT)
+    ks = set(known)
+    mine = [x for j, u in enumerate(E.UNITS) if j <= uidx and u["id"].startswith("lp_%s_" % _larp["id"]) for x in u.get("sentences", [])]
+    sents = [x for x in mine if all(t in ks or t in P for t in x[0])]
+    sents.sort(key=lambda x: -sum(1 for t in x[0] if t in pool))
+    sents = sents[:6]
+    extra = [h for h in known if h not in pool]
+    rng.shuffle(extra)
+    dpool = pool + extra[:6]
+    typed_p = [0, 0.15, 0.3, 0.45, 0.6][max(0, min(4, lvl - 1))]
+    graded = []
+    if len(pool) >= 4:
+        graded.append(gen.match(pool[:5], "pl"))
+    i = 0
+    while len(graded) < 10 and pool:
+        h = pool[i % len(pool)]; i += 1
+        r = rng.random()
+        if r < typed_p:
+            graded.append(gen.typing(h))
+        elif sents and r < typed_p + 0.4:
+            toks, pl, tr = rng.choice(sents)
+            graded.append(gen.build(toks, pl, tr))
+        elif sents and r < typed_p + 0.55:
+            toks, pl, tr = rng.choice(sents)
+            graded.append(gen.sentence_meaning(toks, pl, E.all_sentence_pl()))
+        else:
+            graded.append(gen.meaning(h, dpool) if rng.random() < 0.5 else gen.form(h, dpool))
+    rng.shuffle(graded)
+    return exs + graded
+
+
+def _larp_round_finish():
+    s, st = _cur["session"], _cur["state"]
+    lp = _larp_def(_larp["id"])
+    n = _larp["cfg"]["nodes"][_larp["node"]]
+    acc = s.accuracy
+    for h, ok in s.word_results:
+        st.record_word(h, ok)
+    for h in n.get("pool", []):
+        st.data["words"].setdefault(h, {"box": 0, "last": st.now(), "right": 0, "wrong": 0})
+    _larp["rounds"].add(_larp["node"])
+    if acc >= 0.9:
+        verdict = "great"
+    elif acc >= 0.7:
+        verdict = "ok"; _larp["weak"] += 1
+    else:
+        verdict = "bad"; _larp["mistakes"] += 1; _larp["patience"] -= 1
+    res = {"kind": "larp", "acc": acc, "verdict": verdict, "patience": _larp["patience"], "mistakes": s.mistakes}
+    if _larp["patience"] <= 0:
+        res["end"] = _larp_finish(lp, "fail")
+    st.save()
+    _cur["session"] = None
+    return json.dumps(res, ensure_ascii=False)
+
+
 def start(kind, unit=None):
     E, st = _cur["E"], _cur["state"]
     rng = random.Random()
+    if kind == "larp":
+        exs = _larp_round_exs(rng)
+        sess = E.Session(exs, "practice", None, hearts=False)
+        _cur["session"], _cur["kind"] = sess, kind
+        return len(exs)
     if kind == "lesson":
         exs = E.make_lesson(st, int(unit), audio=True, rng=rng) if _is_hanzi() else E.make_lesson(st, int(unit), rng)
         sess = E.Session(exs, "lesson", int(unit), hearts=True)
@@ -513,6 +584,8 @@ def advance(ok):
 
 def finish():
     s, st = _cur["session"], _cur["state"]
+    if _cur.get("kind") == "larp":
+        return _larp_round_finish()
     ev = st.finish(s)
     ev["kind"] = _cur["kind"]
     ev["mistakes"] = s.mistakes
@@ -604,7 +677,7 @@ def tone_contours():
 # ---------------------------------------------------------------------------
 # Larpy: scena ze stawką (wpisowe w XP, cierpliwość rozmówcy, pytania „jedna szansa")
 # ---------------------------------------------------------------------------
-_larp = {"id": None, "lvl": 1, "cfg": None, "node": None, "patience": 0, "weak": 0, "mistakes": 0, "done": True, "typed": set()}
+_larp = {"id": None, "lvl": 1, "cfg": None, "node": None, "patience": 0, "weak": 0, "mistakes": 0, "done": True, "typed": set(), "rounds": set()}
 
 
 def _larp_def(lid):
@@ -671,6 +744,8 @@ def _larp_node(lp, key):
     n = cfg["nodes"][key]
     out = {"key": key, "bot_text": _join(n["bot"]), "bot_sub": _sent_sub(n["bot"]), "pl": n.get("pl"),
            "deadly": bool(n.get("deadly")), "note": n.get("note")}
+    if n.get("unit") and key not in _larp["rounds"]:
+        out["lesson"] = True            # najpierw seria ćwiczeń z tematu tej kwestii
     if n.get("end"):
         out["end"] = True
     elif "options" in n:
@@ -719,7 +794,7 @@ def larp_start(lid, lvl=1):
     frac = float(cfg.get("typed", 0))
     keys = _larp_chain(cfg)
     typed = {k for i, k in enumerate(keys) if "build" in cfg["nodes"][k] and int((i + 1) * frac + 1e-9) > int(i * frac + 1e-9)}
-    _larp.update(id=lid, lvl=lvl, cfg=cfg, node=cfg["start"], patience=cfg.get("patience", lp.get("patience", 3)), weak=0, mistakes=0, done=False, typed=typed)
+    _larp.update(id=lid, lvl=lvl, cfg=cfg, node=cfg["start"], patience=cfg.get("patience", lp.get("patience", 3)), weak=0, mistakes=0, done=False, typed=typed, rounds=set())
     return json.dumps({"ok": True, "fee": lp["fee"], "patience": _larp["patience"], "max_patience": _larp["patience"], "level": lvl,
                        "lexicon": lex, "disclaimer": lp.get("disclaimer"), "level_title": cfg.get("title") if cfg is not lp else None,
                        "scene": cfg.get("scene", lp["scene"]), "goal": cfg.get("goal", lp["goal"]), "partner": lp["partner"], "avatar": lp["avatar"],
