@@ -218,6 +218,22 @@ def _ptitle(p, tok):
     return t
 
 
+def _larp_t(lp, tok, L):
+    def node(n):
+        o = dict(n, bot=L(n["bot"]))
+        if "build" in n:
+            o["build"] = (L(n["build"][0]), n["build"][1])
+        if "alts" in n:
+            o["alts"] = [L(a) for a in n["alts"]]
+        return o
+    def lev(c):
+        o = dict(c, nodes={k: node(v) for k, v in c["nodes"].items()})
+        if "lexicon" in c:
+            o["lexicon"] = [tok(w) for w in c["lexicon"]]
+        return o
+    return dict(lp, partner=tok(lp["partner"]), avatar=tok(lp["avatar"]), levels=[lev(c) for c in lp["levels"]])
+
+
 def transform(C, tok, expl):
     """Kopia treści kursu: tok() zmienia słowa w języku kursu, expl() polskie objaśnienia z cytatami."""
     P = set(C.PUNCT)
@@ -250,7 +266,7 @@ def transform(C, tok, expl):
         chats.append(dict(c, partner=tok(c["partner"]), avatar=tok(c["avatar"]), turns=turns))
     return {"PUNCT": set(C.PUNCT), "TRACKS": dict(C.TRACKS), "UNITS": units, "INSIGHTS": ins,
             "ENDINGS_INSIGHT": dict(C.ENDINGS_INSIGHT), "ENDINGS": ends, "CHAT_EXTRA": extra, "CHATS": chats,
-            "ARTICLES": dict(getattr(C, "ARTICLES", {})), "PLURALS": dict(getattr(C, "PLURALS", {})), "PARTS": dict(getattr(C, "PARTS", {})),
+            "ARTICLES": dict(getattr(C, "ARTICLES", {})), "PLURALS": dict(getattr(C, "PLURALS", {})), "PARTS": dict(getattr(C, "PARTS", {})), "LARPS": [_larp_t(lp, tok, L) for lp in getattr(C, "LARPS", [])],
             "PARADIGM_LABELS": {k: ([tok(x) for x in v] if k in ("os", "t_ff") or k.startswith("t_m") else list(v)) for k, v in getattr(C, "PARADIGM_LABELS", {}).items()},
             "PARADIGMS": [(p[0], p[1], _ptitle(p, tok), p[3], (p[4] if p[3] == "t_ff" else "; ".join(tok(f) for f in p[4].split("; "))), expl(p[5]) if p[5] else p[5])
                           for p in getattr(C, "PARADIGMS", [])]}
@@ -289,6 +305,9 @@ def dump(D, doc):
         o += ["", "PLURALS = %r" % D["PLURALS"]]
     if D.get("PARTS"):
         o += ["", "PARTS = %r" % D["PARTS"]]
+    if D.get("LARPS"):
+        import pprint
+        o += ["", "LARPS = " + pprint.pformat(D["LARPS"], width=150, sort_dicts=False)]
     if D.get("PARADIGMS"):
         o += ["", "PARADIGM_LABELS = {"] + ["    %r: %r," % kv for kv in D["PARADIGM_LABELS"].items()] + ["}", "", "PARADIGMS = ["]
         o += ["    %r," % (p,) for p in D["PARADIGMS"]] + ["]"]

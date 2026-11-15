@@ -172,7 +172,8 @@ def write(cid):
     for uid, ins in insights:
         block += "INSIGHTS.setdefault(%r, []).append(%r)\n" % (uid, ins)
     block += END
-    i = base.find(GRAM)
+    i = base.find("# === LARPS")
+    i = i if i >= 0 else base.find(GRAM)
     out = (base[:i].rstrip("\n") + "\n\n" + block + base[i:]) if i >= 0 else base.rstrip("\n") + "\n\n" + block
     open(os.path.join(HERE, "content_%s.py" % cid), "w", encoding="utf-8").write(out)
     nw = sum(len(u["words"]) for u in units); ns = sum(len(u["sentences"]) for u in units)

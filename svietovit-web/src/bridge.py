@@ -236,6 +236,8 @@ def home():
     E, C, st = _cur["E"], _cur["C"], _cur["state"]
     units = []
     for i, u in enumerate(E.UNITS):
+        if u.get("hidden"):               # słowa larpów: istnieją w kursie, ale nie ma ich na ścieżce
+            continue
         un = st.unlocked(i)
         units.append({
             "i": i, "id": u["id"], "title": u["title"], "icon": u.get("icon"), "color": u.get("color"),
@@ -255,7 +257,8 @@ def home():
             un = True
         larps.append({"id": lp["id"], "title": lp["title"], "partner": lp["partner"], "avatar": lp["avatar"],
                       "fee": lp["fee"], "scene": lp["scene"], "goal": lp["goal"], "unlocked": un,
-                      "best": d.get("larps", {}).get(lp["id"]), "can_pay": d["xp_total"] >= lp["fee"]})
+                      "best": d.get("larps", {}).get(lp["id"]), "can_pay": d["xp_total"] >= lp["fee"],
+                      "levels": _larp_levels_view(lp), "disclaimer": lp.get("disclaimer"), "reward": lp.get("reward")})
     return json.dumps({"larps": larps, "paradigms": _paradigm_list(),
         "units": units, "tracks": getattr(C, "TRACKS", {}), "current": current, "chats": chats,
         "hearts": st.hearts(), "heart_max": E.HEART_MAX, "next_heart": st.seconds_to_next_heart(),
@@ -348,13 +351,31 @@ def start(kind, unit=None):
         else:
             exs = E.make_sound_training(st, rng)
         sess = E.Session(exs, "sound", None, hearts=False)
+    if kind == "practice" and _cur.get("cid") in DEAD_LANGS:
+        _plant_demon(exs, rng)
     _cur["session"], _cur["kind"] = sess, kind
     return len(exs)
 
 
+DEAD_LANGS = {"ave", "logos", "abba", "norse", "glagol"}
+
+
+def _plant_demon(exs, rng):
+    """W językach wymarłych jedno zdanie w serii losowych ćwiczeń naprawdę wzywa demona (kończy serię przed końcem),
+    a ostrzeżenie „to zdanie może wezwać demona” dostaje ono i jeszcze 2–3 niewinne zdania w losowej kolejności."""
+    ok = [i for i, e in enumerate(exs) if i >= 2 and e["type"] in ("build", "type", "choice") and (e["type"] != "choice" or e.get("mode") == "sentence")]
+    if len(exs) < 6 or len(ok) < 3:
+        return
+    d = rng.choice(ok)
+    decoys = rng.sample([i for i in ok if i != d], min(len(ok) - 1, 2 + (len(exs) > 12)))
+    exs[d]["_demon"] = True
+    for i in [d] + decoys:
+        exs[i]["_warn"] = True
+
+
 def _render(ex):
     t = ex["type"]
-    out = {"type": t, "title": ex.get("title"), "retry": bool(ex.get("_retry"))}
+    out = {"type": t, "title": ex.get("title"), "retry": bool(ex.get("_retry")), "warn": bool(ex.get("_warn"))}
     if t == "intro":
         out.update(_word_view(ex["word"]))
         out["audio"] = ex.get("audio")
@@ -481,9 +502,12 @@ def advance(ok):
     if graded and ok is False and s.use_hearts:
         st.lose_heart()
     milestone = s.answer(None if not graded else bool(ok))
+    demon = bool(ex.get("_demon"))
+    if demon:
+        s.queue.clear()          # demon przerywa serię przed ostatnim ćwiczeniem
     out_of_hearts = bool(s.use_hearts and st.hearts() <= 0 and not s.finished)
     st.save()
-    return json.dumps({"milestone": milestone, "out_of_hearts": out_of_hearts, "finished": s.finished,
+    return json.dumps({"milestone": milestone, "out_of_hearts": out_of_hearts, "finished": s.finished, "demon": demon,
                        **_progress()})
 
 
@@ -580,15 +604,71 @@ def tone_contours():
 # ---------------------------------------------------------------------------
 # Larpy: scena ze stawką (wpisowe w XP, cierpliwość rozmówcy, pytania „jedna szansa")
 # ---------------------------------------------------------------------------
-_larp = {"id": None, "node": None, "patience": 0, "weak": 0, "mistakes": 0, "done": True}
+_larp = {"id": None, "lvl": 1, "cfg": None, "node": None, "patience": 0, "weak": 0, "mistakes": 0, "done": True, "typed": set()}
 
 
 def _larp_def(lid):
     return next(x for x in _cur["C"].LARPS if x["id"] == lid)
 
 
+def _larp_cfg(lp, lvl=1):
+    """Larp z poziomami ma lp["levels"]; stary larp (jedna scena) jest sam swoim jedynym poziomem."""
+    lv = lp.get("levels")
+    return lv[max(1, min(int(lvl), len(lv))) - 1] if lv else lp
+
+
+def _larp_rank(lid, lvl):
+    return (_cur["state"].data.get("larp_lv", {}).get(lid) or {}).get(str(lvl))
+
+
+def _larp_levels_view(lp):
+    lv = lp.get("levels")
+    if not lv:
+        return None
+    out = []
+    for i, c in enumerate(lv, 1):
+        out.append({"lvl": i, "title": c.get("title"), "best": _larp_rank(lp["id"], i),
+                    "unlocked": i == 1 or (_larp_rank(lp["id"], i - 1) or 0) >= 1})
+    return out
+
+
+def _larp_chain(cfg):
+    keys, k, seen = [], cfg["start"], set()
+    while k and k not in seen and not cfg["nodes"][k].get("end"):
+        keys.append(k); seen.add(k)
+        k = cfg["nodes"][k].get("next")
+    return keys
+
+
+def _larp_disp(toks):
+    """Zdanie do pokazania: wielka litera na początku każdego zdania (tokeny po kropce są zapisane małą literą)."""
+    import re as _re
+    s = _join(toks)
+    if getattr(_cur["E"], "CAP_FIRST", False):
+        s = _re.sub(r"([.!?]\s+)(\w)", lambda m: m.group(1) + m.group(2).upper(), s)
+    return s
+
+
+def _larp_norm(text):
+    """Do porównania: początki zdań małą literą (to nie błąd), bez interpunkcji, pojedyncze spacje."""
+    import re as _re
+    text = _re.sub(r"(^|[.!?]\s*)(\w)", lambda m: m.group(1) + m.group(2).lower(), text.strip())
+    P = set(_cur["C"].PUNCT)
+    t = "".join(" " if c in P else c for c in text)
+    return " ".join(t.split())
+
+
+def _larp_plain(text):
+    E = _cur["E"]
+    if hasattr(E, "plain"):
+        return E.plain(text).lower()
+    import unicodedata
+    return "".join(c for c in unicodedata.normalize("NFD", text.lower()) if unicodedata.category(c) != "Mn")
+
+
 def _larp_node(lp, key):
-    n = lp["nodes"][key]
+    cfg = _larp["cfg"]
+    n = cfg["nodes"][key]
     out = {"key": key, "bot_text": _join(n["bot"]), "bot_sub": _sent_sub(n["bot"]), "pl": n.get("pl"),
            "deadly": bool(n.get("deadly")), "note": n.get("note")}
     if n.get("end"):
@@ -599,58 +679,93 @@ def _larp_node(lp, key):
         toks, pl = n["build"]
         st = _cur["state"]
         E = _cur["E"]
-        learned = [h for h in st.learned_words() if (_is_hanzi() or not E.WORDS[h].get("letter"))]
-        extra = [h for h in learned if h not in toks]
-        random.shuffle(extra)
-        bank = _no_punct(toks) + extra[:3]
+        if key in _larp["typed"]:
+            words = _no_punct(toks)
+            hint = cfg.get("hint")
+            hs = ""
+            if hint == "bank":
+                w2 = list(words); random.shuffle(w2); hs = "  ·  ".join(w2)
+            elif hint == "letters":
+                hs = "  ".join(w[:1] + "…" for w in words)
+            out["typed"] = {"prompt": pl, "hint": hs}
+            return out
+        pool = [h for h in (cfg.get("lexicon") or []) if h in E.WORDS and h not in toks]
+        learned = [h for h in st.learned_words() if (_is_hanzi() or not E.WORDS[h].get("letter")) and h not in toks and h not in pool]
+        random.shuffle(pool); random.shuffle(learned)
+        bank = _no_punct(toks) + (pool + learned)[:int(cfg.get("extra", 3))]
         random.shuffle(bank)
         out["build"] = {"prompt": pl, "bank": _tiles(bank)}
     return out
 
 
-def larp_start(lid):
+def larp_start(lid, lvl=1):
     lp = _larp_def(lid)
+    lvl = int(lvl or 1)
+    cfg = _larp_cfg(lp, lvl)
     st = _cur["state"]
     d = st.data
+    if lvl > 1 and not (lp.get("levels") and (_larp_rank(lid, lvl - 1) or 0) >= 1):
+        return json.dumps({"ok": False, "reason": "locked"})
     if d["xp_total"] < lp["fee"]:
         return json.dumps({"ok": False, "reason": "xp"})
     d["xp_total"] -= lp["fee"]
+    E = _cur["E"]
+    lex = []
+    for h in (cfg.get("lexicon") or []):
+        if h in E.WORDS:
+            d["words"].setdefault(h, {"box": 0, "last": st.now(), "right": 0, "wrong": 0})
+            lex.append(_word_view(h))
     st.save()
-    _larp.update(id=lid, node=lp["start"], patience=lp.get("patience", 3), weak=0, mistakes=0, done=False)
-    return json.dumps({"ok": True, "fee": lp["fee"], "patience": _larp["patience"], "max_patience": _larp["patience"],
-                       "scene": lp["scene"], "goal": lp["goal"], "partner": lp["partner"], "avatar": lp["avatar"],
-                       "title": lp["title"], "node": _larp_node(lp, lp["start"])}, ensure_ascii=False)
+    frac = float(cfg.get("typed", 0))
+    keys = _larp_chain(cfg)
+    typed = {k for i, k in enumerate(keys) if "build" in cfg["nodes"][k] and int((i + 1) * frac + 1e-9) > int(i * frac + 1e-9)}
+    _larp.update(id=lid, lvl=lvl, cfg=cfg, node=cfg["start"], patience=cfg.get("patience", lp.get("patience", 3)), weak=0, mistakes=0, done=False, typed=typed)
+    return json.dumps({"ok": True, "fee": lp["fee"], "patience": _larp["patience"], "max_patience": _larp["patience"], "level": lvl,
+                       "lexicon": lex, "disclaimer": lp.get("disclaimer"), "level_title": cfg.get("title") if cfg is not lp else None,
+                       "scene": cfg.get("scene", lp["scene"]), "goal": cfg.get("goal", lp["goal"]), "partner": lp["partner"], "avatar": lp["avatar"],
+                       "title": lp["title"], "node": _larp_node(lp, cfg["start"])}, ensure_ascii=False)
 
 
 def _larp_finish(lp, outcome):
     st = _cur["state"]
     d = st.data
+    cfg, lvl = _larp["cfg"], _larp["lvl"]
     fee = lp["fee"]
+    reward = cfg.get("reward") or lp.get("reward") or fee * 3
     gain = 0
     streak = False
     if outcome == "win":
-        gain = fee * 3
+        gain = reward
         streak = st.add_xp(gain)
         d["gems"] += 5
     elif outcome == "partial":
-        gain = fee
-        d["xp_total"] += fee           # sam zwrot wpisowego
+        if fee:
+            gain = fee
+            d["xp_total"] += fee           # sam zwrot wpisowego
+        else:
+            gain = reward // 3
+            streak = st.add_xp(gain)
     rank = {"fail": 0, "partial": 1, "win": 2}[outcome]
     best = d.setdefault("larps", {})
     best[lp["id"]] = max(rank, best.get(lp["id"], 0))
+    lv = d.setdefault("larp_lv", {}).setdefault(lp["id"], {})
+    lv[str(lvl)] = max(rank, lv.get(str(lvl), 0))
     _larp["done"] = True
     st.save()
-    return {"outcome": outcome, "fee": fee, "gain": gain, "net": gain - fee, "text": lp["endings"][outcome],
+    nxt = lvl + 1 if lp.get("levels") and lvl < len(lp["levels"]) and outcome != "fail" else None
+    endings = cfg.get("endings") or lp["endings"]
+    return {"outcome": outcome, "fee": fee, "gain": gain, "net": gain - fee, "text": endings[outcome], "level": lvl, "next_level": nxt,
             "gems": 5 if outcome == "win" else 0, "streak_extended": bool(streak), "streak": d["streak"],
             "mistakes": _larp["mistakes"], "weak": _larp["weak"]}
 
 
 def larp_answer(payload_json):
-    """Odpowiedź w bieżącym węźle: {"option": i} albo {"tokens": [...]}."""
+    """Odpowiedź w bieżącym węźle: {"option": i}, {"tokens": [...]} (klocki) albo {"text": "..."} (wpisana z klawiatury)."""
     if _larp["done"]:
         return json.dumps({"error": "done"})
     lp = _larp_def(_larp["id"])
-    n = lp["nodes"][_larp["node"]]
+    cfg = _larp["cfg"]
+    n = cfg["nodes"][_larp["node"]]
     p = json.loads(payload_json)
     res = {"verdict": None, "why": None, "text": None, "sub": None}
     nxt = None
@@ -661,15 +776,34 @@ def larp_answer(payload_json):
             nxt = target
     else:
         toks, _pl = n["build"]
-        given = list(p.get("tokens", []))
-        ok = _join(_no_punct(given)) == _join(_no_punct(toks))
-        res.update(verdict="good" if ok else "bad", text=_join(toks) if ok else _join(given),
-                   sub=_sent_sub(toks if ok else given) if given else "")
-        if ok:
-            nxt = n["next"]
+        cands = [toks] + list(n.get("alts") or [])
+        want = [_larp_norm(_larp_disp(c)) for c in cands]
+        disp = _larp_disp(toks)
+        if "text" in p:
+            raw = str(p.get("text") or "")
+            given_s = _larp_norm(raw)
+            if given_s in want:
+                verdict = "good"
+            elif given_s.lower() in [w.lower() for w in want]:
+                verdict, res["why"] = "weak", "Wielkie i małe litery: " + disp
+            elif _larp_plain(given_s) in [_larp_plain(w) for w in want]:
+                verdict, res["why"] = "weak", "Brakuje znaków diakrytycznych: " + disp
+            else:
+                verdict = "bad"
+            shown = raw.strip()
+            sub = ""
         else:
+            given = list(p.get("tokens", []))
+            given_s = _larp_norm(_larp_disp(given))
+            verdict = "good" if given_s in want else "bad"
+            shown = disp if verdict == "good" else _larp_disp(given)
+            sub = _sent_sub(toks if verdict == "good" else given) if given else ""
+        res.update(verdict=verdict, text=shown if shown else "…", sub=sub if verdict != "bad" or "text" not in p else "")
+        if verdict == "bad":
             res["why"] = n.get("why") or None
-            res["answer"] = _join(toks)
+            res["answer"] = disp
+        else:
+            nxt = n["next"]
     if res["verdict"] == "weak":
         _larp["weak"] += 1
     if res["verdict"] == "bad":
@@ -688,7 +822,8 @@ def larp_answer(payload_json):
         node = _larp_node(lp, nxt)
         res["node"] = node
         if node.get("end"):
-            res["end"] = _larp_finish(lp, "win" if _larp["weak"] == 0 else "partial")
+            clean = _larp["weak"] == 0 and (_larp["mistakes"] == 0 or not lp.get("strict"))
+            res["end"] = _larp_finish(lp, "win" if clean else "partial")
     return json.dumps(res, ensure_ascii=False)
 
 
