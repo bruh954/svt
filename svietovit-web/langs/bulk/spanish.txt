@@ -1,0 +1,21 @@
+== Wzór: Quiero … i Tengo … | W
+n Ten sam szkielet, inne komponenty: Quiero + to, czego chcesz. Tengo + to, co masz. Rodzajnik jest nieokreślony: un (męski), una (żeński).
+p Quiero {0}. | Chcę {0}. | un café=kawę ; agua=wodę ; pan=chleb ; queso=ser ; leche=mleko ; una manzana=jabłko ; vino=wino ; té=herbatę ; pescado=rybę
+p Tengo {0}. | Mam {0}. | un hermano=brata ; una hermana=siostrę ; un amigo=przyjaciela ; una casa=dom ; dos niños=dwoje dzieci ; tres manzanas=trzy jabłka ; cinco manzanas=pięć jabłek ; un hotel=hotel
+
+== Wzór: ¿Dónde está …? i Voy a … | W
+n Pytanie o miejsce: ¿Dónde está + rzeczownik? Kierunek: Voy a + miejsce. Zmieniasz tylko miejsce, reszta zostaje.
+p ¿Dónde está {0}? | Gdzie jest {0}? | la escuela=szkoła ; el hotel=hotel ; la calle=ulica ; la casa=dom ; el taxi=taksówka ; la ciudad=miasto ; el mar=morze ; Madrid=Madryt
+p Voy a {0}. | Idę do {0}. | la escuela=szkoły ; la ciudad=miasta ; la casa=domu ; Madrid=Madrytu ; Polonia=Polski ; España=Hiszpanii ; el mar=morza ; el hotel=hotelu
+p {0} voy a {1}. | {0} idę do {1}. | hoy+la escuela=dziś+szkoły ; mañana+Madrid=jutro+Madrytu ; ahora+la casa=teraz+domu ; hoy+el mar=dziś+morza
+
+== Wzór: Soy … Eres … Es … | W
+n Kto jest kim: osoba + czasownik ser + zawód lub narodowość. Soy (ja), eres (ty), es (on, ona).
+p {0} {1}. | {0} {1}. | yo+soy polaco=ja+jestem Polakiem ; tú+eres estudiante=ty+jesteś studentem ; él+es profesor=on+jest nauczycielem ; ella+es polaca=ona+jest Polką ; yo+soy estudiante=ja+jestem studentem ; tú+eres polaco=ty+jesteś Polakiem ; él+es polaco=on+jest Polakiem
+
+== Zdania złożone: pero i porque | Z
+w pero | ale
+w porque | ponieważ, bo
+n Dwa zdania łączysz przecinkiem i słowem pero (ale) albo porque (bo). Zdania podrzędne w hiszpańskim mają zwykły szyk, czasownik nie ucieka na koniec.
+p Tengo {0}, pero no tengo {1}. | Mam {0}, ale nie mam {1}. | pan+queso=chleb+sera ; agua+leche=wodę+mleka ; un hermano+una hermana=brata+siostry ; café+té=kawę+herbaty
+p Quiero {0}, porque es bueno. | Chcę {0}, bo jest dobry. | pan=chleb ; queso=ser ; vino=wino ; pescado=rybę
