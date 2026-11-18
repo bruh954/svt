@@ -445,3 +445,13 @@ PARADIGMS += [
     ('form', 'Szyk zdania', 'Szyk: zdanie podrzędne', 't_s1', 'Ich weiß, dass er morgen kommt.|Ich weiß, dass er kommt morgen.|Ich weiß, dass kommt er morgen.|Ich weiß, dass morgen er kommt.; Ich komme nicht, weil ich keine Zeit habe.|Ich komme nicht, weil ich habe keine Zeit.|Ich komme nicht, weil keine Zeit ich habe.|Ich komme nicht, weil ich keine habe Zeit.; Wenn es regnet, bleibe ich zu Hause.|Wenn es regnet, ich bleibe zu Hause.|Wenn regnet es, bleibe ich zu Hause.|Wenn es regnet bleibe, ich zu Hause.; Ich weiß nicht, wo die Schule ist.|Ich weiß nicht, wo ist die Schule.|Ich weiß nicht, wo die Schule nicht ist.|Ich nicht weiß, wo die Schule ist.', 'Po dass, weil, wenn, ob i słowach pytających odmieniony czasownik idzie na sam koniec zdania podrzędnego.'),
     ('form', 'Szyk zdania', 'Szyk: rama zdania', 't_s2', 'Ich muss heute arbeiten.|Ich arbeiten muss heute.|Ich muss arbeiten heute.|Ich heute arbeiten muss.; Ich habe Brot gegessen.|Ich habe gegessen Brot.|Ich Brot habe gegessen.|Ich gegessen habe Brot.; Wir sind gestern zur Schule gegangen.|Wir sind gegangen gestern zur Schule.|Wir gestern sind zur Schule gegangen.|Wir sind gestern gegangen zur Schule.; Ich will Wasser trinken.|Ich will trinken Wasser.|Ich trinken will Wasser.|Ich Wasser will trinken.', 'Czasownik pomocniczy lub modalny stoi na 2. miejscu, a drugi czasownik (bezokolicznik, imiesłów) na końcu: tworzą ramę zdania.'),
 ]
+
+# === PRONOUNS (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /PRONOUNS ===

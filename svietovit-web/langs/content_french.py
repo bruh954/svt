@@ -349,3 +349,21 @@ PARADIGMS += [
     ('form', 'Szyk zdania', 'Szyk: zaimki i przeczenie', 't_s0', 'Je le vois.|Je vois le.|Le je vois.|Je vois lui.; Je ne parle pas français.|Je parle ne pas français.|Je ne pas parle français.|Je parle pas ne français.; Je lui donne le livre.|Je donne lui le livre.|Je lui le livre donne.|Je donne le livre lui.; Je veux le manger.|Je le veux manger.|Je veux manger le.|Je veux manger lui.', 'Zaimek dopełnienia stoi przed czasownikiem, do którego się odnosi. Przeczenie ne … pas otacza odmieniony czasownik.'),
     ('form', 'Szyk zdania', 'Szyk: przymiotnik przed czy po?', 't_s1', "C'est une grande maison.|C'est une maison grande.|C'est grande une maison.|C'est maison une grande.; C'est une voiture rouge.|C'est une rouge voiture.|C'est rouge une voiture.|C'est voiture une rouge.; C'est un bon film.|C'est un film bon.|C'est bon un film.|C'est film un bon.; J'ai un livre français.|J'ai un français livre.|J'ai français un livre.|J'ai livre un français.", 'Krótkie, częste przymiotniki (grand, petit, bon, beau, nouveau) stoją przed rzeczownikiem. Kolory i narodowości po nim.'),
 ]
+
+# === PRONOUNS (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('decl', 'Zaimki', 'me, te, le… (dopełnienie bliższe)', 'os', 'me; te; le, la; nous; vous; les', 'Stoją przed czasownikiem: je le vois.'),
+    ('decl', 'Zaimki', 'me, te, lui… (dopełnienie dalsze)', 'os', 'me; te; lui; nous; vous; leur', None),
+    ('decl', 'Zaimki', 'moi, toi… (zaimki akcentowane)', 'os', 'moi; toi; lui, elle; nous; vous; eux, elles', "Po przyimku i do podkreślenia: avec moi, c'est toi."),
+    ('decl', 'Zaimki', 'me, te, se… (zwrotne)', 'os', 'me; te; se; nous; vous; se', None),
+    ('decl', 'Zaimki', 'notre (nasz)', ['rodzaj męski lp.', 'rodzaj żeński lp.', 'liczba mnoga'], 'notre; notre; nos', None),
+    ('decl', 'Zaimki', 'votre (wasz)', ['rodzaj męski lp.', 'rodzaj żeński lp.', 'liczba mnoga'], 'votre; votre; vos', None),
+    ('decl', 'Zaimki', 'leur (ich)', ['rodzaj męski lp.', 'rodzaj żeński lp.', 'liczba mnoga'], 'leur; leur; leurs', None),
+    ('decl', 'Zaimki', 'ce (ten)', ['rodzaj męski lp.', 'rodzaj męski przed samogłoską', 'rodzaj żeński lp.', 'liczba mnoga'], 'ce; cet; cette; ces', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /PRONOUNS ===

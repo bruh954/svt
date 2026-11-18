@@ -331,3 +331,13 @@ PARADIGM_LABELS.update({
 PARADIGMS += [
     ('form', 'Szyk zdania', 'Szyk: krótkie słowa na 2. miejscu', 't_s0', 'Dnes se učím česky.|Dnes učím se česky.|Se dnes učím česky.|Dnes učím česky se.; Dal jsem mu knihu.|Dal mu jsem knihu.|Jsem mu dal knihu.|Dal jsem knihu mu.; Včera jsem ho viděl.|Včera ho jsem viděl.|Včera viděl jsem ho.|Jsem ho včera viděl.; Chci se s tebou setkat.|Chci setkat se s tebou.|Se chci s tebou setkat.|Chci s tebou se setkat.', 'Krótkie słowa (se, si, jsem, ho, mu) stoją na drugim miejscu zdania, w kolejności: jsem, potem se/si, potem mu/ho. Na początku zdania stać nie mogą.'),
 ]
+
+# === PRONOUNS (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /PRONOUNS ===

@@ -306,3 +306,25 @@ PARADIGMS += [
     ('form', 'Typowe trudności', 'Czas przeszły (3. osoba): mocny czy słaby?', 't_m1', 'fór; kallaði; kom; tók; hafði; gaf; sagði; sá', 'Mocne zmieniają samogłoskę, słabe dodają -ði lub -di.'),
     ('form', 'Typowe trudności', 'Długość: co to znaczy?', 't_m2', 'łąka; wino; salę (biernik); dusza; (nie ma takiego słowa); mowa, sprawa', 'Kreska oznacza długą samogłoskę.'),
 ]
+
+# === PRONOUNS (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('decl', 'Zaimki', 'vér (my)', 'przyp4', 'vér; oss; oss; vár', None),
+    ('decl', 'Zaimki', 'þér (wy)', 'przyp4', 'þér; yðr; yðr; yðvar', None),
+    ('decl', 'Zaimki', 'hann (on)', 'przyp4', 'hann; hann; honum; hans', None),
+    ('decl', 'Zaimki', 'hon (ona)', 'przyp4', 'hon; hana; henni; hennar', None),
+    ('decl', 'Zaimki', 'þat (ono)', 'przyp4', 'þat; þat; því; þess', None),
+    ('decl', 'Zaimki', 'þeir (oni)', 'przyp4', 'þeir; þá; þeim; þeira', None),
+    ('decl', 'Zaimki', 'þær (one)', 'przyp4', 'þær; þær; þeim; þeira', None),
+    ('decl', 'Zaimki', 'sá (ten)', 'przyp4', 'sá; þann; þeim; þess', None),
+    ('decl', 'Zaimki', 'hverr (kto)', 'przyp4', 'hverr; hvern; hverjum; hvers', None),
+    ('decl', 'Zaimki', 'hvat (co)', 'przyp4', 'hvat; hvat; hví; hvess', None),
+    ('decl', 'Zaimki', 'sik (siebie)', ['biernik', 'celownik', 'dopełniacz'], 'sik; sér; sín', 'Nie ma mianownika.'),
+    ('decl', 'Zaimki', 'minn (mój)', 'przyp4', 'minn; minn; mínum; míns', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /PRONOUNS ===

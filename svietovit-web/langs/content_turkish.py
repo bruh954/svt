@@ -314,3 +314,24 @@ PARADIGMS += [
     ('form', 'Szyk zdania', 'Szyk: czasownik na końcu', 't_s0', 'Ben kitap okuyorum.|Ben okuyorum kitap.|Okuyorum ben kitap.|Okuyorum kitap ben.; Ali okula gidiyor.|Ali gidiyor okula.|Gidiyor Ali okula.|Okula gidiyor Ali.; Bugün çay içiyorum.|Bugün içiyorum çay.|İçiyorum bugün çay.|İçiyorum çay bugün.; Annem evde yemek yapıyor.|Annem yapıyor evde yemek.|Yapıyor annem evde yemek.|Evde yemek yapıyor annem.', 'Szyk podmiot, okolicznik, dopełnienie, orzeczenie. Czasownik zawsze na końcu.'),
     ('form', 'Szyk zdania', 'Szyk: przyimek po rzeczowniku', 't_s1', 'Kitap masanın üstünde.|Kitap üstünde masanın.|Masanın kitap üstünde.|Üstünde masanın kitap.; Arkadaşımla birlikteyim.|Birlikte arkadaşımla.|Arkadaşım birlikteyim.|Birlikteyim arkadaşımla.; Okula gidiyorum.|Gidiyorum okula.|Gidiyorum okul.|Okul gidiyorum.', 'Odpowiedniki naszych przyimków stoją po rzeczowniku (postpozycje) albo są końcówką.'),
 ]
+
+# === PRONOUNS (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('decl', 'Zaimki', 'ben (ja)', 'przyp', 'ben; beni; bana; bende; benden; benim', 'Zaimek ben ma wyjątkowy celownik: bana.'),
+    ('decl', 'Zaimki', 'sen (ty)', 'przyp', 'sen; seni; sana; sende; senden; senin', 'Celownik wyjątkowy: sana.'),
+    ('decl', 'Zaimki', 'o (on, ona, ono)', 'przyp', 'o; onu; ona; onda; ondan; onun', 'Turecki nie rozróżnia rodzaju.'),
+    ('decl', 'Zaimki', 'biz (my)', 'przyp', 'biz; bizi; bize; bizde; bizden; bizim', None),
+    ('decl', 'Zaimki', 'siz (wy)', 'przyp', 'siz; sizi; size; sizde; sizden; sizin', None),
+    ('decl', 'Zaimki', 'onlar (oni)', 'przyp', 'onlar; onları; onlara; onlarda; onlardan; onların', None),
+    ('decl', 'Zaimki', 'bu (ten tu)', 'przyp', 'bu; bunu; buna; bunda; bundan; bunun', None),
+    ('decl', 'Zaimki', 'şu (ten)', 'przyp', 'şu; şunu; şuna; şunda; şundan; şunun', None),
+    ('decl', 'Zaimki', 'kim (kto)', 'przyp', 'kim; kimi; kime; kimde; kimden; kimin', None),
+    ('decl', 'Zaimki', 'ne (co)', 'przyp', 'ne; neyi; neye; nede; neden; neyin', None),
+    ('decl', 'Zaimki', 'okul (szkoła): mój, twój…', 'os', 'okulum; okulun; okulu; okulumuz; okulunuz; okulları', 'Końcówka dzierżawcza zależy od harmonii samogłosek: okul → u-typ.'),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /PRONOUNS ===

@@ -340,3 +340,24 @@ PARADIGMS += [
     ('form', 'Typowe trudności', 'Biernik po „widzę”', 't_m1', 'τον φίλο; τη μητέρα; το παιδί; τους φίλους; τις μητέρες; τα παιδιά', 'W bierniku rodzaju męskiego znika końcowe -ς, a rodzajnik zmienia się w τον.'),
     ('form', 'Typowe trudności', 'Jak to się czyta? (zapisy dźwięku i, e)', 't_m2', 'i; i (jak οι); i (jak η); i (jak υ); e; u; b; d', 'Pięć zapisów czyta się [i]. Dźwięki b i d zapisuje się dwiema literami.'),
 ]
+
+# === PRONOUNS (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('decl', 'Zaimki', 'εγώ (ja)', ['mianownik', 'dopełniacz', 'biernik'], 'εγώ; μου; με', None),
+    ('decl', 'Zaimki', 'εσύ (ty)', ['mianownik', 'dopełniacz', 'biernik'], 'εσύ; σου; σε', None),
+    ('decl', 'Zaimki', 'αυτός (on)', ['mianownik', 'dopełniacz', 'biernik'], 'αυτός; αυτού; αυτόν', 'Krótkie formy: του, τον.'),
+    ('decl', 'Zaimki', 'αυτή (ona)', ['mianownik', 'dopełniacz', 'biernik'], 'αυτή; αυτής; αυτήν', 'Krótkie formy: της, την.'),
+    ('decl', 'Zaimki', 'αυτό (ono)', ['mianownik', 'dopełniacz', 'biernik'], 'αυτό; αυτού; αυτό', None),
+    ('decl', 'Zaimki', 'εμείς (my)', ['mianownik', 'dopełniacz', 'biernik'], 'εμείς; μας; μας', None),
+    ('decl', 'Zaimki', 'εσείς (wy)', ['mianownik', 'dopełniacz', 'biernik'], 'εσείς; σας; σας', None),
+    ('decl', 'Zaimki', 'αυτοί (oni)', ['mianownik', 'dopełniacz', 'biernik'], 'αυτοί; αυτών; αυτούς', 'Krótkie formy: τους, τους.'),
+    ('decl', 'Zaimki', 'αυτές (one)', ['mianownik', 'dopełniacz', 'biernik'], 'αυτές; αυτών; αυτές', None),
+    ('decl', 'Zaimki', 'μου, σου, του… (krótkie formy dopełniacza)', 'os', 'μου; σου; του, της; μας; σας; τους', 'Znaczą też „mój, twój”: το σπίτι μου.'),
+    ('decl', 'Zaimki', 'ποιος (kto)', ['mianownik', 'dopełniacz', 'biernik'], 'ποιος; ποιου; ποιον', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /PRONOUNS ===

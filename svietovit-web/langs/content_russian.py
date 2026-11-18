@@ -382,3 +382,13 @@ PARADIGMS += [
     ('form', 'Typowe trudności', 'Pisownia: -тся czy -ться?', 't_m2', '-тся; -ться; -тся; -ться; -тся; -ться', 'Zapytaj: что де́лает? (bez ь) czy что де́лать? (z ь).'),
     ('form', 'Typowe trudności', 'Pisownia po ж, ш, ч, щ', 't_m3', 'и; и; а; у; у; и', 'Po ж, ш, ч, щ pisze się и, а, у, nigdy ы, я, ю.'),
 ]
+
+# === PRONOUNS (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /PRONOUNS ===

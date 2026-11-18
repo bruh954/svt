@@ -326,3 +326,21 @@ PARADIGM_LABELS.update({
 PARADIGMS += [
     ('form', 'Szyk zdania', 'Szyk: zaimki i przeczenie', 't_s0', 'No tengo dinero.|Tengo no dinero.|No dinero tengo.|Tengo dinero no.; Lo veo.|Veo lo.|Lo yo veo.|Yo veo lo.; Quiero comerlo.|Quiero comer lo.|Quiero lo comer.|Lo comer quiero.; Me gusta el café.|Gusta me el café.|Me el café gusta.|El café gusta me.; Es una casa grande.|Es una grande casa.|Es grande una casa.|Es casa una grande.', 'No stoi tuż przed czasownikiem. Zaimek stoi przed odmienionym czasownikiem albo przyklejony do bezokolicznika.'),
 ]
+
+# === PRONOUNS (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('decl', 'Zaimki', 'me, te, lo… (dopełnienie bliższe)', 'os', 'me; te; lo, la; nos; os; los, las', 'Stoją przed odmienionym czasownikiem: lo veo.'),
+    ('decl', 'Zaimki', 'me, te, le… (dopełnienie dalsze)', 'os', 'me; te; le; nos; os; les', 'Przed lo i la le zmienia się w se: se lo doy.'),
+    ('decl', 'Zaimki', 'me, te, se… (zwrotne)', 'os', 'me; te; se; nos; os; se', None),
+    ('decl', 'Zaimki', 'mí, ti… (po przyimku)', 'os', 'mí; ti; él, ella; nosotros; vosotros; ellos, ellas', 'Po przyimku: para mí. Wyjątek: conmigo, contigo.'),
+    ('decl', 'Zaimki', 'mi, tu, su… (mój, twój…)', 'os', 'mi; tu; su; nuestro; vuestro; su', 'Stoi przed rzeczownikiem i zgadza się z nim: mis amigos.'),
+    ('decl', 'Zaimki', 'este (ten tu)', ['rodzaj męski lp.', 'rodzaj żeński lp.', 'rodzaj męski lm.', 'rodzaj żeński lm.'], 'este; esta; estos; estas', None),
+    ('decl', 'Zaimki', 'ese (ten)', ['rodzaj męski lp.', 'rodzaj żeński lp.', 'rodzaj męski lm.', 'rodzaj żeński lm.'], 'ese; esa; esos; esas', None),
+    ('decl', 'Zaimki', 'aquel (tamten)', ['rodzaj męski lp.', 'rodzaj żeński lp.', 'rodzaj męski lm.', 'rodzaj żeński lm.'], 'aquel; aquella; aquellos; aquellas', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /PRONOUNS ===

@@ -363,3 +363,13 @@ PARADIGM_LABELS.update({
 PARADIGMS += [
     ('form', 'Szyk zdania', 'Szyk: krótkie słowa po pierwszym wyrazie', 't_s0', 'Dao sam mu knjigu.|Dao mu sam knjigu.|Sam mu dao knjigu.|Dao sam knjigu mu.; Juče sam ga video.|Juče ga sam video.|Juče video sam ga.|Sam ga juče video.; Ne vidim ga.|Ne ga vidim.|Ga ne vidim.|Vidim ga ne.', 'Krótkie zaimki i formy sam, si, je, ću stoją zaraz po pierwszym wyrazie lub zwrocie zdania.'),
 ]
+
+# === PRONOUNS (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /PRONOUNS ===
