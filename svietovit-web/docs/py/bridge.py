@@ -352,8 +352,8 @@ def _larp_round_exs(rng):
     mine = [x for j, u in enumerate(E.UNITS) if j <= uidx and u["id"].startswith("lp_%s_" % _larp["id"]) for x in u.get("sentences", [])]
     sents = [x for x in mine if all(t in ks or t in P for t in x[0])]
     sents.sort(key=lambda x: -sum(1 for t in x[0] if t in pool))
-    ans = tuple(n.get("build", ([],))[0])
-    sents = [x for x in sents if tuple(x[0]) != ans][:8]     # odpowiedź kelnerowi pada dopiero na końcu, nie w serii
+    ans = {tuple(m["build"][0]) for m in cfg["nodes"].values() if m.get("build")}   # odpowiedzi kelnerowi nie wchodzą do serii
+    sents = [x for x in sents if tuple(x[0]) not in ans and any(t in pool for t in x[0])][:8]     # odpowiedź kelnerowi pada dopiero na końcu, nie w serii
     bq, mq = list(sents), list(reversed(sents))              # każde zdanie najwyżej raz w danym typie ćwiczenia
     rng.shuffle(bq)
     extra = [h for h in known if h not in pool]
