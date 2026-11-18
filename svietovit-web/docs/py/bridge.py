@@ -352,7 +352,10 @@ def _larp_round_exs(rng):
     mine = [x for j, u in enumerate(E.UNITS) if j <= uidx and u["id"].startswith("lp_%s_" % _larp["id"]) for x in u.get("sentences", [])]
     sents = [x for x in mine if all(t in ks or t in P for t in x[0])]
     sents.sort(key=lambda x: -sum(1 for t in x[0] if t in pool))
-    sents = sents[:6]
+    ans = tuple(n.get("build", ([],))[0])
+    sents = [x for x in sents if tuple(x[0]) != ans][:8]     # odpowiedź kelnerowi pada dopiero na końcu, nie w serii
+    bq, mq = list(sents), list(reversed(sents))              # każde zdanie najwyżej raz w danym typie ćwiczenia
+    rng.shuffle(bq)
     extra = [h for h in known if h not in pool]
     rng.shuffle(extra)
     dpool = pool + extra[:6]
@@ -366,11 +369,11 @@ def _larp_round_exs(rng):
         r = rng.random()
         if r < typed_p:
             graded.append(gen.typing(h))
-        elif sents and r < typed_p + 0.4:
-            toks, pl, tr = rng.choice(sents)
+        elif bq and r < typed_p + 0.4:
+            toks, pl, tr = bq.pop()
             graded.append(gen.build(toks, pl, tr))
-        elif sents and r < typed_p + 0.55:
-            toks, pl, tr = rng.choice(sents)
+        elif mq and r < typed_p + 0.55:
+            toks, pl, tr = mq.pop(0)
             graded.append(gen.sentence_meaning(toks, pl, E.all_sentence_pl()))
         else:
             graded.append(gen.meaning(h, dpool) if rng.random() < 0.5 else gen.form(h, dpool))
@@ -458,7 +461,7 @@ def _render(ex):
                    autoplay=bool(ex.get("autoplay")))
         if ex["mode"] == "sentence":
             toks = ex.get("words") or []
-            out["sentence"] = _join(toks) if not _is_hanzi() else "".join(toks)
+            out["sentence"] = _larp_disp(toks) if not _is_hanzi() else "".join(toks)
             out["sentence_sub"] = _sent_sub(toks) if toks else None
         if ex.get("word"):
             out["word_view"] = _word_view(ex["word"])
