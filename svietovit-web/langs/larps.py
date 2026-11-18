@@ -156,7 +156,7 @@ def build(cid):
                     bad = [t for t in at if t not in known and t not in punct]
                     if bad:
                         errors.append("linia %d: nieznane słowa %s w odpowiedzi: %s" % (n, bad, p[2])); continue
-                    node["build"] = (at, "Powiedz: " + p[3])
+                    node["build"] = (at, p[3])
                     node["next"] = keys[i + 1] if i + 1 < len(keys) else None
                     if len(p) > 4 and p[4]:
                         node["why"] = p[4]

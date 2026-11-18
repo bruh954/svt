@@ -742,7 +742,7 @@ def _larp_plain(text):
 def _larp_node(lp, key):
     cfg = _larp["cfg"]
     n = cfg["nodes"][key]
-    out = {"key": key, "bot_text": _join(n["bot"]), "bot_sub": _sent_sub(n["bot"]), "pl": n.get("pl"),
+    out = {"key": key, "bot_text": _larp_disp(n["bot"]), "bot_sub": _sent_sub(n["bot"]), "pl": n.get("pl"),
            "deadly": bool(n.get("deadly")), "note": n.get("note")}
     if n.get("unit") and key not in _larp["rounds"]:
         out["lesson"] = True            # najpierw seria ćwiczeń z tematu tej kwestii

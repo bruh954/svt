@@ -41,7 +41,7 @@ const TX = {
     chat_unlocked: "Odblokowano rozmowę", back_home: "Wróć", chat_done: "Rozmowa ukończona!", back_chats: "Wróć do rozmów",
     again: "Jeszcze raz", tap_tr: "Dotknij wiadomości, żeby zobaczyć tłumaczenie.", pick_answer: "Wybierz odpowiedź", say: "Powiedz:",
     send: "Wyślij", practice_t: "Powtórka", practice_d: "Mieszane ćwiczenia ze słów, które już znasz. Odzyskujesz serce.",
-    parts: "Składa się z:", larp_round_d: "Kelner czeka na odpowiedź. Najpierw przećwicz, co powiesz (około 10 ćwiczeń).", larp_round_go: "Ćwicz", larp_r_great: "Kelner kiwa głową: świetnie ci poszło.", larp_r_ok: "Kelner unosi brew, ale cię rozumie.", larp_r_bad: "Kelner marszczy brwi: prawie nic nie zrozumiał.", demon_warn: "Uwaga: to zdanie może wezwać demona.", demon_t: "Wezwałeś demona!", demon_d: "Zdanie okazało się zaklęciem. Demon pojawił się w środku lekcji i przerwał serię. Co zdążyłeś zrobić, zaliczone.", demon_ok: "Uciekam", larp_level: "Poziom", larp_lv_1: "Układasz zdania z klocków", larp_lv_2: "Klocki, więcej pułapek", larp_lv_3: "Część odpowiedzi piszesz z klawiatury", larp_lv_4: "Prawie wszystko piszesz sam", larp_lv_5: "Wszystko z klawiatury, bez podpowiedzi", larp_lex_t: "Słowa na ten poziom", larp_lex_d: "Poznaj je przed wejściem do sceny. Dotknij 🔊, żeby usłyszeć.", larp_lex_go: "Wchodzę", larp_type_d: "Wpisz odpowiedź z klawiatury.", larp_next_level: "Poziom", sound_t: "Trening dźwięków", sound_t_h: "Trening tonów", sound_d: "Samo słuchanie i rozpoznawanie.",
+    parts: "Składa się z:", larps_tab: "Larpy", larp_round_d: "Kelner czeka na odpowiedź. Najpierw przećwicz, co powiesz (około 10 ćwiczeń).", larp_round_go: "Ćwicz", larp_r_great: "Kelner kiwa głową: świetnie ci poszło.", larp_r_ok: "Kelner unosi brew, ale cię rozumie.", larp_r_bad: "Kelner marszczy brwi: prawie nic nie zrozumiał.", demon_warn: "Uwaga: to zdanie może wezwać demona.", demon_t: "Wezwałeś demona!", demon_d: "Zdanie okazało się zaklęciem. Demon pojawił się w środku lekcji i przerwał serię. Co zdążyłeś zrobić, zaliczone.", demon_ok: "Uciekam", larp_level: "Poziom", larp_lv_1: "Układasz zdania z klocków", larp_lv_2: "Klocki, więcej pułapek", larp_lv_3: "Część odpowiedzi piszesz z klawiatury", larp_lv_4: "Prawie wszystko piszesz sam", larp_lv_5: "Wszystko z klawiatury, bez podpowiedzi", larp_lex_t: "Słowa na ten poziom", larp_lex_d: "Poznaj je przed wejściem do sceny. Dotknij 🔊, żeby usłyszeć.", larp_lex_go: "Wchodzę", larp_type_d: "Wpisz odpowiedź z klawiatury.", larp_next_level: "Poziom", sound_t: "Trening dźwięków", sound_t_h: "Trening tonów", sound_d: "Samo słuchanie i rozpoznawanie.",
     stats: "Statystyki", level: "Poziom", xp_total: "XP łącznie", best_streak: "Najdłuższa seria", words: "Poznane słowa", lessons: "Lekcje",
     week: "Ostatnie 7 dni", daily_goal: "Cel dzienny", settings: "Ustawienia", pron: "Pokazuj wymowę", sound: "Dźwięki", voice: "Czytaj na głos",
     shop: "Sklep", freeze: "Zamrożenie serii", refill_hearts: "Uzupełnij serca", gems: "klejnoty", reset: "Zeruj postęp w tym kursie",
@@ -71,7 +71,7 @@ const TX = {
     chat_unlocked: "Unlocked conversation", back_home: "Back", chat_done: "Conversation complete!", back_chats: "Back to chats",
     again: "Again", tap_tr: "Tap a message to see its translation.", pick_answer: "Choose a reply", say: "Say:",
     send: "Send", practice_t: "Practice", practice_d: "Mixed exercises from words you already know. Earns a heart back.",
-    parts: "Built from:", larp_round_d: "The waiter is waiting. First practise what you will say (about 10 exercises).", larp_round_go: "Practise", larp_r_great: "The waiter nods: well done.", larp_r_ok: "The waiter raises an eyebrow but understands.", larp_r_bad: "The waiter frowns: he barely understood.", demon_warn: "Warning: this sentence may summon a demon.", demon_t: "You summoned a demon!", demon_d: "The sentence turned out to be a spell. A demon appeared mid-lesson and cut the series short. What you finished still counts.", demon_ok: "Run away", larp_level: "Level", larp_lv_1: "Build sentences from tiles", larp_lv_2: "Tiles, more traps", larp_lv_3: "Some answers typed on the keyboard", larp_lv_4: "You type almost everything", larp_lv_5: "All typed, no hints", larp_lex_t: "Words for this level", larp_lex_d: "Meet them before entering the scene. Tap 🔊 to listen.", larp_lex_go: "Enter", larp_type_d: "Type your answer on the keyboard.", larp_next_level: "Level", sound_t: "Sound training", sound_t_h: "Tone training", sound_d: "Just listening and recognising.",
+    parts: "Built from:", larps_tab: "Role-plays", larp_round_d: "The waiter is waiting. First practise what you will say (about 10 exercises).", larp_round_go: "Practise", larp_r_great: "The waiter nods: well done.", larp_r_ok: "The waiter raises an eyebrow but understands.", larp_r_bad: "The waiter frowns: he barely understood.", demon_warn: "Warning: this sentence may summon a demon.", demon_t: "You summoned a demon!", demon_d: "The sentence turned out to be a spell. A demon appeared mid-lesson and cut the series short. What you finished still counts.", demon_ok: "Run away", larp_level: "Level", larp_lv_1: "Build sentences from tiles", larp_lv_2: "Tiles, more traps", larp_lv_3: "Some answers typed on the keyboard", larp_lv_4: "You type almost everything", larp_lv_5: "All typed, no hints", larp_lex_t: "Words for this level", larp_lex_d: "Meet them before entering the scene. Tap 🔊 to listen.", larp_lex_go: "Enter", larp_type_d: "Type your answer on the keyboard.", larp_next_level: "Level", sound_t: "Sound training", sound_t_h: "Tone training", sound_d: "Just listening and recognising.",
     stats: "Stats", level: "Level", xp_total: "Total XP", best_streak: "Best streak", words: "Words learned", lessons: "Lessons",
     week: "Last 7 days", daily_goal: "Daily goal", settings: "Settings", pron: "Show pronunciation", sound: "Sounds", voice: "Read aloud",
     shop: "Shop", freeze: "Streak freeze", refill_hearts: "Refill hearts", gems: "gems", reset: "Reset progress in this course",
@@ -291,14 +291,14 @@ function topbar() {
     h("span", { class: "stat s-streak" }, "☀ " + H.streak), h("span", { class: "stat s-gem" }, "◆ " + H.gems), h("span", { class: "stat s-heart" }, "♥ " + H.hearts));
 }
 function navbar() {
-  const items = [["path", "◉", t("path")], ["chats", "✉", t("chats")], ...((cur.home.paradigms || []).length ? [["grammar", "Aa", t("grammar")]] : []), ["practice", "↻", t("practice")], ["profile", "☺", t("profile")]];
+  const items = [["path", "◉", t("path")], ["chats", "✉", t("chats")], ...((cur.home.larps || []).length ? [["larps", "🎭", t("larps_tab")]] : []), ...((cur.home.paradigms || []).length ? [["grammar", "Aa", t("grammar")]] : []), ["practice", "↻", t("practice")], ["profile", "☺", t("profile")]];
   return h("div", { class: "nav" }, items.map(([k, ic, lb]) => h("button", { class: cur.tab === k ? "on" : "", onclick: () => { cur.tab = k; renderHome(); } }, h("b", {}, ic), lb)));
 }
 function renderHome() {
   refreshHome();
   const H = cur.home, m = BYID[cur.cid];
   if (cur.tab === "grammar" && !(H.paradigms || []).length) cur.tab = "path";
-  const body = { path: pathTab, chats: chatsTab, grammar: grammarTab, practice: practiceTab, profile: profileTab }[cur.tab]();
+  const body = { path: pathTab, chats: chatsTab, larps: larpsTab, grammar: grammarTab, practice: practiceTab, profile: profileTab }[cur.tab]();
   const goal = h("div", { class: "goal" }, `${t("goal_day")}  ${Math.min(H.xp_today, H.goal)}/${H.goal} XP`, h("div", { class: "bar" }, h("i", { style: `width:${Math.min(100, 100 * H.xp_today / H.goal)}%` })));
   const scr = show([topbar(), goal, h("div", { class: "scroll", id: "tabbody" }, body), navbar()], "course");
   scr.style.cssText = themeStyle();
@@ -368,7 +368,7 @@ function showWelcome() {
 function chatsTab() {
   const H = cur.home;
   const cols = ["#B3261E", "#2A6FB0", "#4F8A3A", "#8C3B9E", "#D26A12", "#1F7A78"];
-  const larps = (H.larps || []).length ? [h("div", { class: "track", style: "margin-top:22px" }, "· " + t("larps") + " ·", h("small", {}, t("larps_d"))),
+  const larps = false ? [
     ...H.larps.map(l => h("button", { class: "chat-item larp-item" + (l.unlocked ? "" : " locked"), onclick: () => l.unlocked && larpSheet(l) },
       h("div", { class: "av", style: "background:#7A2E5E" }, l.avatar),
       h("div", {}, h("div", { class: "t" }, l.title), h("div", { class: "s" }, l.partner + " · −" + l.fee + " XP")),
@@ -378,6 +378,14 @@ function chatsTab() {
     h("div", { class: "av", style: `background:${cols[i % cols.length]}` }, c.avatar),
     h("div", {}, h("div", { class: "t" }, c.partner), h("div", { class: "s" }, c.title)),
     h("div", { class: "stars" }, "★".repeat(c.stars) + "☆".repeat(3 - c.stars)))), ...larps];
+}
+function larpsTab() {
+  const H = cur.home;
+  const items = (H.larps || []).map(l => h("button", { class: "chat-item larp-item" + (l.unlocked ? "" : " locked"), onclick: () => l.unlocked && larpSheet(l) },
+    h("div", { class: "av", style: "background:#7A2E5E" }, l.avatar),
+    h("div", {}, h("div", { class: "t" }, l.title), h("div", { class: "s" }, l.partner + (l.levels ? " · " + t("larp_level") + " " + Math.max(1, ...l.levels.map(v => v.best != null && v.best >= 1 ? v.lvl : 0)) + "/" + l.levels.length : " · −" + l.fee + " XP"))),
+    h("div", { class: "stars" }, l.best === 2 ? "★" : l.best === 1 ? "◐" : l.best === 0 ? "✕" : "")));
+  return [h("div", { class: "track" }, "· " + t("larps") + " ·", h("small", {}, t("larps_d"))), ...items];
 }
 function openChat(cid, idx) {
   const chat = J(B.chat_get(cid)), color = ["#B3261E", "#2A6FB0", "#4F8A3A", "#8C3B9E", "#D26A12", "#1F7A78"][idx % 6];
@@ -685,7 +693,12 @@ async function main() {
     META = await (await fetch("courses.json")).json(); META.forEach(m => BYID[m.id] = m);
     initAnalytics();
     await initPython();
-    if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
+    if ("serviceWorker" in navigator) {
+      // po wdrożeniu nowej wersji strona w pamięci ma starą aplikację, a świeże pliki kursów: przeładuj raz, żeby się zgrały
+      const had = !!navigator.serviceWorker.controller;
+      navigator.serviceWorker.addEventListener("controllerchange", () => { if (had && !window.__reloaded) { window.__reloaded = true; location.reload(); } });
+      navigator.serviceWorker.register("sw.js").catch(() => {});
+    }
     showHub();
     window.__ready = true;
   } catch (e) {
