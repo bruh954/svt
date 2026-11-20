@@ -2,11 +2,18 @@
 fee 0
 reward 15
 strict yes
+story yes
 win Kelner jest pod wrażeniem, że tak dobrze mówisz po niemiecku. „Das geht aufs Haus!” – jedzenie na koszt firmy.
 partial Zamówienie dotarło do stołu, choć kilka razy musiałeś poprawiać. Kelner uśmiecha się i przynosi rachunek.
 fail Kelner ma dość: nie zrozumiał cię kilka razy z rzędu, uznał to za obrazę i prosi, żebyś opuścił lokal.
 
 @level 1 | Kawa, bułka i ciasto | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Spóźniony Klaus
+scene Berlin, deszczowy ranek. Przyjechałeś do Niemiec spotkać się z Klausem, kolegą z korespondencji, ale on jeszcze nie przyszedł. Siadasz w kawiarni i czekasz.
+goal Zamów kawę, bułkę i ciasto, a przy okazji dowiedz się, co z Klausem.
+win Kelner kładzie na stole kopertę: „Pan Klaus zostawił to dla pana”. W środku kartka: „Spóźnię się, jutro rano zjemy razem śniadanie. K.” Masz plan na jutro.
+partial Zamówienie dotarło, a kelner podaje ci kopertę od Klausa, chociaż z trudem zrozumiał, co chcesz. Klaus przeprasza i zaprasza na jutro.
+fail Kelner nie rozumie cię i nie wie, kim jesteś. Koperta od Klausa trafia do kogoś innego, a ty wychodzisz w deszcz z pustym żołądkiem.
 w möchten | chcą · chcecie · forma grzecznościowa „chce pan(i)”
 w Sie | pan, pani, państwo (grzecznie)
 w überlege | zastanawiam się (überlegen)
@@ -59,6 +66,12 @@ t Möchten Sie noch etwas? | Czy coś jeszcze? | Nein, danke, das ist alles. | O
 e Bitte schön! | Proszę bardzo!
 
 @level 2 | Śniadanie | patience=6 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Śniadanie z Klausem
+scene Następnego ranka. Klaus czeka już przy stoliku, a kelner przyjmuje zamówienia. Klaus prosi, żebyś zamówił sam, a przy okazji kupił ciasto, które zabierzesz mamie.
+goal Zamów śniadanie i kup ciasto dla swojej mamy.
+win Klaus się śmieje: „Du sprichst ja wie ein Berliner!” Ciasto dla mamy zapakowane, a Klaus obiecuje pokazać ci jutro miasto.
+partial Śniadanie jest, ciasto też, ale Klaus musiał pomóc ci kilka razy. Obiecuje, że następnym razem zamówisz sam.
+fail Pomyliłeś zamówienia i Klaus dostał coś zupełnie innego. Zjadł w milczeniu i wyszedł do pracy.
 w frühstücken | jeść śniadanie
 t Guten Morgen! Möchten Sie frühstücken? | Dzień dobry! Czy chce pan zjeść śniadanie? | Ja, ich möchte frühstücken. | Powiedz, że chcesz zjeść śniadanie. | Czasownik w bezokoliczniku stoi na końcu: ich möchte frühstücken.
 w Eier | jajka · liczba mnoga od Ei
@@ -88,6 +101,12 @@ t Hier ist alles. Guten Appetit! | Oto wszystko. Smacznego! | Danke schön, glei
 e Bitte schön! | Proszę bardzo!
 
 @level 3 | Stolik, pytania i cena | patience=5 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Stolik dla dwóch
+scene Po południu. Klaus pracuje, więc umówiłeś się z jego siostrą Anną. Kelner pyta o stolik, a ty musisz wybrać miejsce, jedzenie i dowiedzieć się, ile to kosztuje.
+goal Zajmij stolik dla dwóch, zamów obiad dla was obu i nie przepłać.
+win Anna jest zachwycona: „Jetzt verstehe ich, warum Klaus so von dir spricht!” Zaprasza cię na wieczór do znajomych Klausa.
+partial Obiad się udał, ale Anna musiała kilka razy tłumaczyć kelnerowi, co chcesz. Wieczorne spotkanie nadal aktualne.
+fail Nie dogadałeś się z kelnerem, a Anna patrzyła na to z niedowierzaniem. Wieczorem dostajesz od niej krótką wiadomość: „Vielleicht ein anderes Mal.”
 w Tisch
 w Stuhl
 w Fenster
@@ -118,6 +137,13 @@ t Natürlich. Noch ein Glas Wasser? | Oczywiście. Jeszcze szklankę wody? | Nei
 e Gern! Einen Moment, bitte. | Chętnie! Chwileczkę.
 
 @level 4 | Rozmowa przy stole | patience=5 typed=0.75 extra=4 hint=letters
+partner Frau Weber | W
+desc Rozdział 4: Wieczór u Frau Weber
+scene Wieczorem Klaus zabiera cię do swojej ulubionej kawiarni. Właścicielka, Frau Weber, zna wszystkich, a ciebie wypytuje jak nowego znajomego Klausa.
+goal Odpowiadaj na pytania Frau Weber o to, skąd jesteś i czym się zajmujesz. Jeśli jej się spodobasz, Klaus zaprosi cię na jutro.
+win Frau Weber klepie cię po ramieniu: „Der gehört jetzt zur Familie!” Klaus mówi, że jutro odprowadzi cię na dworzec i wszystko ci pokaże.
+partial Frau Weber jest uprzejma, ale nie do końca przekonana. Klaus uspokaja: „Sie braucht Zeit.” Jutro i tak idziecie razem na dworzec.
+fail Frau Weber przestała cię rozumieć w połowie wywiadu i uznała, że jesteś nieszczery. Klaus wychodzi zakłopotany.
 w Bier
 w Wein
 w Wasser
@@ -144,6 +170,12 @@ t Natürlich. Sonst noch etwas? | Oczywiście. Czy coś jeszcze? | Nein, danke, 
 e Einen Moment, bitte! | Chwileczkę!
 
 @level 5 | Pełna wizyta i rachunek | patience=4 typed=1 extra=0 hint=none reward=25
+desc Rozdział 5: Rachunek i pożegnanie
+scene Ostatni dzień w Berlinie. Z samego rana siadasz w kawiarni, żeby zjeść pożegnalne śniadanie i zapłacić. Za godzinę pociąg, a Klaus ma pojawić się na peronie.
+goal Zamów pełne śniadanie, usiądź przy oknie, zapłać i pożegnaj się. Nie możesz się spóźnić na pociąg.
+win Kelner życzy ci dobrej podróży i wręcza paczkę ciasta „na drogę od Frau Weber”. Biegniesz na dworzec, a tam czeka Klaus.
+partial Zapłaciłeś, ale straciłeś sporo czasu na poprawki. Biegniesz na dworzec w ostatniej chwili.
+fail Rachunek zrobił się kłopotliwy, kelner nie rozumiał, ile masz zapłacić. Pociąg odjechał bez ciebie.
 w Kaffee
 w Tee
 w Milch
@@ -179,3 +211,76 @@ w schönen | ładnym, miłym
 w Wiedersehen | zobaczenie się (auf Wiedersehen = do widzenia)
 t Vielen Dank! Haben Sie einen schönen Tag! | Dziękujemy! Miłego dnia! | Danke, Ihnen auch! Auf Wiedersehen! | Podziękuj i pożegnaj się. | „Nawzajem” w tym zdaniu to Ihnen auch.
 e Auf Wiedersehen! | Do widzenia!
+
+
+@larp zug | Pociąg do Monachium | Verkäuferin | V | Biegniesz na dworzec w Berlinie. Pociąg do Monachium odjeżdża za dziesięć minut, a Klaus czeka na ciebie w środku. | Kup bilet, znajdź właściwy peron i dojedź do Monachium.
+fee 0
+reward 15
+strict yes
+story yes
+win Siedzisz w pociągu do Monachium, a Klaus macha do ciebie z drugiego końca wagonu. Podróż może się zacząć.
+partial Dotarłeś do Monachium, ale kilka razy ktoś musiał ci pomagać. Klaus czeka na peronie i mówi: „Na następny raz poćwicz jeszcze pytania.”
+fail Pociąg odjechał, a ty stoisz na peronie z biletem w ręku. Klaus pisze: „Nächster Zug in einer Stunde!”
+
+@level 1 | Bilet | patience=5 typed=0 extra=1 hint=none
+desc Rozdział 1: Kasa biletowa
+w Fahrkarte | bilet | die | die Fahrkarten | fahren (jechać) + Karte (karta)
+w Zug | pociąg | der | die Züge
+w München | Monachium
+w Hamburg | Hamburg
+w wohin | dokąd
+w fahren | jechać
+w fährt | jedzie (fahren)
+w Minuten | minuty
+w Ihre | pana, pani (bilet pana)
+w nach | do (przed nazwą miasta)
+w einfach | w jedną stronę; po prostu
+w hin | tam
+w zurück | z powrotem; reszty (przy płaceniu)
+w zehn | dziesięć
+w neunzig | dziewięćdziesiąt
+w hundert | sto
+w Minute | minuta | die | die Minuten
+t Guten Tag! Wohin möchten Sie fahren? | Dzień dobry! Dokąd chce pan jechać? | Ich möchte eine Fahrkarte nach München, bitte. | Poproś o bilet do Monachium. | „Do” przed nazwą miasta to nach: nach München. | Eine Fahrkarte nach München, bitte.
+t Einfach oder hin und zurück? | W jedną stronę czy tam i z powrotem? | Einfach, bitte. | Wybierz bilet w jedną stronę. | „Einfach” to „w jedną stronę”.
+t Der Zug fährt in zehn Minuten. Das macht neunzig Euro. | Pociąg odjeżdża za dziesięć minut. To będzie dziewięćdziesiąt euro. | Hier sind hundert Euro. | Podaj sto euro. | „Oto” przy liczbie mnogiej to hier sind.
+t Zehn Euro zurück. Hier ist Ihre Fahrkarte. | Dziesięć euro reszty. Oto pana bilet. | Danke schön! Auf Wiedersehen! | Podziękuj i pożegnaj się. | „Do widzenia” to Auf Wiedersehen.
+e Gute Reise! | Szczęśliwej podróży!
+
+@level 2 | Peron | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Który peron?
+partner Bahnbeamter | B
+scene Masz bilet, ale na dworcu jest kilka pociągów naraz. Pracownik kolei stoi przy tablicy odjazdów, a zegar tyka.
+goal Dowiedz się, z którego peronu odjeżdża pociąg do Monachium, i nie wsiądź do złego pociągu.
+win Wsiadasz do właściwego pociągu tuż przed odjazdem. Pracownik kolei salutuje: „Gute Fahrt!”
+partial Dotarłeś na peron, ale po drodze kilka razy pytałeś o to samo. Wsiadasz w ostatniej chwili.
+fail Wsiadłeś do pociągu do Hamburga. Klaus dzwoni: „Wo bist du?!”
+w Gleis | peron, tor | das | die Gleise
+w wo | gdzie
+w fünf | pięć
+w drei | trzy
+w gehen | iść
+w fahre | jadę (fahren)
+w zu | do, ku
+t Guten Tag! Kann ich Ihnen helfen? | Dzień dobry! Czy mogę pomóc? | Ja, wo fährt der Zug nach München? | Zgódź się i zapytaj, skąd odjeżdża pociąg do Monachium. | „Gdzie” to wo, a „jedzie” to fährt (od fahren).
+k Der Zug nach München fährt auf Gleis fünf. Der Zug nach Hamburg fährt auf Gleis drei. | Pociąg do Monachium jedzie z peronu piątego. Pociąg do Hamburga z peronu trzeciego. | Danke! Ich gehe zu Gleis fünf. | Danke! Ich gehe zu Gleis drei.; Danke! Ich fahre nach Hamburg. | Gleis drei to peron trzeci, a tam jedzie pociąg do Hamburga.; Chciałeś jechać do Monachium (nach München), nie do Hamburga.
+t Bitte schön! Haben Sie die Fahrkarte schon? | Proszę bardzo! Czy ma pan już bilet? | Ja, ich habe die Fahrkarte. | Potwierdź, że masz bilet. | Po „haben” rzeczownik w bierniku: die Fahrkarte (die zostaje bez zmian).
+e Dann schnell! Gute Reise! | W takim razie szybko! Szczęśliwej podróży!
+
+@level 3 | W pociągu | patience=4 typed=0.5 extra=3 hint=bank reward=25
+desc Rozdział 3: Konduktor
+partner Schaffner | S
+scene Pociąg ruszył. Konduktor idzie przez wagon i sprawdza bilety, a Klaus siedzi kilka rzędów dalej i macha do ciebie.
+goal Pokaż bilet, wybierz miejsce i dojedź do Monachium bez kłopotów.
+win Konduktor oddaje bilet z uśmiechem: „Alles in Ordnung!” Klaus robi ci miejsce przy oknie i pyta o pierwsze wrażenia z Berlina.
+partial Konduktor w końcu skasował bilet, ale musiał kilka razy powtarzać. Klaus pomaga ci usiąść.
+fail Konduktor uznał, że nie rozumiesz, co się do ciebie mówi. Bilet skontrolował dopiero Klaus, a ty dostajesz upomnienie.
+w Verspätung | spóźnienie | die | die Verspätungen
+w Schaffner | konduktor | der | die Schaffner
+w Platz | miejsce | der | die Plätze
+w frei | wolny
+w Fenster | okno | das | die Fenster
+t Guten Tag! Ihre Fahrkarte, bitte. | Dzień dobry! Pański bilet, proszę. | Hier ist meine Fahrkarte. | Pokaż bilet. | „Oto” przy liczbie pojedynczej to hier ist.
+o Danke. Möchten Sie am Fenster sitzen? | Dziękuję. Czy chce pan siedzieć przy oknie? | Ja, am Fenster, bitte. | Nein, danke, ich möchte kein Fenster.; Ja, ich möchte bezahlen. | Konduktor pyta o miejsce, nie o płacenie.; Przy oknie to am Fenster, a nie „kein Fenster”.
+t Dieser Platz ist frei. Der Zug hat zehn Minuten Verspätung. | To miejsce jest wolne. Pociąg ma dziesięć minut spóźnienia. | Das ist kein Problem. Danke! | Powiedz, że to nie problem, i podziękuj. | „Kein Problem” to „żaden problem”.
+e Gute Reise nach München! | Szczęśliwej podróży do Monachium!

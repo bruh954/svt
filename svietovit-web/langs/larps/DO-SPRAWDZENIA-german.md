@@ -15,6 +15,11 @@ Nowe słowa: möchten = chcą · chcecie · forma grzecznościowa „chce pan(i)
 
 | # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
 |---|---|---|---|
+
+*Scena:* Berlin, deszczowy ranek. Przyjechałeś do Niemiec spotkać się z Klausem, kolegą z korespondencji, ale on jeszcze nie przyszedł. Siadasz w kawiarni i czekasz.  
+*Cel:* Zamów kawę, bułkę i ciasto, a przy okazji dowiedz się, co z Klausem.  
+*Zakończenia:* win: Kelner kładzie na stole kopertę: „Pan Klaus zostawił to dla pana”. W środku kartka: „Spóźnię się, jutro rano zjemy razem śniadanie. K.” Masz plan na jutro. · partial: Zamówienie dotarło, a kelner podaje ci kopertę od Klausa, chociaż z trudem zrozumiał, co chcesz. Klaus przeprasza i zaprasza na jutro. · fail: Kelner nie rozumie cię i nie wie, kim jesteś. Koperta od Klausa trafia do kogoś innego, a ty wychodzisz w deszcz z pustym żołądkiem.
+
 | 1 | Guten Tag! Was möchten Sie? *(Dzień dobry! Co podać?)* | **Guten Tag! Ich überlege noch.** *(Przywitaj się i powiedz, że jeszcze wybierasz.)* | „Zastanawiam się” to ich überlege (w tym zdaniu „noch” znaczy „jeszcze”). |
 | 2 | Hier ist die Speisekarte. Was möchten Sie trinken? *(Oto karta dań. Co podać do picia?)* | **Ich möchte einen Kaffee, bitte.** *(Zamów kawę (grzecznie).)* · warianty: Einen Kaffee, bitte. | Kaffee jest rodzaju męskiego (der), więc po „möchte” jest einen. |
 | 3 | Mit Milch? *(Z mlekiem?)* | **Ja, mit Milch, bitte.** *(Zgódź się na mleko.)* | Po „mit” rzeczownik bez rodzajnika: mit Milch. |
@@ -33,6 +38,11 @@ Nowe słowa: frühstücken = jeść śniadanie, Eier = jajka · liczba mnoga od 
 
 | # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
 |---|---|---|---|
+
+*Scena:* Następnego ranka. Klaus czeka już przy stoliku, a kelner przyjmuje zamówienia. Klaus prosi, żebyś zamówił sam, a przy okazji kupił ciasto, które zabierzesz mamie.  
+*Cel:* Zamów śniadanie i kup ciasto dla swojej mamy.  
+*Zakończenia:* win: Klaus się śmieje: „Du sprichst ja wie ein Berliner!” Ciasto dla mamy zapakowane, a Klaus obiecuje pokazać ci jutro miasto. · partial: Śniadanie jest, ciasto też, ale Klaus musiał pomóc ci kilka razy. Obiecuje, że następnym razem zamówisz sam. · fail: Pomyliłeś zamówienia i Klaus dostał coś zupełnie innego. Zjadł w milczeniu i wyszedł do pracy.
+
 | 1 | Guten Morgen! Möchten Sie frühstücken? *(Dzień dobry! Czy chce pan zjeść śniadanie?)* | **Ja, ich möchte frühstücken.** *(Powiedz, że chcesz zjeść śniadanie.)* | Czasownik w bezokoliczniku stoi na końcu: ich möchte frühstücken. |
 | 2 | Wir haben Brötchen, Eier und Käse. Was nehmen Sie? *(Mamy bułki, jajka i ser. Co pan weźmie?)* | **Ich nehme zwei Brötchen und ein Ei.** *(Zamów dwie bułki i jajko.)* | Liczba mnoga „Brötchen” nie zmienia formy, a „Ei” w liczbie mnogiej to Eier. |
 | 3 | Möchten Sie den Kaffee mit Milch oder den Tee? *(Czy chce pan kawę z mlekiem, czy herbatę?)* | **Ich nehme den Tee mit Milch, bitte.** *(Wybierz herbatę z mlekiem.)* | Po „nehmen” biernik: der Tee → den Tee. |
@@ -51,6 +61,11 @@ Nowe słowa: sitzen = siedzieć, natürlich = oczywiście, Tomate = pomidor, Gur
 
 | # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
 |---|---|---|---|
+
+*Scena:* Po południu. Klaus pracuje, więc umówiłeś się z jego siostrą Anną. Kelner pyta o stolik, a ty musisz wybrać miejsce, jedzenie i dowiedzieć się, ile to kosztuje.  
+*Cel:* Zajmij stolik dla dwóch, zamów obiad dla was obu i nie przepłać.  
+*Zakończenia:* win: Anna jest zachwycona: „Jetzt verstehe ich, warum Klaus so von dir spricht!” Zaprasza cię na wieczór do znajomych Klausa. · partial: Obiad się udał, ale Anna musiała kilka razy tłumaczyć kelnerowi, co chcesz. Wieczorne spotkanie nadal aktualne. · fail: Nie dogadałeś się z kelnerem, a Anna patrzyła na to z niedowierzaniem. Wieczorem dostajesz od niej krótką wiadomość: „Vielleicht ein anderes Mal.”
+
 | 1 | Guten Tag! Möchten Sie einen Tisch für zwei? *(Dzień dobry! Czy chce pan stolik dla dwóch osób?)* | **Ja, einen Tisch für zwei, bitte.** *(Zgódź się: stolik dla dwóch osób.)* | Der Tisch jest rodzaju męskiego, po „möchten” biernik: einen Tisch. |
 | 2 | Möchten Sie hier oder dort sitzen? *(Czy chce pan siedzieć tutaj, czy tam?)* | **Ich möchte hier sitzen, bitte.** *(Powiedz, że chcesz siedzieć tutaj.)* | Bezokolicznik (sitzen) stoi na końcu zdania. |
 | 3 | Hier ist die Speisekarte. Was möchten Sie trinken? *(Oto karta dań. Co podać do picia?)* | **Ein Glas Wasser und einen Saft, bitte.** *(Zamów wodę i sok.)* | Das Glas jest nijakie: ein Glas; der Saft męski, więc biernik: einen Saft. |
@@ -69,6 +84,11 @@ Nowe słowa: woher = skąd, Kartoffel = ziemniak, Reis = ryż, Nudeln = makaron,
 
 | # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
 |---|---|---|---|
+
+*Scena:* Wieczorem Klaus zabiera cię do swojej ulubionej kawiarni. Właścicielka, Frau Weber, zna wszystkich, a ciebie wypytuje jak nowego znajomego Klausa.  
+*Cel:* Odpowiadaj na pytania Frau Weber o to, skąd jesteś i czym się zajmujesz. Jeśli jej się spodobasz, Klaus zaprosi cię na jutro.  
+*Zakończenia:* win: Frau Weber klepie cię po ramieniu: „Der gehört jetzt zur Familie!” Klaus mówi, że jutro odprowadzi cię na dworzec i wszystko ci pokaże. · partial: Frau Weber jest uprzejma, ale nie do końca przekonana. Klaus uspokaja: „Sie braucht Zeit.” Jutro i tak idziecie razem na dworzec. · fail: Frau Weber przestała cię rozumieć w połowie wywiadu i uznała, że jesteś nieszczery. Klaus wychodzi zakłopotany.
+
 | 1 | Guten Abend! Was möchten Sie trinken? *(Dobry wieczór! Co podać do picia?)* | **Ich möchte ein Bier und ein Glas Wasser, bitte.** *(Zamów piwo i wodę.)* | Das Bier jest nijakie: ein Bier; das Glas też: ein Glas. |
 | 2 | Sie sprechen sehr gut Deutsch! Woher kommen Sie? *(Bardzo dobrze pan mówi po niemiecku! Skąd pan pochodzi?)* | **Danke! Ich komme aus Polen.** *(Podziękuj i powiedz, że jesteś z Polski.)* | „Z” w znaczeniu pochodzenia to aus, a nie von. |
 | 3 | Aus Polen! Wie lange lernen Sie schon Deutsch? *(Z Polski! Jak długo już uczy się pan niemieckiego?)* | **Ich lerne noch nicht lange Deutsch.** *(Powiedz, że uczysz się niemieckiego od niedawna.)* | „Jeszcze nie długo” to noch nicht lange; nicht stoi przed lange. |
@@ -87,6 +107,11 @@ Nowe słowa: Frühstück = śniadanie, empfehlen = polecać, schmeckt = smakuje 
 
 | # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
 |---|---|---|---|
+
+*Scena:* Ostatni dzień w Berlinie. Z samego rana siadasz w kawiarni, żeby zjeść pożegnalne śniadanie i zapłacić. Za godzinę pociąg, a Klaus ma pojawić się na peronie.  
+*Cel:* Zamów pełne śniadanie, usiądź przy oknie, zapłać i pożegnaj się. Nie możesz się spóźnić na pociąg.  
+*Zakończenia:* win: Kelner życzy ci dobrej podróży i wręcza paczkę ciasta „na drogę od Frau Weber”. Biegniesz na dworzec, a tam czeka Klaus. · partial: Zapłaciłeś, ale straciłeś sporo czasu na poprawki. Biegniesz na dworzec w ostatniej chwili. · fail: Rachunek zrobił się kłopotliwy, kelner nie rozumiał, ile masz zapłacić. Pociąg odjechał bez ciebie.
+
 | 1 | Guten Morgen! Was möchten Sie trinken? *(Dzień dobry! Co podać do picia?)* | **Guten Morgen! Ich möchte einen Kaffee mit Milch, aber ohne Zucker, bitte.** *(Przywitaj się i zamów kawę z mlekiem, ale bez cukru.)* | Po „mit” i „ohne” rzeczownik bez rodzajnika: mit Milch, ohne Zucker. |
 | 2 | Natürlich. Und zum Frühstück? Wir haben Brötchen mit Käse, Ei oder Schokoladenkuchen. *(Oczywiście. A na śniadanie? Mamy bułki z serem, jajko albo ciasto czekoladowe.)* | **Ich nehme ein Brötchen mit Ei, bitte.** *(Zamów bułkę z jajkiem.)* | Das Brötchen to nijakie: ein Brötchen; po „mit” bez rodzajnika: mit Ei. |
 | 3 | Gern. Möchten Sie auch ein Glas Wasser? *(Chętnie. Czy chce pan też szklankę wody?)* | **Ja, gern. Was empfehlen Sie noch?** *(Zgódź się i zapytaj, co jeszcze polecają.)* | W pytaniu czasownik jest na drugim miejscu: was empfehlen Sie. |
@@ -98,3 +123,54 @@ Nowe słowa: Frühstück = śniadanie, empfehlen = polecać, schmeckt = smakuje 
 | 9 | Das macht zehn Euro. *(To będzie dziesięć euro.)* | **Hier sind zwölf Euro. Stimmt so!** *(Zapłać i powiedz, że reszty nie trzeba.)* | „Stimmt so” znaczy „zgadza się, reszty nie trzeba”. |
 | 10 | Vielen Dank! Haben Sie einen schönen Tag! *(Dziękujemy! Miłego dnia!)* | **Danke, Ihnen auch! Auf Wiedersehen!** *(Podziękuj i pożegnaj się.)* | „Nawzajem” w tym zdaniu to Ihnen auch. |
 | 11 | Auf Wiedersehen! *(Do widzenia!)* | — |  |
+
+## Pociąg do Monachium (zug)
+
+**Scena:** Biegniesz na dworzec w Berlinie. Pociąg do Monachium odjeżdża za dziesięć minut, a Klaus czeka na ciebie w środku.  
+**Cel:** Kup bilet, znajdź właściwy peron i dojedź do Monachium.  
+**Rozmówca:** Verkäuferin  
+**Zakończenia:** win: Siedzisz w pociągu do Monachium, a Klaus macha do ciebie z drugiego końca wagonu. Podróż może się zacząć. · partial: Dotarłeś do Monachium, ale kilka razy ktoś musiał ci pomagać. Klaus czeka na peronie i mówi: „Na następny raz poćwicz jeszcze pytania.” · fail: Pociąg odjechał, a ty stoisz na peronie z biletem w ręku. Klaus pisze: „Nächster Zug in einer Stunde!”  
+
+### Poziom 1: Bilet  (typed=0, hint=none, cierpliwość 5)
+
+Nowe słowa: München = Monachium, Hamburg = Hamburg, wohin = dokąd, fährt = jedzie (fahren), Minuten = minuty, Ihre = pana, pani (bilet pana), hin = tam, zurück = z powrotem; reszty (przy płaceniu)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+| 1 | Guten Tag! Wohin möchten Sie fahren? *(Dzień dobry! Dokąd chce pan jechać?)* | **Ich möchte eine Fahrkarte nach München, bitte.** *(Poproś o bilet do Monachium.)* · warianty: Eine Fahrkarte nach München, bitte. | „Do” przed nazwą miasta to nach: nach München. |
+| 2 | Einfach oder hin und zurück? *(W jedną stronę czy tam i z powrotem?)* | **Einfach, bitte.** *(Wybierz bilet w jedną stronę.)* | „Einfach” to „w jedną stronę”. |
+| 3 | Der Zug fährt in zehn Minuten. Das macht neunzig Euro. *(Pociąg odjeżdża za dziesięć minut. To będzie dziewięćdziesiąt euro.)* | **Hier sind hundert Euro.** *(Podaj sto euro.)* | „Oto” przy liczbie mnogiej to hier sind. |
+| 4 | Zehn Euro zurück. Hier ist Ihre Fahrkarte. *(Dziesięć euro reszty. Oto pana bilet.)* | **Danke schön! Auf Wiedersehen!** *(Podziękuj i pożegnaj się.)* | „Do widzenia” to Auf Wiedersehen. |
+| 5 | Gute Reise! *(Szczęśliwej podróży!)* | — |  |
+
+### Poziom 2: Peron  (typed=0.25, hint=bank, cierpliwość 5)
+
+Nowe słowa: Gleis = peron, tor, fahre = jadę (fahren)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Masz bilet, ale na dworcu jest kilka pociągów naraz. Pracownik kolei stoi przy tablicy odjazdów, a zegar tyka.  
+*Cel:* Dowiedz się, z którego peronu odjeżdża pociąg do Monachium, i nie wsiądź do złego pociągu.  
+*Zakończenia:* win: Wsiadasz do właściwego pociągu tuż przed odjazdem. Pracownik kolei salutuje: „Gute Fahrt!” · partial: Dotarłeś na peron, ale po drodze kilka razy pytałeś o to samo. Wsiadasz w ostatniej chwili. · fail: Wsiadłeś do pociągu do Hamburga. Klaus dzwoni: „Wo bist du?!”
+
+| 1 | Guten Tag! Kann ich Ihnen helfen? *(Dzień dobry! Czy mogę pomóc?)* | **Ja, wo fährt der Zug nach München?** *(Zgódź się i zapytaj, skąd odjeżdża pociąg do Monachium.)* | „Gdzie” to wo, a „jedzie” to fährt (od fahren). |
+| 2 | Der Zug nach München fährt auf Gleis fünf. Der Zug nach Hamburg fährt auf Gleis drei. *(Pociąg do Monachium jedzie z peronu piątego. Pociąg do Hamburga z peronu trzeciego.)* | **Danke! Ich gehe zu Gleis fünf.** (dobra); złe: Danke! Ich gehe zu Gleis drei.; Danke! Ich fahre nach Hamburg. · ŚMIERTELNE | Gleis drei to peron trzeci, a tam jedzie pociąg do Hamburga.; Chciałeś jechać do Monachium (nach München), nie do Hamburga. |
+| 3 | Bitte schön! Haben Sie die Fahrkarte schon? *(Proszę bardzo! Czy ma pan już bilet?)* | **Ja, ich habe die Fahrkarte.** *(Potwierdź, że masz bilet.)* | Po „haben” rzeczownik w bierniku: die Fahrkarte (die zostaje bez zmian). |
+| 4 | Dann schnell! Gute Reise! *(W takim razie szybko! Szczęśliwej podróży!)* | — |  |
+
+### Poziom 3: W pociągu  (typed=0.5, hint=bank, cierpliwość 4)
+
+Nowe słowa: Verspätung = spóźnienie, Schaffner = konduktor, frei = wolny
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Pociąg ruszył. Konduktor idzie przez wagon i sprawdza bilety, a Klaus siedzi kilka rzędów dalej i macha do ciebie.  
+*Cel:* Pokaż bilet, wybierz miejsce i dojedź do Monachium bez kłopotów.  
+*Zakończenia:* win: Konduktor oddaje bilet z uśmiechem: „Alles in Ordnung!” Klaus robi ci miejsce przy oknie i pyta o pierwsze wrażenia z Berlina. · partial: Konduktor w końcu skasował bilet, ale musiał kilka razy powtarzać. Klaus pomaga ci usiąść. · fail: Konduktor uznał, że nie rozumiesz, co się do ciebie mówi. Bilet skontrolował dopiero Klaus, a ty dostajesz upomnienie.
+
+| 1 | Guten Tag! Ihre Fahrkarte, bitte. *(Dzień dobry! Pański bilet, proszę.)* | **Hier ist meine Fahrkarte.** *(Pokaż bilet.)* | „Oto” przy liczbie pojedynczej to hier ist. |
+| 2 | Danke. Möchten Sie am Fenster sitzen? *(Dziękuję. Czy chce pan siedzieć przy oknie?)* | **Ja, am Fenster, bitte.** (dobra); złe: Nein, danke, ich möchte kein Fenster.; Ja, ich möchte bezahlen. | Konduktor pyta o miejsce, nie o płacenie.; Przy oknie to am Fenster, a nie „kein Fenster”. |
+| 3 | Dieser Platz ist frei. Der Zug hat zehn Minuten Verspätung. *(To miejsce jest wolne. Pociąg ma dziesięć minut spóźnienia.)* | **Das ist kein Problem. Danke!** *(Powiedz, że to nie problem, i podziękuj.)* | „Kein Problem” to „żaden problem”. |
+| 4 | Gute Reise nach München! *(Szczęśliwej podróży do Monachium!)* | — |  |
