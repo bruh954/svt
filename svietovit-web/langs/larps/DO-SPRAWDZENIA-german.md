@@ -767,7 +767,7 @@ Nowe słowa: Doktor = doktor, Moll = Moll (nazwisko lekarza), tun = robić, seit
 
 *Scena:* Deszczowy poranek. Leżysz w łóżku, a w drzwiach staje wysoki mężczyzna w czarnym płaszczu: doktor Moll. Lukas nadal jest w stolicy.  
 *Cel:* Opisz doktorowi, co ci dolega, i dowiedz się, jak się leczyć.  
-*Zakończenia:* win: Doktor kiwa głową i zapisuje receptę. „Pani jest silniejsza, niż pani myśli”. Gorączka nie wydaje się już taka groźna. · partial: Doktor zapisuje lekarstwo, ale marszczy czoło. „Zajrzę jutro”. · fail: Doktor nie rozumie, co ci dolega, i wychodzi, mrucząc do siebie. Zostajesz z gorączką i z lękiem.
+*Zakończenia:* win: Doktor kiwa głową i zapisuje receptę. „Pani jest silniejsza, niż pani myśli”. Gorączka nie wydaje się już taka groźna. · partial: Doktor zapisuje lekarstwo, ale marszczy czoło. „Zajrzę jutro”. · fail: Doktor Moll kręci głową i zapisuje coś w notesie. „Die gnädige Frau ist nicht ganz bei Sinnen” – mówi do Grety. Od tej chwili wszyscy w pałacu patrzą na ciebie jak na wariatkę.
 
 | 1 | Guten Tag, Frau von Hohenstein. Ich bin Doktor Moll. Wo tut es weh? *(Dzień dobry, pani von Hohenstein. Jestem doktor Moll. Gdzie boli?)* | **Mein Kopf und mein Bauch tun weh.** *(Powiedz, że boli cię głowa i brzuch.)* | Dwa podmioty → liczba mnoga: tun weh. |
 | 2 | Haben Sie Fieber? Zeigen Sie mir bitte Ihre Hand. *(Ma pani gorączkę? Proszę pokazać mi dłoń.)* | **Ja, ich habe seit drei Tagen Fieber.** *(Powiedz, że masz gorączkę od trzech dni.)* | „Seit” + celownik: seit drei Tagen (od trzech dni). |
@@ -786,7 +786,7 @@ Nowe słowa: Besser = lepiej, Gerücht = plotka, man = się (ogólnie), tötet =
 
 *Scena:* Następny dzień, burza przy oknie. Doktor Moll siada przy łóżku, a jego głos jest ściszony. Mówi, że musi ci coś powiedzieć.  
 *Cel:* Wysłuchaj plotek o Lukasie i nie zdradź, co o nich myślisz.  
-*Zakończenia:* win: Doktor wychodzi, ufny, że nic nie wiesz. Zostajesz sama z burzą i własnymi myślami. Ale jedno wiesz: nie będziesz już spać spokojnie. · partial: Doktor wychodzi niepewny. Zdradziłaś więcej, niż chciałaś, i teraz nie wiesz, komu on to powtórzy. · fail: Doktor patrzy na ciebie uważnie i uśmiecha się dziwnie. „Rozumiem” – mówi cicho. Zostajesz z poczuciem, że wszystko wyszło na jaw.
+*Zakończenia:* win: Doktor wychodzi, ufny, że nic nie wiesz. Zostajesz sama z burzą i własnymi myślami. Ale jedno wiesz: nie będziesz już spać spokojnie. · partial: Doktor wychodzi niepewny. Zdradziłaś więcej, niż chciałaś, i teraz nie wiesz, komu on to powtórzy. · fail: Doktor patrzy na ciebie z politowaniem i ogłasza Grecie, że pani domu majaczy: „Sie ist verwirrt, sie sieht Gespenster.” Twoje słowa przestają się liczyć.
 
 | 1 | Guten Tag. Ist das Fieber besser? Wie geht es Ihnen? *(Dzień dobry. Czy gorączka jest mniejsza? Jak się pani czuje?)* | **Ein bisschen besser, Herr Doktor.** *(Powiedz, że trochę lepiej.)* | „Besser” to „lepiej”; „ein bisschen” = „trochę”. |
 | 2 | Ich muss Ihnen etwas sagen. In der Stadt spricht man über Ihren Mann. *(Muszę coś pani powiedzieć. W mieście mówi się o pani mężu.)* | **Was sagt man über Lukas?** *(Zapytaj, co mówi się o Lukasie.)* | „Man sagt” = „mówi się”; „über” + biernik. |
@@ -881,7 +881,7 @@ Nowe słowa: Albträume = koszmary (liczba mnoga od Albtraum), Hm = hm (odgłos 
 
 *Scena:* Sypialnia, noc. Doktor Moll siedzi przy łóżku ze swoją torbą. Zna wszystkie plotki w okolicy i patrzy na ciebie zbyt uważnie.  
 *Cel:* Odpowiadaj tak, by lekarz nie domyślił się, że byłaś w zakazanym pokoju.  
-*Zakończenia:* win: Lekarz zamyka torbę. Niczego jeszcze nie jest pewien, a ty możesz wreszcie odetchnąć. · partial: Lekarz uśmiecha się dziwnie. Chyba się domyśla, ale nic nie mówi. · fail: Lekarz kiwa głową: „Ich weiß alles.” Teraz jest pewien i wie, co powiedzieć twojemu mężowi.
+*Zakończenia:* win: Lekarz zamyka torbę. Niczego jeszcze nie jest pewien, a ty możesz wreszcie odetchnąć. · partial: Lekarz uśmiecha się dziwnie. Chyba się domyśla, ale nic nie mówi. · fail: Lekarz kiwa głową i oznajmia głośno, żeby usłyszała cała służba: „Die Frau ist krank im Kopf!” Zapowiada, że powie o wszystkim Lukasowi. Zostajesz uznana za szaloną, a wszystkie twoje słowa będą odtąd podejrzane.
 
 | 1 | Guten Abend, Frau Clara. Zeigen Sie mir Ihre Zunge. Wie fühlen Sie sich? *(Dobry wieczór, pani Claro. Proszę pokazać język. Jak się pani czuje?)* | **Ich fühle mich schwach und müde.** *(Powiedz, że czujesz się słaba i zmęczona.)* | „Sich fühlen”: ich fühle mich. |
 | 2 | Schlafen Sie gut? Haben Sie Albträume? *(Czy pani dobrze śpi? Ma pani koszmary?)* | **Nein, ich schlafe sehr schlecht.** *(Powiedz, że śpisz bardzo źle.)* · warianty: Ja, ich habe oft Albträume. | „Schlecht schlafen” = źle spać. |
@@ -919,7 +919,7 @@ Nowe słowa: schlimm = zły, poważny, wollte = chciałam, chciał (od wollen), 
 
 *Scena:* Wielka sień pałacu. Lukas wraca ze stolicy, mokry od deszczu. Widzi cię w koszuli nocnej, bladą, z podkrążonymi oczami.  
 *Cel:* Uspokój Lukasa i nie pokazuj, że się go boisz ani że coś ukrywasz.  
-*Zakończenia:* win: Lukas bierze cię za rękę i prowadzi do pokoju. Zdaje się wierzyć, że to tylko choroba. · partial: Lukas patrzy na ciebie uważnie. Niczego nie mówi, ale nie przestaje się martwić. · fail: Lukas cofa się o krok: „Du hast Angst vor mir.” Jego twarz robi się twarda.
+*Zakończenia:* win: Lukas bierze cię za rękę i prowadzi do pokoju. Zdaje się wierzyć, że to tylko choroba. · partial: Lukas patrzy na ciebie uważnie. Niczego nie mówi, ale nie przestaje się martwić. · fail: Lukas cofa się o krok: „Du hast Angst vor mir.” Jego twarz twardnieje i robi się zły. Wychodzi, trzaskając drzwiami.
 
 | 1 | Clara! Ich bin zurück. Aber was ist mit dir? Du bist sehr blass! *(Claro! Wróciłem. Ale co się z tobą dzieje? Jesteś bardzo blada!)* | **Ich war krank, Lukas. Das Fieber ist schlimm.** *(Powiedz, że byłaś chora i że gorączka jest silna.)* | „Schlimm” = zły, poważny. |
 | 2 | Du hast mir nicht geschrieben. Warum? *(Nie napisałaś do mnie. Dlaczego?)* | **Ich wollte dich nicht stören.** *(Powiedz, że nie chciałaś mu przeszkadzać.)* · warianty: Ich hatte keine Kraft zum Schreiben. | „Stören” = przeszkadzać. |
@@ -938,7 +938,7 @@ Nowe słowa: Gerüchte = plotki (liczba mnoga od Gerücht), wusste = wiedziałam
 
 *Scena:* Salon przy kominku. Lukas trzyma butelkę od lekarza i patrzy na ciebie. Wiatr szumi w kominie.  
 *Cel:* Nie obwiniaj męża, nie zdradź rozmowy z lekarzem i pozwól Lukasowi mówić.  
-*Zakończenia:* win: Lukas wyrzuca butelkę do ognia. Zdajesz się wierzyć w jego wersję i oddychasz łatwiej. · partial: Lukas odstawia butelkę, ale pyta o lekarza jeszcze raz. · fail: Zdradzasz plotki. Lukas blednie: „Wer hat dir das gesagt?” Atmosfera robi się lodowata.
+*Zakończenia:* win: Lukas wyrzuca butelkę do ognia. Zdajesz się wierzyć w jego wersję i oddychasz łatwiej. · partial: Lukas odstawia butelkę, ale pyta o lekarza jeszcze raz. · fail: Zdradzasz plotki. Lukas blednie ze złości: „Wer hat dir das gesagt?” Uderza pięścią w stół i długo patrzy na ciebie bez słowa.
 
 | 1 | Wer hat dir diese Medizin gegeben? *(Kto dał ci ten lek?)* | **Doktor Moll war hier. Er hat sie mir gegeben.** *(Powiedz, że był tu Doktor Moll i dał ci ten lek.)* | „Hat … gegeben” = dał; „sie” = ją (die Medizin). |
 | 2 | Doktor Moll? Er ist ein Scharlatan. Er erzählt Gerüchte über alle Leute. *(Doktor Moll? To szarlatan. Opowiada plotki o wszystkich ludziach.)* | **Wirklich? Das wusste ich nicht.** *(Powiedz zdziwiona: naprawdę? Nie wiedziałaś.)* | „Wissen”: ich wusste/weiß; „wirklich” = naprawdę. |
@@ -957,7 +957,7 @@ Nowe słowa: ruft = wzywa, woła (rufen), werde = stanę się; werde + bezokolic
 
 *Scena:* Wieczór przed kolejnym wyjazdem Lukasa. W korytarzach migoczą świece, a ty postanawiasz nie wspominać o piwnicy. Zaczekasz, aż mąż odjedzie.  
 *Cel:* Pożegnaj się z mężem tak, by nie domyślił się, że coś ukrywasz, i nie wspomnij o piwnicy.  
-*Zakończenia:* win: Lukas całuje cię w czoło i życzy dobrej nocy. Niczego nie podejrzewa. · partial: Lukas wychodzi, ale ogląda się jeszcze w drzwiach. Chyba coś czuje. · fail: Lukas pyta: „Was verschweigst du mir?” Nie potrafisz skłamać i zbyt długo milczysz.
+*Zakończenia:* win: Lukas całuje cię w czoło i życzy dobrej nocy. Niczego nie podejrzewa. · partial: Lukas wychodzi, ale ogląda się jeszcze w drzwiach. Chyba coś czuje. · fail: Lukas pyta: „Was verschweigst du mir?” Nie potrafisz skłamać i milczysz za długo. Lukas jest zły i rozczarowany, wyjeżdża bez pożegnania.
 
 | 1 | Clara, ich muss morgen früh wieder in die Hauptstadt. *(Claro, jutro rano muszę znów jechać do stolicy.)* | **Schon wieder? Wann kommst du zurück?** *(Zapytaj zdziwiona, kiedy wróci.)* | „Schon wieder” = już znowu. |
 | 2 | In einer Woche. Der Fürst ruft mich. *(Za tydzień. Książę mnie wzywa.)* | **Ich werde dich vermissen.** *(Powiedz, że będziesz za nim tęsknić.)* | „Vermissen” = tęsknić za kimś: ich werde dich vermissen. |
@@ -976,7 +976,7 @@ Nowe słowa: darum = dlatego, deinem = twoim (celownik), dunklen = ciemny (z ko�
 
 *Scena:* Trzecia nad ranem. Burza zerwała most, więc kareta Lukasa nie wyjechała. Śni ci się koszmar o ciemnym pokoju bez wyjścia. Budzisz się, bierzesz świecę i idziesz do biblioteki, gdzie pali się światło.  
 *Cel:* Znajdź w sobie odwagę, by powiedzieć Lukasowi prawdę, choć boisz się jego reakcji.  
-*Zakończenia:* win: Mówisz prawdę drżącym głosem. Lukas słucha w milczeniu i nie podnosi głosu. · partial: Wyznajesz tylko część prawdy. Lukas czeka na resztę. · fail: Zamiast prawdy mówisz oskarżenia. Lukas patrzy na ciebie zimno i wstaje.
+*Zakończenia:* win: Mówisz prawdę drżącym głosem. Lukas słucha w milczeniu i nie podnosi głosu. · partial: Wyznajesz tylko część prawdy. Lukas czeka na resztę. · fail: Zamiast prawdy mówisz oskarżenia. Gdy przyznajesz się, że weszłaś do pokoju, Lukas wybucha gniewem: „Ich habe dich gebeten, nicht dorthin zu gehen!” Trzaska drzwiami i przez resztę nocy nie chce z tobą rozmawiać.
 
 | 1 | Clara? Es ist drei Uhr nachts. Warum bist du hier? *(Claro? Jest trzecia w nocy. Dlaczego tu jesteś?)* | **Ich hatte einen Albtraum.** *(Powiedz, że miałaś koszmar.)* | „Albtraum” = koszmar. |
 | 2 | Die Brücke ist weg, darum fahre ich heute nicht. Was war in deinem Traum? *(Most zniknął, więc dziś nie jadę. Co było w twoim śnie?)* | **Ich war in einem dunklen Raum und konnte nicht hinaus.** *(Opowiedz sen: byłaś w ciemnym pokoju i nie mogłaś wyjść.)* | „Hinaus” = na zewnątrz; „konnte nicht” = nie mogłam. |
@@ -995,7 +995,7 @@ Nowe słowa: gebeten = prosiłem, prosił (od bitten), Weißt = wiesz (wissen), 
 
 *Scena:* Biblioteka, ciepłe światło kominka. Lukas stoi przy oknie, a potem siada obok ciebie. Burza powoli cichnie, a za szybą jaśnieje poranek.  
 *Cel:* Wysłuchaj Lukasa i dowiedz się, dlaczego zakazał ci wejścia do piwnicy.  
-*Zakończenia:* win: Rozumiesz wszystko. Ulga zalewa cię jak ciepła woda, a burza za oknem cichnie. Pytanie, gdzie jest lekarz, zostaje bez odpowiedzi. · partial: Lukas tłumaczy, ale ty jeszcze nie do końca wierzysz. Strach powoli ustępuje. · fail: Nie potrafisz uwierzyć w jego słowa. Lukas wychodzi, a ty zostajesz w bibliotece sama ze świecą.
+*Zakończenia:* win: Rozumiesz wszystko. Ulga zalewa cię jak ciepła woda, a burza za oknem cichnie. Pytanie, gdzie jest lekarz, zostaje bez odpowiedzi. · partial: Lukas tłumaczy, ale ty jeszcze nie do końca wierzysz. Strach powoli ustępuje. · fail: Nie potrafisz uwierzyć w jego słowa. Lukas gniewa się, że znów go nie słuchasz, i wychodzi, a ty zostajesz w bibliotece sama ze świecą.
 
 | 1 | Ich habe dich gebeten, nicht in den Keller zu gehen. Weißt du, warum? *(Prosiłem cię, żebyś nie chodziła do piwnicy. Wiesz dlaczego?)* | **Nein, ich weiß es nicht. Warum?** *(Powiedz, że nie wiesz, i zapytaj dlaczego.)* | „Ich weiß es nicht” = nie wiem tego. |
 | 2 | Unter dem Palast liegen alte Gänge. Man kann sich dort leicht verirren. *(Pod pałacem są stare korytarze. Łatwo się tam zgubić.)* | **Du hattest Angst, dass ich mich verirre?** *(Zapytaj, czy bał się, że się zgubisz.)* | „Sich verirren” = zgubić się; „dass” = że; czasownik na końcu. |
@@ -1015,7 +1015,7 @@ Nowe słowa: getan = zrobił (od tun), Grafen = hrabiego (dopełniacz od Graf), 
 
 *Scena:* Mała gospoda przy zerwanym moście. Lukas i Greta znaleźli tu Molla, kiedy próbował uciec w deszczu. Lekarz siedzi przy stole, mokry i blady, ze swoją torbą. Lukas stoi za jego plecami, a Greta trzyma butelkę.  
 *Cel:* Dowiedz się, dlaczego lekarz cię truł, i nie pozwól, by wymigał się kłamstwem.  
-*Zakończenia:* win: Znasz całą prawdę: nazwisko hrabiego, plan i truciznę. Ulga miesza się z gniewem, ale jesteś pewna, że to nie ty zwariowałaś. · partial: Dowiadujesz się części prawdy. Hrabia pozostaje cieniem, a lekarz milknie, zanim powie wszystko. · fail: Lekarz kłamie i milczy. Lukas wyprowadza go z gospody, a ty nie wiesz, komu możesz wierzyć.
+*Zakończenia:* win: Znasz całą prawdę: nazwisko hrabiego, plan i truciznę. Ulga miesza się z gniewem, ale jesteś pewna, że to nie ty zwariowałaś. · partial: Dowiadujesz się części prawdy. Hrabia pozostaje cieniem, a lekarz milknie, zanim powie wszystko. · fail: Lekarz kłamie i milczy, a potem ogłasza wszystkim w gospodzie: „Die Dame ist verrückt!” Lukas wyprowadza cię stamtąd, ale ty już nie wiesz, komu możesz wierzyć.
 
 | 1 | Frau Clara! Ich bin müde und nass. Ich wollte nur fort von hier. *(Pani Claro! Jestem zmęczony i przemoczony. Chciałem tylko stąd uciec.)* | **Sie fliehen, Herr Doktor. Warum?** *(Powiedz spokojnie, że lekarz ucieka, i zapytaj dlaczego.)* | „Fliehen” = uciekać: Sie fliehen. |
 | 2 | Ich fliehe nicht. Ich habe Angst vor dem Sturm. Lukas: Doktor, meine Frau ist krank, und Ihre Tropfen machen sie noch kränker. *(Nie uciekam. Boję się burzy. Lukas: Doktorze, moja żona jest chora, a pańskie krople czynią ją jeszcze bardziej chorą.)* | **Was ist in Ihren Tropfen?** *(Zapytaj lekarza, co jest w jego kroplach.)* | „In Ihren Tropfen” = w pańskich kroplach. |
@@ -1037,7 +1037,7 @@ Nowe słowa: Mörder = morderca, Dienst = służba, getötet = zabił (od töten
 
 *Scena:* Biblioteka, popołudnie. Za oknem szumi deszcz, a na stole leżą ciężkie księgi w skórzanych okładkach. Lukas stoi przy regale i patrzy na ciebie. Greta stawia na stole herbatę i wychodzi bez słowa.  
 *Cel:* Zapytaj Lukasa wprost, kim naprawdę jest, i zdecyduj, czy możesz mu wybaczyć.  
-*Zakończenia:* win: Zaczynacie od nowa, ale na uczciwych warunkach. Nie wszystko jest czyste, lecz po raz pierwszy mówicie sobie prawdę. · partial: Zostajesz, lecz bez pewności. Księgi leżą otwarte, a między wami wisi pytanie, na ile mu ufasz. · fail: Nie potrafisz ani wybaczyć, ani zrozumieć. Lukas zamyka księgę i patrzy w okno. Pałac znów robi się zimny.
+*Zakończenia:* win: Zaczynacie od nowa, ale na uczciwych warunkach. Nie wszystko jest czyste, lecz po raz pierwszy mówicie sobie prawdę. · partial: Zostajesz, lecz bez pewności. Księgi leżą otwarte, a między wami wisi pytanie, na ile mu ufasz. · fail: Nie potrafisz ani wybaczyć, ani zrozumieć. Lukas zamyka księgę, zły i zraniony, i patrzy w okno. Pałac znów robi się zimny.
 
 | 1 | Clara, du hast noch eine Frage. Ich sehe es in deinen Augen. *(Claro, masz jeszcze jedno pytanie. Widzę to w twoich oczach.)* | **Lukas, bist du ein Mörder im Dienst des Fürsten?** *(Zapytaj wprost, czy jest zabójcą na usługach księcia.)* | „Im Dienst” = na służbie. |
 | 2 | Nein. Ich habe nie jemanden getötet. Aber ich bin auch nicht unschuldig. Willst du die ganze Wahrheit hören? *(Nie. Nigdy nikogo nie zabiłem. Ale też nie jestem niewinny. Chcesz usłyszeć całą prawdę?)* | **Ja, sag mir alles.** (dobra); złe: Nein, ich vertraue dir. Ich will nichts hören.; Nein, ich will nichts mehr hören. · ŚMIERTELNE | Wybierasz prawdę, choć może zaboleć.; Ślepe zaufanie to dokładnie to, co cię tu zgubiło.; Ucieczka przed rozmową znów zostawia cię z samymi domysłami. |

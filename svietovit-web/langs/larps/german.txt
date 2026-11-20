@@ -1488,7 +1488,7 @@ goal Opisz doktorowi, co ci dolega, i dowiedz się, jak się leczyć.
 partner Doktor Moll | D
 win Doktor kiwa głową i zapisuje receptę. „Pani jest silniejsza, niż pani myśli”. Gorączka nie wydaje się już taka groźna.
 partial Doktor zapisuje lekarstwo, ale marszczy czoło. „Zajrzę jutro”.
-fail Doktor nie rozumie, co ci dolega, i wychodzi, mrucząc do siebie. Zostajesz z gorączką i z lękiem.
+fail Doktor Moll kręci głową i zapisuje coś w notesie. „Die gnädige Frau ist nicht ganz bei Sinnen” – mówi do Grety. Od tej chwili wszyscy w pałacu patrzą na ciebie jak na wariatkę.
 w Doktor | doktor | der | die Doktoren
 w weh | boleć
 w Bauch | brzuch | der | die Bäuche
@@ -1530,7 +1530,7 @@ goal Wysłuchaj plotek o Lukasie i nie zdradź, co o nich myślisz.
 partner Doktor Moll | D
 win Doktor wychodzi, ufny, że nic nie wiesz. Zostajesz sama z burzą i własnymi myślami. Ale jedno wiesz: nie będziesz już spać spokojnie.
 partial Doktor wychodzi niepewny. Zdradziłaś więcej, niż chciałaś, i teraz nie wiesz, komu on to powtórzy.
-fail Doktor patrzy na ciebie uważnie i uśmiecha się dziwnie. „Rozumiem” – mówi cicho. Zostajesz z poczuciem, że wszystko wyszło na jaw.
+fail Doktor patrzy na ciebie z politowaniem i ogłasza Grecie, że pani domu majaczy: „Sie ist verwirrt, sie sieht Gespenster.” Twoje słowa przestają się liczyć.
 w Besser | lepiej
 w Gerücht | plotka | das | die Gerüchte
 w Stadt | miasto | die | die Städte
@@ -1695,7 +1695,7 @@ scene Sypialnia, noc. Doktor Moll siedzi przy łóżku ze swoją torbą. Zna wsz
 goal Odpowiadaj tak, by lekarz nie domyślił się, że byłaś w zakazanym pokoju.
 win Lekarz zamyka torbę. Niczego jeszcze nie jest pewien, a ty możesz wreszcie odetchnąć.
 partial Lekarz uśmiecha się dziwnie. Chyba się domyśla, ale nic nie mówi.
-fail Lekarz kiwa głową: „Ich weiß alles.” Teraz jest pewien i wie, co powiedzieć twojemu mężowi.
+fail Lekarz kiwa głową i oznajmia głośno, żeby usłyszała cała służba: „Die Frau ist krank im Kopf!” Zapowiada, że powie o wszystkim Lukasowi. Zostajesz uznana za szaloną, a wszystkie twoje słowa będą odtąd podejrzane.
 w Clara|Clara (imię głównej bohaterki)
 w fühlen|czuć
 w fühle|czuję (sich fühlen)
@@ -1773,7 +1773,7 @@ scene Wielka sień pałacu. Lukas wraca ze stolicy, mokry od deszczu. Widzi cię
 goal Uspokój Lukasa i nie pokazuj, że się go boisz ani że coś ukrywasz.
 win Lukas bierze cię za rękę i prowadzi do pokoju. Zdaje się wierzyć, że to tylko choroba.
 partial Lukas patrzy na ciebie uważnie. Niczego nie mówi, ale nie przestaje się martwić.
-fail Lukas cofa się o krok: „Du hast Angst vor mir.” Jego twarz robi się twarda.
+fail Lukas cofa się o krok: „Du hast Angst vor mir.” Jego twarz twardnieje i robi się zły. Wychodzi, trzaskając drzwiami.
 w Clara|Clara (imię głównej bohaterki)
 w Lukas|Lukas (imię męża)
 w blass|blady
@@ -1809,7 +1809,7 @@ scene Salon przy kominku. Lukas trzyma butelkę od lekarza i patrzy na ciebie. W
 goal Nie obwiniaj męża, nie zdradź rozmowy z lekarzem i pozwól Lukasowi mówić.
 win Lukas wyrzuca butelkę do ognia. Zdajesz się wierzyć w jego wersję i oddychasz łatwiej.
 partial Lukas odstawia butelkę, ale pyta o lekarza jeszcze raz.
-fail Zdradzasz plotki. Lukas blednie: „Wer hat dir das gesagt?” Atmosfera robi się lodowata.
+fail Zdradzasz plotki. Lukas blednie ze złości: „Wer hat dir das gesagt?” Uderza pięścią w stół i długo patrzy na ciebie bez słowa.
 w Doktor|doktor, lekarz|der|die Doktoren
 w Moll|Moll (nazwisko lekarza)
 w Medizin|lekarstwo, medycyna|die|–
@@ -1856,7 +1856,7 @@ scene Wieczór przed kolejnym wyjazdem Lukasa. W korytarzach migoczą świece, a
 goal Pożegnaj się z mężem tak, by nie domyślił się, że coś ukrywasz, i nie wspomnij o piwnicy.
 win Lukas całuje cię w czoło i życzy dobrej nocy. Niczego nie podejrzewa.
 partial Lukas wychodzi, ale ogląda się jeszcze w drzwiach. Chyba coś czuje.
-fail Lukas pyta: „Was verschweigst du mir?” Nie potrafisz skłamać i zbyt długo milczysz.
+fail Lukas pyta: „Was verschweigst du mir?” Nie potrafisz skłamać i milczysz za długo. Lukas jest zły i rozczarowany, wyjeżdża bez pożegnania.
 w Clara|Clara (imię głównej bohaterki)
 t Clara, ich muss morgen früh wieder in die Hauptstadt. | Claro, jutro rano muszę znów jechać do stolicy. | Schon wieder? Wann kommst du zurück? | Zapytaj zdziwiona, kiedy wróci. | „Schon wieder” = już znowu. | | gain=1
 w Fürst|książę|der|die Fürsten
@@ -1890,7 +1890,7 @@ scene Trzecia nad ranem. Burza zerwała most, więc kareta Lukasa nie wyjechała
 goal Znajdź w sobie odwagę, by powiedzieć Lukasowi prawdę, choć boisz się jego reakcji.
 win Mówisz prawdę drżącym głosem. Lukas słucha w milczeniu i nie podnosi głosu.
 partial Wyznajesz tylko część prawdy. Lukas czeka na resztę.
-fail Zamiast prawdy mówisz oskarżenia. Lukas patrzy na ciebie zimno i wstaje.
+fail Zamiast prawdy mówisz oskarżenia. Gdy przyznajesz się, że weszłaś do pokoju, Lukas wybucha gniewem: „Ich habe dich gebeten, nicht dorthin zu gehen!” Trzaska drzwiami i przez resztę nocy nie chce z tobą rozmawiać.
 w Clara|Clara (imię głównej bohaterki)
 w nachts|w nocy
 w Albtraum|koszmar|der|die Albträume
@@ -1934,7 +1934,7 @@ scene Biblioteka, ciepłe światło kominka. Lukas stoi przy oknie, a potem siad
 goal Wysłuchaj Lukasa i dowiedz się, dlaczego zakazał ci wejścia do piwnicy.
 win Rozumiesz wszystko. Ulga zalewa cię jak ciepła woda, a burza za oknem cichnie. Pytanie, gdzie jest lekarz, zostaje bez odpowiedzi.
 partial Lukas tłumaczy, ale ty jeszcze nie do końca wierzysz. Strach powoli ustępuje.
-fail Nie potrafisz uwierzyć w jego słowa. Lukas wychodzi, a ty zostajesz w bibliotece sama ze świecą.
+fail Nie potrafisz uwierzyć w jego słowa. Lukas gniewa się, że znów go nie słuchasz, i wychodzi, a ty zostajesz w bibliotece sama ze świecą.
 w Keller|piwnica|der|die Keller
 w gebeten|prosiłem, prosił (od bitten)
 w Weißt|wiesz (wissen)
@@ -1980,7 +1980,7 @@ scene Mała gospoda przy zerwanym moście. Lukas i Greta znaleźli tu Molla, kie
 goal Dowiedz się, dlaczego lekarz cię truł, i nie pozwól, by wymigał się kłamstwem.
 win Znasz całą prawdę: nazwisko hrabiego, plan i truciznę. Ulga miesza się z gniewem, ale jesteś pewna, że to nie ty zwariowałaś.
 partial Dowiadujesz się części prawdy. Hrabia pozostaje cieniem, a lekarz milknie, zanim powie wszystko.
-fail Lekarz kłamie i milczy. Lukas wyprowadza go z gospody, a ty nie wiesz, komu możesz wierzyć.
+fail Lekarz kłamie i milczy, a potem ogłasza wszystkim w gospodzie: „Die Dame ist verrückt!” Lukas wyprowadza cię stamtąd, ale ty już nie wiesz, komu możesz wierzyć.
 w Clara|Clara (imię głównej bohaterki)
 w Doktor|doktor, lekarz|der|die Doktoren
 w getan|zrobił (od tun)
@@ -2060,7 +2060,7 @@ scene Biblioteka, popołudnie. Za oknem szumi deszcz, a na stole leżą ciężki
 goal Zapytaj Lukasa wprost, kim naprawdę jest, i zdecyduj, czy możesz mu wybaczyć.
 win Zaczynacie od nowa, ale na uczciwych warunkach. Nie wszystko jest czyste, lecz po raz pierwszy mówicie sobie prawdę.
 partial Zostajesz, lecz bez pewności. Księgi leżą otwarte, a między wami wisi pytanie, na ile mu ufasz.
-fail Nie potrafisz ani wybaczyć, ani zrozumieć. Lukas zamyka księgę i patrzy w okno. Pałac znów robi się zimny.
+fail Nie potrafisz ani wybaczyć, ani zrozumieć. Lukas zamyka księgę, zły i zraniony, i patrzy w okno. Pałac znów robi się zimny.
 w Clara|Clara (imię głównej bohaterki)
 w Lukas|Lukas (imię męża)
 w Mörder|morderca|der|die Mörder

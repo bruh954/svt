@@ -273,7 +273,7 @@ def home():
         larps.append({"id": lp["id"], "title": lp["title"], "partner": lp["partner"], "avatar": lp["avatar"],
                       "fee": lp["fee"], "scene": lp["scene"], "goal": lp["goal"], "unlocked": un,
                       "best": d.get("larps", {}).get(lp["id"]), "can_pay": d["xp_total"] >= lp["fee"],
-                      "levels": _larp_levels_view(lp), "story": bool(lp.get("story")), "disclaimer": lp.get("disclaimer"), "reward": lp.get("reward")})
+                      "levels": _larp_levels_view(lp), "story": bool(lp.get("story")), "disclaimer": lp.get("disclaimer"), "warning": lp.get("warning"), "reward": lp.get("reward")})
     return json.dumps({"larps": larps, "paradigms": _paradigm_list(),
         "units": units, "tracks": getattr(C, "TRACKS", {}), "current": current, "chats": chats,
         "hearts": st.hearts(), "heart_max": E.HEART_MAX, "next_heart": st.seconds_to_next_heart(),

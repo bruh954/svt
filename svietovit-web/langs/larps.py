@@ -3,7 +3,7 @@
 
 Plik larps/<kurs>.txt (puste linie i # ignorowane):
   @larp id | Tytuł | Rozmówca | Awatar | Scena | Cel ucznia
-  fee 0 / reward 15 / strict yes / disclaimer … / win … / partial … / fail …        (ustawienia larpa)
+  fee 0 / reward 15 / strict yes / disclaimer … / warning … (ostrzeżenie o treści: osobne okno, wymaga zgody przed wejściem) / win … / partial … / fail …        (ustawienia larpa)
   @level 1 | Tytuł poziomu | patience=6 cap=8 endless=yes typed=0 extra=1 hint=none reward=10   (cap: maks. wiarygodność, endless: bez porażki, after=20 lub after=21,22: poziom odblokowuje się po tych poziomach zamiast po poprzednim, np. równoległe zakończenia)        (typed: ułamek odpowiedzi pisanych z klawiatury,
                                                                                   hint: bank | letters | none, extra: zbędne klocki)
   w Kellner | kelner | der | die Kellner | z czego składa się   nowe słowo (jak w bulk.py); samo „w słowo” = słowo już jest w kursie
@@ -82,7 +82,7 @@ def parse(path):
                 cur[k] = int(v)
             elif k in ("strict", "story"):
                 cur[k] = v.strip() in ("yes", "tak", "1")
-            elif k in ("disclaimer", "requires"):
+            elif k in ("disclaimer", "requires", "warning"):
                 cur[k] = v.strip()
             else:
                 raise SystemExit("linia %d: nieznane ustawienie: %s" % (n, line))
