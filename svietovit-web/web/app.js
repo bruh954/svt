@@ -893,6 +893,7 @@ function larpScene(S, lid, lvl, R) {
   track("larp_start", { course: cur.cid, larp: lid });
   let node = R ? R.node : S.node, patience = R ? R.patience : S.patience, over = false; const excluded = new Set();
   const log = R ? R.log : h("div", { class: "log" }), reply = h("div", { class: "reply" }), pips = h("span", { class: "stat s-heart", title: t("larp_patience") });
+  if (S.endless) pips.style.display = "none";
   const drawPips = () => { pips.textContent = "◆".repeat(Math.max(0, patience)) + "◇".repeat(Math.max(0, S.max_patience - patience)); };
   const leave = () => { if (over) { cur.tab = "chats"; return renderHome(); } confirmBox(t("larp_quit_t"), t("larp_quit_d"), t("quit"), t("keep"), () => { B.larp_abandon(); cur.tab = "chats"; renderHome(); }); };
   const scr = show([h("div", { class: "top" }, h("button", { class: "back", onclick: leave }, "‹"),

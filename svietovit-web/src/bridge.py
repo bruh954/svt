@@ -931,8 +931,8 @@ def larp_start(lid, lvl=1):
     keys = _larp_chain(cfg)
     typed = {k for i, k in enumerate(keys) if "build" in cfg["nodes"][k] and int((i + 1) * frac + 1e-9) > int(i * frac + 1e-9)}
     _larp.update(id=lid, lvl=lvl, cfg=cfg, node=cfg["start"], patience=cfg.get("patience", lp.get("patience", 3)), weak=0, mistakes=0, done=False, typed=typed, rounds=set(), help=False)
-    return json.dumps({"ok": True, "fee": lp["fee"], "patience": _larp["patience"], "max_patience": _larp["patience"], "level": lvl,
-                       "lexicon": lex, "disclaimer": lp.get("disclaimer"), "level_title": cfg.get("title") if cfg is not lp else None,
+    return json.dumps({"ok": True, "fee": lp["fee"], "patience": _larp["patience"], "max_patience": int(cfg.get("cap") or _larp["patience"]), "level": lvl,
+                       "lexicon": lex, "disclaimer": lp.get("disclaimer"), "endless": bool(cfg.get("endless")), "level_title": cfg.get("title") if cfg is not lp else None,
                        "scene": cfg.get("scene", lp["scene"]), "goal": cfg.get("goal", lp["goal"]), "partner": cfg.get("partner", lp["partner"]), "avatar": cfg.get("avatar", lp["avatar"]),
                        "title": lp["title"], "story": bool(lp.get("story")), "node": _larp_node(lp, cfg["start"])}, ensure_ascii=False)
 
@@ -1121,14 +1121,26 @@ def larp_answer(payload_json):
             res["answer"] = disp
         else:
             nxt = n["next"]
+    endless = bool(cfg.get("endless"))                      # babcia w parku: bez porażki, błędy tylko obniżają wynik
+    cap = int(cfg.get("cap") or cfg.get("patience") or lp.get("patience", 3))
     if res["verdict"] == "weak":
         _larp["weak"] += 1
+    if res["verdict"] in ("good", "weak") and n.get("gain") and not endless:      # wiarygodność wraca
+        _larp["patience"] = min(cap, _larp["patience"] + int(n["gain"]))
     if res["verdict"] == "bad":
         _larp["mistakes"] += 1
-        if n.get("deadly"):
+        if endless:
+            pass
+        elif n.get("deadly"):
             _larp["patience"] = 0
         else:
-            _larp["patience"] -= 1
+            _larp["patience"] -= int(n.get("loss", 1))
+        if _larp["patience"] <= 0 and not endless:
+            res["patience"] = 0
+            res["end"] = _larp_finish(lp, "fail")
+            return json.dumps(res, ensure_ascii=False)
+    if nxt and not endless and cfg["nodes"].get(nxt, {}).get("shift"):          # „amnezja” albo nowy skandal: zmiana nie zależy od odpowiedzi
+        _larp["patience"] = min(cap, _larp["patience"] + int(cfg["nodes"][nxt]["shift"]))
         if _larp["patience"] <= 0:
             res["patience"] = 0
             res["end"] = _larp_finish(lp, "fail")

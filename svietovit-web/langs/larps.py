@@ -4,11 +4,12 @@
 Plik larps/<kurs>.txt (puste linie i # ignorowane):
   @larp id | Tytuł | Rozmówca | Awatar | Scena | Cel ucznia
   fee 0 / reward 15 / strict yes / disclaimer … / win … / partial … / fail …        (ustawienia larpa)
-  @level 1 | Tytuł poziomu | patience=6 typed=0 extra=1 hint=none reward=10        (typed: ułamek odpowiedzi pisanych z klawiatury,
+  @level 1 | Tytuł poziomu | patience=6 cap=8 endless=yes typed=0 extra=1 hint=none reward=10   (cap: maks. wiarygodność, endless: bez porażki)        (typed: ułamek odpowiedzi pisanych z klawiatury,
                                                                                   hint: bank | letters | none, extra: zbędne klocki)
   w Kellner | kelner | der | die Kellner | z czego składa się   nowe słowo (jak w bulk.py); samo „w słowo” = słowo już jest w kursie
   t bot | bot po polsku | odpowiedź ucznia | odpowiedź po polsku | dlaczego (opcjonalnie) | wariant ; wariant
   e bot | bot po polsku                                                              (zakończenie sceny)
+  opcje węzła (ostatnie pole t/d, przedostatnie o/k): gain=1 (dobra odpowiedź podnosi wiarygodność) loss=2 (zła obniża o 2) shift=-1 (zmiana po wejściu do węzła, niezależna od odpowiedzi)
 Poziom może używać słów z poprzednich poziomów i z kursu. Pisze też plik DO-SPRAWDZENIA-larpy-<kurs>.md.
 """
 import os, re, sys
@@ -215,11 +216,17 @@ def build(cid):
                         node["pool"] = list(beat["pool"])
                 words += beat["new"]; sents += uniq
                 beat = {"new": [], "pool": [], "sents": []}
+                optp = (p[5] if kind in ("o", "k") and len(p) > 5 else (p[6] if kind in ("t", "d") and len(p) > 6 else ""))
+                for kv in (optp or "").split():
+                    if "=" in kv and kv.split("=")[0] in ("gain", "loss", "shift"):
+                        node[kv.split("=")[0]] = int(kv.split("=")[1])
                 nodes[key] = node; order.append(key)
             if not order or not nodes[order[-1]].get("end"):
                 errors.append("poziom %d larpa %s: ostatni wiersz musi być „e” (zakończenie)" % (lv["n"], lp["id"]))
             cfg = {"title": lv["title"], "start": order[0] if order else None, "nodes": nodes, "lexicon": lex,
                    "patience": int(lv.get("patience", 5)), "typed": float(lv.get("typed", 0)), "extra": int(lv.get("extra", 3))}
+            if lv.get("cap"): cfg["cap"] = int(lv["cap"])
+            if lv.get("endless") in ("yes", "tak", "1"): cfg["endless"] = True
             cfg["lexicon"] = []
             if lv.get("hint", "none") != "none":
                 cfg["hint"] = lv["hint"]
