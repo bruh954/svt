@@ -617,3 +617,434 @@ Nowe słowa: Flugbegleiterin = stewardesa, Bord = pokład, Fach = schowek (nad g
 | 8 | Genau! Und danach zum Gepäckband. Ihr Koffer kommt auf Band vier. *(Dokładnie! A potem do taśmy bagażowej. Pana walizka przyjedzie na taśmie czwartej.)* | **Danke schön! Ich nehme den Koffer vom Band.** *(Podziękuj i powiedz, że zdejmiesz walizkę z taśmy.)* | „Zdejmuję” to w tym zdaniu ich nehme, a „z taśmy” to vom Band. |
 | 9 | Haben Sie etwas zu verzollen? Das fragt der Zoll. *(Czy ma pan coś do oclenia? O to zapyta cło.)* | **Nein, ich habe nichts zu verzollen.** *(Powiedz, że nie masz nic do oclenia.)* | „Nic” to nichts: nichts zu verzollen. |
 | 10 | Dann ist alles gut. Willkommen in Polen und viel Spaß auf der Hochzeit! *(Wtedy wszystko w porządku. Witamy w Polsce i dobrej zabawy na ślubie!)* | — |  |
+
+## Paranoia (paranoia)
+
+**Scena:** Gotycki pałac w mgle. Wychodzisz za przystojnego, bogatego Lukasa, ale się go boisz. Zakazane drzwi w piwnicy, plotki lekarza i bezsenne noce zaczynają zwodzić twój umysł. Twój „spokój” spada, kiedy się boisz, i rośnie, kiedy ktoś jest dla ciebie dobry.  
+**Cel:** Jesteś Clarą. Przetrwaj pierwszy rok małżeństwa: nie daj się ponieść lękowi, nie zdradź swoich podejrzeń i zachowaj zdrowy rozsądek.  
+**Rozmówca:** Greta  
+**Zakończenia:** win: Zachowujesz spokój do końca. Burza ucicha, świece płoną równo, a ty rozumiesz, że prawdziwy strach rodził się w twojej głowie. Rano w pałacu znów pachnie chlebem. · partial: Przetrwałaś, ale z drżącymi rękami. Pałac wciąż skrywa cienie i nie wiesz, czemu możesz ufać. Pozostaje ci pytać, patrzeć i czekać na świt. · fail: Strach zżera cię od środka. Twoje myśli plączą się jak korytarze piwnicy, a ty wołasz o pomoc w pustym pałacu, w którym nikt nie odpowiada.  
+
+### Poziom 1: Dom stryja  (typed=0, hint=none, cierpliwość 4)
+
+Nowe słowa: Besuch = wizyta, goście, Clara = Clara (imię), Lukas = Lukas (imię), Hohenstein = Hohenstein (nazwisko rodu), alten = starej (alt), freundlich = miły, życzliwy, Seine = jego, Augen = oczy, Unsinn = bzdura, verstehe = rozumiem (verstehen), diesem = temu (dieser), Rose = róża, bringt = przynosi (bringen), weiße = białe (weiß), Rosen = róże, lädt = zaprasza (einladen), schläfst = śpisz (schlafen), großer = wielki (groß)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Dom stryja Friedricha, wieczór, za oknem gęsta mgła. Mieszkasz tu od lat. Dziś przyjechał z wizytą Lukas von Hohenstein: bogaty, przystojny, z wpływowej rodziny. Stryj chce, żebyś go poznała.  
+*Cel:* Przyjmij gościa uprzejmie, ale pozwól stryjowi wyczuć, że trochę się boisz.  
+*Zakończenia:* win: Lukas kłania się w drzwiach, a stryj promienieje. Ty uśmiechasz się grzecznie, choć w głębi czujesz dreszcz. Jutro kolacja w jego towarzystwie. · partial: Stryj jest zadowolony, ale zauważa, że drżą ci ręce. Lukas patrzy na ciebie dłużej, niż wypada. · fail: Stryj się irytuje, bo jesteś nieuprzejma wobec gościa. Lukas wychodzi, a ty zostajesz sama w cichym, zimnym salonie.
+
+| 1 | Clara, komm bitte ins Wohnzimmer. Wir haben Besuch. *(Clara, chodź proszę do salonu. Mamy gościa.)* | **Ja, Onkel, ich komme gleich.** *(Powiedz, że zaraz przyjdziesz.)* | „Zaraz” to gleich, a „przyjdę” to ich komme. |
+| 2 | Der Besuch ist Herr Lukas von Hohenstein. Er ist reich und kommt aus einer alten Familie. *(Gościem jest pan Lukas von Hohenstein. Jest bogaty i pochodzi ze starej rodziny.)* | **Guten Abend, Herr von Hohenstein.** *(Przywitaj gościa wieczornym powitaniem.)* | Wieczorem mówimy „Guten Abend”. |
+| 3 | Lukas ist freundlich und hübsch, nicht wahr? Hast du keine Angst vor ihm? *(Lukas jest miły i przystojny, prawda? Nie boisz się go?)* | **Ein bisschen. Seine Augen sind kalt.** *(Przyznaj cicho, że trochę się boisz, bo jego oczy są zimne.)* | „Trochę” to ein bisschen, a „oczy” to Augen (liczba mnoga). |
+| 4 | Unsinn! Die Hochzeit ist gut für uns. Wir haben kein Geld mehr. *(Bzdura! Ślub jest dla nas dobry. Nie mamy już pieniędzy.)* | **Ich verstehe, Onkel. Ich bin dir dankbar.** (dobra); złe: Ich habe viel Geld.; Ich möchte nicht in diesem Haus wohnen. | Clara nie ma pieniędzy, a stryj ma kłopoty, więc grzecznie mówisz, że rozumiesz.; Stryj właśnie powiedział, że pieniędzy nie ma, więc „mam dużo pieniędzy” nie pasuje.; Stryj tylko się o ciebie martwi; odmowa mieszkania w domu byłaby niegrzeczna. |
+| 5 | Hier ist er schon! Er bringt dir weiße Rosen. *(Oto i on! Przynosi ci białe róże.)* | **Danke, die Rosen sind sehr schön.** *(Podziękuj za róże i pochwal je.)* | „Sehr schön” to „bardzo piękne”; Rosen to liczba mnoga, więc „sind”. |
+| 6 | Lukas lädt uns morgen zum Abendessen ein. Kommst du mit? *(Lukas zaprasza nas jutro na kolację. Pójdziesz z nami?)* | **Ja, ich komme gern mit.** *(Zgódź się pójść z nimi.)* | „Mitkommen” to „pójść z kimś”; mit idzie na koniec zdania. |
+| 7 | Gut! Jetzt schläfst du. Morgen ist ein großer Tag. *(Dobrze! Teraz idziesz spać. Jutro to wielki dzień.)* | — |  |
+
+### Poziom 2: Oświadczyny  (typed=0, hint=bank, cierpliwość 4)
+
+Nowe słowa: nennen = nazywać, dürfen = móc, mieć pozwolenie, Darf = czy mogę, czy wolno (dürfen), schüchtern = nieśmiały, still = cichy, Schloss = pałac, zamek, hasse = nienawidzę (hassen), alte = stare (alt), Häuser = domy, wunderschön = cudowny, przepiękny, Ihrem = pani, pańskim (celownik)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Ogród przy domu stryja, zimny wieczór, mgła owija róże. Lukas prosi cię o rozmowę na osobności. W ręku ma coś małego i błyszczącego.  
+*Cel:* Rozmawiaj z Lukasem grzecznie (na „Pan/Pani”), przyjmij jego oświadczyny i zachowaj spokój, nawet jeśli czujesz niepokój.  
+*Zakończenia:* win: Lukas zakłada ci pierścień na palec. Jego dłoń jest zimna, ale głos ciepły. Zgadzasz się, a ty prawie wierzysz, że to szczęście. · partial: Zgadzasz się, ale Lukas widzi twoje wahanie. Uśmiecha się dziwnie i mówi, że wszystko się ułoży. · fail: Lukas milknie i zabiera pierścień. „Pomyślę o tym” – mówi chłodno i znika w mgle. Stryj będzie wściekły.
+
+| 1 | Guten Abend, Clara. Der Garten ist schön im Nebel, nicht wahr? *(Dobry wieczór, Claro. Ogród jest piękny we mgle, prawda?)* | **Ja, aber es ist kalt, Herr von Hohenstein.** *(Zgódź się, że ogród jest piękny, ale dodaj, że jest zimno.)* | „Aber” to „ale”; „es ist kalt” to „jest zimno”. |
+| 2 | Nennen Sie mich bitte Lukas. Darf ich Sie Clara nennen? *(Proszę mówić mi Lukas. Czy mogę mówić do pani Clara?)* | **Ja, Lukas. Das ist in Ordnung.** *(Zgódź się, żeby zwracać się do siebie po imieniu.)* | „In Ordnung” to „w porządku”. |
+| 3 | Ich sehe Sie jeden Sonntag in der Kirche. Sie sind so still. *(Widzę panią w każdą niedzielę w kościele. Jest pani taka cicha.)* | **Ich bin nur ein bisschen schüchtern.** *(Wytłumacz, że jesteś tylko trochę nieśmiała.)* | „Schüchtern” to nieśmiały, a „nur” znaczy „tylko”. |
+| 4 | Ich habe ein großes Schloss im Norden. Es ist alt, aber sehr schön. Möchten Sie es sehen? *(Mam wielki pałac na północy. Jest stary, ale bardzo piękny. Czy chce pani go zobaczyć?)* | **Ja, ich möchte das Schloss gern sehen.** (dobra); złe: Nein, ich hasse alte Häuser.; Ich habe kein Schloss. | Odpowiadasz na pytanie: chcesz obejrzeć pałac (das Schloss).; „Nienawidzę starych domów” obraziłoby gospodarza.; Pytanie dotyczy jego pałacu, nie twojego. |
+| 5 | Clara, ich liebe Sie. Wollen Sie meine Frau werden? *(Claro, kocham panią. Czy chce pani zostać moją żoną?)* | **Ja, Lukas, ich will Ihre Frau werden.** (dobra); złe: Nein, ich kenne Sie nicht.; Ich muss zuerst schlafen. | „Ich will” to „chcę”, a „Ihre Frau” to „pańska żona”.; Znasz go już od tygodni, więc to nie pasuje do sytuacji.; Odpowiedź nie dotyczy oświadczyn. |
+| 6 | Danke. Ich habe einen Ring für Sie. *(Dziękuję. Mam dla pani pierścień.)* | **Der Ring ist wunderschön, aber sehr schwer.** *(Pochwal pierścień, ale dodaj, że jest bardzo ciężki.)* | „Schwer” to „ciężki”; po „ist” przymiotnik bez końcówki. |
+| 7 | Morgen spreche ich mit Ihrem Onkel. Gute Nacht, meine Liebe. *(Jutro porozmawiam z pani stryjem. Dobranoc, moja droga.)* | — |  |
+
+### Poziom 3: Ślub i wesele  (typed=0.1, hint=bank, cierpliwość 4)
+
+Nowe słowa: Pfarrer = ksiądz, pastor, nervös = zdenerwowany, Zeichen = znak, Kerzen = świece, brennen = płoną, schlechtes = zły (schlecht), heiraten = pobrać się, poślubić, Gratulation = gratulacje, Beim = przy, podczas (bei dem), Hochzeitsessen = przyjęcie weselne, einem = jednym (ein), langen = długim (lang), Fürst = książę, arbeitet = pracuje (arbeiten), Fürsten = księcia (Fürst)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Mała kamienna kapliczka, świece migoczą na wietrze, a na zewnątrz szaleje burza. Za chwilę wychodzisz za Lukasa. Przed ołtarzem czeka ksiądz Weber.  
+*Cel:* Przeprowadź ceremonię ślubną, nie dając po sobie poznać zdenerwowania, i dowiedz się, kim jest książę, o którym mówią goście.  
+*Zakończenia:* win: Dzwony biją, a goście klaszczą. Ksiądz błogosławi was, a ty, mimo burzy, czujesz ciężki spokój. Zostajesz panią Hohenstein. · partial: Ślub się odbywa, ale ksiądz widzi, że drżysz. Lukas ściska twoją dłoń zbyt mocno. · fail: Przysięga ci się plącze, a ksiądz robi przerwę. Goście szepczą. Lukas patrzy na ciebie lodowato.
+
+| 1 | Willkommen in der Kirche, Clara. Heute ist deine Hochzeit. Bist du bereit? *(Witaj w kościele, Claro. Dziś twój ślub. Jesteś gotowa?)* | **Ja, ich bin bereit, aber ich bin nervös.** *(Powiedz, że jesteś gotowa, ale zdenerwowana.)* | „Nervös” to zdenerwowany; „bereit” to gotowy. |
+| 2 | Draußen ist ein Gewitter. Die Kerzen brennen im Wind. *(Na zewnątrz jest burza. Świece płoną na wietrze.)* | **Das Gewitter ist laut. Ist das ein schlechtes Zeichen?** *(Zauważ, że burza jest głośna, i zapytaj, czy to zły znak.)* | „Schlecht” to zły; po „ein” + das Zeichen → ein schlechtes Zeichen. |
+| 3 | Wollen Sie, Clara, Lukas von Hohenstein heiraten? *(Czy chce pani, Claro, poślubić Lukasa von Hohenstein?)* | **Ja, ich will.** (dobra); złe: Nein, ich will nicht.; Vielleicht. | Przysięga ślubna: „Ja, ich will” (tak, chcę).; „Nie chcę” zatrzymałoby ślub.; „Może” nie jest przysięgą. |
+| 4 | Dann sind Sie jetzt Mann und Frau. Gratulation! *(Zatem jesteście teraz mężem i żoną. Gratuluję!)* | **Danke, Herr Pfarrer. Ich bin sehr glücklich.** *(Podziękuj księdzu i powiedz, że jesteś bardzo szczęśliwa.)* | „Glücklich” to szczęśliwy; zwrot „Herr Pfarrer” to „proszę księdza”. |
+| 5 | Beim Hochzeitsessen sitzen Sie an einem langen Tisch. Haben Sie Hunger? *(Na weselu siedzi pani przy długim stole. Czy jest pani głodna?)* | **Nein, ich habe keinen Hunger. Ich bin zu nervös.** *(Powiedz, że nie jesteś głodna, bo jesteś zbyt zdenerwowana.)* | „Kein” + rzeczownik męski w bierniku → keinen Hunger. „Zu nervös” = zbyt zdenerwowana. |
+| 6 | Auch der Fürst aus der Hauptstadt ist hier. Lukas arbeitet viel für ihn. *(Jest tu też książę ze stolicy. Lukas dużo dla niego pracuje.)* | **Was macht Lukas für den Fürsten?** *(Zapytaj, co Lukas robi dla księcia.)* | „Co robi” to was macht; po „für” biernik: den Fürsten. |
+| 7 | Das weiß ich nicht. Fragen Sie Ihren Mann. Gute Nacht und viel Glück. *(Nie wiem. Niech pani zapyta męża. Dobranoc i wiele szczęścia.)* | — |  |
+
+### Poziom 4: Pałac Hohenstein  (typed=0.15, hint=bank, cierpliwość 4)
+
+Nowe słowa: gnädige Frau = łaskawa pani (zwrot do pani domu), gnädige = łaskawa, Greta = Greta (imię), zeige = pokazuję (zeigen), Salon = salon, Kamin = kominek, ersten = pierwszym (erst), sieht = widzi (sehen), bringen = przynosić, Soll = czy mam, czy powinienem (sollen), rufen = wołać, wzywać, brennt = płonie (brennen)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Wieczór po weselu. Powóz zatrzymuje się przed ogromnym pałacem we mgle. Lukas poszedł do gabinetu, a służąca Greta ma cię oprowadzić.  
+*Cel:* Poznaj pałac i służącą Gretę i zorientuj się, co jest w którym miejscu.  
+*Zakończenia:* win: Greta kłania się z uśmiechem: „Jak miło, że pani tu jest”. Pałac jest wielki, ale poznajesz już jego korytarze. Świeca przy łóżku daje ci poczucie bezpieczeństwa. · partial: Poznajesz większość pałacu, choć Greta musi powtarzać. W korytarzach cienie wydają się dłuższe, niż powinny. · fail: Greta nie wie, o co ci chodzi, i prowadzi cię w złą stronę. Błądzisz po ciemnych korytarzach, aż Lukas cię znajdzie, zły.
+
+| 1 | Willkommen im Schloss Hohenstein, gnädige Frau. Ich bin Greta. *(Witamy w pałacu Hohenstein, łaskawa pani. Jestem Greta.)* | **Guten Abend, Greta. Das Schloss ist sehr groß.** *(Przywitaj się z Gretą i powiedz, że pałac jest bardzo duży.)* | Po „ist” przymiotnik bez końcówki: sehr groß. |
+| 2 | Es hat viele Zimmer. Ich zeige Ihnen alles. *(Ma wiele pokoi. Pokażę pani wszystko.)* | **Danke, Greta. Ich bin müde, aber ich möchte alles sehen.** *(Podziękuj i powiedz, że jesteś zmęczona, ale chcesz wszystko zobaczyć.)* | „Alles” = wszystko; „aber” łączy dwie części zdania. |
+| 3 | Hier ist der Salon. Der Kamin ist alt, aber das Feuer ist warm. *(Oto salon. Kominek jest stary, ale ogień jest ciepły.)* | **Wo ist mein Schlafzimmer, bitte?** *(Zapytaj, gdzie jest twoja sypialnia.)* | Pytanie o miejsce zaczyna się od „wo”: wo ist mein Schlafzimmer? |
+| 4 | Oben, im ersten Stock. Das Zimmer hat ein großes Bett und ein Fenster zum Garten. *(Na górze, na pierwszym piętrze. Pokój ma duże łóżko i okno na ogród.)* | **Der Nebel ist dick. Man sieht den Garten nicht.** *(Zauważ, że mgła jest gęsta i nie widać ogrodu.)* | „Dick” to gęsty; „man sieht” to „widać”. |
+| 5 | Der Herr kommt später. Soll ich Ihnen Tee oder Wein bringen? *(Pan przyjdzie później. Czy przynieść pani herbatę czy wino?)* | **Bitte bringen Sie Tee.** (dobra); złe: Bitte bringen Sie das Fenster.; Ich bringe Wein. | Prosisz o herbatę: Bitte bringen Sie Tee.; Okna nie przynosi się na tacy.; „Ich bringe” to „ja przynoszę”, a to Greta ma przynieść. |
+| 6 | Gute Nacht, gnädige Frau. Wenn Sie etwas brauchen, rufen Sie mich. *(Dobranoc, łaskawa pani. Jeśli pani czegoś potrzebuje, proszę mnie zawołać.)* | **Danke, Greta. Sie sind sehr nett.** *(Podziękuj Grecie i powiedz, że jest bardzo miła.)* | „Nett” to miły; po „sind” przymiotnik bez końcówki. |
+| 7 | Gute Nacht. Die Kerze brennt für Sie. Schlafen Sie gut. *(Dobranoc. Świeca płonie dla pani. Proszę spać dobrze.)* | — |  |
+
+### Poziom 5: Klucze  (typed=0.2, hint=bank, cierpliwość 4)
+
+Nowe słowa: geschlafen = spałam, spałaś (schlafen), Herrin = pani (domu), Türen = drzwi (l. mn.), Welche = która, jaka, meinst = masz na myśli (meinen), Keller = piwnica, golden = złoty, kleine = mała (klein), goldene = złoty (golden), öffnet = otwiera (öffnen), versprechen = obiecywać, neugierig = ciekawski, dieses = ten (dieser), Versprichst = obiecujesz (versprechen), verspreche = obiecuję (versprechen), zögern = wahać się, zögerst = wahasz się (zögern), einig = zgodny
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Poranek w bibliotece. Lukas siedzi przy biurku, a przed nim leży pęk kluczy. Jesteście już małżeństwem, więc mówicie sobie na „ty”.  
+*Cel:* Przyjmij klucze od męża i obiecaj, że nie wejdziesz do jednego pokoju w piwnicy.  
+*Zakończenia:* win: Lukas uśmiecha się szeroko i całuje cię w czoło. Klucze brzęczą w twojej kieszeni jak małe dzwonki. Mały złoty klucz ciąży najbardziej. · partial: Obiecujesz, ale głos ci drży. Lukas patrzy na ciebie długo i mówi: „Wierzę ci”, ale jego oczy nie wierzą. · fail: Lukas wstaje, cichy i blady. „To nie jest żart, Claro”. Zabiera klucze i wychodzi, a drzwi zamykają się zbyt głośno.
+
+| 1 | Guten Morgen, meine Liebe. Hast du gut geschlafen? *(Dzień dobry, moja droga. Dobrze spałaś?)* | **Ja, danke, aber der Wind war sehr laut.** *(Odpowiedz, że spałaś, ale wiatr był bardzo głośny.)* | „War” to „był”; „laut” to głośny. |
+| 2 | Hier sind alle Schlüssel für das Schloss. Du bist jetzt die Herrin hier. *(Oto wszystkie klucze do pałacu. Jesteś teraz tu panią.)* | **Danke, Lukas. Das sind viele Schlüssel.** *(Podziękuj i zauważ, że kluczy jest dużo.)* | „Viele” + liczba mnoga: viele Schlüssel. |
+| 3 | Du darfst alle Türen öffnen, nur eine nicht. *(Możesz otwierać wszystkie drzwi, tylko jednych nie.)* | **Eine nicht? Welche Tür meinst du?** *(Zapytaj, o jakie drzwi chodzi.)* | „Welche” to „która”; „meinst du” = „masz na myśli”. |
+| 4 | Im Keller, ganz hinten, links. Der kleine goldene Schlüssel öffnet sie. *(W piwnicy, całkiem z tyłu, po lewej. Mały złoty klucz je otwiera.)* | **Warum darf ich nicht hinein?** *(Zapytaj, dlaczego nie wolno ci tam wejść.)* | „Warum” to „dlaczego”; „hinein” to „do środka”. |
+| 5 | Das kann ich dir nicht sagen. Bitte geh nie in dieses Zimmer. Versprichst du es mir? *(Tego nie mogę ci powiedzieć. Proszę, nigdy nie wchodź do tego pokoju. Obiecujesz mi?)* | **Ja, ich verspreche es dir.** (dobra); złe: Nein, ich gehe hinein, wenn ich will.; Vielleicht, aber ich bin sehr neugierig. · ŚMIERTELNE | „Ich verspreche es dir” to „obiecuję ci to”.; Lukas prosi o obietnicę, a nie o wymówkę.; „Może” nie uspokoi Lukasa; wyda ciekawość. |
+| 6 | Du zögerst. Hast du Angst vor mir? *(Wahasz się. Boisz się mnie?)* | **Nein, ich habe keine Angst. Ich bin nur müde.** *(Zaprzecz, że się boisz, i powiedz, że jesteś tylko zmęczona.)* | „Keine Angst” = „bez strachu”; „nur müde” = „tylko zmęczona”. |
+| 7 | Gut. Dann sind wir uns einig. Ich muss bald in die Hauptstadt fahren. *(Dobrze. Zatem jesteśmy zgodni. Muszę niedługo pojechać do stolicy.)* | — |  |
+
+### Poziom 6: Pożegnanie  (typed=0.25, hint=bank, cierpliwość 4)
+
+Nowe słowa: wartet = czeka (warten), braucht = potrzebuje (brauchen), vermissen = tęsknić za, lieb = kochany, miły, vermisse = tęsknię (vermissen), denk = pomyśl (denken), Du = ty, öffnest = otwierasz (öffnen), öffne = otwieram (öffnen), nachts = nocą, bleib = zostań (bleiben), Köchin = kucharka
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Dziedziniec pałacu, wcześnie rano. Powóz czeka, konie parskają, a w oddali grzmi. Lukas wyjeżdża do stolicy, a ty zostajesz z kluczami.  
+*Cel:* Pożegnaj Lukasa, zapytaj, co robi w stolicy, i powtórz mu, że nie wejdziesz do zakazanego pokoju.  
+*Zakończenia:* win: Lukas całuje cię w rękę i wsiada do powozu. Mgła połyka koła i kopyta. Zostajesz sama w pałacu z poczuciem, że wszystko jest w porządku. · partial: Lukas wsiada, ale ogląda się jeszcze dwa razy. Nie jesteś pewna, czy jest czuły, czy podejrzliwy. · fail: Lukas marszczy czoło i zawraca z powozu. „Dlaczego mi nie ufasz?” Wyjazd się opóźnia, a w pałacu robi się zimno.
+
+| 1 | Der Wagen wartet. Ich muss jetzt in die Hauptstadt fahren. *(Powóz czeka. Muszę teraz pojechać do stolicy.)* | **Schon heute? Wann kommst du zurück?** *(Zapytaj, czy już dziś i kiedy wróci.)* | „Wann” to „kiedy”; „zurückkommen” rozdziela się: kommst du zurück. |
+| 2 | In einer Woche, vielleicht in zwei. Der Fürst braucht mich. *(Za tydzień, może za dwa. Książę mnie potrzebuje.)* | **Der Fürst braucht dich oft. Was machst du dort?** *(Zauważ, że książę często go potrzebuje, i zapytaj, co tam robi.)* | „Oft” to często; „dort” to „tam”. |
+| 3 | Ich arbeite nur für ihn. Das ist langweilig, glaube mir. Ich schreibe dir jeden Tag einen Brief. *(Pracuję tylko dla niego. To nudne, uwierz mi. Będę ci pisał każdego dnia list.)* | **Das ist lieb. Ich vermisse dich schon jetzt.** *(Powiedz, że to miłe i że już tęsknisz.)* | „Vermissen” to tęsknić za kimś; „schon jetzt” = „już teraz”. |
+| 4 | Und denk daran: Du hast alle Schlüssel. Welche Tür öffnest du nicht? *(I pamiętaj: masz wszystkie klucze. Których drzwi nie otwierasz?)* | **Ich öffne die kleine Tür im Keller nicht.** (dobra); złe: Ich öffne alle Türen.; Ich öffne die Tür zur Küche nicht. | Powtarzasz obietnicę: nie otwierasz małej drzwi w piwnicy.; Obiecałaś, że nie otworzysz jednych drzwi, a nie wszystkich.; Kuchnia jest dozwolona; chodzi o drzwi w piwnicy. |
+| 5 | Gut. Und bleib nachts im Bett. Das Schloss ist alt, und es ist dunkel. *(Dobrze. I nocą zostań w łóżku. Pałac jest stary i jest ciemno.)* | **Ja, ich bleibe nachts im Bett.** *(Obiecaj, że nocą zostaniesz w łóżku.)* | „Bleiben” → ich bleibe; „nachts” = „nocą”. |
+| 6 | Auf Wiedersehen, meine Liebe. Greta und die Köchin sind bei dir. *(Do widzenia, moja droga. Greta i kucharka są przy tobie.)* | **Auf Wiedersehen, Lukas. Gute Reise!** *(Pożegnaj męża i życz mu dobrej podróży.)* | „Gute Reise” to „szczęśliwej podróży”. |
+| 7 | Danke, Clara. Bis bald! *(Dziękuję, Claro. Do zobaczenia wkrótce!)* | — |  |
+
+### Poziom 7: Samotność  (typed=0.3, hint=bank, cierpliwość 4)
+
+Nowe słowa: fertig = gotowy, blass = blady, weg = w drodze, nieobecny, erst = dopiero, wehtun = boleć, tut = robi (tun), weh = boli, fühlen = czuć, fühle = czuję (fühlen), Geräusch = odgłos, szmer, Geräusche = odgłosy, hałasy, Mäuse = myszy, schlafe = śpię (schlafen)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Trzeci dzień po wyjeździe Lukasa. Pałac jest pusty i zimny, a twoje kroki odbijają się echem. W kuchni krząta się kucharka, pani Brandt.  
+*Cel:* Poradź sobie z samotnością i zaakceptuj, że zaczynasz chorować.  
+*Zakończenia:* win: Kucharka stawia przed tobą gorącą zupę i otula cię kocem. Choć jesteś chora, czujesz, że ktoś się tobą opiekuje. · partial: Zjadasz kilka łyżek zupy, ale ręce ci drżą. Pani Brandt wymienia z Gretą niepokojące spojrzenie. · fail: Odpychasz talerz, a pani Brandt cofa się ze strachem. Zostajesz sama w cichym, zimnym pałacu.
+
+| 1 | Guten Morgen, gnädige Frau. Das Frühstück ist fertig. Sie sind sehr blass. *(Dzień dobry, łaskawa pani. Śniadanie gotowe. Jest pani bardzo blada.)* | **Ich habe schlecht geschlafen. Das Schloss ist so still.** *(Powiedz, że źle spałaś, bo pałac jest taki cichy.)* | „Schlecht geschlafen” to „źle spałam”. |
+| 2 | Der Herr ist erst drei Tage weg. Sie müssen essen, gnädige Frau. *(Pan jest nieobecny dopiero trzy dni. Musi pani jeść, łaskawa pani.)* | **Ich habe keinen Appetit. Mir ist kalt.** *(Powiedz, że nie masz apetytu i jest ci zimno.)* | „Mir ist kalt” to „jest mi zimno”. |
+| 3 | Möchten Sie eine Suppe? Die Suppe ist heiß und gut. *(Czy chce pani zupę? Zupa jest gorąca i dobra.)* | **Nein, danke. Mein Kopf tut weh.** *(Odmów i powiedz, że boli cię głowa.)* | „Tut weh” = „boli”; kolejność: Mein Kopf tut weh. |
+| 4 | Sie haben auch Fieber, glaube ich. Soll ich den Arzt rufen? *(Ma pani chyba też gorączkę. Czy mam wezwać lekarza?)* | **Ja, bitte. Ich fühle mich sehr krank.** (dobra); złe: Nein, ich bin der Arzt.; Ja, ich rufe das Fieber. | „Ich fühle mich sehr krank” = „czuję się bardzo chora”.; Ty nie jesteś lekarzem.; Fieber to gorączka, a nie ktoś, kogo się woła. |
+| 5 | Gut. Nachts hören wir oft Geräusche im Keller. Das sind nur Mäuse. *(Dobrze. Nocą często słyszymy hałasy w piwnicy. To tylko myszy.)* | **Geräusche im Keller? Was für Geräusche?** *(Powtórz ze zdziwieniem „hałasy w piwnicy?” i zapytaj, jakie.)* | „Was für” znaczy „jakie”. |
+| 6 | Ach, das ist nichts. Ich bringe Ihnen Tee und eine Kerze. *(Ach, to nic. Przyniosę pani herbatę i świecę.)* | **Danke. Bleiben Sie bitte bei mir, bis ich schlafe.** *(Podziękuj i poproś, żeby została przy tobie, aż zaśniesz.)* | „Bis” to „aż”; „bei mir” = „przy mnie”. |
+| 7 | Natürlich, gnädige Frau. Schlafen Sie gut. *(Oczywiście, łaskawa pani. Proszę dobrze spać.)* | — |  |
+
+### Poziom 8: Lekarz  (typed=0.35, hint=bank, cierpliwość 4)
+
+Nowe słowa: Doktor = doktor, Moll = Moll (nazwisko lekarza), tun = robić, seit = od, Tagen = dniach (Tag), Albtraum = koszmar, schlechte = złe (schlecht), Träume = sny, jede = każda (jeder), Medizin = lekarstwo, morgens = rano, ausruhen = odpoczywać, Ruhen = odpoczywać
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Deszczowy poranek. Leżysz w łóżku, a w drzwiach staje wysoki mężczyzna w czarnym płaszczu: doktor Moll. Lukas nadal jest w stolicy.  
+*Cel:* Opisz doktorowi, co ci dolega, i dowiedz się, jak się leczyć.  
+*Zakończenia:* win: Doktor kiwa głową i zapisuje receptę. „Pani jest silniejsza, niż pani myśli”. Gorączka nie wydaje się już taka groźna. · partial: Doktor zapisuje lekarstwo, ale marszczy czoło. „Zajrzę jutro”. · fail: Doktor nie rozumie, co ci dolega, i wychodzi, mrucząc do siebie. Zostajesz z gorączką i z lękiem.
+
+| 1 | Guten Tag, Frau von Hohenstein. Ich bin Doktor Moll. Wo tut es weh? *(Dzień dobry, pani von Hohenstein. Jestem doktor Moll. Gdzie boli?)* | **Mein Kopf und mein Bauch tun weh.** *(Powiedz, że boli cię głowa i brzuch.)* | Dwa podmioty → liczba mnoga: tun weh. |
+| 2 | Haben Sie Fieber? Zeigen Sie mir bitte Ihre Hand. *(Ma pani gorączkę? Proszę pokazać mi dłoń.)* | **Ja, ich habe seit drei Tagen Fieber.** *(Powiedz, że masz gorączkę od trzech dni.)* | „Seit” + celownik: seit drei Tagen (od trzech dni). |
+| 3 | Das ist nicht gut. Können Sie schlafen? *(To niedobrze. Czy może pani spać?)* | **Nein, ich kann nachts nicht schlafen.** *(Powiedz, że nocą nie możesz spać.)* | „Kann nicht schlafen” = „nie mogę spać”. |
+| 4 | Haben Sie schlechte Träume? *(Czy ma pani złe sny?)* | **Ja, ich habe jede Nacht schlechte Träume.** (dobra); złe: Nein, ich habe jede Nacht einen Arzt.; Nein, ich träume ein Fieber. | „Jede Nacht” = „każdej nocy”; „schlechte Träume” = „złe sny”.; Odpowiedź musi mówić o snach.; „Träumen” i „Fieber” tak się nie łączą. |
+| 5 | Ich gebe Ihnen eine Medizin. Nehmen Sie morgens und abends einen Löffel. *(Dam pani lekarstwo. Proszę brać rano i wieczorem łyżkę.)* | **Danke, Herr Doktor. Wie lange muss ich sie nehmen?** *(Podziękuj i zapytaj, jak długo musisz je brać.)* | „Wie lange” = „jak długo”; „sie” = lekarstwo. |
+| 6 | Eine Woche. Und Sie müssen ruhig bleiben. Ist Ihr Mann zu Hause? *(Tydzień. I musi pani zachować spokój. Czy mąż jest w domu?)* | **Nein, mein Mann ist in der Hauptstadt.** *(Odpowiedz, że mąż jest w stolicy.)* | „In der Hauptstadt” = „w stolicy”; die Hauptstadt → in der. |
+| 7 | In der Hauptstadt, so. Ich komme morgen wieder. Ruhen Sie sich aus. *(W stolicy, tak. Przyjdę jutro znowu. Proszę odpoczywać.)* | — |  |
+
+### Poziom 9: Plotki  (typed=0.4, hint=letters, cierpliwość 4)
+
+Nowe słowa: Besser = lepiej, Gerücht = plotka, man = się (ogólnie), tötet = zabija (töten), Menschen = ludzi, furchtbar = straszny, dunkle = mroczne (dunkel), Geheimnisse = tajemnice, hilft = pomaga (helfen), große = wielki (groß), meinem = mojemu (mein), vertrauen = ufać, niemandem = nikomu
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Następny dzień, burza przy oknie. Doktor Moll siada przy łóżku, a jego głos jest ściszony. Mówi, że musi ci coś powiedzieć.  
+*Cel:* Wysłuchaj plotek o Lukasie i nie zdradź, co o nich myślisz.  
+*Zakończenia:* win: Doktor wychodzi, ufny, że nic nie wiesz. Zostajesz sama z burzą i własnymi myślami. Ale jedno wiesz: nie będziesz już spać spokojnie. · partial: Doktor wychodzi niepewny. Zdradziłaś więcej, niż chciałaś, i teraz nie wiesz, komu on to powtórzy. · fail: Doktor patrzy na ciebie uważnie i uśmiecha się dziwnie. „Rozumiem” – mówi cicho. Zostajesz z poczuciem, że wszystko wyszło na jaw.
+
+| 1 | Guten Tag. Ist das Fieber besser? Wie geht es Ihnen? *(Dzień dobry. Czy gorączka jest mniejsza? Jak się pani czuje?)* | **Ein bisschen besser, Herr Doktor.** *(Powiedz, że trochę lepiej.)* | „Besser” to „lepiej”; „ein bisschen” = „trochę”. |
+| 2 | Ich muss Ihnen etwas sagen. In der Stadt spricht man über Ihren Mann. *(Muszę coś pani powiedzieć. W mieście mówi się o pani mężu.)* | **Was sagt man über Lukas?** *(Zapytaj, co mówi się o Lukasie.)* | „Man sagt” = „mówi się”; „über” + biernik. |
+| 3 | Man sagt, er tötet Menschen für den Fürsten. *(Mówi się, że zabija ludzi dla księcia.)* | **Was? Das kann nicht wahr sein!** *(Zareaguj zdumiona: to nie może być prawda.)* | „Nicht wahr sein” = „nie być prawdą”. |
+| 4 | Vielleicht, vielleicht nicht. Der Fürst hat dunkle Geheimnisse, und Ihr Mann hilft ihm. *(Może tak, może nie. Książę ma mroczne tajemnice, a pani mąż mu pomaga.)* | **Das ist furchtbar. Was soll ich tun?** *(Powiedz, że to straszne, i zapytaj, co masz robić.)* | „Soll ich” = „powinnam”; „furchtbar” to straszny. |
+| 5 | Bleiben Sie ruhig. Haben Sie Angst vor Ihrem Mann? *(Proszę zachować spokój. Czy boi się pani męża?)* | **Nein, ich habe keine Angst. Ich bin nur krank.** (dobra); złe: Ja, ich habe große Angst vor meinem Mann.; Ich sage meinem Mann alles. · ŚMIERTELNE | Zaprzeczasz i mówisz, że jesteś tylko chora; nie zdradzasz nic.; Przyznanie się do strachu może się obrócić przeciwko tobie.; Mówienie wszystkiego mężowi byłoby ryzykowne (lekarz też ma swoje cele). |
+| 6 | Gut. Ruhen Sie sich aus. Trinken Sie die Medizin jeden Abend. *(Dobrze. Proszę odpoczywać. Proszę pić lekarstwo każdego wieczoru.)* | **Danke, Herr Doktor. Ich trinke sie heute Abend.** *(Podziękuj i powiedz, że wypijesz lekarstwo dziś wieczorem.)* | „Heute Abend” = „dziś wieczorem”; „trinken” → ich trinke. |
+| 7 | Gute Nacht. Und vertrauen Sie niemandem im Schloss. *(Dobranoc. I proszę nikomu w pałacu nie ufać.)* | — |  |
+
+### Poziom 10: Klucz w nocy  (typed=0.5, hint=letters, cierpliwość 4)
+
+Nowe słowa: misstrauisch = podejrzliwy, reden = gadać, mówić, Schlimmes = coś złego, manche = niektóre, Dinge = rzeczy, schlägt = bije (schlagen), schläft = śpi (schlafen), hörst = słyszysz (hören)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Wieczór, potem noc. Pałac skrzypi, w kominku wygasa ogień. Greta przynosi herbatę i świecę. Jesteś coraz bardziej podejrzliwa wobec wszystkich.  
+*Cel:* Rozpytaj Gretę, nie zdradź jej swoich zamiarów, a potem weź klucz i zejdź do piwnicy.  
+*Zakończenia:* win: Zegar bije dwanaście. Zbierasz się na odwagę, zabierasz klucz i świecę i schodzisz po zimnych stopniach. Piwnica czeka. · partial: Idziesz po schodach, ale kolana ci drżą. Wracasz do łóżka… i zawracasz po raz trzeci. · fail: Greta słyszy twoje kroki i staje przy drzwiach. „Dokąd, łaskawa pani?” – pyta. Noc mija, a klucz leży na stoliku, ciężki jak kamień.
+
+| 1 | Gnädige Frau, der Arzt war wieder hier. Was hat er gesagt? *(Łaskawa pani, lekarz znów tu był. Co powiedział?)* | **Er gibt mir Medizin, sonst nichts.** *(Odpowiedz ostrożnie, że lekarz tylko daje ci lekarstwo i nic poza tym.)* | „Sonst nichts” = „poza tym nic”. |
+| 2 | Die Leute reden viel, gnädige Frau. Aber ich sehe nichts Schlimmes hier. *(Ludzie dużo gadają, łaskawa pani. Ale ja nie widzę tu nic złego.)* | **Greta, ist mein Mann ein guter Mensch?** *(Zapytaj wprost, czy twój mąż jest dobrym człowiekiem.)* | „Ein guter Mensch” = „dobry człowiek” (rodzaj męski → guter). |
+| 3 | Er ist immer freundlich zu mir. Aber manche Dinge sind nicht für uns. *(Jest dla mnie zawsze miły. Ale niektóre rzeczy nie są dla nas.)* | **Welche Dinge, Greta? Sagen Sie es mir bitte.** *(Zapytaj, o jakie rzeczy chodzi, i poproś Gretę, żeby powiedziała.)* | „Sagen Sie es mir” = „proszę mi to powiedzieć”. |
+| 4 | Ich weiß nichts, gnädige Frau. Ich arbeite nur hier. *(Nic nie wiem, łaskawa pani. Ja tu tylko pracuję.)* | **Hören Sie nachts Geräusche im Keller?** *(Zapytaj, czy Greta słyszy nocą hałasy w piwnicy.)* | „Hören Sie” = „czy pani słyszy”; „nachts” = „nocą”. |
+| 5 | Das ist nur der Wind, gnädige Frau. Gehen Sie bitte schlafen. *(To tylko wiatr, łaskawa pani. Proszę iść spać.)* | **Ja, Greta, gute Nacht. Ich bin müde.** (dobra); złe: Ich suche nachts den Schlüssel.; Ich glaube Ihnen nicht, Greta. | Zgadzasz się grzecznie, żeby nie wzbudzić podejrzeń.; Mówienie o kluczu zdradziłoby zamiary.; „Nie wierzę pani” zdradziłoby podejrzliwość. |
+| 6 | Hier sind die Kerze und die Medizin. Es ist schon spät. *(Oto świeca i lekarstwo. Jest już późno.)* | **Danke, Greta. Sie können gehen.** *(Podziękuj Grecie i powiedz, że może iść.)* | „Sie können gehen” = „może pani iść”. |
+| 7 | Die Uhr schlägt zwölf. Das Schloss schläft. Was machst du jetzt? *(Zegar bije dwunastą. Pałac śpi. Co teraz robisz?)* | **Ich nehme den Schlüssel und die Kerze.** *(Powiedz, że bierzesz klucz i świecę.)* | „Nehmen” → ich nehme; klucz (der) → den Schlüssel. |
+| 8 | Die Treppe ist kalt. Unten, im Keller, wartet die kleine Tür. Du hörst dein Herz. *(Schody są zimne. Na dole, w piwnicy, czeka małe drzwiczki. Słyszysz własne serce.)* | — |  |
+
+### Poziom 11: Pusty pokój  (typed=0.5, hint=bank, cierpliwość 3)
+
+Nowe słowa: Hörst = słyszysz (hören), Sturm = burza, höre = słyszę (hören), stehst = stoisz (stehen), dreht = obraca się (drehen), siehst = widzisz (sehen), Raum = pokój, przestrzeń, verboten = zabronił, zabroniony (od verbieten), Dunkeln = ciemność (im Dunkeln = w ciemności), schreie = krzyczę (schreien), hinauf = w górę, na górę
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Noc, burza, mgła za oknami. Schodzisz do piwnicy ze świecą i kluczem. Przed zakazanymi drzwiami słyszysz w głowie własny głos, który zadaje ci pytania.  
+*Cel:* Otwórz drzwi, nie trać zimnej krwi i wróć na górę, choć pokój nie jest taki, jak się bałaś.  
+*Zakończenia:* win: Wracasz po schodach na górę. Serce bije ci mocno, ale głowa jest jeszcze jasna. · partial: Wracasz na górę, lecz ręce ci drżą i nic już nie rozumiesz. · fail: Panika cię ogarnia. Świeca gaśnie, a ty uciekasz w ciemności, nie wiedząc dokąd.
+
+| 1 | Clara, du stehst vor der Tür. Hörst du den Sturm? *(Clario, stoisz przed drzwiami. Słyszysz burzę?)* | **Ja, ich höre den Sturm.** *(Powiedz, że słyszysz burzę.)* | „Höre” to „słyszę” (hören): ich höre. |
+| 2 | Du hast den Schlüssel in der Hand. Hast du Angst? *(Masz klucz w ręce. Boisz się?)* | **Ja, ich habe große Angst.** *(Przyznaj, że bardzo się boisz.)* · warianty: Ja, ich habe sehr Angst. | „Angst haben” = bać się; „große” = wielki. |
+| 3 | Der Schlüssel dreht sich. Die Tür ist offen! Was siehst du? *(Klucz się obraca. Drzwi są otwarte! Co widzisz?)* | **Ich sehe nichts. Der Raum ist leer.** *(Powiedz, że nic nie widzisz, pokój jest pusty.)* | „Leer” = pusty; „nichts” = nic. |
+| 4 | Kein Bett, kein Tisch, kein Blut. Nur Staub. Warum hat er dir das verboten? *(Ani łóżka, ani stołu, ani krwi. Tylko kurz. Dlaczego ci tego zabronił?)* | **Ich verstehe es nicht. Warum?** *(Powiedz, że nie rozumiesz, i zapytaj dlaczego.)* | „Ich verstehe es nicht” = nie rozumiem tego. |
+| 5 | Im Dunkeln hörst du ein Geräusch. Was machst du? *(W ciemności słyszysz jakiś dźwięk. Co robisz?)* | **Ich gehe langsam zurück nach oben.** (dobra); złe: Ich gehe allein weiter in den Keller.; Ich schreie laut. | Spokojny odwrót to najlepsze wyjście.; Dalsze błądzenie po piwnicy w nocy to zły pomysł.; Krzyk obudzi cały dom i Gretę. |
+| 6 | Die Kerze brennt noch. Du gehst die Treppe hinauf und hörst nur den Sturm. *(Świeca jeszcze się pali. Wchodzisz po schodach na górę i słyszysz tylko burzę.)* | — |  |
+
+### Poziom 12: Poranek i pytania  (typed=0.55, hint=bank, cierpliwość 3)
+
+Nowe słowa: los = się dzieje (was ist los? = co się stało?), schlimmen = zły, straszny (z końcówką), Hände = ręce (liczba mnoga od Hand), zittern = drżeć, gelassen = zostawiła (od lassen), verwirrt = zdezorientowany, skołowany
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Poranek w pałacu. Za oknem gęsta mgła. Greta przynosi herbatę, a ty nie wiesz, czy to, co widziałaś w nocy, było prawdą, czy snem.  
+*Cel:* Odpowiadaj ostrożnie: nie zdradź, gdzie byłaś, i nie pozwól, by Greta napisała do Lukasa.  
+*Zakończenia:* win: Greta wychodzi z pokoju zadowolona. Nie napisze do Lukasa i o niczym się nie dowie. · partial: Greta wychodzi niepewna. Wie, że coś ukrywasz, ale nic nie powie. · fail: Greta przerywa ci: „Ich schreibe es Herrn Lukas.” Jej mina mówi wszystko.
+
+| 1 | Guten Morgen, gnädige Frau. Haben Sie gut geschlafen? *(Dzień dobry, pani. Czy dobrze pani spała?)* | **Nein, ich habe schlecht geschlafen.** *(Powiedz, że spałaś źle.)* | Perfekt: ich habe geschlafen; „schlecht” = źle. |
+| 2 | Sie sind sehr blass. Was ist los? *(Jest pani bardzo blada. Co się stało?)* | **Ich hatte einen schlimmen Traum.** *(Powiedz, że miałaś zły sen.)* | „Ich hatte” = miałam; „schlimm” = zły, straszny. |
+| 3 | Ihre Hände zittern. Waren Sie in der Nacht im Keller? Ich habe Licht gesehen. *(Pani ręce drżą. Czy była pani w nocy w piwnicy? Widziałam światło.)* | **Nein, ich war in meinem Zimmer.** *(Zaprzecz: byłaś w swoim pokoju.)* · warianty: Nein, ich war nicht im Keller. | „War” to „byłam/był” (sein w czasie przeszłym): ich war. |
+| 4 | Die Nacht war kalt und der Wind war laut. Haben Sie das Fenster offen gelassen? *(Noc była zimna, a wiatr głośny. Zostawiła pani okno otwarte?)* | **Ja, vielleicht. Ich bin verwirrt.** *(Powiedz, że może tak, i że jesteś zdezorientowana.)* | „Vielleicht” = może; „verwirrt” = zdezorientowany, skołowany. |
+| 5 | Soll ich Herrn Lukas einen Brief schreiben? *(Mam napisać do pana Lukasa?)* | **Nein, bitte schreiben Sie ihm nichts.** (dobra); złe: Ja, schreiben Sie ihm alles.; Ja, schreiben Sie ihm vom Keller. | Prosisz Gretę, by nie pisała.; „Alles” obejmuje piwnicę, więc to zła odpowiedź.; Wspomnisz piwnicę, a to właśnie chcesz ukryć. |
+| 6 | Gut. Trinken Sie den Tee. Ruhen Sie sich aus. *(Dobrze. Proszę pić herbatę i odpocząć.)* | **Danke, Greta. Ich bin nur müde.** *(Podziękuj Grecie i powiedz, że jesteś tylko zmęczona.)* | „Nur müde” = tylko zmęczona. |
+| 7 | Greta geht. Du siehst aus dem Fenster. Draußen ist nur Nebel. *(Greta wychodzi. Patrzysz przez okno. Na zewnątrz jest tylko mgła.)* | — |  |
+
+### Poziom 13: Gorączka  (typed=0.6, hint=bank, cierpliwość 3)
+
+Nowe słowa: Bote = posłaniec, regnet = pada deszcz (regnen), Bitte = proszę, mag = lubię, lubi (mögen), lieber = raczej, wolę, Kutsche = powóz, klopft = puka (klopfen)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Wieczór. Masz gorączkę i dreszcze. Deszcz bije w szyby, a Greta stoi przy łóżku ze świecą. Lukas jest daleko, w stolicy.  
+*Cel:* Poproś Gretę o pomoc i każ wezwać Doktora Molla, zanim noc zrobi się jeszcze gorsza.  
+*Zakończenia:* win: Posłaniec odjeżdża w deszczu. Za godzinę lekarz będzie u ciebie. · partial: Greta wysyła posłańca, ale boi się o ciebie i chce jeszcze czekać. · fail: Gorączka rośnie, a ty nie możesz wydobyć z siebie słowa. Greta płacze i nie wie, co robić.
+
+| 1 | Gnädige Frau, Sie haben Fieber! Wie geht es Ihnen? *(Pani ma gorączkę! Jak się pani czuje?)* | **Mir ist heiß und kalt. Ich bin sehr krank.** *(Powiedz, że jest ci i gorąco, i zimno, i że jesteś bardzo chora.)* | „Mir ist heiß” = jest mi gorąco; „krank” = chory. |
+| 2 | Möchten Sie, dass ich den Doktor rufe? *(Czy chce pani, żebym wezwała lekarza?)* | **Ja, bitte rufen Sie Doktor Moll.** *(Poproś o wezwanie Doktora Molla.)* | „Rufen Sie” (rozkaz grzecznościowy) = proszę wezwać. |
+| 3 | Der Bote braucht eine Stunde. Es regnet stark. *(Posłaniec potrzebuje godziny. Mocno pada.)* | **Dann warte ich im Bett.** *(Powiedz, że poczekasz w łóżku.)* | „Dann” = wtedy; czasownik na drugim miejscu: dann warte ich. |
+| 4 | Trinken Sie etwas Wasser. Ihre Hände sind kalt. *(Proszę wypić trochę wody. Ma pani zimne ręce.)* | **Danke. Bitte bleiben Sie bei mir.** *(Podziękuj i poproś, by Greta została przy tobie.)* | „Bleiben” = zostać; „bei mir” = przy mnie. |
+| 5 | Im Zimmer ist es sehr dunkel. Soll ich noch eine Kerze bringen? *(W pokoju jest bardzo ciemno. Mam przynieść jeszcze świecę?)* | **Ja, bitte bringen Sie noch eine Kerze.** (dobra); złe: Nein, ich mag das Licht nicht.; Nein, bringen Sie lieber den Schlüssel. | Więcej światła uspokaja.; Prosisz o ciemność, choć boisz się cieni.; Klucza nie potrzebujesz, to on cię tu zaprowadził. |
+| 6 | Hören Sie? Da kommt eine Kutsche. *(Słyszy pani? Jedzie powóz.)* | **Das ist bestimmt der Doktor.** *(Powiedz, że to na pewno lekarz.)* | „Bestimmt” = na pewno. |
+| 7 | Es klopft an der Tür. Der Doktor ist da. *(Ktoś puka do drzwi. Lekarz już jest.)* | — |  |
+
+### Poziom 14: Lekarz się domyśla  (typed=0.65, hint=letters, cierpliwość 3)
+
+Nowe słowa: Albträume = koszmary (liczba mnoga od Albtraum), Hm = hm (odgłos zastanowienia), Schuhen = butach (celownik l.mn. od Schuh), putzt = sprząta, czyści (putzen), Palastes = pałacu (dopełniacz od Palast), verbietet = zabrania (verbieten), konnte = mogłam, mógł (od können), gegangen = poszła, chodziłam (od gehen), Scharlatan = szarlatan, Er = on, Dreimal = trzy razy
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Sypialnia, noc. Doktor Moll siedzi przy łóżku ze swoją torbą. Zna wszystkie plotki w okolicy i patrzy na ciebie zbyt uważnie.  
+*Cel:* Odpowiadaj tak, by lekarz nie domyślił się, że byłaś w zakazanym pokoju.  
+*Zakończenia:* win: Lekarz zamyka torbę. Niczego jeszcze nie jest pewien, a ty możesz wreszcie odetchnąć. · partial: Lekarz uśmiecha się dziwnie. Chyba się domyśla, ale nic nie mówi. · fail: Lekarz kiwa głową: „Ich weiß alles.” Teraz jest pewien i wie, co powiedzieć twojemu mężowi.
+
+| 1 | Guten Abend, Frau Clara. Zeigen Sie mir Ihre Zunge. Wie fühlen Sie sich? *(Dobry wieczór, pani Claro. Proszę pokazać język. Jak się pani czuje?)* | **Ich fühle mich schwach und müde.** *(Powiedz, że czujesz się słaba i zmęczona.)* | „Sich fühlen”: ich fühle mich. |
+| 2 | Schlafen Sie gut? Haben Sie Albträume? *(Czy pani dobrze śpi? Ma pani koszmary?)* | **Nein, ich schlafe sehr schlecht.** *(Powiedz, że śpisz bardzo źle.)* · warianty: Ja, ich habe oft Albträume. | „Schlecht schlafen” = źle spać. |
+| 3 | Hm. Ihr Kleid ist schmutzig. Es ist Staub an Ihren Schuhen. *(Hm. Pani suknia jest brudna. Na butach jest kurz.)* | **Das ist nichts. Greta putzt nicht genug.** *(Zbagatelizuj: to nic, Greta za mało sprząta.)* | „Nichts” = nic; „nicht genug” = niewystarczająco. |
+| 4 | Der Keller dieses Palastes hat alten Staub. Man sagt, der Herr verbietet dort etwas. *(Piwnica tego pałacu ma stary kurz. Mówią, że pan zabrania tam czegoś.)* | **Ich weiß nichts über den Keller.** *(Powiedz, że nic nie wiesz o piwnicy.)* | „Über” + biernik: über den Keller. |
+| 5 | Frau Clara, ich glaube, Sie waren im Keller. Sagen Sie die Wahrheit! *(Pani Claro, myślę, że była pani w piwnicy. Proszę mówić prawdę!)* | **Ich konnte nicht schlafen und bin durch das Haus gegangen.** (dobra); złe: Ja, ich war im Raum. Er war leer, Herr Doktor!; Das ist eine Lüge! Sie sind ein Scharlatan! · ŚMIERTELNE | Opisujesz bezsenny spacer po domu, nic więcej.; Zdradzasz się: mówisz o pustym pokoju.; Atakujesz lekarza i tylko budzisz jego podejrzenia. |
+| 6 | Gut. Nehmen Sie diese Medizin. Dreimal am Tag. *(Dobrze. Proszę wziąć ten lek. Trzy razy dziennie.)* | **Danke, Herr Doktor. Ich nehme sie.** *(Podziękuj i obiecaj, że weźmiesz lek.)* | „Nehmen” = brać: ich nehme. |
+| 7 | Ich komme morgen wieder. Und was ich Ihrem Mann sage, sehen wir dann. *(Przyjdę jutro. A co powiem pani mężowi, to się zobaczy.)* | — |  |
+
+### Poziom 15: Donos  (typed=0.7, hint=bank, cierpliwość 3)
+
+Nowe słowa: unruhig = niespokojny, glaubt = wierzy, myśli (glauben), Sind = czy są, jest pani/pan (Sind Sie…?), Kutscher = woźnica, nimmt = bierze (nehmen), trotzdem = mimo to, erzählt = opowiada, opowiedział (erzählen), laufe = biegnę, uciekam (laufen), Plötzlich = nagle, hört = słyszy (hören), Pferde = konie (liczba mnoga od Pferd), Hof = dziedziniec
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Doktor właśnie wyszedł. Jest już późno, a za oknem słychać wiatr. Greta zbiera kubki i widzi, że jesteś przerażona.  
+*Cel:* Zdecyduj, czy zaufasz Grecie i jak powstrzymasz lekarza przed donosem do Lukasa.  
+*Zakończenia:* win: Greta bierze list i obiecuje milczeć. Masz teraz jedną sojuszniczkę w całym pałacu. · partial: Greta zabiera list, ale nie wiadomo, czy dotrzyma słowa. · fail: Greta marszczy brwi: „Ich kann das nicht tun.” Zostajesz sama ze swoim strachem.
+
+| 1 | Der Doktor ist weg. Warum sind Sie so unruhig, gnädige Frau? *(Lekarz poszedł. Dlaczego jest pani taka niespokojna?)* | **Ich habe Angst. Der Doktor weiß etwas.** *(Powiedz, że się boisz i że lekarz coś wie.)* | „Etwas” = coś; „wissen”: er weiß. |
+| 2 | Was kann er denn wissen? *(Cóż on może wiedzieć?)* | **Er glaubt, ich war im Keller.** *(Powiedz, że lekarz myśli, że byłaś w piwnicy.)* | „Er glaubt, ich war …” = on myśli, że byłam. |
+| 3 | Kann ich Ihnen vertrauen, Greta? Ich meine: Sind Sie auf meiner Seite? *(Czy mogę pani zaufać? Czy jest pani po mojej stronie?)* | **Ja, aber sagen Sie niemandem etwas.** (dobra); złe: Nein, Sie sind auch gegen mich.; Ich sage Ihnen nichts mehr. | Prosisz Gretę o dyskrecję.; Oskarżasz jedyną osobę, która ci pomaga.; Milczeniem odpychasz Gretę. |
+| 4 | Ich kenne den Kutscher. Er fährt morgen zum Doktor. Soll ich etwas bringen? *(Znam woźnicę. Jutro jedzie do lekarza. Mam coś zanieść?)* | **Ja, einen Brief und etwas Geld.** *(Poproś, by Greta zaniosła list i trochę pieniędzy.)* | „Etwas Geld” = trochę pieniędzy. |
+| 5 | Der Doktor ist nicht arm. Vielleicht nimmt er kein Geld. *(Lekarz nie jest biedny. Może nie weźmie pieniędzy.)* | **Dann schreibe ich ihm: Bitte sagen Sie Lukas nichts.** *(Powiedz, że napiszesz mu w liście, by nic nie mówił Lukasowi.)* | „Bitte sagen Sie … nichts” = proszę nic nie mówić. |
+| 6 | Und wenn er es trotzdem Ihrem Mann erzählt? *(A jeśli mimo to powie pani mężowi?)* | **Dann sage ich, dass ich krank war und nichts weiß.** (dobra); złe: Dann sage ich ihm alles sofort.; Dann laufe ich weg. | Trzymasz się wersji o chorobie.; Wyznanie wszystkiego na ślepo jest ryzykowne.; Ucieczka w burzy to nie plan. |
+| 7 | Greta nimmt den Brief. Plötzlich hört man Pferde im Hof. *(Greta bierze list. Nagle na dziedzińcu słychać konie.)* | — |  |
+
+### Poziom 16: Powrót Lukasa  (typed=0.75, hint=letters, cierpliwość 3)
+
+Nowe słowa: schlimm = zły, poważny, wollte = chciałam, chciał (od wollen), stören = przeszkadzać, Schreiben = pisanie, geträumt = śniłam, śnił (od träumen), Wovor = przed czym, zitterst = drżysz (zittern), setz = usiądź (sich setzen), ans = przy, do (an das), froh = zadowolony, rad, wird = staje się (werden), ernst = poważny
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Wielka sień pałacu. Lukas wraca ze stolicy, mokry od deszczu. Widzi cię w koszuli nocnej, bladą, z podkrążonymi oczami.  
+*Cel:* Uspokój Lukasa i nie pokazuj, że się go boisz ani że coś ukrywasz.  
+*Zakończenia:* win: Lukas bierze cię za rękę i prowadzi do pokoju. Zdaje się wierzyć, że to tylko choroba. · partial: Lukas patrzy na ciebie uważnie. Niczego nie mówi, ale nie przestaje się martwić. · fail: Lukas cofa się o krok: „Du hast Angst vor mir.” Jego twarz robi się twarda.
+
+| 1 | Clara! Ich bin zurück. Aber was ist mit dir? Du bist sehr blass! *(Claro! Wróciłem. Ale co się z tobą dzieje? Jesteś bardzo blada!)* | **Ich war krank, Lukas. Das Fieber ist schlimm.** *(Powiedz, że byłaś chora i że gorączka jest silna.)* | „Schlimm” = zły, poważny. |
+| 2 | Du hast mir nicht geschrieben. Warum? *(Nie napisałaś do mnie. Dlaczego?)* | **Ich wollte dich nicht stören.** *(Powiedz, że nie chciałaś mu przeszkadzać.)* · warianty: Ich hatte keine Kraft zum Schreiben. | „Stören” = przeszkadzać. |
+| 3 | Greta sagt, du schläfst nicht. Du gehst nachts durch das Haus. *(Greta mówi, że nie śpisz. Chodzisz nocą po domu.)* | **Ich habe nur schlecht geträumt. Es war der Sturm.** *(Powiedz, że po prostu miałaś złe sny przez burzę.)* | „Träumen” = śnić: ich habe geträumt. |
+| 4 | Wovor hast du Angst, Clara? *(Czego się boisz, Claro?)* | **Ich habe Angst vor dem Sturm.** (dobra); złe: Ich habe Angst vor dir.; Ich habe vor nichts Angst. | Burza to wiarygodny powód.; Szczerość w tej chwili byłaby niebezpieczna.; Zaprzeczanie wszystkiemu przy drżących rękach nie przekona Lukasa. |
+| 5 | Du zitterst. Komm, setz dich ans Feuer. Ich bleibe bei dir. *(Drżysz. Chodź, usiądź przy ogniu. Zostanę przy tobie.)* | **Danke, Lukas. Ich bin froh, dass du da bist.** *(Podziękuj i powiedz, że cieszysz się, że jest.)* | „Froh sein” = cieszyć się; „dass” wysyła czasownik na koniec. |
+| 6 | Ich bringe dir Tee. Was ist denn das auf dem Tisch? *(Przyniosę ci herbaty. A co to jest na stole?)* | **Das ist etwas vom Arzt.** *(Powiedz, że to coś od lekarza.)* | „Vom” = von dem. |
+| 7 | Lukas nimmt die kleine Flasche in die Hand. Sein Gesicht wird ernst. *(Lukas bierze do ręki małą butelkę. Jego twarz poważnieje.)* | — |  |
+
+### Poziom 17: Szarlatan  (typed=0.8, hint=letters, cierpliwość 3)
+
+Nowe słowa: Gerüchte = plotki (liczba mnoga od Gerücht), wusste = wiedziałam, wiedział (od wissen), Seit = od, odkąd, Glaubst = wierzysz (glauben), tötest = zabijasz (töten), Sei = bądź (sein), gesprochen = mówił, rozmawiał (od sprechen), brauchst = potrzebujesz (brauchen), Ruhe = spokój, wegwerfen = wyrzucić, wirf = rzuć (werfen); wirf weg = wyrzuć, schicke = posyłam (schicken), Einverstanden = zgoda, zgodzony, brauche = potrzebuję (brauchen), schick = poślij (schicken), wirft = rzuca (werfen), zischt = syczy (zischen), knackt = trzeszczy (knacken)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Salon przy kominku. Lukas trzyma butelkę od lekarza i patrzy na ciebie. Wiatr szumi w kominie.  
+*Cel:* Nie obwiniaj męża, nie zdradź rozmowy z lekarzem i pozwól Lukasowi mówić.  
+*Zakończenia:* win: Lukas wyrzuca butelkę do ognia. Zdajesz się wierzyć w jego wersję i oddychasz łatwiej. · partial: Lukas odstawia butelkę, ale pyta o lekarza jeszcze raz. · fail: Zdradzasz plotki. Lukas blednie: „Wer hat dir das gesagt?” Atmosfera robi się lodowata.
+
+| 1 | Wer hat dir diese Medizin gegeben? *(Kto dał ci ten lek?)* | **Doktor Moll war hier. Er hat sie mir gegeben.** *(Powiedz, że był tu Doktor Moll i dał ci ten lek.)* | „Hat … gegeben” = dał; „sie” = ją (die Medizin). |
+| 2 | Doktor Moll? Er ist ein Scharlatan. Er erzählt Gerüchte über alle Leute. *(Doktor Moll? To szarlatan. Opowiada plotki o wszystkich ludziach.)* | **Wirklich? Das wusste ich nicht.** *(Powiedz zdziwiona: naprawdę? Nie wiedziałaś.)* | „Wissen”: ich wusste/weiß; „wirklich” = naprawdę. |
+| 3 | Seine Medizin macht nur Angst. Seit er hier ist, bist du unruhig. Glaubst du ihm? *(Jego leki tylko wywołują lęk. Odkąd tu jest, jesteś niespokojna. Wierzysz mu?)* | **Vielleicht hast du recht, Lukas.** (dobra); złe: Er hat mir erzählt, du tötest Menschen.; Er ist ein guter Arzt! · ŚMIERTELNE | Zgadzasz się spokojnie z mężem.; Wyrzucasz mu plotkę prosto w twarz.; Bronisz lekarza, więc Lukas może się rozzłościć. |
+| 4 | Hat er etwas über mich gesagt? Sei ehrlich. *(Czy powiedział coś o mnie? Bądź szczera.)* | **Nein, er hat nur über die Medizin gesprochen.** *(Zaprzecz: mówił tylko o leku.)* | „Gesprochen” = rozmawiał, mówił (od sprechen). |
+| 5 | Gut. Du brauchst Ruhe und keine Medizin. Soll ich die Flasche wegwerfen? *(Dobrze. Potrzebujesz spokoju, a nie leków. Wyrzucić butelkę?)* | **Ja, bitte wirf sie weg.** *(Zgódź się i poproś, by ją wyrzucił.)* | „Wirf … weg” = wyrzuć (wegwerfen): wirf sie weg. |
+| 6 | Ich schicke Greta zum Arzt: Er soll nicht mehr kommen. Einverstanden? *(Poślę Gretę do lekarza: ma tu nie wracać. Zgoda?)* | **Ja, einverstanden. Danke.** (dobra); złe: Nein, ich brauche den Arzt.; Nein, schick niemanden hin. | Zgoda uspokaja Lukasa.; Odmowa budzi podejrzenia.; Sprzeciw wobec jego pomysłu też je budzi. |
+| 7 | Lukas wirft die Flasche ins Feuer. Es zischt und knackt im Kamin. *(Lukas wrzuca butelkę do ognia. W kominku syczy i trzeszczy.)* | — |  |
+
+### Poziom 18: Pożegnanie  (typed=0.85, hint=bank, cierpliwość 3)
+
+Nowe słowa: ruft = wzywa, woła (rufen), werde = stanę się; werde + bezokolicznik = czas przyszły, Herzen = sercu (celownik od Herz), schaust = patrzysz (schauen), angefasst = dotknęłam, dotknął (od anfassen), deinen = twoją, twojego (biernik), verschwiegen = zataiłam, zatajony (od verschweigen), gar = wcale (gar nicht), Schlaf = sen, liegst = leżysz (liegen), wach = rozbudzony, nie śpiący
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Wieczór przed kolejnym wyjazdem Lukasa. W korytarzach migoczą świece, a ty postanawiasz nie wspominać o piwnicy. Zaczekasz, aż mąż odjedzie.  
+*Cel:* Pożegnaj się z mężem tak, by nie domyślił się, że coś ukrywasz, i nie wspomnij o piwnicy.  
+*Zakończenia:* win: Lukas całuje cię w czoło i życzy dobrej nocy. Niczego nie podejrzewa. · partial: Lukas wychodzi, ale ogląda się jeszcze w drzwiach. Chyba coś czuje. · fail: Lukas pyta: „Was verschweigst du mir?” Nie potrafisz skłamać i zbyt długo milczysz.
+
+| 1 | Clara, ich muss morgen früh wieder in die Hauptstadt. *(Claro, jutro rano muszę znów jechać do stolicy.)* | **Schon wieder? Wann kommst du zurück?** *(Zapytaj zdziwiona, kiedy wróci.)* | „Schon wieder” = już znowu. |
+| 2 | In einer Woche. Der Fürst ruft mich. *(Za tydzień. Książę mnie wzywa.)* | **Ich werde dich vermissen.** *(Powiedz, że będziesz za nim tęsknić.)* | „Vermissen” = tęsknić za kimś: ich werde dich vermissen. |
+| 3 | Hast du etwas auf dem Herzen? Du schaust so traurig. *(Czy coś ci leży na sercu? Wyglądasz tak smutno.)* | **Nein, alles ist gut. Ich bin nur müde.** *(Zaprzecz: wszystko dobrze, jesteś tylko zmęczona.)* | „Auf dem Herzen haben” = mieć coś na sercu. |
+| 4 | Du hast noch alle Schlüssel? Auch den Schlüssel zum Keller? *(Masz wszystkie klucze? Także klucz do piwnicy?)* | **Ja, ich habe ihn nicht angefasst.** *(Powiedz, że klucza nie ruszyłaś.)* | „Anfassen” = dotykać: ich habe ihn nicht angefasst. |
+| 5 | Du bist nicht ehrlich zu mir, oder? Ich sehe es in deinen Augen. *(Nie jesteś ze mną szczera, prawda? Widzę to w twoich oczach.)* | **Doch, ich bin nur sehr müde.** (dobra); złe: Ja, ich habe dir etwas verschwiegen.; Nein, ich bin gar nicht müde. | Spokojnie powtarzasz wersję ze zmęczeniem.; Przyznanie się teraz zdradziłoby wszystko.; Przeczysz sama sobie, bo przed chwilą mówiłaś, że jesteś zmęczona. |
+| 6 | Gute Nacht, Clara. Schlaf gut. *(Dobranoc, Claro. Śpij dobrze.)* | **Gute Nacht, Lukas. Komm bald wieder.** *(Życz mu dobrej nocy i poproś, by szybko wrócił.)* | „Bald” = wkrótce; „wieder” = z powrotem. |
+| 7 | Lukas geht. Du liegst wach, und die Uhr schlägt zwölf. Der Sturm kommt zurück. *(Lukas wychodzi. Leżysz bezsennie, a zegar bije dwunastą. Burza wraca.)* | — |  |
+
+### Poziom 19: Koszmar  (typed=0.9, hint=letters, cierpliwość 3)
+
+Nowe słowa: darum = dlatego, deinem = twoim (celownik), dunklen = ciemny (z końcówką), hinaus = na zewnątrz, na dwór, böse = zły, rozgniewany, gesucht = szukałam, szukał (od suchen), gefunden = znalazłam, znalazł (od finden), Sag = powiedz (sagen), während = podczas, gdy, Warst = byłaś (sein), geöffnet = otworzyłam, otwarty (od öffnen), leid = przykro (es tut mir leid), gefährlich = niebezpieczny, schweigt = milczy (schweigen)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Trzecia nad ranem. Burza zerwała most, więc kareta Lukasa nie wyjechała. Śni ci się koszmar o ciemnym pokoju bez wyjścia. Budzisz się, bierzesz świecę i idziesz do biblioteki, gdzie pali się światło.  
+*Cel:* Znajdź w sobie odwagę, by powiedzieć Lukasowi prawdę, choć boisz się jego reakcji.  
+*Zakończenia:* win: Mówisz prawdę drżącym głosem. Lukas słucha w milczeniu i nie podnosi głosu. · partial: Wyznajesz tylko część prawdy. Lukas czeka na resztę. · fail: Zamiast prawdy mówisz oskarżenia. Lukas patrzy na ciebie zimno i wstaje.
+
+| 1 | Clara? Es ist drei Uhr nachts. Warum bist du hier? *(Claro? Jest trzecia w nocy. Dlaczego tu jesteś?)* | **Ich hatte einen Albtraum.** *(Powiedz, że miałaś koszmar.)* | „Albtraum” = koszmar. |
+| 2 | Die Brücke ist weg, darum fahre ich heute nicht. Was war in deinem Traum? *(Most zniknął, więc dziś nie jadę. Co było w twoim śnie?)* | **Ich war in einem dunklen Raum und konnte nicht hinaus.** *(Opowiedz sen: byłaś w ciemnym pokoju i nie mogłaś wyjść.)* | „Hinaus” = na zewnątrz; „konnte nicht” = nie mogłam. |
+| 3 | Das ist nur ein Traum. Aber du zitterst noch immer. *(To tylko sen. Ale ciągle drżysz.)* | **Ich habe Angst, Lukas. Ich habe Angst vor deiner Antwort.** *(Powiedz, że boisz się jego odpowiedzi.)* | „Antwort” = odpowiedź; „vor deiner Antwort” = przed twoją odpowiedzią. |
+| 4 | Vor meiner Antwort? Was willst du mich denn fragen? *(Przed moją odpowiedzią? O co chcesz mnie zapytać?)* | **Ich muss dir etwas sagen. Bitte sei nicht böse.** *(Powiedz, że musisz mu coś powiedzieć i poproś, by się nie gniewał.)* | „Böse sein” = gniewać się; „sei nicht böse” = nie gniewaj się. |
+| 5 | Ich höre. Du kannst mir alles sagen. *(Słucham. Możesz mi wszystko powiedzieć.)* | **Ich habe Schlaf gesucht, aber ich habe Angst gefunden.** *(Powiedz, że szukałaś snu, a znalazłaś strach.)* | „Gesucht/gefunden” = szukałam/znalazłam (suchen, finden). |
+| 6 | Sag die Wahrheit, Clara. War jemand hier, während ich weg war? Warst du im Keller? *(Powiedz prawdę, Claro. Czy ktoś tu był, gdy mnie nie było? Czy byłaś w piwnicy?)* | **Ja, ich habe die Tür geöffnet. Es tut mir leid.** (dobra); złe: Nein, ich habe nichts gemacht. Geh schlafen.; Der Doktor hat gesagt, du bist gefährlich. · ŚMIERTELNE | Mówisz prawdę, choć drży ci głos.; Kłamstwo w oczy po tym, jak sama przyszłaś w nocy, nie ma sensu.; Zrzucasz winę na lekarza i dolewasz oliwy do ognia. |
+| 7 | Lukas schweigt lange. Der Regen schlägt gegen das Fenster. Dann steht er auf. *(Lukas milczy długo. Deszcz bije w okno. Potem wstaje.)* | — |  |
+
+### Poziom 20: Prawda  (typed=1, hint=none, cierpliwość 2)
+
+Nowe słowa: gebeten = prosiłem, prosił (od bitten), Weißt = wiesz (wissen), Palast = pałac, Gänge = korytarze (liczba mnoga od Gang), verirren = zgubić się, hattest = miałaś (haben), verirre = gubię się (sich verirren), erschrecken = przestraszyć, Fremde = obca osoba, geglaubt = uwierzyłaś, uwierzył (od glauben), dorthin = tam (kierunek), verschwunden = zniknął (od verschwinden), andere = inna, inny, des = tego (dopełniacz, np. des Morgens), Morgens = poranka (dopełniacz od Morgen)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Biblioteka, ciepłe światło kominka. Lukas stoi przy oknie, a potem siada obok ciebie. Burza powoli cichnie, a za szybą jaśnieje poranek.  
+*Cel:* Wysłuchaj Lukasa i dowiedz się, dlaczego zakazał ci wejścia do piwnicy.  
+*Zakończenia:* win: Rozumiesz wszystko. Ulga zalewa cię jak ciepła woda, a burza za oknem cichnie. Pytanie, gdzie jest lekarz, zostaje bez odpowiedzi. · partial: Lukas tłumaczy, ale ty jeszcze nie do końca wierzysz. Strach powoli ustępuje. · fail: Nie potrafisz uwierzyć w jego słowa. Lukas wychodzi, a ty zostajesz w bibliotece sama ze świecą.
+
+| 1 | Ich habe dich gebeten, nicht in den Keller zu gehen. Weißt du, warum? *(Prosiłem cię, żebyś nie chodziła do piwnicy. Wiesz dlaczego?)* | **Nein, ich weiß es nicht. Warum?** *(Powiedz, że nie wiesz, i zapytaj dlaczego.)* | „Ich weiß es nicht” = nie wiem tego. |
+| 2 | Unter dem Palast liegen alte Gänge. Man kann sich dort leicht verirren. *(Pod pałacem są stare korytarze. Łatwo się tam zgubić.)* | **Du hattest Angst, dass ich mich verirre?** *(Zapytaj, czy bał się, że się zgubisz.)* | „Sich verirren” = zgubić się; „dass” = że; czasownik na końcu. |
+| 3 | Ja. Mein Bruder war dort einmal zwei Tage, und niemand hat ihn gefunden. *(Tak. Mój brat był tam kiedyś przez dwa dni i nikt go nie mógł znaleźć.)* | **Das wusste ich nicht. Warum hast du nichts gesagt?** *(Powiedz, że nie wiedziałaś, i zapytaj, dlaczego nic nie powiedział.)* | „Wusste” = wiedziałam: ich wusste. |
+| 4 | Ich wollte dich nicht erschrecken. Du bist eine Fremde in diesem Haus. Und du? Warum hast du nichts gesagt? *(Nie chciałem cię straszyć. Jesteś obca w tym domu. A ty? Dlaczego nic nie powiedziałaś?)* | **Ich hatte Angst vor dir. Man hat mir Gerüchte erzählt.** *(Wyznaj, że bałaś się jego i że opowiadano ci plotki.)* | „Man hat mir … erzählt” = opowiedziano mi. |
+| 5 | Der Doktor, nicht wahr? Er hat Gerüchte erzählt, und du hast sie geglaubt. *(Lekarz, prawda? Opowiadał plotki, a ty w nie uwierzyłaś.)* | **Ja, es tut mir leid. Ich glaube dir jetzt.** *(Przeproś i powiedz, że teraz mu wierzysz.)* | „Glauben” + celownik: ich glaube dir. |
+| 6 | Morgen zeige ich dir den Keller. Wir gehen zusammen. Möchtest du das? *(Jutro pokażę ci piwnicę. Pójdziemy razem. Chcesz tego?)* | **Ja, aber mit dir und mit einer Lampe.** (dobra); złe: Nein, ich gehe nie wieder dorthin.; Nein, ich möchte lieber allein gehen. | Razem z Lukasem i z lampą to rozsądny plan.; Całkowita odmowa pokazuje, że nadal się boisz.; Sama w piwnicy to dokładnie to, przed czym Lukas cię ostrzegał. |
+| 7 | Der Arzt ist seit gestern verschwunden. Aber das ist eine andere Geschichte. *(Lekarz zniknął od wczoraj. Ale to inna historia.)* | **Gut. Jetzt bin ich nicht mehr allein.** *(Powiedz, że teraz nie jesteś już sama.)* | „Nicht mehr” = już nie. |
+| 8 | Der Sturm ist vorbei. Im Fenster siehst du das erste Licht des Morgens. *(Burza ustała. W oknie widać pierwsze światło poranka.)* | — |  |
+
+### Poziom 21: Prawda o lekarzu  (typed=1, hint=none, cierpliwość 3)
+
+Nowe słowa: getan = zrobił (od tun), Grafen = hrabiego (dopełniacz od Graf), sperre = zamykam (einsperren: sperre … ein), fliehen = uciekać, fliehe = uciekam (fliehen), fort = precz, daleko, kränker = bardziej chora (od krank), Baldrian = waleriana, Gift = trucizna, Apotheker = aptekarz, untersucht = zbadał (untersuchen), Wille = wola, gefallen = spodobać się (gefallen), gefällt = podoba się (gefallen), Graf = hrabia, Rabenstein = Rabenstein (nazwisko hrabiego), bezahlt = zapłacił (bezahlen), hasst = nienawidzi (hassen), Rivale = rywal, Einfluss = wpływ, Güter = dobra, majątki ziemskie (liczba mnoga od Gut), Ländereien = ziemie, posiadłości ziemskie, brechen = złamać, Mord = zabójstwo, kranke = chora (z końcówką), sollten = miały, powinny (sollen), Schande = wstyd, hańba, gekostet = kosztowało (od kosten), gebrochen = złamał (od brechen), Mitleid = litość, Gericht = sąd, Haben = miejcie, mają (haben), einsperre = zamykam (einsperren), Namen = nazwisko, imię (biernik od Name), stolz = dumny, zahlt = płaci (zahlen), davon = od tego, z tego, dafür = za to, führt = prowadzi (führen)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Mała gospoda przy zerwanym moście. Lukas i Greta znaleźli tu Molla, kiedy próbował uciec w deszczu. Lekarz siedzi przy stole, mokry i blady, ze swoją torbą. Lukas stoi za jego plecami, a Greta trzyma butelkę.  
+*Cel:* Dowiedz się, dlaczego lekarz cię truł, i nie pozwól, by wymigał się kłamstwem.  
+*Zakończenia:* win: Znasz całą prawdę: nazwisko hrabiego, plan i truciznę. Ulga miesza się z gniewem, ale jesteś pewna, że to nie ty zwariowałaś. · partial: Dowiadujesz się części prawdy. Hrabia pozostaje cieniem, a lekarz milknie, zanim powie wszystko. · fail: Lekarz kłamie i milczy. Lukas wyprowadza go z gospody, a ty nie wiesz, komu możesz wierzyć.
+
+| 1 | Frau Clara! Ich bin müde und nass. Ich wollte nur fort von hier. *(Pani Claro! Jestem zmęczony i przemoczony. Chciałem tylko stąd uciec.)* | **Sie fliehen, Herr Doktor. Warum?** *(Powiedz spokojnie, że lekarz ucieka, i zapytaj dlaczego.)* | „Fliehen” = uciekać: Sie fliehen. |
+| 2 | Ich fliehe nicht. Ich habe Angst vor dem Sturm. Lukas: Doktor, meine Frau ist krank, und Ihre Tropfen machen sie noch kränker. *(Nie uciekam. Boję się burzy. Lukas: Doktorze, moja żona jest chora, a pańskie krople czynią ją jeszcze bardziej chorą.)* | **Was ist in Ihren Tropfen?** *(Zapytaj lekarza, co jest w jego kroplach.)* | „In Ihren Tropfen” = w pańskich kroplach. |
+| 3 | Nur Baldrian. Greta sagt, der Apotheker hat die Flasche untersucht. Er sagt: Baldrian, aber auch Gift. *(Tylko waleriana. Greta: Aptekarz zbadał butelkę. Mówi: waleriana, ale także trucizna.)* | **Seit wann geben Sie mir das Gift?** *(Zapytaj, od kiedy lekarz dawał jej truciznę.)* | „Seit wann” = od kiedy. |
+| 4 | Es war nicht mein Wille, Frau Clara. Ich sage alles. Aber wollen Sie die Wahrheit über Ihren Mann hören? Sie wird Ihnen nicht gefallen. *(To nie była moja wola, pani Claro. Powiem wszystko. Ale czy chce pani usłyszeć prawdę o swoim mężu? Nie spodoba się pani.)* | **Ja, ich will die ganze Wahrheit hören.** (dobra); złe: Nein, mein Mann hat nichts getan. Ich will nichts hören.; Ich will nichts hören. Gehen Sie! · ŚMIERTELNE | Chcesz znać całą prawdę, nawet bolesną.; Zakrywasz uszy i znów pozwalasz, by strach decydował.; Przerywasz człowieka, który właśnie zaczął mówić. |
+| 5 | Der Graf von Rabenstein hat mich bezahlt. Er ist der Rivale von Lukas und hasst ihn. *(Hrabia von Rabenstein mi zapłacił. Jest rywalem Lukasa i nienawidzi go.)* | **Warum hasst der Graf meinen Mann?** *(Zapytaj, dlaczego hrabia nienawidzi jej męża.)* | „Warum” = dlaczego; „hassen” = nienawidzić. |
+| 6 | Beim Fürsten hat Lukas mehr Einfluss als der Graf. Der Graf will seine Güter und seine Ländereien. Eine kranke Frau und ein Gerücht vom Mord sollten Lukas brechen. *(U księcia Lukas ma większe wpływy niż hrabia. Hrabia chce jego dobra i ziemie. Chora żona i plotka o zabójstwie miały złamać Lukasa.)* | **Die Gerüchte waren also nur ein Plan des Grafen?** *(Zapytaj, czy plotki były więc tylko planem hrabiego.)* | „Also” = więc; „Plan” = plan. |
+| 7 | Ja. Die Lüge hat Sie Angst gekostet, und Angst macht Menschen schwach. Lukas: Er wollte mich brechen, aber er hat dich gebrochen. *(Tak. Kłamstwo kosztowało panią lęk, a lęk czyni ludzi słabymi. Lukas: Chciał złamać mnie, ale złamał ciebie.)* | **Ich war schwach, aber jetzt bin ich wütend.** *(Powiedz, że byłaś słaba, ale teraz jesteś wściekła.)* | „Wütend” = wściekły; „jetzt” = teraz. |
+| 8 | Haben Sie Mitleid, Frau Clara! Ich habe Kinder und einen Namen. *(Niech pani ma litość, pani Claro! Mam dzieci i nazwisko.)* | **Sie gehen vor Gericht, Herr Doktor.** (dobra); złe: Gut, gehen Sie, Herr Doktor.; Dann sperre ich Sie selbst im Keller ein! | Domagasz się sprawiedliwości, nie zemsty.; Puszczasz człowieka, który cię truł.; Grozisz piwnicą i sama zachowujesz się jak oprawca. |
+| 9 | Ja, vor Gericht. Und der Graf zahlt dafür. Du bist frei von ihm, Clara. Greta: Ihr Tee, gnädige Frau. *(Tak, przed sąd. A hrabia za to zapłaci. Jesteś od niego wolna, Claro. Greta: Pani herbata, łaskawa pani.)* | **Danke, Greta. Ich bin nicht mehr krank, nur sehr müde.** *(Podziękuj Grecie i powiedz, że nie jesteś już chora, tylko bardzo zmęczona.)* | „Nicht mehr” = już nie. |
+| 10 | Lukas führt den Doktor hinaus. Draußen ist die Brücke weg, aber im Osten wird der Himmel hell. *(Lukas wyprowadza lekarza. Na zewnątrz nie ma mostu, ale na wschodzie niebo jaśnieje.)* | — |  |
+
+### Poziom 22: Prawda o Lukasie  (typed=1, hint=none, cierpliwość 3)
+
+Nowe słowa: Mörder = morderca, Dienst = służba, getötet = zabił (od töten), vertraue = ufam (vertrauen), geliehen = pożyczył (od leihen), Darlehen = pożyczka, Verträge = umowy, kontrakty (liczba mnoga od Vertrag), Beamte = urzędnicy (liczba mnoga od Beamte), Verbrechen = przestępstwo, jedes = każdy (rodzaj nijaki), bekomme = dostaję (bekommen), damit = żeby, aby, Rechnungsbücher = księgi rachunkowe (liczba mnoga od Rechnungsbuch), lagen = leżały (od liegen), sondern = lecz, tylko, Regalen = regałach (celownik l.mn. od Regal), verirrst = gubisz się (sich verirren), Schweigen = milczenie, Früher = dawniej, hierher = tutaj (kierunek), gebracht = przyniósł, przeniósł (od bringen), Gängen = korytarzach (celownik l.mn. od Gang), gezeigt = pokazał (od zeigen), Schuldner = dłużnik, verzeihen = wybaczyć, verzeihst = wybaczasz (verzeihen), bleibst = zostajesz (bleiben), verlasse = opuszczam (verlassen), Lügner = kłamca, verzeihe = wybaczam (verzeihen), sprich = mów (sprechen), darüber = o tym, Bücher = książki (liczba mnoga od Buch), gehören = należą (gehören), scheint = świeci (scheinen), neuen = nowy (z końcówką), Mal = raz
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Biblioteka, popołudnie. Za oknem szumi deszcz, a na stole leżą ciężkie księgi w skórzanych okładkach. Lukas stoi przy regale i patrzy na ciebie. Greta stawia na stole herbatę i wychodzi bez słowa.  
+*Cel:* Zapytaj Lukasa wprost, kim naprawdę jest, i zdecyduj, czy możesz mu wybaczyć.  
+*Zakończenia:* win: Zaczynacie od nowa, ale na uczciwych warunkach. Nie wszystko jest czyste, lecz po raz pierwszy mówicie sobie prawdę. · partial: Zostajesz, lecz bez pewności. Księgi leżą otwarte, a między wami wisi pytanie, na ile mu ufasz. · fail: Nie potrafisz ani wybaczyć, ani zrozumieć. Lukas zamyka księgę i patrzy w okno. Pałac znów robi się zimny.
+
+| 1 | Clara, du hast noch eine Frage. Ich sehe es in deinen Augen. *(Claro, masz jeszcze jedno pytanie. Widzę to w twoich oczach.)* | **Lukas, bist du ein Mörder im Dienst des Fürsten?** *(Zapytaj wprost, czy jest zabójcą na usługach księcia.)* | „Im Dienst” = na służbie. |
+| 2 | Nein. Ich habe nie jemanden getötet. Aber ich bin auch nicht unschuldig. Willst du die ganze Wahrheit hören? *(Nie. Nigdy nikogo nie zabiłem. Ale też nie jestem niewinny. Chcesz usłyszeć całą prawdę?)* | **Ja, sag mir alles.** (dobra); złe: Nein, ich vertraue dir. Ich will nichts hören.; Nein, ich will nichts mehr hören. · ŚMIERTELNE | Wybierasz prawdę, choć może zaboleć.; Ślepe zaufanie to dokładnie to, co cię tu zgubiło.; Ucieczka przed rozmową znów zostawia cię z samymi domysłami. |
+| 3 | Ich habe dem Fürsten viel Geld geliehen. Er hat große Schulden bei mir. *(Pożyczyłem księciu dużo pieniędzy. Ma u mnie duże długi.)* | **Darum fährst du so oft in die Hauptstadt?** *(Zapytaj, czy dlatego tak często jeździ do stolicy.)* | „Darum” = dlatego; „so oft” = tak często. |
+| 4 | Ja. Für jedes Darlehen bekomme ich Land und gute Verträge. Ich habe Beamte bezahlt, damit ich sie bekomme. Das ist Bestechung. *(Tak. Za każdą pożyczkę dostaję ziemię i dobre kontrakty. Płaciłem urzędnikom, żeby je dostać. To jest przekupstwo.)* | **Das ist auch ein Verbrechen, Lukas.** *(Powiedz, że to też jest przestępstwo.)* | „Auch” = też, także. |
+| 5 | Du hast recht. Hier sind meine Rechnungsbücher. Sie lagen nie im Keller, sondern hier in der Bibliothek hinter den Regalen. *(Masz rację. Oto moje księgi rachunkowe. Nigdy nie leżały w piwnicy, tylko tu, w bibliotece, za regałami.)* | **Warum war der Raum im Keller dann leer?** *(Zapytaj, dlaczego w takim razie pokój w piwnicy był pusty.)* | „Dann” = w takim razie. |
+| 6 | Früher lagen sie dort. Dann habe ich sie hierher gebracht, weil ich Angst hatte, dass du dich in den Gängen verirrst. Und ich habe sie nicht gezeigt. *(Dawniej tam leżały. Potem przeniosłem je tutaj, bo bałem się, że zgubisz się w korytarzach. I nie pokazywałem ich.)* | **Dein Schweigen war auch eine Lüge.** *(Powiedz, że jego milczenie też było kłamstwem.)* | „Schweigen” = milczenie; „Lüge” = kłamstwo. |
+| 7 | Du hast recht. Ich bin ein Schuldner und ein Lügner. Verzeihst du mir? Bleibst du bei mir? *(Masz rację. Jestem dłużnikiem i kłamcą. Czy mi wybaczysz? Czy zostaniesz przy mnie?)* | **Ich verzeihe dir, aber nur, wenn du ehrlich bist.** (dobra); złe: Ich verzeihe dir alles, aber sprich nie wieder darüber.; Nein, ich verlasse dich heute noch. · ŚMIERTELNE | Wybaczasz pod warunkiem uczciwości.; Zamiatasz sprawę pod dywan, a tajemnice wrócą.; Odchodzisz, zanim dasz mu szansę, by dotrzymał słowa. |
+| 8 | Ich verspreche dir Ehrlichkeit. Die Bücher gehören ab heute auch dir. *(Obiecuję ci uczciwość. Księgi od dziś należą także do ciebie.)* | **Wir fangen neu an, aber ohne Geheimnisse.** *(Powiedz, że zaczynacie od nowa, ale bez tajemnic.)* | „Wir fangen … an” = zaczynamy (anfangen); „ohne” = bez. |
+| 9 | Greta bringt neuen Tee. Draußen scheint zum ersten Mal die Sonne, aber die Bücher bleiben offen auf dem Tisch liegen. *(Greta przynosi nową herbatę. Na dworze po raz pierwszy świeci słońce, ale księgi zostają otwarte na stole.)* | — |  |

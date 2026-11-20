@@ -826,6 +826,15 @@ def _larp_rank(lid, lvl):
     return (_cur["state"].data.get("larp_lv", {}).get(lid) or {}).get(str(lvl))
 
 
+def _larp_unlocked(lp, lvl):
+    """Poziom N odblokowuje się po przejściu poprzedniego, a „after=20” (albo „after=21,22”) wskazuje inne poziomy: równoległe zakończenia."""
+    if lvl <= 1:
+        return True
+    cfgs = lp.get("levels") or []
+    after = (cfgs[lvl - 1].get("after") if 0 < lvl <= len(cfgs) else None) or [lvl - 1]
+    return all((_larp_rank(lp["id"], int(a)) or 0) >= 1 for a in after)
+
+
 def _larp_levels_view(lp):
     lv = lp.get("levels")
     if not lv:
@@ -833,7 +842,7 @@ def _larp_levels_view(lp):
     out = []
     for i, c in enumerate(lv, 1):
         out.append({"lvl": i, "title": c.get("title"), "desc": c.get("desc"), "best": _larp_rank(lp["id"], i),
-                    "unlocked": i == 1 or (_larp_rank(lp["id"], i - 1) or 0) >= 1})
+                    "unlocked": _larp_unlocked(lp, i)})
     return out
 
 
@@ -915,7 +924,7 @@ def larp_start(lid, lvl=1):
     cfg = _larp_cfg(lp, lvl)
     st = _cur["state"]
     d = st.data
-    if lvl > 1 and not (lp.get("levels") and (_larp_rank(lid, lvl - 1) or 0) >= 1):
+    if lvl > 1 and not (lp.get("levels") and _larp_unlocked(lp, lvl)):
         return json.dumps({"ok": False, "reason": "locked"})
     if d["xp_total"] < lp["fee"]:
         return json.dumps({"ok": False, "reason": "xp"})
@@ -1140,11 +1149,7 @@ def larp_answer(payload_json):
             res["end"] = _larp_finish(lp, "fail")
             return json.dumps(res, ensure_ascii=False)
     if nxt and not endless and cfg["nodes"].get(nxt, {}).get("shift"):          # „amnezja” albo nowy skandal: zmiana nie zależy od odpowiedzi
-        _larp["patience"] = min(cap, _larp["patience"] + int(cfg["nodes"][nxt]["shift"]))
-        if _larp["patience"] <= 0:
-            res["patience"] = 0
-            res["end"] = _larp_finish(lp, "fail")
-            return json.dumps(res, ensure_ascii=False)
+        _larp["patience"] = max(1, min(cap, _larp["patience"] + int(cfg["nodes"][nxt]["shift"])))   # zmiana sama nie kończy sceny: tylko błąd może zabić
     res["patience"] = _larp["patience"]
     if nxt:
         _larp["node"] = nxt

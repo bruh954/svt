@@ -4,7 +4,7 @@
 Plik larps/<kurs>.txt (puste linie i # ignorowane):
   @larp id | Tytuł | Rozmówca | Awatar | Scena | Cel ucznia
   fee 0 / reward 15 / strict yes / disclaimer … / win … / partial … / fail …        (ustawienia larpa)
-  @level 1 | Tytuł poziomu | patience=6 cap=8 endless=yes typed=0 extra=1 hint=none reward=10   (cap: maks. wiarygodność, endless: bez porażki)        (typed: ułamek odpowiedzi pisanych z klawiatury,
+  @level 1 | Tytuł poziomu | patience=6 cap=8 endless=yes typed=0 extra=1 hint=none reward=10   (cap: maks. wiarygodność, endless: bez porażki, after=20 lub after=21,22: poziom odblokowuje się po tych poziomach zamiast po poprzednim, np. równoległe zakończenia)        (typed: ułamek odpowiedzi pisanych z klawiatury,
                                                                                   hint: bank | letters | none, extra: zbędne klocki)
   w Kellner | kelner | der | die Kellner | z czego składa się   nowe słowo (jak w bulk.py); samo „w słowo” = słowo już jest w kursie
   t bot | bot po polsku | odpowiedź ucznia | odpowiedź po polsku | dlaczego (opcjonalnie) | wariant ; wariant
@@ -226,6 +226,7 @@ def build(cid):
             cfg = {"title": lv["title"], "start": order[0] if order else None, "nodes": nodes, "lexicon": lex,
                    "patience": int(lv.get("patience", 5)), "typed": float(lv.get("typed", 0)), "extra": int(lv.get("extra", 3))}
             if lv.get("cap"): cfg["cap"] = int(lv["cap"])
+            if lv.get("after"): cfg["after"] = [int(x) for x in lv["after"].split(",")]
             if lv.get("endless") in ("yes", "tak", "1"): cfg["endless"] = True
             cfg["lexicon"] = []
             if lv.get("hint", "none") != "none":
