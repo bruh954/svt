@@ -254,7 +254,7 @@ function showHub() {
     return h("button", { class: "cc", onclick: () => enterCourse(m.id) },
       h("div", { class: "gl", style: `background:${m.paper};color:${m.accent};font-family:"F-${m.id}-x","F-${m.id}",serif` }, m.glyph),
       h("div", {}, h("div", { class: "nm", style: `font-family:"F-${m.id}-x","F-${m.id}",serif`, dir: "auto" }, m.native),
-        h("div", { class: "sb" }, m.sub[LANG]), h("div", { class: "pr" }, info)));
+        h("div", { class: "pr" }, info)));
   });
   const reps = persistReports();
   show(h("div", { class: "scroll hubscroll" },
