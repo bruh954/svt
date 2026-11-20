@@ -10,7 +10,7 @@ fail Kelner ma dość: nie zrozumiał cię kilka razy z rzędu, uznał to za obr
 w möchten | chcą · chcecie · forma grzecznościowa „chce pan(i)”
 w Sie | pan, pani, państwo (grzecznie)
 w überlege | zastanawiam się (überlegen)
-t Guten Tag! Was möchten Sie? | Dzień dobry! Co podać? | Guten Tag! Ich überlege noch. | Dzień dobry! Jeszcze się zastanawiam. | „Zastanawiam się” to ich überlege (w tym zdaniu „noch” znaczy „jeszcze”).
+t Guten Tag! Was möchten Sie? | Dzień dobry! Co podać? | Guten Tag! Ich überlege noch. | Przywitaj się i powiedz, że jeszcze wybierasz. | „Zastanawiam się” to ich überlege (w tym zdaniu „noch” znaczy „jeszcze”).
 w Speisekarte | karta dań | die | die Speisekarten | Speise (potrawa) + Karte (karta) → „karta potraw”
 w Kaffee
 w Tee
@@ -19,28 +19,28 @@ w Bier
 w Wein
 w Saft | sok | der | die Säfte
 w Limonade | lemoniada | die | die Limonaden
-t Hier ist die Speisekarte. Was möchten Sie trinken? | Oto karta dań. Co podać do picia? | Ich möchte einen Kaffee, bitte. | Poproszę kawę. | Kaffee jest rodzaju męskiego (der), więc po „möchte” jest einen. | Einen Kaffee, bitte.
+t Hier ist die Speisekarte. Was möchten Sie trinken? | Oto karta dań. Co podać do picia? | Ich möchte einen Kaffee, bitte. | Zamów kawę (grzecznie). | Kaffee jest rodzaju męskiego (der), więc po „möchte” jest einen. | Einen Kaffee, bitte.
 w Milch
 w Sahne | śmietanka | die | –
 w Zitrone | cytryna | die | die Zitronen
-t Mit Milch? | Z mlekiem? | Ja, mit Milch, bitte. | Tak, z mlekiem, poproszę. | Po „mit” rzeczownik bez rodzajnika: mit Milch.
+t Mit Milch? | Z mlekiem? | Ja, mit Milch, bitte. | Zgódź się na mleko. | Po „mit” rzeczownik bez rodzajnika: mit Milch.
 w Zucker | cukier | der | –
 w ohne | bez
 w Honig | miód | der | –
-t Mit Zucker? | Z cukrem? | Nein, ohne Zucker, danke. | Nie, bez cukru, dziękuję. | „Bez” to ohne, a „z” to mit.
+t Mit Zucker? | Z cukrem? | Nein, ohne Zucker, danke. | Odmów cukru. | „Bez” to ohne, a „z” to mit.
 w Glas | szklanka, kieliszek | das | die Gläser
 w Flasche | butelka | die | die Flaschen
-t Möchten Sie auch ein Wasser? | Czy chce pan też wodę? | Ja, ein Wasser, bitte. | Tak, wodę, poproszę. | Das Wasser jest nijakie: ein Wasser.
+t Möchten Sie auch ein Wasser? | Czy chce pan też wodę? | Ja, ein Wasser, bitte. | Zgódź się na wodę. | Das Wasser jest nijakie: ein Wasser.
 w Brötchen | bułka | das | die Brötchen | Brot (chleb) + -chen (zdrobnienie) → „chlebek”, bułka
 w Brot
 w Ei
 w Käse
 w Schinken | szynka | der | –
 w Wurst | kiełbasa, wędlina | die | die Würste
-t Und was möchten Sie essen? | A co chce pan zjeść? | Ich möchte ein Brötchen, bitte. | Poproszę bułkę. | Brötchen jest rodzaju nijakiego (das): ein Brötchen.
+t Und was möchten Sie essen? | A co chce pan zjeść? | Ich möchte ein Brötchen, bitte. | Zamów bułkę. | Brötchen jest rodzaju nijakiego (das): ein Brötchen.
 w Butter | masło | die | –
 w Marmelade | marmolada, dżem | die | die Marmeladen
-t Mit Butter oder mit Käse? | Z masłem czy z serem? | Mit Käse, bitte. | Z serem, poproszę. | Po „mit” rzeczownik bez rodzajnika: mit Käse.
+t Mit Butter oder mit Käse? | Z masłem czy z serem? | Mit Käse, bitte. | Wybierz ser do bułki. | Po „mit” rzeczownik bez rodzajnika: mit Käse.
 w Stück | kawałek | das | die Stücke
 w Kuchen
 w Apfelkuchen
@@ -48,73 +48,73 @@ w Torte | tort | die | die Torten
 w Schokolade | czekolada | die | die Schokoladen
 w Keks | ciastko, herbatnik | der | die Kekse
 w Eis | lody | das | –
-t Möchten Sie auch ein Stück Kuchen? | Czy chce pan też kawałek ciasta? | Ja, ein Stück Kuchen, bitte. | Tak, kawałek ciasta, poproszę. | Po „Stück” rzeczownik bez rodzajnika: ein Stück Kuchen.
+t Möchten Sie auch ein Stück Kuchen? | Czy chce pan też kawałek ciasta? | Ja, ein Stück Kuchen, bitte. | Zgódź się na kawałek ciasta. | Po „Stück” rzeczownik bez rodzajnika: ein Stück Kuchen.
 w Ihr | pański, pani, państwa
 w Appetit | apetyt | der | –
 w Teller | talerz | der | die Teller
 w Tasse | filiżanka | die | die Tassen
-t Hier ist Ihr Kaffee und Ihr Brötchen. Guten Appetit! | Oto pana kawa i bułka. Smacznego! | Danke schön! | Dziękuję bardzo! | Dziękujesz: danke schön.
+t Hier ist Ihr Kaffee und Ihr Brötchen. Guten Appetit! | Oto pana kawa i bułka. Smacznego! | Danke schön! | Podziękuj kelnerowi. | Dziękujesz: danke schön.
 w alles | wszystko
-t Möchten Sie noch etwas? | Czy coś jeszcze? | Nein, danke, das ist alles. | Nie, dziękuję, to wszystko. | „To wszystko” to das ist alles.
+t Möchten Sie noch etwas? | Czy coś jeszcze? | Nein, danke, das ist alles. | Odmów: to już wszystko. | „To wszystko” to das ist alles.
 e Bitte schön! | Proszę bardzo!
 
 @level 2 | Śniadanie | patience=6 typed=0.25 extra=3 hint=bank
 w frühstücken | jeść śniadanie
-t Guten Morgen! Möchten Sie frühstücken? | Dzień dobry! Czy chce pan zjeść śniadanie? | Ja, ich möchte frühstücken. | Tak, chcę zjeść śniadanie. | Czasownik w bezokoliczniku stoi na końcu: ich möchte frühstücken.
+t Guten Morgen! Möchten Sie frühstücken? | Dzień dobry! Czy chce pan zjeść śniadanie? | Ja, ich möchte frühstücken. | Powiedz, że chcesz zjeść śniadanie. | Czasownik w bezokoliczniku stoi na końcu: ich möchte frühstücken.
 w Eier | jajka · liczba mnoga od Ei
 w nehmen | brać (formy grzecznościowe: „bierze pan”)
 w nehme | biorę, wezmę (nehmen)
-t Wir haben Brötchen, Eier und Käse. Was nehmen Sie? | Mamy bułki, jajka i ser. Co pan weźmie? | Ich nehme zwei Brötchen und ein Ei. | Wezmę dwie bułki i jajko. | Liczba mnoga „Brötchen” nie zmienia formy, a „Ei” w liczbie mnogiej to Eier.
-t Möchten Sie den Kaffee mit Milch oder den Tee? | Czy chce pan kawę z mlekiem, czy herbatę? | Ich nehme den Tee mit Milch, bitte. | Wezmę herbatę z mlekiem. | Po „nehmen” biernik: der Tee → den Tee.
+t Wir haben Brötchen, Eier und Käse. Was nehmen Sie? | Mamy bułki, jajka i ser. Co pan weźmie? | Ich nehme zwei Brötchen und ein Ei. | Zamów dwie bułki i jajko. | Liczba mnoga „Brötchen” nie zmienia formy, a „Ei” w liczbie mnogiej to Eier.
+t Möchten Sie den Kaffee mit Milch oder den Tee? | Czy chce pan kawę z mlekiem, czy herbatę? | Ich nehme den Tee mit Milch, bitte. | Wybierz herbatę z mlekiem. | Po „nehmen” biernik: der Tee → den Tee.
 w Löffel | łyżka, łyżeczka | der | die Löffel
-t Möchten Sie Zucker? | Czy chce pan cukier? | Ja, bitte, einen Löffel Zucker. | Tak, poproszę łyżeczkę cukru. | Löffel jest rodzaju męskiego, więc biernik: einen Löffel.
+t Möchten Sie Zucker? | Czy chce pan cukier? | Ja, bitte, einen Löffel Zucker. | Zgódź się na łyżeczkę cukru. | Löffel jest rodzaju męskiego, więc biernik: einen Löffel.
 w Schokoladenkuchen | ciasto czekoladowe | der | die Schokoladenkuchen | Schokolade (czekolada) + Kuchen (ciasto)
-t Wir haben Apfelkuchen und Schokoladenkuchen. | Mamy szarlotkę i ciasto czekoladowe. | Ich nehme den Apfelkuchen. | Wezmę szarlotkę. | Po „nehmen” biernik: der Apfelkuchen → den Apfelkuchen.
+t Wir haben Apfelkuchen und Schokoladenkuchen. | Mamy szarlotkę i ciasto czekoladowe. | Ich nehme den Apfelkuchen. | Wybierz szarlotkę. | Po „nehmen” biernik: der Apfelkuchen → den Apfelkuchen.
 w Glas | szklanka, kieliszek | das | die Gläser
 w Saft | sok | der | die Säfte
 w Orangensaft | sok pomarańczowy | der | – | Orange (pomarańcza) + Saft (sok)
-t Möchten Sie auch ein Glas Saft? | Czy chce pan też szklankę soku? | Ja, ein Glas Orangensaft, bitte. | Tak, szklankę soku pomarańczowego, poproszę. | Po „Glas” rzeczownik bez rodzajnika: ein Glas Orangensaft.
+t Möchten Sie auch ein Glas Saft? | Czy chce pan też szklankę soku? | Ja, ein Glas Orangensaft, bitte. | Zgódź się na sok pomarańczowy. | Po „Glas” rzeczownik bez rodzajnika: ein Glas Orangensaft.
 w lecker | pyszny
-t Der Orangensaft ist heute sehr lecker. | Sok pomarańczowy jest dziś bardzo smaczny. | Gut, dann nehme ich den Orangensaft. | Dobrze, to wezmę sok pomarańczowy. | Po „dann” czasownik jest przed podmiotem: dann nehme ich.
-t Ist der Kuchen für Sie? | Czy ciasto jest dla pana? | Nein, der Kuchen ist für meine Mutter. | Nie, ciasto jest dla mojej mamy. | Po „für” biernik, ale „meine Mutter” (żeńskie) wygląda tak samo w mianowniku i bierniku.
+t Der Orangensaft ist heute sehr lecker. | Sok pomarańczowy jest dziś bardzo smaczny. | Gut, dann nehme ich den Orangensaft. | Zdecyduj się na sok pomarańczowy. | Po „dann” czasownik jest przed podmiotem: dann nehme ich.
+t Ist der Kuchen für Sie? | Czy ciasto jest dla pana? | Nein, der Kuchen ist für meine Mutter. | Odmów: ciasto jest dla twojej mamy. | Po „für” biernik, ale „meine Mutter” (żeńskie) wygląda tak samo w mianowniku i bierniku.
 w Moment | chwila | der | die Momente
 w bringe | przynoszę (bringen)
 w sofort | od razu
 w warte | czekam (warten)
 w gern | chętnie
-t Einen Moment, bitte. Ich bringe es sofort. | Chwileczkę. Zaraz to przyniosę. | Danke, ich warte gern. | Dziękuję, chętnie poczekam. | „Chętnie” to gern, stoi po czasowniku.
+t Einen Moment, bitte. Ich bringe es sofort. | Chwileczkę. Zaraz to przyniosę. | Danke, ich warte gern. | Podziękuj i powiedz, że chętnie poczekasz. | „Chętnie” to gern, stoi po czasowniku.
 w gleichfalls | nawzajem
-t Hier ist alles. Guten Appetit! | Oto wszystko. Smacznego! | Danke schön, gleichfalls! | Dziękuję bardzo, nawzajem! | „Nawzajem” to gleichfalls.
+t Hier ist alles. Guten Appetit! | Oto wszystko. Smacznego! | Danke schön, gleichfalls! | Podziękuj i odwzajemnij życzenia. | „Nawzajem” to gleichfalls.
 e Bitte schön! | Proszę bardzo!
 
 @level 3 | Stolik, pytania i cena | patience=5 typed=0.5 extra=3 hint=bank
 w Tisch
 w Stuhl
 w Fenster
-t Guten Tag! Möchten Sie einen Tisch für zwei? | Dzień dobry! Czy chce pan stolik dla dwóch osób? | Ja, einen Tisch für zwei, bitte. | Tak, stolik dla dwóch osób, poproszę. | Der Tisch jest rodzaju męskiego, po „möchten” biernik: einen Tisch.
+t Guten Tag! Möchten Sie einen Tisch für zwei? | Dzień dobry! Czy chce pan stolik dla dwóch osób? | Ja, einen Tisch für zwei, bitte. | Zgódź się: stolik dla dwóch osób. | Der Tisch jest rodzaju męskiego, po „möchten” biernik: einen Tisch.
 w sitzen | siedzieć
-t Möchten Sie hier oder dort sitzen? | Czy chce pan siedzieć tutaj, czy tam? | Ich möchte hier sitzen, bitte. | Chcę siedzieć tutaj, poproszę. | Bezokolicznik (sitzen) stoi na końcu zdania.
-t Hier ist die Speisekarte. Was möchten Sie trinken? | Oto karta dań. Co podać do picia? | Ein Glas Wasser und einen Saft, bitte. | Szklankę wody i sok, poproszę. | Das Glas jest nijakie: ein Glas; der Saft męski, więc biernik: einen Saft.
+t Möchten Sie hier oder dort sitzen? | Czy chce pan siedzieć tutaj, czy tam? | Ich möchte hier sitzen, bitte. | Powiedz, że chcesz siedzieć tutaj. | Bezokolicznik (sitzen) stoi na końcu zdania.
+t Hier ist die Speisekarte. Was möchten Sie trinken? | Oto karta dań. Co podać do picia? | Ein Glas Wasser und einen Saft, bitte. | Zamów wodę i sok. | Das Glas jest nijakie: ein Glas; der Saft męski, więc biernik: einen Saft.
 w Suppe
 w Fisch
 w Fleisch
-t Wir haben heute Fischsuppe. Möchten Sie eine Suppe? | Mamy dziś zupę rybną. Czy chce pan zupę? | Nein, ich möchte keine Suppe. Haben Sie Salat? | Nie, nie chcę zupy. Czy macie sałatkę? | Przeczenie rzeczownika to kein-: die Suppe → keine Suppe.
+t Wir haben heute Fischsuppe. Möchten Sie eine Suppe? | Mamy dziś zupę rybną. Czy chce pan zupę? | Nein, ich möchte keine Suppe. Haben Sie Salat? | Odmów zupy i zapytaj o sałatkę. | Przeczenie rzeczownika to kein-: die Suppe → keine Suppe.
 w natürlich | oczywiście
 w Salat
 w Tomate | pomidor | die | die Tomaten
 w Gurke | ogórek | die | die Gurken
-t Ja, natürlich. Der Salat ist sehr lecker. | Tak, oczywiście. Sałatka jest bardzo smaczna. | Gut, ich nehme den Salat. | Dobrze, wezmę sałatkę. | Der Salat po „nehmen” to biernik: den Salat.
-t Möchten Sie den Salat mit Fisch oder mit Käse? | Czy chce pan sałatkę z rybą, czy z serem? | Mit Käse, bitte. | Z serem, poproszę. | Po „mit” rzeczownik bez rodzajnika: mit Käse.
+t Ja, natürlich. Der Salat ist sehr lecker. | Tak, oczywiście. Sałatka jest bardzo smaczna. | Gut, ich nehme den Salat. | Zdecyduj się na sałatkę. | Der Salat po „nehmen” to biernik: den Salat.
+t Möchten Sie den Salat mit Fisch oder mit Käse? | Czy chce pan sałatkę z rybą, czy z serem? | Mit Käse, bitte. | Wybierz ser. | Po „mit” rzeczownik bez rodzajnika: mit Käse.
 w sonst | poza tym
 w kostet | kosztuje (kosten)
-t Sonst noch etwas? | Czy coś jeszcze? | Was kostet der Kuchen? | Ile kosztuje ciasto? | „Ile kosztuje” to was kostet (dosłownie „co kosztuje”).
+t Sonst noch etwas? | Czy coś jeszcze? | Was kostet der Kuchen? | Zapytaj o cenę ciasta. | „Ile kosztuje” to was kostet (dosłownie „co kosztuje”).
 w Euro | euro | der | die Euro
 w teuer | drogi
-t Der Kuchen kostet vier Euro. | Ciasto kosztuje cztery euro. | Das ist nicht zu teuer. Ich nehme ein Stück. | To nie jest za drogo. Wezmę kawałek. | „Za drogo” to zu teuer, a nicht stoi przed zu teuer.
+t Der Kuchen kostet vier Euro. | Ciasto kosztuje cztery euro. | Das ist nicht zu teuer. Ich nehme ein Stück. | Powiedz, że cena ci pasuje, i weź kawałek. | „Za drogo” to zu teuer, a nicht stoi przed zu teuer.
 w später | później
-t Möchten Sie den Kuchen jetzt oder später? | Czy chce pan ciasto teraz, czy później? | Ich möchte den Kuchen später. | Chcę ciasto później. | Po „möchte” biernik: den Kuchen.
+t Möchten Sie den Kuchen jetzt oder später? | Czy chce pan ciasto teraz, czy później? | Ich möchte den Kuchen später. | Powiedz, że ciasto chcesz później. | Po „möchte” biernik: den Kuchen.
 w genug | dość
-t Natürlich. Noch ein Glas Wasser? | Oczywiście. Jeszcze szklankę wody? | Nein, danke. Ich habe genug. | Nie, dziękuję. Mam dość. | „Mam dość” to ich habe genug.
+t Natürlich. Noch ein Glas Wasser? | Oczywiście. Jeszcze szklankę wody? | Nein, danke. Ich habe genug. | Grzecznie odmów: masz dość. | „Mam dość” to ich habe genug.
 e Gern! Einen Moment, bitte. | Chętnie! Chwileczkę.
 
 @level 4 | Rozmowa przy stole | patience=5 typed=0.75 extra=4 hint=letters
@@ -122,25 +122,25 @@ w Bier
 w Wein
 w Wasser
 w Kaffee
-t Guten Abend! Was möchten Sie trinken? | Dobry wieczór! Co podać do picia? | Ich möchte ein Bier und ein Glas Wasser, bitte. | Poproszę piwo i szklankę wody. | Das Bier jest nijakie: ein Bier; das Glas też: ein Glas.
+t Guten Abend! Was möchten Sie trinken? | Dobry wieczór! Co podać do picia? | Ich möchte ein Bier und ein Glas Wasser, bitte. | Zamów piwo i wodę. | Das Bier jest nijakie: ein Bier; das Glas też: ein Glas.
 w woher | skąd
-t Sie sprechen sehr gut Deutsch! Woher kommen Sie? | Bardzo dobrze pan mówi po niemiecku! Skąd pan pochodzi? | Danke! Ich komme aus Polen. | Dziękuję! Pochodzę z Polski. | „Z” w znaczeniu pochodzenia to aus, a nie von.
-t Aus Polen! Wie lange lernen Sie schon Deutsch? | Z Polski! Jak długo już uczy się pan niemieckiego? | Ich lerne noch nicht lange Deutsch. | Uczę się niemieckiego jeszcze niedługo. | „Jeszcze nie długo” to noch nicht lange; nicht stoi przed lange.
-t Das ist schön! Lernen Sie in der Schule? | To ładnie! Czy uczy się pan w szkole? | Nein, ich lerne zu Hause. | Nie, uczę się w domu. | „W domu” w sensie „u siebie” to zu Hause.
+t Sie sprechen sehr gut Deutsch! Woher kommen Sie? | Bardzo dobrze pan mówi po niemiecku! Skąd pan pochodzi? | Danke! Ich komme aus Polen. | Podziękuj i powiedz, że jesteś z Polski. | „Z” w znaczeniu pochodzenia to aus, a nie von.
+t Aus Polen! Wie lange lernen Sie schon Deutsch? | Z Polski! Jak długo już uczy się pan niemieckiego? | Ich lerne noch nicht lange Deutsch. | Powiedz, że uczysz się niemieckiego od niedawna. | „Jeszcze nie długo” to noch nicht lange; nicht stoi przed lange.
+t Das ist schön! Lernen Sie in der Schule? | To ładnie! Czy uczy się pan w szkole? | Nein, ich lerne zu Hause. | Zaprzecz: uczysz się w domu. | „W domu” w sensie „u siebie” to zu Hause.
 w Suppe
 w Fleisch
 w Kartoffel | ziemniak | die | die Kartoffeln
 w Reis | ryż | der | –
 w Nudeln | makaron | die | die Nudeln
-t Möchten Sie etwas essen? Die Suppe ist heute sehr gut. | Czy chce pan coś zjeść? Zupa jest dziś bardzo dobra. | Gern, ich möchte eine Suppe. Ist sie mit Fleisch? | Chętnie, poproszę zupę. Czy jest z mięsem? | „Zupa” to die Suppe, więc zastępuje ją sie (ona): ist sie mit Fleisch?
-t Nein, ohne Fleisch. Möchten Sie auch ein Brötchen? | Nie, bez mięsa. Czy chce pan też bułkę? | Ja, ein Brötchen mit Käse, bitte. | Tak, bułkę z serem, poproszę. | Po „mit” rzeczownik bez rodzajnika: mit Käse.
+t Möchten Sie etwas essen? Die Suppe ist heute sehr gut. | Czy chce pan coś zjeść? Zupa jest dziś bardzo dobra. | Gern, ich möchte eine Suppe. Ist sie mit Fleisch? | Zgódź się na zupę i zapytaj, czy jest z mięsem. | „Zupa” to die Suppe, więc zastępuje ją sie (ona): ist sie mit Fleisch?
+t Nein, ohne Fleisch. Möchten Sie auch ein Brötchen? | Nie, bez mięsa. Czy chce pan też bułkę? | Ja, ein Brötchen mit Käse, bitte. | Zgódź się: bułka z serem. | Po „mit” rzeczownik bez rodzajnika: mit Käse.
 w finden | znajdować; uważać za (wie finden Sie… = jak panu się podoba…)
 w bisschen | troszkę
 w heiß | gorący
-t Wie finden Sie die Suppe? | Jak panu smakuje zupa? | Die Suppe ist sehr gut, aber ein bisschen heiß. | Zupa jest bardzo dobra, ale trochę gorąca. | „Trochę” to ein bisschen.
-t Möchten Sie noch ein Bier? | Czy chce pan jeszcze piwo? | Nein, danke, ich trinke jetzt einen Kaffee. | Nie, dziękuję, teraz wypiję kawę. | Kaffee jest męski, więc biernik: einen Kaffee.
-t Sind Sie Student? | Czy jest pan studentem? | Nein, ich bin Lehrer. | Nie, jestem nauczycielem. | Po „sein” (bin) w niemieckim nie ma rodzajnika przy zawodzie: ich bin Lehrer.
-t Natürlich. Sonst noch etwas? | Oczywiście. Czy coś jeszcze? | Nein, danke, das ist alles. | Nie, dziękuję, to wszystko. | „To wszystko” to das ist alles.
+t Wie finden Sie die Suppe? | Jak panu smakuje zupa? | Die Suppe ist sehr gut, aber ein bisschen heiß. | Pochwal zupę, ale zaznacz, że jest gorąca. | „Trochę” to ein bisschen.
+t Möchten Sie noch ein Bier? | Czy chce pan jeszcze piwo? | Nein, danke, ich trinke jetzt einen Kaffee. | Odmów i powiedz, że teraz pijesz kawę. | Kaffee jest męski, więc biernik: einen Kaffee.
+t Sind Sie Student? | Czy jest pan studentem? | Nein, ich bin Lehrer. | Zaprzecz: jesteś nauczycielem. | Po „sein” (bin) w niemieckim nie ma rodzajnika przy zawodzie: ich bin Lehrer.
+t Natürlich. Sonst noch etwas? | Oczywiście. Czy coś jeszcze? | Nein, danke, das ist alles. | Odmów: to wszystko. | „To wszystko” to das ist alles.
 e Einen Moment, bitte! | Chwileczkę!
 
 @level 5 | Pełna wizyta i rachunek | patience=4 typed=1 extra=0 hint=none reward=25
@@ -148,34 +148,34 @@ w Kaffee
 w Tee
 w Milch
 w Zucker
-t Guten Morgen! Was möchten Sie trinken? | Dzień dobry! Co podać do picia? | Guten Morgen! Ich möchte einen Kaffee mit Milch, aber ohne Zucker, bitte. | Dzień dobry! Poproszę kawę z mlekiem, ale bez cukru. | Po „mit” i „ohne” rzeczownik bez rodzajnika: mit Milch, ohne Zucker.
+t Guten Morgen! Was möchten Sie trinken? | Dzień dobry! Co podać do picia? | Guten Morgen! Ich möchte einen Kaffee mit Milch, aber ohne Zucker, bitte. | Przywitaj się i zamów kawę z mlekiem, ale bez cukru. | Po „mit” i „ohne” rzeczownik bez rodzajnika: mit Milch, ohne Zucker.
 w Frühstück | śniadanie | das | die Frühstücke | früh (wcześnie) + Stück (kawałek) → „wczesny kęs”
 w Brötchen
 w Käse
 w Ei
 w Schokoladenkuchen
-t Natürlich. Und zum Frühstück? Wir haben Brötchen mit Käse, Ei oder Schokoladenkuchen. | Oczywiście. A na śniadanie? Mamy bułki z serem, jajko albo ciasto czekoladowe. | Ich nehme ein Brötchen mit Ei, bitte. | Wezmę bułkę z jajkiem. | Das Brötchen to nijakie: ein Brötchen; po „mit” bez rodzajnika: mit Ei.
+t Natürlich. Und zum Frühstück? Wir haben Brötchen mit Käse, Ei oder Schokoladenkuchen. | Oczywiście. A na śniadanie? Mamy bułki z serem, jajko albo ciasto czekoladowe. | Ich nehme ein Brötchen mit Ei, bitte. | Zamów bułkę z jajkiem. | Das Brötchen to nijakie: ein Brötchen; po „mit” bez rodzajnika: mit Ei.
 w empfehlen | polecać
-t Gern. Möchten Sie auch ein Glas Wasser? | Chętnie. Czy chce pan też szklankę wody? | Ja, gern. Was empfehlen Sie noch? | Tak, chętnie. A co jeszcze pan poleca? | W pytaniu czasownik jest na drugim miejscu: was empfehlen Sie.
+t Gern. Möchten Sie auch ein Glas Wasser? | Chętnie. Czy chce pan też szklankę wody? | Ja, gern. Was empfehlen Sie noch? | Zgódź się i zapytaj, co jeszcze polecają. | W pytaniu czasownik jest na drugim miejscu: was empfehlen Sie.
 w Apfelkuchen
 w Kuchen
 w Torte
 w Eis
-t Der Apfelkuchen ist heute sehr lecker. | Szarlotka jest dziś bardzo smaczna. | Gut, dann nehme ich ein Stück Apfelkuchen. | Dobrze, to wezmę kawałek szarlotki. | Po „dann” czasownik jest przed podmiotem: dann nehme ich.
-t Möchten Sie hier oder dort sitzen? | Czy chce pan siedzieć tutaj, czy tam? | Ich möchte dort sitzen, am Fenster. | Chcę siedzieć tam, przy oknie. | „Przy oknie” to am Fenster.
-t Hier ist alles. Guten Appetit! | Oto wszystko. Smacznego! | Danke, gleichfalls! | Dziękuję, nawzajem! | „Nawzajem” to gleichfalls.
+t Der Apfelkuchen ist heute sehr lecker. | Szarlotka jest dziś bardzo smaczna. | Gut, dann nehme ich ein Stück Apfelkuchen. | Zdecyduj się na kawałek szarlotki. | Po „dann” czasownik jest przed podmiotem: dann nehme ich.
+t Möchten Sie hier oder dort sitzen? | Czy chce pan siedzieć tutaj, czy tam? | Ich möchte dort sitzen, am Fenster. | Powiedz, że chcesz siedzieć przy oknie. | „Przy oknie” to am Fenster.
+t Hier ist alles. Guten Appetit! | Oto wszystko. Smacznego! | Danke, gleichfalls! | Odwzajemnij życzenia. | „Nawzajem” to gleichfalls.
 w schmeckt | smakuje (schmecken)
 w Ihnen | panu, pani (celownik)
-t Schmeckt es Ihnen? | Czy panu smakuje? | Ja, es schmeckt sehr gut. | Tak, bardzo mi smakuje. | Podmiotem jest es, a nie ich: es schmeckt.
+t Schmeckt es Ihnen? | Czy panu smakuje? | Ja, es schmeckt sehr gut. | Zgódź się: bardzo ci smakuje. | Podmiotem jest es, a nie ich: es schmeckt.
 w zahlen | płacić
-t Möchten Sie noch etwas? | Czy coś jeszcze? | Nein, danke. Ich möchte zahlen. | Nie, dziękuję. Chcę zapłacić. | „Chcę zapłacić” to ich möchte zahlen (bezokolicznik na końcu).
+t Möchten Sie noch etwas? | Czy coś jeszcze? | Nein, danke. Ich möchte zahlen. | Odmów i powiedz, że chcesz zapłacić. | „Chcę zapłacić” to ich möchte zahlen (bezokolicznik na końcu).
 w zwölf | dwanaście
 w stimmt | zgadza się (stimmen)
 w so | tak
-t Das macht zehn Euro. | To będzie dziesięć euro. | Hier sind zwölf Euro. Stimmt so! | Oto dwanaście euro. Reszty nie trzeba! | „Stimmt so” znaczy „zgadza się, reszty nie trzeba”.
+t Das macht zehn Euro. | To będzie dziesięć euro. | Hier sind zwölf Euro. Stimmt so! | Zapłać i powiedz, że reszty nie trzeba. | „Stimmt so” znaczy „zgadza się, reszty nie trzeba”.
 w vielen | wielu (vielen Dank = wielkie dzięki)
 w Dank | podziękowanie, dzięki | der | –
 w schönen | ładnym, miłym
 w Wiedersehen | zobaczenie się (auf Wiedersehen = do widzenia)
-t Vielen Dank! Haben Sie einen schönen Tag! | Dziękujemy! Miłego dnia! | Danke, Ihnen auch! Auf Wiedersehen! | Dziękuję, nawzajem! Do widzenia! | „Nawzajem” w tym zdaniu to Ihnen auch.
+t Vielen Dank! Haben Sie einen schönen Tag! | Dziękujemy! Miłego dnia! | Danke, Ihnen auch! Auf Wiedersehen! | Podziękuj i pożegnaj się. | „Nawzajem” w tym zdaniu to Ihnen auch.
 e Auf Wiedersehen! | Do widzenia!
