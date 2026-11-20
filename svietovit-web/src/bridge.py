@@ -258,7 +258,7 @@ def home():
         larps.append({"id": lp["id"], "title": lp["title"], "partner": lp["partner"], "avatar": lp["avatar"],
                       "fee": lp["fee"], "scene": lp["scene"], "goal": lp["goal"], "unlocked": un,
                       "best": d.get("larps", {}).get(lp["id"]), "can_pay": d["xp_total"] >= lp["fee"],
-                      "levels": _larp_levels_view(lp), "disclaimer": lp.get("disclaimer"), "reward": lp.get("reward")})
+                      "levels": _larp_levels_view(lp), "story": bool(lp.get("story")), "disclaimer": lp.get("disclaimer"), "reward": lp.get("reward")})
     return json.dumps({"larps": larps, "paradigms": _paradigm_list(),
         "units": units, "tracks": getattr(C, "TRACKS", {}), "current": current, "chats": chats,
         "hearts": st.hearts(), "heart_max": E.HEART_MAX, "next_heart": st.seconds_to_next_heart(),
@@ -745,7 +745,7 @@ def _larp_levels_view(lp):
         return None
     out = []
     for i, c in enumerate(lv, 1):
-        out.append({"lvl": i, "title": c.get("title"), "best": _larp_rank(lp["id"], i),
+        out.append({"lvl": i, "title": c.get("title"), "desc": c.get("desc"), "best": _larp_rank(lp["id"], i),
                     "unlocked": i == 1 or (_larp_rank(lp["id"], i - 1) or 0) >= 1})
     return out
 
@@ -842,8 +842,8 @@ def larp_start(lid, lvl=1):
     _larp.update(id=lid, lvl=lvl, cfg=cfg, node=cfg["start"], patience=cfg.get("patience", lp.get("patience", 3)), weak=0, mistakes=0, done=False, typed=typed, rounds=set())
     return json.dumps({"ok": True, "fee": lp["fee"], "patience": _larp["patience"], "max_patience": _larp["patience"], "level": lvl,
                        "lexicon": lex, "disclaimer": lp.get("disclaimer"), "level_title": cfg.get("title") if cfg is not lp else None,
-                       "scene": cfg.get("scene", lp["scene"]), "goal": cfg.get("goal", lp["goal"]), "partner": lp["partner"], "avatar": lp["avatar"],
-                       "title": lp["title"], "node": _larp_node(lp, cfg["start"])}, ensure_ascii=False)
+                       "scene": cfg.get("scene", lp["scene"]), "goal": cfg.get("goal", lp["goal"]), "partner": cfg.get("partner", lp["partner"]), "avatar": cfg.get("avatar", lp["avatar"]),
+                       "title": lp["title"], "story": bool(lp.get("story")), "node": _larp_node(lp, cfg["start"])}, ensure_ascii=False)
 
 
 def _larp_finish(lp, outcome):
