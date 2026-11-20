@@ -328,3 +328,6 @@ for _p in PARADIGMS:
         _o.append(_p[1])
 PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 # === /PRONOUNS ===
+
+# Pełne tłumaczenia zdań z ćwiczeń „Uzupełnij końcówkę” (gdy nie ma ich wśród zdań kursu)
+ENDINGS_PL = {'þú ert bóndi': 'Jesteś rolnikiem.', 'systir mín er lítil': 'Moja siostra jest mała.', 'móðir mín er góð': 'Moja matka jest dobra.', 'þú átt systur': 'Masz siostrę.', 'þú vilt mjǫð': 'Chcesz miodu.'}

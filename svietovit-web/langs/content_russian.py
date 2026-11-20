@@ -392,3 +392,6 @@ for _p in PARADIGMS:
         _o.append(_p[1])
 PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 # === /PRONOUNS ===
+
+# Pełne tłumaczenia zdań z ćwiczeń „Uzupełnij końcówkę” (gdy nie ma ich wśród zdań kursu)
+ENDINGS_PL = {'мой брат': 'mój brat', 'моя́ сестра́': 'moja siostra', 'мой друг': 'mój przyjaciel', 'моя́ ма́ма': 'moja mama'}
