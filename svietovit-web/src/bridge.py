@@ -970,6 +970,44 @@ def _larp_finish(lp, outcome):
             "mistakes": _larp["mistakes"], "weak": _larp["weak"]}
 
 
+def _de_fold(t, mode):
+    t = t.lower()
+    if mode == 0:
+        return t.replace("ä", "a").replace("ö", "o").replace("ü", "u").replace("ß", "ss")
+    return t.replace("ä", "ae").replace("ö", "oe").replace("ü", "ue").replace("ß", "ss")
+
+
+def _de_cmp(given_s, cands):
+    """Niemiecki, wpisana odpowiedź: „bitte” może stać w dowolnym miejscu; brak umlautów to drobny błąd (z notatką),
+    ale rzeczownik małą literą jest błędem. Zwraca „good”, „diac”, „case” albo None."""
+    g0 = [t for t in given_s.split() if t.lower() != "bitte"]
+    best = None
+    for c in cands:
+        w = [t for t in c if t.lower() != "bitte"]
+        if len(w) != len(g0):
+            continue
+        diac = case = False
+        ok = True
+        for a, b in zip(g0, w):
+            if a == b:
+                continue
+            if b[:1].isupper() and not a[:1].isupper():      # rzeczownik małą literą
+                ok = False
+                break
+            if a.lower() == b.lower():
+                case = True
+            elif any(_de_fold(a, m) == _de_fold(b, m) for m in (0, 1)):
+                diac = True
+            else:
+                ok = False
+                break
+        if ok:
+            r = "diac" if diac else ("case" if case else "good")
+            if best is None or ["good", "case", "diac"].index(r) < ["good", "case", "diac"].index(best):
+                best = r
+    return best
+
+
 # Odpowiedź, która ma sens, ale jest uboga albo niegrzeczna: rozmówca ją przyjmuje, ale patrzy krzywo (wynik „weak”).
 _POLITE = {"bitte", "danke", "schön", "gern", "bitteschön", "entschuldigung", "dziękuję", "proszę", "please", "thanks", "thank", "спасибо", "пожалуйста",
            "prosím", "děkuji", "hvala", "molim", "gracias", "grazie", "merci", "lütfen", "kiitos", "kérem", "köszönöm", "takk", "tack",
@@ -983,6 +1021,8 @@ def _larp_lenient(given, cands):
     g = [t.lower() for t in given if t not in P]
     if not g:
         return None
+    gcase = [t for t in given if t not in P]
+    de = _cur["cid"] == "german"
     for c in cands:
         m = [t.lower() for t in c if t not in P]
         if len(g) >= len(m):
@@ -990,6 +1030,18 @@ def _larp_lenient(given, cands):
         it = iter(m)
         if not all(x in it for x in g):               # nie jest podciągiem wzorca
             continue
+        if de:                                        # niemiecki: rzeczownik małą literą to błąd
+            mc0 = [t for t in c if t not in P]
+            bad = False
+            pos = 0
+            for x, xo in zip(g, gcase):
+                while mc0[pos].lower() != x:
+                    pos += 1
+                if mc0[pos][:1].isupper() and not xo[:1].isupper():
+                    bad = True
+                pos += 1
+            if bad:
+                continue
         mc = [t for t in m if t not in _POLITE]
         gc = [t for t in g if t not in _POLITE]
         if not gc:
@@ -1025,8 +1077,20 @@ def larp_answer(payload_json):
         if "text" in p:
             raw = str(p.get("text") or "")
             given_s = _larp_norm(raw)
-            if given_s in want:
+            de = _de_cmp(given_s, [_larp_norm(_larp_disp(c)).split() for c in cands]) if _cur["cid"] == "german" else None
+            if given_s in want or de == "good":
                 verdict = "good"
+            elif de == "diac":
+                verdict, res["why"] = "weak", "Pisz z umlautami (ä, ö, ü, ß): " + disp
+            elif de == "case":
+                verdict, res["why"] = "weak", "Wielkie i małe litery: " + disp
+            elif _cur["cid"] == "german":
+                kind = _larp_lenient(given_s.split(), [_larp_norm(_larp_disp(c)).split() for c in cands])
+                if kind:
+                    verdict = "weak"
+                    res["why"] = ("Rozmówca rozumie, ale patrzy krzywo: brakuje grzeczności. Lepiej: " if kind == "rude" else "Rozmówca rozumie, ale patrzy krzywo: za krótko. Lepiej: ") + disp
+                else:
+                    verdict = "bad"
             elif given_s.lower() in [w.lower() for w in want]:
                 verdict, res["why"] = "weak", "Wielkie i małe litery: " + disp
             elif _larp_plain(given_s) in [_larp_plain(w) for w in want]:
