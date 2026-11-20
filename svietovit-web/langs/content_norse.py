@@ -348,3 +348,16 @@ for _p in PARADIGMS:
         _o.append(_p[1])
 PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 # === /STOPNIOWANIE ===
+
+# === GRAMATYKA 2 (generowane) ===
+PARADIGMS += [
+    ('form', 'Wzory deklinacji', 'dagr (dzień, m.)', ['mian. l. poj.', 'bier. l. poj.', 'cel. l. poj.', 'dop. l. poj.', 'mian. l. mn.', 'bier. l. mn.', 'cel. l. mn.', 'dop. l. mn.'], 'dagr; dag; degi; dags; dagar; daga; dögum; daga', None),
+    ('form', 'Wzory deklinacji', 'steinn (kamień, m.)', ['mian. l. poj.', 'bier. l. poj.', 'cel. l. poj.', 'dop. l. poj.', 'mian. l. mn.', 'bier. l. mn.', 'cel. l. mn.', 'dop. l. mn.'], 'steinn; stein; steini; steins; steinar; steina; steinum; steina', None),
+    ('form', 'Wzory deklinacji', 'kona (kobieta, ż.)', ['mian. l. poj.', 'bier. l. poj.', 'cel. l. poj.', 'dop. l. poj.', 'mian. l. mn.', 'bier. l. mn.', 'cel. l. mn.', 'dop. l. mn.'], 'kona; konu; konu; konu; konur; konur; konum; kvenna', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /GRAMATYKA 2 ===

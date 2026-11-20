@@ -291,3 +291,21 @@ for _p in PARADIGMS:
         _o.append(_p[1])
 PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 # === /STOPNIOWANIE ===
+
+# === GRAMATYKA 2 (generowane) ===
+PARADIGMS += [
+    ('form', 'Czasy i przeczenie', 'กิน (jeść)', ['zwykle', 'już zrobione (แล้ว)', 'przyszłość (จะ)', 'właśnie trwa (กำลัง)', 'przeczenie (ไม่)'], 'กิน; กินแล้ว; จะกิน; กำลังกิน; ไม่กิน', 'Tajski nie odmienia czasowników: znaczenie dodają słówka przed i po czasowniku.'),
+    ('form', 'Czasy i przeczenie', 'ไป (iść)', ['zwykle', 'już zrobione (แล้ว)', 'przyszłość (จะ)', 'właśnie trwa (กำลัง)', 'przeczenie (ไม่)'], 'ไป; ไปแล้ว; จะไป; กำลังไป; ไม่ไป', None),
+    ('form', 'Czasy i przeczenie', 'ดู (patrzeć)', ['zwykle', 'już zrobione (แล้ว)', 'przyszłość (จะ)', 'właśnie trwa (กำลัง)', 'przeczenie (ไม่)'], 'ดู; ดูแล้ว; จะดู; กำลังดู; ไม่ดู', None),
+    ('form', 'Czasy i przeczenie', 'ทำ (robić)', ['zwykle', 'już zrobione (แล้ว)', 'przyszłość (จะ)', 'właśnie trwa (กำลัง)', 'przeczenie (ไม่)'], 'ทำ; ทำแล้ว; จะทำ; กำลังทำ; ไม่ทำ', None),
+    ('form', 'Czasy i przeczenie', 'เรียน (uczyć się)', ['zwykle', 'już zrobione (แล้ว)', 'przyszłość (จะ)', 'właśnie trwa (กำลัง)', 'przeczenie (ไม่)'], 'เรียน; เรียนแล้ว; จะเรียน; กำลังเรียน; ไม่เรียน', None),
+    ('form', 'Pytania', 'กิน: pytanie', ['czy zrobisz? (ไหม)', 'czy tak? (หรือเปล่า)', 'czy już? (หรือยัง)'], 'กินไหม; กินหรือเปล่า; กินแล้วหรือยัง', 'Pytania tak/nie tworzy się partykułą na końcu zdania.'),
+    ('form', 'Pytania', 'ไป: pytanie', ['czy zrobisz? (ไหม)', 'czy tak? (หรือเปล่า)', 'czy już? (หรือยัง)'], 'ไปไหม; ไปหรือเปล่า; ไปแล้วหรือยัง', None),
+    ('form', 'Zaimki', 'zaimki dzierżawcze: ของ', ['mój', 'twój', 'jego, jej', 'nasz'], 'ของฉัน; ของคุณ; ของเขา; ของเรา', 'Zaimek posiadacza stoi po rzeczowniku: บ้านของฉัน.'),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /GRAMATYKA 2 ===

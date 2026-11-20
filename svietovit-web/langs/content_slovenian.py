@@ -348,3 +348,24 @@ for _p in PARADIGMS:
         _o.append(_p[1])
 PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 # === /STOPNIOWANIE ===
+
+# === GRAMATYKA 2 (generowane) ===
+PARADIGMS += [
+    ('form', 'Czas przeszły', 'biti: preteklik', ['já (m.)', 'já (ż.)', 'on', 'ona', 'my (m.)', 'oni (m.)'], 'bil sem; bila sem; bil je; bila je; bili smo; bili so', None),
+    ('form', 'Czas przeszły', 'imeti: preteklik', ['já (m.)', 'já (ż.)', 'on', 'ona', 'my (m.)', 'oni (m.)'], 'imel sem; imela sem; imel je; imela je; imeli smo; imeli so', None),
+    ('form', 'Czas przeszły', 'govoriti: preteklik', ['já (m.)', 'já (ż.)', 'on', 'ona', 'my (m.)', 'oni (m.)'], 'govoril sem; govorila sem; govoril je; govorila je; govorili smo; govorili so', None),
+    ('conj', 'Czas przyszły', 'biti: prihodnik', ['jaz', 'ti', 'on / ona', 'mi', 'vi', 'oni'], 'bom; boš; bo; bomo; boste; bodo', None),
+    ('conj', 'Czas przyszły', 'govoriti: prihodnik', ['jaz', 'ti', 'on / ona', 'mi', 'vi', 'oni'], 'bom govoril; boš govoril; bo govoril; bomo govorili; boste govorili; bodo govorili', 'Przyszłość = bom + imiesłów na -l.'),
+    ('form', 'Liczba podwójna', 'imeti: dvojina', ['1. osoba (my dwaj)', '2. osoba (wy dwaj)', '3. osoba (oni dwaj)'], 'imava; imata; imata', None),
+    ('form', 'Liczba podwójna', 'govoriti: dvojina', ['1. osoba (my dwaj)', '2. osoba (wy dwaj)', '3. osoba (oni dwaj)'], 'govoriva; govorita; govorita', None),
+    ('form', 'Deklinacja rzeczowników', 'miza (stół, ż.)', ['mianownik', 'dopełniacz', 'celownik', 'biernik', 'miejscownik', 'narzędnik'], 'miza; mize; mizi; mizo; mizi; mizo', None),
+    ('form', 'Deklinacja rzeczowników', 'knjiga (książka, ż.)', ['mianownik', 'dopełniacz', 'celownik', 'biernik', 'miejscownik', 'narzędnik'], 'knjiga; knjige; knjigi; knjigo; knjigi; knjigo', None),
+    ('form', 'Deklinacja rzeczowników', 'človek (człowiek, m.)', ['mianownik', 'dopełniacz', 'celownik', 'biernik', 'miejscownik', 'narzędnik'], 'človek; človeka; človeku; človeka; človeku; človekom', None),
+    ('form', 'Deklinacja rzeczowników', 'okno (okno, n.)', ['mianownik', 'dopełniacz', 'celownik', 'biernik', 'miejscownik', 'narzędnik'], 'okno; okna; oknu; okno; oknu; oknom', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /GRAMATYKA 2 ===

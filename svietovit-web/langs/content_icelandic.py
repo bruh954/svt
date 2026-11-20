@@ -341,3 +341,28 @@ PARADIGMS = [
 ]
 
 LARPS = []
+
+# === GRAMATYKA 2 (generowane) ===
+PARADIGMS += [
+    ('conj', 'Czas przeszły', 'vera: þátíð (byłem)', ['ég', 'þú', 'hann / hún / það', 'við', 'þið', 'þau'], 'var; varst; var; vorum; voruð; voru', None),
+    ('conj', 'Czas przeszły', 'hafa: þátíð (miałem)', ['ég', 'þú', 'hann / hún / það', 'við', 'þið', 'þau'], 'hafði; hafðir; hafði; höfðum; höfðuð; höfðu', None),
+    ('conj', 'Czas przeszły', 'fara: þátíð (poszedłem)', ['ég', 'þú', 'hann / hún / það', 'við', 'þið', 'þau'], 'fór; fórst; fór; fórum; fóruð; fóru', None),
+    ('conj', 'Czas przeszły', 'tala: þátíð (mówiłem)', ['ég', 'þú', 'hann / hún / það', 'við', 'þið', 'þau'], 'talaði; talaðir; talaði; töluðum; töluðuð; töluðu', None),
+    ('conj', 'Czas przeszły', 'borða: þátíð (jadłem)', ['ég', 'þú', 'hann / hún / það', 'við', 'þið', 'þau'], 'borðaði; borðaðir; borðaði; borðuðum; borðuðuð; borðuðu', None),
+    ('conj', 'Czas przeszły', 'vilja: þátíð (chciałem)', ['ég', 'þú', 'hann / hún / það', 'við', 'þið', 'þau'], 'vildi; vildir; vildi; vildum; vilduð; vildu', None),
+    ('form', 'Rzeczowniki: liczba mnoga i rodzajnik', 'hestur: liczba mnoga', ['mianownik', 'biernik', 'celownik', 'dopełniacz'], 'hestar; hesta; hestum; hesta', None),
+    ('form', 'Rzeczowniki: liczba mnoga i rodzajnik', 'kona: liczba mnoga', ['mianownik', 'biernik', 'celownik', 'dopełniacz'], 'konur; konur; konum; kvenna', None),
+    ('form', 'Rzeczowniki: liczba mnoga i rodzajnik', 'barn: liczba mnoga', ['mianownik', 'biernik', 'celownik', 'dopełniacz'], 'börn; börn; börnum; barna', None),
+    ('form', 'Rzeczowniki: liczba mnoga i rodzajnik', 'borg: liczba mnoga', ['mianownik', 'biernik', 'celownik', 'dopełniacz'], 'borgir; borgir; borgum; borga', None),
+    ('form', 'Rzeczowniki: liczba mnoga i rodzajnik', 'hesturinn (ten koń)', ['mianownik', 'biernik', 'celownik', 'dopełniacz'], 'hesturinn; hestinn; hestinum; hestsins', 'Rodzajnik określony doklejany jest na końcu rzeczownika.'),
+    ('form', 'Rzeczowniki: liczba mnoga i rodzajnik', 'konan (ta kobieta)', ['mianownik', 'biernik', 'celownik', 'dopełniacz'], 'konan; konuna; konunni; konunnar', None),
+    ('form', 'Rzeczowniki: liczba mnoga i rodzajnik', 'barnið (to dziecko)', ['mianownik', 'biernik', 'celownik', 'dopełniacz'], 'barnið; barnið; barninu; barnsins', None),
+    ('form', 'Zaimki dzierżawcze', 'minn (mój)', ['r. męski', 'r. żeński', 'r. nijaki'], 'minn; mín; mitt', None),
+    ('form', 'Zaimki dzierżawcze', 'þinn (twój)', ['r. męski', 'r. żeński', 'r. nijaki'], 'þinn; þín; þitt', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /GRAMATYKA 2 ===

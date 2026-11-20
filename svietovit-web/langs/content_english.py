@@ -444,3 +444,28 @@ PARADIGMS = [
 ]
 
 LARPS = []
+
+# === GRAMATYKA 2 (generowane) ===
+PARADIGMS += [
+    ('conj', 'Czasy', 'eat: present perfect', ['I', 'you', 'he / she / it', 'we', 'you (pl.)', 'they'], 'have eaten; have eaten; has eaten; have eaten; have eaten; have eaten', 'Present perfect łączy przeszłość z teraźniejszością: I have lost my keys (i ich nie mam).'),
+    ('conj', 'Czasy', 'eat: past continuous', ['I', 'you', 'he / she / it', 'we', 'you (pl.)', 'they'], 'was eating; were eating; was eating; were eating; were eating; were eating', None),
+    ('conj', 'Czasy', 'eat: be going to', ['I', 'you', 'he / she / it', 'we', 'you (pl.)', 'they'], 'am going to eat; are going to eat; is going to eat; are going to eat; are going to eat; are going to eat', None),
+    ('conj', 'Czasy', 'eat: present continuous', ['I', 'you', 'he / she / it', 'we', 'you (pl.)', 'they'], 'am eating; are eating; is eating; are eating; are eating; are eating', None),
+    ('conj', 'Czasy', 'go: present perfect', ['I', 'you', 'he / she / it', 'we', 'you (pl.)', 'they'], 'have gone; have gone; has gone; have gone; have gone; have gone', None),
+    ('form', 'Czasowniki modalne', 'can', ['teraz', 'przeszłość', 'przyszłość'], 'can; could; will be able to', 'Po czasowniku modalnym zawsze podstawowa forma: I can swim, he can swim.'),
+    ('form', 'Czasowniki modalne', 'must', ['teraz', 'przeszłość', 'przyszłość'], 'must; had to; will have to', None),
+    ('form', 'Czasowniki modalne', 'may', ['teraz', 'przeszłość', 'przyszłość'], 'may; might; will be allowed to', None),
+    ('form', 'Czasowniki modalne', 'should', ['teraz', 'przeszłość', 'przyszłość'], 'should; should have; should', None),
+    ('form', 'Tryb warunkowy', 'cztery tryby warunkowe', ['zerowy (zawsze)', 'pierwszy (możliwe)', 'drugi (mało prawdopodobne)', 'trzeci (nierzeczywiste w przeszłości)'], 'If you heat ice, it melts; If it rains, I will stay; If I had money, I would buy it; If I had known, I would have come', None),
+    ('form', 'Strona bierna', 'make: strona bierna', ['teraz', 'przeszłość', 'przyszłość', 'present perfect'], 'is made; was made; will be made; has been made', None),
+    ('form', 'Strona bierna', 'write: strona bierna', ['teraz', 'przeszłość', 'przyszłość', 'present perfect'], 'is written; was written; will be written; has been written', None),
+    ('form', 'Zaimki', 'zaimki dzierżawcze (przymiotnikowe)', ['I', 'you', 'he', 'she', 'it', 'we', 'you (pl.)', 'they'], 'my; your; his; her; its; our; your; their', None),
+    ('form', 'Zaimki', 'zaimki dzierżawcze (samodzielne)', ['I', 'you', 'he', 'she', 'it', 'we', 'you (pl.)', 'they'], 'mine; yours; his; hers; its; ours; yours; theirs', None),
+    ('form', 'Typowe trudności', 'do, does czy did?', ['___ you like tea?', 'What ___ she do?', '___ he working?', 'Where ___ they live?', '___ you go yesterday?', 'How much ___ it cost?'], 'Do; does; Is; do; Did; does', 'Pytanie w teraźniejszym: do, does. W przeszłym: did. Przy „be” i czasie ciągłym: is, are.'),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /GRAMATYKA 2 ===

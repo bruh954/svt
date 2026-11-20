@@ -393,3 +393,31 @@ for _p in PARADIGMS:
         _o.append(_p[1])
 PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 # === /STOPNIOWANIE ===
+
+# === GRAMATYKA 2 (generowane) ===
+PARADIGMS += [
+    ('form', 'Czas przeszły', 'biti: perfekat', ['já (m.)', 'já (ż.)', 'on', 'ona', 'my (m.)', 'oni (m.)'], 'bio sam; bila sam; bio je; bila je; bili smo; bili su', None),
+    ('form', 'Czas przeszły', 'raditi: perfekat', ['já (m.)', 'já (ż.)', 'on', 'ona', 'my (m.)', 'oni (m.)'], 'radio sam; radila sam; radio je; radila je; radili smo; radili su', None),
+    ('form', 'Czas przeszły', 'imati: perfekat', ['já (m.)', 'já (ż.)', 'on', 'ona', 'my (m.)', 'oni (m.)'], 'imao sam; imala sam; imao je; imala je; imali smo; imali su', None),
+    ('form', 'Czas przyszły', 'raditi: futur I', ['ja', 'ti', 'on / ona', 'mi', 'vi', 'oni'], 'ću raditi; ćeš raditi; će raditi; ćemo raditi; ćete raditi; će raditi', 'Futur = krótka forma od „hteti” + bezokolicznik.'),
+    ('form', 'Tryb warunkowy', 'raditi: potencijal', ['já (m.)', 'já (ż.)', 'on', 'ona', 'my (m.)', 'oni (m.)'], 'radio bih; radila bih; radio bi; radila bi; radili bismo; radili bi', None),
+    ('conj', 'Czasowniki nieregularne', 'morati (musieć)', ['ja', 'ti', 'on / ona', 'mi', 'vi', 'oni'], 'moram; moraš; mora; moramo; morate; moraju', None),
+    ('conj', 'Czasowniki nieregularne', 'znati (wiedzieć)', ['ja', 'ti', 'on / ona', 'mi', 'vi', 'oni'], 'znam; znaš; zna; znamo; znate; znaju', None),
+    ('form', 'Vid (aspekt)', 'vid: robić', ['nesvršeni', 'svršeni'], 'raditi; uraditi', None),
+    ('form', 'Vid (aspekt)', 'vid: pisać', ['nesvršeni', 'svršeni'], 'pisati; napisati', None),
+    ('form', 'Vid (aspekt)', 'vid: czytać', ['nesvršeni', 'svršeni'], 'čitati; pročitati', None),
+    ('form', 'Vid (aspekt)', 'vid: kupować', ['nesvršeni', 'svršeni'], 'kupovati; kupiti', None),
+    ('form', 'Vid (aspekt)', 'vid: dawać', ['nesvršeni', 'svršeni'], 'davati; dati', None),
+    ('form', 'Vid (aspekt)', 'vid: otwierać', ['nesvršeni', 'svršeni'], 'otvarati; otvoriti', None),
+    ('form', 'Vid (aspekt)', 'vid: jeść', ['nesvršeni', 'svršeni'], 'jesti; pojesti', None),
+    ('form', 'Vid (aspekt)', 'vid: pić', ['nesvršeni', 'svršeni'], 'piti; popiti', None),
+    ('form', 'Vid (aspekt)', 'vid: brać', ['nesvršeni', 'svršeni'], 'uzimati; uzeti', None),
+    ('form', 'Vid (aspekt)', 'vid: zaczynać', ['nesvršeni', 'svršeni'], 'počinjati; početi', None),
+    ('form', 'Typowe trudności', 'Przyimek: jaki przypadek?', ['Idem u ___ (škola)', 'Ja sam u ___ (škola)', 'Idem kod ___ (drug)', 'Idem sa ___ (drug)', 'Pričam o ___ (drug)', 'Vidim ___ (drug)'], 'školu; školi; druga; drugom; drugu; druga', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /GRAMATYKA 2 ===

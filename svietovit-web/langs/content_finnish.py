@@ -337,3 +337,25 @@ for _p in PARADIGMS:
         _o.append(_p[1])
 PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 # === /STOPNIOWANIE ===
+
+# === GRAMATYKA 2 (generowane) ===
+PARADIGMS += [
+    ('conj', 'Czas przeszły', 'puhua: perfekti (powiedziałem)', ['minä', 'sinä', 'hän', 'me', 'te', 'he'], 'olen puhunut; olet puhunut; on puhunut; olemme puhuneet; olette puhuneet; ovat puhuneet', None),
+    ('conj', 'Czas przeszły', 'mennä: imperfekti (poszedłem)', ['minä', 'sinä', 'hän', 'me', 'te', 'he'], 'menin; menit; meni; menimme; menitte; menivät', None),
+    ('conj', 'Czas przeszły', 'tulla: imperfekti (przyszedłem)', ['minä', 'sinä', 'hän', 'me', 'te', 'he'], 'tulin; tulit; tuli; tulimme; tulitte; tulivat', None),
+    ('conj', 'Czas przeszły', 'syödä: imperfekti (zjadłem)', ['minä', 'sinä', 'hän', 'me', 'te', 'he'], 'söin; söit; söi; söimme; söitte; söivät', None),
+    ('conj', 'Tryb warunkowy', 'puhua: kondicionaali', ['minä', 'sinä', 'hän', 'me', 'te', 'he'], 'puhuisin; puhuisit; puhuisi; puhuisimme; puhuisitte; puhuisivat', None),
+    ('conj', 'Tryb warunkowy', 'olla: kondicionaali', ['minä', 'sinä', 'hän', 'me', 'te', 'he'], 'olisin; olisit; olisi; olisimme; olisitte; olisivat', None),
+    ('conj', 'Tryb warunkowy', 'haluta: kondicionaali', ['minä', 'sinä', 'hän', 'me', 'te', 'he'], 'haluaisin; haluaisit; haluaisi; haluaisimme; haluaisitte; haluaisivat', 'Grzeczna prośba: Haluaisin kahvia.'),
+    ('conj', 'Wzory koniugacji', 'lukea (czytać): typ 3', ['minä', 'sinä', 'hän', 'me', 'te', 'he'], 'luen; luet; lukee; luemme; luette; lukevat', None),
+    ('conj', 'Wzory koniugacji', 'tarvita (potrzebować): typ 5', ['minä', 'sinä', 'hän', 'me', 'te', 'he'], 'tarvitsen; tarvitset; tarvitsee; tarvitsemme; tarvitsette; tarvitsevat', None),
+    ('form', 'Przypadki (10)', 'kala (ryba)', ['mianownik', 'dopełniacz', 'partitiivi', 'inessiivi (w)', 'elatiivi (z)', 'illatiivi (do)', 'adessiivi (na, u)', 'ablatiivi (od)', 'allatiivi (na, do)', 'translatiivi (w co)'], 'kala; kalan; kalaa; kalassa; kalasta; kalaan; kalalla; kalalta; kalalle; kalaksi', None),
+    ('form', 'Przypadki (10)', 'kirja (książka)', ['mianownik', 'dopełniacz', 'partitiivi', 'inessiivi (w)', 'elatiivi (z)', 'illatiivi (do)', 'adessiivi (na, u)', 'ablatiivi (od)', 'allatiivi (na, do)', 'translatiivi (w co)'], 'kirja; kirjan; kirjaa; kirjassa; kirjasta; kirjaan; kirjalla; kirjalta; kirjalle; kirjaksi', None),
+    ('form', 'Przypadki (10)', 'päivä (dzień)', ['mianownik', 'dopełniacz', 'partitiivi', 'inessiivi (w)', 'elatiivi (z)', 'illatiivi (do)', 'adessiivi (na, u)', 'ablatiivi (od)', 'allatiivi (na, do)', 'translatiivi (w co)'], 'päivä; päivän; päivää; päivässä; päivästä; päivään; päivällä; päivältä; päivälle; päiväksi', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /GRAMATYKA 2 ===

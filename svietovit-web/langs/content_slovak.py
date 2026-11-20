@@ -359,3 +359,32 @@ for _p in PARADIGMS:
         _o.append(_p[1])
 PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 # === /STOPNIOWANIE ===
+
+# === GRAMATYKA 2 (generowane) ===
+PARADIGMS += [
+    ('form', 'Czas przeszły', 'byť: minulý čas', ['já (m.)', 'já (ż.)', 'on', 'ona', 'my (m.)', 'oni (m.)'], 'bol som; bola som; bol; bola; boli sme; boli', None),
+    ('form', 'Czas przeszły', 'robiť: minulý čas', ['já (m.)', 'já (ż.)', 'on', 'ona', 'my (m.)', 'oni (m.)'], 'robil som; robila som; robil; robila; robili sme; robili', None),
+    ('form', 'Czas przeszły', 'mať: minulý čas', ['já (m.)', 'já (ż.)', 'on', 'ona', 'my (m.)', 'oni (m.)'], 'mal som; mala som; mal; mala; mali sme; mali', None),
+    ('conj', 'Czas przyszły', 'robiť: budúci čas', ['ja', 'ty', 'on / ona', 'my', 'vy', 'oni'], 'budem robiť; budeš robiť; bude robiť; budeme robiť; budete robiť; budú robiť', None),
+    ('form', 'Tryb warunkowy', 'byť: kondicionál', ['já (m.)', 'já (ż.)', 'on', 'ona', 'my (m.)', 'oni (m.)'], 'bol by som; bola by som; bol by; bola by; boli by sme; boli by', 'Grzeczna prośba: Chcel by som kávu.'),
+    ('conj', 'Czasowniki nieregularne', 'musieť (musieć)', ['ja', 'ty', 'on / ona', 'my', 'vy', 'oni'], 'musím; musíš; musí; musíme; musíte; musia', None),
+    ('form', 'Vid (aspekt)', 'vid: robić', ['nedokonavý', 'dokonavý'], 'robiť; urobiť', None),
+    ('form', 'Vid (aspekt)', 'vid: pisać', ['nedokonavý', 'dokonavý'], 'písať; napísať', None),
+    ('form', 'Vid (aspekt)', 'vid: czytać', ['nedokonavý', 'dokonavý'], 'čítať; prečítať', None),
+    ('form', 'Vid (aspekt)', 'vid: kupować', ['nedokonavý', 'dokonavý'], 'kupovať; kúpiť', None),
+    ('form', 'Vid (aspekt)', 'vid: dawać', ['nedokonavý', 'dokonavý'], 'dávať; dať', None),
+    ('form', 'Vid (aspekt)', 'vid: widzieć', ['nedokonavý', 'dokonavý'], 'vidieť; uvidieť', None),
+    ('form', 'Vid (aspekt)', 'vid: otwierać', ['nedokonavý', 'dokonavý'], 'otvárať; otvoriť', None),
+    ('form', 'Vid (aspekt)', 'vid: jeść', ['nedokonavý', 'dokonavý'], 'jesť; zjesť', None),
+    ('form', 'Vid (aspekt)', 'vid: pić', ['nedokonavý', 'dokonavý'], 'piť; vypiť', None),
+    ('form', 'Vid (aspekt)', 'vid: mówić, powiedzieć', ['nedokonavý', 'dokonavý'], 'hovoriť; povedať', None),
+    ('form', 'Vid (aspekt)', 'vid: brać', ['nedokonavý', 'dokonavý'], 'brať; vziať', None),
+    ('form', 'Vid (aspekt)', 'vid: zaczynać', ['nedokonavý', 'dokonavý'], 'začínať; začať', None),
+    ('form', 'Typowe trudności', 'Przyimek: jaki przypadek?', ['Idem do ___ (škola)', 'Som v ___ (škola)', 'Idem k ___ (kamarát)', 'Idem s ___ (kamarát)', 'Hovorím o ___ (kamarát)', 'Vidím ___ (kamarát)'], 'školy; škole; kamarátovi; kamarátom; kamarátovi; kamaráta', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /GRAMATYKA 2 ===

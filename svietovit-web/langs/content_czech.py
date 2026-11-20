@@ -361,3 +361,35 @@ for _p in PARADIGMS:
         _o.append(_p[1])
 PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 # === /STOPNIOWANIE ===
+
+# === GRAMATYKA 2 (generowane) ===
+PARADIGMS += [
+    ('form', 'Czas przeszły', 'být: minulý čas', ['já (m.)', 'já (ż.)', 'on', 'ona', 'my (m.)', 'oni (m.)'], 'byl jsem; byla jsem; byl; byla; byli jsme; byli', 'W 3. osobie nie ma „jsem, jsi”: on byl, ona byla.'),
+    ('form', 'Czas przeszły', 'dělat: minulý čas', ['já (m.)', 'já (ż.)', 'on', 'ona', 'my (m.)', 'oni (m.)'], 'dělal jsem; dělala jsem; dělal; dělala; dělali jsme; dělali', None),
+    ('form', 'Czas przeszły', 'mít: minulý čas', ['já (m.)', 'já (ż.)', 'on', 'ona', 'my (m.)', 'oni (m.)'], 'měl jsem; měla jsem; měl; měla; měli jsme; měli', None),
+    ('form', 'Czas przeszły', 'jít: minulý čas', ['já (m.)', 'já (ż.)', 'on', 'ona', 'my (m.)', 'oni (m.)'], 'šel jsem; šla jsem; šel; šla; šli jsme; šli', None),
+    ('conj', 'Czas przyszły', 'dělat: budoucí čas', ['já', 'ty', 'on / ona', 'my', 'vy', 'oni'], 'budu dělat; budeš dělat; bude dělat; budeme dělat; budete dělat; budou dělat', None),
+    ('form', 'Tryb warunkowy', 'být: kondicionál', ['já (m.)', 'já (ż.)', 'on', 'ona', 'my (m.)', 'oni (m.)'], 'byl bych; byla bych; byl by; byla by; byli bychom; byli by', None),
+    ('form', 'Tryb warunkowy', 'chtít: kondicionál', ['já (m.)', 'já (ż.)', 'on', 'ona', 'my (m.)', 'oni (m.)'], 'chtěl bych; chtěla bych; chtěl by; chtěla by; chtěli bychom; chtěli by', 'Grzeczna prośba: Chtěl bych kávu.'),
+    ('conj', 'Czasowniki nieregularne', 'moct (móc)', ['já', 'ty', 'on / ona', 'my', 'vy', 'oni'], 'můžu; můžeš; může; můžeme; můžete; můžou', None),
+    ('conj', 'Czasowniki nieregularne', 'muset (musieć)', ['já', 'ty', 'on / ona', 'my', 'vy', 'oni'], 'musím; musíš; musí; musíme; musíte; musí', None),
+    ('form', 'Vid (aspekt)', 'vid: robić', ['nedokonavý', 'dokonavý'], 'dělat; udělat', 'Podobnie jak po polsku: dokonavý opisuje zakończony wynik.'),
+    ('form', 'Vid (aspekt)', 'vid: pisać', ['nedokonavý', 'dokonavý'], 'psát; napsat', None),
+    ('form', 'Vid (aspekt)', 'vid: czytać', ['nedokonavý', 'dokonavý'], 'číst; přečíst', None),
+    ('form', 'Vid (aspekt)', 'vid: kupować', ['nedokonavý', 'dokonavý'], 'kupovat; koupit', None),
+    ('form', 'Vid (aspekt)', 'vid: dawać', ['nedokonavý', 'dokonavý'], 'dávat; dát', None),
+    ('form', 'Vid (aspekt)', 'vid: widzieć', ['nedokonavý', 'dokonavý'], 'vidět; uvidět', None),
+    ('form', 'Vid (aspekt)', 'vid: otwierać', ['nedokonavý', 'dokonavý'], 'otevírat; otevřít', None),
+    ('form', 'Vid (aspekt)', 'vid: jeść', ['nedokonavý', 'dokonavý'], 'jíst; sníst', None),
+    ('form', 'Vid (aspekt)', 'vid: pić', ['nedokonavý', 'dokonavý'], 'pít; vypít', None),
+    ('form', 'Vid (aspekt)', 'vid: mówić, powiedzieć', ['nedokonavý', 'dokonavý'], 'říkat; říct', None),
+    ('form', 'Vid (aspekt)', 'vid: brać', ['nedokonavý', 'dokonavý'], 'brát; vzít', None),
+    ('form', 'Vid (aspekt)', 'vid: zaczynać', ['nedokonavý', 'dokonavý'], 'začínat; začít', None),
+    ('form', 'Typowe trudności', 'Przyimek: jaki przypadek?', ['Jdu do ___ (škola)', 'Jsem ve ___ (škola)', 'Jdu ke ___ (kamarád)', 'Jedu s ___ (kamarád)', 'Mluvím o ___ (kamarád)', 'Vidím ___ (kamarád)'], 'školy; škole; kamarádovi; kamarádem; kamarádovi; kamaráda', 'Po polsku podobnie: do + dopełniacz, w + miejscownik, k + celownik, s + narzędnik.'),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /GRAMATYKA 2 ===

@@ -336,3 +336,18 @@ for _p in PARADIGMS:
         _o.append(_p[1])
 PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 # === /STOPNIOWANIE ===
+
+# === GRAMATYKA 2 (generowane) ===
+PARADIGMS += [
+    ('conj', 'Wzory koniugacji', 'minema: lihtminevik (poszedłem)', ['mina', 'sina', 'tema', 'meie', 'teie', 'nemad'], 'läksin; läksid; läks; läksime; läksite; läksid', None),
+    ('conj', 'Wzory koniugacji', 'tegema: lihtminevik (zrobiłem)', ['mina', 'sina', 'tema', 'meie', 'teie', 'nemad'], 'tegin; tegid; tegi; tegime; tegite; tegid', None),
+    ('conj', 'Wzory koniugacji', 'oskama (umieć)', ['mina', 'sina', 'tema', 'meie', 'teie', 'nemad'], 'oskan; oskad; oskab; oskame; oskate; oskavad', None),
+    ('conj', 'Tryb warunkowy', 'tahtma: konditsionaal', ['mina', 'sina', 'tema', 'meie', 'teie', 'nemad'], 'tahaksin; tahaksid; tahaks; tahaksime; tahaksite; tahaksid', 'Grzeczna prośba: Ma tahaksin kohvi.'),
+    ('form', 'Przypadki (10)', 'auto (samochód)', ['nimetav', 'omastav', 'osastav', 'seesütlev (w)', 'seestütlev (z)', 'sisseütlev (do)', 'alalütlev (na)', 'alaltütlev (z)', 'allaütlev (na, do)', 'saav (w co)'], 'auto; auto; autot; autos; autost; autosse; autol; autolt; autole; autoks', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /GRAMATYKA 2 ===

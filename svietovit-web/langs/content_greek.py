@@ -380,3 +380,31 @@ for _p in PARADIGMS:
         _o.append(_p[1])
 PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 # === /STOPNIOWANIE ===
+
+# === GRAMATYKA 2 (generowane) ===
+PARADIGMS += [
+    ('conj', 'Czas przeszły', 'πηγαίνω: αόριστος (poszedłem)', ['εγώ', 'εσύ', 'αυτός / αυτή', 'εμείς', 'εσείς', 'αυτοί'], 'πήγα; πήγες; πήγε; πήγαμε; πήγατε; πήγαν', None),
+    ('conj', 'Czas przeszły', 'λέω: αόριστος (powiedziałem)', ['εγώ', 'εσύ', 'αυτός / αυτή', 'εμείς', 'εσείς', 'αυτοί'], 'είπα; είπες; είπε; είπαμε; είπατε; είπαν', None),
+    ('conj', 'Czas przeszły', 'τρώω: αόριστος (zjadłem)', ['εγώ', 'εσύ', 'αυτός / αυτή', 'εμείς', 'εσείς', 'αυτοί'], 'έφαγα; έφαγες; έφαγε; φάγαμε; φάγατε; έφαγαν', None),
+    ('conj', 'Czas przeszły', 'μιλώ: παρατατικός (mówiłem, trwało)', ['εγώ', 'εσύ', 'αυτός / αυτή', 'εμείς', 'εσείς', 'αυτοί'], 'μιλούσα; μιλούσες; μιλούσε; μιλούσαμε; μιλούσατε; μιλούσαν', 'Aoryst: czynność zakończona. Paratatikos: czynność trwała lub się powtarzała.'),
+    ('conj', 'Czas przyszły', 'μιλώ: μέλλοντας (będę mówić)', ['εγώ', 'εσύ', 'αυτός / αυτή', 'εμείς', 'εσείς', 'αυτοί'], 'θα μιλήσω; θα μιλήσεις; θα μιλήσει; θα μιλήσουμε; θα μιλήσετε; θα μιλήσουν', 'Przyszłość = θα + forma teraźniejsza lub dokonana.'),
+    ('conj', 'Czas przyszły', 'είμαι: μέλλοντας', ['εγώ', 'εσύ', 'αυτός / αυτή', 'εμείς', 'εσείς', 'αυτοί'], 'θα είμαι; θα είσαι; θα είναι; θα είμαστε; θα είστε; θα είναι', None),
+    ('conj', 'Strona bierna i dopełniająca', 'έρχομαι (przychodzić): strona bierna', ['εγώ', 'εσύ', 'αυτός / αυτή', 'εμείς', 'εσείς', 'αυτοί'], 'έρχομαι; έρχεσαι; έρχεται; ερχόμαστε; έρχεστε; έρχονται', 'Wiele greckich czasowników występuje tylko w formie na -μαι, choć znaczą czynność.'),
+    ('conj', 'Strona bierna i dopełniająca', 'κάθομαι (siedzieć)', ['εγώ', 'εσύ', 'αυτός / αυτή', 'εμείς', 'εσείς', 'αυτοί'], 'κάθομαι; κάθεσαι; κάθεται; καθόμαστε; κάθεστε; κάθονται', None),
+    ('conj', 'Strona bierna i dopełniająca', 'σκέφτομαι (myśleć)', ['εγώ', 'εσύ', 'αυτός / αυτή', 'εμείς', 'εσείς', 'αυτοί'], 'σκέφτομαι; σκέφτεσαι; σκέφτεται; σκεφτόμαστε; σκέφτεστε; σκέφτονται', None),
+    ('form', 'Rodzajniki', 'rodzajnik określony: mianownik', ['r. męski l. poj.', 'r. żeński l. poj.', 'r. nijaki l. poj.', 'r. męski l. mn.', 'r. żeński l. mn.', 'r. nijaki l. mn.'], 'ο; η; το; οι; οι; τα', None),
+    ('form', 'Rodzajniki', 'rodzajnik określony: biernik', ['r. męski l. poj.', 'r. żeński l. poj.', 'r. nijaki l. poj.', 'r. męski l. mn.', 'r. żeński l. mn.', 'r. nijaki l. mn.'], 'τον; την; το; τους; τις; τα', None),
+    ('form', 'Rodzajniki', 'rodzajnik określony: dopełniacz', ['r. męski l. poj.', 'r. żeński l. poj.', 'r. nijaki l. poj.', 'r. męski l. mn.', 'r. żeński l. mn.', 'r. nijaki l. mn.'], 'του; της; του; των; των; των', None),
+    ('form', 'Rodzajniki', 'rodzajnik nieokreślony', ['r. męski', 'r. żeński', 'r. nijaki'], 'ένας; μία; ένα', None),
+    ('form', 'Przymiotniki i liczebniki', 'νέος (nowy, młody)', ['r. męski', 'r. żeński', 'r. nijaki'], 'νέος; νέα; νέο', None),
+    ('form', 'Przymiotniki i liczebniki', 'ωραίος (piękny)', ['r. męski', 'r. żeński', 'r. nijaki'], 'ωραίος; ωραία; ωραίο', None),
+    ('form', 'Przymiotniki i liczebniki', 'πολύς (dużo)', ['r. męski', 'r. żeński', 'r. nijaki'], 'πολύς; πολλή; πολύ', None),
+    ('form', 'Przymiotniki i liczebniki', 'τρεις (trzy)', ['r. męski', 'r. żeński', 'r. nijaki'], 'τρεις; τρεις; τρία', None),
+    ('form', 'Zaimki', 'zaimek dzierżawczy (słaby): μου, σου…', ['mój', 'twój', 'jego', 'jej', 'nasz', 'wasz'], 'μου; σου; του; της; μας; σας', 'Stoi po rzeczowniku: το σπίτι μου.'),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /GRAMATYKA 2 ===
