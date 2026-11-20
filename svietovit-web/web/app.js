@@ -248,7 +248,7 @@ const rtl = () => (cur.cid === "abba");
 /* ---------------- ekran główny (arka) ---------------- */
 function showHub() {
   cur.cid = null; document.body.classList.remove("rtl-course"); SOUND_ON = true;
-  const cards = META.map(m => {
+  const cards = META.filter(m => m.id === "polish" ? LANG === "en" : m.id === "english" ? LANG === "pl" : true).map(m => {
     const pr = J(B.course_progress(m.id, store.get(SAVE_PREFIX + m.id, "")));
     const info = pr.xp ? `${pr.xp} ${t("xp")} · ${"●".repeat(Math.min(pr.crowns, 5))}${pr.crowns > 5 ? "+" + (pr.crowns - 5) : ""}` : t("new");
     return h("button", { class: "cc", onclick: () => enterCourse(m.id) },
