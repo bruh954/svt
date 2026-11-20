@@ -367,3 +367,16 @@ for _p in PARADIGMS:
         _o.append(_p[1])
 PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 # === /PRONOUNS ===
+
+# === STOPNIOWANIE (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('form', 'Stopniowanie', 'mauvais (zły)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'mauvais; pire; le pire', 'Obok też plus mauvais.'),
+    ('form', 'Stopniowanie', 'bien (dobrze)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'bien; mieux; le mieux', 'Przysłówek: nieregularny.'),
+    ('form', 'Stopniowanie', 'rapide (szybki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'rapide; plus rapide; le plus rapide', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /STOPNIOWANIE ===

@@ -364,3 +364,19 @@ PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 
 # Pełne tłumaczenia zdań z ćwiczeń „Uzupełnij końcówkę” (gdy nie ma ich wśród zdań kursu)
 ENDINGS_PL = {'εγώ θέλω καφέ': 'Chcę kawę.'}
+
+# === STOPNIOWANIE (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('form', 'Stopniowanie', 'καλός (dobry)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'καλός; καλύτερος; ο καλύτερος', 'Najwyższy: rodzajnik + stopień wyższy.'),
+    ('form', 'Stopniowanie', 'μεγάλος (duży)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'μεγάλος; μεγαλύτερος; ο μεγαλύτερος', None),
+    ('form', 'Stopniowanie', 'μικρός (mały)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'μικρός; μικρότερος; ο μικρότερος', None),
+    ('form', 'Stopniowanie', 'όμορφος (piękny)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'όμορφος; ομορφότερος; ο ομορφότερος', None),
+    ('form', 'Stopniowanie', 'παλιός (stary)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'παλιός; παλιότερος; ο παλιότερος', None),
+    ('form', 'Stopniowanie', 'ψηλός (wysoki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'ψηλός; ψηλότερος; ο ψηλότερος', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /STOPNIOWANIE ===

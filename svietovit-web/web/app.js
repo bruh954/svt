@@ -41,7 +41,7 @@ const TX = {
     chat_unlocked: "Odblokowano rozmowę", back_home: "Wróć", chat_done: "Rozmowa ukończona!", back_chats: "Wróć do rozmów",
     again: "Jeszcze raz", tap_tr: "Dotknij wiadomości, żeby zobaczyć tłumaczenie.", pick_answer: "Wybierz odpowiedź", say: "Powiedz:",
     send: "Wyślij", practice_t: "Powtórka", practice_d: "Mieszane ćwiczenia ze słów, które już znasz. Odzyskujesz serce.",
-    parts: "Składa się z:", gr_peek: "Pokaż tabelę", gr_peek_hide: "Schowaj tabelę", larps_tab: "Larpy", larp_round_d: "Kelner czeka na odpowiedź. Najpierw przećwicz, co powiesz (około 10 ćwiczeń).", larp_round_go: "Ćwicz",  larp_skip: "Odpowiadam od razu", larp_r_great: "Kelner kiwa głową: świetnie ci poszło.", larp_r_ok: "Kelner unosi brew, ale cię rozumie.", larp_r_bad: "Kelner marszczy brwi: prawie nic nie zrozumiał.", demon_warn: "Uwaga: to zdanie może wezwać demona.", demon_t: "Wezwałeś demona!", demon_d: "Zdanie okazało się zaklęciem. Demon pojawił się w środku lekcji i przerwał serię. Co zdążyłeś zrobić, zaliczone.", demon_ok: "Uciekam", larp_level: "Poziom", larp_lv_1: "Układasz zdania z klocków", larp_lv_2: "Klocki, więcej pułapek", larp_lv_3: "Część odpowiedzi piszesz z klawiatury", larp_lv_4: "Prawie wszystko piszesz sam", larp_lv_5: "Wszystko z klawiatury, bez podpowiedzi", larp_lex_t: "Słowa na ten poziom", larp_lex_d: "Poznaj je przed wejściem do sceny. Dotknij 🔊, żeby usłyszeć.", larp_lex_go: "Wchodzę", larp_type_d: "Wpisz odpowiedź z klawiatury.", larp_next_level: "Poziom", sound_t: "Trening dźwięków", sound_t_h: "Trening tonów", sound_d: "Samo słuchanie i rozpoznawanie.",
+    parts: "Składa się z:", weak_t: "Warto jeszcze poćwiczyć", weak_gram: "Pomyliły Ci się formy gramatyczne. W zakładce Gramatyka przećwiczysz całe odmiany.", weak_gram_btn: "Otwórz Gramatykę", weak_words: "Słówka do powtórki:", weak_sent: "Zdania z błędami wrócą w powtórce.", weak_words_btn: "Powtórka teraz", gr_peek: "Pokaż tabelę", gr_peek_hide: "Schowaj tabelę", larps_tab: "Larpy", larp_round_d: "Kelner czeka na odpowiedź. Najpierw przećwicz, co powiesz (około 10 ćwiczeń).", larp_round_go: "Ćwicz",  larp_skip: "Odpowiadam od razu", larp_r_great: "Kelner kiwa głową: świetnie ci poszło.", larp_r_ok: "Kelner unosi brew, ale cię rozumie.", larp_r_bad: "Kelner marszczy brwi: prawie nic nie zrozumiał.", demon_warn: "Uwaga: to zdanie może wezwać demona.", demon_t: "Wezwałeś demona!", demon_d: "Zdanie okazało się zaklęciem. Demon pojawił się w środku lekcji i przerwał serię. Co zdążyłeś zrobić, zaliczone.", demon_ok: "Uciekam", larp_level: "Poziom", larp_lv_1: "Układasz zdania z klocków", larp_lv_2: "Klocki, więcej pułapek", larp_lv_3: "Część odpowiedzi piszesz z klawiatury", larp_lv_4: "Prawie wszystko piszesz sam", larp_lv_5: "Wszystko z klawiatury, bez podpowiedzi", larp_lex_t: "Słowa na ten poziom", larp_lex_d: "Poznaj je przed wejściem do sceny. Dotknij 🔊, żeby usłyszeć.", larp_lex_go: "Wchodzę", larp_type_d: "Wpisz odpowiedź z klawiatury.", larp_next_level: "Poziom", sound_t: "Trening dźwięków", sound_t_h: "Trening tonów", sound_d: "Samo słuchanie i rozpoznawanie.",
     stats: "Statystyki", level: "Poziom", xp_total: "XP łącznie", best_streak: "Najdłuższa seria", words: "Poznane słowa", lessons: "Lekcje",
     week: "Ostatnie 7 dni", daily_goal: "Cel dzienny", settings: "Ustawienia", pron: "Pokazuj wymowę", sound: "Dźwięki", voice: "Czytaj na głos",
     shop: "Sklep", freeze: "Zamrożenie serii", refill_hearts: "Uzupełnij serca", gems: "klejnoty", reset: "Zeruj postęp w tym kursie",
@@ -71,7 +71,7 @@ const TX = {
     chat_unlocked: "Unlocked conversation", back_home: "Back", chat_done: "Conversation complete!", back_chats: "Back to chats",
     again: "Again", tap_tr: "Tap a message to see its translation.", pick_answer: "Choose a reply", say: "Say:",
     send: "Send", practice_t: "Practice", practice_d: "Mixed exercises from words you already know. Earns a heart back.",
-    parts: "Built from:", gr_peek: "Show the table", gr_peek_hide: "Hide the table", larps_tab: "Role-plays", larp_round_d: "The waiter is waiting. First practise what you will say (about 10 exercises).", larp_round_go: "Practise", larp_skip: "Answer right away", larp_r_great: "The waiter nods: well done.", larp_r_ok: "The waiter raises an eyebrow but understands.", larp_r_bad: "The waiter frowns: he barely understood.", demon_warn: "Warning: this sentence may summon a demon.", demon_t: "You summoned a demon!", demon_d: "The sentence turned out to be a spell. A demon appeared mid-lesson and cut the series short. What you finished still counts.", demon_ok: "Run away", larp_level: "Level", larp_lv_1: "Build sentences from tiles", larp_lv_2: "Tiles, more traps", larp_lv_3: "Some answers typed on the keyboard", larp_lv_4: "You type almost everything", larp_lv_5: "All typed, no hints", larp_lex_t: "Words for this level", larp_lex_d: "Meet them before entering the scene. Tap 🔊 to listen.", larp_lex_go: "Enter", larp_type_d: "Type your answer on the keyboard.", larp_next_level: "Level", sound_t: "Sound training", sound_t_h: "Tone training", sound_d: "Just listening and recognising.",
+    parts: "Built from:", weak_t: "Worth practising", weak_gram: "Some grammar forms slipped. The Grammar tab lets you drill the whole paradigm.", weak_gram_btn: "Open Grammar", weak_words: "Words to review:", weak_sent: "Sentences with mistakes will come back in practice.", weak_words_btn: "Practise now", gr_peek: "Show the table", gr_peek_hide: "Hide the table", larps_tab: "Role-plays", larp_round_d: "The waiter is waiting. First practise what you will say (about 10 exercises).", larp_round_go: "Practise", larp_skip: "Answer right away", larp_r_great: "The waiter nods: well done.", larp_r_ok: "The waiter raises an eyebrow but understands.", larp_r_bad: "The waiter frowns: he barely understood.", demon_warn: "Warning: this sentence may summon a demon.", demon_t: "You summoned a demon!", demon_d: "The sentence turned out to be a spell. A demon appeared mid-lesson and cut the series short. What you finished still counts.", demon_ok: "Run away", larp_level: "Level", larp_lv_1: "Build sentences from tiles", larp_lv_2: "Tiles, more traps", larp_lv_3: "Some answers typed on the keyboard", larp_lv_4: "You type almost everything", larp_lv_5: "All typed, no hints", larp_lex_t: "Words for this level", larp_lex_d: "Meet them before entering the scene. Tap 🔊 to listen.", larp_lex_go: "Enter", larp_type_d: "Type your answer on the keyboard.", larp_next_level: "Level", sound_t: "Sound training", sound_t_h: "Tone training", sound_d: "Just listening and recognising.",
     stats: "Stats", level: "Level", xp_total: "Total XP", best_streak: "Best streak", words: "Words learned", lessons: "Lessons",
     week: "Last 7 days", daily_goal: "Daily goal", settings: "Settings", pron: "Show pronunciation", sound: "Sounds", voice: "Read aloud",
     shop: "Shop", freeze: "Streak freeze", refill_hearts: "Refill hearts", gems: "gems", reset: "Reset progress in this course",
@@ -681,6 +681,9 @@ function finishSession() {
     ev.streak_extended ? h("div", { style: "color:#9E2B25;font-weight:700" }, "☀ " + t("streak_days", ev.streak)) : null,
     ev.heart_back ? h("div", { style: "color:var(--red)" }, "♥ +1") : null,
     ...names.map(n => h("div", { class: "card" }, "🔓 " + t("unlocked") + ": ", h("b", {}, n))),
+    ev.weak ? h("div", { class: "card", style: "text-align:left" }, h("b", {}, t("weak_t")),
+      ev.weak.grammar && (H.paradigms || []).length ? h("div", { style: "margin:8px 0" }, h("div", { class: "sub" }, t("weak_gram")), h("button", { class: "btn ghost", onclick: () => { cur.tab = "grammar"; renderHome(); } }, t("weak_gram_btn"))) : null,
+      ev.weak.words.length || ev.weak.sentences ? h("div", { style: "margin:8px 0" }, h("div", { class: "sub", dir: "auto" }, ev.weak.words.length ? t("weak_words") + " " + ev.weak.words.join(", ") : t("weak_sent")), h("button", { class: "btn ghost", onclick: () => startSession("practice") }, t("weak_words_btn"))) : null) : null,
     ...(ev.chats || []).map(n => h("div", { class: "card" }, "✉ " + t("chat_unlocked") + ": ", h("b", {}, n))),
     adSlot(CFG.ads && CFG.ads.slotResult),
     h("button", { class: "btn", onclick: () => { cur.tab = "path"; renderHome(); } }, t("back_home"))), "course");
@@ -763,6 +766,47 @@ function colorTree(root) {
 new MutationObserver((muts) => {
   if (!toneOn()) return;
   for (const m of muts) m.addedNodes.forEach(colorTree);
+}).observe(document.getElementById("app"), { childList: true, subtree: true });
+
+/* ---------------- niemiecki: rodzajniki i rzeczowniki w kolorze rodzaju (der / die / das) ---------------- */
+const GENDER_COURSES = ["german"];
+const genderState = { cid: null, map: null };
+const WORD_RE = /[A-Za-zÄÖÜäöüß]+/g;
+function genderOn() { return GENDER_COURSES.includes(cur.cid) && cur.home; }
+function genderMap() {
+  if (genderState.cid !== cur.cid) {
+    try { genderState.map = J(B.gender_map()); } catch (e) { genderState.map = {}; }
+    genderState.cid = cur.cid;
+  }
+  return genderState.map;
+}
+function colorGenderText(node) {
+  const txt = node.nodeValue; if (!txt || !/[A-Za-zÄÖÜäöüß]/.test(txt)) return;
+  const par = node.parentNode; if (!par || (par.classList && (par.classList.contains("gw") || par.classList.contains("gn"))) || /^(TEXTAREA|INPUT|SCRIPT|STYLE)$/.test(par.nodeName)) return;
+  const map = genderMap(); let last = 0, any = false, m; const wrap = document.createElement("span"); wrap.className = "gw";
+  WORD_RE.lastIndex = 0;
+  while ((m = WORD_RE.exec(txt))) {
+    const w = m[0], lw = w.toLowerCase();
+    const g = (lw === "der" || lw === "die" || lw === "das") ? map[lw] : map[w];
+    if (!g) continue;
+    if (m.index > last) wrap.append(txt.slice(last, m.index));
+    const sp = document.createElement("span"); sp.className = "gn g" + g; sp.textContent = w; wrap.append(sp);
+    last = m.index + w.length; any = true;
+  }
+  if (!any) return;
+  if (last < txt.length) wrap.append(txt.slice(last));
+  par.replaceChild(wrap, node);
+}
+function colorGenderTree(root) {
+  if (root.nodeType === 3) return colorGenderText(root);
+  if (root.nodeType !== 1 || root.classList.contains("gw")) return;
+  const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT), list = []; let n;
+  while ((n = w.nextNode())) list.push(n);
+  list.forEach(colorGenderText);
+}
+new MutationObserver((muts) => {
+  if (!genderOn()) return;
+  for (const m of muts) m.addedNodes.forEach(colorGenderTree);
 }).observe(document.getElementById("app"), { childList: true, subtree: true });
 
 /* ---------------- larpy: sceny ze stawką ---------------- */

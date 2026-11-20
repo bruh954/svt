@@ -331,3 +331,20 @@ PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 
 # Pełne tłumaczenia zdań z ćwiczeń „Uzupełnij końcówkę” (gdy nie ma ich wśród zdań kursu)
 ENDINGS_PL = {'þú ert bóndi': 'Jesteś rolnikiem.', 'systir mín er lítil': 'Moja siostra jest mała.', 'móðir mín er góð': 'Moja matka jest dobra.', 'þú átt systur': 'Masz siostrę.', 'þú vilt mjǫð': 'Chcesz miodu.'}
+
+# === STOPNIOWANIE (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('form', 'Stopniowanie', 'góðr (dobry)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'góðr; betri; beztr', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'mikill (wielki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'mikill; meiri; mestr', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'lítill (mały)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'lítill; minni; minstr', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'illr (zły)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'illr; verri; verstr', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'gamall (stary)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'gamall; ellri; elztr', 'Umlaut i zmiana tematu.'),
+    ('form', 'Stopniowanie', 'langr (długi)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'langr; lengri; lengstr', 'Umlaut: a → e.'),
+    ('form', 'Stopniowanie', 'hár (wysoki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'hár; hærri; hæstr', 'Umlaut: á → æ.'),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /STOPNIOWANIE ===

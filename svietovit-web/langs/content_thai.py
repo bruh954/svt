@@ -275,3 +275,19 @@ LARPS = []
 
 # Pełne tłumaczenia zdań z ćwiczeń „Uzupełnij końcówkę” (gdy nie ma ich wśród zdań kursu)
 ENDINGS_PL = {'ผมไม่เป็นครู': 'Nie jestem nauczycielem.', 'คุณอยากกินข้าวไหม': 'Chcesz zjeść ryż?'}
+
+# === STOPNIOWANIE (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('form', 'Stopniowanie', 'ดี (dobry)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'ดี; ดีกว่า; ดีที่สุด', 'Wyższy: słowo + กว่า, najwyższy: słowo + ที่สุด.'),
+    ('form', 'Stopniowanie', 'ใหญ่ (duży)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'ใหญ่; ใหญ่กว่า; ใหญ่ที่สุด', None),
+    ('form', 'Stopniowanie', 'เล็ก (mały)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'เล็ก; เล็กกว่า; เล็กที่สุด', None),
+    ('form', 'Stopniowanie', 'แพง (drogi)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'แพง; แพงกว่า; แพงที่สุด', None),
+    ('form', 'Stopniowanie', 'ถูก (tani)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'ถูก; ถูกกว่า; ถูกที่สุด', None),
+    ('form', 'Stopniowanie', 'สูง (wysoki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'สูง; สูงกว่า; สูงที่สุด', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /STOPNIOWANIE ===

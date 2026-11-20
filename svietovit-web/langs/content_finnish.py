@@ -320,3 +320,20 @@ for _p in PARADIGMS:
         _o.append(_p[1])
 PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 # === /PRONOUNS ===
+
+# === STOPNIOWANIE (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('form', 'Stopniowanie', 'hyvä (dobry)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'hyvä; parempi; paras', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'suuri (duży)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'suuri; suurempi; suurin', None),
+    ('form', 'Stopniowanie', 'pieni (mały)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'pieni; pienempi; pienin', None),
+    ('form', 'Stopniowanie', 'vanha (stary)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'vanha; vanhempi; vanhin', None),
+    ('form', 'Stopniowanie', 'kaunis (piękny)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'kaunis; kauniimpi; kaunein', 'Temat kauniin- przed -mpi.'),
+    ('form', 'Stopniowanie', 'nopea (szybki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'nopea; nopeampi; nopein', None),
+    ('form', 'Stopniowanie', 'korkea (wysoki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'korkea; korkeampi; korkein', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /STOPNIOWANIE ===

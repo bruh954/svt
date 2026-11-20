@@ -347,3 +347,17 @@ PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 
 # Pełne tłumaczenia zdań z ćwiczeń „Uzupełnij końcówkę” (gdy nie ma ich wśród zdań kursu)
 ENDINGS_PL = {'tienes una hermana': 'Masz siostrę.', 'yo quiero agua': 'Chcę wody.', 'tú quieres agua': 'Chcesz wody.', 'soy de Polonia': 'Jestem z Polski.'}
+
+# === STOPNIOWANIE (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('form', 'Stopniowanie', 'malo (zły)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'malo; peor; el peor', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'alto (wysoki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'alto; más alto; el más alto', None),
+    ('form', 'Stopniowanie', 'bonito (ładny)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'bonito; más bonito; el más bonito', None),
+    ('form', 'Stopniowanie', 'rápido (szybki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'rápido; más rápido; el más rápido', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /STOPNIOWANIE ===

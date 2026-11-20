@@ -352,3 +352,18 @@ PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 
 # Pełne tłumaczenia zdań z ćwiczeń „Uzupełnij końcówkę” (gdy nie ma ich wśród zdań kursu)
 ENDINGS_PL = {'hai una sorella': 'Masz siostrę.', 'vorrei un tè': 'Poproszę herbatę.', 'sono di Polonia': 'Jestem z Polski.'}
+
+# === STOPNIOWANIE (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('form', 'Stopniowanie', 'buono (dobry)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'buono; migliore; il migliore', 'Nieregularne; też più buono.'),
+    ('form', 'Stopniowanie', 'bello (piękny)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'bello; più bello; il più bello', None),
+    ('form', 'Stopniowanie', 'alto (wysoki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'alto; più alto; il più alto', None),
+    ('form', 'Stopniowanie', 'bene (dobrze)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'bene; meglio; il meglio', 'Przysłówek: nieregularny.'),
+    ('form', 'Stopniowanie', 'veloce (szybki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'veloce; più veloce; il più veloce', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /STOPNIOWANIE ===

@@ -344,3 +344,20 @@ PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 
 # Pełne tłumaczenia zdań z ćwiczeń „Uzupełnij końcówkę” (gdy nie ma ich wśród zdań kursu)
 ENDINGS_PL = {'můj bratr': 'mój brat', 'moje sestra': 'moja siostra', 'jsem z Polska': 'Jestem z Polski.'}
+
+# === STOPNIOWANIE (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('form', 'Stopniowanie', 'dobrý (dobry)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'dobrý; lepší; nejlepší', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'velký (duży)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'velký; větší; největší', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'malý (mały)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'malý; menší; nejmenší', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'špatný (zły)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'špatný; horší; nejhorší', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'vysoký (wysoki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'vysoký; vyšší; nejvyšší', None),
+    ('form', 'Stopniowanie', 'krásný (piękny)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'krásný; krásnější; nejkrásnější', 'Regularne: -ější.'),
+    ('form', 'Stopniowanie', 'starý (stary)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'starý; starší; nejstarší', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /STOPNIOWANIE ===

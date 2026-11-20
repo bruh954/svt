@@ -331,3 +331,20 @@ PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 
 # Pełne tłumaczenia zdań z ćwiczeń „Uzupełnij końcówkę” (gdy nie ma ich wśród zdań kursu)
 ENDINGS_PL = {'kava stane dva evra': 'Kawa kosztuje dwa euro.'}
+
+# === STOPNIOWANIE (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('form', 'Stopniowanie', 'dober (dobry)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'dober; boljši; najboljši', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'velik (duży)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'velik; večji; največji', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'majhen (mały)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'majhen; manjši; najmanjši', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'slab (zły)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'slab; slabši; najslabši', None),
+    ('form', 'Stopniowanie', 'visok (wysoki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'visok; višji; najvišji', None),
+    ('form', 'Stopniowanie', 'lep (piękny)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'lep; lepši; najlepši', None),
+    ('form', 'Stopniowanie', 'star (stary)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'star; starejši; najstarejši', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /STOPNIOWANIE ===

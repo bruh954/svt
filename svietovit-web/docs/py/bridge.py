@@ -336,6 +336,16 @@ def reset_progress():
 # ---------------------------------------------------------------------------
 # Sesje
 # ---------------------------------------------------------------------------
+def gender_map():
+    """Kolory rodzajników: der = 1, die = 2, das = 3 (niemiecki); rzeczowniki dostają kolor swojego rodzaju."""
+    C = _cur["C"]
+    m = {"der": 1, "die": 2, "das": 3}
+    for noun, art in getattr(C, "ARTICLES", {}).items():
+        if art in m:
+            m[noun] = m[art]
+    return json.dumps(m, ensure_ascii=False)
+
+
 def _larp_round_exs(rng):
     """Seria ćwiczeń (jak w zwykłej lekcji) z tematu bieżącej kwestii larpa: karty nowych słów + ok. 10 ćwiczeń."""
     E, st = _cur["E"], _cur["state"]
@@ -367,7 +377,7 @@ def _larp_round_exs(rng):
     while len(graded) < 10 and pool:
         h = pool[i % len(pool)]; i += 1
         r = rng.random()
-        if r < typed_p:
+        if r < typed_p and h not in getattr(_cur["C"], "NOTYPE", ()):
             graded.append(gen.typing(h))
         elif bq and r < typed_p + 0.4:
             toks, pl, tr = bq.pop()
@@ -407,6 +417,7 @@ def _larp_round_finish():
 
 def start(kind, unit=None):
     E, st = _cur["E"], _cur["state"]
+    _cur["miss"] = {"grammar": 0, "words": {}, "sentences": 0}
     rng = random.Random()
     if kind == "larp":
         exs = _larp_round_exs(rng)
@@ -506,7 +517,7 @@ def current():
     return json.dumps({"ex": _render(s.current), **_progress()}, ensure_ascii=False)
 
 
-def check(payload_json):
+def _check_raw(payload_json):
     """Sprawdza odpowiedź na bieżące ćwiczenie. Nie zmienia sesji (to robi `advance`)."""
     E = _cur["E"]
     s = _cur["session"]
@@ -569,6 +580,26 @@ def check(payload_json):
                       ensure_ascii=False)
 
 
+def check(payload_json):
+    """Sprawdza odpowiedź i zapamiętuje, co poszło źle (gramatyka, słówka, zdania) do podpowiedzi na ekranie wyniku."""
+    out = _check_raw(payload_json)
+    try:
+        r = json.loads(out)
+        if r.get("ok") is False:
+            ex = _cur["session"].current
+            miss = _cur.setdefault("miss", {"grammar": 0, "words": {}, "sentences": 0})
+            t, mode = ex["type"], ex.get("mode")
+            if t == "choice" and mode == "cloze":
+                miss["grammar"] += 1
+            elif t == "build" or (t == "choice" and mode == "sentence"):
+                miss["sentences"] += 1
+            elif ex.get("word"):
+                miss["words"][ex["word"]] = miss["words"].get(ex["word"], 0) + 1
+    except Exception:
+        pass
+    return out
+
+
 def advance(ok):
     """Zalicza odpowiedź (True / False / None dla kart bez oceny), zwraca stan po niej."""
     s, st = _cur["session"], _cur["state"]
@@ -592,6 +623,15 @@ def finish():
     if _cur.get("kind") == "larp":
         return _larp_round_finish()
     ev = st.finish(s)
+    miss = _cur.pop("miss", None)
+    if miss and (miss["grammar"] or miss["words"] or miss["sentences"]):
+        E = _cur["E"]
+        ws = [w for w, _ in sorted(miss["words"].items(), key=lambda x: -x[1])][:6]
+        try:
+            ws = [E.WORDS[w]["form"] if w in E.WORDS else w for w in ws]
+        except Exception:
+            pass
+        ev["weak"] = {"grammar": miss["grammar"], "sentences": miss["sentences"], "words": ws}
     ev["kind"] = _cur["kind"]
     ev["mistakes"] = s.mistakes
     ev["max_combo"] = s.max_combo

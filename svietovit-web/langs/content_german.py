@@ -458,3 +458,24 @@ PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 
 # Pełne tłumaczenia zdań z ćwiczeń „Uzupełnij końcówkę” (gdy nie ma ich wśród zdań kursu)
 ENDINGS_PL = {'ich möchte eine Milch': 'Poproszę mleko.'}
+
+# Formy, które nie mają sensu jako samodzielne słowo do wpisania (ćwiczone tylko w zdaniach)
+NOTYPE = {"gute", "guten"}
+
+# === STOPNIOWANIE (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('form', 'Stopniowanie', 'gut (dobry)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'gut; besser; am besten', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'klein (mały)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'klein; kleiner; am kleinsten', None),
+    ('form', 'Stopniowanie', 'groß (duży)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'groß; größer; am größten', 'Umlaut: o → ö.'),
+    ('form', 'Stopniowanie', 'alt (stary)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'alt; älter; am ältesten', 'Umlaut: a → ä.'),
+    ('form', 'Stopniowanie', 'hoch (wysoki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'hoch; höher; am höchsten', 'W stopniu wyższym znika c: hoch → höher.'),
+    ('form', 'Stopniowanie', 'viel (dużo)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'viel; mehr; am meisten', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'gern (chętnie)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'gern; lieber; am liebsten', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'schnell (szybki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'schnell; schneller; am schnellsten', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /STOPNIOWANIE ===

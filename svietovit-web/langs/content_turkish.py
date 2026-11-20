@@ -338,3 +338,20 @@ PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 
 # Pełne tłumaczenia zdań z ćwiczeń „Uzupełnij końcówkę” (gdy nie ma ich wśród zdań kursu)
 ENDINGS_PL = {'ben öğretmenim': 'Jestem nauczycielem.', 'senin ablan var': 'Masz starszą siostrę.', 'ben bir kahve istiyorum': 'Chcę kawę.'}
+
+# === STOPNIOWANIE (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('form', 'Stopniowanie', 'iyi (dobry)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'iyi; daha iyi; en iyi', 'daha = bardziej, en = najbardziej.'),
+    ('form', 'Stopniowanie', 'büyük (duży)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'büyük; daha büyük; en büyük', None),
+    ('form', 'Stopniowanie', 'küçük (mały)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'küçük; daha küçük; en küçük', None),
+    ('form', 'Stopniowanie', 'güzel (piękny)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'güzel; daha güzel; en güzel', None),
+    ('form', 'Stopniowanie', 'hızlı (szybki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'hızlı; daha hızlı; en hızlı', None),
+    ('form', 'Stopniowanie', 'eski (stary)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'eski; daha eski; en eski', None),
+    ('form', 'Stopniowanie', 'kötü (zły)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'kötü; daha kötü; en kötü', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /STOPNIOWANIE ===

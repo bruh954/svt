@@ -319,3 +319,20 @@ PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 
 # Pełne tłumaczenia zdań z ćwiczeń „Uzupełnij końcówkę” (gdy nie ma ich wśród zdań kursu)
 ENDINGS_PL = {'minu vend': 'mój brat', 'sinu õde': 'twoja siostra'}
+
+# === STOPNIOWANIE (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('form', 'Stopniowanie', 'hea (dobry)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'hea; parem; parim', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'suur (duży)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'suur; suurem; suurim', None),
+    ('form', 'Stopniowanie', 'väike (mały)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'väike; väiksem; väikseim', None),
+    ('form', 'Stopniowanie', 'vana (stary)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'vana; vanem; vanim', None),
+    ('form', 'Stopniowanie', 'ilus (piękny)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'ilus; ilusam; kõige ilusam', 'Najczęściej: kõige + stopień wyższy.'),
+    ('form', 'Stopniowanie', 'kiire (szybki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'kiire; kiirem; kõige kiirem', 'Najczęściej: kõige + stopień wyższy.'),
+    ('form', 'Stopniowanie', 'pikk (długi)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'pikk; pikem; pikim', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /STOPNIOWANIE ===
