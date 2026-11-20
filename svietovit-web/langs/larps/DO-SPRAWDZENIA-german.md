@@ -83,7 +83,7 @@ Nowe słowa: woher = skąd, Kartoffel = ziemniak, Reis = ryż, Nudeln = makaron,
 
 ### Poziom 5: Pełna wizyta i rachunek  (typed=1, hint=none, cierpliwość 4)
 
-Nowe słowa: Frühstück = śniadanie, empfehlen = polecać, schmeckt = smakuje (schmecken), Ihnen = panu, pani (celownik), zahlen = płacić, zwölf = dwanaście, stimmt = zgadza się (stimmen), so = tak, vielen = wielu (vielen Dank = wielkie dzięki), Dank = podziękowanie, dzięki, schönen = ładnym, miłym, Wiedersehen = zobaczenie się (auf Wiedersehen = do widzenia)
+Nowe słowa: Frühstück = śniadanie, empfehlen = polecać, schmeckt = smakuje (schmecken), Ihnen = panu, pani (celownik), zwölf = dwanaście, stimmt = zgadza się (stimmen), so = tak, vielen = wielu (vielen Dank = wielkie dzięki), Dank = podziękowanie, dzięki, schönen = ładnym, miłym, Wiedersehen = zobaczenie się (auf Wiedersehen = do widzenia)
 
 | # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
 |---|---|---|---|

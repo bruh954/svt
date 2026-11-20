@@ -955,6 +955,38 @@ def _larp_finish(lp, outcome):
             "mistakes": _larp["mistakes"], "weak": _larp["weak"]}
 
 
+# Odpowiedź, która ma sens, ale jest uboga albo niegrzeczna: rozmówca ją przyjmuje, ale patrzy krzywo (wynik „weak”).
+_POLITE = {"bitte", "danke", "schön", "gern", "bitteschön", "entschuldigung", "dziękuję", "proszę", "please", "thanks", "thank", "спасибо", "пожалуйста",
+           "prosím", "děkuji", "hvala", "molim", "gracias", "grazie", "merci", "lütfen", "kiitos", "kérem", "köszönöm", "takk", "tack",
+           "domine", "quaesō", "amābō", "ōrō", "amīce", "bitt", "sir", "madam"}
+_YESNO = {"ja", "nein", "tak", "nie", "да", "нет", "yes", "no", "si", "sí", "non", "oui", "ano", "ne", "nej", "kyllä", "ei", "igen", "nem", "evet", "hayır", "ita", "minimē", "da", "jo", "doch", "ја", "не"}
+
+
+def _larp_lenient(given, cands):
+    """Czy odpowiedź jest skróconą wersją wzorcowej (ten sam sens, mniej słów)? Zwraca „rude” (brak grzeczności), „short” (za krótko) albo None."""
+    P = set(_cur["C"].PUNCT)
+    g = [t.lower() for t in given if t not in P]
+    if not g:
+        return None
+    for c in cands:
+        m = [t.lower() for t in c if t not in P]
+        if len(g) >= len(m):
+            continue
+        it = iter(m)
+        if not all(x in it for x in g):               # nie jest podciągiem wzorca
+            continue
+        mc = [t for t in m if t not in _POLITE]
+        gc = [t for t in g if t not in _POLITE]
+        if not gc:
+            continue
+        if len(gc) * 2 >= len(mc) or all(t in _YESNO for t in gc):
+            left = list(m)
+            for t in g:
+                left.remove(t)
+            return "rude" if all(t in _POLITE for t in left) else "short"
+    return None
+
+
 def larp_answer(payload_json):
     """Odpowiedź w bieżącym węźle: {"option": i}, {"tokens": [...]} (klocki) albo {"text": "..."} (wpisana z klawiatury)."""
     if _larp["done"]:
@@ -985,13 +1017,23 @@ def larp_answer(payload_json):
             elif _larp_plain(given_s) in [_larp_plain(w) for w in want]:
                 verdict, res["why"] = "weak", "Brakuje znaków diakrytycznych: " + disp
             else:
-                verdict = "bad"
+                kind = _larp_lenient(given_s.split(), [_larp_norm(_larp_disp(c)).split() for c in cands])
+                if kind:
+                    verdict = "weak"
+                    res["why"] = ("Rozmówca rozumie, ale patrzy krzywo: brakuje grzeczności. Lepiej: " if kind == "rude" else "Rozmówca rozumie, ale patrzy krzywo: za krótko. Lepiej: ") + disp
+                else:
+                    verdict = "bad"
             shown = raw.strip()
             sub = ""
         else:
             given = list(p.get("tokens", []))
             given_s = _larp_norm(_larp_disp(given))
             verdict = "good" if given_s in want else "bad"
+            if verdict == "bad":
+                kind = _larp_lenient(given, cands)
+                if kind:
+                    verdict = "weak"
+                    res["why"] = ("Rozmówca rozumie, ale patrzy krzywo: brakuje grzeczności. Lepiej: " if kind == "rude" else "Rozmówca rozumie, ale patrzy krzywo: za krótko. Lepiej: ") + disp
             shown = disp if verdict == "good" else _larp_disp(given)
             sub = _sent_sub(toks if verdict == "good" else given) if given else ""
         res.update(verdict=verdict, text=shown if shown else "…", sub=sub if verdict != "bad" or "text" not in p else "")
