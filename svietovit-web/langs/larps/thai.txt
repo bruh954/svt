@@ -1,0 +1,245 @@
+# Tajski: tylko słowa z kursu (nowe słowa przez „w” nie dostałyby zapisu wymowy i tonów). Wyrazy w zdaniach oddzielamy spacjami (tokeny).
+@larp raankafe | W kawiarni | พนักงานเสิร์ฟ | พ | Wchodzisz do kawiarni w Bangkoku. Jesteś głodny i spragniony, a kelnerka czeka z notesem. | Zamów coś do picia i coś do jedzenia, a potem zapłać.
+fee 0
+reward 15
+strict yes
+story yes
+win Kelnerka jest pod wrażeniem, że tak dobrze mówisz po tajsku, i przynosi ci deser na koszt firmy.
+partial Zamówienie dotarło do stołu, choć kilka razy musiałeś poprawiać. Kelnerka uśmiecha się i przynosi rachunek.
+fail Kelnerka ma dość: nie zrozumiała cię kilka razy z rzędu i prosi, żebyś opuścił lokal.
+
+@level 1 | Kawa, bułka i ciasto | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Spóźniony Somchai
+scene Bangkok, deszczowy ranek. Przyjechałeś do Tajlandii spotkać się z Somchaiem, kolegą z korespondencji, ale on jeszcze nie przyszedł. Siadasz w kawiarni i czekasz.
+goal Zamów kawę, bułkę i ciasto, a przy okazji dowiedz się, co z Somchaiem.
+win Kelnerka kładzie na stole kartkę od Somchaia: „Spóźnię się, jutro zjemy razem śniadanie.” Masz plan na jutro.
+partial Zamówienie dotarło, a kelnerka podaje ci kartkę od Somchaia, chociaż z trudem zrozumiała, co chcesz. Somchai przeprasza i zaprasza na jutro.
+fail Kelnerka nie rozumie cię i nie wie, kim jesteś. Kartka od Somchaia trafia do kogoś innego, a ty wychodzisz w deszcz z pustym żołądkiem.
+w กาแฟ
+w ชา
+w น้ำ
+w นม
+w น้ำผลไม้
+w เบียร์
+t สวัสดี ค่ะ คุณ อยาก ดื่ม อะไร | Dzień dobry! Co chce pan pić? | สวัสดี ครับ ผม อยาก ดื่ม กาแฟ ครับ | Przywitaj się i zamów kawę (grzecznie). | „Co” to อะไร i stoi na końcu pytania, „chcę pić” to อยาก ดื่ม, a mężczyzna kończy zdanie ครับ.
+t คุณ อยาก ดื่ม กาแฟ กับ นม ไหม | Czy chce pan kawę z mlekiem? | ใช่ ครับ ผม อยาก ดื่ม กาแฟ กับ นม | Zgódź się na mleko. | กับ znaczy „z”, a ไหม na końcu robi pytanie.
+w น้ำตาล
+w เอา
+t คุณ เอา น้ำตาล ไหม | Czy pan bierze cukier? | ไม่ เอา น้ำตาล ครับ ขอบคุณ | Odmów cukru. | ไม่ stoi przed czasownikiem: ไม่ เอา = „nie biorę”.
+w แก้ว
+w ขอ
+t คุณ ดื่ม น้ำ ไหม | Czy chce pan też wody? | ใช่ ครับ ขอ น้ำ หนึ่ง แก้ว | Zgódź się na szklankę wody. | ขอ znaczy „poproszę”, a licznik แก้ว stoi po liczebniku: หนึ่ง แก้ว.
+w ขนมปังก้อน
+w ชีส
+w แฮม
+w ไข่
+t คุณ อยาก กิน อะไร | Co chce pan zjeść? | ผม อยาก กิน ขนมปังก้อน ครับ | Zamów bułkę. | กิน znaczy „jeść”, a ขนมปังก้อน to „bułka”.
+w หรือ
+t ขนมปังก้อน กับ ชีส หรือ แฮม | Bułka z serem czy z szynką? | กับ ชีส ครับ | Wybierz ser do bułki. | หรือ znaczy „albo”, a กับ znaczy „z”.
+w เค้ก
+w ชิ้น
+t คุณ อยาก กิน เค้ก ไหม | Czy chce pan też ciasto? | ใช่ ครับ ขอ เค้ก หนึ่ง ชิ้น | Zgódź się na kawałek ciasta. | Licznik ชิ้น znaczy „kawałek”: หนึ่ง ชิ้น.
+w และ
+t นี่ กาแฟ และ ขนมปังก้อน ของ คุณ ค่ะ | Oto pana kawa i bułka. | ขอบคุณ ครับ | Podziękuj kelnerce. | Dziękujesz: ขอบคุณ ครับ.
+w ต้องการ
+w บางอย่าง
+t คุณ ต้องการ บางอย่าง ไหม | Czy życzy pan sobie coś jeszcze? | ไม่ ครับ ขอบคุณ | Odmów grzecznie: to już wszystko. | ไม่ ครับ ขอบคุณ znaczy „nie, dziękuję”.
+w เชิญ
+e เชิญ ค่ะ | Proszę bardzo!
+
+@level 2 | Śniadanie | patience=6 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Śniadanie z Somchaiem
+scene Następnego ranka. Somchai czeka już przy stoliku, a kelnerka przyjmuje zamówienia. Somchai prosi, żebyś zamówił sam, a przy okazji kupił ciasto, które zabierzesz mamie.
+goal Zamów śniadanie i kup ciasto dla swojej mamy.
+win Somchai się śmieje, że mówisz jak rodowity Taj. Ciasto dla mamy zapakowane, a Somchai obiecuje pokazać ci jutro miasto.
+partial Śniadanie jest, ciasto też, ale Somchai musiał pomóc ci kilka razy. Obiecuje, że następnym razem zamówisz sam.
+fail Pomyliłeś zamówienia i Somchai dostał coś zupełnie innego. Zjadł w milczeniu i wyszedł do pracy.
+w อาหารเช้า
+t สวัสดี ค่ะ คุณ อยาก กิน อาหารเช้า ไหม | Dzień dobry! Czy chce pan zjeść śniadanie? | ใช่ ครับ ผม อยาก กิน อาหารเช้า | Powiedz, że chcesz zjeść śniadanie. | อาหารเช้า to „śniadanie”.
+w เรา
+w มี
+t เรา มี ขนมปังก้อน ไข่ และ ชีส คุณ เอา อะไร | Mamy bułki, jajka i ser. Co pan weźmie? | ผม เอา ขนมปังก้อน และ ไข่ ครับ | Zamów bułkę i jajko. | เอา znaczy „wezmę”, a และ „i”.
+t คุณ อยาก ดื่ม ชา หรือ กาแฟ | Chce pan herbatę czy kawę? | ผม อยาก ดื่ม ชา กับ นม ครับ | Wybierz herbatę z mlekiem. | „Z mlekiem” to กับ นม.
+w นิดหน่อย
+t คุณ เอา น้ำตาล ไหม | Czy pan bierze cukier? | ใช่ ครับ นิดหน่อย | Zgódź się na odrobinę cukru. | นิดหน่อย znaczy „troszkę”.
+w แอปเปิล
+w ช็อกโกแลต
+t เรา มี เค้ก แอปเปิล และ เค้ก ช็อกโกแลต | Mamy szarlotkę i ciasto czekoladowe. | ผม เอา เค้ก แอปเปิล ครับ | Wybierz szarlotkę. | เค้ก แอปเปิล to „ciasto z jabłkiem”, czyli szarlotka.
+t คุณ อยาก ดื่ม น้ำผลไม้ ไหม | Czy chce pan sok? | ใช่ ครับ ขอ น้ำผลไม้ หนึ่ง แก้ว | Zgódź się na szklankę soku. | น้ำผลไม้ to „sok”.
+w วันนี้
+w อร่อย
+w ดี
+t น้ำผลไม้ วันนี้ อร่อย มาก | Sok jest dziś bardzo smaczny. | ดี ครับ ผม เอา น้ำผลไม้ | Zdecyduj się na sok. | ดี znaczy „dobrze, dobry”.
+w สำหรับ
+w แม่
+t เค้ก นี่ สำหรับ คุณ ไหม | Czy to ciasto jest dla pana? | ไม่ ครับ เค้ก สำหรับ แม่ ของ ผม | Odmów: ciasto jest dla twojej mamy. | สำหรับ znaczy „dla”, a ของ ผม „mój”.
+w รอ
+w ก่อน
+t รอ ก่อน ค่ะ | Chwileczkę. | ขอบคุณ ครับ ผม รอ | Podziękuj i powiedz, że poczekasz. | รอ znaczy „czekać”.
+w ทั้งหมด
+t นี่ ทั้งหมด ค่ะ | Oto wszystko. | ขอบคุณ ครับ | Podziękuj. | ทั้งหมด znaczy „wszystko, całość”.
+e เชิญ ค่ะ | Proszę bardzo!
+
+@level 3 | Stolik, pytania i cena | patience=5 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Stolik dla dwóch
+scene Po południu. Somchai pracuje, więc umówiłeś się z jego siostrą. Kelnerka pyta o stolik, a ty musisz wybrać miejsce, jedzenie i dowiedzieć się, ile to kosztuje.
+goal Zajmij stolik dla dwóch, zamów obiad dla was obu i nie przepłać.
+win Siostra Somchaia jest zachwycona i zaprasza cię wieczorem do jego znajomych.
+partial Obiad się udał, ale siostra musiała kilka razy tłumaczyć kelnerce, co chcesz. Wieczorne spotkanie nadal aktualne.
+fail Nie dogadałeś się z kelnerką, a siostra patrzyła na to z niedowierzaniem. Wieczorem dostajesz od niej krótką wiadomość: „Może innym razem.”
+w โต๊ะ
+w คน
+t สวัสดี ค่ะ คุณ เอา โต๊ะ สำหรับ สอง คน ไหม | Dzień dobry! Czy chce pan stolik dla dwóch osób? | ใช่ ครับ โต๊ะ สำหรับ สอง คน | Zgódź się: stolik dla dwóch osób. | Licznik คน stoi po liczebniku: สอง คน = „dwie osoby”.
+w นั่ง
+w ที่นี่
+w ที่นั่น
+t คุณ อยาก นั่ง ที่นี่ หรือ ที่นั่น | Czy chce pan siedzieć tutaj, czy tam? | ผม อยาก นั่ง ที่นี่ ครับ | Powiedz, że chcesz siedzieć tutaj. | ที่นี่ = „tutaj”, ที่นั่น = „tam”.
+w เมนู
+t นี่ เมนู คุณ อยาก ดื่ม อะไร | Oto menu. Co chce pan pić? | ขอ น้ำ หนึ่ง แก้ว และ น้ำผลไม้ ครับ | Zamów wodę i sok. | ขอ znaczy „poproszę”.
+w ซุป
+w สลัด
+w มี
+t คุณ อยาก กิน ซุป ไหม | Czy chce pan zupę? | ไม่ ครับ ขอบคุณ มี สลัด ไหม | Odmów zupy i zapytaj o sałatkę. | มี ไหม znaczy „czy jest?”.
+t มี ค่ะ สลัด อร่อย มาก | Jest. Sałatka jest bardzo smaczna. | ดี ครับ ผม เอา สลัด | Zdecyduj się na sałatkę. | เอา znaczy „wezmę”.
+w ปลา
+t สลัด กับ ปลา หรือ ชีส | Sałatka z rybą czy z serem? | กับ ชีส ครับ | Wybierz ser. | „Z serem” to กับ ชีส.
+w เท่าไร
+t คุณ ต้องการ บางอย่าง ไหม | Czy życzy pan sobie coś jeszcze? | เค้ก เท่าไร ครับ | Zapytaj o cenę ciasta. | เท่าไร znaczy „ile”, i stoi na końcu: เค้ก เท่าไร = „ile kosztuje ciasto”.
+w ห้าสิบ
+w บาท
+w แพง
+t เค้ก ห้าสิบ บาท | Ciasto kosztuje pięćdziesiąt batów. | ไม่ แพง ครับ ผม เอา หนึ่ง ชิ้น | Powiedz, że cena ci pasuje, i weź kawałek. | ไม่ แพง znaczy „niedrogo”.
+w เย็น
+t คุณ อยาก กิน เค้ก ตอนนี้ หรือ เย็น | Czy chce pan ciasto teraz, czy wieczorem? | เย็น ครับ | Powiedz, że ciasto chcesz wieczorem. | เย็น znaczy tu „wieczorem”.
+e เชิญ ค่ะ | Proszę bardzo!
+
+@level 4 | Rozmowa przy stole | patience=5 typed=0.75 extra=4 hint=letters
+partner ป้า | ป
+desc Rozdział 4: Wieczór u właścicielki
+scene Wieczorem Somchai zabiera cię do swojej ulubionej kawiarni. Właścicielka, „ciocia” (ป้า), zna wszystkich, a ciebie wypytuje jak nowego znajomego Somchaia.
+goal Odpowiadaj na pytania właścicielki o to, skąd jesteś i czym się zajmujesz. Jeśli jej się spodobasz, Somchai zaprosi cię na jutro.
+win Właścicielka klepie cię po ramieniu: będziesz tu już zawsze mile widziany. Somchai mówi, że jutro odprowadzi cię na dworzec i wszystko ci pokaże.
+partial Właścicielka jest uprzejma, ale nie do końca przekonana. Somchai uspokaja: „Potrzebuje czasu.” Jutro i tak idziecie razem na dworzec.
+fail Właścicielka przestała cię rozumieć w połowie wywiadu i uznała, że jesteś nieszczery. Somchai wychodzi zakłopotany.
+w เบียร์
+w น้ำ
+t สวัสดี ค่ะ คุณ อยาก ดื่ม อะไร | Dobry wieczór! Co chce pan pić? | ผม อยาก ดื่ม เบียร์ และ น้ำ ครับ | Zamów piwo i wodę. | และ znaczy „i”.
+w พูด
+w ภาษา
+w ไทย
+w มาจาก
+t คุณ พูด ภาษา ไทย ดี มาก คุณ มาจาก ที่ไหน | Mówi pan bardzo dobrze po tajsku! Skąd pan jest? | ขอบคุณ ครับ ผม มาจาก โปแลนด์ | Podziękuj i powiedz, że jesteś z Polski. | มาจาก znaczy „pochodzić z”; ที่ไหน = „gdzie”.
+w เรียน
+w ที่
+w บ้าน
+t คุณ เรียน ภาษา ไทย ที่ไหน | Gdzie uczy się pan tajskiego? | ผม เรียน ที่ บ้าน ครับ | Powiedz, że uczysz się w domu. | ที่ บ้าน znaczy „w domu”.
+w ต้มยำ
+w ไก่
+t คุณ อยาก กิน ต้มยำ ไหม ต้มยำ ที่นี่ อร่อย มาก | Czy chce pan tom yum? Tutejsze jest bardzo dobre. | ใช่ ครับ ผม อยาก กิน ต้มยำ มี ไก่ ไหม | Zgódź się na zupę i zapytaj, czy jest kurczak. | มี ไหม znaczy „czy jest?”.
+w เผ็ด
+w ชอบ
+t มี ค่ะ คุณ ชอบ เผ็ด ไหม | Jest. Czy lubi pan pikantne? | ชอบ ครับ แต่ ไม่ เผ็ด มาก | Powiedz, że lubisz, ale nie za ostre. | แต่ znaczy „ale”.
+w แต่
+w ร้อน
+t ต้มยำ อร่อย ไหม | Czy zupa smakuje? | อร่อย มาก ครับ แต่ ร้อน | Pochwal zupę, ale zaznacz, że jest gorąca. | ร้อน znaczy „gorący”.
+w ครู
+t คุณ เป็น นักเรียน ไหม | Czy jest pan uczniem? | ไม่ ครับ ผม เป็น ครู | Zaprzecz: jesteś nauczycielem. | ไม่ เป็น znaczy „nie jestem”; เป็น stoi przed zawodem.
+w ตอนนี้
+t คุณ อยาก ดื่ม เบียร์ ไหม | Czy chce pan piwo? | ไม่ ครับ ตอนนี้ ผม ดื่ม กาแฟ | Odmów i powiedz, że teraz pijesz kawę. | ตอนนี้ znaczy „teraz”.
+e เชิญ ค่ะ | Proszę bardzo!
+
+@level 5 | Pełna wizyta i rachunek | patience=4 typed=1 extra=0 hint=none reward=25
+desc Rozdział 5: Rachunek i pożegnanie
+scene Ostatni dzień w Bangkoku. Z samego rana siadasz w kawiarni, żeby zjeść pożegnalne śniadanie i zapłacić. Za godzinę pociąg, a Somchai ma pojawić się na dworcu.
+goal Zamów pełne śniadanie, usiądź przy oknie, zapłać i pożegnaj się. Nie możesz się spóźnić na pociąg.
+win Kelnerka życzy ci dobrej podróży i wręcza paczkę ciasta „na drogę od właścicielki”. Biegniesz na dworzec, a tam czeka Somchai.
+partial Zapłaciłeś, ale straciłeś sporo czasu na poprawki. Biegniesz na dworzec w ostatniej chwili.
+fail Rachunek zrobił się kłopotliwy, kelnerka nie rozumiała, ile masz zapłacić. Pociąg odjechał bez ciebie.
+w กาแฟ
+w นม
+t สวัสดี ค่ะ คุณ อยาก ดื่ม อะไร | Dzień dobry! Co chce pan pić? | สวัสดี ครับ ผม อยาก ดื่ม กาแฟ กับ นม ไม่ เอา น้ำตาล | Przywitaj się i zamów kawę z mlekiem, ale bez cukru. | กับ นม = „z mlekiem”, ไม่ เอา น้ำตาล = „nie biorę cukru”.
+t อาหารเช้า คุณ เอา อะไร เรา มี ขนมปังก้อน กับ ชีส ไข่ หรือ เค้ก ช็อกโกแลต | Na śniadanie co pan weźmie? Mamy bułkę z serem, jajko albo ciasto czekoladowe. | ผม เอา ขนมปังก้อน และ ไข่ ครับ | Zamów bułkę i jajko. | เอา znaczy „wezmę”.
+w สอง
+t คุณ อยาก ดื่ม น้ำ ไหม | Czy chce pan wody? | ใช่ ครับ ขอ น้ำ สอง แก้ว | Zgódź się i poproś o dwie szklanki wody. | Licznik แก้ว stoi po liczebniku: สอง แก้ว.
+t เค้ก แอปเปิล วันนี้ อร่อย มาก | Szarlotka jest dziś bardzo smaczna. | ดี ครับ ผม เอา เค้ก แอปเปิล หนึ่ง ชิ้น | Zdecyduj się na kawałek szarlotki. | หนึ่ง ชิ้น = „jeden kawałek”.
+w หน้าต่าง
+t คุณ อยาก นั่ง ที่นี่ หรือ ที่นั่น | Czy chce pan siedzieć tutaj, czy tam? | ผม อยาก นั่ง ที่ หน้าต่าง ครับ | Powiedz, że chcesz siedzieć przy oknie. | ที่ หน้าต่าง znaczy „przy oknie”.
+t นี่ อาหารเช้า ของ คุณ ค่ะ | Oto pana śniadanie. | ขอบคุณ ครับ | Podziękuj kelnerce. | Dziękujesz: ขอบคุณ ครับ.
+t อร่อย ไหม | Czy smakuje? | อร่อย มาก ครับ | Zgódź się: bardzo ci smakuje. | อร่อย มาก znaczy „bardzo smaczne”.
+w จ่ายเงิน
+t คุณ ต้องการ บางอย่าง ไหม | Czy życzy pan sobie coś jeszcze? | ไม่ ครับ ผม อยาก จ่ายเงิน | Odmów i powiedz, że chcesz zapłacić. | จ่ายเงิน znaczy „płacić”.
+w ร้อย
+w หนึ่ง
+w เงินทอน
+w ต้อง
+t ทั้งหมด หนึ่ง ร้อย ห้าสิบ บาท | Razem sto pięćdziesiąt batów. | นี่ สอง ร้อย บาท เงินทอน ไม่ ต้อง ครับ | Zapłać i powiedz, że reszty nie trzeba. | เงินทอน = „reszta”, ไม่ ต้อง = „nie trzeba”.
+w ลาก่อน
+t ขอบคุณ ค่ะ ลาก่อน | Dziękujemy! Do widzenia! | ลาก่อน ครับ ขอบคุณ | Podziękuj i pożegnaj się. | ลาก่อน znaczy „do widzenia”.
+e ลาก่อน ค่ะ | Do widzenia!
+
+
+@larp rotfai | Pociąg do Chiang Mai | พนักงาน | พ | Biegniesz na dworzec w Bangkoku. Pociąg do Chiang Mai odjeżdża za dziesięć minut, a Somchai czeka na ciebie w środku. | Kup bilet, znajdź właściwy pociąg i dojedź do Chiang Mai.
+fee 0
+reward 15
+strict yes
+story yes
+win Siedzisz w pociągu do Chiang Mai, a Somchai macha do ciebie z drugiego końca wagonu. Podróż może się zacząć.
+partial Dotarłeś do Chiang Mai, ale kilka razy ktoś musiał ci pomagać. Somchai czeka na peronie i mówi: „Poćwicz jeszcze pytania.”
+fail Pociąg odjechał, a ty stoisz na peronie z biletem w ręku. Somchai pisze: „Następny pociąg za godzinę!”
+
+@level 1 | Bilet | patience=5 typed=0 extra=1 hint=none
+desc Rozdział 1: Kasa biletowa
+w ไป
+w เชียงใหม่
+w ตั๋ว
+w รถไฟ
+t สวัสดี ค่ะ คุณ ไป ที่ไหน | Dzień dobry! Dokąd pan jedzie? | ผม ไป เชียงใหม่ ครับ | Powiedz, że jedziesz do Chiang Mai. | ไป znaczy „jechać, iść”, a ที่ไหน „gdzie, dokąd”.
+t คุณ ต้องการ ตั๋ว ไหม | Czy chce pan bilet? | ใช่ ครับ ขอ ตั๋ว ไป เชียงใหม่ | Poproś o bilet do Chiang Mai. | ขอ znaczy „poproszę”, ตั๋ว to „bilet”.
+w ห้า
+w ร้อย
+t รถไฟ ไป เชียงใหม่ ตั๋ว สี่ ร้อย บาท | Pociąg do Chiang Mai: bilet kosztuje czterysta batów. | นี่ ห้า ร้อย บาท ครับ | Podaj pięćset batów. | ร้อย znaczy „sto”: ห้า ร้อย = „pięćset”.
+w เงินทอน
+t เงินทอน หนึ่ง ร้อย บาท นี่ ตั๋ว ของ คุณ | Reszty sto batów. Oto pana bilet. | ขอบคุณ ครับ ลาก่อน | Podziękuj i pożegnaj się. | ลาก่อน znaczy „do widzenia”.
+e เชิญ ค่ะ | Proszę bardzo!
+
+@level 2 | Który pociąg? | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Który pociąg?
+partner พนักงาน | พ
+scene Masz bilet, ale na dworcu stoją pociągi i autobusy. Pracownik kolei stoi przy wejściu, a zegar tyka.
+goal Dowiedz się, gdzie stoi pociąg do Chiang Mai, i nie wsiądź do autobusu.
+win Wsiadasz do właściwego pociągu tuż przed odjazdem. Pracownik macha ci na pożegnanie.
+partial Dotarłeś do pociągu, ale po drodze kilka razy pytałeś o to samo. Wsiadasz w ostatniej chwili.
+fail Wsiadłeś do autobusu zamiast do pociągu. Somchai dzwoni: „Gdzie jesteś?!”
+w ช่วย
+w อยู่
+w ที่ไหน
+t สวัสดี ค่ะ ให้ ช่วย ไหม | Dzień dobry! Czy mam pomóc? | ใช่ ครับ รถไฟ ไป เชียงใหม่ อยู่ ที่ไหน | Zgódź się i zapytaj, gdzie jest pociąg do Chiang Mai. | อยู่ ที่ไหน znaczy „gdzie się znajduje”.
+w ทาง
+w ขวา
+w ซ้าย
+w รถเมล์
+w ขึ้น
+k รถไฟ ไป เชียงใหม่ อยู่ ทาง ขวา รถเมล์ อยู่ ทาง ซ้าย | Pociąg do Chiang Mai jest po prawej. Autobus jest po lewej. | ขอบคุณ ครับ ผม ไป ทาง ขวา | ขอบคุณ ครับ ผม ไป ทาง ซ้าย; ขอบคุณ ครับ ผม ขึ้น รถเมล์ | Po lewej stoi autobus, a ty szukasz pociągu.; Chciałeś jechać pociągiem (รถไฟ), nie autobusem (รถเมล์).
+w แล้ว
+t คุณ มี ตั๋ว แล้ว ไหม | Czy ma pan już bilet? | ใช่ ครับ ผม มี ตั๋ว แล้ว | Potwierdź, że masz już bilet. | แล้ว znaczy „już”.
+w เร็ว
+e ไป เร็ว ค่ะ | Idź szybko!
+
+@level 3 | W pociągu | patience=4 typed=0.5 extra=3 hint=bank reward=25
+desc Rozdział 3: Konduktor
+partner พนักงาน | พ
+scene Pociąg ruszył. Konduktor idzie przez wagon i sprawdza bilety, a Somchai siedzi kilka rzędów dalej i macha do ciebie.
+goal Pokaż bilet, wybierz miejsce i dojedź do Chiang Mai bez kłopotów.
+win Konduktor oddaje bilet z uśmiechem. Somchai robi ci miejsce przy oknie i pyta o pierwsze wrażenia z Bangkoku.
+partial Konduktor w końcu skasował bilet, ale musiał kilka razy powtarzać. Somchai pomaga ci usiąść.
+fail Konduktor uznał, że nie rozumiesz, co się do ciebie mówi. Bilet skontrolował dopiero Somchai, a ty dostajesz upomnienie.
+t สวัสดี ค่ะ ตั๋ว ของ คุณ | Dzień dobry! Pański bilet. | นี่ ตั๋ว ของ ผม ครับ | Pokaż bilet. | ของ ผม znaczy „mój”.
+w หน้าต่าง
+w นั่ง
+w ที่
+o ขอบคุณ ค่ะ คุณ อยาก นั่ง ที่ หน้าต่าง ไหม | Dziękuję. Czy chce pan siedzieć przy oknie? | ใช่ ครับ ที่ หน้าต่าง | ไม่ ครับ ผม ไม่ อยาก หน้าต่าง; ใช่ ครับ ผม อยาก จ่ายเงิน | Konduktor pyta o miejsce, nie o płacenie.; „ไม่ อยาก หน้าต่าง” znaczy „nie chcę okna”.
+w มาสาย
+w ปัญหา
+t รถไฟ มาสาย สิบ นาที | Pociąg spóźnia się dziesięć minut. | ไม่ มี ปัญหา ครับ ขอบคุณ | Powiedz, że to nie problem, i podziękuj. | ไม่ มี ปัญหา znaczy „nie ma problemu”.
+w ถึง
+e ถึง เชียงใหม่ แล้ว ค่ะ | Jesteśmy już w Chiang Mai!

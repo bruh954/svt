@@ -1,0 +1,310 @@
+@larp kohvik | W kawiarni | Ettekandja | E | Wchodzisz do kawiarni w Tallinie. Jesteś głodny i spragniony, a kelner czeka z notesem. | Zamów coś do picia i coś do jedzenia, a potem zapłać.
+fee 0
+reward 15
+strict yes
+story yes
+win Kelner jest pod wrażeniem, że tak dobrze mówisz po estońsku. „See on meie poolt!” – jedzenie na koszt firmy.
+partial Zamówienie dotarło do stołu, choć kilka razy musiałeś poprawiać. Kelner uśmiecha się i przynosi rachunek.
+fail Kelner ma dość: nie zrozumiał cię kilka razy z rzędu, uznał to za obrazę i prosi, żebyś opuścił lokal.
+
+@level 1 | Kawa, bułka i ciasto | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Spóźniony Mart
+scene Tallin, deszczowy ranek. Przyjechałeś do Estonii spotkać się z Martem, kolegą z korespondencji, ale on jeszcze nie przyszedł. Siadasz w kawiarni i czekasz.
+goal Zamów kawę, bułkę i ciasto, a przy okazji dowiedz się, co z Martem.
+win Kelner kładzie na stole kopertę: „Mart jättis selle teile”. W środku kartka: „Hilinen, homme sööme koos hommikusööki. Mart” Masz plan na jutro.
+partial Zamówienie dotarło, a kelner podaje ci kopertę od Marta, chociaż z trudem zrozumiał, co chcesz. Mart przeprasza i zaprasza na jutro.
+fail Kelner nie rozumie cię i nie wie, kim jesteś. Koperta od Marta trafia do kogoś innego, a ty wychodzisz w deszcz z pustym żołądkiem.
+w soovite | chcecie, życzycie sobie (forma grzecznościowa od soovima)
+w mida | co (w pytaniu; forma od mis)
+w ma | ja (krótka, potoczna forma od „mina”)
+w mõtlen | myślę, zastanawiam się (mõtlema)
+t Tere hommikust! Mida soovite? | Dzień dobry! Co podać? | Tere hommikust! Ma mõtlen veel. | Przywitaj się i powiedz, że jeszcze wybierasz. | „Zastanawiam się” to ma mõtlen (od mõtlema), a veel znaczy tu „jeszcze”.
+w juua | pić (jooma, forma „da”)
+w kohvi
+w teed
+w vett
+w mahl
+w õlu
+w vein
+t Siin on menüü. Mida soovite juua? | Oto menu. Co podać do picia? | Ma tahan kohvi, palun. | Zamów kawę (grzecznie). | Po „tahan” nazwa napoju stoi w formie cząstkowej: kohvi.
+w kas | czy (partykuła pytająca)
+w piimaga | z mlekiem (piim + -ga: „z”)
+w koor
+w sidrun
+t Kas soovite piimaga? | Czy chce pan z mlekiem? | Jah, piimaga, palun. | Zgódź się na mleko. | Końcówka -ga znaczy „z”: piim → piimaga.
+w suhkruga | z cukrem (suhkur + -ga: „z”)
+w suhkruta | bez cukru (suhkur + -ta: „bez”)
+w mesi
+t Kas soovite suhkruga? | Czy chce pan z cukrem? | Ei, ilma suhkruta, aitäh. | Odmów cukru. | „Bez” to ilma, a rzeczownik dostaje końcówkę -ta: suhkruta.
+w klaas
+w pudel
+t Kas soovite ka vett? | Czy chce pan też wody? | Jah, vett, palun. | Zgódź się na wodę. | „Wodę” po „soovite” to vett (forma cząstkowa).
+w süüa | jeść (sööma, forma „da”)
+w saia | bułkę (sai + -a: forma cząstkowa)
+w sai
+w muna
+w juust
+w sink
+w vorst
+t Ja mida soovite süüa? | A co chce pan zjeść? | Ma tahan saia, palun. | Zamów bułkę. | Po „tahan” rzeczownik stoi w formie cząstkowej: saia.
+w juustuga | z serem (juust + -ga: „z”)
+w singiga | z szynką (sink + -ga: „z”)
+w või
+t Juustuga või singiga? | Z serem czy z szynką? | Juustuga, palun. | Wybierz ser do bułki. | Słowo või znaczy tu „albo” (a także „masło”).
+w tüki | kawałek (tükk + -i)
+w torti | ciasta (tort + -i: forma cząstkowa)
+w šokolaad
+w küpsis
+w jäätis
+t Kas soovite ka tüki torti? | Czy chce pan też kawałek ciasta? | Jah, ma tahan tüki torti. | Zgódź się na kawałek ciasta. | Po „tükk” rzecz, z której bierzemy kawałek, stoi w formie cząstkowej: torti.
+w teie | wasz, pański
+w isu | apetyt
+w taldrik
+w tass
+t Siin on teie kohv ja sai. Head isu! | Oto pana kawa i bułka. Smacznego! | Aitäh väga! | Podziękuj kelnerowi. | Dziękujesz: aitäh väga.
+w midagi | czegoś
+t Kas soovite veel midagi? | Czy chce pan jeszcze coś? | Ei, aitäh. See on kõik. | Odmów: to już wszystko. | „To wszystko” to see on kõik.
+e Palun väga! | Proszę bardzo!
+
+@level 2 | Śniadanie | patience=6 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Śniadanie z Martem
+scene Następnego ranka. Mart czeka już przy stoliku, a kelner przyjmuje zamówienia. Mart prosi, żebyś zamówił sam, a przy okazji kupił ciasto, które zabierzesz mamie.
+goal Zamów śniadanie i kup ciasto dla swojej mamy.
+win Mart się śmieje: „Sa räägid nagu tallinlane!” Ciasto dla mamy zapakowane, a Mart obiecuje pokazać ci jutro miasto.
+partial Śniadanie jest, ciasto też, ale Mart musiał pomóc ci kilka razy. Obiecuje, że następnym razem zamówisz sam.
+fail Pomyliłeś zamówienia i Mart dostał coś zupełnie innego. Zjadł w milczeniu i wyszedł do pracy.
+w hommikusööki | śniadania (hommikusöök + -i: forma cząstkowa)
+t Tere hommikust! Kas soovite hommikusööki? | Dzień dobry! Czy chce pan śniadanie? | Jah, ma tahan hommikusööki. | Powiedz, że chcesz zjeść śniadanie. | „Chcę śniadania” to ma tahan hommikusööki (forma cząstkowa).
+w meil | u nas (mamy)
+w saiu | bułek (sai, l. mnoga w formie cząstkowej)
+w mune | jajek (muna, l. mnoga w formie cząstkowej)
+w te | wy; pan, pani (grzecznie)
+w võtate | bierzecie, weźmie pan (võtma)
+w võtan | biorę (võtma)
+w ühe | jeden (üks + -e)
+t Meil on saiu ja mune. Mida te võtate? | Mamy bułki i jajka. Co pan weźmie? | Ma võtan kaks saia ja ühe muna. | Zamów dwie bułki i jajko. | Po liczebniku kaks rzeczownik stoi w liczbie pojedynczej w formie cząstkowej: kaks saia.
+w piimaga
+t Kas soovite kohvi või teed? | Czy chce pan kawę czy herbatę? | Ma võtan teed piimaga. | Wybierz herbatę z mlekiem. | „Z mlekiem” to piimaga (końcówka -ga).
+w suhkrut | cukru (suhkur + -t: forma cząstkowa)
+t Kas soovite suhkrut? | Czy chce pan cukru? | Jah, natuke suhkrut, palun. | Zgódź się na odrobinę cukru. | „Trochę cukru” to natuke suhkrut (forma cząstkowa).
+w õunakook | szarlotka (õun (jabłko) + kook (ciasto, placek))
+w šokolaadikook | ciasto czekoladowe (šokolaad (czekolada) + kook (ciasto, placek))
+w õunakoogi | szarlotkę (õunakook + -i: dopełnienie w bierniku)
+t Meil on õunakook ja šokolaadikook. | Mamy szarlotkę i ciasto czekoladowe. | Ma võtan õunakoogi. | Wybierz szarlotkę. | Dopełnienie „szarlotkę” ma tu formę õunakoogi (k zmienia się w g).
+w klaasi | szklankę (klaas + -i)
+w mahla | soku (mahl + -a: forma cząstkowa)
+w apelsinimahla | soku pomarańczowego (apelsin (pomarańcza) + mahl (sok), forma cząstkowa)
+t Kas soovite ka klaasi mahla? | Czy chce pan też szklankę soku? | Jah, klaasi apelsinimahla. | Zgódź się na sok pomarańczowy. | Po „klaas” zawartość stoi w formie cząstkowej: klaasi apelsinimahla.
+w apelsinimahl | sok pomarańczowy (apelsin (pomarańcza) + mahl (sok))
+t Apelsinimahl on täna väga maitsev. | Sok pomarańczowy jest dziś bardzo smaczny. | Hea, siis ma võtan apelsinimahla. | Zdecyduj się na sok pomarańczowy. | Po „siis” (wtedy) mówimy: siis ma võtan.
+w teile | dla pana, dla pani (te + -le)
+w emale | mamie (ema + -le: „dla”)
+t Kas tort on teile? | Czy ciasto jest dla pana? | Ei, tort on minu emale. | Odmów: ciasto jest dla twojej mamy. | „Dla mamy” to emale (końcówka -le).
+w hetk | chwila
+w toon | przyniosę (tooma)
+w kohe | od razu
+w ootan | czekam (ootama)
+w meelega | z chęcią (hea meelega = chętnie)
+t Hetk, toon kohe. | Chwileczkę, zaraz przyniosę. | Aitäh, ootan hea meelega. | Podziękuj i powiedz, że chętnie poczekasz. | „Chętnie” to hea meelega.
+w samuti | nawzajem, również
+t Siin on kõik. Head isu! | Oto wszystko. Smacznego! | Aitäh, samuti! | Podziękuj i odwzajemnij życzenia. | „Nawzajem” to samuti.
+e Palun väga! | Proszę bardzo!
+
+@level 3 | Stolik, pytania i cena | patience=5 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Stolik dla dwóch
+scene Po południu. Mart pracuje, więc umówiłeś się z jego siostrą Liis. Kelner pyta o stolik, a ty musisz wybrać miejsce, jedzenie i dowiedzieć się, ile to kosztuje.
+goal Zajmij stolik dla dwóch, zamów obiad dla was obu i nie przepłać.
+win Liis jest zachwycona: „Nüüd ma saan aru, miks Mart sinust nii palju räägib!” Zaprasza cię na wieczór do znajomych Marta.
+partial Obiad się udał, ale Liis musiała kilka razy tłumaczyć kelnerowi, co chcesz. Wieczorne spotkanie nadal aktualne.
+fail Nie dogadałeś się z kelnerem, a Liis patrzyła na to z niedowierzaniem. Wieczorem dostajesz od niej krótką wiadomość: „Võib-olla mõni teine kord.”
+w kahele | dla dwojga (kaks + -le)
+w laud
+w tool
+w aken
+t Tere! Laud kahele? | Dzień dobry! Stolik dla dwojga? | Jah, laud kahele, palun. | Zgódź się: stolik dla dwóch osób. | „Dla dwojga” to kahele (kaks + -le).
+w istuda | siedzieć (istuma, forma „da”)
+t Kas soovite istuda siin või seal? | Czy chce pan siedzieć tutaj czy tam? | Ma tahan istuda siin, palun. | Powiedz, że chcesz siedzieć tutaj. | Bezokolicznik (istuda) stoi po tahan.
+t Siin on menüü. Mida soovite juua? | Oto menu. Co podać do picia? | Klaas vett ja mahla, palun. | Zamów wodę i sok. | Po „klaas” napój stoi w formie cząstkowej: klaas vett.
+w suppi | zupy (supp + -i: forma cząstkowa)
+w teil | u państwa (macie)
+w salatit | sałatki (salat + -it: forma cząstkowa)
+w liha
+w kala
+t Kas soovite suppi? | Czy chce pan zupę? | Ei, aitäh. Kas teil on salatit? | Odmów zupy i zapytaj o sałatkę. | Pytanie zaczynamy od kas, a „czy macie” to kas teil on.
+w küll | owszem; rzeczywiście
+w salati | sałatkę (salat + -i: biernik)
+w tomat
+w kurk
+t Jah, on küll. Salat on väga maitsev. | Tak, jest. Sałatka jest bardzo smaczna. | Hea, ma võtan salati. | Zdecyduj się na sałatkę. | „Biorę sałatkę” to ma võtan salati.
+w salatisse | do sałatki (salat + -sse: „do środka”)
+w juustu | sera (juust + -u: forma cząstkowa)
+t Kas soovite salatisse kala või juustu? | Czy chce pan do sałatki rybę czy ser? | Juustu, palun. | Wybierz ser. | Po „soovite” produkt stoi w formie cząstkowej: juustu.
+w maksab | kosztuje (maksma)
+t Kas soovite veel midagi? | Czy chce pan jeszcze coś? | Palju see tort maksab? | Zapytaj o cenę ciasta. | „Ile kosztuje” to palju maksab (maksma znaczy też „płacić”).
+w eurot | euro (po liczebniku: forma cząstkowa)
+w liiga | zbyt
+w ole | jest (ei ole = nie jest)
+t Tort maksab neli eurot. | Ciasto kosztuje cztery euro. | See ei ole liiga kallis. Ma võtan ühe tüki. | Powiedz, że cena ci pasuje, i weź kawałek. | „Nie jest za drogi” to ei ole liiga kallis.
+t Kas soovite torti praegu või hiljem? | Czy chce pan ciasto teraz czy później? | Ma tahan torti hiljem. | Powiedz, że ciasto chcesz później. | „Ciasto” po „soovite” i „tahan” stoi w formie cząstkowej: torti.
+w muidugi | oczywiście
+w küllalt | dość
+t Muidugi. Veel klaas vett? | Oczywiście. Jeszcze szklankę wody? | Ei, aitäh. Mul on küllalt. | Grzecznie odmów: masz dość. | „Mam dość” to mul on küllalt.
+e Hea meelega! | Chętnie!
+
+@level 4 | Rozmowa przy stole | patience=5 typed=0.75 extra=4 hint=letters
+partner Proua Tamm | T
+desc Rozdział 4: Wieczór u pani Tamm
+scene Wieczorem Mart zabiera cię do swojej ulubionej kawiarni. Właścicielka, pani Tamm, zna wszystkich, a ciebie wypytuje jak nowego znajomego Marta.
+goal Odpowiadaj na pytania pani Tamm o to, skąd jesteś i czym się zajmujesz. Jeśli jej się spodobasz, Mart zaprosi cię na jutro.
+win Pani Tamm klepie cię po ramieniu: „Ta kuulub nüüd perre!” Mart mówi, że jutro odprowadzi cię na dworzec i wszystko ci pokaże.
+partial Pani Tamm jest uprzejma, ale nie do końca przekonana. Mart uspokaja: „Ta vajab aega.” Jutro i tak idziecie razem na dworzec.
+fail Pani Tamm przestała cię rozumieć w połowie wywiadu i uznała, że jesteś nieszczery. Mart wychodzi zakłopotany.
+w õlu
+w vein
+w vesi
+w kohv
+w õhtust | wieczoru (tere õhtust = dobry wieczór)
+w õlut | piwa (õlu + -t: forma cząstkowa)
+t Tere õhtust! Mida soovite juua? | Dobry wieczór! Co podać do picia? | Ma tahan õlut ja klaasi vett, palun. | Zamów piwo i wodę. | Po „tahan” napój stoi w formie cząstkowej: õlut, klaasi vett.
+w räägite | mówicie, mówi pan (rääkima)
+w eesti | estoński
+w keelt | język (keel + -t: forma cząstkowa)
+w kust | skąd
+w olete | jesteście, jest pan (olema)
+t Te räägite väga hästi eesti keelt. Kust olete pärit? | Mówi pan bardzo dobrze po estońsku. Skąd pan pochodzi? | Aitäh! Ma olen pärit Poolast. | Podziękuj i powiedz, że jesteś z Polski. | „Z Polski” to Poolast (końcówka -st: „z”).
+w kaua | długo
+w õppinud | uczył się (õppima; czas przeszły złożony)
+t Poolast! Kui kaua te olete eesti keelt õppinud? | Z Polski! Jak długo pan uczy się estońskiego? | Ma ei ole eesti keelt kaua õppinud. | Powiedz, że uczysz się estońskiego od niedawna. | Przeczenie czasu przeszłego: ei ole õppinud = „nie uczyłem się”.
+w tore | świetnie
+w õpite | uczycie się (õppima)
+w koolis | w szkole (kool + -is: „w”)
+w õpin | uczę się (õppima)
+w kodus | w domu
+t Tore! Kas te õpite koolis? | Świetnie! Czy pan uczy się w szkole? | Ei, ma õpin kodus. | Zaprzecz: uczysz się w domu. | „W domu” to kodus (kodu + -s: „w”).
+w supp
+w liha
+w kartul
+w riis
+w supis | w zupie (supp + -is: „w”)
+t Kas soovite midagi süüa? Supp on täna väga hea. | Czy chce pan coś zjeść? Zupa jest dziś bardzo dobra. | Jah, ma tahan suppi. Kas supis on liha? | Zgódź się na zupę i zapytaj, czy jest w niej mięso. | „W zupie” to supis (końcówka -is).
+t Ei, supis ei ole liha. Kas soovite ka saia? | Nie, w zupie nie ma mięsa. Czy chce pan też bułkę? | Jah, saia juustuga, palun. | Zgódź się: bułka z serem. | „Z serem” to juustuga (końcówka -ga).
+w maitseb | smakuje (maitsema)
+t Kuidas supp maitseb? | Jak smakuje zupa? | Supp on hea, aga natuke kuum. | Pochwal zupę, ale zaznacz, że jest gorąca. | „Trochę gorąca” to natuke kuum.
+w joon | piję (jooma)
+t Kas soovite veel õlut? | Czy chce pan jeszcze piwo? | Ei, aitäh, nüüd ma joon kohvi. | Odmów i powiedz, że teraz pijesz kawę. | „Piję kawę” to ma joon kohvi.
+t Kas te olete õpilane? | Czy pan jest studentem? | Ei, ma olen õpetaja. | Zaprzecz: jesteś nauczycielem. | Po „olen” w estońskim nie ma rodzajnika: ma olen õpetaja.
+t Muidugi. Kas soovite veel midagi? | Oczywiście. Czy chce pan jeszcze coś? | Ei, aitäh, see on kõik. | Odmów: to wszystko. | „To wszystko” to see on kõik.
+e Hea meelega! | Chętnie!
+
+@level 5 | Pełna wizyta i rachunek | patience=4 typed=1 extra=0 hint=none reward=25
+desc Rozdział 5: Rachunek i pożegnanie
+scene Ostatni dzień w Tallinie. Z samego rana siadasz w kawiarni, żeby zjeść pożegnalne śniadanie i zapłacić. Za godzinę pociąg, a Mart ma pojawić się na peronie.
+goal Zamów pełne śniadanie, usiądź przy oknie, zapłać i pożegnaj się. Nie możesz się spóźnić na pociąg.
+win Kelner życzy ci dobrej podróży i wręcza paczkę ciasta „na drogę od pani Tamm”. Biegniesz na dworzec, a tam czeka Mart.
+partial Zapłaciłeś, ale straciłeś sporo czasu na poprawki. Biegniesz na dworzec w ostatniej chwili.
+fail Rachunek zrobił się kłopotliwy, kelner nie rozumiał, ile masz zapłacić. Pociąg odjechał bez ciebie.
+w kohv
+w tee
+w piim
+w suhkur
+t Tere hommikust! Mida soovite juua? | Dzień dobry! Co podać do picia? | Tere hommikust! Ma tahan kohvi piimaga, aga ilma suhkruta. | Przywitaj się i zamów kawę z mlekiem, ale bez cukru. | „Z mlekiem” to piimaga, a „bez cukru” to ilma suhkruta.
+w hommikusöögiks | na śniadanie (hommikusöök + -iks)
+w sai
+w muna
+w šokolaadikook
+t Hea. Ja hommikusöögiks? Meil on sai juustuga, muna või šokolaadikook. | Dobrze. A na śniadanie? Mamy bułkę z serem, jajko albo ciasto czekoladowe. | Ma võtan saia ja ühe muna, palun. | Zamów bułkę i jajko. | Po „võtan” bułka stoi w formie cząstkowej: saia, a „jedno jajko” to ühe muna.
+w soovitate | polecacie, poleca pan (soovitama)
+t Hea meelega. Kas soovite ka klaasi vett? | Chętnie. Czy chce pan też szklankę wody? | Jah, hea meelega. Mida te veel soovitate? | Zgódź się i zapytaj, co jeszcze polecają. | W pytaniu mida stoi na początku: mida te soovitate.
+w õunakooki | szarlotki (õunakook + -i: forma cząstkowa)
+t Õunakook on täna väga maitsev. | Szarlotka jest dziś bardzo smaczna. | Hea, siis ma võtan tüki õunakooki. | Zdecyduj się na kawałek szarlotki. | Po „tükk” (kawałek) stoi forma cząstkowa: õunakooki.
+w akna | okna (aken + -a: dopełniacz)
+t Kas soovite istuda siin või seal? | Czy chce pan siedzieć tutaj czy tam? | Ma tahan istuda seal, akna juures. | Powiedz, że chcesz siedzieć przy oknie. | „Przy oknie” to akna juures.
+t Siin on kõik. Head isu! | Oto wszystko. Smacznego! | Aitäh, samuti! | Odwzajemnij życzenia. | „Nawzajem” to samuti.
+t Kas hommikusöök maitseb? | Czy śniadanie smakuje? | Jah, see maitseb väga hästi. | Zgódź się: bardzo ci smakuje. | „Smakuje dobrze” to maitseb hästi.
+w maksta | płacić (maksma, forma „da”)
+t Kas soovite veel midagi? | Czy chce pan jeszcze coś? | Ei, aitäh. Ma tahan maksta. | Odmów i powiedz, że chcesz zapłacić. | „Chcę zapłacić” to ma tahan maksta (bezokolicznik po tahan).
+w teeb | robi (tegema); see teeb = to wynosi
+w vaja | potrzeba
+t See teeb üksteist eurot. | To będzie jedenaście euro. | Siin on kaksteist eurot. Tagasiraha ei ole vaja. | Zapłać i powiedz, że reszty nie trzeba. | „Reszty nie trzeba” to tagasiraha ei ole vaja.
+w tänu | podziękowanie (suur tänu = wielkie dzięki)
+w päeva | dnia (head päeva = miłego dnia)
+t Suur tänu! Head päeva! | Dziękujemy! Miłego dnia! | Aitäh, samuti! Nägemist! | Podziękuj i pożegnaj się. | „Nawzajem” to samuti, a „do widzenia” to nägemist.
+e Nägemist! | Do widzenia!
+
+
+@larp rong | Pociąg do Tartu | Piletimüüja | P | Biegniesz na dworzec w Tallinie. Pociąg do Tartu odjeżdża za dziesięć minut, a Mart czeka na ciebie w środku. | Kup bilet, znajdź właściwy peron i dojedź do Tartu.
+fee 0
+reward 15
+strict yes
+story yes
+win Siedzisz w pociągu do Tartu, a Mart macha do ciebie z drugiego końca wagonu. Podróż może się zacząć.
+partial Dotarłeś do Tartu, ale kilka razy ktoś musiał ci pomagać. Mart czeka na peronie i mówi: „Harjuta veel küsimusi.”
+fail Pociąg odjechał, a ty stoisz na peronie z biletem w ręku. Mart pisze: „Järgmine rong tunni aja pärast!”
+
+@level 1 | Bilet | patience=5 typed=0 extra=1 hint=none
+desc Rozdział 1: Kasa biletowa
+w pilet
+w rong
+w Tartu | Tartu (miasto)
+w kuhu | dokąd
+w sõita | jechać (sõitma, forma „da”)
+w piletit | bilet (pilet + -it: forma cząstkowa)
+w Tartusse | do Tartu (Tartu + -sse: „do”)
+t Tere! Kuhu soovite sõita? | Dzień dobry! Dokąd chce pan jechać? | Ma tahan piletit Tartusse, palun. | Poproś o bilet do Tartu. | „Do Tartu” to Tartusse (końcówka -sse: „do”). | Ma tahan piletit Tartusse, palun.
+w ühesuunaline | w jedną stronę (üks (jeden) + suund (kierunek))
+w edasi-tagasi | tam i z powrotem
+t Ühesuunaline või edasi-tagasi? | W jedną stronę czy tam i z powrotem? | Ühesuunaline, palun. | Wybierz bilet w jedną stronę. | „Ühesuunaline” to bilet w jedną stronę.
+w väljub | odjeżdża (väljuma)
+w kümne | dziesięciu (kümme + -e)
+w minuti | minuty (minut + -i)
+w eurot
+w kakskümmend
+w viisteist
+t Rong väljub kümne minuti pärast. See maksab viisteist eurot. | Pociąg odjeżdża za dziesięć minut. To kosztuje piętnaście euro. | Siin on kakskümmend eurot. | Podaj dwadzieścia euro. | „Za dziesięć minut” to kümne minuti pärast.
+t Tagasiraha viis eurot. Siin on teie pilet. | Reszty pięć euro. Oto pana bilet. | Aitäh väga! Nägemist! | Podziękuj i pożegnaj się. | „Do widzenia” to nägemist.
+w reisi | podróży (reis + -i: forma cząstkowa)
+e Head reisi! | Szczęśliwej podróży!
+
+@level 2 | Peron | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Który peron?
+partner Jaamaametnik | J
+scene Masz bilet, ale na dworcu jest kilka pociągów naraz. Pracownik kolei stoi przy tablicy odjazdów, a zegar tyka.
+goal Dowiedz się, z którego peronu odjeżdża pociąg do Tartu, i nie wsiądź do złego pociągu.
+win Wsiadasz do właściwego pociągu tuż przed odjazdem. Pracownik kolei salutuje: „Head sõitu!”
+partial Dotarłeś na peron, ale po drodze kilka razy pytałeś o to samo. Wsiadasz w ostatniej chwili.
+fail Wsiadłeś do pociągu do Pärnu. Mart dzwoni: „Kus sa oled?!”
+w saan | mogę (saama)
+w aidata | pomóc (aitama, forma „da”)
+w kust
+w väljub
+t Tere! Kas saan aidata? | Dzień dobry! Czy mogę pomóc? | Jah, kust väljub Tartu rong? | Zgódź się i zapytaj, skąd odjeżdża pociąg do Tartu. | „Skąd” to kust, a „odjeżdża” to väljub (od väljuma).
+w perroon | peron
+w perroonilt | z peronu (perroon + -ilt: „z”)
+w perroonile | na peron (perroon + -ile: „na”)
+w Pärnu | Pärnu (miasto)
+w Pärnusse | do Pärnu (Pärnu + -sse: „do”)
+w sõidan | jadę (sõitma)
+k Tartu rong väljub perroonilt viis. Pärnu rong väljub perroonilt kolm. | Pociąg do Tartu odjeżdża z peronu piątego. Pociąg do Pärnu z peronu trzeciego. | Aitäh! Ma lähen perroonile viis. | Aitäh! Ma lähen perroonile kolm.; Aitäh! Ma sõidan Pärnusse. | Perroon kolm to peron trzeci, a stamtąd jedzie pociąg do Pärnu.; Chciałeś jechać do Tartu (Tartusse), nie do Pärnu (Pärnusse).
+w teil
+t Palun! Kas teil on juba pilet? | Proszę bardzo! Czy ma pan już bilet? | Jah, mul on pilet. | Potwierdź, że masz bilet. | „Mam bilet” to mul on pilet (dosłownie „u mnie jest bilet”).
+e Siis kiiresti! Head reisi! | W takim razie szybko! Szczęśliwej podróży!
+
+@level 3 | W pociągu | patience=4 typed=0.5 extra=3 hint=bank reward=25
+desc Rozdział 3: Konduktor
+partner Konduktor | K
+scene Pociąg ruszył. Konduktor idzie przez wagon i sprawdza bilety, a Mart siedzi kilka rzędów dalej i macha do ciebie.
+goal Pokaż bilet, wybierz miejsce i dojedź do Tartu bez kłopotów.
+win Konduktor oddaje bilet z uśmiechem: „Kõik on korras!” Mart robi ci miejsce przy oknie i pyta o pierwsze wrażenia z Tallina.
+partial Konduktor w końcu skasował bilet, ale musiał kilka razy powtarzać. Mart pomaga ci usiąść.
+fail Konduktor uznał, że nie rozumiesz, co się do ciebie mówi. Bilet skontrolował dopiero Mart, a ty dostajesz upomnienie.
+w päevast | dnia (tere päevast = dzień dobry)
+t Tere päevast! Teie pilet, palun. | Dzień dobry! Pański bilet, proszę. | Siin on minu pilet. | Pokaż bilet. | „Oto mój bilet” to siin on minu pilet.
+w taha | chcieć (ei taha = nie chcę)
+w akent | okno (aken + -t: forma cząstkowa)
+o Aitäh. Kas soovite istuda akna juures? | Dziękuję. Czy chce pan siedzieć przy oknie? | Jah, akna juures, palun. | Ei, ma ei taha akent.; Jah, ma tahan maksta. | Konduktor pyta o miejsce, nie o płacenie.; Przy oknie to akna juures, a „ma ei taha akent” znaczy „nie chcę okna”.
+w vaba | wolny
+w hilineb | spóźnia się (hilinema)
+w minutit | minut (minut + -it: po liczebniku)
+t See koht on vaba. Rong hilineb kümme minutit. | To miejsce jest wolne. Pociąg spóźnia się dziesięć minut. | See ei ole probleem. Aitäh! | Powiedz, że to nie problem, i podziękuj. | „To nie problem” to see ei ole probleem.
+w korras | w porządku
+e Kõik on korras! Head reisi Tartusse! | Wszystko w porządku! Szczęśliwej podróży do Tartu!

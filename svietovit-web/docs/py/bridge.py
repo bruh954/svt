@@ -9,9 +9,9 @@ import random
 import time
 
 COURSE_IDS = ["hanzi_hero", "glagol", "ave", "logos", "abba", "kaszeby", "hangeul", "han", "kana", "nihon",
-              "greek", "german", "french", "italian", "spanish", "russian", "turkish", "norse", "estonian", "serbian", "finnish", "czech", "slovak", "slovenian", "thai"]
-NEW = {"greek", "german", "french", "italian", "spanish", "russian", "turkish", "norse", "estonian", "serbian", "finnish", "czech", "slovak", "slovenian", "thai"}
-SOURCE_LANG = {"hanzi_hero": "en"}  # pozostałe kursy mają treść źródłową po polsku
+              "greek", "german", "french", "italian", "spanish", "russian", "turkish", "norse", "estonian", "serbian", "finnish", "czech", "slovak", "slovenian", "thai", "english", "icelandic", "polish", "hungarian"]
+NEW = {"greek", "german", "french", "italian", "spanish", "russian", "turkish", "norse", "estonian", "serbian", "finnish", "czech", "slovak", "slovenian", "thai", "english", "icelandic", "polish", "hungarian"}
+SOURCE_LANG = {"hanzi_hero": "en", "polish": "en"}  # pozostałe kursy mają treść źródłową po polsku
 
 save_hook = None   # ustawia JavaScript: save_hook(course_id, json_string)
 tz_shift = 0       # sekundy do odjęcia od czasu UTC, żeby „dzień" był lokalny
@@ -225,8 +225,23 @@ def _sent_sub(toks):
     return E.sentence_tr(toks)
 
 
-def _tiles(toks):
-    return [{"v": t, "sub": _tok_sub(t)} for t in toks]
+def _nog(ref):
+    """der/die/das, które w zdaniu wzorcowym nie są rodzajnikiem (np. „das ist alles”): nie dostają koloru rodzaju."""
+    if not ref or _cur["cid"] != "german":
+        return set()
+    m = json.loads(gender_map())
+    art, other = set(), set()
+    for i, t in enumerate(ref):
+        lt = str(t).lower()
+        if lt in ("der", "die", "das"):
+            nxt = ref[i + 1] if i + 1 < len(ref) else ""
+            (art if nxt in m and str(nxt).lower() not in ("der", "die", "das") else other).add(lt)
+    return other - art
+
+
+def _tiles(toks, ref=None):
+    nog = _nog(ref)
+    return [({"v": t, "sub": _tok_sub(t), "nog": True} if str(t).lower() in nog else {"v": t, "sub": _tok_sub(t)}) for t in toks]
 
 
 # ---------------------------------------------------------------------------
@@ -258,7 +273,7 @@ def home():
         larps.append({"id": lp["id"], "title": lp["title"], "partner": lp["partner"], "avatar": lp["avatar"],
                       "fee": lp["fee"], "scene": lp["scene"], "goal": lp["goal"], "unlocked": un,
                       "best": d.get("larps", {}).get(lp["id"]), "can_pay": d["xp_total"] >= lp["fee"],
-                      "levels": _larp_levels_view(lp), "disclaimer": lp.get("disclaimer"), "reward": lp.get("reward")})
+                      "levels": _larp_levels_view(lp), "story": bool(lp.get("story")), "disclaimer": lp.get("disclaimer"), "reward": lp.get("reward")})
     return json.dumps({"larps": larps, "paradigms": _paradigm_list(),
         "units": units, "tracks": getattr(C, "TRACKS", {}), "current": current, "chats": chats,
         "hearts": st.hearts(), "heart_max": E.HEART_MAX, "next_heart": st.seconds_to_next_heart(),
@@ -391,6 +406,70 @@ def _larp_round_exs(rng):
     return exs + graded
 
 
+def _larp_help_exs(rng):
+    """Ćwiczenia „nie rozumiem”: z bieżącej kwestii larpa (słowa, sens zdania, własna odpowiedź). Nic nie kosztują."""
+    E, st = _cur["E"], _cur["state"]
+    cfg = _larp["cfg"]
+    n = cfg["nodes"][_larp["node"]]
+    if n.get("unit") and n.get("pool"):
+        try:
+            return _larp_round_exs(rng)              # larpy z lekcjami: ta sama seria tematu
+        except Exception:
+            pass
+    P = set(_cur["C"].PUNCT)
+    bot = [t for t in n["bot"] if t not in P]
+    ans = []
+    if n.get("build"):
+        ans += list(n["build"][0])
+    for o in n.get("options", []):
+        ans += list(o[0])
+    pool = []
+    for t in bot + [a for a in ans if a not in P]:
+        if t in E.WORDS and not E.WORDS[t].get("letter") and t not in pool:
+            pool.append(t)
+    pool = pool[:8]
+    learned = list(st.learned_words())
+    extra = [h for h in learned if h not in pool and not E.WORDS[h].get("letter")]
+    rng.shuffle(extra)
+    gen = E.Gen(pool + extra[:20] + [h for h in E.WORDS if h not in pool][:0], rng)
+    seen = set(learned)
+    exs = [gen.intro(h) for h in pool if h not in seen][:5]
+    graded = []
+    if n.get("pl"):
+        try:
+            graded.append(gen.sentence_meaning(list(n["bot"]), n["pl"], E.all_sentence_pl()))
+        except Exception:
+            pass
+    if len(pool) >= 3:
+        try:
+            graded.append(gen.match(pool[:5], "pl"))
+        except Exception:
+            pass
+    bot_words = [t for t in bot if t in pool] or pool
+    for h in bot_words[:5]:
+        try:
+            graded.append(gen.meaning(h, pool + extra[:6]))
+        except Exception:
+            pass
+    if n.get("build"):
+        try:
+            toks, pl = n["build"]
+            graded.append(gen.build(list(toks), pl, None))
+        except Exception:
+            pass
+    rng.shuffle(graded)
+    return exs + graded
+
+
+def larp_help():
+    """Uczeń nie rozumie kwestii: zaczyna się krótka seria ćwiczeń z tej kwestii, a potem wraca do niej bez kary."""
+    if _larp["done"] or not _larp.get("cfg"):
+        return json.dumps({"ok": False})
+    _larp["help"] = True
+    return json.dumps({"ok": True})
+
+
+
 def _larp_round_finish():
     s, st = _cur["session"], _cur["state"]
     lp = _larp_def(_larp["id"])
@@ -398,6 +477,11 @@ def _larp_round_finish():
     acc = s.accuracy
     for h, ok in s.word_results:
         st.record_word(h, ok)
+    if _larp.get("help"):
+        _larp["help"] = False
+        st.save()
+        _cur["session"] = None
+        return json.dumps({"kind": "larp", "help": True, "acc": acc, "verdict": "help", "patience": _larp["patience"], "mistakes": s.mistakes}, ensure_ascii=False)
     for h in n.get("pool", []):
         st.data["words"].setdefault(h, {"box": 0, "last": st.now(), "right": 0, "wrong": 0})
     _larp["rounds"].add(_larp["node"])
@@ -420,7 +504,10 @@ def start(kind, unit=None):
     _cur["miss"] = {"grammar": 0, "words": {}, "sentences": 0}
     rng = random.Random()
     if kind == "larp":
-        exs = _larp_round_exs(rng)
+        exs = _larp_help_exs(rng) if _larp.get("help") else _larp_round_exs(rng)
+        if not exs:
+            _larp["help"] = False
+            return 0
         sess = E.Session(exs, "practice", None, hearts=False)
         _cur["session"], _cur["kind"] = sess, kind
         return len(exs)
@@ -682,7 +769,7 @@ def chat_get(cid):
             random.shuffle(extra)
             bank = _no_punct(toks) + extra[:2]   # interpunkcji nie trzeba układać
             random.shuffle(bank)
-            item["build"] = {"prompt": pl, "bank": _tiles(bank), "answer": list(toks), "text": _larp_disp(toks)}
+            item["build"] = {"prompt": pl, "bank": _tiles(bank, toks), "answer": list(toks), "text": _larp_disp(toks)}
         turns.append(item)
     return json.dumps({"id": c["id"], "title": c["title"], "partner": c["partner"], "avatar": c["avatar"],
                        "turns": turns}, ensure_ascii=False)
@@ -722,7 +809,7 @@ def tone_contours():
 # ---------------------------------------------------------------------------
 # Larpy: scena ze stawką (wpisowe w XP, cierpliwość rozmówcy, pytania „jedna szansa")
 # ---------------------------------------------------------------------------
-_larp = {"id": None, "lvl": 1, "cfg": None, "node": None, "patience": 0, "weak": 0, "mistakes": 0, "done": True, "typed": set(), "rounds": set()}
+_larp = {"id": None, "lvl": 1, "cfg": None, "node": None, "patience": 0, "weak": 0, "mistakes": 0, "done": True, "typed": set(), "rounds": set(), "help": False}
 
 
 def _larp_def(lid):
@@ -745,7 +832,7 @@ def _larp_levels_view(lp):
         return None
     out = []
     for i, c in enumerate(lv, 1):
-        out.append({"lvl": i, "title": c.get("title"), "best": _larp_rank(lp["id"], i),
+        out.append({"lvl": i, "title": c.get("title"), "desc": c.get("desc"), "best": _larp_rank(lp["id"], i),
                     "unlocked": i == 1 or (_larp_rank(lp["id"], i - 1) or 0) >= 1})
     return out
 
@@ -759,18 +846,22 @@ def _larp_chain(cfg):
 
 
 def _larp_disp(toks):
-    """Zdanie do pokazania: wielka litera na początku każdego zdania (tokeny po kropce są zapisane małą literą)."""
+    """Zdanie do pokazania: wielka litera na początku każdego zdania (tokeny w kursach są zapisane małą literą). Znaki iloczasu zostają."""
     import re as _re
     s = _join(toks)
-    if getattr(_cur["E"], "CAP_FIRST", False):
-        s = _re.sub(r"([.!?]\s+)(\w)", lambda m: m.group(1) + m.group(2).upper(), s)
+    if _cur.get("cid") != "turkish":          # tureckie i/İ wymagałoby osobnej reguły
+        def up(m):
+            c = m.group(2)
+            u = c.upper()
+            return m.group(1) + (u if len(u) == 1 else c)
+        s = _re.sub(r"(^|[.!?]\s+)([^\W\d_])", up, s)
     return s
 
 
 def _larp_norm(text):
     """Do porównania: początki zdań małą literą (to nie błąd), bez interpunkcji, pojedyncze spacje."""
     import re as _re
-    text = _re.sub(r"(^|[.!?]\s*)(\w)", lambda m: m.group(1) + m.group(2).lower(), text.strip())
+    text = _re.sub(r"(^|[.!?]\s*)([¡¿«»\"'(]*)(\w)", lambda m: m.group(1) + m.group(2) + m.group(3).lower(), text.strip())
     P = set(_cur["C"].PUNCT)
     t = "".join(" " if c in P else c for c in text)
     return " ".join(t.split())
@@ -814,7 +905,7 @@ def _larp_node(lp, key):
         random.shuffle(pool); random.shuffle(learned)
         bank = _no_punct(toks) + (pool + learned)[:int(cfg.get("extra", 3))]
         random.shuffle(bank)
-        out["build"] = {"prompt": pl, "bank": _tiles(bank)}
+        out["build"] = {"prompt": pl, "bank": _tiles(bank, toks)}
     return out
 
 
@@ -839,11 +930,11 @@ def larp_start(lid, lvl=1):
     frac = float(cfg.get("typed", 0))
     keys = _larp_chain(cfg)
     typed = {k for i, k in enumerate(keys) if "build" in cfg["nodes"][k] and int((i + 1) * frac + 1e-9) > int(i * frac + 1e-9)}
-    _larp.update(id=lid, lvl=lvl, cfg=cfg, node=cfg["start"], patience=cfg.get("patience", lp.get("patience", 3)), weak=0, mistakes=0, done=False, typed=typed, rounds=set())
-    return json.dumps({"ok": True, "fee": lp["fee"], "patience": _larp["patience"], "max_patience": _larp["patience"], "level": lvl,
-                       "lexicon": lex, "disclaimer": lp.get("disclaimer"), "level_title": cfg.get("title") if cfg is not lp else None,
-                       "scene": cfg.get("scene", lp["scene"]), "goal": cfg.get("goal", lp["goal"]), "partner": lp["partner"], "avatar": lp["avatar"],
-                       "title": lp["title"], "node": _larp_node(lp, cfg["start"])}, ensure_ascii=False)
+    _larp.update(id=lid, lvl=lvl, cfg=cfg, node=cfg["start"], patience=cfg.get("patience", lp.get("patience", 3)), weak=0, mistakes=0, done=False, typed=typed, rounds=set(), help=False)
+    return json.dumps({"ok": True, "fee": lp["fee"], "patience": _larp["patience"], "max_patience": int(cfg.get("cap") or _larp["patience"]), "level": lvl,
+                       "lexicon": lex, "disclaimer": lp.get("disclaimer"), "endless": bool(cfg.get("endless")), "level_title": cfg.get("title") if cfg is not lp else None,
+                       "scene": cfg.get("scene", lp["scene"]), "goal": cfg.get("goal", lp["goal"]), "partner": cfg.get("partner", lp["partner"]), "avatar": cfg.get("avatar", lp["avatar"]),
+                       "title": lp["title"], "story": bool(lp.get("story")), "node": _larp_node(lp, cfg["start"])}, ensure_ascii=False)
 
 
 def _larp_finish(lp, outcome):
@@ -879,6 +970,90 @@ def _larp_finish(lp, outcome):
             "mistakes": _larp["mistakes"], "weak": _larp["weak"]}
 
 
+def _de_fold(t, mode):
+    t = t.lower()
+    if mode == 0:
+        return t.replace("ä", "a").replace("ö", "o").replace("ü", "u").replace("ß", "ss")
+    return t.replace("ä", "ae").replace("ö", "oe").replace("ü", "ue").replace("ß", "ss")
+
+
+def _de_cmp(given_s, cands):
+    """Niemiecki, wpisana odpowiedź: „bitte” może stać w dowolnym miejscu; brak umlautów to drobny błąd (z notatką),
+    ale rzeczownik małą literą jest błędem. Zwraca „good”, „diac”, „case” albo None."""
+    g0 = [t for t in given_s.split() if t.lower() != "bitte"]
+    best = None
+    for c in cands:
+        w = [t for t in c if t.lower() != "bitte"]
+        if len(w) != len(g0):
+            continue
+        diac = case = False
+        ok = True
+        for a, b in zip(g0, w):
+            if a == b:
+                continue
+            if b[:1].isupper() and not a[:1].isupper():      # rzeczownik małą literą
+                ok = False
+                break
+            if a.lower() == b.lower():
+                case = True
+            elif any(_de_fold(a, m) == _de_fold(b, m) for m in (0, 1)):
+                diac = True
+            else:
+                ok = False
+                break
+        if ok:
+            r = "diac" if diac else ("case" if case else "good")
+            if best is None or ["good", "case", "diac"].index(r) < ["good", "case", "diac"].index(best):
+                best = r
+    return best
+
+
+# Odpowiedź, która ma sens, ale jest uboga albo niegrzeczna: rozmówca ją przyjmuje, ale patrzy krzywo (wynik „weak”).
+_POLITE = {"bitte", "danke", "schön", "gern", "bitteschön", "entschuldigung", "dziękuję", "proszę", "please", "thanks", "thank", "спасибо", "пожалуйста",
+           "prosím", "děkuji", "hvala", "molim", "gracias", "grazie", "merci", "lütfen", "kiitos", "kérem", "köszönöm", "takk", "tack",
+           "domine", "quaesō", "amābō", "ōrō", "amīce", "bitt", "sir", "madam"}
+_YESNO = {"ja", "nein", "tak", "nie", "да", "нет", "yes", "no", "si", "sí", "non", "oui", "ano", "ne", "nej", "kyllä", "ei", "igen", "nem", "evet", "hayır", "ita", "minimē", "da", "jo", "doch", "ја", "не"}
+
+
+def _larp_lenient(given, cands):
+    """Czy odpowiedź jest skróconą wersją wzorcowej (ten sam sens, mniej słów)? Zwraca „rude” (brak grzeczności), „short” (za krótko) albo None."""
+    P = set(_cur["C"].PUNCT)
+    g = [t.lower() for t in given if t not in P]
+    if not g:
+        return None
+    gcase = [t for t in given if t not in P]
+    de = _cur["cid"] == "german"
+    for c in cands:
+        m = [t.lower() for t in c if t not in P]
+        if len(g) >= len(m):
+            continue
+        it = iter(m)
+        if not all(x in it for x in g):               # nie jest podciągiem wzorca
+            continue
+        if de:                                        # niemiecki: rzeczownik małą literą to błąd
+            mc0 = [t for t in c if t not in P]
+            bad = False
+            pos = 0
+            for x, xo in zip(g, gcase):
+                while mc0[pos].lower() != x:
+                    pos += 1
+                if mc0[pos][:1].isupper() and not xo[:1].isupper():
+                    bad = True
+                pos += 1
+            if bad:
+                continue
+        mc = [t for t in m if t not in _POLITE]
+        gc = [t for t in g if t not in _POLITE]
+        if not gc:
+            continue
+        if len(gc) * 2 >= len(mc) or all(t in _YESNO for t in gc):
+            left = list(m)
+            for t in g:
+                left.remove(t)
+            return "rude" if all(t in _POLITE for t in left) else "short"
+    return None
+
+
 def larp_answer(payload_json):
     """Odpowiedź w bieżącym węźle: {"option": i}, {"tokens": [...]} (klocki) albo {"text": "..."} (wpisana z klawiatury)."""
     if _larp["done"]:
@@ -902,20 +1077,42 @@ def larp_answer(payload_json):
         if "text" in p:
             raw = str(p.get("text") or "")
             given_s = _larp_norm(raw)
-            if given_s in want:
+            de = _de_cmp(given_s, [_larp_norm(_larp_disp(c)).split() for c in cands]) if _cur["cid"] == "german" else None
+            if given_s in want or de == "good":
                 verdict = "good"
+            elif de == "diac":
+                verdict, res["why"] = "weak", "Pisz z umlautami (ä, ö, ü, ß): " + disp
+            elif de == "case":
+                verdict, res["why"] = "weak", "Wielkie i małe litery: " + disp
+            elif _cur["cid"] == "german":
+                kind = _larp_lenient(given_s.split(), [_larp_norm(_larp_disp(c)).split() for c in cands])
+                if kind:
+                    verdict = "weak"
+                    res["why"] = ("Rozmówca rozumie, ale patrzy krzywo: brakuje grzeczności. Lepiej: " if kind == "rude" else "Rozmówca rozumie, ale patrzy krzywo: za krótko. Lepiej: ") + disp
+                else:
+                    verdict = "bad"
             elif given_s.lower() in [w.lower() for w in want]:
                 verdict, res["why"] = "weak", "Wielkie i małe litery: " + disp
             elif _larp_plain(given_s) in [_larp_plain(w) for w in want]:
                 verdict, res["why"] = "weak", "Brakuje znaków diakrytycznych: " + disp
             else:
-                verdict = "bad"
+                kind = _larp_lenient(given_s.split(), [_larp_norm(_larp_disp(c)).split() for c in cands])
+                if kind:
+                    verdict = "weak"
+                    res["why"] = ("Rozmówca rozumie, ale patrzy krzywo: brakuje grzeczności. Lepiej: " if kind == "rude" else "Rozmówca rozumie, ale patrzy krzywo: za krótko. Lepiej: ") + disp
+                else:
+                    verdict = "bad"
             shown = raw.strip()
             sub = ""
         else:
             given = list(p.get("tokens", []))
             given_s = _larp_norm(_larp_disp(given))
-            verdict = "good" if given_s in want else "bad"
+            verdict = "good" if (given_s in want or given_s.lower() in [w.lower() for w in want]) else "bad"   # klocki mają stałą pisownię, więc wielkość liter nie rozstrzyga
+            if verdict == "bad":
+                kind = _larp_lenient(given, cands)
+                if kind:
+                    verdict = "weak"
+                    res["why"] = ("Rozmówca rozumie, ale patrzy krzywo: brakuje grzeczności. Lepiej: " if kind == "rude" else "Rozmówca rozumie, ale patrzy krzywo: za krótko. Lepiej: ") + disp
             shown = disp if verdict == "good" else _larp_disp(given)
             sub = _sent_sub(toks if verdict == "good" else given) if given else ""
         res.update(verdict=verdict, text=shown if shown else "…", sub=sub if verdict != "bad" or "text" not in p else "")
@@ -924,14 +1121,26 @@ def larp_answer(payload_json):
             res["answer"] = disp
         else:
             nxt = n["next"]
+    endless = bool(cfg.get("endless"))                      # babcia w parku: bez porażki, błędy tylko obniżają wynik
+    cap = int(cfg.get("cap") or cfg.get("patience") or lp.get("patience", 3))
     if res["verdict"] == "weak":
         _larp["weak"] += 1
+    if res["verdict"] in ("good", "weak") and n.get("gain") and not endless:      # wiarygodność wraca
+        _larp["patience"] = min(cap, _larp["patience"] + int(n["gain"]))
     if res["verdict"] == "bad":
         _larp["mistakes"] += 1
-        if n.get("deadly"):
+        if endless:
+            pass
+        elif n.get("deadly"):
             _larp["patience"] = 0
         else:
-            _larp["patience"] -= 1
+            _larp["patience"] -= int(n.get("loss", 1))
+        if _larp["patience"] <= 0 and not endless:
+            res["patience"] = 0
+            res["end"] = _larp_finish(lp, "fail")
+            return json.dumps(res, ensure_ascii=False)
+    if nxt and not endless and cfg["nodes"].get(nxt, {}).get("shift"):          # „amnezja” albo nowy skandal: zmiana nie zależy od odpowiedzi
+        _larp["patience"] = min(cap, _larp["patience"] + int(cfg["nodes"][nxt]["shift"]))
         if _larp["patience"] <= 0:
             res["patience"] = 0
             res["end"] = _larp_finish(lp, "fail")
@@ -949,6 +1158,7 @@ def larp_answer(payload_json):
 
 def larp_abandon():
     _larp["done"] = True
+    _larp["help"] = False
     return True
 
 

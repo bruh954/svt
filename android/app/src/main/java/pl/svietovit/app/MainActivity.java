@@ -99,6 +99,16 @@ public class MainActivity extends Activity {
     private class Tts {
         @JavascriptInterface
         public boolean speak(String text, String lang, float rate) {
+            return say(text, lang, rate, TextToSpeech.QUEUE_FLUSH);
+        }
+
+        /** Rozmowy i larpy: nowa kwestia czeka, aż poprzednia się skończy. */
+        @JavascriptInterface
+        public boolean speakQueued(String text, String lang, float rate) {
+            return say(text, lang, rate, TextToSpeech.QUEUE_ADD);
+        }
+
+        private boolean say(String text, String lang, float rate, int mode) {
             if (!ttsReady || text == null) return true;
             try {
                 Locale loc = Locale.forLanguageTag(lang);
@@ -107,7 +117,7 @@ public class MainActivity extends Activity {
                     return false;   // brak głosu dla tego języka: strona pokaże komunikat zamiast czytać obcym głosem
                 }
                 tts.setSpeechRate(rate);
-                tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, "sv");
+                tts.speak(text, mode, null, "sv");
             } catch (Exception ignored) { }
             return true;
         }

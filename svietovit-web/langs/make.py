@@ -5,7 +5,7 @@ SRC = os.environ.get("SV_SRC", "/home/claude/svietovit")
 HERE = os.path.dirname(os.path.abspath(__file__))
 AVE = open(os.path.join(SRC, "courses", "ave", "engine.py"), encoding="utf-8").read()
 
-MODE = {"norse": "ipa", "thai": "ipa"}
+MODE = {"norse": "ipa", "thai": "ipa", "polish": "ipa"}
 NOSPACE = {"thai"}   # tajski: wyrazy w zdaniu piszemy bez spacji   # pozostałe: bez zapisu wymowy (są syntezatory mowy)
 
 LANGS = {
@@ -24,6 +24,10 @@ LANGS = {
     "finnish": ("na fiński", "po fińsku", {"å": "a"}, True),
     "czech":   ("na czeski", "po czesku", {}, True),
     "slovak":  ("na słowacki", "po słowacku", {}, True),
+    "english": ("na angielski", "po angielsku", {}, True),
+    "icelandic": ("na islandzki", "po islandzku", {"á":"a","ð":"d","é":"e","í":"i","ó":"o","ú":"u","ý":"y","þ":"th","æ":"ae","ö":"o"}, True),
+    "polish": ("into Polish", "in Polish", {"ą": "a", "ć": "c", "ę": "e", "ł": "l", "ń": "n", "ó": "o", "ś": "s", "ź": "z", "ż": "z"}, True),
+    "hungarian": ("na węgierski", "po węgiersku", {"á":"a","é":"e","í":"i","ó":"o","ö":"o","ő":"o","ú":"u","ü":"u","ű":"u"}, True),
     "slovenian": ("na słoweński", "po słoweńsku", {"č": "c", "š": "s", "ž": "z"}, True),
     "thai":    ("na tajski", "po tajsku", {}, False),
     "norse":   ("na staronordycki", "po staronordycku", {"þ": "th", "ð": "d", "æ": "ae", "ø": "o", "ǫ": "o", "œ": "oe"}, True),
@@ -59,6 +63,24 @@ def check_typed(text, answer):
     b = plain(answer).lower()
     return "correct" if a == b else "wrong"
 '''
+
+
+# Kurs polskiego dla anglojęzycznych: napisy silnika po angielsku
+EN_TABLE = [
+    ('"Która to litera?"', '"Which letter is it?"'), ('"Wybierz właściwe słowo"', '"Choose the right word"'),
+    ('"Jak to brzmi?"', '"How does it sound?"'), ('"Co to znaczy?"', '"What does it mean?"'),
+    ('"Jak to się czyta?"', '"How is it read?"'), ('"%s czytaj „%s” (%s)"', '"%s is read “%s” (%s)"'),
+    ('"Jaki to polski krewny?"', '"Which English word is related?"'), ('"Uzupełnij końcówkę"', '"Complete the ending"'),
+    ('"Dopasuj pary"', '"Match the pairs"'), ('"Przetłumacz into Polish"', '"Translate into Polish"'),
+    ('"Napisz in Polish"', '"Write in Polish"'), ('"podobne polskie słowo: %s"', '"similar English word: %s"'),
+    ('"Pomyśl (%d/%d)"', '"Think (%d/%d)"'), ('"Pomyśl"', '"Think"'), ('"Przykład: %s."', '"Example: %s."'),
+    ('"Powtórzone słowo: "', '"Duplicate word: "'),
+    ('"Dobre słowa, ale inna kolejność. Spójrz na rozwiązanie: szyk w tych zdaniach warto zapamiętać."', '"Right words, wrong order. Look at the solution: the word order is worth remembering."'),
+    ('"Brakuje: %s (%s)."', '"Missing: %s (%s)."'),
+    ('("Na luzie", 10), ("Regularnie", 20), ("Poważnie", 30), ("Szaleńczo", 50)', '("Casual", 10), ("Regular", 20), ("Serious", 30), ("Insane", 50)'),
+    ('["Pn", "Wt", "Śr", "Cz", "Pt", "So", "Nd"]', '["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"]'),
+    ('r"\\b(ja|ty|on|ona|ono|my|wy|oni|one)\\b|osob|czasown|bezokol|perfekt|czas teraźn|tryb|imiesł"', 'r"verb|tense|conjug|infinitive"'),
+]
 
 def build(cid):
     acc, po, special, cap = LANGS[cid]
@@ -160,6 +182,10 @@ for _f, _a in ARTICLES.items():
 
 def token_tr(t):''', 1)
     assert "łacin" not in s.lower().replace("łaciny:", ""), [m.start() for m in re.finditer("łacin", s)]
+    if cid == "polish":
+        for a, b in EN_TABLE:
+            assert a in s, a
+            s = s.replace(a, b)
     return s
 
 def main():

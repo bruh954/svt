@@ -4,11 +4,12 @@
 Plik larps/<kurs>.txt (puste linie i # ignorowane):
   @larp id | Tytuł | Rozmówca | Awatar | Scena | Cel ucznia
   fee 0 / reward 15 / strict yes / disclaimer … / win … / partial … / fail …        (ustawienia larpa)
-  @level 1 | Tytuł poziomu | patience=6 typed=0 extra=1 hint=none reward=10        (typed: ułamek odpowiedzi pisanych z klawiatury,
+  @level 1 | Tytuł poziomu | patience=6 cap=8 endless=yes typed=0 extra=1 hint=none reward=10   (cap: maks. wiarygodność, endless: bez porażki)        (typed: ułamek odpowiedzi pisanych z klawiatury,
                                                                                   hint: bank | letters | none, extra: zbędne klocki)
   w Kellner | kelner | der | die Kellner | z czego składa się   nowe słowo (jak w bulk.py); samo „w słowo” = słowo już jest w kursie
   t bot | bot po polsku | odpowiedź ucznia | odpowiedź po polsku | dlaczego (opcjonalnie) | wariant ; wariant
   e bot | bot po polsku                                                              (zakończenie sceny)
+  opcje węzła (ostatnie pole t/d, przedostatnie o/k): gain=1 (dobra odpowiedź podnosi wiarygodność) loss=2 (zła obniża o 2) shift=-1 (zmiana po wejściu do węzła, niezależna od odpowiedzi)
 Poziom może używać słów z poprzednich poziomów i z kursu. Pisze też plik DO-SPRAWDZENIA-larpy-<kurs>.md.
 """
 import os, re, sys
@@ -79,13 +80,22 @@ def parse(path):
                 cur["endings"][k] = v.strip()
             elif k in ("fee", "reward"):
                 cur[k] = int(v)
-            elif k == "strict":
-                cur["strict"] = v.strip() in ("yes", "tak", "1")
+            elif k in ("strict", "story"):
+                cur[k] = v.strip() in ("yes", "tak", "1")
             elif k in ("disclaimer", "requires"):
                 cur[k] = v.strip()
             else:
                 raise SystemExit("linia %d: nieznane ustawienie: %s" % (n, line))
-        elif lv is not None and line[:2] in ("w ", "t ", "e ", "x "):
+        elif lv is not None and line.split(" ", 1)[0] in ("scene", "goal", "desc", "partner", "win", "partial", "fail"):
+            k, _, v = line.partition(" ")
+            if k in ("win", "partial", "fail"):
+                lv.setdefault("endings", {})[k] = v.strip()
+            elif k == "partner":
+                a, _, b = v.partition("|")
+                lv["partner"], lv["avatar"] = a.strip(), (b.strip() or a.strip()[:1])
+            else:
+                lv[k] = v.strip()
+        elif lv is not None and line[:2] in ("w ", "t ", "d ", "o ", "k ", "e ", "x "):
             lv["rows"].append((n, line[0], [x.strip() for x in line[2:].split("|")]))
         else:
             raise SystemExit("linia %d: nieznany format: %s" % (n, line))
@@ -114,7 +124,7 @@ def build(cid):
             words, lex, sents, nodes, order = [], [], [], {}, []
             if MISSING is not None:
                 MISSING.append("== poziom %d:" % lv["n"])
-            rows = [r for r in lv["rows"] if r[1] in ("t", "e")]
+            rows = [r for r in lv["rows"] if r[1] in ("t", "d", "o", "k", "e")]
             keys = ["n%d" % i for i in range(len(rows))]
             beat = {"new": [], "pool": [], "sents": []}      # to, co wpisano od poprzedniej kwestii (w, x)
             ri = 0
@@ -149,8 +159,25 @@ def build(cid):
                 node = {"bot": bt, "pl": p[1]}
                 key = keys[i]
                 bsents = list(beat["sents"])
+                talk = kind in ("t", "d", "o", "k")
                 if kind == "e":
                     node["end"] = True
+                elif kind in ("o", "k"):                    # wybór odpowiedzi: p[2] dobra, p[3] złe (po „;”), p[4] ich wyjaśnienia (po „;”)
+                    good = tok(p[2], known, punct)
+                    wrongs = [w.strip() for w in p[3].split(";") if w.strip()]
+                    whys = [w.strip() for w in (p[4].split(";") if len(p) > 4 and p[4] else [])]
+                    badall = [t for t in good if t not in known and t not in punct]
+                    opts = [(good, "good", keys[i + 1] if i + 1 < len(keys) else None, None)]
+                    for j, w_ in enumerate(wrongs):
+                        tw = tok(w_, known, punct)
+                        badall += [t for t in tw if t not in known and t not in punct]
+                        opts.append((tw, "bad", None, whys[j] if j < len(whys) else None))
+                    if badall:
+                        errors.append("linia %d: nieznane słowa %s w odpowiedziach: %s" % (n, sorted(set(badall)), p[2])); continue
+                    node["options"] = opts
+                    at = good
+                    if kind == "k":
+                        node["deadly"] = True
                 else:
                     at = tok(p[2], known, punct)
                     bad = [t for t in at if t not in known and t not in punct]
@@ -158,6 +185,8 @@ def build(cid):
                         errors.append("linia %d: nieznane słowa %s w odpowiedzi: %s" % (n, bad, p[2])); continue
                     node["build"] = (at, p[3])
                     node["next"] = keys[i + 1] if i + 1 < len(keys) else None
+                    if kind == "d":
+                        node["deadly"] = True
                     if len(p) > 4 and p[4]:
                         node["why"] = p[4]
                     alts = []
@@ -170,40 +199,59 @@ def build(cid):
                     if alts:
                         node["alts"] = alts
                     bsents += [(at, p[3], {})]
-                if kind == "t":
+                if talk:
                     bsents += [(bt, p[1], {})]
                 uniq = []
                 for tk, pl, tr in bsents:
                     if pl not in seen and tuple(tk) not in seen_tok:
                         seen.add(pl); seen_tok.add(tuple(tk)); uniq.append((tk, pl, tr))
-                if kind == "t" and not beat["pool"]:       # kwestia bez nowych słów: ćwiczymy słowa z odpowiedzi
+                if talk and not beat["pool"]:       # kwestia bez nowych słów: ćwiczymy słowa z odpowiedzi
                     beat["pool"] = list(dict.fromkeys(t for t in at if t not in punct and len(t) > 2))
-                if beat["pool"] and (kind == "t" or beat["new"]):
+                if beat["pool"] and (talk or beat["new"]):
                     uid = "lp_%s_%d_%d" % (lp["id"], lv["n"], i + 1)
                     units.append({"id": uid, "title": "%s · poziom %d · kwestia %d" % (lp["title"], lv["n"], i + 1), "icon": "🎭", "track": "jezyk", "hidden": True,
                                   "words": beat["new"], "sentences": uniq})
-                    if kind == "t":
+                    if talk:
                         node["unit"] = uid
                         node["pool"] = list(beat["pool"])
                 words += beat["new"]; sents += uniq
                 beat = {"new": [], "pool": [], "sents": []}
+                optp = (p[5] if kind in ("o", "k") and len(p) > 5 else (p[6] if kind in ("t", "d") and len(p) > 6 else ""))
+                for kv in (optp or "").split():
+                    if "=" in kv and kv.split("=")[0] in ("gain", "loss", "shift"):
+                        node[kv.split("=")[0]] = int(kv.split("=")[1])
                 nodes[key] = node; order.append(key)
             if not order or not nodes[order[-1]].get("end"):
                 errors.append("poziom %d larpa %s: ostatni wiersz musi być „e” (zakończenie)" % (lv["n"], lp["id"]))
             cfg = {"title": lv["title"], "start": order[0] if order else None, "nodes": nodes, "lexicon": lex,
                    "patience": int(lv.get("patience", 5)), "typed": float(lv.get("typed", 0)), "extra": int(lv.get("extra", 3))}
+            if lv.get("cap"): cfg["cap"] = int(lv["cap"])
+            if lv.get("endless") in ("yes", "tak", "1"): cfg["endless"] = True
             cfg["lexicon"] = []
             if lv.get("hint", "none") != "none":
                 cfg["hint"] = lv["hint"]
             if lv.get("reward"):
                 cfg["reward"] = int(lv["reward"])
+            for k_ in ("scene", "goal", "desc", "partner", "avatar", "endings"):
+                if lv.get(k_):
+                    cfg[k_] = lv[k_]
             levels.append(cfg)
             review.append("\n### Poziom %d: %s  (typed=%s, hint=%s, cierpliwość %s)\n\nNowe słowa: %s\n\n| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |\n|---|---|---|---|\n" % (
                 lv["n"], lv["title"], lv.get("typed", 0), lv.get("hint", "none"), lv.get("patience", 5),
                 ", ".join("%s = %s" % (w[0], w[1]) for w in words) or "(brak)"))
-            rows = [r for r in rows if r[1] in ("t", "e")]
+            rows = [r for r in rows if r[1] in ("t", "d", "o", "k", "e")]
+            if lv.get("scene") or lv.get("goal") or lv.get("endings"):
+                review.append("\n*Scena:* %s  \n*Cel:* %s  \n*Zakończenia:* %s\n\n" % (lv.get("scene", ""), lv.get("goal", ""), " · ".join("%s: %s" % kv for kv in (lv.get("endings") or {}).items())))
             for i, (n, kind, p) in enumerate(rows, 1):
-                review.append("| %d | %s *(%s)* | %s | %s |\n" % (i, p[0], p[1], ("**" + p[2] + "** *(" + p[3] + ")*" + (" · warianty: " + p[5] if len(p) > 5 and p[5] else "")) if kind == "t" else "—", (p[4] if len(p) > 4 and kind == "t" else "") or ""))
+                if kind == "e":
+                    ans, why = "—", ""
+                elif kind in ("o", "k"):
+                    ans = "**" + p[2] + "** (dobra); złe: " + p[3] + (" · ŚMIERTELNE" if kind == "k" else "")
+                    why = (p[4] if len(p) > 4 else "") or ""
+                else:
+                    ans = "**" + p[2] + "** *(" + p[3] + ")*" + (" · warianty: " + p[5] if len(p) > 5 and p[5] else "") + (" · ŚMIERTELNE" if kind == "d" else "")
+                    why = (p[4] if len(p) > 4 else "") or ""
+                review.append("| %d | %s *(%s)* | %s | %s |\n" % (i, p[0], p[1], ans, why))
         lp2 = {k: v for k, v in lp.items() if k != "levels"}
         lp2["levels"] = levels
         lp2["scene"], lp2["goal"] = lp["scene"], lp["goal"]

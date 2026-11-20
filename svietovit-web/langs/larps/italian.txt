@@ -1,0 +1,218 @@
+@larp kawiarnia | W kawiarni | Cameriere | C | Wchodzisz do kawiarni we Florencji. Jesteś głodny i spragniony, a kelner czeka z notesem. | Zamów coś do picia i coś do jedzenia, a potem zapłać.
+fee 0
+reward 15
+strict yes
+story yes
+win Kelner jest pod wrażeniem, że tak dobrze mówisz po włosku. „Offre la casa!” – jedzenie na koszt firmy.
+partial Zamówienie dotarło do stołu, choć kilka razy musiałeś poprawiać. Kelner uśmiecha się i przynosi rachunek.
+fail Kelner ma dość: nie zrozumiał cię kilka razy z rzędu, uznał to za obrazę i prosi, żebyś opuścił lokal.
+
+@level 1 | Kawa, rogalik i ciasto | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Spóźniony Marco
+scene Florencja, deszczowy ranek. Przyjechałeś do Włoch spotkać się z Marciem, kolegą z korespondencji, ale on jeszcze nie przyszedł. Siadasz w kawiarni i czekasz.
+goal Zamów kawę, rogalik i ciasto, a przy okazji dowiedz się, co z Marciem.
+win Kelner kładzie na stole kopertę: „Il signor Marco ha lasciato questo per Lei”. W środku kartka: „Farò tardi, domani mattina facciamo colazione insieme. M.” Masz plan na jutro.
+partial Zamówienie dotarło, a kelner podaje ci kopertę od Marca, chociaż z trudem zrozumiał, co chcesz. Marco przeprasza i zaprasza na jutro.
+fail Kelner nie rozumie cię i nie wie, kim jesteś. Koperta od Marca trafia do kogoś innego, a ty wychodzisz w deszcz z pustym żołądkiem.
+w desidera | czego pan(i) sobie życzy (desiderare)
+w momento | chwila
+w favore | uprzejmość (per favore = proszę)
+t Buongiorno! Desidera? | Dzień dobry! Co podać? | Buongiorno! Un momento, per favore. | Przywitaj się i poproś o chwilę do namysłu. | „Un momento” to „chwileczkę”; per favore to „proszę”.
+w ecco | oto
+t Ecco il menù. Che cosa desidera da bere? | Oto menu. Co podać do picia? | Vorrei un caffè, per favore. | Zamów kawę (grzecznie). | Caffè jest rodzaju męskiego, więc un caffè. | Un caffè, per favore.
+t Con il latte? | Z mlekiem? | Sì, con il latte, per favore. | Zgódź się na mleko. | „Z” to con; przed „latte” stoi il.
+w lo | (rodzajnik męski przed z, s+spółgłoska); go (zaimek)
+t Con lo zucchero? | Z cukrem? | No, senza zucchero, grazie. | Odmów cukru. | „Bez” to senza, a „z” to con.
+w vuole | chce pan(i) (volere)
+w d'acqua | wody (di + acqua)
+t Vuole anche un bicchiere d'acqua? | Czy chce pan też szklankę wody? | Sì, un bicchiere d'acqua, per favore. | Zgódź się na szklankę wody. | „Szklanka wody” to un bicchiere d'acqua (di + acqua → d'acqua).
+w cornetto | rogalik
+t E da mangiare? | A do jedzenia? | Vorrei un cornetto, per favore. | Zamów rogalik. | Cornetto jest rodzaju męskiego: un cornetto.
+w marmellata | dżem
+t Con il burro o con la marmellata? | Z masłem czy z dżemem? | Con la marmellata, per favore. | Wybierz dżem. | Marmellata jest żeńska: con la marmellata.
+w fetta | kawałek, plaster
+t Vuole anche una fetta di torta? | Czy chce pan też kawałek ciasta? | Sì, una fetta di torta, per favore. | Zgódź się na kawałek ciasta. | „Kawałek (plasterek) ciasta” to una fetta di torta.
+w suo | pana, pani (jego, jej)
+w buon | dobry (buon appetito = smacznego)
+w appetito | apetyt
+t Ecco il suo caffè e il suo cornetto. Buon appetito! | Oto pana kawa i rogalik. Smacznego! | Grazie mille! | Podziękuj kelnerowi. | Dziękujesz: grazie mille.
+t Desidera altro? | Czy coś jeszcze? | No, grazie, è tutto. | Odmów: to już wszystko. | „To wszystko” to è tutto.
+e Prego! | Proszę bardzo!
+
+@level 2 | Śniadanie | patience=6 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Śniadanie z Marciem
+scene Następnego ranka. Marco czeka już przy stoliku, a kelner przyjmuje zamówienia. Marco prosi, żebyś zamówił sam, a przy okazji kupił ciasto, które zabierzesz mamie.
+goal Zamów śniadanie i kup ciasto dla swojej mamy.
+win Marco się śmieje: „Parli proprio come un fiorentino!” Ciasto dla mamy zapakowane, a Marco obiecuje pokazać ci jutro miasto.
+partial Śniadanie jest, ciasto też, ale Marco musiał pomóc ci kilka razy. Obiecuje, że następnym razem zamówisz sam.
+fail Pomyliłeś zamówienia i Marco dostał coś zupełnie innego. Zjadł w milczeniu i wyszedł do pracy.
+t Buongiorno! Vuole fare colazione? | Dzień dobry! Czy chce pan zjeść śniadanie? | Sì, vorrei fare colazione. | Powiedz, że chcesz zjeść śniadanie. | Czasownik w bezokoliczniku stoi po vorrei: vorrei fare colazione.
+w abbiamo | mamy
+w cornetti | rogaliki
+w uova | jajka
+w prende | bierze pan(i) (prendere)
+w prendo | biorę (prendere)
+t Abbiamo cornetti, uova e formaggio. Che cosa prende? | Mamy rogaliki, jajka i ser. Co pan weźmie? | Prendo due cornetti e un uovo. | Zamów dwa rogaliki i jajko. | Liczba mnoga: cornetti; „jajko” to un uovo, a „jajka” to uova.
+t Vuole il caffè con il latte o il tè? | Czy chce pan kawę z mlekiem, czy herbatę? | Prendo il tè con il latte, per favore. | Wybierz herbatę z mlekiem. | „Biorę” to prendo.
+w cucchiaino | łyżeczka
+t Vuole lo zucchero? | Czy chce pan cukier? | Sì, un cucchiaino di zucchero, per favore. | Zgódź się na łyżeczkę cukru. | „Łyżeczka cukru” to un cucchiaino di zucchero.
+w crostata | tarta, placek
+w al | do, z (a + il)
+t Abbiamo la crostata di mele e la torta al cioccolato. | Mamy szarlotkę i ciasto czekoladowe. | Prendo la crostata di mele. | Wybierz szarlotkę. | „Crostata di mele” to dosłownie „tarta z jabłek”.
+w d'arancia | pomarańczowy; z pomarańczy
+t Vuole anche un bicchiere di succo? | Czy chce pan też szklankę soku? | Sì, un bicchiere di succo d'arancia, per favore. | Zgódź się na sok pomarańczowy. | „Sok pomarańczowy” to succo d'arancia.
+t Il succo d'arancia è molto buono oggi. | Sok pomarańczowy jest dziś bardzo dobry. | Bene, allora prendo il succo d'arancia. | Zdecyduj się na sok pomarańczowy. | Allora to „więc”, stoi na początku.
+w Lei | pan, pani (grzecznie)
+w mia | moja
+t La torta è per Lei? | Czy ciasto jest dla pana? | No, la torta è per mia madre. | Odmów: ciasto jest dla twojej mamy. | „Moja mama” to mia madre.
+w subito | od razu
+w nessun | żaden
+t Un momento, per favore. Porto subito tutto. | Chwileczkę. Zaraz wszystko przyniosę. | Nessun problema, grazie! | Powiedz, że to nie problem, i podziękuj. | „Nessun problema” to „żaden problem”.
+w altrettanto | nawzajem
+t Ecco a Lei! Buon appetito! | Proszę bardzo! Smacznego! | Grazie, altrettanto! | Podziękuj i odwzajemnij życzenia. | „Nawzajem” to altrettanto.
+e Prego! | Proszę bardzo!
+
+@level 3 | Stolik, pytania i cena | patience=5 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Stolik dla dwóch
+scene Po południu. Marco pracuje, więc umówiłeś się z jego siostrą Chiarą. Kelner pyta o stolik, a ty musisz wybrać miejsce, jedzenie i dowiedzieć się, ile to kosztuje.
+goal Zajmij stolik dla dwóch, zamów obiad dla was obu i nie przepłać.
+win Chiara jest zachwycona: „Adesso capisco perché Marco parla tanto di te!” Zaprasza cię na wieczór do znajomych Marca.
+partial Obiad się udał, ale Chiara musiała kilka razy tłumaczyć kelnerowi, co chcesz. Wieczorne spotkanie nadal aktualne.
+fail Nie dogadałeś się z kelnerem, a Chiara patrzyła na to z niedowierzaniem. Wieczorem dostajesz od niej krótką wiadomość: „Forse un'altra volta.”
+t Buongiorno! Vuole un tavolo per due? | Dzień dobry! Czy chce pan stolik dla dwóch osób? | Sì, un tavolo per due, per favore. | Zgódź się: stolik dla dwóch osób. | Tavolo jest rodzaju męskiego: un tavolo.
+w sedersi | usiąść
+t Vuole sedersi qui o lì? | Czy chce pan usiąść tutaj, czy tam? | Qui, per favore. | Powiedz, że chcesz siedzieć tutaj. | „Tutaj” to qui, „tam” to lì.
+t Ecco il menù. Che cosa desidera da bere? | Oto menu. Co podać do picia? | Un bicchiere d'acqua e un succo, per favore. | Zamów wodę i sok. | Zamawiasz: un bicchiere d'acqua e un succo.
+w avete | macie, ma pan(i) (avere)
+w l'insalata | sałatka
+t Oggi abbiamo la zuppa di pesce. Vuole una zuppa? | Mamy dziś zupę rybną. Czy chce pan zupę? | No, niente zuppa, grazie. Avete l'insalata? | Odmów zupy i zapytaj o sałatkę. | „Niente zuppa” to „żadnej zupy”.
+w certo | oczywiście
+w buona | dobra (buono)
+t Sì, certo. L'insalata è molto buona. | Tak, oczywiście. Sałatka jest bardzo dobra. | Bene, prendo l'insalata. | Zdecyduj się na sałatkę. | Prendo + rzeczownik z rodzajnikiem: l'insalata.
+t Vuole l'insalata con il pesce o con il formaggio? | Czy chce pan sałatkę z rybą, czy z serem? | Con il formaggio, per favore. | Wybierz ser. | „Z serem” to con il formaggio.
+w quanto | ile
+w costa | kosztuje (costare)
+t Desidera altro? | Coś jeszcze? | Quanto costa la torta? | Zapytaj o cenę ciasta. | „Ile kosztuje” to quanto costa.
+w euro | euro
+w non | nie
+w troppo | za, zbyt
+w cara | droga (caro)
+t La torta costa quattro euro. | Ciasto kosztuje cztery euro. | Non è troppo cara. Prendo una fetta. | Powiedz, że cena ci pasuje, i weź kawałek. | „Za droga” to troppo cara (torta jest żeńska).
+w più | więcej (più tardi = później)
+t Vuole la torta adesso o più tardi? | Czy chce pan ciasto teraz, czy później? | Vorrei la torta più tardi. | Powiedz, że ciasto chcesz później. | „Później” to più tardi.
+w basta | wystarczy
+w così | tak
+t Certo. Ancora un bicchiere d'acqua? | Oczywiście. Jeszcze szklankę wody? | No, grazie. Basta così. | Grzecznie odmów: to już dość. | „Basta così” to „wystarczy”.
+w volentieri | chętnie
+e Volentieri! Un momento, per favore. | Chętnie! Chwileczkę.
+
+@level 4 | Rozmowa przy stole | patience=5 typed=0.75 extra=4 hint=letters
+partner Signora Rossi | R
+desc Rozdział 4: Wieczór u Signory Rossi
+scene Wieczorem Marco zabiera cię do swojej ulubionej kawiarni. Właścicielka, Signora Rossi, zna wszystkich, a ciebie wypytuje jak nowego znajomego Marca.
+goal Odpowiadaj na pytania Signory Rossi o to, skąd jesteś i czym się zajmujesz. Jeśli jej się spodobasz, Marco zaprosi cię na jutro.
+win Signora Rossi klepie cię po ramieniu: „Questo ormai è di famiglia!” Marco mówi, że jutro odprowadzi cię na dworzec i wszystko ci pokaże.
+partial Signora Rossi jest uprzejma, ale nie do końca przekonana. Marco uspokaja: „Ha bisogno di tempo.” Jutro i tak idziecie razem na dworzec.
+fail Signora Rossi przestała cię rozumieć w połowie wywiadu i uznała, że jesteś nieszczery. Marco wychodzi zakłopotany.
+t Buonasera! Che cosa desidera da bere? | Dobry wieczór! Co podać do picia? | Vorrei una birra e un bicchiere d'acqua, per favore. | Zamów piwo i wodę. | Birra jest żeńska: una birra.
+w parla | mówi pan(i) (parlare)
+w l'italiano | język włoski
+w vengo | przychodzę, pochodzę (venire)
+w dalla | z (da + la)
+t Parla molto bene l'italiano! Di dov'è? | Bardzo dobrze pan mówi po włosku! Skąd pan jest? | Grazie! Vengo dalla Polonia. | Podziękuj i powiedz, że jesteś z Polski. | „Pochodzę z” to vengo da; da + la = dalla.
+w studia | uczy się pan(i) (studiare)
+w studio | uczę się (studiare)
+t Dalla Polonia! Da quanto tempo studia l'italiano? | Z Polski! Od jak dawna uczy się pan włoskiego? | Lo studio da poco tempo. | Powiedz, że uczysz się włoskiego od niedawna. | „Od niedawna” to da poco tempo.
+t Che bello! Studia a scuola? | Jak miło! Czy uczy się pan w szkole? | No, studio a casa. | Zaprzecz: uczysz się w domu. | „W domu” to a casa.
+t Vuole mangiare qualcosa? La zuppa è molto buona oggi. | Czy chce pan coś zjeść? Zupa jest dziś bardzo dobra. | Sì, vorrei una zuppa. È con la carne? | Zgódź się na zupę i zapytaj, czy jest z mięsem. | „Zupa” to la zuppa (żeńskie), więc pytasz po prostu è con la carne? (jest z mięsem?).
+t No, senza carne. Vuole anche un panino? | Nie, bez mięsa. Czy chce pan też bułkę? | Sì, un panino con il formaggio, per favore. | Zgódź się: bułka z serem. | „Z serem” to con il formaggio.
+w trova | uważa pan(i) (trovare); jak panu się podoba
+w po' | trochę (un po')
+w calda | gorąca (caldo)
+t Come trova la zuppa? | Jak panu smakuje zupa? | La zuppa è molto buona, ma un po' calda. | Pochwal zupę, ale zaznacz, że jest gorąca. | „Trochę” to un po'; calda, bo la zuppa jest żeńska.
+t Ancora una birra? | Jeszcze piwo? | No, grazie, adesso prendo un caffè. | Odmów i powiedz, że teraz pijesz kawę. | „Biorę kawę” to prendo un caffè.
+t È studente? | Czy jest pan studentem? | No, sono insegnante. | Zaprzecz: jesteś nauczycielem. | We włoskim przy zawodzie po sono nie ma rodzajnika.
+t Certo. Desidera altro? | Oczywiście. Czy coś jeszcze? | No, grazie, è tutto. | Odmów: to wszystko. | „To wszystko” to è tutto.
+e Un momento, per favore! | Chwileczkę!
+
+@level 5 | Pełna wizyta i rachunek | patience=4 typed=1 extra=0 hint=none reward=25
+desc Rozdział 5: Rachunek i pożegnanie
+scene Ostatni dzień we Florencji. Z samego rana siadasz w kawiarni, żeby zjeść pożegnalne śniadanie i zapłacić. Za godzinę pociąg, a Marco ma pojawić się na peronie.
+goal Zamów pełne śniadanie, usiądź przy oknie, zapłać i pożegnaj się. Nie możesz się spóźnić na pociąg.
+win Kelner życzy ci dobrej podróży i wręcza paczkę ciasta „na drogę od Signory Rossi”. Biegniesz na dworzec, a tam czeka Marco.
+partial Zapłaciłeś, ale straciłeś sporo czasu na poprawki. Biegniesz na dworzec w ostatniej chwili.
+fail Rachunek zrobił się kłopotliwy, kelner nie rozumiał, ile masz zapłacić. Pociąg odjechał bez ciebie.
+t Buongiorno! Che cosa desidera da bere? | Dzień dobry! Co podać do picia? | Buongiorno! Vorrei un caffè con il latte, ma senza zucchero, per favore. | Przywitaj się i zamów kawę z mlekiem, ale bez cukru. | „Z” to con, „bez” to senza.
+t Certo. E per colazione? Abbiamo un cornetto, un uovo o una torta al cioccolato. | Oczywiście. A na śniadanie? Mamy rogalik, jajko albo ciasto czekoladowe. | Prendo un cornetto e un uovo, per favore. | Zamów rogalik i jajko. | Łączysz dwie rzeczy spójnikiem e.
+w consiglia | poleca pan(i) (consigliare)
+t Volentieri. Vuole anche un bicchiere d'acqua? | Chętnie. Czy chce pan też szklankę wody? | Sì, volentieri. Che cosa consiglia ancora? | Zgódź się i zapytaj, co jeszcze polecają. | „Chętnie” to volentieri; „co polecają” to che cosa consiglia.
+t La crostata di mele è molto buona oggi. | Szarlotka jest dziś bardzo dobra. | Bene, allora prendo una fetta di crostata di mele. | Zdecyduj się na kawałek szarlotki. | Allora to „więc”, una fetta di to „kawałek”.
+w stare | być, przebywać
+w alla | przy, do (a + la)
+t Vuole sedersi qui o lì? | Czy chce pan usiąść tutaj, czy tam? | Vorrei stare vicino alla finestra. | Powiedz, że chcesz siedzieć przy oknie. | „Przy oknie” to vicino alla finestra.
+t Ecco a Lei! Buon appetito! | Proszę bardzo! Smacznego! | Grazie, altrettanto! | Odwzajemnij życzenia. | „Nawzajem” to altrettanto.
+w piace | podoba się, smakuje (piacere)
+t Le piace? | Czy smakuje? | Sì, è molto gustoso. | Zgódź się: bardzo ci smakuje. | „Smaczne” to gustoso.
+t Desidera altro? | Czy coś jeszcze? | No, grazie. Vorrei pagare. | Odmów i powiedz, że chcesz zapłacić. | „Chcę zapłacić” to vorrei pagare.
+w tenga | niech pan(i) zatrzyma (tenere)
+t Sono dieci euro. | To będzie dziesięć euro. | Ecco dodici euro. Tenga il resto! | Zapłać i powiedz, że reszty nie trzeba. | „Tenga il resto” to „proszę zatrzymać resztę”.
+w giornata | dzień (czas trwania)
+t Grazie mille! Buona giornata! | Dziękujemy! Miłego dnia! | Grazie, altrettanto! Arrivederci! | Podziękuj i pożegnaj się. | „Nawzajem” to altrettanto.
+e Arrivederci! | Do widzenia!
+
+@larp pociag | Pociąg do Rzymu | Bigliettaia | B | Biegniesz na dworzec we Florencji. Pociąg do Rzymu odjeżdża za dziesięć minut, a Marco czeka na ciebie w środku. | Kup bilet, znajdź właściwy peron i dojedź do Rzymu.
+fee 0
+reward 15
+strict yes
+story yes
+win Siedzisz w pociągu do Rzymu, a Marco macha do ciebie z drugiego końca wagonu. Podróż może się zacząć.
+partial Dotarłeś do Rzymu, ale kilka razy ktoś musiał ci pomagać. Marco czeka na peronie i mówi: „Na następny raz poćwicz jeszcze pytania.”
+fail Pociąg odjechał, a ty stoisz na peronie z biletem w ręku. Marco pisze: „Prossimo treno tra un'ora!”
+
+@level 1 | Bilet | patience=5 typed=0 extra=1 hint=none
+desc Rozdział 1: Kasa biletowa
+t Buongiorno! Dove vuole andare? | Dzień dobry! Dokąd chce pan jechać? | Vorrei un biglietto per Roma, per favore. | Poproś o bilet do Rzymu. | „Bilet do” to un biglietto per. | Un biglietto per Roma, per favore.
+w andata | podróż w jedną stronę
+w ritorno | powrót
+t Solo andata o andata e ritorno? | W jedną stronę czy tam i z powrotem? | Solo andata, per favore. | Wybierz bilet w jedną stronę. | „Solo andata” to „tylko w jedną stronę”.
+w minuti | minuty
+t Il treno parte tra dieci minuti. Sono novanta euro. | Pociąg odjeżdża za dziesięć minut. To będzie dziewięćdziesiąt euro. | Ecco cento euro. | Podaj sto euro. | „Oto” to ecco.
+t Dieci euro di resto. Ecco il suo biglietto. | Dziesięć euro reszty. Oto pana bilet. | Grazie mille! Arrivederci! | Podziękuj i pożegnaj się. | „Do widzenia” to arrivederci.
+e Buon viaggio! | Szczęśliwej podróży!
+
+@level 2 | Peron | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Który peron?
+partner Impiegato della stazione | I
+scene Masz bilet, ale na dworcu jest kilka pociągów naraz. Pracownik kolei stoi przy tablicy odjazdów, a zegar tyka.
+goal Dowiedz się, z którego peronu odjeżdża pociąg do Rzymu, i nie wsiądź do złego pociągu.
+win Wsiadasz do właściwego pociągu tuż przed odjazdem. Pracownik kolei salutuje: „Buon viaggio!”
+partial Dotarłeś na peron, ale po drodze kilka razy pytałeś o to samo. Wsiadasz w ostatniej chwili.
+fail Wsiadłeś do pociągu do Wenecji. Marco dzwoni: „Dove sei?!”
+w posso | mogę (potere)
+w aiutarla | pomóc panu (aiutare)
+t Buongiorno! Posso aiutarla? | Dzień dobry! Czy mogę pomóc? | Sì, da dove parte il treno per Roma? | Zgódź się i zapytaj, skąd odjeżdża pociąg do Rzymu. | „Skąd” to da dove, a „odjeżdża” to parte.
+w dal | z (da + il)
+w binario | peron, tor
+w Venezia | Wenecja
+k Il treno per Roma parte dal binario cinque. Il treno per Venezia parte dal binario tre. | Pociąg do Rzymu odjeżdża z peronu piątego. Pociąg do Wenecji z peronu trzeciego. | Grazie! Vado al binario cinque. | Grazie! Vado al binario tre.; Grazie! Vado a Venezia. | Binario tre to peron trzeci, a tam jedzie pociąg do Wenecji.; Chcesz jechać do Rzymu, nie do Wenecji.
+w ha | ma pan(i) (avere)
+t Prego. Ha già il biglietto? | Proszę. Czy ma pan już bilet? | Sì, ho il biglietto. | Potwierdź, że masz bilet. | „Mam bilet” to ho il biglietto.
+e Allora presto! Buon viaggio! | W takim razie szybko! Szczęśliwej podróży!
+
+@level 3 | W pociągu | patience=4 typed=0.5 extra=3 hint=bank reward=25
+desc Rozdział 3: Konduktor
+partner Controllore | C
+scene Pociąg ruszył. Konduktor idzie przez wagon i sprawdza bilety, a Marco siedzi kilka rzędów dalej i macha do ciebie.
+goal Pokaż bilet, wybierz miejsce i dojedź do Rzymu bez kłopotów.
+win Konduktor oddaje bilet z uśmiechem: „Tutto in ordine!” Marco robi ci miejsce przy oknie i pyta o pierwsze wrażenia z Florencji.
+partial Konduktor w końcu skasował bilet, ale musiał kilka razy powtarzać. Marco pomaga ci usiąść.
+fail Konduktor uznał, że nie rozumiesz, co się do ciebie mówi. Bilet skontrolował dopiero Marco, a ty dostajesz upomnienie.
+w mio | mój
+t Buongiorno! Il biglietto, per favore. | Dzień dobry! Bilet, proszę. | Ecco il mio biglietto. | Pokaż bilet. | „Oto” to ecco.
+w posto | miejsce
+w finestrino | okno (w pociągu)
+o Grazie. Vuole un posto vicino al finestrino? | Dziękuję. Czy chce pan miejsce przy oknie? | Sì, vicino al finestrino, per favore. | No, grazie, vado a Venezia.; Sì, vorrei pagare. | Jedziesz do Rzymu, nie do Wenecji.; Konduktor pyta o miejsce, nie o płacenie.
+w libero | wolny
+w ritardo | spóźnienie
+t Questo posto è libero. Il treno ha dieci minuti di ritardo. | To miejsce jest wolne. Pociąg ma dziesięć minut spóźnienia. | Non è un problema. Grazie! | Powiedz, że to nie problem, i podziękuj. | „To nie problem” to non è un problema.
+e Buon viaggio a Roma! | Szczęśliwej podróży do Rzymu!

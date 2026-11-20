@@ -1,0 +1,316 @@
+@larp kaffihus | W kawiarni | Þjónn | Þ | Wchodzisz do kawiarni w Reykjavíku. Jesteś głodny i spragniony, a kelner czeka z notesem. | Zamów coś do picia i coś do jedzenia, a potem zapłać.
+fee 0
+reward 15
+strict yes
+story yes
+win Kelner jest pod wrażeniem, że tak dobrze mówisz po islandzku. „Þetta er í boði hússins!” – jedzenie na koszt firmy.
+partial Zamówienie dotarło do stołu, choć kilka razy musiałeś poprawiać. Kelner uśmiecha się i przynosi rachunek.
+fail Kelner ma dość: nie zrozumiał cię kilka razy z rzędu, uznał to za obrazę i prosi, żebyś opuścił lokal.
+
+@level 1 | Kawa, bułka i ciasto | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Spóźniony Gunnar
+scene Reykjavík, deszczowy ranek. Przyjechałeś na Islandię spotkać się z Gunnarem, kolegą z korespondencji, ale on jeszcze nie przyszedł. Siadasz w kawiarni i czekasz.
+goal Zamów kawę, bułkę i ciasto, a przy okazji dowiedz się, co z Gunnarem.
+win Kelner kładzie na stole kopertę: „Gunnar skildi þetta eftir handa þér”. W środku kartka: „Ég verð seinn, á morgun borðum við morgunmat saman. Gunnar” Masz plan na jutro.
+partial Zamówienie dotarło, a kelner podaje ci kopertę od Gunnara, chociaż z trudem zrozumiał, co chcesz. Gunnar przeprasza i zaprasza na jutro.
+fail Kelner nie rozumie cię i nie wie, kim jesteś. Koperta od Gunnara trafia do kogoś innego, a ty wychodzisz w deszcz z pustym żołądkiem.
+w má | może, mogę (hvað má bjóða þér = co mogę zaproponować)
+w þér | ci, panu(i) (celownik od þú)
+w að | żeby; w zwrocie „að hugsa” = myśleć
+w hugsa | myśleć, zastanawiać się
+t Góðan dag! Hvað má bjóða þér? | Dzień dobry! Co mogę podać? | Góðan dag! Ég er enn að hugsa. | Przywitaj się i powiedz, że jeszcze wybierasz. | „Jeszcze się zastanawiam” to ég er enn að hugsa (er … að + bezokolicznik = trwa czynność).
+w matseðillinn | menu (matseðill + -inn: rodzajnik na końcu)
+w viltu | chcesz (vilt þú; pytanie)
+w kaffi
+w te
+w vatn
+w safi
+w bjór
+w vín
+t Hér er matseðillinn. Hvað viltu drekka? | Oto menu. Co chcesz pić? | Ég vil kaffi, takk. | Zamów kawę (grzecznie). | „Chcę” to ég vil, a słowo takk („proszę, dziękuję”) dodajemy z grzeczności.
+w mjólk
+w sítróna
+t Viltu mjólk í kaffið? | Czy chcesz mleko do kawy? | Já, mjólk í kaffið, takk. | Zgódź się na mleko. | Końcówka -ið na kaffi to rodzajnik: kaffið = „ta kawa”.
+w sykur
+w sykurs | cukru (sykur w dopełniaczu; po „án”)
+w hunang
+t Viltu sykur? | Czy chcesz cukier? | Nei, án sykurs, takk. | Odmów cukru. | „Bez” to án i po nim rzeczownik stoi w dopełniaczu: án sykurs.
+w af | z, od (glas af vatni = szklanka wody)
+w vatni | wodzie (vatn w celowniku; po „af”)
+w glas
+w flaska
+t Viltu líka glas af vatni? | Czy chcesz też szklankę wody? | Já, glas af vatni, takk. | Zgódź się na wodę. | Po „af” rzeczownik stoi w celowniku: vatn → vatni.
+w rúnnstykki | bułka (mała, okrągła)
+w brauð
+w egg
+w ostur
+w skinka
+w kjöt
+t Hvað viltu borða? | Co chcesz zjeść? | Ég vil fá rúnnstykki, takk. | Zamów bułkę. | „Chcę dostać” to ég vil fá; rúnnstykki ma tę samą formę po „fá”.
+w osti | serem (ostur w celowniku; po „með”)
+w skinku | szynką (skinka w celowniku; po „með”)
+t Með osti eða skinku? | Z serem czy z szynką? | Með osti, takk. | Wybierz ser do bułki. | Po „með” („z”) rzeczownik stoi w celowniku: ostur → osti.
+w sneið | kawałek, plaster
+w tertu | ciastem (terta w celowniku; po „af”)
+w terta
+w súkkulaði
+w kex
+w ís
+t Viltu líka sneið af tertu? | Czy chcesz też kawałek ciasta? | Já, ég vil fá sneið af tertu. | Zgódź się na kawałek ciasta. | Po „sneið af” rzecz, z której bierzemy kawałek, stoi w celowniku: af tertu.
+w gjörðu | zrób (gjörðu svo vel = proszę bardzo)
+w svo | tak, więc
+w verði | niech będzie (verði þér að góðu = smacznego)
+w góðu | dobremu (að góðu)
+w diskur
+w bolli
+t Gjörðu svo vel! Verði þér að góðu! | Proszę bardzo! Smacznego! | Takk fyrir! | Podziękuj kelnerowi. | Dziękujesz: takk fyrir.
+w fleira | więcej
+w þetta | to
+w allt | wszystko
+t Viltu eitthvað fleira? | Czy chcesz coś jeszcze? | Nei, takk. Þetta er allt. | Odmów: to już wszystko. | „To wszystko” to þetta er allt.
+w ekkert | nic
+w þakka | dziękować
+e Ekkert að þakka! | Nie ma za co!
+
+@level 2 | Śniadanie | patience=6 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Śniadanie z Gunnarem
+scene Następnego ranka. Gunnar czeka już przy stoliku, a kelner przyjmuje zamówienia. Gunnar prosi, żebyś zamówił sam, a przy okazji kupił ciasto, które zabierzesz mamie.
+goal Zamów śniadanie i kup ciasto dla swojej mamy.
+win Gunnar się śmieje: „Þú talar eins og Reykvíkingur!” Ciasto dla mamy zapakowane, a Gunnar obiecuje pokazać ci jutro miasto.
+partial Śniadanie jest, ciasto też, ale Gunnar musiał pomóc ci kilka razy. Obiecuje, że następnym razem zamówisz sam.
+fail Pomyliłeś zamówienia i Gunnar dostał coś zupełnie innego. Zjadł w milczeniu i wyszedł do pracy.
+w morgunmat | śniadanie (morgunmatur w bierniku)
+t Góðan dag! Viltu fá morgunmat? | Dzień dobry! Czy chcesz śniadanie? | Já, ég vil fá morgunmat. | Powiedz, że chcesz zjeść śniadanie. | „Chcę dostać śniadanie” to ég vil fá morgunmat (biernik).
+w tekurðu | bierzesz (tekur þú; pytanie)
+w tek | biorę (taka)
+t Við erum með rúnnstykki, egg og ost. Hvað tekurðu? | Mamy bułki, jajka i ser. Co weźmiesz? | Ég tek tvö rúnnstykki og egg. | Zamów dwie bułki i jajko. | „Biorę” to ég tek, a „dwie” (rodzaj nijaki) to tvö.
+t Viltu kaffi eða te? | Czy chcesz kawę, czy herbatę? | Ég tek te með mjólk. | Wybierz herbatę z mlekiem. | „Z mlekiem” to með mjólk.
+w smá | trochę, odrobina
+t Viltu sykur? | Czy chcesz cukier? | Já, smá sykur, takk. | Zgódź się na odrobinę cukru. | „Odrobina” to smá.
+w eplaköku | szarlotkę (eplakaka w bierniku)
+w súkkulaðiköku | ciasto czekoladowe (súkkulaðikaka w bierniku)
+t Við erum með eplaköku og súkkulaðiköku. | Mamy szarlotkę i ciasto czekoladowe. | Ég tek eplaköku. | Wybierz szarlotkę. | Po „erum með” („mamy”) i „tek” rzeczownik stoi w bierniku: eplaka → eplaköku.
+w safa | soku (safi w celowniku; po „af”)
+w appelsínusafa | soku pomarańczowego (appelsínusafi w celowniku) (appelsína (pomarańcza) + safi (sok))
+t Viltu líka glas af safa? | Czy chcesz też szklankę soku? | Já, glas af appelsínusafa. | Zgódź się na sok pomarańczowy. | Po „af” rzeczownik stoi w celowniku: safi → safa.
+w appelsínusafinn | sok pomarańczowy (z rodzajnikiem) (appelsína (pomarańcza) + safi (sok) + -nn (rodzajnik))
+w mjög | bardzo
+w þá | wtedy, w takim razie
+t Appelsínusafinn er mjög góður í dag. | Sok pomarańczowy jest dziś bardzo dobry. | Gott, þá tek ég appelsínusafa. | Zdecyduj się na sok pomarańczowy. | Po „þá” czasownik stoi przed podmiotem: þá tek ég.
+w kakan | to ciasto (kaka + -n: rodzajnik)
+w þig | ciebie (biernik od þú)
+w mömmu | mamę (mamma w bierniku)
+w mína | moją (biernik r. żeńskiego od minn)
+t Er kakan fyrir þig? | Czy ciasto jest dla ciebie? | Nei, kakan er fyrir mömmu mína. | Odmów: ciasto jest dla twojej mamy. | Po „fyrir” rzeczownik stoi w bierniku: mamma → mömmu, a „moją” to mína.
+w augnablik | chwila
+w kem | przyjdę (koma)
+w strax | zaraz
+w bíð | czekam (bíða)
+w ánægju | przyjemności (með ánægju = chętnie)
+t Augnablik, ég kem strax. | Chwileczkę, zaraz przyjdę. | Takk, ég bíð með ánægju. | Podziękuj i powiedz, że chętnie poczekasz. | „Chętnie” to með ánægju.
+w sömuleiðis | nawzajem
+t Gjörðu svo vel! Verði þér að góðu! | Proszę bardzo! Smacznego! | Takk, sömuleiðis! | Podziękuj i odwzajemnij życzenia. | „Nawzajem” to sömuleiðis.
+e Ekkert að þakka! | Nie ma za co!
+
+@level 3 | Stolik, pytania i cena | patience=5 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Stolik dla dwóch
+scene Po południu. Gunnar pracuje, więc umówiłeś się z jego siostrą Katrín. Kelner pyta o stolik, a ty musisz wybrać miejsce, jedzenie i dowiedzieć się, ile to kosztuje.
+goal Zajmij stolik dla dwóch, zamów obiad dla was obu i nie przepłać.
+win Katrín jest zachwycona: „Nú skil ég af hverju Gunnar talar svona mikið um þig!” Zaprasza cię na wieczór do znajomych Gunnara.
+partial Obiad się udał, ale Katrín musiała kilka razy tłumaczyć kelnerowi, co chcesz. Wieczorne spotkanie nadal aktualne.
+fail Nie dogadałeś się z kelnerem, a Katrín patrzyła na to z niedowierzaniem. Wieczorem dostajesz od niej krótką wiadomość: „Kannski seinna.”
+w tveggja | dwóch (dopełniacz od tveir)
+w manna | ludzi (dopełniacz l. mnogiej od maður)
+w borð
+w stóll
+w gluggi
+t Góðan dag! Viltu tveggja manna borð? | Dzień dobry! Czy chcesz stolik dla dwóch osób? | Já, tveggja manna borð, takk. | Zgódź się: stolik dla dwóch osób. | „Dla dwóch osób” to tveggja manna borð (dosłownie „stolik dwóch ludzi”).
+t Viltu sitja hér eða þar? | Czy chcesz siedzieć tutaj, czy tam? | Ég vil sitja hér, takk. | Powiedz, że chcesz siedzieć tutaj. | Bezokolicznik (sitja) stoi po ég vil.
+t Hér er matseðillinn. Hvað viltu drekka? | Oto menu. Co chcesz pić? | Glas af vatni og safa, takk. | Zamów wodę i sok. | Po „glas af” stoi celownik: vatn → vatni, safi → safa.
+w súpu | zupę (súpa w bierniku)
+w súpa
+w fiskur
+t Viltu súpu? | Czy chcesz zupę? | Nei, takk. Eruð þið með salat? | Odmów zupy i zapytaj o sałatkę. | „Czy macie?” to eruð þið með…? (dosłownie „czy jesteście z…”).
+w salatið | ta sałatka (salat + -ið: rodzajnik)
+w tómatur
+w agúrka
+t Já, við erum með salat. Salatið er mjög gott. | Tak, mamy sałatkę. Sałatka jest bardzo smaczna. | Gott, ég tek salatið. | Zdecyduj się na sałatkę. | „Biorę sałatkę” to ég tek salatið.
+t Viltu fisk eða ost í salatið? | Czy chcesz do sałatki rybę czy ser? | Ost, takk. | Wybierz ser. | Obie rzeczy stoją w bierniku: fisk, ost.
+t Viltu eitthvað fleira? | Czy chcesz coś jeszcze? | Hvað kostar kakan? | Zapytaj o cenę ciasta. | „Ile kosztuje” to hvað kostar (dosłownie „co kosztuje”).
+w of | zbyt
+w það | to, ono
+w eina | jedną (biernik r. żeńskiego od einn)
+t Kakan kostar þúsund krónur. | Ciasto kosztuje tysiąc koron. | Það er ekki of dýrt. Ég tek eina sneið. | Powiedz, że cena ci pasuje, i weź kawałek. | „Nie za drogo” to ekki of dýrt; „jedną” przy sneið to eina.
+w kökuna | to ciasto (kaka w bierniku, z rodzajnikiem)
+w seinna
+t Viltu kökuna núna eða seinna? | Czy chcesz ciasto teraz, czy później? | Ég vil fá kökuna seinna. | Powiedz, że ciasto chcesz później. | „To ciasto” w bierniku to kökuna.
+w auðvitað | oczywiście
+w annað | inny, jeszcze jeden (r. nijaki)
+w nóg | dość
+t Auðvitað. Viltu annað glas af vatni? | Oczywiście. Czy chcesz jeszcze szklankę wody? | Nei, takk. Þetta er nóg. | Grzecznie odmów: masz dość. | „To wystarczy” to þetta er nóg.
+e Með ánægju! Ég kem strax. | Chętnie! Zaraz przyjdę.
+
+@level 4 | Rozmowa przy stole | patience=5 typed=0.75 extra=4 hint=letters
+partner Sigríður | S
+desc Rozdział 4: Wieczór u pani Sigríður
+scene Wieczorem Gunnar zabiera cię do swojej ulubionej kawiarni. Właścicielka, pani Sigríður, zna wszystkich, a ciebie wypytuje jak nowego znajomego Gunnara.
+goal Odpowiadaj na pytania pani Sigríður o to, skąd jesteś i czym się zajmujesz. Jeśli jej się spodobasz, Gunnar zaprosi cię na jutro.
+win Pani Sigríður klepie cię po ramieniu: „Hann tilheyrir fjölskyldunni núna!” Gunnar mówi, że jutro odprowadzi cię na dworzec i wszystko ci pokaże.
+partial Pani Sigríður jest uprzejma, ale nie do końca przekonana. Gunnar uspokaja: „Hún þarf tíma.” Jutro i tak idziecie razem na dworzec.
+fail Pani Sigríður przestała cię rozumieć w połowie wywiadu i uznała, że jesteś nieszczery. Gunnar wychodzi zakłopotany.
+w bjór
+w vín
+w vatn
+w kaffi
+t Gott kvöld! Hvað má bjóða þér að drekka? | Dobry wieczór! Co mogę podać do picia? | Ég vil bjór og glas af vatni, takk. | Zamów piwo i wodę. | Po „glas af” stoi celownik: vatn → vatni.
+w hvaðan | skąd
+w ertu | jesteś (ert þú; pytanie)
+t Þú talar mjög góða íslensku! Hvaðan ertu? | Mówisz bardzo dobrze po islandzku! Skąd jesteś? | Takk! Ég er frá Póllandi. | Podziękuj i powiedz, że jesteś z Polski. | „Z Polski” to frá Póllandi (po „frá” stoi celownik).
+w hversu | jak (hversu lengi = jak długo)
+w lengi | długo
+w hefur | ma (hafa; w czasie przeszłym złożonym)
+w lært | nauczył się, uczył się (supinum od læra)
+w hef | mam (hafa)
+t Frá Póllandi! Hversu lengi hefur þú lært íslensku? | Z Polski! Jak długo uczysz się islandzkiego? | Ég hef ekki lært lengi. | Powiedz, że uczysz się islandzkiego od niedawna. | „Nie uczyłem się długo” to ég hef ekki lært lengi (hafa + supinum).
+w frábært | świetnie
+w lærirðu | uczysz się (lærir þú; pytanie)
+w læri | uczę się
+w heima | w domu
+t Frábært! Lærirðu í skóla? | Świetnie! Uczysz się w szkole? | Nei, ég læri heima. | Zaprzecz: uczysz się w domu. | „W domu” (u siebie) to heima.
+w súpan | ta zupa (súpa + -n: rodzajnik)
+w góð | dobra (r. żeński)
+w súpunni | w zupie (súpa w celowniku, z rodzajnikiem)
+w kjöt
+w kartafla
+w hrísgrjón
+t Viltu borða eitthvað? Súpan er mjög góð í dag. | Czy chcesz coś zjeść? Zupa jest dziś bardzo dobra. | Já, ég vil súpu. Er kjöt í súpunni? | Zgódź się na zupę i zapytaj, czy jest w niej mięso. | Po „í” (w) stoi celownik: í súpunni.
+t Nei, það er ekkert kjöt í súpunni. Viltu líka brauð? | Nie, w zupie nie ma mięsa. Czy chcesz też chleb? | Já, brauð með osti, takk. | Zgódź się: chleb z serem. | „Z serem” to með osti (celownik).
+w smakkast | smakuje
+w svolítið | trochę
+w heit | gorąca (r. żeński)
+t Hvernig smakkast súpan? | Jak smakuje zupa? | Súpan er góð, en svolítið heit. | Pochwal zupę, ale zaznacz, że jest gorąca. | „Trochę gorąca” to svolítið heit.
+w annan | innego, jeszcze jednego (biernik r. męskiego)
+t Viltu annan bjór? | Czy chcesz jeszcze jedno piwo? | Nei, takk, núna drekk ég kaffi. | Odmów i powiedz, że teraz pijesz kawę. | Po „núna” czasownik stoi przed podmiotem: núna drekk ég.
+t Ertu nemandi? | Czy jesteś uczniem? | Nei, ég er kennari. | Zaprzecz: jesteś nauczycielem. | Po „er” w islandzkim nie ma rodzajnika przy zawodzie: ég er kennari.
+w skil | rozumiem
+t Ég skil. Viltu eitthvað fleira? | Rozumiem. Czy chcesz coś jeszcze? | Nei, takk, þetta er allt. | Odmów: to wszystko. | „To wszystko” to þetta er allt.
+e Með ánægju! | Chętnie!
+
+@level 5 | Pełna wizyta i rachunek | patience=4 typed=1 extra=0 hint=none reward=25
+desc Rozdział 5: Rachunek i pożegnanie
+scene Ostatni dzień w Reykjavíku. Z samego rana siadasz w kawiarni, żeby zjeść pożegnalne śniadanie i zapłacić. Za godzinę autobus, a Gunnar ma pojawić się na przystanku.
+goal Zamów pełne śniadanie, usiądź przy oknie, zapłać i pożegnaj się. Nie możesz się spóźnić na autobus.
+win Kelner życzy ci dobrej podróży i wręcza paczkę ciasta „na drogę od pani Sigríður”. Biegniesz na przystanek, a tam czeka Gunnar.
+partial Zapłaciłeś, ale straciłeś sporo czasu na poprawki. Biegniesz na przystanek w ostatniej chwili.
+fail Rachunek zrobił się kłopotliwy, kelner nie rozumiał, ile masz zapłacić. Autobus odjechał bez ciebie.
+w kaffi
+w te
+w mjólk
+w sykur
+t Góðan dag! Hvað viltu drekka? | Dzień dobry! Co chcesz pić? | Góðan dag! Ég vil kaffi með mjólk en án sykurs. | Przywitaj się i zamów kawę z mlekiem, ale bez cukru. | „Z mlekiem” to með mjólk, a „bez cukru” to án sykurs (dopełniacz).
+w lagi | porządek (allt í lagi = w porządku)
+w rúnnstykki
+w egg
+t Allt í lagi. Og í morgunmat? Við erum með rúnnstykki með osti, egg eða súkkulaðiköku. | Dobrze. A na śniadanie? Mamy bułkę z serem, jajko albo ciasto czekoladowe. | Ég tek rúnnstykki og egg, takk. | Zamów bułkę i jajko. | „Biorę” to ég tek; po „tek” rzeczownik stoi w bierniku (tu bez zmian).
+w mælirðu | polecasz (mælir þú; hvað mælirðu með = co polecasz)
+t Með ánægju. Viltu líka glas af vatni? | Chętnie. Czy chcesz też szklankę wody? | Já, með ánægju. Hvað mælirðu með? | Zgódź się i zapytaj, co jeszcze polecają. | „Co polecasz?” to hvað mælirðu með?
+w eplakakan | ta szarlotka (eplakaka + -n: rodzajnik)
+t Eplakakan er mjög góð í dag. | Szarlotka jest dziś bardzo dobra. | Gott, þá tek ég sneið af eplaköku. | Zdecyduj się na kawałek szarlotki. | Po „sneið af” stoi celownik: eplakaka → eplaköku.
+w gluggann | okno (gluggi w bierniku, z rodzajnikiem)
+t Viltu sitja hér eða þar? | Czy chcesz siedzieć tutaj, czy tam? | Ég vil sitja þar, við gluggann. | Powiedz, że chcesz siedzieć przy oknie. | „Przy oknie” to við gluggann (við + biernik).
+t Gjörðu svo vel! Verði þér að góðu! | Proszę bardzo! Smacznego! | Takk, sömuleiðis! | Odwzajemnij życzenia. | „Nawzajem” to sömuleiðis.
+w morgunmaturinn | to śniadanie (morgunmatur + -inn: rodzajnik)
+t Smakkast morgunmaturinn vel? | Czy śniadanie smakuje? | Já, hann smakkast mjög vel. | Zgódź się: bardzo ci smakuje. | Podmiotem jest „śniadanie” (rodzaj męski), więc: hann smakkast.
+t Viltu eitthvað fleira? | Czy chcesz coś jeszcze? | Nei, takk. Ég vil borga. | Odmów i powiedz, że chcesz zapłacić. | „Chcę zapłacić” to ég vil borga (bezokolicznik po ég vil).
+w hundruð | setki
+w hafðu | miej, zatrzymaj (hafa)
+w afganginn | resztę (afgangur w bierniku, z rodzajnikiem)
+t Þetta eru tólf hundruð krónur. | To będzie tysiąc dwieście koron. | Gjörðu svo vel, fimmtán hundruð krónur. Hafðu afganginn. | Zapłać i powiedz, że reszty nie trzeba. | „Zatrzymaj resztę” to hafðu afganginn.
+w kærlega | serdecznie
+w eigðu | miej (eiga)
+t Takk kærlega! Eigðu góðan dag! | Dziękujemy! Miłego dnia! | Takk, sömuleiðis! Bless! | Podziękuj i pożegnaj się. | „Nawzajem” to sömuleiðis, a „do widzenia” to bless.
+e Bless! | Do widzenia!
+
+
+@larp straeto | Autobus do Akureyri | Miðasali | M | Biegniesz na dworzec autobusowy w Reykjavíku. Autobus do Akureyri odjeżdża za dziesięć minut, a Gunnar czeka na ciebie w środku. | Kup bilet, znajdź właściwe stanowisko i dojedź do Akureyri.
+fee 0
+reward 15
+strict yes
+story yes
+win Siedzisz w autobusie do Akureyri, a Gunnar macha do ciebie z drugiego końca. Podróż może się zacząć.
+partial Dotarłeś do Akureyri, ale kilka razy ktoś musiał ci pomagać. Gunnar czeka na przystanku i mówi: „Æfðu spurningarnar betur.”
+fail Autobus odjechał, a ty stoisz na przystanku z biletem w ręku. Gunnar pisze: „Næsti strætó fer eftir klukkutíma!”
+
+@level 1 | Bilet | patience=5 typed=0 extra=1 hint=none
+desc Rozdział 1: Kupno biletu
+w hvert | dokąd
+w fara | jechać, iść
+w miða | bilet (miði w bierniku)
+w Akureyri | Akureyri (miasto na północy Islandii)
+w Akureyrar | Akureyri (w dopełniaczu; po „til”)
+t Góðan dag! Hvert viltu fara? | Dzień dobry! Dokąd chcesz jechać? | Ég vil fá miða til Akureyrar, takk. | Poproś o bilet do Akureyri. | „Do” przed nazwą miasta to til, a nazwa stoi w dopełniaczu: Akureyri → Akureyrar. | Ég vil fá miða til Akureyrar, takk.
+w aðra | drugą (aðra leiðina = w jedną stronę)
+w leiðina | tę drogę (leið + -ina: rodzajnik, biernik)
+w fram | naprzód (fram og til baka = tam i z powrotem)
+w baka | tył (til baka = z powrotem)
+t Aðra leiðina eða fram og til baka? | W jedną stronę czy tam i z powrotem? | Aðra leiðina, takk. | Wybierz bilet w jedną stronę. | „Aðra leiðina” to dosłownie „jedną drogę”, czyli w jedną stronę.
+w strætóinn | autobus (strætó + -inn: rodzajnik)
+w mínútur | minuty (mínúta w bierniku liczby mnogiej)
+w fjögur | cztery (r. nijaki)
+w þetta
+w níu
+w tíu
+w þúsund
+t Strætóinn fer eftir tíu mínútur. Þetta kostar níu þúsund krónur. | Autobus odjeżdża za dziesięć minut. To kosztuje dziewięć tysięcy koron. | Gjörðu svo vel, tíu þúsund krónur. | Podaj dziesięć tysięcy koron. | „Za dziesięć minut” to eftir tíu mínútur.
+w miðinn | ten bilet (miði + -nn: rodzajnik)
+w þinn | twój (r. męski)
+w kærlega
+t Þúsund krónur til baka. Hér er miðinn þinn. | Tysiąc koron reszty. Oto twój bilet. | Takk kærlega! Bless! | Podziękuj i pożegnaj się. | „Do widzenia” to bless.
+w ferð | podróż
+e Góða ferð! | Szczęśliwej podróży!
+
+@level 2 | Przystanek | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Które stanowisko?
+partner Starfsmaður | S
+scene Masz bilet, ale na dworcu stoi kilka autobusów naraz. Pracownik stoi przy tablicy odjazdów, a zegar tyka.
+goal Dowiedz się, z którego stanowiska odjeżdża autobus do Akureyri, i nie wsiądź do złego autobusu.
+win Wsiadasz do właściwego autobusu tuż przed odjazdem. Pracownik macha ręką: „Góða ferð!”
+partial Dotarłeś na stanowisko, ale po drodze kilka razy pytałeś o to samo. Wsiadasz w ostatniej chwili.
+fail Wsiadłeś do autobusu do Keflavíku. Gunnar dzwoni: „Hvar ertu?!”
+w get | mogę (geta)
+w hjálpað | pomóc (supinum od hjálpa)
+w hvar
+w fer
+t Góðan dag! Get ég hjálpað? | Dzień dobry! Czy mogę pomóc? | Já, hvar fer strætóinn til Akureyrar? | Zgódź się i zapytaj, skąd odjeżdża autobus do Akureyri. | „Gdzie” to hvar, a „odjeżdża” to fer (od fara).
+w stæði | stanowisko (miejsce odjazdu)
+w Keflavíkur | Keflavíku (w dopełniaczu; po „til”)
+w fimm
+w þrjú
+k Strætóinn til Akureyrar fer frá stæði fimm. Strætóinn til Keflavíkur fer frá stæði þrjú. | Autobus do Akureyri odjeżdża ze stanowiska piątego. Autobus do Keflavíku ze stanowiska trzeciego. | Takk! Ég fer að stæði fimm. | Takk! Ég fer að stæði þrjú.; Takk! Ég fer til Keflavíkur. | Stæði þrjú to stanowisko trzecie, a stamtąd jedzie autobus do Keflavíku.; Chciałeś jechać do Akureyri (til Akureyrar), nie do Keflavíku (til Keflavíkur).
+w ertu
+w með
+w miða
+t Gjörðu svo vel! Ertu með miða? | Proszę bardzo! Czy masz już bilet? | Já, ég er með miða. | Potwierdź, że masz bilet. | „Mam bilet” to ég er með miða (dosłownie „jestem z biletem”).
+w þarftu | musisz (þarft þú)
+w flýta | spieszyć się (flýta þér = pospieszyć się)
+e Þá þarftu að flýta þér! Góða ferð! | W takim razie pospiesz się! Szczęśliwej podróży!
+
+@level 3 | W autobusie | patience=4 typed=0.5 extra=3 hint=bank reward=25
+desc Rozdział 3: Kierowca
+partner Bílstjóri | B
+scene Autobus ruszył. Kierowca zerka na bilety wsiadających, a Gunnar siedzi kilka rzędów dalej i macha do ciebie.
+goal Pokaż bilet, wybierz miejsce i dojedź do Akureyri bez kłopotów.
+win Kierowca oddaje bilet z uśmiechem: „Allt í lagi!” Gunnar robi ci miejsce przy oknie i pyta o pierwsze wrażenia z Reykjavíku.
+partial Kierowca w końcu skasował bilet, ale musiał kilka razy powtarzać. Gunnar pomaga ci usiąść.
+fail Kierowca uznał, że nie rozumiesz, co się do ciebie mówi. Bilet skontrolował dopiero Gunnar, a ty dostajesz upomnienie.
+w miðann | ten bilet (miði w bierniku, z rodzajnikiem)
+t Góðan dag! Miðann, takk. | Dzień dobry! Bilet, proszę. | Gjörðu svo vel, hér er miðinn minn. | Pokaż bilet. | „Oto mój bilet” to hér er miðinn minn.
+w glugga | okno (gluggi w bierniku)
+o Takk. Viltu sitja við gluggann? | Dziękuję. Czy chcesz siedzieć przy oknie? | Já, við gluggann, takk. | Nei, ég vil ekki glugga.; Já, ég vil borga. | Kierowca pyta o miejsce, nie o płacenie.; Przy oknie to við gluggann, a „ég vil ekki glugga” znaczy „nie chcę okna”.
+w sæti | siedzenie, miejsce
+w laust | wolne
+w seinn | spóźniony
+w mál | sprawa (ekkert mál = żaden problem)
+t Þetta sæti er laust. Strætóinn er seinn. | To miejsce jest wolne. Autobus jest spóźniony. | Það er ekkert mál. Takk! | Powiedz, że to nie problem, i podziękuj. | „Żaden problem” to ekkert mál.
+w lagi
+e Allt í lagi! Góða ferð til Akureyrar! | Wszystko w porządku! Szczęśliwej podróży do Akureyri!

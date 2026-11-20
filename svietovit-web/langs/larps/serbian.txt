@@ -1,0 +1,266 @@
+@larp kawiarnia | W kawiarni | Konobar | K | Wchodzisz do kawiarni w Belgradzie. Jesteś głodny i spragniony, a kelner czeka z notesem. | Zamów coś do picia i coś do jedzenia, a potem zapłać.
+fee 0
+reward 15
+strict yes
+story yes
+win Kelner jest pod wrażeniem, że tak dobrze mówisz po serbsku. „Kuća časti!” – jedzenie na koszt firmy.
+partial Zamówienie dotarło do stołu, choć kilka razy musiałeś poprawiać. Kelner uśmiecha się i przynosi rachunek.
+fail Kelner ma dość: nie zrozumiał cię kilka razy z rzędu, uznał to za obrazę i prosi, żebyś opuścił lokal.
+
+@level 1 | Kawa, bułka i ciasto | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Spóźniony Marko
+scene Belgrad, deszczowy ranek. Przyjechałeś do Serbii spotkać się z Markiem, kolegą z korespondencji, ale on jeszcze nie przyszedł. Siadasz w kawiarni i czekasz.
+goal Zamów kawę, bułkę i ciasto, a przy okazji dowiedz się, co z Markiem.
+win Kelner kładzie na stole kopertę: „Pan Marko zostawił to dla pana”. W środku kartka: „Spóźnię się, jutro rano zjemy razem śniadanie. M.” Masz plan na jutro.
+partial Zamówienie dotarło, a kelner podaje ci kopertę od Marka, chociaż z trudem zrozumiał, co chcesz. Marko przeprasza i zaprasza na jutro.
+fail Kelner nie rozumie cię i nie wie, kim jesteś. Koperta od Marka trafia do kogoś innego, a ty wychodzisz w deszcz z pustym żołądkiem.
+w izvolite | proszę (gdy coś podajemy); proszę bardzo
+w biram | wybieram (birati)
+t Dobar dan! Izvolite jelovnik. | Dzień dobry! Proszę, oto karta dań. | Dobar dan! Još biram. | Przywitaj się i powiedz, że jeszcze wybierasz. | „Wybieram” to biram (biranje = wybieranie); još znaczy „jeszcze”.
+w ćete | będziecie; będzie pan (šta ćete popiti? = co pan wypije?)
+w popiti | wypić
+w hteo | chciał (hteo bih = chciałbym)
+w bih | bym (hteo bih = chciałbym)
+t Šta ćete popiti? | Co pan wypije? | Hteo bih káfu, mólim. | Zamów kawę (grzecznie). | „Hteo bih” to uprzejme „chciałbym”; kafu to biernik od kafa. | Káfu, mólim.
+w mlekom | mlekiem (sa mlekom = z mlekiem)
+t Sa mlekom? | Z mlekiem? | Da, sa mlekom, mólim. | Zgódź się na mleko. | „Z mlekiem” to sa mlekom (instrumental: mleko → mlekom).
+w šećerom | cukrem (sa šećerom = z cukrem)
+w šećera | cukru (dopełniacz: bez šećera)
+t Sa šećerom? | Z cukrem? | Ne, bez šećera, hvála. | Odmów cukru. | „Bez” wymaga dopełniacza: šećer → bez šećera, a „z” to sa i narzędnik: sa šećerom.
+w želite | życzycie; życzy pan
+w li | czy (partykuła pytająca: želite li = czy pan życzy sobie)
+w i | też; i
+w čašu | szklankę (biernik od čaša)
+w vode | wody (dopełniacz od voda)
+t Želite li i vódu? | Czy życzy pan sobie też wodę? | Da, čašu vode, mólim. | Zgódź się na szklankę wody. | Po nazwie miary (čaša) stoi dopełniacz: čašu vode.
+w a | a, i
+w žemlju | bułkę (biernik od žemlja)
+t A šta ćete pojesti? | A co pan zje? | Hteo bih žemlju, mólim. | Zamów bułkę. | Žemlja to bułka; po „hteo bih” biernik: žemlju.
+w puterom | masłem (sa puterom = z masłem)
+w sirom | serem (sa sirom = z serem)
+t Sa puterom ili sa sirom? | Z masłem czy z serem? | Sa sirom, mólim. | Wybierz ser do bułki. | „Z serem” to sa sirom (instrumental).
+w parče | kawałek
+w torte | tortu, ciasta (dopełniacz od torta)
+t Želite li i parče torte? | Czy życzy pan sobie też kawałek tortu? | Da, parče torte, mólim. | Zgódź się na kawałek ciasta. | Po „parče” dopełniacz: torta → torte.
+w evo | oto
+w vaše | pana, pani (dopełniacz: vaše kafe = pana kawy)
+w kafe | kawy (dopełniacz od kafa)
+w žemlje | bułki
+w prijatno | smacznego
+t Evo vaše kafe, žemlje i torte. Prijatno! | Oto pana kawa, bułka i ciasto. Smacznego! | Hvála! | Podziękuj kelnerowi. | Dziękujesz: hvala.
+w čekate | czekacie; czeka pan (čekati)
+w nekoga | kogoś
+w čekam | czekam (čekati)
+w prijatelja | kolegę, kolegi (biernik od prijatelj)
+t Čekate li nekoga? | Czy na kogoś pan czeka? | Da, čekam prijatelja. | Powiedz, że czekasz na kolegę. | „Czekać na kogoś” to čekati nekoga (biernik, bez przyimka): čekam prijatelja.
+w to | to
+t Želite li još nešto? | Czy życzy pan sobie coś jeszcze? | Ne, hvála, to je sve. | Odmów: to już wszystko. | „To wszystko” to to je sve.
+e Mólim! | Proszę bardzo!
+
+@level 2 | Śniadanie | patience=6 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Śniadanie z Markiem
+scene Następnego ranka. Marko czeka już przy stoliku, a kelner przyjmuje zamówienia. Marko prosi, żebyś zamówił sam, a przy okazji kupił ciasto, które zabierzesz mamie.
+goal Zamów śniadanie i kup ciasto dla swojej mamy.
+win Marko się śmieje: „Pričaš kao pravi Beograđanin!” Ciasto dla mamy zapakowane, a Marko obiecuje pokazać ci jutro miasto.
+partial Śniadanie jest, ciasto też, ale Marko musiał pomóc ci kilka razy. Obiecuje, że następnym razem zamówisz sam.
+fail Pomyliłeś zamówienia i Marko dostał coś zupełnie innego. Zjadł w milczeniu i wyszedł do pracy.
+w imamo | mamy
+w jaja | jajka (l. mn. od jaje)
+t Dobro jutro! Imamo žemlje i jaja. Želite li doručak? | Dzień dobry! Mamy bułki i jajka. Czy życzy pan sobie śniadanie? | Da, hteo bih doručak. | Powiedz, że chcesz zjeść śniadanie. | „Hteo bih doručak” to „chciałbym śniadanie”; doručak to biernik (taki sam jak mianownik).
+w uzeću | wezmę (uzeti)
+t Šta ćete uzeti? | Co pan weźmie? | Uzeću žemlju i jaje. | Zamów bułkę i jajko. | „Wezmę” to uzeću; žemlju to biernik od žemlja, a jaje (nijaki) nie zmienia formy.
+t Želite li káfu sa mlekom ili čaj? | Czy życzy pan sobie kawę z mlekiem, czy herbatę? | Čaj sa mlekom, mólim. | Wybierz herbatę z mlekiem. | „Herbata z mlekiem” to čaj sa mlekom.
+w jednu | jedną (biernik żeński)
+w kašičicu | łyżeczkę (biernik od kašičica)
+t Želite li šećer? | Czy życzy pan sobie cukier? | Da, mólim, jednu kašičicu šećera. | Zgódź się na łyżeczkę cukru. | Kašičica jest rodzaju żeńskiego, więc biernik: jednu kašičicu; potem dopełniacz: šećera.
+w pitu | placek, szarlotkę (biernik od pita)
+w čokoladnu | czekoladową (biernik żeński)
+w tortu | tort, ciasto (biernik od torta)
+t Imamo pitu od jabuka i čokoladnu tortu. | Mamy szarlotkę i tort czekoladowy. | Uzeću pitu od jabuka. | Wybierz szarlotkę (pitę z jabłkami). | Pita jest rodzaju żeńskiego, więc biernik: pita → pitu; po „od” dopełniacz: jabuka.
+w soka | soku (dopełniacz od sok)
+w pomorandže | pomarańczy (dopełniacz od pomorandža)
+t Želite li i čašu soka? | Czy życzy pan sobie też szklankę soku? | Da, čašu soka od pomorandže, mólim. | Zgódź się na sok pomarańczowy. | Po „čašu” dopełniacz: sok → soka; „sok pomarańczowy” to sok od pomorandže (dosł. „sok z pomarańczy”).
+t Sok od pomorandže je danas odličan. | Sok pomarańczowy jest dziś znakomity. | Dobro, uzeću sok. | Zdecyduj się na sok. | Po „uzeću” biernik: sok (nieżywotny, bez zmian).
+w vas | pana, pani, was (dopełniacz/biernik)
+w moju | moją (biernik żeński)
+w majku | matkę, mamę (biernik od majka)
+t Da li je torta za vas? | Czy to ciasto jest dla pana? | Ne, torta je za moju majku. | Odmów: ciasto jest dla twojej mamy. | Po „za” biernik: majka → majku; „moju” to biernik od moja.
+w ću | (czasownik pomocniczy: będę; rado ću sačekati = chętnie poczekam)
+t Trenutak, mólim. | Chwileczkę. | Hvála, rado ću sačekati. | Podziękuj i powiedz, że chętnie poczekasz. | „Chętnie” to rado; sačekati to „poczekać”.
+w tu | tu, tutaj
+t Izvolite, sve je tu. Prijatno! | Proszę, wszystko jest tutaj. Smacznego! | Hvála, takođe! | Podziękuj i odwzajemnij życzenia. | „Nawzajem” to takođe.
+e Mólim! | Proszę bardzo!
+
+@level 3 | Stolik, pytania i cena | patience=5 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Stolik dla dwóch
+scene Po południu. Marko pracuje, więc umówiłeś się z jego siostrą Jeleną. Kelner pyta o stolik, a ty musisz wybrać miejsce, jedzenie i dowiedzieć się, ile to kosztuje.
+goal Zajmij stolik dla dwóch, zamów obiad dla was obu i nie przepłać.
+win Jelena jest zachwycona: „Sad mi je jasno zašto Marko toliko priča o tebi!” Zaprasza cię na wieczór do znajomych Marka.
+partial Obiad się udał, ale Jelena musiała kilka razy tłumaczyć kelnerowi, co chcesz. Wieczorne spotkanie nadal aktualne.
+fail Nie dogadałeś się z kelnerem, a Jelena patrzyła na to z niedowierzaniem. Wieczorem dostajesz od niej krótką wiadomość: „Možda nekom drugom prilikom.”
+w dvoje | dwoje (za dvoje = dla dwojga)
+t Dobar dan! Želite li sto za dvoje? | Dzień dobry! Czy życzy pan sobie stolik dla dwóch osób? | Da, sto za dvoje, mólim. | Zgódź się: stolik dla dwóch osób. | „Dla dwojga” to za dvoje; sto jest rodzaju męskiego nieżywotnego, więc biernik = mianownik.
+w sedite | siedzicie; siedzi pan (sedeti)
+w sedim | siedzę (sedeti)
+t Želite li da sedite ovde ili támo? | Czy życzy pan sobie siedzieć tutaj, czy tam? | Hteo bih da sedim ovde, mólim. | Powiedz, że chcesz siedzieć tutaj. | W serbskim zamiast bezokolicznika często stoi da + czas teraźniejszy: da sedim.
+t Izvolite jelovnik. Šta ćete popiti? | Proszę, karta dań. Co pan wypije? | Čašu vode i sok, mólim. | Zamów wodę i sok. | Po „čašu” dopełniacz: vode; „sok” to biernik (taki sam jak mianownik).
+w riblju | rybną (biernik żeński)
+w čorbu | zupę (biernik od čorba)
+w želim | chcę, życzę sobie
+w imate | macie; ma pan
+w salatu | sałatkę (biernik od salata)
+t Danas imamo riblju čorbu. Želite li čorbu? | Mamy dziś zupę rybną. Czy życzy pan sobie zupę? | Ne, ne želim čorbu. Imate li salatu? | Odmów zupy i zapytaj o sałatkę. | Pytanie zamknięte tworzy się przez li po czasowniku: imate li salatu?
+w naravno | oczywiście
+t Da, naravno. Salata je veoma úkusna. | Tak, oczywiście. Sałatka jest bardzo smaczna. | Dobro, uzeću salatu. | Zdecyduj się na sałatkę. | Salata jest rodzaju żeńskiego, więc biernik: salatu.
+w ribom | rybą (sa ribom = z rybą)
+t Želite li salatu sa ribom ili sa sirom? | Czy życzy pan sobie sałatkę z rybą, czy z serem? | Sa sirom, mólim. | Wybierz ser. | „Z serem” to sa sirom.
+w košta | kosztuje (koštati)
+t Još nešto? | Coś jeszcze? | Koliko košta torta? | Zapytaj o cenę ciasta. | „Ile kosztuje” to koliko košta.
+w dinara | dinarów (dopełniacz mnogi od dinar)
+w nije | nie jest
+w preskupo | zbyt drogo
+t Torta košta dvesta dinara. | Ciasto kosztuje dwieście dinarów. | To nije preskupo. Uzeću parče. | Powiedz, że cena ci pasuje, i weź kawałek. | „To nie za drogo” to to nije preskupo (pre- = „zbyt”).
+t Želite li tortu odmah ili kasnije? | Czy życzy pan sobie ciasto od razu, czy później? | Hteo bih tortu kasnije. | Powiedz, że ciasto chcesz później. | „Później” to kasnije; torta w bierniku: tortu.
+w imam | mam
+w dovoljno | dość
+t Naravno. Još čašu vode? | Oczywiście. Jeszcze szklankę wody? | Ne, hvála. Ímam dovoljno. | Grzecznie odmów: masz dość. | „Mam dość” to imam dovoljno.
+e Rado! Trenutak, mólim. | Chętnie! Chwileczkę.
+
+@level 4 | Rozmowa przy stole | patience=5 typed=0.75 extra=4 hint=letters
+partner Gospođa Jovanović | J
+desc Rozdział 4: Wieczór u gospođe Jovanović
+scene Wieczorem Marko zabiera cię do swojej ulubionej kawiarni. Właścicielka, gospođa Jovanović, zna wszystkich, a ciebie wypytuje jak nowego znajomego Marka.
+goal Odpowiadaj na pytania gospođe Jovanović o to, skąd jesteś i czym się zajmujesz. Jeśli jej się spodobasz, Marko zaprosi cię na jutro.
+win Gospođa Jovanović klepie cię po ramieniu: „Ovaj je već naš!” Marko mówi, że jutro odprowadzi cię na dworzec i wszystko ci pokaże.
+partial Gospođa Jovanović jest uprzejma, ale nie do końca przekonana. Marko uspokaja: „Treba joj vremena.” Jutro i tak idziecie razem na dworzec.
+fail Gospođa Jovanović przestała cię rozumieć w połowie wywiadu i uznała, że jesteś nieszczery. Marko wychodzi zakłopotany.
+w veče | wieczór (dobro veče = dobry wieczór)
+t Dobro veče! Šta ćete popiti? | Dobry wieczór! Co pan wypije? | Hteo bih pivo i čašu vode, mólim. | Zamów piwo i wodę. | Po „hteo bih” biernik: pivo (nijaki, bez zmian); po „čašu” dopełniacz: vode.
+w govorite | mówicie; mówi pan (govoriti)
+w srpski | po serbsku; serbski
+w odakle | skąd
+w ste | jesteście; jest pan
+t Veoma dobro govorite srpski! Odakle ste? | Bardzo dobrze pan mówi po serbsku! Skąd pan jest? | Hvála! Ja sam iz Poljske. | Podziękuj i powiedz, że jesteś z Polski. | „Z” w znaczeniu pochodzenia to iz + dopełniacz: iz Poljske.
+w učite | uczycie; uczy pan (učiti)
+w učim | uczę (učiti)
+w tek | dopiero
+w odnedavno | od niedawna
+t Iz Poljske! Koliko dugo već učite srpski? | Z Polski! Jak długo już uczy się pan serbskiego? | Srpski učim tek odnedavno. | Powiedz, że uczysz się serbskiego od niedawna. | „Od niedawna” to odnedavno; „uczę (się) języka” to učim jezik (bez się).
+w školi | szkole (miejscownik od škola)
+w kuće | domu (dopełniacz od kuća; kod kuće = w domu)
+t To je lepo! Učite li u školi? | To ładnie! Czy uczy się pan w szkole? | Ne, učim kod kuće. | Zaprzecz: uczysz się w domu. | „W domu” (w sensie „u siebie”) to kod kuće.
+w pojedete | zjecie; zje pan (da pojedete = żeby pan zjadł)
+w čorba | zupa (czorba)
+w mesom | mięsem (sa mesom = z mięsem)
+t Želite li nešto da pojedete? Čorba je danas veoma dóbra. | Czy chce pan coś zjeść? Zupa jest dziś bardzo dobra. | Rado, uzeću čorbu. Je li sa mesom? | Zgódź się na zupę i zapytaj, czy jest z mięsem. | „Z mięsem” to sa mesom (instrumental).
+w mesa | mięsa (dopełniacz: bez mesa = bez mięsa)
+t Ne, bez mesa. Želite li i žemlju? | Nie, bez mięsa. Czy życzy pan sobie też bułkę? | Da, žemlju sa sirom, mólim. | Zgódź się: bułka z serem. | „Z serem” to sa sirom.
+w vam | panu, pani, wam (celownik)
+w se | się
+w sviđa | podoba (sviđati se; kako vam se sviđa? = jak się panu podoba?)
+w vruća | gorąca (żeński)
+t Kako vam se sviđa čorba? | Jak panu smakuje zupa? | Čorba je veoma dóbra, ali malo vruća. | Pochwal zupę, ale zaznacz, że jest gorąca. | „Trochę” to malo; vruća to forma żeńska (čorba jest rodzaju żeńskiego).
+w jedno | jedno (nijaki)
+w Sada | Sadu (dopełniacz od Sad)
+t Želite li još jedno pivo? | Czy życzy pan sobie jeszcze jedno piwo? | Ne, hvála, sada ću káfu. | Odmów i powiedz, że teraz zamawiasz kawę. | „Teraz” to sada; kafu to biernik od kafa.
+t Da li ste student? | Czy jest pan studentem? | Ne, ja sam nástavnik. | Zaprzecz: jesteś nauczycielem. | W serbskim przy zawodzie nie ma przedimka: ja sam nastavnik.
+t Naravno. Još nešto? | Oczywiście. Coś jeszcze? | Ne, hvála, to je sve. | Odmów: to wszystko. | „To wszystko” to to je sve.
+e Trenutak, mólim! | Chwileczkę!
+
+@level 5 | Pełna wizyta i rachunek | patience=4 typed=1 extra=0 hint=none reward=25
+desc Rozdział 5: Rachunek i pożegnanie
+scene Ostatni dzień w Belgradzie. Z samego rana siadasz w kawiarni, żeby zjeść pożegnalne śniadanie i zapłacić. Za godzinę pociąg, a Marko ma pojawić się na peronie.
+goal Zamów pełne śniadanie, usiądź przy oknie, zapłać i pożegnaj się. Nie możesz się spóźnić na pociąg.
+win Kelner życzy ci dobrej podróży i wręcza paczkę ciasta „na drogę od gospođe Jovanović”. Biegniesz na dworzec, a tam czeka Marko.
+partial Zapłaciłeś, ale straciłeś sporo czasu na poprawki. Biegniesz na dworzec w ostatniej chwili.
+fail Rachunek zrobił się kłopotliwy, kelner nie rozumiał, ile masz zapłacić. Pociąg odjechał bez ciebie.
+t Dobro jutro! Šta ćete popiti? | Dzień dobry! Co pan wypije? | Dobro jutro! Hteo bih káfu sa mlekom, ali bez šećera, mólim. | Przywitaj się i zamów kawę z mlekiem, ale bez cukru. | Po „sa” i „bez” rzeczownik w odpowiednim przypadku: sa mlekom, bez šećera.
+w jajetom | jajkiem (sa jajetom = z jajkiem)
+t Naravno. A za doručak? Imamo žemlje sa sirom, jaje ili čokoladnu tortu. | Oczywiście. A na śniadanie? Mamy bułki z serem, jajko albo tort czekoladowy. | Uzeću žemlju sa jajetom, mólim. | Zamów bułkę z jajkiem. | Po „sa” narzędnik: sa jajetom.
+w preporučujete | polecacie; poleca pan (preporučivati)
+t Dobro. Želite li i čašu vode? | Dobrze. Czy życzy pan sobie też szklankę wody? | Da, rado. Šta još preporučujete? | Zgódź się i zapytaj, co jeszcze polecają. | „Polecać” to preporučivati; preporučujete to forma grzecznościowa.
+w pite | placka (dopełniacz od pita)
+t Pita od jabuka je danas veoma úkusna. | Szarlotka jest dziś bardzo smaczna. | Dobro, uzeću parče pite od jabuka. | Zdecyduj się na kawałek szarlotki. | Po „parče” dopełniacz: pita od jabuka → pite od jabuka.
+w prozora | okna (dopełniacz od prozor; kod prozora = przy oknie)
+t Želite li da sedite ovde ili támo? | Czy życzy pan sobie siedzieć tutaj, czy tam? | Hteo bih da sedim támo, kod prozora. | Powiedz, że chcesz siedzieć przy oknie. | „Przy oknie” to kod prozora (kod + dopełniacz).
+t Izvolite, sve je tu. Prijatno! | Proszę, wszystko jest tutaj. Smacznego! | Hvála, takođe! | Odwzajemnij życzenia. | „Nawzajem” to takođe.
+w ukusno | smacznie; smaczne (nijaki)
+t Da li vam je ukusno? | Czy panu smakuje? | Da, veoma je ukusno. | Zgódź się: bardzo ci smakuje. | Przymiotnik ukusno stoi w rodzaju nijakim, bo mówimy ogólnie: je ukusno.
+w platim | zapłacę (platiti; da platim = żebym zapłacił)
+t Želite li još nešto? | Czy życzy pan sobie coś jeszcze? | Ne, hvála. Hteo bih da platim. | Odmów i powiedz, że chcesz zapłacić. | „Chciałbym zapłacić” to hteo bih da platim (da + czas teraźniejszy).
+w šeststo | sześćset
+w sedamsto | siedemset
+w zadržite | zatrzymajcie; niech pan zatrzyma (zadržati)
+t To je šeststo dinara. | To będzie sześćset dinarów. | Izvolite, sedamsto dinara. Zadržite kusur! | Zapłać i powiedz, że reszty nie trzeba. | „Zadržite kusur” znaczy „reszty proszę nie wydawać” (dosłownie „resztę proszę zatrzymać”).
+w vama | panu, pani, wam (celownik)
+t Hvála! Prijatan dan! | Dziękujemy! Miłego dnia! | Hvála, i vama! Doviđénja! | Podziękuj i pożegnaj się. | „Nawzajem” w tym zdaniu to i vama (dosł. „i panu”).
+e Doviđénja! | Do widzenia!
+
+
+@larp voz | Pociąg do Nowego Sadu | Blagajnica | B | Biegniesz na dworzec w Belgradzie. Pociąg do Nowego Sadu odjeżdża za dziesięć minut, a Marko czeka na ciebie w środku. | Kup bilet, znajdź właściwy peron i dojedź do Nowego Sadu.
+fee 0
+reward 15
+strict yes
+story yes
+win Siedzisz w pociągu do Nowego Sadu, a Marko macha do ciebie z drugiego końca wagonu. Podróż może się zacząć.
+partial Dotarłeś do Nowego Sadu, ale kilka razy ktoś musiał ci pomagać. Marko czeka na peronie i mówi: „Na następny raz poćwicz jeszcze pytania.”
+fail Pociąg odjechał, a ty stoisz na peronie z biletem w ręku. Marko pisze: „Sledeći voz ide za sat vremena!”
+
+@level 1 | Bilet | patience=5 typed=0 extra=1 hint=none
+desc Rozdział 1: Kasa biletowa
+w kuda | dokąd
+w putujete | podróżujecie; podróżuje pan (putovati)
+w kartu | bilet (biernik od karta)
+w Novi | Novi (Novi Sad = Nowy Sad)
+w Sad | Sad (Novi Sad = Nowy Sad)
+t Dobar dan! Kuda putujete? | Dzień dobry! Dokąd pan jedzie? | Dobar dan, hteo bih kartu za Novi Sad, mólim. | Poproś o bilet do Nowego Sadu. | „Bilet do” to karta za + biernik: za Novi Sad. | Kartu za Novi Sad, mólim.
+w jednosmerna | w jedną stronę (jednosmerna karta)
+w povratna | powrotna (povratna karta)
+t Jednosmerna ili povratna? | W jedną stronę czy powrotny? | Jednosmerna, mólim. | Wybierz bilet w jedną stronę. | „W jedną stronę” to jednosmerna (karta), „powrotny” to povratna.
+w polazi | odjeżdża (polaziti)
+w minuta | minut (dopełniacz mnogi)
+w osamsto | osiemset
+w hiljadu | tysiąc (biernik)
+t Voz polazi za déset minuta. To je osamsto dinara. | Pociąg odjeżdża za dziesięć minut. To będzie osiemset dinarów. | Izvolite, hiljadu dinara. | Podaj tysiąc dinarów. | Po liczebnikach od pięciu w górę dopełniacz mnogi: dinara.
+w vašu | pana, pani (biernik żeński)
+t Dvesta dinara kusur. Izvolite vašu kartu. | Dwieście dinarów reszty. Oto pana bilet. | Hvála! Doviđénja! | Podziękuj i pożegnaj się. | „Do widzenia” to doviđenja.
+e Srećan put! | Szczęśliwej podróży!
+
+@level 2 | Peron | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Który peron?
+partner Službenik | S
+scene Masz bilet, ale na dworcu jest kilka pociągów naraz. Pracownik kolei stoi przy tablicy odjazdów, a zegar tyka.
+goal Dowiedz się, z którego peronu odjeżdża pociąg do Nowego Sadu, i nie wsiądź do złego pociągu.
+win Wsiadasz do właściwego pociągu tuż przed odjazdem. Pracownik kolei salutuje: „Srećna vožnja!”
+partial Dotarłeś na peron, ale po drodze kilka razy pytałeś o to samo. Wsiadasz w ostatniej chwili.
+fail Wsiadłeś do pociągu do Niszu. Marko dzwoni: „Gde si?!”
+w mogu | mogę (moći)
+t Dobar dan! Mogu li vam pomoći? | Dzień dobry! Czy mogę pomóc? | Da, odakle polazi voz za Novi Sad? | Zgódź się i zapytaj, skąd odjeżdża pociąg do Nowego Sadu. | „Skąd odjeżdża pociąg” to odakle polazi voz.
+w perona | peronu (dopełniacz od peron)
+w Niš | Nisz
+w peron | peron
+k Voz za Novi Sad polazi sa perona pet. Voz za Niš polazi sa perona tri. | Pociąg do Nowego Sadu odjeżdża z peronu piątego. Pociąg do Niszu z peronu trzeciego. | Hvála! Ídem na peron pet. | Hvála! Ídem na peron tri.; Hvála! Ídem u Niš. | Peron tri to peron trzeci, a stamtąd jedzie pociąg do Niszu.; Chciałeś jechać do Nowego Sadu, nie do Niszu.
+t Izvolite! Imate li već kartu? | Proszę bardzo! Czy ma pan już bilet? | Da, ímam kartu. | Potwierdź, że masz bilet. | Po „imam” biernik: karta → kartu.
+w onda | wtedy; w takim razie
+e Onda brzo! Srećan put! | W takim razie szybko! Szczęśliwej podróży!
+
+@level 3 | W pociągu | patience=4 typed=0.5 extra=3 hint=bank reward=25
+desc Rozdział 3: Konduktor
+partner Kondukter | K
+scene Pociąg ruszył. Konduktor idzie przez wagon i sprawdza bilety, a Marko siedzi kilka rzędów dalej i macha do ciebie.
+goal Pokaż bilet, wybierz miejsce i dojedź do Nowego Sadu bez kłopotów.
+win Konduktor oddaje bilet z uśmiechem: „Sve je u redu!” Marko robi ci miejsce przy oknie i pyta o pierwsze wrażenia z Belgradu.
+partial Konduktor w końcu skasował bilet, ale musiał kilka razy powtarzać. Marko pomaga ci usiąść.
+fail Konduktor uznał, że nie rozumiesz, co się do ciebie mówi. Bilet skontrolował dopiero Marko, a ty dostajesz upomnienie.
+w moje | mojej (dopełniacz żeński)
+w karte | biletu (dopełniacz od karta)
+t Dobar dan! Vašu kartu, mólim. | Dzień dobry! Pański bilet, proszę. | Evo moje karte. | Pokaż bilet. | „Oto” to evo, a po nim dopełniacz: moje karte.
+o Hvála. Želite li da sedite kraj prozora? | Dziękuję. Czy życzy pan sobie siedzieć przy oknie? | Da, kraj prozora, mólim. | Ne, hvála, ne želim prozor.; Da, hteo bih da platim. | Konduktor pyta o miejsce, nie o płacenie.; Przy oknie to kraj prozora, a nie „ne želim prozor”.
+w ovo | to (przed rzeczownikiem nijakim)
+w kasni | spóźnia się (kasniti)
+t Ovo mesto je slobodno. Voz kasni déset minuta. | To miejsce jest wolne. Pociąg ma dziesięć minut spóźnienia. | To nije problem. Hvála! | Powiedz, że to nie problem, i podziękuj. | „To nie problem” to to nije problem.
+w posetu | wizytę (biernik od poseta)
+w putujem | podróżuję (putovati)
+t Putujete li u posetu? | Czy jedzie pan z wizytą? | Da, putujem kod prijatelja. | Powiedz, że jedziesz do kolegi. | „Jechać do kogoś” to putovati kod + dopełniacz: kod prijatelja.
+w Novog | Nowego (dopełniacz: do Novog Sada)
+e Srećan put do Novog Sada! | Szczęśliwej podróży do Nowego Sadu!

@@ -1,0 +1,245 @@
+@larp kawiarnia | W kawiarni | Σερβιτόρος | Σ | Wchodzisz do kawiarni w Atenach. Jesteś głodny i spragniony, a kelner czeka z notesem. | Zamów coś do picia i coś do jedzenia, a potem zapłać.
+fee 0
+reward 15
+strict yes
+story yes
+win Kelner jest pod wrażeniem, że tak dobrze mówisz po grecku. „Τα κερνάμε!” – częstunek na koszt kawiarni.
+partial Zamówienie dotarło do stołu, choć kilka razy musiałeś poprawiać. Kelner uśmiecha się i przynosi rachunek.
+fail Kelner ma dość: nie zrozumiał cię kilka razy z rzędu i prosi, żebyś zwolnił stolik komuś innemu.
+
+@level 1 | Kawa, bułka i ciasto | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Spóźniony Nikos
+scene Ateny, deszczowy ranek. Przyjechałeś do Grecji spotkać się z Nikosem, kolegą z korespondencji, ale on jeszcze nie przyszedł. Siadasz w kawiarni i czekasz.
+goal Zamów kawę, bułkę i ciasto, a przy okazji dowiedz się, co z Nikosem.
+win Kelner kładzie na stole kopertę: „Ο κύριος Νίκος άφησε αυτό για σας.” W środku kartka: „Spóźnię się, jutro rano zjemy razem śniadanie. N.” Masz plan na jutro.
+partial Zamówienie dotarło, a kelner podaje ci kopertę od Nikosa, chociaż z trudem zrozumiał, co chcesz. Nikos przeprasza i zaprasza na jutro.
+fail Kelner nie rozumie cię i nie wie, kim jesteś. Koperta od Nikosa trafia do kogoś innego, a ty wychodzisz w deszcz z pustym żołądkiem.
+w θέλετε | chcecie; chce pan(i) (forma grzecznościowa od θέλω)
+w έναν | jednego (biernik, rodzaj męski)
+w φίλο | przyjaciela (biernik od φίλος)
+t Καλημέρα! Τι θέλετε; | Dzień dobry! Co podać? | Καλημέρα! Περιμένω έναν φίλο. | Przywitaj się i powiedz, że czekasz na przyjaciela. | „Czekam” to περιμένω. Po tym czasowniku rzeczownik stoi w bierniku: φίλος → φίλο, a „jednego” to έναν.
+w ορίστε | proszę (gdy coś podajemy); oto
+w καφές
+w τσάι
+t Ορίστε το μενού. Καφέ ή τσάι; | Oto menu. Kawę czy herbatę? | Θέλω έναν καφέ, παρακαλώ. | Zamów kawę. | Καφές jest rodzaju męskiego; po „θέλω” stoi biernik: έναν καφέ.
+w γάλα
+t Με γάλα; | Z mlekiem? | Ναι, με γάλα, παρακαλώ. | Zgódź się na mleko. | „Z” to με, a rzeczownik po με stoi bez rodzajnika: με γάλα.
+w ζάχαρη
+w χωρίς
+t Με ζάχαρη; | Z cukrem? | Όχι, χωρίς ζάχαρη, ευχαριστώ. | Odmów cukru. | „Bez” to χωρίς, a „z” to με.
+w νερό
+t Θέλετε και ένα νερό; | Czy chce pan(i) też wodę? | Ναι, ένα νερό, παρακαλώ. | Zgódź się na wodę. | Νερό jest rodzaju nijakiego: ένα νερό.
+w φαγητό | jedzenie
+w έχουμε | mamy (έχω)
+w αβγά | jajka (liczba mnoga od αβγό)
+w ψωμάκι
+w τυρί
+t Έχουμε ψωμάκι, αβγά και τυρί. Και για φαγητό; | Mamy bułki, jajka i ser. A do jedzenia? | Θέλω ένα ψωμάκι με τυρί, παρακαλώ. | Zamów bułkę z serem. | Ψωμάκι jest rodzaju nijakiego: ένα ψωμάκι; po με rzeczownik bez rodzajnika: με τυρί.
+w γλυκό | ciasto; deser; coś słodkiego
+w τούρτα
+w κομμάτι
+t Έχουμε τούρτα και παγωτό. Θέλετε και ένα γλυκό; | Mamy ciasto i lody. Czy chce pan(i) też coś słodkiego? | Ναι, ένα κομμάτι τούρτα, παρακαλώ. | Zgódź się na kawałek ciasta. | Po „κομμάτι” rzeczownik stoi bez rodzajnika: ένα κομμάτι τούρτα.
+w σας | pański, pani, państwa; panu, pani, państwu (grzecznie)
+w καλή | dobra, dobry (rodzaj żeński)
+w όρεξη | apetyt
+t Ορίστε ο καφές σας και το ψωμάκι σας. Καλή όρεξη! | Oto pana kawa i bułka. Smacznego! | Ευχαριστώ πολύ! | Podziękuj kelnerowi. | Dziękujesz: ευχαριστώ πολύ.
+w άλλο | inny, inne (rodzaj nijaki)
+w τίποτα
+t Κάτι άλλο; | Coś jeszcze? | Όχι, ευχαριστώ, τίποτα άλλο. | Odmów: nic więcej nie trzeba. | „Nic więcej” to τίποτα άλλο.
+w σημείωμα | karteczka, notatka
+e Ορίστε! Και ένα σημείωμα για σας. | Proszę! I karteczka dla pana(i).
+
+@level 2 | Śniadanie | patience=6 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Śniadanie z Nikosem
+scene Następnego ranka. Nikos czeka już przy stoliku, a kelner przyjmuje zamówienia. Nikos prosi, żebyś zamówił sam, a przy okazji kupił ciasto, które zabierzesz mamie.
+goal Zamów śniadanie i kup ciasto dla swojej mamy.
+win Nikos się śmieje: „Μιλάς σαν Αθηναίος!” Ciasto dla mamy zapakowane, a Nikos obiecuje pokazać ci jutro miasto.
+partial Śniadanie jest, ciasto też, ale Nikos musiał pomóc ci kilka razy. Obiecuje, że następnym razem zamówisz sam.
+fail Pomyliłeś zamówienia i Nikos dostał coś zupełnie innego. Zjadł w milczeniu i wyszedł do pracy.
+w πρωινό
+t Καλημέρα! Θέλετε πρωινό; | Dzień dobry! Czy chce pan(i) śniadanie? | Ναι, θέλω πρωινό. | Powiedz, że chcesz zjeść śniadanie. | „Śniadanie” to πρωινό; „chcę” to θέλω.
+w ψωμάκια | bułki (liczba mnoga od ψωμάκι)
+w δύο
+w αβγό
+t Έχουμε ψωμάκια, αβγά και τυρί. Τι θέλετε; | Mamy bułki, jajka i ser. Co podać? | Θέλω δύο ψωμάκια και ένα αβγό. | Zamów dwie bułki i jajko. | Liczba mnoga od ψωμάκι to ψωμάκια, a od αβγό to αβγά; „jajko” to ένα αβγό.
+t Θέλετε καφέ ή τσάι με το πρωινό; | Czy chce pan(i) kawę czy herbatę do śniadania? | Θέλω τσάι με γάλα, παρακαλώ. | Wybierz herbatę z mlekiem. | Po με rzeczownik stoi bez rodzajnika: με γάλα.
+w λίγη | trochę (rodzaj żeński: λίγη ζάχαρη)
+t Θέλετε ζάχαρη; | Czy chce pan(i) cukier? | Ναι, λίγη ζάχαρη, παρακαλώ. | Zgódź się na trochę cukru. | Ζάχαρη jest rodzaju żeńskiego, więc „trochę” to λίγη (a nie λίγο).
+w μηλόπιτα | szarlotka
+w σοκολατένια | czekoladowa (rodzaj żeński)
+w μια | jedna, jakaś (rodzaj żeński)
+t Έχουμε μηλόπιτα και σοκολατένια τούρτα. | Mamy szarlotkę i tort czekoladowy. | Θέλω μια μηλόπιτα. | Wybierz szarlotkę. | Μηλόπιτα jest rodzaju żeńskiego, więc „jedna” to μια, a nie ένα.
+w χυμό | sok (biernik od χυμός)
+w ποτήρι
+w πορτοκάλι
+t Θέλετε και ένα ποτήρι χυμό; | Czy chce pan(i) też szklankę soku? | Ναι, ένα ποτήρι χυμό πορτοκάλι, παρακαλώ. | Zgódź się na sok pomarańczowy. | Po „ποτήρι” rzeczownik stoi bez rodzajnika; „sok pomarańczowy” to χυμός πορτοκάλι, a w bierniku χυμό πορτοκάλι.
+w τη | (rodzajnik żeński w bierniku, przed spółgłoską)
+w μου | mój, moja (po rzeczowniku)
+t Η μηλόπιτα είναι για σας; | Czy szarlotka jest dla pana(i)? | Όχι, είναι για τη μητέρα μου. | Odmów: ciasto jest dla twojej mamy. | „Mój, moja” stoi po rzeczowniku: τη μητέρα μου. Po „για” biernik: η μητέρα → τη μητέρα.
+w στιγμή | chwila
+w αμέσως | od razu
+t Μια στιγμή, παρακαλώ. Έρχομαι αμέσως. | Chwileczkę. Zaraz przyjdę. | Εντάξει, περιμένω. | Powiedz, że poczekasz. | „Czekam” to περιμένω; εντάξει to „w porządku”.
+w επίσης
+t Ορίστε όλα. Καλή όρεξη! | Oto wszystko. Smacznego! | Ευχαριστώ, επίσης! | Podziękuj i odwzajemnij życzenia. | „Nawzajem” to επίσης.
+e Παρακαλώ! | Proszę bardzo!
+
+@level 3 | Stolik, pytania i cena | patience=5 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Stolik dla dwojga
+scene Po południu. Nikos pracuje, więc umówiłeś się z jego siostrą Eleni. Kelner pyta o stolik, a ty musisz wybrać miejsce, jedzenie i dowiedzieć się, ile to kosztuje.
+goal Zajmij stolik dla dwojga, zamów obiad dla was obu i nie przepłać.
+win Eleni jest zachwycona: „Τώρα καταλαβαίνω γιατί ο Νίκος μιλάει τόσο πολύ για σένα!” Zaprasza cię na wieczór do znajomych Nikosa.
+partial Obiad się udał, ale Eleni musiała kilka razy tłumaczyć kelnerowi, co chcesz. Wieczorne spotkanie nadal aktualne.
+fail Nie dogadałeś się z kelnerem, a Eleni patrzyła na to z niedowierzaniem. Wieczorem dostajesz od niej krótką wiadomość: „Ίσως κάποια άλλη φορά.”
+t Καλησπέρα! Θέλετε τραπέζι για δύο; | Dobry wieczór! Czy chce pan(i) stolik dla dwojga? | Ναι, ένα τραπέζι για δύο, παρακαλώ. | Zgódź się: stolik dla dwóch osób. | „Dla dwóch” to για δύο; τραπέζι jest rodzaju nijakiego: ένα τραπέζι.
+w παράθυρο
+w δίπλα
+t Εδώ ή εκεί; | Tutaj czy tam? | Εκεί, δίπλα στο παράθυρο, παρακαλώ. | Powiedz, że chcesz siedzieć przy oknie. | „Przy oknie” to δίπλα στο παράθυρο (στο = σε + το).
+w ποτό
+t Ορίστε το μενού. Τι θέλετε για ποτό; | Oto menu. Co podać do picia? | Ένα νερό και έναν χυμό, παρακαλώ. | Zamów wodę i sok. | Νερό jest nijakie: ένα νερό; χυμός jest męski, więc w bierniku έναν χυμό.
+w ψαρόσουπα | zupa rybna
+w δεν | nie (przed czasownikiem)
+w έχετε | macie; ma pan(i) (έχω)
+t Έχουμε σήμερα ψαρόσουπα. Θέλετε σούπα; | Mamy dziś zupę rybną. Czy chce pan(i) zupę? | Όχι, δεν θέλω σούπα. Έχετε σαλάτα; | Odmów zupy i zapytaj o sałatkę. | Zaprzeczenie czasownika: δεν przed czasownikiem (δεν θέλω).
+w βεβαίως | oczywiście
+w νόστιμη | smaczna (rodzaj żeński)
+t Ναι, βεβαίως. Η σαλάτα είναι πολύ νόστιμη. | Tak, oczywiście. Sałatka jest bardzo smaczna. | Εντάξει, θέλω τη σαλάτα. | Zdecyduj się na sałatkę. | Σαλάτα jest rodzaju żeńskiego; po „θέλω” biernik: τη σαλάτα.
+t Θέλετε τη σαλάτα με ψάρι ή με τυρί; | Czy chce pan(i) sałatkę z rybą czy z serem? | Με τυρί, παρακαλώ. | Wybierz ser. | Po με rzeczownik stoi bez rodzajnika: με τυρί.
+w κάνει | kosztuje; robi (κάνω)
+t Κάτι άλλο; | Coś jeszcze? | Πόσο κάνει η μηλόπιτα; | Zapytaj o cenę szarlotki. | „Ile kosztuje” to πόσο κάνει (dosłownie „ile robi”).
+w ευρώ | euro (nie zmienia formy)
+w ακριβή | droga (rodzaj żeński)
+t Η μηλόπιτα κάνει τρία ευρώ. | Szarlotka kosztuje trzy euro. | Δεν είναι ακριβή. Θέλω ένα κομμάτι. | Powiedz, że cena ci pasuje, i weź kawałek. | Μηλόπιτα jest żeńska, stąd ακριβή (a nie ακριβός).
+w αργότερα
+t Θέλετε τη μηλόπιτα τώρα ή αργότερα; | Czy chce pan(i) szarlotkę teraz czy później? | Θέλω τη μηλόπιτα αργότερα. | Powiedz, że szarlotkę chcesz później. | „Później” to αργότερα.
+w φτάνει | wystarczy (φτάνω)
+t Βεβαίως. Ακόμα ένα νερό; | Oczywiście. Jeszcze jedną wodę? | Όχι, ευχαριστώ, φτάνει. | Grzecznie odmów: wystarczy. | „Wystarczy” to φτάνει.
+e Εντάξει! Μια στιγμή, παρακαλώ. | W porządku! Chwileczkę.
+
+@level 4 | Rozmowa przy stole | patience=5 typed=0.75 extra=4 hint=letters
+partner Κυρία Μαρία | Μ
+desc Rozdział 4: Wieczór u kyrii Marii
+scene Wieczorem Nikos zabiera cię do swojej ulubionej kawiarni. Właścicielka, kyria Maria, zna wszystkich, a ciebie wypytuje jak nowego znajomego Nikosa.
+goal Odpowiadaj na pytania kyrii Marii o to, skąd jesteś i czym się zajmujesz. Jeśli jej się spodobasz, Nikos zaprosi cię na jutro.
+win Kyria Maria klepie cię po ramieniu: „Αυτός είναι πια δικός μας!” Nikos mówi, że jutro odprowadzi cię na dworzec i wszystko ci pokaże.
+partial Kyria Maria jest uprzejma, ale nie do końca przekonana. Nikos uspokaja: „Θέλει χρόνο.” Jutro i tak idziecie razem na dworzec.
+fail Kyria Maria przestała cię rozumieć w połowie wywiadu i uznała, że jesteś nieszczery. Nikos wychodzi zakłopotany.
+w μπίρα
+t Καλησπέρα! Τι θέλετε για ποτό; | Dobry wieczór! Co podać do picia? | Θέλω μια μπίρα και ένα νερό, παρακαλώ. | Zamów piwo i wodę. | Μπίρα jest rodzaju żeńskiego: μια μπίρα; νερό jest nijakie: ένα νερό.
+w μιλάτε | mówicie; mówi pan(i) (μιλάω)
+w ελληνικά | po grecku
+w είστε | jesteście; jest pan(i) (είμαι)
+t Μιλάτε πολύ καλά ελληνικά! Από πού είστε; | Bardzo dobrze mówi pan(i) po grecku! Skąd pan(i) jest? | Ευχαριστώ! Είμαι από την Πολωνία. | Podziękuj i powiedz, że jesteś z Polski. | „Z” w znaczeniu pochodzenia to από + biernik: από την Πολωνία.
+w καιρό | czas (np. „jak długo”)
+w μαθαίνετε | uczycie się; uczy się pan(i) (μαθαίνω)
+t Από την Πολωνία! Πόσο καιρό μαθαίνετε ελληνικά; | Z Polski! Jak długo uczy się pan(i) greckiego? | Μαθαίνω ελληνικά εδώ και λίγο καιρό. | Powiedz, że uczysz się greckiego od niedawna. | „Od niedawna” to εδώ και λίγο καιρό (dosłownie „tu i mało czasu”).
+w ωραία | pięknie, świetnie
+t Ωραία! Μαθαίνετε στο σχολείο; | Świetnie! Uczy się pan(i) w szkole? | Όχι, μαθαίνω στο σπίτι. | Zaprzecz: uczysz się w domu. | „W domu” to στο σπίτι (στο = σε + το).
+w έχει | ma; „jest w nim” (έχω)
+t Η σούπα είναι σήμερα πολύ καλή. Θέλετε και φαγητό; | Zupa jest dziś bardzo dobra. Czy chce pan(i) też coś zjeść? | Ναι, θέλω μια σούπα. Έχει κρέας; | Zgódź się na zupę i zapytaj, czy jest z mięsem. | Σούπα jest żeńska: μια σούπα. „Czy ma mięso” to Έχει κρέας; (pytanie intonacją).
+t Όχι, δεν έχει κρέας. Θέλετε και ψωμί; | Nie, bez mięsa. Czy chce pan(i) też chleb? | Ναι, λίγο ψωμί και τυρί, παρακαλώ. | Zgódź się na trochę chleba i sera. | Ψωμί jest nijakie, więc λίγο.
+w αρέσει | podoba się; smakuje (αρέσω)
+w ζεστή | gorąca, ciepła (rodzaj żeński)
+t Σας αρέσει η σούπα; | Czy smakuje panu(i) zupa? | Ναι, είναι πολύ καλή, αλλά λίγο ζεστή. | Pochwal zupę, ale zaznacz, że jest trochę gorąca. | Σούπα jest żeńska: καλή, ζεστή. „Trochę” to λίγο.
+w άλλη | inna, jeszcze jedna (rodzaj żeński)
+t Και άλλη μπίρα; | I jeszcze jedno piwo? | Όχι, ευχαριστώ, τώρα θέλω έναν καφέ. | Odmów i powiedz, że teraz chcesz kawę. | Καφές jest męski: έναν καφέ.
+t Είστε φοιτητής; | Jest pan studentem? | Όχι, είμαι δάσκαλος. | Zaprzecz: jesteś nauczycielem. | Po είμαι przy zawodzie nie ma rodzajnika: είμαι δάσκαλος.
+e Μια στιγμή, παρακαλώ! | Chwileczkę!
+
+@level 5 | Pełna wizyta i rachunek | patience=4 typed=1 extra=0 hint=none reward=25
+desc Rozdział 5: Rachunek i pożegnanie
+scene Ostatni dzień w Atenach. Z samego rana siadasz w kawiarni, żeby zjeść pożegnalne śniadanie i zapłacić. Za godzinę pociąg, a Nikos ma pojawić się na peronie.
+goal Zamów pełne śniadanie, usiądź na zewnątrz, zapłać i pożegnaj się. Nie możesz się spóźnić na pociąg.
+win Kelner życzy ci dobrej podróży i wręcza paczkę ciasta „na drogę od kyrii Marii”. Biegniesz na dworzec, a tam czeka Nikos.
+partial Zapłaciłeś, ale straciłeś sporo czasu na poprawki. Biegniesz na dworzec w ostatniej chwili.
+fail Rachunek zrobił się kłopotliwy, kelner nie rozumiał, ile masz zapłacić. Pociąg odjechał bez ciebie.
+w καφές
+w γάλα
+w ζάχαρη
+t Καλημέρα! Τι θέλετε για ποτό; | Dzień dobry! Co podać do picia? | Καλημέρα! Θέλω έναν καφέ με γάλα, αλλά χωρίς ζάχαρη. | Przywitaj się i zamów kawę z mlekiem, ale bez cukru. | Po με i χωρίς rzeczownik stoi bez rodzajnika: με γάλα, χωρίς ζάχαρη.
+w ψωμάκι
+w αβγό
+t Βεβαίως. Έχουμε ψωμάκια με τυρί, αβγά ή σοκολατένια τούρτα. | Oczywiście. Mamy bułki z serem, jajka albo tort czekoladowy. | Θέλω ένα ψωμάκι με αβγό, παρακαλώ. | Zamów bułkę z jajkiem. | Ψωμάκι jest nijakie: ένα ψωμάκι; po με bez rodzajnika: με αβγό.
+w ευχαρίστως | chętnie
+w προτείνετε | polecacie; poleca pan(i) (προτείνω)
+t Εντάξει. Θέλετε και ένα ποτήρι νερό; | W porządku. Czy chce pan(i) też szklankę wody? | Ναι, ευχαρίστως. Τι προτείνετε ακόμα; | Zgódź się i zapytaj, co jeszcze polecają. | „Chętnie” to ευχαρίστως; „jeszcze” to ακόμα.
+w μηλόπιτα
+w κομμάτι
+t Η μηλόπιτα είναι σήμερα πολύ νόστιμη. | Szarlotka jest dziś bardzo smaczna. | Τότε θέλω ένα κομμάτι μηλόπιτα. | Zdecyduj się na kawałek szarlotki. | „Wtedy, w takim razie” to τότε; po „κομμάτι” rzeczownik bez rodzajnika.
+w έξω
+t Θέλετε τραπέζι εδώ ή έξω; | Czy chce pan(i) stolik tutaj czy na zewnątrz? | Έξω, παρακαλώ. | Powiedz, że chcesz siedzieć na zewnątrz. | „Na zewnątrz” to έξω.
+t Ορίστε. Καλή όρεξη! | Proszę. Smacznego! | Ευχαριστώ, επίσης! | Odwzajemnij życzenia. | „Nawzajem” to επίσης.
+w νόστιμο | smaczne (rodzaj nijaki)
+t Σας αρέσει το πρωινό; | Czy smakuje panu(i) śniadanie? | Ναι, είναι πολύ νόστιμο. | Zgódź się: bardzo ci smakuje. | Πρωινό jest nijakie, więc νόστιμο (a nie νόστιμος).
+w τον | (rodzajnik męski w bierniku)
+w λογαριασμό | rachunek (biernik od λογαριασμός)
+t Κάτι άλλο; | Coś jeszcze? | Όχι, ευχαριστώ. Τον λογαριασμό, παρακαλώ. | Odmów i poproś o rachunek. | „Rachunek” to ο λογαριασμός; w bierniku τον λογαριασμό.
+w κρατήστε | zatrzymajcie; niech pan(i) zatrzyma (κρατάω, tryb rozkazujący)
+w τα | (rodzajnik nijaki w liczbie mnogiej)
+w ρέστα
+w δώδεκα
+t Κάνει δέκα ευρώ. | To będzie dziesięć euro. | Ορίστε δώδεκα ευρώ. Κρατήστε τα ρέστα. | Zapłać i powiedz, że reszty nie trzeba. | „Reszty nie trzeba” to Κρατήστε τα ρέστα (dosłownie „zatrzymaj resztę”).
+w ευχαριστούμε | dziękujemy
+t Ευχαριστούμε! Καλό ταξίδι! | Dziękujemy! Szczęśliwej podróży! | Ευχαριστώ, επίσης! Γεια σας! | Podziękuj, odwzajemnij życzenia i pożegnaj się. | Γεια σας to grzeczne „do widzenia”; επίσης to „nawzajem”.
+e Γεια σας! | Do widzenia!
+
+
+@larp pociag | Pociąg do Salonik | Υπάλληλος | Υ | Biegniesz na dworzec w Atenach. Pociąg do Salonik odjeżdża za dziesięć minut, a Nikos czeka na ciebie w środku. | Kup bilet, znajdź właściwy peron i dojedź do Salonik.
+fee 0
+reward 15
+strict yes
+story yes
+win Siedzisz w pociągu do Salonik, a Nikos macha do ciebie z drugiego końca wagonu. Podróż może się zacząć.
+partial Dotarłeś do Salonik, ale kilka razy ktoś musiał ci pomagać. Nikos czeka na peronie i mówi: „Na następny raz poćwicz jeszcze pytania.”
+fail Pociąg odjechał, a ty stoisz na peronie z biletem w ręku. Nikos pisze: „Το επόμενο τρένο είναι σε μία ώρα!”
+
+@level 1 | Bilet | patience=5 typed=0 extra=1 hint=none
+desc Rozdział 1: Kasa biletowa
+w πάτε | idziecie, jedziecie; dokąd idzie(e) pan(i) (πάω)
+w Θεσσαλονίκη | Saloniki
+w εισιτήριο
+t Καλημέρα! Πού πάτε; | Dzień dobry! Dokąd jedzie pan(i)? | Θέλω ένα εισιτήριο για τη Θεσσαλονίκη, παρακαλώ. | Poproś o bilet do Salonik. | „Do” przy nazwie miasta po „bilet” to για + biernik; Θεσσαλονίκη jest żeńska: τη Θεσσαλονίκη.
+w απλό | w jedną stronę
+w επιστροφή | powrót
+t Απλό ή με επιστροφή; | W jedną stronę czy z powrotem? | Απλό, παρακαλώ. | Wybierz bilet w jedną stronę. | Απλό to „w jedną stronę”, με επιστροφή to „tam i z powrotem”.
+w φεύγει | odjeżdża (φεύγω)
+w λεπτά | minuty (liczba mnoga od λεπτό)
+w πενήντα
+t Το τρένο φεύγει σε δέκα λεπτά. Κάνει τριάντα ευρώ. | Pociąg odjeżdża za dziesięć minut. To będzie trzydzieści euro. | Ορίστε πενήντα ευρώ. | Podaj pięćdziesiąt euro. | Ορίστε używamy też przy podawaniu pieniędzy.
+w είκοσι
+w ρέστα
+t Είκοσι ευρώ ρέστα. Ορίστε το εισιτήριο. | Dwadzieścia euro reszty. Oto bilet. | Ευχαριστώ πολύ! Γεια σας! | Podziękuj i pożegnaj się. | „Do widzenia” (grzecznie) to γεια σας.
+e Καλό ταξίδι! | Szczęśliwej podróży!
+
+@level 2 | Peron | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Który peron?
+partner Υπάλληλος σταθμού | Σ
+scene Masz bilet, ale na dworcu stoi kilka pociągów naraz. Pracownik kolei stoi przy tablicy odjazdów, a zegar tyka.
+goal Dowiedz się, z którego peronu odjeżdża pociąg do Salonik, i nie wsiądź do złego pociągu.
+win Wsiadasz do właściwego pociągu tuż przed odjazdem. Pracownik kolei salutuje: „Καλό ταξίδι!”
+partial Dotarłeś na peron, ale po drodze kilka razy pytałeś o to samo. Wsiadasz w ostatniej chwili.
+fail Wsiadłeś do pociągu do Patras. Nikos dzwoni: „Πού είσαι;!”
+w βοήθεια | pomoc
+t Καλημέρα! Θέλετε βοήθεια; | Dzień dobry! Czy potrzebuje pan(i) pomocy? | Ναι, από πού φεύγει το τρένο για τη Θεσσαλονίκη; | Zgódź się i zapytaj, skąd odjeżdża pociąg do Salonik. | „Skąd” to από πού; „odjeżdża” to φεύγει.
+w αποβάθρα | peron
+w Πάτρα | Patras
+k Το τρένο για τη Θεσσαλονίκη φεύγει από την αποβάθρα πέντε. Το τρένο για την Πάτρα φεύγει από την αποβάθρα τρία. | Pociąg do Salonik odjeżdża z peronu piątego. Pociąg do Patras z peronu trzeciego. | Ευχαριστώ! Πάω στην αποβάθρα πέντε. | Ευχαριστώ! Πάω στην αποβάθρα τρία.; Ευχαριστώ! Πάω στην Πάτρα. | Αποβάθρα τρία to peron trzeci, a stamtąd odjeżdża pociąg do Patras.; Chciałeś jechać do Salonik (Θεσσαλονίκη), nie do Patras.
+t Παρακαλώ! Έχετε ήδη εισιτήριο; | Proszę bardzo! Czy ma pan(i) już bilet? | Ναι, έχω ήδη εισιτήριο. | Potwierdź, że masz już bilet. | „Mam już bilet” to έχω ήδη εισιτήριο; ήδη to „już”.
+e Τότε γρήγορα! Καλό ταξίδι! | W takim razie szybko! Szczęśliwej podróży!
+
+@level 3 | W pociągu | patience=4 typed=0.5 extra=3 hint=bank reward=25
+desc Rozdział 3: Kontroler biletów
+partner Ελεγκτής | Ε
+scene Pociąg ruszył. Kontroler idzie przez wagon i sprawdza bilety, a Nikos siedzi kilka rzędów dalej i macha do ciebie.
+goal Pokaż bilet, wybierz miejsce i dojedź do Salonik bez kłopotów.
+win Kontroler oddaje bilet z uśmiechem: „Όλα εντάξει!” Nikos robi ci miejsce przy oknie i pyta o pierwsze wrażenia z Aten.
+partial Kontroler w końcu skasował bilet, ale musiał kilka razy powtarzać. Nikos pomaga ci usiąść.
+fail Kontroler uznał, że nie rozumiesz, co się do ciebie mówi. Bilet skontrolował dopiero Nikos, a ty dostajesz upomnienie.
+w ελεγκτής | kontroler biletów
+t Καλημέρα! Το εισιτήριο, παρακαλώ. | Dzień dobry! Bilet, proszę. | Ορίστε το εισιτήριο. | Pokaż bilet. | „Oto” przy podawaniu czegoś to ορίστε.
+w θέση | miejsce (siedzące)
+o Ευχαριστώ. Θέλετε θέση δίπλα στο παράθυρο; | Dziękuję. Czy chce pan(i) miejsce przy oknie? | Ναι, δίπλα στο παράθυρο, παρακαλώ. | Όχι, ευχαριστώ, δεν θέλω παράθυρο.; Ναι, πληρώνω τώρα. | Kontroler pyta o miejsce, a nie o okno w ogóle: „nie chcę okna” nie jest odpowiedzią.; Kontroler pyta o miejsce, nie o płacenie.
+w ελεύθερη | wolna (rodzaj żeński)
+w καθυστέρηση | opóźnienie
+w πειράζει | przeszkadza; „δεν πειράζει” = nic nie szkodzi
+t Αυτή η θέση είναι ελεύθερη. Το τρένο έχει δέκα λεπτά καθυστέρηση. | To miejsce jest wolne. Pociąg ma dziesięć minut opóźnienia. | Δεν πειράζει. Ευχαριστώ! | Powiedz, że nic nie szkodzi, i podziękuj. | Δεν πειράζει to „nic nie szkodzi, nie szkodzi”.
+e Όλα εντάξει! Καλό ταξίδι! | Wszystko w porządku! Szczęśliwej podróży!
