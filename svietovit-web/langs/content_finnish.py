@@ -301,3 +301,39 @@ PARADIGM_LABELS.update({
 PARADIGMS += [
     ('form', 'Szyk zdania', 'Szyk: przeczenie i przymiotnik', 't_s0', 'Tämä on pieni talo.|Tämä on talo pieni.|On tämä pieni talo.|Tämä pieni on talo.; Minulla ei ole aikaa.|Minulla on ei aikaa.|Minulla ole ei aikaa.|Minulla ei on aikaa.; En puhu suomea.|Puhu en suomea.|En suomea puhu.|Suomea puhu en.', 'Przymiotnik przed rzeczownikiem. Przeczenie jest odmienianym czasownikiem (en, et, ei), a główny czasownik zostaje w temacie.'),
 ]
+
+# === PRONOUNS (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('decl', 'Zaimki', 'sinä (ty)', 'przyp', 'sinä; sinun; sinua; sinussa; sinusta; sinuun; sinulla; sinulta; sinulle', None),
+    ('decl', 'Zaimki', 'hän (on, ona)', 'przyp', 'hän; hänen; häntä; hänessä; hänestä; häneen; hänellä; häneltä; hänelle', 'Hän to osoba; „to” o rzeczy to se.'),
+    ('decl', 'Zaimki', 'me (my)', 'przyp', 'me; meidän; meitä; meissä; meistä; meihin; meillä; meiltä; meille', None),
+    ('decl', 'Zaimki', 'te (wy)', 'przyp', 'te; teidän; teitä; teissä; teistä; teihin; teillä; teiltä; teille', None),
+    ('decl', 'Zaimki', 'he (oni)', 'przyp', 'he; heidän; heitä; heissä; heistä; heihin; heillä; heiltä; heille', None),
+    ('decl', 'Zaimki', 'se (to, ono)', 'przyp', 'se; sen; sitä; siinä; siitä; siihen; sillä; siltä; sille', 'Mówiąc o rzeczach i w mowie potocznej o ludziach.'),
+    ('decl', 'Zaimki', 'tämä (ten tu)', 'przyp', 'tämä; tämän; tätä; tässä; tästä; tähän; tällä; tältä; tälle', None),
+    ('decl', 'Zaimki', 'kuka (kto)', 'przyp', 'kuka; kenen; ketä; kenessä; kenestä; keneen; kenellä; keneltä; kenelle', None),
+    ('decl', 'Zaimki', 'mikä (co, który)', 'przyp', 'mikä; minkä; mitä; missä; mistä; mihin; millä; miltä; mille', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /PRONOUNS ===
+
+# === STOPNIOWANIE (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('form', 'Stopniowanie', 'hyvä (dobry)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'hyvä; parempi; paras', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'suuri (duży)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'suuri; suurempi; suurin', None),
+    ('form', 'Stopniowanie', 'pieni (mały)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'pieni; pienempi; pienin', None),
+    ('form', 'Stopniowanie', 'vanha (stary)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'vanha; vanhempi; vanhin', None),
+    ('form', 'Stopniowanie', 'kaunis (piękny)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'kaunis; kauniimpi; kaunein', 'Temat kauniin- przed -mpi.'),
+    ('form', 'Stopniowanie', 'nopea (szybki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'nopea; nopeampi; nopein', None),
+    ('form', 'Stopniowanie', 'korkea (wysoki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'korkea; korkeampi; korkein', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /STOPNIOWANIE ===

@@ -141,7 +141,7 @@ textarea.input{font-size:calc(16px*var(--k));min-height:90px}
   :root{--dk:1.12}
   html,body{background:var(--night)}
   #app{max-width:1180px;box-shadow:0 0 0 1px var(--rule),0 12px 60px rgba(0,0,0,.35)}
-  .scroll.hubscroll{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:4px 14px;align-content:start;padding:18px 28px 28px}
+  .scroll.hubscroll{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px 14px;align-content:start;padding:18px 28px 28px}
   .hubscroll>.hub-head,.hubscroll>.theme-row,.hubscroll>.size-row,.hubscroll>.langs,.hubscroll>.hub-foot,.hubscroll>.rep-box,.hubscroll>.adbox{grid-column:1/-1}
   .hubscroll .cc{margin:0 0 6px}
   .cc:hover,.unit:hover,.chat-item:hover{filter:brightness(1.08)}
@@ -184,6 +184,8 @@ textarea.input{font-size:calc(16px*var(--k));min-height:90px}
 .tn.t1{color:var(--t1)}.tn.t2{color:var(--t2)}.tn.t3{color:var(--t3)}.tn.t4{color:var(--t4)}.tn.t5{color:var(--t5)}
 .tone-legend{display:flex;gap:14px;justify-content:center;padding:6px 0 2px;font-size:calc(17px*var(--k));font-weight:700}
 .msg.me .tn{color:inherit}
+.gn.g1{color:var(--t4)}.gn.g2{color:var(--t1)}.gn.g3{color:var(--t3)}
+.msg.me .gn{color:inherit}
 
 /* larpy */
 .larp-item{border-color:var(--tagc)}

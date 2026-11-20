@@ -331,3 +331,33 @@ PARADIGM_LABELS.update({
 PARADIGMS += [
     ('form', 'Szyk zdania', 'Szyk: krótkie słowa na 2. miejscu', 't_s0', 'Dnes se učím česky.|Dnes učím se česky.|Se dnes učím česky.|Dnes učím česky se.; Dal jsem mu knihu.|Dal mu jsem knihu.|Jsem mu dal knihu.|Dal jsem knihu mu.; Včera jsem ho viděl.|Včera ho jsem viděl.|Včera viděl jsem ho.|Jsem ho včera viděl.; Chci se s tebou setkat.|Chci setkat se s tebou.|Se chci s tebou setkat.|Chci s tebou se setkat.', 'Krótkie słowa (se, si, jsem, ho, mu) stoją na drugim miejscu zdania, w kolejności: jsem, potem se/si, potem mu/ho. Na początku zdania stać nie mogą.'),
 ]
+
+# === PRONOUNS (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /PRONOUNS ===
+
+# Pełne tłumaczenia zdań z ćwiczeń „Uzupełnij końcówkę” (gdy nie ma ich wśród zdań kursu)
+ENDINGS_PL = {'můj bratr': 'mój brat', 'moje sestra': 'moja siostra', 'jsem z Polska': 'Jestem z Polski.'}
+
+# === STOPNIOWANIE (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('form', 'Stopniowanie', 'dobrý (dobry)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'dobrý; lepší; nejlepší', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'velký (duży)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'velký; větší; největší', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'malý (mały)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'malý; menší; nejmenší', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'špatný (zły)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'špatný; horší; nejhorší', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'vysoký (wysoki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'vysoký; vyšší; nejvyšší', None),
+    ('form', 'Stopniowanie', 'krásný (piękny)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'krásný; krásnější; nejkrásnější', 'Regularne: -ější.'),
+    ('form', 'Stopniowanie', 'starý (stary)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'starý; starší; nejstarší', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /STOPNIOWANIE ===

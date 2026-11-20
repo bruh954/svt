@@ -382,3 +382,33 @@ PARADIGMS += [
     ('form', 'Typowe trudności', 'Pisownia: -тся czy -ться?', 't_m2', '-тся; -ться; -тся; -ться; -тся; -ться', 'Zapytaj: что де́лает? (bez ь) czy что де́лать? (z ь).'),
     ('form', 'Typowe trudności', 'Pisownia po ж, ш, ч, щ', 't_m3', 'и; и; а; у; у; и', 'Po ж, ш, ч, щ pisze się и, а, у, nigdy ы, я, ю.'),
 ]
+
+# === PRONOUNS (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /PRONOUNS ===
+
+# Pełne tłumaczenia zdań z ćwiczeń „Uzupełnij końcówkę” (gdy nie ma ich wśród zdań kursu)
+ENDINGS_PL = {'мой брат': 'mój brat', 'моя́ сестра́': 'moja siostra', 'мой друг': 'mój przyjaciel', 'моя́ ма́ма': 'moja mama'}
+
+# === STOPNIOWANIE (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('form', 'Stopniowanie', 'хоро́ший (dobry)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'хоро́ший; лу́чше; лу́чший', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'большо́й (duży)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'большо́й; бо́льше; са́мый большо́й', None),
+    ('form', 'Stopniowanie', 'ма́ленький (mały)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'ма́ленький; ме́ньше; са́мый ма́ленький', None),
+    ('form', 'Stopniowanie', 'плохо́й (zły)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'плохо́й; ху́же; ху́дший', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'высо́кий (wysoki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'высо́кий; вы́ше; са́мый высо́кий', 'Zmiana spółgłoski: к → ш.'),
+    ('form', 'Stopniowanie', 'краси́вый (piękny)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'краси́вый; краси́вее; са́мый краси́вый', 'Regularne: -ее.'),
+    ('form', 'Stopniowanie', 'ста́рый (stary)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'ста́рый; ста́рше; са́мый ста́рый', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /STOPNIOWANIE ===

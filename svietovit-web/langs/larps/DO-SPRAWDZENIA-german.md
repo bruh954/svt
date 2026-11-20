@@ -11,7 +11,7 @@ Sprawdź naturalność, formę grzecznościową, pisownię i czy wyjaśnienia s�
 
 ### Poziom 1: Kawa, bułka i ciasto  (typed=0, hint=none, cierpliwość 6)
 
-Nowe słowa: möchten = chcą · chcecie · forma grzecznościowa „chce pan(i)”, Sie = pan, pani, państwo (grzecznie), überlege = zastanawiam się (überlegen), Speisekarte = karta dań, Zucker = cukier, ohne = bez, Brötchen = bułka, Butter = masło, Stück = kawałek, Ihr = pański, pani, państwa, Appetit = apetyt, alles = wszystko
+Nowe słowa: möchten = chcą · chcecie · forma grzecznościowa „chce pan(i)”, Sie = pan, pani, państwo (grzecznie), überlege = zastanawiam się (überlegen), Speisekarte = karta dań, Saft = sok, Limonade = lemoniada, Sahne = śmietanka, Zitrone = cytryna, Zucker = cukier, ohne = bez, Honig = miód, Glas = szklanka, kieliszek, Flasche = butelka, Brötchen = bułka, Schinken = szynka, Wurst = kiełbasa, wędlina, Butter = masło, Marmelade = marmolada, dżem, Stück = kawałek, Torte = tort, Schokolade = czekolada, Keks = ciastko, herbatnik, Eis = lody, Ihr = pański, pani, państwa, Appetit = apetyt, Teller = talerz, Tasse = filiżanka, alles = wszystko
 
 | # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
 |---|---|---|---|
@@ -29,7 +29,7 @@ Nowe słowa: möchten = chcą · chcecie · forma grzecznościowa „chce pan(i)
 
 ### Poziom 2: Śniadanie  (typed=0.25, hint=bank, cierpliwość 6)
 
-Nowe słowa: frühstücken = jeść śniadanie, Eier = jajka · liczba mnoga od Ei, nehmen = brać (formy grzecznościowe: „bierze pan”), nehme = biorę, wezmę (nehmen), Löffel = łyżka, łyżeczka, Schokoladenkuchen = ciasto czekoladowe, Glas = szklanka, kieliszek, Saft = sok, Orangensaft = sok pomarańczowy, lecker = pyszny, Moment = chwila, bringe = przynoszę (bringen), sofort = od razu, warte = czekam (warten), gern = chętnie, gleichfalls = nawzajem
+Nowe słowa: frühstücken = jeść śniadanie, Eier = jajka · liczba mnoga od Ei, nehmen = brać (formy grzecznościowe: „bierze pan”), nehme = biorę, wezmę (nehmen), Löffel = łyżka, łyżeczka, Schokoladenkuchen = ciasto czekoladowe, Orangensaft = sok pomarańczowy, lecker = pyszny, Moment = chwila, bringe = przynoszę (bringen), sofort = od razu, warte = czekam (warten), gern = chętnie, gleichfalls = nawzajem
 
 | # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
 |---|---|---|---|
@@ -47,7 +47,7 @@ Nowe słowa: frühstücken = jeść śniadanie, Eier = jajka · liczba mnoga od 
 
 ### Poziom 3: Stolik, pytania i cena  (typed=0.5, hint=bank, cierpliwość 5)
 
-Nowe słowa: sitzen = siedzieć, natürlich = oczywiście, sonst = poza tym, kostet = kosztuje (kosten), Euro = euro, teuer = drogi, später = później, genug = dość
+Nowe słowa: sitzen = siedzieć, natürlich = oczywiście, Tomate = pomidor, Gurke = ogórek, sonst = poza tym, kostet = kosztuje (kosten), Euro = euro, teuer = drogi, später = później, genug = dość
 
 | # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
 |---|---|---|---|
@@ -65,7 +65,7 @@ Nowe słowa: sitzen = siedzieć, natürlich = oczywiście, sonst = poza tym, kos
 
 ### Poziom 4: Rozmowa przy stole  (typed=0.75, hint=letters, cierpliwość 5)
 
-Nowe słowa: woher = skąd, finden = znajdować; uważać za (wie finden Sie… = jak panu się podoba…), bisschen = troszkę, heiß = gorący
+Nowe słowa: woher = skąd, Kartoffel = ziemniak, Reis = ryż, Nudeln = makaron, finden = znajdować; uważać za (wie finden Sie… = jak panu się podoba…), bisschen = troszkę, heiß = gorący
 
 | # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
 |---|---|---|---|

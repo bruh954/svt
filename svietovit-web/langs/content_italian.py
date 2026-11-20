@@ -332,3 +332,38 @@ PARADIGM_LABELS.update({
 PARADIGMS += [
     ('form', 'Szyk zdania', 'Szyk: zaimki i przeczenie', 't_s0', 'Non ho tempo.|Ho non tempo.|Non tempo ho.|Ho tempo non.; Lo vedo.|Vedo lo.|Lo io vedo.|Io vedo lo.; Voglio mangiarlo.|Voglio mangiare lo.|Voglio lo mangiare.|Lo mangiare voglio.; Mi piace il caffè.|Piace mi il caffè.|Mi il caffè piace.|Il caffè piace mi.', 'Non stoi przed czasownikiem. Zaimek stoi przed odmienionym czasownikiem albo przyklejony do bezokolicznika.'),
 ]
+
+# === PRONOUNS (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('decl', 'Zaimki', 'mi, ti, lo… (dopełnienie bliższe)', 'os', 'mi; ti; lo, la; ci; vi; li, le', 'Stoją przed czasownikiem: lo vedo.'),
+    ('decl', 'Zaimki', 'mi, ti, gli… (dopełnienie dalsze)', 'os', 'mi; ti; gli, le; ci; vi; gli', None),
+    ('decl', 'Zaimki', 'me, te, lui… (zaimki akcentowane)', 'os', 'me; te; lui, lei; noi; voi; loro', 'Po przyimku i do podkreślenia: per me.'),
+    ('decl', 'Zaimki', 'mi, ti, si… (zwrotne)', 'os', 'mi; ti; si; ci; vi; si', None),
+    ('decl', 'Zaimki', 'mio, tuo, suo… (mój, twój…)', 'os', 'mio; tuo; suo; nostro; vostro; loro', 'Zwykle z rodzajnikiem: il mio libro.'),
+    ('decl', 'Zaimki', 'questo (ten tu)', ['rodzaj męski lp.', 'rodzaj żeński lp.', 'rodzaj męski lm.', 'rodzaj żeński lm.'], 'questo; questa; questi; queste', None),
+    ('decl', 'Zaimki', 'quello (tamten)', ['rodzaj męski lp.', 'rodzaj żeński lp.', 'rodzaj męski lm.', 'rodzaj żeński lm.'], 'quel; quella; quei; quelle', 'Odmienia się jak rodzajnik: quel libro, quello studente.'),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /PRONOUNS ===
+
+# Pełne tłumaczenia zdań z ćwiczeń „Uzupełnij końcówkę” (gdy nie ma ich wśród zdań kursu)
+ENDINGS_PL = {'hai una sorella': 'Masz siostrę.', 'vorrei un tè': 'Poproszę herbatę.', 'sono di Polonia': 'Jestem z Polski.'}
+
+# === STOPNIOWANIE (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('form', 'Stopniowanie', 'buono (dobry)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'buono; migliore; il migliore', 'Nieregularne; też più buono.'),
+    ('form', 'Stopniowanie', 'bello (piękny)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'bello; più bello; il più bello', None),
+    ('form', 'Stopniowanie', 'alto (wysoki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'alto; più alto; il più alto', None),
+    ('form', 'Stopniowanie', 'bene (dobrze)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'bene; meglio; il meglio', 'Przysłówek: nieregularny.'),
+    ('form', 'Stopniowanie', 'veloce (szybki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'veloce; più veloce; il più veloce', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /STOPNIOWANIE ===

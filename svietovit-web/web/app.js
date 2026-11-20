@@ -41,7 +41,7 @@ const TX = {
     chat_unlocked: "Odblokowano rozmowę", back_home: "Wróć", chat_done: "Rozmowa ukończona!", back_chats: "Wróć do rozmów",
     again: "Jeszcze raz", tap_tr: "Dotknij wiadomości, żeby zobaczyć tłumaczenie.", pick_answer: "Wybierz odpowiedź", say: "Powiedz:",
     send: "Wyślij", practice_t: "Powtórka", practice_d: "Mieszane ćwiczenia ze słów, które już znasz. Odzyskujesz serce.",
-    parts: "Składa się z:", larp_round_d: "Kelner czeka na odpowiedź. Najpierw przećwicz, co powiesz (około 10 ćwiczeń).", larp_round_go: "Ćwicz", larp_r_great: "Kelner kiwa głową: świetnie ci poszło.", larp_r_ok: "Kelner unosi brew, ale cię rozumie.", larp_r_bad: "Kelner marszczy brwi: prawie nic nie zrozumiał.", demon_warn: "Uwaga: to zdanie może wezwać demona.", demon_t: "Wezwałeś demona!", demon_d: "Zdanie okazało się zaklęciem. Demon pojawił się w środku lekcji i przerwał serię. Co zdążyłeś zrobić, zaliczone.", demon_ok: "Uciekam", larp_level: "Poziom", larp_lv_1: "Układasz zdania z klocków", larp_lv_2: "Klocki, więcej pułapek", larp_lv_3: "Część odpowiedzi piszesz z klawiatury", larp_lv_4: "Prawie wszystko piszesz sam", larp_lv_5: "Wszystko z klawiatury, bez podpowiedzi", larp_lex_t: "Słowa na ten poziom", larp_lex_d: "Poznaj je przed wejściem do sceny. Dotknij 🔊, żeby usłyszeć.", larp_lex_go: "Wchodzę", larp_type_d: "Wpisz odpowiedź z klawiatury.", larp_next_level: "Poziom", sound_t: "Trening dźwięków", sound_t_h: "Trening tonów", sound_d: "Samo słuchanie i rozpoznawanie.",
+    parts: "Składa się z:", signs: "znaki", weak_t: "Warto jeszcze poćwiczyć", weak_gram: "Pomyliły Ci się formy gramatyczne. W zakładce Gramatyka przećwiczysz całe odmiany.", weak_gram_btn: "Otwórz Gramatykę", weak_words: "Słówka do powtórki:", weak_sent: "Zdania z błędami wrócą w powtórce.", weak_words_btn: "Powtórka teraz", gr_peek: "Pokaż tabelę", gr_peek_hide: "Schowaj tabelę", larps_tab: "Larpy", larp_round_d: "Kelner czeka na odpowiedź. Najpierw przećwicz, co powiesz (około 10 ćwiczeń).", larp_round_go: "Ćwicz",  larp_skip: "Odpowiadam od razu", larp_r_great: "Kelner kiwa głową: świetnie ci poszło.", larp_r_ok: "Kelner unosi brew, ale cię rozumie.", larp_r_bad: "Kelner marszczy brwi: prawie nic nie zrozumiał.", demon_warn: "Uwaga: to zdanie może wezwać demona.", demon_t: "Wezwałeś demona!", demon_d: "Zdanie okazało się zaklęciem. Demon pojawił się w środku lekcji i przerwał serię. Co zdążyłeś zrobić, zaliczone.", demon_ok: "Uciekam", larp_level: "Poziom", larp_lv_1: "Układasz zdania z klocków", larp_lv_2: "Klocki, więcej pułapek", larp_lv_3: "Część odpowiedzi piszesz z klawiatury", larp_lv_4: "Prawie wszystko piszesz sam", larp_lv_5: "Wszystko z klawiatury, bez podpowiedzi", larp_lex_t: "Słowa na ten poziom", larp_lex_d: "Poznaj je przed wejściem do sceny. Dotknij 🔊, żeby usłyszeć.", larp_lex_go: "Wchodzę", larp_type_d: "Wpisz odpowiedź z klawiatury.", larp_next_level: "Poziom", sound_t: "Trening dźwięków", sound_t_h: "Trening tonów", sound_d: "Samo słuchanie i rozpoznawanie.",
     stats: "Statystyki", level: "Poziom", xp_total: "XP łącznie", best_streak: "Najdłuższa seria", words: "Poznane słowa", lessons: "Lekcje",
     week: "Ostatnie 7 dni", daily_goal: "Cel dzienny", settings: "Ustawienia", pron: "Pokazuj wymowę", sound: "Dźwięki", voice: "Czytaj na głos",
     shop: "Sklep", freeze: "Zamrożenie serii", refill_hearts: "Uzupełnij serca", gems: "klejnoty", reset: "Zeruj postęp w tym kursie",
@@ -71,7 +71,7 @@ const TX = {
     chat_unlocked: "Unlocked conversation", back_home: "Back", chat_done: "Conversation complete!", back_chats: "Back to chats",
     again: "Again", tap_tr: "Tap a message to see its translation.", pick_answer: "Choose a reply", say: "Say:",
     send: "Send", practice_t: "Practice", practice_d: "Mixed exercises from words you already know. Earns a heart back.",
-    parts: "Built from:", larp_round_d: "The waiter is waiting. First practise what you will say (about 10 exercises).", larp_round_go: "Practise", larp_r_great: "The waiter nods: well done.", larp_r_ok: "The waiter raises an eyebrow but understands.", larp_r_bad: "The waiter frowns: he barely understood.", demon_warn: "Warning: this sentence may summon a demon.", demon_t: "You summoned a demon!", demon_d: "The sentence turned out to be a spell. A demon appeared mid-lesson and cut the series short. What you finished still counts.", demon_ok: "Run away", larp_level: "Level", larp_lv_1: "Build sentences from tiles", larp_lv_2: "Tiles, more traps", larp_lv_3: "Some answers typed on the keyboard", larp_lv_4: "You type almost everything", larp_lv_5: "All typed, no hints", larp_lex_t: "Words for this level", larp_lex_d: "Meet them before entering the scene. Tap 🔊 to listen.", larp_lex_go: "Enter", larp_type_d: "Type your answer on the keyboard.", larp_next_level: "Level", sound_t: "Sound training", sound_t_h: "Tone training", sound_d: "Just listening and recognising.",
+    parts: "Built from:", signs: "characters", weak_t: "Worth practising", weak_gram: "Some grammar forms slipped. The Grammar tab lets you drill the whole paradigm.", weak_gram_btn: "Open Grammar", weak_words: "Words to review:", weak_sent: "Sentences with mistakes will come back in practice.", weak_words_btn: "Practise now", gr_peek: "Show the table", gr_peek_hide: "Hide the table", larps_tab: "Role-plays", larp_round_d: "The waiter is waiting. First practise what you will say (about 10 exercises).", larp_round_go: "Practise", larp_skip: "Answer right away", larp_r_great: "The waiter nods: well done.", larp_r_ok: "The waiter raises an eyebrow but understands.", larp_r_bad: "The waiter frowns: he barely understood.", demon_warn: "Warning: this sentence may summon a demon.", demon_t: "You summoned a demon!", demon_d: "The sentence turned out to be a spell. A demon appeared mid-lesson and cut the series short. What you finished still counts.", demon_ok: "Run away", larp_level: "Level", larp_lv_1: "Build sentences from tiles", larp_lv_2: "Tiles, more traps", larp_lv_3: "Some answers typed on the keyboard", larp_lv_4: "You type almost everything", larp_lv_5: "All typed, no hints", larp_lex_t: "Words for this level", larp_lex_d: "Meet them before entering the scene. Tap 🔊 to listen.", larp_lex_go: "Enter", larp_type_d: "Type your answer on the keyboard.", larp_next_level: "Level", sound_t: "Sound training", sound_t_h: "Tone training", sound_d: "Just listening and recognising.",
     stats: "Stats", level: "Level", xp_total: "Total XP", best_streak: "Best streak", words: "Words learned", lessons: "Lessons",
     week: "Last 7 days", daily_goal: "Daily goal", settings: "Settings", pron: "Show pronunciation", sound: "Sounds", voice: "Read aloud",
     shop: "Shop", freeze: "Streak freeze", refill_hearts: "Refill hearts", gems: "gems", reset: "Reset progress in this course",
@@ -254,7 +254,7 @@ function showHub() {
     return h("button", { class: "cc", onclick: () => enterCourse(m.id) },
       h("div", { class: "gl", style: `background:${m.paper};color:${m.accent};font-family:"F-${m.id}-x","F-${m.id}",serif` }, m.glyph),
       h("div", {}, h("div", { class: "nm", style: `font-family:"F-${m.id}-x","F-${m.id}",serif`, dir: "auto" }, m.native),
-        h("div", { class: "sb" }, m.sub[LANG]), h("div", { class: "pr" }, info)));
+        ["han", "kana"].includes(m.id) ? h("div", { class: "sb" }, t("signs")) : null, h("div", { class: "pr" }, info)));
   });
   const reps = persistReports();
   show(h("div", { class: "scroll hubscroll" },
@@ -291,14 +291,14 @@ function topbar() {
     h("span", { class: "stat s-streak" }, "☀ " + H.streak), h("span", { class: "stat s-gem" }, "◆ " + H.gems), h("span", { class: "stat s-heart" }, "♥ " + H.hearts));
 }
 function navbar() {
-  const items = [["path", "◉", t("path")], ["chats", "✉", t("chats")], ...((cur.home.paradigms || []).length ? [["grammar", "Aa", t("grammar")]] : []), ["practice", "↻", t("practice")], ["profile", "☺", t("profile")]];
+  const items = [["path", "◉", t("path")], ["chats", "✉", t("chats")], ...((cur.home.larps || []).length ? [["larps", "🎭", t("larps_tab")]] : []), ...((cur.home.paradigms || []).length ? [["grammar", "Aa", t("grammar")]] : []), ["practice", "↻", t("practice")], ["profile", "☺", t("profile")]];
   return h("div", { class: "nav" }, items.map(([k, ic, lb]) => h("button", { class: cur.tab === k ? "on" : "", onclick: () => { cur.tab = k; renderHome(); } }, h("b", {}, ic), lb)));
 }
 function renderHome() {
   refreshHome();
   const H = cur.home, m = BYID[cur.cid];
   if (cur.tab === "grammar" && !(H.paradigms || []).length) cur.tab = "path";
-  const body = { path: pathTab, chats: chatsTab, grammar: grammarTab, practice: practiceTab, profile: profileTab }[cur.tab]();
+  const body = { path: pathTab, chats: chatsTab, larps: larpsTab, grammar: grammarTab, practice: practiceTab, profile: profileTab }[cur.tab]();
   const goal = h("div", { class: "goal" }, `${t("goal_day")}  ${Math.min(H.xp_today, H.goal)}/${H.goal} XP`, h("div", { class: "bar" }, h("i", { style: `width:${Math.min(100, 100 * H.xp_today / H.goal)}%` })));
   const scr = show([topbar(), goal, h("div", { class: "scroll", id: "tabbody" }, body), navbar()], "course");
   scr.style.cssText = themeStyle();
@@ -368,7 +368,7 @@ function showWelcome() {
 function chatsTab() {
   const H = cur.home;
   const cols = ["#B3261E", "#2A6FB0", "#4F8A3A", "#8C3B9E", "#D26A12", "#1F7A78"];
-  const larps = (H.larps || []).length ? [h("div", { class: "track", style: "margin-top:22px" }, "· " + t("larps") + " ·", h("small", {}, t("larps_d"))),
+  const larps = false ? [
     ...H.larps.map(l => h("button", { class: "chat-item larp-item" + (l.unlocked ? "" : " locked"), onclick: () => l.unlocked && larpSheet(l) },
       h("div", { class: "av", style: "background:#7A2E5E" }, l.avatar),
       h("div", {}, h("div", { class: "t" }, l.title), h("div", { class: "s" }, l.partner + " · −" + l.fee + " XP")),
@@ -378,6 +378,14 @@ function chatsTab() {
     h("div", { class: "av", style: `background:${cols[i % cols.length]}` }, c.avatar),
     h("div", {}, h("div", { class: "t" }, c.partner), h("div", { class: "s" }, c.title)),
     h("div", { class: "stars" }, "★".repeat(c.stars) + "☆".repeat(3 - c.stars)))), ...larps];
+}
+function larpsTab() {
+  const H = cur.home;
+  const items = (H.larps || []).map(l => h("button", { class: "chat-item larp-item" + (l.unlocked ? "" : " locked"), onclick: () => l.unlocked && larpSheet(l) },
+    h("div", { class: "av", style: "background:#7A2E5E" }, l.avatar),
+    h("div", {}, h("div", { class: "t" }, l.title), h("div", { class: "s" }, l.partner + (l.levels ? " · " + t("larp_level") + " " + Math.max(1, ...l.levels.map(v => v.best != null && v.best >= 1 ? v.lvl : 0)) + "/" + l.levels.length : " · −" + l.fee + " XP"))),
+    h("div", { class: "stars" }, l.best === 2 ? "★" : l.best === 1 ? "◐" : l.best === 0 ? "✕" : "")));
+  return [h("div", { class: "track" }, "· " + t("larps") + " ·", h("small", {}, t("larps_d"))), ...items];
 }
 function openChat(cid, idx) {
   const chat = J(B.chat_get(cid)), color = ["#B3261E", "#2A6FB0", "#4F8A3A", "#8C3B9E", "#D26A12", "#1F7A78"][idx % 6];
@@ -673,6 +681,9 @@ function finishSession() {
     ev.streak_extended ? h("div", { style: "color:#9E2B25;font-weight:700" }, "☀ " + t("streak_days", ev.streak)) : null,
     ev.heart_back ? h("div", { style: "color:var(--red)" }, "♥ +1") : null,
     ...names.map(n => h("div", { class: "card" }, "🔓 " + t("unlocked") + ": ", h("b", {}, n))),
+    ev.weak ? h("div", { class: "card", style: "text-align:left" }, h("b", {}, t("weak_t")),
+      ev.weak.grammar && (H.paradigms || []).length ? h("div", { style: "margin:8px 0" }, h("div", { class: "sub" }, t("weak_gram")), h("button", { class: "btn ghost", onclick: () => { cur.tab = "grammar"; renderHome(); } }, t("weak_gram_btn"))) : null,
+      ev.weak.words.length || ev.weak.sentences ? h("div", { style: "margin:8px 0" }, h("div", { class: "sub", dir: "auto" }, ev.weak.words.length ? t("weak_words") + " " + ev.weak.words.join(", ") : t("weak_sent")), h("button", { class: "btn ghost", onclick: () => startSession("practice") }, t("weak_words_btn"))) : null) : null,
     ...(ev.chats || []).map(n => h("div", { class: "card" }, "✉ " + t("chat_unlocked") + ": ", h("b", {}, n))),
     adSlot(CFG.ads && CFG.ads.slotResult),
     h("button", { class: "btn", onclick: () => { cur.tab = "path"; renderHome(); } }, t("back_home"))), "course");
@@ -685,7 +696,12 @@ async function main() {
     META = await (await fetch("courses.json")).json(); META.forEach(m => BYID[m.id] = m);
     initAnalytics();
     await initPython();
-    if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
+    if ("serviceWorker" in navigator) {
+      // po wdrożeniu nowej wersji strona w pamięci ma starą aplikację, a świeże pliki kursów: przeładuj raz, żeby się zgrały
+      const had = !!navigator.serviceWorker.controller;
+      navigator.serviceWorker.addEventListener("controllerchange", () => { if (had && !window.__reloaded) { window.__reloaded = true; location.reload(); } });
+      navigator.serviceWorker.register("sw.js").catch(() => {});
+    }
     showHub();
     window.__ready = true;
   } catch (e) {
@@ -750,6 +766,47 @@ function colorTree(root) {
 new MutationObserver((muts) => {
   if (!toneOn()) return;
   for (const m of muts) m.addedNodes.forEach(colorTree);
+}).observe(document.getElementById("app"), { childList: true, subtree: true });
+
+/* ---------------- niemiecki: rodzajniki i rzeczowniki w kolorze rodzaju (der / die / das) ---------------- */
+const GENDER_COURSES = ["german"];
+const genderState = { cid: null, map: null };
+const WORD_RE = /[A-Za-zÄÖÜäöüß]+/g;
+function genderOn() { return GENDER_COURSES.includes(cur.cid) && cur.home; }
+function genderMap() {
+  if (genderState.cid !== cur.cid) {
+    try { genderState.map = J(B.gender_map()); } catch (e) { genderState.map = {}; }
+    genderState.cid = cur.cid;
+  }
+  return genderState.map;
+}
+function colorGenderText(node) {
+  const txt = node.nodeValue; if (!txt || !/[A-Za-zÄÖÜäöüß]/.test(txt)) return;
+  const par = node.parentNode; if (!par || (par.classList && (par.classList.contains("gw") || par.classList.contains("gn"))) || /^(TEXTAREA|INPUT|SCRIPT|STYLE)$/.test(par.nodeName)) return;
+  const map = genderMap(); let last = 0, any = false, m; const wrap = document.createElement("span"); wrap.className = "gw";
+  WORD_RE.lastIndex = 0;
+  while ((m = WORD_RE.exec(txt))) {
+    const w = m[0], lw = w.toLowerCase();
+    const g = (lw === "der" || lw === "die" || lw === "das") ? map[lw] : map[w];
+    if (!g) continue;
+    if (m.index > last) wrap.append(txt.slice(last, m.index));
+    const sp = document.createElement("span"); sp.className = "gn g" + g; sp.textContent = w; wrap.append(sp);
+    last = m.index + w.length; any = true;
+  }
+  if (!any) return;
+  if (last < txt.length) wrap.append(txt.slice(last));
+  par.replaceChild(wrap, node);
+}
+function colorGenderTree(root) {
+  if (root.nodeType === 3) return colorGenderText(root);
+  if (root.nodeType !== 1 || root.classList.contains("gw")) return;
+  const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT), list = []; let n;
+  while ((n = w.nextNode())) list.push(n);
+  list.forEach(colorGenderText);
+}
+new MutationObserver((muts) => {
+  if (!genderOn()) return;
+  for (const m of muts) m.addedNodes.forEach(colorGenderTree);
 }).observe(document.getElementById("app"), { childList: true, subtree: true });
 
 /* ---------------- larpy: sceny ze stawką ---------------- */
@@ -830,7 +887,8 @@ function larpScene(S, lid, lvl, R) {
     reply.replaceChildren();
     if (node.lesson) {
       reply.append(h("div", { class: "sub", style: "text-align:left" }, t("larp_round_d")),
-        h("button", { class: "btn", onclick: () => { cur.LS = { log, node, patience }; startSession("larp"); } }, t("larp_round_go")));
+        h("button", { class: "btn", onclick: () => { cur.LS = { log, node, patience }; startSession("larp"); } }, t("larp_round_go")),
+        h("button", { class: "btn ghost", onclick: () => { node.lesson = false; showReply(); } }, t("larp_skip")));
       return;
     }
     if (node.options) {
@@ -893,7 +951,7 @@ function grammarTab() {
 }
 function openParadigm(pid) {
   const P = J(B.paradigm_get(pid)), n = P.forms.length;
-  let stage = "table", queue = [], pos = 0, mistakes = 0, pass = 1, filled = new Set(), lock = false;
+  let stage = "table", queue = [], pos = 0, mistakes = 0, pass = 1, filled = new Set(), lock = false, peek = false;
   const body = h("div", { class: "scroll gr-body" }), bar = h("i", { style: "width:0" });
   const back = () => { cur.tab = "grammar"; renderHome(); };
   const scr = show([h("div", { class: "top" }, h("button", { class: "back", onclick: back }, "‹"), h("div", { class: "ttl", dir: "auto" }, P.title)),
@@ -933,8 +991,10 @@ function openParadigm(pid) {
       else { sfx.wrong(); b.classList.add("no"); mistakes++; queue.push(i); pos++; speak(P.forms[i]); setTimeout(draw, 1500); }
     } }, f); b._v = f; return b; });
     grid.append(...btns);
+    const tog = h("button", { class: "btn ghost", style: "margin:8px 0", onclick: () => { peek = !peek; draw(); } }, (peek ? "▴ " + t("gr_peek_hide") : "▾ " + t("gr_peek")));
     body.replaceChildren(...NN(h("div", { class: "tag" }, (pass === 1 ? t("gr_order") : t("gr_random")) + " · " + Math.min(pos + 1, queue.length) + "/" + queue.length),
-      table(i, false), grid));
+      h("div", { class: "ptable" }, h("div", { class: "prow cur" }, h("span", { class: "plab", dir: "auto" }, P.labels[i]), h("b", { class: "pform" }, "?"))),
+      tog, peek ? table(i, true) : null, grid));
     const curRow = body.querySelector(".prow.cur"); if (curRow && curRow.scrollIntoView) curRow.scrollIntoView({ block: "nearest" });
   };
   const finish = () => {

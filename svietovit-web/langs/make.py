@@ -5,7 +5,8 @@ SRC = os.environ.get("SV_SRC", "/home/claude/svietovit")
 HERE = os.path.dirname(os.path.abspath(__file__))
 AVE = open(os.path.join(SRC, "courses", "ave", "engine.py"), encoding="utf-8").read()
 
-MODE = {"norse": "ipa"}   # pozostałe: bez zapisu wymowy (są syntezatory mowy)
+MODE = {"norse": "ipa", "thai": "ipa"}
+NOSPACE = {"thai"}   # tajski: wyrazy w zdaniu piszemy bez spacji   # pozostałe: bez zapisu wymowy (są syntezatory mowy)
 
 LANGS = {
     # id: (nazwa po polsku w bierniku "na ...", "po ...", extra plain map, wielka litera na początku zdania)
@@ -23,6 +24,8 @@ LANGS = {
     "finnish": ("na fiński", "po fińsku", {"å": "a"}, True),
     "czech":   ("na czeski", "po czesku", {}, True),
     "slovak":  ("na słowacki", "po słowacku", {}, True),
+    "slovenian": ("na słoweński", "po słoweńsku", {"č": "c", "š": "s", "ž": "z"}, True),
+    "thai":    ("na tajski", "po tajsku", {}, False),
     "norse":   ("na staronordycki", "po staronordycku", {"þ": "th", "ð": "d", "æ": "ae", "ø": "o", "ǫ": "o", "œ": "oe"}, True),
 }
 
@@ -82,7 +85,7 @@ def join(tokens):
         elif out.endswith(tuple(OPEN_PUNCT)):
             out += t
         else:
-            out += (" " if out else "") + t
+            out += (" " if (out and not %r) else "") + t
     if CAP_FIRST:
         for i, c in enumerate(out):
             if c.isalpha():
@@ -91,7 +94,7 @@ def join(tokens):
     return out
 
 
-''' % (cid == "turkish") + s[b:]
+''' % (cid == "turkish", cid in NOSPACE) + s[b:]
     s = s.replace('''    return join([t if t in PUNCT else translit(t) for t in tokens])''', '''    return join([t if (t in PUNCT or t in OPEN_PUNCT) else translit(t) for t in tokens])''')
     s = s.replace("    if t in PUNCT:\n        return None\n    return translit(t)", "    if t in PUNCT or t in OPEN_PUNCT:\n        return None\n    return translit(t)")
     # reading
@@ -116,6 +119,10 @@ def join(tokens):
     s = s.replace('"Przetłumacz na łacinę"', '"Przetłumacz %s"' % acc).replace('"Napisz po łacinie"', '"Napisz %s"' % po)
     s = s.replace('"polskie słowo z łaciny: %s" % w["cog"]', '"podobne polskie słowo: %s" % w["cog"]')
     s = s.replace('drills = [e for e in ENDINGS if e[7] in open_units] or [e for e in ENDINGS if e[7] == "slowa"]', 'drills = [e for e in ENDINGS if e[7] in open_units] or list(ENDINGS)')
+    if cid in NOSPACE:
+        b0 = '"type": (2 * level) if (level >= 1 and vocab) else 0,'
+        assert b0 in s
+        s = s.replace(b0, '"type": 0,')
     if MODE.get(cid, "none") == "none":
         for a, b in [
             ('"tr": (_t[0] if _t and _t[0] else _f)', '"tr": ""'),

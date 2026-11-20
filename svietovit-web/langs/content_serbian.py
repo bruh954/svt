@@ -363,3 +363,33 @@ PARADIGM_LABELS.update({
 PARADIGMS += [
     ('form', 'Szyk zdania', 'Szyk: krótkie słowa po pierwszym wyrazie', 't_s0', 'Dao sam mu knjigu.|Dao mu sam knjigu.|Sam mu dao knjigu.|Dao sam knjigu mu.; Juče sam ga video.|Juče ga sam video.|Juče video sam ga.|Sam ga juče video.; Ne vidim ga.|Ne ga vidim.|Ga ne vidim.|Vidim ga ne.', 'Krótkie zaimki i formy sam, si, je, ću stoją zaraz po pierwszym wyrazie lub zwrocie zdania.'),
 ]
+
+# === PRONOUNS (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /PRONOUNS ===
+
+# Pełne tłumaczenia zdań z ćwiczeń „Uzupełnij końcówkę” (gdy nie ma ich wśród zdań kursu)
+ENDINGS_PL = {'moj brat': 'mój brat', 'mója séstra': 'moja siostra'}
+
+# === STOPNIOWANIE (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('form', 'Stopniowanie', 'dobar (dobry)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'dobar; bolji; najbolji', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'velik (duży)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'velik; veći; najveći', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'mali (mały)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'mali; manji; najmanji', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'loš (zły)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'loš; gori; najgori', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'visok (wysoki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'visok; viši; najviši', None),
+    ('form', 'Stopniowanie', 'lep (piękny)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'lep; lepši; najlepši', None),
+    ('form', 'Stopniowanie', 'star (stary)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'star; stariji; najstariji', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /STOPNIOWANIE ===

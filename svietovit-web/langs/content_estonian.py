@@ -297,3 +297,42 @@ PARADIGMS += [
     ('form', 'Typowe trudności', 'Liczba + rzeczownik', 't_m1', 'üks raamat; kaks raamatut; kolm raamatut; viis raamatut; kümme raamatut; mitu raamatut', 'Po liczbach od 2 w górę stoi partitiiv liczby pojedynczej.'),
     ('form', 'Typowe trudności', 'Wymiana stopni: omastav', 't_m2', 'sõbra; toa; poja; jala; leiva; kapi', 'Temat słabnie w dopełniaczu: b znika lub zmienia się w v, g znika, pp → p.'),
 ]
+
+# === PRONOUNS (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('decl', 'Zaimki', 'mina (ja)', 'przyp', 'mina; minu; mind', 'Krótkie formy: ma, mu, mind.'),
+    ('decl', 'Zaimki', 'sina (ty)', 'przyp', 'sina; sinu; sind', None),
+    ('decl', 'Zaimki', 'tema (on, ona)', 'przyp', 'tema; tema; teda', None),
+    ('decl', 'Zaimki', 'meie (my)', 'przyp', 'meie; meie; meid', None),
+    ('decl', 'Zaimki', 'teie (wy)', 'przyp', 'teie; teie; teid', None),
+    ('decl', 'Zaimki', 'nemad (oni)', 'przyp', 'nemad; nende; neid', None),
+    ('decl', 'Zaimki', 'see (ten, to)', 'przyp', 'see; selle; seda', None),
+    ('decl', 'Zaimki', 'kes (kto)', 'przyp', 'kes; kelle; keda', None),
+    ('decl', 'Zaimki', 'mis (co)', 'przyp', 'mis; mille; mida', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /PRONOUNS ===
+
+# Pełne tłumaczenia zdań z ćwiczeń „Uzupełnij końcówkę” (gdy nie ma ich wśród zdań kursu)
+ENDINGS_PL = {'minu vend': 'mój brat', 'sinu õde': 'twoja siostra'}
+
+# === STOPNIOWANIE (generowane, nie edytuj ręcznie) ===
+PARADIGMS += [
+    ('form', 'Stopniowanie', 'hea (dobry)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'hea; parem; parim', 'Nieregularne.'),
+    ('form', 'Stopniowanie', 'suur (duży)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'suur; suurem; suurim', None),
+    ('form', 'Stopniowanie', 'väike (mały)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'väike; väiksem; väikseim', None),
+    ('form', 'Stopniowanie', 'vana (stary)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'vana; vanem; vanim', None),
+    ('form', 'Stopniowanie', 'ilus (piękny)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'ilus; ilusam; kõige ilusam', 'Najczęściej: kõige + stopień wyższy.'),
+    ('form', 'Stopniowanie', 'kiire (szybki)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'kiire; kiirem; kõige kiirem', 'Najczęściej: kõige + stopień wyższy.'),
+    ('form', 'Stopniowanie', 'pikk (długi)', ['stopień równy', 'stopień wyższy', 'stopień najwyższy'], 'pikk; pikem; pikim', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /STOPNIOWANIE ===

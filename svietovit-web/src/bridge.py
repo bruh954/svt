@@ -9,8 +9,8 @@ import random
 import time
 
 COURSE_IDS = ["hanzi_hero", "glagol", "ave", "logos", "abba", "kaszeby", "hangeul", "han", "kana", "nihon",
-              "greek", "german", "french", "italian", "spanish", "russian", "turkish", "norse", "estonian", "serbian", "finnish", "czech", "slovak"]
-NEW = {"greek", "german", "french", "italian", "spanish", "russian", "turkish", "norse", "estonian", "serbian", "finnish", "czech", "slovak"}
+              "greek", "german", "french", "italian", "spanish", "russian", "turkish", "norse", "estonian", "serbian", "finnish", "czech", "slovak", "slovenian", "thai"]
+NEW = {"greek", "german", "french", "italian", "spanish", "russian", "turkish", "norse", "estonian", "serbian", "finnish", "czech", "slovak", "slovenian", "thai"}
 SOURCE_LANG = {"hanzi_hero": "en"}  # pozostałe kursy mają treść źródłową po polsku
 
 save_hook = None   # ustawia JavaScript: save_hook(course_id, json_string)
@@ -336,6 +336,16 @@ def reset_progress():
 # ---------------------------------------------------------------------------
 # Sesje
 # ---------------------------------------------------------------------------
+def gender_map():
+    """Kolory rodzajników: der = 1, die = 2, das = 3 (niemiecki); rzeczowniki dostają kolor swojego rodzaju."""
+    C = _cur["C"]
+    m = {"der": 1, "die": 2, "das": 3}
+    for noun, art in getattr(C, "ARTICLES", {}).items():
+        if art in m:
+            m[noun] = m[art]
+    return json.dumps(m, ensure_ascii=False)
+
+
 def _larp_round_exs(rng):
     """Seria ćwiczeń (jak w zwykłej lekcji) z tematu bieżącej kwestii larpa: karty nowych słów + ok. 10 ćwiczeń."""
     E, st = _cur["E"], _cur["state"]
@@ -352,7 +362,10 @@ def _larp_round_exs(rng):
     mine = [x for j, u in enumerate(E.UNITS) if j <= uidx and u["id"].startswith("lp_%s_" % _larp["id"]) for x in u.get("sentences", [])]
     sents = [x for x in mine if all(t in ks or t in P for t in x[0])]
     sents.sort(key=lambda x: -sum(1 for t in x[0] if t in pool))
-    sents = sents[:6]
+    ans = {tuple(m["build"][0]) for m in cfg["nodes"].values() if m.get("build")}   # odpowiedzi kelnerowi nie wchodzą do serii
+    sents = [x for x in sents if tuple(x[0]) not in ans and any(t in pool for t in x[0])][:8]     # odpowiedź kelnerowi pada dopiero na końcu, nie w serii
+    bq, mq = list(sents), list(reversed(sents))              # każde zdanie najwyżej raz w danym typie ćwiczenia
+    rng.shuffle(bq)
     extra = [h for h in known if h not in pool]
     rng.shuffle(extra)
     dpool = pool + extra[:6]
@@ -364,13 +377,13 @@ def _larp_round_exs(rng):
     while len(graded) < 10 and pool:
         h = pool[i % len(pool)]; i += 1
         r = rng.random()
-        if r < typed_p:
+        if r < typed_p and h not in getattr(_cur["C"], "NOTYPE", ()):
             graded.append(gen.typing(h))
-        elif sents and r < typed_p + 0.4:
-            toks, pl, tr = rng.choice(sents)
+        elif bq and r < typed_p + 0.4:
+            toks, pl, tr = bq.pop()
             graded.append(gen.build(toks, pl, tr))
-        elif sents and r < typed_p + 0.55:
-            toks, pl, tr = rng.choice(sents)
+        elif mq and r < typed_p + 0.55:
+            toks, pl, tr = mq.pop(0)
             graded.append(gen.sentence_meaning(toks, pl, E.all_sentence_pl()))
         else:
             graded.append(gen.meaning(h, dpool) if rng.random() < 0.5 else gen.form(h, dpool))
@@ -404,6 +417,7 @@ def _larp_round_finish():
 
 def start(kind, unit=None):
     E, st = _cur["E"], _cur["state"]
+    _cur["miss"] = {"grammar": 0, "words": {}, "sentences": 0}
     rng = random.Random()
     if kind == "larp":
         exs = _larp_round_exs(rng)
@@ -458,7 +472,9 @@ def _render(ex):
                    autoplay=bool(ex.get("autoplay")))
         if ex["mode"] == "sentence":
             toks = ex.get("words") or []
-            out["sentence"] = _join(toks) if not _is_hanzi() else "".join(toks)
+            if toks and not _is_hanzi():
+                out["prompt"] = _larp_disp(toks)
+            out["sentence"] = _larp_disp(toks) if not _is_hanzi() else "".join(toks)
             out["sentence_sub"] = _sent_sub(toks) if toks else None
         if ex.get("word"):
             out["word_view"] = _word_view(ex["word"])
@@ -501,7 +517,7 @@ def current():
     return json.dumps({"ex": _render(s.current), **_progress()}, ensure_ascii=False)
 
 
-def check(payload_json):
+def _check_raw(payload_json):
     """Sprawdza odpowiedź na bieżące ćwiczenie. Nie zmienia sesji (to robi `advance`)."""
     E = _cur["E"]
     s = _cur["session"]
@@ -534,7 +550,7 @@ def check(payload_json):
                      if comma else "Zaliczone, ale pamiętaj o interpunkcji: %s")
                     if pl else
                     ("Accepted, but the sentence needs a %s: %s\nA comma can change the meaning: “Let's eat, grandma” is not “Let's eat grandma”."
-                     if comma else "Accepted, but mind the punctuation: %s")) % ((("przecinek" if pl else "comma"), _join(ex["answer"])) if comma else (_join(ex["answer"]),))
+                     if comma else "Accepted, but mind the punctuation: %s")) % ((("przecinek" if pl else "comma"), _larp_disp(ex["answer"])) if comma else (_larp_disp(ex["answer"]),))
         else:
             ok = False
             try:
@@ -543,7 +559,7 @@ def check(payload_json):
             except TypeError:
                 why = E.explain_mistake(given, ex["answer"])
         if not ok:
-            solution = _join(ex["answer"]) + "\n" + _sent_sub(ex["answer"])
+            solution = _larp_disp(ex["answer"]) + "\n" + _sent_sub(ex["answer"])
     elif t == "type":
         if _is_hanzi():
             res = E.check_typed_pinyin(p.get("text", ""), ex["answer"])
@@ -562,6 +578,26 @@ def check(payload_json):
         return json.dumps({"ok": "self", "solution": ex["answer"]}, ensure_ascii=False)
     return json.dumps({"ok": ok, "why": why, "solution": solution, "note": locals().get("note"), "answer": ex.get("answer") if t in ("choice",) else None},
                       ensure_ascii=False)
+
+
+def check(payload_json):
+    """Sprawdza odpowiedź i zapamiętuje, co poszło źle (gramatyka, słówka, zdania) do podpowiedzi na ekranie wyniku."""
+    out = _check_raw(payload_json)
+    try:
+        r = json.loads(out)
+        if r.get("ok") is False:
+            ex = _cur["session"].current
+            miss = _cur.setdefault("miss", {"grammar": 0, "words": {}, "sentences": 0})
+            t, mode = ex["type"], ex.get("mode")
+            if t == "choice" and mode == "cloze":
+                miss["grammar"] += 1
+            elif t == "build" or (t == "choice" and mode == "sentence"):
+                miss["sentences"] += 1
+            elif ex.get("word"):
+                miss["words"][ex["word"]] = miss["words"].get(ex["word"], 0) + 1
+    except Exception:
+        pass
+    return out
 
 
 def advance(ok):
@@ -587,6 +623,15 @@ def finish():
     if _cur.get("kind") == "larp":
         return _larp_round_finish()
     ev = st.finish(s)
+    miss = _cur.pop("miss", None)
+    if miss and (miss["grammar"] or miss["words"] or miss["sentences"]):
+        E = _cur["E"]
+        ws = [w for w, _ in sorted(miss["words"].items(), key=lambda x: -x[1])][:6]
+        try:
+            ws = [E.WORDS[w]["form"] if w in E.WORDS else w for w in ws]
+        except Exception:
+            pass
+        ev["weak"] = {"grammar": miss["grammar"], "sentences": miss["sentences"], "words": ws}
     ev["kind"] = _cur["kind"]
     ev["mistakes"] = s.mistakes
     ev["max_combo"] = s.max_combo
@@ -626,10 +671,10 @@ def chat_get(cid):
     turns = []
     learned = [h for h in st.learned_words() if (_is_hanzi() or not E.WORDS[h]["letter"])]
     for t in c["turns"]:
-        item = {"bot": _tiles(t["bot"]), "bot_text": _join(t["bot"]), "bot_sub": _sent_sub(t["bot"]), "en": t["en"],
+        item = {"bot": _tiles(t["bot"]), "bot_text": _larp_disp(t["bot"]), "bot_sub": _sent_sub(t["bot"]), "en": t["en"],
                 "note": t.get("note")}
         if "options" in t:
-            item["options"] = [{"tiles": _tiles(o[0]), "text": _join(o[0]), "sub": _sent_sub(o[0]),
+            item["options"] = [{"tiles": _tiles(o[0]), "text": _larp_disp(o[0]), "sub": _sent_sub(o[0]),
                                 "ok": bool(o[1]), "why": o[2]} for o in t["options"]]
         else:
             toks, pl = t["build"]
@@ -637,7 +682,7 @@ def chat_get(cid):
             random.shuffle(extra)
             bank = _no_punct(toks) + extra[:2]   # interpunkcji nie trzeba układać
             random.shuffle(bank)
-            item["build"] = {"prompt": pl, "bank": _tiles(bank), "answer": list(toks), "text": _join(toks)}
+            item["build"] = {"prompt": pl, "bank": _tiles(bank), "answer": list(toks), "text": _larp_disp(toks)}
         turns.append(item)
     return json.dumps({"id": c["id"], "title": c["title"], "partner": c["partner"], "avatar": c["avatar"],
                        "turns": turns}, ensure_ascii=False)
@@ -655,7 +700,7 @@ def chat_check(cid, turn, tokens):
             why = E.explain_mistake(given, toks) if _is_hanzi() else E.explain_mistake(given, toks)
         except TypeError:
             why = None
-    return json.dumps({"ok": ok, "why": why, "text": _join(toks) if ok else _join(given), "sub": _sent_sub(toks if ok else given) if given else ""}, ensure_ascii=False)
+    return json.dumps({"ok": ok, "why": why, "text": _larp_disp(toks) if ok else _larp_disp(given), "sub": _sent_sub(toks if ok else given) if given else ""}, ensure_ascii=False)
 
 
 def chat_finish(cid, mistakes):
@@ -742,14 +787,14 @@ def _larp_plain(text):
 def _larp_node(lp, key):
     cfg = _larp["cfg"]
     n = cfg["nodes"][key]
-    out = {"key": key, "bot_text": _join(n["bot"]), "bot_sub": _sent_sub(n["bot"]), "pl": n.get("pl"),
+    out = {"key": key, "bot_text": _larp_disp(n["bot"]), "bot_sub": _sent_sub(n["bot"]), "pl": n.get("pl"),
            "deadly": bool(n.get("deadly")), "note": n.get("note")}
     if n.get("unit") and key not in _larp["rounds"]:
         out["lesson"] = True            # najpierw seria ćwiczeń z tematu tej kwestii
     if n.get("end"):
         out["end"] = True
     elif "options" in n:
-        out["options"] = [{"i": i, "text": _join(o[0]), "sub": _sent_sub(o[0])} for i, o in enumerate(n["options"])]
+        out["options"] = [{"i": i, "text": _larp_disp(o[0]), "sub": _sent_sub(o[0])} for i, o in enumerate(n["options"])]
     else:
         toks, pl = n["build"]
         st = _cur["state"]
@@ -846,7 +891,7 @@ def larp_answer(payload_json):
     nxt = None
     if "options" in n:
         toks, verdict, target, why = n["options"][int(p["option"])]
-        res.update(verdict=verdict, why=why, text=_join(toks), sub=_sent_sub(toks))
+        res.update(verdict=verdict, why=why, text=_larp_disp(toks), sub=_sent_sub(toks))
         if verdict != "bad":
             nxt = target
     else:
