@@ -41,7 +41,7 @@ const TX = {
     chat_unlocked: "Odblokowano rozmowę", back_home: "Wróć", chat_done: "Rozmowa ukończona!", back_chats: "Wróć do rozmów",
     again: "Jeszcze raz", tap_tr: "Dotknij wiadomości, żeby zobaczyć tłumaczenie.", pick_answer: "Wybierz odpowiedź", say: "Powiedz:",
     send: "Wyślij", practice_t: "Powtórka", practice_d: "Mieszane ćwiczenia ze słów, które już znasz. Odzyskujesz serce.",
-    parts: "Składa się z:", signs: "znaki", weak_t: "Warto jeszcze poćwiczyć", weak_gram: "Pomyliły Ci się formy gramatyczne. W zakładce Gramatyka przećwiczysz całe odmiany.", weak_gram_btn: "Otwórz Gramatykę", weak_words: "Słówka do powtórki:", weak_sent: "Zdania z błędami wrócą w powtórce.", weak_words_btn: "Powtórka teraz", gr_peek: "Pokaż tabelę", gr_peek_hide: "Schowaj tabelę", larps_tab: "Larpy", larp_round_d: "Kelner czeka na odpowiedź. Najpierw przećwicz, co powiesz (około 10 ćwiczeń).", larp_round_go: "Ćwicz",  larp_skip: "Odpowiadam od razu", larp_r_great: "Kelner kiwa głową: świetnie ci poszło.", larp_r_ok: "Kelner unosi brew, ale cię rozumie.", larp_r_bad: "Kelner marszczy brwi: prawie nic nie zrozumiał.", demon_warn: "Uwaga: to zdanie może wezwać demona.", demon_t: "Wezwałeś demona!", demon_d: "Zdanie okazało się zaklęciem. Demon pojawił się w środku lekcji i przerwał serię. Co zdążyłeś zrobić, zaliczone.", demon_ok: "Uciekam", larp_level: "Poziom", larp_chapter: "Rozdział", larp_next_chapter: "Rozdział", larp_lv_1: "Układasz zdania z klocków", larp_lv_2: "Klocki, więcej pułapek", larp_lv_3: "Część odpowiedzi piszesz z klawiatury", larp_lv_4: "Prawie wszystko piszesz sam", larp_lv_5: "Wszystko z klawiatury, bez podpowiedzi", larp_lex_t: "Słowa na ten poziom", larp_lex_d: "Poznaj je przed wejściem do sceny. Dotknij 🔊, żeby usłyszeć.", larp_lex_go: "Wchodzę", larp_type_d: "Wpisz odpowiedź z klawiatury.", larp_next_level: "Poziom", sound_t: "Trening dźwięków", sound_t_h: "Trening tonów", sound_d: "Samo słuchanie i rozpoznawanie.",
+    parts: "Składa się z:", signs: "znaki", weak_t: "Warto jeszcze poćwiczyć", weak_gram: "Pomyliły Ci się formy gramatyczne. W zakładce Gramatyka przećwiczysz całe odmiany.", weak_gram_btn: "Otwórz Gramatykę", weak_words: "Słówka do powtórki:", weak_sent: "Zdania z błędami wrócą w powtórce.", weak_words_btn: "Powtórka teraz", gr_peek: "Pokaż tabelę", gr_peek_hide: "Schowaj tabelę", larps_tab: "Larpy", larp_round_d: "Kelner czeka na odpowiedź. Najpierw przećwicz, co powiesz (około 10 ćwiczeń).", larp_round_go: "Ćwicz",  larp_skip: "Odpowiadam od razu", larp_r_great: "Kelner kiwa głową: świetnie ci poszło.", larp_r_ok: "Kelner unosi brew, ale cię rozumie.", larp_r_bad: "Kelner marszczy brwi: prawie nic nie zrozumiał.", demon_warn: "Uwaga: to zdanie może wezwać demona.", demon_t: "Wezwałeś demona!", demon_d: "Zdanie okazało się zaklęciem. Demon pojawił się w środku lekcji i przerwał serię. Co zdążyłeś zrobić, zaliczone.", demon_ok: "Uciekam", larp_level: "Poziom", larp_chapter: "Rozdział", larp_next_chapter: "Rozdział", larp_help: "Nie rozumiem: poćwiczę tę kwestię", larp_help_d: "Bez kary. Po ćwiczeniach wrócisz do tego samego pytania.", larp_help_back: "Wracasz do pytania. Teraz powinno pójść łatwiej.", larp_help_none: "Do tej kwestii nie mam ćwiczeń. Dotknij dymka, żeby zobaczyć tłumaczenie.", larp_lv_1: "Układasz zdania z klocków", larp_lv_2: "Klocki, więcej pułapek", larp_lv_3: "Część odpowiedzi piszesz z klawiatury", larp_lv_4: "Prawie wszystko piszesz sam", larp_lv_5: "Wszystko z klawiatury, bez podpowiedzi", larp_lex_t: "Słowa na ten poziom", larp_lex_d: "Poznaj je przed wejściem do sceny. Dotknij 🔊, żeby usłyszeć.", larp_lex_go: "Wchodzę", larp_type_d: "Wpisz odpowiedź z klawiatury.", larp_next_level: "Poziom", sound_t: "Trening dźwięków", sound_t_h: "Trening tonów", sound_d: "Samo słuchanie i rozpoznawanie.",
     stats: "Statystyki", level: "Poziom", xp_total: "XP łącznie", best_streak: "Najdłuższa seria", words: "Poznane słowa", lessons: "Lekcje",
     week: "Ostatnie 7 dni", daily_goal: "Cel dzienny", settings: "Ustawienia", pron: "Pokazuj wymowę", sound: "Dźwięki", voice: "Czytaj na głos",
     shop: "Sklep", freeze: "Zamrożenie serii", refill_hearts: "Uzupełnij serca", gems: "klejnoty", reset: "Zeruj postęp w tym kursie",
@@ -71,7 +71,7 @@ const TX = {
     chat_unlocked: "Unlocked conversation", back_home: "Back", chat_done: "Conversation complete!", back_chats: "Back to chats",
     again: "Again", tap_tr: "Tap a message to see its translation.", pick_answer: "Choose a reply", say: "Say:",
     send: "Send", practice_t: "Practice", practice_d: "Mixed exercises from words you already know. Earns a heart back.",
-    parts: "Built from:", signs: "characters", weak_t: "Worth practising", weak_gram: "Some grammar forms slipped. The Grammar tab lets you drill the whole paradigm.", weak_gram_btn: "Open Grammar", weak_words: "Words to review:", weak_sent: "Sentences with mistakes will come back in practice.", weak_words_btn: "Practise now", gr_peek: "Show the table", gr_peek_hide: "Hide the table", larps_tab: "Role-plays", larp_round_d: "The waiter is waiting. First practise what you will say (about 10 exercises).", larp_round_go: "Practise", larp_skip: "Answer right away", larp_r_great: "The waiter nods: well done.", larp_r_ok: "The waiter raises an eyebrow but understands.", larp_r_bad: "The waiter frowns: he barely understood.", demon_warn: "Warning: this sentence may summon a demon.", demon_t: "You summoned a demon!", demon_d: "The sentence turned out to be a spell. A demon appeared mid-lesson and cut the series short. What you finished still counts.", demon_ok: "Run away", larp_level: "Level", larp_chapter: "Chapter", larp_next_chapter: "Chapter", larp_lv_1: "Build sentences from tiles", larp_lv_2: "Tiles, more traps", larp_lv_3: "Some answers typed on the keyboard", larp_lv_4: "You type almost everything", larp_lv_5: "All typed, no hints", larp_lex_t: "Words for this level", larp_lex_d: "Meet them before entering the scene. Tap 🔊 to listen.", larp_lex_go: "Enter", larp_type_d: "Type your answer on the keyboard.", larp_next_level: "Level", sound_t: "Sound training", sound_t_h: "Tone training", sound_d: "Just listening and recognising.",
+    parts: "Built from:", signs: "characters", weak_t: "Worth practising", weak_gram: "Some grammar forms slipped. The Grammar tab lets you drill the whole paradigm.", weak_gram_btn: "Open Grammar", weak_words: "Words to review:", weak_sent: "Sentences with mistakes will come back in practice.", weak_words_btn: "Practise now", gr_peek: "Show the table", gr_peek_hide: "Hide the table", larps_tab: "Role-plays", larp_round_d: "The waiter is waiting. First practise what you will say (about 10 exercises).", larp_round_go: "Practise", larp_skip: "Answer right away", larp_r_great: "The waiter nods: well done.", larp_r_ok: "The waiter raises an eyebrow but understands.", larp_r_bad: "The waiter frowns: he barely understood.", demon_warn: "Warning: this sentence may summon a demon.", demon_t: "You summoned a demon!", demon_d: "The sentence turned out to be a spell. A demon appeared mid-lesson and cut the series short. What you finished still counts.", demon_ok: "Run away", larp_level: "Level", larp_chapter: "Chapter", larp_next_chapter: "Chapter", larp_help: "I don't understand: practise this line", larp_help_d: "No penalty. After the exercises you go back to the same question.", larp_help_back: "Back to the question. It should be easier now.", larp_help_none: "I have no exercises for this line. Tap the bubble to see the translation.", larp_lv_1: "Build sentences from tiles", larp_lv_2: "Tiles, more traps", larp_lv_3: "Some answers typed on the keyboard", larp_lv_4: "You type almost everything", larp_lv_5: "All typed, no hints", larp_lex_t: "Words for this level", larp_lex_d: "Meet them before entering the scene. Tap 🔊 to listen.", larp_lex_go: "Enter", larp_type_d: "Type your answer on the keyboard.", larp_next_level: "Level", sound_t: "Sound training", sound_t_h: "Tone training", sound_d: "Just listening and recognising.",
     stats: "Stats", level: "Level", xp_total: "Total XP", best_streak: "Best streak", words: "Words learned", lessons: "Lessons",
     week: "Last 7 days", daily_goal: "Daily goal", settings: "Settings", pron: "Show pronunciation", sound: "Sounds", voice: "Read aloud",
     shop: "Shop", freeze: "Streak freeze", refill_hearts: "Refill hearts", gems: "gems", reset: "Reset progress in this course",
@@ -220,17 +220,18 @@ function pickVoice(lang) {   // głos dokładnie dla języka kursu; null = urzą
   const norm = s => String(s || "").replace("_", "-").toLowerCase(), want = norm(lang), base = want.split("-")[0];
   return vs.find(v => norm(v.lang) === want) || vs.find(v => norm(v.lang).split("-")[0] === base) || null;
 }
-function speak(text, auto) {
+function speak(text, auto, queue) {   // queue = true: nowa wypowiedź czeka na poprzednią (rozmowy, larpy)
   const m = BYID[cur.cid]; if (!m || !m.tts || !text) return;
   text = String(text).replace(/\u0301/g, "");   // znak akcentu (rosyjski, serbski) nie jest do czytania
   if (auto === true && !voiceOn()) return;
-  if (window.AndroidTTS) { try { if (AndroidTTS.speak(text, m.tts, 0.85) === false) noVoice(m.tts); } catch (e) { /* brak głosu */ } return; }
+  if (window.AndroidTTS) { try { const fn = queue && AndroidTTS.speakQueued ? "speakQueued" : "speak"; if (AndroidTTS[fn](text, m.tts, 0.85) === false) noVoice(m.tts); } catch (e) { /* brak głosu */ } return; }
   if (!window.speechSynthesis) return;
   try {
     const v = pickVoice(m.tts);
     if (v === null) return noVoice(m.tts);   // lepiej milczeć, niż czytać obcym głosem
     const u = new SpeechSynthesisUtterance(text); u.lang = m.tts; if (v) u.voice = v; u.rate = 0.85;
     const busy = speechSynthesis.speaking || speechSynthesis.pending;
+    if (busy && queue) { speechSynthesis.speak(u); return; }   // przeglądarka sama ustawia wypowiedzi w kolejce
     if (busy) speechSynthesis.cancel();
     try { speechSynthesis.resume(); } catch (e) { /* nie wszędzie jest */ }
     // część przeglądarek na komputerze gubi wypowiedź wywołaną tuż po cancel()
@@ -432,7 +433,7 @@ function openChat(cid, idx) {
     if (turn >= chat.turns.length) return finish();
     const tr = chat.turns[turn]; reply.replaceChildren();
     const typing = h("div", { class: "msg" }, "…"); log.append(typing); toBottom();
-    setTimeout(() => { typing.remove(); bubble(tr.bot_text, tr.bot_sub, tr.en); if (tr.note) note(tr.note); attempts = 0; showReply(tr); speak(tr.bot_text, true); }, 500 + 60 * tr.bot.length);
+    setTimeout(() => { typing.remove(); bubble(tr.bot_text, tr.bot_sub, tr.en); if (tr.note) note(tr.note); attempts = 0; showReply(tr); speak(tr.bot_text, true, true); }, 500 + 60 * tr.bot.length);
   };
   const showReply = (tr) => {
     reply.replaceChildren();
@@ -440,7 +441,7 @@ function openChat(cid, idx) {
       reply.append(h("div", { class: "sub", style: "text-align:left" }, t("pick_answer")));
       const opts = tr.options.filter(o => !excluded.has(o.text)).sort(() => Math.random() - 0.5);
       opts.forEach(o => reply.append(h("button", { class: "opt", dir: "auto", onclick: () => {
-        speak(o.text, true); bubble(o.text, o.sub, null, true, !o.ok); reply.replaceChildren();
+        speak(o.text, true, true); bubble(o.text, o.sub, null, true, !o.ok); reply.replaceChildren();
         if (o.ok) { sfx.correct(); excluded = new Set(); turn++; setTimeout(botTurn, 450); }
         else { sfx.wrong(); mistakes++; confused(o.why); excluded.add(o.text); setTimeout(() => showReply(tr), 900); }
       } }, o.text, h("small", {}, o.sub))));
@@ -461,6 +462,9 @@ function openChat(cid, idx) {
       };
       reply.append(h("div", {}, h("b", {}, t("say") + " "), `„${bd.prompt}”`), ans, bank, send); render();
     }
+    reply.append(h("button", { class: "btn ghost", style: "font-size:calc(13px*var(--k));margin-top:6px", title: t("larp_help_d"), onclick: () => {
+      track("larp_help", { course: cur.cid, larp: lid, node: node.key || "" });
+      B.larp_help(); cur.LS = { log, node, patience }; startSession("larp"); } }, "? " + t("larp_help")));
   };
   const confused = (why) => { bubble("?"); if (why) note(t("think") + " " + why); };
   const finish = () => {
@@ -475,8 +479,9 @@ function tile(tk, onclick) { return h("button", { class: "tile", dir: "auto", on
 
 /* ---------------- lekcja ---------------- */
 function startSession(kind, unit) {
+  const nEx = B.start(kind, unit == null ? -1 : unit);
+  if (kind === "larp" && !(nEx > 0)) { toast(t("larp_help_none")); return; }
   track("lesson_start", { course: cur.cid, kind });
-  B.start(kind, unit == null ? -1 : unit);
   const L = cur.L = { kind, phase: "answer", ready: false, getPayload: null, lastOk: null, ex: null };
   const bar = h("i", { style: "width:0" }), combo = h("div", { class: "combo" }), hearts = h("span", { class: "stat s-heart" });
   L.bar = bar; L.combo = combo; L.hearts = hearts;
@@ -901,7 +906,7 @@ function larpScene(S, lid, lvl, R) {
   const botSay = () => {
     reply.replaceChildren(); excluded.clear();
     const typing = h("div", { class: "msg" }, "…"); log.append(typing); toBottom();
-    setTimeout(() => { typing.remove(); bubble(node.bot_text, node.bot_sub, node.pl); speak(node.bot_text, true); if (node.note) note(node.note); if (node.deadly) note(t("larp_deadly"), "deadly"); showReply(); }, 600);
+    setTimeout(() => { typing.remove(); bubble(node.bot_text, node.bot_sub, node.pl); speak(node.bot_text, true, true); if (node.note) note(node.note); if (node.deadly) note(t("larp_deadly"), "deadly"); showReply(); }, 600);
   };
   const finish = (ev) => {
     over = true; reply.replaceChildren(); (ev.outcome === "fail" ? sfx.wrong : sfx.done)(); track("larp_end", { course: cur.cid, larp: lid, outcome: ev.outcome });
@@ -921,7 +926,7 @@ function larpScene(S, lid, lvl, R) {
     if (r.verdict === "bad") { sfx.wrong(); if (r.why) note(t("think") + " " + r.why); if (r.answer && !r.end) note(t("larp_correct") + r.answer); }
     else if (r.verdict === "weak") { sfx.tap(); note(t("larp_weak") + (r.why ? " " + r.why : "")); }
     else sfx.correct();
-    if (r.end) return setTimeout(() => { if (r.node && r.node.end) { bubble(r.node.bot_text, r.node.bot_sub, r.node.pl); speak(r.node.bot_text, true); } finish(r.end); }, 700);
+    if (r.end) return setTimeout(() => { if (r.node && r.node.end) { bubble(r.node.bot_text, r.node.bot_sub, r.node.pl); speak(r.node.bot_text, true, true); } finish(r.end); }, 700);
     if (r.node) { node = r.node; return setTimeout(botSay, 500); }
     setTimeout(showReply, 900);
   };
@@ -936,7 +941,7 @@ function larpScene(S, lid, lvl, R) {
     if (node.options) {
       reply.append(h("div", { class: "sub", style: "text-align:left" }, t("pick_answer")));
       node.options.filter(o => !excluded.has(o.i)).sort(() => Math.random() - 0.5).forEach(o => reply.append(h("button", { class: "opt", dir: "auto", onclick: () => {
-        speak(o.text, true); excluded.add(o.i); handle(J(B.larp_answer(JSON.stringify({ option: o.i })))); } }, o.text, o.sub ? h("small", {}, o.sub) : null)));
+        speak(o.text, true, true); excluded.add(o.i); handle(J(B.larp_answer(JSON.stringify({ option: o.i })))); } }, o.text, o.sub ? h("small", {}, o.sub) : null)));
     } else if (node.typed) {
       const inp = h("input", { type: "text", class: "typed", autocomplete: "off", autocapitalize: "off", autocorrect: "off", spellcheck: "false", dir: "auto", style: "width:100%;box-sizing:border-box;padding:12px;border-radius:12px;border:2px solid var(--line,#ccc);font-size:calc(17px*var(--k))" });
       const send = h("button", { class: "btn", disabled: true }, t("send"));
@@ -958,7 +963,8 @@ function larpScene(S, lid, lvl, R) {
     }
   };
   if (R) {
-    if (R.ev) { note(t("larp_r_" + R.ev.verdict) + " (" + Math.round(100 * R.ev.acc) + "%)", R.ev.verdict === "bad" ? "deadly" : ""); }
+    if (R.ev && R.ev.help) { note(t("larp_help_back")); }
+    else if (R.ev) { note(t("larp_r_" + R.ev.verdict) + " (" + Math.round(100 * R.ev.acc) + "%)", R.ev.verdict === "bad" ? "deadly" : ""); }
     if (R.ev && R.ev.end) { drawPips(); return setTimeout(() => finish(R.ev.end), 400); }
     drawPips(); return showReply();
   }
