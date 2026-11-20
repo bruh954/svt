@@ -5,6 +5,12 @@ import importlib.util, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 START = "# === SŁOWNICTWO (generowane z langs/vocab, nie edytuj ręcznie) ===\n"; END = "# === /SŁOWNICTWO ===\n"
 CHUNK = 16
+
+def _sfx(n):
+    r = ''
+    while n:
+        n, m = divmod(n - 1, 26); r = 'abcdefghijklmnopqrstuvwxyz'[m] + r
+    return r
 TRACK = {"han": "znaki", "nihon": "start", "kana": "kanji"}
 COURSES = os.environ.get("SV_SRC", "/home/claude/svietovit")
 M1 = "# === CZYTANIA (generowane) ===\n"; M2 = "# === /CZYTANIA ===\n"
@@ -86,7 +92,7 @@ def run(cid):
                     arts[f] = x; x = ""
                 hook = {"m": "rodzaj męski", "f": "rodzaj żeński", "n": "rodzaj nijaki"}.get(x) if not ipa else None
                 words.append((f, g, None, hook, x) if ipa else (f, g, None, hook))
-            units.append({"id": "v%02d%s" % (bi, "abcdefghij"[n - 1]), "title": title + (" %d" % n if len(keep) > CHUNK else ""),
+            units.append({"id": "v%02d%s" % (bi, _sfx(n)), "title": title + (" %d" % n if len(keep) > CHUNK else ""),
                           "icon": title[0], "track": TRACK.get(cid, "jezyk"), "words": words, "sentences": []})
             total += len(words)
     block = START + "UNITS += %r\n" % (units,)
