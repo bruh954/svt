@@ -361,3 +361,60 @@ for _p in PARADIGMS:
         _o.append(_p[1])
 PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 # === /STOPNIOWANIE ===
+
+# === GRAMATYKA 1 (generowane) ===
+PARADIGMS += [
+    ('conj', 'Tryb łączący', 'hablar: subjuntivo', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'hable; hables; hable; hablemos; habléis; hablen', None),
+    ('conj', 'Tryb łączący', 'comer: subjuntivo', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'coma; comas; coma; comamos; comáis; coman', None),
+    ('conj', 'Tryb łączący', 'vivir: subjuntivo', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'viva; vivas; viva; vivamos; viváis; vivan', None),
+    ('conj', 'Tryb łączący', 'ser: subjuntivo', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'sea; seas; sea; seamos; seáis; sean', 'Po „quiero que”, „es importante que”: quiero que vengas.'),
+    ('conj', 'Tryb łączący', 'tener: subjuntivo', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'tenga; tengas; tenga; tengamos; tengáis; tengan', None),
+    ('conj', 'Tryb łączący', 'ir: subjuntivo', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'vaya; vayas; vaya; vayamos; vayáis; vayan', None),
+    ('conj', 'Tryb łączący', 'hacer: subjuntivo', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'haga; hagas; haga; hagamos; hagáis; hagan', None),
+    ('conj', 'Tryb łączący', 'estar: subjuntivo', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'esté; estés; esté; estemos; estéis; estén', None),
+    ('conj', 'Tryb warunkowy', 'hablar: condicional', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'hablaría; hablarías; hablaría; hablaríamos; hablaríais; hablarían', None),
+    ('conj', 'Tryb warunkowy', 'comer: condicional', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'comería; comerías; comería; comeríamos; comeríais; comerían', None),
+    ('conj', 'Tryb warunkowy', 'ser: condicional', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'sería; serías; sería; seríamos; seríais; serían', None),
+    ('conj', 'Tryb warunkowy', 'tener: condicional', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'tendría; tendrías; tendría; tendríamos; tendríais; tendrían', None),
+    ('conj', 'Tryb warunkowy', 'poder: condicional', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'podría; podrías; podría; podríamos; podríais; podrían', None),
+    ('conj', 'Tryb warunkowy', 'querer: condicional', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'querría; querrías; querría; querríamos; querríais; querrían', None),
+    ('form', 'Tryb rozkazujący', 'hablar: imperativo', ['tú (twierdząco)', 'tú (przeczenie)', 'usted', 'nosotros', 'vosotros (twierdząco)', 'ustedes'], 'habla; no hables; hable; hablemos; hablad; hablen', None),
+    ('form', 'Tryb rozkazujący', 'comer: imperativo', ['tú (twierdząco)', 'tú (przeczenie)', 'usted', 'nosotros', 'vosotros (twierdząco)', 'ustedes'], 'come; no comas; coma; comamos; comed; coman', None),
+    ('form', 'Tryb rozkazujący', 'vivir: imperativo', ['tú (twierdząco)', 'tú (przeczenie)', 'usted', 'nosotros', 'vosotros (twierdząco)', 'ustedes'], 'vive; no vivas; viva; vivamos; vivid; vivan', None),
+    ('form', 'Tryb rozkazujący', 'ser: imperativo', ['tú (twierdząco)', 'tú (przeczenie)', 'usted', 'nosotros', 'vosotros (twierdząco)', 'ustedes'], 'sé; no seas; sea; seamos; sed; sean', None),
+    ('form', 'Tryb rozkazujący', 'ir: imperativo', ['tú (twierdząco)', 'tú (przeczenie)', 'usted', 'nosotros', 'vosotros (twierdząco)', 'ustedes'], 've; no vayas; vaya; vayamos; id; vayan', None),
+    ('form', 'Tryb rozkazujący', 'tener: imperativo', ['tú (twierdząco)', 'tú (przeczenie)', 'usted', 'nosotros', 'vosotros (twierdząco)', 'ustedes'], 'ten; no tengas; tenga; tengamos; tened; tengan', None),
+    ('form', 'Tryb rozkazujący', 'hacer: imperativo', ['tú (twierdząco)', 'tú (przeczenie)', 'usted', 'nosotros', 'vosotros (twierdząco)', 'ustedes'], 'haz; no hagas; haga; hagamos; haced; hagan', None),
+    ('conj', 'Czas przeszły', 'tener: pretérito indefinido', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'tuve; tuviste; tuvo; tuvimos; tuvisteis; tuvieron', None),
+    ('conj', 'Czas przeszły', 'hacer: pretérito indefinido', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'hice; hiciste; hizo; hicimos; hicisteis; hicieron', None),
+    ('conj', 'Czas przeszły', 'estar: pretérito indefinido', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'estuve; estuviste; estuvo; estuvimos; estuvisteis; estuvieron', None),
+    ('conj', 'Czas przeszły', 'decir: pretérito indefinido', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'dije; dijiste; dijo; dijimos; dijisteis; dijeron', None),
+    ('conj', 'Czas przeszły', 'poder: pretérito indefinido', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'pude; pudiste; pudo; pudimos; pudisteis; pudieron', None),
+    ('conj', 'Czas przeszły', 'venir: pretérito indefinido', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'vine; viniste; vino; vinimos; vinisteis; vinieron', None),
+    ('conj', 'Czas przeszły', 'dar: pretérito indefinido', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'di; diste; dio; dimos; disteis; dieron', None),
+    ('conj', 'Czas przeszły', 'ver: pretérito indefinido', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'vi; viste; vio; vimos; visteis; vieron', None),
+    ('conj', 'Czas przeszły', 'querer: pretérito indefinido', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'quise; quisiste; quiso; quisimos; quisisteis; quisieron', None),
+    ('conj', 'Czas przeszły', 'vivir: pretérito indefinido', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'viví; viviste; vivió; vivimos; vivisteis; vivieron', None),
+    ('conj', 'Czas przeszły', 'comer: imperfecto', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'comía; comías; comía; comíamos; comíais; comían', None),
+    ('conj', 'Czas przeszły', 'vivir: imperfecto', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'vivía; vivías; vivía; vivíamos; vivíais; vivían', None),
+    ('conj', 'Czas przeszły', 'ser: imperfecto', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'era; eras; era; éramos; erais; eran', 'Trzy czasowniki mają nieregularny imperfecto: ser, ir, ver.'),
+    ('conj', 'Czas przeszły', 'ir: imperfecto', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'iba; ibas; iba; íbamos; ibais; iban', None),
+    ('conj', 'Czas przeszły', 'ver: imperfecto', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'veía; veías; veía; veíamos; veíais; veían', None),
+    ('conj', 'Czas przyszły', 'tener: futuro', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'tendré; tendrás; tendrá; tendremos; tendréis; tendrán', 'Nieregularne futuro: rdzeń się skraca, końcówki są zwykłe.'),
+    ('conj', 'Czas przyszły', 'hacer: futuro', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'haré; harás; hará; haremos; haréis; harán', None),
+    ('conj', 'Czas przyszły', 'poder: futuro', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'podré; podrás; podrá; podremos; podréis; podrán', None),
+    ('conj', 'Czas przyszły', 'decir: futuro', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'diré; dirás; dirá; diremos; diréis; dirán', None),
+    ('conj', 'Czas przyszły', 'venir: futuro', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'vendré; vendrás; vendrá; vendremos; vendréis; vendrán', None),
+    ('conj', 'Czas przyszły', 'salir: futuro', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'saldré; saldrás; saldrá; saldremos; saldréis; saldrán', None),
+    ('conj', 'Czas przyszły', 'querer: futuro', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'querré; querrás; querrá; querremos; querréis; querrán', None),
+    ('conj', 'Czasowniki zwrotne', 'levantarse (wstawać)', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'me levanto; te levantas; se levanta; nos levantamos; os levantáis; se levantan', None),
+    ('conj', 'Czasowniki zwrotne', 'llamarse (nazywać się)', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'me llamo; te llamas; se llama; nos llamamos; os llamáis; se llaman', None),
+    ('conj', 'Czasowniki zwrotne', 'ducharse (brać prysznic)', ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'], 'me ducho; te duchas; se ducha; nos duchamos; os ducháis; se duchan', None),
+    ('form', 'Typowe czasowniki', 'gustar (podobać się)', ['(a mí)', '(a ti)', '(a él / ella)', '(a nosotros)', '(a vosotros)', '(a ellos / ellas)'], 'me gusta; te gusta; le gusta; nos gusta; os gusta; les gusta', 'Uzgadnia się z tym, co się podoba: me gusta el café, me gustan los libros.'),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /GRAMATYKA 1 ===

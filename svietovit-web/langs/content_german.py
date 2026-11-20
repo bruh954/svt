@@ -479,3 +479,58 @@ for _p in PARADIGMS:
         _o.append(_p[1])
 PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 # === /STOPNIOWANIE ===
+
+# === GRAMATYKA 1 (generowane) ===
+PARADIGMS += [
+    ('conj', 'Czasowniki modalne', 'dürfen (wolno)', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'darf; darfst; darf; dürfen; dürft; dürfen', None),
+    ('conj', 'Czasowniki modalne', 'sollen (powinien)', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'soll; sollst; soll; sollen; sollt; sollen', None),
+    ('conj', 'Czasowniki modalne', 'mögen (lubić)', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'mag; magst; mag; mögen; mögt; mögen', None),
+    ('conj', 'Czasowniki modalne', 'können: Präteritum', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'konnte; konntest; konnte; konnten; konntet; konnten', None),
+    ('conj', 'Czasowniki modalne', 'müssen: Präteritum', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'musste; musstest; musste; mussten; musstet; mussten', None),
+    ('conj', 'Czasowniki modalne', 'wollen: Präteritum', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'wollte; wolltest; wollte; wollten; wolltet; wollten', None),
+    ('conj', 'Czasowniki modalne', 'dürfen: Präteritum', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'durfte; durftest; durfte; durften; durftet; durften', None),
+    ('conj', 'Czasowniki modalne', 'sollen: Präteritum', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'sollte; solltest; sollte; sollten; solltet; sollten', None),
+    ('conj', 'Tryb przypuszczający', 'werden: Konjunktiv II (würde…)', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'würde; würdest; würde; würden; würdet; würden', None),
+    ('conj', 'Tryb przypuszczający', 'haben: Konjunktiv II (hätte…)', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'hätte; hättest; hätte; hätten; hättet; hätten', 'Używany do próśb i marzeń: Ich hätte gern einen Kaffee. Wenn ich Zeit hätte, würde ich kommen.'),
+    ('conj', 'Tryb przypuszczający', 'sein: Konjunktiv II (wäre…)', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'wäre; wärst; wäre; wären; wärt; wären', None),
+    ('conj', 'Tryb przypuszczający', 'können: Konjunktiv II (könnte…)', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'könnte; könntest; könnte; könnten; könntet; könnten', None),
+    ('conj', 'Tryb przypuszczający', 'müssen: Konjunktiv II (müsste…)', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'müsste; müsstest; müsste; müssten; müsstet; müssten', None),
+    ('conj', 'Tryb przypuszczający', 'gehen: Konjunktiv II (ginge…)', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'ginge; gingest; ginge; gingen; ginget; gingen', None),
+    ('conj', 'Czasowniki zwrotne', 'sich waschen (myć się): biernik', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'wasche mich; wäschst dich; wäscht sich; waschen uns; wascht euch; waschen sich', None),
+    ('conj', 'Czasowniki zwrotne', 'sich freuen (cieszyć się)', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'freue mich; freust dich; freut sich; freuen uns; freut euch; freuen sich', None),
+    ('conj', 'Czasowniki zwrotne', 'sich setzen (siadać)', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'setze mich; setzt dich; setzt sich; setzen uns; setzt euch; setzen sich', None),
+    ('conj', 'Czasowniki zwrotne', 'sich etwas kaufen (kupić sobie): celownik', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'kaufe mir; kaufst dir; kauft sich; kaufen uns; kauft euch; kaufen sich', 'Zaimek zwrotny w bierniku (mich, dich) albo celowniku (mir, dir), gdy jest jeszcze inny dopełniacz bliższy.'),
+    ('conj', 'Czasowniki rozdzielne', 'aufstehen (wstawać)', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'stehe auf; stehst auf; steht auf; stehen auf; steht auf; stehen auf', 'Przedrostek odpada na koniec zdania: Ich stehe um sechs Uhr auf.'),
+    ('conj', 'Czasowniki rozdzielne', 'anrufen (dzwonić)', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'rufe an; rufst an; ruft an; rufen an; ruft an; rufen an', None),
+    ('conj', 'Czasowniki rozdzielne', 'einkaufen (robić zakupy)', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'kaufe ein; kaufst ein; kauft ein; kaufen ein; kauft ein; kaufen ein', None),
+    ('conj', 'Czasowniki rozdzielne', 'mitkommen (iść razem)', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'komme mit; kommst mit; kommt mit; kommen mit; kommt mit; kommen mit', None),
+    ('conj', 'Czasowniki rozdzielne', 'aufstehen: Perfekt', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'bin aufgestanden; bist aufgestanden; ist aufgestanden; sind aufgestanden; seid aufgestanden; sind aufgestanden', None),
+    ('conj', 'Czasowniki rozdzielne', 'einkaufen: Perfekt', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'habe eingekauft; hast eingekauft; hat eingekauft; haben eingekauft; habt eingekauft; haben eingekauft', None),
+    ('conj', 'Czas przeszły', 'sein: Perfekt', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'bin gewesen; bist gewesen; ist gewesen; sind gewesen; seid gewesen; sind gewesen', None),
+    ('conj', 'Czas przeszły', 'haben: Perfekt', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'habe gehabt; hast gehabt; hat gehabt; haben gehabt; habt gehabt; haben gehabt', None),
+    ('conj', 'Czas przeszły', 'gehen: Perfekt', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'bin gegangen; bist gegangen; ist gegangen; sind gegangen; seid gegangen; sind gegangen', None),
+    ('conj', 'Czas przeszły', 'kommen: Perfekt', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'bin gekommen; bist gekommen; ist gekommen; sind gekommen; seid gekommen; sind gekommen', None),
+    ('conj', 'Czas przyszły', 'machen: Futur I', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'werde machen; wirst machen; wird machen; werden machen; werdet machen; werden machen', None),
+    ('conj', 'Czas przyszły', 'fahren: Futur I', ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie'], 'werde fahren; wirst fahren; wird fahren; werden fahren; werdet fahren; werden fahren', None),
+    ('form', 'Przymiotniki: końcówki', 'po der / die / das: mianownik', ['rodzaj męski', 'rodzaj żeński', 'rodzaj nijaki', 'liczba mnoga'], 'der kleine; die kleine; das kleine; die kleinen', 'Po rodzajniku określonym prawie wszędzie -e lub -en.'),
+    ('form', 'Przymiotniki: końcówki', 'po der / die / das: biernik', ['rodzaj męski', 'rodzaj żeński', 'rodzaj nijaki', 'liczba mnoga'], 'den kleinen; die kleine; das kleine; die kleinen', 'Zmienia się tylko rodzaj męski: -en.'),
+    ('form', 'Przymiotniki: końcówki', 'po der / die / das: celownik', ['rodzaj męski', 'rodzaj żeński', 'rodzaj nijaki', 'liczba mnoga'], 'dem kleinen; der kleinen; dem kleinen; den kleinen', 'Celownik: zawsze -en.'),
+    ('form', 'Przymiotniki: końcówki', 'po der / die / das: dopełniacz', ['rodzaj męski', 'rodzaj żeński', 'rodzaj nijaki', 'liczba mnoga'], 'des kleinen; der kleinen; des kleinen; der kleinen', 'Dopełniacz: zawsze -en.'),
+    ('form', 'Przymiotniki: końcówki', 'po ein / kein: mianownik', ['rodzaj męski', 'rodzaj żeński', 'rodzaj nijaki', 'liczba mnoga'], 'ein kleiner; eine kleine; ein kleines; keine kleinen', 'Bez rodzajnika końcówkę pokazuje przymiotnik: ein kleiner, ein kleines.'),
+    ('form', 'Przymiotniki: końcówki', 'po ein / kein: biernik', ['rodzaj męski', 'rodzaj żeński', 'rodzaj nijaki', 'liczba mnoga'], 'einen kleinen; eine kleine; ein kleines; keine kleinen', None),
+    ('form', 'Przymiotniki: końcówki', 'po ein / kein: celownik', ['rodzaj męski', 'rodzaj żeński', 'rodzaj nijaki', 'liczba mnoga'], 'einem kleinen; einer kleinen; einem kleinen; keinen kleinen', None),
+    ('form', 'Przymiotniki: końcówki', 'po ein / kein: dopełniacz', ['rodzaj męski', 'rodzaj żeński', 'rodzaj nijaki', 'liczba mnoga'], 'eines kleinen; einer kleinen; eines kleinen; keiner kleinen', None),
+    ('form', 'Przymiotniki: końcówki', 'bez rodzajnika: mianownik', ['rodzaj męski', 'rodzaj żeński', 'rodzaj nijaki', 'liczba mnoga'], 'kleiner Wein; kleine Milch; kleines Bier; kleine Kinder', 'Przymiotnik przejmuje końcówki rodzajnika.'),
+    ('form', 'Przymiotniki: końcówki', 'bez rodzajnika: biernik', ['rodzaj męski', 'rodzaj żeński', 'rodzaj nijaki', 'liczba mnoga'], 'kleinen Wein; kleine Milch; kleines Bier; kleine Kinder', None),
+    ('form', 'Przymiotniki: końcówki', 'bez rodzajnika: celownik', ['rodzaj męski', 'rodzaj żeński', 'rodzaj nijaki', 'liczba mnoga'], 'kleinem Wein; kleiner Milch; kleinem Bier; kleinen Kindern', None),
+    ('form', 'Zaimki względne', 'der (który): mianownik', ['rodzaj męski', 'rodzaj żeński', 'rodzaj nijaki', 'liczba mnoga'], 'der; die; das; die', None),
+    ('form', 'Zaimki względne', 'der (który): biernik', ['rodzaj męski', 'rodzaj żeński', 'rodzaj nijaki', 'liczba mnoga'], 'den; die; das; die', None),
+    ('form', 'Zaimki względne', 'der (który): celownik', ['rodzaj męski', 'rodzaj żeński', 'rodzaj nijaki', 'liczba mnoga'], 'dem; der; dem; denen', None),
+    ('form', 'Zaimki względne', 'der (który): dopełniacz', ['rodzaj męski', 'rodzaj żeński', 'rodzaj nijaki', 'liczba mnoga'], 'dessen; deren; dessen; deren', 'Dopełniacz ma zawsze własną formę: der Mann, dessen Auto…'),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /GRAMATYKA 1 ===

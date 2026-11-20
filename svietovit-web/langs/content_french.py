@@ -380,3 +380,55 @@ for _p in PARADIGMS:
         _o.append(_p[1])
 PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 # === /STOPNIOWANIE ===
+
+# === GRAMATYKA 1 (generowane) ===
+PARADIGMS += [
+    ('conj', 'Tryb warunkowy', 'parler: conditionnel', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'parlerais; parlerais; parlerait; parlerions; parleriez; parleraient', None),
+    ('conj', 'Tryb warunkowy', 'être: conditionnel', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'serais; serais; serait; serions; seriez; seraient', None),
+    ('conj', 'Tryb warunkowy', 'avoir: conditionnel', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'aurais; aurais; aurait; aurions; auriez; auraient', None),
+    ('conj', 'Tryb warunkowy', 'aller: conditionnel', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'irais; irais; irait; irions; iriez; iraient', None),
+    ('conj', 'Tryb warunkowy', 'faire: conditionnel', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'ferais; ferais; ferait; ferions; feriez; feraient', None),
+    ('conj', 'Tryb warunkowy', 'pouvoir: conditionnel', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'pourrais; pourrais; pourrait; pourrions; pourriez; pourraient', None),
+    ('conj', 'Tryb warunkowy', 'vouloir: conditionnel', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'voudrais; voudrais; voudrait; voudrions; voudriez; voudraient', 'Grzeczna prośba: je voudrais un café.'),
+    ('conj', 'Tryb łączący', 'parler: subjonctif', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'parle; parles; parle; parlions; parliez; parlent', None),
+    ('conj', 'Tryb łączący', 'être: subjonctif', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'sois; sois; soit; soyons; soyez; soient', 'Po „il faut que”, „je veux que”: Il faut que tu viennes.'),
+    ('conj', 'Tryb łączący', 'avoir: subjonctif', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'aie; aies; ait; ayons; ayez; aient', None),
+    ('conj', 'Tryb łączący', 'aller: subjonctif', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'aille; ailles; aille; allions; alliez; aillent', None),
+    ('conj', 'Tryb łączący', 'faire: subjonctif', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'fasse; fasses; fasse; fassions; fassiez; fassent', None),
+    ('conj', 'Tryb łączący', 'pouvoir: subjonctif', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'puisse; puisses; puisse; puissions; puissiez; puissent', None),
+    ('conj', 'Tryb łączący', 'vouloir: subjonctif', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'veuille; veuilles; veuille; voulions; vouliez; veuillent', None),
+    ('conj', 'Tryb łączący', 'finir: subjonctif', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'finisse; finisses; finisse; finissions; finissiez; finissent', None),
+    ('conj', 'Czas przyszły', 'aller: futur simple', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'irai; iras; ira; irons; irez; iront', None),
+    ('conj', 'Czas przyszły', 'faire: futur simple', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'ferai; feras; fera; ferons; ferez; feront', None),
+    ('conj', 'Czas przyszły', 'pouvoir: futur simple', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'pourrai; pourras; pourra; pourrons; pourrez; pourront', None),
+    ('conj', 'Czas przyszły', 'vouloir: futur simple', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'voudrai; voudras; voudra; voudrons; voudrez; voudront', None),
+    ('conj', 'Czas przyszły', 'venir: futur simple', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'viendrai; viendras; viendra; viendrons; viendrez; viendront', None),
+    ('conj', 'Czas przyszły', 'voir: futur simple', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'verrai; verras; verra; verrons; verrez; verront', None),
+    ('conj', 'Czas przeszły', 'avoir: imparfait', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'avais; avais; avait; avions; aviez; avaient', None),
+    ('conj', 'Czas przeszły', 'faire: imparfait', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'faisais; faisais; faisait; faisions; faisiez; faisaient', None),
+    ('conj', 'Czas przeszły', 'aller: imparfait', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'allais; allais; allait; allions; alliez; allaient', None),
+    ('conj', 'Czas przeszły', 'finir: imparfait', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'finissais; finissais; finissait; finissions; finissiez; finissaient', None),
+    ('conj', 'Czas przeszły', 'finir: passé composé', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'ai fini; as fini; a fini; avons fini; avez fini; ont fini', None),
+    ('conj', 'Czas przeszły', 'venir: passé composé', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'suis venu; es venu; est venu; sommes venus; êtes venus; sont venus', None),
+    ('conj', 'Czas przeszły', 'se lever: passé composé', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], "me suis levé; t'es levé; s'est levé; nous sommes levés; vous êtes levés; se sont levés", None),
+    ('conj', 'Czas przeszły', 'faire: passé composé', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'ai fait; as fait; a fait; avons fait; avez fait; ont fait', None),
+    ('conj', 'Czasowniki nieregularne', 'devoir (musieć)', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'dois; dois; doit; devons; devez; doivent', None),
+    ('conj', 'Czasowniki nieregularne', 'savoir (wiedzieć)', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'sais; sais; sait; savons; savez; savent', None),
+    ('conj', 'Czasowniki nieregularne', 'dire (mówić)', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'dis; dis; dit; disons; dites; disent', None),
+    ('conj', 'Czasowniki nieregularne', 'voir (widzieć)', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'vois; vois; voit; voyons; voyez; voient', None),
+    ('conj', 'Wyjątki', 'appeler (nazywać): podwojone l', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'appelle; appelles; appelle; appelons; appelez; appellent', 'Zmiany pisowni w temacie: forma „nous” i „vous” często zachowuje formę z bezokolicznika.'),
+    ('conj', 'Wyjątki', 'acheter (kupować): è', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'achète; achètes; achète; achetons; achetez; achètent', 'Zmiany pisowni w temacie: forma „nous” i „vous” często zachowuje formę z bezokolicznika.'),
+    ('conj', 'Wyjątki', 'commencer (zaczynać): ç', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'commence; commences; commence; commençons; commencez; commencent', 'Zmiany pisowni w temacie: forma „nous” i „vous” często zachowuje formę z bezokolicznika.'),
+    ('conj', 'Wyjątki', 'payer (płacić): y → i', ['je', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'], 'paie; paies; paie; payons; payez; paient', 'Zmiany pisowni w temacie: forma „nous” i „vous” często zachowuje formę z bezokolicznika.'),
+    ('form', 'Rodzajniki', 'rodzajnik określony', ['rodzaj męski', 'rodzaj żeński', 'przed samogłoską', 'liczba mnoga'], "le; la; l'; les", None),
+    ('form', 'Rodzajniki', 'rodzajnik nieokreślony', ['rodzaj męski', 'rodzaj żeński', 'liczba mnoga'], 'un; une; des', None),
+    ('form', 'Rodzajniki', 'rodzajnik cząstkowy (część, trochę)', ['rodzaj męski', 'rodzaj żeński', 'przed samogłoską', 'liczba mnoga'], "du; de la; de l'; des", 'W przeczeniu: pas de café.'),
+    ('form', 'Rodzajniki', 'à + rodzajnik', ['rodzaj męski', 'rodzaj żeński', 'przed samogłoską', 'liczba mnoga'], "au; à la; à l'; aux", None),
+    ('form', 'Rodzajniki', 'de + rodzajnik', ['rodzaj męski', 'rodzaj żeński', 'przed samogłoską', 'liczba mnoga'], "du; de la; de l'; des", None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /GRAMATYKA 1 ===

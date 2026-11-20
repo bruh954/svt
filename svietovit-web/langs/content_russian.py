@@ -412,3 +412,58 @@ for _p in PARADIGMS:
         _o.append(_p[1])
 PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 # === /STOPNIOWANIE ===
+
+# === GRAMATYKA 1 (generowane) ===
+PARADIGMS += [
+    ('form', 'Aspekt czasownika', 'aspekt: robić', ['niedokonany', 'dokonany'], 'де́лать; сде́лать', 'Niedokonany: czynność trwa lub się powtarza. Dokonany: czynność zakończona z wynikiem.'),
+    ('form', 'Aspekt czasownika', 'aspekt: pisać', ['niedokonany', 'dokonany'], 'писа́ть; написа́ть', None),
+    ('form', 'Aspekt czasownika', 'aspekt: czytać', ['niedokonany', 'dokonany'], 'чита́ть; прочита́ть', None),
+    ('form', 'Aspekt czasownika', 'aspekt: mówić', ['niedokonany', 'dokonany'], 'говори́ть; сказа́ть', None),
+    ('form', 'Aspekt czasownika', 'aspekt: kupować', ['niedokonany', 'dokonany'], 'покупа́ть; купи́ть', None),
+    ('form', 'Aspekt czasownika', 'aspekt: brać', ['niedokonany', 'dokonany'], 'брать; взять', None),
+    ('form', 'Aspekt czasownika', 'aspekt: dawać', ['niedokonany', 'dokonany'], 'дава́ть; дать', None),
+    ('form', 'Aspekt czasownika', 'aspekt: widzieć', ['niedokonany', 'dokonany'], 'ви́деть; уви́деть', None),
+    ('form', 'Aspekt czasownika', 'aspekt: otwierać', ['niedokonany', 'dokonany'], 'открыва́ть; откры́ть', None),
+    ('form', 'Aspekt czasownika', 'aspekt: decydować', ['niedokonany', 'dokonany'], 'реша́ть; реши́ть', None),
+    ('form', 'Aspekt czasownika', 'aspekt: opowiadać', ['niedokonany', 'dokonany'], 'расска́зывать; рассказа́ть', None),
+    ('form', 'Aspekt czasownika', 'aspekt: zaczynać', ['niedokonany', 'dokonany'], 'начина́ть; нача́ть', None),
+    ('form', 'Aspekt czasownika', 'aspekt: zapominać', ['niedokonany', 'dokonany'], 'забыва́ть; забы́ть', None),
+    ('form', 'Aspekt czasownika', 'aspekt: jeść', ['niedokonany', 'dokonany'], 'есть; съесть', None),
+    ('form', 'Aspekt czasownika', 'aspekt: pić', ['niedokonany', 'dokonany'], 'пить; вы́пить', None),
+    ('form', 'Aspekt czasownika', 'aspekt: uczyć się', ['niedokonany', 'dokonany'], 'учи́ться; научи́ться', None),
+    ('form', 'Aspekt czasownika', 'aspekt: odpowiadać', ['niedokonany', 'dokonany'], 'отвеча́ть; отве́тить', None),
+    ('form', 'Aspekt czasownika', 'aspekt: pytać', ['niedokonany', 'dokonany'], 'спра́шивать; спроси́ть', None),
+    ('form', 'Czas przeszły', 'czas przeszły: чита́ть (czytać)', ['r. męski', 'r. żeński', 'r. nijaki', 'liczba mnoga'], 'чита́л; чита́ла; чита́ло; чита́ли', None),
+    ('form', 'Czas przeszły', 'czas przeszły: идти́ (iść)', ['r. męski', 'r. żeński', 'r. nijaki', 'liczba mnoga'], 'шёл; шла; шло; шли', None),
+    ('form', 'Czas przeszły', 'czas przeszły: мочь (móc)', ['r. męski', 'r. żeński', 'r. nijaki', 'liczba mnoga'], 'мог; могла́; могло́; могли́', None),
+    ('form', 'Czas przeszły', 'czas przeszły: хоте́ть (chcieć)', ['r. męski', 'r. żeński', 'r. nijaki', 'liczba mnoga'], 'хоте́л; хоте́ла; хоте́ло; хоте́ли', None),
+    ('form', 'Czas przeszły', 'czas przeszły: жить (żyć)', ['r. męski', 'r. żeński', 'r. nijaki', 'liczba mnoga'], 'жил; жила́; жи́ло; жи́ли', None),
+    ('form', 'Czas przeszły', 'czas przeszły: говори́ть (mówić)', ['r. męski', 'r. żeński', 'r. nijaki', 'liczba mnoga'], 'говори́л; говори́ла; говори́ло; говори́ли', None),
+    ('form', 'Czas przeszły', 'czas przeszły: писа́ть (pisać)', ['r. męski', 'r. żeński', 'r. nijaki', 'liczba mnoga'], 'писа́л; писа́ла; писа́ло; писа́ли', None),
+    ('conj', 'Czasowniki nieregularne', 'быть: czas przyszły', ['я', 'ты', 'он / она', 'мы', 'вы', 'они'], 'бу́ду; бу́дешь; бу́дет; бу́дем; бу́дете; бу́дут', None),
+    ('conj', 'Czasowniki nieregularne', 'учи́ться (uczyć się)', ['я', 'ты', 'он / она', 'мы', 'вы', 'они'], 'учу́сь; у́чишься; у́чится; у́чимся; у́читесь; у́чатся', None),
+    ('conj', 'Czasowniki nieregularne', 'дать (dać): dokonany', ['я', 'ты', 'он / она', 'мы', 'вы', 'они'], 'дам; дашь; даст; дади́м; дади́те; даду́т', None),
+    ('form', 'Liczba mnoga', 'mnoga: друг (przyjaciel)', ['liczba pojedyncza', 'liczba mnoga'], 'друг; друзья́', 'Nieregularna liczba mnoga.'),
+    ('form', 'Liczba mnoga', 'mnoga: ребёнок (dziecko)', ['liczba pojedyncza', 'liczba mnoga'], 'ребёнок; де́ти', 'Nieregularna liczba mnoga.'),
+    ('form', 'Liczba mnoga', 'mnoga: челове́к (człowiek)', ['liczba pojedyncza', 'liczba mnoga'], 'челове́к; лю́ди', 'Nieregularna liczba mnoga.'),
+    ('form', 'Liczba mnoga', 'mnoga: брат (brat)', ['liczba pojedyncza', 'liczba mnoga'], 'брат; бра́тья', 'Nieregularna liczba mnoga.'),
+    ('form', 'Liczba mnoga', 'mnoga: мать (matka)', ['liczba pojedyncza', 'liczba mnoga'], 'мать; ма́тери', 'Nieregularna liczba mnoga.'),
+    ('form', 'Liczba mnoga', 'mnoga: сын (syn)', ['liczba pojedyncza', 'liczba mnoga'], 'сын; сыновья́', 'Nieregularna liczba mnoga.'),
+    ('form', 'Liczba mnoga', 'mnoga: стул (krzesło)', ['liczba pojedyncza', 'liczba mnoga'], 'стул; сту́лья', 'Nieregularna liczba mnoga.'),
+    ('form', 'Liczba mnoga', 'mnoga: дерево (drzewo)', ['liczba pojedyncza', 'liczba mnoga'], 'де́рево; дере́вья', 'Nieregularna liczba mnoga.'),
+    ('form', 'Dopełniacz liczby mnogiej', 'dop. mnoga: кни́га (książka)', ['mianownik l. poj.', 'dopełniacz l. mn.'], 'кни́га; книг', 'Używa się go po liczebnikach 5 i więcej oraz po słowach „мно́го”, „ма́ло”.'),
+    ('form', 'Dopełniacz liczby mnogiej', 'dop. mnoga: окно́ (okno)', ['mianownik l. poj.', 'dopełniacz l. mn.'], 'окно́; о́кон', None),
+    ('form', 'Dopełniacz liczby mnogiej', 'dop. mnoga: де́вушка (dziewczyna)', ['mianownik l. poj.', 'dopełniacz l. mn.'], 'де́вушка; де́вушек', None),
+    ('form', 'Dopełniacz liczby mnogiej', 'dop. mnoga: рубль (rubel)', ['mianownik l. poj.', 'dopełniacz l. mn.'], 'рубль; рубле́й', None),
+    ('form', 'Dopełniacz liczby mnogiej', 'dop. mnoga: студе́нт (student)', ['mianownik l. poj.', 'dopełniacz l. mn.'], 'студе́нт; студе́нтов', None),
+    ('form', 'Dopełniacz liczby mnogiej', 'dop. mnoga: день (dzień)', ['mianownik l. poj.', 'dopełniacz l. mn.'], 'день; дней', None),
+    ('form', 'Dopełniacz liczby mnogiej', 'dop. mnoga: друг (przyjaciel)', ['mianownik l. poj.', 'dopełniacz l. mn.'], 'друг; друзе́й', None),
+    ('form', 'Dopełniacz liczby mnogiej', 'dop. mnoga: мать (matka)', ['mianownik l. poj.', 'dopełniacz l. mn.'], 'мать; матере́й', None),
+    ('form', 'Typowe trudności', 'Przyimek: jaki przypadek?', ['Я иду́ в ___ (шко́ла)', 'Я в ___ (шко́ла)', 'Я иду́ из ___ (шко́ла)', 'Я иду́ к ___ (друг)', 'Я иду́ с ___ (друг)', 'Я ду́маю о ___ (друг)'], 'шко́лу; шко́ле; шко́лы; дру́гу; дру́гом; дру́ге', 'в + biernik (dokąd?), в + miejscownik (gdzie?), из + dopełniacz, к + celownik, с + narzędnik, о + miejscownik.'),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /GRAMATYKA 1 ===

@@ -367,3 +367,57 @@ for _p in PARADIGMS:
         _o.append(_p[1])
 PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 # === /STOPNIOWANIE ===
+
+# === GRAMATYKA 1 (generowane) ===
+PARADIGMS += [
+    ('conj', 'Czas przeszły', 'avere: imperfetto', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'avevo; avevi; aveva; avevamo; avevate; avevano', None),
+    ('conj', 'Czas przeszły', 'fare: imperfetto', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'facevo; facevi; faceva; facevamo; facevate; facevano', None),
+    ('conj', 'Czas przeszły', 'andare: imperfetto', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'andavo; andavi; andava; andavamo; andavate; andavano', None),
+    ('conj', 'Czas przeszły', 'credere: imperfetto', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'credevo; credevi; credeva; credevamo; credevate; credevano', None),
+    ('conj', 'Czas przeszły', 'dormire: imperfetto', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'dormivo; dormivi; dormiva; dormivamo; dormivate; dormivano', None),
+    ('conj', 'Czas przeszły', 'essere: passato prossimo', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'sono stato; sei stato; è stato; siamo stati; siete stati; sono stati', None),
+    ('conj', 'Czas przeszły', 'avere: passato prossimo', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'ho avuto; hai avuto; ha avuto; abbiamo avuto; avete avuto; hanno avuto', None),
+    ('conj', 'Czas przeszły', 'fare: passato prossimo', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'ho fatto; hai fatto; ha fatto; abbiamo fatto; avete fatto; hanno fatto', None),
+    ('conj', 'Czas przeszły', 'venire: passato prossimo', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'sono venuto; sei venuto; è venuto; siamo venuti; siete venuti; sono venuti', None),
+    ('conj', 'Czas przyszły', 'avere: futuro', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'avrò; avrai; avrà; avremo; avrete; avranno', None),
+    ('conj', 'Czas przyszły', 'andare: futuro', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'andrò; andrai; andrà; andremo; andrete; andranno', None),
+    ('conj', 'Czas przyszły', 'fare: futuro', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'farò; farai; farà; faremo; farete; faranno', None),
+    ('conj', 'Czas przyszły', 'potere: futuro', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'potrò; potrai; potrà; potremo; potrete; potranno', None),
+    ('conj', 'Czas przyszły', 'volere: futuro', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'vorrò; vorrai; vorrà; vorremo; vorrete; vorranno', None),
+    ('conj', 'Czas przyszły', 'venire: futuro', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'verrò; verrai; verrà; verremo; verrete; verranno', None),
+    ('conj', 'Tryb warunkowy', 'parlare: condizionale', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'parlerei; parleresti; parlerebbe; parleremmo; parlereste; parlerebbero', None),
+    ('conj', 'Tryb warunkowy', 'essere: condizionale', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'sarei; saresti; sarebbe; saremmo; sareste; sarebbero', None),
+    ('conj', 'Tryb warunkowy', 'avere: condizionale', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'avrei; avresti; avrebbe; avremmo; avreste; avrebbero', None),
+    ('conj', 'Tryb warunkowy', 'andare: condizionale', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'andrei; andresti; andrebbe; andremmo; andreste; andrebbero', None),
+    ('conj', 'Tryb warunkowy', 'fare: condizionale', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'farei; faresti; farebbe; faremmo; fareste; farebbero', None),
+    ('conj', 'Tryb warunkowy', 'potere: condizionale', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'potrei; potresti; potrebbe; potremmo; potreste; potrebbero', None),
+    ('conj', 'Tryb warunkowy', 'volere: condizionale', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'vorrei; vorresti; vorrebbe; vorremmo; vorreste; vorrebbero', 'Grzeczna prośba: vorrei un caffè.'),
+    ('conj', 'Tryb łączący', 'parlare: congiuntivo', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'parli; parli; parli; parliamo; parliate; parlino', None),
+    ('conj', 'Tryb łączący', 'credere: congiuntivo', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'creda; creda; creda; crediamo; crediate; credano', None),
+    ('conj', 'Tryb łączący', 'dormire: congiuntivo', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'dorma; dorma; dorma; dormiamo; dormiate; dormano', None),
+    ('conj', 'Tryb łączący', 'essere: congiuntivo', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'sia; sia; sia; siamo; siate; siano', 'Po „penso che”, „voglio che”: penso che sia vero.'),
+    ('conj', 'Tryb łączący', 'avere: congiuntivo', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'abbia; abbia; abbia; abbiamo; abbiate; abbiano', None),
+    ('conj', 'Tryb łączący', 'andare: congiuntivo', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'vada; vada; vada; andiamo; andiate; vadano', None),
+    ('conj', 'Tryb łączący', 'fare: congiuntivo', ['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], 'faccia; faccia; faccia; facciamo; facciate; facciano', None),
+    ('form', 'Tryb rozkazujący', 'parlare: imperativo', ['tu', 'Lei', 'noi', 'voi'], 'parla; parli; parliamo; parlate', None),
+    ('form', 'Tryb rozkazujący', 'credere: imperativo', ['tu', 'Lei', 'noi', 'voi'], 'credi; creda; crediamo; credete', None),
+    ('form', 'Tryb rozkazujący', 'dormire: imperativo', ['tu', 'Lei', 'noi', 'voi'], 'dormi; dorma; dormiamo; dormite', None),
+    ('form', 'Tryb rozkazujący', 'essere: imperativo', ['tu', 'Lei', 'noi', 'voi'], 'sii; sia; siamo; siate', None),
+    ('form', 'Tryb rozkazujący', 'avere: imperativo', ['tu', 'Lei', 'noi', 'voi'], 'abbi; abbia; abbiamo; abbiate', None),
+    ('form', 'Tryb rozkazujący', 'andare: imperativo', ['tu', 'Lei', 'noi', 'voi'], "va'; vada; andiamo; andate", None),
+    ('form', 'Tryb rozkazujący', 'fare: imperativo', ['tu', 'Lei', 'noi', 'voi'], "fa'; faccia; facciamo; fate", None),
+    ('form', 'Przyimki z rodzajnikiem', 'a + rodzajnik', ['il', 'lo', 'la', "l'", 'i', 'gli', 'le'], "al; allo; alla; all'; ai; agli; alle", 'Przyimek łączy się z rodzajnikiem w jedno słowo.'),
+    ('form', 'Przyimki z rodzajnikiem', 'di + rodzajnik', ['il', 'lo', 'la', "l'", 'i', 'gli', 'le'], "del; dello; della; dell'; dei; degli; delle", None),
+    ('form', 'Przyimki z rodzajnikiem', 'in + rodzajnik', ['il', 'lo', 'la', "l'", 'i', 'gli', 'le'], "nel; nello; nella; nell'; nei; negli; nelle", None),
+    ('form', 'Przyimki z rodzajnikiem', 'su + rodzajnik', ['il', 'lo', 'la', "l'", 'i', 'gli', 'le'], "sul; sullo; sulla; sull'; sui; sugli; sulle", None),
+    ('form', 'Przyimki z rodzajnikiem', 'da + rodzajnik', ['il', 'lo', 'la', "l'", 'i', 'gli', 'le'], "dal; dallo; dalla; dall'; dai; dagli; dalle", None),
+    ('form', 'Przyimki z rodzajnikiem', 'con + rodzajnik', ['il', 'lo', 'la', "l'", 'i', 'gli', 'le'], "col; con lo; con la; con l'; coi; con gli; con le", None),
+    ('form', 'Rodzajnik nieokreślony', 'un, uno, una', ['rodzaj męski', 'rodzaj męski (s+spółgł., z, gn)', 'rodzaj żeński', 'żeński przed samogłoską'], "un; uno; una; un'", None),
+    ('form', 'Typowe czasowniki', 'piacere (podobać się)', ['(a me)', '(a te)', '(a lui / lei)', '(a noi)', '(a voi)', '(a loro)'], 'mi piace; ti piace; gli / le piace; ci piace; vi piace; piace loro', 'Uzgadnia się z tym, co się podoba: mi piace il caffè, mi piacciono i libri.'),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /GRAMATYKA 1 ===

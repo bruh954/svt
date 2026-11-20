@@ -355,3 +355,36 @@ for _p in PARADIGMS:
         _o.append(_p[1])
 PARADIGMS.sort(key=lambda p: _o.index(p[1]))
 # === /STOPNIOWANIE ===
+
+# === GRAMATYKA 1 (generowane) ===
+PARADIGMS += [
+    ('conj', 'Czasy', 'yapmak: geniş zaman', ['ben', 'sen', 'o', 'biz', 'siz', 'onlar'], 'yaparım; yaparsın; yapar; yaparız; yaparsınız; yaparlar', None),
+    ('conj', 'Czasy', 'okumak: geniş zaman', ['ben', 'sen', 'o', 'biz', 'siz', 'onlar'], 'okurum; okursun; okur; okuruz; okursunuz; okurlar', None),
+    ('conj', 'Czasy', 'görmek: geniş zaman', ['ben', 'sen', 'o', 'biz', 'siz', 'onlar'], 'görürüm; görürsün; görür; görürüz; görürsünüz; görürler', None),
+    ('conj', 'Czasy', 'gitmek: geniş zaman', ['ben', 'sen', 'o', 'biz', 'siz', 'onlar'], 'giderim; gidersin; gider; gideriz; gidersiniz; giderler', None),
+    ('conj', 'Czasy', 'almak: geniş zaman', ['ben', 'sen', 'o', 'biz', 'siz', 'onlar'], 'alırım; alırsın; alır; alırız; alırsınız; alırlar', None),
+    ('conj', 'Czasy', "gelmek: miş'li geçmiş zaman", ['ben', 'sen', 'o', 'biz', 'siz', 'onlar'], 'gelmişim; gelmişsin; gelmiş; gelmişiz; gelmişsiniz; gelmişler', 'Przeszły „-di” mówi o tym, co widziałeś sam; „-miş” o tym, co usłyszałeś lub zauważyłeś.'),
+    ('conj', 'Czasy', "yapmak: miş'li geçmiş zaman", ['ben', 'sen', 'o', 'biz', 'siz', 'onlar'], 'yapmışım; yapmışsın; yapmış; yapmışız; yapmışsınız; yapmışlar', None),
+    ('conj', 'Czasy', 'gelmek: przeszły z przeczeniem', ['ben', 'sen', 'o', 'biz', 'siz', 'onlar'], 'gelmedim; gelmedin; gelmedi; gelmedik; gelmediniz; gelmediler', None),
+    ('conj', 'Czasy', 'yapmak: przeszły', ['ben', 'sen', 'o', 'biz', 'siz', 'onlar'], 'yaptım; yaptın; yaptı; yaptık; yaptınız; yaptılar', None),
+    ('conj', 'Czasy', 'gitmek: przeszły', ['ben', 'sen', 'o', 'biz', 'siz', 'onlar'], 'gittim; gittin; gitti; gittik; gittiniz; gittiler', None),
+    ('conj', 'Czasy', 'öğrenci: „byłem”', ['ben', 'sen', 'o', 'biz', 'siz', 'onlar'], 'öğrenciydim; öğrenciydin; öğrenciydi; öğrenciydik; öğrenciydiniz; öğrenciydiler', None),
+    ('conj', 'Tryby', 'gelmek: możliwość (-ebil-)', ['ben', 'sen', 'o', 'biz', 'siz', 'onlar'], 'gelebilirim; gelebilirsin; gelebilir; gelebiliriz; gelebilirsiniz; gelebilirler', None),
+    ('conj', 'Tryby', 'gelmek: niemożliwość', ['ben', 'sen', 'o', 'biz', 'siz', 'onlar'], 'gelemem; gelemezsin; gelemez; gelemeyiz; gelemezsiniz; gelemezler', None),
+    ('conj', 'Tryby', 'yapmak: możliwość (-ebil-)', ['ben', 'sen', 'o', 'biz', 'siz', 'onlar'], 'yapabilirim; yapabilirsin; yapabilir; yapabiliriz; yapabilirsiniz; yapabilirler', None),
+    ('conj', 'Tryby', 'gelmek: powinność (-meli)', ['ben', 'sen', 'o', 'biz', 'siz', 'onlar'], 'gelmeliyim; gelmelisin; gelmeli; gelmeliyiz; gelmelisiniz; gelmeliler', None),
+    ('conj', 'Tryby', 'yapmak: powinność (-meli)', ['ben', 'sen', 'o', 'biz', 'siz', 'onlar'], 'yapmalıyım; yapmalısın; yapmalı; yapmalıyız; yapmalısınız; yapmalılar', None),
+    ('conj', 'Tryby', 'gelmek: warunek (-se)', ['ben', 'sen', 'o', 'biz', 'siz', 'onlar'], 'gelsem; gelsen; gelse; gelsek; gelseniz; gelseler', None),
+    ('conj', 'Tryby', 'yapmak: warunek (-sa)', ['ben', 'sen', 'o', 'biz', 'siz', 'onlar'], 'yapsam; yapsan; yapsa; yapsak; yapsanız; yapsalar', None),
+    ('form', 'Tryb rozkazujący', 'rozkaz: gelmek', ['sen', 'o', 'siz'], 'gel; gelsin; gelin', 'Rozkaz dla „sen” to sam temat czasownika.'),
+    ('form', 'Tryb rozkazujący', 'rozkaz: gitmek', ['sen', 'o', 'siz'], 'git; gitsin; gidin', None),
+    ('form', 'Tryb rozkazujący', 'rozkaz: yapmak', ['sen', 'o', 'siz'], 'yap; yapsın; yapın', None),
+    ('form', 'Tryb rozkazujący', 'rozkaz: okumak', ['sen', 'o', 'siz'], 'oku; okusun; okuyun', None),
+    ('form', 'Tryb rozkazujący', 'rozkaz: almak', ['sen', 'o', 'siz'], 'al; alsın; alın', None),
+]
+_o = []
+for _p in PARADIGMS:
+    if _p[1] not in _o:
+        _o.append(_p[1])
+PARADIGMS.sort(key=lambda p: _o.index(p[1]))
+# === /GRAMATYKA 1 ===
