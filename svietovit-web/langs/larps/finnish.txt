@@ -1,0 +1,329 @@
+@larp kahvila | W kawiarni | Tarjoilija | T | Wchodzisz do kawiarni w Helsinkach. Jesteś głodny i spragniony, a kelner czeka z notesem. | Zamów coś do picia i coś do jedzenia, a potem zapłać.
+fee 0
+reward 15
+strict yes
+story yes
+win Kelner jest pod wrażeniem, że tak dobrze mówisz po fińsku. „Tämä on talon tarjoama!” – jedzenie na koszt firmy.
+partial Zamówienie dotarło do stołu, choć kilka razy musiałeś poprawiać. Kelner uśmiecha się i przynosi rachunek.
+fail Kelner ma dość: nie zrozumiał cię kilka razy z rzędu, uznał to za obrazę i prosi, żebyś opuścił lokal.
+
+@level 1 | Kawa, bułka i ciasto | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Spóźniony Mikko
+scene Helsinki, deszczowy ranek. Przyjechałeś do Finlandii spotkać się z Mikkiem, kolegą z korespondencji, ale on jeszcze nie przyszedł. Siadasz w kawiarni i czekasz.
+goal Zamów kawę, bułkę i ciasto, a przy okazji dowiedz się, co z Mikkiem.
+win Kelner kładzie na stole kopertę: „Mikko jätti tämän teille”. W środku kartka: „Myöhästyn, huomenna syödään yhdessä aamiaista. Mikko” Masz plan na jutro.
+partial Zamówienie dotarło, a kelner podaje ci kopertę od Mikka, chociaż z trudem zrozumiał, co chcesz. Mikko przeprasza i zaprasza na jutro.
+fail Kelner nie rozumie cię i nie wie, kim jesteś. Koperta od Mikka trafia do kogoś innego, a ty wychodzisz w deszcz z pustym żołądkiem.
+w mitä | co (w pytaniu; forma od mikä)
+w saisi | mógłby być podany (mitä saisi olla = co podać)
+w mietin | zastanawiam się (miettiä)
+t Hyvää huomenta! Mitä saisi olla? | Dzień dobry! Co podać? | Hyvää huomenta! Mietin vielä. | Przywitaj się i powiedz, że jeszcze wybierasz. | „Zastanawiam się” to mietin (od miettiä), a vielä znaczy tu „jeszcze”.
+w haluatko | czy chcesz (haluat + -ko: pytanie)
+w kahvia
+w teetä
+w vettä
+w mehu
+w mehua | soku (mehu + -a: forma cząstkowa)
+w olut
+w viini
+t Tässä on ruokalista. Mitä haluat juoda? | Oto karta dań. Co chcesz pić? | Haluan kahvia, kiitos. | Zamów kawę (grzecznie). | Po „haluan” nazwa napoju stoi w formie cząstkowej: kahvia.
+w maitoa | mleka (maito + -a: forma cząstkowa)
+w kerma
+w sitruuna
+t Haluatko maitoa? | Czy chcesz mleka? | Kyllä, maitoa, kiitos. | Zgódź się na mleko. | Końcówka -ko robi pytanie: haluatko = „czy chcesz”.
+w sokeria | cukru (sokeri + -a: forma cząstkowa)
+w vai | czy (w pytaniu z wyborem)
+w hunaja
+t Haluatko sokeria? | Czy chcesz cukru? | Ei, ilman sokeria, kiitos. | Odmów cukru. | „Bez” to ilman, a „z” to -lla albo kanssa.
+w lasi
+w pullo
+t Haluatko myös vettä? | Czy chcesz też wody? | Kyllä, vettä, kiitos. | Zgódź się na wodę. | Woda w tym zdaniu stoi w formie cząstkowej: vettä.
+w sämpylän | bułkę (sämpylä + -n: biernik)
+w leipä
+w muna
+w juusto
+w juustoa | sera (juusto + -a: forma cząstkowa)
+w kinkku
+w makkara
+t Ja mitä haluat syödä? | A co chcesz zjeść? | Haluan sämpylän, kiitos. | Zamów bułkę. | Dopełnienie „bułkę” (całą, jedną) ma końcówkę -n: sämpylän.
+w juustolla | z serem (juusto + -lla: „z, na”)
+w kinkulla | z szynką (kinkku + -lla)
+w voi
+t Juustolla vai kinkulla? | Z serem czy z szynką? | Juustolla, kiitos. | Wybierz ser do bułki. | Końcówka -lla znaczy tu „z” (na bułce): juustolla.
+w palan | kawałek (pala + -n: biernik)
+w kakkua | ciasta (kakku + -a: forma cząstkowa)
+w suklaa
+w keksi
+w jäätelö
+t Haluatko myös palan kakkua? | Czy chcesz też kawałek ciasta? | Kyllä, haluan palan kakkua. | Zgódź się na kawałek ciasta. | Po „pala” rzecz, z której bierzemy kawałek, stoi w formie cząstkowej: kakkua.
+w kahvisi | twoja kawa (kahvi + -si: „twój”)
+w ruokahalua | apetytu (ruokahalu + -a: forma cząstkowa)
+w lautanen
+w kuppi
+t Tässä on kahvisi ja sämpylä. Hyvää ruokahalua! | Oto twoja kawa i bułka. Smacznego! | Kiitos paljon! | Podziękuj kelnerowi. | Dziękujesz: kiitos paljon.
+w jotain | czegoś (od jokin)
+w se | to, ono
+t Haluatko vielä jotain? | Czy chcesz jeszcze coś? | Ei, kiitos. Se on kaikki. | Odmów: to już wszystko. | „To wszystko” to se on kaikki.
+w ole | bądź (ole hyvä = proszę bardzo)
+e Ole hyvä! | Proszę bardzo!
+
+@level 2 | Śniadanie | patience=6 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Śniadanie z Mikkiem
+scene Następnego ranka. Mikko czeka już przy stoliku, a kelner przyjmuje zamówienia. Mikko prosi, żebyś zamówił sam, a przy okazji kupił ciasto, które zabierzesz mamie.
+goal Zamów śniadanie i kup ciasto dla swojej mamy.
+win Mikko się śmieje: „Puhut kuin helsinkiläinen!” Ciasto dla mamy zapakowane, a Mikko obiecuje pokazać ci jutro miasto.
+partial Śniadanie jest, ciasto też, ale Mikko musiał pomóc ci kilka razy. Obiecuje, że następnym razem zamówisz sam.
+fail Pomyliłeś zamówienia i Mikko dostał coś zupełnie innego. Zjadł w milczeniu i wyszedł do pracy.
+w aamiaista | śniadania (aamiainen + -a: forma cząstkowa)
+t Hyvää huomenta! Haluatko aamiaista? | Dzień dobry! Czy chcesz śniadanie? | Kyllä, haluan aamiaista. | Powiedz, że chcesz zjeść śniadanie. | „Chcę śniadania” to haluan aamiaista (forma cząstkowa).
+w meillä | u nas (mamy)
+w sämpylöitä | bułek (sämpylä, l. mnoga w formie cząstkowej)
+w munia | jajek (muna, l. mnoga w formie cząstkowej)
+w otat | bierzesz (ottaa)
+w otan | biorę (ottaa)
+w sämpylää | bułki (sämpylä + -ä: forma cząstkowa)
+w munan | jajko (muna + -n: biernik)
+t Meillä on sämpylöitä ja munia. Mitä otat? | Mamy bułki i jajka. Co weźmiesz? | Otan kaksi sämpylää ja munan. | Zamów dwie bułki i jajko. | Po liczebniku kaksi rzeczownik stoi w liczbie pojedynczej w formie cząstkowej: kaksi sämpylää.
+w maidolla | z mlekiem (maito + -lla: „z”; t zmienia się w d)
+t Haluatko kahvia vai teetä? | Czy chcesz kawy czy herbaty? | Otan teetä maidolla. | Wybierz herbatę z mlekiem. | „Z mlekiem” to maidolla (końcówka -lla).
+w vähän | trochę
+t Haluatko sokeria? | Czy chcesz cukru? | Kyllä, vähän sokeria, kiitos. | Zgódź się na odrobinę cukru. | „Trochę cukru” to vähän sokeria (forma cząstkowa).
+w omenapiirakka | szarlotka (omena (jabłko) + piirakka (placek))
+w suklaakakku | ciasto czekoladowe (suklaa (czekolada) + kakku (ciasto))
+w omenapiirakan | szarlotkę (omenapiirakka + -n: biernik)
+t Meillä on omenapiirakka ja suklaakakku. | Mamy szarlotkę i ciasto czekoladowe. | Otan omenapiirakan. | Wybierz szarlotkę. | Dopełnienie „szarlotkę” ma końcówkę -n: omenapiirakan.
+w lasin | szklankę (lasi + -n: biernik)
+w appelsiinimehua | soku pomarańczowego (appelsiini (pomarańcza) + mehu (sok), forma cząstkowa)
+t Haluatko myös lasin mehua? | Czy chcesz też szklankę soku? | Kyllä, lasin appelsiinimehua. | Zgódź się na sok pomarańczowy. | Po „lasi” (szklanka) zawartość stoi w formie cząstkowej: lasin appelsiinimehua.
+w appelsiinimehu | sok pomarańczowy (appelsiini (pomarańcza) + mehu (sok))
+w todella | naprawdę
+w sitten | wtedy, w takim razie
+w mehun | sok (mehu + -n: biernik)
+t Appelsiinimehu on tänään todella hyvää. | Sok pomarańczowy jest dziś naprawdę dobry. | Hyvä, sitten otan mehun. | Zdecyduj się na sok. | Po „sitten” czasownik stoi przed podmiotem: sitten otan.
+w onko | czy jest (on + -ko: pytanie)
+w sinulle | dla ciebie (sinä + -lle)
+w äidilleni | dla mojej mamy (äiti + -lle „dla” + -ni „mojej”)
+t Onko kakku sinulle? | Czy ciasto jest dla ciebie? | Ei, kakku on äidilleni. | Odmów: ciasto jest dla twojej mamy. | „Dla mamy” to äidille, a końcówka -ni znaczy „mojej”.
+w tulen | przyjdę (tulla)
+w heti | od razu
+w odotan | czekam (odottaa)
+w mielelläni | chętnie (dosłownie „z moją chęcią”)
+t Tulen heti! | Zaraz przyjdę! | Kiitos, odotan mielelläni. | Podziękuj i powiedz, że chętnie poczekasz. | „Chętnie” to mielelläni (z końcówką -ni „mój”).
+w samoin | nawzajem
+t Tässä on kaikki. Hyvää ruokahalua! | Oto wszystko. Smacznego! | Kiitos, samoin! | Podziękuj i odwzajemnij życzenia. | „Nawzajem” to samoin.
+e Ole hyvä! | Proszę bardzo!
+
+@level 3 | Stolik, pytania i cena | patience=5 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Stolik dla dwóch
+scene Po południu. Mikko pracuje, więc umówiłeś się z jego siostrą Aino. Kelner pyta o stolik, a ty musisz wybrać miejsce, jedzenie i dowiedzieć się, ile to kosztuje.
+goal Zajmij stolik dla dwóch, zamów obiad dla was obu i nie przepłać.
+win Aino jest zachwycona: „Nyt ymmärrän, miksi Mikko puhuu sinusta niin paljon!” Zaprasza cię na wieczór do znajomych Mikka.
+partial Obiad się udał, ale Aino musiała kilka razy tłumaczyć kelnerowi, co chcesz. Wieczorne spotkanie nadal aktualne.
+fail Nie dogadałeś się z kelnerem, a Aino patrzyła na to z niedowierzaniem. Wieczorem dostajesz od niej krótką wiadomość: „Ehkä joskus toiste.”
+w tervetuloa | witaj, witamy
+w kahdelle | dla dwojga (kaksi + -lle)
+w pöytä
+w tuoli
+w ikkuna
+t Tervetuloa! Pöytä kahdelle? | Witamy! Stolik dla dwojga? | Kyllä, pöytä kahdelle, kiitos. | Zgódź się: stolik dla dwóch osób. | „Dla dwojga” to kahdelle (kaksi + -lle).
+w tuolla | tam (w oddali)
+t Haluatko istua tässä vai tuolla? | Czy chcesz siedzieć tutaj, czy tam? | Haluan istua tässä, kiitos. | Powiedz, że chcesz siedzieć tutaj. | Bezokolicznik (istua) stoi po haluan.
+t Tässä on ruokalista. Mitä haluat juoda? | Oto karta dań. Co chcesz pić? | Lasi vettä ja mehua, kiitos. | Zamów wodę i sok. | Po „lasi” (szklanka) napój stoi w formie cząstkowej: lasi vettä.
+w keitto
+w kala
+w liha
+w keittoa | zupy (keitto + -a: forma cząstkowa)
+w en | nie (przy czasowniku: en halua = nie chcę)
+w teillä | u was (macie)
+w halua | chcę (w przeczeniu: en halua = nie chcę)
+w salaattia | sałatki (salaatti + -a: forma cząstkowa)
+t Haluatko keittoa? | Czy chcesz zupę? | En, kiitos. Onko teillä salaattia? | Odmów zupy i zapytaj o sałatkę. | Przeczenie czasownika to en + forma czasownika: en halua = „nie chcę”.
+w salaatin | sałatkę (salaatti + -n: biernik)
+w tomaatti
+w kurkku
+t Kyllä on. Salaatti on todella hyvää. | Tak, jest. Sałatka jest naprawdę dobra. | Hyvä, otan salaatin. | Zdecyduj się na sałatkę. | „Biorę sałatkę” to otan salaatin (biernik -n).
+w salaattiin | do sałatki (salaatti + -in: „do środka”)
+t Haluatko salaattiin kalaa vai juustoa? | Czy chcesz do sałatki rybę czy ser? | Juustoa, kiitos. | Wybierz ser. | Po „haluatko” produkt stoi w formie cząstkowej: juustoa.
+t Haluatko vielä jotain? | Czy chcesz jeszcze coś? | Paljonko kakku maksaa? | Zapytaj o cenę ciasta. | „Ile kosztuje” to paljonko maksaa (maksaa znaczy też „kosztuje”).
+w euroa | euro (po liczebniku: forma cząstkowa)
+w liian | zbyt
+t Kakku maksaa neljä euroa. | Ciasto kosztuje cztery euro. | Se ei ole liian kallis. Otan palan. | Powiedz, że cena ci pasuje, i weź kawałek. | „Za drogi” to liian kallis; przeczenie „nie jest” to ei ole.
+w kakun | ciasto (kakku + -n: biernik)
+w myöhemmin
+t Haluatko kakun nyt vai myöhemmin? | Czy chcesz ciasto teraz, czy później? | Haluan kakun myöhemmin. | Powiedz, że ciasto chcesz później. | Dopełnienie „ciasto” ma końcówkę -n: kakun.
+w riittää | wystarcza
+w minulle | dla mnie (minä + -lle)
+t Selvä. Vielä lasi vettä? | Dobrze. Jeszcze szklankę wody? | Ei kiitos, minulle riittää. | Grzecznie odmów: masz dość. | „Dla mnie wystarczy” to minulle riittää.
+w mielellään | chętnie
+e Mielellään! Tulen heti. | Chętnie! Zaraz przyjdę.
+
+@level 4 | Rozmowa przy stole | patience=5 typed=0.75 extra=4 hint=letters
+partner Rouva Virtanen | V
+desc Rozdział 4: Wieczór u rouvy Virtanen
+scene Wieczorem Mikko zabiera cię do swojej ulubionej kawiarni. Właścicielka, rouva Virtanen, zna wszystkich, a ciebie wypytuje jak nowego znajomego Mikka.
+goal Odpowiadaj na pytania rouvy Virtanen o to, skąd jesteś i czym się zajmujesz. Jeśli jej się spodobasz, Mikko zaprosi cię na jutro.
+win Rouva Virtanen klepie cię po ramieniu: „Hän kuuluu nyt perheeseen!” Mikko mówi, że jutro odprowadzi cię na dworzec i wszystko ci pokaże.
+partial Rouva Virtanen jest uprzejma, ale nie do końca przekonana. Mikko uspokaja: „Hän tarvitsee aikaa.” Jutro i tak idziecie razem na dworzec.
+fail Rouva Virtanen przestała cię rozumieć w połowie wywiadu i uznała, że jesteś nieszczery. Mikko wychodzi zakłopotany.
+w olut
+w viini
+w vesi
+w kahvi
+w iltaa | wieczoru (ilta + -a: hyvää iltaa = dobry wieczór)
+w oluen | piwo (olut + -en: biernik)
+t Hyvää iltaa! Mitä saisi olla? | Dobry wieczór! Co podać? | Haluan oluen ja lasin vettä, kiitos. | Zamów piwo i wodę. | Dopełnienie „piwo” ma końcówkę -en: oluen; lasin vettä to „szklanka wody”.
+w puhut | mówisz (puhua)
+w suomea | fińskiego (suomi + -a: forma cząstkowa)
+w mistä | skąd, z czego
+w kotoisin | pochodzący (mistä olet kotoisin = skąd jesteś)
+t Puhut todella hyvää suomea! Mistä olet kotoisin? | Mówisz naprawdę dobrze po fińsku! Skąd pochodzisz? | Kiitos! Olen Puolasta. | Podziękuj i powiedz, że jesteś z Polski. | „Z Polski” to Puolasta (końcówka -sta: „z”).
+w kauanko | jak długo (pytanie)
+w opiskellut | uczył się (opiskella; czas przeszły złożony)
+w kauan | długo
+t Puolasta! Kauanko olet opiskellut suomea? | Z Polski! Jak długo uczysz się fińskiego? | En ole opiskellut suomea kauan. | Powiedz, że uczysz się fińskiego od niedawna. | Przeczenie czasu przeszłego: en ole opiskellut = „nie uczyłem się”.
+w opiskeletko | czy się uczysz (opiskelet + -ko)
+w koulussa | w szkole (koulu + -ssa: „w”)
+w opiskelen | uczę się (opiskella)
+w kotona | w domu
+t Hyvä! Opiskeletko koulussa? | Dobrze! Uczysz się w szkole? | Ei, opiskelen kotona. | Zaprzecz: uczysz się w domu. | „W domu” (u siebie) to kotona.
+w keitto
+w liha
+w peruna
+w riisi
+w pasta
+w keitossa | w zupie (keitto + -ssa: „w”)
+w lihaa | mięsa (liha + -a: forma cząstkowa)
+t Haluatko syödä jotain? Keitto on tänään todella hyvää. | Czy chcesz coś zjeść? Zupa jest dziś naprawdę dobra. | Kyllä, haluan keittoa. Onko keitossa lihaa? | Zgódź się na zupę i zapytaj, czy jest w niej mięso. | „W zupie” to keitossa (końcówka -ssa).
+t Ei ole lihaa. Haluatko myös sämpylän? | Nie ma mięsa. Chcesz też bułkę? | Kyllä, sämpylän juustolla, kiitos. | Zgódź się: bułka z serem. | „Z serem” to juustolla (końcówka -lla).
+w miltä | jak (o smaku, wyglądzie)
+w maistuu | smakuje (maistua)
+w kuumaa | gorąca (kuuma + -a: forma cząstkowa)
+t Miltä keitto maistuu? | Jak smakuje zupa? | Keitto on hyvää, mutta vähän kuumaa. | Pochwal zupę, ale zaznacz, że jest gorąca. | „Trochę gorąca” to vähän kuumaa.
+w juon | piję (juoda)
+w kahvin | kawę (kahvi + -n: biernik)
+t Haluatko vielä oluen? | Czy chcesz jeszcze piwo? | Ei kiitos, nyt juon kahvin. | Odmów i powiedz, że teraz pijesz kawę. | „Piję kawę” to juon kahvin (biernik -n).
+w oletko | czy jesteś (olet + -ko)
+t Oletko opiskelija? | Czy jesteś studentem? | Ei, olen opettaja. | Zaprzecz: jesteś nauczycielem. | Po „olen” w fińskim nie ma rodzajnika: olen opettaja.
+t Selvä. Haluatko vielä jotain? | Dobrze. Czy chcesz jeszcze coś? | Ei kiitos, se on kaikki. | Odmów: to wszystko. | „To wszystko” to se on kaikki.
+e Mielellään! | Chętnie!
+
+@level 5 | Pełna wizyta i rachunek | patience=4 typed=1 extra=0 hint=none reward=25
+desc Rozdział 5: Rachunek i pożegnanie
+scene Ostatni dzień w Helsinkach. Z samego rana siadasz w kawiarni, żeby zjeść pożegnalne śniadanie i zapłacić. Za godzinę pociąg, a Mikko ma pojawić się na peronie.
+goal Zamów pełne śniadanie, usiądź przy oknie, zapłać i pożegnaj się. Nie możesz się spóźnić na pociąg.
+win Kelner życzy ci dobrej podróży i wręcza paczkę ciasta „na drogę od rouvy Virtanen”. Biegniesz na dworzec, a tam czeka Mikko.
+partial Zapłaciłeś, ale straciłeś sporo czasu na poprawki. Biegniesz na dworzec w ostatniej chwili.
+fail Rachunek zrobił się kłopotliwy, kelner nie rozumiał, ile masz zapłacić. Pociąg odjechał bez ciebie.
+w kahvi
+w tee
+w maito
+w sokeri
+t Hyvää huomenta! Mitä haluat juoda? | Dzień dobry! Co chcesz pić? | Hyvää huomenta! Haluan kahvia maidolla, mutta ilman sokeria. | Przywitaj się i zamów kawę z mlekiem, ale bez cukru. | „Z mlekiem” to maidolla, a „bez cukru” to ilman sokeria.
+w entä | a co z…
+w aamiaiseksi | na śniadanie
+w sämpylä
+w muna
+t Selvä. Entä aamiaiseksi? Meillä on sämpylä juustolla ja muna. | Dobrze. A na śniadanie? Mamy bułkę z serem i jajko. | Otan sämpylän ja munan, kiitos. | Zamów bułkę i jajko. | Dopełnienia „bułkę” i „jajko” mają końcówkę -n: sämpylän, munan.
+w suosittelet | polecasz (suositella)
+t Mielellään. Haluatko myös lasin vettä? | Chętnie. Czy chcesz też szklankę wody? | Kyllä, mielellään. Mitä suosittelet vielä? | Zgódź się i zapytaj, co jeszcze polecają. | W pytaniu mitä stoi na początku: mitä suosittelet.
+w omenapiirakkaa | szarlotki (omenapiirakka + -a: forma cząstkowa)
+t Omenapiirakka on tänään todella hyvä. | Szarlotka jest dziś naprawdę dobra. | Hyvä, sitten otan palan omenapiirakkaa. | Zdecyduj się na kawałek szarlotki. | Po „pala” (kawałek) stoi forma cząstkowa: omenapiirakkaa.
+w ikkunan | okna (ikkuna + -n: dopełniacz)
+t Haluatko istua tässä vai tuolla? | Czy chcesz siedzieć tutaj, czy tam? | Haluan istua tuolla, ikkunan vieressä. | Powiedz, że chcesz siedzieć przy oknie. | „Przy oknie” to ikkunan vieressä.
+t Tässä on kaikki. Hyvää ruokahalua! | Oto wszystko. Smacznego! | Kiitos, samoin! | Odwzajemnij życzenia. | „Nawzajem” to samoin.
+w maistuuko | czy smakuje (maistuu + -ko)
+w hyvältä | dobrze (hyvä + -ltä: w zwrocie maistuu hyvältä)
+t Maistuuko aamiainen? | Czy śniadanie smakuje? | Kyllä, se maistuu todella hyvältä. | Zgódź się: bardzo ci smakuje. | „Smakuje dobrze” to maistuu hyvältä.
+w maksaa
+t Haluatko vielä jotain? | Czy chcesz jeszcze coś? | Ei kiitos. Haluan maksaa. | Odmów i powiedz, że chcesz zapłacić. | „Chcę zapłacić” to haluan maksaa (bezokolicznik po haluan).
+w yhteensä | razem
+w euroa
+w pidä | trzymaj (pitää)
+w loput | reszta (l. mnoga)
+t Yhteensä yksitoista euroa. | Razem jedenaście euro. | Tässä on kaksitoista euroa. Pidä loput! | Zapłać i powiedz, że reszty nie trzeba. | „Pidä loput” znaczy „zatrzymaj resztę”.
+w päivänjatkoa | dalszego ciągu dnia (hyvää päivänjatkoa = miłego dnia)
+t Kiitos paljon! Hyvää päivänjatkoa! | Dziękujemy! Miłego dnia! | Kiitos, samoin! Näkemiin! | Podziękuj i pożegnaj się. | „Nawzajem” to samoin, a „do widzenia” to näkemiin.
+e Näkemiin! | Do widzenia!
+
+
+@larp juna | Pociąg do Tampere | Lipunmyyjä | L | Biegniesz na dworzec w Helsinkach. Pociąg do Tampere odjeżdża za dziesięć minut, a Mikko czeka na ciebie w środku. | Kup bilet, znajdź właściwy peron i dojedź do Tampere.
+fee 0
+reward 15
+strict yes
+story yes
+win Siedzisz w pociągu do Tampere, a Mikko macha do ciebie z drugiego końca wagonu. Podróż może się zacząć.
+partial Dotarłeś do Tampere, ale kilka razy ktoś musiał ci pomagać. Mikko czeka na peronie i mówi: „Harjoittele vielä kysymyksiä.”
+fail Pociąg odjechał, a ty stoisz na peronie z biletem w ręku. Mikko pisze: „Seuraava juna lähtee tunnin päästä!”
+
+@level 1 | Bilet | patience=5 typed=0 extra=1 hint=none
+desc Rozdział 1: Kasa biletowa
+w lippu
+w juna
+w mihin | dokąd
+w lipun | bilet (lippu + -n: biernik)
+w Tampereelle | do Tampere
+w Turkuun | do Turku
+t Hei! Mihin haluat mennä? | Dzień dobry! Dokąd chcesz jechać? | Haluan lipun Tampereelle, kiitos. | Poproś o bilet do Tampere. | „Do Tampere” to Tampereelle (końcówka -lle). | Haluan lipun Tampereelle, kiitos.
+w vai
+w menolippu | bilet w jedną stronę (mennä (iść) + lippu (bilet))
+w meno-paluulippu | bilet tam i z powrotem (meno (tam) + paluu (powrót) + lippu)
+t Menolippu vai meno-paluulippu? | Bilet w jedną stronę czy tam i z powrotem? | Menolippu, kiitos. | Wybierz bilet w jedną stronę. | „Menolippu” to bilet w jedną stronę.
+w lähtee | odjeżdża (lähteä)
+w minuutin | minuty (minuutti + -n)
+w päästä | za (czas: kymmenen minuutin päästä = za dziesięć minut)
+w maksaa
+w euroa
+w kolmekymmentä
+w viisikymmentä
+t Juna lähtee kymmenen minuutin päästä. Se maksaa kolmekymmentä euroa. | Pociąg odjeżdża za dziesięć minut. To kosztuje trzydzieści euro. | Tässä on viisikymmentä euroa. | Podaj pięćdziesiąt euro. | „Za dziesięć minut” to kymmenen minuutin päästä.
+w takaisin | z powrotem; reszty
+w lippusi | twój bilet (lippu + -si)
+t Takaisin kaksikymmentä euroa. Tässä on lippusi. | Reszty dwadzieścia euro. Oto twój bilet. | Kiitos paljon! Näkemiin! | Podziękuj i pożegnaj się. | „Do widzenia” to näkemiin.
+w matkaa | podróży (matka + -a: forma cząstkowa)
+e Hyvää matkaa! | Szczęśliwej podróży!
+
+@level 2 | Peron | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Który peron?
+partner Virkailija | V
+scene Masz bilet, ale na dworcu jest kilka pociągów naraz. Pracownik kolei stoi przy tablicy odjazdów, a zegar tyka.
+goal Dowiedz się, z którego peronu odjeżdża pociąg do Tampere, i nie wsiądź do złego pociągu.
+win Wsiadasz do właściwego pociągu tuż przed odjazdem. Pracownik kolei salutuje: „Hyvää matkaa!”
+partial Dotarłeś na peron, ale po drodze kilka razy pytałeś o to samo. Wsiadasz w ostatniej chwili.
+fail Wsiadłeś do pociągu do Turku. Mikko dzwoni: „Missä sinä olet?!”
+w voinko | czy mogę (voin + -ko)
+w auttaa
+w Tampereen | z Tampere (Tampereen juna = pociąg do Tampere)
+w mistä
+w lähtee
+t Hei! Voinko auttaa? | Dzień dobry! Czy mogę pomóc? | Kyllä, mistä Tampereen juna lähtee? | Zgódź się i zapytaj, skąd odjeżdża pociąg do Tampere. | „Skąd” to mistä, a „odjeżdża” to lähtee (od lähteä).
+w laituri | peron
+w laiturilta | z peronu (laituri + -lta: „z”)
+w laiturille | na peron (laituri + -lle: „na”)
+w Turun | z Turku (Turun juna = pociąg do Turku)
+w viisi
+w kolme
+k Tampereen juna lähtee laiturilta viisi. Turun juna lähtee laiturilta kolme. | Pociąg do Tampere odjeżdża z peronu piątego. Pociąg do Turku z peronu trzeciego. | Kiitos! Menen laiturille viisi. | Kiitos! Menen laiturille kolme.; Kiitos! Menen Turkuun. | Laituri kolme to peron trzeci, a stamtąd jedzie pociąg do Turku.; Chciałeś jechać do Tampere (Tampereelle), nie do Turku (Turkuun).
+w ole
+t Ole hyvä! Onko sinulla jo lippu? | Proszę bardzo! Czy masz już bilet? | Kyllä, minulla on lippu. | Potwierdź, że masz bilet. | „Mam bilet” to minulla on lippu (dosłownie „u mnie jest bilet”).
+e Nopeasti sitten! Hyvää matkaa! | W takim razie szybko! Szczęśliwej podróży!
+
+@level 3 | W pociągu | patience=4 typed=0.5 extra=3 hint=bank reward=25
+desc Rozdział 3: Konduktor
+partner Konduktööri | K
+scene Pociąg ruszył. Konduktor idzie przez wagon i sprawdza bilety, a Mikko siedzi kilka rzędów dalej i macha do ciebie.
+goal Pokaż bilet, wybierz miejsce i dojedź do Tampere bez kłopotów.
+win Konduktor oddaje bilet z uśmiechem: „Kaikki kunnossa!” Mikko robi ci miejsce przy oknie i pyta o pierwsze wrażenia z Helsinków.
+partial Konduktor w końcu skasował bilet, ale musiał kilka razy powtarzać. Mikko pomaga ci usiąść.
+fail Konduktor uznał, że nie rozumiesz, co się do ciebie mówi. Bilet skontrolował dopiero Mikko, a ty dostajesz upomnienie.
+w päivää | dnia (hyvää päivää = dzień dobry)
+w lippuni | mój bilet (lippu + -ni)
+t Hyvää päivää! Lippu, kiitos. | Dzień dobry! Bilet, proszę. | Tässä on lippuni. | Pokaż bilet. | „Oto mój bilet” to tässä on lippuni (końcówka -ni: „mój”).
+w ikkunaa | okna (ikkuna + -a: forma cząstkowa)
+o Kiitos. Haluatko istua ikkunan vieressä? | Dziękuję. Czy chcesz siedzieć przy oknie? | Kyllä, ikkunan vieressä, kiitos. | En halua ikkunaa.; Kyllä, haluan maksaa. | Konduktor pyta o miejsce, nie o płacenie.; Przy oknie to ikkunan vieressä, a „en halua ikkunaa” znaczy „nie chcę okna”.
+w vapaa | wolny
+w minuuttia | minut (minuutti + -a: po liczebniku)
+w myöhässä | spóźniony
+w haittaa | przeszkadza (haitata)
+t Tämä paikka on vapaa. Juna on kymmenen minuuttia myöhässä. | To miejsce jest wolne. Pociąg ma dziesięć minut spóźnienia. | Ei se haittaa. Kiitos! | Powiedz, że to nie szkodzi, i podziękuj. | „Nie szkodzi” to ei se haittaa.
+w kunnossa | w porządku
+e Kaikki kunnossa! Hyvää matkaa Tampereelle! | Wszystko w porządku! Szczęśliwej podróży do Tampere!

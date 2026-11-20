@@ -861,7 +861,7 @@ def _larp_disp(toks):
 def _larp_norm(text):
     """Do porównania: początki zdań małą literą (to nie błąd), bez interpunkcji, pojedyncze spacje."""
     import re as _re
-    text = _re.sub(r"(^|[.!?]\s*)(\w)", lambda m: m.group(1) + m.group(2).lower(), text.strip())
+    text = _re.sub(r"(^|[.!?]\s*)([¡¿«»\"'(]*)(\w)", lambda m: m.group(1) + m.group(2) + m.group(3).lower(), text.strip())
     P = set(_cur["C"].PUNCT)
     t = "".join(" " if c in P else c for c in text)
     return " ".join(t.split())
@@ -1107,7 +1107,7 @@ def larp_answer(payload_json):
         else:
             given = list(p.get("tokens", []))
             given_s = _larp_norm(_larp_disp(given))
-            verdict = "good" if given_s in want else "bad"
+            verdict = "good" if (given_s in want or given_s.lower() in [w.lower() for w in want]) else "bad"   # klocki mają stałą pisownię, więc wielkość liter nie rozstrzyga
             if verdict == "bad":
                 kind = _larp_lenient(given, cands)
                 if kind:

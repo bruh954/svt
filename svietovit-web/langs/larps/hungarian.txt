@@ -1,0 +1,305 @@
+@larp kavezo | W kawiarni | Pincér | P | Wchodzisz do kawiarni w Budapeszcie. Jesteś głodny i spragniony, a kelner czeka z notesem. | Zamów coś do picia i coś do jedzenia, a potem zapłać.
+fee 0
+reward 15
+strict yes
+story yes
+win Kelner jest pod wrażeniem, że tak dobrze mówisz po węgiersku. „Ez a ház ajándéka!” – jedzenie na koszt firmy.
+partial Zamówienie dotarło do stołu, choć kilka razy musiałeś poprawiać. Kelner uśmiecha się i przynosi rachunek.
+fail Kelner ma dość: nie zrozumiał cię kilka razy z rzędu, uznał to za obrazę i prosi, żebyś opuścił lokal.
+
+@level 1 | Kawa, bułka i ciasto | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Spóźniony Gábor
+scene Budapeszt, deszczowy ranek. Przyjechałeś na Węgry spotkać się z Gáborem, kolegą z korespondencji, ale on jeszcze nie przyszedł. Siadasz w kawiarni i czekasz.
+goal Zamów kawę, bułkę i ciasto, a przy okazji dowiedz się, co z Gáborem.
+win Kelner kładzie na stole kopertę: „Gábor ezt hagyta önnek”. W środku kartka: „Késni fogok, holnap együtt reggelizünk. Gábor” Masz plan na jutro.
+partial Zamówienie dotarło, a kelner podaje ci kopertę od Gábora, chociaż z trudem zrozumiał, co chcesz. Gábor przeprasza i zaprasza na jutro.
+fail Kelner nie rozumie cię i nie wie, kim jesteś. Koperta od Gábora trafia do kogoś innego, a ty wychodzisz w deszcz z pustym żołądkiem.
+w mit | co (w pytaniu, biernik od mi)
+w hozhatok | mogę przynieść (hozni)
+w gondolkodom | zastanawiam się (gondolkodni)
+t Jó reggelt! Mit hozhatok? | Dzień dobry! Co podać? | Jó reggelt! Még gondolkodom. | Przywitaj się i powiedz, że jeszcze wybierasz. | „Zastanawiam się” to gondolkodom, a még znaczy tu „jeszcze”.
+w parancsol | życzy sobie pan(i) (grzecznie)
+w kávét
+w teát
+w vizet
+w gyümölcslevet | sok (biernik; gyümölcslé + -et)
+w sör
+w bor
+t Itt az étlap. Mit parancsol inni? | Oto karta dań. Co pan(i) życzy sobie pić? | Egy kávét kérek. | Zamów kawę (grzecznie). | „Poproszę” to kérek, a nazwa napoju ma końcówkę biernika -t: kávét.
+w tejjel | z mlekiem (tej + -vel: „z”)
+t Tejjel? | Z mlekiem? | Igen, tejjel kérem. | Zgódź się na mleko. | Końcówka -vel znaczy „z”: tej → tejjel (v upodabnia się do j).
+w cukorral | z cukrem (cukor + -ral: „z”)
+w méz
+t Cukorral? | Z cukrem? | Nem, cukor nélkül, köszönöm. | Odmów cukru. | „Bez” to nélkül i stoi po rzeczowniku: cukor nélkül.
+w kér | chce, prosi (forma grzecznościowa „pan(i) chce”)
+w pohár
+w üveg
+t Kér egy pohár vizet is? | Czy pan(i) chce też szklankę wody? | Igen, egy pohár vizet kérek. | Zgódź się na wodę. | Po „pohár” rzecz w poharze też ma biernik: egy pohár vizet.
+w zsemle | bułka
+w zsemlét | bułkę (zsemle + -t: biernik)
+w kenyér
+w tojás
+w sajt
+w sonka | szynka
+w kolbász
+t És mit parancsol enni? | A co pan(i) życzy sobie zjeść? | Egy zsemlét kérek. | Zamów bułkę. | Nazwa produktu ma końcówkę biernika: zsemle → zsemlét.
+w sajttal | z serem (sajt + -tal: „z”)
+w sonkával | z szynką (sonka + -val: „z”)
+t Sajttal vagy sonkával? | Z serem czy z szynką? | Sajttal, kérem. | Wybierz ser do bułki. | Słowo vagy znaczy tu „albo” (a także „jesteś”); „z serem” to sajttal.
+w szelet | kawałek, plasterek
+w tortát | ciasto (torta + -t: biernik)
+w csokoládé
+w keksz
+w fagylalt
+t Kér egy szelet tortát is? | Czy pan(i) chce też kawałek ciasta? | Igen, egy szelet tortát kérek. | Zgódź się na kawałek ciasta. | Ciasto ma końcówkę biernika: torta → tortát; „kawałek” to szelet.
+w szépen | pięknie (köszönöm szépen = dziękuję bardzo)
+w parancsoljon | proszę bardzo (podając coś)
+w étvágyat | apetyt (étvágy + -at: biernik; jó étvágyat = smacznego)
+w tányér
+w csésze
+t Parancsoljon, itt a kávé és a zsemle. Jó étvágyat! | Proszę, oto kawa i bułka. Smacznego! | Köszönöm szépen! | Podziękuj kelnerowi. | Dziękujesz: köszönöm szépen.
+w valamit | coś (valami + -t: biernik)
+w ennyi | tyle, to wszystko
+t Kér még valamit? | Czy pan(i) chce jeszcze coś? | Nem, köszönöm, ennyi. | Odmów: to już wszystko. | „To wszystko” to ennyi.
+w szívesen | proszę bardzo; chętnie
+e Szívesen! | Proszę bardzo!
+
+@level 2 | Śniadanie | patience=6 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Śniadanie z Gáborem
+scene Następnego ranka. Gábor czeka już przy stoliku, a kelner przyjmuje zamówienia. Gábor prosi, żebyś zamówił sam, a przy okazji kupił ciasto, które zabierzesz mamie.
+goal Zamów śniadanie i kup ciasto dla swojej mamy.
+win Gábor się śmieje: „Úgy beszélsz, mint egy budapesti!” Ciasto dla mamy zapakowane, a Gábor obiecuje pokazać ci jutro miasto.
+partial Śniadanie jest, ciasto też, ale Gábor musiał pomóc ci kilka razy. Obiecuje, że następnym razem zamówisz sam.
+fail Pomyliłeś zamówienia i Gábor dostał coś zupełnie innego. Zjadł w milczeniu i wyszedł do pracy.
+w reggelizni | jeść śniadanie
+w szeretnék | chciałbym, chciałabym
+w nagyon | bardzo
+t Jó reggelt! Reggelizni parancsol? | Dzień dobry! Czy pan(i) chce zjeść śniadanie? | Igen, reggelizni szeretnék. | Powiedz, że chcesz zjeść śniadanie. | Bezokolicznik (reggelizni) stoi przed szeretnék.
+w tojást | jajko (tojás + -t: biernik)
+t Van zsemle, tojás és sajt. Mit parancsol? | Są bułki, jajka i ser. Co pan(i) zamawia? | Két zsemlét és egy tojást kérek. | Zamów dwie bułki i jajko. | Po liczebniku „két” rzeczownik zostaje w liczbie pojedynczej, z końcówką biernika: két zsemlét.
+t Kávét vagy teát parancsol? | Kawę czy herbatę? | Teát kérek tejjel. | Wybierz herbatę z mlekiem. | „Z mlekiem” to tejjel (końcówka -vel).
+w cukrot | cukier (cukor + -ot: biernik)
+w kicsit | trochę (egy kicsit = troszkę)
+t Kér cukrot? | Czy pan(i) chce cukier? | Igen, egy kicsit, kérem. | Zgódź się na odrobinę cukru. | „Troszkę” to egy kicsit.
+w almás | jabłkowy
+w pite | placek (np. szarlotka)
+w csokitorta | ciasto czekoladowe (csoki (czekolada) + torta (ciasto))
+w pitét | placek (pite + -t: biernik)
+t Van almás pite és csokitorta. | Jest szarlotka i ciasto czekoladowe. | Az almás pitét kérem. | Wybierz szarlotkę. | Dopełnienie ma końcówkę biernika: pite → pitét; a przed samogłoską: az almás.
+w gyümölcslé
+w narancslevet | sok pomarańczowy (narancslé + biernik)
+t Kér egy pohár gyümölcslevet is? | Czy pan(i) chce też szklankę soku? | Igen, egy pohár narancslevet kérek. | Zgódź się na sok pomarańczowy. | Sok ma końcówkę biernika; w mianowniku jest gyümölcslé, a w bierniku gyümölcslevet.
+w narancslé | sok pomarańczowy (narancs (pomarańcza) + lé (sok))
+w azt | to (biernik od az)
+t A narancslé ma nagyon finom. | Sok pomarańczowy jest dziś bardzo smaczny. | Jó, akkor azt kérem. | Zdecyduj się na sok pomarańczowy. | „Akkor” znaczy „w takim razie”, a azt to „to” (jako dopełnienie).
+w kinek | komu, dla kogo (ki + -nek)
+w lesz | będzie
+w anyámnak | mojej mamie (anyám + -nak: „dla”)
+t Kinek lesz a torta? | Dla kogo będzie ciasto? | Az anyámnak lesz. | Odpowiedz: ciasto będzie dla twojej mamy. | „Dla mamy” to anyámnak (końcówka -nak).
+w pillanat | chwila
+w mindjárt | zaraz
+w hozom | przyniosę (hozni; forma z dopełnieniem określonym)
+w várok | czekam (várni)
+t Egy pillanat, mindjárt hozom. | Chwileczkę, zaraz przyniosę. | Köszönöm, szívesen várok. | Podziękuj i powiedz, że chętnie poczekasz. | „Chętnie” to szívesen, stoi przed czasownikiem.
+w viszont | nawzajem
+t Parancsoljon, itt van minden. Jó étvágyat! | Proszę, oto wszystko. Smacznego! | Köszönöm, viszont! | Podziękuj i odwzajemnij życzenia. | „Nawzajem” to viszont.
+e Szívesen! | Proszę bardzo!
+
+@level 3 | Stolik, pytania i cena | patience=5 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Stolik dla dwóch
+scene Po południu. Gábor pracuje, więc umówiłeś się z jego siostrą Réką. Kelner pyta o stolik, a ty musisz wybrać miejsce, jedzenie i dowiedzieć się, ile to kosztuje.
+goal Zajmij stolik dla dwóch, zamów obiad dla was obu i nie przepłać.
+win Réka jest zachwycona: „Most már értem, miért beszél rólad Gábor annyit!” Zaprasza cię na wieczór do znajomych Gábora.
+partial Obiad się udał, ale Réka musiała kilka razy tłumaczyć kelnerowi, co chcesz. Wieczorne spotkanie nadal aktualne.
+fail Nie dogadałeś się z kelnerem, a Réka patrzyła na to z niedowierzaniem. Wieczorem dostajesz od niej krótką wiadomość: „Talán máskor.”
+w asztalt | stolik (asztal + -t: biernik)
+w kettőre | dla dwóch (kettő + -re)
+w asztal
+w szék
+w ablak
+t Jó napot! Asztalt kér kettőre? | Dzień dobry! Stolik dla dwóch? | Igen, asztalt kérek kettőre. | Zgódź się: stolik dla dwóch osób. | „Dla dwóch” to kettőre (końcówka -re).
+w szeretne | chciałby, chciałaby (forma grzecznościowa)
+t Itt szeretne ülni vagy ott? | Czy woli pan(i) siedzieć tutaj, czy tam? | Itt szeretnék ülni, kérem. | Powiedz, że chcesz siedzieć tutaj. | Bezokolicznik (ülni) stoi obok szeretnék.
+t Itt az étlap. Mit parancsol inni? | Oto karta dań. Co podać do picia? | Egy pohár vizet és egy gyümölcslevet kérek. | Zamów wodę i sok. | Obie rzeczy mają końcówkę biernika: vizet, gyümölcslevet.
+w levest | zupę (leves + -t: biernik)
+w hal
+w hús
+t Kér levest? | Czy pan(i) chce zupę? | Nem, köszönöm. Van saláta? | Odmów zupy i zapytaj o sałatkę. | „Czy jest?” to po prostu van…? (z intonacją pytania).
+w salátát | sałatkę (saláta + -t: biernik)
+w paradicsom
+w uborka
+t Igen, van. A saláta nagyon finom. | Tak, jest. Sałatka jest bardzo smaczna. | Jó, akkor salátát kérek. | Zdecyduj się na sałatkę. | Sałatka ma końcówkę biernika: saláta → salátát.
+w salátába | do sałatki (saláta + -ba: „do środka”)
+t Halat vagy sajtot kér a salátába? | Rybę czy ser do sałatki? | Sajtot kérek. | Wybierz ser. | Produkt ma końcówkę biernika: sajt → sajtot.
+t Kér még valamit? | Czy pan(i) chce jeszcze coś? | Mennyibe kerül a torta? | Zapytaj o cenę ciasta. | „Ile kosztuje” to mennyibe kerül.
+w forintba | forintów (forint + -ba: w zwrocie „kosztuje ... forintów”)
+w túl | zbyt
+w szeletet | kawałek (szelet + -et: biernik)
+t A torta ezer forintba kerül. | Ciasto kosztuje tysiąc forintów. | Nem túl drága. Kérek egy szeletet. | Powiedz, że cena ci pasuje, i weź kawałek. | „Nie za drogo” to nem túl drága.
+w kéri | prosi o (forma określona: kéri a tortát)
+t Most kéri a tortát vagy később? | Czy chce pan(i) ciasto teraz, czy później? | Később kérem. | Powiedz, że ciasto chcesz później. | „Później” to később.
+w rendben | dobrze, w porządku
+w elég | dość
+t Rendben. Még egy pohár vizet? | Dobrze. Jeszcze szklankę wody? | Nem, köszönöm. Elég lesz. | Grzecznie odmów: masz dość. | „Wystarczy” to elég lesz.
+e Szívesen! Mindjárt hozom. | Chętnie! Zaraz przyniosę.
+
+@level 4 | Rozmowa przy stole | patience=5 typed=0.75 extra=4 hint=letters
+partner Kovács asszony | K
+desc Rozdział 4: Wieczór u pani Kovács
+scene Wieczorem Gábor zabiera cię do swojej ulubionej kawiarni. Właścicielka, pani Kovács, zna wszystkich, a ciebie wypytuje jak nowego znajomego Gábora.
+goal Odpowiadaj na pytania pani Kovács o to, skąd jesteś i czym się zajmujesz. Jeśli jej się spodobasz, Gábor zaprosi cię na jutro.
+win Pani Kovács klepie cię po ramieniu: „Ő már a család tagja!” Gábor mówi, że jutro odprowadzi cię na dworzec i wszystko ci pokaże.
+partial Pani Kovács jest uprzejma, ale nie do końca przekonana. Gábor uspokaja: „Neki idő kell.” Jutro i tak idziecie razem na dworzec.
+fail Pani Kovács przestała cię rozumieć w połowie wywiadu i uznała, że jesteś nieszczery. Gábor wychodzi zakłopotany.
+w sör
+w bor
+w víz
+w kávé
+w estét
+w sört | piwo (sör + -t: biernik)
+t Jó estét! Mit hozhatok inni? | Dobry wieczór! Co podać do picia? | Egy sört és egy pohár vizet kérek. | Zamów piwo i wodę. | Napoje mają końcówkę biernika: sört, vizet.
+w jól | dobrze
+w honnan | skąd
+w jött | przyjechał, przyszedł (jönni)
+w jöttem | przyjechałem, przyszedłem (jönni)
+t Nagyon jól beszél magyarul! Honnan jött? | Bardzo dobrze pan(i) mówi po węgiersku! Skąd pan(i) przyjechał(a)? | Köszönöm! Lengyelországból jöttem. | Podziękuj i powiedz, że przyjechałeś z Polski. | „Z Polski” to Lengyelországból (końcówka -ból: „z wnętrza”).
+w mióta | od kiedy
+w tanul | uczy się (tanulni)
+w régóta | od dawna
+w tanulok | uczę się (tanulni)
+t Lengyelországból! Mióta tanul magyarul? | Z Polski! Od kiedy uczy się pan(i) węgierskiego? | Még nem régóta tanulok magyarul. | Powiedz, że uczysz się węgierskiego od niedawna. | „Od niedawna” to nem régóta (dosłownie „nie od dawna”).
+w nagyszerű | wspaniale
+t Nagyszerű! Iskolában tanul? | Wspaniale! Uczy się pan(i) w szkole? | Nem, otthon tanulok. | Zaprzecz: uczysz się w domu. | „W domu” (u siebie) to otthon.
+w leves
+w hús
+w krumpli
+w rizs
+w tészta
+w benne | w tym, w nim
+t Szeretne enni valamit? A leves ma nagyon jó. | Czy chce pan(i) coś zjeść? Zupa jest dziś bardzo dobra. | Igen, levest kérek. Van benne hús? | Zgódź się na zupę i zapytaj, czy jest w niej mięso. | „W niej” to benne, a „czy jest?” to van…?
+w nincs | nie ma
+w hozzá | do tego
+t Nincs benne hús. Kér hozzá zsemlét is? | Nie ma w niej mięsa. Chce pan(i) do tego też bułkę? | Igen, egy zsemlét sajttal, kérem. | Zgódź się: bułka z serem. | „Z serem” to sajttal (końcówka -tal).
+w ízlik | smakuje (ízlik valakinek)
+t Hogy ízlik a leves? | Jak smakuje zupa? | A leves jó, de egy kicsit forró. | Pochwal zupę, ale zaznacz, że jest gorąca. | „Trochę gorąca” to egy kicsit forró.
+t Kér még egy sört? | Czy chce pan(i) jeszcze piwo? | Nem, köszönöm, most egy kávét iszom. | Odmów i powiedz, że teraz pijesz kawę. | „Piję” to iszom, a kawa ma końcówkę biernika: kávét.
+w maga | pan, pani (grzecznie; dosłownie „sam”)
+t Maga diák? | Czy jest pan(i) uczniem? | Nem, tanár vagyok. | Zaprzecz: jesteś nauczycielem. | Po „vagyok” nie ma rodzajnika przy zawodzie: tanár vagyok.
+w értem | rozumiem (érteni; forma określona)
+t Értem. Kér még valamit? | Rozumiem. Czy chce pan(i) jeszcze coś? | Nem, köszönöm, ennyi. | Odmów: to wszystko. | „To wszystko” to ennyi.
+e Szívesen! | Chętnie!
+
+@level 5 | Pełna wizyta i rachunek | patience=4 typed=1 extra=0 hint=none reward=25
+desc Rozdział 5: Rachunek i pożegnanie
+scene Ostatni dzień w Budapeszcie. Z samego rana siadasz w kawiarni, żeby zjeść pożegnalne śniadanie i zapłacić. Za godzinę pociąg, a Gábor ma pojawić się na peronie.
+goal Zamów pełne śniadanie, usiądź przy oknie, zapłać i pożegnaj się. Nie możesz się spóźnić na pociąg.
+win Kelner życzy ci dobrej podróży i wręcza paczkę ciasta „na drogę od pani Kovács”. Biegniesz na dworzec, a tam czeka Gábor.
+partial Zapłaciłeś, ale straciłeś sporo czasu na poprawki. Biegniesz na dworzec w ostatniej chwili.
+fail Rachunek zrobił się kłopotliwy, kelner nie rozumiał, ile masz zapłacić. Pociąg odjechał bez ciebie.
+w kávé
+w tea
+w tej
+w cukor
+t Jó reggelt! Mit parancsol inni? | Dzień dobry! Co podać do picia? | Jó reggelt! Egy kávét kérek tejjel, de cukor nélkül. | Przywitaj się i zamów kawę z mlekiem, ale bez cukru. | „Z mlekiem” to tejjel, a „bez cukru” to cukor nélkül.
+w reggelire | na śniadanie (reggeli + -re)
+w zsemle
+w tojás
+t Rendben. És reggelire? Van zsemle sajttal, tojás vagy csokitorta. | Dobrze. A na śniadanie? Jest bułka z serem, jajko albo ciasto czekoladowe. | Egy zsemlét és egy tojást kérek. | Zamów bułkę i jajko. | Obie rzeczy mają końcówkę biernika: zsemlét, tojást.
+w ajánl | poleca (ajánlani)
+t Szívesen. Kér egy pohár vizet is? | Chętnie. Czy chce pan(i) też szklankę wody? | Igen, szívesen. Mit ajánl még? | Zgódź się i zapytaj, co jeszcze polecają. | W pytaniu mit stoi na początku: mit ajánl.
+t Az almás pite ma nagyon finom. | Szarlotka jest dziś bardzo smaczna. | Jó, akkor egy szelet almás pitét kérek. | Zdecyduj się na kawałek szarlotki. | Dopełnienie ma końcówkę biernika: pite → pitét.
+w ablaknál | przy oknie (ablak + -nál: „przy, u”)
+t Itt szeretne ülni vagy ott? | Czy woli pan(i) siedzieć tutaj, czy tam? | Ott szeretnék ülni, az ablaknál. | Powiedz, że chcesz siedzieć przy oknie. | „Przy oknie” to az ablaknál.
+t Parancsoljon, itt van minden. Jó étvágyat! | Proszę, oto wszystko. Smacznego! | Köszönöm, viszont! | Odwzajemnij życzenia. | „Nawzajem” to viszont.
+t Ízlik a reggeli? | Czy śniadanie smakuje? | Igen, nagyon ízlik. | Zgódź się: bardzo ci smakuje. | „Smakuje” to ízlik; mówimy: nagyon ízlik.
+t Kér még valamit? | Czy pan(i) chce jeszcze coś? | Nem, köszönöm. Fizetni szeretnék. | Odmów i powiedz, że chcesz zapłacić. | „Chcę zapłacić” to fizetni szeretnék.
+w háromezer | trzy tysiące
+w tessék | proszę (podając coś)
+w négyezer | cztery tysiące
+w kell | trzeba
+t Ez háromezer forint. | To trzy tysiące forintów. | Tessék, négyezer forint. Nem kell visszajáró. | Zapłać i powiedz, że reszty nie trzeba. | „Nie trzeba reszty” to nem kell visszajáró.
+w köszönjük | dziękujemy
+w kívánok | życzę
+t Köszönjük! Szép napot kívánok! | Dziękujemy! Życzę miłego dnia! | Köszönöm, viszont! Viszontlátásra! | Podziękuj i pożegnaj się. | „Nawzajem” to viszont, a „do widzenia” to viszontlátásra.
+e Viszontlátásra! | Do widzenia!
+
+
+@larp vonat | Pociąg do Debreczyna | Pénztáros | P | Biegniesz na dworzec w Budapeszcie. Pociąg do Debreczyna odjeżdża za dziesięć minut, a Gábor czeka na ciebie w środku. | Kup bilet, znajdź właściwy peron i dojedź do Debreczyna.
+fee 0
+reward 15
+strict yes
+story yes
+win Siedzisz w pociągu do Debreczyna, a Gábor macha do ciebie z drugiego końca wagonu. Podróż może się zacząć.
+partial Dotarłeś do Debreczyna, ale kilka razy ktoś musiał ci pomagać. Gábor czeka na peronie i mówi: „Gyakorold még a kérdéseket.”
+fail Pociąg odjechał, a ty stoisz na peronie z biletem w ręku. Gábor pisze: „A következő vonat egy óra múlva!”
+
+@level 1 | Bilet | patience=5 typed=0 extra=1 hint=none
+desc Rozdział 1: Kasa biletowa
+w jegy
+w vonat
+w hová | dokąd
+w jegyet | bilet (jegy + -et: biernik)
+w Debrecen | Debreczyn
+w Debrecenbe | do Debreczyna (Debrecen + -be: „do”)
+t Jó napot! Hová szeretne utazni? | Dzień dobry! Dokąd chce pan(i) jechać? | Egy jegyet kérek Debrecenbe. | Poproś o bilet do Debreczyna. | „Do Debreczyna” to Debrecenbe (końcówka -be: „do”). | Egy jegyet kérek Debrecenbe.
+w oda | tam (w jedną stronę)
+w oda-vissza | tam i z powrotem
+t Csak oda vagy oda-vissza? | Tylko w jedną stronę czy tam i z powrotem? | Csak oda, kérem. | Wybierz bilet w jedną stronę. | „Csak oda” to bilet w jedną stronę.
+w múlva | za (czas: tíz perc múlva = za dziesięć minut)
+w indul | odjeżdża (indulni)
+w ötezer | pięć tysięcy
+w tízezer | dziesięć tysięcy
+w tessék
+w forint
+t A vonat tíz perc múlva indul. Ez ötezer forint. | Pociąg odjeżdża za dziesięć minut. To pięć tysięcy forintów. | Tessék, tízezer forint. | Podaj dziesięć tysięcy forintów. | „Za dziesięć minut” to tíz perc múlva.
+w jegye | pana(i) bilet (jegy + -e)
+t Ötezer forint visszajáró. Itt a jegye. | Pięć tysięcy forintów reszty. Oto pana(i) bilet. | Köszönöm szépen! Viszontlátásra! | Podziękuj i pożegnaj się. | „Do widzenia” to viszontlátásra.
+w utat | drogę (út + -at: biernik; jó utat = szczęśliwej podróży)
+e Jó utat! | Szczęśliwej podróży!
+
+@level 2 | Peron | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Który peron?
+partner Vasutas | V
+scene Masz bilet, ale na dworcu jest kilka pociągów naraz. Pracownik kolei stoi przy tablicy odjazdów, a zegar tyka.
+goal Dowiedz się, z którego peronu odjeżdża pociąg do Debreczyna, i nie wsiądź do złego pociągu.
+win Wsiadasz do właściwego pociągu tuż przed odjazdem. Pracownik kolei salutuje: „Jó utat!”
+partial Dotarłeś na peron, ale po drodze kilka razy pytałeś o to samo. Wsiadasz w ostatniej chwili.
+fail Wsiadłeś do pociągu do Szegedu. Gábor dzwoni: „Hol vagy?!”
+w segíthetek | mogę pomóc (segíteni)
+w vágányról | z peronu (vágány + -ról: „z”)
+w debreceni | debreczyński (z Debreczyna)
+w indul
+w melyik
+t Jó napot! Segíthetek? | Dzień dobry! Czy mogę pomóc? | Igen, melyik vágányról indul a debreceni vonat? | Zgódź się i zapytaj, z którego peronu odjeżdża pociąg do Debreczyna. | „Z którego peronu” to melyik vágányról; „debreceni” to „debreczyński”.
+w ötös | piąty (numer 5)
+w hármas | trzeci (numer 3)
+w szegedi | szegedzki (z Szegedu)
+w vágányhoz | do peronu (vágány + -hoz: „do”)
+w Szegedre | do Szegedu
+w utazom | jadę (utazni)
+k A debreceni vonat az ötös vágányról indul. A szegedi vonat a hármas vágányról indul. | Pociąg do Debreczyna odjeżdża z peronu piątego. Pociąg do Szegedu z peronu trzeciego. | Köszönöm! Megyek az ötös vágányhoz. | Köszönöm! Megyek a hármas vágányhoz.; Köszönöm! Szegedre utazom. | Hármas vágány to peron trzeci, a stamtąd jedzie pociąg do Szegedu.; Chciałeś jechać do Debreczyna (Debrecenbe), nie do Szegedu (Szegedre).
+w jegyem | mój bilet (jegy + -em)
+t Parancsoljon! Van már jegye? | Proszę bardzo! Czy ma pan(i) już bilet? | Igen, van jegyem. | Potwierdź, że masz bilet. | „Mam bilet” to van jegyem (dosłownie „jest mój bilet”).
+w siessen | niech się pan(i) pospieszy (sietni)
+e Akkor siessen! Jó utat! | W takim razie szybko! Szczęśliwej podróży!
+
+@level 3 | W pociągu | patience=4 typed=0.5 extra=3 hint=bank reward=25
+desc Rozdział 3: Konduktor
+partner Kalauz | K
+scene Pociąg ruszył. Konduktor idzie przez wagon i sprawdza bilety, a Gábor siedzi kilka rzędów dalej i macha do ciebie.
+goal Pokaż bilet, wybierz miejsce i dojedź do Debreczyna bez kłopotów.
+win Konduktor oddaje bilet z uśmiechem: „Minden rendben!” Gábor robi ci miejsce przy oknie i pyta o pierwsze wrażenia z Budapesztu.
+partial Konduktor w końcu skasował bilet, ale musiał kilka razy powtarzać. Gábor pomaga ci usiąść.
+fail Konduktor uznał, że nie rozumiesz, co się do ciebie mówi. Bilet skontrolował dopiero Gábor, a ty dostajesz upomnienie.
+w jegyét | pana(i) bilet (jegy + -ét: biernik)
+t Jó napot! A jegyét kérem. | Dzień dobry! Bilet proszę. | Tessék, itt a jegyem. | Pokaż bilet. | „Oto mój bilet” to itt a jegyem (końcówka -em: „mój”).
+w ablakot | okno (ablak + -ot: biernik)
+o Köszönöm. Az ablak mellett szeretne ülni? | Dziękuję. Czy chce pan(i) siedzieć przy oknie? | Igen, az ablak mellett, kérem. | Nem, nem kérek ablakot.; Igen, fizetni szeretnék. | Konduktor pyta o miejsce, nie o płacenie.; Przy oknie to az ablak mellett, a „nem kérek ablakot” znaczy „nie chcę okna”.
+w hely | miejsce
+w szabad | wolny
+w percet | minut (perc + -et: biernik)
+w késik | spóźnia się (késni)
+w baj | kłopot
+t Ez a hely szabad. A vonat tíz percet késik. | To miejsce jest wolne. Pociąg spóźnia się dziesięć minut. | Nem baj. Köszönöm! | Powiedz, że to nic takiego, i podziękuj. | „Nie szkodzi” to nem baj.
+w rendben
+e Minden rendben! Jó utat Debrecenbe! | Wszystko w porządku! Szczęśliwej podróży do Debreczyna!

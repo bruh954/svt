@@ -1,0 +1,268 @@
+@larp kawiarnia | W kawiarni | Číšník | Č | Wchodzisz do kawiarni w Pradze. Jesteś głodny i spragniony, a kelner czeka z notesem. | Zamów coś do picia i coś do jedzenia, a potem zapłać.
+fee 0
+reward 15
+strict yes
+story yes
+win Kelner jest pod wrażeniem, że tak dobrze mówisz po czesku. „Platí podnik!” – jedzenie na koszt firmy.
+partial Zamówienie dotarło do stołu, choć kilka razy musiałeś poprawiać. Kelner uśmiecha się i przynosi rachunek.
+fail Kelner ma dość: nie zrozumiał cię kilka razy z rzędu, uznał to za obrazę i prosi, żebyś opuścił lokal.
+
+@level 1 | Kawa, bułka i ciasto | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Spóźniony Honza
+scene Praga, deszczowy ranek. Przyjechałeś do Czech spotkać się z Honzą, kolegą z korespondencji, ale on jeszcze nie przyszedł. Siadasz w kawiarni i czekasz.
+goal Zamów kawę, bułkę i ciasto, a przy okazji dowiedz się, co z Honzą.
+win Kelner kładzie na stole kopertę: „Pan Honza zostawił to dla pana”. W środku kartka: „Spóźnię się, jutro rano zjemy razem śniadanie. H.” Masz plan na jutro.
+partial Zamówienie dotarło, a kelner podaje ci kopertę od Honzy, chociaż z trudem zrozumiał, co chcesz. Honza przeprasza i zaprasza na jutro.
+fail Kelner nie rozumie cię i nie wie, kim jesteś. Koperta od Honzy trafia do kogoś innego, a ty wychodzisz w deszcz z pustym żołądkiem.
+w jídelní | jadalny (jídelní lístek = karta dań, menu)
+w lístek | bilecik, kartka (jídelní lístek = menu)
+w si | sobie (dám si = poproszę, dosł. „dam sobie”)
+w vybírám | wybieram (vybírat)
+t Dobrý den! Tady je jídelní lístek. | Dzień dobry! Oto karta dań. | Dobrý den! Ještě si vybírám. | Przywitaj się i powiedz, że jeszcze wybierasz. | „Wybieram” to si vybírám (czasownik zwrotny: si stoi przed formą osobową).
+w dáte | dacie; w formie grzecznościowej: poprosi pan (co si dáte? = co podać?)
+w k | do, ku (k pití = do picia)
+w pití | picie
+w dám | dam; poproszę (dám si)
+t Co si dáte k pití? | Co podać do picia? | Dám si kávu, prosím. | Zamów kawę (grzecznie). | „Dám si” to uprzejme „poproszę” (dosłownie „dam sobie”); kávu to biernik od káva. | Kávu, prosím.
+w mlékem | mlekiem (s mlékem = z mlekiem)
+t S mlékem? | Z mlekiem? | Ano, s mlékem, prosím. | Zgódź się na mleko. | „Z mlekiem” to s mlékem (instrumental: mléko → mlékem).
+w cukrem | cukrem (s cukrem = z cukrem)
+w cukru | cukru (dopełniacz: bez cukru)
+t S cukrem? | Z cukrem? | Ne, bez cukru, děkuji. | Odmów cukru. | „Bez” wymaga dopełniacza: cukr → bez cukru, a „z” to s i narzędnik: s cukrem.
+w sklenici | szklankę (biernik od sklenice)
+w vody | wody (dopełniacz od voda)
+t Dáte si také vodu? | Czy poprosi pan też wodę? | Ano, sklenici vody, prosím. | Zgódź się na szklankę wody. | Po nazwie miary (sklenice) stoi dopełniacz: sklenici vody.
+w a | a, i
+w jídlu | jedzeniu (k jídlu = do jedzenia)
+w housku | bułkę (biernik od houska)
+t A co k jídlu? | A co do jedzenia? | Dám si housku, prosím. | Zamów bułkę. | Houska to bułka; po „dám si” biernik: housku.
+w máslem | masłem
+w se | z (s przed „s”, „z”: se sýrem); też „się”
+w sýrem | serem
+t S máslem, nebo se sýrem? | Z masłem czy z serem? | Se sýrem, prosím. | Wybierz ser do bułki. | Przed sý- przyimek s przyjmuje formę se: se sýrem (łatwiej wymówić).
+w kousek | kawałek (mały)
+w dortu | ciasta, tortu (dopełniacz od dort)
+t Dáte si také kousek dortu? | Czy poprosi pan też kawałek ciasta? | Ano, kousek dortu, prosím. | Zgódź się na kawałek ciasta. | Po „kousek” dopełniacz: dort → dortu.
+w vaše | pana, pani, wasza (vaše káva = pana kawa)
+w i | też; i
+w chuť | smak, apetyt (dobrou chuť = smacznego)
+t Tady je vaše káva, houska i dort. Dobrou chuť! | Oto pana kawa, bułka i ciasto. Smacznego! | Děkuji! | Podziękuj kelnerowi. | Dziękujesz: děkuji.
+w čekáte | czekacie; czeka pan (čekat)
+w někoho | kogoś (od někdo)
+w čekám | czekam (čekat)
+w kamaráda | kolegę, kolegi (biernik od kamarád)
+t Čekáte na někoho? | Czy na kogoś pan czeka? | Ano, čekám na kamaráda. | Powiedz, że czekasz na kolegę. | „Czekać na” to čekat na + biernik: na kamaráda (przyjaciel, kolega).
+w přejete | życzycie; życzy pan (přejete si = czy życzy pan sobie)
+w to | to
+t Přejete si ještě něco? | Czy życzy pan sobie coś jeszcze? | Ne, děkuji, to je všechno. | Odmów: to już wszystko. | „To wszystko” to to je všechno.
+e Prosím! | Proszę bardzo!
+
+@level 2 | Śniadanie | patience=6 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Śniadanie z Honzą
+scene Następnego ranka. Honza czeka już przy stoliku, a kelner przyjmuje zamówienia. Honza prosi, żebyś zamówił sam, a przy okazji kupił ciasto, które zabierzesz mamie.
+goal Zamów śniadanie i kup ciasto dla swojej mamy.
+win Honza się śmieje: „Mluvíš jako pravý Pražák!” Ciasto dla mamy zapakowane, a Honza obiecuje pokazać ci jutro miasto.
+partial Śniadanie jest, ciasto też, ale Honza musiał pomóc ci kilka razy. Obiecuje, że następnym razem zamówisz sam.
+fail Pomyliłeś zamówienia i Honza dostał coś zupełnie innego. Zjadł w milczeniu i wyszedł do pracy.
+w snídani | śniadanie (biernik od snídaně)
+t Dobrý den! Dáte si snídani? | Dzień dobry! Czy zje pan śniadanie? | Ano, dám si snídani. | Powiedz, że zjesz śniadanie. | „Dám si snídani” to „poproszę śniadanie”; snídani to biernik od snídaně.
+w máme | mamy
+w housky | bułki
+w dvě | dwie
+w jedno | jedno (nijaki)
+t Máme housky, vejce a sýr. Co si dáte? | Mamy bułki, jajka i ser. Co pan zamawia? | Dám si dvě housky a jedno vejce. | Zamów dwie bułki i jajko. | Dwie bułki (rodzaj żeński) to dvě housky, a „jajko” (nijaki) to jedno vejce.
+t Dáte si kávu s mlékem, nebo čaj? | Poprosi pan kawę z mlekiem czy herbatę? | Dám si čaj s mlékem, prosím. | Wybierz herbatę z mlekiem. | „Herbata z mlekiem” to čaj s mlékem.
+w chcete | chcecie; chce pan
+w jednu | jedną (biernik żeński)
+w lžičku | łyżeczkę (biernik od lžička)
+t Chcete cukr? | Czy chce pan cukier? | Ano, prosím, jednu lžičku cukru. | Zgódź się na łyżeczkę cukru. | Lžička jest rodzaju żeńskiego, więc biernik: jednu lžičku; potem dopełniacz: cukru.
+w jablečný | jabłkowy
+w závin | strudel
+w čokoládový | czekoladowy
+t Máme jablečný závin a čokoládový dort. | Mamy strudel jabłkowy i tort czekoladowy. | Dám si jablečný závin. | Wybierz szarlotkę (strudel jabłkowy). | Závin jest rodzaju męskiego nieżywotnego, więc biernik = mianownik: jablečný závin.
+w šťávy | soku (dopełniacz od šťáva)
+w pomerančové | pomarańczowej (dopełniacz żeński)
+t Dáte si také sklenici šťávy? | Czy poprosi pan też szklankę soku? | Ano, sklenici pomerančové šťávy, prosím. | Zgódź się na sok pomarańczowy. | Po „sklenici” dopełniacz: šťáva → šťávy, pomerančová → pomerančové.
+w pomerančová | pomarańczowy (żeński)
+w výborná | doskonała, wyśmienita
+w šťávu | sok (biernik od šťáva)
+t Pomerančová šťáva je dnes výborná. | Sok pomarańczowy jest dziś doskonały. | Dobře, dám si šťávu. | Zdecyduj się na sok. | Po „dám si” biernik: šťáva → šťávu.
+w vás | pana, pani, was (dopełniacz/biernik)
+w mou | moją (biernik żeński)
+w maminku | mamusię (biernik od maminka)
+t Je ten dort pro vás? | Czy to ciasto jest dla pana? | Ne, ten dort je pro mou maminku. | Odmów: ciasto jest dla twojej mamy. | Po „pro” biernik: maminka → maminku; „mou” to biernik od moje/má.
+w okamžik | chwila
+w rád | chętnie (mówi mężczyzna)
+w počkám | poczekam
+t Okamžik, prosím. | Chwileczkę. | Děkuji, rád počkám. | Podziękuj i powiedz, że chętnie poczekasz. | „Chętnie” to rád (mężczyzna mówi o sobie: rád).
+w nápodobně | nawzajem
+t Tady je všechno. Dobrou chuť! | Oto wszystko. Smacznego! | Děkuji, nápodobně! | Podziękuj i odwzajemnij życzenia. | „Nawzajem” to nápodobně.
+e Prosím! | Proszę bardzo!
+
+@level 3 | Stolik, pytania i cena | patience=5 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Stolik dla dwóch
+scene Po południu. Honza pracuje, więc umówiłeś się z jego siostrą Petrą. Kelner pyta o stolik, a ty musisz wybrać miejsce, jedzenie i dowiedzieć się, ile to kosztuje.
+goal Zajmij stolik dla dwóch, zamów obiad dla was obu i nie przepłać.
+win Petra jest zachwycona: „Teď chápu, proč o tobě Honza tak básní!” Zaprasza cię na wieczór do znajomych Honzy.
+partial Obiad się udał, ale Petra musiała kilka razy tłumaczyć kelnerowi, co chcesz. Wieczorne spotkanie nadal aktualne.
+fail Nie dogadałeś się z kelnerem, a Petra patrzyła na to z niedowierzaniem. Wieczorem dostajesz od niej krótką wiadomość: „Možná někdy příště.”
+t Dobrý den! Chcete stůl pro dva? | Dzień dobry! Czy chce pan stolik dla dwóch osób? | Ano, stůl pro dva, prosím. | Zgódź się: stolik dla dwóch osób. | „Dla dwóch” to pro dva; stůl to rodzaj męski, ale po „chcete” biernik nieżywotny = mianownik.
+t Chcete sedět tady, nebo tam? | Czy chce pan siedzieć tutaj, czy tam? | Chci sedět tady, prosím. | Powiedz, że chcesz siedzieć tutaj. | Bezokolicznik (sedět) stoi po czasowniku „chci”.
+t Co si dáte k pití? | Co podać do picia? | Sklenici vody a šťávu, prosím. | Zamów wodę i sok. | Po „sklenici” dopełniacz: vody; šťávu to biernik od šťáva.
+w rybí | rybny
+w polévku | zupę (biernik od polévka)
+w nechci | nie chcę
+w máte | macie; ma pan
+t Dnes máme rybí polévku. Dáte si polévku? | Mamy dziś zupę rybną. Czy poprosi pan zupę? | Ne, nechci polévku. Máte salát? | Odmów zupy i zapytaj o sałatkę. | Przeczenie czasownika: chci → nechci (ne- razem z czasownikiem).
+w samozřejmě | oczywiście
+t Ano, samozřejmě. Salát je velmi chutný. | Tak, oczywiście. Sałatka jest bardzo smaczna. | Dobře, dám si salát. | Zdecyduj się na sałatkę. | Salát jest rodzaju męskiego nieżywotnego, więc biernik = mianownik: salát.
+w rybou | rybą
+t Chcete salát s rybou, nebo se sýrem? | Czy chce pan sałatkę z rybą, czy z serem? | Se sýrem, prosím. | Wybierz ser. | „Z serem” to se sýrem (s przed sý- → se).
+w stojí | kosztuje (stát)
+t Ještě něco? | Czy coś jeszcze? | Kolik stojí dort? | Zapytaj o cenę ciasta. | „Ile kosztuje” to kolik stojí.
+w korun | koron (dopełniacz mnogi od koruna)
+w není | nie jest
+w drahé | drogie (nijaki)
+t Dort stojí devadesát korun. | Ciasto kosztuje dziewięćdziesiąt koron. | To není moc drahé. Dám si kousek. | Powiedz, że cena ci pasuje, i weź kawałek. | „To nie za drogo” to to není moc drahé (moc = zbyt, dużo).
+w hned | zaraz, od razu
+t Chcete dort hned, nebo později? | Czy chce pan ciasto od razu, czy później? | Chci dort později. | Powiedz, że ciasto chcesz później. | „Później” to později; dort jest biernikiem (= mianownikowi).
+w dost | dość
+t Samozřejmě. Ještě sklenici vody? | Oczywiście. Jeszcze szklankę wody? | Ne, děkuji. Už mám dost. | Grzecznie odmów: masz dość. | „Mam dość” to mám dost.
+e Rád! Okamžik, prosím. | Chętnie! Chwileczkę.
+
+@level 4 | Rozmowa przy stole | patience=5 typed=0.75 extra=4 hint=letters
+partner Paní Nováková | N
+desc Rozdział 4: Wieczór u paní Novákové
+scene Wieczorem Honza zabiera cię do swojej ulubionej kawiarni. Właścicielka, paní Nováková, zna wszystkich, a ciebie wypytuje jak nowego znajomego Honzy.
+goal Odpowiadaj na pytania paní Novákové o to, skąd jesteś i czym się zajmujesz. Jeśli jej się spodobasz, Honza zaprosi cię na jutro.
+win Paní Nováková klepie cię po ramieniu: „Ten už patří k rodině!” Honza mówi, że jutro odprowadzi cię na dworzec i wszystko ci pokaże.
+partial Paní Nováková jest uprzejma, ale nie do końca przekonana. Honza uspokaja: „Potřebuje čas.” Jutro i tak idziecie razem na dworzec.
+fail Paní Nováková przestała cię rozumieć w połowie wywiadu i uznała, że jesteś nieszczery. Honza wychodzi zakłopotany.
+t Dobrý večer! Co si dáte k pití? | Dobry wieczór! Co podać do picia? | Dám si pivo a sklenici vody, prosím. | Zamów piwo i wodę. | Po „dám si” biernik: pivo (nijaki, bez zmian); po „sklenici” dopełniacz: vody.
+w mluvíte | mówicie; mówi pan (mluvit)
+w česky | po czesku
+w odkud | skąd
+w jste | jesteście; jest pan
+t Mluvíte velmi dobře česky! Odkud jste? | Bardzo dobrze pan mówi po czesku! Skąd pan jest? | Děkuji! Jsem z Polska. | Podziękuj i powiedz, że jesteś z Polski. | „Z” w znaczeniu pochodzenia to z + dopełniacz: z Polska.
+w dlouho | długo
+w učíte | uczycie; uczy pan (učit se = uczyć się)
+w učím | uczę (učím se = uczę się)
+w teprve | dopiero
+w krátce | krótko
+t Z Polska! Jak dlouho už se učíte česky? | Z Polski! Jak długo już uczy się pan czeskiego? | Učím se česky teprve krátce. | Powiedz, że uczysz się czeskiego od niedawna. | „Od niedawna” to teprve krátce (dosł. „dopiero krótko”); „uczyć się” to učit se.
+w hezké | ładne (nijaki)
+w ve | w (ve škole = w szkole)
+w škole | szkole (miejscownik od škola)
+w doma | w domu
+t To je hezké! Učíte se ve škole? | To ładnie! Czy uczy się pan w szkole? | Ne, učím se doma. | Zaprzecz: uczysz się w domu. | „W domu” (w sensie „u siebie”) to doma.
+w masem | mięsem (s masem = z mięsem)
+t Dáte si něco k jídlu? Polévka je dnes velmi dobrá. | Czy zje pan coś? Zupa jest dziś bardzo dobra. | Rád, dám si polévku. Je s masem? | Zgódź się na zupę i zapytaj, czy jest z mięsem. | „Z mięsem” to s masem (instrumental).
+w masa | mięsa (dopełniacz: bez masa = bez mięsa)
+t Ne, bez masa. Dáte si i housku? | Nie, bez mięsa. Czy zje pan też bułkę? | Ano, housku se sýrem, prosím. | Zgódź się: bułka z serem. | „Z serem” to se sýrem.
+w vám | panu, pani, wam (celownik)
+w horká | gorąca (żeński)
+t Jak vám chutná polévka? | Jak panu smakuje zupa? | Polévka je velmi dobrá, ale trochu horká. | Pochwal zupę, ale zaznacz, że jest gorąca. | „Trochę” to trochu; horká to forma żeńska (polévka jest rodzaju żeńskiego).
+t Dáte si ještě pivo? | Czy poprosi pan jeszcze piwo? | Ne, děkuji, teď si dám kávu. | Odmów i powiedz, że teraz zamawiasz kawę. | „Teraz” to teď; kávu to biernik od káva.
+t Jste student? | Czy jest pan studentem? | Ne, jsem učitel. | Zaprzecz: jesteś nauczycielem. | W czeskim przy zawodzie nie ma przedimka: jsem učitel.
+t Samozřejmě. Ještě něco? | Oczywiście. Czy coś jeszcze? | Ne, děkuji, to je všechno. | Odmów: to wszystko. | „To wszystko” to to je všechno.
+e Okamžik, prosím! | Chwileczkę!
+
+@level 5 | Pełna wizyta i rachunek | patience=4 typed=1 extra=0 hint=none reward=25
+desc Rozdział 5: Rachunek i pożegnanie
+scene Ostatni dzień w Pradze. Z samego rana siadasz w kawiarni, żeby zjeść pożegnalne śniadanie i zapłacić. Za godzinę pociąg, a Honza ma pojawić się na peronie.
+goal Zamów pełne śniadanie, usiądź przy oknie, zapłać i pożegnaj się. Nie możesz się spóźnić na pociąg.
+win Kelner życzy ci dobrej podróży i wręcza paczkę ciasta „na drogę od paní Novákové”. Biegniesz na dworzec, a tam czeka Honza.
+partial Zapłaciłeś, ale straciłeś sporo czasu na poprawki. Biegniesz na dworzec w ostatniej chwili.
+fail Rachunek zrobił się kłopotliwy, kelner nie rozumiał, ile masz zapłacić. Pociąg odjechał bez ciebie.
+t Dobrý den! Co si dáte k pití? | Dzień dobry! Co podać do picia? | Dobrý den! Dám si kávu s mlékem, ale bez cukru, prosím. | Przywitaj się i zamów kawę z mlekiem, ale bez cukru. | Po „s” i „bez” rzeczownik w odpowiednim przypadku: s mlékem, bez cukru.
+w ke | do, ku (ke snídani = na śniadanie)
+w vejcem | jajkiem (s vejcem = z jajkiem)
+t Samozřejmě. A ke snídani? Máme housky se sýrem, vejce nebo čokoládový dort. | Oczywiście. A na śniadanie? Mamy bułki z serem, jajko albo tort czekoladowy. | Dám si housku s vejcem, prosím. | Zamów bułkę z jajkiem. | Po „s” instrumental: s vejcem.
+w doporučujete | polecacie; poleca pan (doporučovat)
+t Dobře. Dáte si také sklenici vody? | Dobrze. Czy poprosi pan też szklankę wody? | Ano, rád. Co ještě doporučujete? | Zgódź się i zapytaj, co jeszcze polecają. | „Polecać” to doporučovat; doporučujete to forma grzecznościowa.
+w tak | więc; tak
+w jablečného | jabłkowego (dopełniacz)
+w závinu | strudla (dopełniacz od závin)
+t Jablečný závin je dnes velmi chutný. | Strudel jabłkowy jest dziś bardzo smaczny. | Dobře, tak si dám kousek jablečného závinu. | Zdecyduj się na kawałek szarlotki (strudla). | Po „kousek” dopełniacz: jablečný závin → jablečného závinu.
+w okna | okna (dopełniacz: u okna = przy oknie)
+t Chcete sedět tady, nebo tam? | Czy chce pan siedzieć tutaj, czy tam? | Chci sedět tam, u okna. | Powiedz, że chcesz siedzieć przy oknie. | „Przy oknie” to u okna (u + dopełniacz).
+t Tady je všechno. Dobrou chuť! | Oto wszystko. Smacznego! | Děkuji, nápodobně! | Odwzajemnij życzenia. | „Nawzajem” to nápodobně.
+t Chutná vám to? | Czy panu smakuje? | Ano, chutná to velmi dobře. | Zgódź się: bardzo ci smakuje. | Podmiotem jest „to”: chutná to.
+w zaplatit | zapłacić
+t Přejete si ještě něco? | Czy życzy pan sobie coś jeszcze? | Ne, děkuji. Chci zaplatit. | Odmów i powiedz, że chcesz zapłacić. | „Chcę zapłacić” to chci zaplatit (bezokolicznik po „chci”).
+w bude | będzie
+w nechte | zostawcie; niech pan zostawi (nechat)
+t To bude sto dvacet korun. | To będzie sto dwadzieścia koron. | Tady je sto padesát korun. Drobné si nechte! | Zapłać i powiedz, że reszty nie trzeba. | „Drobné si nechte” znaczy „reszty proszę nie wydawać” (dosłownie „drobne sobie proszę zostawić”).
+w děkujeme | dziękujemy
+t Děkujeme! Hezký den! | Dziękujemy! Miłego dnia! | Děkuji, i vám! Na shledanou! | Podziękuj i pożegnaj się. | „Nawzajem” w tym zdaniu to i vám (dosł. „i panu”).
+e Na shledanou! | Do widzenia!
+
+
+@larp vlak | Pociąg do Brna | Pokladní | P | Biegniesz na dworzec w Pradze. Pociąg do Brna odjeżdża za dziesięć minut, a Honza czeka na ciebie w środku. | Kup bilet, znajdź właściwy peron i dojedź do Brna.
+fee 0
+reward 15
+strict yes
+story yes
+win Siedzisz w pociągu do Brna, a Honza macha do ciebie z drugiego końca wagonu. Podróż może się zacząć.
+partial Dotarłeś do Brna, ale kilka razy ktoś musiał ci pomagać. Honza czeka na peronie i mówi: „Na następny raz poćwicz jeszcze pytania.”
+fail Pociąg odjechał, a ty stoisz na peronie z biletem w ręku. Honza pisze: „Další vlak jede za hodinu!”
+
+@level 1 | Bilet | patience=5 typed=0 extra=1 hint=none
+desc Rozdział 1: Kasa biletowa
+w kam | dokąd
+w jízdenku | bilet (biernik od jízdenka)
+w Brna | Brna (dopełniacz od Brno: do Brna)
+t Dobrý den! Kam chcete jet? | Dzień dobry! Dokąd chce pan jechać? | Dobrý den, chci jízdenku do Brna, prosím. | Poproś o bilet do Brna. | „Do” przed nazwą miasta to do + dopełniacz: Brno → do Brna. | Jízdenku do Brna, prosím.
+w jednosměrnou | w jedną stronę (biernik żeński: jednosměrná jízdenka)
+w zpáteční | powrotny (zpáteční jízdenka)
+t Jednosměrnou, nebo zpáteční? | W jedną stronę czy powrotny? | Jednosměrnou, prosím. | Wybierz bilet w jedną stronę. | „W jedną stronę” to jednosměrná (jízdenka); tu forma biernika żeńskiego: jednosměrnou.
+w jede | jedzie (jet)
+w minut | minut (dopełniacz mnogi)
+w stě | stu (dvě stě = dwieście)
+t Vlak jede za deset minut. To bude sto devadesát korun. | Pociąg odjeżdża za dziesięć minut. To będzie sto dziewięćdziesiąt koron. | Tady je dvě stě korun. | Podaj dwieście koron. | „Dwieście” to dvě stě; po liczebnikach od pięciu w górę dopełniacz mnogi: korun.
+w zpátky | z powrotem; reszty (przy płaceniu)
+t Deset korun zpátky. Tady je vaše jízdenka. | Dziesięć koron reszty. Oto pana bilet. | Děkuji! Na shledanou! | Podziękuj i pożegnaj się. | „Do widzenia” to na shledanou.
+w šťastnou | szczęśliwą (biernik żeński)
+w cestu | drogę, podróż (biernik: šťastnou cestu)
+e Šťastnou cestu! | Szczęśliwej podróży!
+
+@level 2 | Peron | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Który peron?
+partner Pracovník | P
+scene Masz bilet, ale na dworcu jest kilka pociągów naraz. Pracownik kolei stoi przy tablicy odjazdów, a zegar tyka.
+goal Dowiedz się, z którego peronu odjeżdża pociąg do Brna, i nie wsiądź do złego pociągu.
+win Wsiadasz do właściwego pociągu tuż przed odjazdem. Pracownik kolei salutuje: „Šťastnou jízdu!”
+partial Dotarłeś na peron, ale po drodze kilka razy pytałeś o to samo. Wsiadasz w ostatniej chwili.
+fail Wsiadłeś do pociągu do Pilzna. Honza dzwoni: „Kde jsi?!”
+w mohu | mogę (moci)
+w pomoci | pomóc
+t Dobrý den! Mohu vám pomoci? | Dzień dobry! Czy mogę pomóc? | Ano, odkud jede vlak do Brna? | Zgódź się i zapytaj, skąd odjeżdża pociąg do Brna. | „Skąd odjeżdża pociąg” to odkud jede vlak; jede to forma od jet.
+w nástupiště | peron
+w Plzně | Pilzna (dopełniacz od Plzeň: do Plzně)
+w půjdu | pójdę (jít)
+w pojedu | pojadę (jet)
+k Vlak do Brna jede z nástupiště pět. Vlak do Plzně jede z nástupiště tři. | Pociąg do Brna jedzie z peronu piątego. Pociąg do Pilzna z peronu trzeciego. | Děkuji! Půjdu na nástupiště pět. | Děkuji! Půjdu na nástupiště tři.; Děkuji! Pojedu do Plzně. | Nástupiště tři to peron trzeci, a stamtąd jedzie pociąg do Pilzna.; Chciałeś jechać do Brna, nie do Pilzna.
+t Prosím! Máte už jízdenku? | Proszę bardzo! Czy ma pan już bilet? | Ano, mám jízdenku. | Potwierdź, że masz bilet. | Po „mám” biernik: jízdenka → jízdenku.
+e Tak rychle! Šťastnou cestu! | W takim razie szybko! Szczęśliwej podróży!
+
+@level 3 | W pociągu | patience=4 typed=0.5 extra=3 hint=bank reward=25
+desc Rozdział 3: Konduktor
+partner Průvodčí | P
+scene Pociąg ruszył. Konduktor idzie przez wagon i sprawdza bilety, a Honza siedzi kilka rzędów dalej i macha do ciebie.
+goal Pokaż bilet, wybierz miejsce i dojedź do Brna bez kłopotów.
+win Konduktor oddaje bilet z uśmiechem: „Všechno v pořádku!” Honza robi ci miejsce przy oknie i pyta o pierwsze wrażenia z Pragi.
+partial Konduktor w końcu skasował bilet, ale musiał kilka razy powtarzać. Honza pomaga ci usiąść.
+fail Konduktor uznał, że nie rozumiesz, co się do ciebie mówi. Bilet skontrolował dopiero Honza, a ty dostajesz upomnienie.
+w vaši | pana, pani (biernik: vaši jízdenku)
+t Dobrý den! Vaši jízdenku, prosím. | Dzień dobry! Pański bilet, proszę. | Tady je moje jízdenka. | Pokaż bilet. | „Oto” przy liczbie pojedynczej to tady je.
+o Děkuji. Chcete sedět u okna? | Dziękuję. Czy chce pan siedzieć przy oknie? | Ano, u okna, prosím. | Ne, děkuji, nechci okno.; Ano, chci zaplatit. | Konduktor pyta o miejsce, nie o płacenie.; Przy oknie to u okna, a nie „nechci okno”.
+w toto | to (przed rzeczownikiem nijakim)
+w volné | wolne (nijaki)
+w má | ma (mít)
+w zpoždění | spóźnienie
+t Toto místo je volné. Vlak má deset minut zpoždění. | To miejsce jest wolne. Pociąg ma dziesięć minut spóźnienia. | To není problém. Děkuji! | Powiedz, że to nie problem, i podziękuj. | „To nie problem” to to není problém.
+w jedete | jedziecie; jedzie pan (jet)
+w návštěvu | wizytę, odwiedziny (biernik)
+w kamarádem | kolegą (narzędnik od kamarád)
+t Jedete na návštěvu? | Czy jedzie pan z wizytą? | Ano, jedu za kamarádem. | Powiedz, że jedziesz do kolegi. | „Jechać do kogoś” to jet za + narzędnik: za kamarádem.
+e Šťastnou cestu do Brna! | Szczęśliwej podróży do Brna!

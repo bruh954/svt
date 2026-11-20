@@ -1,0 +1,214 @@
+@larp kawiarnia | W kawiarni | Serveur | S | Wchodzisz do kawiarni w Lyonie. Jesteś głodny i spragniony, a kelner czeka z notesem. | Zamów coś do picia i coś do jedzenia, a potem zapłać.
+fee 0
+reward 15
+strict yes
+story yes
+win Kelner jest pod wrażeniem, że tak dobrze mówisz po francusku. „C'est la maison qui offre !” – jedzenie na koszt firmy.
+partial Zamówienie dotarło do stołu, choć kilka razy musiałeś poprawiać. Kelner uśmiecha się i przynosi rachunek.
+fail Kelner ma dość: nie zrozumiał cię kilka razy z rzędu, uznał to za obrazę i prosi, żebyś opuścił lokal.
+
+@level 1 | Kawa, rogalik i ciasto | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Spóźniony Julien
+scene Lyon, deszczowy ranek. Przyjechałeś do Francji spotkać się z Julienem, kolegą z korespondencji, ale on jeszcze nie przyszedł. Siadasz w kawiarni i czekasz.
+goal Zamów kawę, rogalik i ciasto, a przy okazji dowiedz się, co z Julienem.
+win Kelner kładzie na stole kopertę: „Monsieur Julien a laissé ceci pour vous”. W środku kartka: „Je serai en retard, demain matin on prend le petit-déjeuner ensemble. J.” Masz plan na jutro.
+partial Zamówienie dotarło, a kelner podaje ci kopertę od Juliena, chociaż z trudem zrozumiał, co chcesz. Julien przeprasza i zaprasza na jutro.
+fail Kelner nie rozumie cię i nie wie, kim jesteś. Koperta od Juliena trafia do kogoś innego, a ty wychodzisz w deszcz z pustym żołądkiem.
+w désirez | chcecie; życzycie sobie (vous désirez = czego pan sobie życzy)
+w instant | chwila
+t Bonjour ! Vous désirez ? | Dzień dobry! Co podać? | Bonjour ! Un instant, s'il vous plaît. | Przywitaj się i poproś o chwilę do namysłu. | „Un instant” to „chwileczkę”; s'il vous plaît to „proszę”.
+w voici | oto (to tutaj)
+w voulez-vous | czy chce pan(i)… ? (vouloir)
+t Voici la carte. Que voulez-vous boire ? | Oto karta. Co chce pan pić? | Je voudrais un café, s'il vous plaît. | Zamów kawę (grzecznie). | Café jest rodzaju męskiego, więc un café. | Un café, s'il vous plaît.
+w du | (trochę) – du = de + le
+t Avec du lait ? | Z mlekiem? | Oui, avec du lait, s'il vous plaît. | Zgódź się na mleko. | Mleko jako ilość: du lait (du = de + le).
+t Avec du sucre ? | Z cukrem? | Non, sans sucre, merci. | Odmów cukru. | „Bez” to sans, a „z” to avec.
+w d'eau | z wody; wody (de + eau)
+t Voulez-vous aussi un verre d'eau ? | Czy chce pan też szklankę wody? | Oui, un verre d'eau, s'il vous plaît. | Zgódź się na szklankę wody. | „Szklanka wody” to un verre d'eau (de + eau → d'eau).
+w et | i
+w croissant | rogalik
+t Et pour manger ? | A do jedzenia? | Je voudrais un croissant, s'il vous plaît. | Zamów rogalik. | Croissant jest rodzaju męskiego: un croissant.
+w confiture | dżem
+t Avec du beurre ou de la confiture ? | Z masłem czy z dżemem? | Avec de la confiture, s'il vous plaît. | Wybierz dżem. | Confiture jest żeńska: de la confiture.
+w part | kawałek, porcja; odjeżdża (partir)
+t Voulez-vous aussi une part de gâteau ? | Czy chce pan też kawałek ciasta? | Oui, une part de gâteau, s'il vous plaît. | Zgódź się na kawałek ciasta. | Po „part” rzeczownik z de, bez rodzajnika: une part de gâteau.
+w votre | pana, pani, państwa
+w appétit | apetyt
+t Voici votre café et votre croissant. Bon appétit ! | Oto pana kawa i rogalik. Smacznego! | Merci beaucoup ! | Podziękuj kelnerowi. | Dziękujesz: merci beaucoup.
+w désirez-vous | czy pan(i) sobie życzy… ?
+w c'est | to jest
+t Désirez-vous autre chose ? | Czy coś jeszcze? | Non, merci, c'est tout. | Odmów: to już wszystko. | „To wszystko” to c'est tout.
+e De rien ! | Proszę bardzo!
+
+@level 2 | Śniadanie | patience=6 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Śniadanie z Julienem
+scene Następnego ranka. Julien czeka już przy stoliku, a kelner przyjmuje zamówienia. Julien prosi, żebyś zamówił sam, a przy okazji kupił ciasto, które zabierzesz mamie.
+goal Zamów śniadanie i kup ciasto dla swojej mamy.
+win Julien się śmieje: „Tu parles comme un Lyonnais !” Ciasto dla mamy zapakowane, a Julien obiecuje pokazać ci jutro miasto.
+partial Śniadanie jest, ciasto też, ale Julien musiał pomóc ci kilka razy. Obiecuje, że następnym razem zamówisz sam.
+fail Pomyliłeś zamówienia i Julien dostał coś zupełnie innego. Zjadł w milczeniu i wyszedł do pracy.
+t Bonjour ! Voulez-vous prendre le petit-déjeuner ? | Dzień dobry! Czy chce pan zjeść śniadanie? | Oui, je voudrais prendre le petit-déjeuner. | Powiedz, że chcesz zjeść śniadanie. | Czasownik w bezokoliczniku stoi na końcu: je voudrais prendre.
+w nous | my
+w avons | mamy
+w des | (liczba mnoga) jakieś
+w croissants | rogaliki
+w œufs | jajka
+w prenez-vous | czy pan(i) weźmie… ? (prendre)
+w prends | biorę (prendre)
+t Nous avons des croissants, des œufs et du fromage. Que prenez-vous ? | Mamy rogaliki, jajka i ser. Co pan weźmie? | Je prends deux croissants et un œuf. | Zamów dwa rogaliki i jajko. | Liczba mnoga: croissants; „jajko” to un œuf, „jajka” to des œufs.
+t Voulez-vous du café avec du lait ou du thé ? | Czy chce pan kawę z mlekiem, czy herbatę? | Je prends du thé avec du lait, s'il vous plaît. | Wybierz herbatę z mlekiem. | Ilość: du thé, du lait.
+t Voulez-vous du sucre ? | Czy chce pan cukier? | Oui, une cuillère de sucre, s'il vous plaît. | Zgódź się na łyżeczkę cukru. | „Łyżeczka cukru” to une cuillère de sucre.
+w tarte | tarta, placek
+w aux | z (au + liczba mnoga)
+t Nous avons une tarte aux pommes et un gâteau au chocolat. | Mamy szarlotkę i ciasto czekoladowe. | Je prends la tarte aux pommes. | Wybierz szarlotkę. | „Tarte aux pommes” to dosłownie „tarta z jabłkami”.
+w d'orange | pomarańczowy; z pomarańczy
+t Voulez-vous aussi un verre de jus ? | Czy chce pan też szklankę soku? | Oui, un verre de jus d'orange, s'il vous plaît. | Zgódź się na sok pomarańczowy. | „Sok pomarańczowy” to jus d'orange.
+t Le jus d'orange est très bon aujourd'hui. | Sok pomarańczowy jest dziś bardzo dobry. | Alors, je prends le jus d'orange. | Zdecyduj się na sok pomarańczowy. | Alors to „więc”, stoi na początku.
+w ma | moja
+t Le gâteau est pour vous ? | Czy ciasto jest dla pana? | Non, le gâteau est pour ma mère. | Odmów: ciasto jest dla twojej mamy. | „Moja mama” to ma mère (ma przed rzeczownikiem żeńskim).
+w j'apporte | przynoszę
+w ça | to
+w suite | ciąg dalszy (tout de suite = zaraz)
+w pas | nie
+t Un instant, s'il vous plaît. J'apporte ça tout de suite. | Chwileczkę. Zaraz to przyniosę. | Pas de problème, merci ! | Powiedz, że to nie problem, i podziękuj. | „Pas de problème” to „żaden problem”.
+w voilà | proszę (podając); oto
+t Voilà ! Bon appétit ! | Proszę! Smacznego! | Merci, à vous aussi ! | Podziękuj i odwzajemnij życzenia. | „Nawzajem” to à vous aussi.
+e De rien ! | Proszę bardzo!
+
+@level 3 | Stolik, pytania i cena | patience=5 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Stolik dla dwóch
+scene Po południu. Julien pracuje, więc umówiłeś się z jego siostrą Camille. Kelner pyta o stolik, a ty musisz wybrać miejsce, jedzenie i dowiedzieć się, ile to kosztuje.
+goal Zajmij stolik dla dwóch, zamów obiad dla was obu i nie przepłać.
+win Camille jest zachwycona: „Maintenant je comprends pourquoi Julien parle tant de toi !” Zaprasza cię na wieczór do znajomych Juliena.
+partial Obiad się udał, ale Camille musiała kilka razy tłumaczyć kelnerowi, co chcesz. Wieczorne spotkanie nadal aktualne.
+fail Nie dogadałeś się z kelnerem, a Camille patrzyła na to z niedowierzaniem. Wieczorem dostajesz od niej krótką wiadomość: „Peut-être une autre fois.”
+t Bonjour ! Voulez-vous une table pour deux ? | Dzień dobry! Czy chce pan stolik dla dwóch osób? | Oui, une table pour deux, s'il vous plaît. | Zgódź się: stolik dla dwóch osób. | Table jest rodzaju żeńskiego: une table.
+w asseoir | usiąść (vous asseoir = usiąść)
+t Voulez-vous vous asseoir ici ou là ? | Czy chce pan usiąść tutaj, czy tam? | Ici, s'il vous plaît. | Powiedz, że chcesz siedzieć tutaj. | „Tutaj” to ici, „tam” to là.
+t Voici la carte. Que voulez-vous boire ? | Oto karta. Co chce pan pić? | Un verre d'eau et un jus, s'il vous plaît. | Zamów wodę i sok. | Zamawiasz: un verre d'eau et un jus.
+w avez | macie, ma pan(i) (avoir)
+t Aujourd'hui, nous avons une soupe de poisson. Voulez-vous une soupe ? | Mamy dziś zupę rybną. Czy chce pan zupę? | Non, pas de soupe, merci. Vous avez de la salade ? | Odmów zupy i zapytaj o sałatkę. | Przeczenie rzeczownika: pas de soupe.
+t Oui, bien sûr. La salade est très bonne. | Tak, oczywiście. Sałatka jest bardzo dobra. | Bien, je prends la salade. | Zdecyduj się na sałatkę. | Po „je prends” rzeczownik z rodzajnikiem: la salade.
+t Voulez-vous la salade avec du poisson ou du fromage ? | Czy chce pan sałatkę z rybą, czy z serem? | Avec du fromage, s'il vous plaît. | Wybierz ser. | Ilość: du fromage.
+w coûte | kosztuje (coûter)
+t Autre chose ? | Coś jeszcze? | Combien coûte le gâteau ? | Zapytaj o cenę ciasta. | „Ile kosztuje” to combien coûte.
+w euros | euro
+w n'est | nie jest
+w trop | za, zbyt
+t Le gâteau coûte quatre euros. | Ciasto kosztuje cztery euro. | Ce n'est pas trop cher. Je prends une part. | Powiedz, że cena ci pasuje, i weź kawałek. | „Za drogo” to trop cher, a ne … pas to przeczenie: ce n'est pas trop cher.
+w plus | więcej; bardziej (plus tard = później)
+t Voulez-vous le gâteau maintenant ou plus tard ? | Czy chce pan ciasto teraz, czy później? | Je voudrais le gâteau plus tard. | Powiedz, że ciasto chcesz później. | „Później” to plus tard.
+w assez | dość
+t Bien sûr. Encore un verre d'eau ? | Oczywiście. Jeszcze szklankę wody? | Non, merci. J'ai assez. | Grzecznie odmów: masz dość. | „Mam dość” to j'ai assez.
+w plaisir | przyjemność
+e Avec plaisir ! Un instant, s'il vous plaît. | Chętnie! Chwileczkę.
+
+@level 4 | Rozmowa przy stole | patience=5 typed=0.75 extra=4 hint=letters
+partner Madame Dupont | D
+desc Rozdział 4: Wieczór u Madame Dupont
+scene Wieczorem Julien zabiera cię do swojej ulubionej kawiarni. Właścicielka, Madame Dupont, zna wszystkich, a ciebie wypytuje jak nowego znajomego Juliena.
+goal Odpowiadaj na pytania Madame Dupont o to, skąd jesteś i czym się zajmujesz. Jeśli jej się spodobasz, Julien zaprosi cię na jutro.
+win Madame Dupont klepie cię po ramieniu: „Lui, il fait déjà partie de la famille !” Julien mówi, że jutro odprowadzi cię na dworzec i wszystko ci pokaże.
+partial Madame Dupont jest uprzejma, ale nie do końca przekonana. Julien uspokaja: „Il lui faut du temps.” Jutro i tak idziecie razem na dworzec.
+fail Madame Dupont przestała cię rozumieć w połowie wywiadu i uznała, że jesteś nieszczery. Julien wychodzi zakłopotany.
+t Bonsoir ! Que voulez-vous boire ? | Dobry wieczór! Co podać do picia? | Je voudrais une bière et un verre d'eau, s'il vous plaît. | Zamów piwo i wodę. | Bière jest żeńska: une bière.
+w parlez | mówi pan(i) (parler)
+w français | po francusku; francuski
+w d'où | skąd
+w venez-vous | skąd pan(i) przychodzi / pochodzi (venir)
+w viens | przychodzę, pochodzę (venir)
+t Vous parlez très bien français ! D'où venez-vous ? | Bardzo dobrze pan mówi po francusku! Skąd pan pochodzi? | Merci ! Je viens de Pologne. | Podziękuj i powiedz, że jesteś z Polski. | „Pochodzę z” to je viens de.
+w apprenez-vous | czy uczy się pan(i) (apprendre)
+w j'apprends | uczę się (apprendre)
+t De Pologne ! Depuis quand apprenez-vous le français ? | Z Polski! Od kiedy uczy się pan francuskiego? | J'apprends le français depuis peu. | Powiedz, że uczysz się francuskiego od niedawna. | „Od niedawna” to depuis peu.
+w apprenez | uczy się pan(i)
+t C'est bien ! Vous apprenez à l'école ? | To ładnie! Czy uczy się pan w szkole? | Non, j'apprends à la maison. | Zaprzecz: uczysz się w domu. | „W domu” to à la maison.
+w quelque | jakiś, jakieś (quelque chose = coś)
+t Voulez-vous manger quelque chose ? La soupe est très bonne aujourd'hui. | Czy chce pan coś zjeść? Zupa jest dziś bardzo dobra. | Oui, je voudrais une soupe. Elle est avec de la viande ? | Zgódź się na zupę i zapytaj, czy jest z mięsem. | „Zupa” to la soupe (żeńskie), więc zastępuje ją elle (ona).
+t Non, sans viande. Voulez-vous aussi un petit pain ? | Nie, bez mięsa. Czy chce pan też bułkę? | Oui, un petit pain avec du fromage, s'il vous plaît. | Zgódź się: bułka z serem. | Ilość: du fromage.
+w trouvez-vous | jak pan(i) uważa (trouver)
+w chaude | gorąca (chaud)
+t Comment trouvez-vous la soupe ? | Jak panu smakuje zupa? | La soupe est très bonne, mais un peu chaude. | Pochwal zupę, ale zaznacz, że jest gorąca. | „Trochę” to un peu; chaude, bo la soupe jest żeńska.
+t Encore une bière ? | Jeszcze piwo? | Non, merci, je prends un café maintenant. | Odmów i powiedz, że teraz pijesz kawę. | „Biorę kawę” to je prends un café.
+w êtes | jest pan(i), są państwo (être)
+t Vous êtes étudiant ? | Czy jest pan studentem? | Non, je suis professeur. | Zaprzecz: jesteś nauczycielem. | We francuskim przy zawodzie po je suis nie ma rodzajnika.
+t Bien sûr. Autre chose ? | Oczywiście. Czy coś jeszcze? | Non, merci, c'est tout. | Odmów: to wszystko. | „To wszystko” to c'est tout.
+e Un instant, s'il vous plaît ! | Chwileczkę!
+
+@level 5 | Pełna wizyta i rachunek | patience=4 typed=1 extra=0 hint=none reward=25
+desc Rozdział 5: Rachunek i pożegnanie
+scene Ostatni dzień w Lyonie. Z samego rana siadasz w kawiarni, żeby zjeść pożegnalne śniadanie i zapłacić. Za godzinę pociąg, a Julien ma pojawić się na peronie.
+goal Zamów pełne śniadanie, usiądź przy oknie, zapłać i pożegnaj się. Nie możesz się spóźnić na pociąg.
+win Kelner życzy ci dobrej podróży i wręcza paczkę ciasta „na drogę od Madame Dupont”. Biegniesz na dworzec, a tam czeka Julien.
+partial Zapłaciłeś, ale straciłeś sporo czasu na poprawki. Biegniesz na dworzec w ostatniej chwili.
+fail Rachunek zrobił się kłopotliwy, kelner nie rozumiał, ile masz zapłacić. Pociąg odjechał bez ciebie.
+t Bonjour ! Que voulez-vous boire ? | Dzień dobry! Co podać do picia? | Bonjour ! Je voudrais un café avec du lait, mais sans sucre, s'il vous plaît. | Przywitaj się i zamów kawę z mlekiem, ale bez cukru. | Ilość: du lait; „bez cukru” to sans sucre.
+t Bien sûr. Et pour le petit-déjeuner ? Nous avons un croissant, un œuf ou un gâteau au chocolat. | Oczywiście. A na śniadanie? Mamy rogalik, jajko albo ciasto czekoladowe. | Je prends un croissant et un œuf, s'il vous plaît. | Zamów rogalik i jajko. | Łączysz dwie rzeczy spójnikiem et.
+w volontiers | chętnie
+w conseillez-vous | co pan(i) poleca (conseiller)
+t Volontiers. Voulez-vous aussi un verre d'eau ? | Chętnie. Czy chce pan też szklankę wody? | Oui, volontiers. Que conseillez-vous encore ? | Zgódź się i zapytaj, co jeszcze polecają. | „Chętnie” to volontiers; pytanie: que conseillez-vous.
+t La tarte aux pommes est très bonne aujourd'hui. | Szarlotka jest dziś bardzo dobra. | Bien, alors je prends une part de tarte aux pommes. | Zdecyduj się na kawałek szarlotki. | Alors to „więc”, une part de to „kawałek”.
+t Voulez-vous vous asseoir ici ou là ? | Czy chce pan usiąść tutaj, czy tam? | Je voudrais être près de la fenêtre. | Powiedz, że chcesz siedzieć przy oknie. | „Przy oknie” to près de la fenêtre.
+t Voilà ! Bon appétit ! | Proszę! Smacznego! | Merci, à vous aussi ! | Odwzajemnij życzenia. | „Nawzajem” to à vous aussi.
+t Ça vous plaît ? | Czy panu smakuje? | Oui, c'est délicieux. | Zgódź się: bardzo ci smakuje. | „Pyszne” to délicieux.
+t Voulez-vous autre chose ? | Czy coś jeszcze? | Non, merci. Je voudrais payer. | Odmów i powiedz, że chcesz zapłacić. | „Chcę zapłacić” to je voudrais payer.
+w fait | robi (faire); ça fait = to wynosi
+w gardez | niech pan(i) zatrzyma (garder)
+t Ça fait dix euros. | To będzie dziesięć euro. | Voici douze euros. Gardez la monnaie ! | Zapłać i powiedz, że reszty nie trzeba. | „Gardez la monnaie” to „proszę zatrzymać resztę”.
+w journée | dzień (jako czas trwania)
+t Merci beaucoup ! Bonne journée ! | Dziękujemy! Miłego dnia! | Merci, à vous aussi ! Au revoir ! | Podziękuj i pożegnaj się. | „Nawzajem” to à vous aussi.
+e Au revoir ! | Do widzenia!
+
+@larp pociag | Pociąg do Paryża | Vendeuse | V | Biegniesz na dworzec w Lyonie. Pociąg do Paryża odjeżdża za dziesięć minut, a Julien czeka na ciebie w środku. | Kup bilet, znajdź właściwy peron i dojedź do Paryża.
+fee 0
+reward 15
+strict yes
+story yes
+win Siedzisz w pociągu do Paryża, a Julien macha do ciebie z drugiego końca wagonu. Podróż może się zacząć.
+partial Dotarłeś do Paryża, ale kilka razy ktoś musiał ci pomagać. Julien czeka na peronie i mówi: „Na następny raz poćwicz jeszcze pytania.”
+fail Pociąg odjechał, a ty stoisz na peronie z biletem w ręku. Julien pisze: „Prochain train dans une heure !”
+
+@level 1 | Bilet | patience=5 typed=0 extra=1 hint=none
+desc Rozdział 1: Kasa biletowa
+t Bonjour ! Où voulez-vous aller ? | Dzień dobry! Dokąd chce pan jechać? | Je voudrais un billet pour Paris, s'il vous plaît. | Poproś o bilet do Paryża. | „Bilet do” to un billet pour. | Un billet pour Paris, s'il vous plaît.
+w simple | prosty (aller simple = bilet w jedną stronę)
+w aller-retour | bilet tam i z powrotem
+t Un aller simple ou un aller-retour ? | W jedną stronę czy tam i z powrotem? | Un aller simple, s'il vous plaît. | Wybierz bilet w jedną stronę. | „Aller simple” to „w jedną stronę”.
+w minutes | minuty
+t Le train part dans dix minutes. Ça fait quatre-vingt-dix euros. | Pociąg odjeżdża za dziesięć minut. To będzie dziewięćdziesiąt euro. | Voici cent euros. | Podaj sto euro. | „Oto” to voici.
+t Dix euros de monnaie. Voici votre billet. | Dziesięć euro reszty. Oto pana bilet. | Merci beaucoup ! Au revoir ! | Podziękuj i pożegnaj się. | „Do widzenia” to au revoir.
+e Bon voyage ! | Szczęśliwej podróży!
+
+@level 2 | Peron | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Który peron?
+partner Employé de la gare | E
+scene Masz bilet, ale na dworcu jest kilka pociągów naraz. Pracownik kolei stoi przy tablicy odjazdów, a zegar tyka.
+goal Dowiedz się, z którego peronu odjeżdża pociąg do Paryża, i nie wsiądź do złego pociągu.
+win Wsiadasz do właściwego pociągu tuż przed odjazdem. Pracownik kolei salutuje: „Bon voyage !”
+partial Dotarłeś na peron, ale po drodze kilka razy pytałeś o to samo. Wsiadasz w ostatniej chwili.
+fail Wsiadłeś do pociągu do Marsylii. Julien dzwoni: „Tu es où ?!”
+w peux | mogę (pouvoir)
+t Bonjour ! Je peux vous aider ? | Dzień dobry! Czy mogę pomóc? | Oui, d'où part le train pour Paris ? | Zgódź się i zapytaj, skąd odjeżdża pociąg do Paryża. | „Skąd” to d'où, a „odjeżdża” to part.
+w voie | tor, peron
+w Marseille | Marsylia
+k Le train pour Paris part de la voie cinq. Le train pour Marseille part de la voie trois. | Pociąg do Paryża odjeżdża z peronu piątego. Pociąg do Marsylii z peronu trzeciego. | Merci ! Je vais à la voie cinq. | Merci ! Je vais à la voie trois.; Merci ! Je vais à Marseille. | Voie trois to peron trzeci, a tam jedzie pociąg do Marsylii.; Chcesz jechać do Paryża, nie do Marsylii.
+w mon | mój
+t Voilà. Vous avez déjà votre billet ? | Proszę. Czy ma pan już bilet? | Oui, j'ai mon billet. | Potwierdź, że masz bilet. | „Mój bilet” to mon billet.
+e Alors vite ! Bon voyage ! | W takim razie szybko! Szczęśliwej podróży!
+
+@level 3 | W pociągu | patience=4 typed=0.5 extra=3 hint=bank reward=25
+desc Rozdział 3: Kontroler
+partner Contrôleur | C
+scene Pociąg ruszył. Kontroler idzie przez wagon i sprawdza bilety, a Julien siedzi kilka rzędów dalej i macha do ciebie.
+goal Pokaż bilet, wybierz miejsce i dojedź do Paryża bez kłopotów.
+win Kontroler oddaje bilet z uśmiechem: „Tout est en ordre !” Julien robi ci miejsce przy oknie i pyta o pierwsze wrażenia z Lyonu.
+partial Kontroler w końcu skasował bilet, ale musiał kilka razy powtarzać. Julien pomaga ci usiąść.
+fail Kontroler uznał, że nie rozumiesz, co się do ciebie mówi. Bilet skontrolował dopiero Julien, a ty dostajesz upomnienie.
+t Bonjour ! Votre billet, s'il vous plaît. | Dzień dobry! Pański bilet, proszę. | Voici mon billet. | Pokaż bilet. | „Oto” to voici.
+w voulez | chce pan(i), chcecie (vouloir)
+o Merci. Vous voulez une place près de la fenêtre ? | Dziękuję. Czy chce pan miejsce przy oknie? | Oui, près de la fenêtre, s'il vous plaît. | Non, merci, je vais à Marseille.; Oui, je voudrais payer. | Jedziesz do Paryża, nie do Marsylii.; Kontroler pyta o miejsce, nie o płacenie.
+w cette | ta (rodzaj żeński)
+w libre | wolny
+w retard | spóźnienie
+t Cette place est libre. Le train a dix minutes de retard. | To miejsce jest wolne. Pociąg ma dziesięć minut spóźnienia. | Ce n'est pas un problème. Merci ! | Powiedz, że to nie problem, i podziękuj. | „To nie problem” to ce n'est pas un problème.
+e Bon voyage à Paris ! | Szczęśliwej podróży do Paryża!
