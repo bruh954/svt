@@ -225,8 +225,23 @@ def _sent_sub(toks):
     return E.sentence_tr(toks)
 
 
-def _tiles(toks):
-    return [{"v": t, "sub": _tok_sub(t)} for t in toks]
+def _nog(ref):
+    """der/die/das, które w zdaniu wzorcowym nie są rodzajnikiem (np. „das ist alles”): nie dostają koloru rodzaju."""
+    if not ref or _cur["cid"] != "german":
+        return set()
+    m = json.loads(gender_map())
+    art, other = set(), set()
+    for i, t in enumerate(ref):
+        lt = str(t).lower()
+        if lt in ("der", "die", "das"):
+            nxt = ref[i + 1] if i + 1 < len(ref) else ""
+            (art if nxt in m and str(nxt).lower() not in ("der", "die", "das") else other).add(lt)
+    return other - art
+
+
+def _tiles(toks, ref=None):
+    nog = _nog(ref)
+    return [({"v": t, "sub": _tok_sub(t), "nog": True} if str(t).lower() in nog else {"v": t, "sub": _tok_sub(t)}) for t in toks]
 
 
 # ---------------------------------------------------------------------------
@@ -754,7 +769,7 @@ def chat_get(cid):
             random.shuffle(extra)
             bank = _no_punct(toks) + extra[:2]   # interpunkcji nie trzeba układać
             random.shuffle(bank)
-            item["build"] = {"prompt": pl, "bank": _tiles(bank), "answer": list(toks), "text": _larp_disp(toks)}
+            item["build"] = {"prompt": pl, "bank": _tiles(bank, toks), "answer": list(toks), "text": _larp_disp(toks)}
         turns.append(item)
     return json.dumps({"id": c["id"], "title": c["title"], "partner": c["partner"], "avatar": c["avatar"],
                        "turns": turns}, ensure_ascii=False)
@@ -890,7 +905,7 @@ def _larp_node(lp, key):
         random.shuffle(pool); random.shuffle(learned)
         bank = _no_punct(toks) + (pool + learned)[:int(cfg.get("extra", 3))]
         random.shuffle(bank)
-        out["build"] = {"prompt": pl, "bank": _tiles(bank)}
+        out["build"] = {"prompt": pl, "bank": _tiles(bank, toks)}
     return out
 
 

@@ -475,7 +475,7 @@ function openChat(cid, idx) {
   };
   botTurn();
 }
-function tile(tk, onclick) { return h("button", { class: "tile", dir: "auto", onclick: () => { sfx.tap(); onclick(); } }, tk.v, tk.sub && cur.home.settings.pron !== false ? h("small", {}, tk.sub) : null); }
+function tile(tk, onclick) { return h("button", { class: tk.nog ? "tile gw" : "tile", dir: "auto", onclick: () => { sfx.tap(); onclick(); } }, tk.v, tk.sub && cur.home.settings.pron !== false ? h("small", {}, tk.sub) : null); }
 
 /* ---------------- lekcja ---------------- */
 function startSession(kind, unit) {
@@ -821,7 +821,11 @@ function colorGenderText(node) {
   WORD_RE.lastIndex = 0;
   while ((m = WORD_RE.exec(txt))) {
     const w = m[0], lw = w.toLowerCase();
-    const g = (lw === "der" || lw === "die" || lw === "das") ? map[lw] : map[w];
+    let g = (lw === "der" || lw === "die" || lw === "das") ? map[lw] : map[w];
+    if (g && (lw === "der" || lw === "die" || lw === "das")) {   // „das ist alles”: to nie rodzajnik, jeśli dalej w tym tekście nie ma rzeczownika
+      const nx = /^\s+([A-Za-zÄÖÜäöüß]+)/.exec(txt.slice(m.index + w.length));
+      if (nx && !(map[nx[1]] && !/^(der|die|das)$/i.test(nx[1]))) g = 0;
+    }
     if (!g) continue;
     if (m.index > last) wrap.append(txt.slice(last, m.index));
     const sp = document.createElement("span"); sp.className = "gn g" + g; sp.textContent = w; wrap.append(sp);
