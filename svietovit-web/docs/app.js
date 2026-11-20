@@ -25,7 +25,7 @@ const store = {
 /* ---------------- teksty interfejsu ---------------- */
 const TX = {
   pl: {
-    motto: "szkoła języków dawnych i dalekich", learn_in: "Uczę się po", grammar: "Gramatyka", gr_intro: "Przejdź cały wzór: najpierw tabela, potem wszystkie formy po kolei i na wyrywki.", gr_conj: "Koniugacje i czasy", gr_decl: "Deklinacje i zaimki", gr_form: "Imiesłowy i inne formy", gr_pit: "Typowe trudności", gr_table: "Wzór", gr_start: "Ćwicz", gr_order: "Po kolei", gr_random: "Na wyrywki", gr_done: "Wzór zaliczony!", gr_back: "Wróć do gramatyki", gr_mist: "Błędy: %d", gr_tap: "Dotknij formy, żeby ją usłyszeć.", no_voice: "To urządzenie nie ma głosu dla języka %s. Zainstaluj go w ustawieniach syntezy mowy.", no_chats: "Ten kurs uczy samych znaków. Zdania i rozmowy ćwiczysz w kursie %s.", larps: "Larpy", larps_d: "Sceny ze stawką: płacisz wpisowe w XP i możesz je stracić.", larp_enter: "Wchodzę", larp_rules: "Wpisowe %d XP. Wygrana: +%d XP. Udało się mimo potknięć: zwrot wpisowego. Porażka: tracisz wpisowe. Zła odpowiedź zabiera punkt cierpliwości, a pytanie z ☠ kończy scenę od razu.", larp_need: "Potrzebujesz %d XP, żeby wejść.", larp_goal: "Cel", larp_deadly: "☠ Jedna szansa: zła odpowiedź kończy scenę.", larp_weak: "Niezręcznie.", larp_win: "Sukces!", larp_partial: "Udało się, ale…", larp_fail: "Porażka", larp_quit_t: "Wyjść ze sceny?", larp_quit_d: "Stracisz wpisowe.", larp_refund: "Wpisowe zwrócone", larp_patience: "Cierpliwość", larp_correct: "Poprawnie: ", tonecolor: "Kolory tonów", script: "Pismo ćwiczeń", size: "Litery", theme: "Motyw", th_navy: "Granat", th_sky: "Jasny", new: "nowy", xp: "XP",
+    motto: "szkoła języków dawnych i dalekich", an_t: "Anonimowe statystyki", an_d: "Pomóż ulepszyć Śviętovita: aplikacja może wysyłać anonimowe informacje o tym, które lekcje i sceny kończysz (bez imienia, e-maila i treści Twoich odpowiedzi), razem z losowym numerem zapisanym w tej przeglądarce. W każdej chwili możesz to wyłączyć na ekranie głównym.", an_yes: "Zgadzam się", an_no: "Nie, dziękuję", an_on: "Anonimowe statystyki: włączone", an_off: "Anonimowe statystyki: wyłączone", fb_t: "Jak ci się grało?", fb_diff: "Trudność", fb_pace: "Tempo", fb_easy: "Za łatwo", fb_ok: "W sam raz", fb_hard: "Za trudno", fb_slow: "Za wolno", fb_fast: "Za szybko", fb_thanks: "Dzięki za opinię!", learn_in: "Uczę się po", grammar: "Gramatyka", gr_intro: "Przejdź cały wzór: najpierw tabela, potem wszystkie formy po kolei i na wyrywki.", gr_conj: "Koniugacje i czasy", gr_decl: "Deklinacje i zaimki", gr_form: "Imiesłowy i inne formy", gr_pit: "Typowe trudności", gr_table: "Wzór", gr_start: "Ćwicz", gr_order: "Po kolei", gr_random: "Na wyrywki", gr_done: "Wzór zaliczony!", gr_back: "Wróć do gramatyki", gr_mist: "Błędy: %d", gr_tap: "Dotknij formy, żeby ją usłyszeć.", no_voice: "To urządzenie nie ma głosu dla języka %s. Zainstaluj go w ustawieniach syntezy mowy.", no_chats: "Ten kurs uczy samych znaków. Zdania i rozmowy ćwiczysz w kursie %s.", larps: "Larpy", larps_d: "Sceny ze stawką: płacisz wpisowe w XP i możesz je stracić.", larp_enter: "Wchodzę", larp_rules: "Wpisowe %d XP. Wygrana: +%d XP. Udało się mimo potknięć: zwrot wpisowego. Porażka: tracisz wpisowe. Zła odpowiedź zabiera punkt cierpliwości, a pytanie z ☠ kończy scenę od razu.", larp_need: "Potrzebujesz %d XP, żeby wejść.", larp_goal: "Cel", larp_deadly: "☠ Jedna szansa: zła odpowiedź kończy scenę.", larp_weak: "Niezręcznie.", larp_win: "Sukces!", larp_partial: "Udało się, ale…", larp_fail: "Porażka", larp_quit_t: "Wyjść ze sceny?", larp_quit_d: "Stracisz wpisowe.", larp_refund: "Wpisowe zwrócone", larp_patience: "Cierpliwość", larp_correct: "Poprawnie: ", tonecolor: "Kolory tonów", script: "Pismo ćwiczeń", size: "Litery", theme: "Motyw", th_navy: "Granat", th_sky: "Jasny", new: "nowy", xp: "XP",
     foot: "Postęp zapisuje się w tej przeglądarce. Dodaj stronę do ekranu głównego, żeby działała jak aplikacja.",
     reports: "Zgłoszone błędy: %d", copy: "SKOPIUJ", clear: "WYCZYŚĆ", copied: "Skopiowano. Wklej zgłoszenia w rozmowie z Claude'em.",
     rep_title: "Zgłoś błąd w ćwiczeniu", rep_hint: "Opis (nie musisz nic pisać)", rep_send: "ZAPISZ", rep_cancel: "ANULUJ",
@@ -55,7 +55,7 @@ const TX = {
     installed: "Dodaj do ekranu głównego, żeby uruchamiać jak aplikację.", err: "Coś poszło nie tak:", retry: "Spróbuj ponownie",
   },
   en: {
-    motto: "a school of ancient and faraway languages", learn_in: "I learn in", grammar: "Grammar", gr_intro: "Go through the whole pattern: first the table, then every form in order and at random.", gr_conj: "Conjugations and tenses", gr_decl: "Declensions and pronouns", gr_form: "Participles and other forms", gr_pit: "Common difficulties", gr_table: "Pattern", gr_start: "Practise", gr_order: "In order", gr_random: "At random", gr_done: "Pattern complete!", gr_back: "Back to grammar", gr_mist: "Mistakes: %d", gr_tap: "Tap a form to hear it.", no_voice: "This device has no voice for %s. Install it in the text-to-speech settings.", no_chats: "This course teaches characters only. Practise sentences and conversations in the %s course.", larps: "Larps", larps_d: "Scenes with stakes: you pay an XP entry fee and can lose it.", larp_enter: "Enter", larp_rules: "Entry fee %d XP. Win: +%d XP. Made it despite slips: fee refunded. Fail: you lose the fee. A wrong reply costs a point of patience, and a ☠ question ends the scene at once.", larp_need: "You need %d XP to enter.", larp_goal: "Goal", larp_deadly: "☠ One chance: a wrong reply ends the scene.", larp_weak: "Awkward.", larp_win: "Success!", larp_partial: "You made it, but…", larp_fail: "Failed", larp_quit_t: "Leave the scene?", larp_quit_d: "You will lose the entry fee.", larp_refund: "Entry fee refunded", larp_patience: "Patience", larp_correct: "Correct: ", tonecolor: "Tone colours", script: "Exercise script", size: "Text size", theme: "Theme", th_navy: "Navy", th_sky: "Light", new: "new", xp: "XP",
+    motto: "a school of ancient and faraway languages", an_t: "Anonymous statistics", an_d: "Help improve Śviętovit: the app can send anonymous information about which lessons and scenes you finish (no name, no email, no content of your answers), together with a random number stored in this browser. You can turn this off on the home screen at any time.", an_yes: "I agree", an_no: "No, thanks", an_on: "Anonymous statistics: on", an_off: "Anonymous statistics: off", fb_t: "How was it?", fb_diff: "Difficulty", fb_pace: "Pace", fb_easy: "Too easy", fb_ok: "Just right", fb_hard: "Too hard", fb_slow: "Too slow", fb_fast: "Too fast", fb_thanks: "Thanks for the feedback!", learn_in: "I learn in", grammar: "Grammar", gr_intro: "Go through the whole pattern: first the table, then every form in order and at random.", gr_conj: "Conjugations and tenses", gr_decl: "Declensions and pronouns", gr_form: "Participles and other forms", gr_pit: "Common difficulties", gr_table: "Pattern", gr_start: "Practise", gr_order: "In order", gr_random: "At random", gr_done: "Pattern complete!", gr_back: "Back to grammar", gr_mist: "Mistakes: %d", gr_tap: "Tap a form to hear it.", no_voice: "This device has no voice for %s. Install it in the text-to-speech settings.", no_chats: "This course teaches characters only. Practise sentences and conversations in the %s course.", larps: "Larps", larps_d: "Scenes with stakes: you pay an XP entry fee and can lose it.", larp_enter: "Enter", larp_rules: "Entry fee %d XP. Win: +%d XP. Made it despite slips: fee refunded. Fail: you lose the fee. A wrong reply costs a point of patience, and a ☠ question ends the scene at once.", larp_need: "You need %d XP to enter.", larp_goal: "Goal", larp_deadly: "☠ One chance: a wrong reply ends the scene.", larp_weak: "Awkward.", larp_win: "Success!", larp_partial: "You made it, but…", larp_fail: "Failed", larp_quit_t: "Leave the scene?", larp_quit_d: "You will lose the entry fee.", larp_refund: "Entry fee refunded", larp_patience: "Patience", larp_correct: "Correct: ", tonecolor: "Tone colours", script: "Exercise script", size: "Text size", theme: "Theme", th_navy: "Navy", th_sky: "Light", new: "new", xp: "XP",
     foot: "Progress is saved in this browser. Add the page to your home screen to use it like an app.",
     reports: "Reported mistakes: %d", copy: "COPY", clear: "CLEAR", copied: "Copied. Paste the reports into your chat with Claude.",
     rep_title: "Report a mistake in this exercise", rep_hint: "Description (optional)", rep_send: "SAVE", rep_cancel: "CANCEL",
@@ -112,12 +112,39 @@ const t = (k, ...a) => { let s = (TX[LANG][k] ?? k); if (typeof s === "string") 
 
 /* ---------------- statystyki i reklamy (domyślnie wyłączone, patrz config.js) ---------------- */
 const CFG = window.SV_CONFIG || {};
-function initAnalytics() {
-  const a = CFG.analytics; if (!a || !a.domain) return;
-  window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments); };
-  const sc = document.createElement("script"); sc.defer = true; sc.dataset.domain = a.domain; sc.src = a.src; document.head.append(sc);
+const AN = CFG.analytics || {};
+const anConfigured = () => !!(AN.endpoint || AN.domain);
+const anConsent = () => store.get("sv_consent", "");   // "1" zgoda, "0" brak zgody, "" jeszcze nie zapytano
+function anId() {   // losowy numer zapisany tylko w tej przeglądarce, bez żadnych danych osobowych
+  let id = store.get("sv_aid", "");
+  if (!id) { id = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : String(Math.random()).slice(2) + String(Date.now()); store.set("sv_aid", id); store.set("sv_first", new Date().toISOString().slice(0, 10)); }
+  return id;
 }
-function track(name, props) { try { if (window.plausible) window.plausible(name, { props: props || {} }); } catch (e) { /* statystyki są opcjonalne */ } }
+let anStarted = false;
+function initAnalytics() {
+  if (anStarted || !AN.domain || anConsent() !== "1") return;
+  anStarted = true;
+  window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments); };
+  const sc = document.createElement("script"); sc.defer = true; sc.dataset.domain = AN.domain; sc.src = AN.src; document.head.append(sc);
+}
+/* Zdarzenia wysyłamy tylko za zgodą. Wyjątek: opinia, którą użytkownik sam wybrał (opt.force), idzie bez numeru. */
+function track(name, props, opt) {
+  try {
+    const ok = anConsent() === "1";
+    if (ok && window.plausible) window.plausible(name, { props: props || {} });
+    if (AN.endpoint && (ok || (opt && opt.force))) {
+      const body = { n: name, p: props || {}, lang: LANG, v: 1, ts: Date.now() };
+      if (ok) { body.id = anId(); body.d0 = store.get("sv_first", ""); }
+      fetch(AN.endpoint, { method: "POST", mode: "no-cors", keepalive: true, headers: { "Content-Type": "text/plain" }, body: JSON.stringify(body) }).catch(() => {});
+    }
+  } catch (e) { /* statystyki są opcjonalne */ }
+}
+function setConsent(v) { store.set("sv_consent", v ? "1" : "0"); if (v) { initAnalytics(); track("app_open", {}); } }
+function consentSheet() {
+  const close = sheet([h("h3", {}, t("an_t")), h("p", {}, t("an_d")),
+    h("button", { class: "btn green", onclick: () => { close(); setConsent(true); showHub(); } }, t("an_yes")),
+    h("button", { class: "btn ghost", onclick: () => { close(); setConsent(false); showHub(); } }, t("an_no"))], { mid: true });
+}
 let adsLoaded = false;
 function adSlot(slot) {
   const a = CFG.ads; if (!a || !a.enabled || !slot) return null;
@@ -265,6 +292,7 @@ function showHub() {
     h("div", { class: "langs" }, t("learn_in"),
       ...["pl", "en"].map(l => h("button", { class: "chip" + (l === LANG ? " on" : ""), onclick: () => { LANG = l; store.set("sv_lang", l); showHub(); } }, l.toUpperCase()))),
     ...cards, adSlot(CFG.ads && CFG.ads.slotHome), h("div", { class: "hub-foot" }, t("foot")),
+    anConfigured() ? h("div", { class: "hub-foot" }, h("button", { class: "chip", onclick: () => { setConsent(anConsent() !== "1"); showHub(); } }, anConsent() === "1" ? t("an_on") : t("an_off"))) : null,
     reps.length ? h("div", { class: "rep-box" }, t("reports").replace("%d", reps.length),
       h("div", {}, h("button", { onclick: async () => { const txt = "Śviętovit: zgłoszone błędy (" + reps.length + ")\n" + reps.map((r, i) => "#" + (i + 1) + " " + JSON.stringify(r)).join("\n"); try { await navigator.clipboard.writeText(txt); toast(t("copied")); } catch (e) { prompt("", txt); } } }, t("copy")),
         h("button", { onclick: () => { store.set("sv_reports", "[]"); showHub(); } }, t("clear")))) : null));
@@ -703,6 +731,7 @@ async function main() {
       navigator.serviceWorker.register("sw.js").catch(() => {});
     }
     showHub();
+    if (anConfigured() && anConsent() === "") consentSheet(); else if (anConsent() === "1") track("app_open", {});
     window.__ready = true;
   } catch (e) {
     console.error(e);
@@ -810,6 +839,18 @@ new MutationObserver((muts) => {
 }).observe(document.getElementById("app"), { childList: true, subtree: true });
 
 /* ---------------- larpy: sceny ze stawką ---------------- */
+/* krótka opinia po scenie: trudność i tempo, jeden dotyk na pytanie, wysyłana bez numeru użytkownika */
+function larpFeedback(lid, lvl) {
+  const got = {}, box = h("div", { class: "card", style: "text-align:center" });
+  const send = () => { if (got.difficulty && got.pace) { track("larp_feedback", { course: cur.cid, larp: lid, level: lvl || 1, difficulty: got.difficulty, pace: got.pace }, { force: true }); box.replaceChildren(h("div", { class: "sub" }, t("fb_thanks"))); } };
+  const row = (key, label, opts) => h("div", { style: "margin:6px 0" }, h("div", { class: "sub" }, label),
+    ...opts.map(([v, n]) => h("button", { class: "chip", onclick: (e) => { got[key] = v; [...e.target.parentNode.querySelectorAll(".chip")].forEach(c => c.classList.remove("on")); e.target.classList.add("on"); send(); } }, n)));
+  box.append(h("b", {}, t("fb_t")),
+    row("difficulty", t("fb_diff"), [["easy", t("fb_easy")], ["ok", t("fb_ok")], ["hard", t("fb_hard")]]),
+    row("pace", t("fb_pace"), [["slow", t("fb_slow")], ["ok", t("fb_ok")], ["fast", t("fb_fast")]]));
+  return box;
+}
+
 function larpSheet(l) {
   const rules = l.levels ? null : h("p", { style: "font-size:calc(13.5px*var(--k))" }, t("larp_rules").replace("%d", l.fee).replace("%d", l.fee * 3));
   let close;
@@ -869,6 +910,7 @@ function larpScene(S, lid, lvl, R) {
       ev.streak_extended ? h("div", { style: "color:var(--bad2);font-weight:700" }, "☀ " + t("streak_days", ev.streak)) : null)); toBottom();
     refreshHome(); const me = (cur.home.larps || []).find(x => x.id === lid);
     if (ev.next_level) reply.append(h("button", { class: "btn green", onclick: () => openLarp(lid, ev.next_level) }, t("larp_next_level") + " " + ev.next_level + " ›"));
+    if (AN.endpoint) log.append(larpFeedback(lid, lvl)); toBottom();
     reply.append(h("button", { class: ev.next_level ? "btn ghost" : "btn", onclick: () => { cur.tab = "chats"; renderHome(); } }, t("back_chats")));
     if (me && me.can_pay) reply.append(h("button", { class: "btn ghost", onclick: () => openLarp(lid, lvl) }, t("again") + (me.fee ? " (−" + me.fee + " XP)" : "")));
   };
