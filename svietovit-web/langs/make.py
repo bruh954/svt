@@ -24,6 +24,8 @@ LANGS = {
     "finnish": ("na fiński", "po fińsku", {"å": "a"}, True),
     "czech":   ("na czeski", "po czesku", {}, True),
     "slovak":  ("na słowacki", "po słowacku", {}, True),
+    "english": ("na angielski", "po angielsku", {}, True),
+    "icelandic": ("na islandzki", "po islandzku", {"á":"a","ð":"d","é":"e","í":"i","ó":"o","ú":"u","ý":"y","þ":"th","æ":"ae","ö":"o"}, True),
     "slovenian": ("na słoweński", "po słoweńsku", {"č": "c", "š": "s", "ž": "z"}, True),
     "thai":    ("na tajski", "po tajsku", {}, False),
     "norse":   ("na staronordycki", "po staronordycku", {"þ": "th", "ð": "d", "æ": "ae", "ø": "o", "ǫ": "o", "œ": "oe"}, True),

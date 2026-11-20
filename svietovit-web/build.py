@@ -15,7 +15,7 @@ def mkzip(name, pick):
                 full = os.path.join(root, f); rel = os.path.relpath(full, SRC)
                 if pick(rel.split(os.sep)): z.write(full, rel)
 mkzip("core.zip", lambda p: len(p) == 2 and p[1] in ("__init__.py", "config.py"))
-for cid in ("hanzi_hero","glagol","ave","logos","abba","kaszeby","hangeul","han","kana","nihon","greek","german","french","italian","spanish","russian","turkish","norse","estonian","serbian","finnish","czech","slovak","slovenian","thai"):
+for cid in ("hanzi_hero","glagol","ave","logos","abba","kaszeby","hangeul","han","kana","nihon","greek","german","french","italian","spanish","russian","turkish","norse","estonian","serbian","finnish","czech","slovak","slovenian","thai","english","icelandic"):
     mkzip(cid + ".zip", lambda p, cid=cid: len(p) == 3 and p[1] == cid and not p[2].startswith(("ui", "audio")))
 shutil.copy(os.path.join(HERE, "src", "bridge.py"), os.path.join(OUT, "py", "bridge.py"))
 for f in ("pyodide.js", "pyodide.asm.js", "pyodide.asm.wasm", "python_stdlib.zip", "pyodide-lock.json"):
@@ -51,6 +51,8 @@ COURSES = [
  dict(id="czech", native="Čeština", sub={"pl":"czeski: wymowa, słowa, rozmowy","en":"Czech: pronunciation, words, conversations"}, glyph="Ř", paper="#EEF0F4", accent="#11457E", tts="cs-CZ", fonts=serif("ave"), x=F("ave","UI-Serif.ttf")),
  dict(id="slovak", native="Slovenčina", sub={"pl":"słowacki: wymowa, słowa, rozmowy","en":"Slovak: pronunciation, words, conversations"}, glyph="Ľ", paper="#F0EEF2", accent="#0B4EA2", tts="sk-SK", fonts=serif("ave"), x=F("ave","UI-Serif.ttf")),
  dict(id="slovenian", native="Slovenščina", sub={"pl":"słoweński: wymowa, słowa, rozmowy","en":"Slovene: pronunciation, words, conversations"}, glyph="Š", paper="#EEF2F0", accent="#1C6E8C", tts="sl-SI", fonts=serif("ave"), x=F("ave","UI-Serif.ttf")),
+ dict(id="english", native="English", sub={"pl":"angielski: wymowa, słowa, gramatyka","en":"English for Poles: pronunciation, words, grammar"}, glyph="Th", paper="#EEF2F0", accent="#B3363F", tts="en-GB", fonts=serif("ave"), x=F("ave","UI-Serif.ttf")),
+ dict(id="icelandic", native="Íslenska", sub={"pl":"islandzki: wymowa, słowa, przypadki","en":"Icelandic: pronunciation, words, cases"}, glyph="Þ", paper="#EEF2F0", accent="#2B5C8A", tts="is-IS", fonts=serif("ave"), x=F("ave","UI-Serif.ttf")),
  dict(id="thai", native="ภาษาไทย", sub={"pl":"tajski: pismo, tony, słowa, rozmowy","en":"Thai: script, tones, words, conversations"}, glyph="ก", paper="#F3EAE0", accent="#A8322E", tts="th-TH", fonts=(TH, TH_B), x=TH),
 ]
 css, meta, done = [], [], {}
