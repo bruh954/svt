@@ -25,7 +25,10 @@ def parse(path):
     return blocks
 
 def run(cid):
-    path = os.path.join(HERE, "content_%s.py" % cid); vp = os.path.join(HERE, "vocab", "%s.txt" % cid)
+    path = os.path.join(HERE, "content_%s.py" % cid)
+    if not os.path.exists(path):
+        path = os.path.join(os.environ.get("SV_SRC", "/home/claude/svietovit"), "courses", cid, "content.py")
+    vp = os.path.join(HERE, "vocab", "%s.txt" % cid)
     src = open(path, encoding="utf-8").read()
     a = src.find(START)
     if a >= 0:
