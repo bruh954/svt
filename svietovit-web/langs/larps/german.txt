@@ -1191,7 +1191,7 @@ w ein bisschen | trochę
 w freundlich | miły, życzliwy
 w Seine | jego
 w Augen | oczy
-t Lukas ist freundlich und hübsch, nicht wahr? Hast du keine Angst vor ihm? | Lukas jest miły i przystojny, prawda? Nie boisz się go? | Ein bisschen. Seine Augen sind kalt. | Przyznaj cicho, że trochę się boisz, bo jego oczy są zimne. | „Trochę” to ein bisschen, a „oczy” to Augen (liczba mnoga). | | shift=-1
+t Lukas ist freundlich und hübsch, nicht wahr? Hast du keine Angst vor ihm? | Lukas jest miły i przystojny, prawda? Nie boisz się go? | Ein bisschen. Seine Augen sind kalt. | Odpowiedz: trochę, bo jego oczy są zimne. | „Trochę” to ein bisschen, a „oczy” to Augen (liczba mnoga). | | shift=-1
 w Geld | pieniądze | das | –
 w verstehen | rozumieć
 w dankbar | wdzięczny
@@ -2899,7 +2899,7 @@ w anderen | innego (ander-)
 t Ich bin reich und nicht mehr jung. Ich suche eine Frau. Möchten Sie meine Frau werden? | Jestem bogaty i już niemłody. Szukam żony. Czy chciałaby pani zostać moją żoną? | Das geht nicht. Ich liebe einen anderen Mann. | Powiedz, że to niemożliwe, bo kochasz innego mężczyznę. | „Das geht nicht” to „to niemożliwe”; „einen anderen Mann” to „innego mężczyznę” (biernik). | | shift=-1
 w Sorgen | troski, zmartwienia (Sorge)
 t Es geht nicht um Liebe. Meine Familie nimmt Sie auf, und Sie leben ohne Sorgen. | Nie chodzi o miłość. Moja rodzina panią przyjmie, a pani będzie żyć bez trosk. | Und was ist mit meiner Familie? | Zapytaj o swoją rodzinę. | „Meine Familie” w celowniku to „meiner Familie”; „Und was ist mit …?” to „a co z …?”. | | shift=-1
-t Ihr Vater und Ihr Bruder bekommen Arbeit und eine Wohnung. | Pani ojciec i brat dostaną pracę i mieszkanie. | Das hilft meiner Familie sehr. | Powiedz cicho, że to bardzo pomogłoby twojej rodzinie. | „Helfen” łączy się z celownikiem: „meiner Familie”. | | gain=1
+t Ihr Vater und Ihr Bruder bekommen Arbeit und eine Wohnung. | Pani ojciec i brat dostaną pracę i mieszkanie. | Das hilft meiner Familie sehr. | Powiedz, że to bardzo pomogłoby twojej rodzinie. | „Helfen” łączy się z celownikiem: „meiner Familie”. | | gain=1
 w Nun | no więc, teraz
 w antworte | odpowiadam (antworten)
 w heirate | żenię się, wychodzę za mąż (heiraten)
