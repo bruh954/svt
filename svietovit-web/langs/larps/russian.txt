@@ -242,7 +242,7 @@ reward 40
 strict yes
 story yes
 disclaimer Fikcyjna baśń, autorska opowieść inspirowana baśnią wierszem „Красный Град”. Postacie i wydarzenia są zmyślone. Przemoc i głód pokazane są skrótem i z perspektywy winy oraz skutków; nic tu nie jest wzorem do naśladowania.
-warning Ostrzeżenie o treści: baśń zawiera motywy głodu, kanibalizmu, śmierci i krzywdy dzieci, przemocy oraz szaleństwa. Jeśli te tematy są dla ciebie trudne, pomiń ten larp.
+warning Ostrzeżenie o treści: baśń zawiera motywy głodu, kanibalizmu, śmierci i krzywdy dzieci, przemocy, szaleństwa oraz związku osób spokrewnionych (trudne relacje w rodzinie). Jeśli te tematy są dla ciebie trudne, pomiń ten larp.
 win Czerwony Gród żyje. Przodkowie patrzą z dumą, Li-Sa i dzieci są bezpieczne, a ty, nieśmiertelny car, rządzisz mądrze i pamiętasz. Nad miastem szczęścia i bogactwa wstaje ognisty świt.
 partial Gród przetrwał, ale klątwa wciąż szepcze w twoim sercu. Rządzisz z bólem i uczysz się, jak nie pozwolić głodowi mówić za ciebie.
 fail Głód zwyciężył. Twoje myśli rozsypały się jak lód na wiosnę, a Czerwony Gród został tylko opowieścią, którą matki szepczą dzieciom ku przestrodze.
@@ -433,8 +433,10 @@ t Их нет. Голод был сильный. Я не могу́ говори
 w спря́тала | ukryła (спря́тать)
 w ма́ленькую | małą (biernik od ма́ленькая)
 w флейти́ста | fleciarza (dopełniacz od флейти́ст)
+w похо́жа | podobna (rodzaj żeński)
 w найду́ | znajdę (найти́)
-t Ма́ма спря́тала ма́ленькую дочь у флейти́ста. Я не зна́ю, где они́. | Mama ukryła małą córkę u fleciarza. Nie wiem, gdzie są. | Хорошо́. Я найду́ их. | Obiecaj, że ich znajdziesz. | „Znajdę” to я найду.
+w её | ją, jej
+t Ма́ма спря́тала ма́ленькую дочь у флейти́ста. Она́ похо́жа на тебя́. Я не зна́ю, где они́. | Mama ukryła małą córkę u fleciarza. Jest do ciebie podobna. Nie wiem, gdzie są. | Хорошо́. Я найду́ её. | Obiecaj, że ją znajdziesz. | „Znajdę” to я найду, „ją” to её.
 w за́ле | sali (miejscownik od зал)
 w скажу́ | powiem (сказа́ть)
 w им | im (celownik od они́)
@@ -505,8 +507,8 @@ e То́лько не бойся. Он стро́гий, но добрый. | Ty
 
 @level 7 | Błogosławieństwo Ja-Gi | patience=3 cap=6 typed=0.45 extra=1 hint=bank
 desc Rozdział 7: Ślub w lesie
-scene Mała chata w lesie. Ja-Ga, stary poeta i fleciarz, mierzy cię wzrokiem. Li-Sa stoi obok. Kochacie się, a czasu nie ma. Dziś możecie zostać mężem i żoną, ale potrzebujecie jego błogosławieństwa.
-goal Poproś Ja-Gę o błogosławieństwo, odpowiadaj szczerze na jego pytania i weź ślub jeszcze dziś.
+scene Mała chata w lesie. Ja-Ga, stary poeta i fleciarz, mierzy cię wzrokiem. Li-Sa stoi obok. Kochacie się, a czasu nie ma. Dziś możecie zostać mężem i żoną, ale potrzebujecie jego błogosławieństwa. Nikt jeszcze nie zna prawdy o jej pochodzeniu.
+goal Poproś Ja-Gę o błogosławieństwo, odpowiadaj szczerze na jego pytania, weź ślub jeszcze dziś i wysłuchaj prawdy, którą Ja-Ga wyjawi na pożegnanie.
 partner Я-Га | Я
 win Ja-Ga uśmiecha się i unosi flet: „Благословляю вас!” Jeszcze tego samego dnia kłaniacie się niebiosom, przodkom i sobie nawzajem. W lesie rodzą się dzieci, a życie jest spokojne.
 partial Ja-Ga błogosławi was niechętnie. Ślub się odbywa, ale w jego głosie słychać wątpliwość.
@@ -516,7 +518,6 @@ w ми́ром | pokojem (narzędnik od мир)
 t Кто э́то, Ли-Са? Что здесь де́лает чужой челове́к? | Kto to, Li-Sa? Co tu robi obcy człowiek? | Я И-Уан. Я пришёл с ми́ром. | Przedstaw się i powiedz, że przyszedłeś w pokoju. | „W pokoju” to z миром.
 t Откуда ты? И кто твой оте́ц? | Skąd jesteś? I kto jest twoim ojcem? | Мой оте́ц царь Кра́сного Гра́да. Я его́ сын. | Powiedz prawdę: ojciec jest carem, ty jego synem. | „Syn cara” to сын царя.
 w Ли-Сы | Li-Sy (dopełniacz od Ли-Са)
-w её | ją, jej
 w ней | niej (с ней = z nią)
 o Лю́ди говоря́т: он злой царь. Что ты хо́чешь от мое́й Ли-Сы? | Ludzie mówią, że to zły car. Czego chcesz od mojej Li-Sy? | Я люблю́ её. Я хочу́ быть с ней. | Я хочу́ твой дом.; Я ничего́ не хочу́. | Dom Ja-Gi nie jest ci potrzebny.; Skoro nic nie chcesz, po co tu jesteś? | gain=1
 w зна́ете | znacie (знать)
@@ -541,6 +542,10 @@ w лесу́ | lesie (miejscownik od лес)
 w иду́т | idą (идти́)
 w слу́хи | plotki (liczba mnoga od слух)
 t Прошли́ го́ды. У вас де́ти. Но по лесу́ иду́т слу́хи. Говоря́т, в го́роде кровь и голод. | Minęły lata. Macie dzieci. Ale po lesie krążą plotki. Mówią, że w mieście jest krew i głód. | Я должен вернуться в город. | Powiedz, że musisz wrócić do miasta. | „Muszę” to я должен. |  | shift=-1
+w была́ | była (быть)
+w цари́ца | caryca
+w царя́ | cara (dopełniacz od царь)
+t Я должен сказать тебе́ пра́вду. Мать Ли-Сы была́ цари́ца. В ней кровь царя́. | Muszę ci powiedzieć prawdę. Matka Li-Sy była carycą. Płynie w niej krew cara. | Мне бо́льно, но я люблю́ её. | Powiedz, że czujesz ból, ale ją kochasz. | „Boli mnie” to мне больно; „kocham ją” to я люблю её. |  | shift=-1
 w возвраща́йся | wracaj (возвраща́ться)
 e Иди́. Но возвраща́йся с ми́ром. | Idź. Ale wracaj w pokoju.
 
@@ -605,6 +610,10 @@ fail Li-Sa zostaje, a głód coraz głośniej szepcze. Wołasz ją, ale jest za 
 w сказа́ли | powiedzieli (сказа́ть)
 w у́мер | umarł (умере́ть)
 t Мне сказа́ли: твой оте́ц у́мер. Мне о́чень жаль, И-Уан. | Powiedziano mi: twój ojciec umarł. Bardzo mi przykro, I-Uanie. | Спаси́бо, Ли-Са. Теперь я царь. | Podziękuj i powiedz, że teraz jesteś carem. | „Teraz” to теперь. |  | shift=-1
+w Я-Ги | Ja-Gi (dopełniacz od Я-Га)
+w на́ше | nasze (rodzaj nijaki od наш)
+w го́ре | nieszczęście, żal
+t Я зна́ю пра́вду от Я-Ги. Моя́ мать была́ цари́ца. Э́то на́ше го́ре. | Znam prawdę od Ja-Gi. Moja matka była carycą. To nasze nieszczęście. | Да, я зна́ю. Мне бо́льно, но я люблю́ тебя́. | Powiedz, że wiesz, że cię boli, ale ją kochasz. | „Kocham cię” to я люблю тебя. |  | shift=-1
 w бле́дный | blady
 w ешь | jesz (есть)
 w оно́ | ono
@@ -660,7 +669,6 @@ t Что ты ска́жешь Ли-Се и де́тям? | Co powiesz Li-Sie i 
 w смо́трим | patrzymy (смотре́ть)
 w го́рдо | dumnie
 w ру́ки | ręce
-w царя́ | cara (dopełniacz od царь)
 w исправля́ют | naprawiają (исправля́ть)
 w обеща́ешь | obiecujesz (обеща́ть)
 w обеща́ю | obiecuję (обеща́ть)

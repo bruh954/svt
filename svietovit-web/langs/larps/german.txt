@@ -3020,16 +3020,18 @@ t Sie hat einen Fehler gemacht, und sie hat dafür bezahlt. | Popełniła błąd
 t Möchten Sie die Blume auf das Grab legen? | Chciałby pan położyć kwiat na grobie? | Ja, gern. Die Passionsblume ist für sie. | Zgódź się i powiedz, że passiflora jest dla niej. | „Für sie” to „dla niej”. | | gain=1
 e Zygmunt legt die Blume auf das Grab. Der Wind wird leise, und nach sechsundsiebzig Jahren ist sein Herz leicht. | Zygmunt kładzie kwiat na grobie. Wiatr cichnie, a po siedemdziesięciu sześciu latach jego serce jest lekkie.
 
-@larp kraina1 | Kraina naszych bogów, część I: Jaśmina | Malina | M | Baśniowa kraina, w której bogowie powoli odchodzą, a ludzie uczą się żyć bez nich. Zaczyna się w lesie, a kończy w ogniu i świetle. | Jesteś Jaśminą. Przeżyj rok od wiosny do nowego świtu: chroń rodzinę, zachowaj odwagę i nie przestawaj wierzyć, nawet gdy bogowie odchodzą.
+@larp kraina1 | Kraina naszych bogów, część I: Jaśmina | Malina | M | Baśniowa kraina, w której bogowie powoli odchodzą, a ludzie uczą się żyć bez nich. Zaczyna się w lesie, a kończy na progu mrocznego lasu. | Jesteś Jaśminą. Przeżyj rok od wiosny do przedwiośnia: chroń rodzinę, zachowaj odwagę i nie przestawaj wierzyć, nawet gdy bogowie odchodzą.
 fee 0
 reward 30
 strict yes
 story yes
 disclaimer Fikcja baśniowa. Historia, miejsca i postacie są zmyślone, a mitologia jest wolną fantazją.
 warning W tej opowieści pojawiają się wojna, głód, śmierć bliskich, poród oraz porwanie dziecka. Wydarzenia pokazane są oszczędnie, ale ton bywa smutny i tragiczny.
-win Las płonie i gaśnie, a nad Krainą wstaje nowy świt. Jaśmina nie jest już zwykłym człowiekiem: czuwa nad synem, który został królem, a Kraina ma nowych bogów.
-partial Dotarłaś do końca drogi, choć kilka razy brakło ci słów. Kraina trwa, a bogowie, których sama stworzyłaś, patrzą na nią z nieba, trochę zmęczeni.
-fail Biała cisza zamyka się wokół ciebie. Las zapomina twoje imię, a Kraina zostaje bez nowych bogów.
+win Wracasz do Krainy, a Mika oddaje wam ją we władanie. Las już was woła, ale jesteście razem, a opowieść dopiero się zaczyna.
+partial Dotarłaś do progu lasu, choć kilka razy brakło ci słów. Kraina jest znów wasza, ale cień lasu jest coraz bliżej.
+fail Biała cisza zamyka się wokół ciebie. Las zapomina twoje imię, a Kraina zostaje bez swoich ludzi.
+
+
 
 @level 1 | Prolog: w lesie | patience=4 cap=6 typed=0 extra=1 hint=none
 desc Prolog: Zgubione w lesie
@@ -3062,53 +3064,59 @@ e Der Wald wird still und weiß. Nur Jaśmina geht nach Hause. | Las cichnie i b
 
 @level 2 | Wiosna: małżeństwo | patience=4 cap=6 typed=0.1 extra=1 hint=bank
 desc Rozdział 1: Małżeństwo
-scene Wiosna. Minęły lata, a Jaśmina jest dorosła. W gaju nad jeziorem czeka na ciebie Chaber, a kwiaty kwitną, jakby bogowie je rozsypali. Dziś jest wasz ślub.
-goal Przywitaj Chabra, przyjmij jego słowa i powiedz „tak” przed bogami.
-partner Chaber | C
-win Mika kładzie wam wieniec na ramiona. Bogowie się uśmiechają, a wiosna jest ciepła.
-partial Ślub się odbył, choć kilka razy plątał ci się język. Chaber trzyma twoją dłoń mocno i śmieje się cicho.
-fail Chaber milknie, a goście rozchodzą się w ciszy. Ślub zostaje odłożony.
+scene Wiosna. Minęły lata, a Jaśmina jest dorosła. W gaju nad jeziorem czeka na ciebie Amarylis, a kwiaty kwitną, jakby rozsypała je sama wiosna. Dziś jest wasz ślub.
+goal Przywitaj Amarylisa, przyjmij jego słowa i powiedz „tak”.
+partner Amarylis | A
+win Zostajecie mężem i żoną. Wiosna jest ciepła, ale Amarylis patrzy w stronę rzeki, jakby czegoś słuchał.
+partial Ślub się odbył, choć kilka razy plątał ci się język. Amarylis trzyma twoją dłoń mocno i śmieje się cicho.
+fail Amarylis milknie, a goście rozchodzą się w ciszy. Ślub zostaje odłożony.
 w unsere | nasza
-w Chaber | Chaber (imię)
-t Guten Morgen, Jaśmina! Heute ist unsere Hochzeit. | Dzień dobry, Jaśmina! Dziś jest nasz ślub. | Guten Morgen, Chaber! Ich bin sehr glücklich. | Przywitaj Chabra i powiedz, że jesteś bardzo szczęśliwa. | „Szczęśliwa” to glücklich.
+w Amarylis | Amarylis (imię)
+t Guten Morgen, Jaśmina! Heute ist unsere Hochzeit. | Dzień dobry, Jaśmina! Dziś jest nasz ślub. | Guten Morgen, Amarylis! Ich bin sehr glücklich. | Przywitaj Amarylisa i powiedz, że jesteś bardzo szczęśliwa. | „Szczęśliwa” to glücklich.
 w Blumen | kwiaty (Blume)
 w blühen | kwitnąć
-t Der Frühling ist da. Die Blumen blühen nur für dich. | Wiosna nadeszła. Kwiaty kwitną tylko dla ciebie. | Danke, Chaber. Die Blumen sind wunderschön. | Podziękuj i pochwal kwiaty. | Blumen to liczba mnoga, więc sind. | | gain=1
+t Der Frühling ist da. Die Blumen blühen nur für dich. | Wiosna nadeszła. Kwiaty kwitną tylko dla ciebie. | Danke, Amarylis. Die Blumen sind wunderschön. | Podziękuj i pochwal kwiaty. | Blumen to liczba mnoga, więc sind. | | gain=1
 w Mika | Mika (imię)
-w Göttern | bogom (Gott)
-t Mika wartet schon am See. Sie spricht mit den Göttern. | Mika już czeka nad jeziorem. Ona rozmawia z bogami. | Ich bin bereit. Gehen wir? | Powiedz, że jesteś gotowa, i zaproponuj, żebyście szli. | „Gotowa” to bereit, a „Gehen wir?” to „Idziemy?”.
+w gekommen | przyszedł (kommen)
+t Alle warten schon am See. Auch Mika ist gekommen. | Wszyscy już czekają nad jeziorem. Mika też przyszła. | Ich bin bereit. Gehen wir? | Powiedz, że jesteś gotowa, i zaproponuj, żebyście szli. | „Gotowa” to bereit, a „Gehen wir?” to „Idziemy?”.
 w schlechten | złych (schlecht)
-o Mika fragt dich. Willst du mit Chaber leben, in guten und in schlechten Tagen? | Mika pyta ciebie. Czy chcesz żyć z Chabrem w dobrych i w złych dniach? | Ja, ich will. Ich bleibe bei ihm. | Nein, ich will nicht.; Ich weiß nicht. | Odpowiadasz na pytanie przysięgi: „tak, chcę”.; Na uroczystym ślubie „nie” byłoby wielkim ciosem dla Chabra.; Wahanie przed bogami nie jest odpowiedzią na pytanie. | gain=1
+o Willst du mit mir leben, in guten und in schlechten Tagen? | Czy chcesz żyć ze mną w dobrych i w złych dniach? | Ja, ich will. Ich bleibe bei dir. | Nein, ich will nicht.; Ich weiß nicht. | Odpowiadasz na pytanie przysięgi: „tak, chcę”.; Na uroczystym ślubie „nie” byłoby wielkim ciosem.; Wahanie przy ślubie nie jest odpowiedzią na pytanie. | gain=1
 t Hier ist ein Ring aus Gras. Er ist nicht aus Gold. | Oto pierścień z trawy. Nie jest ze złota. | Ich brauche kein Gold. Ich brauche nur dich. | Powiedz, że nie potrzebujesz złota, tylko jego. | „Nie potrzebuję żadnego złota” to ich brauche kein Gold.
 t Man sagt, im Norden gibt es Krieg. Ich habe Angst, Jaśmina. | Mówią, że na północy jest wojna. Boję się, Jaśmina. | Heute sind wir zusammen. Das ist genug. | Uspokój go: dziś jesteście razem i to wystarczy. | „Wystarczy” to genug. | | shift=-1
-t Wir tanzen bis zum Abend. Ich liebe dich, Jaśmina. | Będziemy tańczyć do wieczora. Kocham cię, Jaśmina. | Ich liebe dich auch, Chaber. | Odpowiedz, że ty też go kochasz. | „Też” to auch.
-w Götter | bogowie (Gott)
+t Ich liebe dich, Jaśmina. Warte hier, ich muss kurz zum Fluss. | Kocham cię, Jaśmina. Poczekaj tu, muszę na chwilę iść nad rzekę. | Ich liebe dich auch. Komm bald zurück. | Odpowiedz, że ty też go kochasz, i poproś, żeby szybko wrócił. | „Też” to auch, „wróć” to komm zurück.
 w Trommeln | bębny (Trommel)
-e Die Götter lächeln, und der Frühling ist warm. Aber im Norden hört man schon die Trommeln. | Bogowie się uśmiechają, a wiosna jest ciepła. Ale na północy słychać już bębny.
+e Amarylis geht zum Fluss und kommt nicht zurück. Im Norden schlagen die Trommeln. | Amarylis idzie nad rzekę i nie wraca. Na północy biją bębny.
 
 @level 3 | Wiosna: wojna i Denre | patience=4 cap=6 typed=0.15 extra=2 hint=bank
 desc Rozdział 2: Wojna i śmierć Denre
-scene Kilka dni po ślubie. Do świątyni wnoszą rannego Denre, starego strażnika granicy. Mówi, że z gór nadchodzą obcy żołnierze. Jaśmina siada przy nim.
-goal Wysłuchaj starego Denre, nie pozwól, by strach cię przytłoczył, i obiecaj, że odwiedzisz Mikę.
+scene Kilka dni później. Amarylis nie wrócił znad rzeki, a żołnierze zabrali do wojska jego braci, Chabra i Dzbanecznika. Jaśmina idzie do świątyni Denre, bogini wiosny, ale bogini ledwo żyje.
+goal Opowiedz Denre, co się stało, wysłuchaj jej i obiecaj, że odwiedzisz Mikę.
 partner Denre | D
-win Denre umiera spokojnie, a ty trzymasz jego dłoń do końca. Z gór słychać bębny, ale ty wiesz, dokąd pójdziesz.
-partial Denre odchodzi, zanim zdążyłaś powiedzieć wszystko. Zostaje ci jego obietnica i niepokój.
-fail Denre milknie, zanim usłyszałaś jego ostatnie słowa. Strach zostaje z tobą w ciemnej świątyni.
+win Denre, bogini wiosny, gaśnie spokojnie, a ty trzymasz jej dłoń do końca. Z gór słychać bębny, ale wiesz, dokąd pójdziesz.
+partial Denre odchodzi, zanim zdążyłaś powiedzieć wszystko. Zostaje ci jej obietnica i niepokój.
+fail Denre milknie, zanim usłyszałaś jej ostatnie słowa. Strach zostaje z tobą w zimnej świątyni.
 w Denre | Denre (imię)
-w passiert | wydarzyło się (passieren)
-t Jaśmina, komm näher. Ich habe nicht mehr viel Zeit. | Jaśmina, podejdź. Nie mam już wiele czasu. | Ich bin hier, Denre. Was ist passiert? | Powiedz, że jesteś przy nim, i zapytaj, co się stało. | „Co się stało?” to was ist passiert?
+t Jaśmina, komm näher. Ich habe nicht mehr viel Zeit. | Jaśmina, podejdź. Nie mam już wiele czasu. | Ich bin hier, Denre. Wo ist Amarylis? | Powiedz, że jesteś przy niej, i zapytaj, gdzie jest Amarylis. | „Gdzie jest?” to wo ist?
 w Soldaten | żołnierze (Soldat)
 w Berge | góry (Berg)
-t Der Krieg ist da. Fremde Soldaten kommen über die Berge. | Wojna jest tu. Obcy żołnierze idą przez góry. | Warum kommen sie zu uns? | Zapytaj, dlaczego przychodzą do was. | „Dlaczego” to warum. | | shift=-1
+t Ich weiß es nicht, mein Kind. Der Krieg ist da. Fremde Soldaten kommen über die Berge. | Nie wiem, dziecko. Wojna jest tu. Obcy żołnierze idą przez góry. | Warum kommen sie zu uns? | Zapytaj, dlaczego przychodzą do was. | „Dlaczego” to warum. | | shift=-1
 w Männer | mężczyźni (Mann)
-t Sie wollen unser Land. Chaber und die Männer gehen morgen in den Krieg. | Chcą naszej ziemi. Chaber i mężczyźni idą jutro na wojnę. | Nein! Chaber ist mein Mann. Er darf nicht gehen! | Zaprotestuj: Chaber jest twoim mężem i nie może iść. | „Nie może” to er darf nicht. | | shift=-1
-o Er muss gehen. Wir müssen alle stark sein. Du auch. | On musi iść. Wszyscy musimy być silni. Ty też. | Ich bin stark. Ich warte auf ihn. | Ich laufe weg.; Ich schlafe jetzt. | „Czekam na niego” to ich warte auf ihn.; Uciekanie nie pomoże Chabrowi i krainie.; Denre właśnie prosi cię o siłę, a nie o sen. | gain=1
-w gelebt | żył (leben)
+w Chaber | Chaber (imię)
+w Dzbanecznik | Dzbanecznik (imię)
+w Heer | wojsko, armia | das | die Heere
+w meines | mojego
+w Mannes | męża (Mann)
+t Sie nehmen die Männer mit. Chaber und Dzbanecznik sind schon im Heer. | Zabierają mężczyzn. Chaber i Dzbanecznik są już w wojsku. | Nein! Das sind die Brüder meines Mannes! | Zaprotestuj: to bracia twojego męża. | „Bracia” to Brüder, „mojego męża” to meines Mannes. | | shift=-1
+w Göttin | bogini | die | die Göttinnen
+w retten | ratować
+o Ich bin eine Göttin, aber ich kann sie nicht retten. Wir müssen alle stark sein. Du auch. | Jestem boginią, ale nie mogę ich uratować. Wszyscy musimy być silni. Ty też. | Ich bin stark. Ich warte auf sie. | Ich laufe weg.; Ich schlafe jetzt. | „Czekam na nich” to ich warte auf sie.; Uciekanie nie pomoże rodzinie.; Denre właśnie prosi cię o siłę, a nie o sen. | gain=1
+w stirbt | umiera (sterben)
 w nimm | weź (nehmen)
-t Ich habe lange gelebt, mein Kind. Nimm bitte meine Hand. | Długo żyłem, dziecko moje. Weź proszę moją dłoń. | Ich bin bei dir. Du bist nicht allein. | Pocieszaj go: jesteś przy nim i nie jest sam. | „Nie jesteś sam” to du bist nicht allein.
+t Mein Herz ist müde, Kind. Der Frühling stirbt mit mir. Nimm bitte meine Hand. | Moje serce jest zmęczone, dziecko. Wiosna umiera ze mną. Weź proszę moją dłoń. | Ich bin bei dir. Du bist nicht allein. | Pocieszaj ją: jesteś przy niej i nie jest sama. | „Nie jesteś sama” to du bist nicht allein.
 t Wenn ich nicht mehr da bin, geh zu Mika. Sie weiß mehr als wir. | Gdy mnie już nie będzie, idź do Miki. Ona wie więcej niż my. | Ja, ich gehe zu Mika. Das verspreche ich. | Obiecaj, że pójdziesz do Miki. | „To obiecuję” to das verspreche ich.
+w Götter | bogowie (Gott)
 w hör | słuchaj (hören)
-t Die Götter sind müde, Jaśmina. Hör gut zu. | Bogowie są zmęczeni, Jaśmina. Słuchaj uważnie. | Ich höre dir zu, Denre. | Powiedz, że go słuchasz. | „Słucham cię” to ich höre dir zu.
+t Die Götter sind müde, Jaśmina. Hör gut zu. | Bogowie są zmęczeni, Jaśmina. Słuchaj uważnie. | Ich höre dir zu, Denre. | Powiedz, że jej słuchasz. | „Słucham cię” to ich höre dir zu.
 w schließt | zamyka (schließen)
 e Denre schließt die Augen. Draußen schlagen die Soldaten die Trommeln. | Denre zamyka oczy. Na zewnątrz żołnierze biją w bębny.
 
@@ -3120,7 +3128,6 @@ partner Mika | M
 win Mika patrzy w niebo, a liście lipy drżą. Wiesz już, że bogowie odchodzą, i nie boisz się pytać dalej.
 partial Zrozumiałaś tylko część słów Miki, ale to wystarczy, żeby się niepokoić. Wrócisz do niej jeszcze.
 fail Mika milknie i odwraca wzrok. Jeszcze nie jesteś gotowa na tę rozmowę.
-w gekommen | przyszedł (kommen)
 w gestorben | umarł (sterben)
 t Du bist gekommen, wie Denre gesagt hat. Setz dich. | Przyszłaś, jak mówił Denre. Usiądź. | Ich bin hier, Mika. Denre ist gestorben. | Powiedz, że jesteś, i że Denre umarł. | „Umarł” to ist gestorben.
 w gespürt | poczułam (spüren)
@@ -3145,9 +3152,9 @@ w weht | wieje (wehen)
 e Mika sieht in den Himmel. Die Blätter der Linde zittern, obwohl kein Wind weht. | Mika patrzy w niebo. Liście lipy drżą, choć wiatr nie wieje.
 
 @level 5 | Lato: Chaber wraca | patience=4 cap=6 typed=0.25 extra=2 hint=bank
-desc Rozdział 4: Powrót z wojny i przeprowadzka do świątyni
-scene Koniec lata, żniwa. Chaber wraca z wojny zmęczony i ranny, ale żywy. Nie wszyscy wrócili. Na polach pracują ostatni ludzie.
-goal Przyjmij złe wieści od Chabra, powiedz mu o dziecku i zdecydujcie, że przenosicie się do Świątyni.
+desc Rozdział 4: Powrót z wojny i przeprowadzka do Świątyni
+scene Koniec lata, żniwa. Chaber, brat Amarylisa, wraca z wojny zmęczony. Nie wszyscy wrócili. Na polach pracują ostatni ludzie.
+goal Przyjmij wieści od Chabra, powiedz mu o dziecku Amarylisa i zdecydujcie, że przenosicie się do Świątyni.
 partner Chaber | C
 win Pakujecie rzeczy i idziecie razem do Świątyni na górze. Za wami zostaje pusty dom, a przed wami nowa nadzieja.
 partial Chaber przyjmuje wszystko z trudem, ale ostatecznie idziecie razem do Świątyni.
@@ -3158,23 +3165,20 @@ w Maciej | Maciej (imię)
 w Feinde | wrogowie (Feind)
 w gefangen | pojmany (fangen)
 t Maciej ist nicht mit mir gekommen. Die Feinde haben ihn gefangen genommen. | Maciej nie wrócił ze mną. Wrogowie wzięli go do niewoli. | Gefangen? Wohin haben sie ihn gebracht? | Zapytaj, dokąd go zabrali. | „Dokąd?” to wohin? | | shift=-1
-w schlechter | zły (schlecht)
+w Schuld | wina | die | –
 w gekämpft | walczył (kämpfen)
-o In den Norden. Ich konnte ihm nicht helfen. Ich bin ein schlechter Freund. | Na północ. Nie mogłem mu pomóc. Jestem złym przyjacielem. | Du bist kein schlechter Freund. Du hast gekämpft. | Ja, das stimmt.; Das ist nicht wichtig. | Chaber potrzebuje pociechy: „nie jesteś złym przyjacielem”.; Przytakiwanie byłoby okrutne.; Wojna i niewola przyjaciela są ważne. | gain=1
+o In den Norden. Ich konnte ihm nicht helfen. Es ist meine Schuld. | Na północ. Nie mogłem mu pomóc. To moja wina. | Du hast gekämpft. Es ist nicht deine Schuld. | Ja, das stimmt.; Das ist nicht wichtig. | Chaber potrzebuje pociechy: „to nie twoja wina”.; Przytakiwanie byłoby okrutne.; Wojna i niewola Macieja są ważne. | gain=1
 w Jan | Jan (imię)
 w Hitze | upał | die | –
 w arme | biedny (arm)
 w begraben | pochować
 t Jan ist heute auf dem Feld gestorben. Die Hitze war zu groß. | Jan umarł dziś w polu. Upał był zbyt wielki. | Der arme Jan! Wir müssen ihn begraben. | Wyraź żal i powiedz, że trzeba go pochować. | „Pochować” to begraben. | | shift=-1
+t Wo ist mein Bruder? Und du siehst müde aus. | Gdzie jest mój brat? I wyglądasz na zmęczoną. | Amarylis ist weg. Ich bekomme sein Kind. | Powiedz, że Amarylis zniknął i że spodziewasz się jego dziecka. | „Jego dziecko” to sein Kind. | | gain=1
 w sicher | bezpieczny
 w Tempel | świątynia | der | die Tempel
 w sicherer | bezpieczniejszy
-t Die Soldaten sind nicht weit. Das Haus ist nicht mehr sicher. | Żołnierze są niedaleko. Dom nie jest już bezpieczny. | Dann gehen wir in den Tempel. Dort sind wir sicherer. | Zaproponuj, żebyście poszli do Świątyni, gdzie jest bezpieczniej. | „Bezpieczniej” to sicherer.
-w fehlt | brakuje (fehlen)
-t Du siehst müde aus. Fehlt dir etwas? | Wyglądasz na zmęczoną. Czegoś ci brakuje? | Ich bekomme ein Kind, Chaber. | Powiedz mu, że spodziewasz się dziecka. | „Dostaję dziecko” to ich bekomme ein Kind. | | gain=1
-w mach | rób (machen)
-w Sorgen | zmartwienia (Sorge)
-t Ein Kind! Dann müssen wir erst recht gehen. | Dziecko! To tym bardziej musimy iść. | Mach dir keine Sorgen. Wir schaffen das. | Uspokój go: dacie radę. | „Nie martw się” to mach dir keine Sorgen.
+t Ein Kind von meinem Bruder! Die Soldaten sind nicht weit. Das Haus ist nicht mehr sicher. | Dziecko mojego brata! Żołnierze są niedaleko. Dom nie jest już bezpieczny. | Dann gehen wir in den Tempel. Dort sind wir sicherer. | Zaproponuj, żebyście poszli do Świątyni, gdzie jest bezpieczniej. | „Bezpieczniej” to sicherer.
+t Ich bleibe bei dir und dem Kind. | Zostanę przy tobie i przy dziecku. | Danke, Chaber. Wir schaffen das. | Podziękuj i powiedz, że dacie radę. | „Damy radę” to wir schaffen das.
 w packen | pakować
 w Sachen | rzeczy (Sache)
 w bleibt | zostaje (bleiben)
@@ -3199,10 +3203,9 @@ w Getreide | zboże | das | –
 w Kindern | dzieciom (Kind)
 k Ich brauche das Getreide für meine Soldaten. Was willst du? | Potrzebuję zboża dla moich żołnierzy. Czego chcesz? | Bitte, geben Sie den Kindern ein bisschen Brot. | Nehmen Sie alles!; Ihre Soldaten sind mir egal. | Prosisz generała o chleb dla dzieci, grzecznie, na „Pan”.; Oddanie wszystkiego skazałoby ludzi na śmierć głodową.; Generał jest zbrojny i niebezpieczny. Obrażanie jego żołnierzy to ryzyko życia. | gain=1
 w umsonst | za darmo
-w Kräuter | zioła (Kraut)
 w Verwundeten | ranni (Verwundete)
 w pflegen | opiekować się, pielęgnować
-t Du hast Mut. Aber Brot gibt es nicht umsonst. Was kannst du mir geben? | Masz odwagę. Ale chleb nie jest za darmo. Co możesz mi dać? | Mein Mann kennt Kräuter. Er kann Ihre Verwundeten pflegen. | Zaproponuj, że twój mąż zajmie się rannymi. | „Ranni” to Verwundete. | | gain=1
+t Du hast Mut. Aber Brot gibt es nicht umsonst. Was kannst du mir geben? | Masz odwagę. Ale chleb nie jest za darmo. Co możesz mi dać? | Wir können Ihre Verwundeten pflegen. | Zaproponuj, że zajmiecie się rannymi. | „Ranni” to Verwundete. | | gain=1
 w verlässt | opuszcza (verlassen)
 w Erlaubnis | pozwolenie | die | –
 t Gut. Ich schicke morgen Brot. Aber niemand verlässt den Tempel ohne Erlaubnis. | Dobrze. Jutro prześlę chleb. Ale nikt nie opuszcza świątyni bez pozwolenia. | Ich verstehe. Danke, Herr General. | Powiedz, że rozumiesz, i podziękuj. | „Panie generale” to Herr General.
@@ -3210,15 +3213,14 @@ w wenige | nieliczni
 w geblieben | pozostał (bleiben)
 t Man sagt, hier wohnen noch Götter. Stimmt das? | Mówią, że mieszkają tu jeszcze bogowie. Czy to prawda? | Früher ja. Heute sind nur wenige geblieben. | Odpowiedz ostrożnie: kiedyś tak, dziś zostali nieliczni. | „Nieliczni” to nur wenige. | | shift=-1
 w verteidigt | bronił (verteidigen)
-w Heiler | uzdrowiciel | der | die Heiler
 w Kranken | chorym (Kranke)
-d Dein Mann Chaber war im Krieg, nicht wahr? Auf welcher Seite? | Twój mąż Chaber był na wojnie, prawda? Po której stronie? | Er hat sein Land verteidigt. Jetzt ist er Heiler. | Powiedz prawdę ostrożnie: bronił swojego kraju, teraz jest uzdrowicielem. | Prawda wypowiedziana spokojnie to jedyna bezpieczna odpowiedź. | Er hat sein Land verteidigt. Jetzt hilft er den Kranken.
+d Dein Schwager Chaber war im Krieg, nicht wahr? Auf welcher Seite? | Twój szwagier Chaber był na wojnie, prawda? Po której stronie? | Er hat sein Land verteidigt. Jetzt hilft er uns. | Powiedz prawdę ostrożnie: bronił swojego kraju, teraz nam pomaga. | Prawda wypowiedziana spokojnie to jedyna bezpieczna odpowiedź. | Er hat sein Land verteidigt. Jetzt hilft er den Kranken.
 w nickt | kiwa głową (nicken)
 e Dariusz nickt langsam. Das Brot kommt, aber der Hunger bleibt. | Dariusz kiwa powoli głową. Chleb przyjdzie, ale głód zostanie.
 
 @level 7 | Jesień: narodziny | patience=4 cap=6 typed=0.35 extra=2 hint=bank
 desc Rozdział 6: Narodziny Dziewięćsiła i śmierć Rehena
-scene Zimna noc w Świątyni. Zaczyna się poród. Chaber, który zna się na ziołach, jest przy tobie, a stary kapłan Rehen czuwa przy ogniu.
+scene Zimna noc w Świątyni. Zaczyna się poród. Chaber, szwagier, jest przy tobie, a stary Rehen czuwa przy ogniu.
 goal Wytrzymaj poród, nazwij syna i obiecaj Rehenowi, że będziesz go strzec.
 partner Chaber | C
 win Dziewięćsił krzyczy głośno, a Rehen błogosławi go ostatnim tchem. Jesteś zmęczona, ale w ramionach trzymasz syna.
@@ -3236,8 +3238,9 @@ w lebt | żyje (leben)
 w Dziewięćsił | Dziewięćsił (imię)
 t Es ist ein Junge! Er lebt! Wie soll er heißen? | To chłopiec! Żyje! Jak ma mieć na imię? | Er soll Dziewięćsił heißen. | Powiedz, że ma mieć na imię Dziewięćsił. | „Ma się nazywać” to er soll heißen. | | gain=1
 w starker | mocny (stark)
+w Bruders | brata (Bruder)
 w Segen | błogosławieństwo | der | –
-t Ein starker Name. Rehen sagt leise. Dieses Kind ist ein Segen für das Land. | Mocne imię. Rehen mówi cicho. To dziecko jest błogosławieństwem dla ziemi. | Danke, Rehen. Bleib bei uns. | Podziękuj i poproś Rehena, żeby został z wami. | „Zostań z nami” to bleib bei uns.
+t Ein starker Name. Er hat die Augen meines Bruders. Rehen sagt leise. Dieses Kind ist ein Segen für das Land. | Mocne imię. Ma oczy mojego brata. Rehen mówi cicho. To dziecko jest błogosławieństwem dla ziemi. | Danke, Rehen. Bleib bei uns. | Podziękuj i poproś Rehena, żeby został z wami. | „Zostań z nami” to bleib bei uns.
 w pass | uważaj (aufpassen)
 w Jungen | chłopca (Junge)
 t Rehen ist alt. Er sagt leise. Meine Zeit ist gekommen. Pass auf den Jungen auf. | Rehen jest stary. Mówi cicho. Moja pora nadeszła. Pilnuj chłopca. | Ich verspreche es dir, Rehen. | Obiecaj mu, że będziesz pilnować syna. | „Obiecuję ci” to ich verspreche es dir. | | gain=1
@@ -3250,11 +3253,12 @@ e Draußen weht der Herbstwind. Das Kind schläft in deinen Armen. | Na dworze w
 @level 8 | Przedzimie: zioła Miki | patience=4 cap=6 typed=0.4 extra=2 hint=letters
 desc Rozdział 7: Zioła, przewrót i zniknięcie Miki
 scene Pierwsze mrozy. Mały Dziewięćsił ma gorączkę, a w kraju wojsko dokonało przewrotu. Dariusz powiedział ci, że twój ojciec nie żyje. Mika zjawia się w drzwiach Świątyni z koszykiem ziół.
-goal Weź od Miki zioła dla syna, powiedz, co usłyszałaś, i zapytaj o Amarylisa, zanim Mika zniknie.
+goal Weź od Miki zioła dla syna, powiedz, co usłyszałaś, i zapytaj o swojego męża Amarylisa, zanim Mika zniknie.
 partner Mika | M
-win Mika zostawia ci zioła i tajemnicę. Gdy odwracasz głowę, jej już nie ma. Zostaje tylko imię Amarylis.
+win Mika zostawia ci zioła i tajemnicę. Gdy odwracasz głowę, jej już nie ma. Zostaje tylko pytanie o Amarylisa.
 partial Dostałaś zioła, ale Mika znika, zanim zdążyłaś zapytać o wszystko. Dziecko będzie żyło.
 fail Mika odchodzi zła i zostawia cię z gorączką dziecka i niewiedzą.
+w Kräuter | zioła (Kraut)
 w mitgebracht | przyniosłem (mitbringen)
 w solche | taki
 t Das Kind hat Fieber. Ich habe Kräuter mitgebracht. | Dziecko ma gorączkę. Przyniosłam zioła. | Danke, Mika. Ich habe solche Angst um ihn. | Podziękuj i powiedz, że bardzo boisz się o dziecko. | „Boję się o niego” to ich habe Angst um ihn.
@@ -3264,10 +3268,10 @@ w Militär | wojsko | das | –
 w übernommen | przejął (übernehmen)
 t Das Militär hat die Macht übernommen. Was sagt Dariusz? | Wojsko przejęło władzę. Co mówi Dariusz? | Er hat mir gesagt, dass mein Vater gestorben ist. | Powiedz, że Dariusz oznajmił ci śmierć ojca. | „Powiedział mi, że” to er hat mir gesagt, dass. | | shift=-1
 o Es tut mir leid. Glaubst du ihm? | Przykro mi. Wierzysz mu? | Ich weiß nicht, ob es wahr ist. | Ja, alles, was er sagt, ist wahr.; Mir ist das egal. | „Nie wiem, czy to prawda” to ich weiß nicht, ob es wahr ist.; Dariusz nie zawsze mówi prawdę.; Śmierć ojca na pewno nie jest ci obojętna. | gain=1
-w Amarylis | Amarylis (imię)
-t Du hast noch eine Frage. Ich sehe es in deinen Augen. | Masz jeszcze pytanie. Widzę to w twoich oczach. | Wer ist Amarylis? Ich träume oft von diesem Namen. | Zapytaj, kim jest Amarylis, bo często śnisz to imię. | „Śnić o” to träumen von.
+t Du hast noch eine Frage. Ich sehe es in deinen Augen. | Masz jeszcze pytanie. Widzę to w twoich oczach. | Wo ist Amarylis? Mein Mann ist verschwunden. | Zapytaj Mikę, gdzie jest Amarylis, twój mąż, który zniknął. | „Zniknął” to ist verschwunden.
+w hab | miej (haben)
 w sagst | mówisz (sagen)
-t Er war einmal wichtig für dich. Mehr sage ich heute nicht. | Kiedyś był dla ciebie ważny. Więcej dziś nie powiem. | Warum sagst du es mir nicht? Bleib noch, Mika! | Zapytaj, dlaczego nie chce powiedzieć, i poproś, by została. | „Zostań jeszcze” to bleib noch. | | shift=-1
+t Das kann ich dir heute nicht sagen. Hab Geduld. | Kiedyś był dla ciebie ważny. Więcej dziś nie powiem. | Warum sagst du es mir nicht? Bleib noch, Mika! | Zapytaj, dlaczego nie chce powiedzieć, i poproś, by została. | „Zostań jeszcze” to bleib noch. | | shift=-1
 t Der Wind dreht sich. Pass auf das Kind auf. Wir sehen uns wieder. | Wiatr się zmienia. Pilnuj dziecka. Zobaczymy się jeszcze. | Mika? Wo bist du? | Zawołaj Mikę, bo zniknęła. | „Gdzie jesteś?” to wo bist du?
 w antwortet | odpowiada (antworten)
 w fällt | pada (fallen)
@@ -3276,7 +3280,7 @@ e Niemand antwortet. Nur der Schnee fällt auf die Schwelle. | Nikt nie odpowiad
 
 @level 9 | Zima: ucieczka przed Tammuzem | patience=4 cap=6 typed=0.45 extra=3 hint=letters
 desc Rozdział 8: Ucieczka w góry
-scene Mroczny las wyrósł w jedną noc tam, gdzie była Kraina. Ty, Chaber, obalony przez własne wojsko Dariusz i mały Dziewięćsił uciekacie w góry. Za wami podąża Tammuz.
+scene Mroczny las wyrósł w jedną noc tam, gdzie była Kraina. Ty, Chaber, Dariusz i mały Dziewięćsił uciekacie w góry. Za wami podąża Tammuz.
 goal Uciekaj przed Tammuzem, ukryj się i nie oddawaj syna bez walki.
 partner Dariusz | D
 win Dziewięćsił został porwany, ale ty żyjesz i nie złamałaś się. Postanawiacie go szukać.
@@ -3325,74 +3329,64 @@ w liegt | leży (liegen)
 w hilf | pomóż (helfen)
 t Du bist müde. Du hast dich in den Bergen verirrt. Unten liegt das Land aus Sand. | Jesteś zmęczona. Zgubiłaś się w górach. Na dole leży kraina z piasku. | Ich kann kaum noch gehen. Hilf mir bitte. | Powiedz, że ledwo idziesz, i poproś o pomoc. | „Ledwo” to kaum. | | shift=-1
 w endet | kończy się (enden)
-t Hier endet mein Weg. Ich bin ein alter Gott. | Tu kończy się moja droga. Jestem starym bogiem. | Was meinst du damit? Gehst du weg? | Zapytaj, co ma na myśli i czy odchodzi. | „Co masz na myśli?” to was meinst du damit?
+t Hier endet mein Weg. | Tu kończy się moja droga. | Was meinst du damit? Gehst du weg? | Zapytaj, co ma na myśli i czy odchodzi. | „Co masz na myśli?” to was meinst du damit?
 t Ich gebe mein Leben, damit das Land neu beginnt. Nimm meinen Segen. | Oddaję życie, żeby kraina zaczęła się od nowa. Weź moje błogosławieństwo. | Danke, Tammuz. Ich werde dich nicht vergessen. | Podziękuj mu i obiecaj, że go nie zapomnisz. | „Nie zapomnę cię” to ich werde dich nicht vergessen. | | gain=1
 t Schlaf jetzt. Sag mir, was du im Traum siehst. | Śpij teraz. Powiedz mi, co widzisz we śnie. | Ich sehe Mika. Sie trägt mein Kind in den Wald. | Opisz sen: Mika niesie twoje dziecko do lasu. | „We śnie” to im Traum.
 w löst | rozpuszcza się (sich lösen)
 e Tammuz löst sich im Sand auf wie Rauch. Du schläfst ein. | Tammuz rozpływa się w piasku jak dym. Zasypiasz.
 
 @level 11 | Przedwiośnie: Amarylis | patience=4 cap=6 typed=0.6 extra=3 hint=letters
-desc Rozdział 10: Powrót do Krainy
-scene Przedwiośnie. Budzisz się w glinianym domu w Kraju Piasku. Przy ogniu siedzi Amarylis, który cię uratował, ale nie wie, kim jesteś. Wkrótce zjawią się dwoje dziwnych dzieci z twoimi zagubionymi towarzyszami.
-goal Przypomnij Amarylisowi, kim jesteś, rozpoznaj bliźnięta i wróć do Krainy.
+desc Rozdział 10: Przedwiośnie, Kraj Piasku
+scene Przedwiośnie. Budzisz się w glinianym domu w Kraju Piasku. Przy ogniu siedzi Amarylis, twój mąż, który cię uratował, ale cię nie pamięta. Wkrótce zjawią się dwoje dziwnych dzieci z Chabrem i Dariuszem.
+goal Przypomnij mężowi, kim jesteś, rozpoznaj bliźnięta i zdecydujcie, że wracacie do Krainy.
 partner Amarylis | A
-win Wracasz do Krainy razem z Chabrem, Dariuszem, Amarylisem i bliźniętami. Mika wręcza wam władzę nad ziemią, a las wzywa was do siebie.
-partial Wracacie do Krainy, ale nie wszystko rozumiesz. Las wzywa, a Mika czeka z dzieckiem na rękach.
-fail Amarylis cię nie rozpoznaje i odchodzi. Zostajesz sama w glinianym domu.
+win Amarylis nadal cię nie pamięta, ale wam ufa. Razem z Chabrem, Dariuszem i bliźniętami ruszacie z powrotem do Krainy.
+partial Amarylis wciąż nie wie, kim jesteś, ale idzie z wami. Droga do Krainy będzie długa.
+fail Amarylis nie wierzy ci i odchodzi. Zostajesz sama w glinianym domu.
 w kennst | znasz (kennen)
 t Du bist wach! Ich habe dich im Sand gefunden. Wie heißt du? | Obudziłaś się! Znalazłem cię w piasku. Jak masz na imię? | Ich heiße Jaśmina. Kennst du mich nicht? | Przedstaw się i zapytaj, czy on cię nie zna. | „Nie znasz mnie?” to kennst du mich nicht?
 w anderes | inne
-t Nein, ich kenne dich nicht. Aber mein Herz sagt etwas anderes. | Nie, nie znam cię. Ale moje serce mówi co innego. | Ich kenne dich, Amarylis. Aber das ist eine lange Geschichte. | Powiedz, że ty go znasz, ale to długa historia. | „Długa historia” to eine lange Geschichte. | | gain=1
+w geheiratet | ożenił się, wziął ślub (heiraten)
+t Nein, ich kenne dich nicht. Aber mein Herz sagt etwas anderes. | Nie, nie znam cię. Ale moje serce mówi co innego. | Du bist mein Mann, Amarylis. Wir haben geheiratet. | Powiedz mu, że jest twoim mężem i że się pobraliście. | „Pobraliśmy się” to wir haben geheiratet. | | gain=1
+w erinnere | pamiętam (sich erinnern)
 w Ulgen | Ulgen (imię)
 w Perun | Perun (imię)
-t Zwei Kinder sind gekommen. Sie heißen Ulgen und Perun. Sie haben Chaber und Dariusz gebracht. | Przyszło dwoje dzieci. Nazywają się Ulgen i Perun. Przyprowadziły Chabra i Dariusza. | Chaber lebt! Wo sind die Kinder? | Ucieszona zapytaj, gdzie są dzieci. | „Chaber żyje” to Chaber lebt. | | gain=1
+t Ich erinnere mich nicht, es tut mir leid. Draußen sind zwei Kinder, Ulgen und Perun. Sie haben Chaber und Dariusz gebracht. | Nie pamiętam, przykro mi. Na zewnątrz są dwoje dzieci, Ulgen i Perun. Przyprowadziły Chabra i Dariusza. | Chaber lebt! Wo sind die Kinder? | Ucieszona zapytaj, gdzie są dzieci. | „Chaber żyje” to Chaber lebt. | | gain=1
 w schau | spójrz (schauen)
 w Schwestern | siostry (Schwester)
 o Schau sie an. Kennst du sie? | Spójrz na nie. Znasz je? | Ja, sie sehen aus wie Mika. | Nein, ich habe sie nie gesehen.; Ja, sie sind meine Schwestern. | Bliźnięta mają twarz Miki, więc „wyglądają jak Mika” to prawda.; Nigdy ich nie widziałaś? Przecież mają twarz Miki.; To nie są twoje siostry, tylko sobowtóry Miki. | gain=1
 w zweit | we dwoje (zu zweit)
-t Wir sind ihr Spiegel. Wir sind zu zweit, sie ist allein. Komm, wir bringen euch zurück. | Jesteśmy jej odbiciem. Jest nas dwoje, ona jest sama. Chodźcie, odprowadzimy was z powrotem. | Ja, bitte. Mein Sohn braucht mich. | Zgódź się: syn cię potrzebuje. | „Potrzebuje mnie” to braucht mich.
-t Wir sind zurück im Land. Mika steht am Tor und gibt euch das Land. | Jesteśmy z powrotem w Krainie. Mika stoi przy bramie i oddaje wam ziemię. | Danke, aber ich möchte zuerst meinen Sohn sehen. | Podziękuj, ale powiedz, że najpierw chcesz zobaczyć syna. | „Najpierw” to zuerst. | | shift=-1
-w zieht | ciągnie (ziehen)
-t Der Wald ruft uns. Er zieht uns an, wir können nicht mehr zurück. Mika hat dein Kind auf dem Arm. | Las nas woła. Przyciąga nas i nie możemy już zawrócić. Mika trzyma twoje dziecko na ręku. | Dann gehen wir zusammen in den Wald. | Zdecyduj: idziecie razem do lasu. | „Wtedy idziemy razem” to dann gehen wir zusammen. | | shift=-1
-w hebt | podnosi (heben)
-w Arme | ramiona (Arm)
-e Der Wald zieht sie an. Mika hebt Dziewięćsił auf ihre Arme und sieht dich an. | Las ich przyciąga. Mika podnosi Dziewięćsiła w ramionach i patrzy na ciebie.
+t Wir sind ihr Spiegel. Wir sind zu zweit, sie ist allein. Wir bringen euch zurück. | Jesteśmy jej odbiciem. Jest nas dwoje, ona jest sama. Odprowadzimy was z powrotem. | Ja, bitte. Wir haben einen Sohn, Amarylis. Er braucht uns. | Powiedz Amarylisowi, że macie syna, który was potrzebuje. | „Mamy syna” to wir haben einen Sohn.
+t Chaber und Dariusz wollen auch zurück ins Land. Kommst du mit uns? | Chaber i Dariusz też chcą wrócić do Krainy. Idziesz z nami? | Ja, wir gehen alle zusammen. | Zgódź się: idziecie wszyscy razem. | „Wszyscy razem” to alle zusammen. | | shift=-1
+t Ich weiß nicht, wer ich war. Aber ich vertraue dir. | Nie wiem, kim byłem. Ale ci ufam. | Danke, Amarylis. Du wirst dich erinnern. | Podziękuj i powiedz, że sobie przypomni. | „Przypomnisz sobie” to du wirst dich erinnern. | | gain=1
+e Sie gehen durch die Berge zurück. Vor ihnen liegt das Land, still und grün. | Idą z powrotem przez góry. Przed nimi leży Kraina, cicha i zielona.
 
-@level 12 | Nowy świt | patience=4 cap=6 typed=0.7 extra=3 hint=letters
-desc Rozdział 11: Las i burza
-scene Gęsty las, ciemność, cisza jak przed burzą. Obok ciebie stoją Chaber, Dariusz i Amarylis, a bliźnięta Perun i Ulgen podnoszą ręce ku niebu. Mika trzyma Dziewięćsiła.
-goal Podejmij ostatnią decyzję, przyjmij to, co nieuniknione, i wypowiedz życzenie dla Krainy.
-partner Perun | P
-win Las płonie, a z popiołów wstaje nowy świt. Jesteś teraz boginią, a twój syn Dziewięćsił jest królem Krainy.
-partial Przyjęłaś swój los z drżeniem, ale bez cofnięcia się. Kraina ma nowych bogów i nowego króla.
-fail Burza gaśnie, zanim las zdąży spłonąć. Ciemność zostaje, a ty razem z nią.
-t Der Wald hat uns verschluckt. Es gibt keinen Weg zurück. | Las nas pochłonął. Nie ma drogi powrotnej. | Ich sehe nichts. Ich höre nur mein Herz. | Powiedz, że nic nie widzisz i słyszysz tylko własne serce. | „Własne serce” to mein Herz.
-w aufhalten | powstrzymać
-w geschieht | dzieje się (geschehen)
-t Wir können ihn aufhalten. Wir rufen den Sturm. | Możemy go powstrzymać. Wezwiemy burzę. | Was geschieht mit uns, wenn ihr den Sturm ruft? | Zapytaj, co się z wami stanie, jeśli wezwą burzę. | „Co się stanie?” to was geschieht?
-w Neues | coś nowego
-w geboren | urodzony (gebären)
-t Der Wald brennt, und alle, die darin sind, sterben als Menschen. Aber etwas Neues wird geboren. | Las płonie, a wszyscy, którzy w nim są, umierają jako ludzie. Ale rodzi się coś nowego. | Ich habe Angst, aber ich verstehe. Es muss sein. | Przyznaj, że się boisz, ale rozumiesz, że tak musi być. | „Tak musi być” to es muss sein. | | shift=-1
-w Opfer | ofiara | das | die Opfer
-w rettet | ratujcie (retten)
-k Wollt ihr dieses Opfer bringen? Für das Land und für den Jungen? | Czy chcecie złożyć tę ofiarę? Dla ziemi i dla chłopca? | Ja, wir bringen es. Für das Land und für meinen Sohn. | Nein, rettet nur mich!; Ich will nicht sterben. | Wspólna ofiara to jedyna droga, by Kraina przetrwała.; Ratowanie tylko siebie przekreśliłoby poświęcenie innych.; Strach jest zrozumiały, ale tu trzeba zdecydować, a nie uciekać.
-w Donner | grzmot | der | –
-w halte | trzymaj (halten)
-w fest | mocno (festhalten)
-w lass | puść, zostaw (lassen)
-t Der Himmel wird dunkel. Der Donner kommt. Halte dich an Chaber fest! | Niebo ciemnieje. Nadchodzi grzmot. Trzymaj się Chabra! | Chaber, ich liebe dich. Lass mich nicht los. | Powiedz Chabrowi, że go kochasz, i poproś, by cię nie puszczał. | „Nie puszczaj mnie” to lass mich nicht los. | | gain=1
-t Siehst du das Licht? Das ist kein Feuer. Das sind wir. | Widzisz to światło? To nie ogień. To my. | Ich habe keine Angst mehr. Ich sehe nur Licht. | Powiedz, że już się nie boisz i widzisz tylko światło. | „Już nie” to nicht mehr. | | gain=1
+@level 12 | Przedwiośnie: próg lasu | patience=4 cap=6 typed=0.7 extra=3 hint=letters
+desc Rozdział 11: Mika oddaje Krainę
+scene Brama Krainy w przedwiośniu. Za nią ciemnieje las, który rośnie coraz bliżej. Mika stoi przy bramie i trzyma na rękach Dziewięćsiła. Obok ciebie stoją Amarylis, Chaber i Dariusz, a bliźnięta Perun i Ulgen patrzą w stronę drzew.
+goal Przyjmij Krainę od Miki, odzyskaj syna i nie uciekaj, gdy las was wzywa.
+partner Mika | M
+win Mika oddaje wam Krainę we władanie, a las zamyka się za wami. W głębi lasu czeka coś, co dopiero się zacznie.
+partial Przyjmujesz Krainę, choć ze strachem. Las wzywa, a Mika prowadzi was do niego.
+fail Las dopada was, zanim Mika zdąży oddać wam Krainę. Brama zamyka się z hukiem.
+w gehört | należy (gehören)
+t Ihr seid zurück. Das Land gehört jetzt euch. | Wróciliście. Ziemia należy teraz do was. | Danke, Mika. Aber wo ist mein Sohn? | Podziękuj i zapytaj, gdzie jest twój syn. | „Gdzie jest?” to wo ist?
+w seines | jego
+w Vaters | ojca (Vater)
+t Er ist hier. Er schläft. Schau, er hat die Augen seines Vaters. | Jest tu. Śpi. Patrz, ma oczy swojego ojca. | Ich bin so froh. Er lebt! | Ucieszona powiedz, że żyje. | „Żyje” to er lebt. | | gain=1
+w dasselbe | to samo
 w regieren | rządzić
-w wachen | czuwać
-t Dein Sohn wird König sein. Er wird das Land regieren, und wir werden seine Götter. | Twój syn będzie królem. Będzie rządził ziemią, a my będziemy jego bogami. | Dann wachen wir über ihn. Für immer. | Zgódź się: będziecie nad nim czuwać na zawsze. | „Czuwać” to wachen, „na zawsze” to für immer.
-w sieh | patrz (sehen)
-w neuer | nowy (neu)
-w Göttin | bogini | die | die Göttinnen
-w möge | niech (mögen)
-t Sieh, ein neuer Morgen! Du bist jetzt eine Göttin, Jaśmina. | Patrz, nowy poranek! Jesteś teraz boginią, Jaśmina. | Der Morgen ist schön. Möge das Land in Frieden leben. | Wypowiedz życzenie pokoju dla Krainy. | „Niech żyje w pokoju” to möge in Frieden leben.
+o Das Land ist nicht mehr dasselbe. Die Götter sind weg. Wollt ihr es regieren? | Ziemia nie jest już taka sama. Bogów nie ma. Chcecie nią rządzić? | Ja, wir wollen es regieren. | Nein, das Land ist zu groß für uns.; Wir gehen wieder weg. | „Chcemy nią rządzić” to wir wollen es regieren.; Mika właśnie oddaje wam ziemię i prosi o decyzję.; Ucieczka porzuciłaby ludzi, którzy tu zostali. | gain=1
+t Gut. Aber hört ihr den Wald? Er ruft euch. | Dobrze. Ale słyszycie las? Wzywa was. | Ja, ich höre ihn. Er ist ganz nah. | Powiedz, że słyszysz las i że jest bardzo blisko. | „Słyszę go” to ich höre ihn. | | shift=-1
+w zieht | ciągnie (ziehen)
+w tust | robisz (tun)
+k Der Wald zieht euch an. Ihr könnt nicht fliehen. Was tust du? | Las was przyciąga. Nie możecie uciec. Co robisz? | Ich laufe nicht weg. Wir bleiben zusammen. | Ich laufe zurück in die Berge.; Ich nehme das Kind und laufe weg. | Ucieczka przed lasem nie ma sensu; zostajecie razem.; W górach czeka was tylko mróz i Tammuz, a las i tak was dogoni.
+t Ich nehme jetzt das Kind. Der Wald braucht es. Hab keine Angst. | Biorę teraz dziecko. Las go potrzebuje. Nie bój się. | Bitte, Mika, pass auf ihn auf. | Poproś Mikę, żeby na niego uważała. | „Uważaj na niego” to pass auf ihn auf. | | shift=-1
+t Der Wald wartet. Kommt, ich zeige euch den Weg. | Las czeka. Chodźcie, pokażę wam drogę. | Wir kommen. Wir haben keine Angst. | Powiedz, że idziecie i że się nie boicie. | „Nie boimy się” to wir haben keine Angst.
+w Bäume | drzewa (Baum)
 w namens | imieniem
 w Alihan | Alihan (imię)
-e Weit im Osten lebt ein Junge namens Alihan. Seine Geschichte beginnt jetzt. | Daleko na wschodzie żyje chłopiec imieniem Alihan. Jego opowieść zaczyna się teraz.
+e Die Bäume schließen sich hinter euch. Weit im Osten lebt ein Junge namens Alihan. Seine Geschichte beginnt jetzt. | Drzewa zamykają się za wami. Daleko na wschodzie żyje chłopiec imieniem Alihan. Jego opowieść zaczyna się teraz.
 
 @larp kraina2 | Kraina naszych bogów, część II: Alihan | Meister | M | Orientalna kraina miast: Burz, Piasków i Wiatrów. Jesteś Alihanem, młodym uczniem szermierki, który wróci do domu i znajdzie tam wojnę, zdradę i ogromną stratę. Twoja droga trwa całe życie, od chłopca w Mieście Burz do starego hana z legend. | Jesteś Alihanem. Przejdź przez całe życie: naukę, winę i ucieczkę, miłość i żałobę, wojny i sojusze, aż do ostatniego dnia jako han i bohater legend.
 fee 0
