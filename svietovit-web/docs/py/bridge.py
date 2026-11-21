@@ -235,7 +235,7 @@ def _nog(ref):
         lt = str(t).lower()
         if lt in ("der", "die", "das"):
             nxt = ref[i + 1] if i + 1 < len(ref) else ""
-            (art if nxt in m and str(nxt).lower() not in ("der", "die", "das") else other).add(lt)
+            (art if nxt in m and str(nxt).lower() not in ("der", "die", "das") and m.get(nxt) == m.get(lt) else other).add(lt)
     return other - art
 
 

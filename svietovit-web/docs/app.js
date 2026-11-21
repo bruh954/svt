@@ -825,6 +825,7 @@ function colorGenderText(node) {
     if (g && (lw === "der" || lw === "die" || lw === "das")) {   // „das ist alles”: to nie rodzajnik, jeśli dalej w tym tekście nie ma rzeczownika
       const nx = /^\s+([A-Za-zÄÖÜäöüß]+)/.exec(txt.slice(m.index + w.length));
       if (nx && !(map[nx[1]] && !/^(der|die|das)$/i.test(nx[1]))) g = 0;
+      else if (nx && map[nx[1]] !== g) g = 0;                    // odmieniony rodzajnik („in der Hauptstadt”: der to celownik rodz. żeńskiego): bez koloru mianownika
     }
     if (!g) continue;
     if (m.index > last) wrap.append(txt.slice(last, m.index));
