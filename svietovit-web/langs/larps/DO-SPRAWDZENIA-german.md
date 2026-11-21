@@ -1418,6 +1418,60 @@ Nowe słowa: gewählt = wybrałam (wählen), dummer = głupi (dumm), danken = dz
 | 5 | Wirst du mich besuchen? *(Odwiedzisz mnie?)* | **Ja, ich besuche dich bestimmt.** *(Obiecaj, że na pewno ją odwiedzisz.)* |  |
 | 6 | Aldona nimmt den Kristall. Der Nogat fließt ruhig, und die Seelen sind frei. *(Aldona przyjmuje kryształ. Nogat płynie spokojnie, a dusze są wolne.)* | — |  |
 
+### Poziom 20: Tajne przejście  (typed=0.3, hint=bank, cierpliwość 3)
+
+Nowe słowa: rein = czyste (rein)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Nocą Swiętochna prowadzi cię za gobelin do ukrytego przejścia pod zamkiem. Od dawna czekała, aż ktoś zobaczy duchy tak jak ona.  
+*Cel:* Idź za Swiętochną, zachowaj spokój i obiecaj jej, że poszukasz klucza z soli.  
+*Zakończenia:* win: Strażnik przejścia kłania się, a świeca w twojej dłoni nigdy nie gaśnie. Wiesz już, gdzie szukać klucza. · partial: Swiętochna daje ci świecę, ale patrzy z wątpliwością. Przejście jeszcze nie ufa ci do końca. · fail: Strażnik ducha zagradza ci drogę. Świeca gaśnie, a Swiętochna odprowadza cię z powrotem do celi.
+
+| 1 | Pst! Du hast die Geister gesehen. Jetzt zeige ich dir ein Geheimnis. Kommst du mit? *(Pst! Widziałeś duchy. Teraz pokażę ci sekret. Idziesz ze mną?)* | **Ja, ich komme mit. Wohin gehen wir?** *(Zgódź się i zapytaj, dokąd idziecie.)* | „Wohin” to „dokąd”. |
+| 2 | Hinter dem Teppich ist eine Tür. Niemand kennt sie. Sei leise! *(Za gobelinem są drzwi. Nikt ich nie zna. Bądź cicho!)* | **Ich bin leise. Ich habe Angst, aber ich gehe weiter.** *(Powiedz, że będziesz cicho, boisz się, ale idziesz dalej.)* | „Sei leise” = bądź cicho; „weitergehen” = iść dalej. |
+| 3 | Auf der Treppe steht ein Geist. Er ist der Wächter hier. Was sagst du? *(Na schodach stoi duch. To strażnik tego miejsca. Co mówisz?)* | **Guten Abend. Ich tue dir nichts.** (dobra); złe: Geh weg, du Geist!; Ich schreie laut und laufe weg. | Spokojne powitanie to najlepsze wyjście.; Obrażanie ducha strażnika to zły pomysł.; Krzyk obudziłby cały zamek. |
+| 4 | Ich suche einen Schlüssel aus Salz. Er ist im Herzen des Schlosses. *(Szukam klucza z soli. Jest w sercu zamku.)* | **Ein Schlüssel aus Salz? Wer hat ihn?** *(Zdziw się i zapytaj, kto go ukrył.)* | „Wer” = kto; „versteckt” = ukryty. |
+| 5 | Das weiß niemand mehr. Nur ein gutes Herz hat ihn. Versprichst du, ihn zu suchen? *(Tego nikt już nie wie. Tylko czyste serce go znajdzie. Obiecujesz, że go poszukasz?)* | **Ja, ich verspreche es dir, Swiętochna.** *(Obiecaj Swiętochnie, że poszukasz.)* | „Ich verspreche es dir” = obiecuję ci to. |
+| 6 | Swiętochna gibt dir eine Kerze. Sie brennt hell und geht nie aus. Die Geister auf der Treppe sind leise. *(Swiętochna daje ci świecę. Pali się jasno i nigdy nie gaśnie. Duchy na schodach milczą.)* | — |  |
+
+### Poziom 21: Spowiedź Ottona  (typed=0.6, hint=letters, cierpliwość 3)
+
+Nowe słowa: gelitten = cierpieli (leiden), bewahre = przechowuję (bewahren), Schulter = ramię
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Po zgodzie Ottona na ucieczkę Wielki Mistrz wzywa cię nocą do kaplicy. Chce wyznać coś, czego nie mówi nikomu.  
+*Cel:* Wysłuchaj Ottona, nie osądzaj go pochopnie i przyjmij jego dar.  
+*Zakończenia:* win: Otto kładzie ci dłoń na ramieniu. Pierwszy raz od lat wygląda jak człowiek, a nie jak Wielki Mistrz. Pierścień w twojej dłoni jest ciepły. · partial: Otto kończy spowiedź, ale jego głos jest zimny. Pierścień dostajesz bez słowa. · fail: Otto milknie i odwraca się do ściany. Spowiedź kończy się, zanim zdążył dokończyć zdanie.
+
+| 1 | Es ist spät, Wojciech. Ich muss dir etwas sagen. Hörst du zu? *(Jest późno, Wojciechu. Muszę ci coś powiedzieć. Słuchasz?)* | **Ja, Herr Hochmeister. Ich höre zu.** *(Powiedz, że słuchasz.)* | „Ich höre zu” = słucham. |
+| 2 | Ich bin müde. Ich habe vielen Menschen weh getan. *(Jestem zmęczony. Skrzywdziłem wielu ludzi.)* | **Das tut mir leid. Warum haben Sie das getan?** *(Wyraź współczucie i zapytaj dlaczego.)* | „Das tut mir leid” = przykro mi. |
+| 3 | Ich hatte Angst vor dem König. Ein Hochmeister darf nicht schwach sein. *(Bałem się króla. Wielki Mistrz nie może być słaby.)* | **Auch ein Hochmeister macht Fehler.** *(Powiedz, że nawet Wielki Mistrz popełnia błędy.)* | „Fehler machen” = popełniać błędy. |
+| 4 | Ich habe Aldonas Vater nicht gerettet. Kannst du mir verzeihen? *(Nie uratowałem ojca Aldony. Czy możesz mi wybaczyć?)* | **Das kann nur Aldona entscheiden. Aber ich danke Ihnen für die Wahrheit.** (dobra); złe: Ja, ich verzeihe Ihnen sofort. Alles ist gut.; Nein, ich verzeihe Ihnen nie. | Tylko Aldona może wybaczyć w swoim imieniu, ale ty doceniasz prawdę.; Zbyt szybkie wybaczenie za cudzą krzywdę byłoby fałszywe.; Odmowa zamyka rozmowę, zanim Otto powie wszystko. |
+| 5 | Dann nimm diesen Ring. Er öffnet das Tor der Kapelle. *(Wtedy weź ten pierścień. Otwiera bramę kaplicy zakonu.)* | **Danke, Herr Hochmeister. Ich bewahre ihn gut.** *(Podziękuj i obiecaj, że dobrze go przechowasz.)* | „Ich bewahre ihn gut” = dobrze go przechowam. |
+| 6 | Otto legt seine Hand auf deine Schulter. Zum ersten Mal ist er kein Hochmeister, sondern nur ein Mann. Er ist müde. *(Otto kładzie dłoń na twoim ramieniu. Pierwszy raz nie jest Wielkim Mistrzem, tylko człowiekiem. Jest zmęczony.)* | — |  |
+
+### Poziom 22: Zabłądzony w lochu  (typed=0.2, hint=bank, cierpliwość 3)
+
+Nowe słowa: Dunkel = ciemność
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Uciekliście z Aldoną ledwo, w panice, a w ciemności korytarzy zgubiłeś drogę. Błądzisz sam po lochu. Z ciemności odzywa się głos starego więźnia.  
+*Cel:* Zachowaj spokój, wysłuchaj więźnia i znajdź drogę do wyjścia.  
+*Zakończenia:* win: Więzień pokazuje ci drogę. Wychodzisz z lochu tuż przed świtem, a stary głos życzy ci szczęścia. · partial: Znajdujesz wyjście, ale długo kręcisz się w kółko. Wychodzisz na światło wyczerpany. · fail: Korytarze zdają się nie mieć końca. Wracasz do celi bez sił, a rycerze już czekają.
+
+| 1 | Wer ist da? Hier ist es dunkel. Ich bin schon lange allein. *(Kto tam? Tu jest ciemno. Jestem sam od dawna.)* | **Ich bin Wojciech. Ich habe mich verlaufen.** *(Powiedz, że jesteś Wojciech i że się zgubiłeś.)* | „Ich habe mich verlaufen” = zgubiłem się. |
+| 2 | Ich bin der Gefangene. Warum bist du hier? *(Jestem więźniem. Dlaczego tu jesteś?)* | **Ich bin mit Aldona hier. Wir haben Angst.** *(Powiedz, że jesteś tu z Aldoną i że się boicie.)* | „Wir haben Angst” = boimy się. |
+| 3 | Links ist ein Gang, rechts auch. Wohin willst du gehen? *(W lewo jest korytarz i w prawo też. Dokąd chcesz iść?)* | **Ich gehe nach rechts. Wo ist der Ausgang?** (dobra); złe: Ich gehe nach links, ohne zu fragen.; Ich bleibe hier im Dunkeln. | Pytasz o wyjście i idziesz w prawo, jak mówi więzień.; Bez pytania łatwo pobłądzić jeszcze bardziej.; Stanie w miejscu nic nie da. |
+| 4 | Gut. Hinter der Tür ist eine Treppe. Du musst leise sein. *(Dobrze. Za drzwiami są schody. Musisz być cicho.)* | **Danke. Wie heißt du?** *(Podziękuj i zapytaj więźnia o imię.)* | „Wie heißt du?” = jak masz na imię? |
+| 5 | Mein Name ist nicht wichtig. Sag mir nur, ob der Hochmeister noch lebt. *(Moje imię nie jest ważne. Powiedz tylko, czy Wielki Mistrz jeszcze żyje.)* | **Ja, er lebt. Er ist im Schloss.** *(Odpowiedz, że żyje i jest na zamku.)* |  |
+| 6 | Der Gefangene zeigt dir den Weg. Du gehst die Treppe hinauf, und das Licht ist da. *(Więzień pokazuje ci drogę. Wchodzisz po schodach, a tam jest światło.)* | — |  |
+
 ## Męczennica (meczennica)
 
 **Scena:** Łódź, lata trzydzieste. Józefa i Zygmunt są przyjaciółmi i kochankami, a potem przychodzą wojna, rozstanie, wielka decyzja i długie milczenie. Opowieść kończy się po 76 latach, na pogrzebie. Tytuł to nazwa kwiatu, passiflory (Passionsblume), symbolu cierpienia i ofiary.  
@@ -1561,7 +1615,7 @@ Nowe słowa: Kowalska = Kowalska (nazwisko), hereinkommen = wejść do środka, 
 
 ### Poziom 8: Pogrzeb  (typed=0.4, hint=bank, cierpliwość 5)
 
-Nowe słowa: kannte = znał(a) (kennen), gekommen = przyszedł (kommen), gekannt = znał(a) (kennen), Freunde = przyjaciele (Freund), Messe = msza, Blumen = kwiaty (Blume), Sarg = trumna, Passionsblumen = passiflory (Passionsblume), gewünscht = życzył(a) sobie (wünschen), Priester = ksiądz, kapłan, Schulter = ramię, bark
+Nowe słowa: kannte = znał(a) (kennen), gekommen = przyszedł (kommen), gekannt = znał(a) (kennen), Freunde = przyjaciele (Freund), Messe = msza, Blumen = kwiaty (Blume), Sarg = trumna, Passionsblumen = passiflory (Passionsblume), gewünscht = życzył(a) sobie (wünschen), Priester = ksiądz, kapłan
 
 | # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
 |---|---|---|---|
@@ -1581,7 +1635,7 @@ Nowe słowa: kannte = znał(a) (kennen), gekommen = przyszedł (kommen), gekannt
 
 ### Poziom 9: Opowieść księdza  (typed=0.5, hint=letters, cierpliwość 5)
 
-Nowe słowa: Leidens = cierpienia (Leiden), geliebt = kochał(a) (lieben), gelitten = cierpiał(a) (leiden), geheiratet = ożenił(a) się (heiraten), Ehe = małżeństwo, unglücklich = nieszczęśliwy, Edmonds = Edmonda (Edmond), akzeptiert = zaakceptowany (akzeptieren), retten = ratować, dachte = myślała (denken), Leiden = cierpienie, freies = wolny, bat = prosiła (bitten), hatten = mieliście (haben), Freuen = cieszyć się (sich freuen), Strafe = kara, gewusst = wiedział (wissen), leidet = cierpi (leiden), zurückdrehen = cofnąć, nickt = kiwa głową (nicken), Sakristei = zakrystia, weht = wieje (wehen), sanfter = łagodny (sanft)
+Nowe słowa: Leidens = cierpienia (Leiden), geliebt = kochał(a) (lieben), geheiratet = ożenił(a) się (heiraten), Ehe = małżeństwo, unglücklich = nieszczęśliwy, Edmonds = Edmonda (Edmond), akzeptiert = zaakceptowany (akzeptieren), retten = ratować, dachte = myślała (denken), Leiden = cierpienie, freies = wolny, bat = prosiła (bitten), hatten = mieliście (haben), Freuen = cieszyć się (sich freuen), Strafe = kara, gewusst = wiedział (wissen), leidet = cierpi (leiden), zurückdrehen = cofnąć, nickt = kiwa głową (nicken), Sakristei = zakrystia, weht = wieje (wehen), sanfter = łagodny (sanft)
 
 | # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
 |---|---|---|---|

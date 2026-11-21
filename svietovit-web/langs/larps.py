@@ -4,7 +4,7 @@
 Plik larps/<kurs>.txt (puste linie i # ignorowane):
   @larp id | Tytuł | Rozmówca | Awatar | Scena | Cel ucznia
   fee 0 / reward 15 / strict yes / disclaimer … / warning … (ostrzeżenie o treści: osobne okno, wymaga zgody przed wejściem) / win … / partial … / fail …        (ustawienia larpa)
-  @level 1 | Tytuł poziomu | patience=6 cap=8 endless=yes typed=0 extra=1 hint=none reward=10   (cap: maks. wiarygodność, endless: bez porażki, after=20 lub after=21,22: poziom odblokowuje się po tych poziomach zamiast po poprzednim, np. równoległe zakończenia)        (typed: ułamek odpowiedzi pisanych z klawiatury,
+  @level 1 | Tytuł poziomu | patience=6 cap=8 endless=yes typed=0 extra=1 hint=none reward=10   (barely=N: UKRYTY poziom, odblokowuje go ledwo zaliczony poziom N (koniec z cierpliwością 1); secret=N: UKRYTY poziom, niewidoczny na liście, dopóki gracz nie przejdzie poziomu N bez ani jednego błędu i słabej odpowiedzi; cap: maks. wiarygodność, endless: bez porażki, after=20 lub after=21,22: poziom odblokowuje się po tych poziomach zamiast po poprzednim, np. równoległe zakończenia)        (typed: ułamek odpowiedzi pisanych z klawiatury,
                                                                                   hint: bank | letters | none, extra: zbędne klocki)
   w Kellner | kelner | der | die Kellner | z czego składa się   nowe słowo (jak w bulk.py); samo „w słowo” = słowo już jest w kursie
   t bot | bot po polsku | odpowiedź ucznia | odpowiedź po polsku | dlaczego (opcjonalnie) | wariant ; wariant
@@ -228,6 +228,10 @@ def build(cid):
             if lv.get("cap"): cfg["cap"] = int(lv["cap"])
             if lv.get("after"): cfg["after"] = [int(x) for x in lv["after"].split(",")]
             if lv.get("endless") in ("yes", "tak", "1"): cfg["endless"] = True
+            if lv.get("barely"):                       # ukryty poziom „ledwo”: odblokowuje go ledwo zaliczony poziom N (koniec z cierpliwością 1)
+                cfg["barely"] = int(lv["barely"]); cfg["hidden"] = True
+            if lv.get("secret"):                       # ukryty poziom: odblokowuje go bezbłędne przejście poziomu N
+                cfg["secret"] = int(lv["secret"]); cfg["hidden"] = True
             cfg["lexicon"] = []
             if lv.get("hint", "none") != "none":
                 cfg["hint"] = lv["hint"]
