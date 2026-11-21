@@ -1151,7 +1151,7 @@ def larp_answer(payload_json):
                 kind = _larp_lenient(given_s.split(), [_larp_norm(_larp_disp(c)).split() for c in cands])
                 if kind:
                     verdict = "weak"
-                    res["why"] = ("Rozmówca rozumie, ale patrzy krzywo: brakuje grzeczności. Lepiej: " if kind == "rude" else "Rozmówca rozumie, ale patrzy krzywo: za krótko. Lepiej: ") + disp
+                    res["why"] = ("Rozmówca rozumie, ale patrzy krzywo: brakuje grzeczności. Lepiej: " if kind == "rude" else "Rozmówca rozumie, ale myśli, że się stresujesz: odpowiedź jest za krótka. Lepiej: ") + disp
                 else:
                     verdict = "bad"
             elif given_s.lower() in [w.lower() for w in want]:
