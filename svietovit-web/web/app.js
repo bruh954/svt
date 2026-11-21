@@ -963,7 +963,7 @@ function larpScene(S, lid, lvl, R) {
       const send = h("button", { class: "btn", disabled: true }, t("send"));
       const go = () => { if (inp.value.trim()) handle(J(B.larp_answer(JSON.stringify({ text: inp.value })))); };
       inp.oninput = () => { send.disabled = !inp.value.trim(); }; inp.onkeydown = e => { if (e.key === "Enter") go(); }; send.onclick = go;
-      reply.append(h("div", {}, h("b", {}, t("say") + " "), `„${node.typed.prompt}”`), node.typed.hint ? h("div", { class: "sub", dir: "auto" }, node.typed.hint) : null,
+      reply.append(h("div", { class: "larp-task" }, h("b", {}, node.typed.prompt)), node.typed.hint ? h("div", { class: "sub", dir: "auto" }, node.typed.hint) : null,
         h("div", { class: "sub" }, t("larp_type_d")), inp, send); setTimeout(() => inp.focus(), 50);
     } else {
       const bd = node.build, picked = [];
@@ -975,7 +975,7 @@ function larpScene(S, lid, lvl, R) {
         send.disabled = !picked.length;
       };
       send.onclick = () => handle(J(B.larp_answer(JSON.stringify({ tokens: picked.map(p => p.v) }))));
-      reply.append(h("div", {}, h("b", {}, t("say") + " "), `„${bd.prompt}”`), ans, bank, send); render();
+      reply.append(h("div", { class: "larp-task" }, h("b", {}, bd.prompt)), ans, bank, send); render();
     }
   };
   if (R) {
