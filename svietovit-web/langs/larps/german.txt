@@ -2782,7 +2782,7 @@ partial Otto kończy spowiedź, ale jego głos jest zimny. Pierścień dostajesz
 fail Otto milknie i odwraca się do ściany. Spowiedź kończy się, zanim zdążył dokończyć zdanie.
 w müde | zmęczony
 w gelitten | cierpieli (leiden)
-t Es ist spät, Wojciech. Ich muss dir etwas sagen. Hörst du zu? | Jest późno, Wojciechu. Muszę ci coś powiedzieć. Słuchasz? | Ja, Herr Hochmeister. Ich höre zu. | Powiedz, że słuchasz. | „Ich höre zu” = słucham. | | gain=1
+t Es ist spät, Wojciech. Ich muss dir etwas sagen. Hörst du zu? | Jest późno, Wojciechu. Muszę ci coś powiedzieć. Słuchasz? | Ja, Herr Hochmeister. Ich höre zu. | Powiedz, że słuchasz. | „Ich höre zu” = słucham. | Ich höre zu, Herr Hochmeister.; Ja, ich höre zu.; Ich höre zu. | gain=1
 t Danke, Wojciech. Ich bin müde. Ich habe vielen Menschen weh getan. | Dziękuję, Wojciechu. Jestem zmęczony. Skrzywdziłem wielu ludzi. | Das tut mir leid. Warum haben Sie das getan? | Wyraź współczucie i zapytaj dlaczego. | „Das tut mir leid” = przykro mi.
 w schwach | słaby
 w Fehler | błąd | der | die Fehler

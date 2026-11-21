@@ -1132,10 +1132,11 @@ def _addr_variants(cands, lp):
         c = list(c)
         for i, t in enumerate(c):
             if str(t).lower() in names:
-                if i > 0 and c[i - 1] == ",":
-                    out.append(c[:i - 1] + c[i + 1:])
+                j = i - 1 if i > 0 and str(c[i - 1]).lower() in ("herr", "frau") else i     # „Herr Hochmeister”: tytuł razem z nazwą
+                if j > 0 and c[j - 1] == ",":
+                    out.append(c[:j - 1] + c[i + 1:])
                 elif i + 1 < len(c) and c[i + 1] == ",":
-                    out.append(c[:i] + c[i + 2:])
+                    out.append(c[:j] + c[i + 2:])
     return out
 
 
