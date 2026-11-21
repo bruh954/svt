@@ -1274,7 +1274,7 @@ w Kirche | kościół | die | die Kirchen
 w Hochzeit | ślub, wesele | die | die Hochzeiten
 w bereit | gotowy
 w nervös | zdenerwowany
-t Willkommen in der Kirche, Clara. Heute ist deine Hochzeit. Bist du bereit? | Witaj w kościele, Claro. Dziś twój ślub. Jesteś gotowa? | Ja, ich bin bereit, aber ich bin nervös. | Powiedz, że jesteś gotowa, ale zdenerwowana. | „Nervös” to zdenerwowany; „bereit” to gotowy.
+t Willkommen in der Kirche, Clara. Heute ist Ihre Hochzeit. Sind Sie bereit? | Witaj w kościele, Claro. Dziś pani ślub. Jest pani gotowa? | Ja, ich bin bereit, aber ich bin nervös. | Powiedz, że jesteś gotowa, ale zdenerwowana. | „Nervös” to zdenerwowany; „bereit” to gotowy.
 w Gewitter | burza | das | die Gewitter
 w Kerze | świeca | die | die Kerzen
 w Wind | wiatr | der | die Winde
@@ -1283,10 +1283,11 @@ w schlecht | zły
 w Kerzen | świece
 w brennen | płoną
 w schlechtes | zły (schlecht)
-t Draußen ist ein Gewitter. Die Kerzen brennen im Wind. | Na zewnątrz jest burza. Świece płoną na wietrze. | Das Gewitter ist laut. Ist das ein schlechtes Zeichen? | Zauważ, że burza jest głośna, i zapytaj, czy to zły znak. | „Schlecht” to zły; po „ein” + das Zeichen → ein schlechtes Zeichen. | | shift=-1
+w normal | normalny
+t Das ist normal. Draußen ist ein Gewitter, und die Kerzen brennen im Wind. | To normalne. Na zewnątrz jest burza, a świece płoną na wietrze. | Das Gewitter ist laut. Ist das ein schlechtes Zeichen? | Zauważ, że burza jest głośna, i zapytaj, czy to zły znak. | „Schlecht” to zły; po „ein” + das Zeichen → ein schlechtes Zeichen. | | shift=-1
 w heiraten | pobrać się, poślubić
 w wollen | chcieć
-o Wollen Sie, Clara, Lukas von Hohenstein heiraten? | Czy chce pani, Claro, poślubić Lukasa von Hohenstein? | Ja, ich will. | Nein, ich will nicht.; Vielleicht. | Przysięga ślubna: „Ja, ich will” (tak, chcę).; „Nie chcę” zatrzymałoby ślub.; „Może” nie jest przysięgą. | loss=2
+o Nein, es ist kein schlechtes Zeichen. Wollen Sie, Clara, Lukas von Hohenstein heiraten? | Nie, to nie jest zły znak. Czy chce pani, Claro, poślubić Lukasa von Hohenstein? | Ja, ich will. | Nein, ich will nicht.; Vielleicht. | Przysięga ślubna: „Ja, ich will” (tak, chcę).; „Nie chcę” zatrzymałoby ślub.; „Może” nie jest przysięgą. | loss=2
 w Mann | mąż, mężczyzna | der | die Männer
 w glücklich | szczęśliwy
 w Gratulation | gratulacje
@@ -1297,14 +1298,15 @@ w Beim | przy, podczas (bei dem)
 w Hochzeitsessen | przyjęcie weselne
 w einem | jednym (ein)
 w langen | długim (lang)
-t Beim Hochzeitsessen sitzen Sie an einem langen Tisch. Haben Sie Hunger? | Na weselu siedzi pani przy długim stole. Czy jest pani głodna? | Nein, ich habe keinen Hunger. Ich bin zu nervös. | Powiedz, że nie jesteś głodna, bo jesteś zbyt zdenerwowana. | „Kein” + rzeczownik męski w bierniku → keinen Hunger. „Zu nervös” = zbyt zdenerwowana.
+w freut | cieszy (freuen)
+t Das freut mich. Beim Hochzeitsessen sitzen Sie an einem langen Tisch. Haben Sie Hunger? | Cieszę się. Na weselu siedzi pani przy długim stole. Czy jest pani głodna? | Nein, ich habe keinen Hunger. Ich bin zu nervös. | Powiedz, że nie jesteś głodna, bo jesteś zbyt zdenerwowana. | „Kein” + rzeczownik męski w bierniku → keinen Hunger. „Zu nervös” = zbyt zdenerwowana.
 w Fürst | książę | der | die Fürsten
 w Hauptstadt | stolica | die | die Hauptstädte
 w arbeiten | pracować
 w viel | dużo
 w arbeitet | pracuje (arbeiten)
 w Fürsten | księcia (Fürst)
-t Auch der Fürst aus der Hauptstadt ist hier. Lukas arbeitet viel für ihn. | Jest tu też książę ze stolicy. Lukas dużo dla niego pracuje. | Was macht Lukas für den Fürsten? | Zapytaj, co Lukas robi dla księcia. | „Co robi” to was macht; po „für” biernik: den Fürsten. | | shift=-1
+t Ich verstehe. Auch der Fürst aus der Hauptstadt ist hier. Lukas arbeitet viel für ihn. | Rozumiem. Jest tu też książę ze stolicy. Lukas dużo dla niego pracuje. | Was macht Lukas für den Fürsten? | Zapytaj, co Lukas robi dla księcia. | „Co robi” to was macht; po „für” biernik: den Fürsten. | | shift=-1
 e Das weiß ich nicht. Fragen Sie Ihren Mann. Gute Nacht und viel Glück. | Nie wiem. Niech pani zapyta męża. Dobranoc i wiele szczęścia.
 
 @level 4 | Pałac Hohenstein | patience=4 cap=6 typed=0.15 extra=2 hint=bank
