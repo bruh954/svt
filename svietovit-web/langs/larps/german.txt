@@ -1157,6 +1157,7 @@ fee 0
 reward 30
 strict yes
 story yes
+warning Ta opowieść jest mroczna: zawiera strach i niepokój, motyw przemocy w małżeństwie, oskarżenia o szaleństwo, tajemnicze zgony i sceny grozy w piwnicy (bez drastycznych opisów). Jeśli takie tematy cię przytłaczają, wybierz inny larp.
 disclaimer Fikcja gotycka. Historia jest zmyślona i może wzbudzać niepokój (lęk, choroba, ciemne piwnice). Wszystkie postacie są wymyślone.
 win Zachowujesz spokój do końca. Burza ucicha, świece płoną równo, a ty rozumiesz, że prawdziwy strach rodził się w twojej głowie. Rano w pałacu znów pachnie chlebem.
 partial Przetrwałaś, ale z drżącymi rękami. Pałac wciąż skrywa cienie i nie wiesz, czemu możesz ufać. Pozostaje ci pytać, patrzeć i czekać na świt.
