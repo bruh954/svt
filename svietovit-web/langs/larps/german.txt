@@ -1383,6 +1383,7 @@ w golden | złoty
 w kleine | mała (klein)
 w goldene | złoty (golden)
 w öffnet | otwiera (öffnen)
+w darf | wolno, mogę (dürfen)
 t Im Keller, ganz hinten, links. Der kleine goldene Schlüssel öffnet sie. | W piwnicy, całkiem z tyłu, po lewej. Mały złoty klucz je otwiera. | Warum darf ich nicht hinein? | Zapytaj, dlaczego nie wolno ci tam wejść. | „Warum” to „dlaczego”; „hinein” to „do środka”. | | shift=-1
 w versprechen | obiecywać
 w nie | nigdy
