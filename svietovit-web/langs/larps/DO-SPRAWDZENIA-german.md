@@ -1058,7 +1058,7 @@ Nowe słowa: Mörder = morderca, Dienst = służba, getötet = zabił (od töten
 
 ### Poziom 1: Wielki Mistrz  (typed=0, hint=none, cierpliwość 4)
 
-Nowe słowa: Marienburg = Malbork (nazwa zamku), Wojciech = Wojciech (imię), Exil = wygnanie, Hochmeister = Wielki Mistrz, Lust = ochota, chęć, Otto = Otto (imię Wielkiego Mistrza), Lesen = czytanie, Beten = modlitwa, modlenie się, Fechten = szermierka, fechtunek, Schwert = miecz, Das = to, wohnst = mieszkasz (wohnen), lächelt = uśmiecha się (lächeln)
+Nowe słowa: Mariograd = Mariogród (nazwa zamku), Wojciech = Wojciech (imię), Exil = wygnanie, Hochmeister = Wielki Mistrz, Lust = ochota, chęć, Otto = Otto (imię Wielkiego Mistrza), Lesen = czytanie, Beten = modlitwa, modlenie się, Fechten = szermierka, fechtunek, Schwert = miecz, Das = to, wohnst = mieszkasz (wohnen), lächelt = uśmiecha się (lächeln)
 
 | # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
 |---|---|---|---|
@@ -1067,7 +1067,7 @@ Nowe słowa: Marienburg = Malbork (nazwa zamku), Wojciech = Wojciech (imię), Ex
 *Cel:* Przedstaw się Wielkiemu Mistrzowi grzecznie i przyjmij jego warunki nauki.  
 *Zakończenia:* win: Wielki Mistrz kiwa głową. Chłopiec jest spokojny i grzeczny, więc zostaje na zamku. Jutro zaczynają się lekcje. · partial: Otto zgadza się, ale patrzy na ciebie zbyt uważnie. Czuje, że coś ukrywasz. · fail: Otto traci cierpliwość. Mówi, że nie nadajesz się do nauki, a brat będzie musiał cię zabrać.
 
-| 1 | Willkommen in Marienburg. Du bist Wojciech, nicht wahr? *(Witaj w Marienburgu. Jesteś Wojciech, prawda?)* | **Ja, ich bin Wojciech.** *(Przedstaw się Wielkiemu Mistrzowi.)* |  |
+| 1 | Willkommen in Mariograd. Du bist Wojciech, nicht wahr? *(Witaj w Mariogradzie. Jesteś Wojciech, prawda?)* | **Ja, ich bin Wojciech.** *(Przedstaw się Wielkiemu Mistrzowi.)* |  |
 | 2 | Gut, Wojciech. Dein Bruder bringt dich zu uns. Warum bist du hier? *(Dobrze, Wojciechu. Twój brat przywozi cię do nas. Dlaczego tu jesteś?)* | **Ich bin im Exil.** *(Powiedz, że jesteś na wygnaniu.)* |  |
 | 3 | Das verstehe ich. Du bleibst hier und lernst bei mir. Bist du bereit? *(Rozumiem. Zostajesz tu i uczysz się u mnie. Jesteś gotowy?)* | **Ja, Herr Hochmeister, ich bin bereit.** (dobra); złe: Nein, ich habe keine Lust.; Ich bin nicht der Hochmeister. | Odmowa byłaby niegrzeczna.; To Otto jest Wielkim Mistrzem, nie ty. |
 | 4 | Sehr gut. Du lernst Lesen, Beten und Fechten. Was lernst du gern? *(Bardzo dobrze. Uczysz się czytać, modlić się i fechtować. Czego uczysz się chętnie?)* | **Ich lerne gern Fechten.** *(Powiedz, że chętnie uczysz się szermierki.)* |  |
@@ -1376,10 +1376,10 @@ Nowe słowa: geschah = stało się (geschehen), sagst = mówisz (sagen), dazu = 
 
 | 1 | Wojciech! Du bist nass. Du warst nicht in deinem Zimmer. Wo warst du? *(Wojciechu! Jesteś mokry. Nie byłeś w swoim pokoju. Gdzie byłeś?)* | **Ich war am Fluss, Herr Hochmeister. Ich konnte nicht schlafen.** *(Powiedz, że byłeś nad rzeką, bo nie mogłeś spać.)* |  |
 | 2 | Der Fluss ist weit weg. Die Tore sind zu. Du lügst. *(Rzeka jest daleko. Bramy są zamknięte. Kłamiesz.)* | **Ich sage die Wahrheit. Ich weiß nicht, wie es geschah.** *(Powiedz, że mówisz prawdę i że nie wiesz, jak to się stało.)* |  |
-| 3 | Darüber sprechen wir später. Pater Andrzej sagt: Das Mädchen darf die Firmung bekommen. Der König schaut auf Marienburg. Was sagst du dazu? *(Porozmawiamy o tym później. Ojciec Andrzej mówi: Dziewczynka może przyjąć bierzmowanie. Król patrzy na Malbork. Co ty na to?)* | **Das ist gut, Herr Hochmeister. Aldona ist ein Kind Gottes.** (dobra); złe: Das Mädchen soll im Keller bleiben.; Das ist mir egal. | Bierzmowanie to dobry krok, który ratuje Aldonę.; Aldona nie może wrócić do lochu.; Obojętność przy takiej sprawie zdradziłaby cię. |
+| 3 | Darüber sprechen wir später. Pater Andrzej sagt: Das Mädchen darf die Firmung bekommen. Der König schaut auf Mariograd. Was sagst du dazu? *(Porozmawiamy o tym później. Ojciec Andrzej mówi: Dziewczynka może przyjąć bierzmowanie. Król patrzy na Mariogród. Co ty na to?)* | **Das ist gut, Herr Hochmeister. Aldona ist ein Kind Gottes.** (dobra); złe: Das Mädchen soll im Keller bleiben.; Das ist mir egal. | Bierzmowanie to dobry krok, który ratuje Aldonę.; Aldona nie może wrócić do lochu.; Obojętność przy takiej sprawie zdradziłaby cię. |
 | 4 | Ich gebe nach, weil der König zuschaut. Aber du bleibst unter meinen Augen. *(Ustępuję, bo król patrzy. Ale zostajesz pod moim okiem.)* | **Ich verstehe, Herr Hochmeister.** *(Powiedz, że rozumiesz.)* |  |
 | 5 | Du verstehst es also. Du hast keinen Respekt, Wojciech. Warum? *(A więc rozumiesz. Nie masz szacunku, Wojciechu. Dlaczego?)* | **Ich habe Respekt vor Gott. Und ich sage immer die Wahrheit.** *(Powiedz, że masz szacunek dla Boga i zawsze mówisz prawdę.)* |  |
-| 6 | Vor Gott? Das werden wir sehen. Der König kauft Marienburg. Das Mädchen ist dann nicht mehr unsere Gefangene. *(Przed Bogiem? Zobaczymy. Król kupuje Malbork. Dziewczynka nie będzie wtedy naszą jeńcem.)* | **Dann ist Aldona frei?** *(Zapytaj, czy Aldona będzie wolna.)* |  |
+| 6 | Vor Gott? Das werden wir sehen. Der König kauft Mariograd. Das Mädchen ist dann nicht mehr unsere Gefangene. *(Przed Bogiem? Zobaczymy. Król kupuje Mariogród. Dziewczynka nie będzie wtedy naszą jeńcem.)* | **Dann ist Aldona frei?** *(Zapytaj, czy Aldona będzie wolna.)* |  |
 | 7 | Otto schaut dich lange an und geht. Er sagt kein Wort mehr. In der Kapelle wartet schon Aldona. *(Otto długo na ciebie patrzy i odchodzi. Nie mówi już ani słowa. W kaplicy czeka już Aldona.)* | — |  |
 
 ### Poziom 18: Sen Aldony  (typed=0.7, hint=letters, cierpliwość 3)
@@ -1414,7 +1414,7 @@ Nowe słowa: gewählt = wybrałam (wählen), dummer = głupi (dumm), danken = dz
 | 1 | Ich habe bei der Firmung einen neuen Namen gewählt. Aber ich sage ihn nur Gott. *(Przy bierzmowaniu wybrałam nowe imię. Ale powiem je tylko Bogu.)* | **Das ist gut. Du musst ihn mir nicht sagen.** (dobra); złe: Sag ihn mir sofort!; Das ist ein dummer Name. | Szanujesz jej tajemnicę.; Nie możesz żądać, żeby ci powiedziała.; Nie znasz imienia, więc nie możesz go oceniać. |
 | 2 | Danke, dass du das verstehst. Du hast mich gerettet, Wojciech. Ich weiß nicht, wie ich danken soll. *(Dziękuję, że to rozumiesz. Uratowałeś mnie, Wojciechu. Nie wiem, jak dziękować.)* | **Du hast mich auch gerettet, mit deinem Traum.** *(Powiedz, że ona też ciebie uratowała swoim snem.)* |  |
 | 3 | Das freut mich. Was hast du da in der Hand? *(Cieszę się. Co tam trzymasz w dłoni?)* | **Das ist ein Salzkristall. Er schützt dich vor dem Bösen.** *(Daj jej kryształ soli i powiedz, że chroni przed złem.)* |  |
-| 4 | Danke, er ist schön. Der König hat Marienburg gekauft, und ich bin frei. *(Dziękuję, jest piękny. Król kupił Malbork i jestem wolna.)* | **Gott sei Dank! Ich freue mich für dich.** *(Ucieszyć się: dzięki Bogu, cieszysz się jej szczęściem.)* |  |
+| 4 | Danke, er ist schön. Der König hat Mariograd gekauft, und ich bin frei. *(Dziękuję, jest piękny. Król kupił Mariogród i jestem wolna.)* | **Gott sei Dank! Ich freue mich für dich.** *(Ucieszyć się: dzięki Bogu, cieszysz się jej szczęściem.)* |  |
 | 5 | Danke, Wojciech. Wirst du mich besuchen? *(Dziękuję, Wojciechu. Odwiedzisz mnie?)* | **Ja, ich besuche dich bestimmt.** *(Obiecaj, że na pewno ją odwiedzisz.)* |  |
 | 6 | Aldona nimmt den Kristall. Der Nogat fließt ruhig, und die Seelen sind frei. *(Aldona przyjmuje kryształ. Nogat płynie spokojnie, a dusze są wolne.)* | — |  |
 
