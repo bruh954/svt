@@ -646,22 +646,22 @@ Nowe słowa: Besuch = wizyta, goście, Clara = Clara (imię), Lukas = Lukas (imi
 
 ### Poziom 2: Oświadczyny  (typed=0, hint=bank, cierpliwość 4)
 
-Nowe słowa: nennen = nazywać, dürfen = móc, mieć pozwolenie, Darf = czy mogę, czy wolno (dürfen), schüchtern = nieśmiały, still = cichy, Schloss = pałac, zamek, hasse = nienawidzę (hassen), alte = stare (alt), Häuser = domy, wunderschön = cudowny, przepiękny, Ihrem = pani, pańskim (celownik)
+Nowe słowa: nennen = nazywać, dürfen = móc, mieć pozwolenie, Darf = czy mogę, czy wolno (dürfen), schüchtern = nieśmiały, still = cichy, Schloss = pałac, zamek, hasse = nienawidzę (hassen), alte = stare (alt), Häuser = domy, liebe = kocham (lieben), wunderschön = cudowny, przepiękny, deinem = twoim (dein, celownik), Ihrem = pani, pańskim (celownik)
 
 | # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
 |---|---|---|---|
 
 *Scena:* Ogród przy domu stryja, zimny wieczór, mgła owija róże. Lukas prosi cię o rozmowę na osobności. W ręku ma coś małego i błyszczącego.  
-*Cel:* Rozmawiaj z Lukasem grzecznie (na „Pan/Pani”), przyjmij jego oświadczyny i zachowaj spokój, nawet jeśli czujesz niepokój.  
+*Cel:* Rozmawiaj z Lukasem grzecznie (na początku na „pan/pani”, potem po imieniu, na „ty”), przyjmij jego oświadczyny i zachowaj spokój, nawet jeśli czujesz niepokój.  
 *Zakończenia:* win: Lukas zakłada ci pierścień na palec. Jego dłoń jest zimna, ale głos ciepły. Zgadzasz się, a ty prawie wierzysz, że to szczęście. · partial: Zgadzasz się, ale Lukas widzi twoje wahanie. Uśmiecha się dziwnie i mówi, że wszystko się ułoży. · fail: Lukas milknie i zabiera pierścień. „Pomyślę o tym” – mówi chłodno i znika w mgle. Stryj będzie wściekły.
 
 | 1 | Guten Abend, Clara. Der Garten ist schön im Nebel, nicht wahr? *(Dobry wieczór, Claro. Ogród jest piękny we mgle, prawda?)* | **Ja, aber es ist kalt, Herr von Hohenstein.** *(Zgódź się, że ogród jest piękny, ale dodaj, że jest zimno.)* | „Aber” to „ale”; „es ist kalt” to „jest zimno”. |
 | 2 | Nennen Sie mich bitte Lukas. Darf ich Sie Clara nennen? *(Proszę mówić mi Lukas. Czy mogę mówić do pani Clara?)* | **Ja, Lukas. Das ist in Ordnung.** *(Zgódź się, żeby zwracać się do siebie po imieniu.)* | „In Ordnung” to „w porządku”. |
-| 3 | Ich sehe Sie jeden Sonntag in der Kirche. Sie sind so still. *(Widzę panią w każdą niedzielę w kościele. Jest pani taka cicha.)* | **Ich bin nur ein bisschen schüchtern.** *(Wytłumacz, że jesteś tylko trochę nieśmiała.)* | „Schüchtern” to nieśmiały, a „nur” znaczy „tylko”. |
-| 4 | Ich habe ein großes Schloss im Norden. Es ist alt, aber sehr schön. Möchten Sie es sehen? *(Mam wielki pałac na północy. Jest stary, ale bardzo piękny. Czy chce pani go zobaczyć?)* | **Ja, ich möchte das Schloss gern sehen.** (dobra); złe: Nein, ich hasse alte Häuser.; Ich habe kein Schloss. | Odpowiadasz na pytanie: chcesz obejrzeć pałac (das Schloss).; „Nienawidzę starych domów” obraziłoby gospodarza.; Pytanie dotyczy jego pałacu, nie twojego. |
-| 5 | Clara, ich liebe Sie. Wollen Sie meine Frau werden? *(Claro, kocham panią. Czy chce pani zostać moją żoną?)* | **Ja, Lukas, ich will Ihre Frau werden.** (dobra); złe: Nein, ich kenne Sie nicht.; Ich muss zuerst schlafen. | „Ich will” to „chcę”, a „Ihre Frau” to „pańska żona”.; Znasz go już od tygodni, więc to nie pasuje do sytuacji.; Odpowiedź nie dotyczy oświadczyn. |
-| 6 | Danke. Ich habe einen Ring für Sie. *(Dziękuję. Mam dla pani pierścień.)* | **Der Ring ist wunderschön, aber sehr schwer.** *(Pochwal pierścień, ale dodaj, że jest bardzo ciężki.)* | „Schwer” to „ciężki”; po „ist” przymiotnik bez końcówki. |
-| 7 | Morgen spreche ich mit Ihrem Onkel. Gute Nacht, meine Liebe. *(Jutro porozmawiam z pani stryjem. Dobranoc, moja droga.)* | — |  |
+| 3 | Ich sehe dich jeden Sonntag in der Kirche. Du bist so still. *(Widzę cię w każdą niedzielę w kościele. Jesteś taka cicha.)* | **Ich bin nur ein bisschen schüchtern.** *(Wytłumacz, że jesteś tylko trochę nieśmiała.)* | „Schüchtern” to nieśmiały, a „nur” znaczy „tylko”. |
+| 4 | Ich habe ein großes Schloss im Norden. Es ist alt, aber sehr schön. Möchtest du es sehen? *(Mam wielki pałac na północy. Jest stary, ale bardzo piękny. Czy chcesz go zobaczyć?)* | **Ja, ich möchte das Schloss gern sehen.** (dobra); złe: Nein, ich hasse alte Häuser.; Ich habe kein Schloss. | Odpowiadasz na pytanie: chcesz obejrzeć pałac (das Schloss).; „Nienawidzę starych domów” obraziłoby gospodarza.; Pytanie dotyczy jego pałacu, nie twojego. |
+| 5 | Clara, ich liebe dich. Willst du meine Frau werden? *(Claro, kocham cię. Czy chcesz zostać moją żoną?)* | **Ja, Lukas, ich will deine Frau werden.** (dobra); złe: Nein, ich kenne dich nicht.; Ich muss zuerst schlafen. | „Ich will” to „chcę”, a „deine Frau” to „twoja żona”.; Znasz go już od tygodni, więc to nie pasuje do sytuacji.; Odpowiedź nie dotyczy oświadczyn. |
+| 6 | Danke. Ich habe einen Ring für dich. *(Dziękuję. Mam dla ciebie pierścień.)* | **Der Ring ist wunderschön, aber sehr schwer.** *(Pochwal pierścień, ale dodaj, że jest bardzo ciężki.)* | „Schwer” to „ciężki”; po „ist” przymiotnik bez końcówki. |
+| 7 | Morgen spreche ich mit deinem Onkel. Gute Nacht, meine Liebe. *(Jutro porozmawiam z twoim stryjem. Dobranoc, moja droga.)* | — |  |
 
 ### Poziom 3: Ślub i wesele  (typed=0.1, hint=bank, cierpliwość 4)
 
@@ -969,7 +969,7 @@ Nowe słowa: ruft = wzywa, woła (rufen), werde = stanę się; werde + bezokolic
 
 ### Poziom 19: Koszmar  (typed=0.9, hint=letters, cierpliwość 3)
 
-Nowe słowa: darum = dlatego, deinem = twoim (celownik), dunklen = ciemny (z końcówką), hinaus = na zewnątrz, na dwór, böse = zły, rozgniewany, gesucht = szukałam, szukał (od suchen), gefunden = znalazłam, znalazł (od finden), Sag = powiedz (sagen), während = podczas, gdy, Warst = byłaś (sein), geöffnet = otworzyłam, otwarty (od öffnen), leid = przykro (es tut mir leid), gefährlich = niebezpieczny, schweigt = milczy (schweigen)
+Nowe słowa: darum = dlatego, dunklen = ciemny (z końcówką), hinaus = na zewnątrz, na dwór, böse = zły, rozgniewany, gesucht = szukałam, szukał (od suchen), gefunden = znalazłam, znalazł (od finden), Sag = powiedz (sagen), während = podczas, gdy, Warst = byłaś (sein), geöffnet = otworzyłam, otwarty (od öffnen), leid = przykro (es tut mir leid), gefährlich = niebezpieczny, schweigt = milczy (schweigen)
 
 | # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
 |---|---|---|---|

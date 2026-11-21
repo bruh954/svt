@@ -1220,7 +1220,7 @@ e Gut! Jetzt schläfst du. Morgen ist ein großer Tag. | Dobrze! Teraz idziesz s
 @level 2 | Oświadczyny | patience=4 cap=6 typed=0 extra=1 hint=bank
 desc Rozdział 2: Pierścień w ogrodzie
 scene Ogród przy domu stryja, zimny wieczór, mgła owija róże. Lukas prosi cię o rozmowę na osobności. W ręku ma coś małego i błyszczącego.
-goal Rozmawiaj z Lukasem grzecznie (na „Pan/Pani”), przyjmij jego oświadczyny i zachowaj spokój, nawet jeśli czujesz niepokój.
+goal Rozmawiaj z Lukasem grzecznie (na początku na „pan/pani”, potem po imieniu, na „ty”), przyjmij jego oświadczyny i zachowaj spokój, nawet jeśli czujesz niepokój.
 partner Lukas | L
 win Lukas zakłada ci pierścień na palec. Jego dłoń jest zimna, ale głos ciepły. Zgadzasz się, a ty prawie wierzysz, że to szczęście.
 partial Zgadzasz się, ale Lukas widzi twoje wahanie. Uśmiecha się dziwnie i mówi, że wszystko się ułoży.
@@ -1238,26 +1238,28 @@ w schüchtern | nieśmiały
 w still | cichy
 w jeden | każdy
 w Sonntag | niedziela | der | die Sonntage
-t Ich sehe Sie jeden Sonntag in der Kirche. Sie sind so still. | Widzę panią w każdą niedzielę w kościele. Jest pani taka cicha. | Ich bin nur ein bisschen schüchtern. | Wytłumacz, że jesteś tylko trochę nieśmiała. | „Schüchtern” to nieśmiały, a „nur” znaczy „tylko”.
+t Ich sehe dich jeden Sonntag in der Kirche. Du bist so still. | Widzę cię w każdą niedzielę w kościele. Jesteś taka cicha. | Ich bin nur ein bisschen schüchtern. | Wytłumacz, że jesteś tylko trochę nieśmiała. | „Schüchtern” to nieśmiały, a „nur” znaczy „tylko”.
 w Schloss | pałac, zamek | das | die Schlösser
 w Norden | północ | der | –
 w sehen | widzieć, oglądać
 w hasse | nienawidzę (hassen)
 w alte | stare (alt)
 w Häuser | domy
-o Ich habe ein großes Schloss im Norden. Es ist alt, aber sehr schön. Möchten Sie es sehen? | Mam wielki pałac na północy. Jest stary, ale bardzo piękny. Czy chce pani go zobaczyć? | Ja, ich möchte das Schloss gern sehen. | Nein, ich hasse alte Häuser.; Ich habe kein Schloss. | Odpowiadasz na pytanie: chcesz obejrzeć pałac (das Schloss).; „Nienawidzę starych domów” obraziłoby gospodarza.; Pytanie dotyczy jego pałacu, nie twojego. | gain=1
+o Ich habe ein großes Schloss im Norden. Es ist alt, aber sehr schön. Möchtest du es sehen? | Mam wielki pałac na północy. Jest stary, ale bardzo piękny. Czy chcesz go zobaczyć? | Ja, ich möchte das Schloss gern sehen. | Nein, ich hasse alte Häuser.; Ich habe kein Schloss. | Odpowiadasz na pytanie: chcesz obejrzeć pałac (das Schloss).; „Nienawidzę starych domów” obraziłoby gospodarza.; Pytanie dotyczy jego pałacu, nie twojego. | gain=1
 w lieben | kochać
 w Frau | żona, pani | die | die Frauen
 w werden | stawać się, zostać
-o Clara, ich liebe Sie. Wollen Sie meine Frau werden? | Claro, kocham panią. Czy chce pani zostać moją żoną? | Ja, Lukas, ich will Ihre Frau werden. | Nein, ich kenne Sie nicht.; Ich muss zuerst schlafen. | „Ich will” to „chcę”, a „Ihre Frau” to „pańska żona”.; Znasz go już od tygodni, więc to nie pasuje do sytuacji.; Odpowiedź nie dotyczy oświadczyn. | loss=2
+w liebe | kocham (lieben)
+o Clara, ich liebe dich. Willst du meine Frau werden? | Claro, kocham cię. Czy chcesz zostać moją żoną? | Ja, Lukas, ich will deine Frau werden. | Nein, ich kenne dich nicht.; Ich muss zuerst schlafen. | „Ich will” to „chcę”, a „deine Frau” to „twoja żona”.; Znasz go już od tygodni, więc to nie pasuje do sytuacji.; Odpowiedź nie dotyczy oświadczyn. | loss=2
 w Ring | pierścień | der | die Ringe
 w wunderschön | cudowny, przepiękny
 w schwer | ciężki
-t Danke. Ich habe einen Ring für Sie. | Dziękuję. Mam dla pani pierścień. | Der Ring ist wunderschön, aber sehr schwer. | Pochwal pierścień, ale dodaj, że jest bardzo ciężki. | „Schwer” to „ciężki”; po „ist” przymiotnik bez końcówki. | | shift=-1
+t Danke. Ich habe einen Ring für dich. | Dziękuję. Mam dla ciebie pierścień. | Der Ring ist wunderschön, aber sehr schwer. | Pochwal pierścień, ale dodaj, że jest bardzo ciężki. | „Schwer” to „ciężki”; po „ist” przymiotnik bez końcówki. | | shift=-1
 w sprechen | mówić, rozmawiać
 w Onkel | wujek | der | die Onkel
+w deinem | twoim (dein, celownik)
 w Ihrem | pani, pańskim (celownik)
-e Morgen spreche ich mit Ihrem Onkel. Gute Nacht, meine Liebe. | Jutro porozmawiam z pani stryjem. Dobranoc, moja droga.
+e Morgen spreche ich mit deinem Onkel. Gute Nacht, meine Liebe. | Jutro porozmawiam z twoim stryjem. Dobranoc, moja droga.
 
 @level 3 | Ślub i wesele | patience=4 cap=6 typed=0.1 extra=1 hint=bank
 desc Rozdział 3: Burza nad ołtarzem
