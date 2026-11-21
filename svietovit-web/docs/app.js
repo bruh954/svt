@@ -821,7 +821,8 @@ function colorGenderText(node) {
   WORD_RE.lastIndex = 0;
   while ((m = WORD_RE.exec(txt))) {
     const w = m[0], lw = w.toLowerCase();
-    let g = (lw === "der" || lw === "die" || lw === "das") ? map[lw] : map[w];
+    if (lw === "der" || lw === "die" || lw === "das") continue;   // rodzajniki bez koloru: kolor ma tylko rzeczownik
+    let g = map[w];
     if (g && (lw === "der" || lw === "die" || lw === "das")) {   // „das ist alles”: to nie rodzajnik, jeśli dalej w tym tekście nie ma rzeczownika
       const nx = /^\s+([A-Za-zÄÖÜäöüß]+)/.exec(txt.slice(m.index + w.length));
       if (nx && !(map[nx[1]] && !/^(der|die|das)$/i.test(nx[1]))) g = 0;
