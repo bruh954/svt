@@ -665,7 +665,7 @@ Nowe słowa: nennen = nazywać, dürfen = móc, mieć pozwolenie, Darf = czy mog
 
 ### Poziom 3: Ślub i wesele  (typed=0.1, hint=bank, cierpliwość 4)
 
-Nowe słowa: Pfarrer = ksiądz, pastor, nervös = zdenerwowany, Zeichen = znak, Kerzen = świece, brennen = płoną, schlechtes = zły (schlecht), heiraten = pobrać się, poślubić, Gratulation = gratulacje, Beim = przy, podczas (bei dem), Hochzeitsessen = przyjęcie weselne, einem = jednym (ein), langen = długim (lang), Fürst = książę, arbeitet = pracuje (arbeiten), Fürsten = księcia (Fürst)
+Nowe słowa: Pfarrer = ksiądz, pastor, nervös = zdenerwowany, Zeichen = znak, Kerzen = świece, brennen = płoną, schlechtes = zły (schlecht), normal = normalny, heiraten = pobrać się, poślubić, Gratulation = gratulacje, Beim = przy, podczas (bei dem), Hochzeitsessen = przyjęcie weselne, einem = jednym (ein), langen = długim (lang), freut = cieszy (freuen), Fürst = książę, arbeitet = pracuje (arbeiten), Fürsten = księcia (Fürst)
 
 | # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
 |---|---|---|---|
@@ -674,12 +674,12 @@ Nowe słowa: Pfarrer = ksiądz, pastor, nervös = zdenerwowany, Zeichen = znak, 
 *Cel:* Przeprowadź ceremonię ślubną, nie dając po sobie poznać zdenerwowania, i dowiedz się, kim jest książę, o którym mówią goście.  
 *Zakończenia:* win: Dzwony biją, a goście klaszczą. Ksiądz błogosławi was, a ty, mimo burzy, czujesz ciężki spokój. Zostajesz panią Hohenstein. · partial: Ślub się odbywa, ale ksiądz widzi, że drżysz. Lukas ściska twoją dłoń zbyt mocno. · fail: Przysięga ci się plącze, a ksiądz robi przerwę. Goście szepczą. Lukas patrzy na ciebie lodowato.
 
-| 1 | Willkommen in der Kirche, Clara. Heute ist deine Hochzeit. Bist du bereit? *(Witaj w kościele, Claro. Dziś twój ślub. Jesteś gotowa?)* | **Ja, ich bin bereit, aber ich bin nervös.** *(Powiedz, że jesteś gotowa, ale zdenerwowana.)* | „Nervös” to zdenerwowany; „bereit” to gotowy. |
-| 2 | Draußen ist ein Gewitter. Die Kerzen brennen im Wind. *(Na zewnątrz jest burza. Świece płoną na wietrze.)* | **Das Gewitter ist laut. Ist das ein schlechtes Zeichen?** *(Zauważ, że burza jest głośna, i zapytaj, czy to zły znak.)* | „Schlecht” to zły; po „ein” + das Zeichen → ein schlechtes Zeichen. |
-| 3 | Wollen Sie, Clara, Lukas von Hohenstein heiraten? *(Czy chce pani, Claro, poślubić Lukasa von Hohenstein?)* | **Ja, ich will.** (dobra); złe: Nein, ich will nicht.; Vielleicht. | Przysięga ślubna: „Ja, ich will” (tak, chcę).; „Nie chcę” zatrzymałoby ślub.; „Może” nie jest przysięgą. |
+| 1 | Willkommen in der Kirche, Clara. Heute ist Ihre Hochzeit. Sind Sie bereit? *(Witaj w kościele, Claro. Dziś pani ślub. Jest pani gotowa?)* | **Ja, ich bin bereit, aber ich bin nervös.** *(Powiedz, że jesteś gotowa, ale zdenerwowana.)* | „Nervös” to zdenerwowany; „bereit” to gotowy. |
+| 2 | Das ist normal. Draußen ist ein Gewitter, und die Kerzen brennen im Wind. *(To normalne. Na zewnątrz jest burza, a świece płoną na wietrze.)* | **Das Gewitter ist laut. Ist das ein schlechtes Zeichen?** *(Zauważ, że burza jest głośna, i zapytaj, czy to zły znak.)* | „Schlecht” to zły; po „ein” + das Zeichen → ein schlechtes Zeichen. |
+| 3 | Nein, es ist kein schlechtes Zeichen. Wollen Sie, Clara, Lukas von Hohenstein heiraten? *(Nie, to nie jest zły znak. Czy chce pani, Claro, poślubić Lukasa von Hohenstein?)* | **Ja, ich will.** (dobra); złe: Nein, ich will nicht.; Vielleicht. | Przysięga ślubna: „Ja, ich will” (tak, chcę).; „Nie chcę” zatrzymałoby ślub.; „Może” nie jest przysięgą. |
 | 4 | Dann sind Sie jetzt Mann und Frau. Gratulation! *(Zatem jesteście teraz mężem i żoną. Gratuluję!)* | **Danke, Herr Pfarrer. Ich bin sehr glücklich.** *(Podziękuj księdzu i powiedz, że jesteś bardzo szczęśliwa.)* | „Glücklich” to szczęśliwy; zwrot „Herr Pfarrer” to „proszę księdza”. |
-| 5 | Beim Hochzeitsessen sitzen Sie an einem langen Tisch. Haben Sie Hunger? *(Na weselu siedzi pani przy długim stole. Czy jest pani głodna?)* | **Nein, ich habe keinen Hunger. Ich bin zu nervös.** *(Powiedz, że nie jesteś głodna, bo jesteś zbyt zdenerwowana.)* | „Kein” + rzeczownik męski w bierniku → keinen Hunger. „Zu nervös” = zbyt zdenerwowana. |
-| 6 | Auch der Fürst aus der Hauptstadt ist hier. Lukas arbeitet viel für ihn. *(Jest tu też książę ze stolicy. Lukas dużo dla niego pracuje.)* | **Was macht Lukas für den Fürsten?** *(Zapytaj, co Lukas robi dla księcia.)* | „Co robi” to was macht; po „für” biernik: den Fürsten. |
+| 5 | Das freut mich. Beim Hochzeitsessen sitzen Sie an einem langen Tisch. Haben Sie Hunger? *(Cieszę się. Na weselu siedzi pani przy długim stole. Czy jest pani głodna?)* | **Nein, ich habe keinen Hunger. Ich bin zu nervös.** *(Powiedz, że nie jesteś głodna, bo jesteś zbyt zdenerwowana.)* | „Kein” + rzeczownik męski w bierniku → keinen Hunger. „Zu nervös” = zbyt zdenerwowana. |
+| 6 | Ich verstehe. Auch der Fürst aus der Hauptstadt ist hier. Lukas arbeitet viel für ihn. *(Rozumiem. Jest tu też książę ze stolicy. Lukas dużo dla niego pracuje.)* | **Was macht Lukas für den Fürsten?** *(Zapytaj, co Lukas robi dla księcia.)* | „Co robi” to was macht; po „für” biernik: den Fürsten. |
 | 7 | Das weiß ich nicht. Fragen Sie Ihren Mann. Gute Nacht und viel Glück. *(Nie wiem. Niech pani zapyta męża. Dobranoc i wiele szczęścia.)* | — |  |
 
 ### Poziom 4: Pałac Hohenstein  (typed=0.15, hint=bank, cierpliwość 4)
