@@ -1191,7 +1191,7 @@ w ein bisschen | trochę
 w freundlich | miły, życzliwy
 w Seine | jego
 w Augen | oczy
-t Lukas ist freundlich und hübsch, nicht wahr? Hast du keine Angst vor ihm? | Lukas jest miły i przystojny, prawda? Nie boisz się go? | Ein bisschen. Seine Augen sind kalt. | Odpowiedz: trochę, bo jego oczy są zimne. | „Trochę” to ein bisschen, a „oczy” to Augen (liczba mnoga). | | shift=-1
+t Herr von Hohenstein ist freundlich und hübsch, nicht wahr? Hast du keine Angst vor ihm? | Pan von Hohenstein jest miły i przystojny, prawda? Nie boisz się go? | Ein bisschen. Seine Augen sind kalt. | Odpowiedz: trochę, bo jego oczy są zimne. | „Trochę” to ein bisschen, a „oczy” to Augen (liczba mnoga). | | shift=-1
 w Geld | pieniądze | das | –
 w verstehen | rozumieć
 w dankbar | wdzięczny
@@ -1212,7 +1212,7 @@ w morgen | jutro
 w gern | chętnie
 w mit | z
 w lädt | zaprasza (einladen)
-t Lukas lädt uns morgen zum Abendessen ein. Kommst du mit? | Lukas zaprasza nas jutro na kolację. Pójdziesz z nami? | Ja, ich komme gern mit. | Zgódź się pójść z nimi. | „Mitkommen” to „pójść z kimś”; mit idzie na koniec zdania. | | shift=-1
+t Herr von Hohenstein lädt uns morgen zum Abendessen ein. Kommst du mit? | Pan von Hohenstein zaprasza nas jutro na kolację. Pójdziesz z nami? | Ja, ich komme gern mit. | Zgódź się pójść z nimi. | „Mitkommen” to „pójść z kimś”; mit idzie na koniec zdania. | | shift=-1
 w schläfst | śpisz (schlafen)
 w großer | wielki (groß)
 e Gut! Jetzt schläfst du. Morgen ist ein großer Tag. | Dobrze! Teraz idziesz spać. Jutro to wielki dzień.
