@@ -379,6 +379,13 @@ def gender_map():
     for noun, art in getattr(C, "ARTICLES", {}).items():
         if art in m:
             m[noun] = m[art]
+    if _cur.get("cid") == "german":                      # odmiana słaba rzeczowników męskich: formy zależne mają ten sam kolor (Herr → Herrn, Herren)
+        for base, forms in (("Herr", ("Herrn", "Herren")), ("Mensch", ("Menschen",)), ("Junge", ("Jungen",)), ("Name", ("Namen",)),
+                            ("Graf", ("Grafen",)), ("Fürst", ("Fürsten",)), ("Held", ("Helden",)), ("Bär", ("Bären",)),
+                            ("Soldat", ("Soldaten",)), ("Student", ("Studenten",)), ("Kunde", ("Kunden",)), ("Neffe", ("Neffen",))):
+            if base in m:
+                for f in forms:
+                    m.setdefault(f, m[base])
     return json.dumps(m, ensure_ascii=False)
 
 
