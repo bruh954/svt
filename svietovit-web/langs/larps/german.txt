@@ -1318,12 +1318,12 @@ win Greta kłania się z uśmiechem: „Jak miło, że pani tu jest”. Pałac j
 partial Poznajesz większość pałacu, choć Greta musi powtarzać. W korytarzach cienie wydają się dłuższe, niż powinny.
 fail Greta nie wie, o co ci chodzi, i prowadzi cię w złą stronę. Błądzisz po ciemnych korytarzach, aż Lukas cię znajdzie, zły.
 w Schloss | pałac | das | die Schlösser
-w gnädige Frau | łaskawa pani (zwrot do pani domu)
+w gnädige Frau | łaskawa Pani (zwrot do pani domu)
 w groß | duży
 w sehr | bardzo
 w gnädige | łaskawa
 w Greta | Greta (imię)
-t Willkommen im Schloss Hohenstein, gnädige Frau. Ich bin Greta. | Witamy w pałacu Hohenstein, łaskawa pani. Jestem Greta. | Guten Abend, Greta. Das Schloss ist sehr groß. | Przywitaj się z Gretą i powiedz, że pałac jest bardzo duży. | Po „ist” przymiotnik bez końcówki: sehr groß.
+t Willkommen im Schloss Hohenstein, gnädige Frau. Ich bin Greta. | Witamy w pałacu Hohenstein, łaskawa Pani. Jestem Greta. | Guten Abend, Greta. Das Schloss ist sehr groß. | Przywitaj się z Gretą i powiedz, że pałac jest bardzo duży. | Po „ist” przymiotnik bez końcówki: sehr groß.
 w zeigen | pokazywać
 w alles | wszystko
 w müde | zmęczony
@@ -1347,7 +1347,7 @@ w Soll | czy mam, czy powinienem (sollen)
 o Der Herr kommt später. Soll ich Ihnen Tee oder Wein bringen? | Pan przyjdzie później. Czy przynieść pani herbatę czy wino? | Bitte bringen Sie Tee. | Bitte bringen Sie das Fenster.; Ich bringe Wein. | Prosisz o herbatę: Bitte bringen Sie Tee.; Okna nie przynosi się na tacy.; „Ich bringe” to „ja przynoszę”, a to Greta ma przynieść. | gain=1
 w nett | miły
 w rufen | wołać, wzywać
-t Gute Nacht, gnädige Frau. Wenn Sie etwas brauchen, rufen Sie mich. | Dobranoc, łaskawa pani. Jeśli pani czegoś potrzebuje, proszę mnie zawołać. | Danke, Greta. Sie sind sehr nett. | Podziękuj Grecie i powiedz, że jest bardzo miła. | „Nett” to miły; po „sind” przymiotnik bez końcówki. | | shift=+1
+t Gute Nacht, gnädige Frau. Wenn Sie etwas brauchen, rufen Sie mich. | Dobranoc, łaskawa Pani. Jeśli pani czegoś potrzebuje, proszę mnie zawołać. | Danke, Greta. Sie sind sehr nett. | Podziękuj Grecie i powiedz, że jest bardzo miła. | „Nett” to miły; po „sind” przymiotnik bez końcówki. | | shift=+1
 w brennt | płonie (brennen)
 e Gute Nacht. Die Kerze brennt für Sie. Schlafen Sie gut. | Dobranoc. Świeca płonie dla pani. Proszę spać dobrze.
 
@@ -1454,14 +1454,14 @@ w Köchin | kucharka | die | die Köchinnen
 w Frühstück | śniadanie | das | –
 w fertig | gotowy
 w blass | blady
-t Guten Morgen, gnädige Frau. Das Frühstück ist fertig. Sie sind sehr blass. | Dzień dobry, łaskawa pani. Śniadanie gotowe. Jest pani bardzo blada. | Ich habe schlecht geschlafen. Das Schloss ist so still. | Powiedz, że źle spałaś, bo pałac jest taki cichy. | „Schlecht geschlafen” to „źle spałam”. | | shift=-1
+t Guten Morgen, gnädige Frau. Das Frühstück ist fertig. Sie sind sehr blass. | Dzień dobry, łaskawa Pani. Śniadanie gotowe. Jest pani bardzo blada. | Ich habe schlecht geschlafen. Das Schloss ist so still. | Powiedz, że źle spałaś, bo pałac jest taki cichy. | „Schlecht geschlafen” to „źle spałam”. | | shift=-1
 w Tag | dzień | der | die Tage
 w weg | w drodze, nieobecny
 w essen | jeść
 w Appetit | apetyt | der | –
 w kalt | zimny
 w erst | dopiero
-t Der Herr ist erst drei Tage weg. Sie müssen essen, gnädige Frau. | Pan jest nieobecny dopiero trzy dni. Musi pani jeść, łaskawa pani. | Ich habe keinen Appetit. Mir ist kalt. | Powiedz, że nie masz apetytu i jest ci zimno. | „Mir ist kalt” to „jest mi zimno”. | | shift=-1
+t Der Herr ist erst drei Tage weg. Sie müssen essen, gnädige Frau. | Pan jest nieobecny dopiero trzy dni. Musi pani jeść, łaskawa Pani. | Ich habe keinen Appetit. Mir ist kalt. | Powiedz, że nie masz apetytu i jest ci zimno. | „Mir ist kalt” to „jest mi zimno”. | | shift=-1
 w Suppe | zupa | die | die Suppen
 w heiß | gorący
 w Kopf | głowa | der | die Köpfe
@@ -1485,7 +1485,7 @@ w Kerze | świeca | die | die Kerzen
 w bis | aż, dopóki
 w schlafe | śpię (schlafen)
 t Ach, das ist nichts. Ich bringe Ihnen Tee und eine Kerze. | Ach, to nic. Przyniosę pani herbatę i świecę. | Danke. Bleiben Sie bitte bei mir, bis ich schlafe. | Podziękuj i poproś, żeby została przy tobie, aż zaśniesz. | „Bis” to „aż”; „bei mir” = „przy mnie”. | | shift=-1
-e Natürlich, gnädige Frau. Schlafen Sie gut. | Oczywiście, łaskawa pani. Proszę dobrze spać.
+e Natürlich, gnädige Frau. Schlafen Sie gut. | Oczywiście, łaskawa Pani. Proszę dobrze spać.
 
 @level 8 | Lekarz | patience=4 cap=6 typed=0.35 extra=2 hint=bank
 desc Rozdział 8: Doktor Moll
@@ -1573,23 +1573,23 @@ goal Rozpytaj Gretę, nie zdradź jej swoich zamiarów, a potem weź klucz i zej
 partner Greta | G
 win Zegar bije dwanaście. Zbierasz się na odwagę, zabierasz klucz i świecę i schodzisz po zimnych stopniach. Piwnica czeka.
 partial Idziesz po schodach, ale kolana ci drżą. Wracasz do łóżka… i zawracasz po raz trzeci.
-fail Greta słyszy twoje kroki i staje przy drzwiach. „Dokąd, łaskawa pani?” – pyta. Noc mija, a klucz leży na stoliku, ciężki jak kamień.
+fail Greta słyszy twoje kroki i staje przy drzwiach. „Dokąd, łaskawa Pani?” – pyta. Noc mija, a klucz leży na stoliku, ciężki jak kamień.
 w misstrauisch | podejrzliwy
 w sonst | poza tym
 w nichts | nic
-t Gnädige Frau, der Arzt war wieder hier. Was hat er gesagt? | Łaskawa pani, lekarz znów tu był. Co powiedział? | Er gibt mir Medizin, sonst nichts. | Odpowiedz ostrożnie, że lekarz tylko daje ci lekarstwo i nic poza tym. | „Sonst nichts” = „poza tym nic”. | | shift=-1
+t Gnädige Frau, der Arzt war wieder hier. Was hat er gesagt? | Łaskawa Pani, lekarz znów tu był. Co powiedział? | Er gibt mir Medizin, sonst nichts. | Odpowiedz ostrożnie, że lekarz tylko daje ci lekarstwo i nic poza tym. | „Sonst nichts” = „poza tym nic”. | | shift=-1
 w Mensch | człowiek | der | die Menschen
 w gut | dobry
 w reden | gadać, mówić
 w Schlimmes | coś złego
-t Die Leute reden viel, gnädige Frau. Aber ich sehe nichts Schlimmes hier. | Ludzie dużo gadają, łaskawa pani. Ale ja nie widzę tu nic złego. | Greta, ist mein Mann ein guter Mensch? | Zapytaj wprost, czy twój mąż jest dobrym człowiekiem. | „Ein guter Mensch” = „dobry człowiek” (rodzaj męski → guter). | | shift=-1
+t Die Leute reden viel, gnädige Frau. Aber ich sehe nichts Schlimmes hier. | Ludzie dużo gadają, łaskawa Pani. Ale ja nie widzę tu nic złego. | Greta, ist mein Mann ein guter Mensch? | Zapytaj wprost, czy twój mąż jest dobrym człowiekiem. | „Ein guter Mensch” = „dobry człowiek” (rodzaj męski → guter). | | shift=-1
 w manche | niektóre
 w Ding | rzecz | das | die Dinge
 w Dinge | rzeczy
 t Er ist immer freundlich zu mir. Aber manche Dinge sind nicht für uns. | Jest dla mnie zawsze miły. Ale niektóre rzeczy nie są dla nas. | Welche Dinge, Greta? Sagen Sie es mir bitte. | Zapytaj, o jakie rzeczy chodzi, i poproś Gretę, żeby powiedziała. | „Sagen Sie es mir” = „proszę mi to powiedzieć”. | | shift=-2
 w wissen | wiedzieć
-t Ich weiß nichts, gnädige Frau. Ich arbeite nur hier. | Nic nie wiem, łaskawa pani. Ja tu tylko pracuję. | Hören Sie nachts Geräusche im Keller? | Zapytaj, czy Greta słyszy nocą hałasy w piwnicy. | „Hören Sie” = „czy pani słyszy”; „nachts” = „nocą”. | | shift=-1
-o Das ist nur der Wind, gnädige Frau. Gehen Sie bitte schlafen. | To tylko wiatr, łaskawa pani. Proszę iść spać. | Ja, Greta, gute Nacht. Ich bin müde. | Ich suche nachts den Schlüssel.; Ich glaube Ihnen nicht, Greta. | Zgadzasz się grzecznie, żeby nie wzbudzić podejrzeń.; Mówienie o kluczu zdradziłoby zamiary.; „Nie wierzę pani” zdradziłoby podejrzliwość. | gain=1
+t Ich weiß nichts, gnädige Frau. Ich arbeite nur hier. | Nic nie wiem, łaskawa Pani. Ja tu tylko pracuję. | Hören Sie nachts Geräusche im Keller? | Zapytaj, czy Greta słyszy nocą hałasy w piwnicy. | „Hören Sie” = „czy pani słyszy”; „nachts” = „nocą”. | | shift=-1
+o Das ist nur der Wind, gnädige Frau. Gehen Sie bitte schlafen. | To tylko wiatr, łaskawa Pani. Proszę iść spać. | Ja, Greta, gute Nacht. Ich bin müde. | Ich suche nachts den Schlüssel.; Ich glaube Ihnen nicht, Greta. | Zgadzasz się grzecznie, żeby nie wzbudzić podejrzeń.; Mówienie o kluczu zdradziłoby zamiary.; „Nie wierzę pani” zdradziłoby podejrzliwość. | gain=1
 t Hier sind die Kerze und die Medizin. Es ist schon spät. | Oto świeca i lekarstwo. Jest już późno. | Danke, Greta. Sie können gehen. | Podziękuj Grecie i powiedz, że może iść. | „Sie können gehen” = „może pani iść”. | | shift=-1
 w Uhr | zegar, godzina | die | die Uhren
 w schlagen | bić (zegar)
@@ -2054,7 +2054,7 @@ w zahlt|płaci (zahlen)
 w davon|od tego, z tego
 w Tee|herbata|der|–
 w dafür|za to
-t Ja, vor Gericht. Und der Graf zahlt dafür. Du bist frei von ihm, Clara. Greta: Ihr Tee, gnädige Frau. | Tak, przed sąd. A hrabia za to zapłaci. Jesteś od niego wolna, Claro. Greta: Pani herbata, łaskawa pani. | Danke, Greta. Ich bin nicht mehr krank, nur sehr müde. | Podziękuj Grecie i powiedz, że nie jesteś już chora, tylko bardzo zmęczona. | „Nicht mehr” = już nie. | | shift=+2
+t Ja, vor Gericht. Und der Graf zahlt dafür. Du bist frei von ihm, Clara. Greta: Ihr Tee, gnädige Frau. | Tak, przed sąd. A hrabia za to zapłaci. Jesteś od niego wolna, Claro. Greta: Pani herbata, łaskawa Pani. | Danke, Greta. Ich bin nicht mehr krank, nur sehr müde. | Podziękuj Grecie i powiedz, że nie jesteś już chora, tylko bardzo zmęczona. | „Nicht mehr” = już nie. | | shift=+2
 w führt|prowadzi (führen)
 w Osten|wschód|der|–
 e Lukas führt den Doktor hinaus. Draußen ist die Brücke weg, aber im Osten wird der Himmel hell. | Lukas wyprowadza lekarza. Na zewnątrz nie ma mostu, ale na wschodzie niebo jaśnieje.
