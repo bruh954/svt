@@ -267,3 +267,921 @@ w návštevu | wizytę, odwiedziny (biernik)
 w kamarátom | kolegą (narzędnik od kamarát)
 t Idete na návštevu? | Czy jedzie pan z wizytą? | Áno, idem za kamarátom. | Powiedz, że jedziesz do kolegi. | „Jechać do kogoś” to ísť za + narzędnik: za kamarátom (idem znaczy też „jadę”).
 e Šťastnú cestu do Košíc! | Szczęśliwej podróży do Koszyc!
+
+@larp oma | Babcia w parku | Stará mama Anna | A | Niedziela w parku. Na ławce siedzi starsza pani, która uwielbia rozmawiać i ma całe popołudnie. | Posiedź z babcią Anną i porozmawiaj z nią. Nikt cię stąd nie wyrzuci.
+fee 0
+reward 10
+story yes
+win Babcia Anna promienieje: „To je ale milý mladý muž!” Zaprasza cię na niedzielną kawę i kawałek ciasta.
+partial Rozmowa się toczyła, choć kilka razy musiałeś prosić o powtórzenie. Babcia Anna uśmiecha się cierpliwie i zaprasza cię znowu.
+fail Babcia Anna się nie zniechęca, bo ma nieskończoną cierpliwość. Jeśli kiedyś zobaczysz ten komunikat, napisz do nas.
+
+@level 1 | Na ławce | patience=3 endless=yes typed=0 extra=2 hint=none
+desc Rozdział 1: Poznajecie się
+scene Park, ławka, słońce. Starsza pani karmi okruchami wróble i zaczyna rozmowę. Nie musisz się spieszyć: babcia Anna poczeka.
+goal Przywitaj się, powiedz, jak się nazywasz i skąd jesteś.
+win Babcia Anna klepie ławkę obok siebie: „Sadnite si, Pavol!” Zostajesz na dłużej.
+partial Rozmowa się udała, mimo kilku pomyłek. Babcia Anna zachowuje cierpliwość i robi ci miejsce na ławce.
+fail Babcia Anna nigdy się nie zniechęca.
+w však | prawda? (na końcu zdania); jednak
+t Dobrý deň, mladý muž! Dnes je pekné počasie, však? | Dzień dobry, młody człowieku! Dziś jest ładna pogoda, prawda? | Áno, dnes je pekné počasie. | Zgódź się, że pogoda jest ładna. |  | Áno, počasie je dnes pekné.;Áno, je pekné počasie.
+w hreje | grzeje (hriať)
+w Anna | Anna (imię)
+w voláte | nazywacie się; nazywa się Pan (volať sa)
+w Volám | nazywam (volať sa: volám sa = nazywam się)
+w Pavol | Paweł (imię)
+t Áno, slnko hreje! Ja som Anna. Ako sa voláte? | Tak, słońce grzeje! Jestem Anna. Jak się Pan nazywa? | Volám sa Pavol. | Powiedz, jak się nazywasz. |  | Som Pavol.;Ja som Pavol.
+w Bývate | mieszka Pan (bývať)
+w nebývam | nie mieszkam (bývať)
+t Pavol! To je pekné meno. Bývate tu? | Pavol! To ładne imię. Mieszka Pan tutaj? | Nie, nebývam tu. Som z Poľska. | Zaprzecz i powiedz, że jesteś z Polski. | Najpierw krótko „nie”, potem „jestem z Polski”. | Nie, tu nebývam. Som z Poľska.
+w Nechcete | nie chce Pan (chcieť)
+w sadnúť | usiąść (sadnúť si)
+t Z Poľska! To je ďaleko. Nechcete si sadnúť? | Z Polski! To daleko. Nie usiądzie Pan? | Áno, rád. Ďakujem! | Zgódź się i podziękuj. |  | Áno, ďakujem, rád.
+e Nech sa páči! Tu je miesto. | Proszę bardzo! Tu jest miejsce.
+
+@level 2 | Wnuk i ciasto | patience=3 endless=yes typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Wnuk i ciasto
+scene Mały Jakub biega po trawniku i karmi kaczki, a babcia Anna pokazuje ci zdjęcia w portfelu. Z torby wyjmuje ciasto własnej roboty.
+goal Porozmawiaj o wnuku, powiedz, czy masz dzieci, i spróbuj ciasta.
+win Babcia Anna wręcza ci drugi kawałek: „Ešte kúsok, ešte kúsok!” Jakub macha do ciebie z daleka.
+partial Zjadłeś ciasto, choć kilka razy brakowało ci słów. Babcia Anna dolewa herbaty z termosu.
+fail Babcia Anna nie traci cierpliwości.
+w Jakub | Jakub (imię)
+w Má | ma (mať)
+w šesť | sześć
+w rokov | lat (dopełniacz lm od rok)
+t To je môj vnuk Jakub. Má šesť rokov. | To mój wnuk Jakub. Ma sześć lat. | Je veľmi milý. | Pochwal wnuka: powiedz, że jest bardzo miły. |  | Jakub je veľmi milý.;Je moc milý.
+w kŕmi | karmi (kŕmiť)
+w kačice | kaczki
+w deti | dzieci
+w nemám | nie mam (mať)
+t Ďakujem! Jakub kŕmi kačice. Máte aj deti? | Dziękuję! Jakub karmi kaczki. Ma Pan też dzieci? | Nie, nemám deti. | Powiedz, że nie masz dzieci. |  | Nie, deti nemám.
+w Žiadne | żadne
+w Aha | aha
+w koláča | ciasta (dopełniacz od koláč)
+w Napiekla | upiekła (napiecť)
+w ho | go
+w sama | sama
+w Koláč | placek, ciasto (koláč)
+w výborný | doskonały
+w koláč | placek, ciasto
+t Žiadne deti? Aha. Dáte si kúsok koláča? Napiekla som ho sama. | Nie ma Pan dzieci? Aha. Poczęstuje się Pan kawałkiem ciasta? Sama je upiekłam. | Áno, rád. Koláč je výborný! | Przyjmij ciasto i pochwal je. |  | Áno, rád. Ten koláč je výborný!
+w teší | cieszy (tešiť)
+w ma | mnie
+w mi | mi, mnie
+t Ďakujem, teší ma to! A koľko máte rokov? | Dziękuję, to miłe! A ile Pan ma lat? | Mám tridsať rokov. | Powiedz, że masz trzydzieści lat. |  | Je mi tridsať rokov.
+w Ach | ach
+e Ach, to ste ešte mladý! | Ach, taki młody!
+
+@level 3 | Zaproszenie | patience=3 endless=yes typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Kawa w niedzielę
+scene Słońce chyli się ku zachodowi. Babcia Anna pakuje termos i prosi cię o pomoc. Zanim wstaniecie z ławki, chce cię jeszcze zaprosić.
+goal Przyjmij zaproszenie na niedzielną kawę i pomóż babci z torbą.
+win Babcia Anna zapisuje ci adres na serwetce: „Príďte hladný!” Idziesz do domu w świetnym nastroju.
+partial Wszystko się wyjaśniło, choć trzeba było kilka razy powtarzać. Babcia Anna mówi: „Do nedele, chlapče!”
+fail Babcia Anna nie traci cierpliwości.
+w Viete | wie Pan (vedieť)
+w parku | parku (miejscownik od park)
+w pekne | ładnie
+w naozaj | naprawdę
+t Viete, ja som v parku každý deň. Je tu tak pekne. | Wie Pan, jestem w parku codziennie. Jest tu tak ładnie. | Áno, park je naozaj pekný. | Zgódź się, że park jest ładny. |  | Áno, v parku je pekne.
+w nedeľu | niedzielę (nedeľa = niedziela)
+w varím | gotuję, parzę (variť)
+w prídem | przyjdę (prísť)
+t Však? V nedeľu doma varím kávu. Nechcete prísť? | No właśnie! W niedzielę parzę w domu kawę. Przyjdzie Pan? | Áno, rád. Kedy? | Zgódź się i zapytaj, kiedy. |  | Áno, rád prídem. Kedy?
+w tretej | trzeciej (tretí)
+w ťažká | ciężka (ťažký)
+w Pomôžete | pomoże Pan (pomôcť)
+w Ponesiem | poniosę (niesť)
+w tašku | torbę (biernik od taška)
+w Tú | tę
+w ponesiem | poniosę
+t O tretej. Moja taška je ťažká. Pomôžete mi? | O trzeciej. Moja torba jest ciężka. Pomoże mi Pan? | Áno, samozrejme. Ponesiem tú tašku. | Zgódź się i zaproponuj, że poniesiesz torbę. |  | Áno, samozrejme. Tú tašku ponesiem.
+w nedele | niedzieli (dopełniacz od nedeľa)
+t To je od vás pekné! Ste dobrý človek. | Jak miło z Pana strony! Jest Pan dobrym człowiekiem. | Ďakujem! Dovidenia v nedeľu! | Podziękuj i pożegnaj się do niedzieli. |  | Ďakujem! Dovidenia do nedele!
+e Do nedele! Dovidenia! | Do niedzieli! Do widzenia!
+@larp spion | Szpieg | Kontakt | S | Jesteś agentem pod przykrywką. W Bratysławie masz odebrać tajną teczkę z ambasady i przekazać ją dalej. Jedno złe słowo i jesteś zdemaskowany. | Zachowaj przykrywkę kupca Kováča, zdobądź teczkę i uciekaj z walizką.
+fee 0
+reward 20
+strict yes
+story yes
+win Walizka jest w twoich rękach, a statek odpływa z portu. Ktoś w centrali szepcze: „Dobrá práca, Sokol.” Przykrywka nie pękła ani razu.
+partial Misja się udała, ale po drodze kilka razy omal się nie zdradziłeś. Centrala odnotowuje: „Mal šťastie.”
+fail Zdradziłeś się jednym słowem. Przykrywka pękła, a ty znikasz w ciemności bez teczki i bez walizki.
+
+@level 1 | Hasło na dworcu | patience=2 typed=0 extra=1 hint=none
+desc Rozdział 1: Kontakt na dworcu
+partner Muž v klobúku | M
+scene Bratysława, wieczór, peron na dworcu. Jesteś agentem „Sokół”, ale dla wszystkich jesteś panem Kováč, handlarzem zabawkami z Koszyc (Kováč i syn). Na peronie czeka człowiek w kapeluszu. Hasło: „Zima príde skoro.” Odzew: „A leto príde neskoro.”
+goal Podaj hasło, nie zdradź swojej przykrywki i przyjmij zadanie. Jedna zła odpowiedź i jesteś zdemaskowany.
+win Człowiek w kapeluszu znika w tłumie, a ty zostajesz z kopertą w kieszeni. Przykrywka nietknięta, a jutro o ósmej czeka cię ambasada.
+partial Dostałeś zadanie, ale kontakt zmarszczył brwi przy kilku twoich odpowiedziach. Lepiej uważaj jutro.
+fail Człowiek w kapeluszu spojrzał na ciebie zimno, odwrócił się i odszedł. Zadanie dostanie ktoś inny.
+w príde | przyjdzie (prísť)
+w veľká | wielka, duża (veľký)
+t Dobrý večer. Dnes je zima, však? | Dobry wieczór. Dziś jest zimno, prawda? | Áno, je zima. Zima príde skoro. | Zgódź się, że jest zimno, i powiedz hasło. | Hasło brzmi: „Zima príde skoro.” | Áno, veľká zima. Zima príde skoro.
+w Pst | cicho! (wykrzyknik)
+w počúvajú | słuchają (počúvať)
+w Kováč | Kováč (nazwisko z przykrywki; kowal)
+w obchodník | kupiec, handlowiec
+w Sokol | Sokol (sokół; imię agenta)
+w agent | agent
+k A leto príde neskoro. Pst! Tu ľudia počúvajú. Ako sa voláte? | Odzew: „A leto príde neskoro.” Cicho! Tu ludzie słuchają. Jak się Pan nazywa? | Volám sa Kováč. Som obchodník. | Volám sa Sokol. Som agent.;Volám sa Kováč. Som agent. | Sokół to twoje imię agenta, a ludzie słuchają. ; Nazwisko się zgadza, ale „agent” zdradza przykrywkę.
+w Sleduje | śledzi (sledovať)
+w nesleduje | nie śledzi (sledovať)
+w sleduje | śledzi (sledovať)
+w čas | czas
+k Dobre. Sleduje vás niekto? | Dobrze. Czy ktoś Pana śledzi? | Nie, nikto ma nesleduje. | Áno, niekto ma sleduje.;Nie, nemám čas. | Mówisz, że nikt cię nie śledzi. ; Kontakt pyta o śledzenie, nie o czas.
+w Výborne | doskonale
+w ôsmej | ósmej (ôsmy)
+w pôjdete | pójdzie Pan (ísť)
+w veľvyslanectvo | ambasada
+w večierok | przyjęcie, impreza
+w Rozumiem | rozumiem (rozumieť)
+w pôjdem | pójdę (ísť)
+t Výborne. Tu je vaša úloha. Zajtra o ôsmej pôjdete na veľvyslanectvo. Bude tam večierok. | Doskonale. Oto Pana zadanie. Jutro o ósmej pójdzie Pan do ambasady. Będzie tam przyjęcie. | Rozumiem. Zajtra o ôsmej pôjdem na veľvyslanectvo. | Powiedz, że zrozumiałeś: jutro o ósmej idziesz do ambasady. |  | Rozumiem. Zajtra pôjdem o ôsmej na veľvyslanectvo.
+w Správne | prawidłowo, dobrze
+w Slávik | słowik (hasło)
+w Aké | jakie (aký)
+t Správne. Heslo na večierok je Slávik. Aké je heslo? | Dobrze. Hasło na przyjęcie to Slávik (Słowik). Jakie jest hasło? | Heslo je Slávik. | Powtórz hasło na przyjęcie.
+w Prichádza | nadchodzi (prichádzať)
+w Poznáte | zna Pan (poznať)
+w nepoznám | nie znam (poznať)
+d Správne. Pst! Prichádza policajt. Poznáte ma? | Dobrze. Cicho! Idzie policjant. Zna mnie Pan? | Nie, nepoznám vás. | Zaprzecz, że znasz tego człowieka. | Nie możesz zdradzić, że znasz kontakt. | Nie, vás nepoznám.
+w pán | pan
+e Dobrú noc, pán Kováč. | Dobranoc, panie Kováč.
+
+@level 2 | Przyjęcie w ambasadzie | patience=2 typed=0.2 extra=3 hint=bank
+desc Rozdział 2: Przyjęcie w ambasadzie
+partner Pani Horváthová | H
+scene Następny wieczór. W ambasadzie trwa przyjęcie, a przy wejściu stoi pani Horváthová, sekretarka. Ona i goście zadają pytania o twoją „firmę”. Twoja przykrywka: Kováč i syn, zabawki, Koszyce. Hasło wejściowe: Slávik (Słowik). Gabinet ambasadora jest po prawej, toalety po lewej.
+goal Wejdź na przyjęcie, nie zdradź się pytaniom o firmę i znajdź pretekst, żeby dotrzeć do gabinetu.
+win pani Horváthová macha ci na pożegnanie, a w gabinecie leży teczka, o którą ci chodziło. Nikt niczego nie podejrzewa.
+partial Weszłeś i dotarłeś do gabinetu, ale pani Horváthová patrzyła na ciebie dłużej, niż trzeba.
+fail pani Horváthová przestaje się uśmiechać i daje znak ochronie. Za chwilę wyprowadzą cię z ambasady.
+w vitajte | witajcie; witamy (vítať)
+w veľvyslanectve | w ambasadzie (miejscownik od veľvyslanectvo)
+t Dobrý večer a vitajte na veľvyslanectve! Aké je heslo? | Dobry wieczór i witamy w ambasadzie! Jakie jest hasło? | Heslo je Slávik. | Podaj hasło wejściowe.
+w Musím | muszę (musieť)
+w opýtať | zapytać (opýtať sa)
+w sebou | sobą (so sebou = przy sobie)
+w zbraň | broń
+w zložku | teczkę (biernik od zložka)
+k Ďakujem. Musím sa vás niečo opýtať. Máte so sebou zbraň? | Dziękuję. Muszę o coś zapytać. Czy ma Pan przy sobie broń? | Nie, nemám zbraň. | Áno, mám zbraň.;Nie, nemám zložku. | Na przyjęcie nie wchodzi się z bronią. ; Pytanie dotyczy broni, nie teczki.
+w koho | kogo
+w pracujete | pracuje Pan (pracovať)
+w Pracujem | pracuję (pracovať)
+w firmu | firmę (biernik od firma)
+w centrálu | centralę (biernik od centrála)
+w pani | pani
+w Horváthovú | Horváthová (biernik; nazwisko)
+k Dobre. Pre koho pracujete? | Dobrze. Dla kogo Pan pracuje? | Pracujem pre firmu Kováč a syn. | Pracujem pre centrálu.;Pracujem pre pani Horváthovú. | „Centrala” to twoja tajna centrala, a nie firma. ; pani Horváthová to sekretarka z ambasady.
+w predáva | sprzedaje (predávať)
+w Naša | nasza (náš)
+w hračky | zabawki
+d Čo predáva vaša firma? | Co sprzedaje Pana firma? | Naša firma predáva hračky. | Powiedz, co sprzedaje twoja „firma” (przykrywka). | Twoja przykrywka to handel zabawkami. | Moja firma predáva hračky.
+w Zaujímavé | ciekawe
+w Košiciach | w Koszycach (miejscownik od Košice)
+w volá | nazywa (volať sa: sa volá = nazywa się)
+k Zaujímavé! A kde je vaša firma? | Ciekawe! A gdzie jest Pana firma? | Naša firma je v Košiciach. | Naša firma predáva hračky.;Naša firma sa volá Kováč a syn. | „Gdzie” pyta o miejsce, a nie o to, co firma sprzedaje. ; „Gdzie” pyta o miejsce, nie o nazwę.
+w toaleta | toaleta
+t To je zaujímavé. Dáte si niečo na jedenie? | Jak ciekawie! Poczęstuje się Pan czymś do jedzenia? | Nie, ďakujem. Kde je toaleta, prosím? | Odmów i zapytaj o toaletę (to pretekst). | „Gdzie” to początek pytania o miejsce. | Nie, ďakujem. Kde je tu toaleta?
+w súkromná | prywatna
+w pekná | ładna (pekný)
+k Toaleta je vľavo. Kancelária vpravo je súkromná. | Toaleta jest po lewej. Gabinet po prawej jest prywatny. | Ďakujem, pôjdem vľavo. | Ďakujem, pôjdem vpravo.;Ďakujem, kancelária je pekná. | Gabinet po prawej jest prywatny, a ty idziesz do toalety po lewej. ; Nie wolno ci mówić, że chcesz iść do gabinetu.
+w zabávajte | bawcie się (zabávať sa)
+e Tak sa pekne zabávajte, pán Kováč! | W takim razie dobrej zabawy, panie Kováč!
+
+@level 3 | Przesłuchanie | patience=1 typed=0.35 extra=3 hint=bank
+desc Rozdział 3: Przesłuchanie
+partner Pán Kolár | K
+scene Masz teczkę w torbie, ale na korytarzu zatrzymuje cię podejrzliwy ochroniarz, pan Kolár. Zaraz zapyta o wszystko. Pamiętaj: Kováč, kupiec, Koszyce. Tutaj każda zła odpowiedź kończy misję.
+goal Przekonaj ochroniarza, że jesteś zwykłym gościem, i wyjdź z teczką.
+win Ochroniarz przepuszcza cię z kwaśną miną. Wychodzisz z ambasady, a teczka w torbie jest ciężka jak ołów.
+partial Ochroniarz w końcu cię puszcza, ale zapisuje twoje nazwisko w notesie.
+fail Ochroniarz chwyta cię za ramię: „Poďte s nami!” Misja skończona, zanim naprawdę się zaczęła.
+w Stoj | stój! (stáť)
+w robíte | robicie; robi Pan (robiť)
+w Hľadám | szukam (hľadať)
+w toaletu | toaletę (biernik od toaleta)
+w hľadám | szukam (hľadať)
+t Stoj! Kto ste? Čo tu robíte? | Stać! Kim Pan jest? Co Pan tu robi? | Som hosť. Hľadám toaletu. | Powiedz, że jesteś gościem i szukasz toalety. |  | Som hosť a hľadám toaletu.
+w Boli | byli (byť)
+w kancelárii | biurze (miejscownik od kancelária)
+w nebol | nie był (byť)
+w bol | był (byť)
+w toalete | toalecie (miejscownik od toaleta)
+k Toaleta je tam. Boli ste v kancelárii? | Toaleta jest tam. Był Pan w gabinecie? | Nie, nebol som v kancelárii. | Áno, bol som v kancelárii.;Nie, nebol som na toalete. | Przyznanie się to koniec przykrywki. ; Pytanie dotyczy gabinetu, nie toalety.
+w Hm | hm
+w taške | torbie (miejscownik od taška)
+k Hm, dobre. Čo máte v taške? | Hm, dobrze. Co Pan ma w torbie? | V taške mám len peniaze a telefón. | V taške mám zložku.;Mám tašku. | Teczka w torbie zdradziłaby cię od razu. ; Ochroniarz pyta, co jest w torbie, a nie czy masz torbę.
+w bývam | mieszkam (bývať)
+d Hm, peniaze a telefón. Ako sa voláte a kde bývate? | Hm, pieniądze i telefon. Jak się Pan nazywa i gdzie Pan mieszka? | Volám sa Kováč a bývam v Košiciach. | Podaj nazwisko z przykrywki i miasto, w którym mieszkasz (Koszyce). | To twoja przykrywka. | Som Kováč a bývam v Košiciach.
+w Košice | Koszyce (miasto)
+w Vy | Pan, Pani, wy
+k Kováč, Košice. Vy ste agent, však? | Kováč, Koszyce. Jest Pan agentem, prawda? | Nie, nie som agent. Som obchodník. | Áno, ale je to tajomstvo.;Áno, pracujem pre centrálu. | Nawet żartem nie przyznawaj się do tajemnicy. ; Przyznanie się do centrali to koniec.
+w Zavolám | zadzwonię (zavolať)
+w Horváthovej | Horváthová (celownik; nazwisko)
+w Pozná | zna (poznať)
+w všetkých | wszystkich
+w hostí | gości (dopełniacz/biernik lm od hosť)
+w Horváthová | Horváthová (nazwisko pani z ambasady)
+w pozná | zna (poznať)
+t Zavolám pani Horváthovej. Pozná všetkých hostí. Pozná vás? | Zadzwonię po panią Horváthovą. Zna wszystkich gości. Zna Pana? | Áno, pani Horváthová ma pozná. Som hosť. | Powiedz, że ta pani cię zna i że jesteś gościem. |  | Áno, pani Horváthová ma pozná.
+w Videli | widzieli (vidieť)
+w nikoho | nikogo
+w nevidel | nie widział (vidieť)
+d Dobre. Na veľvyslanectve je agent. Videli ste niekoho? | Dobrze. W ambasadzie jest agent. Widział Pan kogoś? | Nie, nikoho som nevidel. | Zaprzecz, że kogokolwiek widziałeś. | Ty sam jesteś tym agentem. | Nie, nevidel som nikoho.
+w No | no (partykuła: no dobre = no dobrze)
+w Choďte | idźcie; proszę iść (ísť)
+e No dobre. Choďte domov, pán Kováč. | No dobrze. Niech Pan idzie do domu, panie Kováč.
+
+@level 4 | Walizka i ucieczka | patience=1 typed=0.5 extra=3 hint=letters reward=30
+desc Rozdział 4: Wymiana walizki
+partner Pán Vlk | V
+scene Następny ranek, port nad Dunajem w Bratysławie. Pan Vlk z centrali czeka z walizką pełną pieniędzy. Wymienisz ją na teczkę. Nowe hasło: „Havran (Kruk)”. Ale ktoś cię śledzi: w tłumie jest zdrajca, który chce dostać teczkę dla siebie.
+goal Wymień teczkę na walizkę, nie daj się zdemaskować zdrajcy i wsiądź na statek.
+win Statek odpływa, a ty stoisz na pokładzie z walizką. Pan Vlk macha z nabrzeża: „Šťastnú cestu, Sokol!”
+partial Udało się uciec, ale zdrajca zdążył zobaczyć twoją twarz. Misja zaliczona, lecz twoja przykrywka jest spalona.
+fail Zdrajca był szybszy. Walizka i teczka zniknęły, a ty zostajesz na nabrzeżu z pustymi rękami.
+w Dobré | dobre; dobry (dobré ráno)
+w Havran | kruk (hasło)
+d Dobré ráno. Aké je dnes heslo? | Dzień dobry. Jakie jest hasło? | Heslo je Havran. | Podaj hasło z dzisiejszej misji. | Dzisiejsze hasło to „Havran (Kruk)”. | Dnes je heslo Havran.
+w zložka | teczka, akta
+w Zložka | teczka, akta
+w mojej | mojej (moja)
+k Dobre. Kde je zložka? | Dobrze. Gdzie jest teczka? | Zložka je v mojej taške. | Zložka je u pani Horváthovej.;Zložka je tajomstvo. | Teczkę masz przy sobie, w torbie. ; Kontakt pyta, gdzie jest teczka, nie o tajemnicę.
+w sú | są (byť)
+w Vezmite | weźcie (vziať)
+w Beriem | biorę (brať)
+w Vezmem | wezmę (vziať)
+t Dobre. Tu je kufor. Peniaze sú vnútri. Vezmite ho. | Dobrze. Oto walizka. Pieniądze są w środku. Proszę ją wziąć. | Ďakujem. Beriem ten kufor. | Podziękuj i weź walizkę. |  | Ďakujem. Vezmem ten kufor.
+w Pozor | uwaga
+w zradca | zdrajca
+w urobíme | zrobimy (urobiť)
+w odídeme | odejdziemy (odísť)
+w Zostaneme | zostaniemy (zostať)
+w dáme | damy (dať)
+w Porozprávame | porozmawiamy (porozprávať sa)
+w tým | tym
+w mužom | mężczyzną (narzędnik od muž)
+k Pozor! Ten muž tam je zradca. Sleduje ma. Čo urobíme? | Uwaga! Ten człowiek tam jest zdrajcą. Idzie za mną. Co robimy? | Rýchlo odídeme. | Zostaneme tu a dáme si kávu.;Porozprávame sa s tým mužom. | Zdrajca idzie za wami, trzeba uciekać. ; Nie rozmawia się ze zdrajcą.
+w Pôjdeme | pójdziemy (ísť)
+w stanicu | dworzec (biernik od stanica)
+w prístavu | portu (dopełniacz od prístav)
+k Áno, rýchlo! Zradca ide zľava. Pôjdeme vľavo na stanicu, alebo vpravo do prístavu? | Tak, szybko! Zdrajca idzie z lewej. Idziemy w lewo na dworzec czy w prawo do portu? | Pôjdeme vpravo do prístavu. | Pôjdeme vľavo na stanicu.;Pôjdeme domov. | Zdrajca nadchodzi z lewej, więc idziecie w prawo, do portu. ; Pytanie jest o port albo dworzec, a nie o dom.
+w Dajte | dajcie; proszę dać (dať)
+w nedám | nie dam (dať)
+d Stoj! Dajte mi ten kufor! Mám zbraň! | Stać! Proszę dać mi walizkę! Mam broń! | Nie, ten kufor vám nedám. | Odmów oddania walizki. |  | Nie, nedám vám ten kufor.
+t Rýchlo! Loď hneď odchádza. Máte ešte kufor? | Szybko! Statek zaraz odpływa. Ma Pan jeszcze walizkę? | Áno, kufor ešte mám. | Potwierdź, że masz jeszcze walizkę. |  | Áno, mám ho ešte.
+w Misia | misja
+w splnená | wykonana
+e Dobrá práca, Sokol! Misia je splnená. Dovidenia! | Dobra robota, Sokół! Misja zakończona. Do widzenia!
+@larp zeitreise | Podróż w czasie | Strážnik | S | Obudziłeś się w roku 1450 pod murami słowackiego miasta Lipovec. Nikt nie może się dowiedzieć, że jesteś z przyszłości, bo za dziwne rzeczy i dziwne słowa w średniowieczu grozi stos. | Nie daj się wykryć jako przybysz z przyszłości: unikaj wszystkiego, co nie pasuje do roku 1450, i dotrwaj do końca dnia.
+fee 0
+reward 15
+strict yes
+story yes
+win Starosta kiwa głową: „Čestný cestovateľ!” Nikt nie podejrzewa, skąd naprawdę jesteś. Wieczorem znajdujesz drogę powrotną, a w kieszeni zostaje ci tylko miedziana moneta na pamiątkę.
+partial Udało ci się przetrwać dzień, ale kilka razy ludzie patrzyli na ciebie podejrzliwie. Starosta każe cię obserwować, więc wymykasz się z miasta o świcie.
+fail Ktoś zauważył, że nie jesteś stąd. Straż woła: „Čarodejník! Mág!” i musisz uciekać. Podróż w czasie skończyła się wcześniej, niż chciałeś.
+
+@level 1 | Brama miasta | patience=5 typed=0 extra=1 hint=none
+partner Strážnik Matúš | M
+desc Rozdział 1: Brama miasta Lipovec
+scene Rok 1450. Stoisz przed wielką drewnianą bramą miasta Lipovec. Strażnik Matúš zatrzymuje każdego podróżnego i zadaje pytania. Masz na sobie zwykłe ubranie, ale w kieszeniach zostały ci rzeczy z przyszłości.
+goal Odpowiedz na pytania strażnika tak, żeby nie wzbudzić podejrzeń: przedstaw się, powiedz skąd jesteś i jak podróżujesz. Zwróć uwagę na rzeczy, których w 1450 roku jeszcze nie było.
+win Strażnik otwiera bramę: „Vitaj v Lipovci!” Nic nie wzbudziło jego podejrzeń, a ty wchodzisz do miasta.
+partial Strażnik w końcu cię wpuszcza, ale przygląda ci się dłużej, niż byś chciał. Wchodzisz do miasta z uczuciem, że ktoś cię obserwuje.
+fail Strażnik podnosi halabardę: „Ty nie si cestovateľ!” Brama zamyka się z trzaskiem, a ty uciekasz w las.
+w brána | brama
+w mesta | miasta (dopełniacz od mesto)
+w Lipovec | Lipovec (fikcyjne miasto)
+w cestovateľ | podróżnik
+t Stoj! To je brána mesta Lipovec. Kto si? | Stój! To brama miasta Lipovec. Kim jesteś? | Som cestovateľ. | Powiedz, że jesteś podróżnikiem. |  | Ja som cestovateľ.
+w voláš | nazywasz się (volať sa)
+w Ján | Jan (imię)
+w Kevin | Kevin (imię)
+w Chantal | Chantal (imię)
+k Cestovateľ, tak. Ako sa voláš? | Podróżnik, tak. Jak się nazywasz? | Volám sa Ján. | Volám sa Kevin.;Volám sa Chantal. | Kevin i Chantal to imiona współczesne, w 1450 roku nikt tak nie nazywał dzieci. ; Chantal to nowoczesne imię z XX wieku. W 1450 roku popularne były imiona takie jak Jan.
+w budúcnosti | przyszłości (dopełniacz od budúcnosť)
+w Ameriky | Ameryki (dopełniacz od Amerika)
+k Dobre, Ján. Odkiaľ si? | Dobrze, Ján. Skąd jesteś? | Som z Poľska. | Som z budúcnosti.;Som z Ameriky. | Przyznanie się do przyszłości to dekonspiracja. Nikt w 1450 roku nie zrozumie takich słów. ; Ameryki jeszcze nie odkryto, Kolumb wypłynie dopiero w 1492 roku.
+w cestuješ | podróżujesz (cestovať)
+w Pešo | pieszo
+w koni | koniu (miejscownik od kôň; na koni = konno)
+w Cestujem | podróżuję (cestovať)
+w autom | samochodem (narzędnik od auto)
+w vlakom | pociągiem (narzędnik od vlak)
+k Z Poľska, to je ďaleko. Ako cestuješ? Pešo, alebo na koni? | Z Polski, to daleko. Jak podróżujesz? Pieszo czy konno? | Cestujem na koni. | Cestujem autom.;Cestujem vlakom. | Samochodu w 1450 roku nie ma. Strażnik pomyśli, że jesteś szalony albo opętany. ; Pociągów też jeszcze nie ma, pierwsza kolej pojawi się dopiero w XIX wieku.
+w Ukáž | pokaż (ukázať)
+w mobil | telefon komórkowy
+w platobnú | płatniczą (platobný)
+w kartu | kartę (biernik od karta)
+k Na koni, dobre. Ukáž mi tašku. Čo tam máš? | Konno, dobrze. Pokaż mi torbę. Co tam masz? | Mám len chlieb a pivo. | Mám mobil.;Mám platobnú kartu. | Telefon w 1450 roku? Strażnik wziąłby go za czarodziejskie urządzenie i zawołał straż. ; Karta płatnicza z plastiku wyglądałaby dla niego jak magia. Pieniądze to wtedy monety.
+w môžeš | możesz (môcť)
+w dnu | do środka
+w hlad | głód (mať hlad = być głodnym)
+w krčmár | karczmarz
+t Dobre, môžeš ísť dnu. Máš hlad? | Dobrze, możesz wejść. Jesteś głodny? | Áno, mám hlad. Kde je krčmár? | Powiedz, że jesteś głodny, i zapytaj, gdzie jest karczmarz. |  | Áno, som hladný. Kde je krčmár?
+w krčma | gospoda, karczma
+w pobyt | pobyt
+w Lipovci | w Lipovcu (miejscownik od Lipovec)
+e Hneď vľavo je krčma. Pekný pobyt v Lipovci! | Zaraz po lewej jest gospoda. Miłego pobytu w mieście Lipovec!
+
+@level 2 | Gospoda | patience=5 typed=0.15 extra=3 hint=bank
+partner Krčmár Martin | M
+desc Rozdział 2: Gospoda „Pri Červenom volovi”
+scene Wchodzisz do gospody. Karczmarz Martin jest ciekawski i pyta o wszystko: co chcesz zjeść, jak podróżujesz i czego potrzebujesz na noc. W gospodzie nie ma elektryczności ani nowoczesnych napojów.
+goal Zamów jedzenie i picie, które mogli podać w średniowieczu, ustal nocleg i nie wspomnij o niczym z przyszłości.
+win Karczmarz klepie cię po plecach: „Si dobrý hosť!” Dostajesz miejsce przy kominku i pełny talerz. Nikt nie podejrzewa, że jesteś z przyszłości.
+partial Karczmarz przygląda ci się podejrzliwie, ale podaje jedzenie. Śpisz źle, bo wciąż myślisz o tym, co powiedziałeś.
+fail Karczmarz woła głośno: „Čo je to wifi?!” Goście odwracają się w twoją stronę, a ty ledwo uciekasz tylnym wyjściem.
+w Vitaj | witaj (vítať)
+w krčme | w gospodzie (miejscownik od krčma)
+w dáš | dasz (dať; čo si dáš = co zamawiasz)
+t Vitaj v krčme! Čo si dáš na jedenie? Máme chlieb a polievku. | Witaj w gospodzie! Co chcesz zjeść? Mamy chleb i zupę. | Dám si chlieb a polievku, prosím. | Zamów chleb i zupę. |  | Chcem chlieb a polievku, prosím.
+w budeš | będziesz (byť)
+w kolu | colę (biernik od kola)
+k Dobre. A čo budeš piť? Máme pivo, víno a vodu. | Dobrze. A co będziesz pił? Mamy piwo, wino i wodę. | Dám si pivo. | Dám si kávu.;Dám si kolu. | Kawa dotarła do Europy dopiero w XVII wieku. ; Coca-Cola powstała w XIX wieku. W 1450 roku nikt jej nie zna.
+w Prišiel | przyszedł, przyjechał (prísť)
+w diaľky | oddali (dopełniacz od diaľka; z diaľky = z daleka)
+w dní | dni (dopełniacz lm od deň)
+t Pivo, dobre. Prišiel si z diaľky. Ako dlho už cestuješ? | Piwo, dobrze. Daleko przyjechałeś. Jak długo już jedziesz? | Cestujem už desať dní. | Powiedz, że podróżujesz już dziesięć dni. |  | Idem už desať dní.
+w Pôjdeš | pójdziesz (ísť)
+w mnou | mną
+w Vezmeme | weźmiemy (vziať)
+w voz | wóz
+w vozom | wozem (narzędnik od voz)
+w vezmeme | weźmiemy (vziať)
+w bicykli | rowerze (miejscownik od bicykel)
+k Desať dní, to je dlho! Zajtra idem na trh. Pôjdeš so mnou? Vezmeme voz. | Dziesięć dni, to długo! Jutro jadę na targ. Pojedziesz ze mną? Weźmiemy wóz. | Áno, rád. Pôjdeme vozom. | Áno, vezmeme auto.;Nie, pôjdem na bicykli. | Samochodu nie ma. Karczmarz rozejrzałby się za twoim „autem”, ale takiego słowa tu nie znają. ; Rower wynaleziono dopiero w XIX wieku. W 1450 roku jeździ się wozem albo konno.
+w izbe | pokoju (miejscownik od izba)
+w sviečku | świecę (biernik od sviečka)
+w wifi | wi-fi (internet bezprzewodowy)
+w zásuvku | gniazdko (biernik od zásuvka)
+k Dobre. V izbe je posteľ. Chceš ešte niečo? | Dobrze. W pokoju jest łóżko. Chcesz jeszcze coś? | Áno, chcem sviečku, prosím. | Máš wifi?;Chcem zásuvku. | W 1450 roku nie ma internetu. Karczmarz nie wie, co to jest wifi. ; Gniazdka elektryczne wymyślono setki lat później. Wieczorem świeci się świecami.
+w Sviečka | świeca
+w roku | roku (miejscownik od rok)
+w štyristo | czterysta
+t Sviečka, dobre. A tu je ešte pivo: dobré pivo v roku tisíc štyristo päťdesiat! Na zdravie! | Świeca, dobrze. A oto jeszcze piwo: dobre piwo w roku 1450! Na zdrowie! | Na zdravie! | Wznieś toast.
+w ideme | idziemy (ísť)
+e Dobrú noc! Zajtra ráno ideme na trh. | Dobranoc! Jutro rano jedziemy na targ.
+
+@level 3 | Targ | patience=4 typed=0.3 extra=3 hint=bank reward=25
+partner Obchodníčka Anna | A
+desc Rozdział 3: Targ w mieście Lipovec
+scene Następnego ranka na rynku jest tłoczno. Obchodníčka Anna sprzedaje chleb i ser. Przy płaceniu liczą się tylko monety, a ludzie przyglądają się twoim ubraniom.
+goal Kup chleb i ser, zapłać tak, jak płaci się w 1450 roku, i wyjaśnij, skąd masz dziwne ubranie.
+win Obchodníčka Anna wsuwa ci do koszyka jabłko: „Pre milého cestovateľa!” Targ nic nie podejrzewa, a w oddali widać już ratusz.
+partial Obchodníčka Anna w końcu sprzedała ci chleb i ser, ale kilka osób szepcze za twoimi plecami. Zbliża się ratusz.
+fail Obchodníčka Anna krzyczy: „Čo je to za oblečenie? Čo je euro?” Tłum się zbiega, a ty uciekasz między straganami.
+w kúpiť | kupić
+t Dobrý deň! Čo chceš kúpiť? Chlieb, syr, alebo jablká? | Dzień dobry! Co chcesz kupić? Chleb, ser czy jabłka? | Chcem chlieb a syr, prosím. | Poproś o chleb i ser. |  | Prosím chlieb a syr.
+w groše | grosze (dawna moneta; lm)
+w dokopy | razem
+t Chlieb stojí dva groše a syr stojí tri groše. | Chleb kosztuje dwa grosze, a ser trzy grosze. | Koľko to stojí dokopy? | Zapytaj, ile to kosztuje razem. |  | Koľko to je dokopy?
+w grošov | groszy (dopełniacz lm od groš)
+w Zaplatím | zapłacę (zaplatiť)
+w mincami | monetami (narzędnik lm od minca)
+w eurami | euro (narzędnik lm)
+w kartou | kartą (narzędnik od karta)
+k To je dokopy päť grošov. Ako chceš platiť? | To będzie pięć groszy. Jak chcesz zapłacić? | Zaplatím mincami. | Zaplatím eurami.;Zaplatím kartou. | Euro wprowadzono dopiero w 2002 roku. ; Karty płatnicze to wynalazek XX wieku. W 1450 roku płaci się monetami.
+w mince | monety
+w čudné | dziwne (čudný)
+w móda | moda
+w východu | wschodu (dopełniacz od východ)
+w tričko | koszulka
+w rifle | dżinsy
+w tenisky | adidasy, buty sportowe
+k Dobre, mince. Máš čudné oblečenie. Čo to je? | Dobrze, monety. Twoje ubranie jest dziwne. Co to jest? | To je móda z východu. | To je tričko.;To sú rifle a tenisky. | T-shirty pojawiły się w XX wieku, a kupcowa nigdy takiego nie widziała. ; Dżinsy i adidasy to rzeczy z dwudziestego wieku. Kupcowa zawołałaby straż.
+w Richtár | burmistrz (dawny tytuł)
+w ťa | cię
+w chce | chce (chcieť)
+w tebou | tobą
+t Z východu, aha. Richtár ťa chce vidieť. Pôjdeš so mnou? | Z Wschodu, aha. Burmistrz chce cię zobaczyć. Pójdziesz ze mną? | Áno, pôjdem s tebou. | Zgódź się i idź z nią. |  | Áno, idem s tebou.
+w Radnica | ratusz
+e Tak poď! Radnica je tam. | No to chodź! Ratusz jest tam.
+
+@level 4 | Burmistrz | patience=4 typed=0.5 extra=4 hint=letters reward=25
+partner Richtár Ulrich | U
+desc Rozdział 4: W ratuszu
+scene W ratuszu czeka burmistrz Ulrich. Słyszał dziwne plotki o obcym przybyszu. Zauważył coś błyszczącego na twoim nadgarstku i zadaje pytania, a tobie została tylko jedna droga: wrócić do bramy, gdzie wszystko się zaczęło.
+goal Odpowiedz na pytania tak, żeby nie zdradzić zegarka, telefonu ani przyszłości, i wróć bezpiecznie do bramy.
+win Starosta macha ręką: „Dobre, dobre, choď!” Wracasz do bramy, w powietrzu coś migocze i budzisz się we własnym czasie. Na dłoni masz grosze z 1450 roku.
+partial Starosta pozwala ci odejść, ale pod nosem mruczy o czarodziejach. Dopiero za bramą migotanie powietrza zabiera cię do domu.
+fail Starosta woła strażników: „Čarovná skrinka! On je z budúcnosti!” Nie zdążysz dojść do bramy.
+t Dobrý deň! Som richtár mesta Lipovec. Kto si? | Dzień dobry! Jestem burmistrzem miasta Lipovec. Kim jesteś? | Som Ján, cestovateľ z Poľska. | Przedstaw się: Jan, podróżnik z Polski. |  | Volám sa Ján. Som cestovateľ z Poľska.
+w ruke | ręce (miejscownik od ruka)
+w náramok | bransoleta
+w batériou | baterią (narzędnik od batéria)
+w digitálne | cyfrowe (digitálny)
+k Čo to máš na ruke? | Co to masz na ręce? | To je len náramok. | To sú hodinky s batériou.;To sú digitálne hodinky. | Zegarek z baterią to wynalazek nowoczesny. Burmistrz nie ma pojęcia, co to jest. ; Cyfrowy zegarek wyglądałby dla niego jak czary. W 1450 roku są tylko wieże z zegarami i klepsydry.
+w predsa | przecież
+w ukazuje | pokazuje (ukazovať)
+w Pozriem | spojrzę (pozrieť sa)
+w mobilu | telefonu komórkowego (dopełniacz od mobil)
+k Len náramok? Koľko je hodín? Ty predsa máš hodinky. | Tylko bransoleta? Która godzina? Przecież masz zegarek. | Nemám hodinky. Slnko ukazuje poludnie. | Je štrnásť hodín tridsať minút.;Pozriem sa do mobilu. | Dokładna godzina z minutami to nowoczesny sposób liczenia czasu. ; Telefon to rzecz z przyszłości. Burmistrz uznałby ją za czarodziejską.
+w dvetisíc | dwa tysiące
+w Neviem | nie wiem (vedieť)
+k Poludnie, dobre. Aký máme rok? | Południe, dobrze. Który mamy rok? | Máme rok tisíc štyristo päťdesiat. | Máme rok dvetisíc.;Neviem. | Jeśli podasz rok z przyszłości, zdradzisz się natychmiast. ; Wczoraj karczmarz powiedział ci, że jest rok 1450. Burmistrz uznałby, że coś ukrywasz.
+w Hovorí | mówi (hovoriť; hovorí sa = mówi się)
+w čarovnú | magiczną (čarovný)
+w skrinku | skrzynkę (biernik od skrinka)
+w žiadnu | żadną
+k Dobre. Hovorí sa, že máš čarovnú skrinku. Je to pravda? | Dobrze. Mówią, że masz magiczną skrzynkę. Czy to prawda? | Nie, žiadnu čarovnú skrinku nemám. | Áno, je to mobil.;Áno, som z budúcnosti. | Przyznanie się do telefonu zakończy rozmowę. Burmistrz nie wie, co to jest. ; Przyznanie się do podróży w czasie to najgorsza odpowiedź.
+w ideš | idziesz (ísť)
+w k | do, ku
+w bráne | bramie (celownik od brána)
+w stroju | maszynie (celownik od stroj)
+w času | czasu (dopełniacz od čas)
+w autu | samochodowi (celownik od auto)
+k Dobre. Už je neskoro. Kam teraz ideš? | Dobrze. Już późno. Dokąd teraz idziesz? | Idem späť k bráne. | Idem k stroju času.;Idem k autu. | Wehikuł czasu to najgorsza odpowiedź. ; Samochodu w 1450 roku nie ma. Burmistrz pomyślałby, że kłamiesz.
+w choď | idź (ísť)
+e Dobre, tak choď. Šťastnú cestu! | Dobrze, to idź. Szczęśliwej podróży!
+@larp politiker | Polityk | Volič | W | Jesteś skorumpowanym politykiem. Dawno temu pan Vrabec dał ci kopertę, a afera „Kauza Kukučka” wraca na każdym szczeblu twojej kariery. Wyborcy ci wierzą… i przestają… i zapominają. | Przekonaj wyborców, że nadajesz się na stanowisko. Nigdy się nie przyznaj i nie sprzeczaj sam sobie.
+fee 0
+reward 30
+strict yes
+story yes
+disclaimer Satyra. Wszystkie postacie, partie i afery są zmyślone; ewentualne podobieństwo do prawdziwych osób jest przypadkowe.
+win Wygrywasz wybory! Nikt już nie pamięta koperty od pana Vrabca. Przed gmachem tłum skanduje twoje nazwisko, a ty obiecujesz „uczciwą politykę”. Pan Vrabec macha z ostatniego rzędu.
+partial Wygrywasz o włos. Dziennikarze wciąż grzebią w aktach, ale ty już podpisujesz pierwsze dokumenty. Kłamstwo trzyma się jeszcze na słowo honoru.
+fail Wiarygodność spadła do zera. Wyborcy wyciągają stare akta, a z tłumu ktoś krzyczy: „Tá obálka!” Twoja kariera kończy się na pierwszej stronie gazet.
+
+@level 1 | Starosta obce | patience=4 cap=6 typed=0 extra=1 hint=none
+desc Szczebel 1: wójt gminy Malá Lúka
+partner Pani Hudáková | H
+scene Zebranie wiejskie w sali gimnastycznej w miejscowości Malá Lúka. Chcesz zostać wójtem. Pani Hudáková zadaje pytania, a cała wieś słucha. Wszyscy pamiętają, że pan Vrabec naprawił drogę, i że ktoś widział kopertę…
+goal Przekonaj wieś, że jesteś uczciwy, i zaprzecz plotkom o kopercie.
+win Wieś klaszcze. Zostajesz wójtem. Pan Vrabec, w pierwszym rzędzie, puszcza do ciebie oko.
+partial Wygrywasz jednym głosem. Pani Hudáková patrzy na ciebie podejrzliwie, ale podnosi rękę.
+fail Wieś ma dość. Pani Hudáková mówi: „Zvolíme niekoho iného.” Kończysz karierę, zanim się zaczęła.
+w starostom | starostą (narzędnik od starosta)
+w obce | gminy (dopełniacz od obec)
+t Dobrý večer! Chcete byť starostom obce? | Dobry wieczór! Chce Pan zostać wójtem? | Áno, chcem byť starostom obce. | Powiedz, że chcesz zostać wójtem. |  | Áno, chcem sa stať starostom obce. | gain=1
+t Rozumiem. Ste úprimný? | Rozumiem. Czy jest Pan uczciwy? | Áno, som vždy úprimný. | Zapewnij, że zawsze jesteś uczciwy. |  | Áno, vždy som úprimný. | gain=1
+w rozbitá | rozwalona, zepsuta
+w urobíte | zrobi Pan (urobiť)
+w Opravím | naprawię (opraviť)
+w opravím | naprawię (opraviť)
+t Dobre. Cesta je rozbitá. Čo s tým urobíte? | Dobrze. Droga jest rozwalona. Co Pan z tym zrobi? | Opravím cestu. | Obiecaj, że naprawisz drogę. |  | Cestu opravím. | gain=1
+w Opravíte | naprawi Pan (opraviť)
+w Vrabec | Vrabec (nazwisko; wróbel)
+w dal | dał (dať)
+w obálku | kopertę (biernik od obálka)
+w videl | widział (vidieť)
+w Pána | Pana (biernik/dopełniacz od pán)
+w Vrabca | Vrabca (dopełniacz/biernik od Vrabec)
+w sotva | ledwo
+w poznám | znam (poznať)
+t Opravíte cestu, to je dobre. Ale pán Vrabec vám dal obálku! Niekto to videl! | Naprawi Pan drogę, to dobrze. Ale pan Vrabec dał Panu kopertę! Ktoś to widział! | To je lož! Pána Vrabca sotva poznám. | Zaprzecz: to kłamstwo, ledwo znasz pana Vrabca. |  | To je lož! Pána Vrabca skoro nepoznám. | shift=-2 loss=2
+w dávno | dawno
+w Zabudli | zapomnieli (zabudnúť)
+w sme | jesteśmy (byť)
+w vďačný | wdzięczny
+t No, to už je dávno. Zabudli sme na to. | No… to było dawno. Zapomnieliśmy o tym. | Ďakujem, som vám vďačný. | Podziękuj wyborcom za wyrozumiałość (jesteś im wdzięczny). |  | Ďakujem vám, som vďačný. | shift=+2
+w Rado | z przyjemnością (rado sa stalo = nie ma za co)
+w stalo | stało (stať sa)
+w obci | gminie (miejscownik od obec)
+w veľké | duże, wielkie
+w Budem | będę (byť)
+w viac | więcej
+w peňazí | pieniędzy (dopełniacz od peniaze)
+o Rado sa stalo. V obci máme veľké dlhy. Čo urobíte? | Nie ma za co. W gminie mamy duże długi. Co Pan zrobi? | Budem šetriť a byť úprimný. | Vezmem viac peňazí.;Neviem. | Dobra odpowiedź obiecuje oszczędzanie i uczciwość. ; Polityk, który mówi „zabiorę więcej pieniędzy”, nie brzmi wiarygodnie. ; „Nie wiem” nie przekona wyborców. | gain=1
+w Budete | będzie Pan (byť)
+w nám | nam
+t To je dobre. Budete k nám úprimný? | To dobrze. Czy będzie Pan wobec nas uczciwy? | Áno, k vám budem vždy úprimný. | Obiecaj uczciwość wobec wyborców. |  | Áno, budem k vám vždy úprimný. | gain=1
+w zvolíme | wybierzemy (zvoliť)
+w starosta | starosta
+e Tak vás zvolíme! Vitajte, pán starosta! | Wybieramy więc Pana! Witamy, Panie wójcie!
+
+@level 2 | Mestský poslanec | patience=4 cap=6 typed=0.2 extra=2 hint=bank
+desc Szczebel 2: radny miejski
+partner Pani Šimková | Š
+scene Miasto Nové Mesto. Jesteś kandydatem do rady miejskiej. Dziennikarka pani Šimková pyta o „biznesmenów” i o to, skąd masz nowy samochód.
+goal Zaprzecz, że brałeś pieniądze, i nie daj się złapać na kłamstwie.
+win pani Šimková zamyka notes: „Dobre, už nemám ďalšie otázky.” Zostajesz radnym. Pan Vrabec gratuluje przez telefon.
+partial Zostajesz radnym, ale pani Šimková mówi: „Zostanem na stope.” Będzie dalej drążyć.
+fail Wywiad ląduje w gazecie pod tytułem „Poslanec a obálka”. Nikt na ciebie nie głosuje.
+w novinárka | dziennikarka
+w mestským | miejskim (mestský)
+w poslancom | posłem, radnym (narzędnik od poslanec)
+t Dobrý deň, som novinárka. Chcete byť mestským poslancom? | Dzień dobry, jestem dziennikarką. Chce Pan zostać radnym? | Áno, chcem byť mestským poslancom. | Potwierdź, że chcesz zostać radnym. |  | Áno, chcem sa stať mestským poslancom. | gain=1
+w podnikateľa | przedsiębiorcę (biernik od podnikateľ)
+w známy | znajomy
+t Rozumiem. Poznáte podnikateľa pána Vrabca. Je to váš priateľ? | Rozumiem. Zna Pan biznesmena, pana Vrabca. Czy to Pana przyjaciel? | Nie, je to len známy. | Zaprzecz: to tylko znajomy. |  | Nie, len ho trochu poznám. | gain=1
+w nové | nowe
+w Kúpil | kupił (kúpiť)
+w poctivo | uczciwie
+t Len známy, dobre. Máte nové auto. Odkiaľ máte peniaze? | Tylko znajomy, dobrze. Ma Pan nowy samochód. Skąd ma Pan pieniądze? | Kúpil som ho poctivo. | Powiedz, że kupiłeś go uczciwie. |  | Kúpil som to auto poctivo.
+w Vzali | wzięli (vziať)
+w úplatok | łapówka
+w nevzal | nie wziął (vziať)
+w žiadny | żaden
+t Poctivo, aha. Vzali ste niekedy úplatok? | Uczciwie, aha. Czy kiedykolwiek wziął Pan łapówkę? | Nie, nikdy som nevzal úplatok. | Zaprzecz, że kiedykolwiek brałeś łapówki. | Zaprzeczenie ze słowem „nigdy” musi być stanowcze. | Nie, nikdy som nevzal žiadny úplatok. | loss=2
+w Pozrite | spójrzcie; proszę spojrzeć (pozrieť sa)
+w nej | niej (na nej = na niej)
+w obálka | koperta
+w Týchto | tych
+w ľudí | ludzi (dopełniacz od ľudia)
+w vôbec | w ogóle
+t Nikdy? Pozrite sa, tu je fotka. Ste na nej vy, pán Vrabec a obálka. | Nigdy? Proszę spojrzeć, oto zdjęcie. Widać na nim Pana, pana Vrabca i kopertę. | Týchto ľudí nepoznám. | Powiedz, że nie znasz tych ludzi. |  | Týchto ľudí vôbec nepoznám. | shift=-2
+w stará | stara (starý)
+w Voliči | wyborcy
+w zabudnú | zapomną (zabudnúť)
+w dôležitá | ważna (dôležitý)
+t Tá fotka je stará. Voliči na to čoskoro zabudnú. | Zdjęcie jest stare. Wyborcy wkrótce o tym zapomną. | Tá fotka nie je dôležitá. | Zlekceważ zdjęcie: nie jest ważne. |  | Tá fotka vôbec nie je dôležitá. | shift=+2
+w Jedna | jedna
+w svedkyňa | świadkini
+w Svedkyňa | świadkini
+w luže | kłamie (luhať)
+w pravdu | prawdę (biernik od pravda)
+w svedok | świadek
+o Jedna svedkyňa hovorí, že ste vzali peniaze. | Jedna świadkini twierdzi, że wziął Pan pieniądze. | To nie je pravda. Svedkyňa luže. | Áno, svedkyňa má pravdu.;Ja som svedok. | Zaprzeczasz i nazywasz świadkinię kłamczynią. ; Przyznajesz się, więc przegrywasz. ; Nie jesteś świadkiem, tylko podejrzanym. | gain=1
+w rozhovor | wywiad, rozmowa
+w dodať | dodać
+w nevinný | niewinny
+t Ďakujem za rozhovor. Chcete ešte niečo dodať? | Dziękuję za wywiad. Czy chce Pan jeszcze coś dodać? | Áno, som nevinný. | Powiedz na koniec, że jesteś niewinny. |  | Áno, chcem povedať, že som nevinný. | gain=1
+w Napíšem | napiszę (napísať)
+w povedali | powiedzieli (povedať)
+e Napíšem, čo ste povedali. Dovidenia! | Napiszę, co Pan powiedział. Do widzenia!
+
+@level 3 | Primátor | patience=4 cap=6 typed=0.4 extra=2 hint=bank
+desc Szczebel 3: burmistrz
+partner Prokurátor Kolár | K
+scene W ratuszu miasta Nové Mesto. Prokurator Kolár bada przetarg na nowy most. Firma pana Vrabca wygrała dziwnie łatwo, a w aktach wraca „Kauza Kukučka”.
+goal Wyjdź z przesłuchania jako burmistrz, nie przyznając się do niczego.
+win Kolár zamyka teczkę: „Žiadne dôkazy. Spis ostáva zatvorený.” Zostajesz burmistrzem, a most otwiera się z pompą.
+partial Teczka zostaje otwarta, ale prokurator nie ma dowodów. Zostajesz burmistrzem z cieniem podejrzeń.
+fail Kolár kładzie na stole kopertę i zdjęcie. „Zatýkam vás!” – mówi. Kończysz w areszcie.
+w prokurátor | prokurator
+w Kolár | Kolár (nazwisko prokuratora)
+w výsluch | przesłuchanie
+w svojho | swojego
+w advokáta | adwokata (biernik od advokát)
+w Chcel | chciał (chcieť)
+w by | by (tryb przypuszczający)
+t Som prokurátor Kolár. Toto je výsluch. | Jestem prokuratorem. To jest przesłuchanie. | Chcem svojho advokáta. | Poproś o swojego adwokata. |  | Chcel by som svojho advokáta. | gain=1
+w vyhrala | wygrała (vyhrať)
+w verejné | publiczne (verejný)
+w obstarávanie | zamówienie, przetarg (verejné obstarávanie = przetarg)
+w Mala | miała (mať)
+w najlepšiu | najlepszą (najlepší)
+w ponuku | ofertę (biernik od ponuka)
+w Jej | jej
+w ponuka | oferta
+w bola | była (byť)
+w najlepšia | najlepsza
+t Rozumiem. Firma pána Vrabca vyhrala verejné obstarávanie na most. Prečo? | Rozumiem. Firma pana Vrabca wygrała przetarg na most. Dlaczego? | Mala najlepšiu ponuku. | Wyjaśnij, że miała najlepszą ofertę. |  | Jej ponuka bola najlepšia. | gain=1
+w otázok | pytań (dopełniacz lm od otázka)
+w vypovedať | zeznawać
+w Odmietam | odmawiam (odmietať)
+w odmietam | odmawiam, odrzucam (odmietať)
+t Najlepšiu ponuku, aha. Máme veľa otázok. Chcete vypovedať? | Najlepszą ofertę, aha. Mamy wiele pytań. Czy chce Pan złożyć zeznanie? | Odmietam vypovedať. | Odmów składania zeznań. |  | Nie, odmietam vypovedať. | shift=-1
+w právo | prawo
+w mlčať | milczeć
+w dôkazov | dowodów (dopełniacz lm od dôkaz)
+w podozrenie | podejrzenie
+w vieme | wiemy (vedieť)
+w obaja | obaj
+w Nemáte | nie ma Pan (mať)
+w dôkazy | dowody
+w nemáte | nie ma Pan (mať)
+t Máte právo mlčať. Bez dôkazov nie je podozrenie. To vieme obaja. | Ma Pan prawo milczeć. Bez dowodów nie ma podejrzenia. Wiemy to obaj. | Nemáte žiadne dôkazy. | Powiedz prokuratorowi, że nie ma dowodów. |  | Vy nemáte žiadne dôkazy. | shift=+2
+w Zatiaľ | na razie
+w obžaloba | akt oskarżenia
+w vinný | winny
+o Zatiaľ nie. Ale možno bude obžaloba. Čo na to hovoríte? | Jeszcze nie. Ale być może będzie akt oskarżenia. Co Pan na to? | Som nevinný. | Som vinný.;To som bol ja. | „Niewinny” to słowo, które chcesz tu powiedzieć. ; „Winny” to przyznanie się. ; „To byłem ja” to też przyznanie się. | gain=1
+t Nie ste vinný, však? Pán Vrabec hovorí, že vám dal obálku. | Nie jest Pan winny, tak? Pan Vrabec mówi, że dał Panu kopertę. | To je lož! Nikdy som obálku nevzal. | Zaprzecz: to kłamstwo, nigdy nie wziąłeś koperty. |  | To je lož! Žiadnu obálku som nevzal. | shift=-2 loss=2
+w Potom | potem
+w povedzte | powiedzcie; proszę powiedzieć (povedať)
+w raz | raz (ešte raz = jeszcze raz)
+w prísahou | przysięgą (narzędnik od prísaha)
+d Potom to povedzte ešte raz pod prísahou. Vzali ste od pána Vrabca peniaze? | Powiedz to więc jeszcze raz, pod przysięgą. Czy wziął Pan pieniądze od pana Vrabca? | Nie, nevzal som od pána Vrabca žiadne peniaze. | Zaprzeczaj pod przysięgą: nie wziąłeś od niego pieniędzy. | Jedna wpadka i koniec. | Nie, od pána Vrabca som nevzal žiadne peniaze.
+w primátor | burmistrz dużego miasta
+w otázky | pytania
+e Dobre. Ste primátor. Už nemám žiadne otázky. | Dobrze. Jest Pan burmistrzem. Nie mam więcej pytań.
+
+@level 4 | Poslanec | patience=4 cap=6 typed=0.6 extra=2 hint=letters
+desc Szczebel 4: poseł
+partner Predsedníčka Vlčková | V
+scene Parlament. Jesteś posłem, a komisja śledcza wzywa cię jako świadka. Przewodnicząca Pani Vlčková mówi o aferze „Kauza Kukučka”. Prawnicy mają dla ciebie nowe słowa: świadek, przysięga, immunitet.
+goal Odpowiadaj pod przysięgą tak, by nikt nie dowiódł, że kłamiesz.
+win Pani Vlčková: „Výpoveď je ukončená.” Wychodzisz z sali z uniesioną głową. Komisja nic nie ma.
+partial Komisja kończy pracę bez wniosków, ale jeden członek zapisał w notatniku: „Neskôr preveriť!”
+fail Komisja nakazuje ci wyjaśnić sprzeczność. Zaplątałeś się, a prasa pisze o „poslancovi, ktorý luže”.
+w vo | w
+w vyšetrovacej | śledczej (vyšetrovací)
+w komisii | komisji (miejscownik od komisia)
+w Vypovedáte | zeznaje Pan (vypovedať)
+w viem | wiem (vedieť)
+w Poviem | powiem (povedať)
+t Vitajte vo vyšetrovacej komisii. Vypovedáte pod prísahou. | Witamy w komisji. Zeznaje Pan pod przysięgą. | Áno, viem. Poviem pravdu. | Potwierdź i zapewnij, że mówisz prawdę. |  | Áno, viem to. Budem hovoriť pravdu. | gain=1
+w poslanec | poseł
+w imunitu | immunitet (biernik od imunita)
+w vzdať | zrzec się (vzdať sa)
+w ponechať | zachować, zostawić
+t Dobre. Ako poslanec máte imunitu. Chcete sa jej vzdať? | Dobrze. Jako poseł ma Pan immunitet. Czy chce się go Pan zrzec? | Nie, chcem si imunitu ponechať. | Odmów zrzeczenia się immunitetu. |  | Nie, imunitu si chcem ponechať. | shift=-1
+w ju | ją
+w výpoveď | zeznanie
+w rozpore | sprzeczności (miejscownik od rozpor; v rozpore so = w sprzeczności z)
+w spisom | aktami (narzędnik od spis)
+w vysvetlíte | wyjaśni Pan (vysvetliť)
+t Ponechať si ju, aha. Vaša výpoveď je v rozpore so spisom. Ako to vysvetlíte? | Zatrzymać ją, aha. Pana zeznanie jest sprzeczne z aktami. Jak Pan to wyjaśni? | Nemám čo skrývať. | Powiedz, że nie masz nic do ukrycia. |  | Ja nemám čo skrývať. | loss=2
+w nemyslia | nie myślą (myslieť)
+t To už je dávno. Voliči už na to nemyslia. | To było dawno. Wyborcy już o tym nie myślą. | To je minulosť. | Machnij ręką: to przeszłość. |  | To je už minulosť. | shift=+2
+w napísal | napisał (písať)
+w advokát | adwokat
+o Minulosť? Tu je list od pána Vrabca. Poznáte ten list? | Przeszłość? Oto list od pana Vrabca. Zna Pan ten list? | Ten list nepoznám. | Áno, ten list som napísal ja.;Ten list napísal môj advokát. | Zaprzeczasz, że znasz ten list. ; Przyznajesz się, że to ty napisałeś list: to błąd. ; Zwalanie na adwokata nie jest wiarygodne. | gain=1
+w Jeden | jeden
+w dostali | dostali (dostať)
+w peniazmi | pieniędzmi (narzędnik od peniaze)
+w nedostal | nie dostał (dostať)
+t Jeden svedok hovorí, že ste dostali obálku s peniazmi. | Jeden świadek mówi, że dostał Pan kopertę z pieniędzmi. | Svedok luže. Žiadne peniaze som nedostal. | Nazwij świadka kłamcą i zaprzecz, że dostałeś pieniądze. |  | Ten svedok luže. Peniaze som nedostal. | shift=-2 loss=2
+w schôdzi | zebraniu (miejscownik od schôdza)
+w Platí | obowiązuje; jest aktualne (platiť)
+k Na schôdzi ste povedali, že pána Vrabca sotva poznáte. Platí to ešte? | Na zebraniu powiedział Pan, że ledwo zna pana Vrabca. Czy to nadal prawda? | Áno, pána Vrabca sotva poznám. | Nie, je to môj priateľ.;Nie, nikdy som ho nevidel. | Konsekwentnie powtarzasz wcześniejsze zeznanie. ; Przyznajesz, że to twój przyjaciel: sprzeczność i koniec. ; Wcześniej mówiłeś, że ledwo go znasz, a nie że nigdy go nie widziałeś. | gain=1
+w Môžete | może Pan (môcť)
+w uvidíme | zobaczymy (uvidieť)
+e Ďakujem. Môžete ísť. Čoskoro sa uvidíme. | Dziękuję. Może Pan iść. Wkrótce znów się zobaczymy.
+
+@level 5 | Minister | patience=4 cap=6 typed=0.8 extra=2 hint=bank
+desc Szczebel 5: minister
+partner Pán Zima | Z
+scene Studio telewizyjne, wywiad na żywo. Jesteś ministrem i siedzisz naprzeciw pana Zimy, prowadzącego wiadomości. Na ekranie nagle pojawia się stary dokument z afery „Kauza Kukučka”.
+goal Wyjdź ze studia nadal jako minister: nie daj się zapędzić w pułapkę na żywo.
+win Zima kończy wywiad: „Ďakujem, pán minister.” Sondaże rosną. Pan Vrabec dzwoni: „Dobrá práca!”
+partial Wywiad kończy się remisem. Opozycja domaga się dymisji, ale premier cię broni.
+fail Na wizji uciekasz od odpowiedzi, a widzowie wszystko widzą. Rano gazety krzyczą: „Demisia!”
+w naživo | na żywo
+w televízii | telewizji (miejscownik od televízia)
+w pripravený | gotowy
+w minister | minister
+w úplne | całkowicie
+t Dobrý večer! Sme naživo v televízii. Ste pripravený, pán minister? | Dobry wieczór! Jesteśmy na żywo w telewizji. Jest Pan gotów, panie ministrze? | Áno, som pripravený. | Potwierdź, że jesteś gotów. |  | Áno, som úplne pripravený. | gain=1
+w Opozícia | opozycja
+w tvrdí | twierdzi (tvrdiť)
+w kauzy | afery (dopełniacz od kauza)
+w Kukučka | kukułka (afera Kukučka)
+w škandál | skandal
+w kampaň | kampania
+t Dobre. Opozícia tvrdí, že okolo kauzy Kukučka je škandál. | Dobrze. Opozycja twierdzi, że wokół afery jest skandal. | To nie je škandál. To je kampaň. | Zbagatelizuj: to nie skandal, tylko kampania. |  | To nie je žiadny škandál. To je kampaň. | shift=-1
+w novinách | gazecie (miejscownik lm od noviny)
+w dokument | dokument
+w podpis | podpis
+w Nemôžem | nie mogę (môcť)
+w spomenúť | przypomnieć (spomenúť si)
+w nemôžem | nie mogę (môcť)
+t Kampaň, aha. V novinách je dokument. Má váš podpis. | Kampania, aha. W gazecie jest dokument. Ma Pana podpis. | Nemôžem si na to spomenúť. | Powiedz, że nie możesz sobie tego przypomnieć. |  | Na to si nemôžem spomenúť. | shift=-2 loss=2
+w falzifikát | fałszerstwo
+t To je váš podpis. Ako to vysvetlíte? | To jest Pana podpis. Jak Pan to wyjaśni? | To je falzifikát. | Zaprzecz: to fałszerstwo. |  | Ten podpis je falzifikát. | gain=1
+w Prieskumy | sondaże
+w rastú | rosną (rásť)
+w veria | wierzą (veriť)
+w voličom | wyborcom (celownik od volič)
+w dôveru | zaufanie (biernik od dôvera)
+w vašu | waszą; Pana (váš)
+t Prieskumy pre vás rastú. Voliči vám veria. | Sondaże rosną na Pana korzyść. Wyborcy Panu wierzą. | Ďakujem voličom za dôveru. | Podziękuj wyborcom za zaufanie. |  | Ďakujem za vašu dôveru. | shift=+2
+w poradca | doradca
+w ním | nim (s ním = z nim)
+w nepracoval | nie pracował (pracovať)
+w dával | dawał (dávať)
+o Dobre. Pán Vrabec hovorí, že bol váš poradca. Je to pravda? | Dobrze. Pan Vrabec mówi, że był Pana doradcą. Czy to prawda? | Nie, nikdy som s ním nepracoval. | Áno, často mi dával peniaze.;Odmietam vypovedať. | Zaprzeczasz konsekwentnie. ; Przyznajesz się do pieniędzy: błąd. ; Odmowa zeznań w telewizji wygląda na przyznanie się, a prowadzący to wykorzysta. | gain=1
+w odstúpiť | ustąpić, podać się do dymisji
+w neodstúpim | nie ustąpię (odstúpiť)
+t Chcete odstúpiť? Potom je všetko koniec. | Czy chce Pan podać się do dymisji? Wtedy wszystko skończone. | Nie, neodstúpim. Som nevinný. | Odmów dymisji i powiedz, że jesteś niewinny. |  | Nie, nechcem odstúpiť. Som nevinný. | gain=1
+w tej | tej
+w obálke | kopercie (miejscownik od obálka)
+k Tu je fotka: vy a pán Vrabec. Je tam aj obálka. Čo je v tej obálke? | Oto zdjęcie: Pan i pan Vrabec. Jest tam też koperta. Co jest w kopercie? | Tá fotka je stará. Nikdy som obálku nevzal. | To sú peniaze na moju kampaň.;To bol len darček. | Powtarzasz to, co powiedziałeś wcześniej. ; Przyznanie się do pieniędzy: koniec. ; „To tylko prezent” to też przyznanie się, bo wcześniej mówiłeś, że nie brałeś koperty. | gain=1
+e Ďakujem za rozhovor, pán minister. | Dziękuję za wywiad, panie ministrze.
+
+@level 6 | Premiér | patience=4 cap=6 typed=1 extra=2 hint=none
+desc Szczebel 6: premier
+partner Pani Medvedová | M
+scene Debata finałowa w telewizji. Kandydujesz na premiera. Naprzeciw stoi Pani Medvedová z partii „Nová úprimnosť” i jej teczka z aferą „Kauza Kukučka”. Cały kraj ogląda.
+goal Wygraj debatę, zachowaj spokój i nie przyznaj się do niczego do samego końca.
+win Przegrywa nawet sondaż: 52 procent mówi, że chce ciebie. Zostajesz premierem, a koperta pana Vrabca leży gdzieś na dnie szuflady.
+partial Debata kończy się remisem. Wybory wygrywasz minimalnie i obiecujesz „więcej przejrzystości”.
+fail Pani Medvedová kładzie na stoliku teczkę. Kraj widzi sprzeczność w twoich słowach i na ekranie pojawia się napis: „Kandidát luže.”
+w debate | debacie (miejscownik od debata)
+w Medvedová | Medvedová (nazwisko; niedźwiedź)
+w kandidát | kandydat
+w premiérom | premierem (narzędnik od premiér)
+t Vitajte na debate! Pani Medvedová, pán kandidát, prosím. | Witamy na debacie! Pani Medvedová, panie kandydacie, proszę. | Dobrý večer. Chcem byť premiérom. | Przywitaj się i powiedz, że chcesz zostać premierem. |  | Dobrý večer. Chcem sa stať premiérom. | gain=1
+w strany | partii (dopełniacz od strana)
+w Nová | Nowa (nový)
+w úprimnosť | szczerość, uczciwość
+w Hovorte | mówcie (hovoriť)
+w hovorím | mówię (hovoriť)
+t Som zo strany Nová úprimnosť. Hovorte pravdu, pán kandidát! | Jestem z partii „Nová úprimnosť”. Niech Pan mówi prawdę, panie kandydacie! | Ja hovorím vždy pravdu. | Zapewnij, że zawsze mówisz prawdę. |  | Ja vždy hovorím pravdu. | gain=1
+w Brali | brali (brať)
+w úplatky | łapówki
+w moje | moje
+w obvinenie | zarzut, oskarżenie
+t Brali ste úplatky. To je moje obvinenie. | Brał Pan łapówki. To mój zarzut. | Toto obvinenie odmietam. | Odrzuć ten zarzut. |  | Odmietam toto obvinenie. | shift=-2 loss=2
+w Mnoho | wiele
+w špinavá | brudna (špinavý)
+t Mnoho ľudí hovorí, že je to dávno a že je to len kampaň. | Wielu ludzi mówi, że to było dawno i że to tylko kampania. | Vaša kampaň je špinavá. | Zarzuć rywalce brudną kampanię. |  | Tá vaša kampaň je špinavá. | shift=+2
+w tieto | te
+w dokumenty | dokumenty
+w nevidím | nie widzę (vidieť)
+t Pozrite sa na tieto dokumenty. Sú to dôkazy. | Proszę spojrzeć na te dokumenty. To są dowody. | Žiadne dôkazy nevidím. | Powtórz, że nie widzisz żadnych dowodów. |  | Ja žiadne dôkazy nevidím. | gain=1
+w ukáže | pokaże się (ukázať)
+w krajinu | kraj (biernik od krajina)
+w Vytvorím | stworzę (vytvoriť)
+w pracovné | pracy (pracovné miesta = miejsca pracy)
+w miesta | miejsca
+w vytvorím | stworzę (vytvoriť)
+t To sa ukáže. A aký je váš plán pre krajinu? | To się okaże. A jaki jest Pana plan dla kraju? | Vytvorím nové pracovné miesta. | Obiecaj nowe miejsca pracy. |  | Nové pracovné miesta vytvorím. | gain=1
+t Váš priateľ pán Vrabec hovorí, že vám dal veľa peňazí! | Pana przyjaciel, pan Vrabec, mówi, że dał Panu dużo pieniędzy! | To je lož! Nie je to môj priateľ. | Zaprzecz: to kłamstwo, on nie jest twoim przyjacielem. |  | To je lož! Pán Vrabec nie je môj priateľ. | shift=-1 loss=2
+w mestskom | miejskim (mestský)
+w zastupiteľstve | radzie miejskiej (miejscownik od zastupiteľstvo)
+o V mestskom zastupiteľstve ste povedali, že je to len známy. A teraz? | W radzie powiedział Pan, że to tylko znajomy. A teraz? | Je to len známy. | Je to môj priateľ.;Nikdy som ho nevidel. | Trzymasz się wersji z rady. ; Zaprzeczasz sam sobie. ; Wcześniej przyznałeś, że go znasz, więc „nigdy go nie widziałem” to sprzeczność. | gain=1
+w vzal | wziął (vziať)
+k Pani Medvedová ukazuje obálku. Vzali ste ju? Áno, alebo nie? | Pani Medvedová pokazuje kopertę. Wziął ją Pan? Tak czy nie? | Nie, nikdy som ju nevzal. | Áno, vzal som ju.;Odmietam vypovedať. | Zaprzeczasz do końca. ; Przyznanie się: koniec. ; Milczenie na żywo wygląda jak przyznanie się.
+w stávate | zostaje Pan (stávať sa)
+w Srdečné | serdeczne
+w blahoželanie | gratulacje
+e A premiérom sa stávate vy! Srdečné blahoželanie! | A premierem zostaje… Pan! Serdeczne gratulacje!
+@larp flughafen | Lotnisko | Pracovníčka | P | Bratysława, lotnisko im. Štefánika, wczesny ranek. Lecisz do Warszawy na ślub najlepszego przyjaciela, a samolot nie poczeka. Masz walizkę, paszport i mało czasu. | Przejdź całą drogę: odprawa, kontrola bezpieczeństwa, bramka, lot i odbiór bagażu w Warszawie.
+fee 0
+reward 20
+strict yes
+story yes
+win Docierasz do Warszawy z walizką, paszportem i pół godziny zapasu. Przyjaciel czeka w hali przylotów z bukietem: „Zvládol si to! Svadba môže začať!”
+partial Dotarłeś do Warszawy, ale po drodze sporo się nagadałeś i trochę pobiegałeś. Walizka jest, ślub też, ty trochę zdyszany, ale na czas.
+fail Pomyliłeś coś w najgorszym momencie i samolot odleciał bez ciebie. Ślub oglądasz na telefonie, a przyjaciel obiecuje ci długą wyprawę „na pocieszenie”.
+
+@level 1 | Odprawa | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Odprawa
+partner Pracovníčka | P
+scene Bratysława, lotnisko im. Štefánika, hala odlotów. Podchodzisz do stanowiska odprawy linii Tatra Air. Pracowniczka patrzy na ciebie życzliwie i czeka na dokumenty.
+goal Odpraw się na lot do Warszawy: pokaż paszport, nadaj walizkę i wybierz miejsce.
+win Pracowniczka podaje ci kartę pokładową: „Šťastnú cestu!” Walizka jedzie na taśmie, a ty idziesz do kontroli bezpieczeństwa.
+partial Odprawa udała się, ale pracowniczka kilka razy musiała się domyślać, o co ci chodzi. Karta pokładowa w ręku, czas ucieka.
+fail Pracowniczka nie rozumie, czego chcesz, i prosi następną osobę w kolejce. Musisz zacząć od nowa na końcu kolejki.
+w prepážke | stanowisku (miejscownik od prepážka)
+w Tatra | Tatra (tatrzański; nazwa linii)
+w Air | Air (linia lotnicza)
+w letíte | lecicie; leci Pan (letieť)
+w Letím | lecę (letieť)
+w Varšavy | Warszawy (dopełniacz od Varšava)
+w letím | lecę (letieť)
+t Dobrý deň! Vitajte pri prepážke Tatra Air. Kam letíte? | Dzień dobry! Witamy przy stanowisku Tatra Air. Dokąd Pan leci? | Dobrý deň! Letím do Varšavy. | Przywitaj się i powiedz, że lecisz do Warszawy. |  | Dobrý deň! Ja letím do Varšavy.
+w svadbu | ślub (biernik od svadba)
+t Do Varšavy, dobre. Váš pas, prosím. A prečo tam letíte? | Do Warszawy, dobrze. Paszport, proszę. A po co Pan tam leci? | Tu je môj pas. Letím na svadbu. | Podaj paszport i powiedz, że lecisz na ślub. |  | Tu je môj pas. Letím tam na svadbu.
+w odovzdať | oddać, nadać (bagaż)
+t Svadba, to je pekné! Chcete odovzdať kufor? | Ślub, jak miło! Chce Pan nadać walizkę? | Áno, chcem odovzdať kufor. | Powiedz, że chcesz nadać walizkę. |  | Áno, chcem odovzdať ten kufor.
+w Postavte | postawcie; proszę postawić (postaviť)
+w váhu | wagę (biernik od váha)
+w Váži | waży (vážiť)
+w kíl | kilogramów (dopełniacz lm od kilo)
+w poriadku | porządku (dopełniacz od poriadok; v poriadku = w porządku)
+w príručnú | podręczną (príručný)
+w batožinu | bagaż (biernik od batožina)
+w príručná | podręczna
+w batožina | bagaż
+t Postavte, prosím, kufor na váhu. Váži dvadsať kíl. To je v poriadku. Máte aj príručnú batožinu? | Proszę postawić walizkę na wadze. Waży dwadzieścia kilogramów. To w porządku. Czy ma Pan też bagaż podręczny? | Áno, mám tašku ako príručnú batožinu. | Powiedz, że masz torbę jako bagaż podręczny. |  | Áno, taška je moja príručná batožina.
+w sedadlo | siedzenie, miejsce
+w uličke | przejściu (miejscownik od ulička; pri uličke = przy przejściu)
+w Sedadlo | siedzenie, miejsce
+t Dobre. Chcete sedadlo pri okne, alebo pri uličke? | Dobrze. Wolałby Pan miejsce przy oknie, czy przy przejściu? | Sedadlo pri okne, prosím. | Powiedz, że wolisz miejsce przy oknie. |  | Chcem sedadlo pri okne, prosím.
+w palubný | pokładowy
+w Odlet | odlot
+w pol | pół (o pol jedenástej = wpół do jedenastej)
+w jedenástej | jedenastej (jedenásty)
+w nejakú | jakąś
+w otázku | pytanie (biernik od otázka)
+w let | lot
+w načas | na czas
+w letí | leci (letieť)
+t Tu je váš palubný lístok. Odlet je o pol jedenástej. Máte ešte nejakú otázku? | Oto Pana karta pokładowa. Odlot jest o wpół do jedenastej. Czy ma Pan jeszcze pytanie? | Áno, je let načas? | Zapytaj, czy lot jest punktualny. |  | Áno, letí lietadlo načas?
+w rovno | prosto
+t Áno, let je načas. Vaša brána je dvanásť. Choďte, prosím, rovno. | Tak, lot jest punktualny. Pana bramka to dwanaście. Proszę iść prosto. | Ďakujem! Dovidenia! | Podziękuj i pożegnaj się. |  | Ďakujem vám! Dovidenia!
+e Šťastnú cestu! | Szczęśliwej podróży!
+
+@level 2 | Kontrola bezpieczeństwa | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Kontrola bezpieczeństwa
+partner Policajt | P
+scene Masz kartę pokładową, a przed tobą długa kolejka do kontroli. Funkcjonariusz podaje plastikowe pojemniki i patrzy uważnie na twoją torbę.
+goal Przejdź kontrolę bezpieczeństwa: pokaż laptop, zdejmij pasek i odpowiedz na pytania.
+win Funkcjonariusz kiwa głową: „Všetko v poriadku. Choďte ďalej.” Zakładasz pasek i biegniesz do bramki z pełnym spokojem.
+partial Kontrola przebiegła w końcu bez problemów, ale funkcjonariusz kilka razy zmarszczył brwi. Zakładasz pasek w biegu.
+fail Funkcjonariusz uznaje twoje odpowiedzi za podejrzane. Zostajesz zatrzymany na dodatkową kontrolę, a samolot odlatuje bez ciebie.
+w bezpečnostná | bezpieczeństwa (bezpečnostný)
+w kontrola | kontrola
+w Položte | połóżcie; proszę położyć (položiť)
+w sem | tutaj (kierunek)
+w isteže | oczywiście
+t Dobrý deň! Toto je bezpečnostná kontrola. Položte, prosím, tašku sem na pás. | Dzień dobry! To jest kontrola bezpieczeństwa. Proszę położyć torbę tutaj na taśmie. | Áno, samozrejme. | Zgódź się i powiedz, że oczywiście. |  | Áno, isteže.
+w notebook | laptop
+w Vyberte | wyjmijcie; proszę wyjąć (vybrať)
+t Ďakujem. Máte v taške notebook? Vyberte ho, prosím. | Dziękuję. Czy ma Pan w torbie laptop? Proszę go wyjąć. | Áno, tu je môj notebook. | Potwierdź i podaj laptop. |  | Áno, tu ho mám.
+w tekutiny | płyny
+w Napríklad | na przykład
+w parfum | perfumy
+w krém | krem
+t Dobre. Máte so sebou tekutiny? Napríklad vodu, parfum alebo krém? | Dobrze. Czy ma Pan przy sobie płyny? Na przykład wodę, perfumy albo krem? | Nie, nemám so sebou žiadne tekutiny. | Zaprzecz: nie masz płynów. |  | Nie, žiadne tekutiny nemám.
+w dolu | w dół (dať dolu = zdjąć)
+w bundu | kurtkę (biernik od bunda)
+t Rozumiem. Dajte, prosím, dolu aj opasok a bundu. | Rozumiem. Proszę też zdjąć pasek i kurtkę. | Áno, tu sú môj opasok a moja bunda. | Podaj pasek i kurtkę. |  | Áno, tu je opasok a bunda.
+w vašej | Pana (miejscownik/dopełniacz od vaša)
+w ani | ani
+k Ďakujem. Je vo vašej taške nôž alebo zbraň? | Dziękuję. Czy w Pana torbie jest nóż albo broń? | Nie, nemám nôž ani zbraň. | Áno, mám nôž.;Neviem, možno. | Przyznanie się do noża to natychmiastowe zatrzymanie. ; Niepewna odpowiedź przy takim pytaniu wzbudza podejrzenia: zatrzymanie.
+w Prejdite | przejdźcie; proszę przejść (prejsť)
+w skenerom | skanerem (narzędnik od skener)
+w Pípnutie | pip (dźwięk)
+w vrecku | kieszeni (miejscownik od vrecko)
+w nohavíc | spodni (dopełniacz od nohavice)
+t Dobre. Prejdite, prosím, skenerom. Pípnutie! Máte ešte niečo vo vrecku nohavíc? | Dobrze. Proszę przejść przez skaner. Pip! Czy ma Pan jeszcze coś w kieszeni spodni? | Áno, mám kľúč a mobil. | Powiedz, że masz klucz i telefon. |  | Áno, vo vrecku mám kľúč a mobil.
+w ďalej | dalej
+e Všetko v poriadku. Choďte ďalej. Šťastnú cestu! | Wszystko w porządku. Proszę iść dalej. Szczęśliwej podróży!
+
+@level 3 | Przy bramce | patience=4 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Przy bramce
+partner Pracovník letiska | P
+scene Siedzisz przy bramce 12 i patrzysz na zegarek. Nagle w głośnikach coś trzaska, a na tablicy pojawia się napis o spóźnieniu.
+goal Dowiedz się, co z lotem, zrozum komunikat o zmianie bramki i wejdź na pokład.
+win Biegniesz do nowej bramki i wsiadasz jako jeden z ostatnich. Pracownik zamyka drzwi: „To bolo tesné!”
+partial Znalazłeś w końcu właściwą bramkę, choć po drodze kilka razy musiałeś dopytywać. Wchodzisz na pokład spocony.
+fail Zrozumiałeś komunikat na opak i czekasz przy złej bramce. Kiedy orientujesz się w błędzie, drzwi samolotu są już zamknięte.
+w letu | lotu (dopełniacz od let)
+w meškanie | opóźnienie
+t Prepáčte! Ste cestujúci letu do Varšavy? | Przepraszam! Czy jest Pan pasażerem lotu do Warszawy? | Áno. Môj let má meškanie, však? | Potwierdź i zapytaj, czy twój lot jest spóźniony. |  | Áno, môj let má meškanie, však?
+w meškania | opóźnienia (dopełniacz od meškanie)
+w Nástup | wejście na pokład
+w začne | zacznie (začať)
+w nástup | wejście na pokład
+t Áno, let má štyridsať minút meškania. Nástup začne o jedenástej. | Tak, lot ma czterdzieści minut spóźnienia. Wejście na pokład zacznie się o jedenastej. | Kedy je nástup? Letím na svadbu. | Zapytaj, kiedy jest wejście na pokład, i dodaj, że lecisz na ślub. |  | Kedy je nástup? Letím tam na svadbu.
+w krásne | piękne (krásny)
+w Musíte | musi Pan (musieť)
+w Varšave | w Warszawie (miejscownik od Varšava)
+w prestupovať | przesiadać się
+w priamo | bezpośrednio
+t Svadba, to je krásne! Nástup je o jedenástej. Musíte vo Varšave prestupovať? | Ślub, jak pięknie! Wejście na pokład jest o jedenastej. Czy musi Pan przesiadać się w Warszawie? | Nie, letím priamo do Varšavy. | Odpowiedz, że nie, lecisz bezpośrednio. |  | Nie, letím do Varšavy priamo.
+w hlásenie | komunikat, ogłoszenie
+w odlieta | odlatuje (odlietať)
+w gate | bramka (gate)
+w Gate | bramka (gate)
+w zatvorený | zamknięty
+w Rozumeli | zrozumieli (rozumieť)
+w ku | ku, do
+w Zostanem | zostanę (zostať)
+w von | na zewnątrz
+w letiska | lotniska (dopełniacz od letisko)
+k Dobre, priamo. Pozor, hlásenie! Let do Varšavy teraz odlieta z gate päť. Gate dvanásť je zatvorený. Rozumeli ste? Kam idete? | Dobrze, bezpośrednio. Uwaga, ogłoszenie! Lot do Warszawy odlatuje teraz z bramki 5. Bramka 12 jest zamknięta. Czy Pan zrozumiał? Dokąd Pan idzie? | Idem ku gate päť. | Zostanem pri gate dvanásť.;Idem von z letiska. | Bramka 12 jest zamknięta, więc czekanie tam kończy się spóźnieniem. ; To wyjście z lotniska, a nie bramka do samolotu.
+w nastúpiť | wsiąść, wejść na pokład
+w Nastupujem | wsiadam (nastupovať)
+w nastupujem | wsiadam (nastupovať)
+t Tak rýchlo! Palubný lístok, prosím. Môžete nastúpiť. | Więc szybko! Karta pokładowa, proszę. Może Pan już wsiadać. | Tu je môj palubný lístok. Nastupujem. | Podaj kartę i powiedz, że już wsiadasz. |  | Tu je môj palubný lístok. Už nastupujem.
+w otvorený | otwarty
+e Šťastnú cestu! Nástup je otvorený. | Szczęśliwej podróży! Wejście na pokład jest otwarte.
+
+@level 4 | Lot i przylot | patience=4 typed=0.75 extra=3 hint=letters reward=30
+desc Rozdział 4: Lot i przylot
+partner Letuška | L
+scene Wchodzisz na pokład Tatra Air. Stewardesa wita pasażerów przy drzwiach, a za chwilę wystartujecie do Warszawy. Po lądowaniu będziesz musiał jeszcze znaleźć kontrolę paszportową i swoją walizkę.
+goal Zajmij miejsce, zapnij pas, poproś o picie, a po lądowaniu dowiedz się, gdzie jest kontrola paszportowa, taśma bagażowa i odprawa celna.
+win Walizka wyjeżdża na taśmie jako pierwsza, a celnik życzy ci „Vitajte v Poľsku!” Przyjaciel czeka w hali przylotów.
+partial Wszystko udało ci się znaleźć, ale po drodze trzy razy zapytałeś o drogę. Walizka dojechała, a ty na ślub zdążysz.
+fail Poszedłeś w złą stronę i straciłeś czas na lotnisku. Walizka krąży samotnie po taśmie, a przyjaciel wydzwania co minutę.
+w palube | pokładzie (miejscownik od paluba)
+t Dobrý deň a vitajte na palube! Palubný lístok, prosím. | Dzień dobry i witamy na pokładzie! Proszę o kartę pokładową. | Dobrý deň! Tu je môj palubný lístok. | Przywitaj się i pokaż kartę pokładową. |  | Dobrý deň! Tu ho mám.
+w Vaše | Pana (vaše)
+w priehradky | schowka (dopełniacz od priehradka)
+t Ďakujem. Vaše miesto je štrnásť. To je miesto pri okne. Položte, prosím, tašku hore do priehradky. | Dziękuję. Pana miejsce to czternaście. To miejsce przy oknie. Proszę położyć torbę w schowku na górze. | Ďakujem, dám tašku do priehradky. | Podziękuj i powiedz, że kładziesz torbę do schowka. |  | Ďakujem, tašku dám do priehradky.
+w Zapnite | zapnijcie; proszę zapiąć (zapnúť)
+w chvíľu | chwilę (biernik od chvíľa)
+w štartujeme | startujemy (štartovať)
+w zapínam | zapinam (zapínať)
+t Výborne. Zapnite si, prosím, pás. Za chvíľu štartujeme. | Doskonale. Proszę zapiąć pasy. Za chwilę startujemy. | Áno, zapínam si pás. | Powiedz, że zapinasz pas. |  | Áno, už si zapínam pás.
+w Pás | pas (bezpieczeństwa)
+w zapnutý | zapięty
+t Pás je zapnutý, výborne. Dáte si niečo na pitie? | Pas zapięty, świetnie. Czy chce Pan coś do picia? | Áno, kávu, prosím. | Poproś o kawę. |  | Áno, dám si kávu, prosím.
+w pristaneme | wylądujemy (pristáť)
+w budeme | będziemy (byť)
+t Tu je vaša káva. Chcete sa ešte niečo opýtať? | Oto Pana kawa. Czy chce Pan jeszcze o coś zapytać? | Kedy pristaneme vo Varšave? | Zapytaj, kiedy lądujecie w Warszawie. |  | Kedy budeme vo Varšave?
+w Prílet | przylot
+w pasová | paszportowa (pasový)
+t Pristaneme o desať minút. Prílet je načas. | Lądujemy za dziesięć minut. Przylot jest punktualny. | Ďakujem! Kde je pasová kontrola, prosím? | Podziękuj i zapytaj, gdzie jest kontrola paszportowa. |  | Ďakujem! Kde je tu pasová kontrola?
+w colnica | urząd celny
+w najskôr | najpierw
+w Najskôr | najpierw
+w pasovú | paszportową (pasový)
+w kontrolu | kontrolę (biernik od kontrola)
+w colnicu | urząd celny (biernik od colnica)
+w pásu | taśmy (dopełniacz od pás)
+k Pasová kontrola je vľavo. Potom je pás na batožinu a potom colnica. Kam pôjdete najskôr? | Kontrola paszportowa jest po lewej. Potem jest taśma bagażowa, a potem cło. Dokąd Pan idzie najpierw? | Najskôr pôjdem na pasovú kontrolu. | Najskôr pôjdem na colnicu.;Najskôr pôjdem k pásu na batožinu. | Do cła idziesz na końcu, po odbiorze walizki. ; Walizkę odbierasz dopiero po kontroli paszportowej.
+w Presne | dokładnie
+w páse | taśmie (miejscownik od pás)
+w Zoberiem | zdejmę, wezmę (zobrať)
+w zoberiem | zdejmę, wezmę (zobrať)
+t Presne tak! A potom k pásu na batožinu. Váš kufor príde na páse štyri. | Dokładnie! A potem do taśmy bagażowej. Pana walizka przyjedzie na taśmie czwartej. | Ďakujem! Zoberiem kufor z pásu. | Podziękuj i powiedz, że zdejmiesz walizkę z taśmy. |  | Ďakujem! Z pásu zoberiem kufor.
+w preclenie | oclenie (na preclenie = do oclenia)
+w pýta | pyta (pýtať sa)
+w colník | celnik
+t Dobre. Máte niečo na preclenie? Na to sa pýta colník. | Dobrze. Czy ma Pan coś do oclenia? O to zapyta celnik. | Nie, nemám nič na preclenie. | Powiedz, że nie masz nic do oclenia. |  | Nie, nič na preclenie nemám.
+w Poľsku | w Polsce (miejscownik od Poľsko)
+w svadbe | ślubie (miejscownik od svadba)
+e Potom je všetko v poriadku. Vitajte v Poľsku a pekne sa zabávajte na svadbe! | Wtedy wszystko w porządku. Witamy w Polsce i dobrej zabawy na ślubie!

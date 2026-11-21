@@ -243,3 +243,940 @@ w καθυστέρηση | opóźnienie
 w πειράζει | przeszkadza; „δεν πειράζει” = nic nie szkodzi
 t Αυτή η θέση είναι ελεύθερη. Το τρένο έχει δέκα λεπτά καθυστέρηση. | To miejsce jest wolne. Pociąg ma dziesięć minut opóźnienia. | Δεν πειράζει. Ευχαριστώ! | Powiedz, że nic nie szkodzi, i podziękuj. | Δεν πειράζει to „nic nie szkodzi, nie szkodzi”.
 e Όλα εντάξει! Καλό ταξίδι! | Wszystko w porządku! Szczęśliwej podróży!
+
+@larp oma | Babcia w parku | Γιαγιά Ελένη | Ε | Niedziela w parku w Atenach. Na ławce siedzi starsza pani, która uwielbia rozmawiać i ma całe popołudnie. | Posiedź z babcią Heleną i porozmawiaj z nią. Nikt cię stąd nie wyrzuci.
+fee 0
+reward 10
+story yes
+win Babcia Helena promienieje: „Τι καλό παιδί!” Zaprasza cię na niedzielną kawę i kawałek ciasta.
+partial Rozmowa się toczyła, choć kilka razy musiałeś prosić o powtórzenie. Babcia Helena uśmiecha się cierpliwie i zaprasza cię znowu.
+fail Babcia Helena się nie zniechęca, bo ma nieskończoną cierpliwość. Jeśli kiedyś zobaczysz ten komunikat, napisz do nas.
+
+@level 1 | Na ławce | patience=3 endless=yes typed=0 extra=2 hint=none
+desc Rozdział 1: Poznajecie się
+scene Park, ławka, słońce. Starsza pani karmi okruchami gołębie i zaczyna rozmowę. Nie musisz się spieszyć: babcia Helena poczeka.
+goal Przywitaj się, powiedz, jak się nazywasz i skąd jesteś.
+win Babcia Helena klepie ławkę obok siebie: „Κάτσε εδώ, Πέτρο!” Zostajesz na dłużej.
+partial Rozmowa się udała, mimo kilku pomyłek. Babcia Helena zachowuje cierpliwość i robi ci miejsce na ławce.
+fail Babcia Helena nigdy się nie zniechęca.
+w ωραίος | ładny, piękny (rodzaj męski)
+w έτσι | tak; „έτσι δεν είναι;” = prawda?
+w ήλιος
+w είναι
+w καιρός
+t Καλημέρα, παιδί μου! Ο καιρός είναι σήμερα ωραίος, έτσι δεν είναι; | Dzień dobry, dziecko! Pogoda jest dziś ładna, prawda? | Ναι, ο ήλιος είναι ωραίος. | Zgódź się, że pogoda jest ładna. | „Słońce” to ο ήλιος. | Ναι, ο καιρός είναι ωραίος.
+w λένε | nazywają; „με λένε” = nazywam się
+w Ελένη | Helena (imię)
+w Πέτρο | Piotr (biernik od Πέτρος)
+w Πέτρος | Piotr (imię)
+w είμαι
+t Πολύ ωραία! Πώς σας λένε; Εγώ είμαι η Ελένη. | Bardzo ładnie! Jak się Pan(i) nazywa? Ja jestem Helena. | Με λένε Πέτρο. | Powiedz, jak się nazywasz. | „Nazywam się” to με λένε (po με rzeczownik w bierniku: Πέτρος → Πέτρο). | Είμαι ο Πέτρος.
+w ωραίο | ładne (rodzaj nijaki)
+w μένετε | mieszkacie; mieszka pan(i) (μένω)
+w μένω
+w Πολωνία
+w έρχομαι
+t Πέτρο! Τι ωραίο όνομα. Μένετε εδώ; | Piotr! Jakie ładne imię. Mieszka Pan(i) tutaj? | Όχι, δεν μένω εδώ. Είμαι από την Πολωνία. | Zaprzecz i powiedz, że jesteś z Polski. | „Nie” przed czasownikiem to δεν: δεν μένω. „Z Polski” to από την Πολωνία. | Όχι, δεν μένω εδώ. Έρχομαι από την Πολωνία.
+w να | aby; (partykuła przed czasownikiem)
+w καθίσετε | usiądźcie; usiąść (καθίζω; po „να”)
+w ευχαρίστως
+w ευχαριστώ
+t Από την Πολωνία! Είναι πολύ μακριά. Θέλετε να καθίσετε; | Z Polski! To bardzo daleko. Czy chce Pan(i) usiąść? | Ναι, ευχαρίστως. Ευχαριστώ πολύ! | Zgódź się i podziękuj. | „Chętnie” to ευχαρίστως.
+w υπάρχει | istnieje; jest (υπάρχω)
+e Παρακαλώ! Εδώ υπάρχει θέση. | Proszę bardzo! Tu jest miejsce.
+
+@level 2 | Wnuk i kaczki | patience=3 endless=yes typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Wnuk i ciasto
+scene Mały Giannakis biega po trawniku i karmi kaczki, a babcia Helena pokazuje ci zdjęcia w portfelu. Z torby wyjmuje szarlotkę własnej roboty.
+goal Porozmawiaj o wnuku Giannakisie, powiedz, czy masz dzieci, i spróbuj ciasta.
+win Babcia Helena wręcza ci drugi kawałek: „Φάε, φάε, είσαι πολύ αδύνατος!” Giannakis macha do ciebie z daleka.
+partial Zjadłeś ciasto, choć kilka razy brakowało ci słów. Babcia Helena dolewa herbaty z termosu.
+fail Babcia Helena nie traci cierpliwości.
+w Γιαννάκης | Giannakis (imię; zdrobnienie od Γιάννης)
+w χρονών | lat (wiek, np. έξι χρονών)
+w γλυκό
+t Αυτός είναι ο εγγονός μου, ο Γιαννάκης. Είναι έξι χρονών. | To mój wnuk Giannakis. Ma sześć lat. | Είναι πολύ γλυκό παιδί. | Pochwal wnuka: powiedz, że to bardzo miłe dziecko. | „Dziecko” to παιδί (rodzaj nijaki), więc przymiotnik też nijaki: γλυκό. | Ο Γιαννάκης είναι πολύ γλυκό παιδί.
+w ταΐζει | karmi (ταΐζω)
+w τις | (rodzajnik żeński, liczba mnoga, biernik)
+w πάπιες | kaczki (liczba mnoga od πάπια)
+w κι | i (skrót od και przed samogłoską)
+w εσείς | wy; pan(i) (zaimek grzecznościowy)
+w παιδιά
+t Ευχαριστώ! Ο Γιαννάκης ταΐζει τις πάπιες. Έχετε κι εσείς παιδιά; | Dziękuję! Giannakis karmi kaczki. A Pan(i) ma dzieci? | Όχι, δεν έχω παιδιά. | Powiedz, że nie masz dzieci. | „Nie mam” to δεν έχω; „dzieci” to παιδιά (liczba mnoga od παιδί).
+w α | ach
+w μάλιστα | rozumiem; tak jest
+w έφτιαξα | zrobiłam, zrobiłem (φτιάχνω)
+w μόνη | sama (rodzaj żeński)
+w μηλόπιτα
+w νόστιμη
+t Δεν έχετε παιδιά; Α, μάλιστα. Θέλετε ένα κομμάτι μηλόπιτα; Την έφτιαξα μόνη μου. | Nie ma Pan(i) dzieci? Ach tak. Chce Pan(i) kawałek szarlotki? Zrobiłam ją sama. | Ναι, ευχαρίστως. Η μηλόπιτα είναι πολύ νόστιμη! | Przyjmij ciasto i pochwal je. | Μηλόπιτα jest rodzaju żeńskiego: η μηλόπιτα.
+w τριάντα
+t Χαίρομαι! Και πόσο χρονών είστε εσείς; | Cieszę się! A ile lat Pan(i) ma? | Είμαι τριάντα χρονών. | Powiedz, że masz trzydzieści lat. | „Mam … lat” to είμαι … χρονών (dosłownie „jestem … lat”).
+w τόσο | tak (bardzo)
+e Α, τόσο νέος! | Ach, taki młody!
+
+@level 3 | Zaproszenie | patience=3 endless=yes typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Kawa w niedzielę
+scene Słońce chyli się ku zachodowi. Babcia Helena pakuje termos i prosi cię o pomoc. Zanim wstaniecie z ławki, chce cię jeszcze zaprosić.
+goal Przyjmij zaproszenie na niedzielną kawę i pomóż babci z torbą.
+win Babcia Helena zapisuje ci adres na serwetce: „Έλα με όρεξη!” Idziesz do domu w świetnym nastroju.
+partial Wszystko się wyjaśniło, choć trzeba było kilka razy powtarzać. Babcia Helena mówi: „Τα λέμε την Κυριακή, παιδί μου!”
+fail Babcia Helena nie traci cierpliwości.
+w ξέρετε | wiecie; wie pan(i) (ξέρω)
+w μέρα | dzień
+w πραγματικά | naprawdę
+w πάρκο
+t Ξέρετε, είμαι κάθε μέρα στο πάρκο. Είναι τόσο ωραία εδώ. | Wie Pan(i), jestem w parku codziennie. Jest tu tak ładnie. | Ναι, το πάρκο είναι πραγματικά ωραίο. | Zgódź się, że park jest piękny. | „Naprawdę” to πραγματικά. | Ναι, το πάρκο είναι πολύ ωραίο.
+w φτιάχνω | robię; przygotowuję
+w έρθετε | przyjdźcie; przyjść (έρχομαι; po „να”)
+t Έτσι δεν είναι; Την Κυριακή φτιάχνω καφέ. Θέλετε να έρθετε; | Prawda? W niedzielę robię kawę. Chce Pan(i) przyjść? | Ναι, ευχαρίστως. Τι ώρα; | Zgódź się i zapytaj, o której godzinie. | „O której?” to τι ώρα;
+w στις | o (godzinie); w (liczba mnoga, żeński)
+w τρεις | trzy (rodzaj męski/żeński)
+w βαριά | ciężka (rodzaj żeński)
+w μπορείτε | możecie; może pan(i) (μπορώ)
+w βοηθήσετε | pomóc (βοηθάω; po „να”)
+w βέβαια | oczywiście
+w κρατάω
+w τσάντα
+t Στις τρεις. Η τσάντα μου είναι βαριά. Μπορείτε να με βοηθήσετε; | O trzeciej. Moja torba jest ciężka. Czy może mi Pan(i) pomóc? | Ναι, βέβαια. Κρατάω εγώ την τσάντα. | Zgódź się i zaproponuj, że poniesiesz torbę. | „Trzymam/niosę” to κρατάω, a „torba” to η τσάντα (biernik: την τσάντα).
+w λέμε | mówimy; „τα λέμε” = do zobaczenia
+t Τι καλό παιδί! Είστε πολύ ευγενικός. | Jaki miły chłopiec! Jest Pan bardzo uprzejmy. | Ευχαριστώ! Τα λέμε την Κυριακή! | Podziękuj i pożegnaj się do niedzieli. | „Do zobaczenia w niedzielę” to τα λέμε την Κυριακή.
+e Τα λέμε την Κυριακή! Γεια σας! | Do niedzieli! Do widzenia!
+
+
+@larp spion | Szpieg | Η επαφή | Ε | Jesteś agentem pod przykrywką. W Atenach masz odebrać tajną teczkę z ambasady i przekazać ją dalej. Jedno złe słowo i jesteś zdemaskowany. | Zachowaj przykrywkę kupca Mavridisa, zdobądź teczkę i uciekaj z walizką.
+fee 0
+reward 20
+strict yes
+story yes
+win Walizka jest w twoich rękach, a statek odpływa z portu. Ktoś w centrali szepcze: „Καλή δουλειά, Γεράκι.” Przykrywka nie pękła ani razu.
+partial Misja się udała, ale po drodze kilka razy omal się nie zdradziłeś. Centrala odnotowuje: „Είχε τύχη.”
+fail Zdradziłeś się jednym słowem. Przykrywka pękła, a ty znikasz w ciemności bez teczki i bez walizki.
+
+@level 1 | Hasło na dworcu | patience=2 typed=0 extra=1 hint=none
+desc Rozdział 1: Kontakt na dworcu
+partner Ένας άντρας με καπέλο | Α
+scene Ateny, wieczór, peron na dworcu. Jesteś agentem „Γεράκι”, ale dla wszystkich jesteś kyrios Mavridis, handlarz zabawkami z Salonik (Mavridis i Syn). Na peronie czeka człowiek w kapeluszu. Hasło (σύνθημα): „Ο χειμώνας έρχεται νωρίς.” Odzew: „Και το καλοκαίρι αργεί.”
+goal Podaj hasło, nie zdradź swojej przykrywki i przyjmij zadanie. Jedna zła odpowiedź i jesteś zdemaskowany.
+win Człowiek w kapeluszu znika w tłumie, a ty zostajesz z kopertą w kieszeni. Przykrywka nietknięta, a jutro o ósmej czeka cię ambasada.
+partial Dostałeś zadanie, ale kontakt zmarszczył brwi przy kilku twoich odpowiedziach. Lepiej uważaj jutro.
+fail Człowiek w kapeluszu spojrzał na ciebie zimno, odwrócił się i odszedł. Zadanie dostanie ktoś inny.
+w κρύο | zimno; „κάνει κρύο” = jest zimno
+w έρχεται | przychodzi (έρχομαι)
+w κάνει
+w χειμώνας
+w νωρίς
+t Καλησπέρα. Κάνει κρύο σήμερα, έτσι δεν είναι; | Dobry wieczór. Dziś jest zimno, prawda? | Ναι, κάνει κρύο. Ο χειμώνας έρχεται νωρίς. | Zgódź się, że jest zimno, i powiedz hasło: zima przychodzi wcześnie. | Hasło (το σύνθημα) brzmi: „Ο χειμώνας έρχεται νωρίς.” | Ναι, πολύ κρύο. Ο χειμώνας έρχεται νωρίς.
+w αργεί | spóźnia się; przychodzi późno (αργώ)
+w σσσ | cicho!
+w ακούνε | słuchają (ακούω; forma potoczna)
+w Μαυρίδη | Mavridis (nazwisko z przykrywki; biernik)
+w έμπορος | kupiec
+w Γεράκι | Gerakiu; „Jastrząb” (imię agenta)
+w πράκτορας | agent
+w λένε
+w είμαι
+k Και το καλοκαίρι αργεί. Σσσ! Εδώ ακούνε άνθρωποι. Πώς σας λένε; | A lato przychodzi późno. Cicho! Tu ludzie słuchają. Jak Pan się nazywa? | Με λένε Μαυρίδη. Είμαι έμπορος. | Με λένε Γεράκι. Είμαι πράκτορας.; Με λένε Μαυρίδη. Είμαι πράκτορας. | Γεράκι to twoje imię agenta, a ludzie słuchają.; Μαυρίδης się zgadza, ale „πράκτορας” zdradza przykrywkę.
+w ακολουθεί | śledzi; idzie za (ακολουθώ)
+w χρόνο | czas (biernik)
+w κανείς
+w κάποιος
+k Καλά. Σας ακολουθεί κανείς; | Dobrze. Czy ktoś Pana śledzi? | Όχι, δεν με ακολουθεί κανείς. | Ναι, με ακολουθεί κάποιος.; Όχι, δεν έχω χρόνο. | Mówisz, że nikt cię nie śledzi.; Kontakt pyta o śledzenie, nie o czas.
+w αποστολή | zadanie; misja
+w οκτώ | osiem
+w πηγαίνετε | idziecie; idzie pan(i) (πηγαίνω)
+w πρεσβεία | ambasada
+w γίνεται | odbywa się (γίνομαι)
+w δεξίωση | przyjęcie
+w κατάλαβα | zrozumiałem (καταλαβαίνω)
+w αύριο
+w στις
+w πηγαίνω
+t Πολύ καλά. Ορίστε η αποστολή σας. Αύριο στις οκτώ πηγαίνετε στην πρεσβεία. Εκεί γίνεται δεξίωση. | Bardzo dobrze. Oto Pana zadanie. Jutro o ósmej idzie Pan do ambasady. Jest tam przyjęcie. | Κατάλαβα. Αύριο στις οκτώ πηγαίνω στην πρεσβεία. | Powiedz, że zrozumiałeś: jutro o ósmej idziesz do ambasady. | „Zrozumiałem” to κατάλαβα, a „o ósmej” to στις οκτώ.
+w Αηδόνι | Słowik (hasło)
+w κωδικός
+t Καλά. Ο κωδικός για τη δεξίωση είναι Αηδόνι. Ποιος είναι ο κωδικός; | Dobrze. Hasło na przyjęcie to „Słowik”. Jakie jest hasło? | Ο κωδικός είναι Αηδόνι. | Powtórz hasło na przyjęcie. | Hasło wejściowe to ο κωδικός, a „Αηδόνι” to słowik.
+w ένας | jeden (rodzaj męski)
+w ξέρω
+d Πολύ καλά. Σσσ! Έρχεται ένας αστυνομικός. Με ξέρετε; | Bardzo dobrze. Cicho! Idzie policjant. Czy Pan mnie zna? | Όχι, δεν σας ξέρω. | Zaprzecz, że znasz tego człowieka. | Nie możesz zdradzić, że znasz kontakt. | Όχι, δεν σας ξέρω!
+w κύριε | panie (wołacz)
+e Καληνύχτα, κύριε Μαυρίδη. | Dobranoc, panie Mavridis.
+
+@level 2 | Przyjęcie w ambasadzie | patience=2 typed=0.2 extra=3 hint=bank
+desc Rozdział 2: Przyjęcie w ambasadzie
+partner Κυρία Βλάχου | Β
+scene Następny wieczór. W ambasadzie trwa przyjęcie, a przy wejściu stoi pani Vlachou, sekretarka. Ona i goście zadają pytania o twoją „firmę”. Twoja przykrywka: Mavridis i Syn, zabawki, Saloniki. Hasło wejściowe: Αηδόνι. Gabinet ambasadora jest po prawej, toalety po lewej.
+goal Wejdź na przyjęcie, nie zdradź się pytaniom o firmę i znajdź pretekst, żeby dotrzeć do gabinetu.
+win Pani Vlachou macha ci na pożegnanie, a w gabinecie leży teczka, o którą ci chodziło. Nikt niczego nie podejrzewa.
+partial Weszłeś i dotarłeś do gabinetu, ale pani Vlachou patrzyła na ciebie dłużej, niż trzeba.
+fail Pani Vlachou przestaje się uśmiechać i daje znak ochronie. Za chwilę wyprowadzą cię z ambasady.
+w καλώς | dobrze; „καλώς ήρθατε” = witamy
+w ήρθατε | przyszliście (έρχομαι)
+t Καλησπέρα και καλώς ήρθατε στην πρεσβεία! Ποιος είναι ο κωδικός; | Dobry wieczór i witamy w ambasadzie! Jakie jest hasło? | Ο κωδικός είναι Αηδόνι. | Podaj hasło wejściowe. | Ο κωδικός to hasło, a „Αηδόνι” to słowik.
+w ρωτήσω | zapytam; zapytać (ρωτάω)
+w όπλο | broń
+w φάκελο | teczka; koperta (biernik od φάκελος)
+k Ευχαριστώ. Πρέπει να σας ρωτήσω κάτι. Έχετε όπλο μαζί σας; | Dziękuję. Muszę o coś zapytać. Czy ma Pan przy sobie broń? | Όχι, δεν έχω όπλο. | Ναι, έχω όπλο.; Όχι, δεν έχω φάκελο. | Na przyjęcie nie wchodzi się z bronią.; Pytanie dotyczy broni (όπλο), nie teczki (φάκελος).
+w ποιον | kogo (biernik)
+w εργάζεστε | pracujecie; pracuje pan(i) (εργάζομαι)
+w εργάζομαι | pracuję
+w Μαυρίδης | Mavridis (nazwisko z przykrywki)
+w αρχηγείο | centrala; kwatera główna
+w κυρία | pani
+w Βλάχου | Vlachou (nazwisko)
+w εταιρεία
+k Καλά. Για ποιον εργάζεστε; | Dobrze. Dla kogo Pan pracuje? | Εργάζομαι για την εταιρεία Μαυρίδης. | Εργάζομαι για το αρχηγείο.; Εργάζομαι για την κυρία Βλάχου. | Το αρχηγείο to twoja centrala, tajna, a nie firma.; Pani Vlachou to sekretarka z ambasady.
+w πουλάει | sprzedaje (πουλάω)
+w παιχνίδια | zabawki; gry
+d Τι πουλάει η εταιρεία σας; | Co sprzedaje Pana firma? | Η εταιρεία μου πουλάει παιχνίδια. | Powiedz, co sprzedaje twoja „firma” (przykrywka). | Twoja przykrywka to handel zabawkami. | Η εταιρεία μου πουλάει παιχνίδια!
+w στη | w, do (rodzajnik „στη” + rzeczownik żeński)
+w λέγεται | nazywa się
+w Θεσσαλονίκη
+k Πού είναι η εταιρεία σας; | Gdzie jest Pana firma? | Η εταιρεία μου είναι στη Θεσσαλονίκη. | Η εταιρεία μου πουλάει παιχνίδια.; Η εταιρεία μου λέγεται Μαυρίδης. | „Πού” znaczy „gdzie”, a nie „co sprzedaje”.; „Πού” pyta o miejsce, nie o nazwę.
+w ενδιαφέρον | interesujące; ciekawe
+w φάτε | zjecie; zjeść (τρώω; po „να”)
+w τουαλέτα | toaleta
+w παρακαλώ
+t Τι ενδιαφέρον! Θέλετε κάτι να φάτε; | Jak ciekawie! Chce Pan coś zjeść? | Όχι, ευχαριστώ. Πού είναι η τουαλέτα, παρακαλώ; | Odmów i zapytaj o toaletę (to pretekst). | Πού = gdzie, więc „Πού είναι η τουαλέτα;”.
+w ιδιωτικό | prywatne
+w αριστερά
+w δεξιά
+w γραφείο
+k Η τουαλέτα είναι αριστερά. Το γραφείο δεξιά είναι ιδιωτικό. | Toaleta jest po lewej. Gabinet po prawej jest prywatny. | Ευχαριστώ, πηγαίνω αριστερά. | Ευχαριστώ, πηγαίνω δεξιά.; Ευχαριστώ, το γραφείο είναι ωραίο. | Gabinet po prawej jest prywatny, a ty idziesz do toalety po lewej.; Nie wolno ci mówić, że chcesz iść do gabinetu.
+e Τότε καλή διασκέδαση, κύριε Μαυρίδη! | W takim razie dobrej zabawy, panie Mavridis!
+
+@level 3 | Przesłuchanie | patience=1 typed=0.35 extra=3 hint=bank
+desc Rozdział 3: Przesłuchanie
+partner Κύριος Κόλλιας | Κ
+scene Masz teczkę w torbie, ale na korytarzu zatrzymuje cię podejrzliwy ochroniarz, pan Kollias. Zaraz zapyta o wszystko. Pamiętaj: Mavridis, kupiec, Saloniki. Tutaj każda zła odpowiedź kończy misję.
+goal Przekonaj ochroniarza, że jesteś zwykłym gościem, i wyjdź z teczką.
+win Kollias przepuszcza cię z kwaśną miną. Wychodzisz z ambasady, a teczka w torbie jest ciężka jak ołów.
+partial Kollias w końcu cię puszcza, ale zapisuje twoje nazwisko w notesie.
+fail Kollias chwyta cię za ramię: „Ελάτε μαζί μου!” Misja skończona, zanim naprawdę się zaczęła.
+w στοπ | stój!
+w κάνετε | robicie; robi pan(i) (κάνω)
+w καλεσμένος | gość (zaproszony)
+w ψάχνω
+t Στοπ! Ποιος είστε; Τι κάνετε εδώ; | Stać! Kim Pan jest? Co Pan tu robi? | Είμαι καλεσμένος. Ψάχνω την τουαλέτα. | Powiedz, że jesteś gościem i szukasz toalety. | Czasownik „ψάχνω” znaczy „szukam”. | Είμαι καλεσμένος εδώ. Ψάχνω την τουαλέτα.
+w ήσασταν | byliście; był pan(i)
+w ήμουν | byłem
+k Η τουαλέτα είναι εκεί. Ήσασταν στο γραφείο; | Toaleta jest tam. Czy był Pan w gabinecie? | Όχι, δεν ήμουν στο γραφείο. | Ναι, ήμουν στο γραφείο.; Όχι, δεν ήμουν στην τουαλέτα. | Przyznanie się to koniec przykrywki.; Pytanie dotyczy gabinetu (γραφείο), nie toalety.
+w χμ | hm
+w κινητό | telefon komórkowy
+w τσάντα
+w μόνο
+w λεφτά
+k Χμ, καλά. Τι έχετε στην τσάντα; | Hm, dobrze. Co ma Pan w torbie? | Στην τσάντα έχω μόνο λεφτά και το κινητό μου. | Στην τσάντα έχω έναν φάκελο.; Έχω μια τσάντα. | Teczka w torbie zdradziłaby cię od razu.; Ochroniarz pyta, co jest w torbie, a nie czy masz torbę.
+w μένω
+d Χμ, λεφτά και κινητό. Πώς σας λένε και πού μένετε; | Hm, pieniądze i telefon. Jak się Pan nazywa i gdzie Pan mieszka? | Με λένε Μαυρίδη και μένω στη Θεσσαλονίκη. | Podaj nazwisko z przykrywki i miasto, w którym mieszkasz (Saloniki). | Μαυρίδης i Θεσσαλονίκη to twoja przykrywka. | Με λένε Μαυρίδη και μένω στη Θεσσαλονίκη!
+w αλλά
+w μυστικό
+k Μαυρίδης, Θεσσαλονίκη. Είστε πράκτορας, έτσι δεν είναι; | Mavridis, Saloniki. Jest Pan agentem, prawda? | Όχι, δεν είμαι πράκτορας. Είμαι έμπορος. | Ναι, αλλά είναι μυστικό.; Ναι, εργάζομαι για το αρχηγείο. | Nawet żartem nie przyznawaj się do tajemnicy (μυστικό).; Przyznanie się do centrali to koniec.
+w θα | (partykuła czasu przyszłego)
+w φωνάξω | zawołam (φωνάζω)
+w ξέρει | wie; zna (ξέρω)
+w όλους | wszystkich (biernik, męski)
+w τους | (rodzajnik męski, liczba mnoga, biernik)
+w καλεσμένους | gości (biernik liczby mnogiej)
+w ξέρει | wie; zna (ξέρω)
+t Θα φωνάξω την κυρία Βλάχου. Ξέρει όλους τους καλεσμένους. Σας ξέρει; | Zawołam panią Vlachou. Zna wszystkich gości. Czy zna Pana? | Ναι, η κυρία Βλάχου με ξέρει. Είμαι καλεσμένος. | Powiedz, że pani Vlachou cię zna. | „Με ξέρει” znaczy „zna mnie”. | Ναι, η κυρία Βλάχου με ξέρει.
+w είδατε | widzieliście; widział pan(i) (βλέπω)
+w κανέναν | nikogo (biernik); kogokolwiek
+w είδα | widziałem
+d Καλά. Υπάρχει ένας πράκτορας στην πρεσβεία. Είδατε κανέναν; | Dobrze. W ambasadzie jest agent. Czy Pan kogoś widział? | Όχι, δεν είδα κανέναν. | Zaprzecz, że kogokolwiek widziałeś. | Κανένας = nikt. Ty sam jesteś tym agentem. | Όχι, δεν είδα κανέναν!
+e Εντάξει. Πηγαίνετε σπίτι σας, κύριε Μαυρίδη. | No dobrze. Niech Pan idzie do domu, panie Mavridis.
+
+@level 4 | Walizka i ucieczka | patience=1 typed=0.5 extra=3 hint=letters reward=30
+desc Rozdział 4: Wymiana walizki
+partner Κύριος Λύκος | Λ
+scene Następny ranek, port w Pireusie. Pan Lykos z centrali czeka z walizką pełną pieniędzy. Wymienisz ją na teczkę. Nowe hasło (σύνθημα): „Κοράκι”. Ale ktoś cię śledzi: w tłumie jest zdrajca (προδότης), który chce dostać teczkę dla siebie.
+goal Wymień teczkę na walizkę, nie daj się zdemaskować zdrajcy i wsiądź na statek.
+win Statek odpływa, a ty stoisz na pokładzie z walizką. Pan Lykos macha z nabrzeża: „Καλό ταξίδι, Γεράκι!”
+partial Udało się uciec, ale zdrajca zdążył zobaczyć twoją twarz. Misja zaliczona, lecz twoja przykrywka jest spalona.
+fail Zdrajca był szybszy. Walizka i teczka zniknęły, a ty zostajesz na nabrzeżu z pustymi rękami.
+w ποιο | który; jakie (nijaki)
+w σύνθημα | hasło
+w Κοράκι | Kruk (hasło)
+d Καλημέρα. Ποιο είναι το σύνθημα; | Dzień dobry. Jakie jest hasło? | Το σύνθημα είναι Κοράκι. | Podaj hasło z dzisiejszej misji. | Hasło to το σύνθημα, a dziś brzmi „Κοράκι”. | Το σύνθημα είναι Κοράκι!
+w φάκελος | teczka; koperta; akta
+k Καλά. Πού είναι ο φάκελος; | Dobrze. Gdzie jest teczka? | Ο φάκελος είναι στην τσάντα μου. | Ο φάκελος είναι στην κυρία Βλάχου.; Ο φάκελος είναι μυστικό. | Teczkę masz przy sobie, w torbie.; Kontakt pyta, gdzie jest teczka, nie o tajemnicę.
+w πάρτε | weźcie; niech pan(i) weźmie (παίρνω)
+w παίρνω
+w βαλίτσα
+t Καλά. Ορίστε η βαλίτσα. Τα λεφτά είναι μέσα. Πάρτε την. | Dobrze. Oto walizka. Pieniądze są w środku. Proszę ją wziąć. | Ευχαριστώ. Παίρνω τη βαλίτσα. | Podziękuj i weź walizkę. | „Brać” to παίρνω; „walizka” to η βαλίτσα, w bierniku τη βαλίτσα. | Ευχαριστώ. Παίρνω τη βαλίτσα.
+w προσοχή | uwaga
+w προδότης | zdrajca
+w μας | nas; nam
+w κάνουμε | robimy
+w φεύγουμε | uciekamy; wyjeżdżamy (φεύγω)
+w μένουμε | zostajemy (μένω)
+w πίνουμε | pijemy (πίνω)
+w μιλάμε | rozmawiamy (μιλάω)
+w άντρα | mężczyzna (biernik); „με τον άντρα” = z tym mężczyzną
+w γρήγορα
+w καφέ
+k Προσοχή! Ο άντρας εκεί είναι προδότης. Μας ακολουθεί. Τι κάνουμε; | Uwaga! Ten człowiek tam jest zdrajcą. Idzie za nami. Co robimy? | Φεύγουμε γρήγορα. | Μένουμε εδώ και πίνουμε καφέ.; Μιλάμε με τον άντρα. | Zdrajca idzie za wami, trzeba uciekać.; Nie rozmawia się ze zdrajcą.
+w πάμε | idziemy; jedźmy (πάω)
+w στον | w, do (στον + rzeczownik męski)
+w σταθμό | dworzec (biernik)
+w λιμάνι
+k Ναι, γρήγορα! Ο προδότης έρχεται από αριστερά. Πάμε αριστερά στον σταθμό ή δεξιά στο λιμάνι; | Tak, szybko! Zdrajca idzie z lewej. Idziemy w lewo na dworzec czy w prawo do portu? | Πάμε δεξιά στο λιμάνι. | Πάμε αριστερά στον σταθμό.; Πάμε σπίτι. | Zdrajca nadchodzi z lewej, więc idziecie w prawo, do portu.; Pytanie jest o port albo dworzec, a nie o dom.
+w δώστε | dajcie; niech pan(i) da (δίνω)
+w δίνω
+d Στοπ! Δώστε μου τη βαλίτσα! Έχω όπλο! | Stać! Proszę dać mi walizkę! Mam broń! | Όχι, δεν σας δίνω τη βαλίτσα. | Odmów oddania walizki. | „Dawać” to δίνω, a „nie” stoi przed czasownikiem. | Όχι, δεν σας δίνω τη βαλίτσα!
+w ακόμα
+t Γρήγορα! Το πλοίο φεύγει σε λίγο. Έχετε ακόμα τη βαλίτσα; | Szybko! Statek zaraz odpływa. Czy ma Pan jeszcze walizkę? | Ναι, έχω ακόμα τη βαλίτσα. | Potwierdź, że masz jeszcze walizkę. | „Ακόμα” znaczy „jeszcze”. | Ναι, την έχω ακόμα.
+w μπράβο | brawo
+w τελείωσε | skończyło się (τελειώνω)
+e Μπράβο, Γεράκι! Η αποστολή τελείωσε. Γεια σας! | Dobra robota, Gerakiu! Misja zakończona. Do widzenia!
+
+
+@larp zeitreise | Podróż w czasie | Φρουρός | Φ | Obudziłeś się w roku 1450 pod murami bizantyjskiego miasta Mistras. Nikt nie może się dowiedzieć, że jesteś z przyszłości, bo za dziwne rzeczy i dziwne słowa w średniowieczu grozi stos. | Nie daj się wykryć jako przybysz z przyszłości: unikaj wszystkiego, co nie pasuje do roku 1450, i dotrwaj do końca dnia.
+fee 0
+reward 15
+strict yes
+story yes
+win Władca kiwa głową: „Ένας τίμιος ταξιδιώτης!” Nikt nie podejrzewa, skąd naprawdę jesteś. Wieczorem znajdujesz drogę powrotną, a w kieszeni zostaje ci tylko miedziana moneta na pamiątkę.
+partial Udało ci się przetrwać dzień, ale kilka razy ludzie patrzyli na ciebie podejrzliwie. Władca każe cię obserwować, więc wymykasz się z miasta o świcie.
+fail Ktoś zauważył, że nie jesteś stąd. Straż woła: „Μάγος! Μάγος!” i musisz uciekać. Podróż w czasie skończyła się wcześniej, niż chciałeś.
+
+@level 1 | Brama miasta | patience=5 typed=0 extra=1 hint=none
+partner Φρουρός Γιάννης | Φ
+desc Rozdział 1: Brama Mistras
+scene Rok 1450. Stoisz przed wielką drewnianą bramą miasta Mistras. Strażnik Giannis zatrzymuje każdego podróżnego i zadaje pytania. Masz na sobie zwykłe ubranie, ale w kieszeniach zostały ci rzeczy z przyszłości.
+goal Odpowiedz na pytania strażnika tak, żeby nie wzbudzić podejrzeń: przedstaw się, powiedz skąd jesteś i jak podróżujesz. Zwróć uwagę na rzeczy, których w 1450 roku jeszcze nie było.
+win Giannis otwiera bramę: „Καλώς ήρθες στον Μυστρά!” Nic nie wzbudziło jego podejrzeń, a ty wchodzisz do miasta.
+partial Giannis w końcu cię wpuszcza, ale przygląda ci się dłużej, niż byś chciał. Wchodzisz do miasta z uczuciem, że ktoś cię obserwuje.
+fail Giannis podnosi włócznię: „Δεν είσαι ταξιδιώτης!” Brama zamyka się z trzaskiem, a ty uciekasz w las.
+w πύλη | brama; bramka
+w του | (rodzajnik rodzaju męskiego i nijakiego w dopełniaczu)
+w Μυστρά | Mistras (miasto; dopełniacz)
+w ταξιδιώτης | podróżnik
+w είμαι
+t Στοπ! Αυτή είναι η πύλη του Μυστρά. Ποιος είσαι; | Stój! To brama Mistras. Kim jesteś? | Είμαι ταξιδιώτης. | Powiedz, że jesteś podróżnikiem. | „Jestem podróżnikiem”: είμαι ταξιδιώτης.
+w Γιάννη | Giannis (biernik od Γιάννης)
+w Κέβιν | Kevin (imię współczesne)
+w Σαντάλ | Chantal (imię współczesne)
+w λένε
+k Πώς σε λένε; | Jak się nazywasz? | Με λένε Γιάννη. | Με λένε Κέβιν.; Με λένε Σαντάλ. | w 1450 roku nikt tak nie nazywał dzieci.;Σαντάλ to nowoczesne, francuskie imię. W 1450 roku popularne były Γιάννης czy Νικόλαος.
+w έρχεσαι | przychodzisz (έρχομαι)
+w έρχομαι
+w Πολωνία
+w μέλλον
+k Από πού έρχεσαι; | Skąd przychodzisz? | Έρχομαι από την Πολωνία. | Έρχομαι από το μέλλον.; Έρχομαι από την Αμερική. | Przyznanie się do przyszłości to dekonspiracja.; Ameryki jeszcze nie odkryto, Kolumb wypłynie dopiero w 1492 roku.
+w ταξιδεύεις | podróżujesz (ταξιδεύω)
+w πόδια | nogi; „με τα πόδια” = pieszo
+w ταξιδεύω
+w άλογο
+w αυτοκίνητο
+k Πώς ταξιδεύεις; Με τα πόδια ή με άλογο; | Jak podróżujesz? Pieszo czy konno? | Ταξιδεύω με άλογο. | Ταξιδεύω με αυτοκίνητο.; Ταξιδεύω με τρένο. | Pociągów też jeszcze nie ma;pierwsza kolej pojawi się dopiero w XIX wieku.
+w δείξε | pokaż (δείχνω)
+w σου | twój; ci (zaimek dzierżawczy)
+w πιστωτική | kredytowa (rodzaj żeński); „πιστωτική κάρτα” = karta kredytowa
+w μόνο
+w ψωμί
+w κρασί
+k Δείξε μου την τσάντα σου. Τι έχεις εκεί; | Pokaż mi swoją torbę. Co tam masz? | Έχω μόνο ψωμί και κρασί. | Έχω ένα κινητό.; Έχω μια πιστωτική κάρτα. | Telefon w 1450 roku? Strażnik wziąłby go za magiczne urządzenie.; Karta kredytowa z plastiku wyglądałaby jak magia. Pieniądze to wtedy monety.
+w μπορείς | możesz (μπορώ)
+w μπεις | wejść (μπαίνω; po „να”); „μπορείς να μπεις” = możesz wejść
+w πεινάς | jesteś głodny (πεινάω)
+w πεινάω | jestem głodny
+w πανδοχείο | gospoda
+t Εντάξει, μπορείς να μπεις. Πεινάς; | Dobrze, możesz wejść. Jesteś głodny? | Ναι, πεινάω. Πού είναι το πανδοχείο; | Powiedz, że jesteś głodny, i zapytaj, gdzie jest gospoda. | „Gdzie” to πού, a „gospoda” to το πανδοχείο.
+w διαμονή | pobyt; nocleg
+e Αμέσως αριστερά είναι το πανδοχείο. Καλή διαμονή στον Μυστρά! | Zaraz po lewej jest gospoda. Miłego pobytu w Mistras!
+
+@level 2 | Gospoda | patience=5 typed=0.15 extra=3 hint=bank
+partner Πανδοχέας Κώστας | Κ
+desc Rozdział 2: Gospoda „Ο Κόκκινος Ταύρος”
+scene Wchodzisz do gospody. Karczmarz Kostas jest ciekawski i pyta o wszystko: co chcesz zjeść, jak podróżujesz i czego potrzebujesz na noc. W gospodzie nie ma elektryczności ani nowoczesnych napojów.
+goal Zamów jedzenie i picie, które mogli podać w średniowieczu, ustal nocleg i nie wspomnij o niczym z przyszłości.
+win Kostas klepie cię po plecach: „Είσαι καλός πελάτης!” Dostajesz miejsce przy kominku i pełny talerz. Nikt nie podejrzewa, że jesteś z przyszłości.
+partial Kostas przygląda ci się podejrzliwie, ale podaje jedzenie. Śpisz źle, bo wciąż myślisz o tym, co powiedziałeś.
+fail Kostas woła głośno: „Τι είναι το ίντερνετ;!” Goście odwracają się w twoją stronę, a ty ledwo uciekasz tylnym wyjściem.
+w ήρθες | przyszedłeś (έρχομαι)
+w φας | zjeść (τρώω; po „να”)
+w θέλω
+w σούπα
+w παρακαλώ
+t Καλώς ήρθες στο πανδοχείο! Τι θέλεις να φας; Έχουμε ψωμί και σούπα. | Witaj w gospodzie! Co chcesz zjeść? Mamy chleb i zupę. | Θέλω ψωμί και σούπα, παρακαλώ. | Zamów chleb i zupę. | „Chleb i zupa”: ψωμί και σούπα, bez rodzajnika.
+w πίνεις | pijesz (πίνω)
+w κόκα | koka (w „κόκα κόλα”)
+w κόλα | cola (w „κόκα κόλα”)
+w έναν
+w καφέ
+k Και τι πίνεις; Έχουμε κρασί και νερό. | A co pijesz? Mamy wino i wodę. | Θέλω ένα κρασί. | Θέλω έναν καφέ.; Θέλω μια κόκα κόλα. | Kawa dotarła do Europy dopiero w XVI-XVII wieku.; Coca-Cola powstała w XIX wieku. W 1450 roku nikt jej nie zna.
+w ταξίδεψες | podróżowałeś (ταξιδεύω)
+w μέρες | dni (liczba mnoga od μέρα)
+w δέκα
+t Ένα κρασί, εντάξει. Ταξίδεψες πολύ. Πόσο καιρό ταξιδεύεις; | Wino, dobrze. Daleko podróżowałeś. Jak długo już jedziesz? | Ταξιδεύω δέκα μέρες. | Powiedz, że podróżujesz już dziesięć dni. | „Dziesięć dni”: δέκα μέρες.
+w πολλές | wiele (rodzaj żeński, liczba mnoga)
+w έρθεις | przyjść (έρχομαι; po „να”)
+w πάρουμε | weźmiemy (παίρνω; po „θα”)
+w κάρο | wóz
+w παίρνουμε | bierzemy (παίρνω)
+w ευχαρίστως
+w πάμε
+w ποδήλατο
+k Δέκα μέρες, είναι πολλές! Αύριο πάω στην αγορά. Θα έρθεις; Θα πάρουμε το κάρο. | Dziesięć dni, to dużo! Jutro jadę na targ. Pojedziesz ze mną? Weźmiemy wóz. | Ναι, ευχαρίστως. Πάμε με το κάρο. | Ναι, παίρνουμε το αυτοκίνητο.; Όχι, πάω με το ποδήλατο. | Samochodu nie ma. Kostas nie zna takiego słowa.; Rower wynaleziono dopiero w XIX wieku. W 1450 roku jeździ się wozem albo konno.
+w κερί | świeca
+w ίντερνετ | internet
+w πρίζα | gniazdko
+w έχετε
+k Καλά. Το δωμάτιο έχει ένα κρεβάτι. Θέλεις κάτι ακόμα; | Dobrze. W pokoju jest łóżko. Czy chcesz jeszcze coś? | Ναι, θέλω ένα κερί, παρακαλώ. | Έχετε ίντερνετ, παρακαλώ.; Θέλω μια πρίζα. | W 1450 roku nie ma internetu. Kostas nie wie, co to jest.; Gniazdka elektryczne wymyślono setki lat później. Wieczorem świeci się świecami.
+w χρονιά | rok (jako data)
+w τετρακόσια | czterysta
+w υγεία
+t Ένα κερί, ευχαρίστως. Κι εδώ ένα ακόμα κρασί: καλό κρασί, στη χρονιά χίλια τετρακόσια πενήντα! Στην υγειά σου! | Świeca, proszę bardzo. A tu jeszcze wino: dobre wino w roku 1450! Na zdrowie! | Στην υγειά σου! | Wznieś toast. | „Na zdrowie” to στην υγειά σου.
+e Καληνύχτα! Αύριο το πρωί πάμε στην αγορά. | Dobranoc! Jutro rano jedziemy na targ.
+
+@level 3 | Targ | patience=4 typed=0.3 extra=3 hint=bank reward=25
+partner Πωλήτρια Βάσω | Β
+desc Rozdział 3: Targ w Mistras
+scene Następnego ranka na rynku jest tłoczno. Sprzedawczyni Vasso sprzedaje chleb i ser. Przy płaceniu liczą się tylko monety, a ludzie przyglądają się twoim ubraniom.
+goal Kup chleb i ser, zapłać tak, jak płaci się w 1450 roku, i wyjaśnij, skąd masz dziwne ubranie.
+win Vasso wsuwa ci do koszyka jabłko: „Για τον καλό ταξιδιώτη!” Targ nic nie podejrzewa, a w oddali widać już dwór władcy.
+partial Vasso w końcu sprzedała ci chleb i ser, ale kilka osób szepcze za twoimi plecami. Zbliża się dwór.
+fail Vasso krzyczy: „Τι είναι αυτά τα ρούχα; Τι είναι το ευρώ;” Tłum się zbiega, a ty uciekasz między straganami.
+w αγοράσεις | kupić (αγοράζω; po „να”)
+w τυρί
+t Καλημέρα! Τι θέλεις να αγοράσεις; Ψωμί, τυρί ή μήλα; | Dzień dobry! Co chcesz kupić? Chleb, ser czy jabłka? | Θέλω ένα ψωμί και ένα τυρί. | Poproś o chleb i ser. | „Chcę” to θέλω; ψωμί i τυρί są nijakie: ένα ψωμί, ένα τυρί.
+w άσπρα | aspra (dawne monety)
+w κάνουν | kosztują; robią (κάνω)
+w μαζί
+t Το ψωμί κάνει δύο άσπρα και το τυρί τρία άσπρα. | Chleb kosztuje dwa aspra, a ser trzy aspra. | Πόσο κάνουν όλα μαζί; | Zapytaj, ile to kosztuje razem. | „Ile” to πόσο, a „razem” to μαζί.
+w πληρώσεις | zapłacić (πληρώνω; po „να”)
+w νομίσματα | monety
+w πληρώνω
+w ευρώ
+k Κάνουν πέντε άσπρα. Πώς θέλεις να πληρώσεις; | To będzie pięć aspra. Jak chcesz zapłacić? | Πληρώνω με νομίσματα. | Πληρώνω με ευρώ.; Πληρώνω με κάρτα. | Euro wprowadzono dopiero w 2002 roku.; Karty płatnicze to wynalazek XX wieku. W 1450 roku płaci się monetami.
+w ρούχα | ubrania
+w παράξενα | dziwne (liczba mnoga, nijaki)
+w αυτά | te (liczba mnoga, nijaki)
+w μόδα | moda
+w Ανατολή | Wschód
+w τι-σερτ | koszulka (T-shirt)
+w τζιν | dżinsy
+w αθλητικά | sportowe; „αθλητικά παπούτσια” = buty sportowe
+w παπούτσια
+k Καλά, νομίσματα. Τα ρούχα σου είναι παράξενα. Τι είναι αυτά; | Dobrze, monety. Twoje ubranie jest dziwne. Co to jest? | Είναι μόδα από την Ανατολή. | Είναι ένα τι-σερτ.; Είναι τζιν και αθλητικά παπούτσια. | T-shirty z napisami pojawiły się w XX wieku.; Dżinsy i adidasy to rzeczy z dwudziestego wieku. Vasso zawołałaby straż.
+w άρχοντας | władca; pan
+w θέλει | chce (θέλω)
+w δει | zobaczyć (βλέπω; po „να”)
+t Από την Ανατολή, μάλιστα. Ο άρχοντας θέλει να σε δει. Θα έρθεις μαζί μου; | Ze Wschodu, tak. Władca chce cię zobaczyć. Pójdziesz ze mną? | Ναι, έρχομαι μαζί σου. | Zgódź się i idź z nią. | „Idę z tobą” to έρχομαι μαζί σου.
+w έλα | chodź
+w αρχοντικό | dwór; pałac
+e Τότε έλα! Το αρχοντικό είναι εκεί. | No to chodź! Dwór jest tam.
+
+@level 4 | Władca | patience=4 typed=0.5 extra=4 hint=letters reward=25
+partner Άρχοντας Νικηφόρος | Ν
+desc Rozdział 4: W dworze
+scene W dworze czeka władca Nikiforos. Słyszał dziwne plotki o obcym przybyszu. Zauważył coś błyszczącego na twoim nadgarstku i zadaje pytania, a tobie została tylko jedna droga: wrócić do bramy, gdzie wszystko się zaczęło.
+goal Odpowiedz na pytania władcy tak, żeby nie zdradzić zegarka, telefonu ani przyszłości, i wróć bezpiecznie do bramy.
+win Władca macha ręką: „Εντάξει, πήγαινε!” Wracasz do bramy, w powietrzu coś migocze i budzisz się we własnym czasie. Na dłoni masz monety z 1450 roku.
+partial Władca pozwala ci odejść, ale pod nosem mruczy o czarodziejach. Dopiero za bramą migotanie powietrza zabiera cię do domu.
+fail Władca woła strażników: „Μαγικό κουτί! Έρχεται από το μέλλον!” Nie zdążysz dojść do bramy.
+w Γιάννης | Giannis (imię)
+w ένας
+t Καλημέρα! Είμαι ο άρχοντας του Μυστρά. Ποιος είσαι; | Dzień dobry! Jestem władcą Mistras. Kim jesteś? | Είμαι ο Γιάννης, ένας ταξιδιώτης από την Πολωνία. | Przedstaw się: Giannis, podróżnik z Polski. | „Z Polski” to από την Πολωνία.
+w αυτό | to (nijaki)
+w βραχιόλι | bransoleta
+w χειρός | ręki; „ρολόι χειρός” = zegarek na rękę
+w ψηφιακό | cyfrowy (nijaki)
+w ρολόι
+w μπαταρία
+k Τι είναι αυτό στο χέρι σου; | Co to jest na twojej ręce? | Είναι μόνο ένα βραχιόλι. | Είναι ένα ρολόι χειρός με μπαταρία.; Είναι ένα ψηφιακό ρολόι. | Zegarek z baterią to wynalazek nowoczesny.; Cyfrowy zegarek wyglądałby jak czary. W 1450 roku są tylko klepsydry i dzwony.
+w δείχνει | pokazuje (δείχνω)
+w μισή | pół; „δύο και μισή” = wpół do trzeciej
+w ήλιος
+w μεσημέρι
+w κοιτάζω
+k Μόνο ένα βραχιόλι; Τι ώρα είναι; Έχεις βέβαια ένα ρολόι. | Tylko bransoleta? Która godzina? Masz przecież zegarek. | Δεν έχω ρολόι. Ο ήλιος δείχνει μεσημέρι. | Είναι δύο και μισή.; Κοιτάζω το κινητό μου. | Taka dokładna godzina z minutami to nowoczesny sposób liczenia czasu.; Telefon to rzecz z przyszłości.
+w ποια | który; jaka (rodzaj żeński)
+w χιλιάδες | tysiące; „δύο χιλιάδες” = dwa tysiące
+w ξέρω
+k Μεσημέρι, καλά. Ποια χρονιά έχουμε; | Południe, dobrze. Który mamy rok? | Έχουμε τη χρονιά χίλια τετρακόσια πενήντα. | Έχουμε τη χρονιά δύο χιλιάδες.; Δεν το ξέρω. | Jeśli podasz rok z przyszłości, zdradzisz się natychmiast.; Nie znać roku? Władca uznałby, że ukrywasz coś.
+w μαγικό | magiczne (nijaki)
+w κανένα | żadne (nijaki, biernik)
+w κουτί
+k Καλά. Λένε ότι έχεις ένα μαγικό κουτί. Είναι αλήθεια; | Dobrze. Mówią, że masz magiczną skrzynkę. Czy to prawda? | Όχι, δεν έχω κανένα μαγικό κουτί. | Ναι, είναι ένα κινητό.; Ναι, έρχομαι από το μέλλον. | Przyznanie się do telefonu zakończy rozmowę.; Przyznanie się do podróży w czasie to najgorsza odpowiedź.
+w πηγαίνεις | idziesz (πηγαίνω)
+w χρόνου | czasu (dopełniacz); „μηχανή του χρόνου” = wehikuł czasu
+w πηγαίνω
+w πίσω
+w μηχανή
+k Καλά. Είναι ήδη αργά. Πού πηγαίνεις τώρα; | Dobrze. Jest już późno. Dokąd teraz idziesz? | Πηγαίνω πίσω στην πύλη. | Πηγαίνω στη μηχανή του χρόνου.; Πηγαίνω στο αυτοκίνητο. | Wehikuł czasu to najgorsza odpowiedź.; Samochodu w 1450 roku nie ma.
+w πήγαινε | idź (πηγαίνω)
+e Καλά, τότε πήγαινε. Καλό ταξίδι! | Dobrze, to idź. Szczęśliwej podróży!
+
+
+@larp politiker | Polityk | Ψηφοφόρος | Ψ | Jesteś skorumpowanym politykiem. Dawno temu pan Pulidis dał ci kopertę (φακελάκι), a „υπόθεση Κούκος” (afera Kukułka) wraca na każdym szczeblu twojej kariery. Wyborcy ci wierzą… i przestają… i zapominają. | Przekonaj wyborców, że nadajesz się na stanowisko. Nigdy się nie przyznaj i nie sprzeczaj sam sobie.
+fee 0
+reward 30
+strict yes
+story yes
+disclaimer Satyra. Wszystkie postacie, partie i afery są zmyślone; ewentualne podobieństwo do prawdziwych osób jest przypadkowe.
+win Wygrywasz wybory! Nikt już nie pamięta koperty od pana Pulidisa. Przed gmachem tłum skanduje twoje nazwisko, a ty obiecujesz „uczciwą politykę”. Pan Pulidis macha z ostatniego rzędu.
+partial Wygrywasz o włos. Dziennikarze wciąż grzebią w aktach, ale ty już podpisujesz pierwsze dokumenty. Kłamstwo trzyma się jeszcze na słowo honoru.
+fail Wiarygodność spadła do zera. Wyborcy wyciągają stare akty, a z tłumu ktoś krzyczy: „Το φακελάκι!” Twoja kariera kończy się na pierwszej stronie gazet.
+
+@level 1 | Przewodniczący gminy | patience=4 cap=6 typed=0 extra=1 hint=none
+desc Szczebel 1: sołtys wsi Mikrorema
+partner Κυρία Σκούρα | Σ
+scene Zebranie wiejskie w sali gimnastycznej w Mikrorema. Chcesz zostać przewodniczącym wsi (πρόεδρος κοινότητας). Pani Skura zadaje pytania, a cała wieś słucha. Wszyscy pamiętają, że pan Pulidis naprawił drogę, i że ktoś widział kopertę…
+goal Przekonaj wieś, że jesteś uczciwy, i zaprzecz plotkom o kopercie.
+win Wieś klaszcze. Zostajesz przewodniczącym Mikrorema. Pan Pulidis, w pierwszym rzędzie, puszcza do ciebie oko.
+partial Wygrywasz jednym głosem. Pani Skura patrzy na ciebie podejrzliwie, ale podnosi rękę.
+fail Wieś ma dość. Pani Skura mówi: „Θα ψηφίσουμε κάποιον άλλον.” Kończysz karierę, zanim się zaczęła.
+w γίνετε | zostańcie; zostać (γίνομαι; po „να”)
+w πρόεδρος | przewodniczący; prezes
+w της | (rodzajnik żeński w dopełniaczu)
+w κοινότητας | gminy (dopełniacz od κοινότητα)
+w γίνω | zostać (γίνομαι; po „να”)
+w θέλω
+t Καλησπέρα! Θέλετε να γίνετε πρόεδρος της κοινότητας; | Dobry wieczór! Chce Pan zostać przewodniczącym gminy? | Ναι, θέλω να γίνω πρόεδρος της κοινότητας. | Powiedz, że chcesz zostać przewodniczącym gminy. | „Zostać” to γίνομαι: θέλω να γίνω … (po „θέλω να” czasownik w innej formie).
+w τίμιος | uczciwy (rodzaj męski)
+w είμαι
+w πάντα
+t Είστε τίμιος; | Czy jest Pan uczciwy? | Ναι, είμαι πάντα τίμιος. | Zapewnij, że jesteś zawsze uczciwy. | „Zawsze” to πάντα. | | gain=1
+w χαλασμένος | zepsuty (rodzaj męski)
+w φτιάξω | naprawię; zrobię (φτιάχνω)
+w δρόμο | droga (biernik)
+t Ο δρόμος είναι χαλασμένος. Τι θα κάνετε; | Droga jest zepsuta. Co Pan zrobi? | Θα φτιάξω τον δρόμο. | Obiecaj, że naprawisz drogę. | „Θα” + czasownik to przyszłość: θα φτιάξω. | | gain=1
+w κύριος | pan (przed nazwiskiem)
+w Πουλίδης | Pulidis (nazwisko)
+w έδωσε | dał (δίνω)
+w φακελάκι | koperta z łapówką („φακελάκι”)
+w είδε | zobaczył (βλέπω)
+w καθόλου | wcale; „σχεδόν καθόλου” = prawie wcale
+w κύριο | pana (biernik)
+w Πουλίδη | Pulidis (biernik)
+w αυτό
+w ψέμα
+w ξέρω
+t Ο κύριος Πουλίδης σας έδωσε ένα φακελάκι! Κάποιος το είδε! | Pan Pulidis dał Panu kopertę! Ktoś to widział! | Αυτό είναι ψέμα! Δεν ξέρω σχεδόν καθόλου τον κύριο Πουλίδη. | Zaprzecz: to kłamstwo, ledwo znasz pana Pulidisa. | „Σχεδόν καθόλου” znaczy „prawie wcale”; po „ξέρω” biernik: τον κύριο Πουλίδη. | Αυτό είναι ψέμα! Δεν ξέρω σχεδόν καθόλου τον κύριο Πουλίδη. | shift=-2 loss=2
+w έγινε | stało się; było (γίνομαι)
+w ξεχάσαμε | zapomnieliśmy (ξεχνάω)
+w ευγνώμων | wdzięczny
+w ευχαριστώ
+t Αυτό έγινε πριν από πολύ καιρό. Το ξεχάσαμε. | No cóż… to było dawno. Zapomnieliśmy o tym. | Ευχαριστώ, σας είμαι ευγνώμων. | Podziękuj wyborcom za wyrozumiałość (jesteś im wdzięczny). | „Ευγνώμων” to wdzięczny. | | shift=+2
+w χρέη | długi
+w κοινότητα | gmina; wspólnota
+w οικονομία | oszczędność; gospodarka
+w πάρω | wezmę (παίρνω; po „θα”)
+w περισσότερα | więcej (liczba mnoga, nijaki)
+w χρήματα | pieniądze
+w κάνω
+o Έχουμε πολλά χρέη στην κοινότητα. Τι θα κάνετε; | Mamy w gminie wiele długów. Co Pan zrobi? | Θα κάνω οικονομία και θα είμαι τίμιος. | Θα πάρω περισσότερα χρήματα.; Δεν ξέρω. | Dobra odpowiedź obiecuje oszczędzanie i uczciwość.; Polityk, który mówi „wezmę więcej pieniędzy”, nie brzmi wiarygodnie. | gain=1
+w μαζί
+t Θα είστε τίμιος μαζί μας; | Czy będzie Pan wobec nas uczciwy? | Ναι, θα είμαι πάντα τίμιος μαζί σας. | Obiecaj uczciwość wobec wyborców. | „Μαζί σας” = z państwem, wobec państwa. | | gain=1
+w ψηφίζουμε | głosujemy (ψηφίζω)
+w πρόεδρε | przewodniczący (wołacz)
+e Τότε σας ψηφίζουμε! Καλώς ήρθατε, κύριε πρόεδρε! | Wybieramy więc Pana! Witamy, Panie przewodniczący!
+
+@level 2 | Radny miejski | patience=4 cap=6 typed=0.2 extra=2 hint=bank
+desc Szczebel 2: radny miejski
+partner Κυρία Ρήγα | Ρ
+scene Miasto Nea Poli. Jesteś kandydatem do rady miejskiej (δημοτικό συμβούλιο). Dziennikarka pani Riga pyta o „biznesmenów” i o to, skąd masz nowy samochód.
+goal Zaprzecz, że brałeś pieniądze, i nie daj się złapać na kłamstwie.
+win Pani Riga zamyka notes: „Εντάξει, δεν έχω άλλες ερωτήσεις.” Zostajesz radnym. Pan Pulidis gratuluje przez telefon.
+partial Zostajesz radnym, ale pani Riga mówi: „Θα συνεχίσω.” Będzie dalej drążyć.
+fail Wywiad ląduje w gazecie pod tytułem „Ο σύμβουλος και το φακελάκι”. Nikt na ciebie nie głosuje.
+w δημοσιογράφος | dziennikarz, dziennikarka
+w δημοτικός | miejski; „δημοτικός σύμβουλος” = radny miejski
+w σύμβουλος | doradca; radny
+t Καλησπέρα, είμαι δημοσιογράφος. Θέλετε να γίνετε δημοτικός σύμβουλος; | Dobry wieczór, jestem dziennikarką. Chce Pan zostać radnym? | Ναι, θέλω να γίνω δημοτικός σύμβουλος. | Potwierdź, że chcesz zostać radnym. | „Δημοτικός σύμβουλος” to radny miejski. | | gain=1
+w γνωρίζετε | znacie; zna pan(i) (γνωρίζω)
+w επιχειρηματία | biznesmena (biernik)
+w γνωστός | znajomy
+w μόνο
+w ένας
+t Γνωρίζετε τον επιχειρηματία κύριο Πουλίδη. Είναι φίλος σας; | Zna Pan biznesmena pana Pulidisa. Czy to Pana przyjaciel? | Όχι, είναι μόνο ένας γνωστός. | Zaprzecz: to tylko znajomy. | „Μόνο” = tylko; „ένας γνωστός” = znajomy. | | gain=1
+w καινούργιο | nowy (nijaki)
+w αγόρασα | kupiłem (αγοράζω)
+w τίμια | uczciwie
+w αγόρασα | kupiłem (αγοράζω)
+w αυτοκίνητο
+t Έχετε ένα καινούργιο αυτοκίνητο. Από πού έχετε τα χρήματα; | Ma Pan nowy samochód. Skąd Pan ma pieniądze? | Το αγόρασα τίμια. | Powiedz, że kupiłeś go uczciwie. | „Αγόρασα” to „kupiłem”; „τίμια” to „uczciwie”. | Αγόρασα το αυτοκίνητο τίμια.
+w πάρει | wziąć (παίρνω); „έχω πάρει” = wziąłem
+w δωροδοκία | łapówka; przekupstwo
+w πήρα | wziąłem (παίρνω)
+w ποτέ
+t Έχετε πάρει δωροδοκία; | Czy brał Pan łapówki? | Όχι, ποτέ δεν έχω πάρει δωροδοκία. | Zaprzecz, że kiedykolwiek brałeś łapówki. | „Ποτέ δεν” = nigdy; „έχω πάρει” = wziąłem (dokonane). | Ποτέ δεν πήρα δωροδοκία. | loss=2
+w Ρήγα | Riga (nazwisko)
+w αυτούς | tych (biernik, męski)
+w ανθρώπους | ludzi (biernik)
+w τους
+t Η κυρία Ρήγα δείχνει μια φωτογραφία. Εκεί είστε εσείς, ο κύριος Πουλίδης και ένα φακελάκι. | Pani Riga pokazuje zdjęcie. Widać na nim Pana, pana Pulidisa i kopertę. | Δεν ξέρω αυτούς τους ανθρώπους. | Powiedz, że nie znasz tych ludzi. | „Αυτούς τους ανθρώπους” = tych ludzi (biernik). | | shift=-2
+w παλιά | stara (żeński); dawno
+w οι | (rodzajnik liczba mnoga, męski)
+w ψηφοφόροι | wyborcy
+w ξεχνούν | zapominają (ξεχνάω)
+w σημαντική | ważna (rodzaj żeński)
+t Η φωτογραφία είναι παλιά. Οι ψηφοφόροι σύντομα το ξεχνούν. | Zdjęcie jest stare. Wyborcy szybko o tym zapomną. | Η φωτογραφία δεν είναι σημαντική. | Zlekceważ zdjęcie: nie jest ważne. | „Σημαντική” = ważna (rodzaj żeński). | | shift=+2
+w μάρτυρας | świadek
+w λέει | mówi (λέω)
+w πήρατε | wzięliście; wziął pan(i) (παίρνω)
+w ψέματα | kłamstwa; „λέει ψέματα” = kłamie
+w δίκιο | racja; „έχει δίκιο” = ma rację
+w αλήθεια
+w έχει
+o Μια μάρτυρας λέει ότι πήρατε χρήματα. | Świadkini twierdzi, że brał Pan pieniądze. | Αυτό δεν είναι αλήθεια. Η μάρτυρας λέει ψέματα. | Ναι, η μάρτυρας έχει δίκιο.; Είμαι μάρτυρας. | Zaprzeczasz i nazywasz świadka kłamcą.; Przyznajesz się, więc przegrywasz. | gain=1
+w συνέντευξη | wywiad
+w προσθέσετε | dodać (προσθέτω; po „να”)
+w αθώος | niewinny
+t Ευχαριστώ για τη συνέντευξη. Έχετε κάτι να προσθέσετε; | Dziękuję za wywiad. Czy chce Pan coś jeszcze dodać? | Ναι, είμαι αθώος. | Powiedz na koniec, że jesteś niewinny. | „Αθώος” = niewinny. | | gain=1
+w γράψω | napiszę (γράφω)
+w είπατε | powiedzieliście; powiedział pan(i) (λέω)
+e Θα γράψω αυτά που είπατε. Γεια σας! | Napiszę, co Pan powiedział. Do widzenia!
+
+@level 3 | Burmistrz | patience=4 cap=6 typed=0.4 extra=2 hint=bank
+desc Szczebel 3: burmistrz
+partner Εισαγγελέας Χατζής | Χ
+scene W ratuszu miasta Nea Poli. Prokurator Chatzis bada przetarg (διαγωνισμός) na nowy most. Firma pana Pulidisa wygrała dziwnie łatwo, a w aktach wraca „υπόθεση Κούκος”.
+goal Wyjdź z przesłuchania jako burmistrz, nie przyznając się do niczego.
+win Prokurator zamyka teczkę: „Δεν υπάρχουν αποδείξεις. Η υπόθεση αρχειοθετείται.” Zostajesz burmistrzem, a most otwiera się z pompą.
+partial Teczka zostaje otwarta, ale prokurator nie ma dowodów. Zostajesz burmistrzem z cieniem podejrzeń.
+fail Prokurator kładzie na stole kopertę i zdjęcie. „Σας συλλαμβάνω!” – mówi. Kończysz w areszcie.
+w εισαγγελέας | prokurator
+w Χατζής | Chatzis (nazwisko)
+w ανάκριση | przesłuchanie
+w δικηγόρο | adwokat (biernik)
+t Είμαι ο εισαγγελέας Χατζής. Αυτή είναι ανάκριση. | Jestem prokuratorem Chatzisem. To jest przesłuchanie. | Θέλω τον δικηγόρο μου. | Poproś o swojego adwokata. | „Mój adwokat” w bierniku: τον δικηγόρο μου. | | gain=1
+w κυρίου | pana (dopełniacz)
+w κέρδισε | wygrał (κερδίζω)
+w διαγωνισμό | przetarg; konkurs (biernik)
+w είχε | miał; miała (έχω)
+w καλύτερη | lepsza; najlepsza (rodzaj żeński)
+w προσφορά | oferta
+t Η εταιρεία του κυρίου Πουλίδη κέρδισε τον διαγωνισμό για τη γέφυρα. Γιατί; | Firma pana Pulidisa wygrała przetarg na most. Dlaczego? | Είχε την καλύτερη προσφορά. | Wyjaśnij, że miała najlepszą ofertę. | „Η εταιρεία” = firma, więc „είχε” = miała. | | gain=1
+w ερωτήσεις | pytania
+w καταθέσετε | złożyć zeznanie (καταθέτω; po „να”)
+w αρνούμαι | odmawiam; zaprzeczam
+w καταθέσω | złożyć zeznanie; zeznawać (po „να”)
+t Έχουμε πολλές ερωτήσεις. Θέλετε να καταθέσετε; | Mamy wiele pytań. Czy chce Pan złożyć zeznanie? | Αρνούμαι να καταθέσω. | Odmów składania zeznań. | „Αρνούμαι να καταθέσω” = odmawiam zeznań (prawo do milczenia). | | shift=-1
+w αποδείξεις | dowody
+w υποψία | podejrzenie
+w ξέρουμε | wiemy (ξέρω)
+t Χωρίς αποδείξεις δεν υπάρχει υποψία. Το ξέρουμε και οι δύο. | Bez dowodów nie ma podejrzenia. Wiemy to obaj. | Δεν έχετε αποδείξεις. | Powiedz prokuratorowi, że nie ma dowodów. | „Αποδείξεις” = dowody (liczba mnoga). | | shift=+2
+w υπάρξει | zaistnieć; być (υπάρχω)
+w κατηγορητήριο | akt oskarżenia
+w λέτε | mówicie; mówi pan(i) (λέω)
+w ένοχος | winny
+w ήμουν
+o Ίσως υπάρξει κατηγορητήριο. Τι λέτε; | Być może będzie akt oskarżenia. Co Pan na to? | Είμαι αθώος. | Είμαι ένοχος.; Εγώ ήμουν. | „Ένοχος” = winny, a to przyznanie.;„Εγώ ήμουν” = to byłem ja, czyli przyznanie się. | gain=1
+t Ο κύριος Πουλίδης λέει ότι σας έδωσε ένα φακελάκι. | Pan Pulidis mówi, że dał Panu kopertę. | Αυτό είναι ψέμα! Ποτέ δεν πήρα φακελάκι. | Zaprzecz: to kłamstwo, nigdy nie wziąłeś koperty. | „Ποτέ δεν πήρα” = nigdy nie wziąłem. | Αυτό είναι ψέμα! Ποτέ δεν πήρα φακελάκι. | shift=-2 loss=2
+w πείτε | powiedzcie; niech pan(i) powie (λέω)
+w όρκο | przysięga (biernik)
+d Τότε πείτε το ξανά, με όρκο. Πήρατε χρήματα από τον κύριο Πουλίδη; | A więc powiedz to jeszcze raz pod przysięgą: czy wziął Pan pieniądze od pana Pulidisa? | Όχι, δεν πήρα χρήματα από τον κύριο Πουλίδη. | Zaprzeczaj pod przysięgą: nie wziąłeś od niego pieniędzy. | „Από” = od, po nim biernik. Jedna wpadka i koniec.
+w δήμαρχος | burmistrz
+w άλλες | inne (liczba mnoga, żeński)
+e Καλά. Είστε δήμαρχος. Δεν έχω άλλες ερωτήσεις. | Dobrze. Jest Pan burmistrzem. Nie mam więcej pytań.
+
+@level 4 | Poseł | patience=4 cap=6 typed=0.6 extra=2 hint=letters
+desc Szczebel 4: poseł
+partner Κυρία Λύκου | Λ
+scene Parlament krajowy. Jesteś posłem (βουλευτής), a komisja śledcza (εξεταστική επιτροπή) wzywa cię jako świadka. Przewodnicząca pani Lykou mówi o „υπόθεση Κούκος”. Prawnicy mają dla ciebie nowe słowa: μάρτυρας, όρκος, ασυλία.
+goal Odpowiadaj pod przysięgą tak, by nikt nie dowiódł, że kłamiesz.
+win Pani Lykou: „Η κατάθεση ολοκληρώθηκε.” Wychodzisz z sali z uniesioną głową. Komisja nic nie ma.
+partial Komisja kończy pracę bez wniosków, ale jeden członek zapisał w notatniku: „Να ελεγχθεί αργότερα!”
+fail Komisja nakazuje ci wyjaśnić sprzeczność. Zaplątałeś się, a prasa pisze o „βουλευτής ψεύτης”.
+w επιτροπή | komisja
+w καταθέτετε | zeznajecie; zeznaje pan(i) (καταθέτω)
+w υπό | pod (np. υπό όρκο = pod przysięgą)
+t Καλώς ήρθατε στην επιτροπή. Καταθέτετε υπό όρκο. | Witamy w komisji. Zeznaje Pan pod przysięgą. | Ναι, το ξέρω. Λέω την αλήθεια. | Potwierdź i zapewnij, że mówisz prawdę. | „Λέω την αλήθεια” = mówię prawdę. „Υπό όρκο” = pod przysięgą. | | gain=1
+w ως | jako
+w βουλευτής | poseł
+w ασυλία | immunitet
+w άρετε | uchylić (αίρω; po „να”)
+w κρατήσω | zachować (κρατάω; po „να”)
+t Ως βουλευτής έχετε ασυλία. Θέλετε να την άρετε; | Jako poseł ma Pan immunitet. Czy chce Pan go uchylić? | Όχι, θέλω να κρατήσω την ασυλία μου. | Odmów zrzeczenia się immunitetu. | „Κρατήσω” = zachować; „την ασυλία μου” (żeńskie, biernik). | | shift=-1
+w κατάθεσή | zeznanie (z zaimkiem σας)
+w αντίθεση | sprzeczność; „σε αντίθεση με” = w sprzeczności z
+w εξηγείτε | wyjaśniacie; wyjaśnia pan(i) (εξηγώ)
+w κρύψω | ukryć (κρύβω; po „να”)
+w τίποτα
+t Η κατάθεσή σας έρχεται σε αντίθεση με τον φάκελο. Πώς το εξηγείτε; | Pana zeznanie jest sprzeczne z aktami. Jak Pan to wyjaśni? | Δεν έχω τίποτα να κρύψω. | Powiedz, że nie masz nic do ukrycia. | „Δεν έχω τίποτα να κρύψω” = nie mam nic do ukrycia. | | loss=2
+w θυμούνται | pamiętają (θυμάμαι)
+w πια | już (przy przeczeniu: „δεν … πια” = już nie)
+w παρελθόν
+t Αυτό έγινε πριν από πολύ καιρό. Οι ψηφοφόροι δεν το θυμούνται πια. | To było dawno. Wyborcy już o tym nie pamiętają. | Αυτό είναι παρελθόν. | Machnij ręką: to przeszłość. | „Παρελθόν” = przeszłość. | | shift=+2
+w έγραψα | napisałem (γράφω)
+w έγραψε | napisał (γράφω)
+w γνωρίζω
+w γράμμα
+w δικηγόρος
+o Εδώ είναι ένα γράμμα από τον κύριο Πουλίδη. Το γνωρίζετε; | Oto list od pana Pulidisa. Zna go Pan? | Δεν γνωρίζω το γράμμα. | Ναι, εγώ έγραψα το γράμμα.; Ο δικηγόρος μου έγραψε το γράμμα. | Przyznajesz się, że to ty napisałeś list: to błąd.;Zwalanie na adwokata nie jest wiarygodne. | gain=1
+t Ένας μάρτυρας λέει ότι πήρατε ένα φάκελο με χρήματα. | Świadek mówi, że dostał Pan kopertę z pieniędzmi. | Ο μάρτυρας λέει ψέματα. Δεν πήρα χρήματα. | Nazwij świadka kłamcą i zaprzecz, że dostałeś pieniądze. | „Ο μάρτυρας λέει ψέματα” = świadek kłamie. | | shift=-2 loss=2
+w δημοτικό | miejskie (nijaki)
+w συμβούλιο | rada
+w ισχύει | obowiązuje; jest prawdą
+k Στο δημοτικό συμβούλιο είπατε ότι δεν γνωρίζετε σχεδόν καθόλου τον κύριο Πουλίδη. Ισχύει ακόμα; | W radzie powiedział Pan: „Ledwo znam pana Pulidisa.” Czy to nadal prawda? | Ναι, δεν τον γνωρίζω σχεδόν καθόλου. | Όχι, είναι φίλος μου.; Όχι, δεν τον έχω δει ποτέ. | Przyznajesz, że to twój przyjaciel: sprzeczność i koniec.;Wcześniej mówiłeś „σχεδόν καθόλου”, a nie „nigdy go nie widziałem”. | gain=1
+w φύγετε | odejdźcie; może pan(i) odejść (φεύγω)
+w ξαναπούμε | porozmawiamy znowu; „θα τα ξαναπούμε” = jeszcze się spotkamy
+e Ευχαριστώ. Μπορείτε να φύγετε. Θα τα ξαναπούμε σύντομα. | Dziękuję. Może Pan iść. Wkrótce znów się zobaczymy.
+
+@level 5 | Minister | patience=4 cap=6 typed=0.8 extra=2 hint=bank
+desc Szczebel 5: minister
+partner Κύριος Χειμωνάς | Χ
+scene Studio telewizyjne, wywiad na żywo. Jesteś ministrem (υπουργός) i siedzisz naprzeciw pana Chimonasa, prowadzącego wiadomości. Na ekranie nagle pojawia się stary dokument z „υπόθεση Κούκος”.
+goal Wyjdź ze studia nadal jako minister: nie daj się zapędzić w pułapkę na żywo.
+win Chimonas kończy wywiad: „Ευχαριστώ, κύριε υπουργέ.” Sondaże rosną. Pan Pulidis dzwoni: „Μπράβο!”
+partial Wywiad kończy się remisem. Opozycja domaga się dymisji (παραίτηση), ale premier cię broni.
+fail Na wizji uciekasz od odpowiedzi, a widzowie wszystko widzą. Rano gazety krzyczą: „Παραίτηση!”
+w είμαστε | jesteśmy
+w ζωντανά | na żywo
+w έτοιμος | gotowy
+w υπουργέ | ministrze (wołacz)
+w ευχαρίστως
+t Καλησπέρα! Είμαστε ζωντανά στην τηλεόραση. Είστε έτοιμος, κύριε υπουργέ; | Dobry wieczór! Jesteśmy na żywo w telewizji. Jest Pan gotów, Panie ministrze? | Ναι, είμαι έτοιμος. Ευχαρίστως. | Potwierdź, że jesteś gotów. | „Έτοιμος” = gotowy. | | gain=1
+w αντιπολίτευση | opozycja
+w ισχυρίζεται | twierdzi (ισχυρίζομαι)
+w σκάνδαλο | skandal
+w Κούκος | Kukułka (nazwa afery: „υπόθεση Κούκος”)
+w εκστρατεία | kampania
+t Η αντιπολίτευση ισχυρίζεται ότι υπάρχει σκάνδαλο με την υπόθεση Κούκος. | Opozycja twierdzi, że w sprawie Kukułka jest skandal. | Αυτό δεν είναι σκάνδαλο. Είναι εκστρατεία. | Zbagatelizuj: to nie skandal, tylko kampania. | „Εκστρατεία” = kampania; „δεν είναι σκάνδαλο” = to nie skandal. | | shift=-1
+w έγγραφο | dokument
+w υπογραφή | podpis
+w θυμηθώ | przypomnieć sobie (θυμάμαι; po „να”)
+w μπορώ
+t Στην εφημερίδα υπάρχει ένα έγγραφο. Έχει την υπογραφή σας. | W gazecie jest dokument. Ma Pana podpis. | Δεν μπορώ να το θυμηθώ. | Powiedz, że nie możesz sobie tego przypomnieć. | „Δεν μπορώ να το θυμηθώ” = nie mogę sobie tego przypomnieć. | | shift=-2 loss=2
+w πλαστογραφία | fałszerstwo
+t Αυτή είναι η υπογραφή σας. Πώς το εξηγείτε; | To jest Pana podpis. Jak Pan to wyjaśni? | Αυτό είναι πλαστογραφία. | Zaprzecz: to fałszerstwo. | „Πλαστογραφία” = fałszerstwo. | | gain=1
+w δημοσκοπήσεις | sondaże
+w ανεβαίνουν | rosną; wchodzą w górę (ανεβαίνω)
+w πιστεύουν | wierzą (πιστεύω)
+w εμπιστοσύνη | zaufanie
+t Οι δημοσκοπήσεις ανεβαίνουν. Οι ψηφοφόροι σας πιστεύουν. | Sondaże rosną. Wyborcy Panu wierzą. | Ευχαριστώ για την εμπιστοσύνη σας. | Podziękuj wyborcom za zaufanie. | „Εμπιστοσύνη” = zaufanie. | | shift=+2
+w ήταν | był; była
+w σύμβουλός | doradca (z zaimkiem σας)
+w δουλέψει | pracować (δουλεύω); „έχω δουλέψει” = pracowałem
+w έδινε | dawał (δίνω)
+w συχνά
+o Ο κύριος Πουλίδης λέει ότι ήταν σύμβουλός σας. Ισχύει; | Pan Pulidis mówi, że był Pana doradcą. Czy to prawda? | Όχι, δεν έχω δουλέψει ποτέ μαζί του. | Ναι, μου έδινε συχνά χρήματα.; Αρνούμαι να καταθέσω. | Przyznajesz się do pieniędzy: błąd.;Odmowa zeznań w telewizji wygląda na przyznanie się. | gain=1
+w παραιτηθείτε | podać się do dymisji (παραιτούμαι; po „να”)
+w τελείωσαν | skończyły się (τελειώνω)
+w παραιτούμαι | podaję się do dymisji
+t Θέλετε να παραιτηθείτε; Τότε όλα τελείωσαν. | Czy chce Pan podać się do dymisji? Wtedy wszystko skończone. | Όχι, δεν παραιτούμαι. Είμαι αθώος. | Odmów dymisji i powiedz, że jesteś niewinny. | „Παραιτούμαι” = podaję się do dymisji. | | gain=1
+w απλώς | po prostu
+w δώρο
+k Εδώ είναι μια φωτογραφία: εσείς και ο κύριος Πουλίδης. Υπάρχει και ένα φακελάκι. Τι έχει μέσα; | Oto zdjęcie: Pan i pan Pulidis. Jest też koperta. Co jest w kopercie? | Η φωτογραφία είναι παλιά. Δεν πήρα ποτέ φακελάκι. | Είναι χρήματα για την εκστρατεία μου.; Ήταν απλώς ένα δώρο. | Przyznanie się do pieniędzy: koniec.;„Δώρο” to też przyznanie, bo wcześniej mówiłeś, że nie brałeś koperty. | gain=1
+e Ευχαριστώ για τη συνέντευξη, κύριε υπουργέ. | Dziękuję za wywiad, Panie ministrze.
+
+@level 6 | Premier | patience=4 cap=6 typed=1 extra=2 hint=none
+desc Szczebel 6: premier
+partner Κυρία Αναστασίου | Α
+scene Finałowa debata w telewizji. Kandydujesz na premiera (πρωθυπουργός). Naprzeciw stoi pani Anastasiou z partii „Νέα Ειλικρίνεια” i jej teczka z „υπόθεση Κούκος”. Cały kraj ogląda.
+goal Wygraj debatę, zachowaj spokój i nie przyznaj się do niczego do samego końca.
+win Przegrywa nawet sondaż: 52 procent mówi, że chce ciebie. Zostajesz premierem, a koperta pana Pulidisa leży gdzieś na dnie szuflady.
+partial Debata kończy się remisem. Wybory wygrywasz minimalnie i obiecujesz „więcej przejrzystości”.
+fail Pani Anastasiou kładzie na stoliku teczkę. Kraj widzi sprzeczność w twoich słowach i na ekranie pojawia się napis: „Ο υποψήφιος λέει ψέματα.”
+w τελική | finałowa (rodzaj żeński)
+w συζήτηση | dyskusja; debata
+w Αναστασίου | Anastasiou (nazwisko)
+w υποψήφιε | kandydacie (wołacz)
+w πρωθυπουργός | premier
+t Καλώς ήρθατε στην τελική συζήτηση! Κυρία Αναστασίου, κύριε υποψήφιε, ορίστε. | Witamy w debacie finałowej! Pani Anastasiou, Panie kandydacie, proszę. | Καλησπέρα. Θέλω να γίνω πρωθυπουργός. | Przywitaj się i powiedz, że chcesz zostać premierem. | „Πρωθυπουργός” = premier. | | gain=1
+w κόμμα | partia
+w Νέα | nowa
+w Ειλικρίνεια | Szczerość („Νέα Ειλικρίνεια” = nazwa partii)
+t Είμαι από το κόμμα Νέα Ειλικρίνεια. Πείτε την αλήθεια, κύριε υποψήφιε! | Jestem z partii Nowa Szczerość. Niech Pan mówi prawdę, Panie kandydacie! | Λέω πάντα την αλήθεια. | Zapewnij, że zawsze mówisz prawdę. | „Πάντα” = zawsze. | | gain=1
+w κατηγορία | zarzut; oskarżenie
+w απορρίπτω | odrzucam
+t Πήρατε δωροδοκία. Αυτή είναι η κατηγορία μου. | Brał Pan łapówki. To mój zarzut. | Απορρίπτω αυτή την κατηγορία. | Odrzuć ten zarzut. | „Απορρίπτω” = odrzucam; „αυτή την κατηγορία” = ten zarzut (biernik). | | shift=-2 loss=2
+w προεκλογικός | przedwyborczy; „προεκλογικός αγώνας” = kampania wyborcza
+w αγώνας
+w βρώμικος
+t Αυτό είναι μόνο προεκλογικός αγώνας. Έγινε πριν από πολύ καιρό. | To tylko kampania wyborcza. To było dawno. | Ο προεκλογικός σας αγώνας είναι βρώμικος. | Zarzuć rywalce brudną kampanię. | „Βρώμικος” = brudny. | | shift=+2
+w βλέπω
+t Έχετε αποδείξεις, κυρία Αναστασίου; Εγώ δεν βλέπω αποδείξεις! | Ma Pani dowody, pani Anastasiou? Ja nie widzę żadnych dowodów! | Δεν βλέπω αποδείξεις. | Powtórz, że nie widzisz żadnych dowodów. | „Δεν βλέπω” = nie widzę. | | gain=1
+w δημιουργήσω | stworzę (δημιουργώ)
+w νέες | nowe (liczba mnoga, żeński)
+w θέσεις | miejsca; stanowiska (liczba mnoga od θέση)
+w εργασίας | pracy (dopełniacz); „θέσεις εργασίας” = miejsca pracy
+t Και το σχέδιό σας για τη χώρα; | A jaki jest Pana plan dla kraju? | Θα δημιουργήσω νέες θέσεις εργασίας. | Obiecaj nowe miejsca pracy. | „Θέσεις εργασίας” = miejsca pracy; δημιουργώ = tworzyć. | | gain=1
+t Ο φίλος σας ο κύριος Πουλίδης λέει ότι σας έδωσε πολλά χρήματα! | Pana przyjaciel pan Pulidis mówi: dał Panu dużo pieniędzy! | Αυτό είναι ψέμα! Δεν είναι φίλος μου. | Zaprzecz: to kłamstwo, on nie jest twoim przyjacielem. | „Δεν είναι φίλος μου” = nie jest moim przyjacielem. | | shift=-1 loss=2
+o Στο δημοτικό συμβούλιο είπατε ότι είναι μόνο ένας γνωστός. Και τώρα; | W radzie powiedział Pan: to tylko znajomy. A teraz? | Είναι μόνο ένας γνωστός. | Είναι φίλος μου.; Δεν τον έχω δει ποτέ. | Zaprzeczasz sam sobie.;Wcześniej przyznałeś, że go znasz, więc „nigdy go nie widziałem” to sprzeczność. | gain=1
+k Η κυρία Αναστασίου δείχνει το φακελάκι. Το πήρατε; Ναι ή όχι; | Pani Anastasiou pokazuje kopertę. Wziął ją Pan? Tak czy nie? | Όχι, δεν το πήρα ποτέ. | Ναι, το πήρα.; Αρνούμαι να καταθέσω. | Przyznanie się: koniec.;Milczenie na żywo wygląda jak przyznanie się. | 
+w θερμά | gorąco; serdecznie
+w συγχαρητήρια | gratulacje
+e Και πρωθυπουργός είστε εσείς! Θερμά συγχαρητήρια! | A premierem zostaje… Pan! Serdeczne gratulacje!
+
+
+@larp aerodromio | Lotnisko | Υπάλληλος | Υ | Ateny, wczesny ranek. Lecisz do Warszawy na ślub najlepszego przyjaciela, a samolot nie poczeka. Masz walizkę, paszport i mało czasu. | Przejdź całą drogę: odprawa, kontrola bezpieczeństwa, bramka, lot i odbiór bagażu w Warszawie.
+fee 0
+reward 20
+strict yes
+story yes
+win Docierasz do Warszawy z walizką, paszportem i pół godziny zapasu. Przyjaciel czeka w hali przylotów z bukietem: „Τα κατάφερες! Ο γάμος μπορεί να αρχίσει!”
+partial Dotarłeś do Warszawy, ale po drodze sporo się nagadałeś i trochę pobiegałeś. Walizka jest, ślub też, ty trochę zdyszany, ale na czas.
+fail Pomyliłeś coś w najgorszym momencie i samolot odleciał bez ciebie. Ślub oglądasz na telefonie, a przyjaciel obiecuje ci długą wyprawę „na pocieszenie”.
+
+@level 1 | Odprawa | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Odprawa
+partner Υπάλληλος | Υ
+scene Lotnisko w Atenach, hala odlotów. Podchodzisz do stanowiska odprawy linii Βορέας Air. Pracowniczka patrzy na ciebie życzliwie i czeka na dokumenty.
+goal Odpraw się na lot do Warszawy: pokaż paszport, nadaj walizkę i wybierz miejsce.
+win Pracowniczka podaje ci kartę pokładową: „Καλό ταξίδι!” Walizka jedzie na taśmie, a ty idziesz do kontroli bezpieczeństwa.
+partial Odprawa udała się, ale pracowniczka kilka razy musiała się domyślać, o co ci chodzi. Karta pokładowa w ręku, czas ucieka.
+fail Pracowniczka nie rozumie, czego chcesz, i prosi następną osobę w kolejce. Musisz zacząć od nowa na końcu kolejki.
+w γκισέ | stanowisko odprawy; okienko
+w Βορέας | Boreasz (nazwa linii: „Βορέας Air”)
+w Air | Air (linia lotnicza)
+w πετάτε | lecicie; leci pan(i) (πετάω)
+w Βαρσοβία | Warszawa
+w καλημέρα
+w πετάω
+t Καλημέρα! Καλώς ήρθατε στο γκισέ της Βορέας Air. Πού πετάτε; | Dzień dobry! Witamy przy stanowisku Boreas Air. Dokąd Pan(i) leci? | Καλημέρα! Πετάω για τη Βαρσοβία. | Przywitaj się i powiedz, że lecisz do Warszawy. | „Lecę” to πετάω, a „do” miasta to για + biernik: τη Βαρσοβία.
+w γάμο | ślub; wesele (biernik)
+w ορίστε
+w διαβατήριο
+w πηγαίνω
+t Το διαβατήριό σας, παρακαλώ. Και γιατί πετάτε στη Βαρσοβία; | Paszport, proszę. A po co Pan(i) leci do Warszawy? | Ορίστε το διαβατήριό μου. Πηγαίνω σε έναν γάμο. | Podaj paszport i powiedz, że jedziesz na ślub. | „Oto” przy podawaniu to ορίστε; „na ślub” to σε έναν γάμο.
+w παραδώσετε | nadać; oddać (παραδίδω; po „να”)
+w παραδώσω | nadać; oddać (παραδίδω; po „να”)
+w θέλω
+w βαλίτσα
+t Τι ωραία! Θέλετε να παραδώσετε βαλίτσα; | Jak miło! Czy chce Pan(i) nadać walizkę? | Ναι, θέλω να παραδώσω μια βαλίτσα. | Powiedz, że chcesz nadać walizkę. | „Nadać (bagaż)” to παραδίδω: θέλω να παραδώσω.
+w βάλτε | połóżcie; proszę położyć (βάζω)
+w ζυγαριά | waga
+w ζυγίζει | waży (ζυγίζω)
+w κιλά | kilogramy
+w χειραποσκευή | bagaż podręczny
+w τσάντα
+t Παρακαλώ βάλτε τη βαλίτσα στη ζυγαριά. Ζυγίζει είκοσι κιλά. Είναι εντάξει. Έχετε και χειραποσκευή; | Proszę postawić walizkę na wadze. Waży dwadzieścia kilo. To w porządku. Czy ma Pan(i) też bagaż podręczny? | Ναι, έχω μια τσάντα για χειραποσκευή. | Powiedz, że masz torbę jako bagaż podręczny. | „Χειραποσκευή” = bagaż podręczny; „για” = na, jako.
+w διάδρομο | przejście (biernik); korytarz
+w θέση
+w δίπλα
+w παράθυρο
+t Θέλετε θέση δίπλα στο παράθυρο ή στον διάδρομο; | Czy woli Pan(i) miejsce przy oknie, czy przy przejściu? | Θέση δίπλα στο παράθυρο, παρακαλώ. | Powiedz, że wolisz miejsce przy oknie. | „Θέση” = miejsce; „δίπλα στο παράθυρο” = przy oknie.
+w επιβίβασης | wejścia na pokład (dopełniacz); „κάρτα επιβίβασης” = karta pokładowa
+w αναχώρηση | odlot; odjazd
+w πτήση | lot
+w στην
+t Ορίστε η κάρτα επιβίβασης. Η αναχώρηση είναι στις δέκα και μισή. Έχετε άλλη ερώτηση; | Oto karta pokładowa. Odlot jest o wpół do jedenastej. Czy ma Pan(i) jeszcze pytanie? | Ναι, είναι η πτήση στην ώρα της; | Zapytaj, czy lot jest punktualny. | „Στην ώρα της” = punktualnie; „πτήση” = lot (rodzaj żeński).
+w ευθεία | prosto
+w ευχαριστώ
+w πολύ
+w γεια
+t Ναι, η πτήση είναι στην ώρα της. Η πύλη σας είναι η δώδεκα. Πηγαίνετε ευθεία. | Tak, lot jest punktualny. Pana(i) bramka to 12. Proszę iść prosto. | Ευχαριστώ πολύ! Γεια σας! | Podziękuj i pożegnaj się. | „Do widzenia” (grzecznie) to γεια σας.
+e Καλό ταξίδι! | Szczęśliwej podróży!
+
+@level 2 | Kontrola bezpieczeństwa | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Kontrola bezpieczeństwa
+partner Αστυνομικός ασφαλείας | Α
+scene Masz kartę pokładową, a przed tobą długa kolejka do kontroli. Funkcjonariusz podaje plastikowe pojemniki i patrzy uważnie na twoją torbę.
+goal Przejdź kontrolę bezpieczeństwa: pokaż laptop, zdejmij pasek i odpowiedz na pytania.
+win Funkcjonariusz kiwa głową: „Όλα εντάξει. Προχωρήστε.” Zakładasz pasek i biegniesz do bramki z pełnym spokojem.
+partial Kontrola przebiegła w końcu bez problemów, ale funkcjonariusz kilka razy zmarszczył brwi. Zakładasz pasek w biegu.
+fail Funkcjonariusz uznaje twoje odpowiedzi za podejrzane. Zostajesz zatrzymany na dodatkową kontrolę, a samolot odlatuje bez ciebie.
+w έλεγχος | kontrola
+w ασφαλείας | bezpieczeństwa (dopełniacz)
+w ιμάντα | taśma (biernik)
+w βεβαίως
+t Καλημέρα! Αυτός είναι ο έλεγχος ασφαλείας. Παρακαλώ βάλτε την τσάντα σας εδώ, στον ιμάντα. | Dzień dobry! To jest kontrola bezpieczeństwa. Proszę położyć torbę tutaj na taśmie. | Βεβαίως. | Zgódź się i powiedz, że oczywiście. | „Oczywiście” to βεβαίως.
+w φορητό | przenośny; „φορητό υπολογιστή” = laptop
+w υπολογιστή | komputer (biernik)
+w βγάλτε | wyjmijcie; proszę wyjąć (βγάζω)
+w υπολογιστής
+t Έχετε φορητό υπολογιστή στην τσάντα; Παρακαλώ βγάλτε τον. | Czy ma Pan(i) w torbie laptop? Proszę go wyjąć. | Ναι, ορίστε ο υπολογιστής μου. | Potwierdź i podaj laptop. | „Mój” przy rodzaju męskim to μου po rzeczowniku: ο υπολογιστής μου.
+w υγρά | płyny
+w άρωμα | perfumy
+w κρέμα | krem
+w μαζί
+t Έχετε υγρά μαζί σας; Για παράδειγμα νερό, άρωμα ή κρέμα; | Czy ma Pan(i) przy sobie płyny? Na przykład wodę, perfumy albo krem? | Όχι, δεν έχω υγρά μαζί μου. | Zaprzecz: nie masz płynów. | „Nie mam” to δεν έχω; „przy sobie” to μαζί μου.
+w ζώνη
+w μπουφάν
+t Παρακαλώ βγάλτε και τη ζώνη και το μπουφάν σας. | Proszę też zdjąć pasek i kurtkę. | Ναι, ορίστε η ζώνη μου και το μπουφάν μου. | Podaj pasek i kurtkę. | Ζώνη jest żeńskie, μπουφάν nijakie.
+w ούτε | ani; „ούτε … ούτε” = ani … ani
+w μαχαίρι
+w όπλο
+w ξέρω
+k Έχετε στην τσάντα σας μαχαίρι ή όπλο; | Czy w Pana(i) torbie jest nóż albo broń? | Όχι, δεν έχω ούτε μαχαίρι ούτε όπλο. | Ναι, έχω ένα μαχαίρι.; Δεν ξέρω, ίσως. | Przyznanie się do noża to natychmiastowe zatrzymanie.; Niepewna odpowiedź przy takim pytaniu wzbudza podejrzenia.
+w περάστε | przejdźcie; proszę przejść (περνάω)
+w ανιχνευτή | skaner; wykrywacz (biernik)
+w μπιπ | pip (dźwięk)
+w τσέπη | kieszeń
+w κλειδί
+w κινητό
+t Περάστε από τον ανιχνευτή. Μπιπ! Έχετε κάτι ακόμα στην τσέπη; | Proszę przejść przez skaner. Pip! Czy ma Pan(i) jeszcze coś w kieszeni? | Ναι, έχω το κλειδί και το κινητό μου. | Powiedz, że masz klucz i telefon. | „Klucz” to το κλειδί, „telefon” to το κινητό.
+w προχωρήστε | idźcie dalej; proszę iść dalej (προχωράω)
+e Όλα εντάξει. Προχωρήστε. Καλό ταξίδι! | Wszystko w porządku. Proszę iść dalej. Szczęśliwej podróży!
+
+@level 3 | Przy bramce | patience=4 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Przy bramce
+partner Υπάλληλος πύλης | Π
+scene Siedzisz przy bramce 12 i patrzysz na zegarek. Nagle w głośnikach coś trzaska, a na tablicy pojawia się napis „Καθυστέρηση”.
+goal Dowiedz się, co z lotem, zrozum komunikat o zmianie bramki i wejdź na pokład.
+win Biegniesz do nowej bramki i wsiadasz jako jeden z ostatnich. Pracownik zamyka drzwi: „Για λίγο!”
+partial Znalazłeś w końcu właściwą bramkę, choć po drodze kilka razy musiałeś dopytywać. Wchodzisz na pokład spocony.
+fail Zrozumiałeś komunikat na opak i czekasz przy złej bramce. Kiedy orientujesz się w błędzie, drzwi samolotu są już zamknięte.
+w πτήσης | lotu (dopełniacz)
+w σωστά | prawda; poprawnie
+w έχει
+w καθυστέρηση
+t Συγγνώμη! Είστε επιβάτης της πτήσης για τη Βαρσοβία; | Przepraszam! Czy jest Pan(i) pasażerem lotu do Warszawy? | Ναι, η πτήση μου έχει καθυστέρηση, σωστά; | Potwierdź i zapytaj, czy twój lot jest opóźniony. | „Ma opóźnienie” to έχει καθυστέρηση; „σωστά;” na końcu znaczy „prawda?”.
+w επιβίβαση | wejście na pokład
+w αρχίζει | zaczyna się (αρχίζω)
+w πότε
+t Ναι, η πτήση έχει σαράντα λεπτά καθυστέρηση. Η επιβίβαση αρχίζει στις έντεκα. | Tak, lot ma czterdzieści minut opóźnienia. Wejście na pokład zacznie się o jedenastej. | Πότε είναι η επιβίβαση; Πηγαίνω σε έναν γάμο. | Zapytaj, kiedy jest wejście na pokład, i dodaj, że jedziesz na ślub. | „Πότε” = kiedy.
+w αλλάξετε | zmienić (αλλάζω; po „να”); „αλλάξετε αεροπλάνο” = przesiąść się
+w κατευθείαν | bezpośrednio; prosto
+t Ένας γάμος, τι ωραία! Η επιβίβαση είναι στις έντεκα. Πρέπει να αλλάξετε αεροπλάνο στη Βαρσοβία; | Ślub, jak miło! Wejście jest o jedenastej. Czy musi Pan(i) się przesiadać w Warszawie? | Όχι, πετάω κατευθείαν για τη Βαρσοβία. | Odpowiedz, że nie, lecisz bezpośrednio. | „Bezpośrednio” to κατευθείαν.
+w ανακοίνωση | ogłoszenie
+w κλειστή | zamknięta (rodzaj żeński)
+w καταλάβατε | zrozumieliście; zrozumiał pan(i) (καταλαβαίνω)
+w έξοδο | wyjście (biernik)
+w πέντε
+w μένω
+k Καλά, κατευθείαν. Προσοχή, ανακοίνωση! Η πτήση για τη Βαρσοβία φεύγει τώρα από την πύλη πέντε. Η πύλη δώδεκα είναι κλειστή. Καταλάβατε; Πού πηγαίνετε; | Dobrze, bezpośrednio. Uwaga, ogłoszenie! Lot do Warszawy odlatuje teraz z bramki 5. Bramka 12 jest zamknięta. Czy Pan(i) zrozumiał(a)? Dokąd Pan(i) idzie? | Πηγαίνω στην πύλη πέντε. | Μένω στην πύλη δώδεκα.; Πηγαίνω στην έξοδο. | Bramka 12 jest zamknięta, więc czekanie tam kończy się spóźnieniem.; Wyjście to wyjście z lotniska, nie bramka na pokład.
+w επιβίβασής | wejścia na pokład (z zaimkiem σας)
+w επιβιβαστείτε | wsiąść na pokład (επιβιβάζομαι; po „να”)
+w επιβιβάζομαι
+t Τότε γρήγορα! Την κάρτα επιβίβασής σας, παρακαλώ. Μπορείτε να επιβιβαστείτε τώρα. | W takim razie szybko! Karta pokładowa, proszę. Może Pan(i) już wsiadać. | Ορίστε η κάρτα μου. Επιβιβάζομαι τώρα. | Podaj kartę i powiedz, że już wsiadasz. | „Wsiadać” to επιβιβάζομαι.
+w ανοιχτή | otwarta (rodzaj żeński)
+e Καλό ταξίδι! Η επιβίβαση είναι ανοιχτή. | Szczęśliwej podróży! Wejście na pokład jest otwarte.
+
+@level 4 | W samolocie i po lądowaniu | patience=4 typed=0.75 extra=3 hint=letters reward=30
+desc Rozdział 4: Lot i przylot
+partner Αεροσυνοδός | Α
+scene Wchodzisz na pokład Βορέας Air. Stewardesa wita pasażerów przy drzwiach, a za chwilę wystartujecie do Warszawy. Po lądowaniu będziesz musiał jeszcze znaleźć kontrolę paszportową i swoją walizkę.
+goal Zajmij miejsce, zapnij pas, poproś o picie, a po lądowaniu dowiedz się, gdzie jest kontrola paszportowa, taśma bagażowa i odprawa celna.
+win Walizka wyjeżdża na taśmie jako pierwsza, a celnik życzy ci „Καλώς ήρθατε στην Πολωνία!” Przyjaciel czeka w hali przylotów.
+partial Wszystko udało ci się znaleźć, ale po drodze trzy razy zapytałeś o drogę. Walizka dojechała, a ty do ślubu zdążysz.
+fail Poszedłeś w złą stronę i straciłeś czas na lotnisku. Walizka krąży samotnie po taśmie, a przyjaciel wydzwania co minutę.
+w αεροσκάφος | samolot
+t Καλημέρα και καλώς ήρθατε στο αεροσκάφος! Την κάρτα επιβίβασής σας, παρακαλώ. | Dzień dobry i witamy na pokładzie! Proszę o kartę pokładową. | Καλημέρα! Ορίστε η κάρτα μου. | Przywitaj się i pokaż kartę pokładową. | „Oto” przy podawaniu to ορίστε.
+w ντουλάπι | schowek; szafka
+w βάζω
+t Η θέση σας είναι η δεκατέσσερα. Είναι θέση δίπλα στο παράθυρο. Παρακαλώ βάλτε την τσάντα σας στο ντουλάπι από πάνω. | Pana(i) miejsce to 14. To miejsce przy oknie. Proszę położyć torbę w schowku na górze. | Ευχαριστώ, βάζω την τσάντα στο ντουλάπι. | Podziękuj i powiedz, że kładziesz torbę do schowka. | „Kładę” to βάζω; „do schowka” to στο ντουλάπι.
+w δέστε | zapnijcie; proszę zapiąć (δένω)
+w απογειωνόμαστε | startujemy (απογειώνομαι)
+w δένω | zapinam; wiążę
+t Παρακαλώ δέστε τη ζώνη σας. Απογειωνόμαστε σε λίγο. | Proszę zapiąć pasy. Za chwilę startujemy. | Ναι, δένω τη ζώνη μου. | Powiedz, że zapinasz pas. | „Zapinam pas” to δένω τη ζώνη μου.
+w πιείτε | wypić (πίνω; po „να”)
+w καφέ
+t Θέλετε κάτι να πιείτε; | Czy chce Pan(i) coś do picia? | Ναι, έναν καφέ, παρακαλώ. | Poproś o kawę. | Καφές jest męski, więc w bierniku έναν καφέ.
+w ρωτήσετε | zapytać (ρωτάω; po „να”)
+w προσγειωνόμαστε | lądujemy (προσγειώνομαι)
+t Ορίστε ο καφές σας. Θέλετε να ρωτήσετε κάτι άλλο; | Oto Pana(i) kawa. Czy chce Pan(i) jeszcze o coś zapytać? | Πότε προσγειωνόμαστε στη Βαρσοβία; | Zapytaj, kiedy lądujecie w Warszawie. | „Kiedy” to πότε, a „lądujemy” to προσγειωνόμαστε.
+w άφιξη | przylot; przybycie
+w διαβατηρίων | paszportów (dopełniacz); „έλεγχος διαβατηρίων” = kontrola paszportowa
+t Προσγειωνόμαστε σε δέκα λεπτά. Καλώς ήρθατε στη Βαρσοβία! Η άφιξη είναι στην ώρα της. | Lądujemy za dziesięć minut. Witamy w Warszawie! Przylot jest punktualny. | Ευχαριστώ! Πού είναι ο έλεγχος διαβατηρίων, παρακαλώ; | Podziękuj i zapytaj, gdzie jest kontrola paszportowa. | Pytanie o miejsce zaczyna się od πού.
+w ιμάντας | taśma
+w αποσκευών | bagaży (dopełniacz); „ιμάντας αποσκευών” = taśma bagażowa
+w τελωνείο | cło; urząd celny
+w πρώτα | najpierw
+w πρώτα | najpierw
+w έλεγχο | kontrola (biernik)
+k Ο έλεγχος διαβατηρίων είναι αριστερά. Μετά ο ιμάντας αποσκευών και μετά το τελωνείο. Πού πηγαίνετε πρώτα; | Kontrola paszportowa jest po lewej. Potem taśma bagażowa, a potem cło. Dokąd Pan(i) idzie najpierw? | Πρώτα πηγαίνω στον έλεγχο διαβατηρίων. | Πρώτα πηγαίνω στο τελωνείο.; Πρώτα πηγαίνω στον ιμάντα αποσκευών. | Do cła idziesz na końcu, po odbiorze walizki.; Walizkę odbierasz dopiero po kontroli paszportowej.
+w ακριβώς | dokładnie
+w έρθει | przyjść; przyjedzie (έρχομαι; po „θα”)
+w παίρνω
+t Ακριβώς! Και μετά στον ιμάντα αποσκευών. Η βαλίτσα σας θα έρθει στον ιμάντα τέσσερα. | Dokładnie! A potem do taśmy bagażowej. Pana(i) walizka przyjedzie na taśmie czwartej. | Ευχαριστώ πολύ! Παίρνω τη βαλίτσα από τον ιμάντα. | Podziękuj i powiedz, że zdejmiesz walizkę z taśmy. | „Z taśmy” to από τον ιμάντα.
+w δηλώσετε | zgłosić do oclenia (δηλώνω; po „να”)
+w ρωτάει | pyta (ρωτάω)
+w δηλώσω | zgłosić do oclenia (δηλώνω; po „να”)
+w τίποτα
+t Έχετε κάτι να δηλώσετε; Αυτό ρωτάει το τελωνείο. | Czy ma Pan(i) coś do oclenia? O to zapyta cło. | Όχι, δεν έχω τίποτα να δηλώσω. | Powiedz, że nie masz nic do oclenia. | „Nic” to τίποτα: δεν έχω τίποτα.
+e Τότε όλα είναι εντάξει. Καλώς ήρθατε στην Πολωνία και καλή διασκέδαση στον γάμο! | Wtedy wszystko w porządku. Witamy w Polsce i dobrej zabawy na ślubie!

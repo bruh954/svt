@@ -46,7 +46,7 @@ def canon(w, known):
 def tok(text, known, punct):
     t = bulk.tokenize(text, known, punct)
     for i in range(1, len(t)):
-        if t[i - 1] in ".!?" and t[i] not in known and t[i].lower() in known:
+        if t[i - 1] in ".!?;" and t[i] not in known and t[i].lower() in known:
             t[i] = t[i].lower()
     t = [x if x in punct else canon(x, known) for x in t]
     if MISSING is not None:

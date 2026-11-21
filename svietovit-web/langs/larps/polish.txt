@@ -236,3 +236,853 @@ w wolne | free, vacant
 w opóźnienia | of delay (genitive of opóźnienie)
 t To miejsce jest wolne. Pociąg ma dziesięć minut opóźnienia. | This seat is free. The train is ten minutes late. | To nie jest problem. Dziękuję! | Say it is not a problem and thank him. | „Nie jest problem” means “it is not a problem”.
 e Szczęśliwej podróży do Gdańska! | Have a good trip to Gdańsk!
+
+@larp oma | Granny in the park | Babcia Halina | H | Sunday in the park. An elderly lady sits on a bench; she loves to chat and has the whole afternoon. | Sit with Granny Halina and talk to her. Nobody is going to send you away.
+fee 0
+reward 10
+story yes
+win Granny Halina beams: „Jaki miły młody człowiek!” She invites you for Sunday tea and a slice of cake.
+partial The conversation went on, though you had to ask her to repeat several times. Granny Halina smiles patiently and invites you again.
+fail Granny Halina never gives up, because her patience is endless. If you ever see this message, write to us.
+
+@level 1 | On the bench | patience=3 endless=yes typed=0 extra=2 hint=none
+desc Chapter 1: Getting to know each other
+scene Park, bench, sunshine. An old lady feeds crumbs to the sparrows and starts a conversation. There is no need to hurry: Granny Halina will wait.
+goal Say hello, tell her your name and where you are from.
+win Granny Halina pats the bench beside her: „Niech pan usiądzie, Pawle!” You stay a while longer.
+partial The conversation worked out, despite a few mistakes. Granny Halina keeps her patience and makes room for you on the bench.
+fail Granny Halina never gives up.
+w człowieku | man (vocative of człowiek: młody człowieku = young man)
+w ładna | pretty, nice (feminine)
+t Dzień dobry, młody człowieku! Dzisiaj jest ładna pogoda, prawda? | Good afternoon, young man! The weather is lovely today, isn't it? | Tak, pogoda jest bardzo ładna. | Agree that the weather is nice. | „Pogoda” is feminine, so the adjective is „ładna”. | Tak, dzisiaj jest ładna pogoda.; Tak, jest ładna.
+w takie | such (neuter plural/neuter)
+w ciepłe | warm (neuter)
+w nazywa | calls; się nazywa = is called
+w Halina | Halina (first name)
+w nazywam | I call (nazywam się = my name is)
+w Paweł | Paweł (first name, Paul)
+t Tak, a słońce jest takie ciepłe! Jak się pan nazywa? Ja jestem Halina. | Yes, and the sun is so warm! What is your name? I am Halina. | Nazywam się Paweł. | Say what your name is. | „Nazywam się” means “my name is” (literally “I call myself”). | Jestem Paweł.
+w ładne | pretty, nice (neuter)
+w mieszka | lives (mieszkać)
+w przyjechałem | I came, I arrived (male speaker)
+t Paweł! Ładne imię. Mieszka pan tutaj? | Paweł! A nice name. Do you live here? | Nie, nie mieszkam tutaj. Jestem z Anglii. | Say no, you do not live here; you are from England. | „Nie” goes before the verb: nie mieszkam. „Z” + genitive: z Anglii. | Nie, nie mieszkam tutaj. Przyjechałem z Anglii.
+w chciałby | would like (he/you polite: czy chciałby pan = would you like)
+w usiąść | to sit down
+t Z Anglii! To daleko. Czy chciałby pan usiąść? | From England! That is far. Would you like to sit down? | Tak, poproszę. Dziękuję bardzo! | Say yes and thank her. | „Poproszę” is a polite “yes, please”. | Tak, chętnie. Dziękuję!
+e Proszę bardzo! Tutaj jest miejsce. | You are welcome! There is room here.
+
+@level 2 | Grandson and ducks | patience=3 endless=yes typed=0.25 extra=3 hint=bank
+desc Chapter 2: Grandson and cake
+scene Little Maciek runs about on the lawn feeding the ducks, and Granny Halina shows you photos from her purse. From her bag she takes out a homemade cake.
+goal Talk about her grandson Maciek, say whether you have children, and try the cake.
+win Granny Halina hands you a second slice: „Jedz, jedz, jesteś za chudy!” Maciek waves to you from afar.
+partial You ate the cake, though you were short of words a few times. Granny Halina tops up your tea from the flask.
+fail Granny Halina does not lose patience.
+w niech | let; niech pan patrzy = look
+w patrzy | looks (patrzeć)
+w Maciek | Maciek (first name)
+w lat | years (genitive plural of rok, used with numbers)
+t Niech pan patrzy, to mój wnuk Maciek. Ma sześć lat. | Look, this is my grandson Maciek. He is six years old. | Jest bardzo miły. | Praise the grandson; say he is very nice. | „Jest” means “he is”; „miły” is masculine. | Maciek jest bardzo miły.; Jest bardzo sympatyczny.
+w karmi | feeds (karmić)
+w kaczki | ducks
+w dzieci | children
+t Dziękuję! Maciek karmi kaczki. A czy pan ma dzieci? | Thank you! Maciek is feeding the ducks. And do you have children? | Nie, nie mam dzieci. | Say you do not have children. | After „nie mam” comes the genitive: dzieci. | Nie mam dzieci.
+w sama | by herself
+w upiekłam | I baked (female speaker)
+w smaczne | tasty (neuter)
+w dobre | good (neuter)
+t Nie ma pan dzieci? Rozumiem. Proszę, niech pan weźmie kawałek ciasta. Sama je upiekłam. | You have no children? I see. Here, take a piece of cake. I baked it myself. | Dziękuję! Ciasto jest bardzo smaczne. | Thank her and praise the cake. | „Ciasto” is neuter, so „smaczne”. | Dziękuję bardzo! Ciasto jest bardzo dobre.
+w cieszę | I am glad (cieszę się)
+t Cieszę się, że panu smakuje! A ile ma pan lat? | I am glad you like it! And how old are you? | Mam trzydzieści lat. | Say you are thirty years old. | Age uses „mam … lat” (literally “I have … years”). | Mam trzydzieści.
+w ach | oh
+e Ach, taki młody! | Oh, so young!
+
+@level 3 | The invitation | patience=3 endless=yes typed=0.5 extra=3 hint=bank
+desc Chapter 3: Tea on Sunday
+scene The sun is going down. Granny Halina packs her flask and asks you for help. Before you get up from the bench, she wants to invite you.
+goal Accept the invitation to Sunday tea and help Granny with her bag.
+win Granny Halina writes her address on a napkin: „Przyjdź głodny!” You go home in a great mood.
+partial Everything got sorted out, though you had to repeat things several times. Granny Halina says: „Do niedzieli, chłopcze!”
+fail Granny Halina does not lose patience.
+w wie | knows (wie pan = you know)
+w parku | park (locative: w parku = in the park)
+w codziennie | every day
+t Wie pan, jestem w parku codziennie. Tutaj jest tak pięknie. | You know, I am in the park every day. It is so beautiful here. | Tak, park jest naprawdę piękny. | Agree that the park is really beautiful. | „Naprawdę” means “really”; „park” is masculine, so „piękny”. | Tak, tutaj jest naprawdę ładnie.
+w niedzielę | Sunday (accusative: w niedzielę = on Sunday)
+w robię | I make, I do
+t Prawda? W niedzielę robię herbatę i ciasto. Czy chciałby pan przyjść? | Isn't it? On Sundays I make tea and cake. Would you like to come? | Tak, chętnie. Kiedy? | Say yes and ask when. | „Kiedy?” means “when?”. | Tak, bardzo chętnie. Kiedy?
+w trzeciej | third (o trzeciej = at three o'clock)
+w ojej | oh dear
+w ciężka | heavy (feminine)
+w poniosę | I will carry (perfective)
+w torbę | bag (accusative of torba)
+w niosę | I am carrying
+t O trzeciej. Ojej, moja torba jest ciężka. Może pan mi pomóc? | At three o'clock. Oh dear, my bag is heavy. Can you help me? | Tak, oczywiście. Poniosę torbę. | Agree and offer to carry the bag. | „Poniosę” means “I will carry” (perfective future). | Tak, oczywiście. Niosę torbę.
+w zobaczenia | seeing (do zobaczenia = see you)
+w niedzieli | Sunday (genitive: do niedzieli = until Sunday)
+t Jaki pan miły! To dobry człowiek. | How kind you are! You are a good man. | Dziękuję! Do zobaczenia w niedzielę! | Thank her and say goodbye until Sunday. | „Do zobaczenia” means “see you”; „w niedzielę” means “on Sunday”. | Dziękuję! Do widzenia, do niedzieli!
+w chłopcze | boy (vocative of chłopiec)
+e Do niedzieli! Do widzenia, drogi chłopcze! | See you on Sunday! Goodbye, dear boy!
+
+
+@larp spion | Spy | Kontakt | K | You are an undercover agent. In Warsaw you must collect a secret file from an embassy and pass it on. One wrong word and you are exposed. | Keep your cover as the merchant Kowalski, get the file and escape with the suitcase.
+fee 0
+reward 20
+strict yes
+story yes
+win The suitcase is in your hands and the ship leaves the port. Someone at headquarters whispers: „Dobra robota, Sokole.” Your cover never broke.
+partial The mission succeeded, but several times on the way you nearly gave yourself away. Headquarters notes: „Miał szczęście.”
+fail You gave yourself away with a single word. The cover is blown and you vanish into the dark without the file or the suitcase.
+
+@level 1 | The codeword at the station | patience=2 typed=0 extra=1 hint=none
+desc Chapter 1: The contact at the station
+partner Mężczyzna w kapeluszu | M
+scene Warsaw, evening, a platform at the station. You are agent „Sokół”, but to everyone else you are Mr Kowalski, a toy merchant from Poznań (Kowalski i Syn). A man in a hat waits on the platform. Codeword: „Zima przychodzi wcześnie.” Reply: „A lato przychodzi późno.”
+goal Give the codeword, do not betray your cover and accept the task. One wrong answer and you are exposed.
+win The man in the hat vanishes into the crowd and you are left with an envelope in your pocket. Your cover is intact and tomorrow at eight the embassy awaits.
+partial You got the task, but the contact frowned at some of your answers. Be more careful tomorrow.
+fail The man in the hat gave you a cold look, turned around and walked away. Someone else will get the task.
+w przychodzi | comes, arrives (przychodzić)
+t Dobry wieczór. Dzisiaj jest zimno, prawda? | Good evening. It is cold today, isn't it? | Tak, jest zimno. Zima przychodzi wcześnie. | Agree that it is cold and say the codeword: winter comes early. | The codeword is „Zima przychodzi wcześnie.” | Tak, bardzo zimno. Zima przychodzi wcześnie.
+w ciii | sh! (hush)
+w słuchają | they listen (słuchać)
+w Kowalski | Kowalski (surname; your cover)
+w kupcem | merchant (instrumental of kupiec)
+w Sokół | Sokół (falcon; your agent name)
+w agentem | agent (instrumental of agent)
+k A lato przychodzi późno. Ciii! Tu ludzie słuchają. Jak się pan nazywa? | And summer comes late. Sh! People are listening here. What is your name? | Nazywam się Kowalski. Jestem kupcem. | Nazywam się Sokół. Jestem agentem.; Nazywam się Kowalski. Jestem agentem. | Sokół is your agent name, and people are listening.; Kowalski is right, but „agentem” blows your cover.
+w panie | Mr (vocative of pan: panie Kowalski)
+w śledzi | follows, shadows (śledzić)
+w mnie | me (accusative, genitive)
+w czasu | time (genitive of czas)
+k Dobrze, panie Kowalski. Czy ktoś pana śledzi? | Good, Mr Kowalski. Is anyone following you? | Nie, nikt mnie nie śledzi. | Tak, ktoś mnie śledzi.; Nie, nie mam czasu. | You say that nobody is following you.; The contact asks about being followed, not about time.
+w ósmej | eighth (o ósmej = at eight)
+w ambasady | embassy (genitive of ambasada: do ambasady = to the embassy)
+t Bardzo dobrze. Oto pana zadanie. Jutro o ósmej idzie pan do ambasady. Jest tam przyjęcie. | Very good. Here is your task. Tomorrow at eight you go to the embassy. There is a party. | Rozumiem. Jutro o ósmej idę do ambasady. | Say you understand: tomorrow at eight you go to the embassy. | „Zadanie” means task; „o ósmej” means “at eight”. | Rozumiem. Idę jutro o ósmej do ambasady.
+w Słowik | Nightingale (the password)
+w jakie | what kind of, which (neuter, plural)
+w hasłem | codeword, password (instrumental of hasło)
+t Dobrze. Hasło na przyjęcie to Słowik. Jakie jest hasło? | Good. The password for the party is Nightingale. What is the password? | Hasło to Słowik. | Repeat the password for the party. | „Hasło” means password; „słowik” is a nightingale. | Hasłem jest Słowik.
+w zna | knows (a person)
+w znam | I know (a person)
+d Bardzo dobrze. Ciii! Idzie policjant. Czy pan mnie zna? | Very good. Sh! A policeman is coming. Do you know me? | Nie, nie znam pana. | Deny that you know this man. | You must not reveal that you know the contact. | Nie, nie znam pana!
+e Dobranoc, panie Kowalski. | Good night, Mr Kowalski.
+
+@level 2 | The embassy party | patience=2 typed=0.2 extra=3 hint=bank
+desc Chapter 2: The embassy party
+partner Pani Bielska | B
+scene The next evening. A party is on at the embassy, and Mrs Bielska, the secretary, stands at the entrance. She and the guests ask questions about your “company”. Your cover: Kowalski i Syn, toys, Poznań. Entry password: Słowik. The ambassador's office is on the right, the toilets on the left.
+goal Get into the party, do not betray yourself under questions about the company, and find a pretext to reach the office.
+win Mrs Bielska waves you goodbye, and in the office lies the file you came for. Nobody suspects anything.
+partial You got in and reached the office, but Mrs Bielska looked at you longer than she should have.
+fail Mrs Bielska stops smiling and signals to security. In a moment you will be escorted out of the embassy.
+w witamy | we welcome (witamy w = welcome to)
+w ambasadzie | embassy (locative: w ambasadzie = in the embassy)
+t Dobry wieczór i witamy w ambasadzie! Jakie jest hasło? | Good evening and welcome to the embassy! What is the password? | Hasło to Słowik. | Give the entry password. | „Hasło” means password, and „słowik” is a nightingale. | Hasłem jest Słowik.
+w muszę | I must
+w zapytać | to ask
+w sobie | to oneself (przy sobie = on one, with one)
+w broni | weapon (genitive of broń)
+w teczki | file, folder (genitive of teczka)
+k Dziękuję. Muszę o coś zapytać. Czy ma pan przy sobie broń? | Thank you. I must ask you something. Do you have a weapon on you? | Nie, nie mam broni. | Tak, mam broń.; Nie, nie mam teczki. | One does not enter a party with a weapon.; The question is about a weapon (broń), not a file.
+w firmy | company (genitive of firma)
+w Syn | Son (Kowalski i Syn = Kowalski and Son)
+w centrali | headquarters (genitive: dla centrali = for headquarters)
+w Bielskiej | Bielska (genitive/dative of Bielska)
+k Dobrze. Dla kogo pan pracuje? | Good. Who do you work for? | Pracuję dla firmy Kowalski i Syn. | Pracuję dla centrali.; Pracuję dla pani Bielskiej. | „Centrala” is your secret headquarters, not a company.; Mrs Bielska is the embassy secretary.
+w sprzedaje | sells (sprzedawać)
+w zabawki | toys
+w sprzedajemy | we sell
+d Kowalski i Syn, rozumiem. Co sprzedaje pana firma? | Kowalski i Syn, I see. What does your company sell? | Moja firma sprzedaje zabawki. | Say what your “company” sells (your cover). | Your cover is the toy trade. | Sprzedajemy zabawki.; Moja firma sprzedaje zabawki!
+w ciekawie | interestingly
+w Poznaniu | Poznań (locative: w Poznaniu = in Poznań)
+k Zabawki, jak ciekawie! Gdzie jest pana firma? | Toys, how interesting! Where is your company? | Moja firma jest w Poznaniu. | Moja firma sprzedaje zabawki.; Moja firma nazywa się Kowalski i Syn. | „Gdzie” means “where”, not “what does it sell”.; „Gdzie” asks about a place, not a name.
+w wspaniale | wonderful, great
+t Poznań, wspaniale! Czy chciałby pan coś zjeść? | Poznań, lovely! Would you like something to eat? | Nie, dziękuję. Gdzie jest toaleta, proszę? | Decline and ask where the toilet is (this is a pretext). | „Gdzie” means “where”, so „Gdzie jest toaleta?”. | Nie, dziękuję. Gdzie jest toaleta?
+w pójdę | I will go (perfective)
+k Toaleta jest po lewej. Gabinet po prawej jest prywatny. | The toilet is on the left. The office on the right is private. | Dziękuję, pójdę w lewo. | Dziękuję, pójdę w prawo.; Dziękuję, gabinet jest ładny. | The office on the right is private, and you go to the toilet on the left.; You must not say you want to go to the office.
+w wieczoru | evening (genitive: miłego wieczoru = have a pleasant evening)
+e Miłego wieczoru, panie Kowalski! | Have a pleasant evening, Mr Kowalski!
+
+@level 3 | The interrogation | patience=1 typed=0.35 extra=3 hint=bank
+desc Chapter 3: The interrogation
+partner Pan Krawczyk | K
+scene You have the file in your bag, but in the corridor a suspicious security guard, Mr Krawczyk, stops you. He is about to ask about everything. Remember: Kowalski, merchant, Poznań. Here every wrong answer ends the mission.
+goal Convince the guard that you are an ordinary guest and leave with the file.
+win Krawczyk lets you through with a sour face. You leave the embassy, and the file in your bag is heavy as lead.
+partial Krawczyk finally lets you go, but writes your name in his notebook.
+fail Krawczyk grabs your arm: „Idzie pan ze mną!” The mission is over before it really began.
+w kim | whom, who (instrumental of kto: kim pan jest = who are you)
+w robi | does, makes
+w gościem | guest (instrumental of gość)
+w szukam | I am looking for
+w toalety | toilet (genitive of toaleta)
+t Stać! Kim pan jest? Co pan tu robi? | Stop! Who are you? What are you doing here? | Jestem gościem. Szukam toalety. | Say that you are a guest and are looking for the toilet. | „Szukam” means “I am looking for”; „gościem” is instrumental after „jestem”. | Jestem gościem, szukam toalety.
+w gabinecie | office (locative of gabinet: w gabinecie = in the office)
+w toalecie | toilet (locative of toaleta)
+k Toaleta jest tam. Czy był pan w gabinecie? | The toilet is over there. Were you in the office? | Nie, nie byłem w gabinecie. | Tak, byłem w gabinecie.; Nie, nie byłem w toalecie. | Admitting it ends your cover.; The question is about the office, not the toilet.
+w hm | hm
+w torbie | bag (locative of torba: w torbie = in the bag)
+w teczkę | file, folder (accusative of teczka)
+k Hm, dobrze. Co ma pan w torbie? | Hm, good. What do you have in your bag? | W torbie mam tylko pieniądze i telefon. | W torbie mam teczkę.; Mam torbę. | A file in the bag would give you away at once.; The guard asks what is in the bag, not whether you have one.
+d Pieniądze i telefon, hm. Jak się pan nazywa i gdzie pan mieszka? | Money and a phone, hm. What is your name and where do you live? | Nazywam się Kowalski i mieszkam w Poznaniu. | Give your cover name and the city where you live (Poznań). | Kowalski and Poznań are your cover. | Jestem Kowalski i mieszkam w Poznaniu.
+k Kowalski, Poznań. Jest pan agentem, prawda? | Kowalski, Poznań. You are an agent, aren't you? | Nie, nie jestem agentem. Jestem kupcem. | Tak, ale to tajemnica.; Tak, pracuję dla centrali. | Do not admit the secret even as a joke.; Admitting headquarters is the end.
+w zobaczymy | we will see
+w zawołam | I will call
+w panią | Mrs, lady (accusative of pani)
+w Bielską | Bielska (accusative of Bielska)
+w wszystkich | all (genitive/accusative plural)
+w gości | guests (genitive/accusative plural of gość)
+w Bielska | Bielska (surname)
+t Zobaczymy. Zawołam panią Bielską. Zna wszystkich gości. Czy zna pana? | We will see. I will call Mrs Bielska. She knows all the guests. Does she know you? | Tak, pani Bielska mnie zna. Jestem gościem. | Say that Mrs Bielska knows you. | „Mnie zna” means “knows me”. | Tak, pani Bielska mnie zna.
+w kogoś | someone (accusative)
+w widział | saw (male)
+w nikogo | nobody (genitive: nikogo nie widziałem = I saw nobody)
+w widziałem | I saw (male speaker)
+d Dobrze. W ambasadzie jest agent. Czy pan kogoś widział? | Fine. There is an agent in the embassy. Did you see anybody? | Nie, nikogo nie widziałem. | Deny seeing anyone. | „Nikogo nie” means “nobody”; you are that agent yourself. | Nie, nikogo nie widziałem!
+w no | well (no dobrze = all right)
+e No dobrze. Niech pan idzie do domu, panie Kowalski. | All right. Go home, Mr Kowalski.
+
+@level 4 | The suitcase and the escape | patience=1 typed=0.5 extra=3 hint=letters reward=30
+desc Chapter 4: The suitcase swap
+partner Pan Wilk | W
+scene The next morning, the port of Gdańsk. Mr Wilk from headquarters waits with a suitcase full of money. You will swap it for the file. New codeword: „Kruk”. But someone is following you: in the crowd there is a traitor who wants the file for himself.
+goal Swap the file for the suitcase, do not let the traitor expose you and board the ship.
+win The ship leaves, and you stand on deck with the suitcase. Mr Wilk waves from the quay: „Szczęśliwej drogi, Sokole!”
+partial You escaped, but the traitor managed to see your face. Mission accomplished, but your cover is burned.
+fail The traitor was faster. The suitcase and the file are gone, and you stay on the quay empty-handed.
+w Kruk | Raven (the codeword)
+d Dzień dobry. Jakie jest dzisiaj hasło? | Good morning. What is the codeword today? | Hasło to Kruk. | Give today's codeword. | „Hasło” is the codeword, and today it is „Kruk”. | Hasłem jest Kruk!
+w teczka | file, folder
+k Dobrze. Gdzie jest teczka? | Good. Where is the file? | Teczka jest w mojej torbie. | Teczka jest u pani Bielskiej.; Teczka to tajemnica. | You have the file on you, in your bag.; The contact asks where the file is, not about a secret.
+w środku | middle (w środku = inside)
+w wziąć | to take
+w biorę | I take
+w walizkę | suitcase (accusative of walizka)
+t Dobrze. Oto walizka. Pieniądze są w środku. Proszę ją wziąć. | Good. Here is the suitcase. The money is inside. Please take it. | Dziękuję. Biorę walizkę. | Thank him and take the suitcase. | „Walizka” is feminine, accusative „walizkę”; „biorę” means “I take”. | Dziękuję. Wezmę walizkę.
+w zdrajca | traitor
+w mną | me (instrumental: za mną = behind me)
+w robimy | we do
+w odchodzimy | we leave, we go away
+w zostajemy | we stay
+w pijemy | we drink
+w rozmawiamy | we talk
+w tym | this (instrumental/locative: z tym = with this)
+k Uwaga! Ten mężczyzna tam to zdrajca. Idzie za mną. Co robimy? | Look out! That man over there is a traitor. He is following me. What do we do? | Szybko stąd odchodzimy. | Zostajemy tutaj i pijemy kawę.; Rozmawiamy z tym mężczyzną. | The traitor is following you, so you must get away.; One does not talk to a traitor.
+w strony | side (z lewej strony = from the left)
+w idziemy | we go
+w portu | port (genitive: do portu = to the port)
+k Tak, szybko! Zdrajca idzie z lewej strony. Idziemy w lewo na dworzec czy w prawo do portu? | Yes, quickly! The traitor is coming from the left. Do we go left to the station or right to the port? | Idziemy w prawo do portu. | Idziemy w lewo na dworzec.; Idziemy do domu. | The traitor comes from the left, so you go right, to the port.; The question is about the port or the station, not about home.
+w dawaj | give! (informal imperative)
+w oddam | I will give back
+w walizki | suitcase (genitive of walizka)
+d Stać! Dawaj walizkę! Mam broń! | Stop! Give me the suitcase! I have a weapon! | Nie, nie oddam panu walizki. | Refuse to hand over the suitcase. | „Nie oddam” means “I will not give back”; after a negation the genitive: walizki. | Nie, nie oddam panu walizki!
+w brawo | well done
+w odpływa | sails away, leaves (odpływać)
+t Brawo! Szybko! Statek zaraz odpływa. Czy ma pan jeszcze walizkę? | Well done! Quick! The ship is about to leave. Do you still have the suitcase? | Tak, mam ją jeszcze. | Confirm that you still have the suitcase. | „Jeszcze” means “still”. | Tak, walizka jest jeszcze u mnie.
+w robota | job, work (dobra robota = good job)
+w Sokole | Falcon (vocative of Sokół)
+w zakończona | finished (feminine)
+e Dobra robota, Sokole! Misja zakończona. Do widzenia! | Well done, Falcon! The mission is over. Goodbye!
+
+
+@larp zeitreise | Time travel | Strażnik | S | You wake up in the year 1450 outside the walls of the Polish town of Lipowiec. Nobody must find out that you come from the future, because for strange things and strange words the Middle Ages threaten the stake. | Do not get detected as a visitor from the future: avoid everything that does not fit the year 1450 and survive until the end of the day.
+fee 0
+reward 15
+strict yes
+story yes
+win The mayor nods: „Uczciwy podróżnik!” Nobody suspects where you really come from. In the evening you find the way back, and all that is left in your pocket is a copper coin as a souvenir.
+partial You survived the day, but several times people looked at you suspiciously. The mayor orders you watched, so you slip out of the town at dawn.
+fail Someone noticed that you are not from here. The guard shouts: „Czarownik! Czarodziej!” and you must run. The time trip ended sooner than you wanted.
+
+@level 1 | The town gate | patience=5 typed=0 extra=1 hint=none
+partner Strażnik Jan | J
+desc Chapter 1: The gate of Lipowiec
+scene The year 1450. You stand before the great wooden gate of the town of Lipowiec. The guard Jan stops every traveller and asks questions. You wear ordinary clothes, but things from the future are still in your pockets.
+goal Answer the guard's questions so as not to raise suspicion: introduce yourself, say where you come from and how you travel. Watch out for things that did not yet exist in 1450.
+win Jan opens the gate: „Witaj w Lipowcu!” Nothing aroused his suspicion, and you enter the town.
+partial Jan finally lets you in, but looks at you longer than you would like. You enter the town feeling that someone is watching you.
+fail Jan raises his halberd: „Ty nie jesteś podróżnikiem!” The gate slams shut and you run into the forest.
+w stój | stop! (imperative of stać)
+w miasta | town (genitive of miasto)
+w Lipowiec | Lipowiec (fictional town)
+w podróżnikiem | traveller (instrumental of podróżnik)
+w wędrowcem | wanderer (instrumental of wędrowiec)
+t Stój! To jest brama miasta Lipowiec. Kim jesteś? | Stop! This is the gate of the town of Lipowiec. Who are you? | Jestem podróżnikiem. | Say that you are a traveller. | After „jestem” comes the instrumental case: podróżnik → podróżnikiem. | Jestem wędrowcem.
+w podróżnik | traveller
+w Jan | Jan (first name, John)
+w Kevin | Kevin (first name)
+w Jessica | Jessica (first name)
+k Podróżnik. Jak masz na imię? | A traveller. What is your name? | Mam na imię Jan. | Mam na imię Kevin.; Mam na imię Jessica. | Kevin and Jessica are modern names, and in 1450 nobody named children that. The guard would take you for a weirdo.; Jessica is a modern English name from the twentieth century. In 1450 popular names were Jan, Piotr or Mikołaj.
+w pochodzisz | you come from (pochodzić)
+w pochodzę | I come from
+w przyszłości | future (genitive of przyszłość: z przyszłości = from the future)
+w Ameryki | America (genitive: z Ameryki = from America)
+k Jan, dobre imię. Skąd pochodzisz? | Jan, a good name. Where do you come from? | Pochodzę z Anglii. | Pochodzę z przyszłości.; Pochodzę z Ameryki. | Admitting you come from the future gives you away. Nobody in 1450 would understand such words.; America has not been discovered yet, Columbus sails only in 1492.
+w podróżujesz | you travel
+w pieszo | on foot
+w konno | on horseback
+w podróżuję | I travel
+w samochodem | car (instrumental of samochód: jadę samochodem = I go by car)
+w pociągiem | train (instrumental of pociąg)
+k Anglia, to daleko! Jak podróżujesz? Pieszo czy konno? | England, that is far! How do you travel? On foot or on horseback? | Podróżuję konno. | Podróżuję samochodem.; Podróżuję pociągiem. | There are no cars in 1450. The guard would think you are mad or possessed.; There are no trains yet either, the first railway appears only in the nineteenth century.
+w pokaż | show! (imperative)
+w kartę | card (accusative of karta)
+w kredytową | credit (adjective, accusative feminine)
+k Konno, dobrze. Pokaż torbę. Co tam masz? | On horseback, good. Show me your bag. What do you have there? | Mam tylko chleb i piwo. | Mam telefon.; Mam kartę kredytową. | A phone in 1450? The guard would take it for a magic device and call the watch.; A plastic credit card would look like magic to him. Money then means coins.
+w możesz | you can
+w karczma | inn, tavern
+t Dobrze, możesz wejść. Jesteś głodny? | Good, you may go in. Are you hungry? | Tak, jestem głodny. Gdzie jest karczma? | Say you are hungry and ask where the inn is. | „Gdzie” means “where”, and „karczma” is an inn. | Tak, jestem bardzo głodny. Gdzie jest karczma?
+w pobytu | stay (genitive of pobyt)
+w Lipowcu | Lipowiec (locative: w Lipowcu = in Lipowiec)
+e Karczma jest zaraz po lewej. Miłego pobytu w Lipowcu! | The inn is right on the left. Enjoy your stay in Lipowiec!
+
+@level 2 | The inn | patience=5 typed=0.15 extra=3 hint=bank
+partner Karczmarz Bartek | B
+desc Chapter 2: The inn „Pod Czerwonym Wołem”
+scene You enter the inn. The innkeeper Bartek is curious and asks about everything: what you want to eat, how you travel and what you need for the night. The inn has no electricity and no modern drinks.
+goal Order food and drink that could have been served in the Middle Ages, arrange a bed and do not mention anything from the future.
+win Bartek slaps you on the back: „Dobry z ciebie gość!” You get a seat by the fire and a full plate. Nobody suspects that you are from the future.
+partial Bartek looks at you suspiciously, but serves the food. You sleep badly, because you keep thinking about what you said.
+fail Bartek shouts: „Co to jest Wi-Fi?!” The guests turn towards you, and you barely escape through the back door.
+w witaj | welcome (to one person)
+w karczmie | inn (locative: w karczmie = in the inn)
+w chcesz | you want (informal)
+t Witaj w karczmie! Co chcesz zjeść? Mamy chleb i zupę. | Welcome to the inn! What would you like to eat? We have bread and soup. | Poproszę chleb i zupę. | Order bread and soup. | „Poproszę” is a polite way to order, followed by the accusative: chleb, zupę. | Chcę chleb i zupę.
+w będziesz | you will be (informal)
+w colę | cola (accusative of cola)
+k Chleb i zupa, dobrze. A co będziesz pić? Mamy piwo, wino i wodę. | Bread and soup, good. And what will you drink? We have beer, wine and water. | Poproszę piwo. | Poproszę kawę.; Poproszę colę. | Coffee reached Europe only in the seventeenth century.; Coca-Cola was created in the nineteenth century. In 1450 nobody knows it.
+w pewno | certainly (na pewno = surely)
+w dni | days (genitive plural of dzień)
+w jedziesz | you go, you travel (by vehicle)
+w drodze | road (locative: w drodze = on the way)
+t Piwo, dobrze. Jesteś na pewno zmęczony. Ile dni już jedziesz? | Beer, good. You must be tired. How many days have you been travelling? | Jadę już dziesięć dni. | Say that you have been on the road for ten days. | „Już” means “already”; „dziesięć dni” takes the genitive plural. | Jestem w drodze dziesięć dni.
+w pojedziemy | we will go (by vehicle)
+w weźmiemy | we will take (perfective)
+w wóz | cart, wagon
+w wozem | cart (instrumental of wóz: jadę wozem = I go by cart)
+w pojadę | I will go (by vehicle)
+w rowerem | bicycle (instrumental of rower)
+k Dziesięć dni, to długo! Jutro jadę na targ. Pojedziemy razem? Weźmiemy wóz. | Ten days, that is long! Tomorrow I am going to the market. Shall we go together? We will go by cart. | Tak, chętnie. Pojedziemy wozem. | Tak, pojedziemy samochodem.; Nie, pojadę rowerem. | There are no cars. Bartek does not know such a word.; The bicycle was invented only in the nineteenth century. In 1450 people travel by cart or on horseback.
+w pokoju | room (locative of pokój: w pokoju = in the room)
+w potrzebujesz | you need
+w czegoś | something (genitive)
+w świecę | candle (accusative of świeca)
+w Wi-Fi | Wi-Fi
+k Dobrze. W pokoju jest łóżko. Czy potrzebujesz jeszcze czegoś? | Good. There is a bed in the room. Do you need anything else? | Tak, poproszę świecę. | Czy jest Wi-Fi?; Poproszę gniazdko. | In 1450 there is no internet. Bartek does not know what Wi-Fi is.; Electric sockets were invented centuries later. In the evening people use candles.
+w kufel | mug, tankard
+w piwa | beer (genitive of piwo)
+w roku | year (locative of rok: w roku = in the year)
+w czterysta | four hundred
+w pięćdziesiątym | fiftieth (instrumental/locative masculine)
+w Bartku | Bartek (vocative of Bartek)
+t Świeca, proszę bardzo. A tu jeszcze kufel piwa, dobre piwo w roku tysiąc czterysta pięćdziesiątym! Na zdrowie! | A candle, here you are. And here is another mug of beer, a good beer in the year 1450! Cheers! | Na zdrowie! | Raise a toast. | „Na zdrowie” means “cheers” (literally “to health”). | Na zdrowie, Bartku!
+w jedziemy | we go (by vehicle)
+e Dobranoc! Jutro rano jedziemy na targ. | Good night! Tomorrow morning we go to the market.
+
+@level 3 | The market | patience=4 typed=0.3 extra=3 hint=bank reward=25
+partner Handlarka Barbara | B
+desc Chapter 3: The market in Lipowiec
+scene The next morning the market square is crowded. The trader Barbara sells bread and cheese. Only coins count when paying, and people stare at your clothes.
+goal Buy bread and cheese, pay the way people pay in 1450, and explain where your strange clothes come from.
+win Barbara slips an apple into your basket: „Dla miłego podróżnika!” The market suspects nothing, and in the distance you can already see the town hall.
+partial Barbara finally sold you bread and cheese, but several people whisper behind your back. The town hall is near.
+fail Barbara screams: „Co to za ubranie? Co to jest euro?” The crowd gathers and you run between the stalls.
+w kupić | to buy
+w jabłka | apples
+t Dzień dobry! Co chcesz kupić? Chleb, ser czy jabłka? | Good morning! What do you want to buy? Bread, cheese or apples? | Poproszę chleb i ser. | Ask for bread and cheese. | „Poproszę” is followed by the accusative: chleb, ser. | Chcę chleb i ser.
+w grosze | groszy (old coins; plural)
+w płacę | I pay
+t Chleb i ser, dobrze. Chleb kosztuje dwa grosze, a ser trzy grosze. | Bread and cheese, good. The bread costs two groszy and the cheese three groszy. | Ile to kosztuje razem? | Ask how much it costs altogether. | „Razem” means “together”; „ile kosztuje” means “how much does it cost”. | Ile płacę razem?
+w groszy | groszy (genitive plural)
+w zapłacę | I will pay
+w monetami | coins (instrumental plural of moneta)
+k To będzie pięć groszy. Jak chcesz zapłacić? | That will be five groszy. How do you want to pay? | Zapłacę monetami. | Zapłacę euro.; Zapłacę kartą. | The euro was introduced only in 2002.; Payment cards are a twentieth-century invention. In 1450 people pay with coins.
+w dziwne | strange (neuter/plural)
+w wschodnia | eastern (feminine)
+w koszulka | T-shirt, shirt
+w trampki | trainers, sneakers
+k Dobrze, monetami. Masz dziwne ubranie. Co to jest? | Good, with coins. Your clothes are strange. What are they? | To wschodnia moda. | To jest koszulka.; To są dżinsy i trampki. | T-shirts with prints appeared in the twentieth century, and Barbara has never seen one.; Jeans and trainers are twentieth-century things. Barbara would call the watch.
+w czeka | waits (czekać)
+w ciebie | you (genitive/accusative, informal: czeka na ciebie = waits for you)
+w pójdziemy | we will go (perfective)
+t Wschodnia moda, rozumiem. Burmistrz czeka na ciebie. Pójdziemy razem? | Eastern fashion, I see. The mayor is waiting for you. Shall we go together? | Tak, pójdziemy razem. | Agree and go with her. | „Razem” means “together”; „pójdziemy” is the perfective future of „iść”. | Tak, idziemy razem.
+w chodźmy | let us go
+e No to chodźmy! Ratusz jest tam. | Then let us go! The town hall is over there.
+
+@level 4 | The mayor | patience=4 typed=0.5 extra=4 hint=letters reward=25
+partner Burmistrz Mikołaj | M
+desc Chapter 4: In the town hall
+scene In the town hall the mayor Mikołaj is waiting. He has heard strange rumours about the stranger. He noticed something shiny on your wrist and asks questions, and you have only one way out: back to the gate where it all began.
+goal Answer the mayor's questions so as not to betray the watch, the phone or the future, and get safely back to the gate.
+win The mayor waves a hand: „Dobrze, dobrze, idź!” You go back to the gate, the air shimmers and you wake up in your own time. In your palm lie groszy from 1450.
+partial The mayor lets you go, but mutters about wizards under his breath. Only beyond the gate does the shimmering air take you home.
+fail The mayor calls the guards: „Magiczna skrzynka! On jest z przyszłości!” You will not make it to the gate.
+w burmistrzem | mayor (instrumental of burmistrz)
+w Lipowca | Lipowiec (genitive)
+t Dzień dobry! Jestem burmistrzem Lipowca. Kim jesteś? | Good day! I am the mayor of Lipowiec. Who are you? | Jestem Jan, podróżnik z Anglii. | Introduce yourself as Jan, a traveller from England. | „Z Anglii” means “from England”. | Nazywam się Jan, jestem podróżnikiem z Anglii.
+w twojej | your (feminine genitive/locative: na twojej ręce = on your hand)
+w ręce | hand (locative of ręka)
+w bransoletka | bracelet
+k Podróżnik z Anglii, rozumiem. Co to jest na twojej ręce? | A traveller from England, I see. What is that on your hand? | To tylko bransoletka. | To jest zegarek z baterią.; To jest zegarek cyfrowy. | A wristwatch with a battery is a modern invention. The mayor has no idea what it is.; A digital watch would look like magic to him. In 1450 there are only clock towers and hourglasses.
+w przecież | after all
+w zegarka | watch (genitive of zegarek)
+w pokazuje | shows
+w wpół | half (wpół do trzeciej = half past two)
+w patrzę | I look
+k Tylko bransoletka? Która jest godzina? Przecież masz zegarek. | Only a bracelet? What time is it? You do have a watch, after all. | Nie mam zegarka. Słońce pokazuje południe. | Jest wpół do trzeciej.; Patrzę w telefon. | Such an exact time with minutes is a modern way of counting time.; A phone is a thing from the future. The mayor would think it magic.
+w pięćdziesiąty | fiftieth (masculine)
+w tysiące | thousand (dwa tysiące = two thousand)
+w wiem | I know (a fact)
+k Południe, dobrze. Który mamy rok? | Noon, good. What year is it? | Mamy rok tysiąc czterysta pięćdziesiąty. | Mamy rok dwa tysiące.; Nie wiem. | If you give a year from the future, you give yourself away at once.; Not knowing the year? The innkeeper gave you a hint yesterday. The mayor would think you are hiding something.
+w mówią | they say
+w magiczną | magic (accusative feminine)
+w skrzynkę | box (accusative of skrzynka)
+w żadnej | no, none (genitive feminine)
+w skrzynki | box (genitive of skrzynka)
+k Dobrze. Ludzie mówią, że masz magiczną skrzynkę. Czy to prawda? | Good. People say you have a magic box. Is it true? | Nie, nie mam żadnej skrzynki. | Tak, to jest telefon.; Tak, jestem z przyszłości. | Admitting the phone ends the conversation. The mayor does not know what it is.; Admitting time travel is the worst possible answer.
+w idziesz | you go (on foot)
+w powrotem | return (instrumental: z powrotem = back)
+w bramy | gate (genitive of brama: do bramy = to the gate)
+w wehikułu | vehicle (genitive of wehikuł: wehikuł czasu = time machine)
+w samochodu | car (genitive of samochód)
+k Dobrze. Już jest późno. Dokąd teraz idziesz? | Good. It is late now. Where are you going now? | Idę z powrotem do bramy. | Idę do wehikułu czasu.; Idę do samochodu. | A time machine is the worst answer.; There is no car in 1450. The mayor would think you are lying.
+w idź | go! (imperative)
+e Dobrze, to idź. Szczęśliwej drogi! | Good, then go. Have a safe journey!
+
+
+@larp politiker | Politician | Wyborca | W | You are a corrupt politician. A long time ago Mr Wróbel gave you an envelope, and the „Kukułka affair” (the Cuckoo file) comes back at every rung of your career. Voters believe you... then stop... then forget. | Convince the voters that you are fit for the post. Never confess and never contradict yourself.
+fee 0
+reward 30
+strict yes
+story yes
+disclaimer Satire. All characters, parties and scandals are made up; any resemblance to real people is coincidental.
+win You win the election! Nobody remembers Mr Wróbel's envelope any more. In front of the building the crowd chants your name, and you promise „uczciwą politykę”. Mr Wróbel waves from the back row.
+partial You win by a hair. Journalists are still digging through the files, but you are already signing your first papers. The lie holds on your word of honour alone.
+fail Your credibility has dropped to zero. Voters dig up old files, and someone in the crowd shouts: „Koperta!” Your career ends on the front page of the newspapers.
+
+@level 1 | Village head | patience=4 cap=6 typed=0 extra=1 hint=none
+desc Rung 1: village head of Malinówka
+partner Pani Kowalska | K
+scene A village meeting in the gym in Malinówka. You want to become the village head (sołtys). Mrs Kowalska asks the questions and the whole village listens. Everyone remembers that Mr Wróbel repaired the road, and that someone saw an envelope...
+goal Convince the village that you are honest and deny the rumours about the envelope.
+win The village applauds. You become the village head of Malinówka. Mr Wróbel, in the front row, winks at you.
+partial You win by a single vote. Mrs Kowalska looks at you suspiciously, but raises her hand.
+fail The village has had enough. Mrs Kowalska says: „Wybierzemy kogoś innego.” Your career ends before it began.
+w sołtysem | village head (instrumental of sołtys)
+w chciałbym | I would like (male speaker)
+t Dobry wieczór! Czy chciałby pan zostać sołtysem? | Good evening! Do you want to become the village head? | Tak, chcę zostać sołtysem. | Say that you want to become the village head. | „Zostać” (to become) takes the instrumental: zostać sołtysem. | Tak, chciałbym zostać sołtysem.
+t Dobrze. Czy jest pan uczciwy? | Good. Are you honest? | Tak, zawsze jestem uczciwy. | Assure them that you are always honest. | „Zawsze” means “always”; „uczciwy” is a masculine adjective. | Tak, jestem zawsze uczciwy. | gain=1
+w zepsuta | broken (feminine)
+w Wróbel | Wróbel (surname; wróbel = sparrow)
+w naprawił | repaired (male)
+w zrobi | will do (3rd person; co pan zrobi = what will you do)
+w naprawię | I will repair (perfective)
+w drogę | road (accusative of droga)
+w zrobię | I will make
+t Dobrze. Droga jest zepsuta. Pan Wróbel kiedyś ją naprawił. Co pan zrobi? | Good. The road is broken. Mr Wróbel once repaired it. What will you do? | Naprawię drogę. | Promise to repair the road. | „Naprawię” means “I will repair” (perfective future). | Zrobię nową drogę. | gain=1
+w kopertę | envelope (accusative of koperta)
+w Wróbla | Wróbel (genitive/accusative)
+w go | him, it (accusative)
+t Pan Wróbel? Chwileczkę! Pan Wróbel dał panu kopertę! Ktoś to widział! | Mr Wróbel? Just a moment! Mr Wróbel gave you an envelope! Somebody saw it! | To kłamstwo! Prawie nie znam pana Wróbla. | Deny it: it is a lie, you hardly know Mr Wróbel. | „Prawie nie” means “hardly”; the accusative of a person: pana Wróbla. | To kłamstwo! Ledwo go znam. | shift=-2 loss=2
+w cóż | well (no cóż = well then)
+w było | was (neuter)
+w dawno | long ago
+w zapomnieliśmy | we forgot
+w wam | you (dative plural)
+t No cóż... to było dawno. Zapomnieliśmy o tym. | Well... that was a long time ago. We have forgotten it. | Dziękuję, jestem wam wdzięczny. | Thank the voters for their understanding (you are grateful to them). | „Wdzięczny” means grateful; „wam” means “to you”. | Dziękuję, jestem bardzo wdzięczny. | shift=+2
+w wiosce | village (locative of wioska: w wiosce = in the village)
+w długów | debts (genitive plural of dług)
+w będę | I will be
+w oszczędzał | saving (będę oszczędzał = I will save)
+w będę | I will be
+w więcej | more
+w pieniędzy | money (genitive plural)
+o W wiosce jest dużo długów. Co pan zrobi? | There are many debts in the village. What will you do? | Będę oszczędzał pieniądze i będę uczciwy. | Wezmę więcej pieniędzy.; Nie wiem. | A politician who says „I will take more money” is not credible.; „I do not know” will not convince the voters. | gain=1
+w wobec | towards, in front of
+w nas | us (genitive/accusative/locative)
+w was | you (genitive/accusative plural)
+t Dobrze. Czy będzie pan wobec nas uczciwy? | Good. Will you be honest with us? | Tak, zawsze będę wobec was uczciwy. | Promise honesty towards the voters. | „Wobec was” means “towards you” (genitive of „wy”). | Tak, zawsze jestem wobec was uczciwy. | gain=1
+w głosujemy | we vote (głosować)
+w sołtysie | village head (vocative of sołtys)
+e Więc głosujemy na pana! Witamy, panie sołtysie! | Then we vote for you! Welcome, Mr Village Head!
+
+@level 2 | Town council | patience=4 cap=6 typed=0.2 extra=2 hint=bank
+desc Rung 2: town councillor
+partner Pani Rybak | R
+scene The town of Nowogród. You are a candidate for the town council. The journalist Mrs Rybak asks about „businessmen” and about where your new car came from.
+goal Deny that you took money and do not get caught in a lie.
+win Mrs Rybak closes her notebook: „Dobrze, nie mam więcej pytań.” You become a councillor. Mr Wróbel congratulates you by phone.
+partial You become a councillor, but Mrs Rybak says: „Będę dalej drążyć.” She will keep digging.
+fail The interview lands in the paper under the headline „Radny i koperta”. Nobody votes for you.
+w dziennikarką | journalist (instrumental of dziennikarka)
+w radnym | councillor (instrumental of radny)
+w miejskim | municipal, city (instrumental/locative masculine)
+t Dzień dobry, jestem dziennikarką. Czy chciałby pan zostać radnym? | Good morning, I am a journalist. Do you want to become a councillor? | Tak, chcę zostać radnym miejskim. | Confirm that you want to become a councillor. | „Radny” means councillor; after „zostać” the instrumental: radnym. | Tak, chciałbym zostać radnym. | gain=1
+w biznesmena | businessman (accusative of biznesmen)
+t Zna pan biznesmena Wróbla. Czy to pana przyjaciel? | You know the businessman Mr Wróbel. Is he your friend? | Nie, to tylko znajomy. | Deny it: he is only an acquaintance. | „Tylko” means “only”; „znajomy” means “acquaintance”. | Nie, to zwykły znajomy. | gain=1
+w kupiłem | I bought (male speaker)
+w uczciwie | honestly
+t Znajomy, rozumiem. Ma pan nowy samochód. Skąd ma pan pieniądze? | An acquaintance, I see. You have a new car. Where did you get the money? | Kupiłem go uczciwie. | Say that you bought it honestly. | „Kupiłem” is the past tense of a man; „go” refers to the masculine „samochód”. | Uczciwie kupiłem ten samochód.
+w brał | took (male)
+w łapówki | bribes
+w brałem | I took (male speaker)
+w łapówek | bribes (genitive plural)
+t Czy brał pan łapówki? | Did you take bribes? | Nie, nigdy nie brałem łapówek. | Deny that you ever took bribes. | „Nigdy nie” + genitive: łapówek. | Nie, nigdy nie brałem łapówki. | loss=2
+w spojrzeć | to look
+w tych | these (genitive/locative plural)
+w ludzi | people (genitive plural)
+t Naprawdę? W takim razie proszę spojrzeć na to zdjęcie. Pan, pan Wróbel i koperta. | Really? Then look at this photo. You, Mr Wróbel and an envelope. | Nie znam tych ludzi. | Say you do not know these people. | „Tych ludzi” means “these people” (genitive after negation). |  | shift=-2
+w stare | old (neuter)
+w wyborcy | voters
+w zapominają | they forget (zapominać)
+w ważne | important (neuter)
+t Hm. To zdjęcie jest bardzo stare. Wyborcy szybko o tym zapominają. | Hm. This photo is very old. Voters soon forget such things. | To zdjęcie nie jest ważne. | Dismiss the photo: it is not important. | „Nie jest ważne” means “is not important”. |  | shift=+2
+w nieprawda | untrue; not true
+w kłamie | lies, is lying (kłamać)
+w rację | reason (ma rację = is right)
+w świadkiem | witness (instrumental of świadek)
+o Świadek mówi, że brał pan pieniądze. | A witness says that you took money. | To nieprawda. Świadek kłamie. | Tak, świadek ma rację.; Jestem świadkiem. | You admit it, so you lose.; You are not a witness, so this answer makes no sense. | gain=1
+w wywiad | interview
+t Dziękuję za wywiad. Czy chciałby pan coś dodać? | Thank you for the interview. Do you want to add anything? | Tak, jestem niewinny. | Say at the end that you are innocent. | „Niewinny” means innocent. |  | gain=1
+w napiszę | I will write
+w powiedział | said (male)
+e Napiszę, co pan powiedział. Do widzenia! | I will write what you said. Goodbye!
+
+@level 3 | Mayor | patience=4 cap=6 typed=0.4 extra=2 hint=bank
+desc Rung 3: mayor
+partner Prokurator Górski | G
+scene The town hall of Nowogród. Prosecutor Górski is investigating a tender (przetarg) for a new bridge. Mr Wróbel's company won strangely easily, and the „Kukułka file” comes back in the papers.
+goal Walk out of the interrogation as mayor without admitting anything.
+win Górski closes the folder: „Brak dowodów. Sprawa zamknięta.” You become mayor, and the bridge opens with great pomp.
+partial The file stays open, but the prosecutor has no evidence. You become mayor under a cloud of suspicion.
+fail Górski puts an envelope and a photo on the table. „Jest pan aresztowany!” he says. You end up in custody.
+w prokuratorem | prosecutor (instrumental of prokurator)
+w Górskim | Górski (instrumental)
+w zobaczyć | to see
+w swojego | one's own (masculine accusative)
+w adwokata | lawyer (accusative of adwokat)
+t Jestem prokuratorem Górskim. To jest przesłuchanie. | I am prosecutor Górski. This is an interrogation. | Chcę zobaczyć swojego adwokata. | Ask for your lawyer. | „Zobaczyć” takes the accusative; a person (masculine animate) looks like the genitive: adwokata. |  | gain=1
+w wezwać | to call, to summon
+w wygrała | won (feminine)
+w przetarg | tender
+w miała | had (feminine)
+w najlepszą | best (accusative feminine)
+w ofertę | offer (accusative of oferta)
+t Adwokata może pan wezwać później. Firma pana Wróbla wygrała przetarg na most. Dlaczego? | You may call your lawyer later. Mr Wróbel's company won the tender for the bridge. Why? | Miała najlepszą ofertę. | Explain that it had the best offer. | „Miała” means “she (the company) had”; „najlepszą” is accusative feminine. | Firma miała najlepszą ofertę. | gain=1
+w pytań | questions (genitive plural)
+w złożyć | to submit, to make (złożyć zeznanie = make a statement)
+w odmawiam | I refuse (odmawiać)
+w składania | submitting, making (genitive of składanie)
+w zeznań | statements, testimony (genitive plural)
+t Najlepszą ofertę? Mamy wiele pytań. Czy chciałby pan złożyć zeznanie? | The best offer? We have many questions. Do you want to make a statement? | Odmawiam składania zeznań. | Refuse to make a statement. | This is the right to remain silent: „odmawiam” + genitive. | Chcę milczeć. | shift=-1
+w dowodów | evidence (genitive plural of dowód)
+w podejrzeń | suspicions (genitive plural)
+w wiemy | we know
+t Hm. Bez dowodów nie ma podejrzeń. Obaj to wiemy. | Hm. Without evidence there are no suspicions. We both know that. | Nie ma pan dowodów. | Tell the prosecutor he has no evidence. | „Nie ma pan” + genitive: dowodów. | Pan nie ma dowodów. | shift=+2
+w akt | act, deed
+w oskarżenia | accusation (genitive: akt oskarżenia = indictment)
+o Być może będzie akt oskarżenia. Co pan na to? | There may be an indictment. What do you say? | Jestem niewinny. | Jestem winny.; To byłem ja. | „Winny” means guilty, and that is an admission.; „To byłem ja” means “it was me”, an admission. | gain=1
+w wziąłem | I took (male speaker, perfective)
+w koperty | envelope (genitive of koperta)
+t Pan Wróbel mówi, że dał panu kopertę. | Mr Wróbel says that he gave you an envelope. | To kłamstwo! Nigdy nie wziąłem koperty. | Deny it: it is a lie, you never took an envelope. | „Nigdy nie wziąłem” means “I never took”; genitive after negation: koperty. | To kłamstwo! Nigdy nie wziąłem żadnej koperty. | shift=-2 loss=2
+w powtórzyć | to repeat
+w wziął | took (male, perfective)
+w żadnych | no, none (genitive plural)
+d Więc proszę powtórzyć to pod przysięgą. Czy wziął pan pieniądze od pana Wróbla? | Then repeat it under oath. Did you take money from Mr Wróbel? | Nie, nie wziąłem żadnych pieniędzy od pana Wróbla. | Deny it under oath: you took no money from him. | „Żadnych pieniędzy” means “no money at all” (genitive plural). One slip and it is over.
+e Dobrze. Jest pan burmistrzem. Nie mam więcej pytań. | Good. You are the mayor. I have no more questions.
+
+@level 4 | Member of parliament | patience=4 cap=6 typed=0.6 extra=2 hint=letters
+desc Rung 4: member of parliament
+partner Pani Wilk | W
+scene The national parliament. You are a member of parliament (poseł) and the investigative committee summons you as a witness. The chair, Mrs Wilk, speaks about the „Kukułka file”. The lawyers have new words for you: świadek, przysięga, immunitet.
+goal Answer under oath so that nobody can prove that you are lying.
+win Mrs Wilk: „Przesłuchanie zakończone.” You leave the hall with your head held high. The committee has nothing.
+partial The committee ends without conclusions, but one member wrote in his notebook: „Sprawdzić później!”
+fail The committee orders you to explain the contradiction. You tangled yourself up, and the press writes about the „kłamliwy poseł”.
+w komisji | committee (locative: w komisji = in the committee)
+w zeznaje | gives testimony, testifies
+w prawdę | truth (accusative of prawda)
+w powiem | I will say, I will tell
+t Witamy w komisji. Zeznaje pan pod przysięgą. | Welcome to the committee. You testify under oath. | Tak, wiem. Mówię prawdę. | Confirm and assure them that you tell the truth. | „Mówić prawdę” means “to tell the truth”; „pod przysięgą” means “under oath”. | Tak, wiem. Powiem prawdę. | gain=1
+w jako | as
+w poseł | member of parliament
+w immunitet | immunity
+w niego | him (after a preposition)
+w zrezygnować | to give up, to resign
+t Dobrze. Jako poseł ma pan immunitet. Czy chciałby pan z niego zrezygnować? | Good. As an MP you have immunity. Do you want to give it up? | Nie, chcę zachować immunitet. | Refuse to give up your immunity. | „Zachować” means “to keep”. |  | shift=-1
+w zeznania | testimony, statements
+w sprzeczne | contradictory (plural)
+w dokumentami | documents (instrumental plural)
+w wyjaśni | will explain
+w ukrycia | hiding (genitive: nic do ukrycia = nothing to hide)
+t Pana zeznania są sprzeczne z dokumentami. Jak pan to wyjaśni? | Your testimony contradicts the documents. How do you explain it? | Nie mam nic do ukrycia. | Say that you have nothing to hide. | „Nic do ukrycia” means “nothing to hide”. |  | loss=2
+w myślą | they think
+t Hm. To było dawno. Wyborcy już o tym nie myślą. | Hm. That was long ago. The voters no longer think about it. | To przeszłość. | Wave it away: it is the past. | „Przeszłość” means the past. | To już jest przeszłość. | shift=+2
+w tego | this (genitive masculine/neuter)
+w listu | letter (genitive of list)
+w napisałem | I wrote (male speaker)
+w adwokat | lawyer
+o Oto list od pana Wróbla. Zna go pan? | Here is a letter from Mr Wróbel. Do you know it? | Nie znam tego listu. | Tak, ja napisałem ten list.; Ten list napisał mój adwokat. | Admitting that you wrote it is a mistake.; Blaming the lawyer is not credible. | gain=1
+w dostał | received, got (male)
+w pieniędzmi | money (instrumental plural)
+w dostałem | I received (male speaker)
+t Więc świadek. Świadek mówi, że dostał pan kopertę z pieniędzmi. | Then a witness. The witness says that you received an envelope with money. | Świadek kłamie. Nie dostałem żadnych pieniędzy. | Call the witness a liar and deny that you received money. | „Kłamie” means “lies”; „żadnych pieniędzy” means “no money at all”. |  | shift=-2 loss=2
+w radzie | council (locative of rada: w radzie = in the council)
+w miejskiej | municipal, city (locative feminine)
+w nadal | still
+k W radzie miejskiej powiedział pan, że ledwo zna pana Wróbla. Czy to nadal prawda? | In the town council you said that you hardly know Mr Wróbel. Is that still true? | Tak, ledwo go znam. | Nie, to mój przyjaciel.; Nie, nigdy go nie widziałem. | Admitting a friendship is a contradiction, and the end.; Earlier you said „ledwo”, not „I never saw him”. | gain=1
+w znów | again
+e Dziękuję. Może pan iść. Wkrótce znów się zobaczymy. | Thank you. You may go. We will see each other again soon.
+
+@level 5 | Minister | patience=4 cap=6 typed=0.8 extra=2 hint=bank
+desc Rung 5: minister
+partner Pan Zimny | Z
+scene A television studio, a live interview. You are a minister and sit opposite Mr Zimny, the news presenter. Suddenly an old document from the „Kukułka file” appears on the screen.
+goal Leave the studio still a minister: do not be driven into a trap on live television.
+win Zimny ends the interview: „Dziękuję, panie ministrze.” The polls rise. Mr Wróbel phones: „Brawo!”
+partial The interview ends in a draw. The opposition demands your resignation (dymisja), but the prime minister defends you.
+fail On air you dodge the answers and the viewers see it all. In the morning the papers shout: „Dymisja!”
+w żywo | alive, live (na żywo = live)
+w telewizji | television (locative of telewizja)
+w ministrze | minister (vocative of minister)
+t Dobry wieczór! Jesteśmy na żywo w telewizji. Jest pan gotowy, panie ministrze? | Good evening! We are live on television. Are you ready, Minister? | Tak, jestem gotowy. Chętnie. | Confirm that you are ready. | „Gotowy” means ready (masculine). | Tak, jestem gotowy. | gain=1
+w wokół | around
+w afery | scandal, affair (genitive of afera)
+w Kukułka | Cuckoo (the affair's name)
+t Opozycja mówi, że wokół afery Kukułka jest skandal. | The opposition says there is a scandal around the Kukułka affair. | To nie skandal. To kampania. | Play it down: it is not a scandal, only a campaign. | „Kampania” means campaign. |  | shift=-1
+w gazecie | newspaper (locative of gazeta)
+w nim | him (instrumental: na nim = on it)
+w przypominam | I remind; nie przypominam sobie = I do not recall
+w pamiętam | I remember
+t Kampania? W gazecie jest dokument. Ma na nim pan podpis. | A campaign? There is a document in the newspaper. It has your signature. | Nie przypominam sobie tego. | Say that you cannot remember it. | „Nie przypominam sobie” means “I do not remember”. | Nie pamiętam tego. | shift=-2 loss=2
+w fałszerstwo | forgery
+t To jest pana podpis. Jak pan to wyjaśni? | That is your signature. How do you explain it? | To fałszerstwo. | Deny it: it is a forgery. | „Fałszerstwo” means forgery. | To jest fałszerstwo. | gain=1
+w wielu | many
+w wierzy | believes
+w sondaże | polls
+w rosną | they rise, grow
+t Hm. Wielu ludzi panu wierzy. Sondaże rosną. | Hm. Many people believe you. The polls are rising. | Dziękuję za zaufanie. | Thank the voters for their trust. | „Zaufanie” means trust; „za zaufanie” means “for the trust”. |  | shift=+2
+w pracowałem | I worked (male speaker)
+w dawał | gave (male, imperfective)
+w odpowiedzi | answer (genitive of odpowiedź: odmawiam odpowiedzi = I refuse to answer)
+o Pan Wróbel mówi, że był pana doradcą. Czy to prawda? | Mr Wróbel says that he was your adviser. Is it true? | Nie, nigdy z nim nie pracowałem. | Tak, często dawał mi pieniądze.; Odmawiam odpowiedzi. | Admitting the money is a mistake.; „I refuse to answer” on television looks like an admission. | gain=1
+w dymisji | resignation (genitive of dymisja)
+w skończone | finished (neuter)
+w podam | I will submit (podać się do dymisji = to resign)
+t Czy chciałby pan podać się do dymisji? Wtedy wszystko będzie skończone. | Do you want to resign? Then it is all over. | Nie, nie podam się do dymisji. Jestem niewinny. | Refuse to resign and say that you are innocent. | „Podać się do dymisji” means “to resign”. |  | gain=1
+w tej | this (feminine locative/genitive)
+w kopercie | envelope (locative of koperta)
+w kampanię | campaign (accusative of kampania)
+k Oto zdjęcie pana i pana Wróbla. Jest tam też koperta. Co jest w tej kopercie? | Here is a photo of you and Mr Wróbel. There is also an envelope. What is in the envelope? | To stare zdjęcie. Nigdy nie wziąłem koperty. | To są pieniądze na moją kampanię.; To był tylko prezent. | Admitting the money is the end.; „Prezent” is also an admission, because you said earlier that you took no envelope. | gain=1
+e Dziękuję za wywiad, panie ministrze. | Thank you for the interview, Minister.
+
+@level 6 | Prime minister | patience=4 cap=6 typed=1 extra=2 hint=none
+desc Rung 6: prime minister
+partner Pani Orzechowska | O
+scene The final television debate. You are running for prime minister (premier). Opposite you stands Mrs Orzechowska of the party „Nowa Uczciwość” with her folder about the „Kukułka file”. The whole country is watching.
+goal Win the debate, keep calm and admit nothing to the very end.
+win Poll: 52 percent want you. You become prime minister, and Mr Wróbel's envelope lies somewhere at the bottom of a drawer.
+partial The debate ends in a draw. You narrowly win the election and promise „więcej przejrzystości”.
+fail Mrs Orzechowska lays a folder on the table. The country sees the contradiction in your words, and on the screen appears: „Kandydat kłamie.”
+w debacie | debate (locative of debata)
+w Orzechowska | Orzechowska (surname)
+w kandydacie | candidate (vocative of kandydat)
+w premierem | prime minister (instrumental of premier)
+t Witamy na debacie! Pani Orzechowska, panie kandydacie, proszę. | Welcome to the debate! Mrs Orzechowska, Mr Candidate, please. | Dobry wieczór. Chcę zostać premierem. | Say hello and say that you want to become prime minister. | „Zostać premierem” uses the instrumental. |  | gain=1
+w partii | party (genitive/locative of partia)
+w Nowa | New
+w Uczciwość | Honesty
+t Jestem z partii Nowa Uczciwość. Niech pan mówi prawdę, panie kandydacie! | I am from the party New Honesty. Tell the truth, Mr Candidate! | Zawsze mówię prawdę. | Assure that you always tell the truth. | „Zawsze” means “always”. |  | gain=1
+w odrzucam | I reject
+w zgadzam | I agree (zgadzać się)
+w zarzutem | accusation (instrumental of zarzut)
+t Brał pan łapówki. To mój zarzut. | You took bribes. That is my accusation. | Odrzucam ten zarzut. | Reject the accusation. | „Odrzucać zarzut” means “to reject an accusation”. | Nie zgadzam się z tym zarzutem. | shift=-2 loss=2
+w wyborców | voters (genitive plural)
+w brudna | dirty (feminine)
+t No cóż... wielu wyborców mówi, że to tylko kampania. To było dawno. | Well... many voters say it is only a campaign. It was a long time ago. | Pani kampania jest brudna. | Accuse your rival of a dirty campaign. | „Brudna” means dirty (feminine, like „kampania”). |  | shift=+2
+w dowody | evidence (plural)
+w widzi | sees
+w jakieś | some, any (plural)
+w widzę | I see
+t Pani Orzechowska mówi, że ma dowody. Czy widzi pan jakieś dowody, panie kandydacie? | Mrs Orzechowska says she has evidence. Do you see any evidence, Mr Candidate? | Nie, nie widzę żadnych dowodów. | Say that you see no evidence at all. | „Żadnych dowodów” means “no evidence at all” (genitive plural). | Nie, nie widzę dowodów. | gain=1
+w kraju | country (genitive of kraj)
+w stworzę | I will create
+w nowe | new (plural)
+w miejsca | places, jobs (miejsca pracy = jobs)
+w pracy | work (genitive of praca)
+t Dobrze. A jaki jest pana plan dla kraju? | Good. And what is your plan for the country? | Stworzę nowe miejsca pracy. | Promise new jobs. | „Stworzę” means “I will create”; „miejsca pracy” means “jobs”. |  | gain=1
+t Pana przyjaciel, pan Wróbel, mówi, że dał panu dużo pieniędzy! | Your friend, Mr Wróbel, says he gave you a lot of money! | To kłamstwo! To nie jest mój przyjaciel. | Deny it: it is a lie, he is not your friend. | „To nie jest mój przyjaciel” means “he is not my friend”. |  | shift=-1 loss=2
+o W radzie miejskiej powiedział pan, że to tylko znajomy. A teraz? | In the town council you said that he is only an acquaintance. And now? | To tylko znajomy. | To mój przyjaciel.; Nigdy go nie widziałem. | You contradict yourself.; Earlier you admitted that you know him („znajomy”), so „I never saw him” is a contradiction. | gain=1
+w jej | her, hers
+k Pani Orzechowska pokazuje kopertę. Czy wziął ją pan? Tak czy nie? | Mrs Orzechowska shows the envelope. Did you take it? Yes or no? | Nie, nigdy jej nie wziąłem. | Tak, wziąłem ją.; Odmawiam odpowiedzi. | An admission ends it.; Silence on live television looks like an admission. |
+w zostaje | becomes, remains
+w serdeczne | heartfelt (neuter/plural)
+e I premierem zostaje... pan! Serdeczne gratulacje! | And the prime minister is... you! Heartfelt congratulations!
+
+
+@larp flughafen | Airport | Pracownica | P | London Heathrow, early morning. You are flying to Warsaw for your best friend's wedding, and the plane will not wait. You have a suitcase, a passport and little time. | Go all the way through: check-in, security, the gate, the flight and baggage claim in Warsaw.
+fee 0
+reward 20
+strict yes
+story yes
+win You reach Warsaw with your suitcase, passport and half an hour to spare. Your friend waits in the arrivals hall with a bouquet: „Udało ci się! Wesele może się zacząć!”
+partial You reached Warsaw, but on the way you talked a lot and ran a bit. The suitcase is here, the wedding too, you are a little out of breath, but on time.
+fail You got something wrong at the worst moment and the plane left without you. You watch the wedding on your phone, and your friend promises you a long trip „na pocieszenie” (as a consolation).
+
+@level 1 | Check-in | patience=6 typed=0 extra=1 hint=none
+desc Chapter 1: Check-in
+partner Pracownica | P
+scene Heathrow airport, the departures hall. You walk up to the check-in desk of the airline Wiatr Północny. The employee looks at you kindly and waits for your documents.
+goal Check in for the flight to Warsaw: show your passport, drop your suitcase and choose a seat.
+win The employee hands you the boarding pass: „Szczęśliwej podróży!” The suitcase rides off on the belt, and you go to security.
+partial Check-in worked out, but the employee had to guess what you meant several times. You hold the boarding pass, and time is running out.
+fail The employee does not understand what you want and calls the next person in the queue. You must start again at the back of the queue.
+w stanowisku | desk, post (locative of stanowisko)
+w linii | line, airline (genitive of linia)
+w Wiatr | Wind
+w Północny | Northern
+w leci | flies (lecieć)
+w lecę | I fly
+w Warszawy | Warsaw (genitive: do Warszawy = to Warsaw)
+t Dzień dobry! Witamy przy stanowisku linii Wiatr Północny. Dokąd pan leci? | Good morning! Welcome to the Northern Wind desk. Where are you flying? | Dzień dobry! Lecę do Warszawy. | Greet her and say that you are flying to Warsaw. | „Lecę” means “I am flying”; „do” + genitive: do Warszawy. | Dzień dobry! Lecę do Warszawy.
+t Warszawa, jak miło. Paszport, proszę. A po co pan leci do Warszawy? | Warsaw, how nice. Your passport, please. And why are you flying to Warsaw? | Oto mój paszport. Lecę na ślub. | Hand over your passport and say that you are going to a wedding. | „Oto” means “here is”; „na ślub” means “to a wedding”. | Oto paszport. Lecę na wesele.
+w nadać | to check in (luggage)
+t Ślub, jak miło! Czy chciałby pan nadać walizkę? | A wedding, how nice! Would you like to check in a suitcase? | Tak, chcę nadać walizkę. | Say that you want to check in a suitcase. | „Nadać bagaż” means “to check in luggage”. | Tak, chciałbym nadać walizkę.
+w postawić | to put, to place
+w wadze | scale (locative/dative of waga: na wadze = on the scale)
+w waży | weighs
+w kilogramów | kilograms (genitive plural)
+w porządku | order (w porządku = fine, in order)
+w podręczny | hand (adj.; bagaż podręczny = hand luggage)
+t Proszę postawić walizkę na wadze. Waży dwadzieścia kilogramów. To w porządku. Czy ma pan bagaż podręczny? | Please put the suitcase on the scale. It weighs twenty kilograms. That is fine. Do you have hand luggage? | Tak, mam torbę jako bagaż podręczny. | Say that you have a bag as hand luggage. | „Bagaż podręczny” means hand luggage; „jako” means “as”. | Tak, mam jedną torbę.
+w woli | prefers
+w przejściu | aisle, passage (locative of przejście)
+w wolę | I prefer
+t Dobrze. Woli pan miejsce przy oknie czy przy przejściu? | Good. Do you prefer a window seat or an aisle seat? | Poproszę miejsce przy oknie. | Say that you prefer a window seat. | „Przy oknie” means “by the window”. | Wolę miejsce przy oknie.
+w pokładowa | boarding (feminine; karta pokładowa = boarding pass)
+w odlot | departure (of a flight)
+w jedenastej | eleventh (o jedenastej = at eleven)
+w pytania | questions
+w punktualny | on time (masculine)
+w odlatuje | departs, takes off (odlatywać)
+w punktualnie | on time (adverb)
+t Oto pana karta pokładowa. Odlot jest o wpół do jedenastej. Czy ma pan jeszcze pytania? | Here is your boarding pass. Departure is at half past ten. Do you have any more questions? | Tak, czy lot jest punktualny? | Ask whether the flight is on time. | „Punktualny” means on time; a yes/no question begins with „czy”. | Tak, czy samolot odlatuje punktualnie?
+w bramka | gate
+w numer | number
+t Tak, lot jest punktualny. Pana bramka to numer dwanaście. Proszę iść prosto. | Yes, the flight is on time. Your gate is number twelve. Please go straight ahead. | Bardzo dziękuję! Do widzenia! | Thank her and say goodbye. | „Do widzenia” means goodbye.
+e Szczęśliwej podróży! | Have a good trip!
+
+@level 2 | Security | patience=5 typed=0.25 extra=3 hint=bank
+desc Chapter 2: Security check
+partner Funkcjonariusz | F
+scene You have your boarding pass, and before you is a long queue to the check. The officer hands out plastic trays and looks carefully at your bag.
+goal Pass the security check: show your laptop, take off your belt and answer the questions.
+win The officer nods: „Wszystko w porządku. Proszę iść dalej.” You put your belt back on and head to the gate perfectly calm.
+partial The check finally went without problems, but the officer frowned several times. You put your belt on as you run.
+fail The officer finds your answers suspicious. You are held for an extra check, and the plane leaves without you.
+w bezpieczeństwa | security (genitive: kontrola bezpieczeństwa = security check)
+w położyć | to put, to lay
+w taśmie | belt (locative of taśma: na taśmie = on the belt)
+t Dzień dobry! To jest kontrola bezpieczeństwa. Proszę położyć torbę tutaj, na taśmie. | Good morning! This is the security check. Please put your bag here on the belt. | Tak, oczywiście. | Agree and say of course. | „Oczywiście” means “of course”.
+w wyjąć | to take out
+t Dziękuję. Czy ma pan w torbie laptop? Proszę go wyjąć. | Thank you. Do you have a laptop in the bag? Please take it out. | Tak, oto mój laptop. | Confirm and hand over the laptop. | „Mój” goes with a masculine noun: mój laptop.
+w płyny | liquids
+w perfumy | perfume
+w krem | cream
+w płynów | liquids (genitive plural)
+t Dziękuję. Czy ma pan jakieś płyny? Na przykład wodę, perfumy albo krem? | Thank you. Do you have any liquids? For example water, perfume or cream? | Nie, nie mam żadnych płynów. | Say that you have no liquids. | After „nie mam” comes the genitive: płynów; „żadnych” means “none at all”. | Nie, nie mam płynów.
+w zdjąć | to take off
+w kurtkę | jacket (accusative of kurtka)
+t Dobrze. Proszę też zdjąć pasek i kurtkę. | Good. Please take off your belt and jacket too. | Tak, oto mój pasek i moja kurtka. | Hand over your belt and jacket. | „Kurtka” is feminine: moja kurtka.
+w noża | knife (genitive of nóż)
+k Dziękuję. Czy w torbie jest nóż albo broń? | Thank you. Is there a knife or a weapon in the bag? | Nie, nie mam noża ani broni. | Tak, mam nóż.; Nie wiem, może. | Admitting a knife means immediate detention.; An unsure answer to such a question raises suspicion, and you are detained.
+w przejść | to pass through, to walk through
+w skaner | scanner
+w pip | beep
+w kieszeni | pocket (locative of kieszeń: w kieszeni = in the pocket)
+w klucze | keys
+t Dobrze. Proszę przejść przez skaner. Pip! Czy ma pan jeszcze coś w kieszeni? | Good. Please walk through the scanner. Beep! Do you still have anything in your pocket? | Tak, mam klucze i telefon. | Say that you have keys and a phone. | „Klucze” means keys (plural). | Tak, mam w kieszeni klucze i telefon.
+e Wszystko w porządku. Proszę iść dalej. Szczęśliwej podróży! | Everything is fine. Please go on. Have a good trip!
+
+@level 3 | At the gate | patience=4 typed=0.5 extra=3 hint=bank
+desc Chapter 3: At the gate
+partner Pracownik lotniska | L
+scene You sit at gate 12 and look at your watch. Suddenly the speakers crackle, and the board shows „opóźnienie”.
+goal Find out about the flight, understand the gate-change announcement and board the plane.
+win You run to the new gate and board among the last. The employee closes the door: „Zdążył pan w ostatniej chwili!”
+partial You finally found the right gate, though you had to ask several times on the way. You board sweating.
+fail You understood the announcement the wrong way round and wait at the wrong gate. When you notice the mistake, the plane door is already shut.
+w pasażerem | passenger (instrumental of pasażer)
+w lotu | flight (genitive of lot)
+w opóźniony | delayed (masculine)
+t Przepraszam! Czy jest pan pasażerem lotu do Warszawy? | Excuse me! Are you a passenger on the flight to Warsaw? | Tak, mój lot jest opóźniony, prawda? | Confirm and ask whether your flight is delayed. | „Opóźniony” means delayed; „prawda?” at the end means “right?”. | Tak, czy mój lot jest opóźniony?
+w zacznie | will begin (perfective)
+w zdążyć | to make it in time
+w zaczyna | begins
+t Tak, lot ma czterdzieści minut opóźnienia. Wejście na pokład zacznie się o jedenastej. | Yes, the flight is forty minutes late. Boarding begins at eleven. | Kiedy jest wejście na pokład? Muszę zdążyć na ślub. | Ask when boarding is and add that you are going to a wedding. | „Kiedy” means “when”; „muszę zdążyć” means “I must make it in time”. | Kiedy zaczyna się wejście na pokład? Lecę na ślub.
+w musi | must (he/she/it; musi pan = you must)
+w przesiadać | to change (trains, planes); przesiadać się = to transfer
+w Warszawie | Warsaw (locative: w Warszawie = in Warsaw)
+t Ślub, jak miło! Wejście na pokład jest o jedenastej. Czy musi pan się przesiadać w Warszawie? | A wedding, how nice! Boarding is at eleven. Do you have to change planes in Warsaw? | Nie, lecę bezpośrednio do Warszawy. | Answer that you do not; you are flying direct. | „Bezpośrednio” means directly. | Nie, lecę prosto do Warszawy.
+w komunikat | announcement
+w bramki | gate (genitive of bramka)
+w zamknięta | closed (feminine)
+w zrozumiał | understood (male)
+w zostaję | I stay
+w bramce | gate (locative of bramka: przy bramce = at the gate)
+w wyjścia | exit (genitive of wyjście)
+k Dobrze, bezpośrednio. Uwaga, komunikat! Lot do Warszawy odlatuje teraz z bramki pięć. Bramka dwanaście jest zamknięta. Czy pan zrozumiał? Dokąd pan idzie? | Good, direct. Attention, an announcement! The flight to Warsaw now leaves from gate five. Gate twelve is closed. Did you understand? Where are you going? | Idę do bramki pięć. | Zostaję przy bramce dwanaście.; Idę do wyjścia. | Gate twelve is closed, so waiting there ends in a missed flight.; The exit leads out of the airport, not to the plane.
+w pokładową | boarding (accusative feminine)
+w wsiadam | I board, I get on
+w samolotu | plane (genitive of samolot)
+t W takim razie szybko! Proszę o kartę pokładową. Może pan już wsiadać. | Then hurry! Your boarding pass, please. You can board now. | Oto moja karta pokładowa. Już wsiadam. | Hand over the card and say that you are boarding now. | „Wsiadać” means “to board”; „już” means “already”. | Oto karta pokładowa. Wsiadam do samolotu.
+w otwarte | open (neuter)
+e Szczęśliwej podróży! Wejście na pokład jest otwarte. | Have a good trip! Boarding is open.
+
+@level 4 | On the plane and after landing | patience=4 typed=0.75 extra=3 hint=letters reward=30
+desc Chapter 4: Flight and arrival
+partner Stewardesa | S
+scene You board the Wiatr Północny plane. The flight attendant greets passengers at the door, and soon you will take off for Warsaw. After landing you will still have to find passport control and your suitcase.
+goal Take your seat, fasten your seat belt, ask for a drink, and after landing find out where passport control, the baggage belt and customs are.
+win The suitcase comes out on the belt first, and the customs officer wishes you „Witamy w Polsce!” Your friend waits in the arrivals hall.
+partial You found everything, but asked for directions three times on the way. The suitcase arrived, and you will make it to the wedding.
+fail You went the wrong way and lost time at the airport. The suitcase circles alone on the belt, and your friend phones every minute.
+w pokładzie | board, deck (locative: na pokładzie = on board)
+t Dzień dobry i witamy na pokładzie! Proszę o kartę pokładową. | Good morning and welcome aboard! Your boarding pass, please. | Dzień dobry! Oto moja karta pokładowa. | Greet her and show your boarding pass. | „Oto” means “here is”. | Dzień dobry! Proszę, oto karta.
+w półce | shelf (locative of półka)
+w położę | I will put
+w kładę | I am putting
+w półkę | shelf (accusative of półka)
+t Dziękuję. Pana miejsce to czternaście, przy oknie. Proszę położyć torbę na półce nad głową. | Thank you. Your seat is fourteen, by the window. Please put your bag on the shelf above your head. | Dziękuję, położę torbę na półce. | Thank her and say that you will put the bag on the shelf. | „Położę” means “I will put”; „na półce” means “on the shelf”. | Dziękuję, kładę torbę na półkę.
+w zapiąć | to fasten
+w pasy | belts, seat belts
+w chwilę | moment (accusative of chwila: za chwilę = in a moment)
+w startujemy | we take off
+w zapinam | I am fastening
+t Dziękuję. Proszę zapiąć pasy. Za chwilę startujemy. | Thank you. Please fasten your seat belt. We take off in a moment. | Tak, zapinam pas. | Say that you are fastening your seat belt. | „Zapinam pas” means “I am fastening the belt”. | Tak, już zapinam pas.
+t Dziękuję. Czy chciałby pan coś do picia? | Thank you. Would you like something to drink? | Tak, poproszę kawę. | Ask for a coffee. | „Poproszę” + accusative: kawa → kawę.
+w lądujemy | we land
+w będziemy | we will be
+t Oto pana kawa. Czy ma pan jakieś pytania? | Here is your coffee. Do you have any questions? | Tak, kiedy lądujemy w Warszawie? | Ask when you land in Warsaw. | „Kiedy” means “when”; „lądujemy” means “we land”. | Tak, kiedy będziemy w Warszawie?
+w przylot | arrival (of a flight)
+w paszportowa | passport (adjective, feminine)
+t Lądujemy za dziesięć minut. Witamy w Warszawie! Przylot jest punktualnie. | We land in ten minutes. Welcome to Warsaw! The arrival is on time. | Dziękuję! Gdzie jest kontrola paszportowa? | Thank her and ask where passport control is. | „Gdzie” means “where”.
+w odbiór | pickup, collection
+w bagażu | luggage (genitive of bagaż)
+w cło | customs
+w najpierw | first
+w kontrolę | check, control (accusative of kontrola)
+w paszportową | passport (accusative feminine)
+k Kontrola paszportowa jest po lewej. Potem odbiór bagażu, a potem cło. Dokąd pan idzie najpierw? | Passport control is on the left. Then baggage claim, and then customs. Where do you go first? | Najpierw idę na kontrolę paszportową. | Najpierw idę na cło.; Najpierw idę po bagaż. | You go to customs last, after collecting your suitcase.; You collect your suitcase only after passport control.
+w przyjedzie | will arrive (by vehicle)
+w zdejmę | I will take off (perfective)
+w taśmy | belt (genitive of taśma)
+t Dokładnie! A potem po bagaż. Pana walizka przyjedzie na taśmie numer cztery. | Exactly! And then for the luggage. Your suitcase will come on belt number four. | Bardzo dziękuję! Zdejmę walizkę z taśmy. | Thank her and say that you will take the suitcase off the belt. | „Z taśmy” means “from the belt” (z + genitive). | Dziękuję! Wezmę walizkę z taśmy.
+w oclenia | customs duty (genitive of ocleniu: coś do oclenia = something to declare)
+w zapyta | will ask
+t Czy ma pan coś do oclenia? O to zapyta cło. | Do you have anything to declare? Customs will ask that. | Nie, nie mam nic do oclenia. | Say that you have nothing to declare. | „Nic” means “nothing”. 
+w dobrej | good (genitive feminine)
+w zabawy | fun (genitive of zabawa)
+w weselu | wedding (locative of wesele: na weselu = at the wedding)
+e Wtedy wszystko w porządku. Witamy w Polsce i dobrej zabawy na weselu! | Then everything is fine. Welcome to Poland and enjoy the wedding!

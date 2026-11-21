@@ -239,3 +239,901 @@ t Þú ert vitr maðr! Hestr þinn er skjótr. | Jesteś mądrym człowiekiem! T
 w vestr
 t Þing er nær. Far vestr, ok þú ert þar brátt. | Althing jest blisko. Jedź na zachód, a wkrótce tam będziesz. | Þökk! Far vel! | Podziękuj i pożegnaj się. | Far vel to „bądź zdrów”.
 e Far heill, gestr! | Jedź w zdrowiu, gościu!
+
+@larp amma | Babcia przed halą | Amma Gerðr | G | Niedziela przed hallą. Na ławie siedzi starsza pani, która uwielbia rozmawiać i ma całe popołudnie. | Posiedź z babcią Gerðr i porozmawiaj z nią. Nikt cię stąd nie wyrzuci.
+fee 0
+reward 10
+story yes
+win Amma Gerðr promienieje: „Hví góðr maðr!” Zaprasza cię na niedzielny miód i kawałek placka.
+partial Rozmowa się toczyła, choć kilka razy musiałeś prosić o powtórzenie. Amma Gerðr uśmiecha się cierpliwie i zaprasza cię znowu.
+fail Amma Gerðr się nie zniechęca, bo ma nieskończoną cierpliwość. Jeśli kiedyś zobaczysz ten komunikat, napisz do nas.
+
+@level 1 | Na ławie | patience=3 endless=yes typed=0 extra=2 hint=none
+desc Rozdział 1: Poznajecie się
+scene Dwór, ławka, słońce. Starsza pani karmi okruchami kury i zaczyna rozmowę. Nie musisz się spieszyć: Amma Gerðr poczeka.
+goal Przywitaj się, powiedz, jak się nazywasz i skąd jesteś.
+win Amma Gerðr klepie ławę obok siebie: „Sit hjá mér, Pétr!” Zostajesz na dłużej.
+partial Rozmowa się udała, mimo kilku pomyłek. Amma Gerðr zachowuje cierpliwość i robi ci miejsce na ławie.
+fail Amma Gerðr nigdy się nie zniechęca.
+w fǫgr | piękny
+w veðr
+w gott
+t Heill, ungr maðr! Er eigi veðr gott í dag? | Witaj, młody człowieku! Czyż pogoda nie jest dziś dobra? | Já, veðr er gott. | Zgódź się, że pogoda jest dobra. | „Pogoda” to veðr; „dobra” (nijaki) to gott. | Já, sól er fǫgr.
+w mælt | powiedziane (mæla)
+w heitir | nazywa się (heita)
+w heiti | nazywam się (heita)
+w Gerðr | Gerðr (imię)
+w Pétr | Pétr (imię)
+t Vel mælt! Hvé heitir þú? Ek heiti Gerðr. | Dobrze powiedziane! Jak się nazywasz? Ja nazywam się Gerðr. | Ek heiti Pétr. | Powiedz, jak się nazywasz. | „Nazywam się” to ek heiti. | Ek em Pétr.
+w Býr | mieszka (búa)
+w Póllandi | Polska (celownik)
+w ekki
+t Pétr! Þat er gott nafn. Býr þú hér? | Piotr! To dobre imię. Mieszkasz tutaj? | Nei, ek bý eigi hér. Ek em frá Póllandi. | Zaprzecz i powiedz, że jesteś z Polski. | „Nie” przy czasowniku to eigi; „z” to frá + celownik. | Nei, ek bý ekki hér. Ek em frá Póllandi.
+w gjarna
+w þökk
+t Frá Póllandi! Þat er langt. Vilt þú sitja? | Z Polski! To daleko. Chcesz usiąść? | Já, gjarna. Þökk! | Zgódź się i podziękuj. | „Chętnie” to gjarna.
+e Heill ok sæll! Hér er rúm. | Zdrów i szczęśliwy! Tu jest miejsce.
+
+@level 2 | Wnuk i kaczki | patience=3 endless=yes typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Wnuk i placek
+scene Mały Ari biega po trawniku i karmi kaczki, a Amma Gerðr pokazuje ci swe bransolety. Z torby wyjmuje placek własnej roboty.
+goal Porozmawiaj o wnuku Arim, powiedz, czy masz dzieci, i spróbuj placka.
+win Amma Gerðr wręcza ci drugi kawałek: „Et, et, þú ert of mjór!” Ari macha do ciebie z daleka.
+partial Zjadłeś placek, choć kilka razy brakowało ci słów. Amma Gerðr dolewa miodu z dzbana.
+fail Amma Gerðr nie traci cierpliwości.
+w Ari | Ari (imię)
+w vetra | zim, lat (dopełniacz mn.)
+w hann
+w mjǫk
+w góðr
+t Þat er sonarsonr minn, Ari. Hann er sex vetra gamall. | To mój wnuk Ari. Ma sześć zim. | Hann er mjǫk góðr sveinn. | Pochwal wnuka: powiedz, że to bardzo dobry chłopiec. | „Chłopiec” to sveinn; „on jest” to hann er. | Ari er mjǫk góðr sveinn.
+w gefr | daje (gefa)
+w ǫndum | kaczkom (celownik mn.)
+w bǫrn
+t Þökk! Ari gefr ǫndum brauð. Átt þú bǫrn? | Dziękuję! Ari daje kaczkom chleb. Masz dzieci? | Nei, ek á eigi bǫrn. | Powiedz, że nie masz dzieci. | „Nie mam” to ek á eigi; bǫrn to „dzieci”. | Nei, ek á ekki bǫrn.
+w bakaða | upieczoną (biernik)
+w hana | ją
+w sjálf | sama
+w Kakan | placek (z rodzajnikiem)
+t Átt þú eigi bǫrn? Svá. Vilt þú kǫku? Ek bakaða hana sjálf. | Nie masz dzieci? Tak. Chcesz placek? Sama go upiekłam. | Já, gjarna. Kakan er mjǫk góð! | Przyjmij placek i pochwal go. | Kaka jest rodzaju żeńskiego: kakan er góð. | Já, þökk. Kakan er mjǫk góð!
+w tigir | dziesiątki; „sjau tigir” = siedemdziesiąt
+w þrír
+t Vel! Hvé gamall ert þú? | Dobrze! Ile masz lat? | Ek em þrír tigir vetra gamall. | Powiedz, że masz trzydzieści zim. | „Mam … zim” to ek em … vetra gamall.
+e Svá ungr! | Taki młody!
+
+@level 3 | Zaproszenie | patience=3 endless=yes typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Miód w niedzielę
+scene Słońce chyli się ku zachodowi. Amma Gerðr pakuje dzban i prosi cię o pomoc. Zanim wstaniecie z ławy, chce cię jeszcze zaprosić.
+goal Przyjmij zaproszenie na niedzielny miód i pomóż babci z workiem.
+win Amma Gerðr pokazuje ci drogę do swego domu: „Hafðu hungr með þér!” Idziesz do domu w świetnym nastroju.
+partial Wszystko się wyjaśniło, choć trzeba było kilka razy powtarzać. Amma Gerðr mówi: „Far vel til sunnudags, sveinn minn!”
+fail Amma Gerðr nie traci cierpliwości.
+w hvern | każdego, który (biernik r. m.)
+w fagrt | piękne (r. nijaki)
+t Sér þú, ek em hér hvern dag. Hér er svá fagrt. | Wiesz, jestem tu codziennie. Jest tu tak pięknie. | Já, hér er mjǫk fagrt. | Zgódź się, że jest tu pięknie. | „Pięknie” (nijaki) to fagrt. | Já, hér er mjǫk gott.
+w satt | prawdziwe, prawda (r. nijaki)
+w sunnudag | niedzielę
+w Hvenær | kiedy
+t Eigi satt? Á sunnudag brugga ek mjǫð. Vilt þú koma? | Prawda? W niedzielę warzę miód. Chcesz przyjść? | Já, gjarna. Hvenær? | Zgódź się i zapytaj, kiedy. | „Kiedy?” to hvenær.
+w Hjálpar | pomaga (hjálpa)
+w sekkinn | worek (z rodzajnikiem)
+w sekk | worek
+w víst
+w þinn
+t Þegar sól er hátt. Sekkr minn er þungr. Hjálpar þú mér? | Gdy słońce jest wysoko. Mój worek jest ciężki. Pomożesz mi? | Já, víst. Ek ber sekkinn. | Zgódź się i zaproponuj, że poniesiesz worek. | „Niosę” to ek ber, a „worek” to sekkr (z rodzajnikiem sekkinn). | Já, ek ber sekk þinn.
+w sunnudags | niedzieli (dopełniacz)
+t Hvé góðr maðr! Þú ert góðr. | Jaki dobry człowiek! Jesteś dobry. | Þökk! Far vel til sunnudags! | Podziękuj i pożegnaj się do niedzieli. | „Do niedzieli” to til sunnudags.
+e Far vel til sunnudags! Heill! | Do niedzieli! Bądź zdrów!
+
+
+@larp njosn | Szpieg | Sendimaðr | S | Jesteś agentem pod przykrywką. W Heiðabýr masz odebrać tajny list z hali jarla i przekazać go dalej. Jedno złe słowo i jesteś zdemaskowany. | Zachowaj przykrywkę kupca Brandra, zdobądź list i uciekaj z kufrem.
+fee 0
+reward 20
+strict yes
+story yes
+win Kufer jest w twoich rękach, a statek odpływa z portu. Ktoś w centrali szepcze: „Vel gǫrt, Haukr.” Przykrywka nie pękła ani razu.
+partial Misja się udała, ale po drodze kilka razy omal się nie zdradziłeś. Centrala odnotowuje: „Hann hafði hamingju.”
+fail Zdradziłeś się jednym słowem. Przykrywka pękła, a ty znikasz w ciemności bez listu i bez kufra.
+
+@level 1 | Hasło w porcie | patience=2 typed=0 extra=1 hint=none
+desc Rozdział 1: Kontakt w porcie
+partner Maðr með hǫtt | M
+scene Heiðabýr, wieczór, nabrzeże. Jesteś szpiegiem „Haukr”, ale dla wszystkich jesteś Brandrem, kupcem futer z Hǫfn. Na nabrzeżu czeka człowiek w kapturze. Hasło: „Vetr kemr snemma.” Odzew: „Ok sumar kemr síð.”
+goal Podaj hasło, nie zdradź swojej przykrywki i przyjmij zadanie. Jedna zła odpowiedź i jesteś zdemaskowany.
+win Człowiek w kapturze znika w tłumie, a ty zostajesz z wiadomością w kieszeni. Przykrywka nietknięta, a jutro czeka cię hala jarla.
+partial Dostałeś zadanie, ale kontakt zmarszczył brwi przy kilku twoich odpowiedziach. Lepiej uważaj jutro.
+fail Człowiek w kapturze spojrzał na ciebie zimno, odwrócił się i odszedł. Zadanie dostanie ktoś inny.
+w Kalt | zimno
+w kalt | zimno
+w kemr | przychodzi (koma)
+w vetr
+w snemma
+w mjǫk
+t Heill, gestr. Kalt er í dag, er eigi svá? | Witaj, gościu. Zimno dziś, prawda? | Já, kalt er. Vetr kemr snemma. | Zgódź się, że jest zimno, i powiedz hasło: zima przychodzi wcześnie. | Hasło brzmi: „Vetr kemr snemma.” | Já, mjǫk kalt. Vetr kemr snemma.
+w Þegi | milcz (þegja)
+w Brandr | Brandr (imię)
+w Haukr | Haukr (imię)
+w njósnarmaðr | szpieg
+w heiti
+w kaupmaðr
+k Ok sumar kemr síð. Þegi! Hér hlýða menn. Hvé heitir þú? | A lato przychodzi późno. Cicho! Tu ludzie słuchają. Jak się nazywasz? | Ek heiti Brandr. Ek em kaupmaðr. | Ek heiti Haukr. Ek em njósnarmaðr.; Ek heiti Brandr. Ek em njósnarmaðr. | Haukr to twoje imię agenta, a ludzie słuchają.; Brandr się zgadza, ale „njósnarmaðr” zdradza przykrywkę.
+w Fylgir | towarzyszy (fylgja)
+w þér | tobie
+w fylgir | towarzyszy (fylgja)
+w hefi | mam (hafa)
+w engi
+w nǫkkurr
+k Gott. Fylgir þér nǫkkurr? | Dobrze. Czy ktoś cię śledzi? | Nei, engi fylgir mér. | Já, nǫkkurr fylgir mér.; Nei, ek hefi eigi tíð. | Mówisz, że nikt cię nie śledzi.; Kontakt pyta o śledzenie, nie o czas.
+w erendi | sprawa, zadanie
+w þitt | twoje (r. nijaki)
+w ferr | idzie, płynie (fara)
+w jarls | jarla (dopełniacz)
+w skil | rozumiem (skilja)
+w morgin
+w hǫll
+t Vel. Hér er erendi þitt. Á morgin ferr þú í hǫll jarls. Þar er veizla. | Dobrze. Oto twoje zadanie. Jutro idziesz do hali jarla. Jest tam uczta. | Ek skil. Á morgin fer ek í hǫll jarls. | Powiedz, że zrozumiałeś: jutro idziesz do hali jarla. | „Rozumiem” to ek skil; „do hali” to í hǫll.
+w veizlu | ucztę (biernik)
+w Svanr | Svanr (imię)
+w orðit | słowo (z rodzajnikiem)
+w Orðit | słowo (z rodzajnikiem)
+t Gott. Orð til veizlu er Svanr. Hvat er orðit? | Dobrze. Hasło na ucztę to „Łabędź”. Jakie jest hasło? | Orðit er Svanr. | Powtórz hasło na ucztę. | Orð to „słowo, hasło”; Svanr to „łabędź”.
+w Kennir | poznajesz (kenna)
+w mik | mnie (biernik)
+w kenni | poznaję (kenna)
+d Vel. Þegi! Vǫrðr kemr. Kennir þú mik? | Dobrze. Cicho! Idzie strażnik. Znasz mnie? | Nei, ek kenni þik eigi. | Zaprzecz, że znasz tego człowieka. | Nie możesz zdradzić, że znasz kontakt. | Nei, ek kenni þik eigi!
+e Góða nótt, Brandr. | Dobranoc, Brandrze.
+
+@level 2 | Uczta w hali jarla | patience=2 typed=0.2 extra=3 hint=bank
+desc Rozdział 2: Uczta w hali jarla
+partner Bergþóra | B
+scene Następny wieczór. W hali jarla trwa uczta, a przy wejściu stoi Bergþóra, zarządczyni. Ona i goście zadają pytania o twoją „firmę”. Twoja przykrywka: Brandr, futra, Hǫfn. Hasło wejściowe: Svanr. Komnata jarla jest po prawej, wychodek po lewej.
+goal Wejdź na ucztę, nie zdradź się pytaniom o firmę i znajdź pretekst, żeby dotrzeć do komnaty.
+win Bergþóra macha ci na pożegnanie, a w komnacie leży list, o który ci chodziło. Nikt niczego nie podejrzewa.
+partial Weszłeś i dotarłeś do komnaty, ale Bergþóra patrzyła na ciebie dłużej, niż trzeba.
+fail Bergþóra przestaje się uśmiechać i daje znak straży. Za chwilę wyprowadzą cię z hali.
+w velkominn | witaj (r. m.)
+t Heill ok velkominn í hǫll jarls! Hvat er orðit? | Witaj w hali jarla! Jakie jest hasło? | Orðit er Svanr. | Podaj hasło wejściowe. | Orð to hasło, a Svanr to „łabędź”.
+w vápn | broń
+w bréf | list
+w ekki
+k Þökk. Ek verð at spyrja. Hefir þú vápn? | Dziękuję. Muszę zapytać. Masz broń? | Nei, ek hefi ekki vápn. | Já, ek hefi vápn.; Nei, ek hefi ekki bréf. | Na ucztę nie wchodzi się z bronią.; Pytanie dotyczy broni (vápn), nie listu (bréf).
+w vinnr | pracuje (vinna)
+w vinn | pracuję (vinna)
+w kaupmann | kupca (biernik)
+w Hǫfn | Hǫfn (miasto-port)
+w konung | króla (biernik)
+w Bergþóru | Bergþóra (biernik)
+w fyrir
+k Gott. Fyrir hvern vinnr þú? | Dobrze. Dla kogo pracujesz? | Ek vinn fyrir kaupmann í Hǫfn. | Ek vinn fyrir konung.; Ek vinn fyrir Bergþóru. | Konungr to twoja centrala, tajna.; Bergþóra to zarządczyni hali.
+w sel | daję (selja)
+w feldi | płaszczu (celownik)
+d Hvat selr þú? | Co sprzedajesz? | Ek sel feldi. | Powiedz, co sprzedajesz (przykrywka). | Twoja przykrywka to handel futrami. | Ek sel feldi!
+w þín | twój (r. żeński)
+w verzlan
+k Hvar er verzlan þín? | Gdzie jest twój kramik? | Verzlan mín er í Hǫfn. | Ek sel feldi.; Verzlan mín heitir Brandr. | „Hvar” to „gdzie”, a nie „co sprzedaje”.; „Hvar” pyta o miejsce, nie o nazwę.
+w Fróðligt | ciekawie
+w náðhús | wygódka
+t Fróðligt! Vilt þú eta? | Ciekawe! Chcesz coś zjeść? | Nei, þökk. Hvar er náðhús? | Odmów i zapytaj o wychodek (to pretekst). | Hvar = gdzie, więc „Hvar er náðhús?”.
+w Herbergi | izba
+w lokat | zamknięte (r. nijaki)
+w herbergi | izba
+w vinstri
+w hægri
+w fagrt
+k Náðhús er til vinstri. Herbergi jarls til hægri er lokat. | Wychodek jest po lewej. Komnata jarla po prawej jest zamknięta. | Þökk, ek fer til vinstri. | Þökk, ek fer til hægri.; Þökk, herbergi jarls er fagrt. | Komnata po prawej jest zamknięta, a ty idziesz do wychodka po lewej.; Nie wolno ci mówić, że chcesz iść do komnaty.
+w Skemmtu | baw się (skemmta)
+e Skemmtu þér vel, Brandr! | Baw się dobrze, Brandrze!
+
+@level 3 | Przesłuchanie | patience=1 typed=0.35 extra=3 hint=bank
+desc Rozdział 3: Przesłuchanie
+partner Kolr | K
+scene Masz list w sakwie, ale na dziedzińcu zatrzymuje cię podejrzliwy strażnik Kolr. Zaraz zapyta o wszystko. Pamiętaj: Brandr, kupiec, Hǫfn. Tutaj każda zła odpowiedź kończy misję.
+goal Przekonaj strażnika, że jesteś zwykłym gościem, i wyjdź z listem.
+win Kolr przepuszcza cię z kwaśną miną. Wychodzisz z hali, a list w sakwie jest ciężki jak ołów.
+partial Kolr w końcu cię puszcza, ale zapisuje twoje imię na kiju do liczenia.
+fail Kolr chwyta cię za ramię: „Kom með mér!” Misja skończona, zanim naprawdę się zaczęła.
+w Stǫð | stój
+w gerir | robi (gera)
+w náðhúss | wygódki (dopełniacz)
+w leita
+t Stǫð! Hverr ert þú? Hvat gerir þú hér? | Stój! Kim jesteś? Co tu robisz? | Ek em gestr. Ek leita náðhúss. | Powiedz, że jesteś gościem i szukasz wychodka. | „Leita” znaczy „szukać”. | Ek em gestr hér. Ek leita náðhúss.
+w Vart | stało się (verða)
+w náðhúsi | wygódka (celownik)
+k Náðhús er þar. Vart þú í herbergi jarls? | Wychodek jest tam. Czy byłeś w komnacie jarla? | Nei, ek var eigi í herbergi jarls. | Já, ek var þar.; Nei, ek var eigi í náðhúsi. | Przyznanie się to koniec przykrywki.; Pytanie dotyczy komnaty jarla, nie wychodka.
+w Hm | hm
+w sekk
+w silfr
+w brauð
+k Hm, gott. Hvat hefir þú í sekk? | Hm, dobrze. Co masz w worku? | Í sekk hefi ek silfr ok brauð. | Í sekk hefi ek bréf.; Ek hefi sekk. | List w worku zdradziłby cię od razu.; Strażnik pyta, co jest w worku, a nie czy masz worek.
+d Silfr ok brauð. Hvé heitir þú, ok hvar býr þú? | Srebro i chleb. Jak się nazywasz i gdzie mieszkasz? | Ek heiti Brandr ok bý í Hǫfn. | Podaj imię z przykrywki i miasto, w którym mieszkasz (Hǫfn). | Brandr i Hǫfn to twoja przykrywka. | Ek heiti Brandr ok bý í Hǫfn!
+w leyndarmál
+k Brandr, Hǫfn. Þú ert njósnarmaðr, er eigi svá? | Brandr, Hǫfn. Jesteś szpiegiem, prawda? | Nei, ek em eigi njósnarmaðr. Ek em kaupmaðr. | Já, en þat er leyndarmál.; Já, ek vinn fyrir konung. | Nawet żartem nie przyznawaj się do tajemnicy.; Przyznanie się do centrali to koniec.
+w kalla | wołam, nazywam
+w alla | wszystkich
+w gesti | gościa (biernik)
+w Bergþóra | Bergþóra (imię)
+t Ek kalla á Bergþóru. Hon kennir alla gesti. Kennir hon þik? | Zawołam Bergþórę. Zna wszystkich gości. Czy zna ciebie? | Já, Bergþóra kennir mik. Ek em gestr. | Powiedz, że Bergþóra cię zna. | „Kennir mik” znaczy „zna mnie”. | Já, Bergþóra kennir mik.
+w hǫllinni | hala (celownik, z rodzajnikiem)
+w nǫkkurn | jakiegoś (biernik r. m.)
+w engan | żadnego (biernik r. m.)
+d Gott. Njósnarmaðr er í hǫllinni. Sá þú nǫkkurn? | Dobrze. W hali jest szpieg. Widziałeś kogoś? | Nei, ek sá engan. | Zaprzecz, że kogokolwiek widziałeś. | Engan = nikogo. Ty sam jesteś tym szpiegiem. | Nei, ek sá engan!
+e Vel. Far heim, Brandr. | Dobrze. Idź do domu, Brandrze.
+
+@level 4 | Kufer i ucieczka | patience=1 typed=0.5 extra=3 hint=letters reward=30
+desc Rozdział 4: Wymiana kufra
+partner Ulfr | U
+scene Następny ranek, port. Ulfr z centrali czeka z kufrem pełnym srebra. Wymienisz go na list. Nowe hasło: „Hrafn”. Ale ktoś cię śledzi: w tłumie jest zdrajca (svikari), który chce dostać list dla siebie.
+goal Wymień list na kufer, nie daj się zdemaskować zdrajcy i wsiądź na statek.
+win Statek odpływa, a ty stoisz na pokładzie z kufrem. Ulfr macha z nabrzeża: „Góða ferð, Haukr!”
+partial Udało się uciec, ale zdrajca zdążył zobaczyć twoją twarz. Misja zaliczona, lecz twoja przykrywka jest spalona.
+fail Zdrajca był szybszy. Kufer i list zniknęły, a ty zostajesz na nabrzeżu z pustymi rękami.
+w Hrafn | Hrafn (imię)
+d Góðan dag. Hvat er orðit? | Dzień dobry. Jakie jest hasło? | Orðit er Hrafn. | Podaj hasło z dzisiejszej misji. | Orð to hasło, a dziś brzmi „Hrafn”. | Orðit er Hrafn!
+w bréfit | list (z rodzajnikiem)
+w Bréfit | list (z rodzajnikiem)
+w mínum | mojemu (celownik)
+k Gott. Hvar er bréfit? | Dobrze. Gdzie jest list? | Bréfit er í sekk mínum. | Bréfit er hjá Bergþóru.; Bréfit er leyndarmál. | List masz przy sobie, w worku.; Kontakt pyta, gdzie jest list, nie o tajemnicę.
+w Tak | weź (taka)
+w tek | biorę (taka)
+w kistuna | kufer (biernik, z rodzajnikiem)
+t Gott. Hér er kista. Silfr er í. Tak hana. | Dobrze. Oto kufer. Srebro jest w środku. Weź go. | Þökk. Ek tek kistuna. | Podziękuj i weź kufer. | Kista jest żeńska; w bierniku kistuna. | Þökk. Ek tek kistuna.
+w Gát | uwaga
+w eltir | goni (elta)
+w oss | nas
+w gerum | robimy (gera)
+w vér | my
+w vér | my
+w hlaupum | biegniemy (hlaupa)
+w brott | precz
+w bíðum | czekamy (bíða)
+w drekkum | pijemy (drekka)
+w mælum | mówimy (mæla)
+w við | przy, z; my dwaj
+w manninn | człowieka (biernik, z rodzajnikiem)
+w skjótt
+w mjǫð
+k Gát! Maðr þar er svikari. Hann eltir oss. Hvat gerum vér? | Uwaga! Ten człowiek tam jest zdrajcą. Idzie za nami. Co robimy? | Vér hlaupum skjótt á brott. | Vér bíðum hér ok drekkum mjǫð.; Vér mælum við manninn. | Zdrajca idzie za wami, trzeba uciekać.; Nie rozmawia się ze zdrajcą.
+w af | z, od
+w Fǫrum | idźmy, płyńmy (fara)
+w bæjar | miasta (dopełniacz)
+w hafnar | portu (dopełniacz)
+w fǫrum | idziemy, płyniemy (fara)
+k Já, skjótt! Svikari kemr af vinstri. Fǫrum vér vinstri til bæjar eða hægri til hafnar? | Tak, szybko! Zdrajca idzie z lewej. Idziemy w lewo do wsi czy w prawo do portu? | Vér fǫrum hægri til hafnar. | Vér fǫrum vinstri til bæjar.; Vér fǫrum heim. | Zdrajca nadchodzi z lewej, więc idziecie w prawo, do portu.; Pytanie jest o port albo wieś, a nie o dom.
+d Stǫð! Gef mér kistuna! Ek hefi sverð! | Stój! Daj mi kufer! Mam miecz! | Nei, ek gef þér eigi kistuna. | Odmów oddania kufra. | „Dawać” to gefa, a eigi stoi po czasowniku. | Nei, ek gef þér eigi kistuna!
+w siglir | żegluje (sigla)
+t Skjótt! Skip siglir brátt. Hefir þú enn kistuna? | Szybko! Statek zaraz odpływa. Czy masz jeszcze kufer? | Já, ek hefi enn kistuna. | Potwierdź, że masz jeszcze kufer. | Enn znaczy „jeszcze”. | Já, ek hefi hana enn.
+w gǫrt | zrobione (r. nijaki)
+w lokit | zamknięte, koniec
+e Vel gǫrt, Haukr! Erendi er lokit. Far vel! | Dobra robota, Haukr! Misja zakończona. Bądź zdrów!
+
+
+@larp tima | Podróż w czasie | Vǫrðr | V | Obudziłeś się w czasach wikingów pod wałem miasta Heiðabýr. Nikt nie może się dowiedzieć, że jesteś z przyszłości, bo za dziwne rzeczy i dziwne słowa grozi ci wygnanie albo gorzej. | Nie daj się wykryć jako przybysz z przyszłości: unikaj wszystkiego, co nie pasuje do epoki wikingów, i dotrwaj do końca dnia.
+fee 0
+reward 15
+strict yes
+story yes
+win Jarl kiwa głową: „Sannr ferðamaðr!” Nikt nie podejrzewa, skąd naprawdę jesteś. Wieczorem znajdujesz drogę powrotną, a w kieszeni zostaje ci tylko srebrna moneta na pamiątkę.
+partial Udało ci się przetrwać dzień, ale kilka razy ludzie patrzyli na ciebie podejrzliwie. Jarl każe cię obserwować, więc wymykasz się z miasta o świcie.
+fail Ktoś zauważył, że nie jesteś stąd. Straż woła: „Galdramaðr! Seiðmaðr!” i musisz uciekać. Podróż w czasie skończyła się wcześniej, niż chciałeś.
+
+@level 1 | Brama miasta | patience=5 typed=0 extra=1 hint=none
+partner Vǫrðr Ǫrn | V
+desc Rozdział 1: Brama Heiðabýr
+scene Czasy wikingów. Stoisz przed wielką drewnianą bramą miasta Heiðabýr. Strażnik Ǫrn zatrzymuje każdego podróżnego i zadaje pytania. Masz na sobie zwykłe ubranie, ale w kieszeniach zostały ci rzeczy z przyszłości.
+goal Odpowiedz na pytania strażnika tak, żeby nie wzbudzić podejrzeń: przedstaw się, powiedz skąd jesteś i jak podróżujesz. Zwróć uwagę na rzeczy, których w czasach wikingów jeszcze nie było.
+win Ǫrn otwiera bramę: „Velkominn til Heiðabýjar!” Nic nie wzbudziło jego podejrzeń, a ty wchodzisz do miasta.
+partial Ǫrn w końcu cię wpuszcza, ale przygląda ci się dłużej, niż byś chciał. Wchodzisz do miasta z uczuciem, że ktoś cię obserwuje.
+fail Ǫrn podnosi włócznię: „Þú ert eigi ferðamaðr!” Brama zamyka się z trzaskiem, a ty uciekasz w las.
+w Þetta | to (r. nijaki)
+w Heiðabýjar | Heiðabýr (dopełniacz)
+w ferðamaðr | podróżnik
+t Stǫð! Þetta er hlið Heiðabýjar. Hverr ert þú? | Stój! To brama Heiðabýr. Kim jesteś? | Ek em ferðamaðr. | Powiedz, że jesteś podróżnikiem. | „Jestem podróżnikiem”: ek em ferðamaðr.
+w Ǫrn | Ǫrn (imię; orzeł)
+w Kevin | Kevin (imię współczesne)
+w Chantal | Chantal (imię współczesne)
+w heiti
+k Hvé heitir þú? | Jak się nazywasz? | Ek heiti Ǫrn. | Ek heiti Kevin.; Ek heiti Chantal. | w czasach wikingów nikt tak nie nazywał dzieci.;Chantal to nowoczesne, francuskie imię. W tamtych czasach były Ǫrn, Ulfr czy Hrafn.
+w framtíð | przyszłość
+w Ameríku | Ameryka (celownik)
+w Póllandi
+k Hvaðan kemr þú? | Skąd przychodzisz? | Ek kem frá Póllandi. | Ek kem ór framtíð.; Ek kem frá Ameríku. | Ameryki jeszcze nikt tak nie nazywa;Vínland to co innego.
+w Fótgangandi | pieszo
+w hesti | koniu (celownik)
+w ríð | jadę konno (ríða)
+w bíl | samochód
+w flugvél | samolot
+k Hvé ferr þú? Fótgangandi eða á hesti? | Jak podróżujesz? Pieszo czy konno? | Ek ríð á hesti. | Ek fer í bíl.; Ek fer í flugvél. | Samolotów też jeszcze nie ma;ludzie nie latają.
+w Sýn | pokaż (sýna)
+w síma | telefon (biernik)
+w kreditkort | karta kredytowa
+w hefi
+w einungis
+w brauð
+k Sýn mér sekk þinn. Hvat hefir þú þar? | Pokaż mi swój worek. Co tam masz? | Ek hefi einungis brauð ok ǫl. | Ek hefi síma.; Ek hefi kreditkort. | Telefon w czasach wikingów? Strażnik wziąłby go za magiczne urządzenie.; Karta kredytowa z plastiku wyglądałaby jak magia. Pieniądze to wtedy srebro.
+w mátt | możesz (mega)
+w inn | do środka
+w húsbónda | gospodarza (dopełniacz)
+w svangr
+w hvar
+w hǫll
+t Gott, þú mátt koma inn. Ert þú svangr? | Dobrze, możesz wejść. Jesteś głodny? | Já, ek em svangr. Hvar er hǫll húsbónda? | Powiedz, że jesteś głodny, i zapytaj, gdzie jest hala gospodarza. | „Gdzie” to hvar, a „gospodarz” to húsbóndi.
+w Rétt | zaraz, prosto; słusznie
+w hǫllin | hala (z rodzajnikiem)
+w kominn | przybyły
+e Rétt til vinstri er hǫllin. Vel kominn til Heiðabýjar! | Zaraz po lewej jest hala. Witaj w Heiðabýr!
+
+@level 2 | Hala gospodarza | patience=5 typed=0.15 extra=3 hint=bank
+partner Húsbóndi Konráðr | K
+desc Rozdział 2: Hala „Rauði Uxi”
+scene Wchodzisz do hali. Gospodarz Konráðr jest ciekawski i pyta o wszystko: co chcesz zjeść, jak podróżujesz i czego potrzebujesz na noc. W hali nie ma elektryczności ani nowoczesnych napojów.
+goal Zamów jedzenie i picie, które mogli podać w czasach wikingów, ustal nocleg i nie wspomnij o niczym z przyszłości.
+win Konráðr klepie cię po plecach: „Þú ert góðr gestr!” Dostajesz miejsce przy ogniu i pełną misę. Nikt nie podejrzewa, że jesteś z przyszłości.
+partial Konráðr przygląda ci się podejrzliwie, ale podaje jedzenie. Śpisz źle, bo wciąż myślisz o tym, co powiedziałeś.
+fail Konráðr woła głośno: „Hvat er internet?!” Goście odwracają się w twoją stronę, a ty ledwo uciekasz tylnym wyjściem.
+w seyði
+t Velkominn í hǫll mína! Hvat vilt þú eta? Hér eru brauð ok seyði. | Witaj w mojej hali! Co chcesz zjeść? Mamy chleb i zupę. | Ek vil brauð ok seyði. | Zamów chleb i zupę. | „Chleb i zupa”: brauð ok seyði, bez rodzajnika.
+w kaffi | kawa
+w kóla | cola
+w mjǫð
+k Ok hvat vilt þú drekka? Hér eru mjǫðr, ǫl ok vatn. | A co chcesz pić? Mamy miód pitny, piwo i wodę. | Ek vil mjǫð. | Ek vil kaffi.; Ek vil kóla. | Kawa dotarła na Północ dopiero wieki później.; Coca-Cola powstała w XIX wieku.
+w farit | przebył (fara)
+w daga | dni (dopełniacz mn.)
+w leið
+t Mjǫð, gott. Þú hefir farit langt. Hvé lengi ert þú á leið? | Miód, dobrze. Daleko przebyłeś. Jak długo jesteś w drodze? | Ek em á leið tíu daga. | Powiedz, że jesteś w drodze dziesięć dni. | „Dziesięć dni”: tíu daga.
+w markað | targ (biernik)
+w tǫkum | bierzemy (taka)
+w vagni | wóz (celownik)
+w reiðhjóli | rower (celownik)
+w gjarna
+w fǫrum
+k Tíu daga! Á morgin fer ek á markað. Fer þú með? Vér tǫkum vagn. | Dziesięć dni! Jutro jadę na targ. Pojedziesz ze mną? Weźmiemy wóz. | Já, gjarna. Vér fǫrum með vagni. | Já, vér tǫkum bíl.; Nei, ek fer á reiðhjóli. | Samochodu nie ma. Konráðr nie zna takiego słowa.; Rower wynaleziono dopiero w XIX wieku.
+w kerti | świeca
+w internet | internet
+w rafmagn | prąd elektryczny
+k Gott. Herbergi hefir rúm. Vilt þú nǫkkut ok? | Dobrze. W izbie jest łóżko. Chcesz jeszcze coś? | Já, ek vil kerti. | Hefir þú internet?; Ek vil rafmagn. | Internetu nie ma. Konráðr nie wie, co to jest.; Prądu elektrycznego wynaleziono setki lat później.
+w dǫgum | dniach (celownik mn.)
+w Haralds | Haralda (dopełniacz)
+w konungs | króla (dopełniacz)
+w skál
+t Kerti, gott. Hér er mjǫðr annarr: góðr mjǫðr á dǫgum Haralds konungs! Skál! | Świeca, proszę. A tu jeszcze miód: dobry miód za dni króla Haralda! Na zdrowie! | Skál! | Wznieś toast. | „Na zdrowie” to skál.
+e Góða nótt! Á morgin fǫrum vér á markað. | Dobranoc! Jutro jedziemy na targ.
+
+@level 3 | Targ | patience=4 typed=0.3 extra=3 hint=bank reward=25
+partner Kaupkona Bera | B
+desc Rozdział 3: Targ w Heiðabýr
+scene Następnego ranka na targu jest tłoczno. Kupcowa Bera sprzedaje chleb i ser. Przy płaceniu liczy się tylko srebro, a ludzie przyglądają się twoim ubraniom.
+goal Kup chleb i ser, zapłać tak, jak płaci się w czasach wikingów, i wyjaśnij, skąd masz dziwne ubranie.
+win Bera wsuwa ci do koszyka jabłko: „Fyrir góðan ferðamann!” Targ nic nie podejrzewa, a w oddali widać już halę jarla.
+partial Bera w końcu sprzedała ci chleb i ser, ale kilka osób szepcze za twoimi plecami. Zbliża się hala jarla.
+fail Bera krzyczy: „Hvat er þetta klæði? Hvat er evra?” Tłum się zbiega, a ty uciekasz między straganami.
+w kaupa
+t Heill! Hvat vilt þú kaupa? Brauð, ost eða epli? | Witaj! Co chcesz kupić? Chleb, ser czy jabłka? | Ek vil kaupa brauð ok ost. | Poproś o chleb i ser. | Ostr jest męski, więc w bierniku ost.
+w kostar | kosztuje (kosta)
+w þrjú | trzy (r. nijaki)
+w saman
+t Brauð kostar tvau silfr ok ostr kostar þrjú silfr. | Chleb kosztuje dwa srebrne, a ser trzy srebrne. | Hvat kostar þat saman? | Zapytaj, ile to kosztuje razem. | „Razem” to saman.
+w silfri | srebrem (celownik)
+w evrum | euro (celownik mn.)
+w korti | karta (celownik)
+w gjalda
+k Þat er fimm silfr. Hvé vilt þú gjalda? | To pięć srebrnych. Jak chcesz zapłacić? | Ek gjalda með silfri. | Ek gjalda með evrum.; Ek gjalda með korti. | Euro wprowadzono dopiero w 2002 roku.; Karty płatnicze to wynalazek XX wieku. W czasach wikingów płaci się srebrem.
+w undarligt | dziwne (r. nijaki)
+w austri | wschód (celownik)
+w stuttermabolr | t-shirt
+w gallabuxur | dżinsy
+w strigaskór | adidasy, buty sportowe
+w siðr
+k Gott, silfr. Klæði þitt er undarligt. Hvat er þat? | Dobrze, srebro. Twoje ubranie jest dziwne. Co to? | Þat er siðr frá austri. | Þat er stuttermabolr.; Þat eru gallabuxur ok strigaskór. | T-shirty pojawiły się w XX wieku.; Dżinsy i adidasy to rzeczy z dwudziestego wieku. Bera zawołałaby straż.
+w vill | chce (vilja)
+t Frá austri, svá. Jarl vill sjá þik. Fer þú með mér? | Ze Wschodu, tak. Jarl chce cię zobaczyć. Pójdziesz ze mną? | Já, ek fer með þér. | Zgódź się i idź z nią. | „Idę z tobą” to ek fer með þér.
+e Kom þá! Hǫllin er þar. | No to chodź! Hala jest tam.
+
+@level 4 | Jarl | patience=4 typed=0.5 extra=4 hint=letters reward=25
+partner Jarl Sigurðr | S
+desc Rozdział 4: W hali jarla
+scene W hali czeka jarl Sigurðr. Słyszał dziwne plotki o obcym przybyszu. Zauważył coś błyszczącego na twoim nadgarstku i zadaje pytania, a tobie została tylko jedna droga: wrócić do bramy, gdzie wszystko się zaczęło.
+goal Odpowiedz na pytania jarla tak, żeby nie zdradzić zegarka, telefonu ani przyszłości, i wróć bezpiecznie do bramy.
+win Jarl macha ręką: „Gott, far þá!” Wracasz do bramy, w powietrzu coś migocze i budzisz się we własnym czasie. Na dłoni masz srebrne monety.
+partial Jarl pozwala ci odejść, ale pod nosem mruczy o czarownikach. Dopiero za bramą migotanie powietrza zabiera cię do domu.
+fail Jarl woła strażników: „Galdrakista! Hann kemr ór framtíð!” Nie zdążysz dojść do bramy.
+t Heill! Ek em jarl hér. Hverr ert þú? | Witaj! Jestem tu jarlem. Kim jesteś? | Ek em Ǫrn, ferðamaðr frá Póllandi. | Przedstaw się: Ǫrn, podróżnik z Polski. | „Z Polski” to frá Póllandi.
+w hendi | ręka (celownik)
+w þinni | twojej (celownik r. ż.)
+w armbandsúr | zegarek na rękę
+w rafhlǫðu | bateria (celownik)
+w stafrænt | cyfrowy (r. nijaki)
+w úr | zegarek
+w hringr
+k Hvat er þat á hendi þinni? | Co to jest na twojej ręce? | Þat er einungis hringr. | Þat er armbandsúr með rafhlǫðu.; Þat er stafrænt úr. | Zegarek z baterią to wynalazek nowoczesny.; Cyfrowy zegarek wyglądałby jak czary.
+w klukkan | zegar, godzina
+w sýnir | pokazuje (sýna)
+w miðjan | środkowy (biernik r. m.)
+w Klukkan | zegar, godzina
+w hálf | pół
+w lít | patrzę (líta)
+w símann | telefon (z rodzajnikiem)
+w ekki
+w minn
+k Einungis hringr? Hvat er klukkan? Þú hefir víst úr. | Tylko pierścień? Która godzina? Masz przecież zegarek. | Ek hefi ekki úr. Sól sýnir miðjan dag. | Klukkan er hálf þrjú.; Ek lít á símann minn. | Taka dokładna godzina to nowoczesny sposób liczenia czasu.; Telefon to rzecz z przyszłości.
+w ræðr | rządzi (ráða)
+w landi | kraj (celownik)
+w Haraldr | Haraldr (imię)
+w Forseti | prezydent
+w veit | wiem (vita)
+w konungr
+w eigi
+k Miðjan dag, gott. Hverr ræðr landi nú? | Południe, dobrze. Kto teraz rządzi krajem? | Haraldr konungr ræðr landi. | Forseti ræðr landi.; Ek veit þat eigi. | Prezydent to nowoczesny urząd.; Nie wiedzieć, kto rządzi? Jarl uznałby, że ukrywasz coś.
+w hafir | miał (hafa, tryb łączący)
+w galdrakistu | magiczna skrzynia (biernik)
+w enga | żadną (biernik r. ż.)
+w sími | telefon
+k Gott. Menn segja at þú hafir galdrakistu. Er þat satt? | Dobrze. Mówią, że masz magiczną skrzynię. Czy to prawda? | Nei, ek hefi enga galdrakistu. | Já, þat er sími.; Já, ek kem ór framtíð. | Przyznanie się do telefonu zakończy rozmowę.; Przyznanie się do podróży w czasie to najgorsza odpowiedź.
+w sein | późno
+w hliðs | bramy (dopełniacz)
+w tímavélar | wehikuł czasu (dopełniacz)
+w bílsins | samochód (dopełniacz, z rodzajnikiem)
+w aptr
+k Gott. Nú er sein. Hvert ferr þú nú? | Dobrze. Jest już późno. Dokąd teraz idziesz? | Ek fer aptr til hliðs. | Ek fer til tímavélar.; Ek fer til bílsins. | Wehikuł czasu to najgorsza odpowiedź.; Samochodu w czasach wikingów nie ma.
+e Gott, far þá. Góða ferð! | Dobrze, to idź. Szczęśliwej podróży!
+
+
+@larp stjornmal | Polityk | Kjósandi | K | Jesteś skorumpowanym politykiem. Dawno temu kupiec Úlfr dał ci mieszek srebra, a „sprawa Gauksmál” (sprawa Kukułki) wraca na każdym szczeblu twojej kariery. Wyborcy ci wierzą… i przestają… i zapominają. | Przekonaj wyborców, że nadajesz się na stanowisko. Nigdy się nie przyznaj i nie sprzeczaj sam sobie.
+fee 0
+reward 30
+strict yes
+story yes
+disclaimer Satyra. Wszystkie postacie, rody i sprawy są zmyślone; ewentualne podobieństwo do prawdziwych osób jest przypadkowe.
+win Wygrywasz wybór na króla! Nikt już nie pamięta mieszka od Úlfra. Przed halą tłum woła twoje imię, a ty obiecujesz „uczciwe rządy”. Úlfr macha z ostatniego rzędu.
+partial Wygrywasz o włos. Skaldowie wciąż układają wersy o sprawie, ale ty już składasz pierwsze przysięgi. Kłamstwo trzyma się na słowo honoru.
+fail Wiarygodność spadła do zera. Wyborcy wyciągają starą sprawę, a z tłumu ktoś woła: „Pungrinn!” Twoja kariera kończy się w pieśni skalda.
+
+@level 1 | Hreppstjóri | patience=4 cap=6 typed=0 extra=1 hint=none
+desc Szczebel 1: wójt wsi Smáá
+partner Þórdís | Þ
+scene Zebranie wsi w wielkiej izbie w Smáá. Chcesz zostać wójtem (hreppstjóri). Þórdís zadaje pytania, a cała wieś słucha. Wszyscy pamiętają, że kupiec Úlfr naprawił drogę, i że ktoś widział mieszek…
+goal Przekonaj wieś, że jesteś uczciwy, i zaprzecz plotkom o mieszku.
+win Wieś klaszcze. Zostajesz wójtem Smáá. Úlfr, w pierwszym rzędzie, puszcza do ciebie oko.
+partial Wygrywasz jednym głosem. Þórdís patrzy na ciebie podejrzliwie, ale podnosi rękę.
+fail Wieś ma dość. Þórdís mówi: „Vér kjósum annan.” Kończysz karierę, zanim się zaczęła.
+w verða | zostać, stać się
+w hreppstjóri | wójt
+t Góðan dag! Vilt þú verða hreppstjóri? | Dzień dobry! Chce Pan zostać wójtem? | Já, ek vil verða hreppstjóri. | Powiedz, że chcesz zostać wójtem. | „Zostać” to verða, a po „vil” stoi bez „at”: ek vil verða.
+w heiðarligr | uczciwy
+w ávallt
+t Ert þú heiðarligr? | Czy jest Pan uczciwy? | Já, ek em ávallt heiðarligr. | Zapewnij, że jesteś zawsze uczciwy. | „Zawsze” to ávallt; po „em” przymiotnik zgadza się z podmiotem. | | gain=1
+w Vegrinn | droga (z rodzajnikiem)
+w brotinn | zepsuty
+w geri | robię (gera); „gera við” = naprawić
+w veginn
+t Vegrinn er brotinn. Hvat gerir þú? | Droga jest zepsuta. Co Pan zrobi? | Ek geri við veginn. | Obiecaj, że naprawisz drogę. | „Naprawić” to gera við, a „drogę” w bierniku to veginn. | | gain=1
+w Úlfr | Úlfr (imię; wilk)
+w gaf | dał (gefa)
+w pung | mieszek (biernik)
+w sét | widziany, widział (sjá)
+w Úlf | Úlfr (biernik)
+w varla | ledwo
+w lygi
+w kenni
+t Úlfr kaupmaðr gaf þér pung! Þat hefir einn sét! | Kupiec Úlfr dał Panu mieszek! Ktoś to widział! | Þat er lygi! Ek kenni Úlf varla. | Zaprzecz: to kłamstwo, ledwo znasz Úlfra. | „Znam” to ek kenni, a „ledwo” to varla. | Þat er lygi! Ek kenni Úlf varla. | shift=-2 loss=2
+w síðan | temu, odtąd
+w hǫfum | mamy (hafa)
+w gleymt | zapomniane (gleyma)
+w þessu | temu (celownik)
+w Þakka | dziękuję (þakka)
+w þakklátr | wdzięczny
+t Þat er langt síðan. Vér hǫfum gleymt þessu. | To było dawno. Zapomnieliśmy o tym. | Þakka þér, ek em þér þakklátr. | Podziękuj wyborcom za wyrozumiałość. | „Wdzięczny” to þakklátr; þér to „wam”, celownik. | | shift=+2
+w margar | wiele (r. ż.)
+w skuldir | długi
+w sveitinni | gmina, okolica (celownik, z rodzajnikiem)
+w meira | więcej
+w spara
+w silfr
+w veit
+o Vér hǫfum margar skuldir í sveitinni. Hvat gerir þú? | Mamy w gminie wiele długów. Co Pan zrobi? | Ek spara silfr ok em heiðarligr. | Ek tek meira silfr.; Ek veit eigi. | Polityk, który mówi „zabiorę więcej srebra”, nie brzmi wiarygodnie.;„Nie wiem” nie przekona wyborców. | gain=1
+w Munt | czy będziesz (munu)
+w yðr | wam, was
+t Munt þú vera heiðarligr við oss? | Czy będzie Pan wobec nas uczciwy? | Já, ek em ávallt heiðarligr við yðr. | Obiecaj uczciwość wobec wyborców. | „Wobec was” to við yðr. | | gain=1
+w kjósum | wybieramy (kjósa)
+e Þá kjósum vér þik! Velkominn, hreppstjóri! | Wybieramy więc Pana! Witamy, wójcie!
+
+@level 2 | Goði á þingi | patience=4 cap=6 typed=0.2 extra=2 hint=bank
+desc Szczebel 2: goði na tingu
+partner Skáldkona Ragnhildr | R
+scene Zgromadzenie w Þingvǫllr. Kandydujesz na goda (goði). Skaldka Ragnhildr pyta o kupców i o to, skąd masz nowy okręt.
+goal Zaprzecz, że brałeś srebro, i nie daj się złapać na kłamstwie.
+win Ragnhildr zamyka tabliczkę: „Gott, ek hefi engar spurningar.” Zostajesz godem. Úlfr gratuluje przez posłańca.
+partial Zostajesz godem, ale Ragnhildr mówi: „Ek fylgi þessu.” Będzie dalej drążyć.
+fail Wywiad trafia do pieśni pod tytułem „Goðinn ok pungrinn”. Nikt na ciebie nie głosuje.
+w skáldkona | skaldka
+w goði
+t Góðan dag, ek em skáldkona. Vilt þú verða goði? | Dzień dobry, jestem skaldką. Chce Pan zostać godem? | Já, ek vil verða goði. | Potwierdź, że chcesz zostać godem. | „Goði” to gode; po „verða” bez rodzajnika. | | gain=1
+w kunningi | znajomy
+w hann
+w einungis
+t Þú kennir Úlf kaupmann. Er hann vinr þinn? | Zna Pan kupca Úlfra. Czy to pański przyjaciel? | Nei, hann er einungis kunningi. | Zaprzecz: to tylko znajomy. | „Tylko” to einungis; „kunningi” to znajomy. | | gain=1
+w nýtt | nowy (r. nijaki)
+w silfrit | srebro (z rodzajnikiem)
+w keypta | kupiłem (kaupa)
+w heiðarliga | uczciwie
+w skipit | okręt (z rodzajnikiem)
+t Þú hefir nýtt skip. Hvaðan hefir þú silfrit? | Ma Pan nowy okręt. Skąd ma Pan srebro? | Ek keypta þat heiðarliga. | Powiedz, że kupiłeś go uczciwie. | „Kupiłem” to ek keypta; „uczciwie” to heiðarliga. | Ek keypta skipit heiðarliga. | 
+w tekit | wziął (taka)
+w mútu | łapówka (biernik)
+w hefi
+w aldri
+t Hefir þú tekit við mútu? | Czy brał Pan łapówki? | Nei, ek hefi aldri tekit við mútu. | Zaprzecz, że kiedykolwiek brałeś łapówki. | „Wziąć łapówkę” to taka við mútu: hefi tekit; „nigdy” to aldri. | Ek hefi aldri tekit við mútu. | loss=2
+w Ragnhildr | Ragnhildr (imię)
+w rúnakefli | kij z runami
+w pungr | mieszek
+w þessa | tych (biernik r. m.)
+w menn
+t Ragnhildr sýnir rúnakefli. Þar eru þú, Úlfr ok pungr. | Ragnhildr pokazuje rune-kij. Są na nim Pan, Úlfr i mieszek. | Ek kenni eigi þessa menn. | Powiedz, że nie znasz tych ludzi. | „Ci ludzie” to þessir menn; w bierniku þessa menn. | | shift=-2
+w Keflit | kij (z rodzajnikiem)
+w gamalt | stary (r. nijaki)
+w Kjósendr | wyborcy
+w mikilvægt | ważny (r. nijaki)
+t Keflit er gamalt. Kjósendr gleyma því brátt. | Kij jest stary. Wyborcy szybko o tym zapomną. | Keflit er eigi mikilvægt. | Zlekceważ kij: nie jest ważny. | „Ważny” to mikilvægr; „nie” to eigi. | | shift=+2
+w segir | mówi (segja)
+w tókt | wziąłeś (taka)
+w Vitnit | świadek (z rodzajnikiem)
+w lýgr | kłamie (ljúga)
+w vitnit | świadek (z rodzajnikiem)
+w satt
+w Rétt
+w vitni
+o Vitni segir, at þú tókt silfr. | Świadek mówi, że wziął Pan srebro. | Þat er eigi satt. Vitnit lýgr. | Já, vitnit hefir rétt.; Ek em vitni. | Przyznajesz się, więc przegrywasz.;Vitni to świadek, a ty nim nie jesteś. | gain=1
+w saklauss | niewinny
+t Þakka þér fyrir. Hefir þú nǫkkut ok at segja? | Dziękuję. Czy chce Pan coś jeszcze dodać? | Já, ek em saklauss. | Powiedz na koniec, że jesteś niewinny. | „Saklauss” to niewinny. | | gain=1
+w yrki | układam wiersz (yrkja)
+w sem | co, który
+w sagðir | powiedziałeś (segja)
+e Ek yrki þat, sem þú sagðir. Far vel! | Ułożę wiersz z tego, co Pan powiedział. Żegnaj!
+
+@level 3 | Hersir | patience=4 cap=6 typed=0.4 extra=2 hint=bank
+desc Szczebel 3: hersir (władca okręgu)
+partner Lǫgmaðr Hallsteinn | H
+scene W hali hersira w Hǫfn. Prawnik Hallsteinn bada kontrakt na nowy most (brú). Statek Úlfra wygrał dziwnie łatwo, a w sprawie wraca „Gauksmál”.
+goal Wyjdź z przesłuchania jako hersir, nie przyznając się do niczego.
+win Hallsteinn zamyka księgę: „Engi vitni. Málit er lokit.” Zostajesz hersirem, a most otwiera się z pompą.
+partial Księga zostaje otwarta, ale prawnik nie ma dowodów. Zostajesz hersirem z cieniem podejrzeń.
+fail Hallsteinn kładzie na stole pung i kefli. „Ek tek þik!” mówi. Kończysz w kajdanach.
+w lǫgmaðr | prawnik
+w Hallsteinn | Hallsteinn (imię)
+w lǫgmann | prawnika (biernik)
+w minn
+t Ek em lǫgmaðr Hallsteinn. Þetta er spurning. | Jestem prawnikiem Hallsteinnem. To jest przesłuchanie. | Ek vil sjá lǫgmann minn. | Poproś o swojego obrońcę. | „Mój” przy rodzaju męskim w bierniku to minn: lǫgmann minn. | | gain=1
+w Úlfs | Úlfra (dopełniacz)
+w vann | wygrał (vinna)
+w samning | umowa, kontrakt (biernik)
+w brúna | most (biernik, z rodzajnikiem)
+w hafði | miał (hafa)
+w bezta | najlepszy (biernik)
+t Skip Úlfs vann samning um brúna. Hví? | Okręt Úlfra wygrał kontrakt na most. Dlaczego? | Þat hafði bezta boð. | Wyjaśnij, że miał najlepszą ofertę. | „Miał” to hafði; „najlepsza oferta” to bezta boð. | | gain=1
+w spurningar | pytania
+w bera
+t Vér hǫfum margar spurningar. Vilt þú bera vitni? | Mamy wiele pytań. Czy chce Pan zeznawać? | Ek vil eigi bera vitni. | Odmów składania zeznań. | „Zeznawać” to bera vitni; „nie chcę” to ek vil eigi. | | shift=-1
+w vitna | świadków (dopełniacz)
+w grunr | podejrzenie
+w vitum | wiemy (vita)
+w báðir | obaj
+w engi
+t Án vitna er engi grunr. Þat vitum vér báðir. | Bez świadków nie ma podejrzenia. Wiemy to obaj. | Þú hefir engi vitni. | Powiedz prawnikowi, że nie ma świadków. | „Żadne świadki” to engi vitni. | | shift=+2
+w ákæra | oskarżenie
+w sekr | winny
+w gerða | zrobiłem (gera)
+o Kannski kemr ákæra. Hvat segir þú? | Być może będzie oskarżenie. Co Pan na to? | Ek em saklauss. | Ek em sekr.; Ek gerða þat. | „Sekr” to winny, a to przyznanie.;„Ek gerða þat” to przyznanie się. | gain=1
+t Úlfr segir, at hann gaf þér pung. | Úlfr mówi, że dał Panu mieszek. | Þat er lygi! Ek hefi aldri tekit pung. | Zaprzecz: to kłamstwo, nigdy nie wziąłeś mieszka. | „Nigdy nie wziąłem” to ek hefi aldri tekit; pung w bierniku to pung. | Þat er lygi! Ek hefi aldri tekit pung. | shift=-2 loss=2
+w Segðu | powiedz (segja)
+w eitt | jeden (r. nijaki)
+w sinn | raz
+w eiði | przysięga (celownik)
+w Úlfi | Úlfr (celownik)
+w tók | wziął (taka)
+w ekki
+d Segðu þá enn eitt sinn undir eiði. Tókt þú silfr af Úlfi? | A więc powiedz to jeszcze raz pod przysięgą. Wziął Pan srebro od Úlfra? | Nei, ek tók ekki silfr af Úlfi. | Zaprzeczaj pod przysięgą: nie wziąłeś od niego srebra. | „Od Úlfra” to af Úlfi (celownik); „nie wziąłem” to ek tók ekki. Jedna wpadka i koniec.
+w hersir | hersir (władca okręgu)
+w engar | żadne (r. ż.)
+e Gott. Þú ert hersir. Ek hefi engar spurningar. | Dobrze. Jest Pan hersirem. Nie mam więcej pytań.
+
+@level 4 | Lǫgréttumaðr | patience=4 cap=6 typed=0.6 extra=2 hint=letters
+desc Szczebel 4: członek Lǫgrétta
+partner Lǫgsǫgumaðr Valgerðr | V
+scene Alþingi, Lǫgrétta. Jesteś członkiem Lǫgrétty, a Lǫgsǫgumaðr Valgerðr wzywa cię jako świadka w sprawie „Gauksmál”. Prawnicy mają dla ciebie nowe słowa: vitni, eiðr, friðhelgi.
+goal Odpowiadaj pod przysięgą tak, by nikt nie dowiódł, że kłamiesz.
+win Valgerðr: „Vitnisburðr er lokit.” Wychodzisz z hali z uniesioną głową. Zgromadzenie nic nie ma.
+partial Lǫgrétta kończy bez wniosków, ale jeden członek zapisał na tabliczce: „Rannsaka síðar!”
+fail Lǫgrétta każe ci wyjaśnić sprzeczność. Zaplątałeś się, a skaldowie śpiewają o „lygimaðr”.
+w Lǫgréttu | Lǫgrétta (zgromadzenie ustawodawcze, biernik)
+w segi | mówię (segja)
+t Velkominn í Lǫgréttu. Þú ert undir eiði. | Witamy w Lǫgréttcie. Zeznaje Pan pod przysięgą. | Já, ek veit þat. Ek segi satt. | Potwierdź i zapewnij, że mówisz prawdę. | „Mówić prawdę” to segja satt. „Pod przysięgą” to undir eiði. | | gain=1
+w friðhelgi | nietykalność
+w lǫgréttumaðr | członek Lǫgrétty
+w láta | pozwolić, oddać
+w halda
+w minni
+t Þú hefir friðhelgi sem lǫgréttumaðr. Vilt þú láta hana af hendi? | Jako członek Lǫgrétty ma Pan nietykalność. Czy chce Pan jej się zrzec? | Nei, ek vil halda friðhelgi minni. | Odmów zrzeczenia się nietykalności. | „Zachować” to halda; „moja nietykalność” w celowniku to friðhelgi minni. | | shift=-1
+w Vitnisburðr | zeznanie
+w mótsǫgn | sprzeczność
+w gǫgnin | dowody (z rodzajnikiem)
+w skýrir | wyjaśnia (skýra)
+w ekkert | nic
+w leyna | ukryć
+t Vitnisburðr þinn er í mótsǫgn við gǫgnin. Hvé skýrir þú þat? | Pańskie zeznanie jest sprzeczne z dowodami. Jak Pan to wyjaśni? | Ek hefi ekkert at leyna. | Powiedz, że nie masz nic do ukrycia. | „Nic do ukrycia” to ekkert at leyna. | | loss=2
+w hugsa | myślą (hugsa)
+w lengr | dłużej
+w fortíð | przeszłość
+t Þat er langt síðan. Kjósendr hugsa eigi lengr um þat. | To było dawno. Wyborcy już o tym nie myślą. | Þat er fortíð. | Machnij ręką: to przeszłość. | „Przeszłość” to fortíð. | | shift=+2
+w skrifaða | napisałem (skrifa)
+w skrifaði | napisał (skrifa)
+w bréfit
+o Hér er bréf frá Úlfi. Kennir þú þat? | Oto list od Úlfra. Zna go Pan? | Ek kenni eigi bréfit. | Já, ek skrifaða bréfit.; Lǫgmaðr minn skrifaði bréfit. | Przyznajesz się, że to ty napisałeś list: to błąd.;Zwalanie na prawnika nie jest wiarygodne. | gain=1
+w fekkt | dostałeś (fá)
+w fekk | dostałem (fá)
+t Vitni segir, at þú fekkt pung með silfri. | Świadek mówi, że dostał Pan mieszek ze srebrem. | Vitnit lýgr. Ek fekk ekkert silfr. | Nazwij świadka kłamcą i zaprzecz, że dostałeś srebro. | „Dostałem” to ek fekk; „żadne srebro” to ekkert silfr. | | shift=-2 loss=2
+w þinginu | ting (celownik, z rodzajnikiem)
+k Á þinginu sagðir þú, at þú kennir Úlf varla. Er þat enn satt? | Na tingu powiedział Pan: „Ledwo znam Úlfra.” Czy to nadal prawda? | Já, ek kenni hann varla. | Nei, hann er vinr minn.; Nei, ek hefi aldri sét hann. | Przyznajesz, że to twój przyjaciel: sprzeczność i koniec.;Wcześniej mówiłeś „varla”, a nie „nigdy go nie widziałem”. | gain=1
+w sjáumst | zobaczymy się (sjá)
+e Þakka þér. Þú mátt fara. Vér sjáumst brátt aptr. | Dziękuję. Może Pan odejść. Wkrótce znów się zobaczymy.
+
+@level 5 | Jarl | patience=4 cap=6 typed=0.8 extra=2 hint=bank
+desc Szczebel 5: jarl
+partner Skáld Þorvaldr | Þ
+scene Uczta w hali króla, a Þorvaldr, skald i gospodarz uczty, pyta cię publicznie. Jesteś jarlem i siedzisz naprzeciw niego. Nagle skald odczytuje stare runy z „Gauksmál”.
+goal Wyjdź z uczty nadal jako jarl: nie daj się zapędzić w pułapkę przy wszystkich.
+win Þorvaldr kończy wiersz: „Þakka þér, jarl.” Poparcie rośnie. Úlfr przysyła róg miodu: „Vel gert!”
+partial Uczta kończy się remisem. Wrogowie żądają, byś odstąpił od władzy, ale król cię broni.
+fail Na oczach wszystkich uciekasz od odpowiedzi, a goście wszystko widzą. Rano skaldowie śpiewają o twoim upadku.
+w kvǫld | wieczór
+w erum | jesteśmy (vera)
+w búinn
+w gjarna
+t Gott kvǫld! Vér erum í hǫll konungs. Ert þú búinn, jarl? | Dobry wieczór! Jesteśmy w hali króla. Jest Pan gotów, jarlu? | Já, ek em búinn. Gjarna. | Potwierdź, że jesteś gotów. | „Gotów” to búinn. | | gain=1
+w Óvinir | wrogowie
+w skandall | skandal
+w sé | jest (vera, tryb łączący)
+w Gauksmál | Gauksmál (sprawa Kukułki)
+w áróðr | propaganda
+t Óvinir segja, at skandall sé um Gauksmál. | Wrogowie mówią: wokół Gauksmál jest skandal. | Þat er engi skandall. Þat er áróðr. | Zbagatelizuj: to nie skandal, tylko propaganda. | „Propaganda” to áróðr; „żaden skandal” to engi skandall. | | shift=-1
+w rúnum | runy (celownik mn.)
+w stendr | stoi (standa)
+w innsigli | pieczęć
+w minnumk | pamiętam (minnask)
+w þess | tego (dopełniacz)
+t Á rúnum stendr nafn þitt. Þat er innsigli þitt. | Na runach jest Pańskie imię. To Pański pieczęć. | Ek minnumk þess ekki. | Powiedz, że tego nie pamiętasz. | „Pamiętać” to minnask; „nie pamiętam tego” to ek minnumk þess ekki. | | shift=-2 loss=2
+w fǫlsun | fałszerstwo
+t Þetta er innsigli þitt. Hvé skýrir þú þat? | To jest Pański pieczęć. Jak Pan to wyjaśni? | Þat er fǫlsun. | Zaprzecz: to fałszerstwo. | „Fałszerstwo” to fǫlsun. | | gain=1
+w Fylgi | poparcie
+w vex | rośnie (vaxa)
+w traust | zaufanie
+w yðart | wasze (r. nijaki)
+t Fylgi þitt vex. Kjósendr trúa þér. | Poparcie rośnie. Wyborcy Panu wierzą. | Ek þakka yðr traust yðart. | Podziękuj wyborcom za zaufanie. | „Zaufanie” to traust; „dziękuję wam” to ek þakka yðr. | | shift=+2
+w ráðgjafi | doradca
+w unnit | pracował (vinna)
+w honum | nim (celownik)
+w oft | często
+o Úlfr segir, at hann var ráðgjafi þinn. Er þat satt? | Úlfr mówi, że był Pańskim doradcą. Czy to prawda? | Nei, ek hefi aldri unnit með honum. | Já, hann gaf mér oft silfr.; Ek vil eigi bera vitni. | Przyznajesz się do srebra: błąd.;Odmowa zeznań przy wszystkich wygląda na przyznanie się, a skald to wykorzysta. | gain=1
+t Vilt þú segja af þér? Þá er allt lokit. | Czy chce Pan zrezygnować? Wtedy wszystko skończone. | Nei, ek segi eigi af mér. Ek em saklauss. | Odmów rezygnacji i powiedz, że jesteś niewinny. | „Zrezygnować” to segja af sér; „nie zrezygnuję” to ek segi eigi af mér. | | gain=1
+w punginum | mieszek (celownik, z rodzajnikiem)
+w hers | wojska (dopełniacz)
+w míns | mojego (dopełniacz)
+w gjǫf
+k Hér er rúnakefli: þú ok Úlfr. Þar er ok pungr. Hvat er í punginum? | Oto kij z runami: Pan i Úlfr. Jest też mieszek. Co jest w mieszku? | Keflit er gamalt. Ek hefi aldri tekit pung. | Þat er silfr til hers míns.; Þat var einungis gjǫf. | Przyznanie się do srebra: koniec.;„Gjǫf” to też przyznanie, bo wcześniej mówiłeś, że nie brałeś mieszka. | gain=1
+e Þakka þér fyrir, jarl. | Dziękuję, jarlu.
+
+@level 6 | Konungr | patience=4 cap=6 typed=1 extra=2 hint=none
+desc Szczebel 6: król
+partner Jarl Gunnhildr | G
+scene Wielki spór na tingu przed wyborem króla. Kandydujesz na króla (konungr). Naprzeciw stoi Jarl Gunnhildr z rodu „Hin heiðarliga ætt” i jej księga ze „Gauksmál”. Cały kraj słucha.
+goal Wygraj spór, zachowaj spokój i nie przyznaj się do niczego do samego końca.
+win Przegrywa nawet wróżba: pięćdziesiąt dwóch na stu woła twoje imię. Zostajesz królem, a mieszek Úlfra leży na dnie skrzyni.
+partial Spór kończy się remisem. Wybór wygrywasz o włos i obiecujesz „więcej jawności”.
+fail Gunnhildr kładzie na stole księgę. Kraj widzi sprzeczność w twoich słowach, a skald wyśpiewuje: „Konungsefni lýgr.”
+w Velkomin | witaj (r. ż.)
+w Gunnhildr | Gunnhildr (imię)
+w konungsefni | kandydat na króla
+w ger | zrób (gera)
+w konungr
+t Velkomin á þing! Gunnhildr jarl, konungsefni, ger svá vel. | Witamy na tingu! Jarlu Gunnhildr, kandydacie, proszę. | Gott kvǫld. Ek vil verða konungr. | Przywitaj się i powiedz, że chcesz zostać królem. | „Zostać królem” to verða konungr. | | gain=1
+w hinni | tej (celownik r. ż.)
+w heiðarligu | uczciwa (celownik r. ż. przymiotnik słaby)
+w Seg | mów (segja)
+t Ek em af ætt hinni heiðarligu. Seg satt, konungsefni! | Jestem z rodu Uczciwych. Mów prawdę, kandydacie! | Ek segi ávallt satt. | Zapewnij, że zawsze mówisz prawdę. | „Ávallt” to „zawsze”, stoi po czasowniku. | | gain=1
+w ásǫk | zarzut
+w hafna | odrzucam (hafna)
+w þeirri | tej (celownik r. ż.)
+t Þú hefir tekit við mútu. Þat er ásǫk mín. | Brał Pan łapówki. To mój zarzut. | Ek hafna þeirri ásǫk. | Odrzuć ten zarzut. | „Odrzucić” to hafna; „ten zarzut” w celowniku to þeirri ásǫk. | | shift=-2 loss=2
+w kosningabarátta | kampania wyborcza
+w Barátta | walka, kampania
+w óhrein | brudna
+t Þetta er einungis kosningabarátta. Þat er langt síðan. | To tylko kampania wyborcza. To było dawno. | Barátta þín er óhrein. | Zarzuć rywalce brudną kampanię. | „Brudna” to óhrein. | | shift=+2
+w gǫgn | dowody
+t Hefir þú gǫgn, Gunnhildr? Ek sé engi gǫgn! | Ma Pani dowody, Gunnhildr? Ja nie widzę żadnych dowodów! | Ek sé engi gǫgn. | Powtórz, że nie widzisz żadnych dowodów. | „Dowody” to gǫgn; „żadnych” to engi. | | gain=1
+w ætlan | plan
+w landit | kraj (z rodzajnikiem)
+w skapa | tworzę (skapa)
+w ný | nowe
+w verk
+t Ok hvat er ætlan þín fyrir landit? | A jaki jest Pański plan dla kraju? | Ek skapa ný verk. | Obiecaj nowe miejsca pracy. | „Nowe prace” to ný verk; „stworzę” to ek skapa. | | gain=1
+t Vinr þinn Úlfr segir, at hann gaf þér mikit silfr! | Pański przyjaciel Úlfr mówi, że dał Panu dużo srebra! | Þat er lygi! Hann er eigi vinr minn. | Zaprzecz: to kłamstwo, on nie jest twoim przyjacielem. | „Nie mój przyjaciel” to eigi vinr minn. | | shift=-1 loss=2
+o Á þinginu sagðir þú, at hann er einungis kunningi. Ok nú? | Na tingu powiedział Pan: to tylko znajomy. A teraz? | Hann er einungis kunningi. | Hann er vinr minn.; Ek hefi aldri sét hann. | Zaprzeczasz sam sobie.;Wcześniej przyznałeś, że go znasz („kunningi”), więc „nigdy go nie widziałem” to sprzeczność. | gain=1
+k Gunnhildr sýnir pung. Tókt þú hann? Já eða nei? | Gunnhildr pokazuje mieszek. Wziął go Pan? Tak czy nie? | Nei, ek tók hann aldri. | Já, ek tók hann.; Ek vil eigi bera vitni. | Przyznanie się: koniec.;Milczenie przy wszystkich wygląda jak przyznanie się. | 
+w Hamingju | szczęście (biernik)
+w óska | życzę (óska)
+e Ok konungr ert þú! Hamingju óska ek þér! | A królem zostaje… Pan! Serdeczne gratulacje!
+
+
+@larp hofn | Przystań | Hafnarvǫrðr | H | Heiðabýr, wczesny ranek. Płyniesz do Niðaróss na wesele najlepszego przyjaciela, a okręt nie poczeka. Masz kufer, srebro i mało czasu. | Przejdź całą drogę: zapłata za przeprawę, kontrola na nabrzeżu, sztorm i zmiana kei, rejs i odbiór kufra w Niðaróss.
+fee 0
+reward 20
+strict yes
+story yes
+win Docierasz do Niðaróss z kufrem, srebrem i pół dnia zapasu. Przyjaciel czeka na nabrzeżu z rogiem miodu: „Þú komt! Brúðlaup skal hefjast!”
+partial Dotarłeś do Niðaróss, ale po drodze sporo się nagadałeś i trochę pobiegałeś. Kufer jest, wesele też, ty trochę zdyszany, ale na czas.
+fail Pomyliłeś coś w najgorszym momencie i okręt odpłynął bez ciebie. Wesele oglądasz tylko w myślach, a przyjaciel obiecuje ci długą ucztę „na pocieszenie”.
+
+@level 1 | Opłata za przeprawę | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Opłata za przeprawę
+partner Hafnarvǫrðr | H
+scene Przystań w Heiðabýr, tuż po wschodzie słońca. Podchodzisz do stanowiska szypra okrętu „Norðanvindr”. Szyper patrzy na ciebie życzliwie i czeka na opłatę.
+goal Opłać przeprawę do Niðaróss: powiedz, dokąd płyniesz, zapłać srebrem, zostaw kufer i wybierz miejsce na okręcie.
+win Szyper podaje ci znak przeprawy: „Góða ferð!” Kufer jedzie na pokład, a ty idziesz na nabrzeże, gdzie czeka kontrola.
+partial Opłata udała się, ale szyper kilka razy musiał się domyślać, o co ci chodzi. Znak w ręku, czas ucieka.
+fail Szyper nie rozumie, czego chcesz, i woła następnego w kolejce. Musisz zacząć od nowa na końcu kolejki.
+w skips | okręt (dopełniacz)
+w „Norðanvinds” | „Norðanvindr” (nazwa okrętu, dopełniacz)
+w Niðaróss | Niðaróss (miasto, dopełniacz)
+w góðan
+t Góðan dag! Velkominn til skips „Norðanvinds”. Hvert ferr þú? | Dzień dobry! Witamy na okręcie „Norðanvindr”. Dokąd Pan płynie? | Góðan dag! Ek fer til Niðaróss. | Przywitaj się i powiedz, że płyniesz do Niðaróss. | „Płynę” to ek fer, a „do” miasta to til.
+w brúðlaups | wesele (dopełniacz)
+t Hví fer þú til Niðaróss? | Po co Pan płynie do Niðaróss? | Ek fer til brúðlaups. | Powiedz, że płyniesz na wesele. | „Na wesele” to til brúðlaups.
+w kistu | kufer (biernik)
+w hafa
+t Gott! Vilt þú hafa kistu með þér? | Dobrze! Czy chce Pan wziąć kufer ze sobą? | Já, ek vil hafa kistu með mér. | Powiedz, że chcesz wziąć kufer. | „Chcę mieć” to ek vil hafa.
+w þung | ciężka
+w kistunni | kufer (celownik, z rodzajnikiem)
+w hefi
+w klæði
+w gjǫf
+t Kista þín er þung. Hvat hefir þú í kistunni? | Pana kufer jest ciężki. Co Pan ma w kufrze? | Ek hefi klæði ok gjǫf. | Powiedz, że masz ubrania i dar. | „Mam” to ek hefi, a „ubrania” to klæði.
+w miðju | środek (celownik)
+w skipi | okręt (celownik)
+w borð
+w gjarna
+t Gott. Vilt þú sitja við borð eða á miðju skipi? | Dobrze. Chce Pan siedzieć przy burcie czy pośrodku okrętu? | Við borð, gjarna. | Powiedz, że wolisz przy burcie. | „Przy burcie” to við borð.
+w merki | znak
+w dagmál | dagmál (pora dnia, ok. 9 rano)
+w nǫkkura | jakieś (biernik)
+w réttum | właściwym (celownik)
+w tíma | czas (celownik)
+w skipit
+t Hér er merki þitt. Skipit fer um dagmál. Hefir þú nǫkkura spurning? | Oto Pana znak. Okręt odpływa o dagmál. Czy ma Pan pytanie? | Já, er skipit á réttum tíma? | Zapytaj, czy okręt jest na czas. | Pytanie zaczyna się od czasownika: er skipit á réttum tíma?
+w Leggstu | połóż się, cumuj (leggja)
+w bryggju | keja (biernik)
+w beint | prosto, bezpośrednio
+w áfram | naprzód
+w Þakka
+t Já, skipit er á réttum tíma. Leggstu við bryggju þrjú. Far beint áfram. | Tak, okręt jest na czas. Cumujemy przy keji trzeciej. Idź prosto. | Þakka þér! Far vel! | Podziękuj i pożegnaj się. | „Żegnaj” to far vel.
+e Góða ferð! | Szczęśliwej podróży!
+
+@level 2 | Kontrola na nabrzeżu | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Kontrola na nabrzeżu
+partner Tollr | T
+scene Masz znak przeprawy, a przed tobą długa kolejka do kontroli. Poborca cła podchodzi do twojego kufra i patrzy uważnie na twój pas.
+goal Przejdź kontrolę na nabrzeżu: pokaż kufer, zdejmij pas i odpowiedz na pytania poborcy.
+win Poborca kiwa głową: „Allt er í lagi. Far fram.” Zakładasz pas i biegniesz na keję z pełnym spokojem.
+partial Kontrola przebiegła w końcu bez problemów, ale poborca kilka razy zmarszczył brwi. Zakładasz pas w biegu.
+fail Poborca uznaje twoje odpowiedzi za podejrzane. Zostajesz zatrzymany na dodatkową kontrolę, a okręt odpływa bez ciebie.
+w tollr | cło, poborca cła
+w Legg | połóż (leggja)
+w þína | twoją (biernik r. ż.)
+w auðvitað | oczywiście
+t Góðan dag! Hér er tollr. Legg kistu þína hér á borð. | Dzień dobry! To jest cło. Połóż kufer tutaj na stole. | Já, auðvitað. | Zgódź się i powiedz, że oczywiście. | „Oczywiście” to auðvitað.
+t Hefir þú sverð í kistunni? Opna kistuna, ger svá vel. | Czy ma Pan miecz w kufrze? Proszę otworzyć kufer. | Já, hér er kista mín. | Potwierdź i pokaż kufer. | „Mój” przy rodzaju żeńskim to mín: kista mín.
+w drykk | napój (biernik)
+w dæmis | przykład (dopełniacz)
+w engan
+t Hefir þú drykk á þér? Til dæmis mjǫð eða ǫl? | Czy ma Pan przy sobie napój? Na przykład miód albo piwo? | Nei, ek hefi engan drykk á mér. | Zaprzecz: nie masz napoju. | „Nie mam żadnego” to ek hefi engan.
+w einnig | także
+w kyrtil | kaftan (biernik)
+w borðit | stół (z rodzajnikiem)
+w mitt | moje (r. nijaki)
+w belti
+w kyrtill
+w minn
+t Legg einnig belti þitt ok kyrtil á borðit. | Połóż też pas i kaftan na stole. | Já, hér eru belti mitt ok kyrtill minn. | Podaj pas i kaftan. | Liczba mnoga od „oto” to hér eru.
+w hvárki | ani
+w øxi | topór (biernik)
+w né | ani
+w veit
+w eigi
+w kannski
+k Er í kistu þinni øx eða sverð? | Czy w Pana kufrze jest topór albo miecz? | Nei, ek hefi hvárki øxi né sverð. | Já, ek hefi øxi.; Ek veit eigi, kannski. | Przyznanie się do topora to natychmiastowe zatrzymanie.; Niepewna odpowiedź przy takim pytaniu wzbudza podejrzenia: zatrzymanie.
+w hliðit | brama (z rodzajnikiem)
+w vasa | kieszeń (celownik)
+w þínum | twoim (celownik)
+w lykil | klucz (biernik)
+w hníf | nóż (biernik)
+w lítinn | mały (biernik r. m.)
+t Far nú um hliðit. Hefir þú enn nǫkkut í vasa þínum? | Przejdź teraz przez bramkę. Czy ma Pan jeszcze coś w kieszeni? | Já, ek hefi lykil ok hníf lítinn. | Powiedz, że masz klucz i mały nóż. | „Klucz” to lykill, a „nóż” to hnífr.
+w lagi | porządek (celownik); „í lagi” = w porządku
+e Allt er í lagi. Far fram. Góða ferð! | Wszystko w porządku. Idź dalej. Szczęśliwej podróży!
+
+@level 3 | Przy keji | patience=4 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Przy keji
+partner Hafnarmaðr | H
+scene Siedzisz przy keji trzeciej i patrzysz na niebo. Nagle rogi wołają, a z wież strażniczych słychać krzyk, że nadciąga sztorm.
+goal Dowiedz się, co z rejsem, zrozum wezwanie o zmianie keji i wejdź na pokład.
+win Biegniesz do nowej keji i wskakujesz na pokład jako jeden z ostatnich. Hafnarmaðr zwija trap: „Þat var naumt!”
+partial Znalazłeś w końcu właściwą keję, choć po drodze kilka razy musiałeś dopytywać. Wchodzisz na pokład mokry.
+fail Zrozumiałeś wezwanie na opak i czekasz przy złej keji. Kiedy się orientujesz, okręt już odbił od brzegu.
+w Afsakaðu | przepraszam
+w farþegi | pasażer
+w skip
+w seint
+t Afsakaðu! Ert þú farþegi á skipi til Niðaróss? | Przepraszam! Czy jest Pan pasażerem okrętu do Niðaróss? | Já, skip mitt er seint, eða hvat? | Potwierdź i zapytaj, czy twój okręt jest spóźniony. | „Spóźniony” to seinn; „eða hvat?” na końcu znaczy „prawda?”.
+w fjórar | cztery (r. ż.)
+w stundir | godziny
+w Ferðin | rejs (z rodzajnikiem)
+w hefst | zaczyna się (hefjast)
+w nón | nón (pora dnia, ok. 15)
+w ferðin | rejs (z rodzajnikiem)
+w Hvenær
+w skál
+t Já, skipit er fjórar stundir seint. Ferðin hefst um nón. | Tak, okręt jest spóźniony o cztery godziny. Rejs zacznie się o nón. | Hvenær hefst ferðin? Ek skal til brúðlaups. | Zapytaj, kiedy rejs, i dodaj, że płyniesz na wesele. | Pytanie o czas zaczyna się od hvenær: hvenær hefst ferðin?
+w Þarf | musi (þurfa)
+w Niðarósi | Niðaróss (celownik)
+t Brúðlaup, hvé gott! Ferðin hefst um nón. Þarf þú at skipta um skip í Niðarósi? | Wesele, jak miło! Rejs zaczyna się o nón. Czy musi Pan zmienić okręt w Niðaróss? | Nei, ek fer beint til Niðaróss. | Odpowiedz, że nie, płyniesz bezpośrednio. | „Bezpośrednio” to beint.
+w Gætið | uważajcie (gæta)
+w lokuð | zamknięta (r. ż.)
+w skilit | zrozumiał (skilja)
+w fimm
+w verð
+w heim
+k Gott, beint. Gætið! Stormr kemr. Skipit fer nú frá bryggju fimm. Bryggja þrjú er lokuð. Hefir þú skilit þat? Hvert ferr þú? | Dobrze, bezpośrednio. Uwaga! Nadciąga sztorm. Okręt odpływa teraz od keji piątej. Keja trzecia jest zamknięta. Czy Pan zrozumiał? Dokąd Pan idzie? | Ek fer til bryggju fimm. | Ek verð við bryggju þrjú.; Ek fer heim. | Keja trzecia jest zamknięta, więc czekanie tam kończy się spóźnieniem.; Dom to nie keja okrętu.
+w geng | idę (ganga)
+t Þá skjótt! Sýn mér merki þitt. Þú mátt nú ganga á skip. | W takim razie szybko! Pokaż mi znak. Możesz już wejść na okręt. | Hér er merki mitt. Ek geng nú á skip. | Podaj znak i powiedz, że wchodzisz na okręt. | „Wchodzę” to ek geng á skip.
+w opit | otwarty (r. nijaki)
+e Góða ferð! Skipit er opit. | Szczęśliwej podróży! Okręt jest otwarty.
+
+@level 4 | Rejs i przybycie | patience=4 typed=0.75 extra=3 hint=letters reward=30
+desc Rozdział 4: Rejs i przybycie
+partner Stýrimaðr | S
+scene Wchodzisz na pokład „Norðanvinds”. Sternik wita pasażerów przy trapie, a za chwilę okręt wypłynie do Niðaróss. Po przybyciu będziesz musiał jeszcze znaleźć poborcę cła i swój kufer.
+goal Zajmij miejsce, poproś o picie, a po przybyciu dowiedz się, gdzie jest kontrola, gdzie leży kufer i czy masz coś do oclenia.
+win Kufer stoi na nabrzeżu jako pierwszy, a poborca życzy ci „Velkominn til Nóregs!” Przyjaciel czeka z rogiem miodu.
+partial Wszystko udało ci się znaleźć, ale po drodze trzy razy zapytałeś o drogę. Kufer dotarł, a ty zdążysz na wesele.
+fail Poszedłeś w złą stronę i straciłeś czas na nabrzeżu. Kufer stoi samotnie, a przyjaciel wysyła posłańców co chwilę.
+t Góðan dag ok velkominn á skip! Sýn mér merki þitt. | Dzień dobry i witamy na okręcie! Pokaż mi znak. | Góðan dag! Hér er merki mitt. | Przywitaj się i pokaż znak. | „Oto” przy liczbie pojedynczej to hér er.
+w undir
+w bekk
+t Rúm þitt er fjórtán. Þat er við borð. Legg kistu þína undir bekk. | Pana miejsce to czternaste. To przy burcie. Połóż kufer pod ławą. | Þakka þér, ek legg kistu undir bekk. | Podziękuj i powiedz, że kładziesz kufer pod ławę. | „Kładę” to ek legg, a „pod ławę” to undir bekk.
+w Haldit | trzymajcie (halda)
+w reipit | lina (z rodzajnikiem)
+w siglum | żeglujemy (sigla)
+w bráðum | zaraz
+w held | trzymam (halda)
+t Haldit í reipit. Vér siglum bráðum. | Trzymaj się liny. Zaraz wypływamy. | Já, ek held í reipit. | Powiedz, że trzymasz linę. | „Trzymam” to ek held.
+t Vilt þú drykk? | Czy chce Pan napój? | Já, ǫl, ger svá vel. | Poproś o piwo. | „Piwo” to ǫl, rodzaju nijakiego.
+w komum | przybywamy (koma)
+t Hér er ǫl þitt. Hvat vilt þú vita meira? | Oto Pana piwo. Czy chce Pan jeszcze o coś zapytać? | Hvenær komum vér til Niðaróss? | Zapytaj, kiedy przypłyniecie do Niðaróss. | „Kiedy” to hvenær, a „przypływamy” to komum vér.
+w tveimr | dwóch (celownik)
+w hvar
+t Vér komum á tveimr dǫgum. Velkominn til Niðaróss! Ferðin var góð. | Przypływamy za dwa dni. Witamy w Niðaróss! Rejs był dobry. | Þakka þér! Hvar er tollr, ger svá vel? | Podziękuj i zapytaj, gdzie jest cło. | Pytanie o miejsce zaczyna się od hvar: hvar er tollr?
+w eftir | po, potem
+w gestahús | gospoda
+w fyrst | najpierw
+w Fyrst | najpierw
+w tollsins | cło (dopełniacz, z rodzajnikiem)
+w gestahúss | gospoda (dopełniacz)
+w kistunnar | kufer (dopełniacz, z rodzajnikiem)
+k Tollr er til vinstri. Þar eftir kemr kista þín ok svá gestahús. Hvert ferr þú fyrst? | Cło jest po lewej. Potem Pana kufer, a potem gospoda. Dokąd Pan idzie najpierw? | Fyrst fer ek til tollsins. | Fyrst fer ek til gestahúss.; Fyrst fer ek til kistunnar. | Do gospody idziesz na końcu, po odbiorze kufra.; Kufer odbierasz dopiero po kontroli.
+w fjǫgur | cztery (r. nijaki)
+t Rétt! Ok þá til kistunnar. Kista þín stendr við bryggju fjǫgur. | Dokładnie! A potem do kufra. Pana kufer stoi przy keji czwartej. | Þakka þér! Ek tek kistuna af bryggju. | Podziękuj i powiedz, że zabierasz kufer z keji. | „Zabieram” to ek tek, a „z keji” to af bryggju.
+w tolla | oclić, cło
+w spyrr | pyta (spyrja)
+w ekkert
+t Hefir þú nǫkkut at tolla? Þat spyrr tollr. | Czy ma Pan coś do oclenia? O to zapyta poborca. | Nei, ek hefi ekkert at tolla. | Powiedz, że nie masz nic do oclenia. | „Nic” to ekkert: ekkert at tolla.
+w mikil | wielka (r. ż.)
+w skemmtun | zabawa
+w brúðlaupinu | wesele (celownik, z rodzajnikiem)
+e Þá er allt gott. Velkominn til Nóregs ok mikil skemmtun í brúðlaupinu! | Wtedy wszystko w porządku. Witamy w Norwegii i dobrej zabawy na weselu!

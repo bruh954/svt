@@ -214,3 +214,765 @@ w libre | wolny
 w retraso | spóźnienie
 t Este asiento está libre. El tren lleva diez minutos de retraso. | To miejsce jest wolne. Pociąg ma dziesięć minut spóźnienia. | No es un problema. ¡Gracias! | Powiedz, że to nie problem, i podziękuj. | „To nie problem” to no es un problema.
 e ¡Buen viaje a Madrid! | Szczęśliwej podróży do Madrytu!
+
+@larp oma | Babcia w parku | Abuela Carmen | C | Niedziela w parku. Na ławce siedzi starsza pani, która uwielbia rozmawiać i ma całe popołudnie. | Posiedź z babcią Carmen i porozmawiaj z nią. Nikt cię stąd nie wyrzuci.
+fee 0
+reward 10
+story yes
+win Abuela Carmen promienieje: „¡Qué joven tan simpático!” Zaprasza cię na niedzielną kawę i kawałek ciasta.
+partial Rozmowa się toczyła, choć kilka razy musiałeś prosić o powtórzenie. Abuela Carmen uśmiecha się cierpliwie i zaprasza cię znowu.
+fail Abuela Carmen się nie zniechęca, bo ma nieskończoną cierpliwość. Jeśli kiedyś zobaczysz ten komunikat, napisz do nas.
+
+@level 1 | Na ławce | patience=3 endless=yes typed=0 extra=2 hint=none
+desc Rozdział 1: Poznajecie się
+scene Park, ławka, słońce. Starsza pani karmi okruchami wróble i zaczyna rozmowę. Nie musisz się spieszyć: Abuela Carmen poczeka.
+goal Przywitaj się, powiedz, jak się nazywasz i skąd jesteś.
+win Abuela Carmen klepie ławkę obok siebie: „¡Siéntese, Pablo!” Zostajesz na dłużej.
+partial Rozmowa się udała, mimo kilku pomyłek. Abuela Carmen zachowuje cierpliwość i robi ci miejsce na ławce.
+fail Abuela Carmen nigdy się nie zniechęca.
+w precioso | piękny, cudowny
+t ¡Buenos días, joven! Hoy hace buen tiempo, ¿verdad? | Dzień dobry, młody człowieku! Dziś jest ładna pogoda, prawda? | Sí, hace muy buen tiempo. | Zgódź się, że pogoda jest ładna. | „Pogoda jest ładna” to hace buen tiempo. | Sí, hace buen tiempo.; Sí, hoy hace un día precioso.
+w se | się
+w llama | nazywa się (llamarse)
+w Carmen | Carmen (imię)
+w Me | mi, mnie
+w llamo | nazywam się (llamarse)
+w Pablo | Pablo (imię)
+t ¡Qué alegría! ¿Cómo se llama usted? Yo soy Carmen. | Jak miło! Jak się Pan nazywa? Ja jestem Carmen. | Me llamo Pablo. | Powiedz, jak się nazywasz. | „Nazywam się” to me llamo. | Soy Pablo.; Yo soy Pablo.
+w Vive | mieszka (vivir)
+w vivo | mieszkam (vivir)
+w Vengo | pochodzę, przychodzę (venir)
+t ¡Pablo! Es un nombre bonito. ¿Vive usted aquí? | Pablo! To ładne imię. Mieszka Pan tutaj? | No, no vivo aquí. Soy de Polonia. | Zaprzecz i powiedz, że jesteś z Polski. | Przeczenie czasownika to no przed czasownikiem: no vivo. | No, no vivo aquí. Vengo de Polonia.
+w encantado | zachwycony (z przyjemnością)
+t ¡De Polonia! Está lejos. ¿Quiere sentarse? | Z Polski! To daleko. Czy chce się Pan przysiąść? | Sí, con mucho gusto. ¡Muchas gracias! | Zgódź się i podziękuj. | „Z przyjemnością” to con mucho gusto. | Sí, encantado. ¡Muchas gracias!
+w sitio | miejsce
+e ¡De nada! Aquí hay sitio. | Nie ma za co! Tu jest miejsce.
+
+@level 2 | Wnuk i kaczki | patience=3 endless=yes typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Wnuk i ciasto
+scene Mały Hugo biega po trawniku i karmi kaczki, a Abuela Carmen pokazuje ci zdjęcia w portfelu. Z torby wyjmuje ciasto własnej roboty.
+goal Porozmawiaj o wnuku Hugonie, powiedz, czy masz dzieci, i spróbuj ciasta.
+win Abuela Carmen wręcza ci drugi kawałek: „¡Come, come, que estás muy delgado!” Hugo macha do ciebie z daleka.
+partial Zjadłeś ciasto, choć kilka razy brakowało ci słów. Abuela Carmen dolewa herbaty z termosu.
+fail Abuela Carmen nie traci cierpliwości.
+w Hugo | Hugo (imię)
+w seis | sześć
+w años | lata
+w simpático | miły, sympatyczny
+w guapo | przystojny, ładny
+t Este es mi nieto Hugo. Tiene seis años. | To mój wnuk Hugo. Ma sześć lat. | Es muy simpático. | Pochwal wnuka: powiedz, że jest bardzo miły. | „On jest” to es. | Es muy guapo.; Hugo es muy simpático.
+w da | daje (dar; da de comer = karmi)
+w los | (rodzajnik liczby mnogiej, m.)
+w patos | kaczki
+w hijos | dzieci (synowie)
+t ¡Gracias! Hugo da de comer a los patos. ¿Tiene usted hijos? | Dziękuję! Hugo karmi kaczki. Czy ma Pan dzieci? | No, no tengo hijos. | Powiedz, że nie masz dzieci. | „Nie mam dzieci” to no tengo hijos. | No, yo no tengo hijos.
+w Ah | ach
+w veo | widzę (ver; ya veo = rozumiem)
+w he | mam (haber; he hecho = zrobiłam)
+w hecho | zrobiony (hacer)
+w misma | sama (yo misma = ja sama)
+w riquísima | przepyszna
+w rica | smaczna
+t ¿No tiene hijos? Ah, ya veo. ¿Quiere un trozo de tarta? La he hecho yo misma. | Nie ma Pan dzieci? Ach, rozumiem. Chce Pan kawałek ciasta? Sama je upiekłam. | Sí, con mucho gusto. ¡Está riquísima! | Przyjmij ciasto i pochwal je. | Tarta jest rodzaju żeńskiego, więc „está riquísima”. | Sí, gracias. ¡Está muy rica!
+t ¡Qué amable! Y usted, ¿cuántos años tiene? | Jak miło! A Pan, ile ma lat? | Tengo treinta años. | Powiedz, że masz trzydzieści lat. | Po hiszpańsku wiek się „ma”: tengo treinta años (dosłownie „mam trzydzieści lat”). | Yo tengo treinta años.
+w Ay | ach
+e ¡Ay, qué joven! | Ach, jaki młody!
+
+@level 3 | Zaproszenie | patience=3 endless=yes typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Kawa w niedzielę
+scene Słońce chyli się ku zachodowi. Abuela Carmen pakuje termos i prosi cię o pomoc. Zanim wstaniecie z ławki, chce cię jeszcze zaprosić.
+goal Przyjmij zaproszenie na niedzielną kawę i pomóż babci z torbą.
+win Abuela Carmen zapisuje ci adres na serwetce: „¡Trae mucho apetito!” Idziesz do domu w świetnym nastroju.
+partial Wszystko się wyjaśniło, choć trzeba było kilka razy powtarzać. Abuela Carmen mówi: „¡Hasta el domingo, hijo!”
+fail Abuela Carmen nie traci cierpliwości.
+w Sabe | wie pan(i) (saber)
+w al | do (a + el)
+w todos | wszyscy, wszystkie
+w tan | tak (bardzo)
+w verdaderamente | naprawdę
+t Sabe, vengo al parque todos los días. Se está tan bien aquí. | Wie Pan, przychodzę do parku codziennie. Jest tu tak ładnie. | Sí, el parque es verdaderamente precioso. | Zgódź się, że park jest piękny. | „Naprawdę” to verdaderamente. | Sí, aquí se está muy bien.; Sí, el parque es muy bonito.
+w domingos | niedziele
+w preparo | przygotowuję, parzę (preparar)
+t ¿Verdad? Los domingos preparo café. ¿Quiere venir? | Prawda? W niedziele parzę kawę. Chce Pan przyjść? | Sí, con mucho gusto. ¿Cuándo? | Zgódź się i zapytaj, kiedy. | „Kiedy?” to ¿cuándo? | Sí, encantado. ¿Cuándo?
+w pesa | waży (pesar)
+w Puede | może pan(i) (poder)
+w ayudarme | mi pomóc
+w Llevo | noszę, mam przy sobie (llevar)
+t A las tres. Mi bolso pesa mucho. ¿Puede ayudarme? | O trzeciej. Moja torba jest bardzo ciężka. Czy może mi Pan pomóc? | Sí, claro. Llevo yo el bolso. | Zgódź się i zaproponuj, że poniesiesz torbę. | „Noszę” to llevo. | Claro. Llevo el bolso.
+w Hasta | do (hasta el domingo = do niedzieli)
+t ¡Qué amable! Usted es una buena persona. | Jak miło! Jest Pan dobrym człowiekiem. | ¡Muchas gracias! ¡Hasta el domingo! | Podziękuj i pożegnaj się do niedzieli. | „Do niedzieli” to hasta el domingo. | ¡Gracias! ¡Hasta el domingo!
+e ¡Hasta el domingo! ¡Adiós! | Do niedzieli! Do widzenia!
+
+@larp spion | Szpieg | El contacto | S | Jesteś agentem pod przykrywką. W Madrycie masz odebrać tajną teczkę z ambasady i przekazać ją dalej. Jedno złe słowo i jesteś zdemaskowany. | Zachowaj przykrywkę kupca Navarro, zdobądź expediente i uciekaj z walizką.
+fee 0
+reward 20
+strict yes
+story yes
+win Walizka jest w twoich rękach, a statek odpływa z portu. Ktoś w centrali szepcze: „Buen trabajo, Halcón.” Przykrywka nie pękła ani razu.
+partial Misja się udała, ale po drodze kilka razy omal się nie zdradziłeś. Centrala odnotowuje: „Tuvo suerte.”
+fail Zdradziłeś się jednym słowem. Przykrywka pękła, a ty znikasz w ciemności bez teczki i bez walizki.
+
+@level 1 | Hasło na dworcu | patience=2 typed=0 extra=1 hint=none
+desc Rozdział 1: Kontakt na dworcu
+partner Un hombre con sombrero | H
+scene Madryt, wieczór, peron na dworcu Atocha. Jesteś agentem „Halcón”, ale dla wszystkich jesteś señor Navarro, handlarz zabawkami z Walencji (Navarro e Hijo). Na peronie czeka człowiek w kapeluszu. Hasło: „El invierno llega pronto.” Odzew: „Y el verano llega tarde.”
+goal Podaj hasło, nie zdradź swojej przykrywki i przyjmij zadanie. Jedna zła odpowiedź i jesteś zdemaskowany.
+win Człowiek w kapeluszu znika w tłumie, a ty zostajesz z kopertą w kieszeni. Przykrywka nietknięta, a jutro o ósmej czeka cię ambasada.
+partial Dostałeś zadanie, ale kontakt zmarszczył brwi przy kilku twoich odpowiedziach. Lepiej uważaj jutro.
+fail Człowiek w kapeluszu spojrzał na ciebie zimno, odwrócił się i odszedł. Zadanie dostanie ktoś inny.
+w llega | przychodzi, nadchodzi (llegar)
+t Buenas noches. Hoy hace frío, ¿verdad? | Dobry wieczór. Dziś jest zimno, prawda? | Sí, hace frío. El invierno llega pronto. | Zgódź się, że jest zimno, i powiedz hasło: zima przychodzi wcześnie. | Hasło brzmi: „El invierno llega pronto.” | Sí, mucho frío. El invierno llega pronto.
+w Chis | cicho
+w escucha | słucha (escuchar)
+w Navarro | Navarro (nazwisko z przykrywki)
+w comerciante | kupiec, handlowiec
+w Halcón | Halcón (sokół; imię agenta)
+w agente | agent
+k Y el verano llega tarde. ¡Chis! Aquí hay gente que escucha. ¿Cómo se llama? | A lato przychodzi późno. Cicho! Tu są ludzie, którzy słuchają. Jak się Pan nazywa? | Me llamo Navarro. Soy comerciante. | Me llamo Halcón. Soy agente.; Me llamo Navarro. Soy agente. | Halcón to twoje imię agenta, a ludzie słuchają.; Navarro się zgadza, ale „agente” zdradza przykrywkę.
+w sigue | śledzi, idzie za (seguir)
+w estoy | jestem (estar)
+k Bien. ¿Alguien le sigue? | Dobrze. Czy ktoś Pana śledzi? | No, nadie me sigue. | Sí, alguien me sigue.; Sí, estoy muy cansado. | Przyznanie, że ktoś cię śledzi, wystraszy kontakt.; Kontakt pyta, czy ktoś cię śledzi, a nie czy jesteś zmęczony.
+w Esta | ta
+w misión | misja, zadanie
+w ocho | osiem
+w va | idzie pan(i), jedzie (ir)
+w embajada | ambasada
+w entendido | zrozumiany; „zrozumiałem”
+t Muy bien. Esta es su misión. Mañana a las ocho va a la embajada. Hay una fiesta. | Bardzo dobrze. Oto Pana zadanie. Jutro o ósmej idzie Pan do ambasady. Jest tam przyjęcie. | Lo he entendido. Mañana a las ocho voy a la embajada. | Powiedz, że zrozumiałeś: jutro o ósmej idziesz do ambasady. | „Misión” to zadanie, a „a las ocho” znaczy „o ósmej”. | Entendido. Mañana a las ocho voy a la embajada.
+w Ruiseñor | Ruiseñor (słowik; hasło)
+t Bien. La contraseña para la fiesta es Ruiseñor. ¿Cuál es la contraseña? | Dobrze. Hasło na przyjęcie to Ruiseñor. Jakie jest hasło? | La contraseña es Ruiseñor. | Powtórz hasło na przyjęcie. | Hasło wejściowe to contraseña, a „Ruiseñor” to słowik. | Es Ruiseñor.
+w Viene | przychodzi (venir)
+w conoce | zna (conocer)
+w conozco | znam (conocer)
+d Muy bien. ¡Chis! Viene un policía. ¿Me conoce? | Bardzo dobrze. Cicho! Idzie policjant. Czy Pan mnie zna? | No, no le conozco. | Zaprzecz, że znasz tego człowieka. | Nie możesz zdradzić, że znasz kontakt. | No, no le conozco de nada.
+w señor | pan (przed nazwiskiem)
+e Buenas noches, señor Navarro. | Dobranoc, panie Navarro.
+
+@level 2 | Przyjęcie w ambasadzie | patience=2 typed=0.2 extra=3 hint=bank
+desc Rozdział 2: Przyjęcie w ambasadzie
+partner Señora Vidal | V
+scene Następny wieczór. W ambasadzie trwa przyjęcie, a przy wejściu stoi pani Vidal, sekretarka. Ona i goście zadają pytania o twoją „firmę”. Twoja przykrywka: Navarro e Hijo, zabawki, Walencja. Hasło wejściowe: Ruiseñor. Gabinet ambasadora jest po prawej, toalety po lewej.
+goal Wejdź na przyjęcie, nie zdradź się pytaniom o firmę i znajdź pretekst, żeby dotrzeć do gabinetu.
+win Pani Vidal macha ci na pożegnanie, a w gabinecie leży teczka, o którą ci chodziło. Nikt niczego nie podejrzewa.
+partial Weszłeś i dotarłeś do gabinetu, ale pani Vidal patrzyła na ciebie dłużej, niż trzeba.
+fail Pani Vidal przestaje się uśmiechać i daje znak ochronie. Za chwilę wyprowadzą cię z ambasady.
+w bienvenido | witamy, witaj
+t ¡Buenas noches y bienvenido a la embajada! ¿Cuál es la contraseña? | Dobry wieczór i witamy w ambasadzie! Jakie jest hasło? | La contraseña es Ruiseñor. | Podaj hasło wejściowe. | Contraseña to hasło, a „Ruiseñor” to słowik. | Es Ruiseñor.
+w hacerle | zadać panu (hacerle una pregunta)
+w algún | jakiś
+w arma | broń
+w ningún | żaden
+w expediente | teczka, akta
+k Gracias. Tengo que hacerle una pregunta. ¿Lleva algún arma? | Dziękuję. Muszę zadać Panu pytanie. Czy ma Pan przy sobie jakąś broń? | No, no llevo ningún arma. | Sí, llevo un arma.; No, no llevo ningún expediente. | Do przyjęcia nie wchodzi się z bronią.; Pytanie dotyczy broni (arma), nie teczki.
+w trabaja | pracuje (trabajar)
+w central | centrala
+w señora | pani
+w Vidal | Vidal (nazwisko)
+k Bien. ¿Para quién trabaja? | Dobrze. Dla kogo Pan pracuje? | Trabajo para la empresa Navarro. | Trabajo para la central.; Trabajo para la señora Vidal. | „Central” to twoja centrala, tajna, a nie firma.; Pani Vidal to sekretarka z ambasady.
+w vende | sprzedaje (vender)
+w juguetes | zabawki
+d ¡Navarro! ¿Qué vende su empresa? | Navarro! Co sprzedaje Pana firma? | Mi empresa vende juguetes. | Powiedz, co sprzedaje twoja „firma” (przykrywka). | Twoja przykrywka to handel zabawkami. | Vende juguetes.
+w Valencia | Walencja
+w e | i (przed i-)
+w Hijo | Syn (Navarro e Hijo = Navarro i Syn)
+k ¡Juguetes! ¿Y dónde está su empresa? | Zabawki! A gdzie jest Pana firma? | Mi empresa está en Valencia. | Mi empresa vende juguetes.; Mi empresa se llama Navarro e Hijo. | „Dónde” znaczy „gdzie”, a nie „co sprzedaje”.; „Dónde” pyta o miejsce, nie o nazwę.
+w están | są (estar)
+w aseos | toalety
+t En Valencia, ¡qué interesante! ¿Quiere comer algo? | W Walencji, jak ciekawie! Czy chce Pan coś zjeść? | No, gracias. ¿Dónde están los aseos, por favor? | Odmów i zapytaj o toaletę (to pretekst). | Dónde = gdzie, więc „¿Dónde están los aseos?”. | No, gracias. ¿Dónde está el baño, por favor?
+w despacho | gabinet
+w privado | prywatny
+k Los aseos están a la izquierda. El despacho de la derecha es privado. | Toalety są po lewej. Gabinet po prawej jest prywatny. | Gracias, voy a la izquierda. | Gracias, voy a la derecha.; Gracias, el despacho es muy bonito. | Gabinet po prawej jest prywatny, a ty idziesz do toalety po lewej.; Nie wolno ci mówić, że chcesz iść do gabinetu.
+w divierta | niech się pan(i) bawi (divertirse)
+e ¡Entonces que se divierta, señor Navarro! | W takim razie dobrej zabawy, panie Navarro!
+
+@level 3 | Przesłuchanie | patience=1 typed=0.35 extra=3 hint=bank
+desc Rozdział 3: Przesłuchanie
+partner Señor Roca | R
+scene Masz teczkę (expediente) w torbie, ale na korytarzu zatrzymuje cię podejrzliwy ochroniarz, pan Roca. Zaraz zapyta o wszystko. Pamiętaj: Navarro, comerciante, Valencia. Tutaj każda zła odpowiedź kończy misję.
+goal Przekonaj ochroniarza, że jesteś zwykłym gościem, i wyjdź z teczką.
+win Roca przepuszcza cię z kwaśną miną. Wychodzisz z ambasady, a teczka w torbie jest ciężka jak ołów.
+partial Roca w końcu cię puszcza, ale zapisuje twoje nazwisko w notesie.
+fail Roca chwyta cię za ramię: „¡Venga conmigo!” Misja skończona, zanim naprawdę się zaczęła.
+w Busco | szukam (buscar)
+t ¡Alto! ¿Quién es usted? ¿Qué hace aquí? | Stać! Kim Pan jest? Co Pan tu robi? | Soy un invitado. Busco el baño. | Powiedz, że jesteś gościem i szukasz toalety. | Czasownik „buscar” znaczy „szukać”. | Soy invitado. Busco los aseos.
+w Ha | ma (haber; ha estado = był)
+k El baño está allí. ¿Ha estado en el despacho? | Toaleta jest tam. Czy był Pan w gabinecie? | No, no he estado en el despacho. | Sí, he estado en el despacho.; No, no he estado en el baño. | Przyznanie się to koniec przykrywki.; Pytanie dotyczy gabinetu (despacho), nie toalety.
+w Mmm | hm
+w móvil | telefon komórkowy
+k Mmm, bien. ¿Qué lleva en el bolso? | Hm, dobrze. Co ma Pan w torbie? | En el bolso solo llevo dinero y mi móvil. | En el bolso llevo un expediente.; Llevo un bolso. | Teczka w torbie zdradziłaby cię od razu.; Ochroniarz pyta, co jest w torbie, a nie czy masz torbę.
+d Dinero y un móvil. ¿Cómo se llama y dónde vive? | Pieniądze i telefon. Jak się Pan nazywa i gdzie Pan mieszka? | Me llamo Navarro y vivo en Valencia. | Podaj nazwisko z przykrywki i miasto, w którym mieszkasz (Valencia). | Navarro i Valencia to twoja przykrywka. | Me llamo Navarro y vivo en Valencia.
+k Navarro, Valencia. Usted es agente, ¿verdad? | Navarro, Walencja. Jest Pan agentem, prawda? | No, no soy agente. Soy comerciante. | Sí, pero es un secreto.; Sí, trabajo para la central. | Nawet żartem nie przyznawaj się do tajemnicy.; Przyznanie się do centrali to koniec.
+w invitados | goście
+t Mmm. Voy a llamar a la señora Vidal. Ella conoce a todos los invitados. ¿Le conoce a usted? | Hm. Zawołam panią Vidal. Zna wszystkich gości. Czy zna Pana? | Sí, la señora Vidal me conoce. Soy un invitado. | Powiedz, że pani Vidal cię zna. | „Me conoce” znaczy „zna mnie”. | Sí, me conoce. Soy un invitado.
+w visto | widziany; „widziałem” (ver)
+d Bien. Hay un agente en la embajada. ¿Ha visto a alguien? | Dobrze. W ambasadzie jest agent. Czy Pan kogoś widział? | No, no he visto a nadie. | Zaprzecz, że kogokolwiek widziałeś. | Nadie = nikt. Ty sam jesteś tym agentem. | No, no he visto a nadie.
+w Vuelva | niech pan(i) wraca (volver)
+e Está bien. Vuelva a casa, señor Navarro. | W porządku. Niech Pan wraca do domu, panie Navarro.
+
+@level 4 | Walizka i ucieczka | patience=1 typed=0.5 extra=3 hint=letters reward=30
+desc Rozdział 4: Wymiana walizki
+partner Señor Lobo | L
+scene Następny ranek, port w Walencji. Pan Lobo z centrali czeka z walizką pełną pieniędzy. Wymienisz ją na teczkę. Nowe hasło: „Cuervo”. Ale ktoś cię śledzi: w tłumie jest zdrajca (traidor), który chce dostać teczkę dla siebie.
+goal Wymień teczkę na walizkę, nie daj się zdemaskować zdrajcy i wsiądź na statek.
+win Statek odpływa, a ty stoisz na pokładzie z walizką. Pan Lobo macha z nabrzeża: „¡Buen viaje, Halcón!”
+partial Udało się uciec, ale zdrajca zdążył zobaczyć twoją twarz. Misja zaliczona, lecz twoja przykrywka jest spalona.
+fail Zdrajca był szybszy. Walizka i teczka zniknęły, a ty zostajesz na nabrzeżu z pustymi rękami.
+w Cuervo | Cuervo (kruk; hasło)
+d Buenos días. ¿Cuál es la contraseña de hoy? | Dzień dobry. Jakie jest dzisiejsze hasło? | La contraseña de hoy es Cuervo. | Podaj hasło z dzisiejszej misji. | Hasło to contraseña, a dziś brzmi „Cuervo”. | ¡Es Cuervo!
+k Bien. ¿Dónde está el expediente? | Dobrze. Gdzie jest teczka? | El expediente está en mi bolso. | El expediente está con la señora Vidal.; El expediente es un secreto. | Teczkę masz przy sobie, w torbie.; Kontakt pyta, gdzie jest teczka, nie o tajemnicę.
+w Tómela | proszę ją wziąć (tomar)
+t Bien. Aquí está la maleta. El dinero está dentro. Tómela. | Dobrze. Oto walizka. Pieniądze są w środku. Proszę ją wziąć. | Gracias. Tomo la maleta. | Podziękuj i weź walizkę. | „Walizka” to la maleta, a „biorę” to tomo. | Gracias. La tomo.
+w Atención | uwaga
+w traidor | zdrajca
+w Nos | nas, nam
+w hacemos | robimy (hacer)
+w vamos | idziemy (ir)
+w quedamos | zostajemy (quedarse)
+w tomamos | bierzemy, pijemy (tomar)
+w Hablamos | rozmawiamy (hablar)
+w ese | ten
+k ¡Atención! El hombre de allí es un traidor. Nos sigue. ¿Qué hacemos? | Uwaga! Ten człowiek stamtąd jest zdrajcą. Idzie za nami. Co robimy? | Nos vamos rápido. | Nos quedamos aquí y tomamos un café.; Hablamos con ese hombre. | Zdrajca idzie za wami, trzeba uciekać.; Nie rozmawia się ze zdrajcą.
+w Volvemos | wracamy (volver)
+k ¡Sí, rápido! El traidor viene por la izquierda. ¿Vamos a la izquierda, a la estación, o a la derecha, al puerto? | Tak, szybko! Zdrajca idzie z lewej. Idziemy w lewo na dworzec czy w prawo do portu? | Vamos a la derecha, al puerto. | Vamos a la izquierda, a la estación.; Volvemos a casa. | Zdrajca nadchodzi z lewej, więc idziecie w prawo, do portu.; Pytanie jest o port albo dworzec, a nie o dom.
+w Deme | proszę mi dać (dar)
+w doy | daję (dar)
+d ¡Alto! ¡Deme la maleta! ¡Tengo un arma! | Stój! Proszę mi dać walizkę! Mam broń! | No, no le doy la maleta. | Odmów oddania walizki. | „Dar” to dawać, a przeczenie to no przed czasownikiem. | No, no le doy la maleta.
+w aún | jeszcze
+t ¡Bien hecho, rápido! El barco sale enseguida. ¿Todavía tiene la maleta? | Dobra robota, szybko! Statek zaraz odpływa. Czy ma Pan jeszcze walizkę? | Sí, todavía tengo la maleta. | Potwierdź, że masz jeszcze walizkę. | „Todavía” znaczy „jeszcze”. | Sí, aún la tengo.
+w Bravo | brawo
+w terminado | zakończony
+e ¡Bravo, Halcón! La misión ha terminado. ¡Adiós! | Brawo, Halcón! Misja zakończona. Do widzenia!
+
+@larp zeitreise | Podróż w czasie | El guardia | G | Obudziłeś się w roku 1450 pod murami hiszpańskiego miasta Villatilo. Nikt nie może się dowiedzieć, że jesteś z przyszłości, bo za dziwne rzeczy i dziwne słowa w średniowieczu grozi stos. | Nie daj się wykryć jako przybysz z przyszłości: unikaj wszystkiego, co nie pasuje do roku 1450, i dotrwaj do końca dnia.
+fee 0
+reward 15
+strict yes
+story yes
+win Burmistrz kiwa głową: „¡Un viajero honrado!” Nikt nie podejrzewa, skąd naprawdę jesteś. Wieczorem znajdujesz drogę powrotną, a w kieszeni zostaje ci tylko miedziana moneta na pamiątkę.
+partial Udało ci się przetrwać dzień, ale kilka razy ludzie patrzyli na ciebie podejrzliwie. Burmistrz każe cię obserwować, więc wymykasz się z miasta o świcie.
+fail Ktoś zauważył, że nie jesteś stąd. Straż woła: „¡Un brujo! ¡Un hechicero!” i musisz uciekać. Podróż w czasie skończyła się wcześniej, niż chciałeś.
+
+@level 1 | Brama miasta | patience=5 typed=0 extra=1 hint=none
+partner El guardia Pedro | P
+desc Rozdział 1: Brama Villatilo
+scene Rok 1450. Stoisz przed wielką drewnianą bramą miasta Villatilo. Strażnik Pedro zatrzymuje każdego podróżnego i zadaje pytania. Masz na sobie zwykłe ubranie, ale w kieszeniach zostały ci rzeczy z przyszłości.
+goal Odpowiedz na pytania strażnika tak, żeby nie wzbudzić podejrzeń: przedstaw się, powiedz skąd jesteś i jak podróżujesz. Zwróć uwagę na rzeczy, których w 1450 roku jeszcze nie było.
+win Pedro otwiera bramę: „¡Bienvenido a Villatilo!” Nic nie wzbudziło jego podejrzeń, a ty wchodzisz do miasta.
+partial Pedro w końcu cię wpuszcza, ale przygląda ci się dłużej, niż byś chciał. Wchodzisz do miasta z uczuciem, że ktoś cię obserwuje.
+fail Pedro podnosi halabardę: „¡Tú no eres un viajero!” Brama zamyka się z trzaskiem, a ty uciekasz w las.
+w Villatilo | Villatilo (fikcyjne miasto)
+w viajero | podróżnik
+t ¡Alto! Esta es la puerta de Villatilo. ¿Quién eres? | Stój! To brama miasta Villatilo. Kim jesteś? | Soy un viajero. | Powiedz, że jesteś podróżnikiem. | „Jestem podróżnikiem”: soy un viajero. | Soy viajero.
+w llamas | nazywasz się (llamarse)
+w Juan | Juan (imię)
+w Kevin | Kevin (imię)
+w Jennifer | Jennifer (imię)
+k Bien. ¿Cómo te llamas? | Dobrze. Jak się nazywasz? | Me llamo Juan. | Me llamo Kevin.; Me llamo Jennifer. | Kevin i Jennifer to imiona współczesne, w 1450 roku nikt tak nie nazywał dzieci. Strażnik uznałby cię za dziwaka.; Jennifer to nowoczesne, angielskie imię. W 1450 roku popularne były Juan, Pedro czy Diego.
+w del | z (de + el)
+k Juan, bien. ¿De dónde eres? | Juan, dobrze. Skąd jesteś? | Vengo de Polonia. | Vengo del futuro.; Vengo de América. | Przyznanie się do przyszłości to dekonspiracja. Nikt w 1450 roku nie zrozumie takich słów.; Ameryki jeszcze nie odkryto, Kolumb wypłynie dopiero w 1492 roku.
+w viajas | podróżujesz (viajar)
+w Viajo | podróżuję (viajar)
+k De Polonia, ¡qué lejos! ¿Cómo viajas? ¿A pie o a caballo? | Z Polski, jak daleko! Jak podróżujesz? Pieszo czy konno? | Viajo a caballo. | Viajo en coche.; Viajo en tren. | Samochodu w 1450 roku nie ma. Strażnik pomyśli, że jesteś szalony albo opętany.; Pociągów też jeszcze nie ma, pierwsza kolej pojawi się dopiero w XIX wieku.
+w Enséñame | pokaż mi (enseñar)
+w llevas | masz przy sobie (llevar)
+w ahí | tam
+k A caballo, bien. Enséñame el bolso. ¿Qué llevas ahí? | Na koniu, dobrze. Pokaż mi torbę. Co tam masz? | Solo llevo pan y cerveza. | Llevo un móvil.; Llevo una tarjeta de crédito. | Telefon w 1450 roku? Strażnik wziąłby go za czarodziejskie urządzenie i zawołał straż.; Karta z plastiku wyglądałaby dla niego jak magia. Pieniądze to wtedy monety.
+w puedes | możesz (poder)
+w hambre | głód (tengo hambre = jestem głodny)
+w posadero | karczmarz
+w mucha | dużo
+t Está bien, puedes entrar. ¿Tienes hambre? | Dobrze, możesz wejść. Jesteś głodny? | Sí, tengo hambre. ¿Dónde está el posadero? | Powiedz, że jesteś głodny, i zapytaj, gdzie jest karczmarz. | „Gdzie jest” to dónde está, a „karczmarz” to el posadero. | Sí, tengo mucha hambre. ¿Dónde está el posadero?
+w posada | gospoda
+w estancia | pobyt
+e Enseguida a la izquierda está la posada. ¡Buena estancia en Villatilo! | Zaraz po lewej jest gospoda. Miłego pobytu w Villatilo!
+
+@level 2 | Gospoda | patience=5 typed=0.15 extra=3 hint=bank
+partner El posadero Gaspar | G
+desc Rozdział 2: Gospoda „El Buey Rojo”
+scene Wchodzisz do gospody. Karczmarz Gaspar jest ciekawski i pyta o wszystko: co chcesz zjeść, jak podróżujesz i czego potrzebujesz na noc. W gospodzie nie ma elektryczności ani nowoczesnych napojów.
+goal Zamów jedzenie i picie, które mogli podać w średniowieczu, ustal nocleg i nie wspomnij o niczym z przyszłości.
+win Gaspar klepie cię po plecach: „¡Eres un buen huésped!” Dostajesz miejsce przy kominku i pełny talerz. Nikt nie podejrzewa, że jesteś z przyszłości.
+partial Gaspar przygląda ci się podejrzliwie, ale podaje jedzenie. Śpisz źle, bo wciąż myślisz o tym, co powiedziałeś.
+fail Gaspar woła głośno: „¡¿Qué es un wifi?!” Goście odwracają się w twoją stronę, a ty ledwo uciekasz tylnym wyjściem.
+t ¡Bienvenido a la posada! ¿Qué quieres comer? Tenemos pan y sopa. | Witaj w gospodzie! Co chcesz zjeść? Mamy chleb i zupę. | Quiero pan y sopa, por favor. | Zamów chleb i zupę. | „Chleb i zupa”: pan y sopa, bez rodzajnika. | Quisiera pan y sopa, por favor.
+w bebes | pijesz (beber)
+w Bebo | piję (beber)
+w cola | cola
+k ¿Y qué bebes? Tenemos cerveza, vino y agua. | A co pijesz? Mamy piwo, wino i wodę. | Bebo una cerveza. | Quiero un café.; Quiero una cola. | Kawa dotarła do Europy dopiero w XVII wieku.; Coca-Cola powstała w XIX wieku. W 1450 roku nikt jej nie zna.
+w Has | masz (haber; has viajado = podróżowałeś)
+w viajado | podróżował (viajar)
+t Una cerveza, bien. Has viajado lejos. ¿Cuánto tiempo llevas de viaje? | Piwo, dobrze. Daleko podróżowałeś. Jak długo już jedziesz? | Llevo diez días de viaje. | Powiedz, że podróżujesz już dziesięć dni. | „Dziesięć dni”: diez días. | Viajo desde hace diez días.
+w Vienes | przychodzisz, idziesz (venir)
+w conmigo | ze mną
+w carro | wóz
+k Diez días, ¡es mucho! Mañana voy al mercado. ¿Vienes conmigo? Tomamos el carro. | Dziesięć dni, to dużo! Jutro jadę na targ. Pojedziesz ze mną? Weźmiemy wóz. | Sí, con mucho gusto. Vamos al mercado en carro. | Sí, tomamos el coche.; No, voy en bicicleta. | Samochodu nie ma. Gaspar rozejrzałby się za twoim „coche”, ale tu jeździ się wozem.; Rower wynaleziono dopiero w XIX wieku. W 1450 roku jeździ się wozem albo konno.
+w Perfecto | doskonale
+w vela | świeca
+w wifi | internet bezprzewodowy
+w enchufe | gniazdko
+k Perfecto. La habitación tiene una cama. ¿Quieres algo más? | Doskonale. W pokoju jest łóżko. Czy chcesz jeszcze coś? | Sí, quiero una vela, por favor. | ¿Tienes wifi?; Quiero un enchufe. | W 1450 roku nie ma internetu. Gaspar nie wie, co to jest wifi.; Gniazdka elektryczne wymyślono setki lat później. Wieczorem świeci się świecami.
+w cuatrocientos | czterysta
+t Una vela, aquí tienes. Y otra cerveza: ¡una buena cerveza en el año mil cuatrocientos cincuenta! ¡Salud! | Świeca, proszę bardzo. A tu jeszcze piwo: dobre piwo w roku 1450! Na zdrowie! | ¡Salud! | Wznieś toast. | „Na zdrowie” to ¡salud! | ¡A tu salud!
+e ¡Buenas noches! Mañana por la mañana vamos al mercado. | Dobranoc! Jutro rano jedziemy na targ.
+
+@level 3 | Targ | patience=4 typed=0.3 extra=3 hint=bank reward=25
+partner La mercader Berta | B
+desc Rozdział 3: Targ w Villatilo
+scene Następnego ranka na rynku jest tłoczno. Kupcowa Berta sprzedaje chleb i ser. Przy płaceniu liczą się tylko monety, a ludzie przyglądają się twoim ubraniom.
+goal Kup chleb i ser, zapłać tak, jak płaci się w 1450 roku, i wyjaśnij, skąd masz dziwne ubranie.
+win Berta wsuwa ci do koszyka jabłko: „¡Para el buen viajero!” Targ nic nie podejrzewa, a w oddali widać już ratusz.
+partial Berta w końcu sprzedała ci chleb i ser, ale kilka osób szepcze za twoimi plecami. Zbliża się ratusz.
+fail Berta krzyczy: „¿Qué ropa es esa? ¿Qué es un euro?” Tłum się zbiega, a ty uciekasz między straganami.
+t ¡Buenos días! ¿Qué quieres comprar? ¿Pan, queso o manzanas? | Dzień dobry! Co chcesz kupić? Chleb, ser czy jabłka? | Quiero pan y queso. | Poproś o chleb i ser. | „Chleb i ser”: pan y queso. | Quisiera pan y queso, por favor.
+w maravedíes | maravedi (dawne monety)
+w total | całość (en total = w sumie)
+t Pan y queso, bien. El pan cuesta dos maravedíes y el queso tres maravedíes. | Chleb i ser, dobrze. Chleb kosztuje dwa maravedi, a ser trzy maravedi. | ¿Cuánto cuesta todo junto? | Zapytaj, ile to kosztuje razem. | „Razem” to todo junto. | ¿Cuánto es en total?
+w Pago | płacę (pagar)
+w monedas | monety
+k Son cinco maravedíes. ¿Cómo quieres pagar? | To pięć maravedi. Jak chcesz zapłacić? | Pago con monedas. | Pago con euros.; Pago con tarjeta. | Euro wprowadzono dopiero w 2002 roku.; Karty płatnicze to wynalazek XX wieku. W 1450 roku płaci się monetami.
+w Tu | twój, twoje
+w rara | dziwna
+w moda | moda
+w Este | wschód; ten
+w camiseta | koszulka
+w vaqueros | dżinsy
+w zapatillas | buty (sportowe)
+w deportivas | sportowe
+k Bien, monedas. Tu ropa es rara. ¿Qué es eso? | Dobrze, monety. Twoje ubranie jest dziwne. Co to jest? | Es la moda del Este. | Es una camiseta.; Son vaqueros y zapatillas deportivas. | T-shirty pojawiły się w XX wieku, a Berta nigdy takiego nie widziała.; Dżinsy i buty sportowe to rzeczy z dwudziestego wieku. Berta zawołałaby straż.
+w vaya | no proszę; niech pan(i) idzie
+w alcalde | burmistrz, wójt
+w verte | zobaczyć cię
+w contigo | z tobą
+t Del Este, vaya. El alcalde quiere verte. ¿Vienes conmigo? | Ze Wschodu, no proszę. Burmistrz chce cię zobaczyć. Idziesz ze mną? | Sí, voy contigo. | Zgódź się i idź z nią. | „Idę z tobą” to voy contigo. | Sí, voy con usted.
+w Pues | no to, więc
+w ven | chodź (venir)
+w ayuntamiento | ratusz
+e ¡Pues ven! El ayuntamiento está allí. | No to chodź! Ratusz jest tam.
+
+@level 4 | Burmistrz | patience=4 typed=0.5 extra=4 hint=letters reward=25
+partner El alcalde Aurelio | A
+desc Rozdział 4: W ratuszu
+scene W ratuszu czeka burmistrz Aurelio. Słyszał dziwne plotki o obcym przybyszu. Zauważył coś błyszczącego na twoim nadgarstku i zadaje pytania, a tobie została tylko jedna droga: wrócić do bramy, gdzie wszystko się zaczęło.
+goal Odpowiedz na pytania burmistrza tak, żeby nie zdradzić zegarka, telefonu ani przyszłości, i wróć bezpiecznie do bramy.
+win Burmistrz macha ręką: „¡Bien, bien, vete!” Wracasz do bramy, w powietrzu coś migocze i budzisz się we własnym czasie. Na dłoni masz maravedi z 1450 roku.
+partial Burmistrz pozwala ci odejść, ale pod nosem mruczy o czarodziejach. Dopiero za bramą migotanie powietrza zabiera cię do domu.
+fail Burmistrz woła strażników: „¡Una caja mágica! ¡Viene del futuro!” Nie zdążysz dojść do bramy.
+t ¡Buenos días! Soy el alcalde de Villatilo. ¿Quién eres? | Dzień dobry! Jestem burmistrzem Villatilo. Kim jesteś? | Me llamo Juan, soy un viajero de Polonia. | Przedstaw się: Juan, podróżnik z Polski. | „Z Polski” to de Polonia. | Soy Juan, un viajero de Polonia.
+w muñeca | nadgarstek
+w pulsera | bransoletka
+w pila | bateria
+w digital | cyfrowy
+k Bien, Juan. ¿Qué llevas en la muñeca? | Dobrze, Juan. Co masz na nadgarstku? | Es solo una pulsera. | Es un reloj con pila.; Es un reloj digital. | Zegarek z baterią to wynalazek nowoczesny. Burmistrz nie ma pojęcia, co to jest.; Cyfrowy zegarek wyglądałby dla niego jak czary. W 1450 roku są tylko wieże z zegarami i klepsydry.
+w marca | wskazuje (marcar)
+w Miro | patrzę (mirar)
+k ¿Una pulsera? ¿Qué hora es? Tienes un reloj, ¿no? | Bransoletka? Która godzina? Masz przecież zegarek, prawda? | No tengo reloj. El sol marca el mediodía. | Son las catorce treinta.; Miro mi móvil. | Taka dokładna godzina z minutami to nowoczesny sposób liczenia czasu.; Telefon to rzecz z przyszłości. Burmistrz uznałby ją za czarodziejską.
+w estamos | jesteśmy (estar)
+w sé | wiem (saber)
+k Mediodía, bien. ¿En qué año estamos? | Południe, dobrze. Który mamy rok? | Estamos en el año mil cuatrocientos cincuenta. | Estamos en el año dos mil.; No lo sé. | Jeśli podasz rok z przyszłości, zdradzisz się natychmiast.; Nie znać roku? Karczmarz dał ci wskazówkę wczoraj. Burmistrz uznałby, że ukrywasz coś.
+w Dicen | mówią (decir)
+w mágica | magiczna
+w ninguna | żadna
+k Bien. Dicen que tienes una caja mágica. ¿Es verdad? | Dobrze. Mówią, że masz magiczną skrzynkę. Czy to prawda? | No, no tengo ninguna caja mágica. | Sí, es un móvil.; Sí, vengo del futuro. | Przyznanie się do telefonu zakończy rozmowę. Burmistrz nie wie, co to jest.; Przyznanie się do podróży w czasie to najgorsza odpowiedź.
+w vas | idziesz (ir)
+w Vuelvo | wracam (volver)
+k Bien. Ya es tarde. ¿Adónde vas ahora? | Dobrze. Jest już późno. Dokąd teraz idziesz? | Vuelvo a la puerta. | Voy a la máquina del tiempo.; Voy al coche. | Wehikuł czasu to najgorsza odpowiedź.; Samochodu w 1450 roku nie ma. Burmistrz pomyślałby, że kłamiesz.
+w vete | idź sobie (irse)
+e Bien, pues vete. ¡Buen viaje! | Dobrze, to idź. Szczęśliwej podróży!
+
+@larp politiker | Polityk | El votante | V | Jesteś skorumpowanym politykiem. Dawno temu pan Palomo dał ci kopertę, a „caso Cuco” (afera Kukułka) wraca na każdym szczeblu twojej kariery. Wyborcy ci wierzą… i przestają… i zapominają. | Przekonaj wyborców, że nadajesz się na stanowisko. Nigdy się nie przyznaj i nie sprzeczaj sam sobie.
+fee 0
+reward 30
+strict yes
+story yes
+disclaimer Satyra. Wszystkie postacie, partie i afery są zmyślone; ewentualne podobieństwo do prawdziwych osób jest przypadkowe.
+win Wygrywasz wybory! Nikt już nie pamięta koperty od pana Palomo. Przed gmachem tłum skanduje twoje nazwisko, a ty obiecujesz „uczciwą politykę”. Pan Palomo macha z ostatniego rzędu.
+partial Wygrywasz o włos. Dziennikarze wciąż grzebią w aktach, ale ty już podpisujesz pierwsze dokumenty. Kłamstwo trzyma się jeszcze na słowo honoru.
+fail Wiarygodność spadła do zera. Wyborcy wyciągają stare akty, a z tłumu ktoś krzyczy: „¡El sobre!” Twoja kariera kończy się na pierwszej stronie gazet.
+
+@level 1 | Alcalde pedáneo | patience=4 cap=6 typed=0 extra=1 hint=none
+desc Szczebel 1: sołtys wsi Valdeluz
+partner Señora Ruiz | R
+scene Zebranie wiejskie w sali gimnastycznej w Valdeluz. Chcesz zostać „alcalde pedáneo”, czyli wiejskim wójtem (sołtysem). Pani Ruiz zadaje pytania, a cała wieś słucha. Wszyscy pamiętają, że pan Palomo naprawił drogę, i że ktoś widział kopertę…
+goal Przekonaj wieś, że jesteś uczciwy, i zaprzecz plotkom o kopercie.
+win Wieś klaszcze. Zostajesz sołtysem Valdeluz. Pan Palomo, w pierwszym rzędzie, puszcza do ciebie oko.
+partial Wygrywasz jednym głosem. Pani Ruiz patrzy na ciebie podejrzliwie, ale podnosi rękę.
+fail Wieś ma dość. Pani Ruiz mówi: „Votamos por otra persona.” Kończysz karierę, zanim się zaczęła.
+w pedáneo | wiejski (alcalde pedáneo = wójt wsi)
+w gustaría | podobałoby się (me gustaría = chciałbym)
+t ¡Buenas noches! ¿Quiere ser alcalde pedáneo? | Dobry wieczór! Chce Pan zostać sołtysem? | Sí, quiero ser alcalde pedáneo. | Powiedz, że chcesz zostać sołtysem. | „Ser” tu znaczy „zostać” (kandydować na stanowisko). | Sí, me gustaría ser alcalde pedáneo.
+w honesto | uczciwy
+t Bien. ¿Es usted honesto? | Dobrze. Czy jest Pan uczciwy? | Sí, siempre soy honesto. | Zapewnij, że jesteś zawsze uczciwy. | „Zawsze” to siempre; honesto po „soy” zgadza się z rodzajem męskim. | | gain=1
+w carretera | droga
+w rota | zepsuta, zniszczona
+w hará | zrobi (hacer, przyszły)
+w Arreglo | naprawiam (arreglar)
+w arreglar | naprawiać
+t Muy bien. Pero la carretera está rota. ¿Qué hará? | Bardzo dobrze. Ale droga jest zniszczona. Co Pan zrobi? | Arreglo la carretera. | Obiecaj, że naprawisz drogę. | „Naprawić” to arreglar: yo arreglo. | Voy a arreglar la carretera. | gain=1
+w Palomo | Palomo (nazwisko; gołąb)
+w dio | dał (dar)
+w vio | widział (ver)
+w Apenas | ledwo
+t Bien. ¡Pero el señor Palomo le dio un sobre! ¡Alguien lo vio! | Dobrze. Ale pan Palomo dał Panu kopertę! Ktoś to widział! | ¡Es mentira! Apenas conozco al señor Palomo. | Zaprzecz: to kłamstwo, ledwo znasz pana Palomo. | „Apenas” znaczy „ledwo”; przed osobą stoi a: conozco al señor Palomo. | | shift=-2 loss=2
+w fue | był (ser; fue hace mucho = było dawno)
+w hemos | mamy (haber; hemos olvidado = zapomnieliśmy)
+w olvidado | zapomniany (olvidar)
+w agradezco | dziękuję (agradecer)
+t Mmm... eso fue hace mucho tiempo. Ya lo hemos olvidado. | Hm... to było dawno temu. Już o tym zapomnieliśmy. | Gracias, se lo agradezco. | Podziękuj wyborcom za wyrozumiałość. | „Agradecer” = dziękować, być wdzięcznym. | | shift=+2
+w deudas | długi
+w municipio | gmina
+w Ahorro | oszczędzam (ahorrar)
+o De nada. Pero tenemos muchas deudas en el municipio. ¿Qué hará? | Nie ma za co. Ale mamy w gminie wiele długów. Co Pan zrobi? | Ahorro dinero y soy honesto. | Me llevo más dinero.; No lo sé. | Dobra odpowiedź obiecuje oszczędzanie i uczciwość.; Polityk, który mówi „zabiorę więcej pieniędzy”, nie brzmi wiarygodnie.; „Nie wiem” nie przekona wyborców. | gain=1
+w Será | będzie (ser, przyszły)
+w nosotros | my
+w seré | będę (ser, przyszły)
+w ustedes | państwo, wy (liczba mnoga)
+t Muy bien. ¿Será honesto con nosotros? | Bardzo dobrze. Czy będzie Pan wobec nas uczciwy? | Sí, siempre seré honesto con ustedes. | Obiecaj uczciwość wobec wyborców. | „Con ustedes” to „wobec państwa” (liczba mnoga, grzecznościowo). | Sí, siempre soy honesto con ustedes. | gain=1
+w votamos | głosujemy (votar)
+e ¡Entonces votamos por usted! ¡Bienvenido, señor alcalde! | Głosujemy więc na Pana! Witamy, Panie wójcie!
+
+@level 2 | Concejal | patience=4 cap=6 typed=0.2 extra=2 hint=bank
+desc Szczebel 2: radny miejski
+partner Señora Vega | V
+scene Miasto Villanueva. Jesteś kandydatem do rady miejskiej (concejal). Dziennikarka, pani Vega, pyta o „biznesmenów” i o to, skąd masz nowy samochód.
+goal Zaprzecz, że brałeś pieniądze, i nie daj się złapać na kłamstwie.
+win Pani Vega zamyka notes: „Bien, no tengo más preguntas.” Zostajesz radnym. Pan Palomo gratuluje przez telefon.
+partial Zostajesz radnym, ale pani Vega mówi: „Sigo investigando.” Będzie dalej drążyć.
+fail Wywiad ląduje w gazecie pod tytułem „El concejal y el sobre”. Nikt na ciebie nie głosuje.
+w periodista | dziennikarz, dziennikarka
+w concejal | radny
+t Buenos días, soy periodista. ¿Quiere ser concejal? | Dzień dobry, jestem dziennikarką. Chce Pan zostać radnym? | Sí, quiero ser concejal. | Potwierdź, że chcesz zostać radnym. | „Concejal” to radny miejski. | | gain=1
+w empresario | przedsiębiorca
+w conocido | znajomy
+t Bien. Usted conoce al empresario, el señor Palomo. ¿Es su amigo? | Dobrze. Zna Pan przedsiębiorcę, pana Palomo. Czy to Pana przyjaciel? | No, es solo un conocido. | Zaprzecz: to tylko znajomy. | „Solo” = tylko; „un conocido” = znajomy. | | gain=1
+w compré | kupiłem (comprar)
+w honestamente | uczciwie
+w comprado | kupiony (comprar)
+t Un conocido, ya veo. Tiene un coche nuevo. ¿De dónde sale el dinero? | Znajomy, rozumiem. Ma Pan nowy samochód. Skąd są pieniądze? | Lo compré honestamente. | Powiedz, że kupiłeś go uczciwie. | Czas przeszły: lo compré (el coche → lo). | He comprado el coche honestamente.
+w aceptado | przyjęty (aceptar)
+w sobornos | łapówki
+t Honestamente, claro. ¿Ha aceptado sobornos? | Uczciwie, oczywiście. Czy brał Pan łapówki? | No, nunca he aceptado sobornos. | Zaprzecz, że kiedykolwiek brałeś łapówki. | „Nunca” = nigdy; „soborno” = łapówka. | Nunca he aceptado sobornos. | loss=2
+w Mire | niech pan(i) spojrzy (mirar)
+w Aparece | pojawia się, widać (aparecer)
+w esa | ta
+t ¿Nunca? Mire esta foto. Aparece usted con el señor Palomo y un sobre. | Nigdy? Proszę spojrzeć na to zdjęcie. Jest na nim Pan z panem Palomo i kopertą. | No conozco a esa gente. | Powiedz, że nie znasz tych ludzi. | „Esa gente” = ci ludzie; po „conocer” przed osobami stoi a. | | shift=-2
+w antigua | stara
+w votantes | wyborcy
+w olvidarán | zapomną (olvidar)
+t La foto es antigua. Los votantes lo olvidarán pronto. | Zdjęcie jest stare. Wyborcy szybko o tym zapomną. | La foto no es importante. | Zlekceważ zdjęcie: nie jest ważne. | „Ważny” to importante; zaprzeczenie: no es importante. | | shift=+2
+w testigo | świadek
+w dice | mówi (decir)
+w recibió | otrzymał (recibir)
+w miente | kłamie (mentir)
+o Un testigo dice que usted recibió dinero. | Świadek mówi, że otrzymał Pan pieniądze. | No es verdad. El testigo miente. | Sí, el testigo tiene razón.; Soy un testigo. | Zaprzeczasz i mówisz, że świadek kłamie (miente).; Przyznajesz się, więc przegrywasz.; Testigo to „świadek”, a ty nim nie jesteś. | gain=1
+w entrevista | wywiad
+w añadir | dodać
+w inocente | niewinny
+t Gracias por la entrevista. ¿Quiere añadir algo más? | Dziękuję za wywiad. Czy chce Pan coś jeszcze dodać? | Sí, soy inocente. | Powiedz na koniec, że jesteś niewinny. | „Inocente” = niewinny. | | gain=1
+w Escribiré | napiszę (escribir)
+w dicho | powiedziany; „powiedział” (decir)
+e Escribiré lo que ha dicho. ¡Adiós! | Napiszę to, co Pan powiedział. Do widzenia!
+
+@level 3 | Alcalde | patience=4 cap=6 typed=0.4 extra=2 hint=bank
+desc Szczebel 3: burmistrz
+partner El fiscal Herrera | H
+scene W ratuszu miasta Villanueva. Prokurator Herrera bada przetarg (licitación) na nowy most. Firma pana Palomo wygrała dziwnie łatwo, a w aktach wraca „caso Cuco”.
+goal Wyjdź z przesłuchania jako burmistrz, nie przyznając się do niczego.
+win Prokurator Herrera zamyka teczkę: „Sin pruebas. El expediente sigue cerrado.” Zostajesz burmistrzem, a most otwiera się z pompą.
+partial Teczka zostaje otwarta, ale prokurator nie ma dowodów. Zostajesz burmistrzem z cieniem podejrzeń.
+fail Prokurator Herrera kładzie na stole kopertę i zdjęcie. „¡Queda usted imputado!” – mówi. Kończysz w areszcie.
+w fiscal | prokurator
+w Herrera | Herrera (nazwisko)
+w Esto | to
+w interrogatorio | przesłuchanie
+t Soy el fiscal Herrera. Esto es un interrogatorio. | Jestem prokuratorem Herrerą. To jest przesłuchanie. | Quisiera ver a mi abogado. | Poproś o swojego adwokata. | „Mi abogado” = mój adwokat; przed osobą stoi a: ver a mi abogado. | Quiero ver a mi abogado. | gain=1
+w ganó | wygrał (ganar)
+w licitación | przetarg
+w Tenía | miał, miała (tener)
+w mejor | lepszy, najlepszy
+w oferta | oferta
+t Más tarde. Primero: la empresa del señor Palomo ganó la licitación del puente. ¿Por qué? | Później. Najpierw: firma pana Palomo wygrała przetarg na most. Dlaczego? | Tenía la mejor oferta. | Wyjaśnij, że miała najlepszą ofertę. | „Tenía” = miała (o firmie, la empresa). | | gain=1
+w preguntas | pytania
+w declaración | oświadczenie
+w acojo | korzystam (me acojo a = powołuję się na)
+w derecho | prawo
+w declarar | składać oświadczenie, zeznawać
+t Mmm. Tenemos muchas preguntas. ¿Quiere hacer una declaración? | Hm. Mamy wiele pytań. Czy chce Pan złożyć oświadczenie? | Me acojo a mi derecho a no declarar. | Odmów składania oświadczeń. | „Derecho a no declarar” = prawo do odmowy zeznań (prawo do milczenia). | No voy a declarar. | shift=-1
+w niega | odmawia (negarse)
+w pruebas | dowody
+w sospechas | podejrzenia
+w sabemos | wiemy (saber)
+t ¿Se niega? Sin pruebas no hay sospechas, claro. Lo sabemos los dos. | Odmawia Pan? Bez dowodów nie ma podejrzeń, oczywiście. Wiemy to obaj. | Usted no tiene pruebas. | Powiedz prokuratorowi, że nie ma dowodów. | „No tiene pruebas” = nie ma dowodów. | Usted no tiene ninguna prueba. | shift=+2
+w Quizá | może, być może
+w haya | będzie, jest (haber; subj.)
+w imputación | postawienie zarzutów
+w culpable | winny
+w Fui | byłem (ser; fui yo = to byłem ja)
+o Quizá haya una imputación. ¿Qué dice? | Być może zostaną postawione zarzuty (imputación). Co Pan na to? | Soy inocente. | Soy culpable.; Fui yo. | „Inocente” = niewinny.; „Culpable” = winny, a to przyznanie.; „Fui yo” = to byłem ja, czyli przyznanie się. | gain=1
+t ¿Inocente? El señor Palomo dice que le dio un sobre. | Niewinny? Pan Palomo mówi, że dał Panu kopertę. | ¡Es mentira! Nunca he aceptado un sobre. | Zaprzecz: to kłamstwo, nigdy nie wziąłeś koperty. | „Nunca he aceptado” = nigdy nie przyjąłem. | | shift=-2 loss=2
+w repítalo | proszę to powtórzyć (repetir)
+w juramento | przysięga
+w Aceptó | przyjął (aceptar)
+d Entonces repítalo bajo juramento. ¿Aceptó dinero del señor Palomo? | A więc proszę powtórzyć to pod przysięgą: czy przyjął Pan pieniądze od pana Palomo? | No, no he aceptado dinero del señor Palomo. | Zaprzeczaj pod przysięgą: nie przyjąłeś od niego pieniędzy. | „Del señor Palomo” = od pana Palomo (de + el). Jedna wpadka i koniec. | No, nunca he aceptado dinero del señor Palomo.
+e Bien. Usted es alcalde. No tengo más preguntas. | Dobrze. Jest Pan burmistrzem. Nie mam więcej pytań.
+
+@level 4 | Diputado | patience=4 cap=6 typed=0.6 extra=2 hint=letters
+desc Szczebel 4: poseł
+partner Señora Molina | M
+scene Parlament krajowy. Jesteś posłem (diputado), a komisja śledcza (comisión de investigación) wzywa cię jako świadka. Przewodnicząca, pani Molina, mówi o „caso Cuco”. Prawnicy mają dla ciebie nowe słowa: testigo, juramento, inmunidad.
+goal Odpowiadaj pod przysięgą tak, by nikt nie dowiódł, że kłamiesz.
+win Pani Molina: „Queda terminada la comparecencia.” Wychodzisz z sali z uniesioną głową. Komisja nic nie ma.
+partial Komisja kończy pracę bez wniosków, ale jeden członek zapisał w notatniku: „¡A comprobar!”
+fail Komisja nakazuje ci wyjaśnić sprzeczność. Zaplątałeś się, a prasa pisze o „diputado mentiroso”.
+w comisión | komisja
+w investigación | śledztwo (comisión de investigación = komisja śledcza)
+w declara | zeznaje (declarar)
+w Digo | mówię (decir)
+t Bienvenido a la comisión de investigación. Usted declara bajo juramento. | Witamy w komisji śledczej. Zeznaje Pan pod przysięgą. | Sí, lo sé. Digo la verdad. | Potwierdź i zapewnij, że mówisz prawdę. | „Decir la verdad” = mówić prawdę. „Bajo juramento” = pod przysięgą. | | gain=1
+w Como | jako; jak
+w diputado | poseł
+w inmunidad | immunitet
+w renunciar | zrzec się
+w conservar | zachować
+t Gracias. Como diputado tiene inmunidad. ¿Quiere renunciar a ella? | Dziękuję. Jako poseł ma Pan immunitet. Czy chce Pan się go zrzec? | No, quiero conservar mi inmunidad. | Odmów zrzeczenia się immunitetu. | „Conservar” = zachować; „renunciar a” = zrzec się. | | shift=-1
+w acuerdo | zgoda (de acuerdo = zgoda)
+w contradice | jest sprzeczne z (contradecir)
+w explica | wyjaśnia (explicar)
+w ocultar | ukrywać
+t De acuerdo. Su declaración contradice el expediente. ¿Cómo lo explica? | Zgoda. Pańskie zeznanie jest sprzeczne z aktami. Jak Pan to wyjaśni? | No tengo nada que ocultar. | Powiedz, że nie masz nic do ukrycia. | „No tengo nada que ocultar” = nie mam nic do ukrycia. | No tengo nada que esconder. | loss=2
+w Además | poza tym, zresztą
+w antiguo | stary, dawny
+w piensan | myślą (pensar)
+t Nada que ocultar, de acuerdo. Además es antiguo: los votantes ya no piensan en eso. | Nic do ukrycia, zgoda. Zresztą to stare: wyborcy już o tym nie myślą. | Eso ya es pasado. | Machnij ręką: to przeszłość. | „Pasado” = przeszłość, minione. | Es cosa del pasado. | shift=+2
+w escribí | napisałem (escribir)
+w escribió | napisał (escribir)
+o Aquí hay una carta del señor Palomo. ¿La conoce? | Oto list od pana Palomo. Zna go Pan? | No conozco esta carta. | Sí, yo escribí esta carta.; Mi abogado escribió esta carta. | Zaprzeczasz, że znasz ten list.; Przyznajesz się, że to ty napisałeś list: to błąd.; Zwalanie na adwokata nie jest wiarygodne. | gain=1
+w recibido | otrzymany (recibir)
+t Un testigo dice que usted recibió un sobre con dinero. | Świadek mówi, że dostał Pan kopertę z pieniędzmi. | El testigo miente. No he recibido dinero. | Nazwij świadka kłamcą i zaprzecz, że dostałeś pieniądze. | „El testigo miente” = świadek kłamie. „No he recibido dinero” = nie otrzymałem pieniędzy. | | shift=-2 loss=2
+w pleno | posiedzenie plenarne (pleno municipal = posiedzenie rady miejskiej)
+w municipal | miejski
+w dijo | powiedział (decir)
+w conocía | znał (conocer, czas przeszły)
+w siendo | będąc (ser; ¿sigue siendo cierto? = czy to nadal prawda)
+w cierto | prawdziwy
+k En el pleno municipal dijo que apenas conocía al señor Palomo. ¿Sigue siendo cierto? | Na posiedzeniu rady miejskiej powiedział Pan, że ledwo zna pana Palomo. Czy to nadal prawda? | Sí, apenas lo conozco. | No, es mi amigo.; No, nunca lo he visto. | Konsekwentnie powtarzasz wcześniejsze zeznanie: apenas.; Przyznajesz, że to twój przyjaciel: sprzeczność i koniec.; Wcześniej mówiłeś „apenas”, a nie „nigdy go nie widziałem”. | gain=1
+w irse | odejść
+w veremos | zobaczymy (ver)
+e Gracias. Puede irse. Nos veremos pronto. | Dziękuję. Może Pan iść. Wkrótce znów się zobaczymy.
+
+@level 5 | Ministro | patience=4 cap=6 typed=0.8 extra=2 hint=bank
+desc Szczebel 5: minister
+partner Señor Ortega | O
+scene Studio telewizyjne, wywiad na żywo. Jesteś ministrem (ministro) i siedzisz naprzeciw pana Ortegi, prowadzącego wiadomości. Na ekranie nagle pojawia się stary dokument z „caso Cuco”.
+goal Wyjdź ze studia nadal jako minister: nie daj się zapędzić w pułapkę na żywo.
+win Ortega kończy wywiad: „Gracias, señor ministro.” Sondaże rosną. Pan Palomo dzwoni: „¡Bien hecho!”
+partial Wywiad kończy się remisem. Opozycja domaga się dymisji, ale premier cię broni.
+fail Na wizji uciekasz od odpowiedzi, a widzowie wszystko widzą. Rano gazety krzyczą: „¡Dimisión!”
+w directo | na żywo (en directo); bezpośredni
+w televisión | telewizja
+w ministro | minister
+t ¡Buenas noches! Estamos en directo en televisión. ¿Está listo, señor ministro? | Dobry wieczór! Jesteśmy na żywo w telewizji. Jest Pan gotów, Panie ministrze? | Sí, estoy listo. Con mucho gusto. | Potwierdź, że jesteś gotów. | „Estar listo” = być gotowym. | | gain=1
+w oposición | opozycja
+w afirma | twierdzi (afirmar)
+w escándalo | skandal
+w torno | okolica (en torno a = wokół)
+w caso | sprawa, afera
+w Cuco | Cuco (kukułka; afera)
+w campaña | kampania
+t Gracias. La oposición afirma que hay un escándalo en torno al caso Cuco. | Dziękuję. Opozycja twierdzi, że wokół afery Cuco jest skandal. | No es un escándalo. Es una campaña. | Zbagatelizuj: to nie skandal, tylko kampania. | „Campaña” = kampania; „no es un escándalo” = to nie skandal. | | shift=-1
+w documento | dokument
+w firma | podpis
+w recuerdo | pamiętam (recordar)
+t ¿Una campaña? En el periódico hay un documento. Lleva su firma. | Kampania? W gazecie jest dokument. Ma Pański podpis. | No lo recuerdo. | Powiedz, że nie możesz sobie tego przypomnieć. | „Recordar” = pamiętać; „no lo recuerdo” = nie przypominam sobie tego. | No me acuerdo. | shift=-2 loss=2
+w recuerda | pamięta (recordar)
+w falsificación | fałszerstwo
+t ¿No lo recuerda? Es su firma. ¿Cómo lo explica? | Nie pamięta Pan? To Pański podpis. Jak Pan to wyjaśni? | Es una falsificación. | Zaprzecz: to fałszerstwo. | „Falsificación” = fałszerstwo. | | gain=1
+w encuestas | sondaże
+w suben | rosną (subir)
+w confían | ufają (confiar)
+w confianza | zaufanie
+t Una falsificación, dice. Las encuestas suben para usted. Los votantes confían en usted. | Fałszerstwo, mówi Pan. Sondaże rosną na Pana korzyść. Wyborcy Panu ufają. | Le agradezco su confianza. | Podziękuj wyborcom za zaufanie. | „La confianza” = zaufanie; „le agradezco su confianza” = dziękuję za zaufanie. | | shift=+2
+w asesor | doradca
+w trabajado | pracował (trabajar)
+w menudo | częsty (a menudo = często)
+w daba | dawał (dar)
+w niego | odmawiam (negarse)
+o El señor Palomo dice que fue su asesor. ¿Es verdad? | Pan Palomo mówi, że był Pańskim doradcą. Czy to prawda? | No, nunca he trabajado con él. | Sí, a menudo me daba dinero.; Me niego a responder. | Zaprzeczasz konsekwentnie.; Przyznajesz się do pieniędzy: błąd.; Odmowa odpowiedzi w telewizji wygląda na przyznanie się, a Ortega to wykorzysta. | gain=1
+w dimitir | podać się do dymisji
+w dimito | podaję się do dymisji (dimitir)
+t ¿Quiere dimitir? Entonces todo ha terminado. | Czy chce Pan podać się do dymisji? Wtedy wszystko skończone. | No, no dimito. Soy inocente. | Odmów dymisji i powiedz, że jesteś niewinny. | „Dimitir” = podać się do dymisji. | | gain=1
+w era | był (ser)
+k Aquí hay una foto: usted y el señor Palomo. También hay un sobre. ¿Qué hay en el sobre? | Oto zdjęcie: Pan i pan Palomo. Jest tam też koperta. Co jest w kopercie? | La foto es antigua. Nunca he aceptado un sobre. | Es dinero para mi campaña.; Solo era un regalo. | Powtarzasz to, co powiedziałeś prokuratorowi.; Przyznanie się do pieniędzy: koniec.; „Regalo” to też przyznanie, bo wcześniej mówiłeś, że nie brałeś koperty. | gain=1
+e Gracias por la entrevista, señor ministro. | Dziękuję za wywiad, panie ministrze.
+
+@level 6 | Presidente del Gobierno | patience=4 cap=6 typed=1 extra=2 hint=none
+desc Szczebel 6: premier
+partner Señora Cabrera | C
+scene Debata finałowa w telewizji. Kandydujesz na premiera (presidente del Gobierno). Naprzeciw stoi pani Cabrera z partii „Nueva Honestidad” i jej teczka z „caso Cuco”. Cały kraj ogląda.
+goal Wygraj debatę, zachowaj spokój i nie przyznaj się do niczego do samego końca.
+win Przegrywa nawet sondaż: 52 procent mówi, że chce ciebie. Zostajesz premierem, a koperta pana Palomo leży gdzieś na dnie szuflady.
+partial Debata kończy się remisem. Wybory wygrywasz minimalnie i obiecujesz „więcej przejrzystości”.
+fail Pani Cabrera kładzie na stoliku teczkę. Kraj widzi sprzeczność w twoich słowach i na ekranie pojawia się napis: „El candidato miente.”
+w Bienvenidos | witamy (liczba mnoga)
+w debate | debata
+w Cabrera | Cabrera (nazwisko)
+w candidato | kandydat
+w presidente | prezydent, przewodniczący
+w Gobierno | rząd (presidente del Gobierno = premier)
+t ¡Bienvenidos al debate! Señora Cabrera, señor candidato, por favor. | Witamy na debacie! Pani Cabrera, panie kandydacie, proszę. | Buenas noches. Quiero ser presidente del Gobierno. | Przywitaj się i powiedz, że chcesz zostać premierem. | „Presidente del Gobierno” = premier. | | gain=1
+w Nueva | nowa
+w Honestidad | uczciwość
+w Diga | niech pan(i) mówi (decir)
+t Soy del partido Nueva Honestidad. ¡Diga la verdad, señor candidato! | Jestem z partii Nueva Honestidad. Niech Pan mówi prawdę, Panie kandydacie! | Siempre digo la verdad. | Zapewnij, że zawsze mówisz prawdę. | „Siempre” = zawsze. | | gain=1
+w acusación | oskarżenie, zarzut
+w Rechazo | odrzucam (rechazar)
+t Usted ha aceptado sobornos. Esa es mi acusación. | Brał Pan łapówki. To moje oskarżenie. | Rechazo esa acusación. | Odrzuć ten zarzut. | „Rechazar” = odrzucać; „esa acusación” = ten zarzut. | | shift=-2 loss=2
+w propaganda | propaganda
+w sucia | brudna
+t Mucha gente dice que es solo propaganda y que es cosa antigua. | Wielu ludzi mówi, że to tylko propaganda i że to stare. | Su campaña es sucia. | Zarzuć rywalce brudną kampanię. | „Sucio” = brudny; po „es” przymiotnik zgadza się z „campaña” (rodzaj żeński): sucia. | Esa campaña es sucia. | shift=+2
+t Señora Cabrera, ¿tiene pruebas? ¡Yo no veo ninguna! | Pani Cabrera, ma Pani dowody? Ja nie widzę żadnych! | No veo pruebas. | Powtórz, że nie widzisz żadnych dowodów. | „Pruebas” = dowody. | No veo ninguna prueba. | gain=1
+w Creo | tworzę (crear); wierzę
+w nuevos | nowe
+w puestos | miejsca (puestos de trabajo = miejsca pracy)
+w crear | tworzyć
+t ¿Y su plan para el país? | A jaki jest Pański plan dla kraju? | Creo nuevos puestos de trabajo. | Obiecaj nowe miejsca pracy. | „Puesto de trabajo” = miejsce pracy; „nuevos puestos de trabajo” = nowe miejsca pracy. | Voy a crear nuevos puestos de trabajo. | gain=1
+t ¡Su amigo el señor Palomo dice que le dio mucho dinero! | Pański przyjaciel pan Palomo mówi, że dał Panu dużo pieniędzy! | ¡Es mentira! No es mi amigo. | Zaprzecz: to kłamstwo, on nie jest twoim przyjacielem. | „No es mi amigo” = nie jest moim przyjacielem. | | shift=-1 loss=2
+o En el pleno municipal dijo que solo era un conocido. ¿Y ahora? | Na posiedzeniu rady miejskiej powiedział Pan, że to tylko znajomy. A teraz? | Solo es un conocido. | Es mi amigo.; Nunca lo he visto. | Trzymasz się wersji z rady.; Zaprzeczasz sam sobie.; Wcześniej przyznałeś, że go znasz, więc „nigdy go nie widziałem” to sprzeczność. | gain=1
+w muestra | pokazuje (mostrar)
+w acepté | przyjąłem (aceptar)
+k La señora Cabrera muestra el sobre. ¿Lo aceptó? ¿Sí o no? | Pani Cabrera pokazuje kopertę. Przyjął go Pan? Tak czy nie? | No, nunca lo he aceptado. | Sí, lo acepté.; Me niego a responder. | Zaprzeczasz do końca.; Przyznanie się: koniec.; Milczenie na żywo wygląda jak przyznanie się. |
+w Enhorabuena | gratulacje
+e ¡Y el presidente es usted! ¡Enhorabuena! | A premierem zostaje… Pan! Serdeczne gratulacje!
+
+@larp flughafen | Lotnisko | La empleada | E | Madryt, wczesny ranek. Lecisz do Warszawy na ślub najlepszego przyjaciela, a samolot nie poczeka. Masz walizkę, paszport i mało czasu. | Przejdź całą drogę: odprawa, kontrola bezpieczeństwa, bramka, lot i odbiór bagażu w Warszawie.
+fee 0
+reward 20
+strict yes
+story yes
+win Docierasz do Warszawy z walizką, paszportem i pół godziny zapasu. Przyjaciel czeka w hali przylotów z bukietem: „¡Lo has conseguido! ¡La boda puede empezar!”
+partial Dotarłeś do Warszawy, ale po drodze sporo się nagadałeś i trochę pobiegałeś. Walizka jest, ślub też, ty trochę zdyszany, ale na czas.
+fail Pomyliłeś coś w najgorszym momencie i samolot odleciał bez ciebie. Ślub oglądasz na telefonie, a przyjaciel obiecuje ci długą wyprawę „na pocieszenie”.
+
+@level 1 | Odprawa | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Odprawa
+partner La empleada | E
+scene Lotnisko Madrid-Barajas, hala odlotów. Podchodzisz do stanowiska odprawy linii Cierzo Air. Pracowniczka patrzy na ciebie życzliwie i czeka na dokumenty.
+goal Odpraw się na lot do Warszawy: pokaż paszport, nadaj walizkę i wybierz miejsce.
+win Pracowniczka podaje ci kartę pokładową: „¡Buen viaje!” Walizka jedzie na taśmie, a ty idziesz do kontroli bezpieczeństwa.
+partial Odprawa udała się, ale pracowniczka kilka razy musiała się domyślać, o co ci chodzi. Karta pokładowa w ręku, czas ucieka.
+fail Pracowniczka nie rozumie, czego chcesz, i prosi następną osobę w kolejce. Musisz zacząć od nowa na końcu kolejki.
+w mostrador | stanowisko, lada
+w Cierzo | Cierzo (zimny wiatr północny; nazwa linii)
+w Air | Air (linia lotnicza)
+w Varsovia | Warszawa
+t ¡Buenos días! Bienvenido al mostrador de Cierzo Air. ¿Adónde va? | Dzień dobry! Witamy przy stanowisku Cierzo Air. Dokąd Pan leci? | ¡Buenos días! Voy a Varsovia. | Przywitaj się i powiedz, że lecisz do Warszawy. | „Jadę, lecę” do miasta to voy a. | ¡Buenos días! Voy a Varsovia, por favor.
+t Varsovia, muy bien. Su pasaporte, por favor. ¿Y por qué va a Varsovia? | Warszawa, bardzo dobrze. Paszport, proszę. A po co Pan leci do Warszawy? | Aquí tiene mi pasaporte. Voy a una boda. | Podaj paszport i powiedz, że lecisz na ślub. | „Oto” (podając) to aquí tiene; „na ślub” to a una boda. | Aquí está mi pasaporte. Voy a una boda en Varsovia.
+w facturar | nadać (bagaż)
+t ¡Una boda, qué bonito! ¿Quiere facturar una maleta? | Ślub, jak miło! Czy chce Pan nadać walizkę? | Sí, quisiera facturar una maleta. | Powiedz, że chcesz nadać walizkę. | „Nadać bagaż” to facturar una maleta. | Sí, quiero facturar mi maleta.
+w Ponga | niech pan(i) postawi (poner)
+w báscula | waga
+w kilos | kilogramy
+w equipaje | bagaż
+t Ponga la maleta en la báscula, por favor. Pesa veinte kilos, está bien. ¿Tiene también equipaje de mano? | Proszę postawić walizkę na wadze. Waży dwadzieścia kilo, jest w porządku. Czy ma Pan też bagaż podręczny? | Sí, tengo un bolso como equipaje de mano. | Powiedz, że masz torbę jako bagaż podręczny. | „Bagaż podręczny” to equipaje de mano.
+w Prefiere | woli pan(i) (preferir)
+w ventanilla | okienko (asiento de ventanilla = miejsce przy oknie)
+w pasillo | przejście, korytarz
+t Muy bien. ¿Prefiere asiento de ventanilla o de pasillo? | Bardzo dobrze. Czy woli Pan miejsce przy oknie, czy przy przejściu? | De ventanilla, por favor. | Powiedz, że wolisz miejsce przy oknie. | „Przy oknie” to de ventanilla. | Asiento de ventanilla, por favor.
+w embarque | wejście na pokład
+w despegue | start (samolotu)
+w media | pół (las diez y media = wpół do jedenastej)
+w vuelo | lot
+w puntual | punktualny
+t Perfecto, ventanilla. Aquí tiene su tarjeta de embarque. El despegue es a las diez y media. ¿Tiene otra pregunta? | Doskonale, przy oknie. Oto Pana karta pokładowa. Start jest o wpół do jedenastej. Czy ma Pan jeszcze pytanie? | Sí, ¿el vuelo sale puntual? | Zapytaj, czy lot jest punktualny. | „Punktualnie” to puntual. | Sí, ¿el vuelo va a la hora?
+t Sí, el vuelo sale puntual. Su puerta es la doce. Vaya todo recto. | Tak, lot jest punktualny. Pana bramka to 12. Proszę iść prosto. | ¡Muchas gracias! ¡Adiós! | Podziękuj i pożegnaj się. | „Do widzenia” to adiós. | ¡Gracias! ¡Adiós!
+e ¡Buen viaje! | Szczęśliwej podróży!
+
+@level 2 | Kontrola bezpieczeństwa | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Kontrola bezpieczeństwa
+partner El agente de seguridad | S
+scene Masz kartę pokładową, a przed tobą długa kolejka do kontroli. Funkcjonariusz podaje plastikowe pojemniki i patrzy uważnie na twoją torbę.
+goal Przejdź kontrolę bezpieczeństwa: pokaż laptop, zdejmij pasek i odpowiedz na pytania.
+win Funkcjonariusz kiwa głową: „Todo en orden. Continúe.” Zakładasz pasek i biegniesz do bramki z pełnym spokojem.
+partial Kontrola przebiegła w końcu bez problemów, ale funkcjonariusz kilka razy zmarszczył brwi. Zakładasz pasek w biegu.
+fail Funkcjonariusz uznaje twoje odpowiedzi za podejrzane. Zostajesz zatrzymany na dodatkową kontrolę, a samolot odlatuje bez ciebie.
+w control | kontrola
+w seguridad | bezpieczeństwo
+w cinta | taśma
+t ¡Buenos días! Este es el control de seguridad. Ponga el bolso aquí en la cinta, por favor. | Dzień dobry! To jest kontrola bezpieczeństwa. Proszę położyć torbę tutaj na taśmie. | Sí, claro. | Zgódź się i powiedz, że oczywiście. | „Oczywiście” to claro. | Claro.
+w Sáquelo | proszę to wyjąć (sacar)
+t Gracias. ¿Lleva un ordenador en el bolso? Sáquelo, por favor. | Dziękuję. Czy ma Pan w torbie laptop? Proszę go wyjąć. | Sí, aquí tiene mi ordenador. | Potwierdź i podaj laptop. | „Mój” przy rodzaju męskim to mi: mi ordenador. | Sí, aquí está mi ordenador.
+w líquidos | płyny
+w perfume | perfumy
+w crema | krem
+w líquido | płyn
+t Gracias. ¿Lleva líquidos? Por ejemplo agua, perfume o crema. | Dziękuję. Czy ma Pan przy sobie płyny? Na przykład wodę, perfumy albo krem. | No, no llevo líquidos. | Zaprzecz: nie masz płynów. | „No llevo líquidos” = nie mam płynów. | No, no llevo ningún líquido.
+w Quítese | proszę zdjąć (quitarse)
+t Muy bien. Quítese también el cinturón y la chaqueta, por favor. | Bardzo dobrze. Proszę też zdjąć pasek i kurtkę. | Sí, aquí tiene mi cinturón y mi chaqueta. | Podaj pasek i kurtkę. | „Mi” przy liczbie pojedynczej (mi cinturón, mi chaqueta). | Sí, aquí están mi cinturón y mi chaqueta.
+w ni | ani (ni … ni)
+k Gracias. ¿Hay un cuchillo o un arma en el bolso? | Dziękuję. Czy w torbie jest nóż albo broń? | No, no llevo ni cuchillo ni arma. | Sí, llevo un cuchillo.; No sé, quizá. | Przyznanie się do noża to natychmiastowe zatrzymanie.; Niepewna odpowiedź przy takim pytaniu wzbudza podejrzenia: zatrzymanie.
+w Pase | niech pan(i) przejdzie (pasar)
+w arco | łuk, bramka (arco detector = bramka wykrywająca)
+w detector | wykrywacz
+w Bip | pip (dźwięk)
+w bolsillo | kieszeń
+w llaves | klucze
+w mis | moje
+t Bien. Pase ahora por el arco detector. ¡Bip! ¿Lleva algo más en el bolsillo? | Dobrze. Proszę teraz przejść przez bramkę. Pip! Czy ma Pan jeszcze coś w kieszeni? | Sí, llevo las llaves y mi móvil. | Powiedz, że masz klucze i telefon. | „Klucze” to las llaves. | Sí, tengo mis llaves y mi móvil.
+w orden | porządek (en orden = w porządku)
+w Continúe | proszę iść dalej (continuar)
+e Todo en orden. Continúe. ¡Buen viaje! | Wszystko w porządku. Proszę iść dalej. Szczęśliwej podróży!
+
+@level 3 | Przy bramce | patience=4 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Przy bramce
+partner El empleado del aeropuerto | E
+scene Siedzisz przy bramce 12 i patrzysz na zegarek. Nagle w głośnikach coś trzaska, a na tablicy pojawia się napis „Retraso”.
+goal Dowiedz się, co z lotem, zrozum komunikat o zmianie bramki i wejdź na pokład.
+win Biegniesz do nowej bramki i wsiadasz jako jeden z ostatnich. Pracownik zamyka drzwi: „¡Por los pelos!”
+partial Znalazłeś w końcu właściwą bramkę, choć po drodze kilka razy musiałeś dopytywać. Wchodzisz na pokład spocony.
+fail Zrozumiałeś komunikat na opak i czekasz przy złej bramce. Kiedy orientujesz się w błędzie, drzwi samolotu są już zamknięte.
+w Disculpe | przepraszam
+t ¡Disculpe! ¿Es usted pasajero del vuelo a Varsovia? | Przepraszam! Czy jest Pan pasażerem lotu do Warszawy? | Sí, mi vuelo lleva retraso, ¿verdad? | Potwierdź i zapytaj, czy twój lot jest spóźniony. | „Opóźnienie” to retraso; „llevar retraso” = mieć opóźnienie. | Sí, mi vuelo va con retraso, ¿verdad?
+t Sí, el vuelo lleva cuarenta minutos de retraso. | Tak, lot ma czterdzieści minut opóźnienia. | ¿Y cuándo es el embarque? Voy a una boda. | Zapytaj, kiedy jest boarding, i dodaj, że lecisz na ślub. | „Boarding” to embarque; pytanie o czas: ¿cuándo? | ¿A qué hora es el embarque? Voy a una boda.
+w escala | przesiadka (hacer escala)
+w directamente | bezpośrednio
+t A las once. Una boda, ¡qué bonito! ¿Tiene que hacer escala en Varsovia? | O jedenastej. Ślub, jak miło! Czy musi Pan się przesiadać w Warszawie? | No, voy directamente a Varsovia. | Odpowiedz, że nie, lecisz bezpośrednio. | „Bezpośrednio” to directamente. | No, vuelo directo a Varsovia.
+w aviso | ogłoszenie
+w cerrada | zamknięta
+w quedo | zostaję (quedarse)
+k Bien, directo. ¡Atención, un aviso! El vuelo a Varsovia sale ahora de la puerta cinco. La puerta doce está cerrada. ¿Lo ha entendido? ¿Adónde va? | Dobrze, bezpośrednio. Uwaga, ogłoszenie! Lot do Warszawy odlatuje teraz z bramki 5. Bramka 12 jest zamknięta. Czy Pan zrozumiał? Dokąd Pan idzie? | Voy a la puerta cinco. | Me quedo en la puerta doce.; Voy a la salida del aeropuerto. | Bramka 12 jest zamknięta, więc czekanie tam kończy się spóźnieniem.; Wyjście z lotniska to nie bramka na pokład.
+w Subo | wsiadam, wchodzę (subir)
+t ¡Pues rápido! Su tarjeta de embarque, por favor. Ya puede subir al avión. | W takim razie szybko! Karta pokładowa, proszę. Może Pan już wsiadać. | Aquí tiene mi tarjeta de embarque. Subo enseguida. | Podaj kartę i powiedz, że już wsiadasz. | „Wsiadać do samolotu” to subir al avión; „enseguida” = zaraz. | Aquí está mi tarjeta. Subo ahora.
+w abierto | otwarty
+e ¡Buen viaje! El embarque está abierto. | Szczęśliwej podróży! Boarding jest otwarty.
+
+@level 4 | W samolocie i po lądowaniu | patience=4 typed=0.75 extra=3 hint=letters reward=30
+desc Rozdział 4: Lot i przylot
+partner La auxiliar de vuelo | A
+scene Wchodzisz na pokład Cierzo Air. Stewardesa wita pasażerów przy drzwiach, a za chwilę wystartujecie do Warszawy. Po lądowaniu będziesz musiał jeszcze znaleźć paszportówkę i swoją walizkę.
+goal Zajmij miejsce, zapnij pas, poproś o picie, a po lądowaniu dowiedz się, gdzie jest kontrola paszportowa, taśma bagażowa i odprawa celna.
+win Walizka wyjeżdża na taśmie jako pierwsza, a celnik życzy ci „¡Bienvenido a Polonia!” Przyjaciel czeka w hali przylotów.
+partial Wszystko udało ci się znaleźć, ale po drodze trzy razy zapytałeś o drogę. Walizka dojechała, a ty do ślubu zdążysz.
+fail Poszedłeś w złą stronę i stracił czas na lotnisku. Walizka krąży samotnie po taśmie, a przyjaciel wydzwania co minutę.
+w bordo | pokład (a bordo = na pokładzie)
+t ¡Buenos días y bienvenido a bordo! Su tarjeta de embarque, por favor. | Dzień dobry i witamy na pokładzie! Proszę o kartę pokładową. | ¡Buenos días! Aquí tiene mi tarjeta de embarque. | Przywitaj się i pokaż kartę pokładową. | „Oto” (podając) to aquí tiene. | ¡Buenos días! Aquí está mi tarjeta.
+w compartimento | schowek
+w pongo | kładę, wkładam (poner)
+t Gracias. Su asiento es el catorce, junto a la ventanilla. Ponga el bolso en el compartimento de arriba, por favor. | Dziękuję. Pana miejsce to 14, przy oknie. Proszę włożyć torbę do schowka na górze. | Gracias, pongo el bolso en el compartimento. | Podziękuj i powiedz, że wkładasz torbę do schowka. | „Wkładam, kładę” to pongo. | Gracias, pongo mi bolso en el compartimento.
+w Abróchese | proszę zapiąć (abrocharse)
+w Despegamos | startujemy (despegar)
+w abrocho | zapinam (abrocharse)
+t Perfecto. Abróchese el cinturón, por favor. Despegamos enseguida. | Doskonale. Proszę zapiąć pas. Za chwilę startujemy. | Sí, me abrocho el cinturón. | Powiedz, że zapinasz pas. | „Zapinam pas” to me abrocho el cinturón. | ¡Sí, me abrocho el cinturón!
+t Gracias. ¿Quiere algo de beber? | Dziękuję. Czy chce Pan coś do picia? | Sí, un café, por favor. | Poproś o kawę. | Café jest rodzaju męskiego, więc un café. | Sí, quisiera un café, por favor.
+w aterrizamos | lądujemy (aterrizar)
+t Aquí tiene su café. ¿Tiene otra pregunta? | Oto Pana kawa. Czy ma Pan jeszcze pytanie? | Sí, ¿cuándo aterrizamos en Varsovia? | Zapytaj, kiedy lądujecie w Warszawie. | „Kiedy” to cuándo, a „lądujemy” to aterrizamos. | Sí, ¿a qué hora aterrizamos en Varsovia?
+w llegada | przylot
+w pasaportes | paszporty
+w aduana | cło, urząd celny
+t Aterrizamos dentro de diez minutos. ¡Bienvenido a Varsovia! La llegada es puntual. | Lądujemy za dziesięć minut. Witamy w Warszawie! Przylot jest punktualny. | ¡Gracias! ¿Dónde está el control de pasaportes, por favor? | Podziękuj i zapytaj, gdzie jest kontrola paszportowa. | Pytanie o miejsce zaczyna się od dónde: ¿dónde está el control de pasaportes? | ¡Gracias! ¿Dónde está la aduana, por favor?
+w Después | potem
+w luego | następnie
+k El control de pasaportes está a la izquierda. Después viene la cinta de equipaje y luego la aduana. ¿Adónde va primero? | Kontrola paszportowa jest po lewej. Potem taśma bagażowa, a potem cło. Dokąd Pan idzie najpierw? | Primero voy al control de pasaportes. | Primero voy a la aduana.; Primero voy a la cinta de equipaje. | Do cła idziesz na końcu, po odbiorze walizki.; Walizkę odbierasz dopiero po kontroli paszportowej.
+w Exacto | dokładnie
+t ¡Exacto! Y después a la cinta de equipaje. Su maleta llega por la cinta cuatro. | Dokładnie! A potem do taśmy bagażowej. Pana walizka przyjedzie na taśmie czwartej. | ¡Muchas gracias! Tomo la maleta de la cinta. | Podziękuj i powiedz, że zdejmiesz walizkę z taśmy. | „Zdejmuję, biorę” to tomo, a „z taśmy” to de la cinta. | ¡Gracias! Tomo mi maleta de la cinta.
+t ¿Tiene algo que declarar? Eso lo pregunta la aduana. | Czy ma Pan coś do oclenia? O to zapyta cło. | No, no tengo nada que declarar. | Powiedz, że nie masz nic do oclenia. | „Nic” to nada: nada que declarar. | No, nada que declarar.
+w disfrute | niech pan(i) się cieszy (disfrutar)
+e Entonces todo está bien. ¡Bienvenido a Polonia y que disfrute de la boda! | Wtedy wszystko w porządku. Witamy w Polsce i miłej zabawy na ślubie!

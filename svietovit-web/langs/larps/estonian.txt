@@ -308,3 +308,874 @@ w minutit | minut (minut + -it: po liczebniku)
 t See koht on vaba. Rong hilineb kümme minutit. | To miejsce jest wolne. Pociąg spóźnia się dziesięć minut. | See ei ole probleem. Aitäh! | Powiedz, że to nie problem, i podziękuj. | „To nie problem” to see ei ole probleem.
 w korras | w porządku
 e Kõik on korras! Head reisi Tartusse! | Wszystko w porządku! Szczęśliwej podróży do Tartu!
+
+@larp oma | Babcia w parku | Vanaema Helga | H | Niedziela w parku. Na ławce siedzi starsza pani, która uwielbia rozmawiać i ma całe popołudnie. | Posiedź z babcią Helgą i porozmawiaj z nią. Nikt cię stąd nie wyrzuci.
+fee 0
+reward 10
+story yes
+win Vanaema Helga promienieje: „Küll on tore noormees!” Zaprasza cię na niedzielną kawę i kawałek ciasta.
+partial Rozmowa się toczyła, choć kilka razy musiałeś prosić o powtórzenie. Vanaema Helga uśmiecha się cierpliwie i zaprasza cię znowu.
+fail Vanaema Helga się nie zniechęca, bo ma nieskończoną cierpliwość. Jeśli kiedyś zobaczysz ten komunikat, napisz do nas.
+
+@level 1 | Na ławce | patience=3 endless=yes typed=0 extra=2 hint=none
+desc Rozdział 1: Poznajecie się
+scene Park, ławka, słońce. Starsza pani karmi okruchami wróble i zaczyna rozmowę. Nie musisz się spieszyć: Vanaema Helga poczeka.
+goal Przywitaj się, powiedz, jak się nazywasz i skąd jesteś.
+win Vanaema Helga klepie ławkę obok siebie: „Istu siia, Paul!” Zostajesz na dłużej.
+partial Rozmowa się udała, mimo kilku pomyłek. Vanaema Helga zachowuje cierpliwość i robi ci miejsce na ławce.
+fail Vanaema Helga nigdy się nie zniechęca.
+w noormees | młodzieniec, młody człowiek
+w pole | nie ma, nie jest (kas pole? = prawda?)
+w tõesti | naprawdę
+t Tere päevast, noormees! Ilm on täna ilus, kas pole? | Dzień dobry, młody człowieku! Pogoda jest dziś ładna, prawda? | Jah, ilm on ilus. | Zgódź się, że pogoda jest ładna. | „Pogoda” to ilm. | Jah, ilm on tõesti ilus.
+w nii | tak, taki
+w nimi | imię, nazwa
+w Helga | Helga (imię)
+w Paul | Paul (imię, Paweł)
+t Nii ilus! Mis teie nimi on? Mina olen Helga. | Taka ładna! Jak się Pan nazywa? Ja jestem Helga. | Minu nimi on Paul. | Powiedz, jak się nazywasz. | „Moje imię jest” to minu nimi on. | Mina olen Paul.
+w elate | mieszkacie; mieszka Pan (elama)
+w ela | mieszkam (elama; ma ei ela = nie mieszkam)
+t Paul! Ilus nimi. Kas te elate siin? | Paul! Ładne imię. Czy Pan mieszka tutaj? | Ei, ma ei ela siin. Ma olen Poolast. | Zaprzecz i powiedz, że jesteś z Polski. | „Z Polski” to Poolast (końcówka -st: „z”). | Ei, ma ei ela siin. Ma olen pärit Poolast.
+w meelsasti | chętnie
+t Poolast! See on kaugel. Kas soovite istuda? | Z Polski! To daleko. Czy chce Pan usiąść? | Jah, meelsasti. Suur aitäh! | Zgódź się i podziękuj. | „Chętnie” to meelsasti.
+w ruumi | miejsca (forma cząstkowa od ruum)
+e Palun! Siin on ruumi. | Proszę bardzo! Tu jest miejsce.
+
+@level 2 | Wnuk i kaczki | patience=3 endless=yes typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Wnuk i ciasto
+scene Mały Mihkel biega po trawniku i karmi kaczki, a Vanaema Helga pokazuje ci zdjęcia w portfelu. Z torby wyjmuje ciasto własnej roboty.
+goal Porozmawiaj o wnuku Mihklu, powiedz, czy masz dzieci, i spróbuj ciasta.
+win Vanaema Helga wręcza ci drugi kawałek: „Söö, söö, sa oled liiga kõhn!” Mihkel macha do ciebie z daleka.
+partial Zjadłeś ciasto, choć kilka razy brakowało ci słów. Vanaema Helga dolewa herbaty z termosu.
+fail Vanaema Helga nie traci cierpliwości.
+w Mihkel | Mihkel (imię)
+w ta | on, ona
+w aastat | lat (forma cząstkowa od aasta)
+w armas | słodki, miły
+t See on minu lapselaps Mihkel. Ta on viis aastat vana. | To mój wnuk Mihkel. Ma pięć lat. | Mihkel on väga armas. | Pochwal wnuka: powiedz, że jest bardzo słodki. | „Bardzo” to väga. | Mihkel on väga tore.
+w toidab | karmi (toitma)
+w parte | kaczki (forma cząstkowa l. mn. od part)
+w lapsi | dzieci (forma cząstkowa l. mn.)
+t Aitäh! Mihkel toidab parte. Kas teil on lapsi? | Dziękuję! Mihkel karmi kaczki. Czy ma Pan dzieci? | Ei, mul ei ole lapsi. | Powiedz, że nie masz dzieci. | „Nie mam dzieci” to mul ei ole lapsi (po przeczeniu forma cząstkowa).
+w ahah | ach tak
+w küpsetasin | upiekłam (küpsetama)
+w selle | tego, to (gen./biernik od see)
+t Pole lapsi? Ahah. Kas soovite tüki torti? Küpsetasin selle ise. | Nie ma Pan dzieci? Ach tak. Chce Pan kawałek ciasta? Sama je upiekłam. | Jah, meelsasti. Tort on väga hea! | Przyjmij ciasto i pochwal je. | Po „tükk” forma cząstkowa: torti.
+w meel | nastrój, umysł (mul on hea meel = cieszę się)
+t Mul on hea meel, et maitseb! Kui vana te olete? | Cieszę się, że smakuje! Ile ma Pan lat? | Ma olen kolmkümmend aastat vana. | Powiedz, że masz trzydzieści lat. | „Mam lat” to ma olen … aastat vana (po liczebniku forma cząstkowa: aastat).
+w oi | och
+e Oi, nii noor! | Ach, tak młodo!
+
+@level 3 | Zaproszenie | patience=3 endless=yes typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Kawa w niedzielę
+scene Słońce chyli się ku zachodowi. Vanaema Helga pakuje termos i prosi cię o pomoc. Zanim wstaniecie z ławki, chce cię jeszcze zaprosić.
+goal Przyjmij zaproszenie na niedzielną kawę i pomóż babci z torbą.
+win Vanaema Helga zapisuje ci adres na serwetce: „Tule näljasena!” Idziesz do domu w świetnym nastroju.
+partial Wszystko się wyjaśniło, choć trzeba było kilka razy powtarzać. Vanaema Helga mówi: „Näeme pühapäeval, poiss!”
+fail Vanaema Helga nie traci cierpliwości.
+w teate | wiecie; wie Pan (teadma)
+w pargis | w parku (park + -s: „w”)
+t Teate, ma olen iga päev pargis. Siin on nii ilus. | Wie Pan, jestem w parku codziennie. Jest tu tak ładnie. | Jah, park on tõesti ilus. | Zgódź się, że park jest piękny. | „Naprawdę” to tõesti. | Jah, park on väga ilus.
+w eks | prawda, przecież (eks ole? = prawda?)
+w pühapäeval | w niedzielę (pühapäev + -al)
+w keedan | gotuję, parzę (keetma)
+w tulla | przyjść
+t Eks ole? Pühapäeval keedan kohvi. Kas soovite tulla? | Prawda? W niedzielę parzę kawę. Chce Pan przyjść? | Jah, meelsasti. Millal? | Zgódź się i zapytaj, kiedy. | „Kiedy?” to millal?
+w saate | możecie; może Pan (saama)
+w mind | mnie (biernik od mina)
+w kannan | niosę (kandma)
+w koti | torbę (biernik od kott)
+t Kell kolm. Minu kott on raske. Kas te saate mind aidata? | O trzeciej. Moja torba jest ciężka. Czy może mi Pan pomóc? | Jah, muidugi. Ma kannan koti. | Zgódź się i zaproponuj, że poniesiesz torbę. | „Noszę” to kannan; torba w bierniku: koti. | Jah, muidugi. Ma kannan teie koti.
+w lahke | miły, uprzejmy
+w näeme | zobaczymy się (nägema)
+t Kui lahke! Te olete hea inimene. | Jaki Pan miły! Jest Pan dobrym człowiekiem. | Suur aitäh! Näeme pühapäeval! | Podziękuj i pożegnaj się do niedzieli. | „Do niedzieli” to näeme pühapäeval (dosł. „zobaczymy się w niedzielę”).
+e Näeme pühapäeval! Nägemist! | Do niedzieli! Do widzenia!
+
+
+@larp spion | Szpieg | Kontakt | K | Jesteś agentem pod przykrywką. W Tallinie masz odebrać tajną teczkę z ambasady i przekazać ją dalej. Jedno złe słowo i jesteś zdemaskowany. | Zachowaj przykrywkę kupca Kaska, zdobądź toimik i uciekaj z walizką.
+fee 0
+reward 20
+strict yes
+story yes
+win Walizka jest w twoich rękach, a statek odpływa z portu. Ktoś w centrali szepcze: „Hea töö, Pistrik.” Przykrywka nie pękła ani razu.
+partial Misja się udała, ale po drodze kilka razy omal się nie zdradziłeś. Centrala odnotowuje: „Tal vedas.”
+fail Zdradziłeś się jednym słowem. Przykrywka pękła, a ty znikasz w ciemności bez teczki i bez walizki.
+
+@level 1 | Hasło na dworcu | patience=2 typed=0 extra=1 hint=none
+desc Rozdział 1: Kontakt na dworcu
+partner Mees kübaraga | M
+scene Tallin, wieczór, peron na dworcu. Jesteś agentem „Pistrik”, ale dla wszystkich jesteś härra Kask, handlarz zabawkami z Tartu (Kask ja Poeg). Na peronie czeka człowiek w kapeluszu. Hasło: „Talv tuleb vara.” Odzew: „Ja suvi tuleb hilja.”
+goal Podaj hasło, nie zdradź swojej przykrywki i przyjmij zadanie. Jedna zła odpowiedź i jesteś zdemaskowany.
+win Człowiek w kapeluszu znika w tłumie, a ty zostajesz z kopertą w kieszeni. Przykrywka nietknięta, a jutro o ósmej czeka cię ambasada.
+partial Dostałeś zadanie, ale kontakt zmarszczył brwi przy kilku twoich odpowiedziach. Lepiej uważaj jutro.
+fail Człowiek w kapeluszu spojrzał na ciebie zimno, odwrócił się i odszedł. Zadanie dostanie ktoś inny.
+w tuleb | przychodzi (tulema)
+t Tere õhtust. Täna on külm, kas pole? | Dobry wieczór. Dziś jest zimno, prawda? | Jah, on väga külm. Talv tuleb vara. | Zgódź się, że jest zimno, i powiedz hasło: zima przychodzi wcześnie. | Hasło brzmi: „Talv tuleb vara.” | Jah, on külm. Talv tuleb vara.
+w pst | cicho!
+w kuulavad | słuchają (kuulama; pealt kuulama = podsłuchiwać)
+w pealt | z wierzchu (pealt kuulama = podsłuchiwać)
+w Kask | Kask (nazwisko z przykrywki; kask = brzoza)
+w kaupmees | kupiec
+w Pistrik | Pistrik (sokół; imię agenta)
+w agent | agent
+k Ja suvi tuleb hilja. Pst! Siin kuulavad inimesed pealt. Mis teie nimi on? | A lato przychodzi późno. Cicho! Tu ludzie podsłuchują. Jak się Pan nazywa? | Minu nimi on Kask. Ma olen kaupmees. | Minu nimi on Pistrik. Ma olen agent.;Minu nimi on Kask. Ma olen agent. | Pistrik to twoje imię agenta, a ludzie podsłuchują.; Kask się zgadza, ale „agent” zdradza przykrywkę.
+w jälitab | śledzi (jälitama)
+w teid | Pana, Panią, was (biernik od teie)
+w jälita | śledzi (jälitama; keegi ei jälita = nikt nie śledzi)
+w aega | czasu (forma cząstkowa od aeg)
+k Hea. Kas keegi jälitab teid? | Dobrze. Czy ktoś Pana śledzi? | Ei, keegi ei jälita mind. | Jah, keegi jälitab mind.;Ei, mul ei ole aega. | Mówisz, że nikt cię nie śledzi.; Kontakt pyta o śledzenie, nie o czas.
+w suurepärane | znakomity
+w kaheksa | osiem
+w lähete | idziecie; idzie Pan (minema)
+w saatkonda | do ambasady (saatkond + -sse)
+w vastuvõtt | przyjęcie
+w sain | dostałem (saama; sain aru = zrozumiałem)
+w aru | rozum (aru saama = rozumieć)
+t Suurepärane. Siin on teie ülesanne. Homme kell kaheksa lähete saatkonda. Seal on vastuvõtt. | Znakomicie. Oto Pana zadanie. Jutro o ósmej idzie Pan do ambasady. Jest tam przyjęcie. | Sain aru. Homme kell kaheksa lähen saatkonda. | Powiedz, że zrozumiałeś: jutro o ósmej idziesz do ambasady. | „Ülesanne” to zadanie, a „kell kaheksa” znaczy „o ósmej”.
+w vastuvõtu | przyjęcia (gen. od vastuvõtt)
+w Ööbik | Ööbik (słowik; hasło)
+t Hea. Vastuvõtu parool on Ööbik. Mis on parool? | Dobrze. Hasło na przyjęcie to Słowik. Jakie jest hasło? | Parool on Ööbik. | Powtórz hasło na przyjęcie. | Hasło wejściowe to parool, a „ööbik” to słowik.
+w tunnete | znacie; zna Pan (tundma)
+w tunne | znam (tundma; ei tunne = nie znam)
+d Väga hea. Pst! Politseinik tuleb. Kas te tunnete mind? | Bardzo dobrze. Cicho! Idzie policjant. Czy Pan mnie zna? | Ei, ma ei tunne teid. | Zaprzecz, że znasz tego człowieka. | Nie możesz zdradzić, że znasz kontakt. | Ei, ma ei tunne teid!
+w härra | pan
+e Head ööd, härra Kask. | Dobranoc, panie Kask.
+
+@level 2 | Przyjęcie w ambasadzie | patience=2 typed=0.2 extra=3 hint=bank
+desc Rozdział 2: Przyjęcie w ambasadzie
+partner Proua Tamm | T
+scene Następny wieczór. W ambasadzie trwa przyjęcie, a przy wejściu stoi pani Tamm, sekretarka. Ona i goście zadają pytania o twoją „firmę”. Twoja przykrywka: Kask ja Poeg, zabawki, Tartu. Hasło wejściowe: Ööbik. Gabinet ambasadora jest po prawej, toalety po lewej.
+goal Wejdź na przyjęcie, nie zdradź się pytaniom o firmę i znajdź pretekst, żeby dotrzeć do gabinetu.
+win Pani Tamm macha ci na pożegnanie, a w gabinecie leży teczka, o którą ci chodziło. Nikt niczego nie podejrzewa.
+partial Weszłeś i dotarłeś do gabinetu, ale pani Tamm patrzyła na ciebie dłużej, niż trzeba.
+fail Pani Tamm przestaje się uśmiechać i daje znak ochronie. Za chwilę wyprowadzą cię z ambasady.
+w tulemast | z przybycia (tere tulemast = witamy)
+t Tere õhtust ja tere tulemast saatkonda! Mis on parool? | Dobry wieczór i witamy w ambasadzie! Jakie jest hasło? | Parool on Ööbik. | Podaj hasło wejściowe. | Parool to hasło, a „ööbik” to słowik.
+w pean | muszę (pidama)
+w relv | broń
+w kaasas | przy sobie
+w relva | broni (forma cząstkowa od relv)
+w toimikut | teczki (forma cząstkowa od toimik)
+k Aitäh. Pean midagi küsima. Kas teil on relv kaasas? | Dziękuję. Muszę o coś zapytać. Czy ma Pan przy sobie broń? | Ei, mul ei ole relva. | Jah, mul on relv.;Ei, mul ei ole toimikut. | Na przyjęcie nie wchodzi się z bronią.; Pytanie dotyczy broni, nie teczki.
+w kelle | czyj, kogo (kelle heaks = dla kogo)
+w heaks | na rzecz, dla (heaks töötama = pracować dla)
+w töötate | pracujecie; pracuje Pan (töötama)
+w töötan | pracuję (töötama)
+w Poeg | Poeg (syn; w nazwie firmy: Kask ja Poeg)
+w keskuse | centrali (gen. od keskus)
+w proua | pani
+w Tamme | Tamm (gen. od Tamm)
+k Hea. Kelle heaks te töötate? | Dobrze. Dla kogo Pan pracuje? | Ma töötan firma Kask ja Poeg heaks. | Ma töötan keskuse heaks.;Ma töötan proua Tamme heaks. | „Keskus” to twoja tajna centrala, nie firma.; Pani Tamm to sekretarka z ambasady.
+w müüb | sprzedaje (müüma)
+w mänguasju | zabawek (forma cząstkowa l. mn.)
+d Hea. Mida teie firma müüb? | Dobrze. Co sprzedaje Pana firma? | Minu firma müüb mänguasju. | Powiedz, co sprzedaje twoja „firma” (przykrywka). | Twoja przykrywka to handel zabawkami. | Minu firma müüb mänguasju!
+w asub | znajduje się (asuma)
+w Tartus | w Tartu (Tartu + -s)
+k Mänguasju, kui huvitav! Kus teie firma asub? | Zabawki, jak ciekawie! Gdzie jest Pana firma? | Minu firma asub Tartus. | Minu firma müüb mänguasju.;Minu firma nimi on Kask ja Poeg. | „Kus” znaczy „gdzie”, a nie „co sprzedaje”.; „Kus” pyta o miejsce, nie o nazwę.
+w tualett | toaleta
+t Tartus, ilus linn! Kas soovite midagi süüa? | W Tartu, piękne miasto! Czy chce Pan coś zjeść? | Ei, aitäh. Kus on tualett, palun? | Odmów i zapytaj o toaletę (to pretekst). | „Kus” = gdzie, więc „Kus on tualett?”.
+w kabinet | gabinet
+w privaatne | prywatny
+w vasakule | w lewo (vasak + -le)
+w paremale | w prawo (parem + -le)
+k Tualett on vasakul. Kabinet paremal on privaatne. | Toaleta jest po lewej. Gabinet po prawej jest prywatny. | Aitäh, ma lähen vasakule. | Aitäh, ma lähen paremale.;Aitäh, kabinet on ilus. | Gabinet po prawej jest prywatny, a ty idziesz do toalety po lewej.; Nie wolno ci mówić, że chcesz iść do gabinetu.
+w ajaviidet | rozrywki (forma cząstkowa od ajaviide; head ajaviidet = dobrej zabawy)
+e Siis head ajaviidet, härra Kask! | W takim razie dobrej zabawy, panie Kask!
+
+@level 3 | Przesłuchanie | patience=1 typed=0.35 extra=3 hint=bank
+desc Rozdział 3: Przesłuchanie
+partner Härra Kruus | K
+scene Masz teczkę (toimik) w torbie, ale na korytarzu zatrzymuje cię podejrzliwy ochroniarz, pan Kruus. Zaraz zapyta o wszystko. Pamiętaj: Kask, kaupmees, Tartu. Tutaj każda zła odpowiedź kończy misję.
+goal Przekonaj ochroniarza, że jesteś zwykłym gościem, i wyjdź z teczką.
+win Kruus przepuszcza cię z kwaśną miną. Wychodzisz z ambasady, a teczka w torbie jest ciężka jak ołów.
+partial Kruus w końcu cię puszcza, ale zapisuje twoje nazwisko w notesie.
+fail Kruus chwyta cię za ramię: „Tulge kaasa!” Misja skończona, zanim naprawdę się zaczęła.
+w seis | stój!
+w teete | robicie; robi Pan (tegema)
+w otsin | szukam (otsima)
+w tualetti | toalety (forma cząstkowa)
+t Seis! Kes te olete? Mida te siin teete? | Stać! Kim Pan jest? Co Pan tu robi? | Ma olen külaline. Ma otsin tualetti. | Powiedz, że jesteś gościem i szukasz toalety. | „Szukać” to otsima: ma otsin + forma cząstkowa (tualetti).
+w olite | byliście; był Pan (olema)
+w kabinetis | w gabinecie (kabinet + -is)
+w olnud | był (olema)
+w olin | byłem (olema)
+w tualetis | w toalecie (tualett + -is)
+k Tualett on seal. Kas te olite kabinetis? | Toaleta jest tam. Czy był Pan w gabinecie? | Ei, ma ei olnud kabinetis. | Jah, ma olin kabinetis.;Ei, ma ei olnud tualetis. | Przyznanie się to koniec przykrywki.; Pytanie dotyczy gabinetu, nie toalety.
+w hmm | hm
+w kotis | w torbie (kott + -s)
+w toimik | teczka, akta
+k Hmm, hea. Mis teil kotis on? | Hm, dobrze. Co ma Pan w torbie? | Mul on kotis ainult raha ja telefon. | Mul on kotis toimik.;Mul on kott. | Teczka w torbie zdradziłaby cię od razu.; Ochroniarz pyta, co jest w torbie, a nie czy masz torbę.
+w elan | mieszkam (elama)
+d Raha ja telefon, hmm. Mis teie nimi on ja kus te elate? | Pieniądze i telefon, hm. Jak się Pan nazywa i gdzie Pan mieszka? | Minu nimi on Kask ja ma elan Tartus. | Podaj nazwisko z przykrywki i miasto, w którym mieszkasz. | Kask i Tartu to twoja przykrywka.
+k Kask, Tartu. Te olete agent, kas pole? | Kask, Tartu. Jest Pan agentem, prawda? | Ei, ma ei ole agent. Ma olen kaupmees. | Jah, aga see on saladus.;Jah, ma töötan keskuse heaks. | Nawet żartem nie przyznawaj się do tajemnicy.; Przyznanie się do centrali to koniec.
+w selge | jasne
+w kutsun | wołam (kutsuma)
+w tunneb | zna (tundma)
+w kõiki | wszystkich (forma cząstkowa od kõik)
+w külalisi | gości (forma cząstkowa l. mn.)
+w Tamm | Tamm (nazwisko)
+t Kaupmees, selge. Ma kutsun proua Tamme. Ta tunneb kõiki külalisi. Kas ta tunneb teid? | Kupiec, jasne. Zawołam panią Tamm. Zna wszystkich gości. Czy zna Pana? | Jah, proua Tamm tunneb mind. Ma olen külaline. | Powiedz, że pani Tamm cię zna. | „Tunneb mind” znaczy „zna mnie”.
+w kutsuda | wołać
+w saatkonnas | w ambasadzie (saatkond + -s)
+w kedagi | kogokolwiek, kogoś
+w näinud | widział (nägema)
+d Hea, siis ei ole vaja kutsuda. Aga saatkonnas on agent. Kas te olete kedagi näinud? | Dobrze, nie trzeba wołać. Ale w ambasadzie jest agent. Czy Pan kogoś widział? | Ei, ma ei ole kedagi näinud. | Zaprzecz, że kogokolwiek widziałeś. | Kedagi = kogokolwiek. Ty sam jesteś tym agentem. | Ei, ma ei ole kedagi näinud!
+w noh | no
+w minge | idźcie; niech Pan idzie
+e Noh, hea küll. Minge koju, härra Kask. | No dobrze. Niech Pan idzie do domu, panie Kask.
+
+@level 4 | Walizka i ucieczka | patience=1 typed=0.5 extra=3 hint=letters reward=30
+desc Rozdział 4: Wymiana walizki
+partner Härra Hunt | H
+scene Następny ranek, port w Tallinie. Pan Hunt z centrali czeka z walizką pełną pieniędzy. Wymienisz ją na teczkę. Nowe hasło: „Ronk”. Ale ktoś cię śledzi: w tłumie jest zdrajca, który chce dostać teczkę dla siebie.
+goal Wymień teczkę na walizkę, nie daj się zdemaskować zdrajcy i wsiądź na statek.
+win Statek odpływa, a ty stoisz na pokładzie z walizką. Pan Hunt macha z nabrzeża: „Head reisi, Pistrik!”
+partial Udało się uciec, ale zdrajca zdążył zobaczyć twoją twarz. Misja zaliczona, lecz twoja przykrywka jest spalona.
+fail Zdrajca był szybszy. Walizka i teczka zniknęły, a ty zostajesz na nabrzeżu z pustymi rękami.
+w koodsõna | hasło kodowe
+w Ronk | Ronk (kruk; hasło)
+d Tere hommikust. Mis on koodsõna? | Dzień dobry. Jakie jest hasło? | Koodsõna on Ronk. | Podaj hasło z dzisiejszej misji. | Hasło to koodsõna, a dziś brzmi „Ronk”. | Koodsõna on Ronk!
+k Hea. Kus on toimik? | Dobrze. Gdzie jest teczka? | Toimik on minu kotis. | Toimik on proua Tamme juures.;Toimik on saladus. | Teczkę masz przy sobie, w torbie.; Kontakt pyta, gdzie jest teczka, nie o tajemnicę.
+w võtke | weźcie; niech Pan weźmie
+w kohvri | walizkę (biernik od kohver)
+t Suurepärane. Siin on kohver. Raha on sees. Võtke see. | Znakomicie. Oto walizka. Pieniądze są w środku. Proszę ją wziąć. | Aitäh. Ma võtan kohvri. | Podziękuj i weź walizkę. | „Biorę” to ma võtan; walizka w bierniku: kohvri.
+w tähelepanu | uwaga
+w reetur | zdrajca
+w meid | nas (forma cząstkowa od me)
+w me | my
+w teeme | robimy (tegema)
+w läheme | idziemy (minema)
+w ära | precz (minema ära = odejść)
+w jääme | zostajemy (jääma)
+w siia | tutaj (dokąd)
+w joome | pijemy (jooma)
+w räägime | rozmawiamy (rääkima)
+w mehega | z mężczyzną (mees + -ga)
+k Tähelepanu! See mees seal on reetur. Ta jälitab meid. Mida me teeme? | Uwaga! Ten człowiek tam jest zdrajcą. Idzie za nami. Co robimy? | Me läheme kiiresti ära. | Me jääme siia ja joome kohvi.;Me räägime selle mehega. | Zdrajca idzie za wami, trzeba uciekać.; Nie rozmawia się ze zdrajcą.
+w vasakult | z lewej (vasak + -lt)
+w jaama | na dworzec (jaam + -sse)
+w sadamasse | do portu (sadam + -sse)
+k Jah, kiiresti! Reetur tuleb vasakult. Kas me läheme vasakule jaama või paremale sadamasse? | Tak, szybko! Zdrajca idzie z lewej. Idziemy w lewo na dworzec czy w prawo do portu? | Me läheme paremale sadamasse. | Me läheme vasakule jaama.;Me läheme koju. | Zdrajca nadchodzi z lewej, więc idziecie w prawo, do portu.; Pytanie jest o port albo dworzec, a nie o dom.
+w andke | dajcie; proszę dać
+w mulle | mi, dla mnie (mina + -le)
+w anna | daję (andma; ei anna = nie daję)
+w kohvrit | walizki (forma cząstkowa od kohver)
+d Seis! Andke mulle kohver! Mul on relv! | Stać! Proszę dać mi walizkę! Mam broń! | Ei, ma ei anna teile kohvrit. | Odmów oddania walizki. | „Dawać” to andma: ma ei anna + forma cząstkowa (kohvrit). | Ei, ma ei anna kohvrit teile!
+w julge | odważny, odważnie
+t Julge! Kiiresti, laev väljub varsti. Kas kohver on teil veel? | Odważnie! Szybko, statek zaraz odpływa. Czy ma Pan jeszcze walizkę? | Jah, kohver on mul veel. | Potwierdź, że masz jeszcze walizkę. | „Jeszcze” to veel. | Jah, mul on see veel.
+w tehtud | zrobiony (hästi tehtud = dobra robota)
+w missioon | misja
+w lõppenud | zakończony (lõppema)
+e Hästi tehtud, Pistrik! Missioon on lõppenud. Nägemist! | Dobra robota, Pistrik! Misja zakończona. Do widzenia!
+
+
+@larp zeitreise | Podróż w czasie | Valvur | V | Obudziłeś się w roku 1450 pod murami estońskiego miasta Kaselinn. Nikt nie może się dowiedzieć, że jesteś z przyszłości, bo za dziwne rzeczy i dziwne słowa w średniowieczu grozi stos. | Nie daj się wykryć jako przybysz z przyszłości: unikaj wszystkiego, co nie pasuje do roku 1450, i dotrwaj do końca dnia.
+fee 0
+reward 15
+strict yes
+story yes
+win Burmistrz kiwa głową: „Aus rändur!” Nikt nie podejrzewa, skąd naprawdę jesteś. Wieczorem znajdujesz drogę powrotną, a w kieszeni zostaje ci tylko miedziana moneta na pamiątkę.
+partial Udało ci się przetrwać dzień, ale kilka razy ludzie patrzyli na ciebie podejrzliwie. Burmistrz każe cię obserwować, więc wymykasz się z miasta o świcie.
+fail Ktoś zauważył, że nie jesteś stąd. Straż woła: „Nõid! Võlur!” i musisz uciekać. Podróż w czasie skończyła się wcześniej, niż chciałeś.
+
+@level 1 | Brama miasta | patience=5 typed=0 extra=1 hint=none
+partner Valvur Tõnis | T
+desc Rozdział 1: Brama Kaselinna
+scene Rok 1450. Stoisz przed wielką drewnianą bramą miasta Kaselinn. Strażnik Tõnis zatrzymuje każdego podróżnego i zadaje pytania. Masz na sobie zwykłe ubranie, ale w kieszeniach zostały ci rzeczy z przyszłości.
+goal Odpowiedz na pytania strażnika tak, żeby nie wzbudzić podejrzeń: przedstaw się, powiedz skąd jesteś i jak podróżujesz. Zwróć uwagę na rzeczy, których w 1450 roku jeszcze nie było.
+win Tõnis otwiera bramę: „Tere tulemast Kaselinna!” Nic nie wzbudziło jego podejrzeń, a ty wchodzisz do miasta.
+partial Tõnis w końcu cię wpuszcza, ale przygląda ci się dłużej, niż byś chciał. Wchodzisz do miasta z uczuciem, że ktoś cię obserwuje.
+fail Tõnis podnosi halabardę: „Sa ei ole rändur!” Brama zamyka się z trzaskiem, a ty uciekasz w las.
+w Kaselinna | Kaselinna (gen. od Kaselinn, fikcyjne miasto)
+w värav | brama, bramka
+w sa | ty
+w rändur | wędrowiec, podróżnik
+t Seis! See on Kaselinna värav. Kes sa oled? | Stój! To brama miasta Kaselinn. Kim jesteś? | Ma olen rändur. | Powiedz, że jesteś podróżnikiem. | „Jestem podróżnikiem”: ma olen rändur.
+w Jaan | Jaan (imię, Jan)
+w Kevin | Kevin (imię współczesne)
+w Jessica | Jessica (imię współczesne)
+k Rändur, selge. Mis sinu nimi on? | Podróżnik, jasne. Jak masz na imię? | Minu nimi on Jaan. | Minu nimi on Kevin.;Minu nimi on Jessica. | Kevin to współczesne imię, w 1450 roku nikt tak nie nazywał dzieci.; Jessica to nowoczesne, angielskie imię. W 1450 roku popularne były Jaan, Jüri czy Madis.
+w tuled | przychodzisz (tulema)
+w tulen | przychodzę (tulema)
+w tulevikust | z przyszłości (tulevik + -st)
+w Ameerikast | z Ameryki (Ameerika + -st)
+k Jaan, hea nimi. Kust sa tuled? | Jaan, dobre imię. Skąd pochodzisz? | Ma tulen Poolast. | Ma tulen tulevikust.;Ma tulen Ameerikast. | Przyznanie się do przyszłości to dekonspiracja.; Ameryki jeszcze nie odkryto, Kolumb wypłynie dopiero w 1492 roku.
+w reisid | podróżujesz (reisima)
+w jalgsi | pieszo
+w hobusega | koniem, konno (hobune + -ga)
+w reisin | podróżuję (reisima)
+w autoga | samochodem (auto + -ga)
+w rongiga | pociągiem (rong + -ga)
+k See on kaugel. Kuidas sa reisid? Jalgsi või hobusega? | To daleko. Jak podróżujesz? Pieszo czy konno? | Ma reisin hobusega. | Ma reisin autoga.;Ma reisin rongiga. | Samochodu w 1450 roku nie ma. Strażnik pomyśli, że jesteś szalony.; Pociągów też jeszcze nie ma, pierwsza kolej pojawi się dopiero w XIX wieku.
+w näita | pokaż (näitama)
+w oma | swój
+w kotti | torbę (forma cząstkowa od kott)
+w krediitkaart | karta kredytowa
+k Hobusega, selge. Näita mulle oma kotti. Mis seal on? | Konno, jasne. Pokaż mi swoją torbę. Co tam jest? | Seal on ainult leiba ja õlut. | Seal on telefon.;Seal on krediitkaart. | Telefon w 1450 roku? Strażnik zawołałby straż.; Karta kredytowa wyglądałaby dla niego jak magia.
+w võid | możesz (võima)
+w sisse | do środka
+w minna | iść
+w nälg | głód
+w kõrtsmik | karczmarz
+t Leiba ja õlut, hea. Sa võid sisse minna. Kas sul on nälg? | Chleb i piwo, dobrze. Możesz wejść. Jesteś głodny? | Jah, mul on nälg. Kus on kõrtsmik? | Powiedz, że jesteś głodny, i zapytaj, gdzie jest karczmarz. | „Gdzie” to kus, a „karczmarz” to kõrtsmik.
+w kõrts | karczma
+w mõnusat | przyjemnego (forma cząstkowa od mõnus)
+w viibimist | pobytu (forma cząstkowa od viibimine)
+w Kaselinnas | w Kaselinnie (Kaselinn + -s)
+e Kohe vasakul on kõrts. Mõnusat viibimist Kaselinnas! | Zaraz po lewej jest karczma. Miłego pobytu w Kaselinnie!
+
+@level 2 | Gospoda | patience=5 typed=0.15 extra=3 hint=bank
+partner Kõrtsmik Madis | M
+desc Rozdział 2: Karczma „Punane Härg”
+scene Wchodzisz do karczmy. Karczmarz Madis jest ciekawski i pyta o wszystko: co chcesz zjeść, jak podróżujesz i czego potrzebujesz na noc. W karczmie nie ma elektryczności ani nowoczesnych napojów.
+goal Zamów jedzenie i picie, które mogli podać w średniowieczu, ustal nocleg i nie wspomnij o niczym z przyszłości.
+win Madis klepie cię po plecach: „Sa oled hea külaline!” Dostajesz miejsce przy kominku i pełny talerz. Nikt nie podejrzewa, że jesteś z przyszłości.
+partial Madis przygląda ci się podejrzliwie, ale podaje jedzenie. Śpisz źle, bo wciąż myślisz o tym, co powiedziałeś.
+fail Madis woła głośno: „Mis asi see internet on?!” Goście odwracają się w twoją stronę, a ty ledwo uciekasz tylnym wyjściem.
+w kõrtsi | do karczmy (kõrts + -i)
+w soovid | chcesz, życzysz sobie (soovima)
+t Tere tulemast kõrtsi! Mida sa soovid süüa? Meil on leiba ja suppi. | Witaj w karczmie! Co chcesz zjeść? Mamy chleb i zupę. | Ma tahan leiba ja suppi, palun. | Zamów chleb i zupę. | „Chleb i zupa” w formie cząstkowej: leiba ja suppi.
+w jood | pijesz (jooma)
+w veini | wina (forma cząstkowa od vein)
+w koolat | coli (forma cząstkowa od koola)
+k Leiba ja suppi, hea. Aga mida sa jood? Meil on õlut, veini ja vett. | Chleb i zupa, dobrze. A co pijesz? Mamy piwo, wino i wodę. | Ma joon õlut. | Ma tahan kohvi.;Ma tahan koolat. | Kawa dotarła do Europy dopiero w XVII wieku.; Coca-Cola powstała w XIX wieku. W 1450 roku nikt jej nie zna.
+w kaugelt | z daleka (kauge + -lt)
+w tulnud | przyjechał (tulema)
+w reisinud | podróżował (reisima)
+t Õlut, hea. Sa oled kaugelt tulnud. Kui kaua sa oled juba reisinud? | Piwo, dobrze. Daleko przyjechałeś. Jak długo już podróżujesz? | Ma olen juba kümme päeva reisinud. | Powiedz, że podróżujesz już dziesięć dni. | „Dziesięć dni”: kümme päeva.
+w aeg | czas
+w turule | na targ (turg + -le)
+w kaasa | razem, ze mną (kaasa tulema)
+w vankriga | wozem (vanker + -ga)
+w jalgrattaga | rowerem (jalgratas + -ga)
+k Kümme päeva, see on pikk aeg! Homme lähen turule. Kas tuled kaasa? Läheme vankriga. | Dziesięć dni, to długo! Jutro idę na targ. Pójdziesz ze mną? Pojedziemy wozem. | Jah, meelsasti. Me läheme vankriga. | Jah, me läheme autoga.;Ei, ma lähen jalgrattaga. | Samochodu w 1450 roku nie ma.; Rower wynaleziono dopiero w XIX wieku. W 1450 roku jeździ się wozem albo konno.
+w toas | w pokoju (tuba + -s)
+w küünalt | świecy (forma cząstkowa od küünal)
+w pistikupesa | gniazdka (forma cząstkowa od pistikupesa)
+k Hea. Toas on voodi. Kas sa soovid veel midagi? | Dobrze. W pokoju jest łóżko. Chcesz jeszcze coś? | Jah, ma tahan küünalt, palun. | Kas teil on internet?;Ma tahan pistikupesa. | W 1450 roku nie ma internetu.; Gniazdka elektryczne wymyślono setki lat później. Wieczorem świeci się świecami.
+w küünal | świeca
+w aastal | w roku (aasta + -l)
+w nelisada | czterysta
+w terviseks | na zdrowie!
+t Küünal, meelsasti. Ja siin on veel õlut: hea õlu aastal tuhat nelisada viiskümmend! Terviseks! | Świeca, proszę bardzo. A tu jeszcze piwo: dobre piwo w roku 1450! Na zdrowie! | Terviseks! | Wznieś toast. | „Na zdrowie” to terviseks.
+e Head ööd! Homme vara läheme turule. | Dobranoc! Jutro rano jedziemy na targ.
+
+@level 3 | Targ | patience=4 typed=0.3 extra=3 hint=bank reward=25
+partner Kaupmees Anne | A
+desc Rozdział 3: Targ w Kaselinnie
+scene Następnego ranka na rynku jest tłoczno. Kupcowa Anne sprzedaje chleb i ser. Przy płaceniu liczą się tylko monety, a ludzie przyglądają się twoim ubraniom.
+goal Kup chleb i ser, zapłać tak, jak płaci się w 1450 roku, i wyjaśnij, skąd masz dziwne ubranie.
+win Anne wsuwa ci do koszyka jabłko: „Lahkele rändurile!” Targ nic nie podejrzewa, a w oddali widać już ratusz.
+partial Anne w końcu sprzedała ci chleb i ser, ale kilka osób szepcze za twoimi plecami. Zbliża się ratusz.
+fail Anne krzyczy: „Mis riided need on? Mis on euro?” Tłum się zbiega, a ty uciekasz między straganami.
+w osta | kupić
+w õunu | jabłek (forma cząstkowa l. mn.)
+t Tere päevast! Mida sa soovid osta? Leiba, juustu või õunu? | Dzień dobry! Co chcesz kupić? Chleb, ser czy jabłka? | Ma tahan leiba ja juustu. | Poproś o chleb i ser. | „Chleb i ser” w formie cząstkowej: leiba ja juustu.
+w penni | pensów (forma cząstkowa od penn; dawna moneta)
+w kokku | razem
+t Leiba ja juustu, hea. Leib maksab kaks penni ja juust kolm penni. | Chleb i ser, dobrze. Chleb kosztuje dwa pensy, a ser trzy pensy. | Kui palju see kokku maksab? | Zapytaj, ile to kosztuje razem. | „Razem” to kokku.
+w maksan | płacę (maksma)
+w müntidega | monetami (münt + -ga)
+w eurodega | w euro, euro (euro + -ga)
+w kaardiga | kartą (kaart + -ga)
+k See teeb viis penni. Kuidas sa soovid maksta? | To będzie pięć pensów. Jak chcesz zapłacić? | Ma maksan müntidega. | Ma maksan eurodega.;Ma maksan kaardiga. | Euro wprowadzono dopiero w 2002 roku.; Karty płatnicze to wynalazek XX wieku. W 1450 roku płaci się monetami.
+w mündid | monety
+w sobivad | pasują, są w porządku (sobima)
+w riided | ubrania
+w kummalised | dziwne
+w need | te, one
+w idamaade | wschodnich (gen. l. mn. od idamaa)
+w mood | moda
+w T-särk | koszulka
+w teksad | dżinsy
+w tossud | adidasy, tenisówki
+k Mündid sobivad. Sinu riided on kummalised. Mis need on? | Monety są w porządku. Twoje ubrania są dziwne. Co to jest? | See on idamaade mood. | See on T-särk.;Need on teksad ja tossud. | T-shirty pojawiły się w XX wieku, a Anne nigdy takiego nie widziała.; Dżinsy i adidasy to rzeczy z dwudziestego wieku.
+w idamaadest | ze wschodnich krajów (idamaa + -dest)
+w vaata | patrz (vaatama)
+w linnapea | burmistrz
+w tahab | chce (tahtma)
+w sind | cię (biernik od sina)
+w näha | zobaczyć
+t Idamaadest, vaata. Linnapea tahab sind näha. Kas tuled kaasa? | Ze Wschodu, popatrz. Burmistrz chce cię zobaczyć. Idziesz ze mną? | Jah, ma tulen kaasa. | Zgódź się i idź z nią. | „Idę z tobą” to ma tulen kaasa.
+w tule | przyjdź (tulema)
+w raekoda | ratusz
+e Siis tule! Raekoda on seal. | No to chodź! Ratusz jest tam.
+
+@level 4 | Burmistrz | patience=4 typed=0.5 extra=4 hint=letters reward=25
+partner Linnapea Ülo | Ü
+desc Rozdział 4: W ratuszu
+scene W ratuszu czeka burmistrz Ülo. Słyszał dziwne plotki o obcym przybyszu. Zauważył coś błyszczącego na twoim nadgarstku i zadaje pytania, a tobie została tylko jedna droga: wrócić do bramy, gdzie wszystko się zaczęło.
+goal Odpowiedz na pytania burmistrza tak, żeby nie zdradzić zegarka, telefonu ani przyszłości, i wróć bezpiecznie do bramy.
+win Burmistrz macha ręką: „Hea küll, mine nüüd!” Wracasz do bramy, w powietrzu coś migocze i budzisz się we własnym czasie. Na dłoni masz pensy z 1450 roku.
+partial Burmistrz pozwala ci odejść, ale pod nosem mruczy o czarodziejach. Dopiero za bramą migotanie powietrza zabiera cię do domu.
+fail Burmistrz woła strażników: „Võlukast! Ta tuleb tulevikust!” Nie zdążysz dojść do bramy.
+t Tere päevast! Mina olen Kaselinna linnapea. Kes sa oled? | Dzień dobry! Jestem burmistrzem Kaselinna. Kim jesteś? | Ma olen Jaan, rändur Poolast. | Przedstaw się: Jaan, podróżnik z Polski. | „Z Polski” to Poolast.
+w käe | ręki (gen. od käsi)
+w käevõru | bransoleta
+w selles | w tym (see + -s)
+w patarei | bateria
+w digitaalne | cyfrowy
+k Jaan, ahah. Mis see on sinu käe peal? | Jaan, tak. Co to jest na twojej ręce? | See on ainult käevõru. | See on käekell ja selles on patarei.;See on digitaalne kell. | Zegarek z baterią to wynalazek nowoczesny.; Cyfrowy zegarek wyglądałby dla niego jak czary. W 1450 roku są tylko wieże z zegarami i klepsydry.
+w ju | przecież
+w kella | zegarka (forma cząstkowa od kell)
+w näitab | pokazuje (näitama)
+w keskpäeva | południa (forma cząstkowa od keskpäev)
+w vaatan | patrzę (vaatama)
+w telefoni | telefonu (forma cząstkowa od telefon)
+k Ainult käevõru? Mis kell on? Sul on ju kell. | Tylko bransoleta? Która godzina? Przecież masz zegarek. | Mul ei ole kella. Päike näitab keskpäeva. | Kell on neliteist kolmkümmend.;Ma vaatan telefoni. | Taka dokładna godzina z minutami to nowoczesny sposób liczenia czasu.; Telefon to rzecz z przyszłości.
+w tea | wiem (teadma; ei tea = nie wiem)
+k Keskpäev, hea. Mis aasta praegu on? | Południe, dobrze. Jaki jest teraz rok? | Praegu on aasta tuhat nelisada viiskümmend. | Praegu on aasta kaks tuhat.;Ma ei tea. | Jeśli podasz rok z przyszłości, zdradzisz się natychmiast.; Nie znać roku? Burmistrz uznałby, że ukrywasz coś.
+w räägitakse | mówi się (rääkima)
+w võlukast | magiczna skrzynka
+w tõsi | prawda
+w võlukasti | magicznej skrzynki (forma cząstkowa)
+k Hea. Räägitakse, et sul on võlukast. Kas see on tõsi? | Dobrze. Mówią, że masz magiczną skrzynkę. Czy to prawda? | Ei, mul ei ole võlukasti. | Jah, see on telefon.;Jah, ma tulen tulevikust. | Przyznanie się do telefonu zakończy rozmowę.; Przyznanie się do podróży w czasie to najgorsza odpowiedź.
+w lähed | idziesz (minema)
+w tagasi | z powrotem
+w värava | bramy (gen. od värav)
+w juurde | do, koło (värava juurde = do bramy)
+w ajamasina | wehikułu czasu (forma cząstkowa od ajamasin)
+k Hea. On juba hilja. Kuhu sa nüüd lähed? | Dobrze. Jest już późno. Dokąd teraz idziesz? | Ma lähen tagasi värava juurde. | Ma lähen ajamasina juurde.;Ma lähen auto juurde. | Wehikuł czasu to najgorsza odpowiedź.; Samochodu w 1450 roku nie ma.
+w mine | idź (minema)
+e Hea, mine siis. Head teed! | Dobrze, to idź. Szczęśliwej podróży!
+
+
+@larp politiker | Polityk | Valija | V | Jesteś skorumpowanym politykiem. Dawno temu pan Lind dał ci kopertę, a „Kägu-afäär” wraca na każdym szczeblu twojej kariery. Wyborcy ci wierzą… i przestają… i zapominają. | Przekonaj wyborców, że nadajesz się na stanowisko. Nigdy się nie przyznaj i nie sprzeczaj sam sobie.
+fee 0
+reward 30
+strict yes
+story yes
+disclaimer Satyra. Wszystkie postacie, partie i afery są zmyślone; ewentualne podobieństwo do prawdziwych osób jest przypadkowe.
+win Wygrywasz wybory! Nikt już nie pamięta koperty od pana Linda. Przed gmachem tłum skanduje twoje nazwisko, a ty obiecujesz „uczciwą politykę”. Pan Lind macha z ostatniego rzędu.
+partial Wygrywasz o włos. Dziennikarze wciąż grzebią w aktach, ale ty już podpisujesz pierwsze dokumenty. Kłamstwo trzyma się jeszcze na słowo honoru.
+fail Wiarygodność spadła do zera. Wyborcy wyciągają stare akta, a z tłumu ktoś krzyczy: „Ümbrik!” Twoja kariera kończy się na pierwszej stronie gazet.
+
+@level 1 | Külavanem | patience=4 cap=6 typed=0 extra=1 hint=none
+desc Szczebel 1: sołtys wsi Väikeoja
+partner Proua Mägi | M
+scene Zebranie wiejskie w sali szkolnej we wsi Väikeoja. Chcesz zostać sołtysem (külavanem). Pani Mägi zadaje pytania, a cała wieś słucha. Wszyscy pamiętają, że pan Lind naprawił drogę, i że ktoś widział kopertę…
+goal Przekonaj wieś, że jesteś uczciwy, i zaprzecz plotkom o kopercie.
+win Wieś klaszcze. Zostajesz sołtysem. Pan Lind, w pierwszym rzędzie, puszcza do ciebie oko.
+partial Wygrywasz jednym głosem. Pani Mägi patrzy na ciebie podejrzliwie, ale podnosi rękę.
+fail Wieś ma dość. Pani Mägi mówi: „Valime kellegi teise.” Kończysz karierę, zanim się zaczęła.
+w saada | zostać; dostać
+w külavanemaks | na sołtysa (külavanem + -ks: „na”)
+w soovin | chcę, życzę sobie (soovima)
+t Tere õhtust! Kas te soovite saada külavanemaks? | Dobry wieczór! Czy chce Pan zostać sołtysem? | Jah, ma soovin saada külavanemaks. | Powiedz, że chcesz zostać sołtysem. | „Na sołtysa” to külavanemaks (końcówka -ks: „jako”, „na”).
+w aus | uczciwy
+t Hea. Kas te olete aus? | Dobrze. Czy jest Pan uczciwy? | Jah, ma olen alati aus. | Zapewnij, że jesteś zawsze uczciwy. | „Zawsze” to alati. |  | gain=1
+w katki | zepsuty
+w parandan | naprawiam (parandama)
+t Alati aus, tore. Tee on katki. Mida te teete? | Zawsze uczciwy, miło. Droga jest zepsuta. Co Pan zrobi? | Ma parandan tee ära. | Obiecaj, że naprawisz drogę. | „Naprawię” to ma parandan … ära. |  | gain=1
+w Lind | Lind (nazwisko; lind = ptak)
+w andis | dał (andma)
+w ümbriku | kopertę (biernik od ümbrik)
+w nägi | zobaczył (nägema)
+w seda | tego (forma cząstkowa od see)
+w tunnen | znam (tundma)
+w Lindi | Linda (gen./biernik od Lind)
+w vaevu | ledwo
+t Härra Lind andis teile ümbriku! Keegi nägi seda! | Pan Lind dał Panu kopertę! Ktoś to widział! | See on vale! Ma tunnen härra Lindi vaevu. | Zaprzecz: to kłamstwo, ledwo znasz pana Linda. | „Pana Linda” w bierniku to härra Lindi. „Vaevu” znaczy „ledwo”. |  | shift=-2 loss=2
+w ammu | dawno
+w möödas | za nami, minęło
+w oleme | jesteśmy (olema)
+w unustanud | zapomnieli (unustama)
+w tänulik | wdzięczny
+t See on ammu möödas. Me oleme selle unustanud. | No cóż… to było dawno. Zapomnieliśmy o tym. | Aitäh, ma olen teile tänulik. | Podziękuj wyborcom za wyrozumiałość. | „Tänulik” to wdzięczny; teile = wam. |  | shift=+2
+w väärt | wart (pole tänu väärt = nie ma za co)
+w vallas | w gminie (vald + -s)
+w võlgu | długów (forma cząstkowa l. mn.)
+w säästan | oszczędzam (säästma)
+w rohkem | więcej
+o Pole tänu väärt. Vallas on palju võlgu. Mida te teete? | Nie ma za co. W gminie jest dużo długów. Co Pan zrobi? | Ma säästan raha ja olen aus. | Ma võtan rohkem raha.;Ma ei tea. | Dobra odpowiedź obiecuje oszczędzanie i uczciwość.; Polityk, który mówi „wezmę więcej pieniędzy”, nie brzmi wiarygodnie.; „Nie wiem” nie przekona wyborców. | gain=1
+w meie | nasz; my
+t Kas te olete meie vastu aus? | Czy będzie Pan wobec nas uczciwy? | Jah, ma olen alati teie vastu aus. | Obiecaj uczciwość wobec wyborców. | „Wobec was” to teie vastu. |  | gain=1
+w valime | wybieramy (valima)
+w külavanem | sołtys
+e Siis valime teid! Tere tulemast, külavanem! | Wybieramy więc Pana! Witamy, Panie sołtysie!
+
+@level 2 | Volikogu | patience=4 cap=6 typed=0.2 extra=2 hint=bank
+desc Szczebel 2: radny miejski
+partner Proua Rand | R
+scene Miasto Uuslinn. Jesteś kandydatem do rady miejskiej (volikogu). Dziennikarka, pani Rand, pyta o „biznesmenów” i o to, skąd masz nowy samochód.
+goal Zaprzecz, że brałeś pieniądze, i nie daj się złapać na kłamstwie.
+win Pani Rand zamyka notes: „Hea, mul ei ole rohkem küsimusi.” Zostajesz radnym. Pan Lind gratuluje przez telefon.
+partial Zostajesz radnym, ale pani Rand mówi: „Ma jään asja uurima.” Będzie dalej drążyć.
+fail Wywiad ląduje w gazecie pod tytułem „Volinik ja ümbrik”. Nikt na ciebie nie głosuje.
+w ajakirjanik | dziennikarz
+w volikogu | rada (miejska, gminna)
+w liikmeks | na członka (liige + -ks)
+t Tere päevast, ma olen ajakirjanik. Kas te soovite saada volikogu liikmeks? | Dzień dobry, jestem dziennikarką. Czy chce Pan zostać radnym? | Jah, ma soovin saada volikogu liikmeks. | Potwierdź, że chcesz zostać radnym. | „Na radnego” to volikogu liikmeks (-ks: „jako”). |  | gain=1
+w ärimees | biznesmen
+w tuttav | znajomy
+t Selge. Te tunnete ärimees härra Lindi. Kas ta on teie sõber? | Jasne. Zna Pan biznesmena pana Linda. Czy to Pana przyjaciel? | Ei, ta on ainult tuttav. | Zaprzecz: to tylko znajomy. | „Ainult” = tylko; „tuttav” = znajomy. |  | gain=1
+w saite | dostaliście, dostał Pan (saama)
+w ostsin | kupiłem (ostma)
+w ausalt | uczciwie
+t Ainult tuttav, ahah. Teil on uus auto. Kust te raha saite? | Tylko znajomy, tak. Ma Pan nowy samochód. Skąd ma Pan pieniądze? | Ma ostsin selle ausalt. | Powiedz, że kupiłeś go uczciwie. | „Kupiłem” to ma ostsin (czas przeszły), „uczciwie” to ausalt. | Ma ostsin auto ausalt.
+w kunagi | kiedykolwiek, nigdy
+w altkäemaksu | łapówki (forma cząstkowa od altkäemaks)
+w võtnud | wziął (võtma)
+t Ausalt, selge. Kas te olete kunagi altkäemaksu võtnud? | Uczciwie, jasne. Czy kiedykolwiek wziął Pan łapówkę? | Ei, ma ei ole kunagi altkäemaksu võtnud. | Zaprzecz, że kiedykolwiek brałeś łapówki. | Przeczenie: ei ole kunagi võtnud. |  | loss=2
+w sellel | na tym (see + -l)
+w ümbrik | koperta
+w neid | tych (forma cząstkowa od need)
+w inimesi | ludzi (forma cząstkowa l. mn.)
+t Huvitav. Siin on foto. Sellel on teie, härra Lind ja ümbrik. | Ciekawe. Oto zdjęcie. Jest na nim Pan, pan Lind i koperta. | Ma ei tunne neid inimesi. | Powiedz, że nie znasz tych ludzi. | „Neid inimesi” = tych ludzi (forma cząstkowa po przeczeniu). |  | shift=-2
+w valijad | wyborcy
+w unustavad | zapomną, zapominają (unustama)
+w tähtis | ważny
+t Foto on vana. Valijad unustavad selle varsti. | Zdjęcie jest stare. Wyborcy szybko o tym zapomną. | Foto ei ole tähtis. | Zlekceważ zdjęcie: nie jest ważne. | „Tähtis” = ważny; „ei ole tähtis” = nie jest ważne. |  | shift=+2
+w tunnistaja | świadek
+w ütleb | mówi (ütlema)
+w võtsite | wzięliście; wziął Pan (võtma)
+w valetab | kłamie (valetama)
+w tunnistajal | świadek (adessiv; tunnistajal on õigus = świadek ma rację)
+w õigus | prawo; racja
+o Tunnistaja ütleb, et te võtsite raha. | Pewien świadek twierdzi, że wziął Pan pieniądze. | See ei ole tõsi. Tunnistaja valetab. | Jah, tunnistajal on õigus.;Mina olen tunnistaja. | Zaprzeczasz i nazywasz świadka kłamcą.; Przyznajesz się, więc przegrywasz.; Świadkiem jest ona, a nie Pan. | gain=1
+w panen | kładę (panema; panen kirja = zapiszę)
+w kirja | na piśmie (kirjutama; panen kirja = zapisuję)
+w lisada | dodać
+w süütu | niewinny
+t Hea, ma panen selle kirja. Kas soovite veel midagi lisada? | Dobrze, zapiszę to. Czy chce Pan jeszcze coś dodać? | Jah, ma olen süütu. | Powiedz na koniec, że jesteś niewinny. | „Süütu” = niewinny. |  | gain=1
+w kirjutan | piszę (kirjutama)
+w üles | w górę (üles kirjutama = zapisać)
+w ütlesite | powiedzieliście; powiedział Pan (ütlema)
+e Ma kirjutan üles, mida te ütlesite. Nägemist! | Napiszę, co Pan powiedział. Do widzenia!
+
+@level 3 | Linnapea | patience=4 cap=6 typed=0.4 extra=2 hint=bank
+desc Szczebel 3: burmistrz
+partner Prokurör Salu | S
+scene W ratuszu miasta Uuslinn. Prokurator Salu bada przetarg (hange) na nowy most. Firma pana Linda wygrała dziwnie łatwo, a w aktach wraca „Kägu-afäär”.
+goal Wyjdź z przesłuchania jako burmistrz, nie przyznając się do niczego.
+win Prokurator Salu zamyka teczkę: „Tõendeid ei ole. Asi on lõpetatud.” Zostajesz burmistrzem, a most otwiera się z pompą.
+partial Teczka zostaje otwarta, ale prokurator nie ma dowodów. Zostajesz burmistrzem z cieniem podejrzeń.
+fail Prokurator Salu kładzie na stole kopertę i zdjęcie. „Te olete arreteeritud!” – mówi. Kończysz w areszcie.
+w prokurör | prokurator
+w Salu | Salu (nazwisko prokuratora)
+w ülekuulamine | przesłuchanie
+w advokaati | adwokata (forma cząstkowa od advokaat)
+t Mina olen prokurör Salu. See on ülekuulamine. | Jestem prokuratorem Salu. To jest przesłuchanie. | Ma tahan näha oma advokaati. | Poproś o swojego adwokata. | „Mój adwokat” w formie cząstkowej: oma advokaati. |  | gain=1
+w võite | możecie; może Pan (võima)
+w talle | jemu, jej (tema + -le)
+w helistada | zadzwonić
+w võitis | wygrał (võitma)
+w silla | mostu (gen. od sild)
+w hanke | przetargu (gen. od hange)
+w nende | ich
+w pakkumine | oferta
+w parim | najlepszy
+t Te võite talle helistada. Härra Lindi firma võitis silla hanke. Miks? | Może Pan do niego zadzwonić. Firma pana Linda wygrała przetarg na most. Dlaczego? | Nende pakkumine on parim. | Wyjaśnij, że miała najlepszą ofertę. | „Parim” = najlepszy. |  | gain=1
+w küsimusi | pytań (forma cząstkowa l. mn.)
+w ütlusi | zeznań (forma cząstkowa l. mn. od ütlus)
+w anda | dać
+w keeldun | odmawiam (keelduma)
+w ütluste | zeznań (gen. l. mn.)
+w andmisest | od dawania (andmine + -st)
+t Parim pakkumine, ahah. Meil on palju küsimusi. Kas soovite ütlusi anda? | Najlepsza oferta, tak. Mamy wiele pytań. Czy chce Pan złożyć zeznania? | Ma keeldun ütluste andmisest. | Odmów składania zeznań. | „Ma keeldun ütluste andmisest” = odmawiam składania zeznań (prawo do milczenia). |  | shift=-1
+w selleks | do tego (see + -ks)
+w tõenditeta | bez dowodów (tõend + -ta)
+w kahtlust | podejrzenia (forma cząstkowa od kahtlus)
+w mõlemad | oboje
+w teame | wiemy (teadma)
+w tõendeid | dowodów (forma cząstkowa l. mn.)
+t Teil on selleks õigus. Aga ilma tõenditeta ei ole kahtlust, seda me mõlemad teame. | Ma Pan do tego prawo. Ale bez dowodów nie ma podejrzenia, oboje to wiemy. | Teil ei ole tõendeid. | Powiedz prokuratorowi, że nie ma dowodów. | „Ei ole tõendeid” = nie ma dowodów (forma cząstkowa). |  | shift=+2
+w süüdistus | oskarżenie, akt oskarżenia
+w võib | może (võima)
+w siiski | jednak
+w peale | na to (selle peale = na to)
+w ütlete | mówicie; mówi Pan (ütlema)
+w süüdi | winny
+w tegin | zrobiłem (tegema)
+o Süüdistus võib siiski tulla. Mida te selle peale ütlete? | Akt oskarżenia może jednak być. Co Pan na to? | Ma olen süütu. | Ma olen süüdi.;Mina tegin seda. | „Süütu” = niewinny.; „Süüdi” = winny, a to przyznanie.; „Mina tegin seda” = to ja to zrobiłem, czyli przyznanie się. | gain=1
+w ümbrikku | koperty (forma cząstkowa od ümbrik)
+t Härra Lind ütleb, et ta andis teile ümbriku. | Pan Lind mówi, że dał Panu kopertę. | See on vale! Ma ei ole kunagi ümbrikku võtnud. | Zaprzecz: to kłamstwo, nigdy nie wziąłeś koperty. | Przeczenie: ei ole võtnud + forma cząstkowa ümbrikku. |  | shift=-2 loss=2
+w öelge | powiedzcie; niech Pan powie
+w kord | raz
+w vande | przysięgi (gen. od vanne; vande all = pod przysięgą)
+w Lindilt | od Linda (Lind + -lt)
+d Öelge siis seda veel kord, vande all. Kas te võtsite härra Lindilt raha? | Powiedzmy to więc jeszcze raz, pod przysięgą. Czy wziął Pan pieniądze od pana Linda? | Ei, ma ei võtnud härra Lindilt raha. | Zaprzeczaj pod przysięgą: nie wziąłeś od niego pieniędzy. | „Od pana Linda” to härra Lindilt (końcówka -lt: „od”). Jedna wpadka i koniec.
+e Hea. Te olete linnapea. Mul ei ole rohkem küsimusi. | Dobrze. Jest Pan burmistrzem. Nie mam więcej pytań.
+
+@level 4 | Parlamendiliige | patience=4 cap=6 typed=0.6 extra=2 hint=letters
+desc Szczebel 4: poseł
+partner Proua Raudsepp | R
+scene Parlament krajowy. Jesteś posłem (parlamendiliige), a komisja śledcza wzywa cię jako świadka. Przewodnicząca, pani Raudsepp, mówi o „Kägu-afäärist”. Prawnicy mają dla ciebie nowe słowa: tunnistaja, vanne, puutumatus.
+goal Odpowiadaj pod przysięgą tak, by nikt nie dowiódł, że kłamiesz.
+win Pani Raudsepp: „Ülekuulamine on lõppenud.” Wychodzisz z sali z uniesioną głową. Komisja nic nie ma.
+partial Komisja kończy pracę bez wniosków, ale jeden członek zapisał w notatniku: „Kontrollida hiljem!”
+fail Komisja nakazuje ci wyjaśnić sprzeczność. Zaplątałeś się, a prasa pisze o „valetavast saadikust”.
+w komisjoni | do komisji (komisjon + -i)
+w tean | wiem (teadma)
+w räägin | mówię (rääkima)
+w tõtt | prawdę (forma cząstkowa od tõde)
+t Tere tulemast komisjoni. Te olete vande all. | Witamy w komisji. Zeznaje Pan pod przysięgą. | Jah, ma tean. Ma räägin tõtt. | Potwierdź i zapewnij, że mówisz prawdę. | „Mówić prawdę” to rääkida tõtt. „Pod przysięgą” to vande all. |  | gain=1
+w parlamendiliikmena | jako poseł (parlamendiliige + -na)
+w puutumatus | immunitet
+w sellest | z tego (see + -st)
+w loobuda | zrzec się
+w puutumatust | immunitetu (forma cząstkowa)
+w hoida | trzymać, zachować
+t Hea. Parlamendiliikmena on teil puutumatus. Kas te soovite sellest loobuda? | Dobrze. Jako poseł ma Pan immunitet. Czy chce Pan się go zrzec? | Ei, ma tahan oma puutumatust hoida. | Odmów zrzeczenia się immunitetu. | „Hoida” = zachować; „oma puutumatust” = swój immunitet. |  | shift=-1
+w ütlus | zeznanie
+w vastuolus | w sprzeczności
+w toimikuga | z aktami (toimik + -ga)
+w selgitate | wyjaśniacie; wyjaśnia Pan (selgitama)
+w varjata | ukrywać
+t Teie ütlus on vastuolus toimikuga. Kuidas te seda selgitate? | Pana zeznanie jest sprzeczne z aktami. Jak Pan to wyjaśni? | Mul ei ole midagi varjata. | Powiedz, że nie masz nic do ukrycia. | „Mul ei ole midagi varjata” = nie mam nic do ukrycia. |  | loss=2
+w mäleta | pamiętam (mäletama; ei mäleta = nie pamiętam)
+w enam | już (ei enam = już nie)
+t See on ammu möödas. Valijad ei mäleta seda enam. | To było dawno. Wyborcy już o tym nie pamiętają. | See on minevik. | Machnij ręką: to przeszłość. | „Minevik” = przeszłość. |  | shift=+2
+w kirjutasin | napisałem (kirjutama)
+w advokaat | adwokat
+w kirjutas | napisał (kirjutama)
+o Siin on härra Lindi kiri. Kas te tunnete seda kirja? | Oto list od pana Linda. Czy zna Pan ten list? | Ma ei tunne seda kirja. | Jah, ma kirjutasin selle kirja ise.;Minu advokaat kirjutas selle kirja. | Zaprzeczasz, że znasz ten list.; Przyznajesz się, że to ty napisałeś list: to błąd.; Zwalanie na adwokata nie jest wiarygodne. | gain=1
+w rahaga | z pieniędzmi (raha + -ga)
+w saanud | dostał (saama)
+t Tunnistaja ütleb, et te saite ümbriku rahaga. | Pewien świadek mówi, że dostał Pan kopertę z pieniędzmi. | Tunnistaja valetab. Ma ei saanud raha. | Nazwij świadka kłamcą i zaprzecz, że dostałeś pieniądze. | „Tunnistaja valetab” = świadek kłamie. |  | shift=-2 loss=2
+w volikogus | w radzie (volikogu + -s)
+w endiselt | nadal
+w teda | go, ją (forma cząstkowa od tema)
+k Volikogus te ütlesite, et te tunnete härra Lindi vaevu. Kas see on endiselt tõsi? | W radzie powiedział Pan: „Ledwo znam pana Linda.” Czy to nadal prawda? | Jah, ma tunnen teda vaevu. | Ei, ta on minu sõber.;Ei, ma ei ole teda kunagi näinud. | Konsekwentnie powtarzasz wcześniejsze zeznanie: vaevu.; Przyznajesz, że to twój przyjaciel: sprzeczność i koniec.; Wcześniej mówiłeś „vaevu”, a nie „nigdy go nie widziałem”. | gain=1
+e Aitäh. Te võite minna. Varsti näeme jälle. | Dziękuję. Może Pan iść. Wkrótce znów się zobaczymy.
+
+@level 5 | Minister | patience=4 cap=6 typed=0.8 extra=2 hint=bank
+desc Szczebel 5: minister
+partner Härra Talv | T
+scene Studio telewizyjne, wywiad na żywo. Jesteś ministrem (minister) i siedzisz naprzeciw pana Talva, prowadzącego wiadomości. Na ekranie nagle pojawia się stary dokument z „Kägu-afääri”.
+goal Wyjdź ze studia nadal jako minister: nie daj się zapędzić w pułapkę na żywo.
+win Talv kończy wywiad: „Aitäh, härra minister.” Sondaże rosną. Pan Lind dzwoni: „Hästi tehtud!”
+partial Wywiad kończy się remisem. Opozycja domaga się dymisji (tagasiastumine), ale premier cię broni.
+fail Na wizji uciekasz od odpowiedzi, a widzowie wszystko widzą. Rano gazety krzyczą: „Tagasi!”
+w otse-eetris | na żywo
+w televisioonis | w telewizji (televisioon + -is)
+w valmis | gotowy
+w minister | minister
+w alustame | zaczynamy (alustama)
+t Tere õhtust! Oleme otse-eetris televisioonis. Kas te olete valmis, härra minister? | Dobry wieczór! Jesteśmy na żywo w telewizji. Czy jest Pan gotów, Panie ministrze? | Jah, ma olen valmis. Alustame. | Potwierdź, że jesteś gotów. | „Valmis” = gotowy. |  | gain=1
+w opositsioon | opozycja
+w väidab | twierdzi (väitma)
+w Kägu-afäär | Kägu-afäär (afera kukułki; kägu = kukułka)
+w skandaal | skandal
+w kampaania | kampania
+t Hea. Opositsioon väidab, et Kägu-afäär on suur skandaal. | Dobrze. Opozycja twierdzi, że afera kukułki to wielki skandal. | See ei ole skandaal. See on kampaania. | Zbagatelizuj: to nie skandal, tylko kampania. | „Kampaania” = kampania. |  | shift=-1
+w ajalehes | w gazecie (ajaleht + -s)
+w dokument | dokument
+w allkiri | podpis
+t Ajalehes on dokument. Sellel on teie allkiri. | W gazecie jest dokument. Ma na nim Pan podpis. | Ma ei mäleta seda. | Powiedz, że tego nie pamiętasz. | „Ma ei mäleta seda” = nie pamiętam tego. |  | shift=-2 loss=2
+w võltsing | fałszerstwo
+t See on teie allkiri. Kuidas te seda selgitate? | To jest Pana podpis. Jak Pan to wyjaśni? | See on võltsing. | Zaprzecz: to fałszerstwo. | „Võltsing” = fałszerstwo. |  | gain=1
+w küsitlused | sondaże
+w tõusevad | rosną (tõusma)
+w kasuks | na korzyść (kasu + -ks)
+w usaldavad | ufają (usaldama)
+w tänan | dziękuję (tänama)
+w usalduse | zaufania (gen. od usaldus)
+w eest | za (usalduse eest = za zaufanie)
+t Küsitlused tõusevad teie kasuks. Valijad usaldavad teid. | Sondaże rosną na Pana korzyść. Wyborcy Panu ufają. | Tänan teid usalduse eest. | Podziękuj wyborcom za zaufanie. | „Usaldus” = zaufanie; „usalduse eest” = za zaufanie. |  | shift=+2
+w nõunik | doradca
+w temaga | z nim, z nią (tema + -ga)
+w töötanud | pracował (töötama)
+w tihti | często
+o Härra Lind ütleb, et ta on olnud teie nõunik. Kas see on tõsi? | Pan Lind mówi, że był Pana doradcą. Czy to prawda? | Ei, ma ei ole temaga kunagi koos töötanud. | Jah, ta andis mulle tihti raha.;Ma keeldun ütluste andmisest. | Zaprzeczasz konsekwentnie.; Przyznajesz się do pieniędzy: błąd.; „Ma keeldun ütluste andmisest” w telewizji wygląda na przyznanie się. | gain=1
+w astute | wstępujecie (tagasi astuma = podać się do dymisji)
+w astu | wstępuję (ma ei astu tagasi = nie podam się do dymisji)
+t Kas te astute tagasi? Siis on kõik läbi. | Czy poda się Pan do dymisji? Wtedy wszystko skończone. | Ei, ma ei astu tagasi. Ma olen süütu. | Odmów dymisji i powiedz, że jesteś niewinny. | „Tagasi astuda” = podać się do dymisji; „ma ei astu tagasi” = nie podam się. |  | gain=1
+w ümbrikus | w kopercie (ümbrik + -s)
+k Siin on foto: teie ja härra Lind. Seal on ka ümbrik. Mis on ümbrikus? | Oto zdjęcie: Pan i pan Lind. Jest tam też koperta. Co jest w kopercie? | Foto on vana. Ma ei ole kunagi ümbrikku võtnud. | See on raha minu kampaania jaoks.;See on ainult kingitus. | Powtarzasz to, co powiedziałeś prokuratorowi.; Przyznanie się do pieniędzy: koniec.; „Kingitus” to też przyznanie. | gain=1
+w intervjuu | wywiad
+e Aitäh intervjuu eest, härra minister. | Dziękuję za wywiad, panie ministrze.
+
+@level 6 | Peaminister | patience=4 cap=6 typed=1 extra=2 hint=none
+desc Szczebel 6: premier
+partner Proua Orav | O
+scene Debata finałowa w telewizji. Kandydujesz na premiera (peaminister). Naprzeciw stoi pani Orav z partii „Uus Ausus” i jej teczka z „Kägu-afääriga”. Cały kraj ogląda.
+goal Wygraj debatę, zachowaj spokój i nie przyznaj się do niczego do samego końca.
+win Przegrywa nawet sondaż: 52 procent mówi, że chce ciebie. Zostajesz premierem, a koperta pana Linda leży gdzieś na dnie szuflady.
+partial Debata kończy się remisem. Wybory wygrywasz minimalnie i obiecujesz „więcej przejrzystości”.
+fail Pani Orav kładzie na stoliku teczkę. Kraj widzi sprzeczność w twoich słowach i na ekranie pojawia się napis: „Kandidaat valetab.”
+w debatile | na debatę (debatt + -ile)
+w Orav | Orav (nazwisko; orav = wiewiórka)
+w kandidaat | kandydat
+w peaministriks | na premiera (peaminister + -ks)
+t Tere tulemast debatile! Proua Orav, härra kandidaat, palun. | Witamy w debacie! Pani Orav, panie kandydacie, proszę. | Tere õhtust. Ma tahan saada peaministriks. | Przywitaj się i powiedz, że chcesz zostać premierem. | „Na premiera” to peaministriks (końcówka -ks). |  | gain=1
+w erakonnast | z partii (erakond + -st)
+w Uus | Uus (nowy; w nazwie partii)
+w Ausus | Ausus (uczciwość; w nazwie partii)
+w rääkige | mówcie; niech Pan mówi
+t Mina olen erakonnast Uus Ausus. Rääkige tõtt, härra kandidaat! | Jestem z partii Nowa Szczerość. Niech Pan mówi prawdę, Panie kandydacie! | Ma räägin alati tõtt. | Zapewnij, że zawsze mówisz prawdę. | „Zawsze” = alati; „tõde” = prawda. |  | gain=1
+w lükkan | odrzucam (lükkama; tagasi lükkama = odrzucić)
+w süüdistuse | zarzut (biernik od süüdistus)
+t Te olete altkäemaksu võtnud. See on minu süüdistus. | Brał Pan łapówki. To mój zarzut. | Ma lükkan selle süüdistuse tagasi. | Odrzuć ten zarzut. | „Tagasi lükkama” = odrzucić. |  | shift=-2 loss=2
+w publik | publiczność
+w pomiseb | mruczy (pomisema)
+w valimiskampaania | kampania wyborcza
+w räpane | brudny
+t Publik pomiseb: see on ainult valimiskampaania, see on ammu möödas. | Publiczność mruczy: to tylko kampania wyborcza, to było dawno. | Teie kampaania on räpane. | Zarzuć rywalce brudną kampanię. | „Räpane” = brudny. |  | shift=+2
+w tõendid | dowody
+w näe | widzisz (nägema; kas te ei näe = czy Pan nie widzi)
+w ühtegi | żadnego
+w tõendit | dowodu (forma cząstkowa)
+t Mul on tõendid! Kas te ei näe neid? | Mam dowody! Czy Pan ich nie widzi? | Ma ei näe ühtegi tõendit. | Powiedz, że nie widzisz żadnych dowodów. | „Ühtegi tõendit” = żadnego dowodu. |  | gain=1
+w riigi | kraju (gen. od riik)
+w loon | tworzę (looma)
+w uusi | nowych (forma cząstkowa l. mn.)
+w töökohti | miejsc pracy (forma cząstkowa l. mn.)
+t Hea küll. Mis on teie plaan riigi jaoks? | No dobrze. Jaki jest Pana plan dla kraju? | Ma loon uusi töökohti. | Obiecaj nowe miejsca pracy. | „Uusi töökohti” = nowe miejsca pracy (forma cząstkowa). |  | gain=1
+t Teie sõber härra Lind ütleb, et ta andis teile palju raha! | Pana przyjaciel pan Lind mówi, że dał Panu dużo pieniędzy! | See on vale! Ta ei ole minu sõber. | Zaprzecz: to kłamstwo, on nie jest twoim przyjacielem. | „Ta ei ole minu sõber” = on nie jest moim przyjacielem. |  | shift=-1 loss=2
+o Volikogus te ütlesite, et ta on ainult tuttav. Aga nüüd? | W radzie powiedział Pan, że to tylko znajomy. A teraz? | Ta on ainult tuttav. | Ta on minu sõber.;Ma ei ole teda kunagi näinud. | Trzymasz się wersji z rady.; Zaprzeczasz sam sobie.; Wcześniej przyznałeś, że go znasz, więc „nigdy go nie widziałem” to sprzeczność. | gain=1
+w võtsin | wziąłem (võtma)
+k Proua Orav näitab ümbrikku. Kas te võtsite selle? Jah või ei? | Pani Orav pokazuje kopertę. Czy Pan ją wziął? Tak czy nie? | Ei, ma ei võtnud seda. | Jah, ma võtsin selle.;Ma keeldun ütluste andmisest. | Zaprzeczasz do końca.; Przyznanie się: koniec.; Milczenie na żywo wygląda jak przyznanie się. | 
+w peaminister | premier
+w südamlikud | serdeczne
+w õnnitlused | gratulacje
+e Ja peaminister olete teie! Südamlikud õnnitlused! | A premierem zostaje… Pan! Serdeczne gratulacje!
+
+
+@larp flughafen | Lotnisko | Töötaja | T | Tallinn, wczesny ranek. Lecisz do Warszawy na ślub najlepszego przyjaciela, a samolot nie poczeka. Masz walizkę, paszport i mało czasu. | Przejdź całą drogę: odprawa, kontrola bezpieczeństwa, bramka, lot i odbiór bagażu w Warszawie.
+fee 0
+reward 20
+strict yes
+story yes
+win Docierasz do Warszawy z walizką, paszportem i pół godziny zapasu. Przyjaciel czeka w hali przylotów z bukietem: „Sa jõudsid! Pulmad võivad alata!”
+partial Dotarłeś do Warszawy, ale po drodze sporo się nagadałeś i trochę pobiegałeś. Walizka jest, ślub też, ty trochę zdyszany, ale na czas.
+fail Pomyliłeś coś w najgorszym momencie i samolot odleciał bez ciebie. Ślub oglądasz na telefonie, a przyjaciel obiecuje ci długą wyprawę „na pocieszenie”.
+
+@level 1 | Odprawa | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Odprawa
+partner Töötaja | T
+scene Lotnisko w Tallinie, hala odlotów. Podchodzisz do stanowiska odprawy linii Põhjatuul. Pracowniczka patrzy na ciebie życzliwie i czeka na dokumenty.
+goal Odpraw się na lot do Warszawy: pokaż paszport, nadaj walizkę i wybierz miejsce.
+win Pracowniczka podaje ci kartę pokładową: „Head reisi!” Walizka jedzie na taśmie, a ty idziesz do kontroli bezpieczeństwa.
+partial Odprawa udała się, ale pracowniczka kilka razy musiała się domyślać, o co ci chodzi. Karta pokładowa w ręku, czas ucieka.
+fail Pracowniczka nie rozumie, czego chcesz, i prosi następną osobę w kolejce. Musisz zacząć od nowa na końcu kolejki.
+w Põhjatuule | Põhjatuul (gen.; fikcyjna linia lotnicza)
+w leti | lady, stanowiska (gen. od letti)
+w lendate | lecicie; leci Pan (lendama)
+w lendan | lecę (lendama)
+w Varssavisse | do Warszawy (Varssavi + -sse)
+t Tere päevast! Tere tulemast Põhjatuule leti juurde. Kuhu te lendate? | Dzień dobry! Witamy przy stanowisku Põhjatuul. Dokąd Pan leci? | Tere päevast! Ma lendan Varssavisse. | Przywitaj się i powiedz, że lecisz do Warszawy. | „Do” miasta to końcówka -sse: Varssavisse.
+w pulma | na ślub (pulm + -a)
+t Varssavisse, tore! Teie pass, palun. Ja miks te Varssavisse lendate? | Do Warszawy, świetnie! Paszport, proszę. A po co Pan leci do Warszawy? | Siin on minu pass. Ma lendan pulma. | Podaj paszport i powiedz, że lecisz na ślub. | „Na ślub” to pulma.
+w registreerida | zarejestrować, nadać (bagaż)
+t Pulma, kui tore! Kas soovite kohvri registreerida? | Na ślub, jak miło! Czy chce Pan nadać walizkę? | Jah, ma soovin kohvri registreerida. | Powiedz, że chcesz nadać walizkę. | „Nadać” to registreerida; walizka w bierniku: kohvri.
+w pange | połóżcie; proszę położyć (panema)
+w kaalule | na wagę (kaal + -le)
+w kaalub | waży (kaaluma)
+w kilo | kilo
+w käsipagas | bagaż podręczny
+w käsipagasina | jako bagaż podręczny (-na: „jako”)
+t Pange kohver kaalule, palun. See kaalub kakskümmend kilo. See on korras. Kas teil on ka käsipagas? | Proszę postawić walizkę na wadze. Waży dwadzieścia kilo. To w porządku. Czy ma Pan też bagaż podręczny? | Jah, mul on kott käsipagasina. | Powiedz, że masz torbę jako bagaż podręczny. | „Jako” to końcówka -na: käsipagasina.
+w akna- | okna- (akna- või vahekäigu kohta)
+w vahekäigu | przejścia (gen. od vahekäik)
+w aknakohta | miejsca przy oknie (forma cząstkowa od aknakoht)
+t Hea. Kas soovite akna- või vahekäigu kohta? | Dobrze. Czy woli Pan miejsce przy oknie, czy przy przejściu? | Aknakohta, palun. | Powiedz, że wolisz miejsce przy oknie. | „Miejsce przy oknie” to aknakoht, w formie cząstkowej aknakohta.
+w pardakaart | karta pokładowa
+w väljumine | odlot, wyjście
+w lend | lot
+w õigel | właściwym (õigel ajal = na czas)
+w ajal | w czasie (õigel ajal = na czas)
+t Selge. Siin on teie pardakaart. Väljumine on pool üksteist. Kas teil on veel küsimusi? | Dobrze. Oto Pana karta pokładowa. Odlot jest wpół do jedenastej. Czy ma Pan jeszcze pytania? | Jah, kas lend on õigel ajal? | Zapytaj, czy lot jest punktualny. | „Na czas” to õigel ajal; pytanie zaczyna się od kas.
+w otse | prosto, bezpośrednio
+t Jah, lend on õigel ajal. Teie värav on kaksteist. Minge otse. | Tak, lot jest punktualny. Pana bramka to dwanaście. Proszę iść prosto. | Suur aitäh! Nägemist! | Podziękuj i pożegnaj się. | „Do widzenia” to nägemist.
+e Head reisi! | Szczęśliwej podróży!
+
+@level 2 | Kontrola bezpieczeństwa | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Kontrola bezpieczeństwa
+partner Turvakontrolör | T
+scene Masz kartę pokładową, a przed tobą długa kolejka do kontroli. Funkcjonariusz podaje plastikowe pojemniki i patrzy uważnie na twoją torbę.
+goal Przejdź kontrolę bezpieczeństwa: pokaż laptop, zdejmij pasek i odpowiedz na pytania.
+win Funkcjonariusz kiwa głową: „Kõik on korras. Minge edasi.” Zakładasz pasek i biegniesz do bramki z pełnym spokojem.
+partial Kontrola przebiegła w końcu bez problemów, ale funkcjonariusz kilka razy zmarszczył brwi. Zakładasz pasek w biegu.
+fail Funkcjonariusz uznaje twoje odpowiedzi za podejrzane. Zostajesz zatrzymany na dodatkową kontrolę, a samolot odlatuje bez ciebie.
+w turvakontroll | kontrola bezpieczeństwa
+w lindile | na taśmę (lint + -le)
+t Tere päevast! See on turvakontroll. Pange kott siia lindile, palun. | Dzień dobry! To jest kontrola bezpieczeństwa. Proszę położyć torbę tutaj na taśmie. | Jah, muidugi. | Zgódź się i powiedz, że oczywiście. | „Oczywiście” to muidugi.
+w sülearvuti | laptop
+w välja | na zewnątrz (välja võtma = wyjąć)
+t Aitäh. Kas kotis on sülearvuti? Võtke see välja, palun. | Dziękuję. Czy w torbie jest laptop? Proszę go wyjąć. | Jah, siin on minu sülearvuti. | Potwierdź i podaj laptop. | „Mój” to minu: minu sülearvuti.
+w vedelikke | płynów (forma cząstkowa l. mn.)
+w näiteks | na przykład
+w parfüümi | perfum (forma cząstkowa od parfüüm)
+w kreemi | kremu (forma cząstkowa od kreem)
+t Aitäh. Kas teil on vedelikke kaasas? Näiteks vett, parfüümi või kreemi? | Dziękuję. Czy ma Pan przy sobie płyny? Na przykład wodę, perfumy albo krem? | Ei, mul ei ole vedelikke kaasas. | Zaprzecz: nie masz płynów. | „Nie mam” to mul ei ole + forma cząstkowa: vedelikke.
+t Hea. Võtke ka vöö ja jope ära, palun. | Dobrze. Proszę też zdjąć pasek i kurtkę. | Jah, siin on minu vöö ja jope. | Podaj pasek i kurtkę. | „Oto jest” to siin on.
+w ega | ani (ei … ega = ani … ani)
+k Aitäh. Kas teie kotis on nuga või relv? | Dziękuję. Czy w Pana torbie jest nóż albo broń? | Ei, mul ei ole nuga ega relva. | Jah, mul on nuga.;Ma ei tea, võib-olla. | Przyznanie się do noża to natychmiastowe zatrzymanie.; Niepewna odpowiedź przy takim pytaniu wzbudza podejrzenia.
+w skanneri | skanera (gen. od skanner)
+w kaudu | przez
+w piiks | pip (dźwięk)
+w püksitaskus | w kieszeni spodni
+t Hea. Minge nüüd skanneri kaudu. Piiks! Kas teil on püksitaskus veel midagi? | Dobrze. Proszę przejść przez skaner. Pip! Czy ma Pan w kieszeni spodni jeszcze coś? | Jah, seal on võti ja telefon. | Powiedz, że masz klucz i telefon. | „Klucz” to võti.
+w edasi | dalej
+e Kõik on korras. Minge edasi. Head reisi! | Wszystko w porządku. Proszę iść dalej. Szczęśliwej podróży!
+
+@level 3 | Przy bramce | patience=4 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Przy bramce
+partner Lennujaama töötaja | L
+scene Siedzisz przy bramce 12 i patrzysz na zegarek. Nagle w głośnikach coś trzaska, a na tablicy pojawia się napis „hilineb”.
+goal Dowiedz się, co z lotem, zrozum komunikat o zmianie bramki i wejdź na pokład.
+win Biegniesz do nowej bramki i wsiadasz jako jeden z ostatnich. Pracownik zamyka drzwi: „See oli napilt!”
+partial Znalazłeś w końcu właściwą bramkę, choć po drodze kilka razy musiałeś dopytywać. Wchodzisz na pokład spocony.
+fail Zrozumiałeś komunikat na opak i czekasz przy złej bramce. Kiedy orientujesz się w błędzie, drzwi samolotu są już zamknięte.
+w Varssavi | Warszawy (gen. od Varssavi); Warszawa
+w lennule | na lot (lend + -ule)
+t Vabandust! Kas te olete reisija Varssavi lennule? | Przepraszam! Czy jest Pan pasażerem lotu do Warszawy? | Jah, minu lend hilineb, kas pole? | Potwierdź i zapytaj, czy twój lot jest spóźniony. | „Spóźnia się” to hilineb; „kas pole?” na końcu znaczy „prawda?”.
+w pardaleminek | wejście na pokład
+w algab | zaczyna się (algama)
+w jõudma | zdążyć, dotrzeć
+t Jah, lend hilineb nelikümmend minutit. | Tak, lot ma czterdzieści minut spóźnienia. | Millal pardaleminek algab? Ma pean pulma jõudma. | Zapytaj, kiedy zaczyna się wejście na pokład, i dodaj, że musisz zdążyć na ślub. | „Kiedy” to millal; „pardaleminek” = wejście na pokład.
+w peate | musicie; musi Pan (pidama)
+w Varssavis | w Warszawie (Varssavi + -s)
+t Pardaleminek algab kell üksteist. Pulm, kui tore! Kas te peate Varssavis ümber istuma? | Wejście na pokład zaczyna się o jedenastej. Ślub, jak miło! Czy musi Pan się przesiadać w Warszawie? | Ei, ma lendan otse Varssavisse. | Odpowiedz, że nie, lecisz bezpośrednio. | „Bezpośrednio” to otse.
+w teadaanne | ogłoszenie
+w väravast | z bramki (värav + -st)
+w suletud | zamknięty
+w mõistsite | zrozumieliście; zrozumiał Pan (mõistma)
+w väravasse | do bramki (värav + -sse)
+w jään | zostaję (jääma)
+k Selge, otse. Tähelepanu, teadaanne! Varssavi lend väljub nüüd väravast viis. Värav kaksteist on suletud. Kas te mõistsite? Kuhu te lähete? | Jasne, bezpośrednio. Uwaga, ogłoszenie! Lot do Warszawy odlatuje teraz z bramki piątej. Bramka dwunasta jest zamknięta. Czy Pan zrozumiał? Dokąd Pan idzie? | Ma lähen väravasse viis. | Ma jään värava kaksteist juurde.;Ma lähen koju. | Bramka dwunasta jest zamknięta, więc czekanie tam kończy się spóźnieniem.; Pytanie dotyczy bramki, a nie domu.
+w pardale | na pokład (pardal + -le)
+t Siis kiiresti! Teie pardakaart, palun. Te võite kohe pardale minna. | W takim razie szybko! Karta pokładowa, proszę. Może Pan od razu wejść na pokład. | Siin on minu pardakaart. Ma lähen nüüd pardale. | Podaj kartę i powiedz, że już wsiadasz. | „Wsiadam” to ma lähen pardale (dosł. „idę na pokład”).
+w avatud | otwarty
+e Head reisi! Pardaleminek on avatud. | Szczęśliwej podróży! Wejście na pokład jest otwarte.
+
+@level 4 | W samolocie i po lądowaniu | patience=4 typed=0.75 extra=3 hint=letters reward=30
+desc Rozdział 4: Lot i przylot
+partner Stjuardess | S
+scene Wchodzisz na pokład. Stewardesa wita pasażerów przy drzwiach, a za chwilę wystartujecie do Warszawy. Po lądowaniu będziesz musiał jeszcze znaleźć kontrolę paszportową i swoją walizkę.
+goal Zajmij miejsce, zapnij pas, poproś o picie, a po lądowaniu dowiedz się, gdzie jest kontrola paszportowa, taśma bagażowa i odprawa celna.
+win Walizka wyjeżdża na taśmie jako pierwsza, a celnik życzy ci „Tere tulemast Poola!” Przyjaciel czeka w hali przylotów.
+partial Wszystko udało ci się znaleźć, ale po drodze trzy razy zapytałeś o drogę. Walizka dojechała, a ty do ślubu zdążysz.
+fail Poszedłeś w złą stronę i straciłeś czas na lotnisku. Walizka krąży samotnie po taśmie, a przyjaciel wydzwania co minutę.
+t Tere päevast ja tere tulemast pardale! Teie pardakaart, palun. | Dzień dobry i witamy na pokładzie! Proszę o kartę pokładową. | Tere päevast! Siin on minu pardakaart. | Przywitaj się i pokaż kartę pokładową. | „Oto jest” to siin on; „moja karta” to minu pardakaart.
+w ääres | przy (akna ääres = przy oknie)
+w pagasiriiulile | na półkę bagażową
+t Aitäh. Teie koht on neliteist, akna ääres. Pange kott üles pagasiriiulile, palun. | Dziękuję. Pana miejsce to czternaście, przy oknie. Proszę położyć torbę w schowku na górze. | Aitäh, ma panen koti pagasiriiulile. | Podziękuj i powiedz, że kładziesz torbę do schowka. | „Kładę” to ma panen; „na półkę” to riiulile.
+w kinnitage | zapnijcie; proszę zapiąć
+w turvavöö | pas bezpieczeństwa
+w startime | startujemy (startima)
+w kinnitan | zapinam (kinnitama)
+t Hea. Kinnitage turvavöö, palun. Varsti startime. | Dobrze. Proszę zapiąć pas. Za chwilę startujemy. | Jah, ma kinnitan turvavöö. | Powiedz, że zapinasz pas. | „Zapinam” to ma kinnitan.
+t Aitäh. Kas soovite midagi juua? | Dziękuję. Czy chce Pan coś do picia? | Jah, kohvi, palun. | Poproś o kawę. | Napój w formie cząstkowej: kohvi.
+w teada | wiedzieć
+w maandume | lądujemy (maanduma)
+t Siin on teie kohv. Mida te veel soovite teada? | Oto Pana kawa. O co jeszcze chce Pan zapytać? | Millal me Varssavis maandume? | Zapytaj, kiedy lądujecie w Warszawie. | „Kiedy” to millal, a „lądujemy” to maandume.
+w saabumine | przylot, przybycie
+w passikontroll | kontrola paszportowa
+t Maandume kümne minuti pärast. Tere tulemast Varssavisse! Saabumine on õigel ajal. | Lądujemy za dziesięć minut. Witamy w Warszawie! Przylot jest punktualny. | Aitäh! Kus on passikontroll, palun? | Podziękuj i zapytaj, gdzie jest kontrola paszportowa. | Pytanie o miejsce zaczyna się od kus.
+w pagasiliin | taśma bagażowa
+w toll | cło
+w kõigepealt | najpierw
+w passikontrolli | do kontroli paszportowej (passikontroll + -i)
+w tolli | do cła (toll + -i)
+w pagasiliinile | do taśmy bagażowej
+k Passikontroll on vasakul. Pärast seda tuleb pagasiliin ja siis toll. Kuhu te kõigepealt lähete? | Kontrola paszportowa jest po lewej. Potem taśma bagażowa, a potem cło. Dokąd Pan idzie najpierw? | Kõigepealt lähen passikontrolli. | Kõigepealt lähen tolli.;Kõigepealt lähen pagasiliinile. | Do cła idziesz na końcu, po odbiorze walizki.; Walizkę odbierasz dopiero po kontroli paszportowej.
+w täpselt | dokładnie
+w number | numer
+t Täpselt nii! Ja pärast seda pagasiliinile. Teie kohver tuleb lindile number neli. | Właśnie tak! A potem do taśmy bagażowej. Pana walizka przyjedzie na taśmie numer cztery. | Suur aitäh! Ma võtan kohvri lindilt. | Podziękuj i powiedz, że zdejmiesz walizkę z taśmy. | „Z taśmy” to lindilt.
+w deklareerida | zgłosić, zadeklarować
+w küsib | pyta (küsima)
+t Kas teil on midagi deklareerida? Seda küsib toll. | Czy ma Pan coś do oclenia? O to zapyta cło. | Ei, mul ei ole midagi deklareerida. | Powiedz, że nie masz nic do oclenia. | „Nic” to midagi: mul ei ole midagi.
+w pulmapidu | wesele
+e Siis on kõik hästi. Tere tulemast Poola ja head pulmapidu! | Wtedy wszystko w porządku. Witamy w Polsce i udanego wesela!

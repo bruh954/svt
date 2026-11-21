@@ -260,3 +260,910 @@ w k | do, ku (k prijatelju = do kolegi)
 w prijatelju | koledze (celownik od prijatelj)
 t Potujete na obisk? | Czy jedzie pan z wizytą? | Da, potujem k prijatelju. | Powiedz, że jedziesz do kolegi. | „Jechać do kogoś” to potovati k + celownik: k prijatelju.
 e Srečno pot v Maribor! | Szczęśliwej podróży do Mariboru!
+
+@larp oma | Babcia w parku | Babica Marija | M | Niedziela w parku. Na ławce siedzi starsza pani, która uwielbia rozmawiać i ma całe popołudnie. | Posiedź z babcią Marią i porozmawiaj z nią. Nikt cię stąd nie wyrzuci.
+fee 0
+reward 10
+story yes
+win Babcia Maria promienieje: „Kako prijazen mladenič!” Zaprasza cię na niedzielną kawę i kawałek ciasta.
+partial Rozmowa się toczyła, choć kilka razy musiałeś prosić o powtórzenie. Babcia Maria uśmiecha się cierpliwie i zaprasza cię znowu.
+fail Babcia Maria się nie zniechęca, bo ma nieskończoną cierpliwość. Jeśli kiedyś zobaczysz ten komunikat, napisz do nas.
+
+@level 1 | Na ławce | patience=3 endless=yes typed=0 extra=2 hint=none
+desc Rozdział 1: Poznajecie się
+scene Park, ławka, słońce. Starsza pani karmi okruchami wróble i zaczyna rozmowę. Nie musisz się spieszyć: babcia Maria poczeka.
+goal Przywitaj się, powiedz, jak się nazywasz i skąd jesteś.
+win Babcia Maria klepie ławkę obok siebie: „Sedite, Pavel!” Zostajesz na dłużej.
+partial Rozmowa się udała, mimo kilku pomyłek. Babcia Maria zachowuje cierpliwość i robi ci miejsce na ławce.
+fail Babcia Maria nigdy się nie zniechęca.
+w mladenič | młodzieniec, młody człowiek
+w kajne | prawda? (na końcu zdania)
+t Dober dan, mladenič! Danes je lepo vreme, kajne? | Dzień dobry, młody człowieku! Dziś jest ładna pogoda, prawda? | Da, danes je lepo vreme. | Zgódź się, że pogoda jest ładna. |  | Da, vreme je danes lepo.;Da, lepo je vreme.
+w greje | grzeje (greti)
+w Marija | Maria (imię)
+w Pavel | Paweł (imię)
+t Da, sonce greje! Jaz sem Marija. Kako vam je ime? | Tak, słońce grzeje! Jestem Maria. Jak się Pan nazywa? | Ime mi je Pavel. | Powiedz, jak się nazywasz. |  | Jaz sem Pavel.;Sem Pavel.;Pavel sem.
+w živite | mieszkacie; mieszka Pan (živeti)
+w živim | mieszkam (živeti)
+t Pavel! To je lepo ime. Ali živite tukaj? | Pavel! To ładne imię. Mieszka Pan tutaj? | Ne, ne živim tukaj. Sem iz Poljske. | Zaprzecz i powiedz, że jesteś z Polski. | Najpierw krótko „nie”, potem „jestem z Polski”. | Ne, tukaj ne živim. Sem iz Poljske.
+w usesti | usiąść (usesti se)
+t Iz Poljske! To je daleč. Ali se želite usesti? | Z Polski! To daleko. Nie usiądzie Pan? | Da, rad. Hvala! | Zgódź się i podziękuj. |  | Da, hvala, rad.
+w prostor | miejsce, przestrzeń
+e Prosim! Tukaj je prostor. | Proszę bardzo! Tu jest miejsce.
+
+@level 2 | Wnuk i ciasto | patience=3 endless=yes typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Wnuk i ciasto
+scene Mały Luka biega po trawniku i karmi kaczki, a babcia Maria pokazuje ci zdjęcia w portfelu. Z torby wyjmuje ciasto własnej roboty.
+goal Porozmawiaj o wnuku, powiedz, czy masz dzieci, i spróbuj ciasta.
+win Babcia Maria wręcza ci drugi kawałek: „Pojej še en kos!” Luka macha do ciebie z daleka.
+partial Zjadłeś ciasto, choć kilka razy brakowało ci słów. Babcia Maria dolewa herbaty z termosu.
+fail Babcia Maria nie traci cierpliwości.
+w Luka | Luka (imię)
+w let | lat (dopełniacz lm od leto)
+t To je moj vnuk Luka. Star je šest let. | To mój wnuk Luka. Ma sześć lat. | Je zelo prijazen. | Pochwal wnuka: powiedz, że jest bardzo miły. |  | Luka je zelo prijazen.;Zelo je prijazen.
+w hrani | karmi (hraniti)
+w race | kaczki
+w otroke | dzieci (biernik od otrok)
+w nimam | nie mam (imeti)
+t Hvala! Luka hrani race. Ali imate tudi otroke? | Dziękuję! Luka karmi kaczki. Ma Pan też dzieci? | Ne, nimam otrok. | Powiedz, że nie masz dzieci. |  | Ne, otrok nimam.
+w Aha | aha
+w košček | kawałek
+w Spekla | upiekła (speči)
+w jo | ją
+w sama | sama
+w odlična | doskonała (odličen)
+t Brez otrok? Aha. Ali želite košček torte? Spekla sem jo sama. | Nie ma Pan dzieci? Aha. Poczęstuje się Pan kawałkiem ciasta? Sama je upiekłam. | Da, rad. Torta je odlična! | Przyjmij ciasto i pochwal je. |  | Da, rad. Ta torta je odlična!
+w me | mnie
+w veseli | cieszy (veseliti)
+w stari | starzy; w wieku (koliko ste stari = ile Pan ma lat)
+t Hvala, to me veseli! In koliko ste stari? | Dziękuję, to miłe! A ile Pan ma lat? | Star sem trideset let. | Powiedz, że masz trzydzieści lat. |  | Trideset let sem star.
+w Joj | och, jejku
+w mladi | młodzi (mlad)
+e Joj, kako ste še mladi! | Ach, taki młody!
+
+@level 3 | Zaproszenie | patience=3 endless=yes typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Kawa w niedzielę
+scene Słońce chyli się ku zachodowi. Babcia Maria pakuje termos i prosi cię o pomoc. Zanim wstaniecie z ławki, chce cię jeszcze zaprosić.
+goal Przyjmij zaproszenie na niedzielną kawę i pomóż babci z torbą.
+win Babcia Maria zapisuje ci adres na serwetce: „Pridite lačni!” Idziesz do domu w świetnym nastroju.
+partial Wszystko się wyjaśniło, choć trzeba było kilka razy powtarzać. Babcia Maria mówi: „Do nedelje, fant moj!”
+fail Babcia Maria nie traci cierpliwości.
+w Veste | wie Pan (vedeti)
+w parku | parku (miejscownik od park)
+w tako | tak
+w res | naprawdę
+t Veste, jaz sem v parku vsak dan. Tukaj je tako lepo. | Wie Pan, jestem w parku codziennie. Jest tu tak ładnie. | Da, park je res lep. | Zgódź się, że park jest ładny. |  | Da, v parku je lepo.
+w nedeljo | niedzielę (nedelja = niedziela)
+w kuham | gotuję, parzę (kuhati)
+w pridem | przyjdę (priti)
+t Res? V nedeljo doma kuham kavo. Ali želite priti? | No właśnie! W niedzielę parzę w domu kawę. Przyjdzie Pan? | Da, rad. Kdaj? | Zgódź się i zapytaj, kiedy. |  | Da, rad pridem. Kdaj?
+w treh | trzech (ob treh = o trzeciej)
+w težka | ciężka (težek)
+w pomagate | pomagacie; pomoże Pan (pomagati)
+w Nesel | niósł (nesti)
+w torbo | torbę (biernik od torba)
+w Torbo | torbę (biernik od torba)
+w nesel | niósł (nesti)
+t Ob treh. Moja torba je težka. Mi lahko pomagate? | O trzeciej. Moja torba jest ciężka. Pomoże mi Pan? | Da, seveda. Nesel bom torbo. | Zgódź się i zaproponuj, że poniesiesz torbę. |  | Da, seveda. Torbo bom nesel.
+w nedelje | niedzieli (dopełniacz od nedelja)
+t To je lepo od vas! Dober človek ste. | Jak miło z Pana strony! Jest Pan dobrym człowiekiem. | Hvala! Nasvidenje v nedeljo! | Podziękuj i pożegnaj się do niedzieli. |  | Hvala! Nasvidenje do nedelje!
+e Do nedelje! Nasvidenje! | Do niedzieli! Do widzenia!
+@larp spion | Szpieg | Stik | S | Jesteś agentem pod przykrywką. W Lublanie masz odebrać tajną teczkę z ambasady i przekazać ją dalej. Jedno złe słowo i jesteś zdemaskowany. | Zachowaj przykrywkę kupca Novaka, zdobądź teczkę i uciekaj z walizką.
+fee 0
+reward 20
+strict yes
+story yes
+win Walizka jest w twoich rękach, a statek odpływa z portu. Ktoś w centrali szepcze: „Dobro opravljeno, Sokol.” Przykrywka nie pękła ani razu.
+partial Misja się udała, ale po drodze kilka razy omal się nie zdradziłeś. Centrala odnotowuje: „Imel je srečo.”
+fail Zdradziłeś się jednym słowem. Przykrywka pękła, a ty znikasz w ciemności bez teczki i bez walizki.
+
+@level 1 | Hasło na dworcu | patience=2 typed=0 extra=1 hint=none
+desc Rozdział 1: Kontakt na dworcu
+partner Moški s klobukom | M
+scene Lublana, wieczór, peron na dworcu. Jesteś agentem „Sokół”, ale dla wszystkich jesteś panem Novak, handlarzem zabawkami z Mariboru (Novak i syn). Na peronie czeka człowiek w kapeluszu. Hasło: „Zima pride zgodaj.” Odzew: „In poletje pride pozno.”
+goal Podaj hasło, nie zdradź swojej przykrywki i przyjmij zadanie. Jedna zła odpowiedź i jesteś zdemaskowany.
+win Człowiek w kapeluszu znika w tłumie, a ty zostajesz z kopertą w kieszeni. Przykrywka nietknięta, a jutro o ósmej czeka cię ambasada.
+partial Dostałeś zadanie, ale kontakt zmarszczył brwi przy kilku twoich odpowiedziach. Lepiej uważaj jutro.
+fail Człowiek w kapeluszu spojrzał na ciebie zimno, odwrócił się i odszedł. Zadanie dostanie ktoś inny.
+w hladno | zimno
+w pride | przyjdzie (priti)
+t Dober večer. Danes je hladno, kajne? | Dobry wieczór. Dziś jest zimno, prawda? | Da, hladno je. Zima pride zgodaj. | Zgódź się, że jest zimno, i powiedz hasło. | Hasło brzmi: „Zima pride zgodaj.” | Da, zelo hladno. Zima pride zgodaj.
+w Pst | cicho! (wykrzyknik)
+w poslušajo | słuchają (poslušati)
+w Novak | Novak (nazwisko z przykrywki)
+w trgovec | kupiec, handlowiec
+w Sokol | Sokol (sokół; imię agenta)
+w agent | agent
+k In poletje pride pozno. Pst! Tukaj ljudje poslušajo. Kako vam je ime? | Odzew: „In poletje pride pozno.” Cicho! Tu ludzie słuchają. Jak się Pan nazywa? | Ime mi je Novak. Sem trgovec. | Ime mi je Sokol. Sem agent.;Ime mi je Novak. Sem agent. | Sokół to twoje imię agenta, a ludzie słuchają. ; Nazwisko się zgadza, ale „agent” zdradza przykrywkę.
+w zasleduje | śledzi (zasledovati)
+w časa | czasu (dopełniacz od čas)
+k Dobro. Vas kdo zasleduje? | Dobrze. Czy ktoś Pana śledzi? | Ne, nihče me ne zasleduje. | Da, nekdo me zasleduje.;Ne, nimam časa. | Mówisz, że nikt cię nie śledzi. ; Kontakt pyta o śledzenie, nie o czas.
+w Odlično | doskonale
+w Jutri | jutro
+w osmih | ósmej (ob osmih = o ósmej)
+w greste | idziecie; idzie Pan (iti)
+w veleposlaništvo | ambasada
+w Razumem | rozumiem (razumeti)
+t Odlično. Tukaj je vaša naloga. Jutri ob osmih greste na veleposlaništvo. Tam bo zabava. | Doskonale. Oto Pana zadanie. Jutro o ósmej pójdzie Pan do ambasady. Będzie tam przyjęcie. | Razumem. Jutri ob osmih grem na veleposlaništvo. | Powiedz, że zrozumiałeś: jutro o ósmej idziesz do ambasady. |  | Razumem. Jutri grem ob osmih na veleposlaništvo.
+w Pravilno | prawidłowo
+w zabavo | przyjęcie, zabawę (biernik od zabava)
+w Slavec | słowik (hasło)
+w Kakšno | jakie (kakšen)
+t Pravilno. Geslo za zabavo je Slavec. Kakšno je geslo? | Dobrze. Hasło na przyjęcie to Slavec (Słowik). Jakie jest hasło? | Geslo je Slavec. | Powtórz hasło na przyjęcie.
+w Prihaja | nadchodzi (prihajati)
+w poznate | zna Pan (poznati)
+w poznam | znam (poznati)
+d Pravilno. Pst! Prihaja policist. Me poznate? | Dobrze. Cicho! Idzie policjant. Zna mnie Pan? | Ne, ne poznam vas. | Zaprzecz, że znasz tego człowieka. | Nie możesz zdradzić, że znasz kontakt. | Ne, vas ne poznam.
+w gospod | pan
+e Lahko noč, gospod Novak. | Dobranoc, panie Novak.
+
+@level 2 | Przyjęcie w ambasadzie | patience=2 typed=0.2 extra=3 hint=bank
+desc Rozdział 2: Przyjęcie w ambasadzie
+partner Gospa Kovač | K
+scene Następny wieczór. W ambasadzie trwa przyjęcie, a przy wejściu stoi gospa Kovač, sekretarka. Ona i goście zadają pytania o twoją „firmę”. Twoja przykrywka: Novak i syn, zabawki, Maribor. Hasło wejściowe: Slavec (Słowik). Gabinet ambasadora jest po prawej, toalety po lewej.
+goal Wejdź na przyjęcie, nie zdradź się pytaniom o firmę i znajdź pretekst, żeby dotrzeć do gabinetu.
+win gospa Kovač macha ci na pożegnanie, a w gabinecie leży teczka, o którą ci chodziło. Nikt niczego nie podejrzewa.
+partial Weszłeś i dotarłeś do gabinetu, ale gospa Kovač patrzyła na ciebie dłużej, niż trzeba.
+fail gospa Kovač przestaje się uśmiechać i daje znak ochronie. Za chwilę wyprowadzą cię z ambasady.
+w dobrodošli | witajcie; witamy
+w veleposlaništvu | w ambasadzie (miejscownik od veleposlaništvo)
+t Dober večer in dobrodošli na veleposlaništvu! Kakšno je geslo? | Dobry wieczór i witamy w ambasadzie! Jakie jest hasło? | Geslo je Slavec. | Podaj hasło wejściowe.
+w moram | muszę (morati)
+w vprašati | zapytać
+w sebi | sobie (pri sebi = przy sobie)
+w orožje | broń
+w orožja | broni (dopełniacz od orožje)
+w dosjeja | teczki (dopełniacz od dosje)
+k Hvala. Nekaj vas moram vprašati. Ali imate pri sebi orožje? | Dziękuję. Muszę o coś zapytać. Czy ma Pan przy sobie broń? | Ne, nimam orožja. | Da, imam orožje.;Ne, nimam dosjeja. | Na przyjęcie nie wchodzi się z bronią. ; Pytanie dotyczy broni, nie teczki.
+w delate | pracujecie; pracuje Pan (delati)
+w Delam | pracuję (delati)
+w centralo | centralę (biernik od centrala)
+w gospo | panią (biernik od gospa)
+w Kovač | Kovač (nazwisko pani z ambasady)
+k Dobro. Za koga delate? | Dobrze. Dla kogo Pan pracuje? | Delam za podjetje Novak in sin. | Delam za centralo.;Delam za gospo Kovač. | „Centrala” to twoja tajna centrala, a nie firma. ; gospa Kovač to sekretarka z ambasady.
+w vaše | Pana (vaš)
+w Naše | nasze (naš)
+w igrače | zabawki
+w Moje | moje
+d Kaj prodaja vaše podjetje? | Co sprzedaje Pana firma? | Naše podjetje prodaja igrače. | Powiedz, co sprzedaje twoja „firma” (przykrywka). | Twoja przykrywka to handel zabawkami. | Moje podjetje prodaja igrače.
+w Zanimivo | ciekawie
+w Mariboru | w Mariborze (miejscownik od Maribor)
+w imenuje | nazywa (imenovati: se imenuje = nazywa się)
+k Zanimivo! In kje je vaše podjetje? | Ciekawe! A gdzie jest Pana firma? | Naše podjetje je v Mariboru. | Naše podjetje prodaja igrače.;Naše podjetje se imenuje Novak in sin. | „Gdzie” pyta o miejsce, a nie o to, co firma sprzedaje. ; „Gdzie” pyta o miejsce, nie o nazwę.
+w pojedli | zjedli (pojesti)
+w stranišče | toaleta
+t To je zanimivo. Boste kaj pojedli? | Jak ciekawie! Poczęstuje się Pan czymś do jedzenia? | Ne, hvala. Kje je stranišče, prosim? | Odmów i zapytaj o toaletę (to pretekst). | „Gdzie” to początek pytania o miejsce. | Ne, hvala. Kje je tukaj stranišče?
+w zasebna | prywatna (zaseben)
+w lepa | ładna (lep)
+k Stranišče je levo. Pisarna desno je zasebna. | Toaleta jest po lewej. Gabinet po prawej jest prywatny. | Hvala, grem levo. | Hvala, grem desno.;Hvala, pisarna je lepa. | Gabinet po prawej jest prywatny, a ty idziesz do toalety po lewej. ; Nie wolno ci mówić, że chcesz iść do gabinetu.
+w zabavajte | bawcie się (zabavati se)
+e Potem se lepo zabavajte, gospod Novak! | W takim razie dobrej zabawy, panie Novak!
+
+@level 3 | Przesłuchanie | patience=1 typed=0.35 extra=3 hint=bank
+desc Rozdział 3: Przesłuchanie
+partner Gospod Kolar | K
+scene Masz teczkę w torbie, ale na korytarzu zatrzymuje cię podejrzliwy ochroniarz, pan Kolar. Zaraz zapyta o wszystko. Pamiętaj: Novak, kupiec, Maribor. Tutaj każda zła odpowiedź kończy misję.
+goal Przekonaj ochroniarza, że jesteś zwykłym gościem, i wyjdź z teczką.
+win Ochroniarz przepuszcza cię z kwaśną miną. Wychodzisz z ambasady, a teczka w torbie jest ciężka jak ołów.
+partial Ochroniarz w końcu cię puszcza, ale zapisuje twoje nazwisko w notesie.
+fail Ochroniarz chwyta cię za ramię: „Pojdite z nami!” Misja skończona, zanim naprawdę się zaczęła.
+w Stoj | stój! (stati)
+w Iščem | szukam (iskati)
+w iščem | szukam (iskati)
+t Stoj! Kdo ste? Kaj delate tukaj? | Stać! Kim Pan jest? Co Pan tu robi? | Sem gost. Iščem stranišče. | Powiedz, że jesteś gościem i szukasz toalety. |  | Sem gost in iščem stranišče.
+w bili | byli (biti)
+w pisarni | biurze (miejscownik od pisarna)
+w nisem | nie jestem (biti)
+w bil | był (biti)
+w stranišču | toalecie (miejscownik od stranišče)
+k Stranišče je tam. Ste bili v pisarni? | Toaleta jest tam. Był Pan w gabinecie? | Ne, nisem bil v pisarni. | Da, bil sem v pisarni.;Ne, nisem bil na stranišču. | Przyznanie się to koniec przykrywki. ; Pytanie dotyczy gabinetu, nie toalety.
+w Hm | hm
+w torbi | torbie (miejscownik od torba)
+w dosje | teczka, akta
+k Hm, dobro. Kaj imate v torbi? | Hm, dobrze. Co Pan ma w torbie? | V torbi imam samo denar in telefon. | V torbi imam dosje.;Imam torbo. | Teczka w torbie zdradziłaby cię od razu. ; Ochroniarz pyta, co jest w torbie, a nie czy masz torbę.
+d Hm, denar in telefon. Kako vam je ime in kje živite? | Hm, pieniądze i telefon. Jak się Pan nazywa i gdzie Pan mieszka? | Ime mi je Novak in živim v Mariboru. | Podaj nazwisko z przykrywki i miasto, w którym mieszkasz (Maribor). | To twoja przykrywka. | Sem Novak in živim v Mariboru.
+w Vi | Pan, Pani, wy
+k Novak, Maribor. Vi ste agent, kajne? | Novak, Maribor. Jest Pan agentem, prawda? | Ne, nisem agent. Sem trgovec. | Da, ampak to je skrivnost.;Da, delam za centralo. | Nawet żartem nie przyznawaj się do tajemnicy. ; Przyznanie się do centrali to koniec.
+w Pokličem | zadzwonię (poklicati)
+w Pozna | zna (poznati)
+w goste | gości (biernik lm od gost)
+w pozna | zna (poznati)
+w gospa | pani
+t Pokličem gospo Kovač. Pozna vse goste. Vas pozna? | Zadzwonię po gospę Kovač. Zna wszystkich gości. Zna Pana? | Da, gospa Kovač me pozna. Sem gost. | Powiedz, że ta pani cię zna i że jesteś gościem. |  | Da, gospa Kovač me pozna.
+w videli | widzieli (videti)
+w nikogar | nikogo
+w videl | widział (videti)
+d Dobro. Na veleposlaništvu je agent. Ste koga videli? | Dobrze. W ambasadzie jest agent. Widział Pan kogoś? | Ne, nikogar nisem videl. | Zaprzecz, że kogokolwiek widziałeś. | Ty sam jesteś tym agentem. | Ne, nisem videl nikogar.
+w No | no (partykuła)
+w Pojdite | idźcie; proszę iść (iti)
+e No, dobro. Pojdite domov, gospod Novak. | No dobrze. Niech Pan idzie do domu, panie Novak.
+
+@level 4 | Walizka i ucieczka | patience=1 typed=0.5 extra=3 hint=letters reward=30
+desc Rozdział 4: Wymiana walizki
+partner Gospod Volk | V
+scene Następny ranek, port w Koprze. Pan Volk z centrali czeka z walizką pełną pieniędzy. Wymienisz ją na teczkę. Nowe hasło: „Krokar (Kruk)”. Ale ktoś cię śledzi: w tłumie jest zdrajca, który chce dostać teczkę dla siebie.
+goal Wymień teczkę na walizkę, nie daj się zdemaskować zdrajcy i wsiądź na statek.
+win Statek odpływa, a ty stoisz na pokładzie z walizką. Pan Volk macha z nabrzeża: „Srečno pot, Sokol!”
+partial Udało się uciec, ale zdrajca zdążył zobaczyć twoją twarz. Misja zaliczona, lecz twoja przykrywka jest spalona.
+fail Zdrajca był szybszy. Walizka i teczka zniknęły, a ty zostajesz na nabrzeżu z pustymi rękami.
+w današnje | dzisiejsze (današnji)
+w Krokar | kruk (hasło)
+d Dobro jutro. Kakšno je današnje geslo? | Dzień dobry. Jakie jest hasło? | Geslo je Krokar. | Podaj hasło z dzisiejszej misji. | Dzisiejsze hasło to „Krokar (Kruk)”. | Danes je geslo Krokar.
+w moji | mojej (moja)
+w gospe | pani (miejscownik od gospa)
+k Dobro. Kje je dosje? | Dobrze. Gdzie jest teczka? | Dosje je v moji torbi. | Dosje je pri gospe Kovač.;Dosje je skrivnost. | Teczkę masz przy sobie, w torbie. ; Kontakt pyta, gdzie jest teczka, nie o tajemnicę.
+w Vzemite | weźcie (vzeti)
+w ga | go
+w Vzamem | wezmę (vzeti)
+t Dobro. Tukaj je kovček. Denar je znotraj. Vzemite ga. | Dobrze. Oto walizka. Pieniądze są w środku. Proszę ją wziąć. | Hvala. Vzamem kovček. | Podziękuj i weź walizkę. |  | Hvala. Vzel bom kovček.
+w Pozor | uwaga
+w izdajalec | zdrajca
+w naredimo | zrobimy (narediti)
+w odidemo | odejdziemy (oditi)
+w Ostanemo | zostaniemy (ostati)
+w spijemo | wypijemy (popiti)
+w Pogovorimo | porozmawiamy (pogovoriti se)
+w tistim | tym (tisti)
+w moškim | mężczyzną (narzędnik od moški)
+k Pozor! Tisti moški tam je izdajalec. Zasleduje me. Kaj naredimo? | Uwaga! Ten człowiek tam jest zdrajcą. Idzie za mną. Co robimy? | Hitro odidemo. | Ostanemo tukaj in spijemo kavo.;Pogovorimo se s tistim moškim. | Zdrajca idzie za wami, trzeba uciekać. ; Nie rozmawia się ze zdrajcą.
+w leve | lewej (leva)
+w strani | strony (dopełniacz od stran; z leve strani = z lewej strony)
+w Gremo | idziemy (iti)
+w postajo | dworzec, przystanek (biernik od postaja)
+k Da, hitro! Izdajalec prihaja z leve strani. Gremo levo na postajo ali desno v pristanišče? | Tak, szybko! Zdrajca idzie z lewej. Idziemy w lewo na dworzec czy w prawo do portu? | Gremo desno v pristanišče. | Gremo levo na postajo.;Gremo domov. | Zdrajca nadchodzi z lewej, więc idziecie w prawo, do portu. ; Pytanie jest o port albo dworzec, a nie o dom.
+w Dajte | dajcie; proszę dać (dati)
+w kovčka | walizki (dopełniacz od kovček)
+w dam | dam (dati)
+d Stoj! Dajte mi kovček! Imam orožje! | Stać! Proszę dać mi walizkę! Mam broń! | Ne, kovčka vam ne dam. | Odmów oddania walizki. |  | Ne, ne dam vam kovčka.
+w takoj | zaraz
+w odpluje | odpłynie (odpluti)
+t Hitro! Ladja takoj odpluje. Ali imate še kovček? | Szybko! Statek zaraz odpływa. Ma Pan jeszcze walizkę? | Da, kovček še imam. | Potwierdź, że masz jeszcze walizkę. |  | Da, še ga imam.
+w opravljeno | wykonane (dobro opravljeno = dobra robota)
+w Misija | misja
+w končana | zakończona
+e Dobro opravljeno, Sokol! Misija je končana. Nasvidenje! | Dobra robota, Sokół! Misja zakończona. Do widzenia!
+@larp zeitreise | Podróż w czasie | Stražar | S | Obudziłeś się w roku 1450 pod murami słoweńskiego miasta Lipnica. Nikt nie może się dowiedzieć, że jesteś z przyszłości, bo za dziwne rzeczy i dziwne słowa w średniowieczu grozi stos. | Nie daj się wykryć jako przybysz z przyszłości: unikaj wszystkiego, co nie pasuje do roku 1450, i dotrwaj do końca dnia.
+fee 0
+reward 15
+strict yes
+story yes
+win Starosta kiwa głową: „Pošten popotnik!” Nikt nie podejrzewa, skąd naprawdę jesteś. Wieczorem znajdujesz drogę powrotną, a w kieszeni zostaje ci tylko miedziana moneta na pamiątkę.
+partial Udało ci się przetrwać dzień, ale kilka razy ludzie patrzyli na ciebie podejrzliwie. Starosta każe cię obserwować, więc wymykasz się z miasta o świcie.
+fail Ktoś zauważył, że nie jesteś stąd. Straż woła: „Čarovnik! Mag!” i musisz uciekać. Podróż w czasie skończyła się wcześniej, niż chciałeś.
+
+@level 1 | Brama miasta | patience=5 typed=0 extra=1 hint=none
+partner Stražar Tomaž | T
+desc Rozdział 1: Brama miasta Lipnica
+scene Rok 1450. Stoisz przed wielką drewnianą bramą miasta Lipnica. Strażnik Tomaž zatrzymuje każdego podróżnego i zadaje pytania. Masz na sobie zwykłe ubranie, ale w kieszeniach zostały ci rzeczy z przyszłości.
+goal Odpowiedz na pytania strażnika tak, żeby nie wzbudzić podejrzeń: przedstaw się, powiedz skąd jesteś i jak podróżujesz. Zwróć uwagę na rzeczy, których w 1450 roku jeszcze nie było.
+win Strażnik otwiera bramę: „Dobrodošel v Lipnici!” Nic nie wzbudziło jego podejrzeń, a ty wchodzisz do miasta.
+partial Strażnik w końcu cię wpuszcza, ale przygląda ci się dłużej, niż byś chciał. Wchodzisz do miasta z uczuciem, że ktoś cię obserwuje.
+fail Strażnik podnosi halabardę: „Ti nisi popotnik!” Brama zamyka się z trzaskiem, a ty uciekasz w las.
+w so | są (biti)
+w mesta | miasta (dopełniacz od mesto)
+w Lipnica | Lipnica (fikcyjne miasto)
+w popotnik | podróżnik
+t Stoj! To so vrata mesta Lipnica. Kdo si? | Stój! To brama miasta Lipnica. Kim jesteś? | Sem popotnik. | Powiedz, że jesteś podróżnikiem. |  | Jaz sem popotnik.
+w Janez | Jan (imię)
+w Kevin | Kevin (imię)
+w Chantal | Chantal (imię)
+k Popotnik, no. Kako ti je ime? | Podróżnik, tak. Jak się nazywasz? | Ime mi je Janez. | Ime mi je Kevin.;Ime mi je Chantal. | Kevin i Chantal to imiona współczesne, w 1450 roku nikt tak nie nazywał dzieci. ; Chantal to nowoczesne imię z XX wieku. W 1450 roku popularne były imiona takie jak Jan.
+w prihodnosti | przyszłości (dopełniacz od prihodnost)
+w Amerike | Ameryki (dopełniacz od Amerika)
+k Dobro, Janez. Od kod si? | Dobrze, Janez. Skąd jesteś? | Sem iz Poljske. | Sem iz prihodnosti.;Sem iz Amerike. | Przyznanie się do przyszłości to dekonspiracja. Nikt w 1450 roku nie zrozumie takich słów. ; Ameryki jeszcze nie odkryto, Kolumb wypłynie dopiero w 1492 roku.
+w potuješ | podróżujesz (potovati)
+w Peš | pieszo
+w konju | koniu (miejscownik od konj; na konju = konno)
+w avtom | samochodem (narzędnik od avto)
+w vlakom | pociągiem (narzędnik od vlak)
+k Iz Poljske, to je daleč. Kako potuješ? Peš ali na konju? | Z Polski, to daleko. Jak podróżujesz? Pieszo czy konno? | Potujem na konju. | Potujem z avtom.;Potujem z vlakom. | Samochodu w 1450 roku nie ma. Strażnik pomyśli, że jesteś szalony albo opętany. ; Pociągów też jeszcze nie ma, pierwsza kolej pojawi się dopiero w XIX wieku.
+w Pokaži | pokaż (pokazati)
+w notri | w środku
+w mobilnik | telefon komórkowy
+w plačilno | płatniczą (plačilni)
+w kartico | kartę (biernik od kartica)
+k Na konju, dobro. Pokaži mi torbo. Kaj imaš notri? | Konno, dobrze. Pokaż mi torbę. Co tam masz? | Imam samo kruh in pivo. | Imam mobilnik.;Imam plačilno kartico. | Telefon w 1450 roku? Strażnik wziąłby go za czarodziejskie urządzenie i zawołał straż. ; Karta płatnicza z plastiku wyglądałaby dla niego jak magia. Pieniądze to wtedy monety.
+w noter | do środka
+w krčmar | karczmarz
+w lakoto | głód (biernik od lakota; imam lakoto = jestem głodny)
+t Dobro, lahko greš noter. Si lačen? | Dobrze, możesz wejść. Jesteś głodny? | Da, lačen sem. Kje je krčmar? | Powiedz, że jesteś głodny, i zapytaj, gdzie jest karczmarz. |  | Da, imam lakoto. Kje je krčmar?
+w gostilna | gospoda, karczma
+w Prijeten | przyjemny
+w Lipnici | w Lipnicy (miejscownik od Lipnica)
+e Takoj levo je gostilna. Prijeten obisk v Lipnici! | Zaraz po lewej jest gospoda. Miłego pobytu w mieście Lipnica!
+
+@level 2 | Gospoda | patience=5 typed=0.15 extra=3 hint=bank
+partner Krčmar Franc | F
+desc Rozdział 2: Gospoda „Pri Rdečem volu”
+scene Wchodzisz do gospody. Karczmarz Franc jest ciekawski i pyta o wszystko: co chcesz zjeść, jak podróżujesz i czego potrzebujesz na noc. W gospodzie nie ma elektryczności ani nowoczesnych napojów.
+goal Zamów jedzenie i picie, które mogli podać w średniowieczu, ustal nocleg i nie wspomnij o niczym z przyszłości.
+win Karczmarz klepie cię po plecach: „Dober gost si!” Dostajesz miejsce przy kominku i pełny talerz. Nikt nie podejrzewa, że jesteś z przyszłości.
+partial Karczmarz przygląda ci się podejrzliwie, ale podaje jedzenie. Śpisz źle, bo wciąż myślisz o tym, co powiedziałeś.
+fail Karczmarz woła głośno: „Kaj je wifi?!” Goście odwracają się w twoją stronę, a ty ledwo uciekasz tylnym wyjściem.
+w Dobrodošel | witaj
+w gostilni | w gospodzie (miejscownik od gostilna)
+w boš | będziesz (biti)
+w jedel | jadł (jesti)
+t Dobrodošel v gostilni! Kaj boš jedel? Imamo kruh in juho. | Witaj w gospodzie! Co chcesz zjeść? Mamy chleb i zupę. | Prosim kruh in juho. | Zamów chleb i zupę. |  | Rad bi kruh in juho.
+w pil | pił (piti)
+w kokakolo | colę (biernik od kokakola)
+k Dobro. In kaj boš pil? Imamo pivo, vino in vodo. | Dobrze. A co będziesz pił? Mamy piwo, wino i wodę. | Prosim pivo. | Prosim kavo.;Prosim kokakolo. | Kawa dotarła do Europy dopiero w XVII wieku. ; Coca-Cola powstała w XIX wieku. W 1450 roku nikt jej nie zna.
+w prišel | przyszedł (priti)
+w dni | dni (dopełniacz lm od dan)
+t Pivo, dobro. Daleč si prišel. Kako dolgo že potuješ? | Piwo, dobrze. Daleko przyjechałeś. Jak długo już jedziesz? | Potujem že deset dni. | Powiedz, że podróżujesz już dziesięć dni. |  | Že deset dni potujem.
+w šel | szedł (iti)
+w mano | mną (z mano = ze mną)
+w bomo | będziemy (biti)
+w voz | wóz
+w Šli | szli (iti)
+w vozom | wozem (narzędnik od voz)
+w kolesom | rowerem (narzędnik od kolo)
+k Deset dni, to je dolgo! Jutri grem na trg. Boš šel z mano? Vzeli bomo voz. | Dziesięć dni, to długo! Jutro jadę na targ. Pojedziesz ze mną? Weźmiemy wóz. | Da, rad. Šli bomo z vozom. | Da, vzeli bomo avto.;Ne, šel bom s kolesom. | Samochodu nie ma. Karczmarz rozejrzałby się za twoim „autem”, ale takiego słowa tu nie znają. ; Rower wynaleziono dopiero w XIX wieku. W 1450 roku jeździ się wozem albo konno.
+w sobi | pokoju (miejscownik od soba)
+w svečo | świecę (biernik od sveča)
+w wifi | wi-fi (internet bezprzewodowy)
+w vtičnico | gniazdko (biernik od vtičnica)
+k Dobro. V sobi je postelja. Želiš še kaj? | Dobrze. W pokoju jest łóżko. Chcesz jeszcze coś? | Da, prosim svečo. | Imaš wifi?;Prosim vtičnico. | W 1450 roku nie ma internetu. Karczmarz nie wie, co to jest wifi. ; Gniazdka elektryczne wymyślono setki lat później. Wieczorem świeci się świecami.
+w Sveča | świeca
+w letu | roku (miejscownik od leto)
+w štiristo | czterysta
+t Sveča, dobro. In tukaj je še pivo: dobro pivo v letu tisoč štiristo petdeset! Na zdravje! | Świeca, dobrze. A oto jeszcze piwo: dobre piwo w roku 1450! Na zdrowie! | Na zdravje! | Wznieś toast.
+w zjutraj | rano
+e Lahko noč! Jutri zjutraj gremo na trg. | Dobranoc! Jutro rano jedziemy na targ.
+
+@level 3 | Targ | patience=4 typed=0.3 extra=3 hint=bank reward=25
+partner Branjevka Ana | A
+desc Rozdział 3: Targ w mieście Lipnica
+scene Następnego ranka na rynku jest tłoczno. Branjevka Ana sprzedaje chleb i ser. Przy płaceniu liczą się tylko monety, a ludzie przyglądają się twoim ubraniom.
+goal Kup chleb i ser, zapłać tak, jak płaci się w 1450 roku, i wyjaśnij, skąd masz dziwne ubranie.
+win Branjevka Ana wsuwa ci do koszyka jabłko: „Za prijaznega popotnika!” Targ nic nie podejrzewa, a w oddali widać już ratusz.
+partial Branjevka Ana w końcu sprzedała ci chleb i ser, ale kilka osób szepcze za twoimi plecami. Zbliża się ratusz.
+fail Branjevka Ana krzyczy: „Kakšna oblačila so to? Kaj je evro?” Tłum się zbiega, a ty uciekasz między straganami.
+w kupil | kupił (kupiti)
+w jabolka | jabłka
+t Dober dan! Kaj boš kupil? Kruh, sir ali jabolka? | Dzień dobry! Co chcesz kupić? Chleb, ser czy jabłka? | Prosim kruh in sir. | Poproś o chleb i ser. |  | Rad bi kruh in sir.
+w groša | grosze (dual od groš)
+w groše | grosze (lm od groš)
+t Kruh stane dva groša in sir stane tri groše. | Chleb kosztuje dwa grosze, a ser trzy grosze. | Koliko stane vse skupaj? | Zapytaj, ile to kosztuje razem. |  | Koliko je to skupaj?
+w grošev | groszy (dopełniacz lm od groš)
+w kovanci | monety
+w evri | euro (lm)
+k To je skupaj pet grošev. Kako boš plačal? | To będzie pięć groszy. Jak chcesz zapłacić? | Plačal bom s kovanci. | Plačal bom z evri.;Plačal bom s kartico. | Euro wprowadzono dopiero w 2002 roku. ; Karty płatnicze to wynalazek XX wieku. W 1450 roku płaci się monetami.
+w Čudna | dziwne (čuden)
+w oblačila | ubrania
+w moda | moda
+w vzhoda | wschodu (dopełniacz od vzhod)
+w majica | koszulka
+w kavbojke | dżinsy
+w superge | adidasy, buty sportowe
+k Dobro, kovanci. Čudna oblačila imaš. Kaj je to? | Dobrze, monety. Twoje ubranie jest dziwne. Co to jest? | To je moda iz vzhoda. | To je majica.;To so kavbojke in superge. | T-shirty pojawiły się w XX wieku, a kupcowa nigdy takiego nie widziała. ; Dżinsy i adidasy to rzeczy z dwudziestego wieku. Kupcowa zawołałaby straż.
+w Župan | burmistrz, wójt
+w te | cię
+w hoče | chce (hoteti)
+w teboj | tobą (s teboj = z tobą)
+w pojdem | pójdę (iti)
+t Iz vzhoda, aha. Župan te hoče videti. Boš šel z mano? | Z Wschodu, aha. Burmistrz chce cię zobaczyć. Pójdziesz ze mną? | Da, grem s teboj. | Zgódź się i idź z nią. |  | Da, pojdem s teboj.
+w Pa | no (partykuła)
+w pojdi | chodź (iti)
+w Mestna | miejska (mestni)
+e Pa pojdi! Mestna hiša je tam. | No to chodź! Ratusz jest tam.
+
+@level 4 | Burmistrz | patience=4 typed=0.5 extra=4 hint=letters reward=25
+partner Župan Urh | U
+desc Rozdział 4: W ratuszu
+scene W ratuszu czeka burmistrz Urh. Słyszał dziwne plotki o obcym przybyszu. Zauważył coś błyszczącego na twoim nadgarstku i zadaje pytania, a tobie została tylko jedna droga: wrócić do bramy, gdzie wszystko się zaczęło.
+goal Odpowiedz na pytania tak, żeby nie zdradzić zegarka, telefonu ani przyszłości, i wróć bezpiecznie do bramy.
+win Starosta macha ręką: „Dobro, dobro, pojdi!” Wracasz do bramy, w powietrzu coś migocze i budzisz się we własnym czasie. Na dłoni masz grosze z 1450 roku.
+partial Starosta pozwala ci odejść, ale pod nosem mruczy o czarodziejach. Dopiero za bramą migotanie powietrza zabiera cię do domu.
+fail Starosta woła strażników: „Čarobna skrinjica! On je iz prihodnosti!” Nie zdążysz dojść do bramy.
+t Dober dan! Jaz sem župan mesta Lipnica. Kdo si? | Dzień dobry! Jestem burmistrzem miasta Lipnica. Kim jesteś? | Sem Janez, popotnik iz Poljske. | Przedstaw się: Jan, podróżnik z Polski. |  | Ime mi je Janez. Sem popotnik iz Poljske.
+w tvoji | twojej (tvoja)
+w roki | ręce (miejscownik od roka)
+w zapestnica | bransoleta
+w ročna | ręczna (ročni)
+w baterijo | baterię (biernik od baterija)
+w digitalna | cyfrowa (digitalen)
+k Kaj je to na tvoji roki? | Co to masz na ręce? | To je samo zapestnica. | To je ročna ura z baterijo.;To je digitalna ura. | Zegarek z baterią to wynalazek nowoczesny. Burmistrz nie ma pojęcia, co to jest. ; Cyfrowy zegarek wyglądałby dla niego jak czary. W 1450 roku są tylko wieże z zegarami i klepsydry.
+w Saj | przecież
+w uro | zegarek (biernik od ura)
+w ure | zegarka (dopełniacz od ura)
+w kaže | pokazuje (kazati)
+w ur | godzin (dopełniacz lm od ura)
+w Pogledam | spojrzę (pogledati)
+k Samo zapestnica? Koliko je ura? Saj imaš uro. | Tylko bransoleta? Która godzina? Przecież masz zegarek. | Nimam ure. Sonce kaže poldne. | Je štirinajst ur trideset minut.;Pogledam v mobilnik. | Dokładna godzina z minutami to nowoczesny sposób liczenia czasu. ; Telefon to rzecz z przyszłości. Burmistrz uznałby ją za czarodziejską.
+w Katero | które (kateri)
+w vem | wiem (vedeti)
+k Poldne, dobro. Katero leto imamo? | Południe, dobrze. Który mamy rok? | Imamo leto tisoč štiristo petdeset. | Imamo leto dva tisoč.;Ne vem. | Jeśli podasz rok z przyszłości, zdradzisz się natychmiast. ; Wczoraj karczmarz powiedział ci, że jest rok 1450. Burmistrz uznałby, że coś ukrywasz.
+w Pravijo | mówią (praviti)
+w čarobno | magiczną (čaroben)
+w skrinjico | skrzynkę (biernik od skrinjica)
+w nobene | żadnej (noben)
+w čarobne | magicznej (čaroben)
+w skrinjice | skrzynki (dopełniacz od skrinjica)
+k Dobro. Pravijo, da imaš čarobno skrinjico. Je to res? | Dobrze. Mówią, że masz magiczną skrzynkę. Czy to prawda? | Ne, nobene čarobne skrinjice nimam. | Da, to je mobilnik.;Da, sem iz prihodnosti. | Przyznanie się do telefonu zakończy rozmowę. Burmistrz nie wie, co to jest. ; Przyznanie się do podróży w czasie to najgorsza odpowiedź.
+w vratom | bramie (celownik lm od vrata)
+w stroju | maszynie (celownik od stroj)
+w avtu | samochodowi (celownik od avto)
+k Dobro. Že je pozno. Kam greš zdaj? | Dobrze. Już późno. Dokąd teraz idziesz? | Grem nazaj k vratom. | Grem k stroju časa.;Grem k avtu. | Wehikuł czasu to najgorsza odpowiedź. ; Samochodu w 1450 roku nie ma. Burmistrz pomyślałby, że kłamiesz.
+e Dobro, pojdi torej. Srečno pot! | Dobrze, to idź. Szczęśliwej podróży!
+@larp politiker | Polityk | Volivec | W | Jesteś skorumpowanym politykiem. Dawno temu pan Vrabec dał ci kopertę, a afera „Afera Kukavica” wraca na każdym szczeblu twojej kariery. Wyborcy ci wierzą… i przestają… i zapominają. | Przekonaj wyborców, że nadajesz się na stanowisko. Nigdy się nie przyznaj i nie sprzeczaj sam sobie.
+fee 0
+reward 30
+strict yes
+story yes
+disclaimer Satyra. Wszystkie postacie, partie i afery są zmyślone; ewentualne podobieństwo do prawdziwych osób jest przypadkowe.
+win Wygrywasz wybory! Nikt już nie pamięta koperty od pana Vrabca. Przed gmachem tłum skanduje twoje nazwisko, a ty obiecujesz „uczciwą politykę”. Pan Vrabec macha z ostatniego rzędu.
+partial Wygrywasz o włos. Dziennikarze wciąż grzebią w aktach, ale ty już podpisujesz pierwsze dokumenty. Kłamstwo trzyma się jeszcze na słowo honoru.
+fail Wiarygodność spadła do zera. Wyborcy wyciągają stare akta, a z tłumu ktoś krzyczy: „Tista kuverta!” Twoja kariera kończy się na pierwszej stronie gazet.
+
+@level 1 | Vaški odbor | patience=4 cap=6 typed=0 extra=1 hint=none
+desc Szczebel 1: przewodniczący rady wsi Mala Gora
+partner Gospa Zupančič | Z
+scene Zebranie wiejskie w sali gimnastycznej w miejscowości Mala Gora. Chcesz zostać przewodniczącym rady wsi. Pani Zupančič zadaje pytania, a cała wieś słucha. Wszyscy pamiętają, że pan Vrabec naprawił drogę, i że ktoś widział kopertę…
+goal Przekonaj wieś, że jesteś uczciwy, i zaprzecz plotkom o kopercie.
+win Wieś klaszcze. Zostajesz przewodniczącym rady wsi. Pan Vrabec, w pierwszym rzędzie, puszcza do ciebie oko.
+partial Wygrywasz jednym głosem. Pani Zupančič patrzy na ciebie podejrzliwie, ale podnosi rękę.
+fail Wieś ma dość. Pani Zupančič mówi: „Izvolili bomo nekoga drugega.” Kończysz karierę, zanim się zaczęła.
+w postati | zostać
+w predsednik | przewodniczący, prezes
+w vaškega | wiejskiego (vaški)
+w odbora | komitetu (dopełniacz od odbor)
+w postal | został (postati)
+t Dober večer! Ali želite postati predsednik vaškega odbora? | Dobry wieczór! Chce Pan zostać przewodniczącym rady wsi? | Da, želim postati predsednik vaškega odbora. | Powiedz, że chcesz zostać przewodniczącym rady wsi. |  | Da, rad bi postal predsednik vaškega odbora. | gain=1
+w iskreni | szczerzy, uczciwi (iskren)
+t Razumem. Ali ste iskreni? | Rozumiem. Czy jest Pan uczciwy? | Da, vedno sem iskren. | Zapewnij, że zawsze jesteś uczciwy. |  | Da, sem vedno iskren. | gain=1
+w razbita | rozwalona, zepsuta (razbit)
+w naredili | zrobili (narediti)
+w glede | w sprawie
+w tega | tego
+w Popravil | naprawił (popraviti)
+w cesto | drogę (biernik od cesta)
+w Cesto | drogę (biernik od cesta)
+w popravil | naprawił (popraviti)
+t Dobro. Cesta je razbita. Kaj boste naredili glede tega? | Dobrze. Droga jest rozwalona. Co Pan z tym zrobi? | Popravil bom cesto. | Obiecaj, że naprawisz drogę. |  | Cesto bom popravil. | gain=1
+w Popravili | naprawicie (popraviti)
+w Vrabec | Vrabec (nazwisko; wróbel)
+w dal | dał (dati)
+w kuverto | kopertę (biernik od kuverta)
+w Gospoda | pana (biernik/dopełniacz od gospod)
+w Vrabca | Vrabca (dopełniacz/biernik od Vrabec)
+w komaj | ledwo
+t Popravili boste cesto, to je dobro. Ampak gospod Vrabec vam je dal kuverto! Nekdo je to videl! | Naprawi Pan drogę, to dobrze. Ale pan Vrabec dał Panu kopertę! Ktoś to widział! | To je laž! Gospoda Vrabca komaj poznam. | Zaprzecz: to kłamstwo, ledwo znasz pana Vrabca. |  | To je laž! Gospoda Vrabca skoraj ne poznam. | shift=-2 loss=2
+w Pozabili | zapomnieli (pozabiti)
+w hvaležen | wdzięczny
+t No, to je že dolgo nazaj. Pozabili smo na to. | No… to było dawno. Zapomnieliśmy o tym. | Hvala, hvaležen sem vam. | Podziękuj wyborcom za wyrozumiałość (jesteś im wdzięczny). |  | Hvala vam, hvaležen sem. | shift=+2
+w občini | gminie (miejscownik od občina)
+w velike | duże, wielkie
+w dolgove | długi
+w Varčeval | oszczędzał (varčevati)
+w več | więcej
+w denarja | pieniędzy (dopełniacz od denar)
+o Ni za kaj. V občini imamo velike dolgove. Kaj boste naredili? | Nie ma za co. W gminie mamy duże długi. Co Pan zrobi? | Varčeval bom in bil iskren. | Vzel bom več denarja.;Ne vem. | Dobra odpowiedź obiecuje oszczędzanie i uczciwość. ; Polityk, który mówi „zabiorę więcej pieniędzy”, nie brzmi wiarygodnie. ; „Nie wiem” nie przekona wyborców. | gain=1
+w nas | nas
+t To je dobro. Ali boste do nas iskreni? | To dobrze. Czy będzie Pan wobec nas uczciwy? | Da, do vas bom vedno iskren. | Obiecaj uczciwość wobec wyborców. |  | Da, vedno bom iskren do vas. | gain=1
+w izvolimo | wybierzemy (izvoliti)
+e Potem vas izvolimo! Dobrodošli, gospod predsednik! | Wybieramy więc Pana! Witamy, Panie przewodniczący!
+
+@level 2 | Občinski svetnik | patience=4 cap=6 typed=0.2 extra=2 hint=bank
+desc Szczebel 2: radny miejski
+partner Gospa Kos | K
+scene Miasto Novo mesto. Jesteś kandydatem do rady miejskiej. Dziennikarka pani Kos pyta o „biznesmenów” i o to, skąd masz nowy samochód.
+goal Zaprzecz, że brałeś pieniądze, i nie daj się złapać na kłamstwie.
+win pani Kos zamyka notes: „Dobro, nimam več vprašanj.” Zostajesz radnym. Pan Vrabec gratuluje przez telefon.
+partial Zostajesz radnym, ale pani Kos mówi: „Ostanem na sledi.” Będzie dalej drążyć.
+fail Wywiad ląduje w gazecie pod tytułem „Svetnik in kuverta”. Nikt na ciebie nie głosuje.
+w novinarka | dziennikarka
+w občinski | gminny, miejski
+w svetnik | radny
+t Dober dan, sem novinarka. Ali želite postati občinski svetnik? | Dzień dobry, jestem dziennikarką. Chce Pan zostać radnym? | Da, želim postati občinski svetnik. | Potwierdź, że chcesz zostać radnym. |  | Da, rad bi postal občinski svetnik. | gain=1
+w podjetnika | przedsiębiorcę (biernik od podjetnik)
+w znanec | znajomy
+t Razumem. Poznate podjetnika gospoda Vrabca. Ali je vaš prijatelj? | Rozumiem. Zna Pan biznesmena, pana Vrabca. Czy to Pana przyjaciel? | Ne, je samo znanec. | Zaprzecz: to tylko znajomy. |  | Ne, samo malo ga poznam. | gain=1
+w pošteno | uczciwie
+t Samo znanec, dobro. Imate nov avto. Od kod imate denar? | Tylko znajomy, dobrze. Ma Pan nowy samochód. Skąd ma Pan pieniądze? | Kupil sem ga pošteno. | Powiedz, że kupiłeś go uczciwie. |  | Avto sem kupil pošteno.
+w podkupnino | łapówkę (biernik od podkupnina)
+w podkupnine | łapówki
+t Pošteno, aha. Ste kdaj vzeli podkupnino? | Uczciwie, aha. Czy kiedykolwiek wziął Pan łapówkę? | Ne, nikoli nisem vzel podkupnine. | Zaprzecz, że kiedykolwiek brałeś łapówki. | Zaprzeczenie ze słowem „nigdy” musi być stanowcze. | Ne, nikoli nisem vzel nobene podkupnine. | loss=2
+w Poglejte | spójrzcie; proszę spojrzeć (pogledati)
+w njej | niej (na njej = na niej)
+w kuverta | koperta
+w Teh | tych
+w ljudi | ludzi (dopełniacz od ljudje)
+w sploh | w ogóle
+t Nikoli? Poglejte, tukaj je fotografija. Na njej ste vi, gospod Vrabec in kuverta. | Nigdy? Proszę spojrzeć, oto zdjęcie. Widać na nim Pana, pana Vrabca i kopertę. | Teh ljudi ne poznam. | Powiedz, że nie znasz tych ludzi. |  | Teh ljudi sploh ne poznam. | shift=-2
+w stara | stara (star)
+w Volivci | wyborcy
+w bodo | będą (biti)
+w pomembna | ważna (pomemben)
+t Ta fotografija je stara. Volivci bodo kmalu pozabili na to. | Zdjęcie jest stare. Wyborcy wkrótce o tym zapomną. | Ta fotografija ni pomembna. | Zlekceważ zdjęcie: nie jest ważne. |  | Ta fotografija sploh ni pomembna. | shift=+2
+w Neka | pewna (neki)
+w priča | świadek (rodz. żeński)
+w pravi | mówi (praviti)
+w Priča | świadek, świadkini
+w laže | kłamie (lagati)
+w prav | rację (imeti prav = mieć rację)
+o Neka priča pravi, da ste vzeli denar. | Jedna świadkini twierdzi, że wziął Pan pieniądze. | To ni res. Priča laže. | Da, priča ima prav.;Jaz sem priča. | Zaprzeczasz i nazywasz świadkinię kłamczynią. ; Przyznajesz się, więc przegrywasz. ; Nie jesteś świadkiem, tylko podejrzanym. | gain=1
+w pogovor | rozmowa, wywiad
+w dodati | dodać
+w nedolžen | niewinny
+w rekel | powiedział (reči)
+t Hvala za pogovor. Želite še kaj dodati? | Dziękuję za wywiad. Czy chce Pan jeszcze coś dodać? | Da, nedolžen sem. | Powiedz na koniec, że jesteś niewinny. |  | Da, rad bi rekel, da sem nedolžen. | gain=1
+w Napisala | napisała (napisati)
+w kar | co (kar ste rekli = to, co Pan powiedział)
+w rekli | powiedzieli (reči)
+e Napisala bom, kar ste rekli. Nasvidenje! | Napiszę, co Pan powiedział. Do widzenia!
+
+@level 3 | Župan | patience=4 cap=6 typed=0.4 extra=2 hint=bank
+desc Szczebel 3: burmistrz
+partner Tožilec Zupan | Z
+scene W ratuszu miasta Novo mesto. Prokurator Zupan bada przetarg na nowy most. Firma pana Vrabca wygrała dziwnie łatwo, a w aktach wraca „Afera Kukavica”.
+goal Wyjdź z przesłuchania jako burmistrz, nie przyznając się do niczego.
+win Zupan zamyka teczkę: „Ni dokazov. Spis ostane zaprt.” Zostajesz burmistrzem, a most otwiera się z pompą.
+partial Teczka zostaje otwarta, ale prokurator nie ma dowodów. Zostajesz burmistrzem z cieniem podejrzeń.
+fail Zupan kładzie na stole kopertę i zdjęcie. „Aretiram vas!” – mówi. Kończysz w areszcie.
+w državni | państwowy
+w tožilec | prokurator
+w Zupan | Zupan (nazwisko prokuratora)
+w zaslišanje | przesłuchanie
+w svojega | swojego
+w odvetnika | adwokata (biernik od odvetnik)
+t Sem državni tožilec Zupan. To je zaslišanje. | Jestem prokuratorem. To jest przesłuchanie. | Želim svojega odvetnika. | Poproś o swojego adwokata. |  | Rad bi svojega odvetnika. | gain=1
+w zmagalo | wygrało (zmagati)
+w javnem | publicznym (javen)
+w razpisu | przetargu (miejscownik od razpis; na javnem razpisu = w przetargu)
+w Imelo | miało (imeti)
+w najboljšo | najlepszą (najboljši)
+w ponudbo | ofertę (biernik od ponudba)
+w Njegova | jego (njegov)
+w ponudba | oferta
+w bila | była (biti)
+w najboljša | najlepsza
+t Razumem. Podjetje gospoda Vrabca je zmagalo na javnem razpisu za most. Zakaj? | Rozumiem. Firma pana Vrabca wygrała przetarg na most. Dlaczego? | Imelo je najboljšo ponudbo. | Wyjaśnij, że miała najlepszą ofertę. |  | Njegova ponudba je bila najboljša. | gain=1
+w vprašanj | pytań (dopełniacz lm od vprašanje)
+w izpovedali | zeznawali (izpovedati)
+w izpovedal | zeznawał (izpovedati)
+t Najboljšo ponudbo, aha. Imamo veliko vprašanj. Ali boste izpovedali? | Najlepszą ofertę, aha. Mamy wiele pytań. Czy chce Pan złożyć zeznanie? | Ne, ne bom izpovedal. | Odmów składania zeznań. |  | Ne bom izpovedal. | shift=-1
+w pravico | prawo (biernik od pravica)
+w molka | milczenia (dopełniacz od molk)
+w dokazov | dowodów (dopełniacz lm od dokaz)
+w suma | podejrzenia (dopełniacz od sum)
+w vemo | wiemy (vedeti)
+w oba | obaj
+w Nimate | nie ma Pan (imeti)
+w nobenih | żadnych (noben)
+w nimate | nie ma Pan (imeti)
+t Imate pravico do molka. Brez dokazov ni suma. To vemo oba. | Ma Pan prawo milczeć. Bez dowodów nie ma podejrzenia. Wiemy to obaj. | Nimate nobenih dokazov. | Powiedz prokuratorowi, że nie ma dowodów. |  | Vi nimate nobenih dokazov. | shift=+2
+w obtožnica | akt oskarżenia
+w porečete | powie Pan (poreči)
+o Še ne. Ampak morda bo obtožnica. Kaj porečete na to? | Jeszcze nie. Ale być może będzie akt oskarżenia. Co Pan na to? | Nedolžen sem. | Kriv sem.;To sem bil jaz. | „Niewinny” to słowo, które chcesz tu powiedzieć. ; „Winny” to przyznanie się. ; „To byłem ja” to też przyznanie się. | gain=1
+w Niste | nie jest Pan (biti)
+w krivi | winni (kriv)
+w kuverte | koperty (dopełniacz od kuverta)
+t Niste krivi, kajne? Gospod Vrabec pravi, da vam je dal kuverto. | Nie jest Pan winny, tak? Pan Vrabec mówi, że dał Panu kopertę. | To je laž! Nikoli nisem vzel kuverte. | Zaprzecz: to kłamstwo, nigdy nie wziąłeś koperty. |  | To je laž! Nobene kuverte nisem vzel. | shift=-2 loss=2
+w povejte | powiedzcie; proszę powiedzieć (povedati)
+w enkrat | raz
+w prisego | przysięgę (biernik od prisega)
+w nobenega | żadnego (noben)
+d Potem povejte to še enkrat pod prisego. Ste vzeli denar od gospoda Vrabca? | Powiedz to więc jeszcze raz, pod przysięgą. Czy wziął Pan pieniądze od pana Vrabca? | Ne, nisem vzel nobenega denarja od gospoda Vrabca. | Zaprzeczaj pod przysięgą: nie wziąłeś od niego pieniędzy. | Jedna wpadka i koniec. | Ne, od gospoda Vrabca nisem vzel nobenega denarja.
+e Dobro. Vi ste župan. Nimam več vprašanj. | Dobrze. Jest Pan burmistrzem. Nie mam więcej pytań.
+
+@level 4 | Poslanec | patience=4 cap=6 typed=0.6 extra=2 hint=letters
+desc Szczebel 4: poseł
+partner Predsednica Volk | V
+scene Parlament. Jesteś posłem, a komisja śledcza wzywa cię jako świadka. Przewodnicząca Pani Volk mówi o aferze „Afera Kukavica”. Prawnicy mają dla ciebie nowe słowa: świadek, przysięga, immunitet.
+goal Odpowiadaj pod przysięgą tak, by nikt nie dowiódł, że kłamiesz.
+win Pani Volk: „Izpoved je končana.” Wychodzisz z sali z uniesioną głową. Komisja nic nie ma.
+partial Komisja kończy pracę bez wniosków, ale jeden członek zapisał w notatniku: „Kasneje preveriti!”
+fail Komisja nakazuje ci wyjaśnić sprzeczność. Zaplątałeś się, a prasa pisze o „poslancu, ki laže”.
+w preiskovalni | śledczej (preiskovalen)
+w komisiji | komisji (miejscownik od komisija)
+w Izpovedujete | zeznaje Pan (izpovedovati)
+w Povedal | powiedział (povedati)
+w resnico | prawdę (biernik od resnica)
+w Govoril | mówił (govoriti)
+t Dobrodošli v preiskovalni komisiji. Izpovedujete pod prisego. | Witamy w komisji. Zeznaje Pan pod przysięgą. | Da, vem. Povedal bom resnico. | Potwierdź i zapewnij, że mówisz prawdę. |  | Da, vem to. Govoril bom resnico. | gain=1
+w Kot | jako
+w poslanec | poseł
+w imuniteto | immunitet (biernik od imuniteta)
+w Se | się
+w ji | jej
+w odpovedati | zrzec się (odpovedati se)
+w obdržati | zachować
+t Dobro. Kot poslanec imate imuniteto. Se ji želite odpovedati? | Dobrze. Jako poseł ma Pan immunitet. Czy chce się go Pan zrzec? | Ne, želim obdržati imuniteto. | Odmów zrzeczenia się immunitetu. |  | Ne, imuniteto želim obdržati. | shift=-1
+w izjava | zeznanie, oświadczenie
+w skladna | zgodna (skladen)
+w spisom | aktami (narzędnik od spis)
+w razložili | wyjaśnicie (razložiti)
+w česa | czego
+t Obdržati jo, aha. Vaša izjava ni skladna s spisom. Kako boste to razložili? | Zatrzymać ją, aha. Pana zeznanie jest sprzeczne z aktami. Jak Pan to wyjaśni? | Nimam česa skrivati. | Powiedz, że nie masz nic do ukrycia. |  | Jaz nimam česa skrivati. | loss=2
+w mislijo | myślą (misliti)
+t To je že dolgo nazaj. Volivci ne mislijo več na to. | To było dawno. Wyborcy już o tym nie myślą. | To je preteklost. | Machnij ręką: to przeszłość. |  | To je že preteklost. | shift=+2
+w pisma | listu (dopełniacz od pismo)
+w napisal | napisał (napisati)
+w odvetnik | adwokat
+o Preteklost? Tukaj je pismo gospoda Vrabca. Ali poznate to pismo? | Przeszłość? Oto list od pana Vrabca. Zna Pan ten list? | Tega pisma ne poznam. | Da, to pismo sem napisal jaz.;To pismo je napisal moj odvetnik. | Zaprzeczasz, że znasz ten list. ; Przyznajesz się, że to ty napisałeś list: to błąd. ; Zwalanie na adwokata nie jest wiarygodne. | gain=1
+w dobili | dostali (dobiti)
+w denarjem | pieniędzmi (narzędnik od denar)
+w dobil | dostał (dobiti)
+t Neka priča pravi, da ste dobili kuverto z denarjem. | Jeden świadek mówi, że dostał Pan kopertę z pieniędzmi. | Priča laže. Nisem dobil nobenega denarja. | Nazwij świadka kłamcą i zaprzecz, że dostałeś pieniądze. |  | Ta priča laže. Denarja nisem dobil. | shift=-2 loss=2
+w zboru | zebraniu (miejscownik od zbor)
+w velja | obowiązuje (veljati)
+k Na zboru ste rekli, da gospoda Vrabca komaj poznate. Ali še velja? | Na zebraniu powiedział Pan, że ledwo zna pana Vrabca. Czy to nadal prawda? | Da, gospoda Vrabca komaj poznam. | Ne, to je moj prijatelj.;Ne, nikoli ga nisem videl. | Konsekwentnie powtarzasz wcześniejsze zeznanie. ; Przyznajesz, że to twój przyjaciel: sprzeczność i koniec. ; Wcześniej mówiłeś, że ledwo go znasz, a nie że nigdy go nie widziałeś. | gain=1
+w spet | znów
+w vidimo | widzimy (videti)
+e Hvala. Lahko greste. Kmalu se spet vidimo. | Dziękuję. Może Pan iść. Wkrótce znów się zobaczymy.
+
+@level 5 | Minister | patience=4 cap=6 typed=0.8 extra=2 hint=bank
+desc Szczebel 5: minister
+partner Gospod Zima | Z
+scene Studio telewizyjne, wywiad na żywo. Jesteś ministrem i siedzisz naprzeciw pana Zimy, prowadzącego wiadomości. Na ekranie nagle pojawia się stary dokument z afery „Afera Kukavica”.
+goal Wyjdź ze studia nadal jako minister: nie daj się zapędzić w pułapkę na żywo.
+win Zima kończy wywiad: „Hvala, gospod minister.” Sondaże rosną. Pan Vrabec dzwoni: „Dobrá práca!”
+partial Wywiad kończy się remisem. Opozycja domaga się dymisji, ale premier cię broni.
+fail Na wizji uciekasz od odpowiedzi, a widzowie wszystko widzą. Rano gazety krzyczą: „Odstop!”
+w živo | żywo (v živo = na żywo)
+w televiziji | telewizji (miejscownik od televizija)
+w pripravljeni | gotowi
+w minister | minister
+w pripravljen | gotów
+w popolnoma | całkowicie
+t Dober večer! V živo smo na televiziji. Ste pripravljeni, gospod minister? | Dobry wieczór! Jesteśmy na żywo w telewizji. Jest Pan gotów, panie ministrze? | Da, pripravljen sem. | Potwierdź, że jesteś gotów. |  | Da, popolnoma sem pripravljen. | gain=1
+w Opozicija | opozycja
+w trdi | twierdzi (trditi)
+w afere | afery (dopełniacz od afera)
+w Kukavica | kukułka (afera Kukavica)
+w škandal | skandal
+w kampanja | kampania
+w noben | żaden
+t Dobro. Opozicija trdi, da je okoli afere Kukavica škandal. | Dobrze. Opozycja twierdzi, że wokół afery jest skandal. | To ni škandal. To je kampanja. | Zbagatelizuj: to nie skandal, tylko kampania. |  | To ni noben škandal. To je kampanja. | shift=-1
+w časopisu | gazecie (miejscownik od časopis)
+w dokument | dokument
+w podpis | podpis
+w morem | mogę (moči: ne morem = nie mogę)
+w spomniti | przypomnieć (spomniti se)
+t Kampanja, aha. V časopisu je dokument. Ima vaš podpis. | Kampania, aha. W gazecie jest dokument. Ma Pana podpis. | Ne morem se spomniti na to. | Powiedz, że nie możesz sobie tego przypomnieć. |  | Ne morem se tega spomniti. | shift=-2 loss=2
+w ponaredek | fałszerstwo
+t To je vaš podpis. Kako boste to razložili? | To jest Pana podpis. Jak Pan to wyjaśni? | To je ponaredek. | Zaprzecz: to fałszerstwo. |  | Ta podpis je ponaredek. | gain=1
+w Ankete | sondaże
+w rastejo | rosną (rasti)
+w zaupajo | ufają (zaupati)
+w volivcem | wyborcom (celownik od volivec)
+w zaupanje | zaufanie
+t Ankete vam rastejo. Volivci vam zaupajo. | Sondaże rosną na Pana korzyść. Wyborcy Panu wierzą. | Hvala volivcem za zaupanje. | Podziękuj wyborcom za zaufanie. |  | Hvala za vaše zaupanje. | shift=+2
+w svetovalec | doradca
+w delal | pracował (delati)
+w njim | nim (z njim = z nim)
+w dajal | dawał (dajati)
+o Dobro. Gospod Vrabec pravi, da je bil vaš svetovalec. Je to res? | Dobrze. Pan Vrabec mówi, że był Pana doradcą. Czy to prawda? | Ne, nikoli nisem delal z njim. | Da, pogosto mi je dajal denar.;Ne bom izpovedal. | Zaprzeczasz konsekwentnie. ; Przyznajesz się do pieniędzy: błąd. ; Odmowa zeznań w telewizji wygląda na przyznanie się, a prowadzący to wykorzysta. | gain=1
+w odstopili | ustąpicie (odstopiti)
+w vsega | wszystkiego (dopełniacz od vse)
+w odstopil | ustąpił (odstopiti)
+w nočem | nie chcę (hoteti)
+w odstopiti | ustąpić, podać się do dymisji
+t Boste odstopili? Potem je vsega konec. | Czy chce Pan podać się do dymisji? Wtedy wszystko skończone. | Ne, ne bom odstopil. Nedolžen sem. | Odmów dymisji i powiedz, że jesteś niewinny. |  | Ne, nočem odstopiti. Nedolžen sem. | gain=1
+w tej | tej
+w kuverti | kopercie (miejscownik od kuverta)
+w kampanjo | kampanię (biernik od kampanja)
+w bilo | było (biti)
+k Tukaj je fotografija: vi in gospod Vrabec. Tam je tudi kuverta. Kaj je v tej kuverti? | Oto zdjęcie: Pan i pan Vrabec. Jest tam też koperta. Co jest w kopercie? | Ta fotografija je stara. Nikoli nisem vzel kuverte. | To je denar za mojo kampanjo.;To je bilo samo darilo. | Powtarzasz to, co powiedziałeś wcześniej. ; Przyznanie się do pieniędzy: koniec. ; „To tylko prezent” to też przyznanie się, bo wcześniej mówiłeś, że nie brałeś koperty. | gain=1
+e Hvala za pogovor, gospod minister. | Dziękuję za wywiad, panie ministrze.
+
+@level 6 | Predsednik vlade | patience=4 cap=6 typed=1 extra=2 hint=none
+desc Szczebel 6: premier
+partner Gospa Medved | M
+scene Debata finałowa w telewizji. Kandydujesz na premiera. Naprzeciw stoi Pani Medved z partii „Nova iskrenost” i jej teczka z aferą „Afera Kukavica”. Cały kraj ogląda.
+goal Wygraj debatę, zachowaj spokój i nie przyznaj się do niczego do samego końca.
+win Przegrywa nawet sondaż: 52 procent mówi, że chce ciebie. Zostajesz premierem, a koperta pana Vrabca leży gdzieś na dnie szuflady.
+partial Debata kończy się remisem. Wybory wygrywasz minimalnie i obiecujesz „więcej przejrzystości”.
+fail Pani Medved kładzie na stoliku teczkę. Kraj widzi sprzeczność w twoich słowach i na ekranie pojawia się napis: „Kandidat laže.”
+w razpravi | debacie (miejscownik od razprava)
+w Medved | Medved (nazwisko; niedźwiedź)
+w kandidat | kandydat
+w vlade | rządu (dopełniacz od vlada)
+t Dobrodošli na razpravi! Gospa Medved, gospod kandidat, prosim. | Witamy na debacie! Pani Medved, panie kandydacie, proszę. | Dober večer. Želim postati predsednik vlade. | Przywitaj się i powiedz, że chcesz zostać premierem. |  | Dober večer. Rad bi postal predsednik vlade. | gain=1
+w stranke | partii (dopełniacz od stranka)
+w Nova | Nowa (nov)
+w iskrenost | szczerość, uczciwość
+t Sem iz stranke Nova iskrenost. Povejte resnico, gospod kandidat! | Jestem z partii „Nova iskrenost”. Niech Pan mówi prawdę, panie kandydacie! | Jaz vedno govorim resnico. | Zapewnij, że zawsze mówisz prawdę. |  | Vedno govorim resnico. | gain=1
+w Jemali | brali (jemati)
+w obtožba | zarzut, oskarżenie
+w obtožbo | zarzut (biernik od obtožba)
+w zavračam | odrzucam (zavračati)
+w Zavračam | odrzucam (zavračati)
+t Jemali ste podkupnine. To je moja obtožba. | Brał Pan łapówki. To mój zarzut. | To obtožbo zavračam. | Odrzuć ten zarzut. |  | Zavračam to obtožbo. | shift=-2 loss=2
+w Mnogi | wielu
+w umazana | brudna (umazan)
+t Mnogi pravijo, da je to že dolgo nazaj in da je to samo kampanja. | Wielu ludzi mówi, że to było dawno i że to tylko kampania. | Vaša kampanja je umazana. | Zarzuć rywalce brudną kampanię. |  | Ta vaša kampanja je umazana. | shift=+2
+w dokumente | dokumenty
+w dokazi | dowody
+w vidim | widzę (videti)
+t Poglejte te dokumente. To so dokazi. | Proszę spojrzeć na te dokumenty. To są dowody. | Ne vidim nobenih dokazov. | Powtórz, że nie widzisz żadnych dowodów. |  | Jaz ne vidim nobenih dokazov. | gain=1
+w državo | kraj, państwo (biernik od država)
+w Ustvaril | stworzył (ustvariti)
+w delovna | pracy (delovni; delovna mesta = miejsca pracy)
+w ustvaril | stworzył (ustvariti)
+t To bomo videli. In kakšen je vaš načrt za državo? | To się okaże. A jaki jest Pana plan dla kraju? | Ustvaril bom nova delovna mesta. | Obiecaj nowe miejsca pracy. |  | Nova delovna mesta bom ustvaril. | gain=1
+w Vaš | Pana (vaš)
+t Vaš prijatelj gospod Vrabec pravi, da vam je dal veliko denarja! | Pana przyjaciel, pan Vrabec, mówi, że dał Panu dużo pieniędzy! | To je laž! Ni moj prijatelj. | Zaprzecz: to kłamstwo, on nie jest twoim przyjacielem. |  | To je laž! Gospod Vrabec ni moj prijatelj. | shift=-1 loss=2
+w občinskem | gminnym (občinski)
+w svetu | radzie (miejscownik od svet)
+o V občinskem svetu ste rekli, da je samo znanec. In zdaj? | W radzie powiedział Pan, że to tylko znajomy. A teraz? | Je samo znanec. | To je moj prijatelj.;Nikoli ga nisem videl. | Trzymasz się wersji z rady. ; Zaprzeczasz sam sobie. ; Wcześniej przyznałeś, że go znasz, więc „nigdy go nie widziałem” to sprzeczność. | gain=1
+k Gospa Medved kaže kuverto. Ste jo vzeli? Da ali ne? | Pani Medved pokazuje kopertę. Wziął ją Pan? Tak czy nie? | Ne, nikoli je nisem vzel. | Da, vzel sem jo.;Ne bom izpovedal. | Zaprzeczasz do końca. ; Przyznanie się: koniec. ; Milczenie na żywo wygląda jak przyznanie się.
+w Iskrene | szczere (iskren)
+w čestitke | gratulacje
+e In predsednik vlade ste vi! Iskrene čestitke! | A premierem zostaje… Pan! Serdeczne gratulacje!
+@larp flughafen | Lotnisko | Uslužbenka | P | Lublana, lotnisko Jožeta Pučnika, wczesny ranek. Lecisz do Warszawy na ślub najlepszego przyjaciela, a samolot nie poczeka. Masz walizkę, paszport i mało czasu. | Przejdź całą drogę: odprawa, kontrola bezpieczeństwa, bramka, lot i odbiór bagażu w Warszawie.
+fee 0
+reward 20
+strict yes
+story yes
+win Docierasz do Warszawy z walizką, paszportem i pół godziny zapasu. Przyjaciel czeka w hali przylotów z bukietem: „Uspelo ti je! Poroka se lahko začne!”
+partial Dotarłeś do Warszawy, ale po drodze sporo się nagadałeś i trochę pobiegałeś. Walizka jest, ślub też, ty trochę zdyszany, ale na czas.
+fail Pomyliłeś coś w najgorszym momencie i samolot odleciał bez ciebie. Ślub oglądasz na telefonie, a przyjaciel obiecuje ci długą wyprawę „na pocieszenie”.
+
+@level 1 | Odprawa | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Odprawa
+partner Uslužbenka | U
+scene Lublana, lotnisko Jožeta Pučnika, hala odlotów. Podchodzisz do stanowiska odprawy linii Triglav Air. Pracowniczka patrzy na ciebie życzliwie i czeka na dokumenty.
+goal Odpraw się na lot do Warszawy: pokaż paszport, nadaj walizkę i wybierz miejsce.
+win Pracowniczka podaje ci kartę pokładową: „Srečno pot!” Walizka jedzie na taśmie, a ty idziesz do kontroli bezpieczeństwa.
+partial Odprawa udała się, ale pracowniczka kilka razy musiała się domyślać, o co ci chodzi. Karta pokładowa w ręku, czas ucieka.
+fail Pracowniczka nie rozumie, czego chcesz, i prosi następną osobę w kolejce. Musisz zacząć od nowa na końcu kolejki.
+w pultu | stanowisku (miejscownik od pult)
+w Triglav | Triglav (góra; nazwa linii)
+w Air | Air (linia lotnicza)
+w letite | lecicie; leci Pan (leteti)
+w Letim | lecę (leteti)
+w Varšavo | Warszawę (biernik od Varšava)
+w letim | lecę (leteti)
+t Dober dan! Dobrodošli pri pultu Triglav Air. Kam letite? | Dzień dobry! Witamy przy stanowisku Triglav Air. Dokąd Pan leci? | Dober dan! Letim v Varšavo. | Przywitaj się i powiedz, że lecisz do Warszawy. |  | Dober dan! Jaz letim v Varšavo.
+w potni | paszportowy (potni list = paszport)
+w tja | tam (kierunek)
+w poroko | ślub (biernik od poroka)
+t V Varšavo, dobro. Vaš potni list, prosim. In zakaj tja letite? | Do Warszawy, dobrze. Paszport, proszę. A po co Pan tam leci? | Tukaj je moj potni list. Letim na poroko. | Podaj paszport i powiedz, że lecisz na ślub. |  | Tukaj je moj potni list. Letim tja na poroko.
+w oddati | oddać, nadać (bagaż)
+t Poroka, to je lepo! Ali želite oddati kovček? | Ślub, jak miło! Chce Pan nadać walizkę? | Da, želim oddati kovček. | Powiedz, że chcesz nadać walizkę. |  | Da, kovček želim oddati.
+w postavite | postawcie; proszę postawić (postaviti)
+w tehtnico | wagę (biernik od tehtnica)
+w Tehta | waży (tehtati)
+w kilogramov | kilogramów (dopełniacz lm od kilogram)
+w redu | porządku (miejscownik od red; v redu = w porządku)
+w ročno | ręczny (ročni; ročna prtljaga = bagaż podręczny)
+w prtljago | bagaż (biernik od prtljaga)
+w prtljaga | bagaż
+t Prosim, postavite kovček na tehtnico. Tehta dvajset kilogramov. To je v redu. Imate tudi ročno prtljago? | Proszę postawić walizkę na wadze. Waży dwadzieścia kilogramów. To w porządku. Czy ma Pan też bagaż podręczny? | Da, imam torbo kot ročno prtljago. | Powiedz, że masz torbę jako bagaż podręczny. |  | Da, torba je moja ročna prtljaga.
+w sedež | siedzenie, miejsce
+w hodniku | przejściu (miejscownik od hodnik)
+w Sedež | siedzenie, miejsce
+t Dobro. Želite sedež ob oknu ali ob hodniku? | Dobrze. Wolałby Pan miejsce przy oknie, czy przy przejściu? | Sedež ob oknu, prosim. | Powiedz, że wolisz miejsce przy oknie. |  | Rad bi sedež ob oknu, prosim.
+w vstopna | wstępna (vstopni; vstopna kartica = karta pokładowa)
+w kartica | karta
+w Odhod | odlot
+w pol | pół (ob pol enajstih = wpół do jedenastej)
+w enajstih | jedenastej (ob enajstih = o jedenastej)
+w odleti | odleci (odleteti)
+w pravočasno | punktualnie
+w pravočasen | punktualny
+t Tukaj je vaša vstopna kartica. Odhod je ob pol enajstih. Imate še kakšno vprašanje? | Oto Pana karta pokładowa. Odlot jest o wpół do jedenastej. Czy ma Pan jeszcze pytanie? | Da, ali let odleti pravočasno? | Zapytaj, czy lot jest punktualny. |  | Da, ali je let pravočasen?
+w izhod | wyjście; bramka
+w naravnost | prosto
+t Da, let je pravočasen. Vaš izhod je dvanajst. Pojdite, prosim, naravnost. | Tak, lot jest punktualny. Pana bramka to dwanaście. Proszę iść prosto. | Hvala! Nasvidenje! | Podziękuj i pożegnaj się. |  | Hvala vam! Nasvidenje!
+e Srečno pot! | Szczęśliwej podróży!
+
+@level 2 | Kontrola bezpieczeństwa | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Kontrola bezpieczeństwa
+partner Policist | P
+scene Masz kartę pokładową, a przed tobą długa kolejka do kontroli. Funkcjonariusz podaje plastikowe pojemniki i patrzy uważnie na twoją torbę.
+goal Przejdź kontrolę bezpieczeństwa: pokaż laptop, zdejmij pasek i odpowiedz na pytania.
+win Funkcjonariusz kiwa głową: „Vse je v redu. Pojdite naprej.” Zakładasz pasek i biegniesz do bramki z pełnym spokojem.
+partial Kontrola przebiegła w końcu bez problemów, ale funkcjonariusz kilka razy zmarszczył brwi. Zakładasz pasek w biegu.
+fail Funkcjonariusz uznaje twoje odpowiedzi za podejrzane. Zostajesz zatrzymany na dodatkową kontrolę, a samolot odlatuje bez ciebie.
+w varnostni | bezpieczeństwa (varnostni pregled = kontrola bezpieczeństwa)
+w pregled | kontrola, przegląd
+w položite | połóżcie; proszę położyć (položiti)
+w trak | taśma
+w vsekakor | w każdym razie, oczywiście
+t Dober dan! To je varnostni pregled. Prosim, položite torbo sem na trak. | Dzień dobry! To jest kontrola bezpieczeństwa. Proszę położyć torbę tutaj na taśmie. | Da, seveda. | Zgódź się i powiedz, że oczywiście. |  | Da, vsekakor.
+w prenosnik | laptop
+w ven | na zewnątrz
+t Hvala. Imate v torbi prenosnik? Prosim, vzemite ga ven. | Dziękuję. Czy ma Pan w torbie laptop? Proszę go wyjąć. | Da, tukaj je moj prenosnik. | Potwierdź i podaj laptop. |  | Da, tukaj ga imam.
+w tekočine | płyny
+w parfum | perfumy
+w kremo | krem (biernik od krema)
+w tekočin | płynów (dopełniacz od tekočina)
+t Dobro. Imate pri sebi tekočine? Na primer vodo, parfum ali kremo? | Dobrze. Czy ma Pan przy sobie płyny? Na przykład wodę, perfumy albo krem? | Ne, nimam pri sebi nobenih tekočin. | Zaprzecz: nie masz płynów. |  | Ne, nobenih tekočin nimam.
+w odstranite | zdejmijcie; proszę zdjąć (odstraniti)
+w jakno | kurtkę (biernik od jakna)
+w sta | są, dwaj (dual od biti)
+t Razumem. Prosim, odstranite še pas in jakno. | Rozumiem. Proszę też zdjąć pasek i kurtkę. | Da, tukaj sta moj pas in moja jakna. | Podaj pasek i kurtkę. |  | Da, tukaj sta pas in jakna.
+w vaši | Pana (miejscownik od vaša)
+w noža | noża (dopełniacz od nož)
+k Hvala. Je v vaši torbi nož ali orožje? | Dziękuję. Czy w Pana torbie jest nóż albo broń? | Ne, nimam noža ne orožja. | Da, imam nož.;Ne vem, morda. | Przyznanie się do noża to natychmiastowe zatrzymanie. ; Niepewna odpowiedź przy takim pytaniu wzbudza podejrzenia: zatrzymanie.
+w stopite | wejdźcie; proszę przejść (stopiti)
+w skener | skaner
+w Pip | pip (dźwięk)
+w žepu | kieszeni (miejscownik od žep)
+w hlač | spodni (dopełniacz od hlače)
+t Dobro. Prosim, stopite skozi skener. Pip! Imate še kaj v žepu hlač? | Dobrze. Proszę przejść przez skaner. Pip! Czy ma Pan jeszcze coś w kieszeni spodni? | Da, imam ključ in mobilnik. | Powiedz, że masz klucz i telefon. |  | Da, v žepu imam ključ in mobilnik.
+w naprej | dalej
+e Vse je v redu. Pojdite naprej. Srečno pot! | Wszystko w porządku. Proszę iść dalej. Szczęśliwej podróży!
+
+@level 3 | Przy bramce | patience=4 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Przy bramce
+partner Uslužbenec letališča | U
+scene Siedzisz przy bramce 12 i patrzysz na zegarek. Nagle w głośnikach coś trzaska, a na tablicy pojawia się napis o spóźnieniu.
+goal Dowiedz się, co z lotem, zrozum komunikat o zmianie bramki i wejdź na pokład.
+win Biegniesz do nowej bramki i wsiadasz jako jeden z ostatnich. Pracownik zamyka drzwi: „To je bilo za las!”
+partial Znalazłeś w końcu właściwą bramkę, choć po drodze kilka razy musiałeś dopytywać. Wchodzisz na pokład spocony.
+fail Zrozumiałeś komunikat na opak i czekasz przy złej bramce. Kiedy orientujesz się w błędzie, drzwi samolotu są już zamknięte.
+w Oprostite | przepraszam
+w zamudo | opóźnienie (biernik od zamuda)
+t Oprostite! Ste potnik na letu v Varšavo? | Przepraszam! Czy jest Pan pasażerem lotu do Warszawy? | Da. Moj let ima zamudo, kajne? | Potwierdź i zapytaj, czy twój lot jest spóźniony. |  | Da, moj let ima zamudo, kajne?
+w Vkrcavanje | wejście na pokład
+w začne | zacznie (začeti)
+w vkrcavanje | wejście na pokład
+t Da, let ima štirideset minut zamude. Vkrcavanje se začne ob enajstih. | Tak, lot ma czterdzieści minut spóźnienia. Wejście na pokład zacznie się o jedenastej. | Kdaj je vkrcavanje? Letim na poroko. | Zapytaj, kiedy jest wejście na pokład, i dodaj, że lecisz na ślub. |  | Kdaj je vkrcavanje? Letim tja na poroko.
+w morate | musicie; musi Pan (morati)
+w presedati | przesiadać się
+w Varšavi | w Warszawie (miejscownik od Varšava)
+t Poroka, to je lepo! Vkrcavanje je ob enajstih. Ali morate presedati v Varšavi? | Ślub, jak pięknie! Wejście na pokład jest o jedenastej. Czy musi Pan przesiadać się w Warszawie? | Ne, letim naravnost v Varšavo. | Odpowiedz, że nie, lecisz bezpośrednio. |  | Ne, letim v Varšavo naravnost.
+w obvestilo | komunikat, ogłoszenie
+w izhoda | wyjścia, bramki (dopełniacz od izhod)
+w zaprt | zamknięty
+w razumeli | zrozumieli (razumeti)
+w izhodu | wyjściu, bramce (celownik od izhod)
+w Ostanem | zostanę (ostati)
+w letališča | lotniska (dopełniacz od letališče)
+k Dobro, naravnost. Pozor, obvestilo! Let v Varšavo zdaj odleti z izhoda pet. Izhod dvanajst je zaprt. Ste razumeli? Kam greste? | Dobrze, bezpośrednio. Uwaga, ogłoszenie! Lot do Warszawy odlatuje teraz z bramki 5. Bramka 12 jest zamknięta. Czy Pan zrozumiał? Dokąd Pan idzie? | Grem k izhodu pet. | Ostanem pri izhodu dvanajst.;Grem ven iz letališča. | Bramka 12 jest zamknięta, więc czekanie tam kończy się spóźnieniem. ; To wyjście z lotniska, a nie bramka do samolotu.
+w Vstopno | wstępną (biernik od vstopna)
+w vstopite | wejdźcie; proszę wejść (vstopiti)
+w Vstopam | wchodzę (vstopati)
+w vstopam | wchodzę (vstopati)
+t Torej hitro! Vstopno kartico, prosim. Lahko vstopite. | Więc szybko! Karta pokładowa, proszę. Może Pan już wsiadać. | Tukaj je moja vstopna kartica. Vstopam. | Podaj kartę i powiedz, że już wsiadasz. |  | Tukaj je moja vstopna kartica. Že vstopam.
+w odprto | otwarte
+e Srečno pot! Vkrcavanje je odprto. | Szczęśliwej podróży! Wejście na pokład jest otwarte.
+
+@level 4 | Lot i przylot | patience=4 typed=0.75 extra=3 hint=letters reward=30
+desc Rozdział 4: Lot i przylot
+partner Stevardesa | S
+scene Wchodzisz na pokład Triglav Air. Stewardesa wita pasażerów przy drzwiach, a za chwilę wystartujecie do Warszawy. Po lądowaniu będziesz musiał jeszcze znaleźć kontrolę paszportową i swoją walizkę.
+goal Zajmij miejsce, zapnij pas, poproś o picie, a po lądowaniu dowiedz się, gdzie jest kontrola paszportowa, taśma bagażowa i odprawa celna.
+win Walizka wyjeżdża na taśmie jako pierwsza, a celnik życzy ci „Dobrodošli na Poljskem!” Przyjaciel czeka w hali przylotów.
+partial Wszystko udało ci się znaleźć, ale po drodze trzy razy zapytałeś o drogę. Walizka dojechała, a ty na ślub zdążysz.
+fail Poszedłeś w złą stronę i straciłeś czas na lotnisku. Walizka krąży samotnie po taśmie, a przyjaciel wydzwania co minutę.
+w krovu | pokładzie (miejscownik od krov)
+t Dober dan in dobrodošli na krovu! Vstopno kartico, prosim. | Dzień dobry i witamy na pokładzie! Proszę o kartę pokładową. | Dober dan! Tukaj je moja vstopna kartica. | Przywitaj się i pokaż kartę pokładową. |  | Dober dan! Tukaj jo imam.
+w predal | schowek, szuflada
+t Hvala. Vaš sedež je štirinajst. To je sedež ob oknu. Prosim, položite torbo zgoraj v predal. | Dziękuję. Pana miejsce to czternaście. To miejsce przy oknie. Proszę położyć torbę w schowku na górze. | Hvala, dam torbo v predal. | Podziękuj i powiedz, że kładziesz torbę do schowka. |  | Hvala, torbo dam v predal.
+w pripnite | zapnijcie; proszę zapiąć się (pripeti se)
+w vzletimo | wystartujemy (vzleteti)
+w pripenjam | zapinam (pripenjati se)
+t Odlično. Prosim, pripnite se. Takoj vzletimo. | Doskonale. Proszę zapiąć pasy. Za chwilę startujemy. | Da, pripenjam se. | Powiedz, że zapinasz pas. |  | Da, že se pripenjam.
+w Pripeti | zapięci (pripet)
+t Pripeti ste, odlično. Boste kaj pili? | Pas zapięty, świetnie. Czy chce Pan coś do picia? | Da, kavo, prosim. | Poproś o kawę. |  | Da, prosim kavo.
+w radi | chętnie (bi radi = chcielibyście)
+w vprašali | zapytali (vprašati)
+w pristali | wylądowali (pristati)
+t Izvolite vašo kavo. Bi radi še kaj vprašali? | Oto Pana kawa. Czy chce Pan jeszcze o coś zapytać? | Kdaj bomo pristali v Varšavi? | Zapytaj, kiedy lądujecie w Warszawie. |  | Kdaj bomo v Varšavi?
+w Prihod | przylot
+w mejna | graniczna (mejni)
+w kontrola | kontrola
+t Pristali bomo čez deset minut. Prihod je pravočasen. | Lądujemy za dziesięć minut. Przylot jest punktualny. | Hvala! Kje je mejna kontrola, prosim? | Podziękuj i zapytaj, gdzie jest kontrola paszportowa. |  | Hvala! Kje je tukaj mejna kontrola?
+w nato | potem
+w carina | urząd celny, cło
+w najprej | najpierw
+w Najprej | najpierw
+w mejno | graniczną (mejni)
+w kontrolo | kontrolę (biernik od kontrola)
+w carino | urząd celny (biernik od carina)
+w traku | taśmie (miejscownik od trak)
+k Mejna kontrola je levo. Potem je trak za prtljago in nato carina. Kam boste šli najprej? | Kontrola paszportowa jest po lewej. Potem jest taśma bagażowa, a potem cło. Dokąd Pan idzie najpierw? | Najprej grem na mejno kontrolo. | Najprej grem na carino.;Najprej grem k traku za prtljago. | Do cła idziesz na końcu, po odbiorze walizki. ; Walizkę odbierasz dopiero po kontroli paszportowej.
+w Točno | dokładnie
+t Točno tako! Nato k traku za prtljago. Vaš kovček pride na traku štiri. | Dokładnie! A potem do taśmy bagażowej. Pana walizka przyjedzie na taśmie czwartej. | Hvala! Vzel bom kovček s traku. | Podziękuj i powiedz, że zdejmiesz walizkę z taśmy. |  | Hvala! S traku bom vzel kovček.
+w carinjenje | oclenie (za carinjenje = do oclenia)
+w vpraša | pyta (vprašati)
+w carinik | celnik
+t Dobro. Imate kaj za carinjenje? To vpraša carinik. | Dobrze. Czy ma Pan coś do oclenia? O to zapyta celnik. | Ne, nimam nič za carinjenje. | Powiedz, że nie masz nic do oclenia. |  | Ne, nič za carinjenje nimam.
+w Poljskem | w Polsce (miejscownik od Poljska)
+w poroki | ślubie (miejscownik od poroka)
+e Potem je vse v redu. Dobrodošli na Poljskem in lepo se zabavajte na poroki! | Wtedy wszystko w porządku. Witamy w Polsce i dobrej zabawy na ślubie!

@@ -303,3 +303,912 @@ w baj | kłopot
 t Ez a hely szabad. A vonat tíz percet késik. | To miejsce jest wolne. Pociąg spóźnia się dziesięć minut. | Nem baj. Köszönöm! | Powiedz, że to nic takiego, i podziękuj. | „Nie szkodzi” to nem baj.
 w rendben
 e Minden rendben! Jó utat Debrecenbe! | Wszystko w porządku! Szczęśliwej podróży do Debreczyna!
+
+@larp nagyi | Babcia w parku | Ilona néni | I | Niedziela w parku. Na ławce siedzi starsza pani, która uwielbia rozmawiać i ma całe popołudnie. | Posiedź z babcią Iloną i porozmawiaj z nią. Nikt cię stąd nie wyrzuci.
+fee 0
+reward 10
+story yes
+win Ilona néni promienieje: „Milyen kedves fiatalember!” Zaprasza cię na niedzielną kawę i kawałek ciasta.
+partial Rozmowa się toczyła, choć kilka razy musiałeś prosić o powtórzenie. Ilona néni uśmiecha się cierpliwie i zaprasza cię znowu.
+fail Ilona néni się nie zniechęca, bo ma nieskończoną cierpliwość. Jeśli kiedyś zobaczysz ten komunikat, napisz do nas.
+
+@level 1 | Na ławce | patience=3 endless=yes typed=0 extra=2 hint=none
+desc Rozdział 1: Poznajecie się
+scene Park, ławka, słońce. Starsza pani karmi okruchami wróble i zaczyna rozmowę. Nie musisz się spieszyć: Ilona néni poczeka.
+goal Przywitaj się, powiedz, jak się nazywasz i skąd jesteś.
+win Ilona néni klepie ławkę obok siebie: „Üljön le, Pál!” Zostajesz na dłużej.
+partial Rozmowa się udała, mimo kilku pomyłek. Ilona néni zachowuje cierpliwość i robi ci miejsce na ławce.
+fail Ilona néni nigdy się nie zniechęca.
+w fiatalember | młody człowiek
+w idő | pogoda; czas
+w ugye | prawda? (na końcu zdania)
+t Jó napot, fiatalember! Szép idő van ma, ugye? | Dzień dobry, młody człowieku! Dziś ładna pogoda, prawda? | Igen, szép idő van. | Zgódź się, że pogoda jest ładna. | „Pogoda” to idő, a „jest ładna” to szép idő van. | Igen, nagyon szép idő van.
+w Ilona | Ilona (imię)
+w hívják | nazywają (hívni); hogy hívják = jak się nazywa
+w nevem | moje imię (név + -em)
+w Pál | Pál (imię; Paweł)
+t Ugye? Én Ilona vagyok. Hogy hívják? | Prawda? Ja jestem Ilona. Jak Pan(i) się nazywa? | A nevem Pál. | Powiedz, jak się nazywasz. | „Nazywam się” to a nevem …, czyli „moje imię to …”. | Pál vagyok.
+w név | imię; nazwa
+w lakik | mieszka (lakni)
+w közelben | w pobliżu
+w lakom | mieszkam (lakni)
+t Pál! Milyen szép név. Itt lakik a közelben? | Pál! Jakie ładne imię. Mieszka Pan(i) tu w pobliżu? | Nem, nem itt lakom. Lengyelországból jöttem. | Zaprzecz i powiedz, że jesteś z Polski. | Zaprzeczenie stoi przed czasownikiem: nem lakom. „Z Polski” to Lengyelországból. | Nem, nem itt lakom. Lengyelországból vagyok.
+w ül | siada (ülni)
+w le | w dół (leül = siada)
+t Lengyelországból! Ez messze van. Nem ül le egy kicsit? | Z Polski! To daleko. Nie usiądzie Pan(i) na chwilę? | Igen, szívesen. Köszönöm szépen! | Zgódź się i podziękuj. | „Chętnie” to szívesen.
+e Parancsoljon! Itt van hely. | Proszę bardzo! Tu jest miejsce.
+
+@level 2 | Wnuk i kaczki | patience=3 endless=yes typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Wnuk i ciasto
+scene Mały Máté biega po trawniku i karmi kaczki, a Ilona néni pokazuje ci zdjęcia w portfelu. Z torby wyjmuje ciasto własnej roboty.
+goal Porozmawiaj o wnuku Máté, powiedz, czy masz dzieci, i spróbuj ciasta.
+win Ilona néni wręcza ci drugi kawałek: „Egyél, egyél, olyan sovány vagy!” Máté macha do ciebie z daleka.
+partial Zjadłeś ciasto, choć kilka razy brakowało ci słów. Ilona néni dolewa herbaty z termosu.
+fail Ilona néni nie traci cierpliwości.
+w unokám | mój wnuk (unoka + -m)
+w Máté | Máté (imię; Mateusz)
+w éves | letni (hat éves = sześcioletni)
+w aranyos | uroczy, miły
+t Ez az unokám, Máté. Hat éves. | To mój wnuk Máté. Ma sześć lat. | Máté nagyon aranyos. | Pochwal wnuka: powiedz, że jest bardzo miły. | „Miły, uroczy” (o dziecku) to aranyos. | Máté nagyon kedves.
+w kacsákat | kaczki (kacsa + -kat: biernik l. mn.)
+w eteti | karmi (etetni)
+w Önnek | Panu(i) (Ön + -nek)
+w gyerekei | Pana(i) dzieci (gyerek + -ei)
+w nincsenek | nie ma, nie są (l. mn.)
+w gyerekeim | moje dzieci (gyerek + -eim)
+t Köszönöm! Máté a kacsákat eteti. Önnek vannak gyerekei? | Dziękuję! Máté karmi kaczki. Czy Pan(i) ma dzieci? | Nem, nincs gyerekem. | Powiedz, że nie masz dzieci. | „Nie mam dziecka” to nincs gyerekem (dosłownie „nie ma mojego dziecka”). | Nem, nincsenek gyerekeim.
+w gyereke | Pana(i) dziecko
+w Á | a, aha
+w süteményt | ciasto (sütemény + -t: biernik)
+w Magam | sama, sam (magam = ja sam)
+w sütöttem | upiekłem, upiekłam (sütni)
+w sütemény | ciasto, ciastko
+t Nincs gyereke? Á, értem. Kér egy szelet süteményt? Magam sütöttem. | Nie ma Pan(i) dzieci? Aha. Chce Pan(i) kawałek ciasta? Sama upiekłam. | Igen, szívesen. A sütemény nagyon finom! | Przyjmij ciasto i pochwal je. | „Smaczny” to finom. | Igen, köszönöm. Nagyon finom a sütemény!
+w Örülök | cieszę się (örülni)
+w Ön | Pan, Pani (grzecznie)
+t Örülök! És hány éves Ön? | Cieszę się! A ile lat ma Pan(i)? | Harminc éves vagyok. | Powiedz, że masz trzydzieści lat. | „Mam … lat” to … éves vagyok (dosłownie „jestem … letni”).
+w Ó | och
+e Ó, milyen fiatal! | Ach, jaki młody!
+
+@level 3 | Zaproszenie | patience=3 endless=yes typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Kawa w niedzielę
+scene Słońce chyli się ku zachodowi. Ilona néni pakuje termos i prosi cię o pomoc. Zanim wstaniecie z ławki, chce cię jeszcze zaprosić.
+goal Przyjmij zaproszenie na niedzielną kawę i pomóż babci z torbą.
+win Ilona néni zapisuje ci adres na serwetce: „Hozz magaddal éhséget!” Idziesz do domu w świetnym nastroju.
+partial Wszystko się wyjaśniło, choć trzeba było kilka razy powtarzać. Ilona néni mówi: „Vasárnapig, fiam!”
+fail Ilona néni nie traci cierpliwości.
+w Tudja | wie Pan(i) (tudni)
+w parkban | w parku (park + -ban)
+w Olyan | taki, tak
+w tényleg | naprawdę
+t Tudja, minden nap itt vagyok a parkban. Olyan szép itt. | Wie Pan(i), codziennie jestem w parku. Jest tu tak ładnie. | Igen, a park tényleg nagyon szép. | Zgódź się, że park jest piękny. | „Naprawdę” to tényleg. | Igen, nagyon szép a park.
+w főzök | gotuję, parzę (főzni)
+w Eljön | przyjdzie (eljönni)
+w hozzám | do mnie
+t Ugye? Vasárnap kávét főzök. Eljön hozzám? | Prawda? W niedzielę parzę kawę. Przyjdzie Pan(i) do mnie? | Igen, szívesen. Mikor? | Zgódź się i zapytaj, kiedy. | „Kiedy?” to mikor?
+w órakor | o godzinie (óra + -kor)
+w táskám | moja torba (táska + -m)
+w Segít | pomaga (segíteni)
+w vinni | nieść (bezokolicznik)
+w Persze | oczywiście
+w viszem | niosę (vinni; z dopełnieniem określonym)
+w táskát | torbę (táska + -t: biernik)
+w Természetesen | oczywiście
+t Három órakor. A táskám nehéz. Segít vinni? | O trzeciej. Moja torba jest ciężka. Pomoże Pan(i) ponieść? | Persze, viszem a táskát. | Zgódź się i zaproponuj, że poniesiesz torbę. | „Niosę” (coś określonego) to viszem; torba ma końcówkę biernika: táskát. | Természetesen, viszem a táskát.
+w Vasárnapig | do niedzieli (vasárnap + -ig)
+t De kedves! Ön nagyon jó ember. | Jak miło! Jest Pan(i) bardzo dobrym człowiekiem. | Köszönöm! Vasárnapig! | Podziękuj i pożegnaj się do niedzieli. | „Do niedzieli” to vasárnapig.
+e Vasárnapig! Viszontlátásra! | Do niedzieli! Do widzenia!
+
+
+@larp kem | Szpieg | A kapcsolat | K | Jesteś agentem pod przykrywką. W Budapeszcie masz odebrać tajną teczkę z ambasady i przekazać ją dalej. Jedno złe słowo i jesteś zdemaskowany. | Zachowaj przykrywkę kupca Barny, zdobądź aktę i uciekaj z walizką.
+fee 0
+reward 20
+strict yes
+story yes
+win Walizka jest w twoich rękach, a statek odpływa z przystani. Ktoś w centrali szepcze: „Szép munka, Sólyom.” Przykrywka nie pękła ani razu.
+partial Misja się udała, ale po drodze kilka razy omal się nie zdradziłeś. Centrala odnotowuje: „Szerencséje volt.”
+fail Zdradziłeś się jednym słowem. Przykrywka pękła, a ty znikasz w ciemności bez teczki i bez walizki.
+
+@level 1 | Hasło na dworcu | patience=2 typed=0 extra=1 hint=none
+desc Rozdział 1: Kontakt na dworcu
+partner Kalapos férfi | K
+scene Budapeszt, wieczór, peron na dworcu Nyugati. Jesteś agentem „Sólyom”, ale dla wszystkich jesteś Barna úr, handlarz zabawkami z Győru (Barna és Fia). Na peronie czeka człowiek w kapeluszu. Hasło: „A tél korán jön.” Odzew: „És a nyár későn jön.”
+goal Podaj hasło, nie zdradź swojej przykrywki i przyjmij zadanie. Jedna zła odpowiedź i jesteś zdemaskowany.
+win Człowiek w kapeluszu znika w tłumie, a ty zostajesz z kopertą w kieszeni. Przykrywka nietknięta, a jutro o ósmej czeka cię ambasada.
+partial Dostałeś zadanie, ale kontakt zmarszczył brwi przy kilku twoich odpowiedziach. Lepiej uważaj jutro.
+fail Człowiek w kapeluszu spojrzał na ciebie zimno, odwrócił się i odszedł. Zadanie dostanie ktoś inny.
+w jön | idzie, przychodzi (jönni)
+t Jó estét. Ma hideg van, ugye? | Dobry wieczór. Dziś jest zimno, prawda? | Igen, nagyon hideg van. A tél korán jön. | Zgódź się, że jest zimno, i powiedz hasło: zima przychodzi wcześnie. | Hasło brzmi: „A tél korán jön.” | Igen, hideg van. A tél korán jön.
+w Pszt | cicho!
+w hallgatóznak | podsłuchują
+w Barna | Barna (nazwisko z przykrywki)
+w Kereskedő | kupiec, handlowiec
+w Sólyom | Sólyom (sokół; imię agenta)
+w Ügynök | agent
+k És a nyár későn jön. Pszt! Itt hallgatóznak. Hogy hívják? | A lato przychodzi późno. Cicho! Tu ktoś podsłuchuje. Jak się Pan(i) nazywa? | A nevem Barna. Kereskedő vagyok. | A nevem Sólyom. Ügynök vagyok.; A nevem Barna. Ügynök vagyok. | Sólyom to twoje imię agenta, a ludzie słuchają.; Barna się zgadza, ale „ügynök” (agent) zdradza przykrywkę.
+w Követi | śledzi go/ją (követni; Követi valaki? = czy ktoś Pana(ią) śledzi?)
+w követ | śledzi, idzie za (követni)
+w időm | mój czas (idő + -m)
+k Jó. Követi valaki? | Dobrze. Czy ktoś Pana(ią) śledzi? | Nem, nem követ senki. | Igen, követ valaki.; Nem, nincs időm. | Kontakt pyta o ogon (śledzenie), więc mówisz, że nikt cię nie śledzi.; Kontakt pyta o śledzenie, nie o czas.
+w megbízása | Pana(i) zadanie (megbízás + -a)
+w nyolckor | o ósmej (nyolc + -kor)
+w menjen | niech idzie (menni)
+w nagykövetségre | do ambasady (nagykövetség + -re)
+w fogadás | przyjęcie
+w Értettem | zrozumiałem (érteni)
+t Nagyon jó. Itt a megbízása. Holnap nyolckor menjen a nagykövetségre. Ott lesz egy fogadás. | Bardzo dobrze. Oto Pana(i) zadanie. Jutro o ósmej niech Pan(i) idzie do ambasady. Będzie tam przyjęcie. | Értettem. Holnap nyolckor megyek a nagykövetségre. | Powiedz, że zrozumiałeś: jutro o ósmej idziesz do ambasady. | „O ósmej” to nyolckor, a „do ambasady” to a nagykövetségre.
+w jelszava | hasło (czegoś) (jelszó + -a)
+w Fülemüle | słowik
+t Jó. A fogadás jelszava Fülemüle. Mi a jelszó? | Dobrze. Hasło na przyjęcie to Fülemüle (słowik). Jakie jest hasło? | A jelszó Fülemüle. | Powtórz hasło na przyjęcie. | Hasło wejściowe to jelszó, a „Fülemüle” to słowik.
+w Ismer | zna (ismerni)
+w engem | mnie
+w ismerem | znam (ismerni; z dopełnieniem określonym)
+w magát | Pana(ią) (biernik od maga)
+d Nagyon jó. Pszt! Rendőr jön. Ismer engem? | Bardzo dobrze. Cicho! Idzie policjant. Czy Pan(i) mnie zna? | Nem, nem ismerem magát! | Zaprzecz, że znasz tego człowieka. | Nie możesz zdradzić, że znasz kontakt. | Nem, nem ismerem.
+w úr | pan (po nazwisku)
+e Jó éjszakát, Barna úr. | Dobranoc, panie Barna.
+
+@level 2 | Przyjęcie w ambasadzie | patience=2 typed=0.2 extra=3 hint=bank
+desc Rozdział 2: Przyjęcie w ambasadzie
+partner Bárdos asszony | B
+scene Następny wieczór. W ambasadzie trwa przyjęcie, a przy wejściu stoi pani Bárdos, sekretarka. Ona i goście zadają pytania o twoją „firmę”. Twoja przykrywka: Barna és Fia, zabawki, Győr. Hasło wejściowe: Fülemüle. Gabinet ambasadora jest po prawej, toalety po lewej.
+goal Wejdź na przyjęcie, nie zdradź się pytaniom o firmę i znajdź pretekst, żeby dotrzeć do gabinetu.
+win Pani Bárdos macha ci na pożegnanie, a w gabinecie leży teczka, o którą ci chodziło. Nikt niczego nie podejrzewa.
+partial Weszłeś i dotarłeś do gabinetu, ale pani Bárdos patrzyła na ciebie dłużej, niż trzeba.
+fail Pani Bárdos przestaje się uśmiechać i daje znak ochronie. Za chwilę wyprowadzą cię z ambasady.
+w üdvözöljük | witamy
+w nagykövetségen | w ambasadzie (nagykövetség + -en)
+t Jó estét, és üdvözöljük a nagykövetségen! Mi a jelszó? | Dobry wieczór i witamy w ambasadzie! Jakie jest hasło? | A jelszó Fülemüle. | Podaj hasło wejściowe. | Jelszó to hasło, a „Fülemüle” to słowik.
+w Kérdeznem | że muszę zapytać (kérdezni + -em)
+w Önnél | u Pana(i) (Ön + -nél)
+w fegyver | broń
+w nálam | przy mnie
+w akta | teczka, akta
+k Köszönöm. Kérdeznem kell valamit. Van Önnél fegyver? | Dziękuję. Muszę o coś zapytać. Czy ma Pan(i) przy sobie broń? | Nem, nincs nálam fegyver. | Igen, van nálam fegyver.; Nem, nincs nálam akta. | Na przyjęcie nie wchodzi się z bronią.; Pytanie dotyczy broni (fegyver), nie teczki.
+w Fia | jego syn (Barna és Fia = Barna i Syn)
+w cégnek | firmie (cég + -nek)
+w központnak | centrali (központ + -nak)
+w Bárdos | Bárdos (nazwisko)
+w asszonynak | pani (asszony + -nak: celownik)
+k Jó. Kinek dolgozik? | Dobrze. Dla kogo Pan(i) pracuje? | A Barna és Fia cégnek dolgozom. | A központnak dolgozom.; Bárdos asszonynak dolgozom. | „Központ” to twoja centrala, tajna, a nie firma.; Pani Bárdos to sekretarka z ambasady.
+w árul | sprzedaje (árulni)
+w cége | Pana(i) firma (cég + -e)
+w cégem | moja firma (cég + -em)
+w játékokat | zabawki (játék + -ok + -at: biernik l. mn.)
+w játékot | zabawkę (játék + -ot: biernik)
+d Értem. Mit árul a cége? | Rozumiem. Co sprzedaje Pana(i) firma? | A cégem játékokat árul. | Powiedz, co sprzedaje twoja „firma” (przykrywka). | Twoja przykrywka to handel zabawkami. | A cégem játékot árul!
+w Győrben | w Győrze (Győr + -ben)
+w neve | jego nazwa (név + -e)
+k Játékokat, érdekes. Hol van a cége? | Zabawki, ciekawe. Gdzie jest Pana(i) firma? | A cégem Győrben van. | A cégem játékokat árul.; A cég neve Barna és Fia. | „Hol” znaczy „gdzie”, a nie „co sprzedaje”.; „Hol” pyta o miejsce, nie o nazwę.
+w Győr | Győr (miasto)
+w mosdó | toaleta
+t Győr, szép város! Kér valamit enni? | Győr, piękne miasto! Chce Pan(i) coś zjeść? | Nem, köszönöm. Hol van a mosdó, kérem? | Odmów i zapytaj o toaletę (to pretekst). | „Hol” = gdzie, więc „Hol van a mosdó?”.
+w jobb | prawy
+w oldali | boczny, ...-stronny (jobb oldali = po prawej stronie)
+w magánterület | teren prywatny
+k A mosdó balra van. A jobb oldali iroda magánterület. | Toaleta jest po lewej. Gabinet po prawej jest prywatny. | Köszönöm, balra megyek. | Köszönöm, jobbra megyek.; Köszönöm, az iroda szép. | Gabinet po prawej jest prywatny, a ty idziesz do toalety po lewej.; Nie wolno ci mówić, że chcesz iść do gabinetu.
+w szórakozást | zabawę (szórakozás + -t)
+e Akkor jó szórakozást, Barna úr! | W takim razie dobrej zabawy, panie Barna!
+
+@level 3 | Przesłuchanie | patience=1 typed=0.35 extra=3 hint=bank
+desc Rozdział 3: Przesłuchanie
+partner Kárpáti úr | K
+scene Masz teczkę w torbie, ale na korytarzu zatrzymuje cię podejrzliwy ochroniarz, pan Kárpáti. Zaraz zapyta o wszystko. Pamiętaj: Barna, kupiec, Győr. Tutaj każda zła odpowiedź kończy misję.
+goal Przekonaj ochroniarza, że jesteś zwykłym gościem, i wyjdź z teczką.
+win Kárpáti przepuszcza cię z kwaśną miną. Wychodzisz z ambasady, a teczka w torbie jest ciężka jak ołów.
+partial Kárpáti w końcu cię puszcza, ale zapisuje twoje nazwisko w notesie.
+fail Kárpáti chwyta cię za ramię: „Jöjjön velem!” Misja skończona, zanim naprawdę się zaczęła.
+w Állj | stój!
+w csinál | robi (csinálni)
+w mosdót | toaletę (mosdó + -t: biernik)
+w keresem | szukam (keresni; z dopełnieniem określonym)
+t Állj! Ki maga? Mit csinál itt? | Stać! Kim Pan(i) jest? Co Pan(i) tu robi? | Vendég vagyok. A mosdót keresem. | Powiedz, że jesteś gościem i szukasz toalety. | „Szukam” (coś określonego) to keresem, a toaleta ma końcówkę biernika: mosdót. | Vendég vagyok, a mosdót keresem.
+w Járt | był (jár = chodzi, bywa)
+w irodában | w gabinecie (iroda + -ban)
+w jártam | byłem, bywałem (járni)
+w mosdóban | w toalecie (mosdó + -ban)
+k A mosdó ott van. Járt az irodában? | Toaleta jest tam. Czy Pan(i) był(a) w gabinecie? | Nem, nem jártam az irodában. | Igen, jártam az irodában.; Nem, nem voltam a mosdóban. | Przyznanie się to koniec przykrywki.; Pytanie dotyczy gabinetu (iroda), nie toalety.
+w Hm | hm
+w táskájában | w Pana(i) torbie
+w táskámban | w mojej torbie
+k Hm, jó. Mi van a táskájában? | Hm, dobrze. Co Pan(i) ma w torbie? | A táskámban csak pénz és telefon van. | A táskámban egy akta van.; Van egy táskám. | Teczka w torbie zdradziłaby cię od razu.; Ochroniarz pyta, co jest w torbie, a nie czy masz torbę.
+d Hm, pénz és telefon. Hogy hívják, és hol lakik? | Hm, pieniądze i telefon. Jak się Pan(i) nazywa i gdzie mieszka? | A nevem Barna, és Győrben lakom. | Podaj nazwisko z przykrywki i miasto, w którym mieszkasz (Győr). | Barna i Győr to twoja przykrywka. | A nevem Barna, és én Győrben lakom.
+k Barna, Győr. Maga ügynök, ugye? | Barna, Győr. Jest Pan(i) agentem, prawda? | Nem, nem vagyok ügynök. Kereskedő vagyok. | Igen, de ez titok.; Igen, a központnak dolgozom. | Nawet żartem nie przyznawaj się do tajemnicy (titok).; Przyznanie się do centrali to koniec.
+w Hívom | wołam, dzwonię po (hívni)
+w asszonyt | panią (asszony + -t: biernik)
+w vendéget | gościa (vendég + -et: biernik)
+w Ismeri | zna go/ją (ismerni)
+w asszony | pani (mężatka; po nazwisku)
+t Hívom Bárdos asszonyt. Minden vendéget ismer. Ismeri? | Zawołam panią Bárdos. Ona zna wszystkich gości. Zna ją Pan(i)? | Igen, Bárdos asszony ismer engem. Vendég vagyok. | Powiedz, że pani Bárdos cię zna. | „Zna mnie” to ismer engem. | Igen, Bárdos asszony ismer engem.
+w Látott | widział(a) (látni)
+w valakit | kogoś (valaki + -t)
+w láttam | widziałem (látni)
+w senkit | nikogo (senki + -t)
+w sem | też nie; nie
+d Jó. Egy ügynök van a nagykövetségen. Látott valakit? | Dobrze. W ambasadzie jest agent. Czy Pan(i) kogoś widział(a)? | Nem, nem láttam senkit. | Zaprzecz, że kogokolwiek widziałeś. | „Senki” = nikt. Ty sam jesteś tym agentem. | Nem, senkit sem láttam!
+w Na | no
+e Na jó. Menjen haza, Barna úr. | No dobrze. Niech Pan(i) idzie do domu, panie Barna.
+
+@level 4 | Walizka i ucieczka | patience=1 typed=0.5 extra=3 hint=letters reward=30
+desc Rozdział 4: Wymiana walizki
+partner Farkas úr | F
+scene Następny ranek, rakpart nad Dunajem w Budapeszcie. Pan Farkas z centrali czeka z walizką pełną pieniędzy. Wymienisz ją na teczkę. Nowe hasło: „Holló”. Ale ktoś cię śledzi: w tłumie jest zdrajca, który chce dostać teczkę dla siebie.
+goal Wymień teczkę na walizkę, nie daj się zdemaskować zdrajcy i wsiądź na statek.
+win Statek odpływa, a ty stoisz na pokładzie z walizką. Pan Farkas macha z nabrzeża: „Jó utat, Sólyom!”
+partial Udało się uciec, ale zdrajca zdążył zobaczyć twoją twarz. Misja zaliczona, lecz twoja przykrywka jest spalona.
+fail Zdrajca był szybszy. Walizka i teczka zniknęły, a ty zostajesz na nabrzeżu z pustymi rękami.
+w Holló | kruk
+d Jó reggelt. Mi ma a jelszó? | Dzień dobry. Jakie jest dziś hasło? | A jelszó Holló. | Podaj hasło z dzisiejszej misji. | Hasło to jelszó, a dziś brzmi „Holló” (kruk). | A jelszó Holló!
+w asszonynál | u pani (asszony + -nál)
+k Jó. Hol van az akta? | Dobrze. Gdzie jest teczka? | Az akta a táskámban van. | Az akta Bárdos asszonynál van.; Az akta titok. | Teczkę masz przy sobie, w torbie.; Kontakt pyta, gdzie jest teczka, nie o tajemnicę.
+w Vigye | niech weźmie (vinni)
+w el | (przedrostek: elvinni = zabrać)
+w Elviszem | zabiorę (elvinni)
+w bőröndöt | walizkę (bőrönd + -öt: biernik)
+t Jó. Itt a bőrönd. A pénz benne van. Vigye el. | Dobrze. Oto walizka. Pieniądze są w środku. Proszę ją zabrać. | Köszönöm. Elviszem a bőröndöt. | Podziękuj i weź walizkę. | Walizka ma końcówkę biernika: bőrönd → bőröndöt. | Köszönöm. Elviszem.
+w Vigyázat | uwaga!
+w áruló | zdrajca
+w minket | nas
+w csináljunk | niech zrobimy (csinálni)
+w elmegyünk | odchodzimy, wychodzimy (elmenni)
+w innen | stąd
+w maradunk | zostajemy (maradni)
+w iszunk | pijemy (inni)
+w Beszélünk | rozmawiamy (beszélni)
+w férfival | z mężczyzną (férfi + -val)
+k Vigyázat! Az a férfi ott áruló. Követ minket. Mit csináljunk? | Uwaga! Ten człowiek tam jest zdrajcą. Idzie za nami. Co robimy? | Gyorsan elmegyünk innen. | Itt maradunk és kávét iszunk.; Beszélünk a férfival. | Zdrajca idzie za wami, trzeba uciekać.; Nie rozmawia się ze zdrajcą.
+w balról | z lewej
+w megyünk | idziemy, jedziemy (menni)
+w pályaudvarra | na dworzec (pályaudvar + -ra)
+w kikötőbe | do portu (kikötő + -be)
+w Hazamegyünk | idziemy do domu (hazamenni)
+k Igen, gyorsan! Az áruló balról jön. Balra megyünk a pályaudvarra, vagy jobbra a kikötőbe? | Tak, szybko! Zdrajca idzie z lewej. Idziemy w lewo na dworzec czy w prawo do portu? | Jobbra megyünk a kikötőbe. | Balra megyünk a pályaudvarra.; Hazamegyünk. | Zdrajca nadchodzi z lewej, więc idziecie w prawo, do portu.; Pytanie jest o port albo dworzec, a nie o dom.
+w Adja | niech da (adni)
+w ide | tutaj (kierunek); odaadać = adni ide
+w fegyverem | moja broń (fegyver + -em)
+w adom | daję (adni; z dopełnieniem określonym)
+d Állj! Adja ide a bőröndöt! Van fegyverem! | Stać! Proszę dać mi walizkę! Mam broń! | Nem, nem adom ide a bőröndöt. | Odmów oddania walizki. | „Oddać” to odadni; „adom ide” to forma z dopełnieniem określonym. | Nem, nem adom ide a bőröndöt!
+t Gyorsan! A hajó mindjárt indul. Még Önnél van a bőrönd? | Szybko! Statek zaraz odpływa. Czy ma Pan(i) jeszcze walizkę? | Igen, még nálam van a bőrönd. | Potwierdź, że masz jeszcze walizkę. | „Jeszcze” to még, a „przy mnie” to nálam. | Igen, még nálam van.
+w küldetés | misja
+w véget | koniec (vég + -et: biernik)
+w ért | osiąga; véget ér = kończy się
+e Szép munka, Sólyom! A küldetés véget ért. Viszontlátásra! | Dobra robota, Sólyom! Misja zakończona. Do widzenia!
+
+
+@larp idoutazas | Podróż w czasie | Őr | Ő | Obudziłeś się w roku 1450 pod murami węgierskiego miasta Hársfalva. Nikt nie może się dowiedzieć, że jesteś z przyszłości, bo za dziwne rzeczy i dziwne słowa w średniowieczu grozi stos. | Nie daj się wykryć jako przybysz z przyszłości: unikaj wszystkiego, co nie pasuje do roku 1450, i dotrwaj do końca dnia.
+fee 0
+reward 15
+strict yes
+story yes
+win Burmistrz kiwa głową: „Egy becsületes utazó!” Nikt nie podejrzewa, skąd naprawdę jesteś. Wieczorem znajdujesz drogę powrotną, a w kieszeni zostaje ci tylko miedziana moneta na pamiątkę.
+partial Udało ci się przetrwać dzień, ale kilka razy ludzie patrzyli na ciebie podejrzliwie. Burmistrz każe cię obserwować, więc wymykasz się z miasta o świcie.
+fail Ktoś zauważył, że nie jesteś stąd. Straż woła: „Boszorkány! Varázsló!” i musisz uciekać. Podróż w czasie skończyła się wcześniej, niż chciałeś.
+
+@level 1 | Brama miasta | patience=5 typed=0 extra=1 hint=none
+partner Miklós őr | M
+desc Rozdział 1: Brama Hársfalvy
+scene Rok 1450. Stoisz przed wielką drewnianą bramą miasta Hársfalva. Strażnik Miklós zatrzymuje każdego podróżnego i zadaje pytania. Masz na sobie zwykłe ubranie, ale w kieszeniach zostały ci rzeczy z przyszłości.
+goal Odpowiedz na pytania strażnika tak, żeby nie wzbudzić podejrzeń: przedstaw się, powiedz skąd jesteś i jak podróżujesz. Zwróć uwagę na rzeczy, których w 1450 roku jeszcze nie było.
+win Miklós otwiera bramę: „Isten hozott Hársfalván!” Nic nie wzbudziło jego podejrzeń, a ty wchodzisz do miasta.
+partial Miklós w końcu cię wpuszcza, ale przygląda ci się dłużej, niż byś chciał. Wchodzisz do miasta z uczuciem, że ktoś cię obserwuje.
+fail Miklós podnosi halabardę: „Te nem vagy utazó!” Brama zamyka się z trzaskiem, a ty uciekasz w las.
+w Hársfalva | Hársfalva (fikcyjne miasto)
+w kapuja | brama (kapu + -ja)
+w Utazó | podróżnik
+t Állj! Ez Hársfalva kapuja. Ki vagy te? | Stój! To brama miasta Hársfalva. Kim jesteś? | Utazó vagyok. | Powiedz, że jesteś podróżnikiem. | „Jestem podróżnikiem” to utazó vagyok.
+w hívnak | nazywają mnie/cię (hívni)
+w János | János (imię; Jan)
+w Kevin | Kevin (imię)
+w Dzsenifer | Jennifer (imię)
+k Utazó! Hogy hívnak? | Podróżnik! Jak się nazywasz? | János vagyok. | Kevin vagyok.; Dzsenifer vagyok. | Kevin i Dzsenifer to imiona współczesne, w 1450 roku nikt tak nie nazywał dzieci. Strażnik uznałby cię za dziwaka.; Dzsenifer to nowoczesne, angielskie imię. W 1450 roku popularne były János, Miklós czy Péter.
+w jössz | przychodzisz, pochodzisz (jönni)
+w jövök | przychodzę, pochodzę (jönni)
+w jövőből | z przyszłości (jövő + -ből)
+w Amerikából | z Ameryki
+k János, jó név. Honnan jössz? | János, dobre imię. Skąd pochodzisz? | Lengyelországból jövök. | A jövőből jövök.; Amerikából jövök. | Przyznanie się do przyszłości to dekonspiracja. Nikt w 1450 roku nie zrozumie takich słów.; Ameryki jeszcze nie odkryto, Kolumb wypłynie dopiero w 1492 roku.
+w utazol | podróżujesz (utazni)
+w Gyalog | pieszo
+w lóval | koniem, konno (ló + -val)
+w Autóval | samochodem (autó + -val)
+w Vonattal | pociągiem (vonat + -tal)
+k Messze van! Hogyan utazol? Gyalog vagy lóval? | To daleko! Jak podróżujesz? Pieszo czy konno? | Lóval utazom. | Autóval utazom.; Vonattal utazom. | Samochodu w 1450 roku nie ma. Strażnik pomyśli, że jesteś szalony albo opętany.; Pociągów też jeszcze nie ma, pierwsza kolej pojawi się dopiero w XIX wieku.
+w Mutasd | pokaż (mutatni)
+w táskádat | twoją torbę (táska + -d + -at)
+w telefonom | mój telefon (telefon + -om)
+w bankkártyám | moja karta bankowa (bankkártya + -m)
+k Jó ló! Mutasd a táskádat. Mi van benne? | Dobry koń! Pokaż mi swoją torbę. Co w niej masz? | Csak kenyér és sör van benne. | Van egy telefonom.; Van egy bankkártyám. | Telefon w 1450 roku? Strażnik wziąłby go za czarodziejskie urządzenie i zawołał straż.; Karta kredytowa z plastiku wyglądałaby dla niego jak magia. Pieniądze to wtedy monety.
+w Bemehetsz | możesz wejść (bemenni)
+w fogadós | karczmarz
+t Kenyér és sör, rendben. Bemehetsz. Éhes vagy? | Chleb i piwo, w porządku. Możesz wejść. Jesteś głodny? | Igen, éhes vagyok. Hol van a fogadós? | Powiedz, że jesteś głodny, i zapytaj, gdzie jest karczmarz. | „Gdzie” to hol, a „karczmarz” to fogadós.
+w fogadó | gospoda
+w rögtön | zaraz
+w időt | czas (idő + -t: biernik)
+w Hársfalván | w Hársfalvie
+e A fogadó rögtön balra van. Jó időt Hársfalván! | Zaraz po lewej jest gospoda. Miłego pobytu w Hársfalvie!
+
+@level 2 | Gospoda | patience=5 typed=0.15 extra=3 hint=bank
+partner Konrád fogadós | K
+desc Rozdział 2: Gospoda „Vörös Ökör”
+scene Wchodzisz do gospody. Karczmarz Konrád jest ciekawski i pyta o wszystko: co chcesz zjeść, jak podróżujesz i czego potrzebujesz na noc. W gospodzie nie ma elektryczności ani nowoczesnych napojów.
+goal Zamów jedzenie i picie, które mogli podać w średniowieczu, ustal nocleg i nie wspomnij o niczym z przyszłości.
+win Konrád klepie cię po plecach: „Te jó vendég vagy!” Dostajesz miejsce przy kominku i pełny talerz. Nikt nie podejrzewa, że jesteś z przyszłości.
+partial Konrád przygląda ci się podejrzliwie, ale podaje jedzenie. Śpisz źle, bo wciąż myślisz o tym, co powiedziałeś.
+fail Konrád woła głośno: „Mi az a wifi?!” Goście odwracają się w twoją stronę, a ty ledwo uciekasz tylnym wyjściem.
+w Üdv | witaj (skrót od üdvözlet)
+w fogadóban | w gospodzie (fogadó + -ban)
+w kérsz | chcesz, prosisz (kérni)
+t Üdv a fogadóban! Mit kérsz enni? Van kenyér és leves. | Witaj w gospodzie! Co chcesz zjeść? Mamy chleb i zupę. | Kenyeret és levest kérek. | Zamów chleb i zupę. | „Poproszę” to kérek, a produkty mają końcówkę biernika: kenyeret, levest.
+w iszol | pijesz (inni)
+w kólát | colę (kóla + -t)
+k Kenyér és leves, rendben. És mit iszol? Van sör, bor és víz. | Chleb i zupa, w porządku. A co pijesz? Mamy piwo, wino i wodę. | Egy sört kérek. | Egy kávét kérek.; Egy kólát kérek. | Kawa dotarła do Europy dopiero w XVII wieku.; Coca-Cola powstała w XIX wieku. W 1450 roku nikt jej nie zna.
+w Messziről | z daleka
+w jöttél | przyjechałeś (jönni)
+w napja | od dni (nap + -ja: tíz napja = od dziesięciu dni)
+t Egy sör, jó. Messziről jöttél. Mióta utazol? | Piwo, dobrze. Daleko przyjechałeś. Jak długo już jedziesz? | Tíz napja utazom. | Powiedz, że podróżujesz już dziesięć dni. | „Od dziesięciu dni” to tíz napja (dosłownie „jego dziesięć dni”).
+w piacra | na targ (piac + -ra)
+w velem | ze mną
+w szekérrel | wozem (szekér + -rel)
+w biciklivel | rowerem (bicikli + -vel)
+k Tíz nap, az hosszú! Holnap a piacra megyek. Jössz velem? A szekérrel megyünk. | Dziesięć dni, to długo! Jutro jadę na targ. Pojedziesz ze mną? Pojedziemy wozem. | Igen, szívesen. A szekérrel megyünk. | Igen, az autóval megyünk.; Nem, biciklivel megyek. | Samochodu nie ma. Konrád rozejrzałby się za twoim autóval, ale takiego słowa tu nie znają.; Rower wynaleziono dopiero w XIX wieku. W 1450 roku jeździ się wozem albo konno.
+w szobában | w pokoju (szoba + -ban)
+w gyertyát | świecę (gyertya + -t)
+w wifi | wifi
+w konnektort | gniazdko (konnektor + -t)
+k Jó. A szobában van egy ágy. Kérsz még valamit? | Dobrze. W pokoju jest łóżko. Chcesz jeszcze coś? | Igen, egy gyertyát kérek. | Van wifi?; Egy konnektort kérek. | W 1450 roku nie ma internetu. Konrád nie wie, co to jest wifi.; Gniazdka elektryczne wymyślono setki lat później. Wieczorem świeci się świecami.
+w gyertya | świeca
+w ezernégyszázötvenben | w roku 1450
+w Egészségedre | na zdrowie (do jednej osoby)
+t Egy gyertya, rendben. És itt még egy sör, jó sör ezernégyszázötvenben! Egészségedre! | Świeca, w porządku. A tu jeszcze piwo, dobre piwo w roku 1450! Na zdrowie! | Egészségedre! | Wznieś toast. | „Na zdrowie” (do jednej osoby) to egészségedre.
+e Jó éjszakát! Holnap reggel megyünk a piacra. | Dobranoc! Jutro rano jedziemy na targ.
+
+@level 3 | Targ | patience=4 typed=0.3 extra=3 hint=bank reward=25
+partner Berta kofa | B
+desc Rozdział 3: Targ w Hársfalvie
+scene Następnego ranka na rynku jest tłoczno. Kupcowa Berta sprzedaje chleb i ser. Przy płaceniu liczą się tylko monety, a ludzie przyglądają się twoim ubraniom.
+goal Kup chleb i ser, zapłać tak, jak płaci się w 1450 roku, i wyjaśnij, skąd masz dziwne ubranie.
+win Berta wsuwa ci do koszyka jabłko: „A kedves utazónak!” Targ nic nie podejrzewa, a w oddali widać już ratusz.
+partial Berta w końcu sprzedała ci chleb i ser, ale kilka osób szepcze za twoimi plecami. Zbliża się ratusz.
+fail Berta krzyczy: „Mi ez a ruha? Mi az az euró?” Tłum się zbiega, a ty uciekasz między straganami.
+w szeretnél | chciałbyś, chciałabyś
+t Jó napot! Mit szeretnél venni? Kenyeret, sajtot vagy almát? | Dzień dobry! Co chcesz kupić? Chleb, ser czy jabłka? | Egy kenyeret és egy sajtot kérek. | Poproś o chleb i ser. | Produkty mają końcówkę biernika: kenyeret, sajtot.
+w dénár | denar (dawna moneta)
+t Egy kenyér és egy sajt. A kenyér két dénár, a sajt három dénár. | Chleb i ser. Chleb kosztuje dwa denary, a ser trzy denary. | Mennyibe kerül ez együtt? | Zapytaj, ile to kosztuje razem. | „Razem” to együtt.
+w Mivel | czym
+w fizetsz | płacisz (fizetni)
+w Érmével | monetą (érme + -vel)
+w fizetek | płacę (fizetni)
+w Euróval | euro (euró + -val)
+w Kártyával | kartą (kártya + -val)
+k Ez öt dénár. Mivel fizetsz? | To będzie pięć denarów. Czym zapłacisz? | Érmével fizetek. | Euróval fizetek.; Kártyával fizetek. | Euro wprowadzono dopiero w 2002 roku.; Karty płatnicze to wynalazek XX wieku. W 1450 roku płaci się monetami.
+w ruhád | twoje ubranie (ruha + -d)
+w furcsa | dziwny
+w keleti | wschodni
+w divat | moda
+w póló | koszulka polo, t-shirt
+w farmer | dżinsy
+w tornacipő | adidasy, buty sportowe
+k Jó, érmével. A ruhád furcsa. Mi ez? | Dobrze, monetami. Twoje ubranie jest dziwne. Co to jest? | Ez a keleti divat. | Ez egy póló.; Ez farmer és tornacipő. | T-shirty z napisami pojawiły się w XX wieku, a Berta nigdy takiego nie widziała.; Dżinsy i adidasy to rzeczy z dwudziestego wieku. Berta zawołałaby straż.
+w polgármester | burmistrz; wójt
+w akar | chce (akarni)
+w téged | ciebie
+w veled | z tobą
+t Keleti divat, értem. A polgármester látni akar téged. Jössz velem? | Z Wschodu, tak. Burmistrz chce cię zobaczyć. Idziesz ze mną? | Igen, megyek veled. | Zgódź się i idź z nią. | „Idę z tobą” to megyek veled (końcówka -vel + osoba: veled).
+w gyere | chodź (jönni)
+w városháza | ratusz
+e Akkor gyere! A városháza ott van. | No to chodź! Ratusz jest tam.
+
+@level 4 | Burmistrz | patience=4 typed=0.5 extra=4 hint=letters reward=25
+partner Benedek polgármester | B
+desc Rozdział 4: W ratuszu
+scene W ratuszu czeka burmistrz Benedek. Słyszał dziwne plotki o obcym przybyszu. Zauważył coś błyszczącego na twoim nadgarstku i zadaje pytania, a tobie została tylko jedna droga: wrócić do bramy, gdzie wszystko się zaczęło.
+goal Odpowiedz na pytania burmistrza tak, żeby nie zdradzić zegarka, telefonu ani przyszłości, i wróć bezpiecznie do bramy.
+win Burmistrz macha ręką: „Jó, jó, menj csak!” Wracasz do bramy, w powietrzu coś migocze i budzisz się we własnym czasie. Na dłoni masz denary z 1450 roku.
+partial Burmistrz pozwala ci odejść, ale pod nosem mruczy o czarodziejach. Dopiero za bramą migotanie powietrza zabiera cię do domu.
+fail Burmistrz woła strażników: „Varázsdoboz! A jövőből jött!” Nie zdążysz dojść do bramy.
+w polgármestere | burmistrz (czegoś) (polgármester + -e)
+t Jó napot! Én vagyok Hársfalva polgármestere. Ki vagy te? | Dzień dobry! Jestem burmistrzem Hársfalvy. Kim jesteś? | János vagyok, egy utazó Lengyelországból. | Przedstaw się: János, podróżnik z Polski. | „Z Polski” to Lengyelországból.
+w Üdvözöllek | witam cię
+w csuklódon | na twoim nadgarstku
+w karkötő | bransoleta
+w elemmel | z baterią (elem + -mel)
+w digitális | cyfrowy
+k Üdvözöllek, János. Mi az a csuklódon? | Witaj, János. Co to jest na twoim nadgarstku? | Ez csak egy karkötő. | Ez egy karóra elemmel.; Ez egy digitális óra. | Zegarek na rękę z baterią to wynalazek nowoczesny. Burmistrz nie ma pojęcia, co to jest.; Cyfrowy zegarek wyglądałby dla niego jak czary. W 1450 roku są tylko wieże z zegarami i klepsydry.
+w Hiszen | przecież
+w órád | twój zegarek (óra + -d)
+w órám | mój zegarek (óra + -m)
+w delet | południe (dél + -et: biernik)
+w mutat | pokazuje (mutatni)
+w Ránézek | spojrzę (ránézni)
+w telefonomra | na mój telefon (telefon + -om + -ra)
+k Csak karkötő? Hány óra van? Hiszen van egy órád. | Tylko bransoleta? Która godzina? Przecież masz zegarek. | Nincs órám. A nap delet mutat. | Tizennégy óra harminc van.; Ránézek a telefonomra. | Taka dokładna godzina z minutami to nowoczesny sposób liczenia czasu.; Telefon to rzecz z przyszłości. Burmistrz uznałby ją za czarodziejską.
+w évben | w roku (év + -ben)
+w Kétezerben | w roku dwutysięcznym
+w tudom | wiem (tudni)
+k Dél, jó. Melyik évben vagyunk? | Południe, dobrze. Który mamy rok? | Ezernégyszázötvenben vagyunk. | Kétezerben vagyunk.; Nem tudom. | Jeśli podasz rok z przyszłości, zdradzisz się natychmiast.; Nie znać roku? Karczmarz dał ci wskazówkę wczoraj. Burmistrz uznałby, że ukrywasz coś.
+w mondják | mówią (mondani; forma z dopełnieniem)
+w varázsdobozod | twoja magiczna skrzynka (varázs (czar) + doboz (pudełko) + -od)
+w Igaz | prawda; prawdziwy
+w varázsdobozom | moja magiczna skrzynka
+k Jó. Azt mondják, van egy varázsdobozod. Igaz ez? | Dobrze. Mówią, że masz magiczną skrzynkę. Czy to prawda? | Nem, nincs varázsdobozom. | Igen, ez egy telefon.; Igen, a jövőből jövök. | Przyznanie się do telefonu zakończy rozmowę. Burmistrz nie wie, co to jest.; Przyznanie się do podróży w czasie to najgorsza odpowiedź.
+w késő | późno
+w mész | idziesz (menni)
+w Visszamegyek | wracam (visszamenni)
+w kapuhoz | do bramy (kapu + -hoz)
+w időgéphez | do wehikułu czasu (időgép + -hez)
+w autóhoz | do samochodu (autó + -hoz)
+k Jó. Már késő van. Hová mész most? | Dobrze. Jest już późno. Dokąd teraz idziesz? | Visszamegyek a kapuhoz. | Az időgéphez megyek.; Az autóhoz megyek. | Wehikuł czasu to najgorsza odpowiedź.; Samochodu w 1450 roku nie ma. Burmistrz pomyślałby, że kłamiesz.
+w menj | idź (menni)
+e Jó, akkor menj. Jó utat! | Dobrze, to idź. Szczęśliwej podróży!
+
+
+@larp politikus | Polityk | Szavazó | S | Jesteś skorumpowanym politykiem. Dawno temu pan Madarász dał ci kopertę, a „Kakukk-akta” (afera Kukułka) wraca na każdym szczeblu twojej kariery. Wyborcy ci wierzą… i przestają… i zapominają. | Przekonaj wyborców, że nadajesz się na stanowisko. Nigdy się nie przyznaj i nie sprzeczaj sam sobie.
+fee 0
+reward 30
+strict yes
+story yes
+disclaimer Satyra. Wszystkie postacie, partie i afery są zmyślone; ewentualne podobieństwo do prawdziwych osób jest przypadkowe.
+win Wygrywasz wybory! Nikt już nie pamięta koperty od pana Madarásza. Przed gmachem tłum skanduje twoje nazwisko, a ty obiecujesz „uczciwą politykę”. Pan Madarász macha z ostatniego rzędu.
+partial Wygrywasz o włos. Dziennikarze wciąż grzebią w aktach, ale ty już podpisujesz pierwsze dokumenty. Kłamstwo trzyma się jeszcze na słowo honoru.
+fail Wiarygodność spadła do zera. Wyborcy wyciągają stare akty, a z tłumu ktoś krzyczy: „A boríték!” Twoja kariera kończy się na pierwszej stronie gazet.
+
+@level 1 | Polgármester | patience=4 cap=6 typed=0 extra=1 hint=none
+desc Szczebel 1: wójt wsi Kispatak
+partner Szűcs asszony | S
+scene Zebranie wiejskie w sali gimnastycznej w Kispataku. Chcesz zostać wójtem (polgármester). Pani Szűcs zadaje pytania, a cała wieś słucha. Wszyscy pamiętają, że pan Madarász naprawił drogę, i że ktoś widział kopertę…
+goal Przekonaj wieś, że jesteś uczciwy, i zaprzecz plotkom o kopercie.
+win Wieś klaszcze. Zostajesz wójtem Kispataku. Pan Madarász, w pierwszym rzędzie, puszcza do ciebie oko.
+partial Wygrywasz jednym głosem. Pani Szűcs patrzy na ciebie podejrzliwie, ale podnosi rękę.
+fail Wieś ma dość. Pani Szűcs mówi: „Mást választunk.” Kończysz karierę, zanim się zaczęła.
+t Jó estét! Ön polgármester szeretne lenni? | Dobry wieczór! Chce Pan(i) zostać wójtem? | Igen, polgármester szeretnék lenni. | Powiedz, że chcesz zostać wójtem. | „Zostać” to lenni (być), stoi po szeretnék: szeretnék lenni. | Igen, szeretnék polgármester lenni.
+t Ön őszinte? | Czy Pan(i) jest uczciwy(a)? | Igen, mindig őszinte vagyok. | Zapewnij, że jesteś zawsze uczciwy. | „Zawsze” to mindig; őszinte po „vagyok” nie zmienia końcówki. | | gain=1
+w tönkrement | zepsuła się (tönkremenni)
+w Megjavítom | naprawię (megjavítani; z dopełnieniem określonym)
+t Az út tönkrement. Mit csinál? | Droga jest zepsuta. Co Pan(i) zrobi? | Megjavítom az utat. | Obiecaj, że naprawisz drogę. | „Naprawiam” (coś określonego) to megjavítom; droga ma końcówkę biernika: utat. | | gain=1
+w Madarász | Madarász (nazwisko)
+w borítékot | kopertę (boríték + -ot: biernik)
+w adott | dał (adni)
+w Ezt | to (biernik od ez)
+w látta | widział to (látni)
+w Alig | ledwo
+w urat | pana (úr + -at: biernik)
+t Madarász úr borítékot adott Önnek! Ezt valaki látta! | Pan Madarász dał Panu(i) kopertę! Ktoś to widział! | Ez hazugság! Alig ismerem Madarász urat. | Zaprzecz: to kłamstwo, ledwo znasz pana Madarásza. | „Ledwo” to alig; po „ismerem” biernik: Madarász urat. | | shift=-2 loss=2
+w régen | dawno
+w Elfelejtettük | zapomnieliśmy to (elfelejteni)
+w hálás | wdzięczny
+w Önöknek | Państwu (Önök + -nek)
+t Ez már régen volt. Elfelejtettük. | No cóż… to było dawno. Zapomnieliśmy o tym. | Köszönöm, hálás vagyok Önöknek. | Podziękuj wyborcom za wyrozumiałość (jesteś im wdzięczny). | „Hálás” to wdzięczny; Önöknek = Państwu (celownik). | | shift=+2
+w faluban | we wsi (falu + -ban)
+w Spórolok | oszczędzam (spórolni)
+w Több | więcej
+w pénzt | pieniądze (pénz + -t: biernik)
+w veszek | biorę, kupuję (venni)
+o A faluban sok az adósság. Mit csinál? | W wiosce jest dużo długów. Co Pan(i) zrobi? | Spórolok és őszinte vagyok. | Több pénzt veszek el.; Nem tudom. | Dobra odpowiedź obiecuje oszczędzanie i uczciwość.; Polityk, który mówi „zabiorę więcej pieniędzy”, nie brzmi wiarygodnie.; „Nie wiem” nie przekona wyborców. | gain=1
+w hozzánk | do nas
+w Önökhöz | do Państwa (Önök + -höz)
+t Őszinte lesz hozzánk? | Czy będzie Pan(i) wobec nas uczciwy(a)? | Igen, mindig őszinte vagyok Önökhöz. | Obiecaj uczciwość wobec wyborców. | „Wobec Państwa” to Önökhöz (końcówka -hoz: „do, wobec”). | | gain=1
+w megválasztjuk | wybierzemy go/ją (megválasztani)
+w Önt | Pana(ią) (biernik od Ön)
+e Akkor megválasztjuk Önt! Üdvözöljük, polgármester úr! | Wybieramy więc Pana(ią)! Witamy, Panie wójcie!
+
+@level 2 | Képviselő | patience=4 cap=6 typed=0.2 extra=2 hint=bank
+desc Szczebel 2: radny miejski
+partner Lovas asszony | L
+scene Miasto Újváros. Jesteś kandydatem do rady miejskiej (képviselő-testület). Dziennikarka pani Lovas pyta o „biznesmenów” i o to, skąd masz nowy samochód.
+goal Zaprzecz, że brałeś pieniądze, i nie daj się złapać na kłamstwie.
+win Pani Lovas zamyka notes: „Jó, nincs több kérdésem.” Zostajesz radnym. Pan Madarász gratuluje przez telefon.
+partial Zostajesz radnym, ale pani Lovas mówi: „Nem hagyom annyiban.” Będzie dalej drążyć.
+fail Wywiad ląduje w gazecie pod tytułem „A képviselő és a boríték”. Nikt na ciebie nie głosuje.
+w újságíró | dziennikarz, dziennikarka
+w képviselő | radny; poseł
+t Jó napot, újságíró vagyok. Ön képviselő szeretne lenni? | Dzień dobry, jestem dziennikarką. Chce Pan(i) zostać radnym(ą)? | Igen, képviselő szeretnék lenni. | Potwierdź, że chcesz zostać radnym. | „Radny” to képviselő; „szeretnék lenni” stoi na końcu. | | gain=1
+w üzletembert | biznesmena (üzletember + -t)
+w barátja | Pana(i) przyjaciel (barát + -ja)
+w ismerős | znajomy
+t Ön ismeri Madarász urat, az üzletembert. A barátja? | Zna Pan(i) pana Madarásza, biznesmena. Czy to Pana(i) przyjaciel? | Nem, csak egy ismerős. | Zaprzecz: to tylko znajomy. | „Tylko” to csak; „ismerős” = znajomy. | | gain=1
+w autója | Pana(i) samochód (autó + -ja)
+w pénze | Pana(i) pieniądze (pénz + -e)
+w Becsületesen | uczciwie
+w vettem | kupiłem (venni)
+w autót | samochód (autó + -t: biernik)
+t Önnek új autója van. Honnan van a pénze? | Ma Pan(i) nowy samochód. Skąd ma Pan(i) pieniądze? | Becsületesen vettem. | Powiedz, że kupiłeś go uczciwie. | „Kupiłem” (coś określonego) to vettem; „uczciwie” to becsületesen. | Az autót becsületesen vettem.
+w Elfogadott | przyjął, przyjęła (elfogadni)
+w valaha | kiedykolwiek
+w kenőpénzt | łapówkę (kenőpénz + -t)
+w fogadtam | przyjąłem (fogadni; elfogadtam = przyjąłem)
+t Elfogadott valaha kenőpénzt? | Czy kiedykolwiek wziął/wzięła Pan(i) łapówkę? | Nem, soha nem fogadtam el kenőpénzt. | Zaprzecz, że kiedykolwiek brałeś łapówki. | „Soha nem” = nigdy; kenőpénz = łapówka (dosłownie „pieniądz do smarowania”). | Soha nem fogadtam el kenőpénzt. | loss=2
+w Lovas | Lovas (nazwisko)
+w fényképet | zdjęcie (fénykép + -et: biernik)
+w boríték | koperta
+w látható | widać; widoczny
+w rajta | na nim, na tym
+w ezeket | te (biernik l. mn. od ez)
+w embereket | ludzi (ember + -eket: biernik l. mn.)
+t Lovas asszony mutat egy fényképet. Ön, Madarász úr és egy boríték látható rajta. | Pani Lovas pokazuje zdjęcie. Widać na nim Pana(ią), pana Madarásza i kopertę. | Nem ismerem ezeket az embereket. | Powiedz, że nie znasz tych ludzi. | „Ci ludzie” to ezek az emberek, w bierniku ezeket az embereket. | | shift=-2
+w szavazók | wyborcy
+w hamar | szybko
+w elfelejtik | zapomną to (elfelejteni)
+t A fénykép régi. A szavazók hamar elfelejtik. | Zdjęcie jest stare. Wyborcy szybko o tym zapomną. | A fénykép nem fontos. | Zlekceważ zdjęcie: nie jest ważne. | „Ważny” to fontos; zaprzeczenie: nem fontos. | | shift=+2
+w tanú | świadek
+w mondja | mówi (mondani; z dopełnieniem)
+w fogadott | przyjął, przyjęła (fogadni; elfogadott = przyjął)
+w hazudik | kłamie (hazudni)
+w tanúnak | świadkowi (tanú + -nak)
+w igaza | jego/jej racja (igaz + -a; igaza van = ma rację)
+o Egy tanú azt mondja, hogy Ön pénzt fogadott el. | Świadek twierdzi, że Pan(i) wziął/wzięła pieniądze. | Ez nem igaz. A tanú hazudik. | Igen, a tanúnak igaza van.; Én vagyok a tanú. | Zaprzeczasz i nazywasz świadka kłamcą.; Przyznajesz się, więc przegrywasz.; Świadek to osoba, która widziała, a ty nią nie jesteś. | gain=1
+w interjút | wywiad (interjú + -t)
+w ártatlan | niewinny
+t Köszönöm az interjút. Szeretne még mondani valamit? | Dziękuję za wywiad. Czy chce Pan(i) coś jeszcze dodać? | Igen, ártatlan vagyok. | Powiedz na koniec, że jesteś niewinny. | „Ártatlan” = niewinny. | | gain=1
+w Megírom | napiszę to (megírni)
+w amit | co (względne: to, co)
+w mondott | powiedział (mondani)
+e Megírom, amit mondott. Viszontlátásra! | Napiszę, co Pan(i) powiedział(a). Do widzenia!
+
+@level 3 | Polgármester | patience=4 cap=6 typed=0.4 extra=2 hint=bank
+desc Szczebel 3: burmistrz
+partner Dr. Kelemen | K
+scene W ratuszu miasta Újváros. Prokurator dr Kelemen bada przetarg (közbeszerzés) na nowy most. Firma pana Madarásza wygrała dziwnie łatwo, a w aktach wraca „Kakukk-akta”.
+goal Wyjdź z przesłuchania jako burmistrz, nie przyznając się do niczego.
+win Dr Kelemen zamyka teczkę: „Nincs bizonyíték. Az akta lezárva.” Zostajesz burmistrzem, a most otwiera się z pompą.
+partial Teczka zostaje otwarta, ale prokurator nie ma dowodów. Zostajesz burmistrzem z cieniem podejrzeń.
+fail Dr Kelemen kładzie na stole kopertę i zdjęcie. „Letartóztatom!” – mówi. Kończysz w areszcie.
+w Kelemen | Kelemen (nazwisko)
+w ügyész | prokurator
+w kihallgatás | przesłuchanie
+w Szeretném | chciałbym to (szeretni)
+w ügyvédemet | mojego adwokata (ügyvéd + -em + -et)
+t Kelemen ügyész vagyok. Ez egy kihallgatás. | Jestem prokuratorem Kelemenem. To jest przesłuchanie. | Szeretném látni az ügyvédemet. | Poproś o swojego adwokata. | „Adwokat” to ügyvéd; „mojego” z końcówką biernika: ügyvédemet. | | gain=1
+w nyerte | wygrał to (nyerni)
+w közbeszerzését | przetarg (közbeszerzés + -ét: biernik)
+w legjobb | najlepszy
+w ajánlata | jego oferta (ajánlat + -a)
+t Madarász úr cége nyerte a híd közbeszerzését. Miért? | Firma pana Madarásza wygrała przetarg na most. Dlaczego? | A cégnek volt a legjobb ajánlata. | Wyjaśnij, że miała najlepszą ofertę. | „Przetarg” to közbeszerzés; „miała najlepszą ofertę” to volt a legjobb ajánlata. | | gain=1
+w kérdésünk | nasze pytanie (kérdés + -ünk)
+w vallomást | zeznanie (vallomás + -t: biernik)
+w Megtagadom | odmawiam (megtagadni; z dopełnieniem)
+t Sok kérdésünk van. Szeretne vallomást tenni? | Mamy wiele pytań. Czy chce Pan(i) złożyć zeznanie? | Megtagadom a vallomást. | Odmów składania zeznań. | „Megtagadom a vallomást” = odmawiam zeznań (prawo do milczenia). | | shift=-1
+w Bizonyítékok | dowody (bizonyíték + -ok)
+w gyanú | podejrzenie
+w mindketten | obaj, obie
+w tudjuk | wiemy to (tudni)
+w bizonyítékai | jego dowody (bizonyíték + -ai)
+t Bizonyítékok nélkül nincs gyanú. Ezt mindketten tudjuk. | Bez dowodów nie ma podejrzenia. Wiemy to obaj. | Önnek nincsenek bizonyítékai. | Powiedz prokuratorowi, że nie ma dowodów. | „Dowód” to bizonyíték; „nie ma Pan dowodów” to Önnek nincsenek bizonyítékai. | | shift=+2
+w vádat | oskarżenie (vád + -at: biernik)
+w emelnek | podnoszą (emelni; vádat emelnek = wnoszą akt oskarżenia)
+w mond | mówi (mondani)
+w erre | na to
+w Bűnös | winny
+o Talán vádat emelnek. Mit mond erre? | Być może będzie akt oskarżenia. Co Pan(i) na to? | Ártatlan vagyok. | Bűnös vagyok.; Én voltam. | „Ártatlan” = niewinny.; „Bűnös” = winny, a to przyznanie.; „Én voltam” = to byłem ja, czyli przyznanie się. | gain=1
+t Madarász úr azt mondja, hogy borítékot adott Önnek. | Pan Madarász mówi, że dał Panu(i) kopertę. | Ez hazugság! Soha nem fogadtam el borítékot. | Zaprzecz: to kłamstwo, nigdy nie wziąłeś koperty. | „Soha nem” = nigdy; „elfogadtam” = przyjąłem. | | shift=-2 loss=2
+w egyszer | raz
+w eskü | przysięga
+w úrtól | od pana (úr + -tól)
+d Akkor mondja el még egyszer, eskü alatt. Elfogadott pénzt Madarász úrtól? | A więc proszę to powtórzyć pod przysięgą. Czy przyjął/przyjęła Pan(i) pieniądze od pana Madarásza? | Nem, nem fogadtam el pénzt Madarász úrtól. | Zaprzeczaj pod przysięgą: nie wziąłeś od niego pieniędzy. | „Od pana Madarásza” to Madarász úrtól (końcówka -tól: „od”). Jedna wpadka i koniec.
+w kérdésem | moje pytanie (kérdés + -em)
+e Jó. Ön a polgármester. Nincs több kérdésem. | Dobrze. Jest Pan(i) burmistrzem. Nie mam więcej pytań.
+
+@level 4 | Országgyűlési képviselő | patience=4 cap=6 typed=0.6 extra=2 hint=letters
+desc Szczebel 4: poseł
+partner Farkas asszony | F
+scene Parlament krajowy. Jesteś posłem (országgyűlési képviselő), a komisja śledcza (vizsgálóbizottság) wzywa cię jako świadka. Przewodnicząca pani Farkas mówi o „Kakukk-aktában”. Prawnicy mają dla ciebie nowe słowa: tanú, eskü, mentelmi jog.
+goal Odpowiadaj pod przysięgą tak, by nikt nie dowiódł, że kłamiesz.
+win Pani Farkas: „A tanúvallomás véget ért.” Wychodzisz z sali z uniesioną głową. Komisja nic nie ma.
+partial Komisja kończy pracę bez wniosków, ale jeden członek zapisał w notatniku: „Később ellenőrizni!”
+fail Komisja nakazuje ci wyjaśnić sprzeczność. Zaplątałeś się, a prasa pisze o „hazug képviselő”.
+w bizottságban | w komisji (bizottság + -ban)
+w áll | stoi (állni; eskü alatt áll = jest pod przysięgą)
+w igazat | prawdę (igaz + -at: biernik)
+w mondom | mówię (mondani; z dopełnieniem)
+t Üdvözöljük a bizottságban. Ön eskü alatt áll. | Witamy w komisji. Zeznaje Pan(i) pod przysięgą. | Igen, tudom. Az igazat mondom. | Potwierdź i zapewnij, że mówisz prawdę. | „Mówić prawdę” to az igazat mondani. „Eskü alatt” = pod przysięgą. | | gain=1
+w Képviselőként | jako poseł
+w mentelmi | (przym.) immunitetu; mentelmi jog = immunitet
+w joga | jego/jej prawo (jog + -a)
+w Lemond | rezygnuje (lemondani)
+w róla | z tego, o tym
+w megtartom | zachowam (megtartani)
+w jogomat | moje prawo (jog + -om + -at)
+t Képviselőként mentelmi joga van. Lemond róla? | Jako poseł ma Pan(i) immunitet. Czy zrzeka się Pan(i) go? | Nem, megtartom a mentelmi jogomat. | Odmów zrzeczenia się immunitetu. | „Mentelmi jog” = immunitet; „megtartom” = zachowam. | | shift=-1
+w vallomása | Pana(i) zeznanie (vallomás + -a)
+w ellentmond | jest sprzeczne (ellentmondani)
+w aktának | aktom (akta + -nak)
+w magyarázza | wyjaśnia (magyarázni; z dopełnieniem)
+w titkolnom | że muszę ukrywać (titkolni + -om)
+t Az Ön vallomása ellentmond az aktának. Hogyan magyarázza ezt? | Pana(i) zeznanie jest sprzeczne z aktami. Jak Pan(i) to wyjaśni? | Nincs mit titkolnom. | Powiedz, że nie masz nic do ukrycia. | „Nie mam nic do ukrycia” to nincs mit titkolnom. | | loss=2
+w emlékeznek | pamiętają (emlékezni)
+w rá | na to
+t Ez már régen volt. A szavazók már nem emlékeznek rá. | To było dawno. Wyborcy już o tym nie pamiętają. | Ez már a múlt. | Machnij ręką: to przeszłość. | „Przeszłość” to múlt. | | shift=+2
+w levelet | list (levél + -et: biernik)
+w írtam | napisałem (írni)
+w ügyvédem | mój adwokat (ügyvéd + -em)
+w írta | napisał to (írni)
+o Itt van egy levél Madarász úrtól. Ismeri? | Oto list od pana Madarásza. Zna go Pan(i)? | Nem ismerem a levelet. | Igen, ezt a levelet én írtam.; Az ügyvédem írta a levelet. | Zaprzeczasz, że znasz ten list.; Przyznajesz się, że to ty napisałeś list: to błąd.; Zwalanie na adwokata nie jest wiarygodne. | gain=1
+w kapott | dostał (kapni)
+w pénzzel | z pieniędzmi (pénz + -zel)
+w kaptam | dostałem (kapni)
+t Egy tanú azt mondja, hogy Ön borítékot kapott pénzzel. | Świadek mówi, że dostał Pan(i) kopertę z pieniędzmi. | A tanú hazudik. Nem kaptam pénzt. | Nazwij świadka kłamcą i zaprzecz, że dostałeś pieniądze. | „Świadek kłamie” to a tanú hazudik. „Nem kaptam pénzt” = nie dostałem pieniędzy. | | shift=-2 loss=2
+w testületben | w radzie (testület + -ben)
+w mondta | powiedział to (mondani)
+k A testületben azt mondta, alig ismeri Madarász urat. Ez még igaz? | W radzie powiedział(a) Pan(i): „Ledwo znam pana Madarásza.” Czy to nadal prawda? | Igen, alig ismerem. | Nem, a barátom.; Nem, soha nem láttam. | Konsekwentnie powtarzasz wcześniejsze zeznanie: alig.; Przyznajesz, że to twój przyjaciel: sprzeczność i koniec.; Wcześniej mówiłeś „alig”, a nie „nigdy go nie widziałem”. | gain=1
+w Elmehet | może odejść (elmenni)
+w újra | znowu
+w találkozunk | spotkamy się (találkozni)
+e Köszönöm. Elmehet. Hamarosan újra találkozunk. | Dziękuję. Może Pan(i) iść. Wkrótce znów się zobaczymy.
+
+@level 5 | Miniszter | patience=4 cap=6 typed=0.8 extra=2 hint=bank
+desc Szczebel 5: minister
+partner Tóth úr | T
+scene Studio telewizyjne, wywiad na żywo. Jesteś ministrem (miniszter) i siedzisz naprzeciw pana Tótha, prowadzącego wiadomości. Na ekranie nagle pojawia się stary dokument z „Kakukk-akta”.
+goal Wyjdź ze studia nadal jako minister: nie daj się zapędzić w pułapkę na żywo.
+win Tóth kończy wywiad: „Köszönöm, miniszter úr.” Sondaże rosną. Pan Madarász dzwoni: „Szép munka!”
+partial Wywiad kończy się remisem. Opozycja domaga się dymisji (lemondás), ale premier cię broni.
+fail Na wizji uciekasz od odpowiedzi, a widzowie wszystko widzą. Rano gazety krzyczą: „Lemondás!”
+w Élő | żywy; na żywo
+w adásban | w audycji, na antenie (adás + -ban)
+w tévében | w telewizji (tévé + -ben)
+w Készen | gotowy (készen áll = jest gotów)
+w miniszter | minister
+w állok | stoję (állni; készen állok = jestem gotów)
+t Jó estét! Élő adásban vagyunk a tévében. Készen áll, miniszter úr? | Dobry wieczór! Jesteśmy na żywo w telewizji. Jest Pan(i) gotowy(a), panie ministrze? | Igen, készen állok. Szívesen. | Potwierdź, że jesteś gotów. | „Készen állok” = jestem gotów. | | gain=1
+w ellenzék | opozycja
+w állítja | twierdzi (állítani)
+w botrány | skandal
+w Kakukk-akta | akta Kukułka (kakukk = kukułka)
+w kampány | kampania
+t Az ellenzék azt állítja, hogy botrány van a Kakukk-akta körül. | Opozycja twierdzi, że wokół Kakukk-akta jest skandal. | Ez nem botrány. Ez egy kampány. | Zbagatelizuj: to nie skandal, tylko kampania. | „Kampány” = kampania; „nem botrány” = nie skandal. | | shift=-1
+w újságban | w gazecie (újság + -ban)
+w dokumentum | dokument
+w aláírásával | z podpisem (aláírás + -ával)
+w emlékszem | pamiętam (emlékezni)
+t Az újságban van egy dokumentum. Az Ön aláírásával. | W gazecie jest dokument. Ma Pana(i) podpis. | Nem emlékszem erre. | Powiedz, że nie możesz sobie tego przypomnieć. | „Nem emlékszem erre” = nie pamiętam tego. | | shift=-2 loss=2
+w aláírása | Pana(i) podpis (aláírás + -a)
+w hamisítvány | fałszerstwo
+t Ez az Ön aláírása. Hogyan magyarázza ezt? | To jest Pana(i) podpis. Jak Pan(i) to wyjaśni? | Ez hamisítvány. | Zaprzecz: to fałszerstwo. | „Hamisítvány” = fałszerstwo. | | gain=1
+w közvélemény-kutatások | sondaże
+w emelkednek | rosną (emelkedni)
+w hisznek | wierzą (hinni)
+w bizalmat | zaufanie (bizalom + -at: biernik)
+t A közvélemény-kutatások emelkednek. A szavazók hisznek Önnek. | Sondaże rosną. Wyborcy Panu(i) wierzą. | Köszönöm a bizalmat. | Podziękuj wyborcom za zaufanie. | „Bizalom” = zaufanie; „köszönöm a bizalmat” = dziękuję za zaufanie. | | shift=+2
+w tanácsadója | jego doradca (tanácsadó + -ja)
+w dolgoztam | pracowałem (dolgozni)
+w vele | z nim
+w sokszor | wiele razy
+w nekem | mi
+o Madarász úr azt mondja, hogy ő volt az Ön tanácsadója. Igaz ez? | Pan Madarász mówi, że był Pana(i) doradcą. Czy to prawda? | Nem, soha nem dolgoztam vele. | Igen, sokszor adott nekem pénzt.; Megtagadom a vallomást. | Zaprzeczasz konsekwentnie.; Przyznajesz się do pieniędzy: błąd.; „Megtagadom a vallomást” w telewizji wygląda na przyznanie się, a Tóth to wykorzysta. | gain=1
+w ér | osiąga; dotyka
+w mondok | mówię (mondani)
+t Lemond? Akkor minden véget ér. | Czy poda się Pan(i) do dymisji? Wtedy wszystko skończone. | Nem, nem mondok le. Ártatlan vagyok. | Odmów dymisji i powiedz, że jesteś niewinny. | „Lemond” = rezygnuje, podaje się do dymisji; „nem mondok le” = nie podam się do dymisji. | | gain=1
+w Önről | o Panu(i) (Ön + -ről)
+w úrról | o panu (úr + -ról)
+w látszik | widać (látszani)
+w borítékban | w kopercie (boríték + -ban)
+w kampányom | moja kampania (kampány + -om)
+k Itt egy fénykép Önről és Madarász úrról. Egy boríték is látszik rajta. Mi van a borítékban? | Oto zdjęcie: Pan(i) i pan Madarász. Jest tam też koperta. Co jest w kopercie? | A fénykép régi. Soha nem vettem át borítékot. | Ez a kampányom pénze.; Ez csak ajándék volt. | Powtarzasz to, co powiedziałeś prokuratorowi.; Przyznanie się do pieniędzy: koniec.; „Ajándék” to też przyznanie, bo wcześniej mówiłeś, że nie brałeś koperty. | gain=1
+e Köszönöm az interjút, miniszter úr. | Dziękuję za wywiad, panie ministrze.
+
+@level 6 | Miniszterelnök | patience=4 cap=6 typed=1 extra=2 hint=none
+desc Szczebel 6: premier
+partner Mezei asszony | M
+scene Debata finałowa w telewizji. Kandydujesz na premiera (miniszterelnök). Naprzeciw stoi pani Mezei z partii „Új Őszinteség” i jej teczka z „Kakukk-akta”. Cały kraj ogląda.
+goal Wygraj debatę, zachowaj spokój i nie przyznaj się do niczego do samego końca.
+win Przegrywa nawet sondaż: 52 procent mówi, że chce ciebie. Zostajesz premierem, a koperta pana Madarásza leży gdzieś na dnie szuflady.
+partial Debata kończy się remisem. Wybory wygrywasz minimalnie i obiecujesz „więcej przejrzystości”.
+fail Pani Mezei kładzie na stoliku teczkę. Kraj widzi sprzeczność w twoich słowach i na ekranie pojawia się napis: „A jelölt hazudik.”
+w vitán | na debacie (vita + -n)
+w Mezei | Mezei (nazwisko)
+w jelölt | kandydat
+w Miniszterelnök | premier
+t Üdvözöljük a vitán! Mezei asszony, jelölt úr, tessék. | Witamy na debacie! Pani Mezei, panie kandydacie, proszę. | Jó estét. Miniszterelnök szeretnék lenni. | Przywitaj się i powiedz, że chcesz zostać premierem. | „Miniszterelnök” = premier. | | gain=1
+w Új | nowy
+w Őszinteség | uczciwość, szczerość
+w pártjából | z partii (párt + -ja + -ból)
+t Az Új Őszinteség pártjából jöttem. Mondja az igazat, jelölt úr! | Jestem z partii Új Őszinteség. Niech Pan(i) mówi prawdę, panie kandydacie! | Én mindig az igazat mondom. | Zapewnij, że zawsze mówisz prawdę. | „Zawsze” = mindig; „prawda” = igaz (az igazat = prawdę). | | gain=1
+w vádam | mój zarzut (vád + -am)
+w visszautasítom | odrzucam (visszautasítani)
+t Ön kenőpénzt fogadott el. Ez a vádam. | Brał Pan(i) łapówki. To mój zarzut. | Ezt a vádat visszautasítom. | Odrzuć ten zarzut. | „Vád” = zarzut, oskarżenie; „visszautasítom” = odrzucam. | | shift=-2 loss=2
+w Lehet | może być
+w kampánya | jego/jej kampania (kampány + -a)
+t Lehet, hogy ez csak kampány. Ez már régen volt. | To może tylko kampania. To było dawno. | Az Ön kampánya piszkos. | Zarzuć rywalce brudną kampanię. | „Piszkos” = brudny; „az Ön kampánya” = Pani kampania. | | shift=+2
+w látok | widzę (látni)
+w bizonyítékot | dowód (bizonyíték + -ot: biernik)
+t Vannak bizonyítékai, Mezei asszony? Én nem látok bizonyítékot! | Ma Pani dowody, pani Mezei? Ja nie widzę żadnych dowodów! | Én sem látok bizonyítékot. | Powtórz, że nie widzisz żadnych dowodów. | „Sem” = też nie; „nem látok” = nie widzę. | | gain=1
+w terve | jego plan (terv + -e)
+w országnak | krajowi (ország + -nak)
+w munkahelyeket | miejsca pracy (munkahely + -eket)
+w teremtek | tworzę (teremteni)
+t És mi a terve az országnak? | A jaki jest Pana(i) plan dla kraju? | Új munkahelyeket teremtek. | Obiecaj nowe miejsca pracy. | „Munkahely” = miejsce pracy; „teremtek” = tworzę. | | gain=1
+t Az Ön barátja, Madarász úr azt mondja, sok pénzt adott Önnek! | Pana(i) przyjaciel pan Madarász mówi: dał Panu(i) dużo pieniędzy! | Ez hazugság! Nem a barátom. | Zaprzecz: to kłamstwo, on nie jest twoim przyjacielem. | „Nie mój przyjaciel” = nem a barátom. | | shift=-1 loss=2
+o A testületben azt mondta, csak egy ismerős. És most? | W radzie powiedział(a) Pan(i): to tylko znajomy. A teraz? | Csak egy ismerős. | A barátom.; Soha nem láttam. | Trzymasz się wersji z rady.; Zaprzeczasz sam sobie.; Wcześniej przyznałeś, że go znasz (ismerős), więc „nigdy go nie widziałem” to sprzeczność. | gain=1
+w megmutatja | pokazuje (megmutatni)
+w Elfogadta | przyjął(ęła) to (elfogadni)
+w elfogadtam | przyjąłem to (elfogadni)
+k Mezei asszony megmutatja a borítékot. Elfogadta? Igen vagy nem? | Pani Mezei pokazuje kopertę. Wziął/wzięła ją Pan(i)? Tak czy nie? | Nem, soha nem fogadtam el. | Igen, elfogadtam.; Megtagadom a vallomást. | Zaprzeczasz do końca.; Przyznanie się: koniec.; Milczenie na żywo wygląda jak przyznanie się. |
+w Szívből | z serca
+w gratulálunk | gratulujemy (gratulálni)
+e És a miniszterelnök Ön! Szívből gratulálunk! | A premierem zostaje… Pan(i)! Serdeczne gratulacje!
+
+
+@larp repuloter | Lotnisko | Munkatárs | M | Budapeszt, wczesny ranek. Lecisz do Warszawy na ślub najlepszego przyjaciela, a samolot nie poczeka. Masz walizkę, paszport i mało czasu. | Przejdź całą drogę: odprawa, kontrola bezpieczeństwa, bramka, lot i odbiór bagażu w Warszawie.
+fee 0
+reward 20
+strict yes
+story yes
+win Docierasz do Warszawy z walizką, paszportem i pół godziny zapasu. Przyjaciel czeka w hali przylotów z bukietem: „Sikerült! Kezdődhet az esküvő!”
+partial Dotarłeś do Warszawy, ale po drodze sporo się nagadałeś i trochę pobiegałeś. Walizka jest, ślub też, ty trochę zdyszany, ale na czas.
+fail Pomyliłeś coś w najgorszym momencie i samolot odleciał bez ciebie. Ślub oglądasz na telefonie, a przyjaciel obiecuje ci długą wyprawę „na pocieszenie”.
+
+@level 1 | Odprawa | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Odprawa
+partner Munkatárs | M
+scene Budapeszt, lotnisko Liszt Ferenc, hala odlotów. Podchodzisz do stanowiska odprawy linii Északi Szél Air. Pracowniczka patrzy na ciebie życzliwie i czeka na dokumenty.
+goal Odpraw się na lot do Warszawy: pokaż paszport, nadaj walizkę i wybierz miejsce.
+win Pracowniczka podaje ci kartę pokładową: „Jó utat!” Walizka jedzie na taśmie, a ty idziesz do kontroli bezpieczeństwa.
+partial Odprawa udała się, ale pracowniczka kilka razy musiała się domyślać, o co ci chodzi. Karta pokładowa w ręku, czas ucieka.
+fail Pracowniczka nie rozumie, czego chcesz, i prosi następną osobę w kolejce. Musisz zacząć od nowa na końcu kolejki.
+w Északi | północny
+w Szél | wiatr
+w Air | Air (linia lotnicza)
+w pultjánál | przy stanowisku (pult + -ja + -nál)
+w repül | leci (repülni)
+w Varsóba | do Warszawy
+w repülök | lecę (repülni)
+t Jó napot! Üdvözöljük az Északi Szél Air pultjánál. Hová repül? | Dzień dobry! Witamy przy stanowisku Északi Szél Air. Dokąd Pan(i) leci? | Jó napot! Varsóba repülök. | Przywitaj się i powiedz, że lecisz do Warszawy. | „Lecę” to repülök, a „do Warszawy” to Varsóba (końcówka -ba: „do”).
+w Varsó | Warszawa
+w útlevelét | Pana(i) paszport (útlevél + -ét: biernik)
+w útlevelem | mój paszport (útlevél + -em)
+w Esküvőre | na ślub (esküvő + -re)
+t Varsó, jó választás! Az útlevelét kérem. És miért repül Varsóba? | Warszawa, dobry wybór! Paszport proszę. A po co Pan(i) leci do Warszawy? | Tessék az útlevelem. Esküvőre repülök. | Podaj paszport i powiedz, że lecisz na ślub. | „Oto” przy rzeczy to tessék; „na ślub” to esküvőre.
+w feladni | nadać (bezokolicznik)
+t Nagyon szép! Szeretne feladni bőröndöt? | Jak miło! Czy chce Pan(i) nadać walizkę? | Igen, egy bőröndöt szeretnék feladni. | Powiedz, że chcesz nadać walizkę. | „Nadać” to feladni, stoi po szeretnék: szeretnék feladni. | Igen, szeretnék feladni egy bőröndöt.
+w tegye | niech położy, postawi (tenni)
+w mérlegre | na wagę (mérleg + -re)
+w kiló | kilogram
+w kézipoggyásza | Pana(i) bagaż podręczny (kéz (ręka) + i + poggyász (bagaż) + -a)
+w kézipoggyászom | mój bagaż podręczny
+t Kérem, tegye a bőröndöt a mérlegre. Húsz kiló, ez rendben van. Van kézipoggyásza is? | Proszę postawić walizkę na wadze. Dwadzieścia kilo, to w porządku. Czy ma Pan(i) też bagaż podręczny? | Igen, egy táska a kézipoggyászom. | Powiedz, że torba to twój bagaż podręczny. | „Bagaż podręczny” to kézipoggyász; „mój” z końcówką -om: kézipoggyászom.
+w melletti | przy ...; obok
+w folyosó | korytarz, przejście
+w ülést | miejsce siedzące (ülés + -t: biernik)
+t Rendben. Ablak melletti vagy folyosó melletti ülést szeretne? | Dobrze. Woli Pan(i) miejsce przy oknie czy przy przejściu? | Ablak melletti ülést kérek. | Powiedz, że wolisz miejsce przy oknie. | „Przy oknie” to ablak mellett; miejsce ma końcówkę biernika: ülést.
+w beszállókártyája | Pana(i) karta pokładowa
+w indulás | odlot, odjazd
+w tizenegykor | o jedenastej (tizenegy + -kor)
+w kérdése | Pana(i) pytanie (kérdés + -e)
+w pontosan | punktualnie, dokładnie
+w járat | lot, kurs
+t Tessék a beszállókártyája. Az indulás fél tizenegykor van. Van még kérdése? | Oto Pana(i) karta pokładowa. Odlot jest o wpół do jedenastej. Czy ma Pan(i) jeszcze pytanie? | Igen, pontosan indul a járat? | Zapytaj, czy lot jest punktualny. | „Punktualnie” to pontosan; „lot” to járat.
+w kapu | brama, bramka
+w tizenkettes | dwunasty (numer 12)
+w egyenesen | prosto
+t Igen, a járat pontosan indul. A kapu a tizenkettes. Menjen egyenesen. | Tak, lot jest punktualny. Pana(i) bramka to 12. Proszę iść prosto. | Köszönöm szépen! Viszontlátásra! | Podziękuj i pożegnaj się. | „Do widzenia” to viszontlátásra.
+e Jó utat! | Szczęśliwej podróży!
+
+@level 2 | Kontrola bezpieczeństwa | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Kontrola bezpieczeństwa
+partner Biztonsági őr | B
+scene Masz kartę pokładową, a przed tobą długa kolejka do kontroli. Funkcjonariusz podaje plastikowe pojemniki i patrzy uważnie na twoją torbę.
+goal Przejdź kontrolę bezpieczeństwa: pokaż laptop, zdejmij pasek i odpowiedz na pytania.
+win Funkcjonariusz kiwa głową: „Minden rendben. Menjen tovább.” Zakładasz pasek i biegniesz do bramki z pełnym spokojem.
+partial Kontrola przebiegła w końcu bez problemów, ale funkcjonariusz kilka razy zmarszczył brwi. Zakładasz pasek w biegu.
+fail Funkcjonariusz uznaje twoje odpowiedzi za podejrzane. Zostajesz zatrzymany na dodatkową kontrolę, a samolot odlatuje bez ciebie.
+w biztonsági | bezpieczeństwa (przym.)
+w ellenőrzés | kontrola
+w táskáját | Pana(i) torbę (biernik)
+w szalagra | na taśmę (szalag + -ra)
+t Jó napot! Ez a biztonsági ellenőrzés. Kérem, tegye a táskáját ide a szalagra. | Dzień dobry! To jest kontrola bezpieczeństwa. Proszę położyć torbę tutaj na taśmie. | Természetesen. | Zgódź się i powiedz, że oczywiście. | „Oczywiście” to természetesen.
+w laptop | laptop
+w vegye | niech weźmie (venni; vegye ki = niech wyjmie)
+w laptopom | mój laptop
+t Köszönöm. Van laptop a táskájában? Kérem, vegye ki. | Dziękuję. Czy ma Pan(i) w torbie laptop? Proszę go wyjąć. | Igen, itt a laptopom. | Potwierdź i podaj laptop. | „Mój” z końcówką -om: laptopom.
+w folyadék | płyn
+w Például | na przykład
+w parfüm | perfumy
+w krém | krem
+w semmilyen | żaden
+t Köszönöm. Van Önnél folyadék? Például víz, parfüm vagy krém? | Dziękuję. Czy ma Pan(i) przy sobie płyny? Na przykład wodę, perfumy albo krem? | Nem, nincs nálam folyadék. | Zaprzecz: nie masz płynów. | „Nie mam przy sobie” to nincs nálam. | Nem, nincs nálam semmilyen folyadék.
+w övét | Pana(i) pasek (öv + -ét: biernik)
+w kabátját | Pana(i) kurtkę (kabát + -ját)
+w övem | mój pasek (öv + -em)
+w kabátom | moja kurtka (kabát + -om)
+t Rendben. Kérem, vegye le az övét és a kabátját is. | Dobrze. Proszę też zdjąć pasek i kurtkę. | Igen, tessék az övem és a kabátom. | Podaj pasek i kurtkę. | „Pasek” to öv, „kurtka” to kabát; „mój” z końcówką: övem, kabátom.
+k Köszönöm. Van a táskájában kés vagy fegyver? | Dziękuję. Czy w Pana(i) torbie jest nóż albo broń? | Nem, nincs nálam sem kés, sem fegyver. | Igen, van nálam egy kés.; Nem tudom, talán. | Przyznanie się do noża to natychmiastowe zatrzymanie.; Niepewna odpowiedź przy takim pytaniu wzbudza podejrzenia: zatrzymanie.
+w szkenneren | przez skaner (szkenner + -en)
+w Pi-ip | pip (dźwięk)
+w nadrágzsebében | w kieszeni spodni (nadrágzseb + -ében)
+w kulcsom | mój klucz (kulcs + -om)
+t Rendben. Kérem, menjen át a szkenneren. Pi-ip! Van még valami a nadrágzsebében? | Dobrze. Proszę przejść przez skaner. Pip! Czy ma Pan(i) jeszcze coś w kieszeni spodni? | Igen, a kulcsom és a telefonom van benne. | Powiedz, że masz klucz i telefon. | „Klucz” to kulcs, „mój klucz” to kulcsom; „w niej” to benne.
+w tovább | dalej
+e Minden rendben. Menjen tovább. Jó utat! | Wszystko w porządku. Proszę iść dalej. Szczęśliwej podróży!
+
+@level 3 | Przy bramce | patience=4 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Przy bramce
+partner Repülőtéri dolgozó | R
+scene Siedzisz przy bramce 12 i patrzysz na zegarek. Nagle w głośnikach coś trzaska, a na tablicy pojawia się napis „Késés”.
+goal Dowiedz się, co z lotem, zrozum komunikat o zmianie bramki i wejdź na pokład.
+win Biegniesz do nowej bramki i wsiadasz jako jeden z ostatnich. Pracownik zamyka drzwi: „Ez szoros volt!”
+partial Znalazłeś w końcu właściwą bramkę, choć po drodze kilka razy musiałeś dopytywać. Wchodzisz na pokład spocony.
+fail Zrozumiałeś komunikat na opak i czekasz przy złej bramce. Kiedy orientujesz się w błędzie, drzwi samolotu są już zamknięte.
+w Elnézést | przepraszam
+w varsói | warszawski
+w utasa | pasażer (czegoś) (utas + -a)
+w járatom | mój lot (járat + -om)
+t Elnézést! Ön a varsói járat utasa? | Przepraszam! Czy jest Pan(i) pasażerem lotu do Warszawy? | Igen, késik a járatom, ugye? | Potwierdź i zapytaj, czy twój lot jest spóźniony. | „Spóźnia się” to késik; „ugye?” na końcu znaczy „prawda?”.
+w beszállás | wejście na pokład, boarding
+w kezdődik | zaczyna się (kezdődni)
+t Igen, a járat negyven percet késik. A beszállás tizenegykor kezdődik. | Tak, lot ma czterdzieści minut spóźnienia. Wejście na pokład zacznie się o jedenastej. | Mikor kezdődik a beszállás? Esküvőre megyek. | Zapytaj, kiedy jest boarding, i dodaj, że lecisz na ślub. | Pytanie o czas zaczyna się od mikor: mikor kezdődik a beszállás?
+w szállnia | że musi się przesiąść (szállni + -nia)
+w Varsóban | w Warszawie (Varsó + -ban)
+w közvetlenül | bezpośrednio
+t Esküvő, de szép! A beszállás tizenegykor van. Át kell szállnia Varsóban? | Ślub, jak miło! Boarding jest o jedenastej. Czy musi się Pan(i) przesiadać w Warszawie? | Nem, közvetlenül Varsóba repülök. | Odpowiedz, że nie, lecisz bezpośrednio. | „Bezpośrednio” to közvetlenül.
+w közvetlen | bezpośredni
+w Figyelem | uwaga
+w hangosbemondás | ogłoszenie przez głośniki
+w kapunál | przy bramce (kapu + -nál)
+w zárva | zamknięty
+w Megértette | zrozumiał(a) Pan(i) (megérteni)
+w maradok | zostaję (maradni)
+w kijárathoz | do wyjścia (kijárat + -hoz)
+k Jó, közvetlen. Figyelem, hangosbemondás! A varsói járat most az ötös kapunál indul. A tizenkettes kapu zárva van. Megértette? Hová megy? | Dobrze, bezpośrednio. Uwaga, ogłoszenie! Lot do Warszawy odlatuje teraz z bramki 5. Bramka 12 jest zamknięta. Czy Pan(i) zrozumiał(a)? Dokąd Pan(i) idzie? | Az ötös kapuhoz megyek. | A tizenkettes kapunál maradok.; A kijárathoz megyek. | Bramka 12 jest zamknięta, więc czekanie tam kończy się spóźnieniem.; Wyjście to wyjście z lotniska, nie bramka na pokład.
+w beszállókártyáját | Pana(i) kartę pokładową (biernik)
+w beszállhat | może wsiadać (beszállni)
+w beszállókártyám | moja karta pokładowa
+w szállok | wsiadam, siadam (szállni; beszállok = wsiadam)
+w be | do środka (przedrostek: beszállni)
+t Akkor gyorsan! A beszállókártyáját kérem. Már beszállhat. | W takim razie szybko! Karta pokładowa, proszę. Może Pan(i) już wsiadać. | Tessék a beszállókártyám. Most szállok be. | Podaj kartę i powiedz, że już wsiadasz. | „Wsiadam” to beszállok; „teraz” to most.
+w nyitva | otwarty
+e Jó utat! A beszállás nyitva van. | Szczęśliwej podróży! Boarding jest otwarty.
+
+@level 4 | W samolocie i po lądowaniu | patience=4 typed=0.75 extra=3 hint=letters reward=30
+desc Rozdział 4: Lot i przylot
+partner Légiutas-kísérő | L
+scene Wchodzisz na pokład Északi Szél Air. Stewardesa wita pasażerów przy drzwiach, a za chwilę wystartujecie do Warszawy. Po lądowaniu będziesz musiał jeszcze znaleźć paszportówkę i swoją walizkę.
+goal Zajmij miejsce, zapnij pas, poproś o picie, a po lądowaniu dowiedz się, gdzie jest kontrola paszportowa, taśma bagażowa i odprawa celna.
+win Walizka wyjeżdża na taśmie jako pierwsza, a celnik życzy ci „Üdvözöljük Lengyelországban!” Przyjaciel czeka w hali przylotów.
+partial Wszystko udało ci się znaleźć, ale po drodze trzy razy zapytałeś o drogę. Walizka dojechała, a ty do ślubu zdążysz.
+fail Poszedłeś w złą stronę i straciłeś czas na lotnisku. Walizka krąży samotnie po taśmie, a przyjaciel wydzwania co minutę.
+w fedélzeten | na pokładzie (fedélzet + -en)
+t Jó napot, és üdvözöljük a fedélzeten! A beszállókártyáját kérem. | Dzień dobry i witamy na pokładzie! Proszę o kartę pokładową. | Jó napot! Tessék a beszállókártyám. | Przywitaj się i pokaż kartę pokładową. | „Oto moja karta” to tessék a beszállókártyám.
+w helye | Pana(i) miejsce (hely + -e)
+w tizennégyes | czternasty (numer 14)
+w ülés | siedzenie, miejsce
+w felső | górny
+w polcra | na półkę (polc + -ra)
+w felteszem | położę na górze (feltenni)
+t Köszönöm. A helye a tizennégyes. Ez ablak melletti ülés. Kérem, tegye a táskáját a felső polcra. | Dziękuję. Pana(i) miejsce to 14. To miejsce przy oknie. Proszę położyć torbę w schowku na górze. | Köszönöm, felteszem a táskát a polcra. | Podziękuj i powiedz, że kładziesz torbę do schowka. | „Kładę na górę” to felteszem; „na półkę” to a polcra.
+w csatolja | niech zapnie (csatolni; becsatolja)
+w övet | pas (öv + -et: biernik)
+w felszállunk | wystartujemy (felszállni)
+w becsatolom | zapinam (becsatolni)
+t Köszönöm. Kérem, csatolja be az övet. Hamarosan felszállunk. | Dziękuję. Proszę zapiąć pas. Za chwilę startujemy. | Igen, becsatolom az övet. | Powiedz, że zapinasz pas. | „Zapinam pas” to becsatolom az övet.
+t Köszönöm. Kér valamit inni? | Dziękuję. Czy chce Pan(i) coś do picia? | Igen, egy kávét kérek. | Poproś o kawę. | Kawa ma końcówkę biernika: kávét.
+w kávéja | Pana(i) kawa (kávé + -ja)
+w szállunk | wysiadamy, lądujemy (szállni; leszállunk = lądujemy)
+t Tessék a kávéja. Szeretne még valamit kérdezni? | Oto Pana(i) kawa. Czy chce Pan(i) jeszcze o coś zapytać? | Mikor szállunk le Varsóban? | Zapytaj, kiedy lądujecie w Warszawie. | „Kiedy” to mikor, a „lądujemy” to szállunk le.
+w leszállunk | wylądujemy, wysiądziemy (leszállni)
+w érkezés | przylot, przyjazd
+w pontos | punktualny
+w útlevél-ellenőrzés | kontrola paszportowa
+t Tíz perc múlva leszállunk. Üdvözöljük Varsóban! Az érkezés pontos. | Lądujemy za dziesięć minut. Witamy w Warszawie! Przylot jest punktualny. | Köszönöm! Hol van az útlevél-ellenőrzés, kérem? | Podziękuj i zapytaj, gdzie jest kontrola paszportowa. | Pytanie o miejsce zaczyna się od hol: hol van az útlevél-ellenőrzés?
+w Utána | potem, po tym
+w poggyászkiadó | odbiór bagażu
+w aztán | potem
+w vám | cło; urząd celny
+w először | najpierw
+w útlevél-ellenőrzéshez | do kontroli paszportowej (+ -hez)
+w vámhoz | do cła (vám + -hoz)
+w poggyászkiadóhoz | do odbioru bagażu (+ -hoz)
+k Az útlevél-ellenőrzés balra van. Utána a poggyászkiadó jön, aztán a vám. Hová megy először? | Kontrola paszportowa jest po lewej. Potem taśma bagażowa, a potem cło. Dokąd Pan(i) idzie najpierw? | Először az útlevél-ellenőrzéshez megyek. | Először a vámhoz megyek.; Először a poggyászkiadóhoz megyek. | Do cła idziesz na końcu, po odbiorze walizki.; Walizkę odbierasz dopiero po kontroli paszportowej.
+w bőröndje | Pana(i) walizka (bőrönd + -je)
+w négyes | czwarty (numer 4)
+w szalagon | na taśmie (szalag + -on)
+w érkezik | przyjeżdża, przylatuje (érkezni)
+w Leveszem | zdejmę (levenni)
+w bőröndömet | moją walizkę (bőrönd + -öm + -et)
+w szalagról | z taśmy (szalag + -ról)
+t Pontosan! Utána a poggyászkiadóhoz. A bőröndje a négyes szalagon érkezik. | Dokładnie! A potem do taśmy bagażowej. Pana(i) walizka przyjedzie na taśmie czwartej. | Köszönöm szépen! Leveszem a bőröndömet a szalagról. | Podziękuj i powiedz, że zdejmiesz walizkę z taśmy. | „Zdejmuję” to leveszem, a „z taśmy” to a szalagról (końcówka -ról: „z”).
+w elvámolnivalója | Pana(i) rzecz do oclenia
+w Erről | o tym (ez + -ről)
+w kérdez | pyta (kérdezni)
+w elvámolnivalóm | moja rzecz do oclenia
+t Van elvámolnivalója? Erről a vám kérdez. | Czy ma Pan(i) coś do oclenia? O to zapyta cło. | Nem, nincs elvámolnivalóm. | Powiedz, że nie masz nic do oclenia. | „Nic do oclenia” to nincs elvámolnivalóm.
+w mulatást | zabawę (mulatás + -t)
+w esküvőn | na ślubie (esküvő + -n)
+e Akkor minden rendben. Üdvözöljük Lengyelországban, és jó mulatást az esküvőn! | Wtedy wszystko w porządku. Witamy w Polsce i dobrej zabawy na ślubie!

@@ -314,3 +314,952 @@ t Bu yer boş. Tren on dakika gecikmeli. | To miejsce jest wolne. Pociąg ma dzi
 w her | każdy
 w yolunda | w porządku
 e Her şey yolunda! Ankara'ya iyi yolculuklar! | Wszystko w porządku! Szczęśliwej podróży do Ankary!
+
+@larp nine | Babcia w parku | Hatice Teyze | H | Niedziela w parku. Na ławce siedzi starsza pani, która uwielbia rozmawiać i ma całe popołudnie. | Posiedź z babcią Hatice i porozmawiaj z nią. Nikt cię stąd nie wyrzuci.
+fee 0
+reward 10
+story yes
+win Hatice Teyze promienieje: „Ne kadar nazik bir genç!” Zaprasza cię na niedzielną kawę i kawałek ciasta.
+partial Rozmowa się toczyła, choć kilka razy musiałeś prosić o powtórzenie. Hatice Teyze uśmiecha się cierpliwie i zaprasza cię znowu.
+fail Hatice Teyze się nie zniechęca, bo ma nieskończoną cierpliwość. Jeśli kiedyś zobaczysz ten komunikat, napisz do nas.
+
+@level 1 | Na ławce | patience=3 endless=yes typed=0 extra=2 hint=none
+desc Rozdział 1: Poznajecie się
+scene Park, ławka, słońce. Starsza pani karmi okruchami wróble i zaczyna rozmowę. Nie musisz się spieszyć: Hatice Teyze poczeka.
+goal Przywitaj się, powiedz, jak się nazywasz i skąd jesteś.
+win Hatice Teyze klepie ławkę obok siebie: „Otur, Pavel!” Zostajesz na dłużej.
+partial Rozmowa się udała, mimo kilku pomyłek. Hatice Teyze zachowuje cierpliwość i robi ci miejsce na ławce.
+fail Hatice Teyze nigdy się nie zniechęca.
+w delikanlı | młodzieniec
+t Merhaba, delikanlı! Hava bugün çok güzel, değil mi? | Dzień dobry, młody człowieku! Pogoda jest dziś bardzo ładna, prawda? | Evet, hava çok güzel. | Zgódź się, że pogoda jest ładna. | „Pogoda” to hava, a „ładna” to güzel. | Evet, hava güzel.
+w Hatice | Hatice (imię)
+w adınız | Pana(i) imię (ad + -ınız)
+w adım | moje imię (ad + -ım)
+w Pavel | Pavel (imię; Paweł)
+t Değil mi? Ben Hatice. Sizin adınız ne? | Prawda? Ja jestem Hatice. Jak Pan(i) ma na imię? | Benim adım Pavel. | Powiedz, jak się nazywasz. | „Moje imię to…” to benim adım …. | Adım Pavel.
+w oturuyorsunuz | mieszka Pan(i) (oturmak)
+w oturmuyorum | nie mieszkam (oturmak)
+w geldim | przyjechałem (gelmek)
+t Pavel! Ne güzel bir isim. Burada mı oturuyorsunuz? | Pavel! Jakie ładne imię. Mieszka Pan(i) tutaj? | Hayır, burada oturmuyorum. Polonya'danım. | Zaprzecz i powiedz, że jesteś z Polski. | Zaprzeczenie czasownika to końcówka -mu-: oturmuyorum. „Z Polski” to Polonya'dan. | Hayır, burada oturmuyorum. Polonya'dan geldim.
+w isterim | chętnie (istemek: chciałbym)
+w teşekkür | podziękowanie (teşekkür ederim = dziękuję)
+t Polonya'dan! Çok uzak. Biraz oturmak ister misiniz? | Z Polski! To daleko. Czy chce Pan(i) na chwilę usiąść? | Evet, memnuniyetle. Çok teşekkürler! | Zgódź się i podziękuj. | „Chętnie” to memnuniyetle. | Evet, isterim. Çok teşekkür ederim!
+e Buyurun! Burada yer var. | Proszę bardzo! Tu jest miejsce.
+
+@level 2 | Wnuk i kaczki | patience=3 endless=yes typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Wnuk i ciasto
+scene Mały Emir biega po trawniku i karmi kaczki, a Hatice Teyze pokazuje ci zdjęcia w portfelu. Z torby wyjmuje ciasto własnej roboty.
+goal Porozmawiaj o wnuku Emirze, powiedz, czy masz dzieci, i spróbuj ciasta.
+win Hatice Teyze wręcza ci drugi kawałek: „Ye, ye, çok zayıfsın!” Emir macha do ciebie z daleka.
+partial Zjadłeś ciasto, choć kilka razy brakowało ci słów. Hatice Teyze dolewa herbaty z termosu.
+fail Hatice Teyze nie traci cierpliwości.
+w torunum | mój wnuk (torun + -um)
+w Emir | Emir (imię)
+w yaşında | w wieku (altı yaşında = sześcioletni)
+w tatlı | słodki, uroczy
+w sevimli | miły, sympatyczny
+t Bu torunum Emir. Altı yaşında. | To mój wnuk Emir. Ma sześć lat. | Emir çok tatlı. | Pochwal wnuka: powiedz, że jest bardzo słodki. | „Słodki, uroczy” (o dziecku) to tatlı. | Emir çok sevimli.
+w ördeklere | kaczkom (ördek + -e)
+w atıyor | rzuca (atmak)
+w çocuğunuz | Pana(i) dziecko (çocuk + -unuz)
+w çocuklarım | moje dzieci (çocuk + -lar + -ım)
+t Teşekkürler! Emir ördeklere ekmek atıyor. Sizin çocuğunuz var mı? | Dziękuję! Emir rzuca kaczkom chleb. Czy ma Pan(i) dzieci? | Hayır, çocuğum yok. | Powiedz, że nie masz dzieci. | „Nie mam dziecka” to çocuğum yok (dosłownie „moje dziecko nie istnieje”). | Hayır, çocuklarım yok.
+w mu | czy (partykuła pytająca)
+w Hı | hm, aha
+w hı | hm
+w kek | ciasto (kek)
+w Kendim | sam, sama (ja sam)
+w yaptım | zrobiłem, upiekłem (yapmak)
+t Çocuğunuz yok mu? Hı hı. Bir dilim kek ister misiniz? Kendim yaptım. | Nie ma Pan(i) dzieci? Aha. Chce Pan(i) kawałek ciasta? Sama zrobiłam. | Evet, lütfen. Kek çok lezzetli! | Przyjmij ciasto i pochwal je. | „Smaczny” to lezzetli. | Evet, teşekkürler. Kek çok güzel!
+w Sevindim | ucieszyłem się (sevinmek)
+w Siz | Pan(i), Państwo
+w yaşındasınız | ma Pan(i) lat (yaş + -ında + -sınız)
+w yaşındayım | mam lat (yaş + -ında + -yım)
+t Sevindim! Siz kaç yaşındasınız? | Cieszę się! A ile Pan(i) ma lat? | Otuz yaşındayım. | Powiedz, że masz trzydzieści lat. | „Mam … lat” to … yaşındayım (dosłownie „jestem w wieku …”).
+w Ah | ach
+e Ah, ne kadar genç! | Ach, jaki młody!
+
+@level 3 | Zaproszenie | patience=3 endless=yes typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Kawa w niedzielę
+scene Słońce chyli się ku zachodowi. Hatice Teyze pakuje termos i prosi cię o pomoc. Zanim wstaniecie z ławki, chce cię jeszcze zaprosić.
+goal Przyjmij zaproszenie na niedzielną kawę i pomóż babci z torbą.
+win Hatice Teyze zapisuje ci adres na serwetce: „Karnını aç gel!” Idziesz do domu w świetnym nastroju.
+partial Wszystko się wyjaśniło, choć trzeba było kilka razy powtarzać. Hatice Teyze mówi: „Pazar görüşürüz, evladım!”
+fail Hatice Teyze nie traci cierpliwości.
+w Biliyor | wie (bilmek)
+w musunuz | czy Pan(i) (partykuła pytająca)
+w parktayım | jestem w parku (park + -ta + -yım)
+w Burası | to miejsce, tutaj
+w gerçekten | naprawdę
+t Biliyor musunuz, ben her gün parktayım. Burası çok güzel. | Wie Pan(i), codziennie jestem w parku. Jest tu bardzo ładnie. | Evet, park gerçekten çok güzel. | Zgódź się, że park jest piękny. | „Naprawdę” to gerçekten. | Evet, park çok güzel.
+w günü | dnia (gün + -ü; pazar günü = w niedzielę)
+w yapıyorum | robię (yapmak)
+w Gelir | przyjdzie (gelmek)
+w kaçta | o której (godzinie)
+t Değil mi? Pazar günü kahve yapıyorum. Gelir misiniz? | Prawda? W niedzielę robię kawę. Przyjdzie Pan(i)? | Evet, memnuniyetle. Saat kaçta? | Zgódź się i zapytaj, o której. | „O której godzinie?” to saat kaçta?
+w üçte | o trzeciej (üç + -te)
+w Çantam | moja torba (çanta + -m)
+w Taşımama | że niosę (taşımak; taşımama yardım = pomóc mi nieść)
+w yardım | pomoc
+w eder | zrobi (etmek; yardım eder = pomoże)
+w çantayı | torbę (çanta + -yı: biernik)
+w taşırım | poniosę, niosę (taşımak)
+w çantanızı | Pana(i) torbę (biernik)
+t Saat üçte. Çantam ağır. Taşımama yardım eder misiniz? | O trzeciej. Moja torba jest ciężka. Pomoże mi Pan(i) ją nieść? | Tabii, çantayı ben taşırım. | Zgódź się i zaproponuj, że poniesiesz torbę. | „Torba” w bierniku to çantayı; „poniosę” to taşırım. | Tabii, çantanızı taşırım.
+w birisiniz | jest Pan(i) kimś
+w görüşürüz | do zobaczenia (görüşmek)
+t Ne kadar nazik! Siz çok iyi birisiniz. | Jak miło! Jest Pan(i) bardzo dobrym człowiekiem. | Teşekkürler! Pazar görüşürüz! | Podziękuj i pożegnaj się do niedzieli. | „Do zobaczenia w niedzielę” to pazar görüşürüz.
+e Pazar görüşürüz! Hoşça kalın! | Do niedzieli! Do widzenia!
+
+
+@larp casus | Szpieg | Şapkalı adam | Ş | Jesteś agentem pod przykrywką. W Stambule masz odebrać tajną teczkę z ambasady i przekazać ją dalej. Jedno złe słowo i jesteś zdemaskowany. | Zachowaj przykrywkę kupca Kayi, zdobądź dosję i uciekaj z walizką.
+fee 0
+reward 20
+strict yes
+story yes
+win Walizka jest w twoich rękach, a statek odpływa z portu. Ktoś w centrali szepcze: „Aferin, Şahin.” Przykrywka nie pękła ani razu.
+partial Misja się udała, ale po drodze kilka razy omal się nie zdradziłeś. Centrala odnotowuje: „Şansı varmış.”
+fail Zdradziłeś się jednym słowem. Przykrywka pękła, a ty znikasz w ciemności bez teczki i bez walizki.
+
+@level 1 | Hasło na dworcu | patience=2 typed=0 extra=1 hint=none
+desc Rozdział 1: Kontakt na dworcu
+partner Şapkalı adam | Ş
+scene Stambuł, wieczór, peron na dworcu Haydarpaşa. Jesteś agentem „Şahin”, ale dla wszystkich jesteś Bay Kaya, handlarz zabawkami z Bursy (Kaya ve Oğlu). Na peronie czeka człowiek w kapeluszu. Hasło: „Kış erken geliyor.” Odzew: „Yaz geç geliyor.”
+goal Podaj hasło, nie zdradź swojej przykrywki i przyjmij zadanie. Jedna zła odpowiedź i jesteś zdemaskowany.
+win Człowiek w kapeluszu znika w tłumie, a ty zostajesz z kopertą w kieszeni. Przykrywka nietknięta, a jutro o ósmej czeka cię ambasada.
+partial Dostałeś zadanie, ale kontakt zmarszczył brwi przy kilku twoich odpowiedziach. Lepiej uważaj jutro.
+fail Człowiek w kapeluszu spojrzał na ciebie zimno, odwrócił się i odszedł. Zadanie dostanie ktoś inny.
+w geliyor | idzie, przychodzi (gelmek)
+t iyi akşamlar. Bugün hava çok soğuk, değil mi? | Dobry wieczór. Dziś jest bardzo zimno, prawda? | Evet, çok soğuk. Kış erken geliyor. | Zgódź się, że jest zimno, i powiedz hasło: zima przychodzi wcześnie. | Hasło brzmi: „Kış erken geliyor.” | Evet, hava soğuk. Kış erken geliyor.
+w Şşt | cicho!
+w dinleyen | ten, kto słucha
+w Kaya | Kaya (nazwisko z przykrywki)
+w tüccarım | jestem kupcem (tüccar + -ım)
+w Şahin | Şahin (sokół; imię agenta)
+w ajanım | jestem agentem (ajan + -ım)
+k Yaz geç geliyor. Şşt! Burada dinleyen var. Adınız ne? | A lato przychodzi późno. Cicho! Tu ktoś podsłuchuje. Jak Pan(i) się nazywa? | Adım Kaya. Ben tüccarım. | Adım Şahin. Ben ajanım.; Adım Kaya. Ben ajanım. | Şahin to twoje imię agenta, a ludzie słuchają.; Kaya się zgadza, ale „ajan” (agent) zdradza przykrywkę.
+w Sizi | Pana(ią) (biernik)
+w takip | śledzenie (takip eden = śledzący)
+w eden | robiący (etmek)
+w beni | mnie
+w vaktim | mój czas (vakit + -im)
+k iyi. Sizi takip eden var mı? | Dobrze. Czy ktoś Pana(ią) śledzi? | Hayır, beni takip eden yok. | Evet, beni takip eden var.; Hayır, vaktim yok. | Kontakt pyta o śledzenie, więc mówisz, że nikt cię nie śledzi.; Kontakt pyta o śledzenie, nie o czas.
+w göreviniz | Pana(i) zadanie (görev + -iniz)
+w sekizde | o ósmej (sekiz + -de)
+w büyükelçiliğe | do ambasady (büyükelçilik + -e)
+w gidin | niech Pan(i) idzie (gitmek)
+w davet | przyjęcie, zaproszenie
+t Çok iyi. işte göreviniz. Yarın saat sekizde büyükelçiliğe gidin. Orada bir davet var. | Bardzo dobrze. Oto Pana(i) zadanie. Jutro o ósmej niech Pan(i) idzie do ambasady. Jest tam przyjęcie. | Anladım. Yarın saat sekizde büyükelçiliğe gidiyorum. | Powiedz, że zrozumiałeś: jutro o ósmej idziesz do ambasady. | „Do ambasady” to büyükelçiliğe (końcówka -e: „do”).
+w Davetin | przyjęcia (davet + -in)
+w şifresi | hasło (czegoś) (şifre + -si)
+w Bülbül | słowik
+w nedir | czym jest
+t Güzel. Davetin şifresi Bülbül. Şifre nedir? | Dobrze. Hasło na przyjęcie to Bülbül (słowik). Jakie jest hasło? | Şifre Bülbül. | Powtórz hasło na przyjęcie. | Hasło to şifre, a „Bülbül” to słowik.
+w tanıyor | zna (tanımak)
+w tanımıyorum | nie znam (tanımak)
+d Çok iyi. Şşt! Bir polis geliyor. Beni tanıyor musunuz? | Bardzo dobrze. Cicho! Idzie policjant. Czy Pan(i) mnie zna? | Hayır, sizi tanımıyorum. | Zaprzecz, że znasz tego człowieka. | Nie możesz zdradzić, że znasz kontakt. | Hayır, tanımıyorum!
+w Bay | pan (przed nazwiskiem)
+e iyi geceler, Bay Kaya. | Dobranoc, panie Kaya.
+
+@level 2 | Przyjęcie w ambasadzie | patience=2 typed=0.2 extra=3 hint=bank
+desc Rozdział 2: Przyjęcie w ambasadzie
+partner Bayan Berk | B
+scene Następny wieczór. W ambasadzie trwa przyjęcie, a przy wejściu stoi pani Berk, sekretarka. Ona i goście zadają pytania o twoją „firmę”. Twoja przykrywka: Kaya ve Oğlu, zabawki, Bursa. Hasło wejściowe: Bülbül. Gabinet ambasadora jest po prawej, toalety po lewej.
+goal Wejdź na przyjęcie, nie zdradź się pytaniom o firmę i znajdź pretekst, żeby dotrzeć do gabinetu.
+win Pani Berk macha ci na pożegnanie, a w gabinecie leży teczka, o którą ci chodziło. Nikt niczego nie podejrzewa.
+partial Weszłeś i dotarłeś do gabinetu, ale pani Berk patrzyła na ciebie dłużej, niż trzeba.
+fail Pani Berk przestaje się uśmiechać i daje znak ochronie. Za chwilę wyprowadzą cię z ambasady.
+w hoş | miły; hoş geldiniz = witamy
+w geldiniz | przybyliście, Pan(i) przybył(a) (gelmek)
+t iyi akşamlar, büyükelçiliğe hoş geldiniz! Şifre nedir? | Dobry wieczór, witamy w ambasadzie! Jakie jest hasło? | Şifre Bülbül. | Podaj hasło wejściowe. | Şifre to hasło, a „Bülbül” to słowik.
+w sormam | że zapytam (sormak + -am)
+w gerek | trzeba
+w Yanınızda | przy Panu(i)
+w silah | broń
+w yanımda | przy mnie
+k Teşekkürler. Bir şey sormam gerek. Yanınızda silah var mı? | Dziękuję. Muszę o coś zapytać. Czy ma Pan(i) przy sobie broń? | Hayır, yanımda silah yok. | Evet, yanımda silah var.; Hayır, yanımda dosya yok. | Na przyjęcie nie wchodzi się z bronią.; Pytanie dotyczy broni (silah), nie teczki.
+w Kimin | czyj; dla kogo
+w çalışıyorsunuz | pracuje Pan(i) (çalışmak)
+w Oğlu | jego syn (Kaya ve Oğlu = Kaya i Syn)
+w şirketi | firma (biernik/dop.)
+w çalışıyorum | pracuję (çalışmak)
+w Bayan | pani (przed nazwiskiem)
+w Berk | Berk (nazwisko)
+k iyi. Kimin için çalışıyorsunuz? | Dobrze. Dla kogo Pan(i) pracuje? | Kaya ve Oğlu şirketi için çalışıyorum. | Merkez için çalışıyorum.; Bayan Berk için çalışıyorum. | „Merkez” to twoja centrala, tajna, a nie firma.; Pani Berk to sekretarka z ambasady.
+w Şirketiniz | Pana(i) firma
+w satıyor | sprzedaje (satmak)
+w Şirketim | moja firma
+w oyuncak | zabawka
+d Anladım. Şirketiniz ne satıyor? | Rozumiem. Co sprzedaje Pana(i) firma? | Şirketim oyuncak satıyor. | Powiedz, co sprzedaje twoja „firma” (przykrywka). | Twoja przykrywka to handel zabawkami. | Şirketim oyuncak satıyor!
+w Bursa'da | w Bursie
+w Şirketin | firma (şirket + -in); firmy
+w adı | jego nazwa (ad + -ı)
+k Oyuncak, ilginç. Şirketiniz nerede? | Zabawki, ciekawe. Gdzie jest Pana(i) firma? | Şirketim Bursa'da. | Şirketim oyuncak satıyor.; Şirketin adı Kaya ve Oğlu. | „Nerede” znaczy „gdzie”, a nie „co sprzedaje”.; „Nerede” pyta o miejsce, nie o nazwę.
+w Bursa | Bursa (miasto)
+w Tuvalet | toaleta
+t Bursa güzel bir şehir! Bir şey yemek ister misiniz? | Bursa to piękne miasto! Chce Pan(i) coś zjeść? | Hayır, teşekkürler. Tuvalet nerede, lütfen? | Odmów i zapytaj o toaletę (to pretekst). | „Nerede” = gdzie, więc „Tuvalet nerede?”.
+w Sağdaki | ten po prawej
+w özel | prywatny
+w sola | w lewo (sol + -a)
+w sağa | w prawo (sağ + -a)
+k Tuvalet solda. Sağdaki ofis özel. | Toaleta jest po lewej. Gabinet po prawej jest prywatny. | Teşekkürler, sola gidiyorum. | Teşekkürler, sağa gidiyorum.; Teşekkürler, ofis çok güzel. | Gabinet po prawej jest prywatny, a ty idziesz do toalety po lewej.; Nie wolno ci mówić, że chcesz iść do gabinetu.
+w eğlenceler | zabawy (iyi eğlenceler = dobrej zabawy)
+e O zaman iyi eğlenceler, Bay Kaya! | W takim razie dobrej zabawy, panie Kaya!
+
+@level 3 | Przesłuchanie | patience=1 typed=0.35 extra=3 hint=bank
+desc Rozdział 3: Przesłuchanie
+partner Bay Aslan | A
+scene Masz teczkę w torbie, ale na korytarzu zatrzymuje cię podejrzliwy ochroniarz, pan Aslan. Zaraz zapyta o wszystko. Pamiętaj: Kaya, kupiec, Bursa. Tutaj każda zła odpowiedź kończy misję.
+goal Przekonaj ochroniarza, że jesteś zwykłym gościem, i wyjdź z teczką.
+win Aslan przepuszcza cię z kwaśną miną. Wychodzisz z ambasady, a teczka w torbie jest ciężka jak ołów.
+partial Aslan w końcu cię puszcza, ale zapisuje twoje nazwisko w notesie.
+fail Aslan chwyta cię za ramię: „Benimle gelin!” Misja skończona, zanim naprawdę się zaczęła.
+w Dur | stój!
+w kimsiniz | kim Pan(i) jest
+w yapıyorsunuz | robi Pan(i) (yapmak)
+w misafirim | jestem gościem (misafir + -im)
+w Tuvaleti | toaletę (biernik)
+w arıyorum | szukam (aramak)
+t Dur! Siz kimsiniz? Burada ne yapıyorsunuz? | Stać! Kim Pan(i) jest? Co Pan(i) tu robi? | Ben misafirim. Tuvaleti arıyorum. | Powiedz, że jesteś gościem i szukasz toalety. | „Szukam” to arıyorum, a toaleta w bierniku to tuvaleti. | Ben misafirim, tuvaleti arıyorum.
+w Ofiste | w gabinecie (ofis + -te)
+w bulundunuz | był(a) Pan(i) (bulunmak)
+w bulunmadım | nie byłem (bulunmak)
+w bulundum | byłem (bulunmak)
+w tuvalette | w toalecie (tuvalet + -te)
+k Tuvalet orada. Ofiste bulundunuz mu? | Toaleta jest tam. Czy Pan(i) był(a) w gabinecie? | Hayır, ofiste bulunmadım. | Evet, ofiste bulundum.; Hayır, tuvalette bulunmadım. | Przyznanie się to koniec przykrywki.; Pytanie dotyczy gabinetu (ofis), nie toalety.
+w Hmm | hm
+w Çantanızda | w Pana(i) torbie
+w Çantamda | w mojej torbie
+k Hmm, iyi. Çantanızda ne var? | Hmm, dobrze. Co Pan(i) ma w torbie? | Çantamda sadece para ve telefon var. | Çantamda bir dosya var.; Bir çantam var. | Teczka w torbie zdradziłaby cię od razu.; Ochroniarz pyta, co jest w torbie, a nie czy masz torbę.
+w oturuyorum | mieszkam (oturmak)
+d Hmm, para ve telefon. Adınız ne, nerede oturuyorsunuz? | Hmm, pieniądze i telefon. Jak się Pan(i) nazywa i gdzie mieszka? | Adım Kaya ve Bursa'da oturuyorum. | Podaj nazwisko z przykrywki i miasto, w którym mieszkasz (Bursa). | Kaya i Bursa to twoja przykrywka. | Adım Kaya ve ben Bursa'da oturuyorum.
+w casussunuz | jest Pan(i) szpiegiem (casus + -sunuz)
+w casus | szpieg
+w değilim | nie jestem
+k Kaya, Bursa. Siz casussunuz, değil mi? | Kaya, Bursa. Jest Pan(i) szpiegiem, prawda? | Hayır, ben casus değilim. Ben tüccarım. | Evet, ama bu bir sır.; Evet, merkez için çalışıyorum. | Nawet żartem nie przyznawaj się do tajemnicy (sır).; Przyznanie się do centrali to koniec.
+w Berk'i | panią Berk (biernik)
+w çağırıyorum | wołam (çağırmak)
+w misafirleri | gości (biernik l. mn.)
+w tanır | zna (tanımak)
+t Bayan Berk'i çağırıyorum. O bütün misafirleri tanır. Sizi tanıyor mu? | Zawołam panią Berk. Ona zna wszystkich gości. Czy zna Pana(ią)? | Evet, Bayan Berk beni tanıyor. Ben misafirim. | Powiedz, że pani Berk cię zna. | „Zna mnie” to beni tanıyor. | Evet, Bayan Berk beni tanıyor.
+w Büyükelçilikte | w ambasadzie (büyükelçilik + -te)
+w ajan | agent
+w Kimseyi | nikogo (kimse + -yi)
+w gördünüz | widział(a) Pan(i) (görmek)
+w görmedim | nie widziałem (görmek)
+d iyi. Büyükelçilikte bir ajan var. Kimseyi gördünüz mü? | Dobrze. W ambasadzie jest agent. Czy Pan(i) kogoś widział(a)? | Hayır, kimseyi görmedim. | Zaprzecz, że kogokolwiek widziałeś. | „Kimse” = nikt. Ty sam jesteś tym agentem. | Hayır, kimseyi görmedim!
+w Peki | no dobrze
+e Peki. Eve gidin, Bay Kaya. | No dobrze. Niech Pan(i) idzie do domu, panie Kaya.
+
+@level 4 | Walizka i ucieczka | patience=1 typed=0.5 extra=3 hint=letters reward=30
+desc Rozdział 4: Wymiana walizki
+partner Bay Kurt | K
+scene Następny ranek, port w Stambule. Pan Kurt z centrali czeka z walizką pełną pieniędzy. Wymienisz ją na teczkę. Nowe hasło: „Karga”. Ale ktoś cię śledzi: w tłumie jest zdrajca, który chce dostać teczkę dla siebie.
+goal Wymień teczkę na walizkę, nie daj się zdemaskować zdrajcy i wsiądź na statek.
+win Statek odpływa, a ty stoisz na pokładzie z walizką. Pan Kurt macha z nabrzeża: „İyi yolculuklar, Şahin!”
+partial Udało się uciec, ale zdrajca zdążył zobaczyć twoją twarz. Misja zaliczona, lecz twoja przykrywka jest spalona.
+fail Zdrajca był szybszy. Walizka i teczka zniknęły, a ty zostajesz na nabrzeżu z pustymi rękami.
+w Karga | kruk
+d Günaydın. Şifre nedir? | Dzień dobry. Jakie jest hasło? | Şifre Karga. | Podaj hasło z dzisiejszej misji. | Hasło to şifre, a dziś brzmi „Karga” (kruk). | Şifre Karga!
+w Berk'te | u pani Berk (Berk + -te)
+k iyi. Dosya nerede? | Dobrze. Gdzie jest teczka? | Dosya çantamda. | Dosya Bayan Berk'te.; Dosya bir sır. | Teczkę masz przy sobie, w torbie.; Kontakt pyta, gdzie jest teczka, nie o tajemnicę.
+w Alın | niech Pan(i) weźmie (almak)
+w Bavulu | walizkę (bavul + -u: biernik)
+w alıyorum | biorę (almak)
+t iyi. işte bavul. Para içinde. Alın. | Dobrze. Oto walizka. Pieniądze są w środku. Proszę ją wziąć. | Teşekkürler. Bavulu alıyorum. | Podziękuj i weź walizkę. | Walizka w bierniku to bavulu. | Teşekkürler. Bavulu alıyorum.
+w Dikkat | uwaga
+w Şuradaki | ten tam
+w hain | zdrajca
+w Bizi | nas (biernik)
+w ediyor | robi (etmek; takip ediyor = śledzi)
+w yapalım | zróbmy (yapmak)
+w Hızlıca | szybko
+w uzaklaşalım | oddalmy się (uzaklaşmak)
+w kalıp | zostając (kalmak)
+w içelim | wypijmy (içmek)
+w Adamla | z mężczyzną (adam + -la)
+w konuşalım | porozmawiajmy (konuşmak)
+k Dikkat! Şuradaki adam bir hain. Bizi takip ediyor. Ne yapalım? | Uwaga! Ten człowiek tam jest zdrajcą. Idzie za nami. Co robimy? | Hızlıca uzaklaşalım. | Burada kalıp kahve içelim.; Adamla konuşalım. | Zdrajca idzie za wami, trzeba uciekać.; Nie rozmawia się ze zdrajcą.
+w soldan | z lewej (sol + -dan)
+w gara | na dworzec (gar + -a)
+w gidelim | chodźmy, jedźmy (gitmek)
+w limana | do portu (liman + -a)
+k Evet, çabuk! Hain soldan geliyor. Sola, gara mı gidelim, sağa, limana mı? | Tak, szybko! Zdrajca idzie z lewej. Idziemy w lewo na dworzec czy w prawo do portu? | Sağa, limana gidelim. | Sola, gara gidelim.; Eve gidelim. | Zdrajca nadchodzi z lewej, więc idziecie w prawo, do portu.; Pytanie jest o port albo dworzec, a nie o dom.
+w bana | mnie, mi
+w verin | niech Pan(i) da (vermek)
+w Silahım | moja broń (silah + -ım)
+w vermiyorum | nie daję (vermek)
+d Dur! Bavulu bana verin! Silahım var! | Stać! Proszę dać mi walizkę! Mam broń! | Hayır, bavulu size vermiyorum. | Odmów oddania walizki. | „Dać” to vermek; „nie daję” to vermiyorum. | Hayır, bavulu vermiyorum!
+w Vapur | statek parowy, prom
+w birazdan | za chwilę
+w hâlâ | jeszcze, wciąż
+w sizde | u Pana(i)
+w bende | u mnie
+t Çabuk! Vapur birazdan kalkıyor. Bavul hâlâ sizde mi? | Szybko! Statek zaraz odpływa. Czy ma Pan(i) jeszcze walizkę? | Evet, bavul hâlâ bende. | Potwierdź, że masz jeszcze walizkę. | „Jeszcze” to hâlâ, a „u mnie” to bende. | Evet, hâlâ bende.
+w Aferin | brawo
+w Görev | zadanie, misja
+w tamamlandı | zostało zakończone
+e Aferin, Şahin! Görev tamamlandı. Hoşça kalın! | Dobra robota, Şahin! Misja zakończona. Do widzenia!
+
+
+@larp zamanyolculugu | Podróż w czasie | Nöbetçi | N | Obudziłeś się w roku 1450 pod murami osmańskiego miasta Çınarlı. Nikt nie może się dowiedzieć, że jesteś z przyszłości, bo za dziwne rzeczy i dziwne słowa w średniowieczu grozi stos. | Nie daj się wykryć jako przybysz z przyszłości: unikaj wszystkiego, co nie pasuje do roku 1450, i dotrwaj do końca dnia.
+fee 0
+reward 15
+strict yes
+story yes
+win Kadı kiwa głową: „Dürüst bir yolcu!” Nikt nie podejrzewa, skąd naprawdę jesteś. Wieczorem znajdujesz drogę powrotną, a w kieszeni zostaje ci tylko miedziana moneta na pamiątkę.
+partial Udało ci się przetrwać dzień, ale kilka razy ludzie patrzyli na ciebie podejrzliwie. Kadı każe cię obserwować, więc wymykasz się z miasta o świcie.
+fail Ktoś zauważył, że nie jesteś stąd. Straż woła: „Sihirbaz! Büyücü!” i musisz uciekać. Podróż w czasie skończyła się wcześniej, niż chciałeś.
+
+@level 1 | Brama miasta | patience=5 typed=0 extra=1 hint=none
+partner Nöbetçi Hasan | H
+desc Rozdział 1: Brama Çınarlı
+scene Rok 1450. Stoisz przed wielką drewnianą bramą miasta Çınarlı. Strażnik Hasan zatrzymuje każdego podróżnego i zadaje pytania. Masz na sobie zwykłe ubranie, ale w kieszeniach zostały ci rzeczy z przyszłości.
+goal Odpowiedz na pytania strażnika tak, żeby nie wzbudzić podejrzeń: przedstaw się, powiedz skąd jesteś i jak podróżujesz. Zwróć uwagę na rzeczy, których w 1450 roku jeszcze nie było.
+win Hasan otwiera bramę: „Çınarlı'ya hoş geldin!” Nic nie wzbudziło jego podejrzeń, a ty wchodzisz do miasta.
+partial Hasan w końcu cię wpuszcza, ale przygląda ci się dłużej, niż byś chciał. Wchodzisz do miasta z uczuciem, że ktoś cię obserwuje.
+fail Hasan podnosi halabardę: „Sen yolcu değilsin!” Brama zamyka się z trzaskiem, a ty uciekasz w las.
+w Çınarlı | Çınarlı (fikcyjne miasto)
+w şehrinin | miasta (şehir + -nin)
+w kapısı | brama (kapı + -sı)
+w kimsin | kim jesteś
+w yolcuyum | jestem podróżnikiem (yolcu + -yum)
+t Dur! Burası Çınarlı şehrinin kapısı. Sen kimsin? | Stój! To brama miasta Çınarlı. Kim jesteś? | Ben bir yolcuyum. | Powiedz, że jesteś podróżnikiem. | „Jestem podróżnikiem” to ben bir yolcuyum.
+w Adın | twoje imię (ad + -ın)
+w Ali | Ali (imię)
+w Kevin | Kevin (imię)
+w Jessica | Jessica (imię)
+k Yolcu! Adın ne? | Podróżnik! Jak masz na imię? | Adım Ali. | Adım Kevin.; Adım Jessica. | Kevin i Jessica to imiona współczesne, w 1450 roku nikt tak nie nazywał dzieci. Strażnik uznałby cię za dziwaka.; Jessica to nowoczesne, angielskie imię. W 1450 roku popularne były Ali, Hasan czy Mehmet.
+w Nerelisin | skąd jesteś
+w Gelecekten | z przyszłości (gelecek + -ten)
+w Amerika'dan | z Ameryki
+k Ali, güzel isim. Nerelisin? | Ali, ładne imię. Skąd jesteś? | Polonya'danım. | Gelecekten geliyorum.; Amerika'dan geliyorum. | Przyznanie się do przyszłości to dekonspiracja. Nikt w 1450 roku nie zrozumie takich słów.; Ameryki jeszcze nie odkryto, Kolumb wypłynie dopiero w 1492 roku.
+w seyahat | podróż
+w ediyorsun | robisz (etmek; seyahat ediyorsun = podróżujesz)
+w Yaya | pieszo
+w atla | koniem (at + -la)
+w ediyorum | robię (etmek; seyahat ediyorum = podróżuję)
+w Otomobille | samochodem (otomobil + -le)
+w Trenle | pociągiem (tren + -le)
+k Çok uzak! Nasıl seyahat ediyorsun? Yaya mı, atla mı? | To daleko! Jak podróżujesz? Pieszo czy konno? | Atla seyahat ediyorum. | Otomobille seyahat ediyorum.; Trenle seyahat ediyorum. | Samochodu w 1450 roku nie ma. Strażnik pomyśli, że jesteś szalony albo opętany.; Pociągów też jeszcze nie ma, pierwsza kolej pojawi się dopiero w XIX wieku.
+w çantanı | twoją torbę (biernik)
+w göster | pokaż (göstermek)
+w Telefonum | mój telefon
+w kartım | moja karta (kart + -ım)
+k Güzel at! Bana çantanı göster. içinde ne var? | Piękny koń! Pokaż mi swoją torbę. Co w niej masz? | içinde sadece ekmek ve su var. | Telefonum var.; Kredi kartım var. | Telefon w 1450 roku? Strażnik wziąłby go za czarodziejskie urządzenie i zawołał straż.; Karta kredytowa z plastiku wyglądałaby dla niego jak magia. Pieniądze to wtedy monety.
+w Girebilirsin | możesz wejść (girmek)
+w mısın | czy jesteś
+w açım | jestem głodny (aç + -ım)
+w Han | gospoda, zajazd
+t Ekmek ve su, tamam. Girebilirsin. Aç mısın? | Chleb i woda, w porządku. Możesz wejść. Jesteś głodny? | Evet, açım. Han nerede? | Powiedz, że jesteś głodny, i zapytaj, gdzie jest gospoda. | „Gdzie” to nerede, a „gospoda” to han.
+w Çınarlı'da | w Çınarlı
+w vakitler | czasy (iyi vakitler = miłego czasu)
+e Han hemen solda. Çınarlı'da iyi vakitler! | Zaraz po lewej jest gospoda. Miłego pobytu w Çınarlı!
+
+@level 2 | Gospoda | patience=5 typed=0.15 extra=3 hint=bank
+partner Hancı Kemal | K
+desc Rozdział 2: Gospoda „Kırmızı Öküz”
+scene Wchodzisz do gospody. Karczmarz Kemal jest ciekawski i pyta o wszystko: co chcesz zjeść, jak podróżujesz i czego potrzebujesz na noc. W gospodzie nie ma elektryczności ani nowoczesnych napojów.
+goal Zamów jedzenie i picie, które mogli podać w średniowieczu, ustal nocleg i nie wspomnij o niczym z przyszłości.
+win Kemal klepie cię po plecach: „Sen iyi bir misafirsin!” Dostajesz miejsce przy kominku i pełny talerz. Nikt nie podejrzewa, że jesteś z przyszłości.
+partial Kemal przygląda ci się podejrzliwie, ale podaje jedzenie. Śpisz źle, bo wciąż myślisz o tym, co powiedziałeś.
+fail Kemal woła głośno: „Wi-Fi de ne?!” Goście odwracają się w twoją stronę, a ty ledwo uciekasz tylnym wyjściem.
+w Hana | do gospody (han + -a)
+w geldin | przyszedłeś (gelmek; hoş geldin = witaj)
+w istersin | chcesz (istemek)
+t Hana hoş geldin! Ne yemek istersin? Çorba ve ekmek var. | Witaj w gospodzie! Co chcesz zjeść? Mamy zupę i chleb. | Çorba ve ekmek istiyorum. | Zamów chleb i zupę. | „Chcę” to istiyorum; zamawiasz bez „bir”: çorba ve ekmek.
+w içersin | pijesz (içmek)
+w Ayran | ayran (napój z jogurtu)
+w şerbet | sorbet, napój owocowy
+w kola | cola
+k Çorba ve ekmek, tamam. Peki ne içersin? Ayran, şerbet ve su var. | Zupa i chleb, w porządku. A co pijesz? Mamy ayran, sorbet i wodę. | Bir ayran istiyorum. | Bir kahve istiyorum.; Bir kola istiyorum. | Kawa dotarła do imperium dopiero w XVI wieku.; Coca-Cola powstała w XIX wieku. W 1450 roku nikt jej nie zna.
+w olur | dobrze, może być
+w uzaktan | z daleka
+w gelmişsin | przybyłeś (gelmek)
+w gündür | od dni (gün + -dür)
+w yoldasın | jesteś w drodze (yol + -da + -sın)
+w yoldayım | jestem w drodze (yol + -da + -yım)
+t Ayran, olur. Çok uzaktan gelmişsin. Kaç gündür yoldasın? | Ayran, dobrze. Daleko przyjechałeś. Od ilu dni jesteś w drodze? | On gündür yoldayım. | Powiedz, że jesteś w drodze od dziesięciu dni. | „Od dziesięciu dni” to on gündür; „jestem w drodze” to yoldayım.
+w pazara | na targ (pazar + -a)
+w Benimle | ze mną
+w misin | czy ty
+w Atlı | konny, zaprzężony w konie
+w arabayla | wozem (araba + -yla)
+w gideceğiz | pojedziemy (gitmek)
+w bisikletle | rowerem (bisiklet + -le)
+w giderim | pojadę, idę (gitmek)
+k On gün, uzun! Yarın pazara gidiyorum. Benimle gelir misin? Atlı arabayla gideceğiz. | Dziesięć dni, to długo! Jutro jadę na targ. Pojedziesz ze mną? Pojedziemy wozem konnym. | Evet, memnuniyetle. Atlı arabayla gidelim. | Evet, otomobille gidelim.; Hayır, bisikletle giderim. | Samochodu nie ma. Kemal nie zrozumiałby słowa otomobil.; Rower wynaleziono dopiero w XIX wieku. W 1450 roku jeździ się wozem albo konno.
+w Odada | w pokoju (oda + -da)
+w mum | świeca
+w Wi-Fi | Wi-Fi
+w priz | gniazdko elektryczne
+k iyi. Odada bir yatak var. Başka bir şey ister misin? | Dobrze. W pokoju jest łóżko. Chcesz jeszcze coś? | Evet, bir mum istiyorum. | Wi-Fi var mı?; Bir priz istiyorum. | W 1450 roku nie ma internetu. Kemal nie wie, co to jest Wi-Fi.; Gniazdka elektryczne wymyślono setki lat później. Wieczorem świeci się świecami.
+w yılının | roku (yıl + -ının)
+w en | najbardziej
+w iyisi | najlepszy (iyi + -si)
+w Şerefe | na zdrowie (przy toaście)
+t Bir mum, tamam. Bir de şerbet, bin dört yüz elli yılının en iyisi! Şerefe! | Świeca, w porządku. A do tego sorbet, najlepszy w roku 1450! Na zdrowie! | Şerefe! | Wznieś toast. | „Na zdrowie” (przy toaście) to şerefe.
+w gidiyoruz | idziemy, jedziemy (gitmek)
+e iyi geceler! Yarın sabah pazara gidiyoruz. | Dobranoc! Jutro rano jedziemy na targ.
+
+@level 3 | Targ | patience=4 typed=0.3 extra=3 hint=bank reward=25
+partner Tüccar Fatma | F
+desc Rozdział 3: Targ w Çınarlı
+scene Następnego ranka na rynku jest tłoczno. Kupcowa Fatma sprzedaje chleb i ser. Przy płaceniu liczą się tylko monety, a ludzie przyglądają się twoim ubraniom.
+goal Kup chleb i ser, zapłać tak, jak płaci się w 1450 roku, i wyjaśnij, skąd masz dziwne ubranie.
+win Fatma wsuwa ci do koszyka jabłko: „Güzel yolcuya!” Targ nic nie podejrzewa, a w oddali widać już dom kadiego.
+partial Fatma w końcu sprzedała ci chleb i ser, ale kilka osób szepcze za twoimi plecami. Zbliża się dom kadiego.
+fail Fatma krzyczy: „Bu ne biçim giysi? Euro da ne?” Tłum się zbiega, a ty uciekasz między straganami.
+w satın | (satın almak = kupować)
+t Merhaba! Ne satın almak istersin? Ekmek, peynir ya da elma? | Dzień dobry! Co chcesz kupić? Chleb, ser czy jabłka? | Bir ekmek ve bir peynir istiyorum. | Poproś o chleb i ser. | „Chcę” to istiyorum; „jeden chleb” to bir ekmek.
+w akçe | akcze (dawna moneta)
+t Bir ekmek ve bir peynir. Ekmek iki akçe, peynir üç akçe. | Chleb i ser. Chleb kosztuje dwa akcze, ser trzy akcze. | Hepsi ne kadar? | Zapytaj, ile to kosztuje razem. | „Razem, wszystko” to hepsi; „ile” to ne kadar.
+w ödeyeceksin | zapłacisz (ödemek)
+w Akçeyle | akczami (akçe + -yle)
+w ödeyeceğim | zapłacę (ödemek)
+w Euroyla | euro (euro + -yla)
+w Kartla | kartą (kart + -la)
+k Beş akçe. Nasıl ödeyeceksin? | Pięć akczy. Jak zapłacisz? | Akçeyle ödeyeceğim. | Euroyla ödeyeceğim.; Kartla ödeyeceğim. | Euro wprowadzono dopiero w 2002 roku.; Karty płatnicze to wynalazek XX wieku. W 1450 roku płaci się monetami.
+w Kıyafetin | twoje ubranie (kıyafet + -in)
+w garip | dziwny
+w modası | moda (moda + -sı; doğu modası = moda wschodnia)
+w tişört | koszulka, t-shirt
+w Bunlar | to są (l. mn.)
+w kot | dżins (kot pantolon = dżinsy)
+k Tamam, akçe. Kıyafetin çok garip. Bu ne? | Dobrze, akcze. Twoje ubranie jest bardzo dziwne. Co to jest? | Bu doğu modası. | Bu bir tişört.; Bunlar kot pantolon ve spor ayakkabı. | T-shirty z napisami pojawiły się w XX wieku, a Fatma nigdy takiego nie widziała.; Dżinsy i adidasy to rzeczy z dwudziestego wieku. Fatma zawołałaby straż.
+w öyle | tak, w ten sposób
+w Kadı | kadi (sędzia i zarządca miasta)
+w efendi | pan (tytuł grzecznościowy)
+w seni | ciebie
+w istiyor | chce (istemek)
+w seninle | z tobą
+t Doğu modası, öyle mi. Kadı efendi seni görmek istiyor. Benimle gelir misin? | Z Wschodu, tak. Kadi chce cię zobaczyć. Idziesz ze mną? | Evet, seninle geliyorum. | Zgódź się i idź z nią. | „Idę z tobą” to seninle geliyorum (końcówka -le: „z”).
+w gel | chodź (gelmek)
+e O zaman gel! Kadı efendi orada. | No to chodź! Kadi jest tam.
+
+@level 4 | Kadi | patience=4 typed=0.5 extra=4 hint=letters reward=25
+partner Kadı Efendi | K
+desc Rozdział 4: U kadiego
+scene U kadiego czeka sam kadi (sędzia i zarządca miasta). Słyszał dziwne plotki o obcym przybyszu. Zauważył coś błyszczącego na twoim nadgarstku i zadaje pytania, a tobie została tylko jedna droga: wrócić do bramy, gdzie wszystko się zaczęło.
+goal Odpowiedz na pytania kadiego tak, żeby nie zdradzić zegarka, telefonu ani przyszłości, i wróć bezpiecznie do bramy.
+win Kadı macha ręką: „İyi, iyi, git bakalım!” Wracasz do bramy, w powietrzu coś migocze i budzisz się we własnym czasie. Na dłoni masz akcze z 1450 roku.
+partial Kadı pozwala ci odejść, ale pod nosem mruczy o czarodziejach. Dopiero za bramą migotanie powietrza zabiera cię do domu.
+fail Kadı woła strażników: „Sihirli kutu! Gelecekten geliyor!” Nie zdążysz dojść do bramy.
+w kadısıyım | jestem kadim (kadı + -sı + -yım)
+t Merhaba! Ben Çınarlı kadısıyım. Sen kimsin? | Dzień dobry! Jestem kadim Çınarlı. Kim jesteś? | Ben Ali, Polonya'dan bir yolcuyum. | Przedstaw się: Ali, podróżnik z Polski. | „Z Polski” to Polonya'dan.
+w Bileğindeki | ten na twoim nadgarstku
+w bilezik | bransoleta
+w pilli | z baterią
+w kol | ramię (kol saati = zegarek na rękę)
+w saati | zegarek (saat + -i)
+w dijital | cyfrowy
+k Hoş geldin, Ali. Bileğindeki o nedir? | Witaj, Ali. Co to jest na twoim nadgarstku? | Bu sadece bir bilezik. | Bu pilli bir kol saati.; Bu bir dijital saat. | Zegarek na rękę z baterią to wynalazek nowoczesny. Kadi nie ma pojęcia, co to jest.; Cyfrowy zegarek wyglądałby dla niego jak czary. W 1450 roku są tylko zegary słoneczne i klepsydry.
+w saatin | twój zegarek (saat + -in)
+w vardı | był, miałeś (var + -dı)
+w Saatim | mój zegarek
+w öğleyi | południe (öğle + -yi: biernik)
+w gösteriyor | pokazuje (göstermek)
+w dörtü | czwartą (dört + -ü)
+w geçiyor | mija, jest po (geçmek)
+w Telefonuma | na mój telefon (telefon + -um + -a)
+w bakıyorum | patrzę (bakmak)
+k Sadece bilezik mi? Saat kaç? Senin bir saatin vardı. | Tylko bransoleta? Która godzina? Przecież miałeś zegarek. | Saatim yok. Güneş öğleyi gösteriyor. | Saat on dörtü otuz geçiyor.; Telefonuma bakıyorum. | Taka dokładna godzina z minutami to nowoczesny sposób liczenia czasu.; Telefon to rzecz z przyszłości. Kadi uznałby ją za czarodziejską.
+w yıldayız | jesteśmy w roku (yıl + -da + -ız)
+w yılındayız | jesteśmy w roku (yıl + -ın + -da + -yız)
+w Bilmiyorum | nie wiem (bilmek)
+k Öğle, iyi. Hangi yıldayız? | Południe, dobrze. Który mamy rok? | Bin dört yüz elli yılındayız. | iki bin yılındayız.; Bilmiyorum. | Jeśli podasz rok z przyszłości, zdradzisz się natychmiast.; Nie znać roku? Karczmarz dał ci wskazówkę wczoraj. Kadi uznałby, że ukrywasz coś.
+w sihirli | magiczny
+w kutun | twoja skrzynka (kutu + -n)
+w olduğunu | że jest (olmak)
+w söylüyorlar | mówią (söylemek)
+w Doğru | prawda; prawdziwy
+w kutum | moja skrzynka (kutu + -m)
+k iyi. Senin sihirli bir kutun olduğunu söylüyorlar. Doğru mu? | Dobrze. Mówią, że masz magiczną skrzynkę. Czy to prawda? | Hayır, sihirli kutum yok. | Evet, bu bir telefon.; Evet, gelecekten geliyorum. | Przyznanie się do telefonu zakończy rozmowę. Kadi nie wie, co to jest.; Przyznanie się do podróży w czasie to najgorsza odpowiedź.
+w kararıyor | ściemnia się (kararmak)
+w gidiyorsun | idziesz (gitmek)
+w Kapıya | do bramy (kapı + -ya)
+w geri | z powrotem
+w dönüyorum | wracam (dönmek)
+w makinesine | do maszyny (makine + -si + -ne)
+w Otomobile | do samochodu (otomobil + -e)
+k iyi. Hava kararıyor. Şimdi nereye gidiyorsun? | Dobrze. Zmierza ku zmierzchowi. Dokąd teraz idziesz? | Kapıya geri dönüyorum. | Zaman makinesine gidiyorum.; Otomobile gidiyorum. | Wehikuł czasu to najgorsza odpowiedź.; Samochodu w 1450 roku nie ma. Kadi pomyślałby, że kłamiesz.
+w git | idź (gitmek)
+w Yolun | twoja droga (yol + -un)
+w açık | otwarty
+e Peki, o zaman git. Yolun açık olsun! | Dobrze, to idź. Szczęśliwej drogi!
+
+
+@larp politikaci | Polityk | Seçmen | S | Jesteś skorumpowanym politykiem. Dawno temu pan Kuşçu dał ci kopertę, a „Guguk dosyası” (afera Kukułka) wraca na każdym szczeblu twojej kariery. Wyborcy ci wierzą… i przestają… i zapominają. | Przekonaj wyborców, że nadajesz się na stanowisko. Nigdy się nie przyznaj i nie sprzeczaj sam sobie.
+fee 0
+reward 30
+strict yes
+story yes
+disclaimer Satyra. Wszystkie postacie, partie i afery są zmyślone; ewentualne podobieństwo do prawdziwych osób jest przypadkowe.
+win Wygrywasz wybory! Nikt już nie pamięta koperty od pana Kuşçu. Przed gmachem tłum skanduje twoje nazwisko, a ty obiecujesz „uczciwą politykę”. Pan Kuşçu macha z ostatniego rzędu.
+partial Wygrywasz o włos. Dziennikarze wciąż grzebią w aktach, ale ty już podpisujesz pierwsze dokumenty. Kłamstwo trzyma się jeszcze na słowo honoru.
+fail Wiarygodność spadła do zera. Wyborcy wyciągają stare akty, a z tłumu ktoś krzyczy: „Zarf!” Twoja kariera kończy się na pierwszej stronie gazet.
+
+@level 1 | Muhtar | patience=4 cap=6 typed=0 extra=1 hint=none
+desc Szczebel 1: sołtys wsi Küçükdere
+partner Bayan Yıldız | Y
+scene Zebranie wiejskie w sali gimnastycznej w Küçükdere. Chcesz zostać sołtysem (muhtar). Pani Yıldız zadaje pytania, a cała wieś słucha. Wszyscy pamiętają, że pan Kuşçu naprawił drogę, i że ktoś widział kopertę…
+goal Przekonaj wieś, że jesteś uczciwy, i zaprzecz plotkom o kopercie.
+win Wieś klaszcze. Zostajesz sołtysem Küçükdere. Pan Kuşçu, w pierwszym rzędzie, puszcza do ciebie oko.
+partial Wygrywasz jednym głosem. Pani Yıldız patrzy na ciebie podejrzliwie, ale podnosi rękę.
+fail Wieś ma dość. Pani Yıldız mówi: „Başkasını seçiyoruz.” Kończysz karierę, zanim się zaczęła.
+w Muhtar | sołtys, muhtar
+t iyi akşamlar! Muhtar olmak istiyorsunuz, değil mi? | Dobry wieczór! Chce Pan(i) zostać sołtysem, prawda? | Evet, muhtar olmak istiyorum. | Powiedz, że chcesz zostać sołtysem. | „Zostać” to olmak (być); „sołtys” to muhtar.
+w Dürüst | uczciwy
+w müsünüz | czy jest Pan(i)
+w dürüstüm | jestem uczciwy (dürüst + -üm)
+t Dürüst müsünüz? | Czy Pan(i) jest uczciwy(a)? | Evet, ben her zaman dürüstüm. | Zapewnij, że jesteś zawsze uczciwy. | „Zawsze” to her zaman; „jestem uczciwy” to dürüstüm. | | gain=1
+w bozuk | zepsuty
+w yapacaksınız | zrobi Pan(i) (yapmak)
+w Yolu | drogę (yol + -u: biernik)
+w tamir | naprawa (tamir etmek = naprawiać)
+w edeceğim | zrobię (etmek; tamir edeceğim = naprawię)
+t Yol bozuk. Ne yapacaksınız? | Droga jest zepsuta. Co Pan(i) zrobi? | Yolu tamir edeceğim. | Obiecaj, że naprawisz drogę. | „Naprawię” to tamir edeceğim; droga w bierniku to yolu. | | gain=1
+w Kuşçu | Kuşçu (nazwisko)
+w zarf | koperta
+w verdi | dał (vermek)
+w Bunu | to (biernik)
+w gördü | widział (görmek)
+w Kuşçu'yu | pana Kuşçu (biernik)
+w pek | zbyt, bardzo (z przeczeniem: ledwo)
+t Bay Kuşçu size bir zarf verdi! Bunu birisi gördü! | Pan Kuşçu dał Panu(i) kopertę! Ktoś to widział! | Bu bir yalan! Bay Kuşçu'yu pek tanımıyorum. | Zaprzecz: to kłamstwo, ledwo znasz pana Kuşçu. | „Ledwo” to pek (z przeczeniem: pek tanımıyorum). | | shift=-2 loss=2
+w önceydi | było dawno (önce + -ydi)
+w Biz | my
+w unuttuk | zapomnieliśmy (unutmak)
+w minnettarım | jestem wdzięczny (minnettar + -ım)
+t O çok önceydi. Biz unuttuk. | No cóż… to było dawno. Zapomnieliśmy o tym. | Teşekkürler, size minnettarım. | Podziękuj wyborcom za wyrozumiałość (jesteś im wdzięczny). | „Minnettar” to wdzięczny; „size” = Państwu. | | shift=+2
+w Köyün | wsi (köy + -ün)
+w borcu | jej dług (borç + -u)
+w Tasarruf | oszczędność (tasarruf etmek = oszczędzać)
+w olacağım | będę (olmak)
+w alacağım | wezmę (almak)
+o Köyün çok borcu var. Ne yapacaksınız? | Wieś ma dużo długów. Co Pan(i) zrobi? | Tasarruf edeceğim ve dürüst olacağım. | Daha çok para alacağım.; Bilmiyorum. | Dobra odpowiedź obiecuje oszczędzanie i uczciwość.; Polityk, który mówi „zabiorę więcej pieniędzy”, nie brzmi wiarygodnie.; „Nie wiem” nie przekona wyborców. | gain=1
+w Bize | nam (biz + -e)
+w olacak | będzie (olmak)
+w mısınız | czy Pan(i) (partykuła)
+t Bize karşı dürüst olacak mısınız? | Czy będzie Pan(i) wobec nas uczciwy(a)? | Evet, size karşı her zaman dürüst olacağım. | Obiecaj uczciwość wobec wyborców. | „Wobec” to karşı; „wobec Państwa” to size karşı. | | gain=1
+w seçiyoruz | wybieramy (seçmek)
+w bey | pan (po imieniu lub tytule)
+e O zaman sizi seçiyoruz! Hoş geldiniz, muhtar bey! | Wybieramy więc Pana(ią)! Witamy, panie sołtysie!
+
+@level 2 | Meclis üyesi | patience=4 cap=6 typed=0.2 extra=2 hint=bank
+desc Szczebel 2: radny miejski
+partner Bayan Arslan | A
+scene Miasto Yenişehir. Jesteś kandydatem do rady miejskiej (belediye meclisi). Dziennikarka pani Arslan pyta o „biznesmenów” i o to, skąd masz nowy samochód.
+goal Zaprzecz, że brałeś pieniądze, i nie daj się złapać na kłamstwie.
+win Pani Arslan zamyka notes: „Tamam, başka sorum yok.” Zostajesz radnym. Pan Kuşçu gratuluje przez telefon.
+partial Zostajesz radnym, ale pani Arslan mówi: „Peşini bırakmayacağım.” Będzie dalej drążyć.
+fail Wywiad ląduje w gazecie pod tytułem „Meclis üyesi ve zarf”. Nikt na ciebie nie głosuje.
+w gazeteciyim | jestem dziennikarzem (gazeteci + -yim)
+w Belediye | gmina, miasto (samorząd)
+w meclisi | rada (meclis + -i)
+w üyesi | członek (üye + -si)
+w meclis | rada, parlament
+t Merhaba, ben gazeteciyim. Belediye meclisi üyesi mi olmak istiyorsunuz? | Dzień dobry, jestem dziennikarką. Chce Pan(i) zostać radnym(ą)? | Evet, meclis üyesi olmak istiyorum. | Potwierdź, że chcesz zostać radnym. | „Radny” to meclis üyesi (dosłownie „członek rady”). | | gain=1
+w insanı | człowiek (iş insanı = biznesmen)
+w tanıyorsunuz | zna Pan(i) (tanımak)
+w arkadaşınız | Pana(i) przyjaciel (arkadaş + -ınız)
+w tanıdık | znajomy
+t Siz iş insanı Bay Kuşçu'yu tanıyorsunuz. O sizin arkadaşınız mı? | Zna Pan(i) biznesmena pana Kuşçu. Czy to Pana(i) przyjaciel? | Hayır, sadece bir tanıdık. | Zaprzecz: to tylko znajomy. | „Tylko” to sadece; „tanıdık” = znajomy. | | gain=1
+w arabanız | Pana(i) samochód (araba + -nız)
+w Parayı | pieniądze (para + -yı: biernik)
+w nereden | skąd
+w buldunuz | znalazł(a) Pan(i) (bulmak)
+w Arabayı | samochód (araba + -yı: biernik)
+w dürüstçe | uczciwie
+w aldım | wziąłem, kupiłem (almak)
+t Yeni bir arabanız var. Parayı nereden buldunuz? | Ma Pan(i) nowy samochód. Skąd ma Pan(i) pieniądze? | Arabayı dürüstçe satın aldım. | Powiedz, że kupiłeś go uczciwie. | „Kupiłem” to satın aldım; „uczciwie” to dürüstçe. | Dürüstçe satın aldım.
+w Hiç | w ogóle, nigdy
+w rüşvet | łapówka
+w aldınız | wziął/wzięła Pan(i) (almak)
+w almadım | nie wziąłem (almak)
+t Hiç rüşvet aldınız mı? | Czy kiedykolwiek wziął/wzięła Pan(i) łapówkę? | Hayır, hiç rüşvet almadım. | Zaprzecz, że kiedykolwiek brałeś łapówki. | „Rüşvet” = łapówka; „hiç … almadım” = nigdy nie wziąłem. | Ben hiç rüşvet almadım. | loss=2
+w Arslan | Arslan (nazwisko)
+w Fotoğrafta | na zdjęciu
+w insanları | ludzi (insan + -ları: biernik)
+t Bayan Arslan bir fotoğraf gösteriyor. Fotoğrafta siz, Bay Kuşçu ve bir zarf var. | Pani Arslan pokazuje zdjęcie. Na zdjęciu jest Pan(i), pan Kuşçu i koperta. | Bu insanları tanımıyorum. | Powiedz, że nie znasz tych ludzi. | „Ci ludzie” w bierniku to bu insanları. | | shift=-2
+w eski | stary
+w Seçmenler | wyborcy
+w unutur | zapomina (unutmak)
+t Fotoğraf eski. Seçmenler çabuk unutur. | Zdjęcie jest stare. Wyborcy szybko zapominają. | Fotoğraf önemli değil. | Zlekceważ zdjęcie: nie jest ważne. | „Ważny” to önemli; zaprzeczenie: önemli değil. | | shift=+2
+w tanık | świadek
+w aldığınızı | że Pan(i) wziął/wzięła (almak)
+w söylüyor | mówi (söylemek)
+w haklı | mający rację
+w tanığım | jestem świadkiem (tanık + -ım)
+o Bir tanık, sizin para aldığınızı söylüyor. | Świadek mówi, że wziął/wzięła Pan(i) pieniądze. | Bu doğru değil. Tanık yalan söylüyor. | Evet, tanık haklı.; Ben tanığım. | Zaprzeczasz i nazywasz świadka kłamcą.; Przyznajesz się, więc przegrywasz.; Świadek to osoba, która widziała, a ty nią nie jesteś. | gain=1
+w Röportaj | wywiad
+w Eklemek | dodać (bezokolicznik)
+w istediğiniz | który Pan(i) chce (istemek)
+w masumum | jestem niewinny (masum + -um)
+t Röportaj için teşekkürler. Eklemek istediğiniz bir şey var mı? | Dziękuję za wywiad. Czy chce Pan(i) coś jeszcze dodać? | Evet, ben masumum. | Powiedz na koniec, że jesteś niewinny. | „Masum” = niewinny. | | gain=1
+w Söylediklerinizi | to, co Pan(i) powiedział(a) (biernik)
+w yazacağım | napiszę (yazmak)
+e Söylediklerinizi yazacağım. Hoşça kalın! | Napiszę, co Pan(i) powiedział(a). Do widzenia!
+
+@level 3 | Belediye başkanı | patience=4 cap=6 typed=0.4 extra=2 hint=bank
+desc Szczebel 3: burmistrz
+partner Savcı Yılmaz | Y
+scene W ratuszu miasta Yenişehir. Prokurator Yılmaz bada przetarg (ihale) na nowy most. Firma pana Kuşçu wygrała dziwnie łatwo, a w aktach wraca „Guguk dosyası”.
+goal Wyjdź z przesłuchania jako burmistrz, nie przyznając się do niczego.
+win Prokurator zamyka teczkę: „Delil yok. Dosya kapandı.” Zostajesz burmistrzem, a most otwiera się z pompą.
+partial Teczka zostaje otwarta, ale prokurator nie ma dowodów. Zostajesz burmistrzem z cieniem podejrzeń.
+fail Prokurator kładzie na stole kopertę i zdjęcie. „Tutukluyorum!” – mówi. Kończysz w areszcie.
+w Savcı | prokurator
+w Yılmaz | Yılmaz (nazwisko)
+w sorgu | przesłuchanie
+w Avukatımı | mojego adwokata (avukat + -ım + -ı)
+t Ben Savcı Yılmaz. Bu bir sorgu. | Jestem prokuratorem Yılmazem. To jest przesłuchanie. | Avukatımı görmek istiyorum. | Poproś o swojego adwokata. | „Adwokat” to avukat; „mój adwokat” w bierniku to avukatımı. | | gain=1
+w Kuşçu'nun | pana Kuşçu (dopełniacz)
+w ihalesini | przetarg (ihale + -si + -ni: biernik)
+w kazandı | wygrał (kazanmak)
+w teklif | oferta
+w onlardaydı | była u nich (onlar + -da + -ydı)
+t Bay Kuşçu'nun şirketi köprü ihalesini kazandı. Neden? | Firma pana Kuşçu wygrała przetarg na most. Dlaczego? | En iyi teklif onlardaydı. | Wyjaśnij, że mieli najlepszą ofertę. | „Przetarg” to ihale; „najlepsza oferta” to en iyi teklif. | | gain=1
+w sorumuz | nasze pytanie (soru + -muz)
+w ifade | zeznanie (ifade vermek = składać zeznanie)
+w vermeyi | dawać (verme + -yi: biernik)
+w reddediyorum | odrzucam, odmawiam (reddetmek)
+t Çok sorumuz var. ifade vermek ister misiniz? | Mamy wiele pytań. Czy chce Pan(i) złożyć zeznanie? | ifade vermeyi reddediyorum. | Odmów składania zeznań. | „ifade vermeyi reddediyorum” = odmawiam zeznań (prawo do milczenia). | | shift=-1
+w Delil | dowód
+w olmadan | bez bycia, bez
+w şüphe | podejrzenie
+w olmaz | nie ma, nie będzie
+w ikimiz | oboje, my dwoje
+w biliyoruz | wiemy (bilmek)
+w delilinizin | Pana(i) dowodu (delil + -iniz + -in)
+t Delil olmadan şüphe olmaz. Bunu ikimiz de biliyoruz. | Bez dowodów nie ma podejrzenia. Wiemy to oboje. | Sizin hiç delilinizin yok. | Powiedz prokuratorowi, że nie ma dowodów. | „Dowód” to delil; „nie ma Pan dowodów” to sizin delilinizin yok. | | shift=+2
+w iddianame | akt oskarżenia
+w hazırlanır | zostanie przygotowany
+w diyorsunuz | mówi Pan(i) (demek)
+w suçluyum | jestem winny (suçlu + -yum)
+o Belki bir iddianame hazırlanır. Ne diyorsunuz? | Być może powstanie akt oskarżenia. Co Pan(i) na to? | Ben masumum. | Ben suçluyum.; Bunu ben yaptım. | „Masum” = niewinny.; „Suçlu” = winny, a to przyznanie.; „Bunu ben yaptım” = to ja to zrobiłem, czyli przyznanie się. | gain=1
+w verdiğini | że dał (vermek)
+t Bay Kuşçu size bir zarf verdiğini söylüyor. | Pan Kuşçu mówi, że dał Panu(i) kopertę. | Bu bir yalan! Ben hiç zarf almadım. | Zaprzecz: to kłamstwo, nigdy nie wziąłeś koperty. | „Hiç … almadım” = nigdy nie wziąłem. | | shift=-2 loss=2
+w yemin | przysięga (yemin altında = pod przysięgą)
+w söyleyin | niech Pan(i) powie (söylemek)
+w Kuşçu'dan | od pana Kuşçu
+d O zaman yemin altında bir daha söyleyin. Bay Kuşçu'dan para aldınız mı? | A więc proszę to powtórzyć pod przysięgą. Czy wziął/wzięła Pan(i) pieniądze od pana Kuşçu? | Hayır, Bay Kuşçu'dan para almadım. | Zaprzeczaj pod przysięgą: nie wziąłeś od niego pieniędzy. | „Od pana Kuşçu” to Bay Kuşçu'dan (końcówka -dan: „od”). Jedna wpadka i koniec.
+w başkanısınız | jest Pan(i) burmistrzem (başkan + -sınız)
+w sorum | moje pytanie (soru + -m)
+e iyi. Siz belediye başkanısınız. Başka sorum yok. | Dobrze. Jest Pan(i) burmistrzem. Nie mam więcej pytań.
+
+@level 4 | Milletvekili | patience=4 cap=6 typed=0.6 extra=2 hint=letters
+desc Szczebel 4: poseł
+partner Bayan Demirci | D
+scene Parlament krajowy. Jesteś posłem (milletvekili), a komisja śledcza (soruşturma komisyonu) wzywa cię jako świadka. Przewodnicząca pani Demirci mówi o „Guguk dosyası”. Prawnicy mają dla ciebie nowe słowa: tanık, yemin, dokunulmazlık.
+goal Odpowiadaj pod przysięgą tak, by nikt nie dowiódł, że kłamiesz.
+win Pani Demirci: „İfade sona erdi.” Wychodzisz z sali z uniesioną głową. Komisja nic nie ma.
+partial Komisja kończy pracę bez wniosków, ale jeden członek zapisał w notatniku: „Sonra kontrol edilsin!”
+fail Komisja nakazuje ci wyjaśnić sprzeczność. Zaplątałeś się, a prasa pisze o „yalancı milletvekili”.
+w Komisyona | do komisji (komisyon + -a)
+w altındasınız | jest Pan(i) pod (altında + -sınız)
+w biliyorum | wiem (bilmek)
+w Doğruyu | prawdę (doğru + -yu: biernik)
+w söylüyorum | mówię (söylemek)
+t Komisyona hoş geldiniz. Yemin altındasınız. | Witamy w komisji. Zeznaje Pan(i) pod przysięgą. | Evet, biliyorum. Doğruyu söylüyorum. | Potwierdź i zapewnij, że mówisz prawdę. | „Mówić prawdę” to doğruyu söylemek. „Yemin altında” = pod przysięgą. | | gain=1
+w Milletvekili | poseł
+w olarak | jako
+w dokunulmazlığınız | Pana(i) immunitet
+w Ondan | od tego, z tego
+w vazgeçer | zrezygnuje (vazgeçmek)
+w dokunulmazlığımı | mój immunitet (biernik)
+w koruyorum | chronię, zachowuję (korumak)
+t Milletvekili olarak dokunulmazlığınız var. Ondan vazgeçer misiniz? | Jako poseł ma Pan(i) immunitet. Czy zrzeka się Pan(i) go? | Hayır, dokunulmazlığımı koruyorum. | Odmów zrzeczenia się immunitetu. | „Dokunulmazlık” = immunitet; „koruyorum” = zachowuję, chronię. | | shift=-1
+w ifadeniz | Pana(i) zeznanie
+w dosyayla | z aktami (dosya + -yla)
+w çelişiyor | jest sprzeczne (çelişmek)
+w açıklıyorsunuz | wyjaśnia Pan(i) (açıklamak)
+w Saklayacak | do ukrycia
+w hiçbir | żaden
+w şeyim | moja rzecz (şey + -im)
+t ifadeniz dosyayla çelişiyor. Bunu nasıl açıklıyorsunuz? | Pana(i) zeznanie jest sprzeczne z aktami. Jak Pan(i) to wyjaśni? | Saklayacak hiçbir şeyim yok. | Powiedz, że nie masz nic do ukrycia. | „Saklayacak hiçbir şeyim yok” = nie mam nic do ukrycia. | | loss=2
+w hatırlamıyor | nie pamięta (hatırlamak)
+w geçmişte | w przeszłości (geçmiş + -te)
+w kaldı | pozostało (kalmak)
+t O çok önceydi. Seçmenler artık bunu hatırlamıyor. | To było dawno. Wyborcy już o tym nie pamiętają. | Bu geçmişte kaldı. | Machnij ręką: to przeszłość. | „Geçmiş” = przeszłość; „geçmişte kaldı” = pozostało w przeszłości. | | shift=+2
+w mektubu | list (mektup + -u: biernik)
+w yazdım | napisałem (yazmak)
+w avukatım | mój adwokat
+w yazdı | napisał (yazmak)
+o işte Bay Kuşçu'dan bir mektup. Tanıyor musunuz? | Oto list od pana Kuşçu. Zna go Pan(i)? | Bu mektubu tanımıyorum. | Evet, bu mektubu ben yazdım.; Mektubu avukatım yazdı. | Zaprzeczasz, że znasz ten list.; Przyznajesz się, że to ty napisałeś list: to błąd.; Zwalanie na adwokata nie jest wiarygodne. | gain=1
+t Bir tanık, zarf içinde para aldığınızı söylüyor. | Świadek mówi, że dostał Pan(i) pieniądze w kopercie. | Tanık yalan söylüyor. Ben para almadım. | Nazwij świadka kłamcą i zaprzecz, że dostałeś pieniądze. | „Yalan söylemek” = kłamać; „para almadım” = nie wziąłem pieniędzy. | | shift=-2 loss=2
+w Mecliste | w radzie, w parlamencie
+w tanımadığınızı | że Pan(i) nie zna (tanımak)
+w söylediniz | powiedział(a) Pan(i) (söylemek)
+w onu | jego, ją, to (biernik)
+k Mecliste Bay Kuşçu'yu pek tanımadığınızı söylediniz. Bu hâlâ doğru mu? | W radzie powiedział(a) Pan(i): „Ledwo znam pana Kuşçu.” Czy to nadal prawda? | Evet, onu pek tanımıyorum. | Hayır, o benim arkadaşım.; Hayır, onu hiç görmedim. | Konsekwentnie powtarzasz wcześniejsze zeznanie: pek tanımıyorum.; Przyznajesz, że to twój przyjaciel: sprzeczność i koniec.; Wcześniej mówiłeś „pek tanımıyorum”, a nie „nigdy go nie widziałem”. | gain=1
+w Gidebilirsiniz | może Pan(i) iść
+w yine | znowu
+w görüşeceğiz | spotkamy się (görüşmek)
+e Teşekkürler. Gidebilirsiniz. Yakında yine görüşeceğiz. | Dziękuję. Może Pan(i) iść. Wkrótce znów się zobaczymy.
+
+@level 5 | Bakan | patience=4 cap=6 typed=0.8 extra=2 hint=bank
+desc Szczebel 5: minister
+partner Bay Güneş | G
+scene Studio telewizyjne, wywiad na żywo. Jesteś ministrem (bakan) i siedzisz naprzeciw pana Güneşa, prowadzącego wiadomości. Na ekranie nagle pojawia się stary dokument z „Guguk dosyası”.
+goal Wyjdź ze studia nadal jako minister: nie daj się zapędzić w pułapkę na żywo.
+win Güneş kończy wywiad: „Teşekkürler, sayın bakan.” Sondaże rosną. Pan Kuşçu dzwoni: „Aferin!”
+partial Wywiad kończy się remisem. Opozycja domaga się dymisji (istifa), ale premier cię broni.
+fail Na wizji uciekasz od odpowiedzi, a widzowie wszystko widzą. Rano gazety krzyczą: „İstifa!”
+w Televizyonda | w telewizji
+w canlı | żywy; na żywo
+w yayındayız | jesteśmy na antenie (yayın + -da + -yız)
+w Hazır | gotowy
+w sayın | szanowny
+w bakan | minister
+w hazırım | jestem gotów (hazır + -ım)
+t iyi akşamlar! Televizyonda canlı yayındayız. Hazır mısınız, sayın bakan? | Dobry wieczór! Jesteśmy na żywo w telewizji. Jest Pan(i) gotowy(a), panie ministrze? | Evet, hazırım. Memnuniyetle. | Potwierdź, że jesteś gotów. | „Hazırım” = jestem gotów. | | gain=1
+w Muhalefet | opozycja
+w Guguk | kukułka
+w dosyası | akta (dosya + -sı)
+w skandal | skandal
+w iddia | twierdzenie (iddia etmek = twierdzić)
+w kampanya | kampania
+t Muhalefet, Guguk dosyası etrafında bir skandal olduğunu iddia ediyor. | Opozycja twierdzi, że wokół Guguk dosyası jest skandal. | Bu bir skandal değil. Bu bir kampanya. | Zbagatelizuj: to nie skandal, tylko kampania. | „Kampanya” = kampania; „skandal değil” = nie skandal. | | shift=-1
+w Gazetede | w gazecie
+w belge | dokument
+w imzanız | Pana(i) podpis (imza + -nız)
+w hatırlamıyorum | nie pamiętam (hatırlamak)
+t Gazetede bir belge var. Üzerinde sizin imzanız var. | W gazecie jest dokument. Jest na nim Pana(i) podpis. | Bunu hatırlamıyorum. | Powiedz, że nie możesz sobie tego przypomnieć. | „Hatırlamıyorum” = nie pamiętam. | | shift=-2 loss=2
+t Bu sizin imzanız. Bunu nasıl açıklıyorsunuz? | To jest Pana(i) podpis. Jak Pan(i) to wyjaśni? | Bu sahte. | Zaprzecz: to fałszerstwo. | „Sahte” = fałszywy, podrobiony. | | gain=1
+w Anketler | sondaże
+w yükseliyor | rosną (yükselmek)
+w güveniyor | ufa (güvenmek)
+w Güveniniz | Państwa zaufanie (güven + -iniz)
+t Anketler yükseliyor. Seçmenler size güveniyor. | Sondaże rosną. Wyborcy Panu(i) ufają. | Güveniniz için teşekkür ederim. | Podziękuj wyborcom za zaufanie. | „Güven” = zaufanie; „güveniniz için” = za Państwa zaufanie. | | shift=+2
+w danışmanınız | Pana(i) doradca (danışman + -ınız)
+w onunla | z nim
+w çalışmadım | nie pracowałem (çalışmak)
+w kez | raz
+o Bay Kuşçu, sizin danışmanınız olduğunu söylüyor. Doğru mu? | Pan Kuşçu mówi, że był Pana(i) doradcą. Czy to prawda? | Hayır, onunla hiç çalışmadım. | Evet, bana çok kez para verdi.; ifade vermeyi reddediyorum. | Zaprzeczasz konsekwentnie.; Przyznajesz się do pieniędzy: błąd.; „ifade vermeyi reddediyorum” w telewizji wygląda na przyznanie się, a Güneş to wykorzysta. | gain=1
+w istifa | dymisja
+w edecek | zrobi (etmek; istifa edecek = poda się do dymisji)
+w biter | kończy się (bitmek)
+w etmeyeceğim | nie zrobię (etmek)
+t istifa edecek misiniz? O zaman her şey biter. | Czy poda się Pan(i) do dymisji? Wtedy wszystko się kończy. | Hayır, istifa etmeyeceğim. Ben masumum. | Odmów dymisji i powiedz, że jesteś niewinny. | „istifa etmek” = podać się do dymisji; „etmeyeceğim” = nie zrobię. | | gain=1
+w Zarfın | koperty (zarf + -ın)
+w kampanyamın | mojej kampanii (kampanya + -m + -ın)
+w parası | pieniądze (para + -sı)
+w hediyeydi | był prezentem (hediye + -ydi)
+k işte bir fotoğraf: siz ve Bay Kuşçu. Bir de zarf var. Zarfın içinde ne var? | Oto zdjęcie: Pan(i) i pan Kuşçu. Jest też koperta. Co jest w kopercie? | Fotoğraf eski. Ben hiç zarf almadım. | Bu kampanyamın parası.; Bu sadece bir hediyeydi. | Powtarzasz to, co powiedziałeś prokuratorowi.; Przyznanie się do pieniędzy: koniec.; „Hediye” to też przyznanie, bo wcześniej mówiłeś, że nie brałeś koperty. | gain=1
+e Röportaj için teşekkürler, sayın bakan. | Dziękuję za wywiad, panie ministrze.
+
+@level 6 | Başbakan | patience=4 cap=6 typed=1 extra=2 hint=none
+desc Szczebel 6: premier
+partner Bayan Ekinci | E
+scene Debata finałowa w telewizji. Kandydujesz na premiera (başbakan). Naprzeciw stoi pani Ekinci z partii „Yeni Dürüstlük” i jej teczka z „Guguk dosyası”. Cały kraj ogląda.
+goal Wygraj debatę, zachowaj spokój i nie przyznaj się do niczego do samego końca.
+win Przegrywa nawet sondaż: 52 procent mówi, że chce ciebie. Zostajesz premierem, a koperta pana Kuşçu leży gdzieś na dnie szuflady.
+partial Debata kończy się remisem. Wybory wygrywasz minimalnie i obiecujesz „więcej przejrzystości”.
+fail Pani Ekinci kładzie na stoliku teczkę. Kraj widzi sprzeczność w twoich słowach i na ekranie pojawia się napis: „Aday yalan söylüyor.”
+w Münazaraya | na debatę (münazara + -ya)
+w Ekinci | Ekinci (nazwisko)
+w aday | kandydat
+w Başbakan | premier
+t Münazaraya hoş geldiniz! Bayan Ekinci, sayın aday, buyurun. | Witamy na debacie! Pani Ekinci, panie kandydacie, proszę. | iyi akşamlar. Başbakan olmak istiyorum. | Przywitaj się i powiedz, że chcesz zostać premierem. | „Başbakan” = premier. | | gain=1
+w Yeni | nowy
+w Dürüstlük | uczciwość
+w Partisi'ndenim | jestem z partii (parti + -si + -nden + -im)
+w söylerim | mówię (söylemek)
+t Ben Yeni Dürüstlük Partisi'ndenim. Doğruyu söyleyin, sayın aday! | Jestem z partii Yeni Dürüstlük. Niech Pan(i) mówi prawdę, panie kandydacie! | Ben her zaman doğruyu söylerim. | Zapewnij, że zawsze mówisz prawdę. | „Zawsze” = her zaman; „doğruyu söylerim” = mówię prawdę. | | gain=1
+w suçlamam | mój zarzut (suçlama + -m)
+w suçlamayı | zarzut (suçlama + -yı: biernik)
+t Siz rüşvet aldınız. Benim suçlamam bu. | Brał Pan(i) łapówki. To mój zarzut. | Bu suçlamayı reddediyorum. | Odrzuć ten zarzut. | „Suçlama” = zarzut; „reddediyorum” = odrzucam. | | shift=-2 loss=2
+w kampanyanız | Pani(Pana) kampania
+t Belki de bu sadece kampanya. Ama bu çok önceydi. | Może to tylko kampania. Ale to było dawno. | Sizin kampanyanız çok kirli. | Zarzuć rywalce brudną kampanię. | „Kirli” = brudny; „sizin kampanyanız” = Pani kampania. | | shift=+2
+w delilleriniz | Pani dowody (delil + -ler + -iniz)
+w görmüyorum | nie widzę (görmek)
+t Bayan Ekinci, delilleriniz var mı? Ben hiçbir delil görmüyorum! | Ma Pani dowody, pani Ekinci? Ja nie widzę żadnych dowodów! | Ben de hiçbir delil görmüyorum. | Powtórz, że nie widzisz żadnych dowodów. | „Ben de” = ja też; „hiçbir delil görmüyorum” = nie widzę żadnego dowodu. | | gain=1
+w planınız | Pana(i) plan (plan + -ınız)
+w işler | prace, sprawy (iş + -ler)
+w yaratacağım | stworzę (yaratmak)
+t Peki ülke için planınız nedir? | A jaki jest Pana(i) plan dla kraju? | Yeni işler yaratacağım. | Obiecaj nowe miejsca pracy. | „iş” = praca, „yaratacağım” = stworzę. | | gain=1
+t Arkadaşınız Bay Kuşçu size çok para verdiğini söylüyor! | Pana(i) przyjaciel pan Kuşçu mówi, że dał Panu(i) dużo pieniędzy! | Bu bir yalan! O benim arkadaşım değil. | Zaprzecz: to kłamstwo, on nie jest twoim przyjacielem. | „Arkadaşım değil” = nie mój przyjaciel. | | shift=-1 loss=2
+w onun | jego
+o Mecliste onun sadece bir tanıdık olduğunu söylediniz. Şimdi ne diyorsunuz? | W radzie powiedział(a) Pan(i), że to tylko znajomy. A teraz? | O sadece bir tanıdık. | O benim arkadaşım.; Onu hiç görmedim. | Trzymasz się wersji z rady.; Zaprzeczasz sam sobie.; Wcześniej przyznałeś, że go znasz (tanıdık), więc „nigdy go nie widziałem” to sprzeczność. | gain=1
+w zarfı | kopertę (zarf + -ı: biernik)
+k Bayan Ekinci zarfı gösteriyor. Aldınız mı? Evet mi, hayır mı? | Pani Ekinci pokazuje kopertę. Wziął/wzięła ją Pan(i)? Tak czy nie? | Hayır, hiç almadım. | Evet, aldım.; ifade vermeyi reddediyorum. | Zaprzeczasz do końca.; Przyznanie się: koniec.; Milczenie na żywo wygląda jak przyznanie się. |
+w oluyorsunuz | zostaje Pan(i) (olmak)
+w Tebrikler | gratulacje
+e Ve başbakan siz oluyorsunuz! Tebrikler! | A premierem zostaje… Pan(i)! Gratulacje!
+
+
+@larp havalimani | Lotnisko | Görevli | G | İstanbul, wczesny ranek. Lecisz do Warszawy na ślub najlepszego przyjaciela, a samolot nie poczeka. Masz walizkę, paszport i mało czasu. | Przejdź całą drogę: odprawa, kontrola bezpieczeństwa, bramka, lot i odbiór bagażu w Warszawie.
+fee 0
+reward 20
+strict yes
+story yes
+win Docierasz do Warszawy z walizką, paszportem i pół godziny zapasu. Przyjaciel czeka w hali przylotów z bukietem: „Başardın! Düğün başlayabilir!”
+partial Dotarłeś do Warszawy, ale po drodze sporo się nagadałeś i trochę pobiegałeś. Walizka jest, ślub też, ty trochę zdyszany, ale na czas.
+fail Pomyliłeś coś w najgorszym momencie i samolot odleciał bez ciebie. Ślub oglądasz na telefonie, a przyjaciel obiecuje ci długą wyprawę „na pocieszenie”.
+
+@level 1 | Odprawa | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Odprawa
+partner Görevli | G
+scene Stambuł, hala odlotów. Podchodzisz do stanowiska odprawy linii Kuzey Rüzgârı Hava Yolları. Pracowniczka patrzy na ciebie życzliwie i czeka na dokumenty.
+goal Odpraw się na lot do Warszawy: pokaż paszport, nadaj walizkę i wybierz miejsce.
+win Pracowniczka podaje ci kartę pokładową: „İyi yolculuklar!” Walizka jedzie na taśmie, a ty idziesz do kontroli bezpieczeństwa.
+partial Odprawa udała się, ale pracowniczka kilka razy musiała się domyślać, o co ci chodzi. Karta pokładowa w ręku, czas ucieka.
+fail Pracowniczka nie rozumie, czego chcesz, i prosi następną osobę w kolejce. Musisz zacząć od nowa na końcu kolejki.
+w Rüzgârı | wiatr (rüzgâr + -ı)
+w Hava | powietrze (Hava Yolları = linie lotnicze)
+w Yolları | drogi (yol + -ları)
+w kontuarına | do stanowiska (kontuar + -ı + -na)
+w uçuyorsunuz | leci Pan(i) (uçmak)
+w Varşova'ya | do Warszawy
+w uçuyorum | lecę (uçmak)
+t iyi günler! Kuzey Rüzgârı Hava Yolları kontuarına hoş geldiniz. Nereye uçuyorsunuz? | Dzień dobry! Witamy przy stanowisku Kuzey Rüzgârı Hava Yolları. Dokąd Pan(i) leci? | iyi günler! Varşova'ya uçuyorum. | Przywitaj się i powiedz, że lecisz do Warszawy. | „Lecę” to uçuyorum, a „do Warszawy” to Varşova'ya (końcówka -ya: „do”).
+w Varşova | Warszawa
+w Pasaportunuzu | Pana(i) paszport (biernik)
+w gidiyorsunuz | jedzie Pan(i) (gitmek)
+w pasaportum | mój paszport
+w düğüne | na ślub, wesele (düğün + -e)
+t Varşova, güzel! Pasaportunuzu alabilir miyim? Varşova'ya neden gidiyorsunuz? | Warszawa, ładnie! Mogę prosić o paszport? Po co Pan(i) jedzie do Warszawy? | Buyurun, pasaportum. Bir düğüne gidiyorum. | Podaj paszport i powiedz, że jedziesz na ślub. | „Oto” przy podawaniu to buyurun; „na ślub” to bir düğüne.
+t Çok güzel! Bavul vermek ister misiniz? | Jak miło! Czy chce Pan(i) nadać walizkę? | Evet, bir bavul vermek istiyorum. | Powiedz, że chcesz nadać walizkę. | „Nadać bagaż” to bavul vermek (dosłownie „dać walizkę”).
+w teraziye | na wagę (terazi + -ye)
+w kilo | kilogram
+w bagajınız | Pana(i) bagaż
+w bagajım | mój bagaż
+t Lütfen bavulu teraziye koyun. Yirmi kilo, sorun yok. El bagajınız da var mı? | Proszę postawić walizkę na wadze. Dwadzieścia kilo, nie ma problemu. Czy ma Pan(i) też bagaż podręczny? | Evet, el bagajım bir çanta. | Powiedz, że torba to twój bagaż podręczny. | „Bagaż podręczny” to el bagajı; „mój” to el bagajım.
+w kenarı | brzeg, strona (pencere kenarı = przy oknie)
+w koridor | korytarz, przejście
+w tarafı | strona (koridor tarafı = od strony przejścia)
+t Tamam. Pencere kenarı mı, koridor tarafı mı istersiniz? | Dobrze. Woli Pan(i) miejsce przy oknie czy przy przejściu? | Pencere kenarı lütfen. | Powiedz, że wolisz miejsce przy oknie. | „Przy oknie” to pencere kenarı.
+w biniş | wejście na pokład
+w kartınız | Pana(i) karta
+w Kalkış | odlot
+w buçukta | o wpół do (on buçukta = o 10:30)
+w sorunuz | Pana(i) pytanie (soru + -nuz)
+w uçuş | lot
+w zamanında | na czas
+t işte biniş kartınız. Kalkış on buçukta. Başka sorunuz var mı? | Oto Pana(i) karta pokładowa. Odlot jest o wpół do jedenastej. Czy ma Pan(i) jeszcze pytanie? | Evet, uçuş zamanında mı? | Zapytaj, czy lot jest punktualny. | „Na czas” to zamanında; „lot” to uçuş.
+w Kapınız | Pana(i) bramka
+t Evet, uçuş zamanında. Kapınız on iki. Lütfen düz gidin. | Tak, lot jest punktualny. Pana(i) bramka to 12. Proszę iść prosto. | Çok teşekkürler! Hoşça kalın! | Podziękuj i pożegnaj się. | „Do widzenia” (mówi ten, kto wychodzi) to hoşça kalın.
+e iyi yolculuklar! | Szczęśliwej podróży!
+
+@level 2 | Kontrola bezpieczeństwa | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Kontrola bezpieczeństwa
+partner Güvenlik görevlisi | G
+scene Masz kartę pokładową, a przed tobą długa kolejka do kontroli. Funkcjonariusz podaje plastikowe pojemniki i patrzy uważnie na twoją torbę.
+goal Przejdź kontrolę bezpieczeństwa: pokaż laptop, zdejmij pasek i odpowiedz na pytania.
+win Funkcjonariusz kiwa głową: „Her şey yolunda. İlerleyin.” Zakładasz pasek i biegniesz do bramki z pełnym spokojem.
+partial Kontrola przebiegła w końcu bez problemów, ale funkcjonariusz kilka razy zmarszczył brwi. Zakładasz pasek w biegu.
+fail Funkcjonariusz uznaje twoje odpowiedzi za podejrzane. Zostajesz zatrzymany na dodatkową kontrolę, a samolot odlatuje bez ciebie.
+w güvenlik | bezpieczeństwo
+w kontrolü | kontrola (kontrol + -ü)
+w buraya | tutaj (kierunek)
+w banda | na taśmę (bant + -a)
+t iyi günler! Burası güvenlik kontrolü. Lütfen çantanızı buraya banda koyun. | Dzień dobry! To jest kontrola bezpieczeństwa. Proszę położyć torbę tutaj na taśmie. | Tabii. | Zgódź się i powiedz, że oczywiście. | „Oczywiście” to tabii.
+w laptop | laptop
+w çıkarın | niech Pan(i) wyjmie (çıkarmak)
+w laptopum | mój laptop
+t Teşekkürler. Çantanızda laptop var mı? Lütfen çıkarın. | Dziękuję. Czy ma Pan(i) w torbie laptop? Proszę go wyjąć. | Evet, işte laptopum. | Potwierdź i podaj laptop. | „Mój” to końcówka -um: laptopum.
+w sıvı | płyn
+w Örneğin | na przykład
+w parfüm | perfumy
+w krem | krem
+t Teşekkürler. Yanınızda sıvı var mı? Örneğin su, parfüm ya da krem? | Dziękuję. Czy ma Pan(i) przy sobie płyny? Na przykład wodę, perfumy albo krem? | Hayır, yanımda sıvı yok. | Zaprzecz: nie masz płynów. | „Nie mam przy sobie” to yanımda … yok. | Hayır, yanımda hiç sıvı yok.
+w kemerinizi | Pana(i) pasek (biernik)
+w ceketinizi | Pana(i) kurtkę (biernik)
+w kemerim | mój pasek
+w ceketim | moja kurtka
+t Tamam. Lütfen kemerinizi ve ceketinizi de çıkarın. | Dobrze. Proszę też zdjąć pasek i kurtkę. | Evet, işte kemerim ve ceketim. | Podaj pasek i kurtkę. | „Pasek” to kemer, „kurtka” to ceket; „mój” to końcówka -im.
+w bıçağım | mój nóż
+k Teşekkürler. Çantanızda bıçak ya da silah var mı? | Dziękuję. Czy w Pana(i) torbie jest nóż albo broń? | Hayır, bıçağım da silahım da yok. | Evet, bir bıçağım var.; Bilmiyorum, belki. | Przyznanie się do noża to natychmiastowe zatrzymanie.; Niepewna odpowiedź przy takim pytaniu wzbudza podejrzenia: zatrzymanie.
+w tarayıcıdan | przez skaner (tarayıcı + -dan)
+w geçin | niech Pan(i) przejdzie (geçmek)
+w Bip | pip (dźwięk)
+w cebinizde | w Pana(i) kieszeni
+w cebimde | w mojej kieszeni
+w anahtarım | mój klucz
+t Tamam. Lütfen tarayıcıdan geçin. Bip! Pantolon cebinizde başka bir şey var mı? | Dobrze. Proszę przejść przez skaner. Pip! Czy ma Pan(i) jeszcze coś w kieszeni spodni? | Evet, cebimde anahtarım ve telefonum var. | Powiedz, że masz klucz i telefon. | „Klucz” to anahtar; „mój klucz” to anahtarım; „w mojej kieszeni” to cebimde.
+w ilerleyin | niech Pan(i) idzie dalej
+e Her şey yolunda. ilerleyin. iyi yolculuklar! | Wszystko w porządku. Proszę iść dalej. Szczęśliwej podróży!
+
+@level 3 | Przy bramce | patience=4 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Przy bramce
+partner Havalimanı çalışanı | H
+scene Siedzisz przy bramce 12 i patrzysz na zegarek. Nagle w głośnikach coś trzaska, a na tablicy pojawia się napis „Rötar”.
+goal Dowiedz się, co z lotem, zrozum komunikat o zmianie bramki i wejdź na pokład.
+win Biegniesz do nowej bramki i wsiadasz jako jeden z ostatnich. Pracownik zamyka drzwi: „Az kalsın kaçırıyordunuz!”
+partial Znalazłeś w końcu właściwą bramkę, choć po drodze kilka razy musiałeś dopytywać. Wchodzisz na pokład spocony.
+fail Zrozumiałeś komunikat na opak i czekasz przy złej bramce. Kiedy orientujesz się w błędzie, drzwi samolotu są już zamknięte.
+w uçuşunun | lotu (uçuş + -un)
+w yolcusu | pasażer (yolcu + -su)
+w uçuşum | mój lot
+t Pardon! Varşova uçuşunun yolcusu musunuz? | Przepraszam! Czy jest Pan(i) pasażerem lotu do Warszawy? | Evet, uçuşum gecikmeli, değil mi? | Potwierdź i zapytaj, czy twój lot jest spóźniony. | „Spóźniony” to gecikmeli; „değil mi?” na końcu znaczy „prawda?”.
+w birde | o pierwszej (bir + -de; on birde = o jedenastej)
+w başlıyor | zaczyna się (başlamak)
+t Evet, uçuş kırk dakika gecikmeli. Biniş saat on birde başlıyor. | Tak, lot ma czterdzieści minut opóźnienia. Wejście na pokład zacznie się o jedenastej. | Biniş ne zaman başlıyor? Bir düğüne gidiyorum. | Zapytaj, kiedy jest boarding, i dodaj, że jedziesz na ślub. | „Kiedy” to ne zaman: biniş ne zaman başlıyor?
+w Varşova'da | w Warszawie
+w aktarma | przesiadka
+w yapmanız | że Pan(i) zrobi (yapmak)
+w gerekiyor | jest potrzebne, trzeba (gerekmek)
+w doğrudan | bezpośrednio
+t Düğün, ne güzel! Biniş on birde. Varşova'da aktarma yapmanız gerekiyor mu? | Ślub, jak miło! Boarding jest o jedenastej. Czy musi się Pan(i) przesiadać w Warszawie? | Hayır, doğrudan Varşova'ya uçuyorum. | Odpowiedz, że nie, lecisz bezpośrednio. | „Bezpośrednio” to doğrudan.
+w anons | ogłoszenie
+w uçuşu | lot (biernik/dop.)
+w kapıdan | z bramki (kapı + -dan)
+w kapalı | zamknięty
+w Anladınız | zrozumiał(a) Pan(i) (anlamak)
+w kapıda | przy bramce (kapı + -da)
+w kalıyorum | zostaję (kalmak)
+w Çıkışa | do wyjścia (çıkış + -a)
+k Tamam, doğrudan. Dikkat, anons! Varşova uçuşu şimdi beş numaralı kapıdan kalkıyor. On iki numaralı kapı kapalı. Anladınız mı? Nereye gidiyorsunuz? | Dobrze, bezpośrednio. Uwaga, ogłoszenie! Lot do Warszawy odlatuje teraz z bramki 5. Bramka 12 jest zamknięta. Czy Pan(i) zrozumiał(a)? Dokąd Pan(i) idzie? | Beş numaralı kapıya gidiyorum. | On iki numaralı kapıda kalıyorum.; Çıkışa gidiyorum. | Bramka 12 jest zamknięta, więc czekanie tam kończy się spóźnieniem.; Wyjście to wyjście z lotniska, nie bramka na pokład.
+w kartınızı | Pana(i) kartę (biernik)
+w binebilirsiniz | może Pan(i) wsiadać
+w biniyorum | wsiadam (binmek)
+t O zaman çabuk! Biniş kartınızı alabilir miyim? Artık binebilirsiniz. | W takim razie szybko! Mogę prosić o kartę pokładową? Może Pan(i) już wsiadać. | işte biniş kartım. Şimdi biniyorum. | Podaj kartę i powiedz, że już wsiadasz. | „Wsiadam” to biniyorum; „teraz” to şimdi.
+e iyi yolculuklar! Biniş açık. | Szczęśliwej podróży! Boarding jest otwarty.
+
+@level 4 | W samolocie i po lądowaniu | patience=4 typed=0.75 extra=3 hint=letters reward=30
+desc Rozdział 4: Lot i przylot
+partner Kabin görevlisi | K
+scene Wchodzisz na pokład Kuzey Rüzgârı Hava Yolları. Stewardesa wita pasażerów przy drzwiach, a za chwilę wystartujecie do Warszawy. Po lądowaniu będziesz musiał jeszcze znaleźć paszportówkę i swoją walizkę.
+goal Zajmij miejsce, zapnij pas, poproś o picie, a po lądowaniu dowiedz się, gdzie jest kontrola paszportowa, taśma bagażowa i odprawa celna.
+win Walizka wyjeżdża na taśmie jako pierwsza, a celnik życzy ci „Polonya'ya hoş geldiniz!” Przyjaciel czeka w hali przylotów.
+partial Wszystko udało ci się znaleźć, ale po drodze trzy razy zapytałeś o drogę. Walizka dojechała, a ty do ślubu zdążysz.
+fail Poszedłeś w złą stronę i straciłeś czas na lotnisku. Walizka krąży samotnie po taśmie, a przyjaciel wydzwania co minutę.
+w uçağımıza | do naszego samolotu (uçak + -ımız + -a)
+t iyi günler, uçağımıza hoş geldiniz! Biniş kartınızı alabilir miyim? | Dzień dobry, witamy w naszym samolocie! Mogę prosić o kartę pokładową? | iyi günler! işte biniş kartım. | Przywitaj się i pokaż kartę pokładową. | „Oto moja karta” to işte biniş kartım.
+w Koltuğunuz | Pana(i) fotel, miejsce
+w üstteki | górny
+w dolaba | do szafki, schowka (dolap + -a)
+w koyuyorum | kładę (koymak)
+t Teşekkürler. Koltuğunuz on dört. Pencere kenarı. Lütfen çantanızı üstteki dolaba koyun. | Dziękuję. Pana(i) miejsce to 14. Przy oknie. Proszę położyć torbę w schowku na górze. | Teşekkürler, çantayı dolaba koyuyorum. | Podziękuj i powiedz, że kładziesz torbę do schowka. | „Do schowka” to dolaba (końcówka -a: „do”); „kładę” to koyuyorum.
+w bağlayın | niech Pan(i) zapnie (bağlamak)
+w kalkıyoruz | startujemy (kalkmak)
+w kemerimi | mój pas (biernik)
+w bağlıyorum | zapinam (bağlamak)
+t Teşekkürler. Lütfen kemerinizi bağlayın. Birazdan kalkıyoruz. | Dziękuję. Proszę zapiąć pas. Za chwilę startujemy. | Evet, kemerimi bağlıyorum. | Powiedz, że zapinasz pas. | „Zapinam pas” to kemerimi bağlıyorum.
+t Teşekkürler. içecek ister misiniz? | Dziękuję. Czy chce Pan(i) coś do picia? | Evet, bir kahve lütfen. | Poproś o kawę. | „Poproszę” to lütfen.
+w kahveniz | Pana(i) kawa (kahve + -niz)
+w ineceğiz | wylądujemy (inmek)
+t işte kahveniz. Başka bir şey sormak ister misiniz? | Oto Pana(i) kawa. Czy chce Pan(i) jeszcze o coś zapytać? | Varşova'ya ne zaman ineceğiz? | Zapytaj, kiedy lądujecie w Warszawie. | „Kiedy” to ne zaman, a „wylądujemy” to ineceğiz.
+w Varış | przylot
+t On dakika sonra ineceğiz. Varşova'ya hoş geldiniz! Varış zamanında. | Lądujemy za dziesięć minut. Witamy w Warszawie! Przylot jest punktualny. | Teşekkürler! Pasaport kontrolü nerede, lütfen? | Podziękuj i zapytaj, gdzie jest kontrola paszportowa. | Pytanie o miejsce zawiera nerede: pasaport kontrolü nerede?
+w bagaj | bagaż
+w bandı | taśma (bant + -ı)
+w gümrük | cło, urząd celny
+w kontrolüne | do kontroli (kontrol + -ü + -ne)
+w gümrüğe | do cła (gümrük + -e)
+w bandına | do taśmy (bant + -ı + -na)
+k Pasaport kontrolü solda. Sonra bagaj bandı, sonra gümrük. Önce nereye gidiyorsunuz? | Kontrola paszportowa jest po lewej. Potem taśma bagażowa, potem cło. Dokąd Pan(i) idzie najpierw? | Önce pasaport kontrolüne gidiyorum. | Önce gümrüğe gidiyorum.; Önce bagaj bandına gidiyorum. | Do cła idziesz na końcu, po odbiorze walizki.; Walizkę odbierasz dopiero po kontroli paszportowej.
+w Aynen | dokładnie
+w Bavulunuz | Pana(i) walizka
+w bantta | na taśmie (bant + -ta)
+w Bavulumu | moją walizkę (biernik)
+w banttan | z taśmy (bant + -tan)
+t Aynen! Sonra bagaj bandına. Bavulunuz dört numaralı bantta gelecek. | Dokładnie! A potem do taśmy bagażowej. Pana(i) walizka przyjedzie na taśmie czwartej. | Çok teşekkürler! Bavulumu banttan alıyorum. | Podziękuj i powiedz, że zdejmiesz walizkę z taśmy. | „Z taśmy” to banttan (końcówka -tan: „z”); „moją walizkę” to bavulumu.
+w Beyan | deklaracja (beyan etmek = deklarować)
+w şeyiniz | Pana(i) rzecz
+w soracak | zapyta (sormak)
+t Beyan edecek bir şeyiniz var mı? Gümrük bunu soracak. | Czy ma Pan(i) coś do oclenia? O to zapyta cło. | Hayır, beyan edecek bir şeyim yok. | Powiedz, że nie masz nic do oclenia. | „Nic do oclenia” to beyan edecek bir şeyim yok.
+w Polonya'ya | do Polski
+w düğünde | na weselu (düğün + -de)
+e O zaman her şey tamam. Polonya'ya hoş geldiniz, düğünde iyi eğlenceler! | Wtedy wszystko w porządku. Witamy w Polsce i dobrej zabawy na weselu!

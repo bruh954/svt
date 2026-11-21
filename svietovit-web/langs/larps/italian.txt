@@ -216,3 +216,799 @@ w libero | wolny
 w ritardo | spóźnienie
 t Questo posto è libero. Il treno ha dieci minuti di ritardo. | To miejsce jest wolne. Pociąg ma dziesięć minut spóźnienia. | Non è un problema. Grazie! | Powiedz, że to nie problem, i podziękuj. | „To nie problem” to non è un problema.
 e Buon viaggio a Roma! | Szczęśliwej podróży do Rzymu!
+
+@larp oma | Babcia w parku | Nonna Rosa | R | Niedziela w parku. Na ławce siedzi starsza pani, która uwielbia rozmawiać i ma całe popołudnie. | Posiedź z babcią Rosą i porozmawiaj z nią. Nikt cię stąd nie wyrzuci.
+fee 0
+reward 10
+story yes
+win Nonna Rosa promienieje: „Che bravo ragazzo!” Zaprasza cię na niedzielną kawę i kawałek ciasta.
+partial Rozmowa się toczyła, choć kilka razy musiałeś prosić o powtórzenie. Nonna Rosa uśmiecha się cierpliwie i zaprasza cię znowu.
+fail Nonna Rosa się nie zniechęca, bo ma nieskończoną cierpliwość. Jeśli kiedyś zobaczysz ten komunikat, napisz do nas.
+
+@level 1 | Na ławce | patience=3 endless=yes typed=0 extra=2 hint=none
+desc Rozdział 1: Poznajecie się
+scene Park, ławka, słońce. Starsza pani karmi okruchami wróble i zaczyna rozmowę. Nie musisz się spieszyć: Nonna Rosa poczeka.
+goal Przywitaj się, powiedz, jak się nazywasz i skąd jesteś.
+win Nonna Rosa klepie ławkę obok siebie: „Si sieda, Paolo!” Zostajesz na dłużej.
+partial Rozmowa się udała, mimo kilku pomyłek. Nonna Rosa zachowuje cierpliwość i robi ci miejsce na ławce.
+fail Nonna Rosa nigdy się nie zniechęca.
+w giovanotto | młody człowiek
+w fa | robi (fare); fa bel tempo = jest ładna pogoda
+w bel | ładny (przed rzeczownikiem)
+w proprio | właśnie, naprawdę
+w bella | ładna
+t Buongiorno, giovanotto! Oggi fa bel tempo, vero? | Dzień dobry, młody człowieku! Dziś jest ładna pogoda, prawda? | Sì, fa proprio bel tempo. | Zgódź się, że pogoda jest ładna. | „Pogoda jest ładna” to fa bel tempo. | Sì, fa bel tempo.; Sì, è una bella giornata.
+w chiama | nazywa się (chiamarsi)
+w Rosa | Rosa (imię)
+w Mi | mi, mnie
+w chiamo | nazywam się (chiamarsi)
+w Paolo | Paolo (imię)
+t Che piacere! Come si chiama? Io sono Rosa. | Jak miło! Jak się Pan nazywa? Ja jestem Rosa. | Mi chiamo Paolo. | Powiedz, jak się nazywasz. | „Nazywam się” to mi chiamo. | Sono Paolo.; Io sono Paolo.
+w Abita | mieszka (abitare)
+t Paolo! È un bel nome. Abita qui? | Paolo! To ładne imię. Mieszka Pan tutaj? | No, non abito qui. Vengo dalla Polonia. | Zaprzecz i powiedz, że jesteś z Polski. | Przeczenie czasownika to non przed czasownikiem: non abito. | No, non sono di qui. Vengo dalla Polonia.
+t Dalla Polonia! È lontano. Vuole sedersi? | Z Polski! To daleko. Czy chce się Pan przysiąść? | Sì, volentieri. Grazie mille! | Zgódź się i podziękuj. | „Chętnie” to volentieri. | Sì, con piacere. Grazie mille!
+w c'è | jest (tu)
+e Prego! Qui c'è posto. | Proszę bardzo! Tu jest miejsce.
+
+@level 2 | Wnuk i kaczki | patience=3 endless=yes typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Wnuk i ciasto
+scene Mały Luca biega po trawniku i karmi kaczki, a Nonna Rosa pokazuje ci zdjęcia w portfelu. Z torby wyjmuje ciasto własnej roboty.
+goal Porozmawiaj o wnuku Luce, powiedz, czy masz dzieci, i spróbuj ciasta.
+win Nonna Rosa wręcza ci drugi kawałek: „Mangia, mangia, sei troppo magro!” Luca macha do ciebie z daleka.
+partial Zjadłeś ciasto, choć kilka razy brakowało ci słów. Nonna Rosa dolewa herbaty z termosu.
+fail Nonna Rosa nie traci cierpliwości.
+w Luca | Luca (imię)
+w anni | lata
+w simpatico | miły, sympatyczny
+w carino | ładny, słodki
+t Ecco mio nipote Luca. Ha sei anni. | Oto mój wnuk Luca. Ma sześć lat. | È molto simpatico. | Pochwal wnuka: powiedz, że jest bardzo miły. | „On jest” to è. | È molto carino.; Luca è molto simpatico.
+w alle | do, o (godzinie)
+w anatre | kaczki
+w figli | dzieci (synowie)
+t Grazie! Luca dà da mangiare alle anatre. Lei ha figli? | Dziękuję! Luca karmi kaczki. Czy ma Pan dzieci? | No, non ho figli. | Powiedz, że nie masz dzieci. | „Nie mam dzieci” to non ho figli. | No, io non ho figli.
+w Ah | ach
+w capisco | rozumiem (capire)
+w L'ho | go/ją mam (l'ho fatta = zrobiłam to)
+w fatta | zrobiona (fare)
+w buonissima | bardzo dobra, pyszna
+t Non ha figli? Ah, capisco. Vuole una fetta di torta? L'ho fatta io. | Nie ma Pan dzieci? Ach, rozumiem. Chce Pan kawałek ciasta? Sama je upiekłam. | Sì, volentieri. È buonissima! | Przyjmij ciasto i pochwal je. | Torta jest rodzaju żeńskiego, więc „è buonissima”. | Sì, con piacere. È molto buona!
+w trent'anni | trzydzieści lat
+t Che piacere! E quanti anni ha? | Jak miło! A ile Pan ma lat? | Ho trent'anni. | Powiedz, że masz trzydzieści lat. | Po włosku wiek się „ma”: ho trent'anni (dosłownie „mam trzydzieści lat”). | Io ho trent'anni.
+e Ah, così giovane! | Ach, tak młodo!
+
+@level 3 | Zaproszenie | patience=3 endless=yes typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Kawa w niedzielę
+scene Słońce chyli się ku zachodowi. Nonna Rosa pakuje termos i prosi cię o pomoc. Zanim wstaniecie z ławki, chce cię jeszcze zaprosić.
+goal Przyjmij zaproszenie na niedzielną kawę i pomóż babci z torbą.
+win Nonna Rosa zapisuje ci adres na serwetce: „Porti appetito!” Idziesz do domu w świetnym nastroju.
+partial Wszystko się wyjaśniło, choć trzeba było kilka razy powtarzać. Nonna Rosa mówi: „A domenica, ragazzo mio!”
+fail Nonna Rosa nie traci cierpliwości.
+w Sa | wie pan(i) (sapere)
+w Si | się
+w sta | jest, czuje się (stare; si sta bene = jest dobrze)
+w davvero | naprawdę
+w bellissimo | przepiękny
+t Sa, vengo al parco ogni giorno. Si sta così bene qui. | Wie Pan, przychodzę do parku codziennie. Jest tu tak ładnie. | Sì, il parco è davvero bellissimo. | Zgódź się, że park jest piękny. | „Naprawdę” to davvero. | Sì, qui è davvero bello.; Sì, il parco è davvero bello.
+w preparo | przygotowuję, parzę (preparare)
+t Vero? La domenica preparo il caffè. Vuole venire? | Prawda? W niedzielę parzę kawę. Chce Pan przyjść? | Sì, con piacere. Quando? | Zgódź się i zapytaj, kiedy. | „Kiedy?” to quando? | Sì, volentieri. Quando?
+w Può | może pan(i) (potere)
+w aiutarmi | mi pomóc
+t Alle tre. La mia borsa è pesante. Può aiutarmi? | O trzeciej. Moja torba jest ciężka. Czy może mi Pan pomóc? | Sì, certo. Porto io la borsa. | Zgódź się i zaproponuj, że poniesiesz torbę. | „Noszę” to porto. | Certo. Porto la borsa.
+w brava | dobra (o kobiecie, brava persona = dobry człowiek)
+t Che gentile! Lei è una brava persona. | Jak miło! Jest Pan dobrym człowiekiem. | Grazie mille! A domenica! | Podziękuj i pożegnaj się do niedzieli. | „Do niedzieli” to a domenica. | Grazie! A domenica!
+e A domenica! Arrivederci! | Do niedzieli! Do widzenia!
+
+@larp spion | Szpieg | Il contatto | S | Jesteś agentem pod przykrywką. W Rzymie masz odebrać tajną teczkę z ambasady i przekazać ją dalej. Jedno złe słowo i jesteś zdemaskowany. | Zachowaj przykrywkę kupca Contiego, zdobądź fascicolo i uciekaj z walizką.
+fee 0
+reward 20
+strict yes
+story yes
+win Walizka jest w twoich rękach, a statek odpływa z portu. Ktoś w centrali szepcze: „Bel lavoro, Falco.” Przykrywka nie pękła ani razu.
+partial Misja się udała, ale po drodze kilka razy omal się nie zdradziłeś. Centrala odnotowuje: „Ha avuto fortuna.”
+fail Zdradziłeś się jednym słowem. Przykrywka pękła, a ty znikasz w ciemności bez teczki i bez walizki.
+
+@level 1 | Hasło na dworcu | patience=2 typed=0 extra=1 hint=none
+desc Rozdział 1: Kontakt na dworcu
+partner Un uomo con il cappello | U
+scene Rzym, wieczór, peron na dworcu Termini. Jesteś agentem „Falco”, ale dla wszystkich jesteś signor Conti, handlarz zabawkami z Neapolu (Conti e Figlio). Na peronie czeka człowiek w kapeluszu. Hasło: „L'inverno arriva presto.” Odzew: „E l'estate arriva tardi.”
+goal Podaj hasło, nie zdradź swojej przykrywki i przyjmij zadanie. Jedna zła odpowiedź i jesteś zdemaskowany.
+win Człowiek w kapeluszu znika w tłumie, a ty zostajesz z kopertą w kieszeni. Przykrywka nietknięta, a jutro o ósmej czeka cię ambasada.
+partial Dostałeś zadanie, ale kontakt zmarszczył brwi przy kilku twoich odpowiedziach. Lepiej uważaj jutro.
+fail Człowiek w kapeluszu spojrzał na ciebie zimno, odwrócił się i odszedł. Zadanie dostanie ktoś inny.
+w L'inverno | zima
+w arriva | przychodzi, nadchodzi (arrivare)
+t Buonasera. Oggi fa freddo, vero? | Dobry wieczór. Dziś jest zimno, prawda? | Sì, fa freddo. L'inverno arriva presto. | Zgódź się, że jest zimno, i powiedz hasło: zima przychodzi wcześnie. | Hasło brzmi: „L'inverno arriva presto.” | Sì, molto freddo. L'inverno arriva presto.
+w l'estate | lato
+w Zitto | cicho
+w ascolta | słucha (ascoltare)
+w Conti | Conti (nazwisko z przykrywki)
+w commerciante | kupiec, handlowiec
+w Falco | Falco (sokół; imię agenta)
+w agente | agent
+k E l'estate arriva tardi. Zitto! Qui c'è gente che ascolta. Come si chiama? | A lato przychodzi późno. Cicho! Tu są ludzie, którzy słuchają. Jak się Pan nazywa? | Mi chiamo Conti. Sono commerciante. | Mi chiamo Falco. Sono un agente.; Mi chiamo Conti. Sono un agente. | Falco to twoje imię agenta, a ludzie słuchają.; Conti się zgadza, ale „agente” zdradza przykrywkę.
+w seguendo | śledząc (la sta seguendo = śledzi pana)
+w segue | śledzi, idzie za (seguire)
+k Bene. Qualcuno la sta seguendo? | Dobrze. Czy ktoś Pana śledzi? | No, nessuno mi segue. | Sì, qualcuno mi segue.; Sì, sono molto stanco. | Przyznanie, że ktoś cię śledzi, wystraszy kontakt.; Kontakt pyta, czy ktoś cię śledzi, a nie czy jesteś zmęczony.
+w Benissimo | bardzo dobrze
+w otto | osiem
+w va | idzie pan(i), jedzie (andare)
+w all'ambasciata | do ambasady
+w capito | zrozumiany; „zrozumiałem”
+t Benissimo. Ecco il suo compito. Domani alle otto va all'ambasciata. C'è una festa. | Bardzo dobrze. Oto Pana zadanie. Jutro o ósmej idzie Pan do ambasady. Jest tam przyjęcie. | Ho capito. Domani alle otto vado all'ambasciata. | Powiedz, że zrozumiałeś: jutro o ósmej idziesz do ambasady. | „Compito” to zadanie, a „alle otto” znaczy „o ósmej”. | Capito. Domani alle otto vado all'ambasciata.
+w d'ordine | porządkowa (parola d'ordine = hasło)
+w Usignolo | Usignolo (słowik; hasło)
+w Qual | jaki, który (qual è)
+t Bene. La parola d'ordine per la festa è Usignolo. Qual è la parola d'ordine? | Dobrze. Hasło na przyjęcie to Usignolo. Jakie jest hasło? | La parola d'ordine è Usignolo. | Powtórz hasło na przyjęcie. | Hasło wejściowe to parola d'ordine, a „Usignolo” to słowik. | È Usignolo.
+w conosce | zna (conoscere)
+w conosco | znam (conoscere)
+d Benissimo. Zitto! Arriva un poliziotto. Mi conosce? | Bardzo dobrze. Cicho! Idzie policjant. Czy Pan mnie zna? | No, non la conosco. | Zaprzecz, że znasz tego człowieka. | Nie możesz zdradzić, że znasz kontakt. | No, non la conosco!
+w signor | pan (przed nazwiskiem)
+e Buonanotte, signor Conti. | Dobranoc, panie Conti.
+
+@level 2 | Przyjęcie w ambasadzie | patience=2 typed=0.2 extra=3 hint=bank
+desc Rozdział 2: Przyjęcie w ambasadzie
+partner Signora Bruni | B
+scene Następny wieczór. W ambasadzie trwa przyjęcie, a przy wejściu stoi pani Bruni, sekretarka. Ona i goście zadają pytania o twoją „firmę”. Twoja przykrywka: Conti e Figlio, zabawki, Neapol. Hasło wejściowe: Usignolo. Gabinet ambasadora jest po prawej, toalety po lewej.
+goal Wejdź na przyjęcie, nie zdradź się pytaniom o firmę i znajdź pretekst, żeby dotrzeć do gabinetu.
+win Pani Bruni macha ci na pożegnanie, a w gabinecie leży teczka, o którą ci chodziło. Nikt niczego nie podejrzewa.
+partial Weszłeś i dotarłeś do gabinetu, ale pani Bruni patrzyła na ciebie dłużej, niż trzeba.
+fail Pani Bruni przestaje się uśmiechać i daje znak ochronie. Za chwilę wyprowadzą cię z ambasady.
+w benvenuto | witamy, witaj
+t Buonasera e benvenuto all'ambasciata! Qual è la parola d'ordine? | Dobry wieczór i witamy w ambasadzie! Jakie jest hasło? | La parola d'ordine è Usignolo. | Podaj hasło wejściowe. | Parola d'ordine to hasło, a „Usignolo” to słowik. | È Usignolo.
+w Devo | muszę (dovere)
+w farle | zadać panu (farle una domanda)
+w un'arma | broń
+w armi | bronie
+w fascicolo | teczka, akta
+k Grazie. Devo farle una domanda. Ha un'arma con sé? | Dziękuję. Muszę zadać Panu pytanie. Czy ma Pan przy sobie broń? | No, non ho armi. | Sì, ho un'arma.; No, non ho un fascicolo. | Do przyjęcia nie wchodzi się z bronią.; Pytanie dotyczy broni (arma), nie teczki.
+w lavora | pracuje (lavorare)
+w ditta | firma
+w centrale | centrala
+w signora | pani
+w Bruni | Bruni (nazwisko)
+k Bene. Per chi lavora? | Dobrze. Dla kogo Pan pracuje? | Lavoro per la ditta Conti. | Lavoro per la centrale.; Lavoro per la signora Bruni. | „Centrale” to twoja centrala, tajna, a nie firma.; Pani Bruni to sekretarka z ambasady.
+w vende | sprzedaje (vendere)
+w sua | pana, pani (jej)
+w giocattoli | zabawki
+d Conti! Che cosa vende la sua ditta? | Conti! Co sprzedaje Pana firma? | La mia ditta vende giocattoli. | Powiedz, co sprzedaje twoja „firma” (przykrywka). | Twoja przykrywka to handel zabawkami. | Vende giocattoli.
+w Napoli | Neapol
+w Figlio | Syn (Conti e Figlio = Conti i Syn)
+k Giocattoli! E dov'è la sua ditta? | Zabawki! A gdzie jest Pana firma? | La mia ditta è a Napoli. | La mia ditta vende giocattoli.; La mia ditta si chiama Conti e Figlio. | „Dove” znaczy „gdzie”, a nie „co sprzedaje”.; „Dove” pyta o miejsce, nie o nazwę.
+w i | (rodzajnik liczby mnogiej, m.)
+w bagni | toalety
+t A Napoli, che interessante! Vuole mangiare qualcosa? | W Neapolu, jak ciekawie! Czy chce Pan coś zjeść? | No, grazie. Dov'è il bagno, per favore? | Odmów i zapytaj o toaletę (to pretekst). | Dove = gdzie, więc „Dov'è il bagno?”. | No, grazie. Dove sono i bagni, per favore?
+w L'ufficio | gabinet, biuro
+w privato | prywatny
+k Il bagno è a sinistra. L'ufficio a destra è privato. | Toaleta jest po lewej. Gabinet po prawej jest prywatny. | Grazie, vado a sinistra. | Grazie, vado a destra.; Grazie, l'ufficio è molto bello. | Gabinet po prawej jest prywatny, a ty idziesz do toalety po lewej.; Nie wolno ci mówić, że chcesz iść do gabinetu.
+w diverta | niech się pan(i) bawi (divertirsi)
+e Allora si diverta, signor Conti! | W takim razie dobrej zabawy, panie Conti!
+
+@level 3 | Przesłuchanie | patience=1 typed=0.35 extra=3 hint=bank
+desc Rozdział 3: Przesłuchanie
+partner Signor Ricci | R
+scene Masz teczkę (fascicolo) w torbie, ale na korytarzu zatrzymuje cię podejrzliwy ochroniarz, pan Ricci. Zaraz zapyta o wszystko. Pamiętaj: Conti, commerciante, Napoli. Tutaj każda zła odpowiedź kończy misję.
+goal Przekonaj ochroniarza, że jesteś zwykłym gościem, i wyjdź z teczką.
+win Ricci przepuszcza cię z kwaśną miną. Wychodzisz z ambasady, a teczka w torbie jest ciężka jak ołów.
+partial Ricci w końcu cię puszcza, ale zapisuje twoje nazwisko w notesie.
+fail Ricci chwyta cię za ramię: „Venga con me!” Misja skończona, zanim naprawdę się zaczęła.
+w Alt | stój
+w Cerco | szukam (cercare)
+t Alt! Chi è Lei? Che cosa fa qui? | Stać! Kim Pan jest? Co Pan tu robi? | Sono un ospite. Cerco il bagno. | Powiedz, że jesteś gościem i szukasz toalety. | Czasownik „cercare” znaczy „szukać”. | Sono ospite. Cerco il bagno.
+w nell'ufficio | w gabinecie
+k Il bagno è là. È stato nell'ufficio? | Toaleta jest tam. Czy był Pan w gabinecie? | No, non sono stato nell'ufficio. | Sì, sono stato nell'ufficio.; No, non sono stato in bagno. | Przyznanie się to koniec przykrywki.; Pytanie dotyczy gabinetu (ufficio), nie toalety.
+w Mah | hm, no cóż
+w nella | w (rodzajnik żeński)
+w dei | jakieś, trochę (liczba mnoga)
+w telefonino | telefon komórkowy
+k Mah, bene. Che cosa ha nella borsa? | Hm, dobrze. Co ma Pan w torbie? | Nella borsa ho solo dei soldi e il mio telefonino. | Nella borsa ho un fascicolo.; Ho una borsa. | Teczka w torbie zdradziłaby cię od razu.; Ochroniarz pyta, co jest w torbie, a nie czy masz torbę.
+d Dei soldi e un telefonino. Come si chiama e dove abita? | Pieniądze i telefon. Jak się Pan nazywa i gdzie Pan mieszka? | Mi chiamo Conti e abito a Napoli. | Podaj nazwisko z przykrywki i miasto, w którym mieszkasz (Napoli). | Conti i Napoli to twoja przykrywka. | Mi chiamo Conti e abito a Napoli!
+k Conti, Napoli. Lei è un agente, vero? | Conti, Neapol. Jest Pan agentem, prawda? | No, non sono un agente. Sono commerciante. | Sì, ma è un segreto.; Sì, lavoro per la centrale. | Nawet żartem nie przyznawaj się do tajemnicy.; Przyznanie się do centrali to koniec.
+w tutti | wszyscy
+w gli | (rodzajnik liczby mnogiej, m.)
+w ospiti | goście
+t Mah. Chiamo la signora Bruni. Conosce tutti gli ospiti. La conosce? | Hm. Zawołam panią Bruni. Zna wszystkich gości. Czy zna Pana? | Sì, la signora Bruni mi conosce. Sono un ospite. | Powiedz, że pani Bruni cię zna. | „Mi conosce” znaczy „zna mnie”. | Sì, mi conosce. Sono un ospite.
+w nell'ambasciata | w ambasadzie
+w visto | widziany; „widziałem” (vedere)
+d Bene. C'è un agente nell'ambasciata. Ha visto qualcuno? | Dobrze. W ambasadzie jest agent. Czy Pan kogoś widział? | No, non ho visto nessuno. | Zaprzecz, że kogokolwiek widziałeś. | Nessuno = nikt. Ty sam jesteś tym agentem. | No, non ho visto nessuno!
+w Torni | niech pan(i) wraca (tornare)
+e Va bene. Torni a casa, signor Conti. | Dobrze. Niech Pan wraca do domu, panie Conti.
+
+@level 4 | Walizka i ucieczka | patience=1 typed=0.5 extra=3 hint=letters reward=30
+desc Rozdział 4: Wymiana walizki
+partner Signor Lupo | L
+scene Następny ranek, port w Neapolu. Pan Lupo z centrali czeka z walizką pełną pieniędzy. Wymienisz ją na teczkę. Nowe hasło: „Corvo”. Ale ktoś cię śledzi: w tłumie jest zdrajca (traditore), który chce dostać teczkę dla siebie.
+goal Wymień teczkę na walizkę, nie daj się zdemaskować zdrajcy i wsiądź na statek.
+win Statek odpływa, a ty stoisz na pokładzie z walizką. Pan Lupo macha z nabrzeża: „Buon viaggio, Falco!”
+partial Udało się uciec, ale zdrajca zdążył zobaczyć twoją twarz. Misja zaliczona, lecz twoja przykrywka jest spalona.
+fail Zdrajca był szybszy. Walizka i teczka zniknęły, a ty zostajesz na nabrzeżu z pustymi rękami.
+w Corvo | Corvo (kruk; hasło)
+d Buongiorno. Qual è la parola d'ordine di oggi? | Dzień dobry. Jakie jest dzisiejsze hasło? | La parola d'ordine di oggi è Corvo. | Podaj hasło z dzisiejszej misji. | Hasło to parola d'ordine, a dziś brzmi „Corvo”. | È Corvo!
+k Bene. Dov'è il fascicolo? | Dobrze. Gdzie jest teczka? | Il fascicolo è nella mia borsa. | Il fascicolo è dalla signora Bruni.; Il fascicolo è un segreto. | Teczkę masz przy sobie, w torbie.; Kontakt pyta, gdzie jest teczka, nie o tajemnicę.
+w prenda | niech pan(i) weźmie (prendere)
+t Bene. Ecco la valigia. I soldi sono dentro. La prenda. | Dobrze. Oto walizka. Pieniądze są w środku. Proszę ją wziąć. | Grazie. Prendo la valigia. | Podziękuj i weź walizkę. | „Walizka” to la valigia, a „biorę” to prendo. | Grazie. La prendo.
+w Attenzione | uwaga
+w L'uomo | mężczyzna, człowiek
+w laggiù | tam w dole, tam
+w traditore | zdrajca
+w Ci | nas
+w facciamo | robimy (fare)
+w Andiamo | idziemy (andare)
+w Restiamo | zostajemy (restare)
+w beviamo | pijemy (bere)
+w Parliamo | rozmawiamy (parlare)
+w quell'uomo | ten człowiek
+k Attenzione! L'uomo laggiù è un traditore. Ci segue. Che facciamo? | Uwaga! Ten człowiek tam jest zdrajcą. Idzie za nami. Co robimy? | Andiamo via subito. | Restiamo qui e beviamo un caffè.; Parliamo con quell'uomo. | Zdrajca idzie za wami, trzeba uciekać.; Nie rozmawia się ze zdrajcą.
+w viene | przychodzi (venire)
+w Torniamo | wracamy (tornare)
+k Sì, presto! Il traditore viene da sinistra. Andiamo a sinistra, alla stazione, o a destra, al porto? | Tak, szybko! Zdrajca idzie z lewej. Idziemy w lewo na dworzec czy w prawo do portu? | Andiamo a destra, al porto. | Andiamo a sinistra, alla stazione.; Torniamo a casa. | Zdrajca nadchodzi z lewej, więc idziecie w prawo, do portu.; Pytanie jest o port albo dworzec, a nie o dom.
+w Fermo | stój
+w dia | niech pan(i) da (dare)
+w do | daję (dare)
+d Fermo! Mi dia la valigia! Ho un'arma! | Stój! Proszę mi dać walizkę! Mam broń! | No, non le do la valigia. | Odmów oddania walizki. | „Dare” to dawać, a przeczenie to non przed czasownikiem. | No, non le do la valigia!
+w Bravo | brawo
+w ce | to, tego (ce l'ho ancora = mam to jeszcze)
+t Bravo, presto! La nave parte tra poco. Ha ancora la valigia? | Brawo, szybko! Statek zaraz odpływa. Czy ma Pan jeszcze walizkę? | Sì, ho ancora la valigia. | Potwierdź, że masz jeszcze walizkę. | „Ancora” znaczy „jeszcze”. | Sì, ce l'ho ancora.
+w missione | misja
+w finita | zakończona
+e Bravo, Falco! La missione è finita. Arrivederci! | Brawo, Falco! Misja zakończona. Do widzenia!
+
+@larp zeitreise | Podróż w czasie | La guardia | G | Obudziłeś się w roku 1450 pod murami włoskiego miasta Valtiglio. Nikt nie może się dowiedzieć, że jesteś z przyszłości, bo za dziwne rzeczy i dziwne słowa w średniowieczu grozi stos. | Nie daj się wykryć jako przybysz z przyszłości: unikaj wszystkiego, co nie pasuje do roku 1450, i dotrwaj do końca dnia.
+fee 0
+reward 15
+strict yes
+story yes
+win Podestà kiwa głową: „Un onesto viaggiatore!” Nikt nie podejrzewa, skąd naprawdę jesteś. Wieczorem znajdujesz drogę powrotną, a w kieszeni zostaje ci tylko miedziana moneta na pamiątkę.
+partial Udało ci się przetrwać dzień, ale kilka razy ludzie patrzyli na ciebie podejrzliwie. Podestà każe cię obserwować, więc wymykasz się z miasta o świcie.
+fail Ktoś zauważył, że nie jesteś stąd. Straż woła: „Uno stregone! Un mago!” i musisz uciekać. Podróż w czasie skończyła się wcześniej, niż chciałeś.
+
+@level 1 | Brama miasta | patience=5 typed=0 extra=1 hint=none
+partner La guardia Pietro | P
+desc Rozdział 1: Brama Valtiglio
+scene Rok 1450. Stoisz przed wielką drewnianą bramą miasta Valtiglio. Strażnik Pietro zatrzymuje każdego podróżnego i zadaje pytania. Masz na sobie zwykłe ubranie, ale w kieszeniach zostały ci rzeczy z przyszłości.
+goal Odpowiedz na pytania strażnika tak, żeby nie wzbudzić podejrzeń: przedstaw się, powiedz skąd jesteś i jak podróżujesz. Zwróć uwagę na rzeczy, których w 1450 roku jeszcze nie było.
+win Pietro otwiera bramę: „Benvenuto a Valtiglio!” Nic nie wzbudziło jego podejrzeń, a ty wchodzisz do miasta.
+partial Pietro w końcu cię wpuszcza, ale przygląda ci się dłużej, niż byś chciał. Wchodzisz do miasta z uczuciem, że ktoś cię obserwuje.
+fail Pietro podnosi halabardę: „Tu non sei un viaggiatore!” Brama zamyka się z trzaskiem, a ty uciekasz w las.
+w Questa | ta
+w Valtiglio | Valtiglio (fikcyjne miasto)
+w viaggiatore | podróżnik
+t Alt! Questa è la porta di Valtiglio. Chi sei? | Stój! To brama miasta Valtiglio. Kim jesteś? | Sono un viaggiatore. | Powiedz, że jesteś podróżnikiem. | „Jestem podróżnikiem”: sono un viaggiatore. | Io sono un viaggiatore.
+w ti | ci, cię
+w chiami | nazywasz się (chiamarsi)
+w Giovanni | Giovanni (imię)
+w Kevin | Kevin (imię)
+w Jessica | Jessica (imię)
+k Bene. Come ti chiami? | Dobrze. Jak się nazywasz? | Mi chiamo Giovanni. | Mi chiamo Kevin.; Mi chiamo Jessica. | Kevin i Jessica to imiona współczesne, w 1450 roku nikt tak nie nazywał dzieci. Strażnik uznałby cię za dziwaka.; Jessica to nowoczesne, angielskie imię. W 1450 roku popularne były Giovanni, Pietro czy Marco.
+w dall'America | z Ameryki
+k Giovanni, bene. Di dove sei? | Giovanni, dobrze. Skąd jesteś? | Vengo dalla Polonia. | Vengo dal futuro.; Vengo dall'America. | Przyznanie się do przyszłości to dekonspiracja. Nikt w 1450 roku nie zrozumie takich słów.; Ameryki jeszcze nie odkryto, Kolumb wypłynie dopiero w 1492 roku.
+w viaggi | podróżujesz (viaggiare)
+w piedi | stopy (a piedi = pieszo)
+k Dalla Polonia, è lontano! Come viaggi? A piedi o a cavallo? | Z Polski, to daleko! Jak podróżujesz? Pieszo czy konno? | Viaggio a cavallo. | Viaggio in macchina.; Viaggio in treno. | Samochodu w 1450 roku nie ma. Strażnik pomyśli, że jesteś szalony albo opętany.; Pociągów też jeszcze nie ma, pierwsza kolej pojawi się dopiero w XIX wieku.
+w Mostrami | pokaż mi (mostrare)
+k A cavallo, bene. Mostrami la borsa. Che cosa hai lì? | Na koniu, dobrze. Pokaż mi torbę. Co tam masz? | Ho solo pane e birra. | Ho un telefonino.; Ho una carta di credito. | Telefon w 1450 roku? Strażnik wziąłby go za czarodziejskie urządzenie i zawołał straż.; Karta z plastiku wyglądałaby dla niego jak magia. Pieniądze to wtedy monety.
+w puoi | możesz (potere)
+w fame | głód (ho fame = jestem głodny)
+w l'oste | karczmarz
+w molta | dużo
+t Va bene, puoi entrare. Hai fame? | Dobrze, możesz wejść. Jesteś głodny? | Sì, ho fame. Dov'è l'oste? | Powiedz, że jesteś głodny, i zapytaj, gdzie jest karczmarz. | „Gdzie jest” to dov'è, a „karczmarz” to l'oste. | Sì, ho molta fame. Dov'è l'oste?
+w locanda | gospoda
+w soggiorno | pobyt
+e Subito a sinistra c'è la locanda. Buon soggiorno a Valtiglio! | Zaraz po lewej jest gospoda. Miłego pobytu w Valtiglio!
+
+@level 2 | Gospoda | patience=5 typed=0.15 extra=3 hint=bank
+partner L'oste Gaspare | G
+desc Rozdział 2: Gospoda „Al Bue Rosso”
+scene Wchodzisz do gospody. Karczmarz Gaspare jest ciekawski i pyta o wszystko: co chcesz zjeść, jak podróżujesz i czego potrzebujesz na noc. W gospodzie nie ma elektryczności ani nowoczesnych napojów.
+goal Zamów jedzenie i picie, które mogli podać w średniowieczu, ustal nocleg i nie wspomnij o niczym z przyszłości.
+win Gaspare klepie cię po plecach: „Sei un bravo ospite!” Dostajesz miejsce przy kominku i pełny talerz. Nikt nie podejrzewa, że jesteś z przyszłości.
+partial Gaspare przygląda ci się podejrzliwie, ale podaje jedzenie. Śpisz źle, bo wciąż myślisz o tym, co powiedziałeś.
+fail Gaspare woła głośno: „Che cos'è un wifi?!” Goście odwracają się w twoją stronę, a ty ledwo uciekasz tylnym wyjściem.
+w vuoi | chcesz (volere)
+w Voglio | chcę (volere)
+t Benvenuto alla locanda! Che cosa vuoi mangiare? Abbiamo pane e zuppa. | Witaj w gospodzie! Co chcesz zjeść? Mamy chleb i zupę. | Vorrei pane e zuppa, per favore. | Zamów chleb i zupę. | „Chleb i zupa”: pane e zuppa, bez rodzajnika. | Voglio pane e zuppa, per favore.
+w bevi | pijesz (bere)
+w Bevo | piję (bere)
+w cola | cola
+k E che cosa bevi? Abbiamo birra, vino e acqua. | A co pijesz? Mamy piwo, wino i wodę. | Bevo una birra. | Vorrei un caffè.; Vorrei una cola. | Kawa dotarła do Europy dopiero w XVII wieku.; Coca-Cola powstała w XIX wieku. W 1450 roku nikt jej nie zna.
+w viaggiato | podróżował (viaggiare)
+w giorni | dni
+t Una birra, bene. Hai viaggiato lontano. Da quanto tempo viaggi? | Piwo, dobrze. Daleko podróżowałeś. Jak długo już jedziesz? | Viaggio da dieci giorni. | Powiedz, że podróżujesz już dziesięć dni. | „Od dziesięciu dni”: da dieci giorni. | Sono in viaggio da dieci giorni.
+w tanti | dużo, wiele
+w Vieni | przychodzisz, idziesz (venire)
+w me | mną, mnie
+w Prendiamo | bierzemy (prendere)
+w carro | wóz
+k Dieci giorni, sono tanti! Domani vado al mercato. Vieni con me? Prendiamo il carro. | Dziesięć dni, to dużo! Jutro jadę na targ. Pojedziesz ze mną? Weźmiemy wóz. | Sì, volentieri. Andiamo al mercato con il carro. | Sì, prendiamo la macchina.; No, vado in bicicletta. | Samochodu nie ma. Gaspare rozejrzałby się za twoją „macchiną”, ale tu jeździ się wozem.; Rower wynaleziono dopiero w XIX wieku. W 1450 roku jeździ się wozem albo konno.
+w Perfetto | doskonale
+w candela | świeca
+w wifi | internet bezprzewodowy
+w presa | gniazdko
+w elettrica | elektryczna
+k Perfetto. La camera ha un letto. Vuoi altro? | Doskonale. W pokoju jest łóżko. Czy chcesz jeszcze coś? | Sì, vorrei una candela, per favore. | Hai il wifi?; Vorrei una presa elettrica. | W 1450 roku nie ma internetu. Gaspare nie wie, co to jest wifi.; Gniazdka elektryczne wymyślono setki lat później. Wieczorem świeci się świecami.
+w nell'anno | w roku
+w millequattrocentocinquanta | tysiąc czterysta pięćdziesiąt
+w tua | twoje (alla tua salute = na twoje zdrowie)
+t Una candela, ecco. E ancora una birra: una buona birra nell'anno millequattrocentocinquanta! Salute! | Świeca, proszę bardzo. A tu jeszcze piwo: dobre piwo w roku 1450! Na zdrowie! | Salute! | Wznieś toast. | „Na zdrowie” to salute. | Alla tua salute!
+w Domattina | jutro rano
+e Buonanotte! Domattina andiamo al mercato. | Dobranoc! Jutro rano jedziemy na targ.
+
+@level 3 | Targ | patience=4 typed=0.3 extra=3 hint=bank reward=25
+partner La mercante Berta | B
+desc Rozdział 3: Targ w Valtiglio
+scene Następnego ranka na rynku jest tłoczno. Kupcowa Berta sprzedaje chleb i ser. Przy płaceniu liczą się tylko monety, a ludzie przyglądają się twoim ubraniom.
+goal Kup chleb i ser, zapłać tak, jak płaci się w 1450 roku, i wyjaśnij, skąd masz dziwne ubranie.
+win Berta wsuwa ci do koszyka jabłko: „Per il caro viaggiatore!” Targ nic nie podejrzewa, a w oddali widać już ratusz.
+partial Berta w końcu sprzedała ci chleb i ser, ale kilka osób szepcze za twoimi plecami. Zbliża się ratusz.
+fail Berta krzyczy: „Che vestiti sono questi? Che cos'è un euro?” Tłum się zbiega, a ty uciekasz między straganami.
+w del | trochę (del pane = trochę chleba)
+t Buongiorno! Che cosa vuoi comprare? Pane, formaggio o mele? | Dzień dobry! Co chcesz kupić? Chleb, ser czy jabłka? | Vorrei del pane e del formaggio. | Poproś o chleb i ser. | „Trochę chleba i sera”: del pane e del formaggio. | Vorrei pane e formaggio, per favore.
+w denari | denary (dawne monety)
+t Pane e formaggio, bene. Il pane costa due denari e il formaggio tre denari. | Chleb i ser, dobrze. Chleb kosztuje dwa denary, a ser trzy denary. | Quanto costa in tutto? | Zapytaj, ile to kosztuje razem. | „W sumie” to in tutto. | Quanto fa in tutto?
+w Fanno | to wynosi, robią (fare)
+w Pago | płacę (pagare)
+w monete | monety
+k Fanno cinque denari. Come vuoi pagare? | To będzie pięć denarów. Jak chcesz zapłacić? | Pago con le monete. | Pago con gli euro.; Pago con la carta. | Euro wprowadzono dopiero w 2002 roku.; Karty płatnicze to wynalazek XX wieku. W 1450 roku płaci się monetami.
+w tuoi | twoje
+w vestiti | ubrania
+w strani | dziwne
+w moda | moda
+w dell'Est | ze wschodu, wschodnia
+w maglietta | koszulka
+w jeans | dżinsy
+w scarpe | buty
+w ginnastica | gimnastyka (scarpe da ginnastica = buty sportowe)
+k Bene, monete. I tuoi vestiti sono strani. Che cosa sono? | Dobrze, monety. Twoje ubranie jest dziwne. Co to jest? | È la moda dell'Est. | È una maglietta.; Sono jeans e scarpe da ginnastica. | T-shirty pojawiły się w XX wieku, a Berta nigdy takiego nie widziała.; Dżinsy i buty sportowe to rzeczy z dwudziestego wieku. Berta zawołałaby straż.
+w Dell'Est | ze wschodu
+w podestà | podestà (burmistrz w dawnych miastach włoskich)
+w vederti | zobaczyć cię
+w voi | wy (liczba mnoga)
+t Dell'Est, ah. Il podestà vuole vederti. Vieni con me? | Ze Wschodu, aha. Podestà chce cię zobaczyć. Idziesz ze mną? | Sì, vengo con te. | Zgódź się i idź z nią. | „Idę z tobą” to vengo con te. | Sì, vengo con voi.
+w palazzo | pałac, gmach
+w comunale | miejski (palazzo comunale = ratusz)
+e Allora vieni! Il palazzo comunale è là. | No to chodź! Ratusz jest tam.
+
+@level 4 | Podestà | patience=4 typed=0.5 extra=4 hint=letters reward=25
+partner Il podestà Aurelio | A
+desc Rozdział 4: W ratuszu
+scene W ratuszu czeka podestà (burmistrz) Aurelio. Słyszał dziwne plotki o obcym przybyszu. Zauważył coś błyszczącego na twoim nadgarstku i zadaje pytania, a tobie została tylko jedna droga: wrócić do bramy, gdzie wszystko się zaczęło.
+goal Odpowiedz na pytania burmistrza tak, żeby nie zdradzić zegarka, telefonu ani przyszłości, i wróć bezpiecznie do bramy.
+win Burmistrz macha ręką: „Bene, bene, vai pure!” Wracasz do bramy, w powietrzu coś migocze i budzisz się we własnym czasie. Na dłoni masz denary z 1450 roku.
+partial Burmistrz pozwala ci odejść, ale pod nosem mruczy o czarodziejach. Dopiero za bramą migotanie powietrza zabiera cię do domu.
+fail Burmistrz woła strażników: „Una scatola magica! Viene dal futuro!” Nie zdążysz dojść do bramy.
+t Buongiorno! Sono il podestà di Valtiglio. Chi sei? | Dzień dobry! Jestem podestà Valtiglio. Kim jesteś? | Mi chiamo Giovanni, sono un viaggiatore dalla Polonia. | Przedstaw się: Giovanni, podróżnik z Polski. | „Z Polski” to dalla Polonia. | Sono Giovanni, un viaggiatore dalla Polonia.
+w cos'hai | co masz
+w polso | nadgarstek
+w braccialetto | bransoletka
+w digitale | cyfrowy
+k Bene, Giovanni. Che cos'hai al polso? | Dobrze, Giovanni. Co masz na nadgarstku? | È solo un braccialetto. | È un orologio con la batteria.; È un orologio digitale. | Zegarek z baterią to wynalazek nowoczesny. Burmistrz nie ma pojęcia, co to jest.; Cyfrowy zegarek wyglądałby dla niego jak czary. W 1450 roku są tylko wieże z zegarami i klepsydry.
+w pure | także, przecież
+w indica | wskazuje (indicare)
+w Guardo | patrzę (guardare)
+k Un braccialetto? Che ore sono? Hai pure un orologio. | Bransoletka? Która godzina? Masz przecież zegarek. | Non ho un orologio. Il sole indica mezzogiorno. | Sono le quattordici e trenta.; Guardo il mio telefonino. | Taka dokładna godzina z minutami to nowoczesny sposób liczenia czasu.; Telefon to rzecz z przyszłości. Burmistrz uznałby ją za czarodziejską.
+w Siamo | jesteśmy (essere)
+w duemila | dwa tysiące
+w so | wiem (sapere)
+k Mezzogiorno, bene. Che anno è? | Południe, dobrze. Który mamy rok? | Siamo nell'anno millequattrocentocinquanta. | Siamo nell'anno duemila.; Non lo so. | Jeśli podasz rok z przyszłości, zdradzisz się natychmiast.; Nie znać roku? Karczmarz dał ci wskazówkę wczoraj. Burmistrz uznałby, że ukrywasz coś.
+w Dicono | mówią (dire)
+w magica | magiczna
+k Bene. Dicono che hai una scatola magica. È vero? | Dobrze. Mówią, że masz magiczną skrzynkę. Czy to prawda? | No, non ho una scatola magica. | Sì, è un telefonino.; Sì, vengo dal futuro. | Przyznanie się do telefonu zakończy rozmowę. Burmistrz nie wie, co to jest.; Przyznanie się do podróży w czasie to najgorsza odpowiedź.
+w vai | idziesz (andare)
+w Torno | wracam (tornare)
+k Bene. È già tardi. Dove vai ora? | Dobrze. Jest już późno. Dokąd teraz idziesz? | Torno alla porta. | Vado alla macchina del tempo.; Vado alla macchina. | Wehikuł czasu to najgorsza odpowiedź.; Samochodu w 1450 roku nie ma. Burmistrz pomyślałby, że kłamiesz.
+e Bene, allora vai. Buon viaggio! | Dobrze, to idź. Szczęśliwej podróży!
+
+@larp politiker | Polityk | L'elettore | E | Jesteś skorumpowanym politykiem. Dawno temu pan Passero dał ci kopertę, a „caso Cuculo” (afera Kukułka) wraca na każdym szczeblu twojej kariery. Wyborcy ci wierzą… i przestają… i zapominają. | Przekonaj wyborców, że nadajesz się na stanowisko. Nigdy się nie przyznaj i nie sprzeczaj sam sobie.
+fee 0
+reward 30
+strict yes
+story yes
+disclaimer Satyra. Wszystkie postacie, partie i afery są zmyślone; ewentualne podobieństwo do prawdziwych osób jest przypadkowe.
+win Wygrywasz wybory! Nikt już nie pamięta koperty od pana Passero. Przed gmachem tłum skanduje twoje nazwisko, a ty obiecujesz „uczciwą politykę”. Pan Passero macha z ostatniego rzędu.
+partial Wygrywasz o włos. Dziennikarze wciąż grzebią w aktach, ale ty już podpisujesz pierwsze dokumenty. Kłamstwo trzyma się jeszcze na słowo honoru.
+fail Wiarygodność spadła do zera. Wyborcy wyciągają stare akty, a z tłumu ktoś krzyczy: „La busta!” Twoja kariera kończy się na pierwszej stronie gazet.
+
+@level 1 | Sindaco del paese | patience=4 cap=6 typed=0 extra=1 hint=none
+desc Szczebel 1: wójt (sołtys) wsi Valpiana
+partner Signora Bianchi | B
+scene Zebranie wiejskie w sali gimnastycznej w Valpiana. Chcesz zostać „sindaco del paese”, czyli wójtem (sołtysem) wsi. Pani Bianchi zadaje pytania, a cała wieś słucha. Wszyscy pamiętają, że pan Passero naprawił drogę, i że ktoś widział kopertę…
+goal Przekonaj wieś, że jesteś uczciwy, i zaprzecz plotkom o kopercie.
+win Wieś klaszcze. Zostajesz wójtem Valpiany. Pan Passero, w pierwszym rzędzie, puszcza do ciebie oko.
+partial Wygrywasz jednym głosem. Pani Bianchi patrzy na ciebie podejrzliwie, ale podnosi rękę.
+fail Wieś ma dość. Pani Bianchi mówi: „Votiamo per qualcun altro.” Kończysz karierę, zanim się zaczęła.
+w diventare | zostać, stać się
+w sindaco | burmistrz, wójt
+t Buonasera! Vuole diventare sindaco del paese? | Dobry wieczór! Chce Pan zostać wójtem wsi? | Sì, voglio diventare sindaco del paese. | Powiedz, że chcesz zostać wójtem. | „Diventare” znaczy „zostać, stawać się”. | Sì, vorrei diventare sindaco.
+w onesta | uczciwa
+w onesto | uczciwy
+t Bene. È una persona onesta? | Dobrze. Czy jest Pan uczciwy? | Sì, sono sempre onesto. | Zapewnij, że jesteś zawsze uczciwy. | „Zawsze” to sempre; onesto po „sono” zgadza się z rodzajem męskim. | | gain=1
+w rotta | zepsuta, zniszczona
+w farà | zrobi (fare, przyszły)
+w Riparo | naprawiam (riparare)
+w Aggiusto | naprawiam (aggiustare)
+t Molto bene. Ma la strada è rotta. Che cosa farà? | Bardzo dobrze. Ale droga jest zepsuta. Co Pan zrobi? | Riparo la strada. | Obiecaj, że naprawisz drogę. | „Naprawić” to riparare: io riparo. | Aggiusto la strada. | gain=1
+w Passero | Passero (nazwisko; wróbel)
+w Le | panu, pani (forma grzecznościowa)
+w dato | dany; „dał” (dare)
+w busta | koperta
+w l'ha | go/ją ma (l'ha visto = widział to)
+w appena | ledwo
+t Bene. Ma il signor Passero Le ha dato una busta! Qualcuno l'ha visto! | Dobrze. Ale pan Passero dał Panu kopertę! Ktoś to widział! | È una bugia! Conosco appena il signor Passero. | Zaprzecz: to kłamstwo, ledwo znasz pana Passero. | „Appena” znaczy „ledwo”; „conoscere” to znać osobę. | | shift=-2 loss=2
+w tanto | dużo, tak dużo
+w L'abbiamo | to mamy (l'abbiamo dimenticato = zapomnieliśmy o tym)
+w dimenticato | zapomniany (dimenticare)
+w grato | wdzięczny
+t Mah... è passato tanto tempo. L'abbiamo dimenticato. | Hm... to było dawno. Zapomnieliśmy o tym. | Grazie, Le sono grato. | Podziękuj wyborcom za wyrozumiałość (jesteś im wdzięczny). | „Grato” to wdzięczny. | | shift=+2
+w debiti | długi
+w comune | gmina
+w Risparmio | oszczędzam (risparmiare)
+o Prego. Ma abbiamo molti debiti in comune. Che cosa farà? | Nie ma za co. Ale mamy w gminie wiele długów. Co Pan zrobi? | Risparmio i soldi e sono onesto. | Prendo più soldi.; Non lo so. | Dobra odpowiedź obiecuje oszczędzanie i uczciwość.; Polityk, który mówi „wezmę więcej pieniędzy”, nie brzmi wiarygodnie.; „Nie wiem” nie przekona wyborców. | gain=1
+w Sarà | będzie (essere, przyszły)
+w noi | my
+t Molto bene. Sarà onesto con noi? | Bardzo dobrze. Czy będzie Pan wobec nas uczciwy? | Sì, sono sempre onesto con voi. | Obiecaj uczciwość wobec wyborców. | „Con voi” to „z wami, wobec was”. | | gain=1
+w votiamo | głosujemy (votare)
+e Allora votiamo per Lei! Benvenuto, signor sindaco! | Głosujemy więc na Pana! Witamy, Panie wójcie!
+
+@level 2 | Consigliere comunale | patience=4 cap=6 typed=0.2 extra=2 hint=bank
+desc Szczebel 2: radny miejski
+partner Signora Ferri | F
+scene Miasto Borgonuovo. Jesteś kandydatem do rady miejskiej (consiglio comunale). Dziennikarka, pani Ferri, pyta o „biznesmenów” i o to, skąd masz nowy samochód.
+goal Zaprzecz, że brałeś pieniądze, i nie daj się złapać na kłamstwie.
+win Pani Ferri zamyka notes: „Bene, non ho altre domande.” Zostajesz radnym. Pan Passero gratuluje przez telefon.
+partial Zostajesz radnym, ale pani Ferri mówi: „Continuo a indagare.” Będzie dalej drążyć.
+fail Wywiad ląduje w gazecie pod tytułem „Il consigliere e la busta”. Nikt na ciebie nie głosuje.
+w giornalista | dziennikarz, dziennikarka
+w consigliere | radny
+t Buongiorno, sono giornalista. Vuole diventare consigliere comunale? | Dzień dobry, jestem dziennikarką. Chce Pan zostać radnym? | Sì, vorrei diventare consigliere comunale. | Potwierdź, że chcesz zostać radnym. | „Consigliere comunale” to radny miejski. | | gain=1
+w l'imprenditore | przedsiębiorca
+w conoscente | znajomy
+t Bene. Conosce l'imprenditore signor Passero. È un suo amico? | Dobrze. Zna Pan przedsiębiorcę pana Passero. Czy to Pana przyjaciel? | No, è solo un conoscente. | Zaprzecz: to tylko znajomy. | „Solo” = tylko; „un conoscente” = znajomy. | | gain=1
+w nuova | nowa
+w vengono | przychodzą, pochodzą (venire)
+w comprata | kupiona (comprare)
+w onestamente | uczciwie
+w comprato | kupiony; „kupiłem”
+t Un conoscente, capisco. Ha una macchina nuova. Da dove vengono i soldi? | Znajomy, rozumiem. Ma Pan nowy samochód. Skąd są pieniądze? | L'ho comprata onestamente. | Powiedz, że kupiłeś go uczciwie. | Passato prossimo: l'ho comprata (la macchina → comprata). | Ho comprato la macchina onestamente.
+w preso | wzięty; „wziąłem” (prendere)
+w tangenti | łapówki
+t Onestamente, certo. Ha preso tangenti? | Uczciwie, oczywiście. Czy brał Pan łapówki? | No, non ho mai preso tangenti. | Zaprzecz, że kiedykolwiek brałeś łapówki. | „Mai” = nigdy; „tangenti” = łapówki. | Non ho mai preso tangenti. | loss=2
+w Guardi | niech pan(i) spojrzy (guardare)
+w queste | te
+w persone | osoby, ludzie
+t Mai? Guardi questa foto. C'è Lei con il signor Passero e una busta. | Nigdy? Proszę spojrzeć na to zdjęcie. Jest na nim Pan z panem Passero i kopertą. | Non conosco queste persone. | Powiedz, że nie znasz tych ludzi. | „Queste persone” = te osoby; non stoi przed czasownikiem. | | shift=-2
+w vecchia | stara
+w elettori | wyborcy
+w dimenticheranno | zapomną (dimenticare)
+t La foto è vecchia. Gli elettori dimenticheranno presto. | Zdjęcie jest stare. Wyborcy szybko zapomną. | La foto non è importante. | Zlekceważ zdjęcie: nie jest ważne. | „Ważny” to importante; zaprzeczenie: non è importante. | | shift=+2
+w testimone | świadek
+w dice | mówi (dire)
+w mente | kłamie (mentire)
+w ragione | racja
+o Un testimone dice che Lei ha preso dei soldi. | Świadek mówi, że wziął Pan pieniądze. | Non è vero. Il testimone mente. | Sì, il testimone ha ragione.; Sono un testimone. | Zaprzeczasz i mówisz, że świadek kłamie (mente).; Przyznajesz się, więc przegrywasz.; Testimone to „świadek”, a ty nim nie jesteś. | gain=1
+w l'intervista | wywiad
+w aggiungere | dodać
+w innocente | niewinny
+t Grazie per l'intervista. Vuole aggiungere altro? | Dziękuję za wywiad. Czy chce Pan coś jeszcze dodać? | Sì, sono innocente. | Powiedz na koniec, że jesteś niewinny. | „Innocente” = niewinny. | | gain=1
+w Scrivo | piszę (scrivere)
+w detto | powiedziany; „powiedział” (dire)
+e Scrivo quello che ha detto. Arrivederci! | Napiszę to, co Pan powiedział. Do widzenia!
+
+@level 3 | Sindaco | patience=4 cap=6 typed=0.4 extra=2 hint=bank
+desc Szczebel 3: burmistrz
+partner Il procuratore Moretti | M
+scene W ratuszu miasta Borgonuovo. Prokurator Moretti bada przetarg (gara d'appalto) na nowy most. Firma pana Passero wygrała dziwnie łatwo, a w aktach wraca „caso Cuculo”.
+goal Wyjdź z przesłuchania jako burmistrz, nie przyznając się do niczego.
+win Prokurator Moretti zamyka teczkę: „Nessuna prova. Il fascicolo resta chiuso.” Zostajesz burmistrzem, a most otwiera się z pompą.
+partial Teczka zostaje otwarta, ale prokurator nie ma dowodów. Zostajesz burmistrzem z cieniem podejrzeń.
+fail Prokurator Moretti kładzie na stole kopertę i zdjęcie. „La rinvio a giudizio!” – mówi. Kończysz w areszcie.
+w procuratore | prokurator
+w Moretti | Moretti (nazwisko)
+w interrogatorio | przesłuchanie
+t Sono il procuratore Moretti. Questo è un interrogatorio. | Jestem prokuratorem Morettim. To jest przesłuchanie. | Vorrei vedere il mio avvocato. | Poproś o swojego adwokata. | „Il mio avvocato” = mój adwokat. | Voglio vedere il mio avvocato. | gain=1
+w Prima | najpierw
+w l'impresa | firma, przedsiębiorstwo
+w vinto | wygrany; „wygrała” (vincere)
+w gara | przetarg; zawody
+w d'appalto | zamówienia (gara d'appalto = przetarg)
+w Aveva | miała, miał (avere)
+w l'offerta | oferta
+w migliore | najlepsza
+t Più tardi. Prima: l'impresa del signor Passero ha vinto la gara d'appalto per il ponte. Perché? | Później. Najpierw: firma pana Passero wygrała przetarg na most. Dlaczego? | Aveva l'offerta migliore. | Wyjaśnij, że miała najlepszą ofertę. | „Aveva” = miała (o firmie, l'impresa). | | gain=1
+w molte | wiele
+w domande | pytania
+w rilasciare | złożyć, wydać
+w dichiarazione | oświadczenie
+w avvalgo | korzystam (mi avvalgo della facoltà di non rispondere)
+w della | z (di + la)
+w facoltà | prawo, możliwość
+w rispondo | odpowiadam (rispondere)
+t Mah. Abbiamo molte domande. Vuole rilasciare una dichiarazione? | Hm. Mamy wiele pytań. Czy chce Pan złożyć oświadczenie? | Mi avvalgo della facoltà di non rispondere. | Odmów składania oświadczeń. | „Facoltà di non rispondere” = prawo do odmowy odpowiedzi (prawo do milczenia). | Non rispondo. | shift=-1
+w rifiuta | odmawia (rifiutarsi)
+w prove | dowody
+w sospetti | podejrzenia
+w sappiamo | wiemy (sapere)
+w entrambi | obaj
+w nessuna | żadna
+w prova | dowód
+t Si rifiuta? Senza prove non ci sono sospetti, certo. Lo sappiamo entrambi. | Odmawia Pan? Bez dowodów nie ma podejrzeń, to prawda. Wiemy to obaj. | Lei non ha prove. | Powiedz prokuratorowi, że nie ma dowodów. | „Non ha prove” = nie ma dowodów. | Lei non ha nessuna prova. | shift=+2
+w rinvio | odesłanie (rinvio a giudizio = akt oskarżenia, skierowanie sprawy do sądu)
+w giudizio | sąd, ocena
+w colpevole | winny
+o Forse ci sarà un rinvio a giudizio. Che cosa dice? | Być może będzie akt oskarżenia. Co Pan na to? | Sono innocente. | Sono colpevole.; Sono stato io. | „Innocente” = niewinny.; „Colpevole” = winny, a to przyznanie.; „Sono stato io” = to byłem ja, czyli przyznanie się. | gain=1
+t Innocente? Il signor Passero dice che Le ha dato una busta. | Niewinny? Pan Passero mówi, że dał Panu kopertę. | È una bugia! Non ho mai preso una busta. | Zaprzecz: to kłamstwo, nigdy nie wziąłeś koperty. | Passato prossimo: non ho mai preso; „mai” = nigdy. | | shift=-2 loss=2
+w ripeta | niech pan(i) powtórzy (ripetere)
+w giuramento | przysięga
+d Allora lo ripeta sotto giuramento. Ha preso dei soldi dal signor Passero? | A więc proszę powtórzyć to pod przysięgą: czy wziął Pan pieniądze od pana Passero? | No, non ho preso soldi dal signor Passero. | Zaprzeczaj pod przysięgą: nie wziąłeś od niego pieniędzy. | „Dal signor Passero” = od pana Passero (da + il). Jedna wpadka i koniec. | No, non ho mai preso soldi dal signor Passero.
+w altre | inne
+e Bene. Lei è il sindaco. Non ho altre domande. | Dobrze. Jest Pan burmistrzem. Nie mam więcej pytań.
+
+@level 4 | Deputato | patience=4 cap=6 typed=0.6 extra=2 hint=letters
+desc Szczebel 4: poseł
+partner Signora Galli | G
+scene Parlament krajowy. Jesteś posłem (deputato), a komisja śledcza (commissione d'inchiesta) wzywa cię jako świadka. Przewodnicząca, pani Galli, mówi o „caso Cuculo”. Prawnicy mają dla ciebie nowe słowa: testimone, giuramento, immunità.
+goal Odpowiadaj pod przysięgą tak, by nikt nie dowiódł, że kłamiesz.
+win Pani Galli: „L'audizione è conclusa.” Wychodzisz z sali z uniesioną głową. Komisja nic nie ma.
+partial Komisja kończy pracę bez wniosków, ale jeden członek zapisał w notatniku: „Da verificare!”
+fail Komisja nakazuje ci wyjaśnić sprzeczność. Zaplątałeś się, a prasa pisze o „deputato bugiardo”.
+w commissione | komisja
+w d'inchiesta | śledcza (commissione d'inchiesta = komisja śledcza)
+w testimonia | zeznaje (testimoniare)
+w Dico | mówię (dire)
+t Benvenuto alla commissione d'inchiesta. Lei testimonia sotto giuramento. | Witamy w komisji śledczej. Zeznaje Pan pod przysięgą. | Sì, lo so. Dico la verità. | Potwierdź i zapewnij, że mówisz prawdę. | „Dire la verità” = mówić prawdę. „Sotto giuramento” = pod przysięgą. | | gain=1
+w deputato | poseł
+w l'immunità | immunitet
+w rinunciare | zrzec się
+w all'immunità | do immunitetu
+w mantenere | zachować
+w immunità | immunitet
+t Grazie. Come deputato ha l'immunità. Vuole rinunciare all'immunità? | Dziękuję. Jako poseł ma Pan immunitet. Czy chce Pan zrzec się immunitetu? | No, voglio mantenere la mia immunità. | Odmów zrzeczenia się immunitetu. | „Mantenere” = zachować; „rinunciare” = zrzec się. | | shift=-1
+w deposizione | zeznanie
+w contraddice | jest sprzeczne z (contraddire)
+w spiega | wyjaśnia (spiegare)
+w nulla | nic
+t Va bene. La sua deposizione contraddice il fascicolo. Come lo spiega? | Dobrze. Pańskie zeznanie jest sprzeczne z aktami. Jak Pan to wyjaśni? | Non ho niente da nascondere. | Powiedz, że nie masz nic do ukrycia. | „Non ho niente da nascondere” = nie mam nic do ukrycia. | Non ho nulla da nascondere. | loss=2
+w d'accordo | zgoda
+w poi | potem, zresztą
+w pensano | myślą (pensare)
+t Niente da nascondere, d'accordo. E poi è una vecchia storia: gli elettori non ci pensano più. | Nic do ukrycia, zgoda. Zresztą to stara historia: wyborcy już o tym nie myślą. | È tutto passato. | Machnij ręką: to przeszłość. | „Passato” = przeszłość, minione. | | shift=+2
+w scritto | napisany; „napisałem”
+o Ecco una lettera del signor Passero. La conosce? | Oto list od pana Passero. Zna go Pan? | Non conosco questa lettera. | Sì, ho scritto io questa lettera.; Il mio avvocato ha scritto questa lettera. | Zaprzeczasz, że znasz ten list.; Przyznajesz się, że to ty napisałeś list: to błąd.; Zwalanie na adwokata nie jest wiarygodne. | gain=1
+w ricevuto | otrzymany; „otrzymał”
+t Un testimone dice che Lei ha ricevuto una busta con dei soldi. | Świadek mówi, że dostał Pan kopertę z pieniędzmi. | Il testimone mente. Non ho ricevuto soldi. | Nazwij świadka kłamcą i zaprzecz, że dostałeś pieniądze. | „Il testimone mente” = świadek kłamie. „Non ho ricevuto soldi” = nie dostałem pieniędzy. | | shift=-2 loss=2
+w consiglio | rada
+w conosceva | znał (conoscere, czas przeszły)
+k In consiglio comunale ha detto che conosceva appena il signor Passero. È ancora vero? | W radzie miejskiej powiedział Pan: „Ledwo znam pana Passero.” Czy to nadal prawda? | Sì, lo conosco appena. | No, è mio amico.; No, non l'ho mai visto. | Konsekwentnie powtarzasz wcześniejsze zeznanie: appena.; Przyznajesz, że to twój przyjaciel: sprzeczność i koniec.; Wcześniej mówiłeś „appena”, a nie „nigdy go nie widziałem”. | gain=1
+w rivedremo | zobaczymy się znów (rivedere)
+e Grazie. Può andare. Ci rivedremo presto. | Dziękuję. Może Pan iść. Wkrótce znów się zobaczymy.
+
+@level 5 | Ministro | patience=4 cap=6 typed=0.8 extra=2 hint=bank
+desc Szczebel 5: minister
+partner Signor Marini | M
+scene Studio telewizyjne, wywiad na żywo. Jesteś ministrem (ministro) i siedzisz naprzeciw pana Marini, prowadzącego wiadomości. Na ekranie nagle pojawia się stary dokument z „caso Cuculo”.
+goal Wyjdź ze studia nadal jako minister: nie daj się zapędzić w pułapkę na żywo.
+win Marini kończy wywiad: „Grazie, signor ministro.” Sondaże rosną. Pan Passero dzwoni: „Bel colpo!”
+partial Wywiad kończy się remisem. Opozycja domaga się dymisji, ale premier cię broni.
+fail Na wizji uciekasz od odpowiedzi, a widzowie wszystko widzą. Rano gazety krzyczą: „Dimissioni!”
+w diretta | na żywo (in diretta)
+w televisione | telewizja
+w pronto | gotowy
+w ministro | minister
+t Buonasera! Siamo in diretta in televisione. È pronto, signor ministro? | Dobry wieczór! Jesteśmy na żywo w telewizji. Jest Pan gotów, Panie ministrze? | Sì, sono pronto. Volentieri. | Potwierdź, że jesteś gotów. | „Essere pronto” = być gotowym. | | gain=1
+w L'opposizione | opozycja
+w sostiene | twierdzi (sostenere)
+w uno | jeden (przed rzeczownikiem m.)
+w scandalo | skandal
+w caso | sprawa, afera
+w Cuculo | Cuculo (kukułka; afera)
+w campagna | kampania; wieś
+t Grazie. L'opposizione sostiene che c'è uno scandalo intorno al caso Cuculo. | Dziękuję. Opozycja twierdzi, że wokół afery Cuculo jest skandal. | Non è uno scandalo. È una campagna. | Zbagatelizuj: to nie skandal, tylko kampania. | „Campagna” = kampania; „non è uno scandalo” = to nie skandal. | | shift=-1
+w Sul | na (su + il)
+w documento | dokument
+w Sua | pański, pani (forma grzecznościowa)
+w firma | podpis
+w ricordo | pamiętam (ricordare)
+t Una campagna? Sul giornale c'è un documento. Ha la Sua firma. | Kampania? W gazecie jest dokument. Ma Pański podpis. | Non me lo ricordo. | Powiedz, że nie możesz sobie tego przypomnieć. | „Ricordarsi” = pamiętać; „non me lo ricordo” = nie przypominam sobie tego. | Non ricordo. | shift=-2 loss=2
+w ricorda | pamięta (ricordarsi)
+t Non se lo ricorda? È la Sua firma. Come lo spiega? | Nie przypomina Pan sobie? To Pański podpis. Jak Pan to wyjaśni? | È un falso. | Zaprzecz: to fałszerstwo. | „Un falso” = fałszerstwo, podróbka. | | gain=1
+w sondaggi | sondaże
+w salita | wzrost, wspinaczka (in salita = rosnące)
+w hanno | mają (avere)
+w fiducia | zaufanie
+w ringrazio | dziękuję (ringraziare)
+t Un falso, dice. I sondaggi sono in salita per Lei. Gli elettori hanno fiducia in Lei. | Fałszerstwo, mówi Pan. Sondaże rosną na Pana korzyść. Wyborcy Panu ufają. | La ringrazio per la fiducia. | Podziękuj wyborcom za zaufanie. | „La fiducia” = zaufanie; „per la fiducia” = za zaufanie. | | shift=+2
+w Suo | pański, pani (forma grzecznościowa)
+w consulente | doradca
+w lavorato | pracował (lavorare)
+w rifiuto | odmawiam (rifiutarsi)
+o Il signor Passero dice di essere stato il Suo consulente. È vero? | Pan Passero mówi, że był Pańskim doradcą. Czy to prawda? | No, non ho mai lavorato con lui. | Sì, mi ha spesso dato dei soldi.; Mi rifiuto di rispondere. | Zaprzeczasz konsekwentnie.; Przyznajesz się do pieniędzy: błąd.; Odmowa odpowiedzi w telewizji wygląda na przyznanie się, a Marini to wykorzysta. | gain=1
+w dimettersi | podać się do dymisji
+w finito | skończony
+w dimetto | podaję się do dymisji (dimettersi)
+t Vuole dimettersi? Allora è tutto finito. | Czy chce Pan podać się do dymisji? Wtedy wszystko skończone. | No, non mi dimetto. Sono innocente. | Odmów dymisji i powiedz, że jesteś niewinny. | „Dimettersi” = podać się do dymisji. | | gain=1
+w Era | był (essere, czas przeszły)
+k Ecco una foto: Lei e il signor Passero. C'è anche una busta. Che cosa c'è nella busta? | Oto zdjęcie: Pan i pan Passero. Jest tam też koperta. Co jest w kopercie? | La foto è vecchia. Non ho mai preso una busta. | Sono soldi per la mia campagna.; Era solo un regalo. | Powtarzasz to, co powiedziałeś prokuratorowi.; Przyznanie się do pieniędzy: koniec.; „Regalo” to też przyznanie, bo wcześniej mówiłeś, że nie brałeś koperty. | gain=1
+e Grazie per l'intervista, signor ministro. | Dziękuję za wywiad, panie ministrze.
+
+@level 6 | Presidente del Consiglio | patience=4 cap=6 typed=1 extra=2 hint=none
+desc Szczebel 6: premier
+partner Signora Serra | S
+scene Debata finałowa w telewizji. Kandydujesz na premiera (presidente del Consiglio). Naprzeciw stoi pani Serra z partii „Nuova Onestà” i jej teczka z „caso Cuculo”. Cały kraj ogląda.
+goal Wygraj debatę, zachowaj spokój i nie przyznaj się do niczego do samego końca.
+win Przegrywa nawet sondaż: 52 procent mówi, że chce ciebie. Zostajesz premierem, a koperta pana Passero leży gdzieś na dnie szuflady.
+partial Debata kończy się remisem. Wybory wygrywasz minimalnie i obiecujesz „więcej przejrzystości”.
+fail Pani Serra kładzie na stoliku teczkę. Kraj widzi sprzeczność w twoich słowach i na ekranie pojawia się napis: „Il candidato mente.”
+w Benvenuti | witamy (liczba mnoga)
+w dibattito | debata
+w Serra | Serra (nazwisko)
+w candidato | kandydat
+w presidente | prezydent, przewodniczący
+w Consiglio | rada (presidente del Consiglio = premier)
+t Benvenuti al dibattito! Signora Serra, signor candidato, prego. | Witamy na debacie! Pani Serra, panie kandydacie, proszę. | Buonasera. Vorrei diventare presidente del Consiglio. | Przywitaj się i powiedz, że chcesz zostać premierem. | „Diventare presidente” = zostać prezydentem (tu: premierem). | | gain=1
+w partito | partia
+w Nuova | nowa
+w Onestà | uczciwość
+w Dica | niech pan(i) mówi (dire)
+t Sono del partito Nuova Onestà. Dica la verità, signor candidato! | Jestem z partii Nuova Onestà. Niech Pan mówi prawdę, Panie kandydacie! | Dico sempre la verità. | Zapewnij, że zawsze mówisz prawdę. | „Sempre” = zawsze. | | gain=1
+w accusa | oskarżenie, zarzut
+w Respingo | odrzucam (respingere)
+w l'accusa | zarzut
+t Lei ha preso tangenti. Questa è la mia accusa. | Brał Pan łapówki. To moje oskarżenie. | Respingo questa accusa. | Odrzuć ten zarzut. | „Respingere” = odrzucać; „questa accusa” = ten zarzut. | Respingo l'accusa. | shift=-2 loss=2
+w propaganda | propaganda
+w roba | rzecz (roba vecchia = stare sprawy)
+w sporca | brudna
+t Molti dicono che è solo propaganda e che è roba vecchia. | Wielu ludzi mówi, że to tylko propaganda i że to stare. | La sua campagna è sporca. | Zarzuć rywalce brudną kampanię. | „Sporco” = brudny; po „è” przymiotnik zgadza się z „campagna” (rodzaj żeński): sporca. | Questa campagna è sporca. | shift=+2
+w delle | jakieś, trochę (liczba mnoga żeńska)
+w ne | ich, z tego (non ne vedo = nie widzę ich)
+w vedo | widzę (vedere)
+t Signora Serra, ha delle prove? Io non ne vedo! | Pani Serra, ma Pani dowody? Ja ich nie widzę! | Non vedo prove. | Powtórz, że nie widzisz żadnych dowodów. | „Prove” = dowody. | Non vedo nessuna prova. | gain=1
+w Paese | kraj
+w Creo | tworzę (creare)
+w nuovi | nowe
+w posti | miejsca (posti di lavoro = miejsca pracy)
+w Creerò | stworzę (creare, przyszły)
+t E il Suo piano per il Paese? | A jaki jest Pański plan dla kraju? | Creo nuovi posti di lavoro. | Obiecaj nowe miejsca pracy. | „Posto di lavoro” = miejsce pracy; „nuovi posti di lavoro” = nowe miejsca pracy. | Creerò nuovi posti di lavoro. | gain=1
+t Il Suo amico signor Passero dice che Le ha dato molti soldi! | Pański przyjaciel pan Passero mówi, że dał Panu dużo pieniędzy! | È una bugia! Non è mio amico. | Zaprzecz: to kłamstwo, on nie jest twoim przyjacielem. | „Non è mio amico” = nie jest moim przyjacielem. | | shift=-1 loss=2
+o In consiglio comunale ha detto che era solo un conoscente. E adesso? | W radzie miejskiej powiedział Pan, że to tylko znajomy. A teraz? | È solo un conoscente. | È mio amico.; Non l'ho mai visto. | Trzymasz się wersji z rady.; Zaprzeczasz sam sobie.; Wcześniej przyznałeś, że go znasz, więc „nigdy go nie widziałem” to sprzeczność. | gain=1
+w mostra | pokazuje (mostrare)
+k La signora Serra mostra la busta. L'ha presa? Sì o no? | Pani Serra pokazuje kopertę. Wziął ją Pan? Tak czy nie? | No, non l'ho mai presa. | Sì, l'ho presa.; Mi rifiuto di rispondere. | Zaprzeczasz do końca.; Przyznanie się: koniec.; Milczenie na żywo wygląda jak przyznanie się. |
+w Congratulazioni | gratulacje
+e E il presidente del Consiglio è Lei! Congratulazioni! | A premierem zostaje… Pan! Serdeczne gratulacje!
+
+@larp flughafen | Lotnisko | L'impiegata | I | Rzym, wczesny ranek. Lecisz do Warszawy na ślub najlepszego przyjaciela, a samolot nie poczeka. Masz walizkę, paszport i mało czasu. | Przejdź całą drogę: odprawa, kontrola bezpieczeństwa, bramka, lot i odbiór bagażu w Warszawie.
+fee 0
+reward 20
+strict yes
+story yes
+win Docierasz do Warszawy z walizką, paszportem i pół godziny zapasu. Przyjaciel czeka w hali przylotów z bukietem: „Ce l'hai fatta! Il matrimonio può cominciare!”
+partial Dotarłeś do Warszawy, ale po drodze sporo się nagadałeś i trochę pobiegałeś. Walizka jest, ślub też, ty trochę zdyszany, ale na czas.
+fail Pomyliłeś coś w najgorszym momencie i samolot odleciał bez ciebie. Ślub oglądasz na telefonie, a przyjaciel obiecuje ci długą wyprawę „na pocieszenie”.
+
+@level 1 | Odprawa | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Odprawa
+partner L'impiegata | I
+scene Lotnisko Fiumicino, hala odlotów. Podchodzisz do stanowiska odprawy linii Tramontana Air. Pracowniczka patrzy na ciebie życzliwie i czeka na dokumenty.
+goal Odpraw się na lot do Warszawy: pokaż paszport, nadaj walizkę i wybierz miejsce.
+win Pracowniczka podaje ci kartę pokładową: „Buon viaggio!” Walizka jedzie na taśmie, a ty idziesz do kontroli bezpieczeństwa.
+partial Odprawa udała się, ale pracowniczka kilka razy musiała się domyślać, o co ci chodzi. Karta pokładowa w ręku, czas ucieka.
+fail Pracowniczka nie rozumie, czego chcesz, i prosi następną osobę w kolejce. Musisz zacząć od nowa na końcu kolejki.
+w banco | stanowisko, lada
+w Tramontana | Tramontana (wiatr północny; nazwa linii)
+w Air | Air (linia lotnicza)
+w Varsavia | Warszawa
+t Buongiorno! Benvenuto al banco della Tramontana Air. Dove va? | Dzień dobry! Witamy przy stanowisku Tramontana Air. Dokąd Pan leci? | Buongiorno! Vado a Varsavia. | Przywitaj się i powiedz, że lecisz do Warszawy. | „Jadę, lecę” do miasta to vado a. | Buongiorno! Vado a Varsavia, per favore.
+t Varsavia, benissimo. Il passaporto, per favore. E perché va a Varsavia? | Warszawa, bardzo dobrze. Paszport, proszę. A po co Pan leci do Warszawy? | Ecco il mio passaporto. Vado a un matrimonio. | Podaj paszport i powiedz, że lecisz na ślub. | „Oto” to ecco; „na ślub” to a un matrimonio. | Ecco il passaporto. Vado a un matrimonio a Varsavia.
+w imbarcare | nadać (bagaż); wsadzić na pokład
+t Un matrimonio, che bello! Vuole imbarcare una valigia? | Ślub, jak miło! Czy chce Pan nadać walizkę? | Sì, vorrei imbarcare una valigia. | Powiedz, że chcesz nadać walizkę. | „Nadać bagaż” to imbarcare una valigia. | Sì, vorrei imbarcare la mia valigia.
+w Metta | niech pan(i) postawi (mettere)
+w sulla | na (su + la)
+w bilancia | waga
+w Pesa | waży (pesare)
+w chili | kilogramy
+w bagaglio | bagaż
+t Metta la valigia sulla bilancia, per favore. Pesa venti chili, va bene. Ha anche un bagaglio a mano? | Proszę postawić walizkę na wadze. Waży dwadzieścia kilo, jest w porządku. Czy ma Pan też bagaż podręczny? | Sì, ho una borsa come bagaglio a mano. | Powiedz, że masz torbę jako bagaż podręczny. | „Bagaż podręczny” to bagaglio a mano.
+w Preferisce | woli pan(i) (preferire)
+w corridoio | korytarz, przejście
+t Molto bene. Preferisce un posto finestrino o un posto corridoio? | Bardzo dobrze. Czy woli Pan miejsce przy oknie, czy przy przejściu? | Il finestrino, per favore. | Powiedz, że wolisz miejsce przy oknie. | „Przy oknie” to finestrino. | Un posto finestrino, per favore.
+w d'imbarco | pokładowa (carta d'imbarco = karta pokładowa)
+w decollo | start (samolotu)
+w un'altra | jeszcze jedna
+w volo | lot
+w orario | rozkład, godzina (in orario = na czas)
+t Perfetto, finestrino. Ecco la sua carta d'imbarco. Il decollo è alle dieci e trenta. Ha un'altra domanda? | Doskonale, przy oknie. Oto Pana karta pokładowa. Start jest o dziesiątej trzydzieści. Czy ma Pan jeszcze pytanie? | Sì, il volo è in orario? | Zapytaj, czy lot jest punktualny. | „Na czas” to in orario. | Sì, è in orario il volo?
+w Vada | niech pan(i) idzie (andare)
+t Sì, il volo è in orario. La sua uscita è la dodici. Vada dritto. | Tak, lot jest punktualny. Pana bramka to 12. Proszę iść prosto. | Grazie mille! Arrivederci! | Podziękuj i pożegnaj się. | „Do widzenia” to arrivederci. | Grazie! Arrivederci!
+e Buon viaggio! | Szczęśliwej podróży!
+
+@level 2 | Kontrola bezpieczeństwa | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Kontrola bezpieczeństwa
+partner L'addetto alla sicurezza | S
+scene Masz kartę pokładową, a przed tobą długa kolejka do kontroli. Funkcjonariusz podaje plastikowe pojemniki i patrzy uważnie na twoją torbę.
+goal Przejdź kontrolę bezpieczeństwa: pokaż laptop, zdejmij pasek i odpowiedz na pytania.
+win Funkcjonariusz kiwa głową: „Tutto in ordine. Proceda.” Zakładasz pasek i biegniesz do bramki z pełnym spokojem.
+partial Kontrola przebiegła w końcu bez problemów, ale funkcjonariusz kilka razy zmarszczył brwi. Zakładasz pasek w biegu.
+fail Funkcjonariusz uznaje twoje odpowiedzi za podejrzane. Zostajesz zatrzymany na dodatkową kontrolę, a samolot odlatuje bez ciebie.
+w controllo | kontrola
+w sicurezza | bezpieczeństwo
+w nastro | taśma
+t Buongiorno! Questo è il controllo di sicurezza. Metta la borsa qui sul nastro, per favore. | Dzień dobry! To jest kontrola bezpieczeństwa. Proszę położyć torbę tutaj na taśmie. | Sì, certo. | Zgódź się i powiedz, że oczywiście. | „Oczywiście” to certo. | Certo.
+w tolga | niech pan(i) wyjmie (togliere)
+t Grazie. Ha un computer nella borsa? Lo tolga, per favore. | Dziękuję. Czy ma Pan w torbie laptop? Proszę go wyjąć. | Sì, ecco il mio computer. | Potwierdź i podaj laptop. | „Mój” przy rodzaju męskim to mio: il mio computer. | Sì, ecco il computer.
+w liquidi | płyny
+w profumo | perfumy
+w crema | krem
+w liquido | płyn
+t Grazie. Ha dei liquidi con sé? Per esempio acqua, profumo o crema? | Dziękuję. Czy ma Pan przy sobie płyny? Na przykład wodę, perfumy albo krem? | No, non ho liquidi. | Zaprzecz: nie masz płynów. | „Non ho liquidi” = nie mam płynów. | No, non ho nessun liquido.
+t Molto bene. Si tolga anche la cintura e la giacca, per favore. | Bardzo dobrze. Proszę też zdjąć pasek i kurtkę. | Sì, ecco la mia cintura e la mia giacca. | Podaj pasek i kurtkę. | „Moja” przy rodzaju żeńskim to mia: la mia cintura. | Sì, ecco la cintura e la giacca.
+w né | ani (né … né)
+k Grazie. C'è un coltello o un'arma nella borsa? | Dziękuję. Czy w torbie jest nóż albo broń? | No, non ho né un coltello né un'arma. | Sì, ho un coltello.; Non so, forse. | Przyznanie się do noża to natychmiastowe zatrzymanie.; Niepewna odpowiedź przy takim pytaniu wzbudza podejrzenia: zatrzymanie.
+w Passi | niech pan(i) przejdzie (passare)
+w metal | metal
+w detector | wykrywacz (metal detector = bramka)
+w Bip | pip (dźwięk)
+w tasca | kieszeń
+w chiavi | klucze
+w mie | moje
+t Bene. Passi ora sotto il metal detector. Bip! Ha ancora qualcosa in tasca? | Dobrze. Proszę teraz przejść przez bramkę. Pip! Czy ma Pan jeszcze coś w kieszeni? | Sì, ho le chiavi e il telefonino. | Powiedz, że masz klucze i telefon. | „Klucze” to le chiavi. | Sì, ho le mie chiavi e il mio telefonino.
+w ordine | porządek (in ordine = w porządku)
+w Proceda | niech pan(i) idzie dalej (procedere)
+e Tutto in ordine. Proceda. Buon viaggio! | Wszystko w porządku. Proszę iść dalej. Szczęśliwej podróży!
+
+@level 3 | Przy bramce | patience=4 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Przy bramce
+partner L'addetto dell'aeroporto | A
+scene Siedzisz przy bramce 12 i patrzysz na zegarek. Nagle w głośnikach coś trzaska, a na tablicy pojawia się napis „Ritardo”.
+goal Dowiedz się, co z lotem, zrozum komunikat o zmianie bramki i wejdź na pokład.
+win Biegniesz do nowej bramki i wsiadasz jako jeden z ostatnich. Pracownik zamyka drzwi: „Per un soffio!”
+partial Znalazłeś w końcu właściwą bramkę, choć po drodze kilka razy musiałeś dopytywać. Wchodzisz na pokład spocony.
+fail Zrozumiałeś komunikat na opak i czekasz przy złej bramce. Kiedy orientujesz się w błędzie, drzwi samolotu są już zamknięte.
+w Scusi | przepraszam
+t Scusi! È un passeggero del volo per Varsavia? | Przepraszam! Czy jest Pan pasażerem lotu do Warszawy? | Sì, il mio volo è in ritardo, vero? | Potwierdź i zapytaj, czy twój lot jest spóźniony. | „Spóźnienie” to ritardo; „essere in ritardo” = być spóźnionym. | Sì, il mio volo ha un ritardo, vero?
+w l'imbarco | wejście na pokład
+t Sì, il volo ha quaranta minuti di ritardo. | Tak, lot ma czterdzieści minut opóźnienia. | E quando è l'imbarco? Vado a un matrimonio. | Zapytaj, kiedy jest boarding, i dodaj, że lecisz na ślub. | „Boarding” to imbarco; pytanie o czas: quando? | A che ora è l'imbarco? Vado a un matrimonio.
+w Deve | musi pan(i) (dovere)
+w direttamente | bezpośrednio
+t Alle undici. Un matrimonio, che bello! Deve cambiare aereo a Varsavia? | O jedenastej. Ślub, jak miło! Czy musi Pan się przesiadać w Warszawie? | No, vado direttamente a Varsavia. | Odpowiedz, że nie, lecisz bezpośrednio. | „Bezpośrednio” to direttamente. | No, volo direttamente a Varsavia.
+w annuncio | ogłoszenie
+w dall'uscita | z wyjścia
+w L'uscita | wyjście, bramka
+w chiusa | zamknięta
+w all'uscita | do wyjścia
+w dell'aeroporto | lotniska
+k Bene, direttamente. Attenzione, un annuncio! Il volo per Varsavia parte ora dall'uscita cinque. L'uscita dodici è chiusa. Ha capito? Dove va? | Dobrze, bezpośrednio. Uwaga, ogłoszenie! Lot do Warszawy odlatuje teraz z bramki 5. Bramka 12 jest zamknięta. Czy Pan zrozumiał? Dokąd Pan idzie? | Vado all'uscita cinque. | Resto all'uscita dodici.; Vado all'uscita dell'aeroporto. | Bramka 12 jest zamknięta, więc czekanie tam kończy się spóźnieniem.; Wyjście z lotniska to nie bramka na pokład.
+w bordo | pokład (a bordo = na pokładzie)
+w Salgo | wsiadam, wchodzę (salire)
+t Allora presto! La sua carta d'imbarco, per favore. Può salire a bordo adesso. | W takim razie szybko! Karta pokładowa, proszę. Może Pan już wsiadać. | Ecco la mia carta d'imbarco. Salgo subito. | Podaj kartę i powiedz, że już wsiadasz. | „Wsiadać” to salire a bordo; „subito” = zaraz. | Ecco la carta. Salgo adesso.
+w aperto | otwarty
+e Buon viaggio! L'imbarco è aperto. | Szczęśliwej podróży! Boarding jest otwarty.
+
+@level 4 | W samolocie i po lądowaniu | patience=4 typed=0.75 extra=3 hint=letters reward=30
+desc Rozdział 4: Lot i przylot
+partner L'assistente di volo | A
+scene Wchodzisz na pokład Tramontana Air. Stewardesa wita pasażerów przy drzwiach, a za chwilę wystartujecie do Warszawy. Po lądowaniu będziesz musiał jeszcze znaleźć paszportówkę i swoją walizkę.
+goal Zajmij miejsce, zapnij pas, poproś o picie, a po lądowaniu dowiedz się, gdzie jest kontrola paszportowa, taśma bagażowa i odprawa celna.
+win Walizka wyjeżdża na taśmie jako pierwsza, a celnik życzy ci „Benvenuto in Polonia!” Przyjaciel czeka w hali przylotów.
+partial Wszystko udało ci się znaleźć, ale po drodze trzy razy zapytałeś o drogę. Walizka dojechała, a ty do ślubu zdążysz.
+fail Poszedłeś w złą stronę i stracił czas na lotnisku. Walizka krąży samotnie po taśmie, a przyjaciel wydzwania co minutę.
+t Buongiorno e benvenuto a bordo! La sua carta d'imbarco, per favore. | Dzień dobry i witamy na pokładzie! Proszę o kartę pokładową. | Buongiorno! Ecco la mia carta d'imbarco. | Przywitaj się i pokaż kartę pokładową. | „Oto” to ecco. | Buongiorno! Ecco la carta.
+w accanto | obok (accanto al finestrino = przy oknie)
+w cappelliera | schowek nad głową
+w metto | wkładam (mettere)
+t Grazie. Il suo posto è il quattordici, accanto al finestrino. Metta la borsa nella cappelliera, per favore. | Dziękuję. Pana miejsce to 14, przy oknie. Proszę włożyć torbę do schowka na górze. | Grazie, metto la borsa nella cappelliera. | Podziękuj i powiedz, że wkładasz torbę do schowka. | „Wkładam” to metto. | Grazie, metto la mia borsa nella cappelliera.
+w Allacci | niech pan(i) zapnie (allacciare)
+w Decolliamo | startujemy (decollare)
+w allaccio | zapinam (allacciare)
+t Perfetto. Allacci la cintura, per favore. Decolliamo tra poco. | Doskonale. Proszę zapiąć pas. Za chwilę startujemy. | Sì, allaccio la cintura. | Powiedz, że zapinasz pas. | „Zapinam pas” to allaccio la cintura. | Sì, allaccio la cintura!
+t Grazie. Desidera qualcosa da bere? | Dziękuję. Czy chce Pan coś do picia? | Sì, un caffè, per favore. | Poproś o kawę. | Caffè jest rodzaju męskiego, więc un caffè. | Sì, vorrei un caffè, per favore.
+w atterriamo | lądujemy (atterrare)
+t Ecco il suo caffè. Ha un'altra domanda? | Oto Pana kawa. Czy ma Pan jeszcze pytanie? | Sì, quando atterriamo a Varsavia? | Zapytaj, kiedy lądujecie w Warszawie. | „Kiedy” to quando, a „lądujemy” to atterriamo. | Sì, a che ora atterriamo a Varsavia?
+w L'arrivo | przylot
+w passaporti | paszporty
+w dogana | cło, urząd celny
+t Atterriamo tra dieci minuti. Benvenuto a Varsavia! L'arrivo è in orario. | Lądujemy za dziesięć minut. Witamy w Warszawie! Przylot jest punktualny. | Grazie! Dov'è il controllo passaporti, per favore? | Podziękuj i zapytaj, gdzie jest kontrola paszportowa. | Pytanie o miejsce zaczyna się od dove: dov'è il controllo passaporti? | Grazie! Dov'è la dogana, per favore?
+w bagagli | bagaże
+k Il controllo passaporti è a sinistra. Poi c'è il nastro dei bagagli e poi la dogana. Dove va prima? | Kontrola paszportowa jest po lewej. Potem taśma bagażowa, a potem cło. Dokąd Pan idzie najpierw? | Prima vado al controllo passaporti. | Prima vado alla dogana.; Prima vado al nastro dei bagagli. | Do cła idziesz na końcu, po odbiorze walizki.; Walizkę odbierasz dopiero po kontroli paszportowej.
+w Esatto | dokładnie
+t Esatto! E poi al nastro dei bagagli. La sua valigia arriva sul nastro quattro. | Dokładnie! A potem do taśmy bagażowej. Pana walizka przyjedzie na taśmie czwartej. | Grazie mille! Prendo la valigia dal nastro. | Podziękuj i powiedz, że zdejmiesz walizkę z taśmy. | „Zdejmuję” to w tym zdaniu prendo, a „z taśmy” to dal nastro. | Grazie! Prendo la mia valigia dal nastro.
+w dichiarare | zgłosić, oclić
+w chiede | pyta, prosi (chiedere)
+t Ha qualcosa da dichiarare? Lo chiede la dogana. | Czy ma Pan coś do oclenia? O to zapyta cło. | No, non ho niente da dichiarare. | Powiedz, że nie masz nic do oclenia. | „Nic” to niente: niente da dichiarare. | No, niente da dichiarare.
+e Allora va tutto bene. Benvenuto in Polonia e buon matrimonio! | Wtedy wszystko w porządku. Witamy w Polsce i dobrej zabawy na ślubie!

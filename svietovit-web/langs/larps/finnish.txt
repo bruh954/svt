@@ -327,3 +327,909 @@ w haittaa | przeszkadza (haitata)
 t Tämä paikka on vapaa. Juna on kymmenen minuuttia myöhässä. | To miejsce jest wolne. Pociąg ma dziesięć minut spóźnienia. | Ei se haittaa. Kiitos! | Powiedz, że to nie szkodzi, i podziękuj. | „Nie szkodzi” to ei se haittaa.
 w kunnossa | w porządku
 e Kaikki kunnossa! Hyvää matkaa Tampereelle! | Wszystko w porządku! Szczęśliwej podróży do Tampere!
+
+@larp oma | Babcia w parku | Mummo Aino | A | Niedziela w parku. Na ławce siedzi starsza pani, która uwielbia rozmawiać i ma całe popołudnie. | Posiedź z babcią Aino i porozmawiaj z nią. Nikt cię stąd nie wyrzuci.
+fee 0
+reward 10
+story yes
+win Mummo Aino promienieje: „Mikä mukava nuori mies!” Zaprasza cię na niedzielną kawę i kawałek ciasta.
+partial Rozmowa się toczyła, choć kilka razy musiałeś prosić o powtórzenie. Mummo Aino uśmiecha się cierpliwie i zaprasza cię znowu.
+fail Mummo Aino się nie zniechęca, bo ma nieskończoną cierpliwość. Jeśli kiedyś zobaczysz ten komunikat, napisz do nas.
+
+@level 1 | Na ławce | patience=3 endless=yes typed=0 extra=2 hint=none
+desc Rozdział 1: Poznajecie się
+scene Park, ławka, słońce. Starsza pani karmi okruchami wróble i zaczyna rozmowę. Nie musisz się spieszyć: Mummo Aino poczeka.
+goal Przywitaj się, powiedz, jak się nazywasz i skąd jesteś.
+win Mummo Aino klepie ławkę obok siebie: „Istu tähän, Paavo!” Zostajesz na dłużej.
+partial Rozmowa się udała, mimo kilku pomyłek. Mummo Aino zachowuje cierpliwość i robi ci miejsce na ławce.
+fail Mummo Aino nigdy się nie zniechęca.
+w eikö | czyż nie (ei + -kö)
+w niin | tak (eikö niin = prawda?)
+t Hyvää päivää, nuori mies! Sää on tänään kaunis, eikö niin? | Dzień dobry, młody człowieku! Pogoda jest dziś ładna, prawda? | Kyllä, sää on kaunis. | Zgódź się, że pogoda jest ładna. | „Pogoda” to sää. | Kyllä, aurinko paistaa.
+w niinpä | właśnie, no tak
+w sinun | twój
+w nimesi | twoje imię (nimi + -si)
+w Aino | Aino (imię)
+w minun | mój (minun nimeni = moje imię)
+w nimeni | moje imię (nimi + -ni)
+w Paavo | Paavo (imię, Paweł)
+t Niinpä! Mikä sinun nimesi on? Minä olen Aino. | Właśnie! Jak masz na imię? Ja jestem Aino. | Minun nimeni on Paavo. | Powiedz, jak się nazywasz. | „Moje imię jest” to minun nimeni on. | Nimeni on Paavo.;Olen Paavo.
+w nimi | imię, nazwa
+w asutko | czy mieszkasz (asut + -ko)
+w asu | mieszkam (asua; en asu = nie mieszkam)
+t Paavo! Kaunis nimi. Asutko sinä täällä? | Paavo! Ładne imię. Mieszkasz tutaj? | En asu täällä. Olen Puolasta. | Zaprzecz i powiedz, że jesteś z Polski. | „Z Polski” to Puolasta (końcówka -sta: „z”). | En, en asu täällä. Olen kotoisin Puolasta.
+w alas | w dół
+t Puolasta! Se on kaukana. Haluatko istua alas? | Z Polski! To daleko. Chcesz usiąść? | Kyllä, mielellään. Kiitos paljon! | Zgódź się i podziękuj. | „Chętnie” to mielellään.
+w tilaa | miejsca (forma cząstkowa od tila)
+e Ole hyvä! Tässä on tilaa. | Proszę bardzo! Tu jest miejsce.
+
+@level 2 | Wnuk i kaczki | patience=3 endless=yes typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Wnuk i ciasto
+scene Mały Eetu biega po trawniku i karmi kaczki, a Mummo Aino pokazuje ci zdjęcia w portfelu. Z torby wyjmuje ciasto własnej roboty.
+goal Porozmawiaj o wnuku Eetu, powiedz, czy masz dzieci, i spróbuj ciasta.
+win Mummo Aino wręcza ci drugi kawałek: „Syö, syö, olet liian laiha!” Eetu macha do ciebie z daleka.
+partial Zjadłeś ciasto, choć kilka razy brakowało ci słów. Mummo Aino dolewa herbaty z termosu.
+fail Mummo Aino nie traci cierpliwości.
+w lapsenlapseni | mój wnuk (lapsenlapsi + -ni)
+w Eetu | Eetu (imię)
+w kuusivuotias | sześcioletni
+w söpö | słodki, uroczy
+t Tämä on minun lapsenlapseni Eetu. Hän on kuusivuotias. | To mój wnuk Eetu. Ma sześć lat. | Eetu on todella söpö. | Pochwal wnuka: powiedz, że jest bardzo słodki. | „Bardzo” to todella. | Eetu on todella mukava.
+w ruokkii | karmi (ruokkia)
+w ankkoja | kaczki (forma cząstkowa l. mn.)
+w lapsia | dzieci (forma cząstkowa l. mn.)
+t Kiitos! Eetu ruokkii ankkoja. Onko sinulla lapsia? | Dziękuję! Eetu karmi kaczki. Masz dzieci? | Ei, minulla ei ole lapsia. | Powiedz, że nie masz dzieci. | „Nie mam dzieci” to minulla ei ole lapsia (po przeczeniu forma cząstkowa).
+w leivoin | upiekłam (leipoa)
+w sen | to, go (biernik od se)
+t Ei ole lapsia? Vai niin. Haluatko palan kakkua? Leivoin sen itse. | Nie masz dzieci? Ach tak. Chcesz kawałek ciasta? Sama je upiekłam. | Kyllä, mielellään. Kakku on todella hyvää! | Przyjmij ciasto i pochwal je. | Po „pala” forma cząstkowa: kakkua.
+w kuinka | jak, w jaki sposób
+w vuotta | lat (forma cząstkowa od vuosi)
+t Hyvä, että se maistuu! Kuinka vanha sinä olet? | Cieszę się, że smakuje! Ile masz lat? | Olen kolmekymmentä vuotta vanha. | Powiedz, że masz trzydzieści lat. | „Mam lat” to olen … vuotta vanha (po liczebniku forma cząstkowa: vuotta).
+e Voi, niin nuori! | Ach, tak młodo!
+
+@level 3 | Zaproszenie | patience=3 endless=yes typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Kawa w niedzielę
+scene Słońce chyli się ku zachodowi. Mummo Aino pakuje termos i prosi cię o pomoc. Zanim wstaniecie z ławki, chce cię jeszcze zaprosić.
+goal Przyjmij zaproszenie na niedzielną kawę i pomóż babci z torbą.
+win Mummo Aino zapisuje ci adres na serwetce: „Tule nälkäisenä!” Idziesz do domu w świetnym nastroju.
+partial Wszystko się wyjaśniło, choć trzeba było kilka razy powtarzać. Mummo Aino mówi: „Nähdään sunnuntaina, poikani!”
+fail Mummo Aino nie traci cierpliwości.
+w tiedätkö | czy wiesz (tiedät + -kö)
+w puistossa | w parku (puisto + -ssa)
+w kaunista | ładnie (forma cząstkowa)
+w tosi | bardzo; prawdziwy
+t Tiedätkö, minä olen puistossa joka päivä. Täällä on niin kaunista. | Wiesz, jestem w parku codziennie. Jest tu tak ładnie. | Kyllä, puisto on todella kaunis. | Zgódź się, że park jest piękny. | „Naprawdę” to todella. | Kyllä, puisto on tosi kaunis.
+w olekin | (eikö olekin = prawda?)
+w sunnuntaina | w niedzielę (sunnuntai + -na)
+w keitän | gotuję, parzę (keittää)
+t Eikö olekin? Sunnuntaina keitän kahvia. Haluatko tulla? | Prawda? W niedzielę parzę kawę. Chcesz przyjść? | Kyllä, mielellään. Milloin? | Zgódź się i zapytaj, kiedy. | „Kiedy?” to milloin?
+w laukkuni | moja torba (laukku + -ni)
+w voitko | czy możesz (voit + -ko)
+w minua | mnie (forma cząstkowa od minä)
+w tietysti | oczywiście
+w kannan | niosę (kantaa)
+w laukun | torbę (biernik od laukku)
+t Kello kolme. Laukkuni on raskas. Voitko auttaa minua? | O trzeciej. Moja torba jest ciężka. Możesz mi pomóc? | Kyllä, tietysti. Minä kannan laukun. | Zgódź się i zaproponuj, że poniesiesz torbę. | „Noszę” to kannan; torba w bierniku: laukun. | Kyllä, tietysti. Kannan laukun.
+w ystävällinen | uprzejmy, miły
+w nähdään | do zobaczenia (dosł. zobaczymy się)
+t Kuinka ystävällinen! Olet hyvä ihminen. | Jaki miły! Jesteś dobrym człowiekiem. | Kiitos paljon! Nähdään sunnuntaina! | Podziękuj i pożegnaj się do niedzieli. | „Do niedzieli” to nähdään sunnuntaina (dosł. „zobaczymy się w niedzielę”).
+e Nähdään sunnuntaina! Näkemiin! | Do niedzieli! Do widzenia!
+
+
+@larp spion | Szpieg | Yhteyshenkilö | Y | Jesteś agentem pod przykrywką. W Helsinkach masz odebrać tajną teczkę z ambasady i przekazać ją dalej. Jedno złe słowo i jesteś zdemaskowany. | Zachowaj przykrywkę kupca Kauppinena, zdobądź kansio i uciekaj z walizką.
+fee 0
+reward 20
+strict yes
+story yes
+win Walizka jest w twoich rękach, a statek odpływa z portu. Ktoś w centrali szepcze: „Hyvää työtä, Haukka.” Przykrywka nie pękła ani razu.
+partial Misja się udała, ale po drodze kilka razy omal się nie zdradziłeś. Centrala odnotowuje: „Hänellä kävi tuuri.”
+fail Zdradziłeś się jednym słowem. Przykrywka pękła, a ty znikasz w ciemności bez teczki i bez walizki.
+
+@level 1 | Hasło na dworcu | patience=2 typed=0 extra=1 hint=none
+desc Rozdział 1: Kontakt na dworcu
+partner Mies hatussa | M
+scene Helsinki, wieczór, peron na dworcu. Jesteś agentem „Haukka”, ale dla wszystkich jesteś herra Kauppinen, handlarz zabawkami z Turku (Kauppinen ja Poika). Na peronie czeka człowiek w kapeluszu. Hasło: „Talvi tulee aikaisin.” Odzew: „Ja kesä tulee myöhään.”
+goal Podaj hasło, nie zdradź swojej przykrywki i przyjmij zadanie. Jedna zła odpowiedź i jesteś zdemaskowany.
+win Człowiek w kapeluszu znika w tłumie, a ty zostajesz z kopertą w kieszeni. Przykrywka nietknięta, a jutro o ósmej czeka cię ambasada.
+partial Dostałeś zadanie, ale kontakt zmarszczył brwi przy kilku twoich odpowiedziach. Lepiej uważaj jutro.
+fail Człowiek w kapeluszu spojrzał na ciebie zimno, odwrócił się i odszedł. Zadanie dostanie ktoś inny.
+w tulee | przychodzi (tulla)
+t Hyvää iltaa. Tänään on kylmä, eikö niin? | Dobry wieczór. Dziś jest zimno, prawda? | Kyllä, on todella kylmä. Talvi tulee aikaisin. | Zgódź się, że jest zimno, i powiedz hasło: zima przychodzi wcześnie. | Hasło brzmi: „Talvi tulee aikaisin.” | Kyllä, on kylmä. Talvi tulee aikaisin.
+w hys | cicho!
+w kuuntelevat | słuchają (kuunnella)
+w Kauppinen | Kauppinen (nazwisko z przykrywki)
+w kauppias | kupiec
+w Haukka | Haukka (jastrząb; imię agenta)
+w agentti | agent
+k Ja kesä tulee myöhään. Hys! Täällä ihmiset kuuntelevat. Mikä sinun nimesi on? | A lato przychodzi późno. Cicho! Tu ludzie słuchają. Jak masz na imię? | Nimeni on Kauppinen. Olen kauppias. | Nimeni on Haukka. Olen agentti.;Nimeni on Kauppinen. Olen agentti. | Haukka to twoje imię agenta, a ludzie słuchają.; Kauppinen się zgadza, ale „agentti” zdradza przykrywkę.
+w seuraako | czy śledzi (seuraa + -ko)
+w sinua | ciebie (forma cząstkowa od sinä)
+w kukaan | nikt
+w seuraa | śledzi (seurata)
+w aikaa | czasu (forma cząstkowa od aika)
+k Hyvä. Seuraako joku sinua? | Dobrze. Czy ktoś cię śledzi? | Ei, kukaan ei seuraa minua. | Kyllä, joku seuraa minua.;Ei, minulla ei ole aikaa. | Mówisz, że nikt cię nie śledzi.; Kontakt pyta o śledzenie, nie o czas.
+w erinomaista | znakomicie, doskonale
+w tehtäväsi | twoje zadanie (tehtävä + -si)
+w kahdeksan | osiem
+w menet | idziesz (mennä)
+w suurlähetystöön | do ambasady (suurlähetystö + -ön)
+w ymmärsin | zrozumiałem (ymmärtää)
+t Erinomaista. Tässä on tehtäväsi. Huomenna kello kahdeksan menet suurlähetystöön. Siellä on juhlat. | Znakomicie. Oto twoje zadanie. Jutro o ósmej idziesz do ambasady. Jest tam przyjęcie. | Ymmärsin. Huomenna kello kahdeksan menen suurlähetystöön. | Powiedz, że zrozumiałeś: jutro o ósmej idziesz do ambasady. | „Tehtävä” to zadanie, a „kello kahdeksan” znaczy „o ósmej”.
+w juhlien | przyjęcia (genetiv l. mn. od juhla)
+w Satakieli | Satakieli (słowik; hasło)
+t Hyvä. Juhlien salasana on Satakieli. Mikä on salasana? | Dobrze. Hasło na przyjęcie to Słowik. Jakie jest hasło? | Salasana on Satakieli. | Powtórz hasło na przyjęcie. | Hasło wejściowe to salasana, a „satakieli” to słowik.
+w erittäin | bardzo
+w tunnetko | czy znasz (tunnet + -ko)
+w minut | mnie, mnie (biernik od minä)
+w tunne | znam (tuntea; en tunne = nie znam)
+d Erittäin hyvä. Hys! Poliisi tulee. Tunnetko sinä minut? | Bardzo dobrze. Cicho! Idzie policjant. Znasz mnie? | En, en tunne sinua. | Zaprzecz, że znasz tego człowieka. | Nie możesz zdradzić, że znasz kontakt. | En, en tunne sinua!
+w herra | pan
+e Hyvää yötä, herra Kauppinen. | Dobranoc, panie Kauppinen.
+
+@level 2 | Przyjęcie w ambasadzie | patience=2 typed=0.2 extra=3 hint=bank
+desc Rozdział 2: Przyjęcie w ambasadzie
+partner Rouva Lahti | L
+scene Następny wieczór. W ambasadzie trwa przyjęcie, a przy wejściu stoi pani Lahti, sekretarka. Ona i goście zadają pytania o twoją „firmę”. Twoja przykrywka: Kauppinen ja Poika, zabawki, Turku. Hasło wejściowe: Satakieli. Gabinet ambasadora jest po prawej, toalety po lewej.
+goal Wejdź na przyjęcie, nie zdradź się pytaniom o firmę i znajdź pretekst, żeby dotrzeć do gabinetu.
+win Pani Lahti macha ci na pożegnanie, a w gabinecie leży teczka, o którą ci chodziło. Nikt niczego nie podejrzewa.
+partial Weszłeś i dotarłeś do gabinetu, ale pani Lahti patrzyła na ciebie dłużej, niż trzeba.
+fail Pani Lahti przestaje się uśmiechać i daje znak ochronie. Za chwilę wyprowadzą cię z ambasady.
+t Hyvää iltaa ja tervetuloa suurlähetystöön! Mikä on salasana? | Dobry wieczór i witamy w ambasadzie! Jakie jest hasło? | Salasana on Satakieli. | Podaj hasło wejściowe. | Salasana to hasło, a „satakieli” to słowik.
+w täytyy | trzeba, musi (minun täytyy = muszę)
+w ase | broń
+w mukana | przy sobie
+w asetta | broni (forma cząstkowa od ase)
+w kansiota | teczki (forma cząstkowa od kansio)
+k Kiitos. Minun täytyy kysyä jotain. Onko sinulla ase mukana? | Dziękuję. Muszę o coś zapytać. Masz przy sobie broń? | Ei, minulla ei ole asetta. | Kyllä, minulla on ase.;Ei, minulla ei ole kansiota. | Na przyjęcie nie wchodzi się z bronią.; Pytanie dotyczy broni, nie teczki.
+w kenelle | komu, dla kogo
+w työskentelet | pracujesz (työskennellä)
+w työskentelen | pracuję (työskennellä)
+w yritykselle | dla firmy (yritys + -lle)
+w Poika | Poika (syn; w nazwie firmy: Kauppinen ja Poika)
+w päämajalle | dla centrali (päämaja + -lle)
+w rouva | pani
+w Lahdelle | do Lahti (Lahti + -lle)
+k Hyvä. Kenelle sinä työskentelet? | Dobrze. Dla kogo pracujesz? | Työskentelen yritykselle Kauppinen ja Poika. | Työskentelen päämajalle.;Työskentelen rouva Lahdelle. | „Päämaja” to twoja tajna centrala, nie firma.; Pani Lahti to sekretarka z ambasady.
+w yrityksesi | twoja firma (yritys + -si)
+w myy | sprzedaje (myydä)
+w yritykseni | moja firma (yritys + -ni)
+w leluja | zabawek (forma cząstkowa l. mn.)
+d Hyvä. Mitä sinun yrityksesi myy? | Dobrze. Co sprzedaje twoja firma? | Yritykseni myy leluja. | Powiedz, co sprzedaje twoja „firma” (przykrywka). | Twoja przykrywka to handel zabawkami. | Yritykseni myy leluja!
+w kiintoisaa | ciekawie
+w Turussa | w Turku (Turku + -ssa)
+k Leluja, kiintoisaa! Missä sinun yrityksesi on? | Zabawki, jak ciekawie! Gdzie jest twoja firma? | Yritykseni on Turussa. | Yritykseni myy leluja.;Yritykseni nimi on Kauppinen ja Poika. | „Missä” znaczy „gdzie”, a nie „co sprzedaje”.; „Missä” pyta o miejsce, nie o nazwę.
+w vessa | toaleta
+t Turussa, kaunis kaupunki! Haluatko syödä jotain? | W Turku, piękne miasto! Chcesz coś zjeść? | Ei kiitos. Missä vessa on? | Odmów i zapytaj o toaletę (to pretekst). | „Missä” = gdzie, więc „Missä vessa on?”.
+w yksityinen | prywatny
+w vasemmalle | w lewo (vasen + -lle)
+w oikealle | w prawo (oikea + -lle)
+k Vessa on vasemmalla. Toimisto oikealla on yksityinen. | Toaleta jest po lewej. Gabinet po prawej jest prywatny. | Kiitos, menen vasemmalle. | Kiitos, menen oikealle.;Kiitos, toimisto on kaunis. | Gabinet po prawej jest prywatny, a ty idziesz do toalety po lewej.; Nie wolno ci mówić, że chcesz iść do gabinetu.
+w hauskaa | miłego, zabawnego (forma cząstkowa od hauska)
+e Hauskaa iltaa sitten, herra Kauppinen! | W takim razie miłego wieczoru, panie Kauppinen!
+
+@level 3 | Przesłuchanie | patience=1 typed=0.35 extra=3 hint=bank
+desc Rozdział 3: Przesłuchanie
+partner Herra Koskinen | K
+scene Masz teczkę (kansio) w torbie, ale na korytarzu zatrzymuje cię podejrzliwy ochroniarz, pan Koskinen. Zaraz zapyta o wszystko. Pamiętaj: Kauppinen, kauppias, Turku. Tutaj każda zła odpowiedź kończy misję.
+goal Przekonaj ochroniarza, że jesteś zwykłym gościem, i wyjdź z teczką.
+win Koskinen przepuszcza cię z kwaśną miną. Wychodzisz z ambasady, a teczka w torbie jest ciężka jak ołów.
+partial Koskinen w końcu cię puszcza, ale zapisuje twoje nazwisko w notesie.
+fail Koskinen chwyta cię za ramię: „Tule mukaan!” Misja skończona, zanim naprawdę się zaczęła.
+w seis | stój!
+w teet | robisz (tehdä)
+w etsin | szukam (etsiä)
+w vessaa | toalety (forma cząstkowa od vessa)
+t Seis! Kuka sinä olet? Mitä teet täällä? | Stój! Kim jesteś? Co tu robisz? | Olen vieras. Etsin vessaa. | Powiedz, że jesteś gościem i szukasz toalety. | „Szukać” to etsiä: etsin + forma cząstkowa (vessaa).
+w ollut | był (olla)
+w toimistossa | w gabinecie (toimisto + -ssa)
+w vessassa | w toalecie (vessa + -ssa)
+k Vessa on tuolla. Oletko ollut toimistossa? | Toaleta jest tam. Byłeś w gabinecie? | En, en ole ollut toimistossa. | Kyllä, olen ollut toimistossa.;En, en ole ollut vessassa. | Przyznanie się to koniec przykrywki.; Pytanie dotyczy gabinetu, nie toalety.
+w hmm | hm
+w laukussa | w torbie (laukku + -ssa)
+w laukussani | w mojej torbie (laukku + -ssa + -ni)
+w rahaa | pieniędzy (forma cząstkowa od raha)
+w kansio | teczka, segregator
+k Hmm, hyvä. Mitä sinulla on laukussa? | Hm, dobrze. Co masz w torbie? | Laukussani on vain rahaa ja puhelin. | Laukussani on kansio.;Minulla on laukku. | Teczka w torbie zdradziłaby cię od razu.; Ochroniarz pyta, co jest w torbie, a nie czy masz torbę.
+w asut | mieszkasz (asua)
+w asun | mieszkam (asua)
+d Rahaa ja puhelin, hmm. Mikä sinun nimesi on ja missä asut? | Pieniądze i telefon, hm. Jak masz na imię i gdzie mieszkasz? | Nimeni on Kauppinen ja asun Turussa. | Podaj nazwisko z przykrywki i miasto, w którym mieszkasz. | Kauppinen i Turku to twoja przykrywka.
+w Turku | Turku (miasto)
+k Kauppinen, Turku. Sinä olet agentti, eikö niin? | Kauppinen, Turku. Jesteś agentem, prawda? | En ole agentti. Olen kauppias. | Kyllä, mutta se on salaisuus.;Kyllä, työskentelen päämajalle. | Nawet żartem nie przyznawaj się do tajemnicy.; Przyznanie się do centrali to koniec.
+w soitan | dzwonię (soittaa)
+w tuntee | zna (tuntea)
+w vieraat | goście
+w tunteeko | czy zna (tuntee + -ko)
+w sinut | cię (biernik od sinä)
+w Lahti | Lahti (nazwisko)
+t Kauppias, selvä. Soitan rouva Lahdelle. Hän tuntee kaikki vieraat. Tunteeko hän sinut? | Kupiec, jasne. Zadzwonię do pani Lahti. Zna wszystkich gości. Zna cię? | Kyllä, rouva Lahti tuntee minut. Olen vieras. | Powiedz, że pani Lahti cię zna. | „Tuntee minut” znaczy „zna mnie”.
+w tarvitse | trzeba (ei tarvitse = nie trzeba)
+w suurlähetystössä | w ambasadzie (suurlähetystö + -ssä)
+w nähnyt | widział (nähdä)
+w ketään | nikogo
+d Hyvä, ei tarvitse soittaa. Mutta suurlähetystössä on agentti. Oletko nähnyt ketään? | Dobrze, nie trzeba dzwonić. Ale w ambasadzie jest agent. Widziałeś kogoś? | En ole nähnyt ketään. | Zaprzecz, że kogokolwiek widziałeś. | Ketään = nikogo. Ty sam jesteś tym agentem. | En ole nähnyt ketään!
+w no | no
+w mene | idź (mennä)
+e No niin. Mene kotiin, herra Kauppinen. | No dobrze. Idź do domu, panie Kauppinen.
+
+@level 4 | Walizka i ucieczka | patience=1 typed=0.5 extra=3 hint=letters reward=30
+desc Rozdział 4: Wymiana walizki
+partner Herra Susi | S
+scene Następny ranek, port w Turku. Pan Susi z centrali czeka z walizką pełną pieniędzy. Wymienisz ją na teczkę. Nowe hasło: „Korppi”. Ale ktoś cię śledzi: w tłumie jest zdrajca, który chce dostać teczkę dla siebie.
+goal Wymień teczkę na walizkę, nie daj się zdemaskować zdrajcy i wsiądź na statek.
+win Statek odpływa, a ty stoisz na pokładzie z walizką. Pan Susi macha z nabrzeża: „Hyvää matkaa, Haukka!”
+partial Udało się uciec, ale zdrajca zdążył zobaczyć twoją twarz. Misja zaliczona, lecz twoja przykrywka jest spalona.
+fail Zdrajca był szybszy. Walizka i teczka zniknęły, a ty zostajesz na nabrzeżu z pustymi rękami.
+w tunnussana | hasło (kodowe)
+w Korppi | Korppi (kruk; hasło)
+d Hyvää huomenta. Mikä on tunnussana? | Dzień dobry. Jakie jest hasło? | Tunnussana on Korppi. | Podaj hasło z dzisiejszej misji. | Hasło to tunnussana, a dziś brzmi „Korppi”. | Tunnussana on Korppi!
+w Lahdella | u Lahti (Lahti + -lla)
+k Hyvä. Missä kansio on? | Dobrze. Gdzie jest teczka? | Kansio on laukussani. | Kansio on rouva Lahdella.;Kansio on salaisuus. | Teczkę masz przy sobie, w torbie.; Kontakt pyta, gdzie jest teczka, nie o tajemnicę.
+w rahat | pieniądze (l. mn.)
+w ovat | są (olla)
+w ota | weź (ottaa)
+w matkalaukun | walizkę (biernik)
+t Erinomaista. Tässä on matkalaukku. Rahat ovat sen sisällä. Ota se. | Znakomicie. Oto walizka. Pieniądze są w środku. Weź ją. | Kiitos. Otan matkalaukun. | Podziękuj i weź walizkę. | „Biorę” to otan, a walizka w bierniku: matkalaukun.
+w varo | uważaj (varoa)
+w petturi | zdrajca
+w meitä | nas (forma cząstkowa od me)
+w me | my
+w teemme | robimy (tehdä)
+w lähdemme | wyruszamy, odchodzimy (lähteä)
+w pois | precz, ściągnięty
+w jäämme | zostajemy (jäädä)
+w tänne | tutaj (dokąd)
+w juomaan | pić (3. bezokolicznik: mennä juomaan)
+w puhumme | rozmawiamy (puhua)
+w miehelle | mężczyźnie (mies + -helle)
+k Varo! Tuo mies tuolla on petturi. Hän seuraa meitä. Mitä me teemme? | Uwaga! Ten człowiek tam jest zdrajcą. Idzie za nami. Co robimy? | Lähdemme nopeasti pois. | Jäämme tänne juomaan kahvia.;Puhumme miehelle. | Zdrajca idzie za wami, trzeba uciekać.; Nie rozmawia się ze zdrajcą.
+w vasemmalta | z lewej (vasen + -lta)
+w menemmekö | czy idziemy (menemme + -kö)
+w asemalle | na dworzec (asema + -lle)
+w satamaan | do portu (satama + -an)
+w menemme | idziemy, jedziemy (mennä)
+k Niin, nopeasti! Petturi tulee vasemmalta. Menemmekö vasemmalle asemalle vai oikealle satamaan? | Tak, szybko! Zdrajca idzie z lewej. Idziemy w lewo na dworzec czy w prawo do portu? | Menemme oikealle satamaan. | Menemme vasemmalle asemalle.;Menemme kotiin. | Zdrajca nadchodzi z lewej, więc idziecie w prawo, do portu.; Pytanie jest o port albo dworzec, a nie o dom.
+w anna | daj (antaa)
+w matkalaukkua | walizki (forma cząstkowa od matkalaukku)
+d Seis! Anna matkalaukku minulle! Minulla on ase! | Stój! Daj mi walizkę! Mam broń! | En, en anna sinulle matkalaukkua. | Odmów oddania walizki. | „Dawać” to antaa: en anna + forma cząstkowa. | En, en anna matkalaukkua sinulle!
+w rohkeaa | odważnie (forma cząstkowa)
+t Rohkeaa! Nopeasti, laiva lähtee pian. Onko matkalaukku vielä sinulla? | Odważnie! Szybko, statek zaraz odpływa. Masz jeszcze walizkę? | Kyllä, matkalaukku on vielä minulla. | Potwierdź, że masz jeszcze walizkę. | „Jeszcze” to vielä. | Kyllä, minulla on se vielä.
+w tehty | zrobiony (hyvin tehty = dobra robota)
+w suoritettu | wykonany, zakończony
+e Hyvin tehty, Haukka! Tehtävä on suoritettu. Näkemiin! | Dobra robota, Haukka! Misja zakończona. Do widzenia!
+
+
+@larp zeitreise | Podróż w czasie | Vartija | V | Obudziłeś się w roku 1450 pod murami fińskiego miasta Koivulinna. Nikt nie może się dowiedzieć, że jesteś z przyszłości, bo za dziwne rzeczy i dziwne słowa w średniowieczu grozi stos. | Nie daj się wykryć jako przybysz z przyszłości: unikaj wszystkiego, co nie pasuje do roku 1450, i dotrwaj do końca dnia.
+fee 0
+reward 15
+strict yes
+story yes
+win Burmistrz kiwa głową: „Rehellinen matkustaja!” Nikt nie podejrzewa, skąd naprawdę jesteś. Wieczorem znajdujesz drogę powrotną, a w kieszeni zostaje ci tylko miedziana moneta na pamiątkę.
+partial Udało ci się przetrwać dzień, ale kilka razy ludzie patrzyli na ciebie podejrzliwie. Burmistrz każe cię obserwować, więc wymykasz się z miasta o świcie.
+fail Ktoś zauważył, że nie jesteś stąd. Straż woła: „Noita! Velho!” i musisz uciekać. Podróż w czasie skończyła się wcześniej, niż chciałeś.
+
+@level 1 | Brama miasta | patience=5 typed=0 extra=1 hint=none
+partner Vartija Heikki | H
+desc Rozdział 1: Brama Koivulinnaa
+scene Rok 1450. Stoisz przed wielką drewnianą bramą miasta Koivulinna. Strażnik Heikki zatrzymuje każdego podróżnego i zadaje pytania. Masz na sobie zwykłe ubranie, ale w kieszeniach zostały ci rzeczy z przyszłości.
+goal Odpowiedz na pytania strażnika tak, żeby nie wzbudzić podejrzeń: przedstaw się, powiedz skąd jesteś i jak podróżujesz. Zwróć uwagę na rzeczy, których w 1450 roku jeszcze nie było.
+win Heikki otwiera bramę: „Tervetuloa Koivulinnaan!” Nic nie wzbudziło jego podejrzeń, a ty wchodzisz do miasta.
+partial Heikki w końcu cię wpuszcza, ale przygląda ci się dłużej, niż byś chciał. Wchodzisz do miasta z uczuciem, że ktoś cię obserwuje.
+fail Heikki podnosi halabardę: „Et ole matkustaja!” Brama zamyka się z trzaskiem, a ty uciekasz w las.
+w Koivulinnan | Koivulinny (genetiv od Koivulinna, fikcyjne miasto)
+w portti | bramka, brama
+t Seis! Tämä on Koivulinnan portti. Kuka sinä olet? | Stój! To brama miasta Koivulinna. Kim jesteś? | Olen matkustaja. | Powiedz, że jesteś podróżnikiem. | „Jestem podróżnikiem”: olen matkustaja.
+w Juhana | Juhana (imię, Jan)
+w Kevin | Kevin (imię współczesne)
+w Jessica | Jessica (imię współczesne)
+k Matkustaja, selvä. Mikä sinun nimesi on? | Podróżnik, jasne. Jak masz na imię? | Nimeni on Juhana. | Nimeni on Kevin.;Nimeni on Jessica. | Kevin to współczesne imię, w 1450 roku nikt tak nie nazywał dzieci.; Jessica to nowoczesne, angielskie imię. W 1450 roku popularne były Juhana, Heikki czy Pekka.
+w tulet | przychodzisz (tulla)
+w tulevaisuudesta | z przyszłości (tulevaisuus + -sta)
+w Amerikasta | z Ameryki (Amerikka + -sta)
+k Juhana, hyvä nimi. Mistä sinä tulet? | Juhana, dobre imię. Skąd pochodzisz? | Tulen Puolasta. | Tulen tulevaisuudesta.;Tulen Amerikasta. | Przyznanie się do przyszłości to dekonspiracja.; Ameryki jeszcze nie odkryto, Kolumb wypłynie dopiero w 1492 roku.
+w matkustat | podróżujesz (matkustaa)
+w jalkaisin | pieszo
+w hevosella | koniem, konno (hevonen + -lla)
+w matkustan | podróżuję (matkustaa)
+w autolla | samochodem (auto + -lla)
+w junalla | pociągiem (juna + -lla)
+k Se on kaukana. Miten sinä matkustat? Jalkaisin vai hevosella? | To daleko. Jak podróżujesz? Pieszo czy konno? | Matkustan hevosella. | Matkustan autolla.;Matkustan junalla. | Samochodu w 1450 roku nie ma. Strażnik pomyśli, że jesteś szalony.; Pociągów też jeszcze nie ma, pierwsza kolej pojawi się dopiero w XIX wieku.
+w näytä | pokaż (näyttää)
+w laukkusi | twoja torba (laukku + -si)
+w olutta | piwa (forma cząstkowa od olut)
+w luottokortti | karta kredytowa
+k Hevosella, selvä. Näytä minulle laukkusi. Mitä siellä on? | Konno, jasne. Pokaż mi swoją torbę. Co tam jest? | Siellä on vain leipää ja olutta. | Siellä on puhelin.;Siellä on luottokortti. | Telefon w 1450 roku? Strażnik zawołałby straż.; Karta kredytowa wyglądałaby dla niego jak magia.
+w voit | możesz (voida)
+w sisään | do środka
+w nälkä | głód
+w majatalon | karczmy (genetiv od majatalo)
+w isäntä | gospodarz
+t Leipää ja olutta, hyvä. Voit mennä sisään. Onko sinulla nälkä? | Chleb i piwo, dobrze. Możesz wejść. Jesteś głodny? | Kyllä, minulla on nälkä. Missä majatalon isäntä on? | Powiedz, że jesteś głodny, i zapytaj, gdzie jest karczmarz. | „Gdzie” to missä, a „gospodarz karczmy” to majatalon isäntä.
+w majatalo | karczma
+w oleskelua | pobytu (forma cząstkowa od oleskelu)
+w Koivulinnassa | w Koivulinnie (Koivulinna + -ssa)
+e Heti vasemmalla on majatalo. Hyvää oleskelua Koivulinnassa! | Zaraz po lewej jest karczma. Miłego pobytu w Koivulinnie!
+
+@level 2 | Gospoda | patience=5 typed=0.15 extra=3 hint=bank
+partner Isäntä Konsta | K
+desc Rozdział 2: Karczma „Punainen härkä”
+scene Wchodzisz do karczmy. Gospodarz Konsta jest ciekawski i pyta o wszystko: co chcesz zjeść, jak podróżujesz i czego potrzebujesz na noc. W karczmie nie ma elektryczności ani nowoczesnych napojów.
+goal Zamów jedzenie i picie, które mogli podać w średniowieczu, ustal nocleg i nie wspomnij o niczym z przyszłości.
+win Konsta klepie cię po plecach: „Olet hyvä vieras!” Dostajesz miejsce przy kominku i pełny talerz. Nikt nie podejrzewa, że jesteś z przyszłości.
+partial Konsta przygląda ci się podejrzliwie, ale podaje jedzenie. Śpisz źle, bo wciąż myślisz o tym, co powiedziałeś.
+fail Konsta woła głośno: „Mikä on wifi?!” Goście odwracają się w twoją stronę, a ty ledwo uciekasz tylnym wyjściem.
+w majataloon | do karczmy (majatalo + -on)
+t Tervetuloa majataloon! Mitä haluat syödä? Meillä on leipää ja keittoa. | Witaj w karczmie! Co chcesz zjeść? Mamy chleb i zupę. | Haluan leipää ja keittoa, kiitos. | Zamów chleb i zupę. | „Chleb i zupa”: leipää ja keittoa (forma cząstkowa).
+w juot | pijesz (juoda)
+w viiniä | wina (forma cząstkowa od viini)
+w colaa | coli (forma cząstkowa od cola)
+k Leipää ja keittoa, hyvä. Entä mitä juot? Meillä on olutta, viiniä ja vettä. | Chleb i zupa, dobrze. A co pijesz? Mamy piwo, wino i wodę. | Juon olutta. | Haluan kahvia.;Haluan colaa. | Kawa dotarła do Europy dopiero w XVII wieku.; Coca-Cola powstała w XIX wieku. W 1450 roku nikt jej nie zna.
+w matkustanut | podróżował (matkustaa)
+w kauas | daleko (dokąd)
+t Olutta, hyvä. Olet matkustanut kauas. Kuinka kauan olet matkustanut? | Piwo, dobrze. Daleko podróżowałeś. Jak długo już jedziesz? | Olen matkustanut jo kymmenen päivää. | Powiedz, że podróżujesz już dziesięć dni. | „Dziesięć dni”: kymmenen päivää.
+w aika | czas
+w torille | na rynek, na targ (tori + -lle)
+w tuletko | czy przyjdziesz (tulet + -ko)
+w mukaan | razem, ze mną (tulla mukaan)
+w kärryillä | wozem (kärryt + -llä)
+w polkupyörällä | rowerem (polkupyörä + -llä)
+k Kymmenen päivää, se on pitkä aika! Huomenna menen torille. Tuletko mukaan? Menemme kärryillä. | Dziesięć dni, to długo! Jutro idę na targ. Pójdziesz ze mną? Pojedziemy wozem. | Kyllä, mielellään. Menemme kärryillä. | Kyllä, menemme autolla.;Ei, menen polkupyörällä. | Samochodu w 1450 roku nie ma.; Rower wynaleziono dopiero w XIX wieku. W 1450 roku jeździ się wozem albo konno.
+w huoneessa | w pokoju (huone + -ssa)
+w kynttilän | świecę (biernik od kynttilä)
+w pistorasian | gniazdko (biernik od pistorasia)
+k Hyvä. Huoneessa on sänky. Haluatko vielä jotain? | Dobrze. W pokoju jest łóżko. Chcesz jeszcze coś? | Kyllä, haluan kynttilän, kiitos. | Onko teillä internet?;Haluan pistorasian. | W 1450 roku nie ma internetu.; Gniazdka elektryczne wymyślono setki lat później. Wieczorem świeci się świecami.
+w kynttilä | świeca
+w vuonna | w roku (vuosi + -na)
+w neljäsataaviisikymmentä | czterysta pięćdziesiąt
+w kippis | na zdrowie!
+t Kynttilä, mielellään. Ja tässä on vielä olutta: hyvää olutta vuonna tuhat neljäsataaviisikymmentä! Kippis! | Świeca, proszę bardzo. A tu jeszcze piwo: dobre piwo w roku 1450! Na zdrowie! | Kippis! | Wznieś toast. | „Na zdrowie” to kippis.
+w aamulla | rano
+e Hyvää yötä! Huomenna aamulla menemme torille. | Dobranoc! Jutro rano jedziemy na targ.
+
+@level 3 | Targ | patience=4 typed=0.3 extra=3 hint=bank reward=25
+partner Kauppias Aili | A
+desc Rozdział 3: Targ w Koivulinnassa
+scene Następnego ranka na rynku jest tłoczno. Kupcowa Aili sprzedaje chleb i ser. Przy płaceniu liczą się tylko monety, a ludzie przyglądają się twoim ubraniom.
+goal Kup chleb i ser, zapłać tak, jak płaci się w 1450 roku, i wyjaśnij, skąd masz dziwne ubranie.
+win Aili wsuwa ci do koszyka jabłko: „Ystävälliselle matkustajalle!” Targ nic nie podejrzewa, a w oddali widać już ratusz.
+partial Aili w końcu sprzedała ci chleb i ser, ale kilka osób szepcze za twoimi plecami. Zbliża się ratusz.
+fail Aili krzyczy: „Mitkä nämä vaatteet ovat? Mikä on euro?” Tłum się zbiega, a ty uciekasz między straganami.
+w omenoita | jabłek (forma cząstkowa l. mn.)
+t Hyvää päivää! Mitä haluat ostaa? Leipää, juustoa vai omenoita? | Dzień dobry! Co chcesz kupić? Chleb, ser czy jabłka? | Haluan leipää ja juustoa. | Poproś o chleb i ser. | „Chleb i ser” w formie cząstkowej: leipää ja juustoa.
+w äyriä | äyri (dawna moneta; forma cząstkowa)
+t Leipää ja juustoa, hyvä. Leipä maksaa kaksi äyriä ja juusto kolme äyriä. | Chleb i ser, dobrze. Chleb kosztuje dwa äyri, a ser trzy äyri. | Paljonko se maksaa yhteensä? | Zapytaj, ile to kosztuje razem. | „Razem” to yhteensä.
+w tekee | to daje, robi (tehdä)
+w maksan | płacę (maksaa)
+w kolikoilla | monetami (kolikko + -lla)
+w euroilla | w euro, euro (euro + -lla)
+w kortilla | kartą (kortti + -lla)
+k Se tekee viisi äyriä. Miten haluat maksaa? | To będzie pięć äyri. Jak chcesz zapłacić? | Maksan kolikoilla. | Maksan euroilla.;Maksan kortilla. | Euro wprowadzono dopiero w 2002 roku.; Karty płatnicze to wynalazek XX wieku. W 1450 roku płaci się monetami.
+w kolikot | monety
+w käyvät | są w porządku, pasują (käydä)
+w vaatteesi | twoje ubrania (vaate + -si)
+w outoja | dziwne (l. mn., forma cząstkowa)
+w ne | one, oni (l. mn.)
+w muotia | mody (forma cząstkowa od muoti)
+w idästä | ze wschodu (itä + -stä)
+w t-paita | koszulka
+w farkut | dżinsy
+w lenkkarit | adidasy, buty sportowe
+k Kolikot käyvät. Vaatteesi ovat outoja. Mitä ne ovat? | Monety są w porządku. Twoje ubrania są dziwne. Co to jest? | Se on muotia idästä. | Se on t-paita.;Ne ovat farkut ja lenkkarit. | T-shirty pojawiły się w XX wieku, a Aili nigdy takiego nie widziała.; Dżinsy i adidasy to rzeczy z dwudziestego wieku.
+w pormestari | burmistrz
+w haluaa | chce (haluta)
+t Idästä, vai niin. Pormestari haluaa nähdä sinut. Tuletko mukaan? | Ze Wschodu, tak. Burmistrz chce cię zobaczyć. Idziesz ze mną? | Kyllä, tulen mukaan. | Zgódź się i idź z nią. | „Idę z tobą” to tulen mukaan.
+w tule | przyjdź (tulla)
+w kaupungintalo | ratusz
+e No tule sitten! Kaupungintalo on tuolla. | No to chodź! Ratusz jest tam.
+
+@level 4 | Burmistrz | patience=4 typed=0.5 extra=4 hint=letters reward=25
+partner Pormestari Urho | U
+desc Rozdział 4: W ratuszu
+scene W ratuszu czeka burmistrz Urho. Słyszał dziwne plotki o obcym przybyszu. Zauważył coś błyszczącego na twoim nadgarstku i zadaje pytania, a tobie została tylko jedna droga: wrócić do bramy, gdzie wszystko się zaczęło.
+goal Odpowiedz na pytania burmistrza tak, żeby nie zdradzić zegarka, telefonu ani przyszłości, i wróć bezpiecznie do bramy.
+win Burmistrz macha ręką: „Hyvä, hyvä, mene vain!” Wracasz do bramy, w powietrzu coś migocze i budzisz się we własnym czasie. Na dłoni masz äyri z 1450 roku.
+partial Burmistrz pozwala ci odejść, ale pod nosem mruczy o czarodziejach. Dopiero za bramą migotanie powietrza zabiera cię do domu.
+fail Burmistrz woła strażników: „Taikalaatikko! Hän tulee tulevaisuudesta!” Nie zdążysz dojść do bramy.
+t Hyvää päivää! Minä olen Koivulinnan pormestari. Kuka sinä olet? | Dzień dobry! Jestem burmistrzem Koivulinny. Kim jesteś? | Olen Juhana, matkustaja Puolasta. | Przedstaw się: Juhana, podróżnik z Polski. | „Z Polski” to Puolasta.
+w kädessäsi | w twojej ręce (käsi → kädessä + -si)
+w rannekoru | bransoleta
+w siinä | w tym, na nim
+w paristo | bateria
+w digitaalinen | cyfrowy
+k Juhana, vai niin. Mikä tuo on sinun kädessäsi? | Juhana, tak. Co to jest na twojej ręce? | Se on vain rannekoru. | Se on rannekello ja siinä on paristo.;Se on digitaalinen kello. | Zegarek z baterią to wynalazek nowoczesny.; Cyfrowy zegarek wyglądałby dla niego jak czary. W 1450 roku są tylko wieże z zegarami i klepsydry.
+w sinullahan | przecież masz (sinulla + -han)
+w kelloa | zegarka (forma cząstkowa od kello)
+w osoittaa | wskazuje (osoittaa)
+w keskipäivää | południa (forma cząstkowa od keskipäivä)
+w katson | patrzę (katsoa)
+w puhelinta | telefonu (forma cząstkowa od puhelin)
+k Vain rannekoru? Paljonko kello on? Sinullahan on kello. | Tylko bransoleta? Która godzina? Przecież masz zegarek. | Minulla ei ole kelloa. Aurinko osoittaa keskipäivää. | Kello on neljätoista kolmekymmentä.;Katson puhelinta. | Taka dokładna godzina z minutami to nowoczesny sposób liczenia czasu.; Telefon to rzecz z przyszłości.
+w kaksituhatta | dwa tysiące
+w tiedä | wiem (ei tiedä: nie wiem)
+k Keskipäivä, hyvä. Mikä vuosi nyt on? | Południe, dobrze. Jaki jest teraz rok? | Nyt on vuosi tuhat neljäsataaviisikymmentä. | Nyt on vuosi kaksituhatta.;En tiedä. | Jeśli podasz rok z przyszłości, zdradzisz się natychmiast.; Nie znać roku? Burmistrz uznałby, że ukrywasz coś.
+w sanotaan | mówi się (sanoa)
+w taikalaatikko | magiczna skrzynka
+w totta | prawdy (forma cząstkowa od tosi)
+w taikalaatikkoa | magicznej skrzynki (forma cząstkowa)
+k Hyvä. Sanotaan, että sinulla on taikalaatikko. Onko se totta? | Dobrze. Mówią, że masz magiczną skrzynkę. Czy to prawda? | Ei, minulla ei ole taikalaatikkoa. | Kyllä, se on puhelin.;Kyllä, tulen tulevaisuudesta. | Przyznanie się do telefonu zakończy rozmowę.; Przyznanie się do podróży w czasie to najgorsza odpowiedź.
+w myöhä | późno
+w minne | dokąd
+w portille | do bramki (portti + -lle)
+w aikakoneelle | do wehikułu czasu (aikakone + -lle)
+w autolle | do samochodu (auto + -lle)
+k Hyvä. On jo myöhä. Minne sinä nyt menet? | Dobrze. Jest już późno. Dokąd teraz idziesz? | Menen takaisin portille. | Menen aikakoneelle.;Menen autolle. | Wehikuł czasu to najgorsza odpowiedź.; Samochodu w 1450 roku nie ma.
+e Hyvä, mene sitten. Hyvää matkaa! | Dobrze, to idź. Szczęśliwej podróży!
+
+
+@larp politiker | Polityk | Äänestäjä | Ä | Jesteś skorumpowanym politykiem. Dawno temu pan Lintunen dał ci kopertę, a „käkiskandaali” wraca na każdym szczeblu twojej kariery. Wyborcy ci wierzą… i przestają… i zapominają. | Przekonaj wyborców, że nadajesz się na stanowisko. Nigdy się nie przyznaj i nie sprzeczaj sam sobie.
+fee 0
+reward 30
+strict yes
+story yes
+disclaimer Satyra. Wszystkie postacie, partie i afery są zmyślone; ewentualne podobieństwo do prawdziwych osób jest przypadkowe.
+win Wygrywasz wybory! Nikt już nie pamięta koperty od pana Lintusa. Przed gmachem tłum skanduje twoje nazwisko, a ty obiecujesz „uczciwą politykę”. Pan Lintunen macha z ostatniego rzędu.
+partial Wygrywasz o włos. Dziennikarze wciąż grzebią w aktach, ale ty już podpisujesz pierwsze dokumenty. Kłamstwo trzyma się jeszcze na słowo honoru.
+fail Wiarygodność spadła do zera. Wyborcy wyciągają stare akta, a z tłumu ktoś krzyczy: „Kirjekuori!” Twoja kariera kończy się na pierwszej stronie gazet.
+
+@level 1 | Kyläyhdistys | patience=4 cap=6 typed=0 extra=1 hint=none
+desc Szczebel 1: przewodniczący stowarzyszenia wsi Pikkupuro
+partner Rouva Salonen | S
+scene Zebranie wiejskie w sali szkolnej we wsi Pikkupuro. Chcesz zostać przewodniczącym stowarzyszenia wsi (kyläyhdistyksen puheenjohtaja). Pani Salonen zadaje pytania, a cała wieś słucha. Wszyscy pamiętają, że pan Lintunen naprawił drogę, i że ktoś widział kopertę…
+goal Przekonaj wieś, że jesteś uczciwy, i zaprzecz plotkom o kopercie.
+win Wieś klaszcze. Zostajesz przewodniczącym. Pan Lintunen, w pierwszym rzędzie, puszcza do ciebie oko.
+partial Wygrywasz jednym głosem. Pani Salonen patrzy na ciebie podejrzliwie, ale podnosi rękę.
+fail Wieś ma dość. Pani Salonen mówi: „Valitsemme jonkun toisen.” Kończysz karierę, zanim się zaczęła.
+w kyläyhdistyksen | stowarzyszenia wsi (kyläyhdistys + -n)
+w puheenjohtajaksi | na przewodniczącego (-ksi: „na”)
+t Hyvää iltaa! Haluatko kyläyhdistyksen puheenjohtajaksi? | Dobry wieczór! Chcesz zostać przewodniczącym stowarzyszenia wsi? | Kyllä, haluan kyläyhdistyksen puheenjohtajaksi. | Powiedz, że chcesz zostać przewodniczącym. | „Na przewodniczącego” to puheenjohtajaksi (końcówka -ksi: „jako”, „na”).
+w rehellinen | uczciwy
+t Hyvä. Oletko sinä rehellinen? | Dobrze. Jesteś uczciwy? | Kyllä, olen aina rehellinen. | Zapewnij, że jesteś zawsze uczciwy. | „Zawsze” to aina. |  | gain=1
+w kiva | miły
+w rikki | zepsuty
+w korjaan | naprawiam (korjata)
+w tien | drogę (biernik od tie)
+t Aina rehellinen, kiva. Tie on rikki. Mitä teet? | Zawsze uczciwy, miło. Droga jest zepsuta. Co zrobisz? | Korjaan tien. | Obiecaj, że naprawisz drogę. | „Naprawiam” to korjaan; droga w bierniku: tien. |  | gain=1
+w Lintunen | Lintunen (nazwisko; lintu = ptak)
+w antanut | dał (antaa)
+w kirjekuoren | kopertę (biernik od kirjekuori)
+w tunnen | znam (tuntea)
+w Lintusen | Lintunena (genetiv/biernik od Lintunen)
+w tuskin | ledwo
+t Herra Lintunen on antanut sinulle kirjekuoren! Joku on nähnyt sen! | Pan Lintunen dał ci kopertę! Ktoś to widział! | Se on valhe! Tunnen herra Lintusen tuskin. | Zaprzecz: to kłamstwo, ledwo znasz pana Lintunena. | Dopełnienie „pana Lintunena” to herra Lintusen. „Tuskin” znaczy „ledwo”. |  | shift=-2 loss=2
+w oli | był, miał
+w olemme | jesteśmy (olla)
+w unohtaneet | zapomnieli (unohtaa)
+w teille | wam (te + -lle)
+w kiitollinen | wdzięczny
+t Se oli kauan sitten. Olemme unohtaneet sen. | No cóż… to było dawno. Zapomnieliśmy o tym. | Kiitos, olen teille kiitollinen. | Podziękuj wyborcom za wyrozumiałość. | „Kiitollinen” to wdzięczny; teille = wam. |  | shift=+2
+w kestä | trwa (ei kestä = nie ma za co)
+w kunnassa | w gminie (kunta + -ssa)
+w velkoja | długów (forma cząstkowa l. mn.)
+w säästän | oszczędzam (säästää)
+w lisää | więcej, dodać
+o Ei kestä. Kunnassa on paljon velkoja. Mitä teet? | Nie ma za co. W gminie jest dużo długów. Co zrobisz? | Säästän rahaa ja olen rehellinen. | Otan lisää rahaa.;En tiedä. | Dobra odpowiedź obiecuje oszczędzanie i uczciwość.; Polityk, który mówi „wezmę więcej pieniędzy”, nie brzmi wiarygodnie.; „Nie wiem” nie przekona wyborców. | gain=1
+w olemaan | być (3. bezokolicznik: tulla olemaan)
+w meille | nam (me + -lle)
+t Tuletko olemaan rehellinen meille? | Czy będziesz wobec nas uczciwy? | Kyllä, olen aina rehellinen teille. | Obiecaj uczciwość wobec wyborców. | „Wobec was” to teille (końcówka -lle). |  | gain=1
+w äänestämme | głosujemy (äänestää)
+w puheenjohtaja | przewodniczący
+e Sitten äänestämme sinua! Tervetuloa, puheenjohtaja! | Wybieramy więc ciebie! Witamy, przewodniczący!
+
+@level 2 | Kaupunginvaltuusto | patience=4 cap=6 typed=0.2 extra=2 hint=bank
+desc Szczebel 2: radny miejski
+partner Rouva Rinne | R
+scene Miasto Uusikaupunki. Jesteś kandydatem do rady miejskiej (kaupunginvaltuusto). Dziennikarka, pani Rinne, pyta o „biznesmenów” i o to, skąd masz nowy samochód.
+goal Zaprzecz, że brałeś pieniądze, i nie daj się złapać na kłamstwie.
+win Pani Rinne zamyka notes: „Hyvä, ei lisäkysymyksiä.” Zostajesz radnym. Pan Lintunen gratuluje przez telefon.
+partial Zostajesz radnym, ale pani Rinne mówi: „Jatkan selvittelyä.” Będzie dalej drążyć.
+fail Wywiad ląduje w gazecie pod tytułem „Valtuutettu ja kirjekuori”. Nikt na ciebie nie głosuje.
+w toimittaja | dziennikarz
+w kaupunginvaltuutetuksi | na radnego miejskiego (-ksi: „na”)
+t Hyvää päivää, olen toimittaja. Haluatko kaupunginvaltuutetuksi? | Dzień dobry, jestem dziennikarką. Chcesz zostać radnym? | Kyllä, haluan kaupunginvaltuutetuksi. | Potwierdź, że chcesz zostać radnym. | „Radnym” w formie -ksi: kaupunginvaltuutetuksi. |  | gain=1
+w tunnet | znasz (tuntea)
+w liikemies | biznesmen
+w ystäväsi | twój przyjaciel (ystävä + -si)
+w tuttava | znajomy
+t Selvä. Tunnet liikemies Lintusen. Onko hän ystäväsi? | Jasne. Znasz biznesmena Lintunena. Czy to twój przyjaciel? | Ei, hän on vain tuttava. | Zaprzecz: to tylko znajomy. | „Vain” = tylko; „tuttava” = znajomy. |  | gain=1
+w sait | dostałeś (saada)
+w ostin | kupiłem (ostaa)
+w rehellisesti | uczciwie
+w auton | samochód (biernik od auto)
+t Vain tuttava, vai niin. Sinulla on uusi auto. Mistä sait rahat? | Tylko znajomy, tak. Masz nowy samochód. Skąd masz pieniądze? | Ostin sen rehellisesti. | Powiedz, że kupiłeś go uczciwie. | „Kupiłem” to ostin (czas przeszły), „uczciwie” to rehellisesti. | Ostin auton rehellisesti.
+w koskaan | kiedykolwiek, nigdy
+w ottanut | wziął (ottaa)
+w lahjusta | łapówki (forma cząstkowa od lahjus)
+t Rehellisesti, selvä. Oletko koskaan ottanut lahjusta? | Uczciwie, jasne. Czy kiedykolwiek wziąłeś łapówkę? | En ole koskaan ottanut lahjusta. | Zaprzecz, że kiedykolwiek brałeś łapówki. | Przeczenie: en ole koskaan ottanut + forma cząstkowa. |  | loss=2
+w mielenkiintoista | ciekawe
+w kirjekuori | koperta
+w näitä | tych (forma cząstkowa od nämä)
+w ihmisiä | ludzi (forma cząstkowa l. mn.)
+t Mielenkiintoista. Tässä on valokuva. Siinä olet sinä, herra Lintunen ja kirjekuori. | Ciekawe. Oto zdjęcie. Jesteś na nim ty, pan Lintunen i koperta. | En tunne näitä ihmisiä. | Powiedz, że nie znasz tych ludzi. | „Näitä ihmisiä” = tych ludzi (forma cząstkowa po przeczeniu). |  | shift=-2
+w äänestäjät | wyborcy
+w unohtavat | zapomną, zapominają (unohtaa)
+t Valokuva on vanha. Äänestäjät unohtavat sen pian. | Zdjęcie jest stare. Wyborcy szybko o tym zapomną. | Valokuva ei ole tärkeä. | Zlekceważ zdjęcie: nie jest ważne. | „Tärkeä” = ważny; „ei ole tärkeä” = nie jest ważne. |  | shift=+2
+w eräs | pewien
+w todistaja | świadek
+w sanoo | mówi (sanoa)
+w otit | wziąłeś (ottaa)
+w valehtelee | kłamie (valehdella)
+w oikeassa | mający rację (olla oikeassa)
+o Eräs todistaja sanoo, että otit rahaa. | Pewien świadek twierdzi, że wziąłeś pieniądze. | Se ei ole totta. Todistaja valehtelee. | Kyllä, todistaja on oikeassa.;Minä olen todistaja. | Zaprzeczasz i nazywasz świadka kłamcą.; Przyznajesz się, więc przegrywasz.; Świadkiem jest ona, a nie ty. | gain=1
+w kirjoitan | piszę (kirjoittaa)
+w muistiin | do pamięci, na piśmie (kirjoitan muistiin = zapisuję)
+w syytön | niewinny
+t Hyvä, kirjoitan sen muistiin. Haluatko vielä sanoa jotain? | Dobrze, zapiszę to. Chcesz jeszcze coś dodać? | Kyllä, olen syytön. | Powiedz na koniec, że jesteś niewinny. | „Syytön” = niewinny. |  | gain=1
+w sanoit | powiedziałeś (sanoa)
+e Kirjoitan sen, mitä sanoit. Näkemiin! | Napiszę, co powiedziałeś. Do widzenia!
+
+@level 3 | Pormestari | patience=4 cap=6 typed=0.4 extra=2 hint=bank
+desc Szczebel 3: burmistrz
+partner Tohtori Laine | L
+scene W ratuszu miasta Uusikaupunki. Prokurator doktor Laine bada przetarg (kilpailutus) na nowy most. Firma pana Lintunena wygrała dziwnie łatwo, a w aktach wraca „käkiskandaali”.
+goal Wyjdź z przesłuchania jako burmistrz, nie przyznając się do niczego.
+win Doktor Laine zamyka teczkę: „Ei näyttöä. Asia on loppu.” Zostajesz burmistrzem, a most otwiera się z pompą.
+partial Teczka zostaje otwarta, ale prokurator nie ma dowodów. Zostajesz burmistrzem z cieniem podejrzeń.
+fail Doktor Laine kładzie na stole kopertę i zdjęcie. „Pidätän sinut!” – mówi. Kończysz w areszcie.
+w syyttäjä | prokurator
+w Laine | Laine (nazwisko prokuratora)
+w kuulustelu | przesłuchanie
+w asianajajani | mój adwokat (asianajaja + -ni)
+t Olen syyttäjä Laine. Tämä on kuulustelu. | Jestem prokuratorem Laine. To jest przesłuchanie. | Haluan nähdä asianajajani. | Poproś o swojego adwokata. | „Mój adwokat” w bierniku: asianajajani. |  | gain=1
+w hänelle | jemu, jej (hän + -lle)
+w voitti | wygrał (voittaa)
+w sillan | mostu (genetiv od silta)
+w kilpailutuksen | przetargu (biernik od kilpailutus)
+w sillä | on, ona (ta firma); tym
+w paras | najlepszy
+w tarjous | oferta
+t Voit soittaa hänelle. Herra Lintusen yritys voitti sillan kilpailutuksen. Miksi? | Możesz do niego zadzwonić. Firma pana Lintunena wygrała przetarg na most. Dlaczego? | Sillä oli paras tarjous. | Wyjaśnij, że miała najlepszą ofertę. | „Sillä” = ona (ta firma); „oli” = miała. |  | gain=1
+w kysymyksiä | pytań (forma cząstkowa l. mn.)
+w lausunnon | zeznanie (biernik od lausunto)
+w kieltäydyn | odmawiam (kieltäytyä)
+w antamasta | od dawania (antaa; kieltäytyä antamasta)
+w lausuntoa | zeznania (forma cząstkowa)
+t Paras tarjous, vai niin. Meillä on paljon kysymyksiä. Haluatko antaa lausunnon? | Najlepsza oferta, tak. Mamy wiele pytań. Chcesz złożyć zeznanie? | Kieltäydyn antamasta lausuntoa. | Odmów składania zeznań. | „Kieltäydyn antamasta lausuntoa” = odmawiam złożenia zeznań (prawo do milczenia). |  | shift=-1
+w siihen | do tego, na to (se + -hin)
+w oikeus | prawo
+w todisteita | dowodów (forma cząstkowa l. mn.)
+w epäilyä | podejrzenia (forma cząstkowa od epäily)
+w molemmat | oboje, obaj
+w tiedämme | wiemy (tietää)
+t Sinulla on siihen oikeus. Mutta ilman todisteita ei ole epäilyä. Sen me molemmat tiedämme. | Masz do tego prawo. Ale bez dowodów nie ma podejrzenia. Oboje to wiemy. | Sinulla ei ole todisteita. | Powiedz prokuratorowi, że nie ma dowodów. | „Ei ole todisteita” = nie ma dowodów (forma cząstkowa). |  | shift=+2
+w syyte | oskarżenie, akt oskarżenia
+w silti | mimo to, jednak
+w sanot | mówisz (sanoa)
+w syyllinen | winny
+w tein | zrobiłem (tehdä)
+o Syyte voi silti tulla. Mitä sanot siihen? | Akt oskarżenia może jednak być. Co na to powiesz? | Olen syytön. | Olen syyllinen.;Minä tein sen. | „Syytön” = niewinny.; „Syyllinen” = winny, a to przyznanie.; „Minä tein sen” = to ja to zrobiłem, czyli przyznanie się. | gain=1
+w antoi | dał (antaa)
+w kirjekuorta | koperty (forma cząstkowa)
+t Herra Lintunen sanoo, että hän antoi sinulle kirjekuoren. | Pan Lintunen mówi, że dał ci kopertę. | Se on valhe! En ole koskaan ottanut kirjekuorta. | Zaprzecz: to kłamstwo, nigdy nie wziąłeś koperty. | Przeczenie: en ole ottanut + forma cząstkowa kirjekuorta. |  | shift=-2 loss=2
+w sano | powiedz (sanoa)
+w kerran | raz
+w valan | przysięgi (genetiv od vala; valan alla = pod przysięgą)
+w Lintuselta | od Lintunena (Lintunen + -lta)
+d Sano se sitten vielä kerran valan alla. Oletko ottanut rahaa herra Lintuselta? | Powiedz to jeszcze raz pod przysięgą. Czy wziąłeś pieniądze od pana Lintunena? | En, en ole ottanut rahaa herra Lintuselta. | Zaprzeczaj pod przysięgą: nie wziąłeś od niego pieniędzy. | „Od pana” to herra Lintuselta (końcówka -lta: „od”). Jedna wpadka i koniec.
+w enää | już (w przeczeniu: nie już)
+e Hyvä. Olet pormestari. Minulla ei ole enää kysymyksiä. | Dobrze. Jesteś burmistrzem. Nie mam więcej pytań.
+
+@level 4 | Kansanedustaja | patience=4 cap=6 typed=0.6 extra=2 hint=letters
+desc Szczebel 4: poseł
+partner Rouva Ahonen | A
+scene Parlament krajowy. Jesteś posłem (kansanedustaja), a komisja śledcza wzywa cię jako świadka. Przewodnicząca, pani Ahonen, mówi o „käkiskandaalista”. Prawnicy mają dla ciebie nowe słowa: todistaja, vala, koskemattomuus.
+goal Odpowiadaj pod przysięgą tak, by nikt nie dowiódł, że kłamiesz.
+win Pani Ahonen: „Todistus on päättynyt.” Wychodzisz z sali z uniesioną głową. Komisja nic nie ma.
+partial Komisja kończy pracę bez wniosków, ale jeden członek zapisał w notatniku: „Tarkista myöhemmin!”
+fail Komisja nakazuje ci wyjaśnić sprzeczność. Zaplątałeś się, a prasa pisze o „kansanedustaja-valehtelijasta”.
+w valiokuntaan | do komisji (valiokunta + -an)
+w tiedän | wiem (tietää)
+w puhun | mówię (puhua)
+t Tervetuloa valiokuntaan. Olet valan alla. | Witamy w komisji. Zeznajesz pod przysięgą. | Kyllä, tiedän. Puhun totta. | Potwierdź i zapewnij, że mówisz prawdę. | „Mówić prawdę” to puhua totta. „Pod przysięgą” to valan alla. |  | gain=1
+w kansanedustajana | jako poseł (kansanedustaja + -na)
+w koskemattomuus | immunitet
+w luopua | zrzec się
+w siitä | z tego, od tego (se + -stä)
+w koskemattomuuteni | mój immunitet (koskemattomuus + -ni)
+t Hyvä. Kansanedustajana sinulla on koskemattomuus. Haluatko luopua siitä? | Dobrze. Jako poseł masz immunitet. Chcesz się go zrzec? | En, haluan pitää koskemattomuuteni. | Odmów zrzeczenia się immunitetu. | „Pitää” = zachować; „koskemattomuuteni” = mój immunitet. |  | shift=-1
+w lausuntosi | twoje zeznanie (lausunto + -si)
+w ristiriidassa | w sprzeczności (olla ristiriidassa)
+w asiakirjojen | dokumentów (genetiv l. mn.)
+w selität | wyjaśniasz (selittää)
+w mitään | niczego, żadnych (w przeczeniu)
+w salattavaa | do ukrycia (forma cząstkowa)
+t Lausuntosi on ristiriidassa asiakirjojen kanssa. Miten selität sen? | Twoje zeznanie jest sprzeczne z dokumentami. Jak to wyjaśnisz? | Minulla ei ole mitään salattavaa. | Powiedz, że nie masz nic do ukrycia. | „Minulla ei ole mitään salattavaa” = nie mam nic do ukrycia. |  | loss=2
+w eivät | nie (3. os. l. mn.)
+w muista | pamiętam (muistaa; en muista = nie pamiętam)
+w sitä | tego (forma cząstkowa od se)
+w menneisyyttä | przeszłości (forma cząstkowa od menneisyys)
+t Se oli kauan sitten. Äänestäjät eivät enää muista sitä. | To było dawno. Wyborcy już o tym nie pamiętają. | Se on menneisyyttä. | Machnij ręką: to przeszłość. | „Menneisyys” = przeszłość. |  | shift=+2
+w kirjettä | listu (forma cząstkowa od kirje)
+w kirjoitin | napisałem (kirjoittaa)
+w kirjeen | list (biernik od kirje)
+w kirjoitti | napisał (kirjoittaa)
+o Tässä on herra Lintusen kirje. Tunnetko sen? | Oto list od pana Lintunena. Znasz go? | En tunne sitä kirjettä. | Kyllä, kirjoitin sen kirjeen itse.;Asianajajani kirjoitti sen kirjeen. | Zaprzeczasz, że znasz ten list.; Przyznajesz się, że to ty napisałeś list: to błąd.; Zwalanie na adwokata nie jest wiarygodne. | gain=1
+w rahakuoren | kopertę z pieniędzmi (biernik)
+w saanut | dostał (saada)
+t Eräs todistaja sanoo, että sait rahakuoren. | Pewien świadek mówi, że dostałeś kopertę z pieniędzmi. | Todistaja valehtelee. En saanut rahaa. | Nazwij świadka kłamcą i zaprzecz, że dostałeś pieniądze. | „Todistaja valehtelee” = świadek kłamie. |  | shift=-2 loss=2
+w kaupunginvaltuustossa | w radzie miejskiej (kaupunginvaltuusto + -ssa)
+w pitääkö | czy trzeba, czy (pitää + -kö)
+w paikkansa | miejsce (pitää paikkansa = być prawdą)
+w hänet | go, ją (biernik od hän)
+w ystäväni | mój przyjaciel (ystävä + -ni)
+w häntä | go, ją (forma cząstkowa od hän)
+k Kaupunginvaltuustossa sanoit, että tunnet herra Lintusen tuskin. Pitääkö se vielä paikkansa? | W radzie miejskiej powiedziałeś: „Ledwo znam pana Lintunena.” Czy to nadal prawda? | Kyllä, tunnen hänet tuskin. | Ei, hän on ystäväni.;Ei, en ole koskaan nähnyt häntä. | Konsekwentnie powtarzasz wcześniejsze zeznanie: tuskin.; Przyznajesz, że to twój przyjaciel: sprzeczność i koniec.; Wcześniej mówiłeś „tuskin”, a nie „nigdy go nie widziałem”. | gain=1
+w näemme | zobaczymy się, widzimy (nähdä)
+e Kiitos. Voit mennä. Näemme pian uudestaan. | Dziękuję. Możesz iść. Wkrótce znów się zobaczymy.
+
+@level 5 | Ministeri | patience=4 cap=6 typed=0.8 extra=2 hint=bank
+desc Szczebel 5: minister
+partner Herra Talvi | T
+scene Studio telewizyjne, wywiad na żywo. Jesteś ministrem (ministeri) i siedzisz naprzeciw pana Talvi, prowadzącego wiadomości. Na ekranie nagle pojawia się stary dokument z „käkiskandaalia”.
+goal Wyjdź ze studia nadal jako minister: nie daj się zapędzić w pułapkę na żywo.
+win Talvi kończy wywiad: „Kiitos, ministeri.” Sondaże rosną. Pan Lintunen dzwoni: „Hyvin tehty!”
+partial Wywiad kończy się remisem. Opozycja domaga się dymisji (ero), ale premier cię broni.
+fail Na wizji uciekasz od odpowiedzi, a widzowie wszystko widzą. Rano gazety krzyczą: „Eroa!”
+w suorassa | na żywo (suora lähetys)
+w lähetyksessä | w transmisji (lähetys + -ssä; suorassa lähetyksessä = na żywo)
+w televisiossa | w telewizji (televisio + -ssa)
+w valmis | gotowy
+w ministeri | minister
+t Hyvää iltaa! Olemme suorassa lähetyksessä televisiossa. Oletko valmis, ministeri? | Dobry wieczór! Jesteśmy na żywo w telewizji. Jesteś gotów, panie ministrze? | Kyllä, olen valmis. Antaa tulla. | Potwierdź, że jesteś gotów. | „Valmis” = gotowy. |  | gain=1
+w oppositio | opozycja
+w väittää | twierdzi
+w käkiskandaali | afera kukułki (käki = kukułka)
+w suuri | duży, wielki
+w skandaali | skandal
+w kampanja | kampania
+t Hyvä. Oppositio väittää, että käkiskandaali on suuri skandaali. | Dobrze. Opozycja twierdzi, że afera kukułki to wielki skandal. | Se ei ole skandaali. Se on kampanja. | Zbagatelizuj: to nie skandal, tylko kampania. | „Kampanja” = kampania. |  | shift=-1
+w lehdessä | w gazecie (lehti → lehdessä)
+w asiakirja | dokument
+w allekirjoituksesi | twój podpis (allekirjoitus + -si)
+t Lehdessä on asiakirja. Siinä on sinun allekirjoituksesi. | W gazecie jest dokument. Jest na nim twój podpis. | En muista sitä. | Powiedz, że tego nie pamiętasz. | „En muista sitä” = nie pamiętam tego. |  | shift=-2 loss=2
+w väärennös | fałszerstwo
+t Tämä on sinun allekirjoituksesi. Miten selität sen? | To jest twój podpis. Jak to wyjaśnisz? | Se on väärennös. | Zaprzecz: to fałszerstwo. | „Väärennös” = fałszerstwo. |  | gain=1
+w mielipidemittaukset | sondaże
+w nousevat | rosną (nousta)
+w uskovat | wierzą (uskoa)
+w luottamuksesta | za zaufanie (luottamus + -sta)
+t Mielipidemittaukset nousevat. Äänestäjät uskovat sinua. | Sondaże rosną. Wyborcy ci wierzą. | Kiitos luottamuksesta. | Podziękuj wyborcom za zaufanie. | „Luottamus” = zaufanie; „luottamuksesta” = za zaufanie. |  | shift=+2
+w neuvonantajasi | twój doradca (neuvonantaja + -si)
+w työskennellyt | pracował (työskennellä)
+w hänen | jego, jej
+w kanssaan | z nim, z nią
+o Herra Lintunen sanoo, että hän oli sinun neuvonantajasi. Pitääkö se paikkansa? | Pan Lintunen mówi, że był twoim doradcą. Czy to prawda? | Ei, en ole koskaan työskennellyt hänen kanssaan. | Kyllä, hän antoi minulle usein rahaa.;Kieltäydyn antamasta lausuntoa. | Zaprzeczasz konsekwentnie.; Przyznajesz się do pieniędzy: błąd.; „Kieltäydyn antamasta lausuntoa” w telewizji wygląda na przyznanie się. | gain=1
+w aiotko | czy zamierzasz (aiot + -ko)
+w erota | podać się do dymisji
+w ohi | po wszystkim
+w eroa | podam się do dymisji (erota); dymisji
+t Aiotko erota? Silloin kaikki on ohi. | Zamierzasz podać się do dymisji? Wtedy wszystko skończone. | En, en eroa. Olen syytön. | Odmów dymisji i powiedz, że jesteś niewinny. | „Erota” = podać się do dymisji; „en eroa” = nie podam się. |  | gain=1
+w kirjekuoressa | w kopercie (kirjekuori + -ssa)
+w kampanjaani | moją kampanię (kampanja + -ni)
+k Tässä on valokuva: sinä ja herra Lintunen. Siinä on myös kirjekuori. Mitä kirjekuoressa on? | Oto zdjęcie: ty i pan Lintunen. Jest na nim też koperta. Co jest w kopercie? | Valokuva on vanha. En ole koskaan ottanut kirjekuorta. | Se on rahaa kampanjaani varten.;Se oli vain lahja. | Powtarzasz to, co powiedziałeś prokuratorowi.; Przyznanie się do pieniędzy: koniec.; „Lahja” to też przyznanie. | gain=1
+w haastattelusta | za wywiad, z wywiadu (haastattelu + -sta)
+e Kiitos haastattelusta, ministeri. | Dziękuję za wywiad, panie ministrze.
+
+@level 6 | Pääministeri | patience=4 cap=6 typed=1 extra=2 hint=none
+desc Szczebel 6: premier
+partner Rouva Orava | O
+scene Debata finałowa w telewizji. Kandydujesz na premiera (pääministeri). Naprzeciw stoi pani Orava z partii „Uusi Rehellisyys” i jej teczka z „käkiskandaalilla”. Cały kraj ogląda.
+goal Wygraj debatę, zachowaj spokój i nie przyznaj się do niczego do samego końca.
+win Przegrywa nawet sondaż: 52 procent mówi, że chce ciebie. Zostajesz premierem, a koperta pana Lintunena leży gdzieś na dnie szuflady.
+partial Debata kończy się remisem. Wybory wygrywasz minimalnie i obiecujesz „więcej przejrzystości”.
+fail Pani Orava kładzie na stoliku teczkę. Kraj widzi sprzeczność w twoich słowach i na ekranie pojawia się napis: „Ehdokas valehtelee.”
+w vaaliväittelyyn | do debaty wyborczej (vaaliväittely + -yn)
+w Orava | Orava (nazwisko; orava = wiewiórka)
+w ehdokas | kandydat
+w olkaa | bądźcie (olkaa hyvä = proszę)
+w pääministeriksi | na premiera (-ksi)
+t Tervetuloa vaaliväittelyyn! Rouva Orava, herra ehdokas, olkaa hyvä. | Witamy w debacie wyborczej! Pani Orava, panie kandydacie, proszę. | Hyvää iltaa. Haluan pääministeriksi. | Przywitaj się i powiedz, że chcesz zostać premierem. | „Na premiera” to pääministeriksi (końcówka -ksi). |  | gain=1
+w Uusi | Uusi (nowy; w nazwie partii)
+w Rehellisyys | Rehellisyys (uczciwość; w nazwie partii)
+w -puolueesta | z partii (puolue + -sta: „z”)
+w kerro | opowiedz, powiedz (kertoa)
+w kerron | opowiadam, mówię (kertoa)
+w totuuden | prawdę (biernik od totuus)
+t Minä olen Uusi Rehellisyys -puolueesta. Kerro totuus, herra ehdokas! | Jestem z partii Nowa Szczerość. Mów prawdę, panie kandydacie! | Kerron aina totuuden. | Zapewnij, że zawsze mówisz prawdę. | „Zawsze” = aina; „totuus” = prawda. |  | gain=1
+w lahjuksia | łapówek (forma cząstkowa l. mn.)
+w syytökseni | mój zarzut (syytös + -ni)
+w hylkään | odrzucam (hylätä)
+w tuon | tamten, ten (biernik od tuo)
+w syytöksen | zarzut (biernik od syytös)
+t Olet ottanut lahjuksia. Se on minun syytökseni. | Brałeś łapówki. To mój zarzut. | Hylkään tuon syytöksen. | Odrzuć ten zarzut. | „Hylätä syytös” = odrzucić zarzut. |  | shift=-2 loss=2
+w yleisö | publiczność
+w mutisee | mruczy (mutista)
+w vaalikampanjaa | kampanii wyborczej (forma cząstkowa)
+w kampanjasi | twoja kampania (kampanja + -si)
+t Yleisö mutisee: se on vain vaalikampanjaa, se oli kauan sitten. | Publiczność mruczy: to tylko kampania wyborcza, to było dawno. | Kampanjasi on likainen. | Zarzuć rywalce brudną kampanię. | „Likainen” = brudny. |  | shift=+2
+w todisteet | dowody
+w etkö | czyżbyś nie (et + -kö)
+w näe | widzisz (nähdä; etkö näe = czy nie widzisz)
+w niitä | ich (forma cząstkowa od ne)
+t Minulla on todisteet! Etkö sinä näe niitä? | Mam dowody! Czy ty ich nie widzisz? | En näe mitään todisteita. | Powiedz, że nie widzisz żadnych dowodów. | „Mitään todisteita” = żadnych dowodów. |  | gain=1
+w suunnitelmasi | twój plan (suunnitelma + -si)
+w maalle | dla kraju (maa + -lle)
+w luon | tworzę (luoda)
+w uusia | nowych (forma cząstkowa l. mn.)
+w työpaikkoja | miejsc pracy (forma cząstkowa l. mn.)
+t No hyvä. Entä mikä on sinun suunnitelmasi maalle? | No dobrze. A jaki jest twój plan dla kraju? | Luon uusia työpaikkoja. | Obiecaj nowe miejsca pracy. | „Uusia työpaikkoja” = nowe miejsca pracy (forma cząstkowa). |  | gain=1
+t Ystäväsi herra Lintunen sanoo, että hän antoi sinulle paljon rahaa! | Twój przyjaciel pan Lintunen mówi, że dał ci dużo pieniędzy! | Se on valhe! Hän ei ole ystäväni. | Zaprzecz: to kłamstwo, on nie jest twoim przyjacielem. | „Hän ei ole ystäväni” = on nie jest moim przyjacielem. |  | shift=-1 loss=2
+o Kaupunginvaltuustossa sanoit, että hän on vain tuttava. Entä nyt? | W radzie miejskiej powiedziałeś, że to tylko znajomy. A teraz? | Hän on vain tuttava. | Hän on ystäväni.;En ole koskaan nähnyt häntä. | Trzymasz się wersji z rady.; Zaprzeczasz sam sobie.; Wcześniej przyznałeś, że go znasz, więc „nigdy go nie widziałem” to sprzeczność. | gain=1
+w otitko | czy wziąłeś (otit + -ko)
+w otin | wziąłem (ottaa)
+k Rouva Orava näyttää kirjekuoren. Otitko sen? Kyllä vai ei? | Pani Orava pokazuje kopertę. Wziąłeś ją? Tak czy nie? | Ei, en ottanut sitä. | Kyllä, otin sen.;Kieltäydyn antamasta lausuntoa. | Zaprzeczasz do końca.; Przyznanie się: koniec.; Milczenie na żywo wygląda jak przyznanie się. | 
+w pääministeri | premier
+w sydämelliset | serdeczne
+w onnittelut | gratulacje
+e Ja pääministeri olet sinä! Sydämelliset onnittelut! | A premierem zostajesz… ty! Serdeczne gratulacje!
+
+
+@larp flughafen | Lotnisko | Työntekijä | T | Helsinki, wczesny ranek. Lecisz do Warszawy na ślub najlepszego przyjaciela, a samolot nie poczeka. Masz walizkę, paszport i mało czasu. | Przejdź całą drogę: odprawa, kontrola bezpieczeństwa, bramka, lot i odbiór bagażu w Warszawie.
+fee 0
+reward 20
+strict yes
+story yes
+win Docierasz do Warszawy z walizką, paszportem i pół godziny zapasu. Przyjaciel czeka w hali przylotów z bukietem: „Onnistuit! Häät voivat alkaa!”
+partial Dotarłeś do Warszawy, ale po drodze sporo się nagadałeś i trochę pobiegałeś. Walizka jest, ślub też, ty trochę zdyszany, ale na czas.
+fail Pomyliłeś coś w najgorszym momencie i samolot odleciał bez ciebie. Ślub oglądasz na telefonie, a przyjaciel obiecuje ci długą wyprawę „na pocieszenie”.
+
+@level 1 | Odprawa | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Odprawa
+partner Työntekijä | T
+scene Lotnisko Helsinki-Vantaa, hala odlotów. Podchodzisz do stanowiska odprawy linii Pohjantuuli. Pracowniczka patrzy na ciebie życzliwie i czeka na dokumenty.
+goal Odpraw się na lot do Warszawy: pokaż paszport, nadaj walizkę i wybierz miejsce.
+win Pracowniczka podaje ci kartę pokładową: „Hyvää matkaa!” Walizka jedzie na taśmie, a ty idziesz do kontroli bezpieczeństwa.
+partial Odprawa udała się, ale pracowniczka kilka razy musiała się domyślać, o co ci chodzi. Karta pokładowa w ręku, czas ucieka.
+fail Pracowniczka nie rozumie, czego chcesz, i prosi następną osobę w kolejce. Musisz zacząć od nowa na końcu kolejki.
+w Pohjantuulen | Pohjantuuli (genetiv; fikcyjna linia lotnicza)
+w tiskille | do stanowiska (tiski + -lle)
+w matkalla | w drodze (minne olet matkalla = dokąd jedziesz)
+w lennän | lecę (lentää)
+w Varsovaan | do Warszawy (Varsova + -an)
+t Hyvää päivää! Tervetuloa Pohjantuulen tiskille. Minne olet matkalla? | Dzień dobry! Witamy przy stanowisku Pohjantuuli. Dokąd jedziesz? | Hyvää päivää! Lennän Varsovaan. | Przywitaj się i powiedz, że lecisz do Warszawy. | „Do” miasta to końcówka -an: Varsovaan.
+w hienoa | świetnie
+w lennät | lecisz (lentää)
+w passini | mój paszport (passi + -ni)
+w häihin | na ślub, na wesele (häät + -hin)
+t Varsovaan, hienoa! Passi, kiitos. Ja miksi sinä lennät Varsovaan? | Do Warszawy, świetnie! Paszport, proszę. A po co lecisz do Warszawy? | Tässä on passini. Lennän häihin. | Podaj paszport i powiedz, że lecisz na ślub. | „Na ślub” to häihin.
+w ihanaa | cudownie
+w jättää | zostawić, nadać (bagaż)
+t Häihin, miten ihanaa! Haluatko jättää matkalaukun? | Na ślub, jak cudownie! Chcesz nadać walizkę? | Kyllä, haluan jättää matkalaukun. | Powiedz, że chcesz nadać walizkę. | „Nadać” to jättää; walizka w bierniku: matkalaukun.
+w laita | połóż (laittaa)
+w vaa'alle | na wagę (vaaka + -lle)
+w painaa | waży (painaa)
+w kiloa | kilo (forma cząstkowa po liczebniku)
+w käsimatkatavara | bagaż podręczny
+w käsimatkatavarana | jako bagaż podręczny
+t Laita matkalaukku vaa'alle, kiitos. Se painaa kaksikymmentä kiloa. Se on kunnossa. Onko sinulla myös käsimatkatavara? | Postaw walizkę na wadze, proszę. Waży dwadzieścia kilo. To w porządku. Czy masz też bagaż podręczny? | Kyllä, minulla on laukku käsimatkatavarana. | Powiedz, że masz torbę jako bagaż podręczny. | „Jako” to końcówka -na: käsimatkatavarana.
+w ikkunapaikan | miejsce przy oknie (biernik)
+w käytäväpaikan | miejsce przy przejściu (biernik)
+t Hyvä. Haluatko ikkunapaikan vai käytäväpaikan? | Dobrze. Chcesz miejsce przy oknie czy przy przejściu? | Ikkunapaikan, kiitos. | Powiedz, że wolisz miejsce przy oknie. | „Miejsce przy oknie” to ikkunapaikka, w bierniku ikkunapaikan.
+w nousukorttisi | twoja karta pokładowa
+w lähtö | odlot, wyjazd
+w puoli | pół (puoli yksitoista = wpół do jedenastej)
+w lento | lot
+w ajoissa | na czas, punktualnie
+t Selvä. Tässä on nousukorttisi. Lähtö on puoli yksitoista. Onko sinulla vielä kysymyksiä? | Dobrze. Oto twoja karta pokładowa. Odlot jest wpół do jedenastej. Masz jeszcze pytania? | Kyllä, onko lento ajoissa? | Zapytaj, czy lot jest punktualny. | „Na czas” to ajoissa; pytanie ma końcówkę -ko: onko.
+w lähtöportti | bramka odlotowa
+w suoraan | prosto, bezpośrednio
+w eteenpäin | do przodu, dalej
+t Kyllä, lento on ajoissa. Lähtöportti on kaksitoista. Mene suoraan eteenpäin. | Tak, lot jest punktualny. Twoja bramka to dwanaście. Idź prosto. | Kiitos paljon! Näkemiin! | Podziękuj i pożegnaj się. | „Do widzenia” to näkemiin.
+e Hyvää matkaa! | Szczęśliwej podróży!
+
+@level 2 | Kontrola bezpieczeństwa | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Kontrola bezpieczeństwa
+partner Turvatarkastaja | T
+scene Masz kartę pokładową, a przed tobą długa kolejka do kontroli. Funkcjonariusz podaje plastikowe pojemniki i patrzy uważnie na twoją torbę.
+goal Przejdź kontrolę bezpieczeństwa: pokaż laptop, zdejmij pasek i odpowiedz na pytania.
+win Funkcjonariusz kiwa głową: „Kaikki on kunnossa. Jatka eteenpäin.” Zakładasz pasek i biegniesz do bramki z pełnym spokojem.
+partial Kontrola przebiegła w końcu bez problemów, ale funkcjonariusz kilka razy zmarszczył brwi. Zakładasz pasek w biegu.
+fail Funkcjonariusz uznaje twoje odpowiedzi za podejrzane. Zostajesz zatrzymany na dodatkową kontrolę, a samolot odlatuje bez ciebie.
+w turvatarkastus | kontrola bezpieczeństwa
+w tähän | tutaj, na to (tämä + -hän)
+w hihnalle | na taśmę (hihna + -lle)
+t Hyvää päivää! Tämä on turvatarkastus. Laita laukku tähän hihnalle, kiitos. | Dzień dobry! To jest kontrola bezpieczeństwa. Połóż torbę tutaj na taśmie, proszę. | Kyllä, tietysti. | Zgódź się i powiedz, że oczywiście. | „Oczywiście” to tietysti.
+w kannettava | przenośny (kannettava tietokone = laptop)
+w ulos | na zewnątrz
+w tietokoneeni | mój komputer (tietokone + -ni)
+t Kiitos. Onko laukussa kannettava tietokone? Ota se ulos, kiitos. | Dziękuję. Czy w torbie jest laptop? Wyjmij go, proszę. | Kyllä, tässä on tietokoneeni. | Potwierdź i podaj laptop. | „Mój komputer” to tietokoneeni (końcówka -ni: „mój”).
+w nesteitä | płynów (forma cząstkowa l. mn.)
+w esimerkiksi | na przykład
+w hajuvettä | perfum (forma cząstkowa od hajuvesi)
+w voidetta | kremu (forma cząstkowa od voide)
+t Kiitos. Onko sinulla nesteitä mukana? Esimerkiksi vettä, hajuvettä tai voidetta? | Dziękuję. Masz przy sobie płyny? Na przykład wodę, perfumy albo krem? | Ei, minulla ei ole nesteitä mukana. | Zaprzecz: nie masz płynów. | „Nie mam” to minulla ei ole + forma cząstkowa: nesteitä.
+w vyöni | mój pasek (vyö + -ni)
+w takkini | moja kurtka (takki + -ni)
+t Hyvä. Ota myös vyö ja takki pois, kiitos. | Dobrze. Zdejmij też pasek i kurtkę, proszę. | Kyllä, tässä ovat vyöni ja takkini. | Podaj pasek i kurtkę. | Liczba mnoga od „oto jest” to tässä ovat.
+w laukussasi | w twojej torbie
+w veistä | noża (forma cząstkowa od veitsi)
+w eikä | i nie, ani
+k Kiitos. Onko laukussasi veistä tai asetta? | Dziękuję. Czy w twojej torbie jest nóż albo broń? | Ei, minulla ei ole veistä eikä asetta. | Kyllä, minulla on veitsi.;En tiedä, ehkä. | Przyznanie się do noża to natychmiastowe zatrzymanie.; Niepewna odpowiedź przy takim pytaniu wzbudza podejrzenia.
+w käy | idź, przejdź (käydä)
+w skannerin | skanera (genetiv od skanneri)
+w piip | pip (dźwięk)
+w housun | spodni (genetiv od housut)
+w taskussa | w kieszeni (tasku + -ssa)
+t Hyvä. Käy sitten skannerin läpi. Piip! Onko housun taskussa vielä jotain? | Dobrze. Przejdź teraz przez skaner. Pip! Czy w kieszeni spodni jest jeszcze coś? | Kyllä, siellä on avain ja puhelin. | Powiedz, że masz klucz i telefon. | „Klucz” to avain.
+w jatka | kontynuuj, idź dalej (jatkaa)
+e Kaikki on kunnossa. Jatka eteenpäin. Hyvää matkaa! | Wszystko w porządku. Idź dalej. Szczęśliwej podróży!
+
+@level 3 | Przy bramce | patience=4 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Przy bramce
+partner Lentokentän työntekijä | L
+scene Siedzisz przy bramce 12 i patrzysz na zegarek. Nagle w głośnikach coś trzaska, a na tablicy pojawia się napis „myöhässä”.
+goal Dowiedz się, co z lotem, zrozum komunikat o zmianie bramki i wejdź na pokład.
+win Biegniesz do nowej bramki i wsiadasz jako jeden z ostatnich. Pracownik zamyka drzwi: „Se oli täpärällä!”
+partial Znalazłeś w końcu właściwą bramkę, choć po drodze kilka razy musiałeś dopytywać. Wchodzisz na pokład spocony.
+fail Zrozumiałeś komunikat na opak i czekasz przy złej bramce. Kiedy orientujesz się w błędzie, drzwi samolotu są już zamknięte.
+w Varsovan | Warszawy (genetiv od Varsova)
+w lennolle | na lot (lento + -lle)
+w lentoni | mój lot (lento + -ni)
+t Anteeksi! Oletko matkustaja Varsovan lennolle? | Przepraszam! Czy jesteś pasażerem lotu do Warszawy? | Kyllä, lentoni on myöhässä, eikö niin? | Potwierdź i zapytaj, czy twój lot jest spóźniony. | „Spóźniony” to myöhässä; „eikö niin?” na końcu znaczy „prawda?”.
+w pääsen | mogę wejść (päästä)
+w koneeseen | do samolotu (kone + -en)
+t Kyllä, lento on neljäkymmentä minuuttia myöhässä. | Tak, lot ma czterdzieści minut spóźnienia. | Milloin pääsen koneeseen? Minun täytyy päästä häihin. | Zapytaj, kiedy wejdziesz na pokład, i dodaj, że musisz zdążyć na ślub. | „Milloin” = kiedy; „koneeseen” = do samolotu.
+w pääsee | może wejść, dostaje się (päästä)
+w vaihtaa | zmienić, przesiąść się
+w konetta | samolotu (forma cząstkowa od kone)
+w Varsovassa | w Warszawie (Varsova + -ssa)
+t Koneeseen pääsee kello yksitoista. Häät, miten ihanaa! Pitääkö sinun vaihtaa konetta Varsovassa? | Na pokład wchodzi się o jedenastej. Ślub, jak cudownie! Czy musisz się przesiadać w Warszawie? | Ei, lennän suoraan Varsovaan. | Odpowiedz, że nie, lecisz bezpośrednio. | „Bezpośrednio” to suoraan.
+w huomio | uwaga
+w kuulutus | ogłoszenie
+w portilta | z bramki (portti + -lta)
+w suljettu | zamknięty
+w ymmärsitkö | czy zrozumiałeś (ymmärsit + -kö)
+w jään | zostaję (jäädä)
+k Selvä, suoraan. Huomio, kuulutus! Varsovan lento lähtee nyt portilta viisi. Portti kaksitoista on suljettu. Ymmärsitkö? Minne sinä menet? | Jasne, bezpośrednio. Uwaga, ogłoszenie! Lot do Warszawy odlatuje teraz z bramki piątej. Bramka dwunasta jest zamknięta. Zrozumiałeś? Dokąd idziesz? | Menen portille viisi. | Jään portille kaksitoista.;Menen kotiin. | Bramka dwunasta jest zamknięta, więc czekanie tam kończy się spóźnieniem.; Pytanie dotyczy bramki, a nie domu.
+w nousukortti | karta pokładowa
+w nousukorttini | moja karta pokładowa
+w nousen | wsiadam, wstaję (nousta)
+t Sitten nopeasti! Nousukortti, kiitos. Voit nousta koneeseen heti. | W takim razie szybko! Karta pokładowa, proszę. Możesz od razu wejść na pokład. | Tässä on nousukorttini. Nousen koneeseen nyt. | Podaj kartę i powiedz, że już wsiadasz. | „Wsiadam” to nousen koneeseen.
+e Hyvää matkaa! Koneeseen pääsee nyt. | Szczęśliwej podróży! Na pokład można już wejść.
+
+@level 4 | W samolocie i po lądowaniu | patience=4 typed=0.75 extra=3 hint=letters reward=30
+desc Rozdział 4: Lot i przylot
+partner Lentoemäntä | L
+scene Wchodzisz na pokład. Stewardesa wita pasażerów przy drzwiach, a za chwilę wystartujecie do Warszawy. Po lądowaniu będziesz musiał jeszcze znaleźć kontrolę paszportową i swoją walizkę.
+goal Zajmij miejsce, zapnij pas, poproś o picie, a po lądowaniu dowiedz się, gdzie jest kontrola paszportowa, taśma bagażowa i odprawa celna.
+win Walizka wyjeżdża na taśmie jako pierwsza, a celnik życzy ci „Tervetuloa Puolaan!” Przyjaciel czeka w hali przylotów.
+partial Wszystko udało ci się znaleźć, ale po drodze trzy razy zapytałeś o drogę. Walizka dojechała, a ty do ślubu zdążysz.
+fail Poszedłeś w złą stronę i straciłeś czas na lotnisku. Walizka krąży samotnie po taśmie, a przyjaciel wydzwania co minutę.
+t Hyvää päivää ja tervetuloa koneeseen! Nousukortti, kiitos. | Dzień dobry i witamy na pokładzie! Karta pokładowa, proszę. | Hyvää päivää! Tässä on nousukorttini. | Przywitaj się i pokaż kartę pokładową. | „Oto” to tässä on; „moja karta” to nousukorttini.
+w paikkasi | twoje miejsce (paikka + -si)
+w ylös | do góry
+w lokeroon | do schowka (lokero + -on)
+w laitan | kładę (laittaa)
+t Kiitos. Paikkasi on neljätoista, ikkunan vieressä. Laita laukku ylös lokeroon, kiitos. | Dziękuję. Twoje miejsce to czternaście, przy oknie. Połóż torbę w schowku na górze, proszę. | Kiitos, laitan laukun lokeroon. | Podziękuj i powiedz, że kładziesz torbę do schowka. | „Kładę” to laitan; „do schowka” to lokeroon.
+w kiinnitä | zapnij (kiinnittää)
+w turvavyö | pas bezpieczeństwa
+w kohta | zaraz
+w kiinnitän | zapinam (kiinnittää)
+w turvavyön | pas bezpieczeństwa (biernik)
+t Hyvä. Kiinnitä turvavyö, kiitos. Lähdemme kohta. | Dobrze. Zapnij pas, proszę. Zaraz startujemy. | Kyllä, kiinnitän turvavyön. | Powiedz, że zapinasz pas. | „Zapinam” to kiinnitän; pas w bierniku: turvavyön.
+w juotavaa | czegoś do picia
+t Kiitos. Haluatko juotavaa? | Dziękuję. Chcesz coś do picia? | Kyllä, kahvia, kiitos. | Poproś o kawę. | Napój w formie cząstkowej: kahvia.
+w muuta | innego, jeszcze (forma cząstkowa od muu)
+w laskeudumme | lądujemy (laskeutua)
+t Tässä on kahvisi. Mitä muuta haluat tietää? | Oto twoja kawa. Co jeszcze chcesz wiedzieć? | Milloin laskeudumme Varsovaan? | Zapytaj, kiedy lądujecie w Warszawie. | „Kiedy” to milloin, a „lądujemy” to laskeudumme.
+w saapuminen | przylot, przybycie
+w passintarkastus | kontrola paszportowa
+t Laskeudumme kymmenen minuutin päästä. Tervetuloa Varsovaan! Saapuminen on ajoissa. | Lądujemy za dziesięć minut. Witamy w Warszawie! Przylot jest punktualny. | Kiitos! Missä passintarkastus on? | Podziękuj i zapytaj, gdzie jest kontrola paszportowa. | Pytanie o miejsce zaczyna się od missä.
+w tulevat | przychodzą (tulla)
+w matkatavarahihna | taśma bagażowa
+w tulli | cło
+w ensin | najpierw
+w passintarkastukseen | do kontroli paszportowej
+w tulliin | do cła (tulli + -in)
+w matkatavarahihnalle | do taśmy bagażowej
+k Passintarkastus on vasemmalla. Sen jälkeen tulevat matkatavarahihna ja tulli. Mihin menet ensin? | Kontrola paszportowa jest po lewej. Potem taśma bagażowa i cło. Dokąd idziesz najpierw? | Menen ensin passintarkastukseen. | Menen ensin tulliin.;Menen ensin matkatavarahihnalle. | Do cła idziesz na końcu, po odbiorze walizki.; Walizkę odbierasz dopiero po kontroli paszportowej.
+w aivan | całkiem, zupełnie (aivan oikein = zgadza się)
+w oikein | dobrze, słusznie
+w matkalaukkusi | twoja walizka (matkalaukku + -si)
+w hihnalta | z taśmy (hihna + -lta)
+t Aivan oikein! Ja sen jälkeen matkatavarahihnalle. Matkalaukkusi tulee hihnalle neljä. | Zgadza się! A potem do taśmy bagażowej. Twoja walizka przyjedzie na taśmie czwartej. | Kiitos paljon! Otan matkalaukun hihnalta. | Podziękuj i powiedz, że zdejmiesz walizkę z taśmy. | „Z taśmy” to hihnalta.
+w tullattavaa | do oclenia (forma cząstkowa)
+w kysyy | pyta (kysyä)
+t Onko sinulla tullattavaa? Sitä tulli kysyy. | Masz coś do oclenia? O to zapyta cło. | Ei, minulla ei ole mitään tullattavaa. | Powiedz, że nie masz nic do oclenia. | „Nic” w przeczeniu to mitään.
+w Puolaan | do Polski (Puola + -an)
+w hauskoja | udanych (forma cząstkowa l. mn.)
+w häitä | wesela (forma cząstkowa od häät)
+e Silloin kaikki on hyvin. Tervetuloa Puolaan ja hauskoja häitä! | Wtedy wszystko w porządku. Witamy w Polsce i udanego wesela!

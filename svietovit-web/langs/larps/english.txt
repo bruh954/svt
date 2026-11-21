@@ -164,3 +164,529 @@ t Good afternoon! Your ticket, please. | Dzień dobry! Pański bilet, proszę. |
 o Thank you. Would you like to sit by the window? | Dziękuję. Czy chce pan siedzieć przy oknie? | Yes, by the window, please. | No, thank you, I do not like the window.; Yes, I would like to pay. | Konduktor pyta o miejsce, nie o płacenie.; Przy oknie to by the window.
 t This seat is free. The train is ten minutes late. | To miejsce jest wolne. Pociąg ma dziesięć minut spóźnienia. | That is not a problem. Thank you! | Powiedz, że to nie problem, i podziękuj. | „Not a problem” to „żaden problem”.
 e Have a good trip to Edinburgh! | Szczęśliwej podróży do Edynburga!
+
+@larp oma | Babcia w parku | Granny Edith | E | Niedziela w parku. Na ławce siedzi starsza pani, która uwielbia rozmawiać i ma całe popołudnie. | Posiedź z babcią Edith i porozmawiaj z nią. Nikt cię stąd nie wyrzuci.
+fee 0
+reward 10
+story yes
+win Granny Edith promienieje: „What a nice young man!” Zaprasza cię na niedzielną herbatę i kawałek ciasta.
+partial Rozmowa się toczyła, choć kilka razy musiałeś prosić o powtórzenie. Granny Edith uśmiecha się cierpliwie i zaprasza cię znowu.
+fail Granny Edith się nie zniechęca, bo ma nieskończoną cierpliwość. Jeśli kiedyś zobaczysz ten komunikat, napisz do nas.
+
+@level 1 | Na ławce | patience=3 endless=yes typed=0 extra=2 hint=none
+desc Rozdział 1: Poznajecie się
+scene Park, ławka, słońce. Starsza pani karmi okruchami wróble i zaczyna rozmowę. Nie musisz się spieszyć: Granny Edith poczeka.
+goal Przywitaj się, powiedz, jak się nazywasz i skąd jesteś.
+win Granny Edith klepie ławkę obok siebie: „Sit down, Paul!” Zostajesz na dłużej.
+partial Rozmowa się udała, mimo kilku pomyłek. Granny Edith zachowuje cierpliwość i robi ci miejsce na ławce.
+fail Granny Edith nigdy się nie zniechęca.
+w isn't | nie jest (isn't it? = prawda?)
+t Good afternoon, young man! The weather is lovely today, isn't it? | Dzień dobry, młody człowieku! Pogoda jest dziś piękna, prawda? | Yes, the weather is lovely. | Zgódź się, że pogoda jest piękna. | „Piękna” to lovely; „prawda?” na końcu zdania to isn't it? | Yes, it is lovely.; Yes, the weather is nice.
+w Edith | Edith (imię)
+w Paul | Paul (imię)
+t Yes, and the sun is so warm! What is your name? I am Edith. | Tak, a słońce jest takie ciepłe! Jak masz na imię? Ja jestem Edith. | My name is Paul. | Powiedz, jak masz na imię. | „Mam na imię” to my name is. | I am Paul.
+t Paul! That is a nice name. Do you live here? | Paul! To ładne imię. Mieszkasz tutaj? | No, I do not live here. I am from Poland. | Zaprzecz i powiedz, że jesteś z Polski. | „Nie mieszkam” to I do not live; „jestem z” to I am from. | No, I do not live here. I come from Poland.; No, I don't live here. I am from Poland.
+t From Poland! That is far. Would you like to sit down? | Z Polski! To daleko. Chcesz usiąść? | Yes, please. Thank you very much! | Zgódź się i podziękuj. | „Thank you very much” to „dziękuję bardzo”. | Yes, I would like to sit down. Thank you!
+e You are welcome! There is room here. | Proszę bardzo! Tu jest miejsce.
+
+@level 2 | Wnuk i kaczki | patience=3 endless=yes typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Wnuk i ciasto
+scene Mały Max biega po trawniku i karmi kaczki, a Granny Edith pokazuje ci zdjęcia w portfelu. Z torby wyjmuje ciasto własnej roboty.
+goal Porozmawiaj o wnuku Maxie, powiedz, czy masz dzieci, i spróbuj ciasta.
+win Granny Edith wręcza ci drugi kawałek: „Eat, eat, you are too thin!” Max macha do ciebie z daleka.
+partial Zjadłeś ciasto, choć kilka razy brakowało ci słów. Granny Edith dolewa herbaty z termosu.
+fail Granny Edith nie traci cierpliwości.
+w Max | Max (imię)
+w years | lata (liczba mnoga od year)
+t Look, this is my grandson Max. He is six years old. | Zobacz, to mój wnuk Max. Ma sześć lat. | He is very nice. | Pochwal wnuka: powiedz, że jest bardzo miły. | „On jest” to he is. | He is very kind.; Max is very nice.
+w ducks | kaczki
+t Thank you! Max is feeding the ducks. Do you have children too? | Dziękuję! Max karmi kaczki. Masz też dzieci? | No, I do not have children. | Powiedz, że nie masz dzieci. | „Nie mam” to I do not have; „dzieci” to children. | No, I have no children.; No, I don't have children.
+w of | z, od (a piece of cake)
+w made | zrobiłem, upiekłem (make)
+t No children? I see. Here, take a piece of cake. I made it myself. | Nie masz dzieci? Rozumiem. Masz, weź kawałek ciasta. Sama je upiekłam. | Thank you! The cake is very good. | Podziękuj i pochwal ciasto. | Przed „cake” stoi the, bo mówimy o tym konkretnym cieście. | Thank you! The cake is very nice.
+t I am glad you like it! And how old are you? | Cieszę się, że Ci smakuje! A ile masz lat? | I am thirty years old. | Powiedz, że masz trzydzieści lat. | Wiek podajemy tak: I am … years old (dosłownie „jestem … lat stary”). | I am thirty.
+w Oh | och
+e Oh, so young! | Ach, tak młodo!
+
+@level 3 | Zaproszenie | patience=3 endless=yes typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Herbata w niedzielę
+scene Słońce chyli się ku zachodowi. Granny Edith pakuje termos i prosi cię o pomoc. Zanim wstaniecie z ławki, chce cię jeszcze zaprosić.
+goal Przyjmij zaproszenie na niedzielną herbatę i pomóż babci z torbą.
+win Granny Edith zapisuje ci adres na serwetce: „Bring your appetite!” Idziesz do domu w świetnym nastroju.
+partial Wszystko się wyjaśniło, choć trzeba było kilka razy powtarzać. Granny Edith mówi: „See you on Sunday, my boy!”
+fail Granny Edith nie traci cierpliwości.
+t You know, I am in the park every day. It is so lovely here. | Wiesz, jestem w parku codziennie. Jest tu tak pięknie. | Yes, the park is really lovely. | Zgódź się, że park jest naprawdę piękny. | „Naprawdę” to really. | Yes, the park is very nice.
+w Sundays | niedziele; w niedziele
+w gladly | chętnie
+t Isn't it? On Sundays I make tea and cake. Would you like to come? | Prawda? W niedziele robię herbatę i ciasto. Chcesz przyjść? | Yes, I would like to. When? | Zgódź się i zapytaj, kiedy. | „Kiedy?” to when? | Yes, gladly. When?
+w me | mnie, mi
+w will | czas przyszły: I will = zrobię
+t At three o'clock. Oh, my bag is heavy. Can you help me? | O trzeciej. Och, moja torba jest ciężka. Możesz mi pomóc? | Yes, of course. I can carry the bag. | Zgódź się i zaproponuj, że poniesiesz torbę. | „Mogę” to I can; po nim czasownik bez „to”: I can carry. | Yes, of course. I will carry the bag.
+t How kind! You are a good young man. | Jak miło! Jesteś dobrym młodym człowiekiem. | Thank you! See you on Sunday! | Podziękuj i pożegnaj się do niedzieli. | „Do zobaczenia w niedzielę” to see you on Sunday. | Thank you! Goodbye until Sunday!
+e See you on Sunday! Goodbye, dear! | Do zobaczenia w niedzielę! Do widzenia, kochanie!
+
+
+@larp spion | Szpieg | The Contact | C | Jesteś agentem pod przykrywką. W Londynie masz odebrać tajną teczkę z ambasady i przekazać ją dalej. Jedno złe słowo i jesteś zdemaskowany. | Zachowaj przykrywkę kupca Browna, zdobądź teczkę i uciekaj z walizką.
+fee 0
+reward 20
+strict yes
+story yes
+win Walizka jest w twoich rękach, a statek odpływa z portu. Ktoś w centrali szepcze: „Good work, Falcon.” Przykrywka nie pękła ani razu.
+partial Misja się udała, ale po drodze kilka razy omal się nie zdradziłeś. Centrala odnotowuje: „He was lucky.”
+fail Zdradziłeś się jednym słowem. Przykrywka pękła, a ty znikasz w ciemności bez teczki i bez walizki.
+
+@level 1 | Hasło na dworcu | patience=2 typed=0 extra=1 hint=none
+desc Rozdział 1: Kontakt na dworcu
+partner A man in a hat | M
+scene Londyn, wieczór, peron na dworcu. Jesteś agentem „Falcon”, ale dla wszystkich jesteś Mr Brown, handlarz zabawkami z Manchesteru (Brown and Son). Na peronie czeka człowiek w kapeluszu. Hasło (codeword): „The winter comes early.” Odzew: „And the summer comes late.”
+goal Podaj hasło, nie zdradź swojej przykrywki i przyjmij zadanie. Jedna zła odpowiedź i jesteś zdemaskowany.
+win Człowiek w kapeluszu znika w tłumie, a ty zostajesz z kopertą w kieszeni. Przykrywka nietknięta, a jutro o ósmej czeka cię ambasada.
+partial Dostałeś zadanie, ale kontakt zmarszczył brwi przy kilku twoich odpowiedziach. Lepiej uważaj jutro.
+fail Człowiek w kapeluszu spojrzał na ciebie zimno, odwrócił się i odszedł. Zadanie dostanie ktoś inny.
+w comes | przychodzi, nadchodzi (come)
+t Good evening. It is cold today, isn't it? | Dobry wieczór. Dziś jest zimno, prawda? | Yes, it is cold. The winter comes early. | Zgódź się, że jest zimno, i powiedz hasło: zima przychodzi wcześnie. | Hasło (the codeword) brzmi: „The winter comes early.” | Yes, very cold. The winter comes early.
+w Sh | cicho!
+w listening | słuchający (listen); are listening = słuchają
+w Brown | Brown (nazwisko z przykrywki)
+w Falcon | Falcon (sokół; twoje imię agenta)
+k And the summer comes late. Sh! People are listening here. What is your name? | A lato przychodzi późno. Cicho! Tu ludzie słuchają. Jak się Pan nazywa? | My name is Brown. I am a merchant. | My name is Falcon. I am an agent.; My name is Brown. I am an agent. | Falcon to twoje imię agenta, a ludzie słuchają.; Brown się zgadza, ale „agent” zdradza przykrywkę.
+w Mr | pan (przed nazwiskiem)
+k Good, Mr Brown. Is anyone following you? | Dobrze, panie Brown. Czy ktoś Pana śledzi? | No, nobody is following me. | Yes, somebody is following me.; No, I do not have time. | Mówisz, że nikt cię nie śledzi.; Kontakt pyta o śledzenie, nie o czas.
+t Very good. Here is your task. Tomorrow at eight you go to the embassy. There is a party. | Bardzo dobrze. Oto Pana zadanie. Jutro o ósmej idzie Pan do ambasady. Jest tam przyjęcie. | I understand. Tomorrow at eight I go to the embassy. | Powiedz, że zrozumiałeś: jutro o ósmej idziesz do ambasady. | „Task” to zadanie, a „at eight” znaczy „o ósmej”. | I understand. I go to the embassy tomorrow at eight.
+w Nightingale | słowik
+t Good. The password for the party is Nightingale. What is the password? | Dobrze. Hasło na przyjęcie to Nightingale. Jakie jest hasło? | The password is Nightingale. | Powtórz hasło na przyjęcie. | Hasło wejściowe to password, a „Nightingale” to słowik.
+w coming | nadchodzący; is coming = nadchodzi
+d Very good. Sh! A policeman is coming. Do you know me? | Bardzo dobrze. Cicho! Idzie policjant. Czy Pan mnie zna? | No, I do not know you. | Zaprzecz, że znasz tego człowieka. | Nie możesz zdradzić, że znasz kontakt. | No, I do not know you!; No, I don't know you.
+e Good night, Mr Brown. | Dobranoc, panie Brown.
+
+@level 2 | Przyjęcie w ambasadzie | patience=2 typed=0.2 extra=3 hint=bank
+desc Rozdział 2: Przyjęcie w ambasadzie
+partner Mrs Bell | B
+scene Następny wieczór. W ambasadzie trwa przyjęcie, a przy wejściu stoi pani Bell, sekretarka. Ona i goście zadają pytania o twoją „firmę”. Twoja przykrywka: Brown and Son, zabawki, Manchester. Hasło wejściowe: Nightingale. Gabinet ambasadora jest po prawej, toalety po lewej.
+goal Wejdź na przyjęcie, nie zdradź się pytaniom o firmę i znajdź pretekst, żeby dotrzeć do gabinetu.
+win Pani Bell macha ci na pożegnanie, a w gabinecie leży teczka, o którą ci chodziło. Nikt niczego nie podejrzewa.
+partial Weszłeś i dotarłeś do gabinetu, ale pani Bell patrzyła na ciebie dłużej, niż trzeba.
+fail Pani Bell przestaje się uśmiechać i daje znak ochronie. Za chwilę wyprowadzą cię z ambasady.
+t Good evening and welcome to the embassy! What is the password? | Dobry wieczór i witamy w ambasadzie! Jakie jest hasło? | The password is Nightingale. | Podaj hasło wejściowe. | „Password” to hasło, a „Nightingale” to słowik.
+k Thank you. I must ask you something. Do you have a weapon with you? | Dziękuję. Muszę o coś zapytać. Czy ma Pan przy sobie broń? | No, I do not have a weapon. | Yes, I have a weapon.; No, I do not have a file. | Na przyjęcie nie wchodzi się z bronią.; Pytanie dotyczy broni (weapon), nie teczki.
+w Son | syn
+w Mrs | pani (przed nazwiskiem)
+w Bell | Bell (nazwisko)
+k Good. Who do you work for? | Dobrze. Dla kogo Pan pracuje? | I work for Brown and Son. | I work for headquarters.; I work for Mrs Bell. | „Headquarters” to twoja centrala, tajna, a nie firma.; Pani Bell to sekretarka z ambasady.
+w sells | sprzedaje (sell)
+w toys | zabawki
+d Brown and Son, I see. What does your company sell? | Brown and Son, rozumiem. Co sprzedaje Pana firma? | My company sells toys. | Powiedz, co sprzedaje twoja „firma” (przykrywka). | Twoja przykrywka to handel zabawkami. | We sell toys.; My company sells toys!
+w Manchester | Manchester
+w called | nazywany; is called = nazywa się
+k Toys, how interesting! Where is your company? | Zabawki, jak ciekawie! Gdzie jest Pana firma? | My company is in Manchester. | My company sells toys.; My company is called Brown and Son. | „Where” znaczy „gdzie”, a nie „co sprzedaje”.; „Where” pyta o miejsce, nie o nazwę.
+t Manchester, lovely! Would you like something to eat? | Manchester, jak miło! Czy chce Pan coś zjeść? | No, thank you. Where is the toilet, please? | Odmów i zapytaj o toaletę (to pretekst). | „Where” to „gdzie”, więc „Where is the toilet?”. | No, thank you. Where is the toilet?
+k The toilet is on the left. The office on the right is private. | Toaleta jest po lewej. Gabinet po prawej jest prywatny. | Thank you, I will go to the left. | Thank you, I will go to the right.; Thank you, the office is nice. | Gabinet po prawej jest prywatny, a ty idziesz do toalety po lewej.; Nie wolno ci mówić, że chcesz iść do gabinetu.
+e Then enjoy the party, Mr Brown! | W takim razie dobrej zabawy, panie Brown!
+
+@level 3 | Przesłuchanie | patience=1 typed=0.35 extra=3 hint=bank
+desc Rozdział 3: Przesłuchanie
+partner Mr Crane | C
+scene Masz teczkę (file) w torbie, ale na korytarzu zatrzymuje cię podejrzliwy ochroniarz, pan Crane. Zaraz zapyta o wszystko. Pamiętaj: Brown, merchant, Manchester. Tutaj każda zła odpowiedź kończy misję.
+goal Przekonaj ochroniarza, że jesteś zwykłym gościem, i wyjdź z teczką.
+win Crane przepuszcza cię z kwaśną miną. Wychodzisz z ambasady, a teczka w torbie jest ciężka jak ołów.
+partial Crane w końcu cię puszcza, ale zapisuje twoje nazwisko w notesie.
+fail Crane chwyta cię za ramię: „Come with me!” Misja skończona, zanim naprawdę się zaczęła.
+w doing | robiący; what are you doing = co robisz
+w looking | patrzący; I am looking for = szukam
+t Stop! Who are you? What are you doing here? | Stać! Kim Pan jest? Co Pan tu robi? | I am a guest. I am looking for the toilet. | Powiedz, że jesteś gościem i szukasz toalety. | „Look for” znaczy „szukać”. | I am a guest, I am looking for the toilet.
+k The toilet is over there. Were you in the office? | Toaleta jest tam. Czy był Pan w gabinecie? | No, I was not in the office. | Yes, I was in the office.; No, I was not in the toilet. | Przyznanie się to koniec przykrywki.; Pytanie dotyczy gabinetu (office), nie toalety.
+w Hm | hm
+k Hm, good. What do you have in your bag? | Hm, dobrze. Co ma Pan w torbie? | I have only money and my phone. | I have a file in my bag.; I have a bag. | Teczka w torbie zdradziłaby cię od razu.; Ochroniarz pyta, co jest w torbie, a nie czy masz torbę.
+d Money and a phone, hm. What is your name, and where do you live? | Pieniądze i telefon, hm. Jak się Pan nazywa i gdzie Pan mieszka? | My name is Brown and I live in Manchester. | Podaj nazwisko z przykrywki i miasto, w którym mieszkasz (Manchester). | Brown i Manchester to twoja przykrywka. | I am Brown and I live in Manchester.
+w aren't | nie jesteś (aren't you? = prawda?)
+k Brown, Manchester. You are an agent, aren't you? | Brown, Manchester. Jest Pan agentem, prawda? | No, I am not an agent. I am a merchant. | Yes, but it is a secret.; Yes, I work for headquarters. | Nawet żartem nie przyznawaj się do tajemnicy (secret).; Przyznanie się do centrali to koniec.
+w knows | zna (know)
+w guests | goście
+t We will see. I will call Mrs Bell. She knows all the guests. Does she know you? | Zobaczymy. Zadzwonię po panią Bell. Zna wszystkich gości. Czy zna Pana? | Yes, Mrs Bell knows me. I am a guest. | Powiedz, że pani Bell cię zna. | „Knows me” znaczy „zna mnie”. | Yes, Mrs Bell knows me.
+d Fine. There is an agent in the embassy. Did you see anybody? | Dobrze. W ambasadzie jest agent. Czy Pan kogoś widział? | No, I did not see anybody. | Zaprzecz, że kogokolwiek widziałeś. | „Nobody/anybody”: ty sam jesteś tym agentem. | No, I saw nobody!; No, I did not see anyone.
+e All right. Go home, Mr Brown. | No dobrze. Niech Pan idzie do domu, panie Brown.
+
+@level 4 | Walizka i ucieczka | patience=1 typed=0.5 extra=3 hint=letters reward=30
+desc Rozdział 4: Wymiana walizki
+partner Mr Wolf | W
+scene Następny ranek, port w Liverpoolu. Pan Wolf z centrali czeka z walizką pełną pieniędzy. Wymienisz ją na teczkę. Nowe hasło (codeword): „Raven”. Ale ktoś cię śledzi: w tłumie jest zdrajca (traitor), który chce dostać teczkę dla siebie.
+goal Wymień teczkę na walizkę, nie daj się zdemaskować zdrajcy i wsiądź na statek.
+win Statek odpływa, a ty stoisz na pokładzie z walizką. Pan Wolf macha z nabrzeża: „Good journey, Falcon!”
+partial Udało się uciec, ale zdrajca zdążył zobaczyć twoją twarz. Misja zaliczona, lecz twoja przykrywka jest spalona.
+fail Zdrajca był szybszy. Walizka i teczka zniknęły, a ty zostajesz na nabrzeżu z pustymi rękami.
+w codeword | hasło, słowo kodowe
+w Raven | kruk
+d Good morning. What is the codeword? | Dzień dobry. Jakie jest hasło? | The codeword is Raven. | Podaj hasło z dzisiejszej misji. | Hasło to the codeword, a dziś brzmi „Raven”. | The codeword is Raven!
+k Good. Where is the file? | Dobrze. Gdzie jest teczka? | The file is in my bag. | The file is with Mrs Bell.; The file is a secret. | Teczkę masz przy sobie, w torbie.; Kontakt pyta, gdzie jest teczka, nie o tajemnicę.
+t Good. Here is the suitcase. The money is inside. Take it. | Dobrze. Oto walizka. Pieniądze są w środku. Proszę ją wziąć. | Thank you. I take the suitcase. | Podziękuj i weź walizkę. | Walizka to suitcase; „weź” to take. | Thank you. I will take the suitcase.
+w traitor | zdrajca
+k Look out! The man over there is a traitor. He is following me. What do we do? | Uwaga! Ten człowiek tam jest zdrajcą. Idzie za mną. Co robimy? | We go away quickly. | We stay here and drink coffee.; We talk to the man. | Zdrajca idzie za wami, trzeba uciekać.; Nie rozmawia się ze zdrajcą.
+k Yes, quickly! The traitor is coming from the left. Do we go left to the station or right to the port? | Tak, szybko! Zdrajca idzie z lewej. Idziemy w lewo na dworzec czy w prawo do portu? | We go right to the port. | We go left to the station.; We go home. | Zdrajca nadchodzi z lewej, więc idziecie w prawo, do portu.; Pytanie jest o port albo dworzec, a nie o dom.
+d Stop! Give me the suitcase! I have a weapon! | Stać! Dawaj walizkę! Mam broń! | No, I will not give you the suitcase. | Odmów oddania walizki. | „Give” to dawać; „will not” to „nie dam”. | No, I will not give you the suitcase!
+w leaves | odjeżdża, odpływa (leave)
+t Well done! Quick! The boat leaves soon. Do you still have the suitcase? | Brawo! Szybko! Statek zaraz odpływa. Czy masz jeszcze walizkę? | Yes, I still have it. | Potwierdź, że masz jeszcze walizkę. | „Still” znaczy „jeszcze”. | Yes, I still have the suitcase.
+e Well done, Falcon! The mission is over. Goodbye! | Dobra robota, Falcon! Misja zakończona. Do widzenia!
+
+
+@larp zeitreise | Podróż w czasie | Guard | G | Obudziłeś się w roku 1450 pod murami angielskiego miasta Oakbridge. Nikt nie może się dowiedzieć, że jesteś z przyszłości, bo za dziwne rzeczy i dziwne słowa w średniowieczu grozi stos. | Nie daj się wykryć jako przybysz z przyszłości: unikaj wszystkiego, co nie pasuje do roku 1450, i dotrwaj do końca dnia.
+fee 0
+reward 15
+strict yes
+story yes
+win Burmistrz kiwa głową: „An honest traveller!” Nikt nie podejrzewa, skąd naprawdę jesteś. Wieczorem znajdujesz drogę powrotną, a w kieszeni zostaje ci tylko miedziana moneta na pamiątkę.
+partial Udało ci się przetrwać dzień, ale kilka razy ludzie patrzyli na ciebie podejrzliwie. Burmistrz każe cię obserwować, więc wymykasz się z miasta o świcie.
+fail Ktoś zauważył, że nie jesteś stąd. Straż woła: „A witch! A wizard!” i musisz uciekać. Podróż w czasie skończyła się wcześniej, niż chciałeś.
+
+@level 1 | Brama miasta | patience=5 typed=0 extra=1 hint=none
+partner Guard Walter | W
+desc Rozdział 1: Brama Oakbridge
+scene Rok 1450. Stoisz przed wielką drewnianą bramą miasta Oakbridge. Strażnik Walter zatrzymuje każdego podróżnego i zadaje pytania. Masz na sobie zwykłe ubranie, ale w kieszeniach zostały ci rzeczy z przyszłości.
+goal Odpowiedz na pytania strażnika tak, żeby nie wzbudzić podejrzeń: przedstaw się, powiedz skąd jesteś i jak podróżujesz. Zwróć uwagę na rzeczy, których w 1450 roku jeszcze nie było.
+win Walter otwiera bramę: „Welcome to Oakbridge!” Nic nie wzbudziło jego podejrzeń, a ty wchodzisz do miasta.
+partial Walter w końcu cię wpuszcza, ale przygląda ci się dłużej, niż byś chciał. Wchodzisz do miasta z uczuciem, że ktoś cię obserwuje.
+fail Walter podnosi halabardę: „You are no traveller!” Brama zamyka się z trzaskiem, a ty uciekasz w las.
+w Oakbridge | Oakbridge (fikcyjne miasto)
+w traveller | podróżnik
+w traveler | podróżnik (pisownia amerykańska)
+t Stop! This is the gate of Oakbridge. Who are you? | Stój! To brama miasta Oakbridge. Kim jesteś? | I am a traveller. | Powiedz, że jesteś podróżnikiem. | „Jestem podróżnikiem”: I am a traveller. | I am a traveler.
+w John | John (imię)
+w Kevin | Kevin (imię)
+w Chantal | Chantal (imię)
+k A traveller. What is your name? | Podróżnik. Jak masz na imię? | My name is John. | My name is Kevin.; My name is Chantal. | Kevin i Chantal to imiona współczesne, w 1450 roku nikt tak nie nazywał dzieci. Strażnik uznałby cię za dziwaka.; Chantal to nowoczesne, francuskie imię z XX wieku. W 1450 roku popularne były John, William czy Thomas.
+k John, a good name. Where do you come from? | John, dobre imię. Skąd pochodzisz? | I come from Poland. | I come from the future.; I come from America. | Przyznanie się do przyszłości to dekonspiracja. Nikt w 1450 roku nie zrozumie takich słów.; Ameryki jeszcze nie odkryto, Kolumb wypłynie dopiero w 1492 roku.
+w by | przy; by horse = konno
+k Poland, that is far! How do you travel? On foot or by horse? | Polska, to daleko! Jak podróżujesz? Pieszo czy konno? | I travel by horse. | I travel by car.; I travel by train. | Samochodu w 1450 roku nie ma. Strażnik pomyśli, że jesteś szalony albo opętany.; Pociągów też jeszcze nie ma, pierwsza kolej pojawi się dopiero w XIX wieku.
+k By horse, good. Show me your bag. What do you have there? | Konno, dobrze. Pokaż mi swoją torbę. Co tam masz? | I have only bread and beer. | I have a phone.; I have a credit card. | Telefon w 1450 roku? Strażnik wziąłby go za czarodziejskie urządzenie i zawołał straż.; Karta kredytowa z plastiku wyglądałaby dla niego jak magia. Pieniądze to wtedy monety.
+t Good, you may go in. Are you hungry? | Dobrze, możesz wejść. Jesteś głodny? | Yes, I am hungry. Where is the inn? | Powiedz, że jesteś głodny, i zapytaj, gdzie jest gospoda. | „Gdzie” to where, a „gospoda” to inn.
+e The inn is just on the left. Have a good time in Oakbridge! | Gospoda jest zaraz po lewej. Miłego pobytu w Oakbridge!
+
+@level 2 | Gospoda | patience=5 typed=0.15 extra=3 hint=bank
+partner Innkeeper Tom | T
+desc Rozdział 2: Gospoda „The Red Ox”
+scene Wchodzisz do gospody. Karczmarz Tom jest ciekawski i pyta o wszystko: co chcesz zjeść, jak podróżujesz i czego potrzebujesz na noc. W gospodzie nie ma elektryczności ani nowoczesnych napojów.
+goal Zamów jedzenie i picie, które mogli podać w średniowieczu, ustal nocleg i nie wspomnij o niczym z przyszłości.
+win Tom klepie cię po plecach: „You are a good guest!” Dostajesz miejsce przy kominku i pełny talerz. Nikt nie podejrzewa, że jesteś z przyszłości.
+partial Tom przygląda ci się podejrzliwie, ale podaje jedzenie. Śpisz źle, bo wciąż myślisz o tym, co powiedziałeś.
+fail Tom woła głośno: „What is a Wi-Fi?!” Goście odwracają się w twoją stronę, a ty ledwo uciekasz tylnym wyjściem.
+t Welcome to the inn! What would you like to eat? We have bread and soup. | Witaj w gospodzie! Co chcesz zjeść? Mamy chleb i zupę. | I would like bread and soup, please. | Zamów chleb i zupę. | „Chciałbym” to I would like; „chleb i zupa” bez rodzajnika.
+w cola | cola
+k Bread and soup, good. And what do you drink? We have beer, wine and water. | Chleb i zupa, dobrze. A co pijesz? Mamy piwo, wino i wodę. | I would like a beer, please. | I would like a coffee, please.; I would like a cola, please. | Kawa dotarła do Europy dopiero w XVII wieku.; Coca-Cola powstała w XIX wieku. W 1450 roku nikt jej nie zna.
+w been | był (have been)
+w travelling | podróżujący; podróżowanie
+w travelled | podróżował (travel)
+t A beer, good. You have come a long way. How long have you been travelling? | Piwo, dobrze. Przebyłeś długą drogę. Jak długo już podróżujesz? | I have been travelling for ten days. | Powiedz, że podróżujesz już dziesięć dni. | „Od dziesięciu dni” to for ten days; I have been travelling to „podróżuję (od jakiegoś czasu)”. | I have travelled for ten days.
+k Ten days, that is long! Tomorrow I go to the market. Will you come with me? We take the cart. | Dziesięć dni, to długo! Jutro jadę na targ. Pojedziesz ze mną? Weźmiemy wóz. | Yes, gladly. We go by cart. | Yes, we will take the car.; No, I will go by bicycle. | Samochodu nie ma. Tom nie zna takiego słowa.; Rower wynaleziono dopiero w XIX wieku. W 1450 roku jeździ się wozem albo konno.
+w candle | świeca
+w Wi-Fi | internet bezprzewodowy
+w socket | gniazdko
+k Good. Your room has a bed. Would you like anything else? | Dobrze. W pokoju jest łóżko. Czy chcesz jeszcze coś? | Yes, I would like a candle, please. | Do you have Wi-Fi?; I would like a socket. | W 1450 roku nie ma internetu. Tom nie wie, co to jest Wi-Fi.; Gniazdka elektryczne wymyślono setki lat później. Wieczorem świeci się świecami.
+w Cheers | na zdrowie!
+w Tom | Tom (imię)
+t A candle, gladly. And here is another beer, a good beer in the year fourteen fifty! Cheers! | Świeca, proszę bardzo. A tu jeszcze piwo: dobre piwo w roku 1450! Na zdrowie! | Cheers! | Wznieś toast. | „Na zdrowie” przy toaście to cheers. | Cheers, Tom!
+e Good night! Tomorrow morning we go to the market. | Dobranoc! Jutro rano jedziemy na targ.
+
+@level 3 | Targ | patience=4 typed=0.3 extra=3 hint=bank reward=25
+partner Trader Bess | B
+desc Rozdział 3: Targ w Oakbridge
+scene Następnego ranka na rynku jest tłoczno. Kupcowa Bess sprzedaje chleb i ser. Przy płaceniu liczą się tylko monety, a ludzie przyglądają się twoim ubraniom.
+goal Kup chleb i ser, zapłać tak, jak płaci się w 1450 roku, i wyjaśnij, skąd masz dziwne ubranie.
+win Bess wsuwa ci do koszyka jabłko: „For the nice traveller!” Targ nic nie podejrzewa, a w oddali widać już ratusz.
+partial Bess w końcu sprzedała ci chleb i ser, ale kilka osób szepcze za twoimi plecami. Zbliża się ratusz.
+fail Bess krzyczy: „What are these clothes? What is a euro?” Tłum się zbiega, a ty uciekasz między straganami.
+t Good morning! What would you like to buy? Bread, cheese or apples? | Dzień dobry! Co chcesz kupić? Chleb, ser czy jabłka? | I would like bread and cheese, please. | Poproś o chleb i ser. | Rzeczowniki niepoliczalne stoją bez a: bread and cheese.
+w pence | pensy
+t Bread and cheese, good. The bread is two pence and the cheese is three pence. | Chleb i ser, dobrze. Chleb kosztuje dwa pensy, a ser trzy pensy. | How much is that together? | Zapytaj, ile to kosztuje razem. | „Razem” to together; „ile kosztuje” to how much is. | How much is it together?
+w coins | monety
+w euros | euro (liczba mnoga)
+k That is five pence. How would you like to pay? | To będzie pięć pensów. Jak chcesz zapłacić? | I pay with coins. | I pay with euros.; I pay with a card. | Euro wprowadzono dopiero w 2002 roku.; Karty płatnicze to wynalazek XX wieku. W 1450 roku płaci się monetami.
+w T-shirt | koszulka
+w Those | tamte, te
+w trainers | adidasy, buty sportowe
+k Good, coins. Your clothes are strange. What is that? | Dobrze, monety. Twoje ubranie jest dziwne. Co to jest? | That is fashion from the east. | That is a T-shirt.; Those are jeans and trainers. | T-shirty z napisami pojawiły się w XX wieku, a Bess nigdy takiego nie widziała.; Dżinsy i adidasy to rzeczy z dwudziestego wieku. Bess zawołałaby straż.
+w wants | chce (want)
+t From the east, I see. The mayor wants to see you. Will you come with me? | Ze wschodu, rozumiem. Burmistrz chce cię zobaczyć. Pójdziesz ze mną? | Yes, I will come with you. | Zgódź się i idź z nią. | „Pójdę z tobą” to I will come with you. | Yes, I come with you.
+e Then come! The town hall is over there. | No to chodź! Ratusz jest tam.
+
+@level 4 | Burmistrz | patience=4 typed=0.5 extra=4 hint=letters reward=25
+partner Mayor Hugh | H
+desc Rozdział 4: W ratuszu
+scene W ratuszu czeka burmistrz Hugh. Słyszał dziwne plotki o obcym przybyszu. Zauważył coś błyszczącego na twoim nadgarstku i zadaje pytania, a tobie została tylko jedna droga: wrócić do bramy, gdzie wszystko się zaczęło.
+goal Odpowiedz na pytania burmistrza tak, żeby nie zdradzić zegarka, telefonu ani przyszłości, i wróć bezpiecznie do bramy.
+win Burmistrz macha ręką: „Good, good, go on!” Wracasz do bramy, w powietrzu coś migocze i budzisz się we własnym czasie. Na dłoni masz pensy z 1450 roku.
+partial Burmistrz pozwala ci odejść, ale pod nosem mruczy o czarodziejach. Dopiero za bramą migotanie powietrza zabiera cię do domu.
+fail Burmistrz woła strażników: „A magic box! He comes from the future!” Nie zdążysz dojść do bramy.
+t Good day! I am the mayor of Oakbridge. Who are you? | Dzień dobry! Jestem burmistrzem Oakbridge. Kim jesteś? | I am John, a traveller from Poland. | Przedstaw się: John, podróżnik z Polski. | „Z Polski” to from Poland.
+w bracelet | bransoleta
+w wristwatch | zegarek na rękę
+k A traveller from Poland, I see. What is that on your hand? | Podróżnik z Polski, rozumiem. Co to jest na twojej ręce? | It is only a bracelet. | It is a wristwatch with a battery.; It is a digital watch. | Zegarek na rękę z baterią to wynalazek nowoczesny. Burmistrz nie ma pojęcia, co to jest.; Cyfrowy zegarek wyglądałby dla niego jak czary. W 1450 roku są tylko wieże z zegarami i klepsydry.
+w haven't | nie masz (haven't you? = prawda?)
+w shows | pokazuje (show)
+k Only a bracelet? What time is it? You have a watch, haven't you? | Tylko bransoleta? Która godzina? Masz przecież zegarek. | I do not have a watch. The sun shows noon. | It is half past two.; I look at my phone. | Taka dokładna godzina z minutami to nowoczesny sposób liczenia czasu.; Telefon to rzecz z przyszłości. Burmistrz uznałby ją za czarodziejską.
+k Noon, good. What year is it? | Południe, dobrze. Który mamy rok? | It is the year fourteen fifty. | It is the year two thousand.; I do not know. | Jeśli podasz rok z przyszłości, zdradzisz się natychmiast.; Nie znać roku? Gospodarz dał ci wskazówkę wczoraj. Burmistrz uznałby, że coś ukrywasz.
+k Good. People say you have a magic box. Is that true? | Dobrze. Ludzie mówią, że masz magiczną skrzynkę. Czy to prawda? | No, I do not have a magic box. | Yes, it is a phone.; Yes, I come from the future. | Przyznanie się do telefonu zakończy rozmowę. Burmistrz nie wie, co to jest.; Przyznanie się do podróży w czasie to najgorsza odpowiedź.
+w going | idący; I am going = idę
+k Good. It is late now. Where are you going? | Dobrze. Jest już późno. Dokąd teraz idziesz? | I am going back to the gate. | I am going to the time machine.; I am going to the car. | Wehikuł czasu to najgorsza odpowiedź.; Samochodu w 1450 roku nie ma. Burmistrz pomyślałby, że kłamiesz.
+e Good, then go. Have a good journey! | Dobrze, to idź. Szczęśliwej podróży!
+
+
+@larp politiker | Polityk | Voter | V | Jesteś skorumpowanym politykiem. Dawno temu pan Finch dał ci kopertę, a „Cuckoo File” (afera Kukułka) wraca na każdym szczeblu twojej kariery. Wyborcy ci wierzą… i przestają… i zapominają. | Przekonaj wyborców, że nadajesz się na stanowisko. Nigdy się nie przyznaj i nie sprzeczaj sam sobie.
+fee 0
+reward 30
+strict yes
+story yes
+disclaimer Satyra. Wszystkie postacie, partie i afery są zmyślone; ewentualne podobieństwo do prawdziwych osób jest przypadkowe.
+win Wygrywasz wybory! Nikt już nie pamięta koperty od pana Fincha. Przed gmachem tłum skanduje twoje nazwisko, a ty obiecujesz „uczciwą politykę”. Pan Finch macha z ostatniego rzędu.
+partial Wygrywasz o włos. Dziennikarze wciąż grzebią w aktach, ale ty już podpisujesz pierwsze dokumenty. Kłamstwo trzyma się jeszcze na słowo honoru.
+fail Wiarygodność spadła do zera. Wyborcy wyciągają stare akty, a z tłumu ktoś krzyczy: „The envelope!” Twoja kariera kończy się na pierwszej stronie gazet.
+
+@level 1 | Village head | patience=4 cap=6 typed=0 extra=1 hint=none
+desc Szczebel 1: sołtys wsi Littlebrook
+partner Mrs Smith | S
+scene Zebranie wiejskie w sali gimnastycznej w Littlebrook. Chcesz zostać sołtysem (village head). Mrs Smith zadaje pytania, a cała wieś słucha. Wszyscy pamiętają, że pan Finch naprawił drogę, i że ktoś widział kopertę…
+goal Przekonaj wieś, że jesteś uczciwy, i zaprzecz plotkom o kopercie.
+win Wieś klaszcze. Zostajesz sołtysem Littlebrook. Pan Finch, w pierwszym rzędzie, puszcza do ciebie oko.
+partial Wygrywasz jednym głosem. Mrs Smith patrzy na ciebie podejrzliwie, ale podnosi rękę.
+fail Wieś ma dość. Mrs Smith mówi: „We will vote for someone else.” Kończysz karierę, zanim się zaczęła.
+t Good evening! You want to become the village head? | Dobry wieczór! Chce Pan zostać sołtysem? | Yes, I would like to become the village head. | Powiedz, że chcesz zostać sołtysem. | „Become” znaczy „zostać, stawać się”. | Yes, I want to become the village head.
+t Good. Are you honest? | Dobrze. Czy jest Pan uczciwy? | Yes, I am always honest. | Zapewnij, że jesteś zawsze uczciwy. | „Zawsze” to always; stoi po „am”. | | gain=1
+w Finch | Finch (nazwisko)
+w repaired | naprawił (repair)
+t Good. The road is broken. Mr Finch repaired it once. What will you do? | Dobrze. Droga jest zepsuta. Pan Finch kiedyś ją naprawił. Co Pan zrobi? | I will repair the road. | Obiecaj, że naprawisz drogę. | Obietnicę zapisujemy tak: I will + czasownik. | I will fix the road. | gain=1
+w envelope | koperta
+t Mr Finch? Wait! Mr Finch gave you an envelope! Somebody saw it! | Pan Finch? Chwileczkę! Pan Finch dał Panu kopertę! Ktoś to widział! | That is a lie! I hardly know Mr Finch. | Zaprzecz: to kłamstwo, ledwo znasz pana Fincha. | „Hardly” znaczy „ledwo”. | That is a lie! I hardly know him. | shift=-2 loss=2
+w forgotten | zapomniany; have forgotten = zapomnieliśmy
+t Well... that was a long time ago. We have forgotten it. | No cóż... to było dawno. Zapomnieliśmy o tym. | Thank you, I am grateful to you. | Podziękuj wyborcom za wyrozumiałość (jesteś im wdzięczny). | „Grateful” to wdzięczny; „you” to tu „państwu”. | Thank you, I am very grateful. | shift=+2
+w debts | długi
+o We have many debts in the village. What will you do? | W wiosce mamy wiele długów. Co Pan zrobi? | I will save money and be honest. | I will take more money.; I do not know. | Polityk, który mówi „zabiorę więcej pieniędzy”, nie brzmi wiarygodnie.; „Nie wiem” nie przekona wyborców. | gain=1
+w us | nas, nam
+t Good. Will you be honest with us? | Dobrze. Czy będzie Pan wobec nas uczciwy? | Yes, I am always honest with you. | Obiecaj uczciwość wobec wyborców. | „With you” to „wobec państwa”. | Yes, I will always be honest with you. | gain=1
+w Village | wieś
+w Head | głowa, szef (Village Head = sołtys)
+e Then we vote for you! Welcome, Mr Village Head! | Wybieramy więc Pana! Witamy, Panie sołtysie!
+
+@level 2 | Town council | patience=4 cap=6 typed=0.2 extra=2 hint=bank
+desc Szczebel 2: radny miejski
+partner Ms Reed | R
+scene Miasto Newtown. Jesteś kandydatem do rady miejskiej (town council). Dziennikarka Ms Reed pyta o „biznesmenów” i o to, skąd masz nowy samochód.
+goal Zaprzecz, że brałeś pieniądze, i nie daj się złapać na kłamstwie.
+win Ms Reed zamyka notes: „Good, I have no more questions.” Zostajesz radnym. Pan Finch gratuluje przez telefon.
+partial Zostajesz radnym, ale Ms Reed mówi: „I will keep digging.” Będzie dalej drążyć.
+fail Wywiad ląduje w gazecie pod tytułem „The Councillor and the Envelope”. Nikt na ciebie nie głosuje.
+w councillor | radny
+t Good morning, I am a journalist. You want to become a councillor? | Dzień dobry, jestem dziennikarką. Chce Pan zostać radnym? | Yes, I would like to become a councillor. | Potwierdź, że chcesz zostać radnym. | „Councillor” to radny; po „become” stoi a. | | gain=1
+w acquaintance | znajomy
+t You know the businessman Mr Finch. Is he your friend? | Zna Pan biznesmena pana Fincha. Czy to Pana przyjaciel? | No, he is only an acquaintance. | Zaprzecz: to tylko znajomy. | „Only” = tylko; „an acquaintance” = znajomy. | No, he is just an acquaintance. | gain=1
+t An acquaintance, I see. You have a new car. Where did you get the money? | Znajomy, rozumiem. Ma Pan nowy samochód. Skąd Pan miał pieniądze? | I bought it honestly. | Powiedz, że kupiłeś go uczciwie. | Past simple: I bought (od buy). | I bought the car honestly.
+w bribes | łapówki
+w took | wziął (take)
+w bribe | łapówka
+t Did you take bribes? | Czy brał Pan łapówki? | No, I never took a bribe. | Zaprzecz, że kiedykolwiek brałeś łapówki. | „Never” + past simple: I never took. | No, I never took bribes. | loss=2
+w these | ci, te
+t Really? Then look at this photo. You, Mr Finch and an envelope. | Naprawdę? W takim razie proszę spojrzeć na to zdjęcie. Pan, pan Finch i koperta. | I do not know these people. | Powiedz, że nie znasz tych ludzi. | „These people” = ci ludzie; „do not know” = nie znam. | | shift=-2
+w Voters | wyborcy
+w things | rzeczy
+t Hm. The photo is very old. Voters forget these things soon. | Hm. To zdjęcie jest bardzo stare. Wyborcy szybko o takich rzeczach zapominają. | The photo is not important. | Zlekceważ zdjęcie: nie jest ważne. | „Important” = ważny; przeczenie: not important. | | shift=+2
+w says | mówi (say)
+w lying | kłamiący; is lying = kłamie
+o A witness says you took money. | Świadek twierdzi, że brał Pan pieniądze. | That is not true. The witness is lying. | Yes, the witness is right.; I am a witness. | Przyznajesz się, więc przegrywasz.; Nie jesteś świadkiem, więc ta odpowiedź nie ma sensu. | gain=1
+t Thank you for the interview. Do you want to add anything? | Dziękuję za wywiad. Czy chce Pan coś dodać? | Yes, I am innocent. | Powiedz na koniec, że jesteś niewinny. | „Innocent” = niewinny. | | gain=1
+w said | powiedział (say)
+e I will write what you said. Goodbye! | Napiszę, co Pan powiedział. Do widzenia!
+
+@level 3 | Mayor | patience=4 cap=6 typed=0.4 extra=2 hint=bank
+desc Szczebel 3: burmistrz
+partner Mr Hartley | H
+scene W ratuszu miasta Newtown. Prokurator Mr Hartley bada przetarg (tender) na nowy most. Firma pana Fincha wygrała dziwnie łatwo, a w aktach wraca „Cuckoo File”.
+goal Wyjdź z przesłuchania jako burmistrz, nie przyznając się do niczego.
+win Mr Hartley zamyka teczkę: „No evidence. The file stays closed.” Zostajesz burmistrzem, a most otwiera się z pompą.
+partial Teczka zostaje otwarta, ale prokurator nie ma dowodów. Zostajesz burmistrzem z cieniem podejrzeń.
+fail Mr Hartley kładzie na stole kopertę i zdjęcie. „You are under arrest!” – mówi. Kończysz w areszcie.
+w Hartley | Hartley (nazwisko prokuratora)
+w interrogation | przesłuchanie
+t I am prosecutor Hartley. This is an interrogation. | Jestem prokuratorem Hartleyem. To jest przesłuchanie. | I would like to see my lawyer. | Poproś o swojego adwokata. | „Adwokat” to lawyer; „chciałbym zobaczyć” to I would like to see. | | gain=1
+t You can call your lawyer later. The company of Mr Finch won the tender for the bridge. Why? | Adwokata może Pan wezwać później. Firma pana Fincha wygrała przetarg na most. Dlaczego? | It had the best offer. | Wyjaśnij, że miała najlepszą ofertę. | „Best offer” = najlepsza oferta; „it” = ta firma. | The company had the best offer. | gain=1
+w questions | pytania
+t The best offer? We have many questions. Do you want to make a statement? | Najlepsza oferta? Mamy wiele pytań. Czy chce Pan złożyć zeznanie? | I refuse to make a statement. | Odmów składania zeznań. | To prawo do milczenia: I refuse to make a statement. | I would like to remain silent. | shift=-1
+t Hm. Without evidence there is no suspicion. We both know that. | Hm. Bez dowodów nie ma podejrzenia. Oboje o tym wiemy. | You have no evidence. | Powiedz prokuratorowi, że nie ma dowodów. | „Evidence” jest niepoliczalne: no evidence (bez „s”). | You have no proof. | shift=+2
+w indictment | akt oskarżenia
+o There may be an indictment. What do you say? | Być może będzie akt oskarżenia. Co Pan na to? | I am innocent. | I am guilty.; It was me. | „Guilty” = winny, a to przyznanie.; „It was me” = to byłem ja, czyli przyznanie się. | gain=1
+t Mr Finch says he gave you an envelope. | Pan Finch mówi, że dał Panu kopertę. | That is a lie! I never took an envelope. | Zaprzecz: to kłamstwo, nigdy nie wziąłeś koperty. | „Never” + past simple: I never took. | That is a lie! I never took an envelope. | shift=-2 loss=2
+d Then say it again, under oath. Did you take any money from Mr Finch? | A więc powiedz to jeszcze raz pod przysięgą: czy wziął Pan jakiekolwiek pieniądze od pana Fincha? | No, I did not take any money from Mr Finch. | Zaprzeczaj pod przysięgą: nie wziąłeś od niego żadnych pieniędzy. | „Any” w przeczeniu = żadnych: did not take any money. Jedna wpadka i koniec.
+e Good. You are the mayor. I have no more questions. | Dobrze. Jest Pan burmistrzem. Nie mam więcej pytań.
+
+@level 4 | MP | patience=4 cap=6 typed=0.6 extra=2 hint=letters
+desc Szczebel 4: poseł
+partner Ms Wood | W
+scene Parlament krajowy. Jesteś posłem (MP), a komisja śledcza (inquiry committee) wzywa cię jako świadka. Przewodnicząca Ms Wood mówi o „Cuckoo File”. Prawnicy mają dla ciebie nowe słowa: witness, oath, immunity.
+goal Odpowiadaj pod przysięgą tak, by nikt nie dowiódł, że kłamiesz.
+win Ms Wood: „The testimony is over.” Wychodzisz z sali z uniesioną głową. Komisja nic nie ma.
+partial Komisja kończy pracę bez wniosków, ale jeden członek zapisał w notatniku: „Check later!”
+fail Komisja nakazuje ci wyjaśnić sprzeczność. Zaplątałeś się, a prasa pisze o „Lying MP”.
+w telling | mówiący; I am telling = mówię
+t Welcome to the committee. You are under oath. | Witamy w komisji. Zeznaje Pan pod przysięgą. | Yes, I know. I tell the truth. | Potwierdź i zapewnij, że mówisz prawdę. | „Tell the truth” = mówić prawdę; „under oath” = pod przysięgą. | Yes, I know. I am telling the truth. | gain=1
+w As | jako
+w MP | poseł
+t Good. As an MP you have immunity. Do you want to give it up? | Dobrze. Jako poseł ma Pan immunitet. Czy chce się Pan go zrzec? | No, I would like to keep my immunity. | Odmów zrzeczenia się immunitetu. | „Keep” = zachować; „my immunity” = mój immunitet. | | shift=-1
+t Your testimony does not agree with the file. How do you explain that? | Pana zeznanie nie zgadza się z aktami. Jak Pan to wyjaśni? | I have nothing to hide. | Powiedz, że nie masz nic do ukrycia. | „Nothing to hide” = nic do ukrycia. | | loss=2
+t Hm. That was a long time ago. The voters do not think about it any more. | Hm. To było dawno. Wyborcy już o tym nie myślą. | That is the past. | Machnij ręką: to przeszłość. | „The past” = przeszłość. | That is in the past. | shift=+2
+o Here is a letter from Mr Finch. Do you know it? | Oto list od pana Fincha. Zna go Pan? | I do not know the letter. | Yes, I wrote the letter.; My lawyer wrote the letter. | Przyznajesz się, że to ty napisałeś list: to błąd.; Zwalanie na adwokata nie jest wiarygodne. | gain=1
+w got | dostał (get)
+t Then a witness. A witness says you got an envelope with money. | A więc świadek. Świadek mówi, że dostał Pan kopertę z pieniędzmi. | The witness is lying. I did not get any money. | Nazwij świadka kłamcą i zaprzecz, że dostałeś pieniądze. | „Is lying” = kłamie; „any money” = żadnych pieniędzy. | | shift=-2 loss=2
+k In the council you said you hardly know Mr Finch. Is that still true? | W radzie powiedział Pan, że ledwo zna pana Fincha. Czy to nadal prawda? | Yes, I hardly know him. | No, he is my friend.; No, I never saw him. | Przyznajesz, że to twój przyjaciel: sprzeczność i koniec.; Wcześniej mówiłeś „hardly”, a nie „nigdy go nie widziałem”. | gain=1
+e Thank you. You may go. We will see each other again soon. | Dziękuję. Może Pan iść. Wkrótce znów się zobaczymy.
+
+@level 5 | Minister | patience=4 cap=6 typed=0.8 extra=2 hint=bank
+desc Szczebel 5: minister
+partner Mr Winters | W
+scene Studio telewizyjne, wywiad na żywo (live). Jesteś ministrem (Minister) i siedzisz naprzeciw Mr Wintersa, prowadzącego wiadomości. Na ekranie nagle pojawia się stary dokument z „Cuckoo File”.
+goal Wyjdź ze studia nadal jako minister: nie daj się zapędzić w pułapkę na żywo.
+win Winters kończy wywiad: „Thank you, Minister.” Sondaże rosną. Pan Finch dzwoni: „Well done!”
+partial Wywiad kończy się remisem. Opozycja domaga się dymisji (resignation), ale premier cię broni.
+fail Na wizji uciekasz od odpowiedzi, a widzowie wszystko widzą. Rano gazety krzyczą: „Resign!”
+w Minister | minister
+t Good evening! We are live on television. Are you ready, Minister? | Dobry wieczór! Jesteśmy na żywo w telewizji. Jest Pan gotów, Panie ministrze? | Yes, I am ready. Gladly. | Potwierdź, że jesteś gotów. | „Be ready” = być gotowym. | Yes, I am ready. | gain=1
+w Cuckoo | kukułka
+w File | akta, teczka
+t The opposition says there is a scandal around the Cuckoo File. | Opozycja twierdzi, że wokół „Cuckoo File” jest skandal. | That is not a scandal. That is a campaign. | Zbagatelizuj: to nie skandal, tylko kampania. | „Campaign” = kampania; „not a scandal” = żaden skandal. | | shift=-1
+t A campaign? There is a document in the newspaper. It has your signature. | Kampania? W gazecie jest dokument. Ma Pana podpis. | I cannot remember that. | Powiedz, że nie możesz sobie tego przypomnieć. | „Remember” = pamiętać; „I cannot remember” = nie mogę sobie przypomnieć. | I do not remember that. | shift=-2 loss=2
+w forgery | fałszerstwo
+t That is your signature. How do you explain that? | To jest Pana podpis. Jak Pan to wyjaśni? | That is a forgery. | Zaprzecz: to fałszerstwo. | „Forgery” = fałszerstwo. | It is a forgery. | gain=1
+w polls | sondaże
+w rising | rosnący; are rising = rosną
+t Hm. Many people believe you. The polls are rising for you. | Hm. Wielu ludzi Panu wierzy. Sondaże rosną na Pana korzyść. | I thank you for your trust. | Podziękuj wyborcom za zaufanie. | „Trust” = zaufanie; „for your trust” = za państwa zaufanie. | | shift=+2
+w adviser | doradca
+o Mr Finch says he was your adviser. Is that true? | Pan Finch mówi, że był Pana doradcą. Czy to prawda? | No, I never worked with him. | Yes, he often gave me money.; I refuse to make a statement. | Przyznajesz się do pieniędzy: błąd.; „I refuse to make a statement” w telewizji wygląda na przyznanie się. | gain=1
+t Do you want to resign? Then it is all over. | Czy chce Pan podać się do dymisji? Wtedy wszystko skończone. | No, I will not resign. I am innocent. | Odmów dymisji i powiedz, że jesteś niewinny. | „Resign” = podać się do dymisji; „I will not resign” = nie podam się do dymisji. | | gain=1
+k Here is a photo of you and Mr Finch. There is an envelope too. What is in the envelope? | Oto zdjęcie Pana i pana Fincha. Jest tam też koperta. Co jest w kopercie? | The photo is old. I never took an envelope. | That is money for my campaign.; That was only a gift. | Przyznanie się do pieniędzy: koniec.; „Gift” to też przyznanie, bo wcześniej mówiłeś, że nie brałeś koperty. | gain=1
+e Thank you for the interview, Minister. | Dziękuję za wywiad, panie ministrze.
+
+@level 6 | Prime Minister | patience=4 cap=6 typed=1 extra=2 hint=none
+desc Szczebel 6: premier
+partner Ms Hart | H
+scene Debata finałowa w telewizji. Kandydujesz na premiera (Prime Minister). Naprzeciw stoi Ms Hart z partii „New Honesty” i jej teczka z „Cuckoo File”. Cały kraj ogląda.
+goal Wygraj debatę, zachowaj spokój i nie przyznaj się do niczego do samego końca.
+win Sondaż: 52 procent chce ciebie. Zostajesz premierem, a koperta pana Fincha leży gdzieś na dnie szuflady.
+partial Debata kończy się remisem. Wybory wygrywasz minimalnie i obiecujesz „więcej przejrzystości”.
+fail Ms Hart kładzie na stoliku teczkę. Kraj widzi sprzeczność w twoich słowach i na ekranie pojawia się napis: „The candidate lies.”
+w Ms | pani (przed nazwiskiem, bez względu na stan cywilny)
+w Hart | Hart (nazwisko)
+w Prime | główny; Prime Minister = premier
+t Welcome to the debate! Ms Hart, candidate, please. | Witamy na debacie! Pani Hart, panie kandydacie, proszę. | Good evening. I would like to become Prime Minister. | Przywitaj się i powiedz, że chcesz zostać premierem. | „Prime Minister” = premier; po „become” bez rodzajnika. | | gain=1
+w New | nowy
+w Honesty | uczciwość
+t I am from the New Honesty party. Tell the truth, candidate! | Jestem z partii New Honesty. Niech Pan mówi prawdę, panie kandydacie! | I always tell the truth. | Zapewnij, że zawsze mówisz prawdę. | „Always” stoi przed czasownikiem: I always tell. | | gain=1
+w accusation | zarzut
+t You took bribes. That is my accusation. | Brał Pan łapówki. To mój zarzut. | I reject this accusation. | Odrzuć ten zarzut. | „Reject” = odrzucić; „accusation” = zarzut. | I reject that accusation.; I deny this accusation. | shift=-2 loss=2
+w campaigning | prowadzenie kampanii
+t Well... many voters say this is only campaigning. It was a long time ago. | No cóż... wielu wyborców mówi, że to tylko kampania. To było dawno. | Your campaign is dirty. | Zarzuć rywalce brudną kampanię. | „Dirty” = brudny; po „is” bez końcówki. | | shift=+2
+t Ms Hart says she has proof. Do you see any proof, candidate? | Pani Hart mówi, że ma dowody. Czy widzi Pan jakiekolwiek dowody, panie kandydacie? | No, I see no proof. | Powiedz, że nie widzisz żadnych dowodów. | „No proof” = żadnych dowodów. | No, I do not see any proof. | gain=1
+w jobs | miejsca pracy
+t Good. And what is your plan for the country? | Dobrze. A jaki jest Pana plan dla kraju? | I will create new jobs. | Obiecaj nowe miejsca pracy. | „New jobs” = nowe miejsca pracy; „create” = tworzyć. | | gain=1
+t Your friend Mr Finch says he gave you a lot of money! | Pański przyjaciel pan Finch mówi: dał Panu dużo pieniędzy! | That is a lie! He is not my friend. | Zaprzecz: to kłamstwo, on nie jest twoim przyjacielem. | „Not my friend” = nie mój przyjaciel. | | shift=-1 loss=2
+o In the council you said he is only an acquaintance. And now? | W radzie powiedział Pan, że to tylko znajomy. A teraz? | He is only an acquaintance. | He is my friend.; I never saw him. | Zaprzeczasz sam sobie.; Wcześniej przyznałeś, że go znasz („an acquaintance”), więc „nigdy go nie widziałem” to sprzeczność. | gain=1
+k Ms Hart shows the envelope. Did you take it? Yes or no? | Pani Hart pokazuje kopertę. Wziął ją Pan? Tak czy nie? | No, I never took it. | Yes, I took it.; I refuse to make a statement. | Przyznanie się: koniec.; Milczenie na żywo wygląda jak przyznanie się.
+w Congratulations | gratulacje
+e And the Prime Minister is... you! Congratulations! | A premierem zostaje... Pan! Serdeczne gratulacje!
+
+
+@larp flughafen | Lotnisko | Check-in agent | A | Londyn, lotnisko Heathrow, wczesny ranek. Lecisz do Warszawy na ślub najlepszego przyjaciela, a samolot nie poczeka. Masz walizkę, paszport i mało czasu. | Przejdź całą drogę: odprawa, kontrola bezpieczeństwa, bramka, lot i odbiór bagażu w Warszawie.
+fee 0
+reward 20
+strict yes
+story yes
+win Docierasz do Warszawy z walizką, paszportem i pół godziny zapasu. Przyjaciel czeka w hali przylotów z bukietem: „You did it! The wedding can begin!”
+partial Dotarłeś do Warszawy, ale po drodze sporo się nagadałeś i trochę pobiegałeś. Walizka jest, ślub też, ty trochę zdyszany, ale na czas.
+fail Pomyliłeś coś w najgorszym momencie i samolot odleciał bez ciebie. Ślub oglądasz na telefonie, a przyjaciel obiecuje ci długą wyprawę „na pocieszenie”.
+
+@level 1 | Odprawa | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Odprawa
+partner Check-in agent | A
+scene Lotnisko Heathrow, hala odlotów. Podchodzisz do stanowiska odprawy linii Northwind Air. Pracowniczka patrzy na ciebie życzliwie i czeka na dokumenty.
+goal Odpraw się na lot do Warszawy: pokaż paszport, nadaj walizkę i wybierz miejsce.
+win Pracowniczka podaje ci kartę pokładową: „Have a good trip!” Walizka jedzie na taśmie, a ty idziesz do kontroli bezpieczeństwa.
+partial Odprawa udała się, ale pracowniczka kilka razy musiała się domyślać, o co ci chodzi. Karta pokładowa w ręku, czas ucieka.
+fail Pracowniczka nie rozumie, czego chcesz, i prosi następną osobę w kolejce. Musisz zacząć od nowa na końcu kolejki.
+w Northwind | Northwind (fikcyjna linia; „wiatr północny”)
+w Air | Air (linia lotnicza)
+w flying | lecący; I am flying = lecę
+w Warsaw | Warszawa
+t Hello! Welcome to the Northwind Air desk. Where are you flying to? | Dzień dobry! Witamy przy stanowisku Northwind Air. Dokąd Pan leci? | Hello! I am flying to Warsaw. | Przywitaj się i powiedz, że lecisz do Warszawy. | „Lecę” to I am flying, a „do” miasta to to. | Hello! I fly to Warsaw.
+t Warsaw, lovely. Your passport, please. And why are you going to Warsaw? | Warszawa, jak miło. Paszport, proszę. A po co Pan jedzie do Warszawy? | Here is my passport. I am going to a wedding. | Podaj paszport i powiedz, że jedziesz na ślub. | „Oto” przy liczbie pojedynczej to here is; „na ślub” to to a wedding. | Here is my passport. I am flying to a wedding.
+t A wedding, how nice! Would you like to check in a suitcase? | Ślub, jak miło! Czy chce Pan nadać walizkę? | Yes, I would like to check in a suitcase. | Powiedz, że chcesz nadać walizkę. | „Nadać bagaż” to check in a suitcase. | Yes, I would like to check in one suitcase.
+w kilos | kilogramy
+w luggage | bagaż
+t Please put the suitcase on the scale. It is twenty kilos. That is fine. Do you have hand luggage? | Proszę postawić walizkę na wadze. Waży dwadzieścia kilo. To w porządku. Czy ma Pan bagaż podręczny? | Yes, I have a bag as hand luggage. | Powiedz, że masz torbę jako bagaż podręczny. | „Bagaż podręczny” to hand luggage, a „jako” to as.
+w aisle | przejście (między rzędami)
+t Good. Would you like a window seat or an aisle seat? | Dobrze. Czy woli Pan miejsce przy oknie, czy przy przejściu? | A window seat, please. | Powiedz, że wolisz miejsce przy oknie. | Wybór: a window seat. | A window seat, please!
+w boarding | wejście na pokład
+t Here is your boarding pass. Departure is at half past ten. Do you have any more questions? | Oto Pana karta pokładowa. Odlot jest o wpół do jedenastej. Czy ma Pan jeszcze pytania? | Yes, is the flight on time? | Zapytaj, czy lot jest punktualny. | „Punktualny” to on time; pytanie zaczyna się od czasownika: is the flight on time?
+t Yes, the flight is on time. Your gate is twelve. Please go straight on. | Tak, lot jest punktualny. Pana bramka to 12. Proszę iść prosto. | Thank you very much! Goodbye! | Podziękuj i pożegnaj się. | „Do widzenia” to goodbye.
+e Have a good trip! | Szczęśliwej podróży!
+
+@level 2 | Kontrola bezpieczeństwa | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Kontrola bezpieczeństwa
+partner Security officer | S
+scene Masz kartę pokładową, a przed tobą długa kolejka do kontroli. Funkcjonariusz podaje plastikowe pojemniki i patrzy uważnie na twoją torbę.
+goal Przejdź kontrolę bezpieczeństwa: pokaż laptop, zdejmij pasek i odpowiedz na pytania.
+win Funkcjonariusz kiwa głową: „Everything is fine. Go on.” Zakładasz pasek i biegniesz do bramki z pełnym spokojem.
+partial Kontrola przebiegła w końcu bez problemów, ale funkcjonariusz kilka razy zmarszczył brwi. Zakładasz pasek w biegu.
+fail Funkcjonariusz uznaje twoje odpowiedzi za podejrzane. Zostajesz zatrzymany na dodatkową kontrolę, a samolot odlatuje bez ciebie.
+t Good morning! This is security. Please put your bag here on the belt. | Dzień dobry! To jest kontrola bezpieczeństwa. Proszę położyć torbę tutaj na taśmie. | Yes, of course. | Zgódź się i powiedz, że oczywiście. | „Oczywiście” to of course.
+t Thank you. Do you have a laptop in the bag? Please take the laptop out. | Dziękuję. Czy ma Pan w torbie laptop? Proszę go wyjąć. | Yes, here is my laptop. | Potwierdź i podaj laptop. | „Mój” to my: my laptop.
+w liquids | płyny
+w perfume | perfumy
+t Thank you. Do you have any liquids? For example water, perfume or cream? | Dziękuję. Czy ma Pan jakieś płyny? Na przykład wodę, perfumy albo krem? | No, I do not have any liquids. | Zaprzecz: nie masz płynów. | W przeczeniu „żadnych” to any: I do not have any liquids. | No, I have no liquids.
+t Good. Please take off your belt and your jacket too. | Dobrze. Proszę też zdjąć pasek i kurtkę. | Yes, here are my belt and my jacket. | Podaj pasek i kurtkę. | Liczba mnoga od „oto” to here are.
+k Thank you. Is there a knife or a weapon in your bag? | Dziękuję. Czy w Pana torbie jest nóż albo broń? | No, I do not have a knife or a weapon. | Yes, I have a knife.; I do not know, maybe. | Przyznanie się do noża to natychmiastowe zatrzymanie.; Niepewna odpowiedź przy takim pytaniu wzbudza podejrzenia: zatrzymanie.
+w scanner | skaner
+w Beep | pip
+w keys | klucze
+t Good. Please go through the scanner. Beep! Do you have anything else in your pocket? | Dobrze. Proszę przejść przez skaner. Pip! Czy ma Pan jeszcze coś w kieszeni? | Yes, I have my keys and my phone. | Powiedz, że masz klucze i telefon. | „Klucze” to keys, a „mój” to my. | Yes, I have the keys and my phone.
+e Everything is fine. Go on. Have a good trip! | Wszystko w porządku. Proszę iść dalej. Szczęśliwej podróży!
+
+@level 3 | Przy bramce | patience=4 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Przy bramce
+partner Airport employee | E
+scene Siedzisz przy bramce 12 i patrzysz na zegarek. Nagle w głośnikach coś trzaska, a na tablicy pojawia się napis „Delayed”.
+goal Dowiedz się, co z lotem, zrozum komunikat o zmianie bramki i wejdź na pokład.
+win Biegniesz do nowej bramki i wsiadasz jako jeden z ostatnich. Pracownik zamyka drzwi: „That was close!”
+partial Znalazłeś w końcu właściwą bramkę, choć po drodze kilka razy musiałeś dopytywać. Wchodzisz na pokład spocony.
+fail Zrozumiałeś komunikat na opak i czekasz przy złej bramce. Kiedy orientujesz się w błędzie, drzwi samolotu są już zamknięte.
+w delayed | opóźniony
+t Excuse me! Are you a passenger on the flight to Warsaw? | Przepraszam! Czy jest Pan pasażerem lotu do Warszawy? | Yes, my flight is delayed, isn't it? | Potwierdź i zapytaj, czy twój lot jest opóźniony. | „Opóźniony” to delayed; „isn't it?” na końcu znaczy „prawda?”.
+w minutes | minuty
+w starts | zaczyna się (start)
+t Yes, the flight is forty minutes late. Boarding starts at eleven o'clock. | Tak, lot ma czterdzieści minut opóźnienia. Wejście na pokład zacznie się o jedenastej. | When is boarding? I have to go to a wedding. | Zapytaj, kiedy jest boarding, i dodaj, że lecisz na ślub. | Pytanie o czas zaczyna się od when: when is boarding? | When is the boarding? I am going to a wedding.
+w planes | samoloty
+t A wedding, how nice! Boarding is at eleven. Do you have to change planes in Warsaw? | Ślub, jak miło! Boarding jest o jedenastej. Czy musi Pan przesiadać się w Warszawie? | No, I am flying direct to Warsaw. | Odpowiedz, że nie, lecisz bezpośrednio. | „Bezpośrednio” to direct. | No, I fly direct to Warsaw.
+w closed | zamknięty
+w staying | zostający; I am staying = zostaję
+k Good, direct. Attention, please! The flight to Warsaw now leaves from gate five. Gate twelve is closed. Did you understand? Where are you going? | Dobrze, bezpośrednio. Uwaga, ogłoszenie! Lot do Warszawy odlatuje teraz z bramki 5. Bramka 12 jest zamknięta. Czy Pan zrozumiał? Dokąd Pan idzie? | I am going to gate five. | I am staying at gate twelve.; I am going to the exit. | Bramka 12 jest zamknięta, więc czekanie tam kończy się spóźnieniem.; Wyjście to wyjście z lotniska, nie bramka na pokład.
+w getting | wsiadający; getting on = wsiadanie
+t Then hurry! Your boarding pass, please. You can board now. | W takim razie szybko! Karta pokładowa, proszę. Może Pan już wsiadać. | Here is my boarding pass. I am boarding now. | Podaj kartę i powiedz, że już wsiadasz. | „Wsiadać do samolotu” to board. | Here is my boarding pass. I am getting on now.
+e Have a good trip! Boarding is open. | Szczęśliwej podróży! Boarding jest otwarty.
+
+@level 4 | W samolocie i po lądowaniu | patience=4 typed=0.75 extra=3 hint=letters reward=30
+desc Rozdział 4: Lot i przylot
+partner Flight attendant | F
+scene Wchodzisz na pokład Northwind Air. Stewardesa wita pasażerów przy drzwiach, a za chwilę wystartujecie do Warszawy. Po lądowaniu będziesz musiał jeszcze znaleźć kontrolę paszportową i swoją walizkę.
+goal Zajmij miejsce, zapnij pas, poproś o picie, a po lądowaniu dowiedz się, gdzie jest kontrola paszportowa, taśma bagażowa i odprawa celna.
+win Walizka wyjeżdża na taśmie jako pierwsza, a celnik życzy ci „Welcome to Poland!” Przyjaciel czeka w hali przylotów.
+partial Wszystko udało ci się znaleźć, ale po drodze trzy razy zapytałeś o drogę. Walizka dojechała, a ty do ślubu zdążysz.
+fail Poszedłeś w złą stronę i straciłeś czas na lotnisku. Walizka krąży samotnie po taśmie, a przyjaciel wydzwania co minutę.
+t Good morning and welcome on board! Your boarding pass, please. | Dzień dobry i witamy na pokładzie! Proszę o kartę pokładową. | Good morning! Here is my boarding pass. | Przywitaj się i pokaż kartę pokładową. | „Oto” przy liczbie pojedynczej to here is.
+t Thank you. Your seat is fourteen. It is a window seat. Please put your bag in the overhead locker. | Dziękuję. Pana miejsce to 14. To miejsce przy oknie. Proszę położyć torbę w schowku nad głową. | Thank you, I put the bag in the overhead locker. | Podziękuj i powiedz, że kładziesz torbę do schowka. | „Schowek nad głową” to overhead locker. | Thank you, I will put the bag in the locker.
+w fasten | zapiąć
+w fastening | zapinający; I am fastening = zapinam
+t Thank you. Please fasten your seat belt. We take off soon. | Dziękuję. Proszę zapiąć pasy. Za chwilę startujemy. | Yes, I am fastening my seat belt. | Powiedz, że zapinasz pas. | „Zapinam pas” to I am fastening my seat belt. | Yes, I fasten my seat belt.
+t Thank you. Would you like a drink? | Dziękuję. Czy chce Pan coś do picia? | Yes, a coffee, please. | Poproś o kawę. | Prośba: a coffee, please.
+w landing | lądujący; are landing = lądujemy
+t Here is your coffee. Do you have any questions? | Oto Pana kawa. Czy ma Pan jakieś pytania? | Yes, when do we land in Warsaw? | Zapytaj, kiedy lądujecie w Warszawie. | „Kiedy” to when, a „lądujemy” to do we land. | Yes, when are we landing in Warsaw?
+t We land in ten minutes. Welcome to Warsaw! The arrival is on time. | Lądujemy za dziesięć minut. Witamy w Warszawie! Przylot jest punktualny. | Thank you! Where is passport control, please? | Podziękuj i zapytaj, gdzie jest kontrola paszportowa. | Pytanie o miejsce zaczyna się od where: where is passport control?
+w baggage | bagaż
+w reclaim | odbiór (baggage reclaim = odbiór bagażu)
+w customs | cło, urząd celny
+k Passport control is on the left. After that comes baggage reclaim and then customs. Where do you go first? | Kontrola paszportowa jest po lewej. Potem taśma bagażowa, a potem cło. Dokąd Pan idzie najpierw? | First I go to passport control. | First I go to customs.; First I go to baggage reclaim. | Do cła idziesz na końcu, po odbiorze walizki.; Walizkę odbierasz dopiero po kontroli paszportowej.
+t Exactly! And after that to baggage reclaim. Your suitcase comes on belt four. | Dokładnie! A potem do odbioru bagażu. Pana walizka przyjedzie na taśmie czwartej. | Thank you very much! I will take the suitcase from the belt. | Podziękuj i powiedz, że zdejmiesz walizkę z taśmy. | „Z taśmy” to from the belt. | Thank you! I take my suitcase from the belt.
+t Do you have anything to declare? Customs will ask that. | Czy ma Pan coś do oclenia? O to zapyta cło. | No, I have nothing to declare. | Powiedz, że nie masz nic do oclenia. | „Nic” to nothing: nothing to declare.
+e Then everything is fine. Welcome to Poland and enjoy the wedding! | Wtedy wszystko w porządku. Witamy w Polsce i dobrej zabawy na ślubie!

@@ -383,3 +383,446 @@ Nowe słowa: пре́дки = przodkowie, зна́ем = wiemy (знать), в�
 | 6 | Покляни́сь нам! Пото́мки забу́дут прокля́тье? *(Przysięgnij nam! Czy potomkowie zapomną klątwę?)* | **Кляну́сь: пото́мки забу́дут прокля́тье.** *(Złóż przysięgę: potomkowie zapomną klątwę.)* · warianty: Кляну́сь, пото́мки забу́дут прокля́тье.; Я кляну́сь: пото́мки забу́дут прокля́тье. · ŚMIERTELNE | Przysięga przodkom brzmi jak „клянусь”. |
 | 7 | Тогда́ иди́. Твой Кра́сный Град бу́дет жить. *(Wtedy idź. Twój Czerwony Gród będzie żył.)* | **Спаси́бо, пре́дки. Я бу́ду му́дро пра́вить го́родом.** *(Podziękuj przodkom i obiecaj mądre rządy.)* | „Mądrze” to мудро. |
 | 8 | Пусть Кра́сный Град бу́дет го́родом сча́стья и бога́тства! *(Niech Czerwony Gród będzie grodem szczęścia i bogactwa!)* | — |  |
+
+## Babcia w parku (oma)
+
+**Scena:** Niedziela w parku. Na ławce siedzi starsza pani, która uwielbia rozmawiać i ma całe popołudnie.  
+**Cel:** Posiedź z babcią Galą i porozmawiaj z nią. Nikt cię stąd nie wyrzuci.  
+**Rozmówca:** Ба́бушка Га́ля  
+**Zakończenia:** win: Babcia Gala promienieje: „Како́й ми́лый молодой челове́к!” Zaprasza cię na niedzielną herbatę i kawałek ciasta. · partial: Rozmowa się toczyła, choć kilka razy musiałeś prosić o powtórzenie. Babcia Gala uśmiecha się cierpliwie i zaprasza cię znowu. · fail: Babcia Gala się nie zniechęca, bo ma nieskończoną cierpliwość. Jeśli kiedyś zobaczysz ten komunikat, napisz do nas.  
+
+### Poziom 1: Na ławce  (typed=0, hint=none, cierpliwość 3)
+
+Nowe słowa: хоро́шая = dobra, ładna (r. żeński), тако́е = taki (r. nijaki), тёплое = ciepłe, Га́ля = Gala (imię), Па́вел = Paweł (imię), краси́вое = piękne, живёте = mieszka pan(i); mieszkacie (жить), прие́хал = przyjechał (приехать)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Park, ławka, słońce. Starsza pani karmi okruchami wróble i zaczyna rozmowę. Nie musisz się spieszyć: babcia Gala poczeka.  
+*Cel:* Przywitaj się, powiedz, jak się nazywasz i skąd jesteś.  
+*Zakończenia:* win: Babcia Gala klepie ławkę obok siebie: „Садитесь, Па́вел!” Zostajesz na dłużej. · partial: Rozmowa się udała, mimo kilku pomyłek. Babcia Gala zachowuje cierpliwość i robi ci miejsce na ławce. · fail: Babcia Gala nigdy się nie zniechęca.
+
+| 1 | Добрый день, молодой челове́к! Сего́дня хоро́шая пого́да, правда? *(Dzień dobry, młody człowieku! Dziś ładna pogoda, prawda?)* | **Да, пого́да хоро́шая.** *(Zgódź się, że pogoda jest ładna.)* · warianty: Да, пого́да о́чень хоро́шая.; Да, сего́дня хоро́шая пого́да. | „Пого́да” jest rodzaju żeńskiego, więc „хоро́шая”. |
+| 2 | Да, и со́лнце тако́е тёплое! Как вас зову́т? Я Га́ля. *(Tak, a słońce takie ciepłe! Jak Pan się nazywa? Ja jestem Gala.)* | **Меня́ зову́т Па́вел.** *(Powiedz, jak masz na imię.)* · warianty: Я Па́вел. | „Меня́ зову́т” to „nazywam się” (dosłownie „mnie nazywają”). |
+| 3 | Па́вел! Краси́вое и́мя. Вы живёте здесь? *(Paweł! Piękne imię. Mieszka Pan tutaj?)* | **Нет, я не живу́ здесь. Я из По́льши.** *(Zaprzecz i powiedz, że jesteś z Polski.)* · warianty: Нет, я здесь не живу́. Я прие́хал из По́льши. | „Не” stoi przed czasownikiem; „из” + dopełniacz: из По́льши. |
+| 4 | Из По́льши! Э́то далеко́. Хоти́те сесть? *(Z Polski! To daleko. Chce Pan usiąść?)* | **Да, пожа́луйста. Большо́е спаси́бо!** *(Zgódź się i podziękuj.)* · warianty: Да, хочу́. Спаси́бо! | „Большо́е спаси́бо” to „dziękuję bardzo”. |
+| 5 | Пожа́луйста! Здесь есть место. *(Proszę bardzo! Tu jest miejsce.)* | — |  |
+
+### Poziom 2: Wnuk i kaczki  (typed=0.25, hint=bank, cierpliwość 3)
+
+Nowe słowa: смотри́те = niech pan(i) patrzy; patrzcie (смотреть), Макс = Maks (imię), лет = lat (dopełniacz od год: пять лет), кормит = karmi (кормить), уток = kaczek (dopełniacz od утка), поня́тно = rozumiem, jasne, возьми́те = niech pan(i) weźmie (взять), сама́ = sama, испекла́ = upiekła (испечь), ра́да = rada, cieszę się, ах = ach, тако́й = taki (r. męski)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Mały Maks biega po trawniku i karmi kaczki, a babcia Gala pokazuje ci zdjęcia w portfelu. Z torby wyjmuje ciasto własnej roboty.  
+*Cel:* Porozmawiaj o wnuku Maksie, powiedz, czy masz dzieci, i spróbuj ciasta.  
+*Zakończenia:* win: Babcia Gala wręcza ci drugi kawałek: „Ешьте, ешьте, вы тако́й худо́й!” Maks macha do ciebie z daleka. · partial: Zjadłeś ciasto, choć kilka razy brakowało ci słów. Babcia Gala dolewa herbaty z termosu. · fail: Babcia Gala nie traci cierpliwości.
+
+| 1 | Смотри́те, э́то мой вну́к Макс. Ему́ шесть лет. *(Niech Pan patrzy, to mój wnuk Maks. Ma sześć lat.)* | **Он о́чень ми́лый.** *(Pochwal wnuka: powiedz, że jest bardzo miły.)* · warianty: Он о́чень хороший.; Макс о́чень ми́лый. | „Он” to „on”; „ми́лый” = miły. |
+| 2 | Спаси́бо! Макс кормит уток. А у вас есть де́ти? *(Dziękuję! Maks karmi kaczki. A czy Pan ma dzieci?)* | **Нет, у меня́ нет дете́й.** *(Powiedz, że nie masz dzieci.)* · warianty: У меня́ нет дете́й. | „У меня́ нет” + dopełniacz (дете́й) = „nie mam”. |
+| 3 | Нет дете́й? Поня́тно. Вот, возьми́те кусо́к пирога́. Я сама́ испекла́. *(Nie ma Pan dzieci? Rozumiem. Proszę, niech Pan weźmie kawałek ciasta. Sama je upiekłam.)* | **Спаси́бо! Пирог о́чень вкусный.** *(Podziękuj i pochwal ciasto.)* · warianty: Спаси́бо большо́е! Пирог о́чень вкусный. | „Пирог” jest rodzaju męskiego, więc „вкусный”. |
+| 4 | Я ра́да, что вам нра́вится! А ско́лько вам лет? *(Cieszę się, że Panu smakuje! A ile Pan ma lat?)* | **Мне три́дцать лет.** *(Powiedz, że masz trzydzieści lat.)* · warianty: Мне три́дцать. | Wiek: „мне” + liczba + „лет” (dosłownie „mnie trzydzieści lat”). |
+| 5 | Ах, тако́й молодой! *(Ach, taki młody!)* | — |  |
+
+### Poziom 3: Zaproszenie  (typed=0.5, hint=bank, cierpliwość 3)
+
+Nowe słowa: па́рке = w parku (miejscownik od парк), воскресе́ньям = w niedziele (по воскресеньям), пью = piję (пить), пирого́м = ciastem (narzędnik od пиро́г), удово́льствием = przyjemnością (с удовольствием = chętnie), часа́ = godziny (в три часа = o trzeciej), ой = och, oj, тяжёлая = ciężka, мо́жете = może pan(i); możecie (мочь), понесу́ = poniosę (понести), су́мку = torbę (biernik od сумка), несу́ = niosę (нести), воскресе́нья = niedzieli (dopełniacz: до воскресенья)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Słońce chyli się ku zachodowi. Babcia Gala pakuje termos i prosi cię o pomoc. Zanim wstaniecie z ławki, chce cię jeszcze zaprosić.  
+*Cel:* Przyjmij zaproszenie na niedzielną herbatę i pomóż babci z torbą.  
+*Zakończenia:* win: Babcia Gala zapisuje ci adres na serwetce: „Приходите голодным!” Idziesz do domu w świetnym nastroju. · partial: Wszystko się wyjaśniło, choć trzeba było kilka razy powtarzać. Babcia Gala mówi: „До воскресе́нья, ми́лый!” · fail: Babcia Gala nie traci cierpliwości.
+
+| 1 | Зна́ете, я ка́ждый день в па́рке. Здесь так краси́во. *(Wie Pan, jestem w parku codziennie. Jest tu tak pięknie.)* | **Да, парк о́чень красивый.** *(Zgódź się, że park jest piękny.)* · warianty: Да, здесь о́чень краси́во. | „Парк” jest rodzaju męskiego: красивый. |
+| 2 | Правда? По воскресе́ньям я пью чай с пирого́м. Хоти́те прийти? *(Prawda? W niedziele piję herbatę z ciastem. Chce Pan przyjść?)* | **Да, с удово́льствием. Когда́?** *(Zgódź się i zapytaj, kiedy.)* · warianty: Да, хочу́. Когда́? | „Когда́?” to „kiedy?”. |
+| 3 | В три часа́. Ой, моя́ сумка тяжёлая. Вы мо́жете мне помочь? *(O trzeciej. Och, moja torba jest ciężka. Może mi Pan pomóc?)* | **Да, конечно. Я понесу́ су́мку.** *(Zgódź się i zaproponuj, że poniesiesz torbę.)* · warianty: Да, конечно. Я несу́ су́мку. | „Понесу́” = „poniosę” (czas przyszły). |
+| 4 | Како́й вы добрый! Вы хороший челове́к. *(Jaki Pan miły! Jest Pan dobrym człowiekiem.)* | **Спаси́бо! До воскресе́нья!** *(Podziękuj i pożegnaj się do niedzieli.)* · warianty: Спаси́бо! До свида́ния, до воскресе́нья! | „До” + dopełniacz: до воскресе́нья. |
+| 5 | До воскресе́нья! До свида́ния, дорогой! *(Do niedzieli! Do widzenia, drogi!)* | — |  |
+
+## Szpieg (spion)
+
+**Scena:** Jesteś agentem pod przykrywką. W Moskwie masz odebrać tajną teczkę z ambasady i przekazać ją dalej. Jedno złe słowo i jesteś zdemaskowany.  
+**Cel:** Zachowaj przykrywkę kupca Orłowa, zdobądź teczkę i uciekaj z walizką.  
+**Rozmówca:** Связной  
+**Zakończenia:** win: Walizka jest w twoich rękach, a statek odpływa z portu. Ktoś w centrali szepcze: „Хоро́шая работа, Соко́л.” Przykrywka nie pękła ani razu. · partial: Misja się udała, ale po drodze kilka razy omal się nie zdradziłeś. Centrala odnotowuje: „Ему́ повезло.” · fail: Zdradziłeś się jednym słowem. Przykrywka pękła, a ty znikasz w ciemności bez teczki i bez walizki.  
+
+### Poziom 1: Hasło na dworcu  (typed=0, hint=none, cierpliwość 2)
+
+Nowe słowa: тсс = cicho!, слу́шают = słuchają (слушать), Орло́в = Orłow (nazwisko z przykrywki), торго́вец = kupiec, handlowiec, Соко́л = Sokół (imię agenta), кто́-нибудь = ktokolwiek, ktoś, следи́т = śledzi (следить), ва́ше = wasze, pana/pani (r. nijaki), идёте = idzie pan(i); idziecie (идти), по́нял = zrozumiałem (понять), Солове́й = Słowik (hasło na przyjęcie)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Moskwa, wieczór, peron na dworcu. Jesteś agentem „Соко́л”, ale dla wszystkich jesteś panem Orłowem, handlarzem zabawkami z Tweru (Орло́в и сын). Na peronie czeka człowiek w kapeluszu. Hasło: „Зима́ прихо́дит ра́но.” Odzew: „А ле́то прихо́дит по́здно.”  
+*Cel:* Podaj hasło, nie zdradź swojej przykrywki i przyjmij zadanie. Jedna zła odpowiedź i jesteś zdemaskowany.  
+*Zakończenia:* win: Człowiek w kapeluszu znika w tłumie, a ty zostajesz z kopertą w kieszeni. Przykrywka nietknięta, a jutro o ósmej czeka cię ambasada. · partial: Dostałeś zadanie, ale kontakt zmarszczył brwi przy kilku twoich odpowiedziach. Lepiej uważaj jutro. · fail: Człowiek w kapeluszu spojrzał na ciebie zimno, odwrócił się i odszedł. Zadanie dostanie ktoś inny.
+
+| 1 | Добрый ве́чер. Сего́дня хо́лодно, правда? *(Dobry wieczór. Dziś jest zimno, prawda?)* | **Да, хо́лодно. Зима́ прихо́дит ра́но.** *(Zgódź się, że jest zimno, i powiedz hasło: zima przychodzi wcześnie.)* · warianty: Да, о́чень хо́лодно. Зима́ прихо́дит ра́но. | Hasło brzmi: „Зима́ прихо́дит ра́но.” |
+| 2 | А ле́то прихо́дит по́здно. Тсс! Здесь лю́ди слу́шают. Как вас зову́т? *(A lato przychodzi późno. Cicho! Tu ludzie słuchają. Jak się Pan nazywa?)* | **Меня́ зову́т Орло́в. Я торго́вец.** (dobra); złe: Меня́ зову́т Соко́л. Я агент.; Меня́ зову́т Орло́в. Я агент. · ŚMIERTELNE | Соко́л to twoje imię agenta, a ludzie słuchają.; Орло́в się zgadza, ale „агент” zdradza przykrywkę. |
+| 3 | Хорошо́, господин Орло́в. За ва́ми кто́-нибудь следи́т? *(Dobrze, panie Orłow. Czy ktoś Pana śledzi?)* | **Нет, за мной никто́ не следи́т.** (dobra); złe: Да, за мной кто-то следи́т.; Нет, у меня́ нет вре́мени. · ŚMIERTELNE | Mówisz, że nikt cię nie śledzi.; Kontakt pyta o śledzenie, nie o czas. |
+| 4 | О́чень хорошо́. Вот ва́ше зада́ние. За́втра в восемь вы идёте в посольство. Там прием. *(Bardzo dobrze. Oto Pana zadanie. Jutro o ósmej idzie Pan do ambasady. Jest tam przyjęcie.)* | **Я по́нял. За́втра в восемь я иду́ в посольство.** *(Powiedz, że zrozumiałeś: jutro o ósmej idziesz do ambasady.)* · warianty: Я по́нял. За́втра в восемь часо́в я иду́ в посольство. | „Зада́ние” to zadanie, a „в восемь” znaczy „o ósmej”. |
+| 5 | Хорошо́. Пароль на прием: Солове́й. Како́й пароль? *(Dobrze. Hasło na przyjęcie to Słowik. Jakie jest hasło?)* | **Пароль: Солове́й.** *(Powtórz hasło na przyjęcie.)* · warianty: Пароль Солове́й. | Hasło wejściowe to „пароль”, a „Солове́й” to słowik. |
+| 6 | О́чень хорошо́. Тсс! Идёт полице́йский. Вы меня́ зна́ете? *(Bardzo dobrze. Cicho! Idzie policjant. Czy Pan mnie zna?)* | **Нет, я вас не зна́ю.** *(Zaprzecz, że znasz tego człowieka.)* · warianty: Нет, я вас не зна́ю! · ŚMIERTELNE | Nie możesz zdradzić, że znasz kontakt. |
+| 7 | Споко́йной но́чи, господин Орло́в. *(Dobranoc, panie Orłow.)* | — |  |
+
+### Poziom 2: Przyjęcie w ambasadzie  (typed=0.2, hint=bank, cierpliwość 2)
+
+Nowe słowa: ко́е = (кое о чём = o czymś), чём = czym (miejscownik od что), при = przy, ору́жия = broni (dopełniacz od оружие), па́пки = teczki (dopełniacz od папка), кого́ = kogo, рабо́таете = pracuje pan(i); pracujecie (работать), рабо́таю = pracuję, фи́рму = firmę (biernik od фирма), госпожу́ = panią (biernik od госпожа), Бело́ву = Biełową (biernik od Белова), продаёт = sprzedaje (продавать), игру́шки = zabawki, продаём = sprzedajemy, интере́сно = ciekawie, нахо́дится = znajduje się, Тве́ри = w Twerze (miejscownik od Тверь), называ́ется = nazywa się (называться), Тверь = Twer (miasto), прекра́сно = wspaniale, ве́чера = wieczoru (приятного вечера = miłego wieczoru)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Następny wieczór. W ambasadzie trwa przyjęcie, a przy wejściu stoi pani Biełowa, sekretarka. Ona i goście zadają pytania o twoją „firmę”. Twoja przykrywka: Орло́в и сын, zabawki, Twer. Hasło wejściowe: Солове́й. Gabinet ambasadora jest po prawej, toalety po lewej.  
+*Cel:* Wejdź na przyjęcie, nie zdradź się pytaniom o firmę i znajdź pretekst, żeby dotrzeć do gabinetu.  
+*Zakończenia:* win: Pani Biełowa macha ci na pożegnanie, a w gabinecie leży teczka, o którą ci chodziło. Nikt niczego nie podejrzewa. · partial: Weszłeś i dotarłeś do gabinetu, ale pani Biełowa patrzyła na ciebie dłużej, niż trzeba. · fail: Pani Biełowa przestaje się uśmiechać i daje znak ochronie. Za chwilę wyprowadzą cię z ambasady.
+
+| 1 | Добрый ве́чер и добро пожаловать в посольство! Како́й пароль? *(Dobry wieczór i witamy w ambasadzie! Jakie jest hasło?)* | **Мой пароль Солове́й.** *(Podaj hasło wejściowe.)* · warianty: Пароль Солове́й. | „Пароль” to hasło, a „Солове́й” to słowik. |
+| 2 | Спаси́бо. Я должна́ ко́е о чём спросить. У вас есть при себе́ оружие? *(Dziękuję. Muszę o coś zapytać. Czy ma Pan przy sobie broń?)* | **Нет, у меня́ нет ору́жия.** (dobra); złe: Да, у меня́ есть оружие.; Нет, у меня́ нет па́пки. · ŚMIERTELNE | Na przyjęcie nie wchodzi się z bronią.; Pytanie dotyczy broni (оружие), nie teczki. |
+| 3 | Хорошо́. На кого́ вы рабо́таете? *(Dobrze. Dla kogo Pan pracuje?)* | **Я рабо́таю на фи́рму Орло́в и сын.** (dobra); złe: Я рабо́таю на центр.; Я рабо́таю на госпожу́ Бело́ву. · ŚMIERTELNE | „Центр” to twoja centrala, tajna, a nie firma.; Pani Biełowa to sekretarka z ambasady. |
+| 4 | Орло́в и сын, поня́тно. Что продаёт ва́ша фирма? *(Orłow i syn, rozumiem. Co sprzedaje Pana firma?)* | **Моя́ фирма продаёт игру́шки.** *(Powiedz, co sprzedaje twoja „firma” (przykrywka).)* · warianty: Мы продаём игру́шки.; Моя́ фирма продаёт игру́шки! · ŚMIERTELNE | Twoja przykrywka to handel zabawkami. |
+| 5 | Игру́шки, как интере́сно! Где нахо́дится ва́ша фирма? *(Zabawki, jak ciekawie! Gdzie jest Pana firma?)* | **Моя́ фирма нахо́дится в Тве́ри.** (dobra); złe: Моя́ фирма продаёт игру́шки.; Моя́ фирма называ́ется Орло́в и сын. · ŚMIERTELNE | „Где” znaczy „gdzie”, a nie „co sprzedaje”.; „Где” pyta o miejsce, nie o nazwę. |
+| 6 | Тверь, прекра́сно! Хоти́те что́-нибудь поесть? *(Twer, wspaniale! Chce Pan coś zjeść?)* | **Нет, спаси́бо. Где туалет, пожа́луйста?** *(Odmów i zapytaj o toaletę (to pretekst).)* · warianty: Нет, спаси́бо. Где туалет? | „Где” to „gdzie”, więc „Где туалет?”. |
+| 7 | Туалет слева. Кабинет справа частный. *(Toaleta jest po lewej. Gabinet po prawej jest prywatny.)* | **Спаси́бо, я пойду́ нале́во.** (dobra); złe: Спаси́бо, я пойду́ напра́во.; Спаси́бо, кабинет красивый. · ŚMIERTELNE | Gabinet po prawej jest prywatny, a ty idziesz do toalety po lewej.; Nie wolno ci mówić, że chcesz iść do gabinetu. |
+| 8 | Тогда́ прия́тного ве́чера, господин Орло́в! *(W takim razie miłego wieczoru, panie Orłow!)* | — |  |
+
+### Poziom 3: Przesłuchanie  (typed=0.35, hint=bank, cierpliwość 1)
+
+Nowe słowa: сто́йте = proszę stać! stójcie! (стоять), де́лаете = robi pan(i); robicie (делать), ищу́ = szukam (искать), кабине́те = w gabinecie (miejscownik od кабинет), туале́те = w toalecie (miejscownik od туалет), хм = hm, су́мке = w torbie (miejscownik od сумка), па́пка = teczka, посмо́трим = zobaczymy (посмотреть), позову́ = zawołam (позвать), зна́ет = wie, zna (знать), всех = wszystkich, Бело́ва = Biełowa (nazwisko), посо́льстве = w ambasadzie (miejscownik od посольство), кого́-нибудь = kogokolwiek, kogoś, ви́дели = widział pan(i); widzieli (видеть), никого́ = nikogo, ну = no (no dobrze), иди́те = niech pan(i) idzie (идти)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Masz teczkę w torbie, ale na korytarzu zatrzymuje cię podejrzliwy ochroniarz, pan Krasnow. Zaraz zapyta o wszystko. Pamiętaj: Орло́в, торго́вец, Тверь. Tutaj każda zła odpowiedź kończy misję.  
+*Cel:* Przekonaj ochroniarza, że jesteś zwykłym gościem, i wyjdź z teczką.  
+*Zakończenia:* win: Krasnow przepuszcza cię z kwaśną miną. Wychodzisz z ambasady, a teczka w torbie jest ciężka jak ołów. · partial: Krasnow w końcu cię puszcza, ale zapisuje twoje nazwisko w notesie. · fail: Krasnow chwyta cię za ramię: „Пойдёмте со мной!” Misja skończona, zanim naprawdę się zaczęła.
+
+| 1 | Сто́йте! Кто вы? Что вы здесь де́лаете? *(Stać! Kim Pan jest? Co Pan tu robi?)* | **Я гость. Я ищу́ туалет.** *(Powiedz, że jesteś gościem i szukasz toalety.)* · warianty: Я гость, я ищу́ туалет. | „Искать” znaczy „szukać”: я ищу́. |
+| 2 | Туалет там. Вы бы́ли в кабине́те? *(Toaleta jest tam. Czy był Pan w gabinecie?)* | **Нет, я не был в кабине́те.** (dobra); złe: Да, я был в кабине́те.; Нет, я не был в туале́те. · ŚMIERTELNE | Przyznanie się to koniec przykrywki.; Pytanie dotyczy gabinetu, nie toalety. |
+| 3 | Хм, хорошо́. Что у вас в су́мке? *(Hm, dobrze. Co ma Pan w torbie?)* | **В су́мке у меня́ то́лько де́ньги и телефон.** (dobra); złe: В су́мке у меня́ па́пка.; У меня́ есть сумка. · ŚMIERTELNE | Teczka w torbie zdradziłaby cię od razu.; Ochroniarz pyta, co jest w torbie, a nie czy masz torbę. |
+| 4 | Де́ньги и телефон, хм. Как вас зову́т и где вы живёте? *(Pieniądze i telefon, hm. Jak się Pan nazywa i gdzie Pan mieszka?)* | **Меня́ зову́т Орло́в, и я живу́ в Тве́ри.** *(Podaj nazwisko z przykrywki i miasto, w którym mieszkasz (Twer).)* · warianty: Я Орло́в, и я живу́ в Тве́ри. · ŚMIERTELNE | Орло́в i Тверь to twoja przykrywka. |
+| 5 | Орло́в, Тверь. Вы агент, правда? *(Orłow, Twer. Jest Pan agentem, prawda?)* | **Нет, я не агент. Я торго́вец.** (dobra); złe: Да, но э́то секрет.; Да, я рабо́таю на центр. · ŚMIERTELNE | Nawet żartem nie przyznawaj się do tajemnicy (секрет).; Przyznanie się do centrali to koniec. |
+| 6 | Посмо́трим. Я позову́ госпожу́ Бело́ву. Она́ зна́ет всех госте́й. Она́ вас зна́ет? *(Zobaczymy. Zawołam panią Biełową. Zna wszystkich gości. Czy zna Pana?)* | **Да, госпожа Бело́ва меня́ зна́ет. Я гость.** *(Powiedz, że pani Biełowa cię zna.)* · warianty: Да, госпожа Бело́ва меня́ зна́ет. | „Меня́ зна́ет” znaczy „zna mnie”. |
+| 7 | Хорошо́. В посо́льстве есть агент. Вы кого́-нибудь ви́дели? *(Dobrze. W ambasadzie jest agent. Czy Pan kogoś widział?)* | **Нет, я никого́ не ви́дел.** *(Zaprzecz, że kogokolwiek widziałeś.)* · warianty: Нет, никого́ не ви́дел! · ŚMIERTELNE | „Никого́ не” = nikogo: ty sam jesteś tym agentem. |
+| 8 | Ну ладно. Иди́те домо́й, господин Орло́в. *(No dobrze. Niech Pan idzie do domu, panie Orłow.)* | — |  |
+
+### Poziom 4: Walizka i ucieczka  (typed=0.5, hint=letters, cierpliwość 1)
+
+Nowe słowa: Воро́н = Kruk (hasło), госпожи́ = pani (dopełniacz od госпожа), Бело́вой = Biełowej (dopełniacz od Белова), бери́те = niech pan(i) weźmie (брать), беру́ = biorę, преда́тель = zdrajca, де́лаем = robimy, уходи́м = odchodzimy, uciekamy (уходить), остаёмся = zostajemy (оставаться), пьём = pijemy, говори́м = mówimy (говорить), челове́ком = człowiekiem (narzędnik od человек), идём = idziemy, вокза́лу = dworcu (в celowniku: к вокзалу = na dworzec), порту́ = portu (к порту = do portu), отда́йте = proszę oddać (отдать), отда́м = oddam, отплыва́ет = odpływa (отплывать), отли́чно = doskonale, око́нчена = zakończona
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Następny ranek, port w Petersburgu. Pan Wołkow z centrali czeka z walizką pełną pieniędzy. Wymienisz ją na teczkę. Nowe hasło: „Воро́н”. Ale ktoś cię śledzi: w tłumie jest zdrajca, który chce dostać teczkę dla siebie.  
+*Cel:* Wymień teczkę na walizkę, nie daj się zdemaskować zdrajcy i wsiądź na statek.  
+*Zakończenia:* win: Statek odpływa, a ty stoisz na pokładzie z walizką. Pan Wołkow macha z nabrzeża: „Сча́стливого пути́, Соко́л!” · partial: Udało się uciec, ale zdrajca zdążył zobaczyć twoją twarz. Misja zaliczona, lecz twoja przykrywka jest spalona. · fail: Zdrajca był szybszy. Walizka i teczka zniknęły, a ty zostajesz na nabrzeżu z pustymi rękami.
+
+| 1 | До́брое у́тро. Како́й сего́дня пароль? *(Dzień dobry. Jakie dziś jest hasło?)* | **Сего́дня пароль Воро́н.** *(Podaj hasło z dzisiejszej misji.)* · warianty: Пароль Воро́н! · ŚMIERTELNE | „Пароль” to hasło, a dziś brzmi „Воро́н”. |
+| 2 | Хорошо́. Где па́пка? *(Dobrze. Gdzie jest teczka?)* | **Па́пка у меня́ в су́мке.** (dobra); złe: Па́пка у госпожи́ Бело́вой.; Э́то секрет. · ŚMIERTELNE | Teczkę masz przy sobie, w torbie.; Kontakt pyta, gdzie jest teczka, nie o tajemnicę. |
+| 3 | Хорошо́. Вот чемодан. Де́ньги внутри́. Бери́те. *(Dobrze. Oto walizka. Pieniądze są w środku. Proszę ją wziąć.)* | **Спаси́бо. Я беру́ чемодан.** *(Podziękuj i weź walizkę.)* · warianty: Спаси́бо. Я возьму́ чемодан. | „Чемодан” to walizka; „беру́” = biorę. |
+| 4 | Осторожно! Тот челове́к там преда́тель. Он идёт за мной. Что мы де́лаем? *(Uwaga! Ten człowiek tam jest zdrajcą. Idzie za mną. Co robimy?)* | **Мы бы́стро уходи́м.** (dobra); złe: Мы остаёмся здесь и пьём ко́фе.; Мы говори́м с э́тим челове́ком. · ŚMIERTELNE | Zdrajca idzie za wami, trzeba uciekać.; Nie rozmawia się ze zdrajcą. |
+| 5 | Да, бы́стро! Преда́тель идёт слева. Мы идём нале́во к вокза́лу и́ли напра́во к порту́? *(Tak, szybko! Zdrajca idzie z lewej. Idziemy w lewo na dworzec czy w prawo do portu?)* | **Мы идём напра́во к порту́.** (dobra); złe: Мы идём нале́во к вокза́лу.; Мы идём домо́й. · ŚMIERTELNE | Zdrajca nadchodzi z lewej, więc idziecie w prawo, do portu.; Pytanie jest o port albo dworzec, a nie o dom. |
+| 6 | Сто́йте! Отда́йте мне чемодан! У меня́ оружие! *(Stać! Dawaj walizkę! Mam broń!)* | **Нет, я не отда́м вам чемодан.** *(Odmów oddania walizki.)* · warianty: Нет, я не отда́м вам чемодан! · ŚMIERTELNE | „Отдать” = oddać; „не отда́м” = nie oddam. |
+| 7 | Молодец! Быстре́е! Кора́бль ско́ро отплыва́ет. Чемодан ещё у вас? *(Brawo! Szybko! Statek zaraz odpływa. Czy walizka jest jeszcze u Pana?)* | **Да, он ещё у меня́.** *(Potwierdź, że masz jeszcze walizkę.)* · warianty: Да, чемодан ещё у меня́. | „Ещё” znaczy „jeszcze”. |
+| 8 | Отли́чно, Соко́л! Миссия око́нчена. До свида́ния! *(Doskonale, Sokół! Misja zakończona. Do widzenia!)* | — |  |
+
+## Podróż w czasie (zeitreise)
+
+**Scena:** Obudziłeś się w roku 1450 pod murami ruskiego miasta Lipow. Nikt nie może się dowiedzieć, że jesteś z przyszłości, bo za dziwne rzeczy i dziwne słowa w średniowieczu grozi stos.  
+**Cel:** Nie daj się wykryć jako przybysz z przyszłości: unikaj wszystkiego, co nie pasuje do roku 1450, i dotrwaj do końca dnia.  
+**Rozmówca:** Стражник  
+**Zakończenia:** win: Starosta kiwa głową: „Честный пу́тник!” Nikt nie podejrzewa, skąd naprawdę jesteś. Wieczorem znajdujesz drogę powrotną, a w kieszeni zostaje ci tylko miedziana moneta na pamiątkę. · partial: Udało ci się przetrwać dzień, ale kilka razy ludzie patrzyli na ciebie podejrzliwie. Starosta każe cię obserwować, więc wymykasz się z miasta o świcie. · fail: Ktoś zauważył, że nie jesteś stąd. Straż woła: „Колдун! Чародей!” i musisz uciekać. Podróż w czasie skończyła się wcześniej, niż chciałeś.  
+
+### Poziom 1: Brama miasta  (typed=0, hint=none, cierpliwość 5)
+
+Nowe słowa: стой = stój! (стоять), Ли́пов = Lipow (fikcyjne miasto), пу́тник = wędrowiec, podróżnik, стра́нник = wędrowiec, pielgrzym, Ива́н = Iwan (imię), Ке́вин = Kevin (imię), Шанта́ль = Chantal (imię), хоро́шее = dobre (r. nijaki), бу́дущего = przyszłości (из будущего = z przyszłości), Аме́рики = Ameryki (из Америки = z Ameryki), е́дешь = jedziesz (ехать), ло́шади = konia (на лошади = konno), маши́не = w samochodzie (на машине = samochodem), по́езде = w pociągu (на поезде = pociągiem), покажи́ = pokaż (показать), квас = kwas chlebowy, креди́тная = kredytowa, мо́жешь = możesz, го́лоден = głodny, постоя́лый = (постоялый двор = karczma, zajazd), Ли́пове = w Lipowie (miejscownik od Липов)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Rok 1450. Stoisz przed wielką drewnianą bramą miasta Lipow. Strażnik Fiodor zatrzymuje każdego podróżnego i zadaje pytania. Masz na sobie zwykłe ubranie, ale w kieszeniach zostały ci rzeczy z przyszłości.  
+*Cel:* Odpowiedz na pytania strażnika tak, żeby nie wzbudzić podejrzeń: przedstaw się, powiedz skąd jesteś i jak podróżujesz. Zwróć uwagę na rzeczy, których w 1450 roku jeszcze nie było.  
+*Zakończenia:* win: Fiodor otwiera bramę: „Добро пожаловать в Ли́пов!” Nic nie wzbudziło jego podejrzeń, a ty wchodzisz do miasta. · partial: Fiodor w końcu cię wpuszcza, ale przygląda ci się dłużej, niż byś chciał. Wchodzisz do miasta z uczuciem, że ktoś cię obserwuje. · fail: Fiodor podnosi halabardę: „Ты не пу́тник!” Brama zamyka się z trzaskiem, a ty uciekasz w las.
+
+| 1 | Стой! Э́то ворота го́рода Ли́пов. Кто ты? *(Stój! To brama miasta Lipow. Kim jesteś?)* | **Я пу́тник.** *(Powiedz, że jesteś podróżnikiem.)* · warianty: Я стра́нник. | „Пу́тник” = wędrowiec, podróżnik. |
+| 2 | Пу́тник. Как тебя́ зову́т? *(Podróżnik. Jak masz na imię?)* | **Меня́ зову́т Ива́н.** (dobra); złe: Меня́ зову́т Ке́вин.; Меня́ зову́т Шанта́ль. · ŚMIERTELNE | Kevin i Shantal to imiona współczesne, w 1450 roku nikt tak nie nazywał dzieci. Strażnik uznałby cię za dziwaka.; Szantal to nowoczesne, francuskie imię z XX wieku. W 1450 roku popularne były Iwan, Fiodor czy Piotr. |
+| 3 | Ива́н, хоро́шее и́мя. Откуда ты? *(Iwan, dobre imię. Skąd pochodzisz?)* | **Я из По́льши.** (dobra); złe: Я из бу́дущего.; Я из Аме́рики. · ŚMIERTELNE | Przyznanie się do przyszłości to dekonspiracja. Nikt w 1450 roku nie zrozumie takich słów.; Ameryki jeszcze nie odkryto, Kolumb wypłynie dopiero w 1492 roku. |
+| 4 | По́льша, э́то далеко́! Как ты е́дешь? Пешком и́ли на ло́шади? *(Polska, to daleko! Jak jedziesz? Pieszo czy konno?)* | **Я е́ду на ло́шади.** (dobra); złe: Я е́ду на маши́не.; Я е́ду на по́езде. · ŚMIERTELNE | Samochodu w 1450 roku nie ma. Strażnik pomyśli, że jesteś szalony albo opętany.; Pociągów też jeszcze nie ma, pierwsza kolej pojawi się dopiero w XIX wieku. |
+| 5 | На ло́шади, хорошо́. Покажи́ су́мку. Что у тебя́ там? *(Konno, dobrze. Pokaż torbę. Co tam masz?)* | **Там то́лько хлеб и квас.** (dobra); złe: У меня́ есть телефон.; У меня́ есть креди́тная карта. · ŚMIERTELNE | Telefon w 1450 roku? Strażnik wziąłby go za czarodziejskie urządzenie i zawołał straż.; Karta kredytowa z plastiku wyglądałaby dla niego jak magia. Pieniądze to wtedy monety. |
+| 6 | Хорошо́, мо́жешь войти. Ты го́лоден? *(Dobrze, możesz wejść. Jesteś głodny?)* | **Да, я го́лоден. Где постоя́лый двор?** *(Powiedz, że jesteś głodny, i zapytaj, gdzie jest karczma.)* | „Го́лоден” = głodny (forma krótka); „постоя́лый двор” = karczma, zajazd. |
+| 7 | Постоя́лый двор сразу слева. Хоро́шего дня в Ли́пове! *(Karczma jest zaraz po lewej. Miłego dnia w Lipowie!)* | — |  |
+
+### Poziom 2: Gospoda  (typed=0.15, hint=bank, cierpliwość 5)
+
+Nowe słowa: щи = kapuśniak, ко́лу = colę (biernik od кола), дней = dni (dopełniacz mnoga od день), доро́ге = w drodze (miejscownik od дорога), пое́дешь = pojedziesz, пое́дем = pojedziemy, теле́ге = wozem (на телеге; телега = wóz), пое́ду = pojadę, велосипе́де = na rowerze (на велосипеде), ко́мнате = w pokoju (miejscownik od комната), ну́жно = potrzeba, trzeba, вайфа́й = wi-fi, ква́са = kwasu (dopełniacz od квас), пятидеся́том = pięćdziesiątym (miejscownik), году́ = roku (в году, miejscownik od год), твоё = twoje, у́тром = rano (narzędnik od утро), е́дем = jedziemy
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Wchodzisz do karczmy. Karczmarz Ignat jest ciekawski i pyta o wszystko: co chcesz zjeść, jak podróżujesz i czego potrzebujesz na noc. W karczmie nie ma elektryczności ani nowoczesnych napojów.  
+*Cel:* Zamów jedzenie i picie, które mogli podać w średniowieczu, ustal nocleg i nie wspomnij o niczym z przyszłości.  
+*Zakończenia:* win: Ignat klepie cię po plecach: „Ты хороший гость!” Dostajesz miejsce przy piecu i pełny talerz. Nikt nie podejrzewa, że jesteś z przyszłości. · partial: Ignat przygląda ci się podejrzliwie, ale podaje jedzenie. Śpisz źle, bo wciąż myślisz o tym, co powiedziałeś. · fail: Ignat woła głośno: „Что тако́е вайфа́й?!” Goście odwracają się w twoją stronę, a ty ledwo uciekasz tylnym wyjściem.
+
+| 1 | Добро пожаловать на постоя́лый двор! Что ты хо́чешь поесть? У нас есть хлеб и щи. *(Witaj w karczmie! Co chcesz zjeść? Mamy chleb i kapuśniak.)* | **Я хочу́ хлеб и щи, пожа́луйста.** *(Zamów chleb i kapuśniak.)* · warianty: Хлеб и щи, пожа́луйста. | „Хочу́” + biernik: хлеб, щи (bez przyimka). |
+| 2 | Хлеб и щи, хорошо́. А что ты бу́дешь пить? У нас есть квас, мёд и вода́. *(Chleb i kapuśniak, dobrze. A co będziesz pić? Mamy kwas chlebowy, miód pitny i wodę.)* | **Я бу́ду квас, пожа́луйста.** (dobra); złe: Я бу́ду ко́фе, пожа́луйста.; Я бу́ду ко́лу, пожа́луйста. · ŚMIERTELNE | Kawa dotarła do Europy dopiero w XVII wieku.; Coca-Cola powstała w XIX wieku. W 1450 roku nikt jej nie zna. |
+| 3 | Квас, хорошо́. Ты, наве́рное, давно в пути́. Ско́лько дней ты в доро́ге? *(Kwas, dobrze. Pewnie jesteś w drodze od dawna. Ile dni już jedziesz?)* | **Я в пути́ уже́ де́сять дней.** *(Powiedz, że jesteś w drodze już dziesięć dni.)* · warianty: Я в доро́ге де́сять дней. | „Уже́” = już; „де́сять дней” = dziesięć dni (po „де́сять” dopełniacz liczby mnogiej). |
+| 4 | Де́сять дней, э́то долго! За́втра я е́ду на рынок. Пое́дешь со мной? Мы пое́дем на теле́ге. *(Dziesięć dni, to długo! Jutro jadę na targ. Pojedziesz ze mną? Pojedziemy wozem.)* | **Да, с удово́льствием. Мы пое́дем на теле́ге.** (dobra); złe: Да, мы пое́дем на маши́не.; Нет, я пое́ду на велосипе́де. · ŚMIERTELNE | Samochodu nie ma. Ignat nie zna takiego słowa.; Rower wynaleziono dopiero w XIX wieku. W 1450 roku jeździ się wozem albo konno. |
+| 5 | Хорошо́. В ко́мнате есть крова́ть. Тебе́ ну́жно что́-нибудь ещё? *(Dobrze. W pokoju jest łóżko. Czy potrzebujesz czegoś jeszcze?)* | **Да, мне нужна́ свеча, пожа́луйста.** (dobra); złe: У вас есть вайфа́й?; Мне нужна́ розетка. · ŚMIERTELNE | W 1450 roku nie ma internetu. Ignat nie wie, co to jest.; Gniazdka elektryczne wymyślono setki lat później. Wieczorem świeci się świecami. |
+| 6 | Свеча, пожа́луйста. А вот ещё кружка ква́са, хороший квас в ты́сяча четы́реста пятидеся́том году́! За твоё здоро́вье! *(Świeca, proszę bardzo. A tu jeszcze kufel kwasu, dobry kwas w roku 1450! Na twoje zdrowie!)* | **За ва́ше здоро́вье!** *(Wznieś toast.)* · warianty: За твоё здоро́вье! | „За здоро́вье” = na zdrowie (toast). |
+| 7 | Споко́йной но́чи! За́втра у́тром е́дем на рынок. *(Dobranoc! Jutro rano jedziemy na targ.)* | — |  |
+
+### Poziom 3: Targ  (typed=0.3, hint=bank, cierpliwość 4)
+
+Nowe słowa: я́блоки = jabłka, моне́ты = monety (mianownik mnoga i dopełniacz l. poj.), моне́т = monet (dopełniacz mnoga), заплати́шь = zapłacisz (заплатить), заплачу́ = zapłacę, моне́тами = monetami, ка́ртой = kartą, стра́нная = dziwna, за́пада = zachodu (с запада = z zachodu), ста́роста = starosta, пойдёшь = pójdziesz (пойти), пошли́ = chodźmy; poszli, ста́росты = starosty (dopełniacz od староста)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Następnego ranka na rynku jest tłoczno. Kupcowa Warwara sprzedaje chleb i ser. Przy płaceniu liczą się tylko monety, a ludzie przyglądają się twoim ubraniom.  
+*Cel:* Kup chleb i ser, zapłać tak, jak płaci się w 1450 roku, i wyjaśnij, skąd masz dziwne ubranie.  
+*Zakończenia:* win: Warwara wsuwa ci do koszyka jabłko: „Для хоро́шего путника!” Targ nic nie podejrzewa, a w oddali widać już dom starosty. · partial: Warwara w końcu sprzedała ci chleb i ser, ale kilka osób szepcze za twoimi plecami. Zbliża się dom starosty. · fail: Warwara krzyczy: „Что э́то за оде́жда? Что тако́е евро?” Tłum się zbiega, a ty uciekasz między straganami.
+
+| 1 | Добрый день! Что ты хо́чешь купить? Хлеб, сыр и́ли я́блоки? *(Dzień dobry! Co chcesz kupić? Chleb, ser czy jabłka?)* | **Я хочу́ хлеб и сыр, пожа́луйста.** *(Poproś o chleb i ser.)* · warianty: Хлеб и сыр, пожа́луйста. | „Хочу́” + biernik: хлеб, сыр. |
+| 2 | Хлеб и сыр, хорошо́. Хлеб сто́ит две моне́ты, а сыр три моне́ты. *(Chleb i ser, dobrze. Chleb kosztuje dwie monety, a ser trzy monety.)* | **Ско́лько э́то сто́ит вме́сте?** *(Zapytaj, ile to kosztuje razem.)* · warianty: Ско́лько всё вме́сте? | „Вме́сте” to „razem”; „ско́лько” = ile. |
+| 3 | Э́то пять моне́т. Чём ты заплати́шь? *(To pięć monet. Czym zapłacisz?)* | **Я заплачу́ моне́тами.** (dobra); złe: Я заплачу́ евро.; Я заплачу́ ка́ртой. · ŚMIERTELNE | Euro wprowadzono dopiero w 2002 roku.; Karty płatnicze to wynalazek XX wieku. W 1450 roku płaci się monetami. |
+| 4 | Хорошо́, моне́тами. Твоя́ оде́жда стра́нная. Что э́то? *(Dobrze, monetami. Twoje ubranie jest dziwne. Co to jest?)* | **Э́то мода с за́пада.** (dobra); złe: Э́то футболка.; Э́то джинсы и кроссовки. · ŚMIERTELNE | T-shirty z napisami pojawiły się w XX wieku, a Warwara nigdy takiego nie widziała.; Dżinsy i adidasy to rzeczy z dwudziestego wieku. Warwara zawołałaby straż. |
+| 5 | С за́пада, поня́тно. Ста́роста хо́чет тебя́ видеть. Пойдёшь со мной? *(Z zachodu, rozumiem. Starosta chce cię zobaczyć. Pójdziesz ze mną?)* | **Да, я пойду́ с тобо́й.** *(Zgódź się i idź z nią.)* · warianty: Да, пойду́ с тобо́й. | „С тобо́й” = z tobą (narzędnik od „ты”). |
+| 6 | Тогда́ пошли́! Дом ста́росты там. *(No to chodźmy! Dom starosty jest tam.)* | — |  |
+
+### Poziom 4: Burmistrz  (typed=0.5, hint=letters, cierpliwość 4)
+
+Nowe słowa: руке́ = na ręce (miejscownik od рука), нару́чные = naręczne (наручные часы = zegarek na rękę), батаре́йкой = baterią (narzędnik od батарейка), цифровы́е = cyfrowe, же = przecież, пока́зывает = pokazuje, тре́тьего = trzeciej (половина третьего = wpół do trzeciej), смотрю́ = patrzę (смотреть), пятидеся́тый = pięćdziesiąty, двухты́сячный = dwutysięczny, волше́бный = magiczny, волше́бного = magicznego, я́щика = skrzynki (dopełniacz od ящик), идёшь = idziesz, воро́там = bramie (к воротам = do bramy)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* W domu starosty czeka Siemion. Słyszał dziwne plotki o obcym przybyszu. Zauważył coś błyszczącego na twoim nadgarstku i zadaje pytania, a tobie została tylko jedna droga: wrócić do bramy, gdzie wszystko się zaczęło.  
+*Cel:* Odpowiedz na pytania starosty tak, żeby nie zdradzić zegarka, telefonu ani przyszłości, i wróć bezpiecznie do bramy.  
+*Zakończenia:* win: Starosta macha ręką: „Хорошо́, хорошо́, иди́!” Wracasz do bramy, w powietrzu coś migocze i budzisz się we własnym czasie. Na dłoni masz monety z 1450 roku. · partial: Starosta pozwala ci odejść, ale pod nosem mruczy o czarodziejach. Dopiero za bramą migotanie powietrza zabiera cię do domu. · fail: Starosta woła strażników: „Волше́бный ящик! Он из бу́дущего!” Nie zdążysz dojść do bramy.
+
+| 1 | Добрый день! Я ста́роста го́рода Ли́пов. Кто ты? *(Dzień dobry! Jestem starostą miasta Lipow. Kim jesteś?)* | **Я Ива́н, пу́тник из По́льши.** *(Przedstaw się: Iwan, podróżnik z Polski.)* | „Из По́льши” = z Polski. |
+| 2 | Пу́тник из По́льши, поня́тно. Что э́то у тебя́ на руке́? *(Podróżnik z Polski, rozumiem. Co to jest na twojej ręce?)* | **Э́то просто браслет.** (dobra); złe: Э́то нару́чные часы с батаре́йкой.; Э́то цифровы́е часы. · ŚMIERTELNE | Zegarek na rękę z baterią to wynalazek nowoczesny. Starosta nie ma pojęcia, co to jest.; Cyfrowy zegarek wyglądałby dla niego jak czary. W 1450 roku są tylko klepsydry. |
+| 3 | Просто браслет? Кото́рый час? У тебя́ же есть часы, правда? *(Tylko bransoleta? Która godzina? Masz przecież zegarek.)* | **У меня́ нет часо́в. Со́лнце пока́зывает полдень.** (dobra); złe: Сейча́с полови́на тре́тьего.; Я смотрю́ в телефон. · ŚMIERTELNE | Taka dokładna godzina z minutami to nowoczesny sposób liczenia czasu.; Telefon to rzecz z przyszłości. Starosta uznałby ją za czarodziejską. |
+| 4 | Полдень, хорошо́. Како́й сейча́с год? *(Południe, dobrze. Jaki jest teraz rok?)* | **Сейча́с ты́сяча четы́реста пятидеся́тый год.** (dobra); złe: Сейча́с двухты́сячный год.; Я не зна́ю. · ŚMIERTELNE | Jeśli podasz rok z przyszłości, zdradzisz się natychmiast.; Nie znać roku? Karczmarz dał ci wskazówkę wczoraj. Starosta uznałby, że coś ukrywasz. |
+| 5 | Хорошо́. Лю́ди говоря́т, что у тебя́ есть волше́бный ящик. Э́то правда? *(Dobrze. Ludzie mówią, że masz magiczną skrzynkę. Czy to prawda?)* | **Нет, у меня́ нет волше́бного я́щика.** (dobra); złe: Да, э́то телефон.; Да, я из бу́дущего. · ŚMIERTELNE | Przyznanie się do telefonu zakończy rozmowę. Starosta nie wie, co to jest.; Przyznanie się do podróży w czasie to najgorsza odpowiedź. |
+| 6 | Хорошо́. Уже́ по́здно. Куда ты теперь идёшь? *(Dobrze. Jest już późno. Dokąd teraz idziesz?)* | **Я иду́ обратно к воро́там.** (dobra); złe: Я иду́ к маши́не вре́мени.; Я иду́ к маши́не. · ŚMIERTELNE | Wehikuł czasu to najgorsza odpowiedź.; Samochodu w 1450 roku nie ma. Starosta pomyślałby, że kłamiesz. |
+| 7 | Хорошо́, иди́. Сча́стливого пути́! *(Dobrze, idź. Szczęśliwej drogi!)* | — |  |
+
+## Polityk (politiker)
+
+**Scena:** Jesteś skorumpowanym politykiem. Dawno temu pan Worobjow dał ci kopertę, a „дело Куку́шка” (afera Kukułka) wraca na każdym szczeblu twojej kariery. Wyborcy ci wierzą… i przestają… i zapominają.  
+**Cel:** Przekonaj wyborców, że nadajesz się na stanowisko. Nigdy się nie przyznaj i nie sprzeczaj sam sobie.  
+**Rozmówca:** Избиратель  
+**Zakończenia:** win: Wygrywasz wybory! Nikt już nie pamięta koperty od pana Worobjowa. Przed gmachem tłum skanduje twoje nazwisko, a ty obiecujesz „честную политику”. Pan Worobjow macha z ostatniego rzędu. · partial: Wygrywasz o włos. Dziennikarze wciąż grzebią w aktach, ale ty już podpisujesz pierwsze dokumenty. Kłamstwo trzyma się jeszcze na słowo honoru. · fail: Wiarygodność spadła do zera. Wyborcy wyciągają stare akty, a z tłumu ktoś krzyczy: „Конве́рт!” Twoja kariera kończy się na pierwszej stronie gazet.  
+
+### Poziom 1: Ста́роста села́  (typed=0, hint=none, cierpliwość 4)
+
+Nowe słowa: ста́ростой = starostą (narzędnik od староста), села́ = wsi (dopełniacz od село), хоте́л = chciał (хотел бы = chciałbym), бы = by (tryb przypuszczający), че́стен = uczciwy (forma krótka), сло́мана = zepsuta, Воробьёв = Worobjow (nazwisko; „wróbel”), когда́-то = kiedyś, чини́л = naprawiał (чинить), сде́лаете = zrobi pan(i) (сделать), починю́ = naprawię (починить), доро́гу = drogę (biernik od дорога), отремонти́рую = wyremontuję, naprawię, посто́йте = proszę poczekać, chwileczkę, конве́рт = koperta, Воробьёва = Worobjowa (dopełniacz/biernik od Воробьёв), бы́ло = było, благодаре́н = wdzięczny, селе́ = we wsi (miejscownik od село), долго́в = długów (dopełniacz od долг), че́стным = uczciwym, де́нег = pieniędzy (dopełniacz od деньги), бу́дете = będzie pan(i), на́ми = nami (с нами = z nami), честны́ = uczciwi (forma krótka, l. mnoga), голосу́ем = głosujemy (голосовать)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Zebranie wiejskie w sali gimnastycznej w Malinowce. Chcesz zostać sołtysem (ста́роста). Pani Pietrowa zadaje pytania, a cała wieś słucha. Wszyscy pamiętają, że pan Worobjow naprawił drogę, i że ktoś widział kopertę…  
+*Cel:* Przekonaj wieś, że jesteś uczciwy, i zaprzecz plotkom o kopercie.  
+*Zakończenia:* win: Wieś klaszcze. Zostajesz sołtysem Malinowki. Pan Worobjow, w pierwszym rzędzie, puszcza do ciebie oko. · partial: Wygrywasz jednym głosem. Pani Pietrowa patrzy na ciebie podejrzliwie, ale podnosi rękę. · fail: Wieś ma dość. Pani Pietrowa mówi: „Мы выберем другого.” Kończysz karierę, zanim się zaczęła.
+
+| 1 | Добрый ве́чер! Вы хоти́те стать ста́ростой села́? *(Dobry wieczór! Chce Pan zostać sołtysem?)* | **Да, я хочу́ стать ста́ростой.** *(Powiedz, że chcesz zostać sołtysem.)* · warianty: Да, я хоте́л бы стать ста́ростой. | „Стать” (zostać) + narzędnik: стать ста́ростой. |
+| 2 | Хорошо́. Вы честный челове́к? *(Dobrze. Czy jest Pan uczciwym człowiekiem?)* | **Да, я всегда́ че́стен.** *(Zapewnij, że jesteś zawsze uczciwy.)* · warianty: Да, я всегда́ честный. | „Всегда́” = zawsze; „че́стен” to krótka forma przymiotnika. |
+| 3 | Хорошо́. Доро́га сло́мана. Воробьёв когда́-то её чини́л. Что вы сде́лаете? *(Dobrze. Droga jest zepsuta. Worobjow kiedyś ją naprawiał. Co Pan zrobi?)* | **Я починю́ доро́гу.** *(Obiecaj, że naprawisz drogę.)* · warianty: Я отремонти́рую доро́гу. | „Починю́” = naprawię (czas przyszły dokonany). |
+| 4 | Воробьёв? Посто́йте! Воробьёв дал вам конве́рт! Кто-то э́то ви́дел! *(Worobjow? Chwileczkę! Worobjow dał Panu kopertę! Ktoś to widział!)* | **Э́то ложь! Я почти́ не зна́ю Воробьёва.** *(Zaprzecz: to kłamstwo, ledwo znasz pana Worobjowa.)* · warianty: Э́то ложь! Я его́ почти́ не зна́ю. | „Почти́ не” = ledwo nie; po „знать” biernik osoby żywotnej: Воробьёва. |
+| 5 | Ну... э́то бы́ло давно. Мы об э́том забы́ли. *(No cóż... to było dawno. Zapomnieliśmy o tym.)* | **Спаси́бо, я вам благодаре́н.** *(Podziękuj wyborcom za wyrozumiałość (jesteś im wdzięczny).)* · warianty: Спаси́бо, я о́чень благодаре́н. | „Благодаре́н” = wdzięczny; „вам” = wam/państwu. |
+| 6 | В селе́ мно́го долго́в. Что вы сде́лаете? *(We wsi jest wiele długów. Co Pan zrobi?)* | **Я бу́ду экономить де́ньги и быть че́стным.** (dobra); złe: Я возьму́ бо́льше де́нег.; Я не зна́ю. | Polityk, który mówi „zabiorę więcej pieniędzy”, nie brzmi wiarygodnie.; „Nie wiem” nie przekona wyborców. |
+| 7 | Хорошо́. Вы бу́дете с на́ми честны́? *(Dobrze. Czy będzie Pan wobec nas uczciwy?)* | **Да, я всегда́ бу́ду че́стен с ва́ми.** *(Obiecaj uczciwość wobec wyborców.)* · warianty: Да, я всегда́ че́стен с ва́ми. | „С ва́ми” = z wami, wobec państwa. |
+| 8 | Тогда́ мы голосу́ем за вас! Добро пожаловать, господин ста́роста! *(Wybieramy więc Pana! Witamy, Panie sołtysie!)* | — |  |
+
+### Poziom 2: Городской совет  (typed=0.2, hint=bank, cierpliwość 4)
+
+Nowe słowa: журнали́стка = dziennikarka, депута́том = posłem, radnym (narzędnik od депутат), городско́го = miejskiego, сове́та = rady (dopełniacz od совет), бизнесме́на = biznesmena, но́вая = nowa, купи́л = kupił, че́стно = uczciwie, маши́ну = samochód (biernik od машина), бра́ли = brali, brał pan (брать), взя́тки = łapówki, брал = brał, взя́ток = łapówek (dopełniacz mnoga), посмо́трите = proszę spojrzeć, э́ту = tę, фотогра́фию = zdjęcie (biernik od фотография), э́тих = tych, избира́тели = wyborcy, забыва́ют = zapominają (забывать), важна́ = ważna, свиде́тельница = świadkini, непра́вда = nieprawda, лжёт = kłamie (лгать), права́ = ma rację (права = prawa, przy „rację”), неви́новен = niewinny, напишу́ = napiszę (написать)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Miasto Nowogorsk. Jesteś kandydatem do rady miejskiej. Dziennikarka Rykowa pyta o „biznesmenów” i o to, skąd masz nowy samochód.  
+*Cel:* Zaprzecz, że brałeś pieniądze, i nie daj się złapać na kłamstwie.  
+*Zakończenia:* win: Rykowa zamyka notes: „Хорошо́, бо́льше вопро́сов нет.” Zostajesz radnym. Pan Worobjow gratuluje przez telefon. · partial: Zostajesz radnym, ale Rykowa mówi: „Я бу́ду копать дальше.” Będzie dalej drążyć. · fail: Wywiad ląduje w gazecie pod tytułem „Депутат и конве́рт”. Nikt na ciebie nie głosuje.
+
+| 1 | Добрый день, я журнали́стка. Вы хоти́те стать депута́том городско́го сове́та? *(Dzień dobry, jestem dziennikarką. Chce Pan zostać radnym?)* | **Да, я хочу́ стать депута́том.** *(Potwierdź, że chcesz zostać radnym.)* · warianty: Да, я хочу́ стать депута́том городско́го сове́та. | „Депутат” = radny; po „стать” narzędnik: депута́том. |
+| 2 | Вы зна́ете бизнесме́на Воробьёва. Он ваш друг? *(Zna Pan biznesmena Worobjowa. Czy to Pana przyjaciel?)* | **Нет, он просто знакомый.** *(Zaprzecz: to tylko znajomy.)* · warianty: Нет, он то́лько знакомый. | „Просто” = po prostu, tylko; „знакомый” = znajomy. |
+| 3 | Знакомый, поня́тно. У вас но́вая машина. Откуда у вас де́ньги? *(Znajomy, rozumiem. Ma Pan nowy samochód. Skąd Pan ma pieniądze?)* | **Я купи́л её че́стно.** *(Powiedz, że kupiłeś go uczciwie.)* · warianty: Я че́стно купи́л маши́ну. | „Машина” jest żeńskie: купи́л её. |
+| 4 | Вы бра́ли взя́тки? *(Czy brał Pan łapówki?)* | **Нет, я никогда́ не брал взя́ток.** *(Zaprzecz, że kiedykolwiek brałeś łapówki.)* · warianty: Нет, я никогда́ не брал взя́тки. | „Никогда́ не” + dopełniacz: взя́ток. |
+| 5 | Правда? Тогда́ посмо́трите на э́ту фотогра́фию. Вы, Воробьёв и конве́рт. *(Naprawdę? W takim razie proszę spojrzeć na to zdjęcie. Pan, Worobjow i koperta.)* | **Я не зна́ю э́тих люде́й.** *(Powiedz, że nie znasz tych ludzi.)* | „Э́тих люде́й” = tych ludzi (biernik = dopełniacz). |
+| 6 | Хм. Фотография о́чень ста́рая. Избира́тели бы́стро тако́е забыва́ют. *(Hm. To zdjęcie jest bardzo stare. Wyborcy szybko o takich rzeczach zapominają.)* | **Фотография не важна́.** *(Zlekceważ zdjęcie: nie jest ważne.)* | „Не важна́” = nieważna. |
+| 7 | Свиде́тельница говори́т, что вы бра́ли де́ньги. *(Świadkini twierdzi, że brał Pan pieniądze.)* | **Э́то непра́вда. Свиде́тельница лжёт.** (dobra); złe: Да, свиде́тельница права́.; Я свидетель. | Przyznajesz się, więc przegrywasz.; Nie jesteś świadkiem, więc ta odpowiedź nie ma sensu. |
+| 8 | Спаси́бо за интервью. Хоти́те что́-нибудь добавить? *(Dziękuję za wywiad. Czy chce Pan coś dodać?)* | **Да, я неви́новен.** *(Powiedz na koniec, że jesteś niewinny.)* | „Неви́новен” = niewinny. |
+| 9 | Я напишу́, что вы сказа́ли. До свида́ния! *(Napiszę, co Pan powiedział. Do widzenia!)* | — |  |
+
+### Poziom 3: Мэр  (typed=0.4, hint=bank, cierpliwość 4)
+
+Nowe słowa: Гро́мов = Gromow (nazwisko), своего́ = swojego, адвока́та = adwokata (biernik od адвокат), вы́зовете = wezwie pan(i) (вызвать), вы́играла = wygrała (выиграть), те́ндер = przetarg, неё = nią (у неё было = ona miała), лу́чшее = najlepsze, фи́рмы = firmy (dopełniacz od фирма), вопро́сов = pytań (dopełniacz mnoga od вопрос), показа́ния = zeznania, отка́зываюсь = odmawiam (отказываться), доказа́тельств = dowodów (dopełniacz mnoga), подозре́ний = podejrzeń (dopełniacz mnoga), ули́к = dowodów rzeczowych, poszlak (dopełniacz mnoga od улика), возмо́жно = możliwe, ска́жете = powie pan(i) (сказать), вино́вен = winny, конве́рта = koperty (dopełniacz od конверт), скажи́те = proszę powiedzieć, прися́гой = przysięgą (под присягой = pod przysięgą), никаки́х = żadnych
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* W ratuszu miasta Nowogorsk. Prokurator Gromow bada przetarg (те́ндер) na nowy most. Firma pana Worobjowa wygrała dziwnie łatwo, a w aktach wraca „дело Куку́шка”.  
+*Cel:* Wyjdź z przesłuchania jako burmistrz, nie przyznając się do niczego.  
+*Zakończenia:* win: Gromow zamyka teczkę: „Доказа́тельств нет. Дело закрыто.” Zostajesz burmistrzem, a most otwiera się z pompą. · partial: Teczka zostaje otwarta, ale prokurator nie ma dowodów. Zostajesz burmistrzem z cieniem podejrzeń. · fail: Gromow kładzie na stole kopertę i zdjęcie. „Вы арестованы!” – mówi. Kończysz w areszcie.
+
+| 1 | Я прокурор Гро́мов. Э́то допрос. *(Jestem prokuratorem Gromowem. To jest przesłuchanie.)* | **Я хочу́ видеть своего́ адвока́та.** *(Poproś o swojego adwokata.)* | Po „видеть” biernik osoby żywotnej: адвока́та. |
+| 2 | Адвока́та вы вы́зовете по́зже. Фирма Воробьёва вы́играла те́ндер на мост. Почему́? *(Adwokata wezwie Pan później. Firma Worobjowa wygrała przetarg na most. Dlaczego?)* | **У неё бы́ло лу́чшее предложение.** *(Wyjaśnij, że miała najlepszą ofertę.)* · warianty: У фи́рмы бы́ло лу́чшее предложение. | „У неё бы́ло” = ona miała (o firmie, rodzaj żeński). |
+| 3 | Лу́чшее предложение? У нас мно́го вопро́сов. Вы хоти́те дать показа́ния? *(Najlepsza oferta? Mamy wiele pytań. Czy chce Pan złożyć zeznanie?)* | **Я отка́зываюсь давать показа́ния.** *(Odmów składania zeznań.)* · warianty: Я хочу́ молчать. | To prawo do milczenia: „отка́зываюсь давать показа́ния”. |
+| 4 | Хм. Без доказа́тельств нет подозре́ний. Мы оба э́то зна́ем. *(Hm. Bez dowodów nie ma podejrzeń. Obaj to wiemy.)* | **У вас нет доказа́тельств.** *(Powiedz prokuratorowi, że nie ma dowodów.)* · warianty: У вас нет ули́к. | „У вас нет” + dopełniacz: доказа́тельств. |
+| 5 | Возмо́жно, бу́дет обвинение. Что вы ска́жете? *(Możliwe, że będzie akt oskarżenia. Co Pan powie?)* | **Я неви́новен.** (dobra); złe: Я вино́вен.; Э́то был я. | „Вино́вен” = winny, a to przyznanie.; „Э́то был я” = to byłem ja, czyli przyznanie się. |
+| 6 | Воробьёв говори́т, что дал вам конве́рт. *(Worobjow mówi, że dał Panu kopertę.)* | **Э́то ложь! Я никогда́ не брал конве́рт.** *(Zaprzecz: to kłamstwo, nigdy nie wziąłeś koperty.)* · warianty: Э́то ложь! Я никогда́ не брал конве́рта. | „Никогда́ не брал” = nigdy nie wziąłem. |
+| 7 | Тогда́ скажи́те э́то ещё раз под прися́гой. Вы бра́ли де́ньги у Воробьёва? *(A więc powiedz to jeszcze raz pod przysięgą: czy brał Pan pieniądze od Worobjowa?)* | **Нет, я не брал никаки́х де́нег у Воробьёва.** *(Zaprzeczaj pod przysięgą: nie wziąłeś od niego żadnych pieniędzy.)* · ŚMIERTELNE | „Никаки́х де́нег” = żadnych pieniędzy. Jedna wpadka i koniec. |
+| 8 | Хорошо́. Вы мэр. Бо́льше вопро́сов нет. *(Dobrze. Jest Pan burmistrzem. Nie mam więcej pytań.)* | — |  |
+
+### Poziom 4: Депутат  (typed=0.6, hint=letters, cierpliwość 4)
+
+Nowe słowa: коми́ссию = komisję (biernik od комиссия), даёте = daje pan(i) (давать: давать показания = zeznawać), говорю́ = mówię, име́ете = ma pan(i) (иметь), иммуните́т = immunitet, него́ = niego (от него = od niego), ва́ши = wasze, pana/pani (l. mnoga), противоре́чат = są sprzeczne z (противоречить), докуме́нтам = dokumentom (celownik: противоречат документам), объясни́те = proszę wyjaśnić (объяснить), не́чего = nie ma czego (мне нечего скрывать = nie mam nic do ukrycia), ду́мают = myślą, про́шлом = przeszłości (в прошлом = w przeszłości), пи́сьма = listu (dopełniacz od письмо), написа́л = napisał, получи́ли = dostał pan(i), otrzymali (получить), деньга́ми = pieniędzmi (narzędnik), получа́л = otrzymywał, dostawał, городско́м = miejskiej (в городском совете = w radzie miejskiej), сове́те = w radzie (miejscownik od совет)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Parlament krajowy. Jesteś posłem (депутат), a komisja śledcza wzywa cię jako świadka. Przewodnicząca Wołkowa mówi o „деле Куку́шка”. Prawnicy mają dla ciebie nowe słowa: свидетель, присяга, иммуните́т.  
+*Cel:* Odpowiadaj pod przysięgą tak, by nikt nie dowiódł, że kłamiesz.  
+*Zakończenia:* win: Wołkowa: „Допрос окончен.” Wychodzisz z sali z uniesioną głową. Komisja nic nie ma. · partial: Komisja kończy pracę bez wniosków, ale jeden członek zapisał w notatniku: „Проверить по́зже!” · fail: Komisja nakazuje ci wyjaśnić sprzeczność. Zaplątałeś się, a prasa pisze o „лживом депутате”.
+
+| 1 | Добро пожаловать в коми́ссию. Вы даёте показа́ния под прися́гой. *(Witamy w komisji. Zeznaje Pan pod przysięgą.)* | **Да, я зна́ю. Я говорю́ пра́вду.** *(Potwierdź i zapewnij, że mówisz prawdę.)* · warianty: Да, я зна́ю. Я скажу́ пра́вду. | „Говорить пра́вду” = mówić prawdę; „под прися́гой” = pod przysięgą. |
+| 2 | Хорошо́. Как депутат вы име́ете иммуните́т. Хоти́те от него́ отказаться? *(Dobrze. Jako poseł ma Pan immunitet. Czy chce się Pan go zrzec?)* | **Нет, я хочу́ сохранить свой иммуните́т.** *(Odmów zrzeczenia się immunitetu.)* | „Сохранить” = zachować; „свой” = swój. |
+| 3 | Ва́ши показа́ния противоре́чат докуме́нтам. Как вы э́то объясни́те? *(Pana zeznania są sprzeczne z dokumentami. Jak Pan to wyjaśni?)* | **Мне не́чего скрывать.** *(Powiedz, że nie masz nic do ukrycia.)* | „Мне не́чего скрывать” = nie mam nic do ukrycia. |
+| 4 | Хм. Э́то бы́ло давно. Избира́тели уже́ об э́том не ду́мают. *(Hm. To było dawno. Wyborcy już o tym nie myślą.)* | **Э́то про́шлое.** *(Machnij ręką: to przeszłość.)* · warianty: Э́то уже́ в про́шлом. | „Про́шлое” = przeszłość. |
+| 5 | Вот письмо́ от Воробьёва. Вы его́ зна́ете? *(Oto list od Worobjowa. Zna go Pan?)* | **Я не зна́ю э́того пи́сьма.** (dobra); złe: Да, э́то я написа́л письмо́.; Письмо́ написа́л мой адвокат. | Przyznajesz się, że to ty napisałeś list: to błąd.; Zwalanie na adwokata nie jest wiarygodne. |
+| 6 | Тогда́ свидетель. Свидетель говори́т, что вы получи́ли конве́рт с деньга́ми. *(A więc świadek. Świadek mówi, że dostał Pan kopertę z pieniędzmi.)* | **Свидетель лжёт. Я не получа́л никаки́х де́нег.** *(Nazwij świadka kłamcą i zaprzecz, że dostałeś pieniądze.)* | „Лжёт” = kłamie; „никаки́х де́нег” = żadnych pieniędzy. |
+| 7 | В городско́м сове́те вы сказа́ли, что почти́ не зна́ете Воробьёва. Э́то всё ещё так? *(W radzie miejskiej powiedział Pan, że ledwo zna Worobjowa. Czy to nadal prawda?)* | **Да, я почти́ не зна́ю его́.** (dobra); złe: Нет, он мой друг.; Нет, я никогда́ его́ не ви́дел. · ŚMIERTELNE | Przyznajesz, że to twój przyjaciel: sprzeczność i koniec.; Wcześniej mówiłeś „почти́ не зна́ю”, a nie „nigdy go nie widziałem”. |
+| 8 | Спаси́бо. Вы мо́жете идти. Ско́ро мы уви́димся снова. *(Dziękuję. Może Pan iść. Wkrótce znów się zobaczymy.)* | — |  |
+
+### Poziom 5: Министр  (typed=0.8, hint=bank, cierpliwość 4)
+
+Nowe słowa: прямо́м = bezpośrednim (в прямом эфире = na żywo), эфи́ре = w eterze, гото́вы = gotowi, гото́в = gotów, дела́ = sprawy (дело Кукушка = sprawa Kukułka), Куку́шка = Kukułka, газе́те = w gazecie, по́мню = pamiętam, подде́лка = fałszerstwo, фальши́вка = falsyfikat, fałszywka, ве́рят = wierzą (верить), ре́йтинги = notowania, sondaże, растут́ = rosną (расти), благодарю́ = dziękuję, ва́шим = waszym, pana/pani (narzędnik), сове́тником = doradcą (narzędnik od советник), рабо́тал = pracował, дава́л = dawał, отста́вку = dymisję (уйти в отставку = podać się do dymisji), ко́нчено = skończone, конве́рте = w kopercie (miejscownik od конверт), мою́ = moją (biernik r. żeński), кампа́нию = kampanię (biernik od кампания)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Studio telewizyjne, wywiad na żywo. Jesteś ministrem (министр) i siedzisz naprzeciw Zimina, prowadzącego wiadomości. Na ekranie nagle pojawia się stary dokument z „дела́ Куку́шка”.  
+*Cel:* Wyjdź ze studia nadal jako minister: nie daj się zapędzić w pułapkę na żywo.  
+*Zakończenia:* win: Zimin kończy wywiad: „Спаси́бо, господин министр.” Sondaże rosną. Pan Worobjow dzwoni: „Молодец!” · partial: Wywiad kończy się remisem. Opozycja domaga się dymisji (отставка), ale premier cię broni. · fail: Na wizji uciekasz od odpowiedzi, a widzowie wszystko widzą. Rano gazety krzyczą: „В отста́вку!”
+
+| 1 | Добрый ве́чер! Мы в прямо́м эфи́ре. Вы гото́вы, господин министр? *(Dobry wieczór! Jesteśmy na żywo. Jest Pan gotów, Panie ministrze?)* | **Да, я гото́в. С удово́льствием.** *(Potwierdź, że jesteś gotów.)* · warianty: Да, я гото́в. | „Гото́в” = gotów (forma krótka). |
+| 2 | Оппозиция говори́т, что вокру́г дела́ Куку́шка скандал. *(Opozycja twierdzi, że wokół sprawy Kukułka jest skandal.)* | **Э́то не скандал. Э́то кампания.** *(Zbagatelizuj: to nie skandal, tylko kampania.)* | „Кампания” = kampania. |
+| 3 | Кампания? В газе́те есть документ. На нём ва́ша подпись. *(Kampania? W gazecie jest dokument. Ma Pana podpis.)* | **Я не могу́ э́того вспомнить.** *(Powiedz, że nie możesz sobie tego przypomnieć.)* · warianty: Я э́того не по́мню. | „Вспомнить” = przypomnieć sobie, + dopełniacz „э́того”. |
+| 4 | Э́то ва́ша подпись. Как вы э́то объясни́те? *(To jest Pana podpis. Jak Pan to wyjaśni?)* | **Э́то подде́лка.** *(Zaprzecz: to fałszerstwo.)* · warianty: Э́то фальши́вка. | „Подде́лка” = fałszerstwo. |
+| 5 | Хм. Многие вам ве́рят. Ре́йтинги растут́. *(Hm. Wielu ludzi Panu wierzy. Notowania rosną.)* | **Благодарю́ вас за доверие.** *(Podziękuj wyborcom za zaufanie.)* | „Доверие” = zaufanie; „за доверие” = za zaufanie. |
+| 6 | Воробьёв говори́т, что был ва́шим сове́тником. Э́то правда? *(Worobjow mówi, że był Pana doradcą. Czy to prawda?)* | **Нет, я никогда́ не рабо́тал с ним.** (dobra); złe: Да, он ча́сто дава́л мне де́ньги.; Я отка́зываюсь давать показа́ния. | Przyznajesz się do pieniędzy: błąd.; „Отка́зываюсь” w telewizji wygląda na przyznanie się. |
+| 7 | Вы хоти́те уйти в отста́вку? Тогда́ всё ко́нчено. *(Czy chce Pan podać się do dymisji? Wtedy wszystko skończone.)* | **Нет, я не уйду́ в отста́вку. Я неви́новен.** *(Odmów dymisji i powiedz, że jesteś niewinny.)* | „Уйти в отста́вку” = podać się do dymisji. |
+| 8 | Вот фотография вас и Воробьёва. Там есть конве́рт. Что в конве́рте? *(Oto zdjęcie Pana i Worobjowa. Jest tam też koperta. Co jest w kopercie?)* | **Фотография ста́рая. Я никогда́ не брал конве́рт.** (dobra); złe: Э́то де́ньги на мою́ кампа́нию.; Э́то был просто пода́рок. · ŚMIERTELNE | Przyznanie się do pieniędzy: koniec.; „Пода́рок” to też przyznanie, bo wcześniej mówiłeś, że nie brałeś koperty. |
+| 9 | Спаси́бо за интервью, господин министр. *(Dziękuję za wywiad, panie ministrze.)* | — |  |
+
+### Poziom 6: Премьер-министр  (typed=1, hint=none, cierpliwość 4)
+
+Nowe słowa: деба́ты = debata, Оре́хова = Orechowa (nazwisko), премье́р-мини́стром = premierem (narzędnik od премьер-министр), па́ртии = partii (dopełniacz od партия), че́стности = uczciwości (партия честности), моё = moje, mój (r. nijaki), отверга́ю = odrzucam (отвергать), гря́зная = brudna, доказа́тельства = dowody, ви́дите = widzi pan(i), страны́ = kraju (dopełniacz od страна), созда́м = stworzę (создать), но́вые = nowe, рабо́чие = pracowniczy (рабочие места = miejsca pracy), места́ = miejsca (mianownik l. mnoga od место), стано́витесь = zostajecie, zostaje pan(i) (становиться), поздравля́ю = gratuluję
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Debata finałowa w telewizji. Kandydujesz na premiera. Naprzeciw stoi Orechowa z partii „Nowa Uczciwość” i jej teczka z „делом Куку́шка”. Cały kraj ogląda.  
+*Cel:* Wygraj debatę, zachowaj spokój i nie przyznaj się do niczego do samego końca.  
+*Zakończenia:* win: Sondaż: 52 procent chce ciebie. Zostajesz premierem, a koperta pana Worobjowa leży gdzieś na dnie szuflady. · partial: Debata kończy się remisem. Wybory wygrywasz minimalnie i obiecujesz „więcej przejrzystości”. · fail: Orechowa kładzie na stoliku teczkę. Kraj widzi sprzeczność w twoich słowach i na ekranie pojawia się napis: „Кандидат лжёт.”
+
+| 1 | Добро пожаловать на деба́ты! Госпожа Оре́хова, господин кандидат, пожа́луйста. *(Witamy na debacie! Pani Orechowa, panie kandydacie, proszę.)* | **Добрый ве́чер. Я хочу́ стать премье́р-мини́стром.** *(Przywitaj się i powiedz, że chcesz zostać premierem.)* | „Стать” + narzędnik: премье́р-мини́стром. |
+| 2 | Я из па́ртии че́стности. Говори́те пра́вду, господин кандидат! *(Jestem z partii uczciwości. Niech Pan mówi prawdę, panie kandydacie!)* | **Я всегда́ говорю́ пра́вду.** *(Zapewnij, że zawsze mówisz prawdę.)* | „Всегда́” = zawsze, stoi przed czasownikiem. |
+| 3 | Вы бра́ли взя́тки. Э́то моё обвинение. *(Brał Pan łapówki. To mój zarzut.)* | **Я отверга́ю э́то обвинение.** *(Odrzuć ten zarzut.)* · warianty: Я отверга́ю тако́е обвинение. | „Отвергать” = odrzucać; „обвинение” = zarzut. |
+| 4 | Ну... многие избира́тели говоря́т, что э́то просто кампания. Э́то бы́ло давно. *(No cóż... wielu wyborców mówi, że to tylko kampania. To było dawno.)* | **Ва́ша кампания гря́зная.** *(Zarzuć rywalce brudną kampanię.)* | „Гря́зная” = brudna (rodzaj żeński, jak „кампания”). |
+| 5 | Госпожа Оре́хова говори́т, что у неё есть доказа́тельства. Вы ви́дите доказа́тельства, господин кандидат? *(Pani Orechowa mówi, że ma dowody. Czy widzi Pan jakieś dowody, panie kandydacie?)* | **Нет, я не ви́жу никаки́х доказа́тельств.** *(Powiedz, że nie widzisz żadnych dowodów.)* · warianty: Нет, я не ви́жу доказа́тельств. | „Никаки́х доказа́тельств” = żadnych dowodów (po „не ви́жу” dopełniacz). |
+| 6 | Хорошо́. А како́й у вас план для страны́? *(Dobrze. A jaki jest Pana plan dla kraju?)* | **Я созда́м но́вые рабо́чие места́.** *(Obiecaj nowe miejsca pracy.)* | „Рабо́чие места́” = miejsca pracy; „созда́м” = stworzę. |
+| 7 | Ваш друг Воробьёв говори́т, что дал вам мно́го де́нег! *(Pański przyjaciel Worobjow mówi: dał Panu dużo pieniędzy!)* | **Э́то ложь! Он мне не друг.** *(Zaprzecz: to kłamstwo, on nie jest twoim przyjacielem.)* | „Он мне не друг” = nie jest mi przyjacielem. |
+| 8 | В сове́те вы сказа́ли, что он просто знакомый. А теперь? *(W radzie powiedział Pan, że to tylko znajomy. A teraz?)* | **Он просто знакомый.** (dobra); złe: Он мой друг.; Я никогда́ его́ не ви́дел. | Zaprzeczasz sam sobie.; Wcześniej przyznałeś, że go znasz („знакомый”), więc „nigdy go nie widziałem” to sprzeczność. |
+| 9 | Госпожа Оре́хова пока́зывает конве́рт. Вы его́ бра́ли? Да и́ли нет? *(Pani Orechowa pokazuje kopertę. Wziął go Pan? Tak czy nie?)* | **Нет, я никогда́ его́ не брал.** (dobra); złe: Да, я его́ брал.; Я отка́зываюсь отвечать. · ŚMIERTELNE | Przyznanie się: koniec.; Milczenie na żywo wygląda jak przyznanie się. |
+| 10 | И премье́р-мини́стром стано́витесь... вы! Поздравля́ю! *(A premierem zostaje... Pan! Serdeczne gratulacje!)* | — |  |
+
+## Lotnisko (flughafen)
+
+**Scena:** Moskwa, lotnisko Szeremietiewo, wczesny ranek. Lecisz do Warszawy na ślub najlepszego przyjaciela, a samolot nie poczeka. Masz walizkę, paszport i mało czasu.  
+**Cel:** Przejdź całą drogę: odprawa, kontrola bezpieczeństwa, bramka, lot i odbiór bagażu w Warszawie.  
+**Rozmówca:** Сотрудница  
+**Zakończenia:** win: Docierasz do Warszawy z walizką, paszportem i pół godziny zapasu. Przyjaciel czeka w hali przylotów z bukietem: „Ты успел! Сва́дьба мо́жет начинаться!” · partial: Dotarłeś do Warszawy, ale po drodze sporo się nagadałeś i trochę pobiegałeś. Walizka jest, ślub też, ty trochę zdyszany, ale na czas. · fail: Pomyliłeś coś w najgorszym momencie i samolot odleciał bez ciebie. Ślub oglądasz na telefonie, a przyjaciel obiecuje ci długą wyprawę „na pocieszenie”.  
+
+### Poziom 1: Odprawa  (typed=0, hint=none, cierpliwość 6)
+
+Nowe słowa: регистра́цию = rejestrację, odprawę (biernik od регистрация), авиакомпа́нии = linii lotniczej (dopełniacz), лети́те = leci pan(i); lecicie (лететь), лечу́ = lecę, Варша́ву = Warszawę (biernik od Варшава), Варша́ва = Warszawa, сва́дьбу = ślub, wesele (biernik od свадьба), прия́тно = miło, поста́вьте = proszę postawić (поставить), весы́ = waga, килогра́ммов = kilogramów, норма́льно = w porządku, normalnie, ручна́я = ręczna, кладь = bagaż (ручная кладь = bagaż podręczny), прохо́да = przejścia (у прохода = przy przejściu), поса́дочный = pokładowy (посадочный талон = karta pokładowa), тало́н = talon, karta, вы́лет = odlot, вопро́сы = pytania
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Lotnisko Szeremietiewo, hala odlotów. Podchodzisz do stanowiska odprawy linii Северный ве́тер. Pracowniczka patrzy na ciebie życzliwie i czeka na dokumenty.  
+*Cel:* Odpraw się na lot do Warszawy: pokaż paszport, nadaj walizkę i wybierz miejsce.  
+*Zakończenia:* win: Pracowniczka podaje ci kartę pokładową: „Сча́стливого пути́!” Walizka jedzie na taśmie, a ty idziesz do kontroli bezpieczeństwa. · partial: Odprawa udała się, ale pracowniczka kilka razy musiała się domyślać, o co ci chodzi. Karta pokładowa w ręku, czas ucieka. · fail: Pracowniczka nie rozumie, czego chcesz, i prosi następną osobę w kolejce. Musisz zacząć od nowa na końcu kolejki.
+
+| 1 | Здра́вствуйте! Добро пожаловать на регистра́цию авиакомпа́нии северный ве́тер. Куда вы лети́те? *(Dzień dobry! Witamy na odprawie linii Północny Wiatr. Dokąd Pan leci?)* | **Здра́вствуйте! Я лечу́ в Варша́ву.** *(Przywitaj się i powiedz, że lecisz do Warszawy.)* · warianty: Добрый день! Я лечу́ в Варша́ву. | „Лечу́” = lecę; „в” + biernik: в Варша́ву. |
+| 2 | Варша́ва, прекра́сно. Ваш па́спорт, пожа́луйста. А зачем вы лети́те в Варша́ву? *(Warszawa, wspaniale. Paszport, proszę. A po co Pan leci do Warszawy?)* | **Вот мой па́спорт. Я лечу́ на сва́дьбу.** *(Podaj paszport i powiedz, że lecisz na ślub.)* · warianty: Вот мой па́спорт. Я е́ду на сва́дьбу. | „Вот” = oto; „на сва́дьбу” = na ślub (biernik). |
+| 3 | Сва́дьба, как прия́тно! Хоти́те сдать чемодан? *(Ślub, jak miło! Chce Pan nadać walizkę?)* | **Да, я хочу́ сдать чемодан.** *(Powiedz, że chcesz nadać walizkę.)* · warianty: Да, хочу́ сдать чемодан. | „Сдать бага́ж” = nadać bagaż. |
+| 4 | Поста́вьте чемодан на весы́, пожа́луйста. Два́дцать килогра́ммов. Э́то норма́льно. У вас есть ручна́я кладь? *(Proszę postawić walizkę na wadze. Dwadzieścia kilogramów. To w porządku. Czy ma Pan bagaż podręczny?)* | **Да, у меня́ есть сумка как ручна́я кладь.** *(Powiedz, że masz torbę jako bagaż podręczny.)* | „Ручна́я кладь” = bagaż podręczny; „как” = jako. |
+| 5 | Хорошо́. Вы хоти́те место у окна́ и́ли у прохо́да? *(Dobrze. Woli Pan miejsce przy oknie czy przy przejściu?)* | **Место у окна́, пожа́луйста.** *(Powiedz, że wolisz miejsce przy oknie.)* · warianty: Я хочу́ место у окна́. | „У окна́” = przy oknie (u + dopełniacz). |
+| 6 | Вот ваш поса́дочный тало́н. Вы́лет в де́сять три́дцать. У вас есть ещё вопро́сы? *(Oto Pana karta pokładowa. Odlot jest o wpół do jedenastej. Czy ma Pan jeszcze pytania?)* | **Да, рейс вовремя?** *(Zapytaj, czy lot jest punktualny.)* | „Вовремя” = punktualnie; w pytaniu wystarczy intonacja. |
+| 7 | Да, рейс вовремя. Ваш выход номер двена́дцать. Иди́те прямо. *(Tak, lot jest punktualny. Pana bramka to numer 12. Proszę iść prosto.)* | **Большо́е спаси́бо! До свида́ния!** *(Podziękuj i pożegnaj się.)* | „До свида́ния” = do widzenia. |
+| 8 | Сча́стливого пути́! *(Szczęśliwej podróży!)* | — |  |
+
+### Poziom 2: Kontrola bezpieczeństwa  (typed=0.25, hint=bank, cierpliwość 5)
+
+Nowe słowa: досмо́тр = kontrola (bezpieczeństwa), положи́те = proszę położyć (положить), ле́нту = taśmę (biernik od лента), ноутбу́к = laptop, доста́ньте = proszę wyjąć (достать), жи́дкости = płyny, духи́ = perfumy, крем = krem, жи́дкостей = płynów (dopełniacz mnoga), сними́те = proszę zdjąć (снять), ку́ртку = kurtkę (biernik od куртка), ножа́ = noża (dopełniacz od нож), пройди́те = proszę przejść (пройти), ска́нер = skaner, пи = pip, карма́не = w kieszeni (miejscownik od карман), ключи́ = klucze, поря́дке = w porządku (всё в порядке), проходи́те = proszę przechodzić, proszę iść dalej
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Masz kartę pokładową, a przed tobą długa kolejka do kontroli. Funkcjonariusz podaje plastikowe pojemniki i patrzy uważnie na twoją torbę.  
+*Cel:* Przejdź kontrolę bezpieczeństwa: pokaż laptop, zdejmij pasek i odpowiedz na pytania.  
+*Zakończenia:* win: Funkcjonariusz kiwa głową: „Всё в поря́дке. Проходи́те.” Zakładasz pasek i biegniesz do bramki z pełnym spokojem. · partial: Kontrola przebiegła w końcu bez problemów, ale funkcjonariusz kilka razy zmarszczył brwi. Zakładasz pasek w biegu. · fail: Funkcjonariusz uznaje twoje odpowiedzi za podejrzane. Zostajesz zatrzymany na dodatkową kontrolę, a samolot odlatuje bez ciebie.
+
+| 1 | Добрый день! Э́то досмо́тр. Положи́те су́мку сюда, на ле́нту. *(Dzień dobry! To jest kontrola bezpieczeństwa. Proszę położyć torbę tutaj, na taśmie.)* | **Да, конечно.** *(Zgódź się i powiedz, że oczywiście.)* | „Конечно” = oczywiście. |
+| 2 | Спаси́бо. У вас в су́мке есть ноутбу́к? Доста́ньте ноутбу́к, пожа́луйста. *(Dziękuję. Czy ma Pan w torbie laptop? Proszę go wyjąć.)* | **Да, вот мой ноутбу́к.** *(Potwierdź i podaj laptop.)* | „Мой” przy rodzaju męskim: мой ноутбу́к. |
+| 3 | Спаси́бо. У вас есть жи́дкости? Например, вода́, духи́ и́ли крем? *(Dziękuję. Czy ma Pan jakieś płyny? Na przykład wodę, perfumy albo krem?)* | **Нет, у меня́ нет жи́дкостей.** *(Zaprzecz: nie masz płynów.)* · warianty: Нет, жи́дкостей у меня́ нет. | „У меня́ нет” + dopełniacz liczby mnogiej: жи́дкостей. |
+| 4 | Хорошо́. Сними́те, пожа́луйста, реме́нь и ку́ртку. *(Dobrze. Proszę zdjąć pasek i kurtkę.)* | **Да, вот мой реме́нь и моя́ куртка.** *(Podaj pasek i kurtkę.)* | „Куртка” jest rodzaju żeńskiego: моя́ куртка. |
+| 5 | Спаси́бо. В су́мке есть нож и́ли оружие? *(Dziękuję. Czy w torbie jest nóż albo broń?)* | **Нет, у меня́ нет ножа́ и ору́жия.** (dobra); złe: Да, у меня́ есть нож.; Не зна́ю, мо́жет быть. · ŚMIERTELNE | Przyznanie się do noża to natychmiastowe zatrzymanie.; Niepewna odpowiedź przy takim pytaniu wzbudza podejrzenia: zatrzymanie. |
+| 6 | Хорошо́. Пройди́те через ска́нер. Пи! У вас есть ещё что́-нибудь в карма́не? *(Dobrze. Proszę przejść przez skaner. Pip! Czy ma Pan jeszcze coś w kieszeni?)* | **Да, у меня́ ключи́ и телефон.** *(Powiedz, że masz klucze i telefon.)* · warianty: Да, у меня́ есть ключи́ и телефон. | „Ключи́” = klucze (liczba mnoga). |
+| 7 | Всё в поря́дке. Проходи́те. Сча́стливого пути́! *(Wszystko w porządku. Proszę iść dalej. Szczęśliwej podróży!)* | — |  |
+
+### Poziom 3: Przy bramce  (typed=0.5, hint=bank, cierpliwość 4)
+
+Nowe słowa: ре́йса = lotu (dopełniacz od рейс), заде́рживается = jest opóźniony (задерживаться), начнётся = zacznie się (начаться), переса́дка = przesiadka, Варша́ве = w Warszawie (miejscownik), прямы́м = bezpośrednim (narzędnik), ре́йсом = lotem (narzędnik od рейс), вылета́ет = odlatuje (вылетать), вы́хода = wyjścia, bramki (dopełniacz od выход), закры́т = zamknięty, по́няли = zrozumieli, zrozumiał pan(i), вы́ходу = wyjściu, bramce (к выходу = do bramki), остаю́сь = zostaję (оставаться), у́лицу = ulicę (biernik od улица), поса́дку = wejście na pokład (biernik od посадка), сажу́сь = wsiadam (садиться), откры́та = otwarta
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Siedzisz przy bramce 12 i patrzysz na zegarek. Nagle w głośnikach coś trzaska, a na tablicy pojawia się napis „задержка”.  
+*Cel:* Dowiedz się, co z lotem, zrozum komunikat o zmianie bramki i wejdź na pokład.  
+*Zakończenia:* win: Biegniesz do nowej bramki i wsiadasz jako jeden z ostatnich. Pracownik zamyka drzwi: „Успели!” · partial: Znalazłeś w końcu właściwą bramkę, choć po drodze kilka razy musiałeś dopytywać. Wchodzisz na pokład spocony. · fail: Zrozumiałeś komunikat na opak i czekasz przy złej bramce. Kiedy orientujesz się w błędzie, drzwi samolotu są już zamknięte.
+
+| 1 | Извини́те! Вы пассажи́р ре́йса в Варша́ву? *(Przepraszam! Czy jest Pan pasażerem lotu do Warszawy?)* | **Да, мой рейс заде́рживается, правда?** *(Potwierdź i zapytaj, czy twój lot jest opóźniony.)* | „Заде́рживается” = jest opóźniony; „правда?” na końcu znaczy „prawda?”. |
+| 2 | Да, рейс заде́рживается на со́рок мину́т. Посадка начнётся в оди́ннадцать часо́в. *(Tak, lot jest opóźniony o czterdzieści minut. Wejście na pokład zacznie się o jedenastej.)* | **Когда́ посадка? Мне ну́жно на сва́дьбу.** *(Zapytaj, kiedy jest boarding, i dodaj, że lecisz na ślub.)* · warianty: Когда́ начнётся посадка? Я е́ду на сва́дьбу. | „Когда́” = kiedy; „мне ну́жно” = muszę. |
+| 3 | Сва́дьба, как прия́тно! Посадка в оди́ннадцать. Вам нужна́ переса́дка в Варша́ве? *(Ślub, jak miło! Wejście na pokład o jedenastej. Czy musi Pan się przesiadać w Warszawie?)* | **Нет, я лечу́ прямы́м ре́йсом в Варша́ву.** *(Odpowiedz, że nie, lecisz bezpośrednio.)* | „Прямы́м ре́йсом” = lotem bezpośrednim (narzędnik). |
+| 4 | Хорошо́, прямы́м ре́йсом. Внимание, объявление! Рейс в Варша́ву теперь вылета́ет с вы́хода пять. Выход двена́дцать закры́т. Вы по́няли? Куда вы идёте? *(Dobrze, lot bezpośredni. Uwaga, ogłoszenie! Lot do Warszawy odlatuje teraz z bramki 5. Bramka 12 jest zamknięta. Czy Pan zrozumiał? Dokąd Pan idzie?)* | **Я иду́ к вы́ходу пять.** (dobra); złe: Я остаю́сь у вы́хода двена́дцать.; Я иду́ на у́лицу. · ŚMIERTELNE | Bramka 12 jest zamknięta, więc czekanie tam kończy się spóźnieniem.; Wyjście na ulicę to wyjście z lotniska, nie bramka na pokład. |
+| 5 | Тогда́ быстре́е! Ваш поса́дочный тало́н, пожа́луйста. Мо́жете садиться в самолёт. *(W takim razie szybko! Karta pokładowa, proszę. Może Pan już wsiadać.)* | **Вот мой поса́дочный тало́н. Я уже́ иду́ на поса́дку.** *(Podaj kartę i powiedz, że już wsiadasz.)* · warianty: Вот мой поса́дочный тало́н. Я уже́ сажу́сь в самолёт. | „На поса́дку” = na wejście do samolotu. |
+| 6 | Сча́стливого пути́! Посадка откры́та. *(Szczęśliwej podróży! Wejście na pokład jest otwarte.)* | — |  |
+
+### Poziom 4: W samolocie i po lądowaniu  (typed=0.75, hint=letters, cierpliwość 4)
+
+Nowe słowa: по́лку = półkę (biernik od полка), положу́ = położę, пристегни́те = proszę zapiąć (пристегнуть), взлета́ем = startujemy (взлетать), пристёгиваю = zapinam (пристёгивать), приземля́емся = lądujemy (приземляться), бу́дем = będziemy, прилёт = przylot, расписа́нию = rozkładowi (по расписанию = zgodnie z rozkładem), па́спортный = paszportowy, бага́ж = bagaż, тамо́жня = cło, urząd celny, тамо́жню = cło (biernik od таможня), багажо́м = bagażem (за багажом = po bagaż), прие́дет = przyjedzie (приехать), ле́нте = na taśmie (miejscownik od лента), ле́нты = taśmy (dopełniacz od лента), деклари́ровать = zgłaszać do oclenia, спро́сит = zapyta (спросить), По́льшу = Polskę (biernik od Польша), хоро́шей = dobrej (dopełniacz r. żeński), сва́дьбы = wesela (dopełniacz od свадьба)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Wchodzisz na pokład samolotu linii Северный ве́тер. Stewardesa wita pasażerów przy drzwiach, a za chwilę wystartujecie do Warszawy. Po lądowaniu będziesz musiał jeszcze znaleźć kontrolę paszportową i swoją walizkę.  
+*Cel:* Zajmij miejsce, zapnij pas, poproś o picie, a po lądowaniu dowiedz się, gdzie jest kontrola paszportowa, taśma bagażowa i odprawa celna.  
+*Zakończenia:* win: Walizka wyjeżdża na taśmie jako pierwsza, a celnik życzy ci „Добро пожаловать в По́льшу!” Przyjaciel czeka w hali przylotów. · partial: Wszystko udało ci się znaleźć, ale po drodze trzy razy zapytałeś o drogę. Walizka dojechała, a ty do ślubu zdążysz. · fail: Poszedłeś w złą stronę i straciłeś czas na lotnisku. Walizka krąży samotnie po taśmie, a przyjaciel wydzwania co minutę.
+
+| 1 | Добрый день и добро пожаловать на борт! Ваш поса́дочный тало́н, пожа́луйста. *(Dzień dobry i witamy na pokładzie! Proszę o kartę pokładową.)* | **Добрый день! Вот мой поса́дочный тало́н.** *(Przywitaj się i pokaż kartę pokładową.)* | „Вот” = oto. |
+| 2 | Спаси́бо. Ва́ше место четы́рнадцать, у окна́. Положи́те су́мку на по́лку наверху. *(Dziękuję. Pana miejsce to 14, przy oknie. Proszę położyć torbę na półce nad głową.)* | **Спаси́бо, я положу́ су́мку на по́лку.** *(Podziękuj i powiedz, że kładziesz torbę na półkę.)* | „Положу́” = położę; „на по́лку” = na półkę (biernik, bo ruch). |
+| 3 | Спаси́бо. Пристегни́те реме́нь, пожа́луйста. Мы ско́ро взлета́ем. *(Dziękuję. Proszę zapiąć pas. Za chwilę startujemy.)* | **Да, я пристёгиваю реме́нь.** *(Powiedz, że zapinasz pas.)* | „Пристёгивать реме́нь” = zapinać pas. |
+| 4 | Спаси́бо. Хоти́те что́-нибудь выпить? *(Dziękuję. Czy chce Pan coś do picia?)* | **Да, ко́фе, пожа́луйста.** *(Poproś o kawę.)* | „Ко́фе” jest nieodmienne. |
+| 5 | Вот ваш ко́фе. У вас есть вопро́сы? *(Oto Pana kawa. Czy ma Pan pytania?)* | **Да, когда́ мы приземля́емся в Варша́ве?** *(Zapytaj, kiedy lądujecie w Warszawie.)* · warianty: Да, когда́ мы бу́дем в Варша́ве? | „Когда́” = kiedy; „приземляться” = lądować. |
+| 6 | Мы приземля́емся через де́сять мину́т. Добро пожаловать в Варша́ву! Прилёт по расписа́нию. *(Lądujemy za dziesięć minut. Witamy w Warszawie! Przylot jest zgodnie z rozkładem.)* | **Спаси́бо! Где па́спортный контроль, пожа́луйста?** *(Podziękuj i zapytaj, gdzie jest kontrola paszportowa.)* | „Где” = gdzie. |
+| 7 | Па́спортный контроль слева. Потом бага́ж, а потом тамо́жня. Куда вы идёте сначала? *(Kontrola paszportowa jest po lewej. Potem bagaż, a potem cło. Dokąd Pan idzie najpierw?)* | **Сначала я иду́ на па́спортный контроль.** (dobra); złe: Сначала я иду́ на тамо́жню.; Сначала я иду́ за багажо́м. · ŚMIERTELNE | Do cła idziesz na końcu, po odbiorze walizki.; Walizkę odbierasz dopiero po kontroli paszportowej. |
+| 8 | Верно! А потом за багажо́м. Ваш чемодан прие́дет на ле́нте номер четы́ре. *(Dokładnie! A potem po bagaż. Pana walizka przyjedzie na taśmie numer cztery.)* | **Большо́е спаси́бо! Я возьму́ чемодан с ле́нты.** *(Podziękuj i powiedz, że zdejmiesz walizkę z taśmy.)* · warianty: Спаси́бо! Я возьму́ свой чемодан с ле́нты. | „С ле́нты” = z taśmy (с + dopełniacz). |
+| 9 | Вам есть что деклари́ровать? Об э́том спро́сит тамо́жня. *(Czy ma Pan coś do oclenia? O to zapyta cło.)* | **Нет, мне не́чего деклари́ровать.** *(Powiedz, że nie masz nic do oclenia.)* | „Мне не́чего” = nie mam nic. |
+| 10 | Тогда́ всё хорошо́. Добро пожаловать в По́льшу и хоро́шей сва́дьбы! *(Wtedy wszystko w porządku. Witamy w Polsce i udanego wesela!)* | — |  |

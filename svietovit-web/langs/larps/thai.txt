@@ -243,3 +243,607 @@ w ปัญหา
 t รถไฟ มาสาย สิบ นาที | Pociąg spóźnia się dziesięć minut. | ไม่ มี ปัญหา ครับ ขอบคุณ | Powiedz, że to nie problem, i podziękuj. | ไม่ มี ปัญหา znaczy „nie ma problemu”.
 w ถึง
 e ถึง เชียงใหม่ แล้ว ค่ะ | Jesteśmy już w Chiang Mai!
+
+@larp oma | Babcia w parku | ยาย | ย | Niedziela w parku w Bangkoku. Na ławce siedzi starsza pani, która uwielbia rozmawiać i ma całe popołudnie. | Posiedź z babcią i porozmawiaj z nią. Nikt cię stąd nie wyrzuci.
+fee 0
+reward 10
+story yes
+win Babcia promienieje: „Jaki miły młody człowiek!” Zaprasza cię na niedzielną kawę i kawałek ciasta.
+partial Rozmowa się toczyła, choć kilka razy musiałeś prosić o powtórzenie. Babcia uśmiecha się cierpliwie i zaprasza cię znowu.
+fail Babcia się nie zniechęca, bo ma nieskończoną cierpliwość. Jeśli kiedyś zobaczysz ten komunikat, napisz do nas.
+
+@level 1 | Na ławce | patience=3 endless=yes typed=0 extra=2 hint=none
+desc Rozdział 1: Poznajecie się
+scene Park, ławka, słońce. Starsza pani karmi okruchami ptaki i zaczyna rozmowę. Nie musisz się spieszyć: babcia poczeka.
+goal Przywitaj się, powiedz, kim jesteś i skąd pochodzisz.
+win Babcia klepie ławkę obok siebie, żebyś usiadł. Zostajesz na dłużej.
+partial Rozmowa się udała, mimo kilku pomyłek. Babcia zachowuje cierpliwość i robi ci miejsce na ławce.
+fail Babcia nigdy się nie zniechęca.
+w อากาศ
+w ดี
+w มาก
+t สวัสดี ค่ะ วันนี้ อากาศ ดี มาก ใช่ ไหม | Dzień dobry! Dziś pogoda jest bardzo ładna, prawda? | ใช่ ครับ อากาศ ดี มาก | Zgódź się, że pogoda jest ładna. | อากาศ znaczy „pogoda”, a ดี มาก „bardzo dobra”. | ใช่ ครับ พระอาทิตย์ สวย มาก
+w ครู
+t ดี มาก คุณ ทำงาน อะไร | Bardzo dobrze. Czym się Pan zajmuje? | ผม เป็น ครู ครับ | Powiedz, że jesteś nauczycielem. | เป็น stoi przed zawodem: ผม เป็น ครู.
+w อยู่
+w ที่นี่
+w มาจาก
+t ครู ดี มาก คุณ อยู่ ที่นี่ ไหม | Nauczyciel, to bardzo dobrze! Mieszka Pan tutaj? | ไม่ ครับ ผม ไม่ อยู่ ที่นี่ ผม มาจาก โปแลนด์ | Zaprzecz i powiedz, że jesteś z Polski. | ไม่ stoi przed czasownikiem: ไม่ อยู่ = „nie mieszkam”; มาจาก znaczy „pochodzić z”. | ไม่ ครับ ผม มาจาก โปแลนด์
+w อยาก
+w ขอบคุณ
+t โปแลนด์ ไกล มาก คุณ อยาก นั่ง ไหม | Polska jest bardzo daleko. Czy chce Pan usiąść? | อยาก ครับ ขอบคุณ มาก | Zgódź się i podziękuj. | อยาก znaczy „chcieć”.
+e เชิญ นั่ง ค่ะ ที่นี่ ว่าง | Proszę, niech Pan siada. Tu jest miejsce.
+
+@level 2 | Wnuk i kaczki | patience=3 endless=yes typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Wnuk i ciasto
+scene Mały wnuk biega po trawniku i karmi kaczki, a babcia pokazuje ci zdjęcia w portfelu. Z torby wyjmuje ciasto własnej roboty.
+goal Porozmawiaj o wnuku, powiedz, czy masz dzieci, i spróbuj ciasta.
+win Babcia wręcza ci drugi kawałek. Wnuk macha do ciebie z daleka.
+partial Zjadłeś ciasto, choć kilka razy brakowało ci słów. Babcia dolewa herbaty z termosu.
+fail Babcia nie traci cierpliwości.
+w เขา
+w น่ารัก
+w หลาน
+t นี่ หลาน ของ ฉัน เขา อายุ หก ปี | To jest mój wnuk. Ma sześć lat. | เขา น่ารัก มาก ครับ | Pochwal wnuka: powiedz, że jest bardzo słodki. | น่ารัก znaczy „słodki, uroczy”. | หลาน ของ คุณ น่ารัก มาก ครับ
+w ลูก
+t ขอบคุณ ค่ะ หลาน ให้ อาหาร เป็ด คุณ มี ลูก ไหม | Dziękuję! Wnuk karmi kaczki. Czy ma Pan dzieci? | ไม่ ครับ ผม ไม่ มี ลูก | Powiedz, że nie masz dzieci. | ไม่ มี znaczy „nie mam”, a ลูก to „dziecko”.
+w เค้ก
+w อร่อย
+t ไม่ มี ลูก ใช่ ไหม คุณ อยาก กิน เค้ก ไหม ฉัน ทำ เค้ก ค่ะ | Nie ma Pan dzieci? Czy chce Pan ciasta? Sama je zrobiłam. | ใช่ ครับ เค้ก อร่อย มาก | Przyjmij ciasto i pochwal je. | อร่อย มาก znaczy „bardzo smaczne”.
+w สามสิบ
+t ขอบคุณ ค่ะ คุณ อายุ เท่าไร | Dziękuję! Ile ma Pan lat? | ผม อายุ สามสิบ ปี ครับ | Powiedz, że masz trzydzieści lat. | อายุ … ปี znaczy „mieć … lat”; สามสิบ to „trzydzieści”.
+e คุณ ยัง หนุ่ม มาก ค่ะ | Jest Pan jeszcze bardzo młody!
+
+@level 3 | Zaproszenie | patience=3 endless=yes typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Kawa w niedzielę
+scene Słońce chyli się ku zachodowi. Babcia pakuje termos i prosi cię o pomoc. Zanim wstaniecie z ławki, chce cię jeszcze zaprosić.
+goal Przyjmij zaproszenie na niedzielną kawę i pomóż babci z torbą.
+win Babcia zapisuje ci adres na serwetce. Idziesz do domu w świetnym nastroju.
+partial Wszystko się wyjaśniło, choć trzeba było kilka razy powtarzać. Babcia mówi: „Do niedzieli!”
+fail Babcia nie traci cierpliwości.
+w สวนสาธารณะ
+t ฉัน อยู่ ที่ สวนสาธารณะ ทุกวัน ที่นี่ สวย มาก | Jestem w parku codziennie. Tu jest bardzo ładnie. | ครับ สวนสาธารณะ สวย มาก | Zgódź się, że park jest piękny. | สวย znaczy „ładny, piękny”.
+w เมื่อไร
+t ใช่ ไหม วันอาทิตย์ ฉัน ทำ กาแฟ คุณ อยาก มา ไหม | Prawda? W niedzielę parzę kawę. Chce Pan przyjść? | อยาก ครับ เมื่อไร | Zgódź się i zapytaj, kiedy. | เมื่อไร znaczy „kiedy” i stoi na końcu pytania.
+w ถือ
+w กระเป๋า
+t เช้า วันอาทิตย์ ค่ะ กระเป๋า ของ ฉัน หนัก คุณ ช่วย ไหม | W niedzielę rano. Moja torba jest ciężka. Czy Pan mi pomoże? | ใช่ ครับ ผม ถือ กระเป๋า | Zgódź się i zaproponuj, że poniesiesz torbę. | ถือ znaczy „nosić, trzymać”.
+w พบ
+w ลาก่อน
+t คุณ ใจดี มาก | Jest Pan bardzo miły. | ขอบคุณ ครับ พบ คุณ วันอาทิตย์ ครับ ลาก่อน | Podziękuj i pożegnaj się do niedzieli. | พบ znaczy „spotykać”: พบ คุณ วันอาทิตย์ = „do zobaczenia w niedzielę”.
+e พบ คุณ วันอาทิตย์ ค่ะ ลาก่อน | Do niedzieli! Do widzenia!
+
+
+@larp spion | Szpieg | ผู้ติดต่อ | ผ | Jesteś agentem pod przykrywką. W Bangkoku masz odebrać tajny plik z ambasady i przekazać go dalej. Jedno złe słowo i jesteś zdemaskowany. | Zachowaj przykrywkę sprzedawcy gier, zdobądź plik i uciekaj z walizką.
+fee 0
+reward 20
+strict yes
+story yes
+win Walizka jest w twoich rękach, a łódź odpływa z portu. Ktoś w centrali szepcze: „Dobra robota, Orle.” Przykrywka nie pękła ani razu.
+partial Misja się udała, ale po drodze kilka razy omal się nie zdradziłeś. Centrala odnotowuje: „Miał szczęście.”
+fail Zdradziłeś się jednym słowem. Przykrywka pękła, a ty znikasz w ciemności bez pliku i bez walizki.
+
+@level 1 | Hasło na dworcu | patience=2 typed=0 extra=1 hint=none
+desc Rozdział 1: Kontakt na dworcu
+partner ผู้ชาย มี หมวก | ม
+scene Bangkok, wieczór, dworzec. Jesteś agentem „Orłem” (นกอินทรี), ale dla wszystkich jesteś sprzedawcą gier z Chiang Mai. Na dworcu czeka człowiek w kapeluszu. Hasło: „ฤดูหนาว มา เร็ว” (zima przychodzi wcześnie). Odzew: „ฤดูร้อน มา ช้า” (lato przychodzi późno).
+goal Podaj hasło, nie zdradź swojej przykrywki i przyjmij zadanie. Jedna zła odpowiedź i jesteś zdemaskowany.
+win Człowiek w kapeluszu znika w tłumie, a ty zostajesz z kopertą w kieszeni. Przykrywka nietknięta, a jutro czeka cię ambasada.
+partial Dostałeś zadanie, ale kontakt zmarszczył brwi przy kilku twoich odpowiedziach. Lepiej uważaj jutro.
+fail Człowiek w kapeluszu spojrzał na ciebie zimno, odwrócił się i odszedł. Zadanie dostanie ktoś inny.
+w หนาว
+w มาก
+w ฤดูหนาว
+t สวัสดี ครับ วันนี้ หนาว มาก ใช่ ไหม | Dobry wieczór. Dziś jest bardzo zimno, prawda? | ใช่ ครับ หนาว มาก ฤดูหนาว มา เร็ว | Zgódź się, że jest zimno, i powiedz hasło: zima przychodzi wcześnie. | Hasło brzmi: ฤดูหนาว มา เร็ว. | ใช่ ครับ ฤดูหนาว มา เร็ว
+w ขาย
+w เกม
+w คน
+k ฤดูร้อน มา ช้า เงียบ ผู้คน ฟัง คุณ ทำงาน อะไร | Lato przychodzi późno. Cicho! Ludzie słuchają. Czym się Pan zajmuje? | ผม ขาย เกม ครับ | ผม เป็น คน ของ รัฐบาล; ผม เป็น นกอินทรี | Nie wolno zdradzić, że pracujesz dla rządu.;นกอินทรี to twoje imię agenta, a ludzie słuchają.
+w ใคร
+w ดู
+w ผู้ชาย
+k ดี มี ใคร ดู คุณ ไหม | Dobrze. Czy ktoś Pana obserwuje? | ไม่ ครับ ไม่ มี ใคร ดู ผม | ใช่ ครับ มี ผู้ชาย ดู ผม; ไม่ ครับ ผม ไม่ มี เงิน | Przyznanie się do śledzenia to kłopot.;Kontakt pyta o śledzenie, nie o pieniądze.
+w เข้าใจ
+w แล้ว
+w พรุ่งนี้
+t ดี มาก นี่ งาน ของ คุณ พรุ่งนี้ ไป สถานทูต มี งานเลี้ยง | Bardzo dobrze. Oto Pana zadanie. Jutro idzie Pan do ambasady. Jest tam przyjęcie. | ผม เข้าใจ แล้ว พรุ่งนี้ ผม ไป สถานทูต | Powiedz, że zrozumiałeś: jutro idziesz do ambasady. | เข้าใจ znaczy „rozumieć”, สถานทูต to „ambasada”.
+w รหัสผ่าน
+w นกฮูก
+t รหัสผ่าน สำหรับ งานเลี้ยง เป็น นกฮูก รหัสผ่าน เป็น อะไร | Hasło na przyjęcie to „sowa”. Jakie jest hasło? | รหัสผ่าน เป็น นกฮูก | Powtórz hasło na przyjęcie. | รหัสผ่าน to hasło, a นกฮูก to „sowa”.
+w รู้จัก
+d เงียบ ตำรวจ มา คุณ รู้จัก ผม ไหม | Cicho! Idzie policjant. Czy Pan mnie zna? | ไม่ ครับ ผม ไม่ รู้จัก คุณ | Zaprzecz, że znasz tego człowieka. | Nie możesz zdradzić, że znasz kontakt. | ไม่ ครับ ผม ไม่ รู้จัก คุณ
+e ลาก่อน ครับ | Do widzenia.
+
+@level 2 | Przyjęcie w ambasadzie | patience=2 typed=0.2 extra=3 hint=bank
+desc Rozdział 2: Przyjęcie w ambasadzie
+partner ผู้หญิง ที่ สถานทูต | ผ
+scene Następny wieczór. W ambasadzie trwa przyjęcie, a przy wejściu stoi sekretarka. Ona i goście zadają pytania o twoją „firmę”. Twoja przykrywka: firma sprzedająca gry, Chiang Mai. Hasło wejściowe: นกฮูก. Gabinet jest po prawej, toalety po lewej.
+goal Wejdź na przyjęcie, nie zdradź się pytaniom o firmę i znajdź pretekst, żeby dotrzeć do gabinetu.
+win Sekretarka macha ci na pożegnanie, a w gabinecie leży plik, o który ci chodziło. Nikt niczego nie podejrzewa.
+partial Weszłeś i dotarłeś do gabinetu, ale sekretarka patrzyła na ciebie dłużej, niż trzeba.
+fail Sekretarka przestaje się uśmiechać i daje znak ochronie. Za chwilę wyprowadzą cię z ambasady.
+t สวัสดี ค่ะ รหัสผ่าน เป็น อะไร | Dobry wieczór! Jakie jest hasło? | รหัสผ่าน เป็น นกฮูก | Podaj hasło wejściowe. | รหัสผ่าน to hasło, a นกฮูก to „sowa”.
+w มีด
+w ไฟล์
+k ขอบคุณ ค่ะ ฉัน ต้อง ถาม คุณ มี มีด ไหม | Dziękuję. Muszę o coś zapytać. Czy ma Pan nóż? | ไม่ ครับ ผม ไม่ มี มีด | ใช่ ผม มี มีด; ไม่ ครับ ผม ไม่ มี ไฟล์ | Na przyjęcie nie wchodzi się z nożem.; Pytanie dotyczy noża (มีด), nie pliku.
+w กับ
+w บริษัท
+k ดี คุณ ทำงาน กับ ใคร | Dobrze. Z kim Pan pracuje? | ผม ทำงาน กับ บริษัท เกม | ผม ทำงาน กับ รัฐบาล; ผม ทำงาน กับ คุณ | Twoja przykrywka to firma z grami.; Rząd to twoja centrala, tajna.
+d บริษัท ของ คุณ ขาย อะไร | Co sprzedaje Pana firma? | บริษัท ของ ผม ขาย เกม | Powiedz, co sprzedaje twoja „firma” (przykrywka). | Twoja przykrywka to sprzedaż gier. | บริษัท ของ ผม ขาย เกม
+w อยู่
+w เชียงใหม่
+w ชื่อ
+k บริษัท ของ คุณ อยู่ ที่ไหน | Gdzie jest Pana firma? | บริษัท ของ ผม อยู่ ที่ เชียงใหม่ | บริษัท ของ ผม ขาย เกม; บริษัท ของ ผม ชื่อ นกอินทรี | ที่ไหน znaczy „gdzie”, a nie „co sprzedaje”.; ที่ไหน pyta o miejsce, nie o nazwę.
+w ห้องน้ำ
+t น่าสนใจ มาก คุณ อยาก กิน อะไร ไหม | Jak ciekawie! Czy chce Pan coś zjeść? | ไม่ ครับ ขอบคุณ ห้องน้ำ อยู่ ที่ไหน ครับ | Odmów i zapytaj o toaletę (to pretekst). | ที่ไหน = gdzie, więc „ห้องน้ำ อยู่ ที่ไหน”.
+w ทาง
+w ซ้าย
+w ขวา
+k ห้องน้ำ อยู่ ทาง ซ้าย สำนักงาน ทาง ขวา เป็น ความลับ | Toaleta jest po lewej. Gabinet po prawej jest tajny. | ขอบคุณ ครับ ผม ไป ทาง ซ้าย | ขอบคุณ ครับ ผม ไป ทาง ขวา; ขอบคุณ ครับ สำนักงาน สวย | Gabinet po prawej jest tajny, a ty idziesz do toalety po lewej.; Nie wolno ci mówić, że chcesz iść do gabinetu.
+e สนุก กับ งานเลี้ยง ค่ะ | Dobrej zabawy na przyjęciu!
+
+@level 3 | Przesłuchanie | patience=1 typed=0.35 extra=3 hint=bank
+desc Rozdział 3: Przesłuchanie
+partner ผู้ชาย ยาม | ย
+scene Masz plik w torbie, ale na korytarzu zatrzymuje cię podejrzliwy ochroniarz. Zaraz zapyta o wszystko. Pamiętaj: sprzedawca gier, Chiang Mai. Tutaj każda zła odpowiedź kończy misję.
+goal Przekonaj ochroniarza, że jesteś zwykłym gościem, i wyjdź z plikiem.
+win Ochroniarz przepuszcza cię z kwaśną miną. Wychodzisz z ambasady, a plik w torbie jest ciężki jak ołów.
+partial Ochroniarz w końcu cię puszcza, ale zapisuje twoje dane w notesie.
+fail Ochroniarz chwyta cię za ramię. Misja skończona, zanim naprawdę się zaczęła.
+w แขก
+w หา
+t หยุด คุณ เป็น ใคร ทำ อะไร ที่นี่ | Stać! Kim Pan jest? Co Pan tu robi? | ผม เป็น แขก ผม หา ห้องน้ำ | Powiedz, że jesteś gościem i szukasz toalety. | แขก znaczy „gość”, a หา „szukać”.
+k ห้องน้ำ อยู่ ที่นั่น คุณ ไป สำนักงาน ไหม | Toaleta jest tam. Czy był Pan w gabinecie? | ไม่ ครับ ผม ไม่ ไป สำนักงาน | ใช่ ครับ ผม ไป สำนักงาน; ไม่ ครับ ผม ไม่ ไป ห้องน้ำ | Przyznanie się to koniec przykrywki.; Pytanie dotyczy gabinetu (สำนักงาน), nie toalety.
+w ใน
+w กระเป๋า
+w โทรศัพท์
+k ดี คุณ มี อะไร ใน กระเป๋า | Dobrze. Co ma Pan w torbie? | ใน กระเป๋า ผม มี เงิน และ โทรศัพท์ | ใน กระเป๋า ผม มี ไฟล์; ผม มี กระเป๋า | Plik w torbie zdradziłby cię od razu.; Ochroniarz pyta, co jest w torbie, a nie czy masz torbę.
+d คุณ อยู่ ที่ไหน คุณ ทำงาน อะไร | Gdzie Pan mieszka? Czym się Pan zajmuje? | ผม อยู่ ที่ เชียงใหม่ ผม ขาย เกม | Podaj miasto, w którym mieszkasz (Chiang Mai), i swój zawód. | Chiang Mai i gry to twoja przykrywka. | ผม อยู่ ที่ เชียงใหม่ ผม ขาย เกม
+k เชียงใหม่ คุณ เป็น คน ของ รัฐบาล ใช่ ไหม | Chiang Mai. Jest Pan człowiekiem rządu, prawda? | ไม่ ครับ ผม ไม่ ใช่ ผม ขาย เกม | ใช่ แต่ เป็น ความลับ; ใช่ ผม ทำงาน กับ รัฐบาล | Nawet żartem nie przyznawaj się do tajemnicy.; Przyznanie się do rządu to koniec.
+w เขา
+t ผม โทร หา ผู้หญิง ที่ สถานทูต เขา รู้จัก แขก ทุก คน เขา รู้จัก คุณ ไหม | Zadzwonię do pani z ambasady. Zna wszystkich gości. Czy zna Pana? | ใช่ ครับ เขา รู้จัก ผม ผม เป็น แขก | Powiedz, że ona cię zna. | รู้จัก znaczy „znać (osobę)”. | ใช่ ครับ เขา รู้จัก ผม
+w เห็น
+d ดี มี ศัตรู ใน สถานทูต คุณ เห็น ใคร ไหม | Dobrze. W ambasadzie jest szpieg. Czy Pan kogoś widział? | ไม่ ครับ ผม ไม่ เห็น ใคร | Zaprzecz, że kogokolwiek widziałeś. | Ty sam jesteś tym agentem. | ไม่ ครับ ผม ไม่ เห็น ใคร
+e ดี กลับ บ้าน ครับ | Dobrze, niech Pan wraca do domu.
+
+@level 4 | Walizka i ucieczka | patience=1 typed=0.5 extra=3 hint=letters reward=30
+desc Rozdział 4: Wymiana walizki
+partner ผู้ชาย จาก ศูนย์ | ศ
+scene Następny ranek, port. Człowiek z centrali czeka z walizką pełną pieniędzy. Wymienisz ją na plik. Nowe hasło: „นกแก้ว” (papuga). Ale ktoś cię śledzi: w tłumie jest wróg, który chce dostać plik dla siebie.
+goal Wymień plik na walizkę, nie daj się zdemaskować wrogowi i wsiądź na łódź.
+win Łódź odpływa, a ty stoisz na pokładzie z walizką. Człowiek z centrali macha z nabrzeża.
+partial Udało się uciec, ale wróg zdążył zobaczyć twoją twarz. Misja zaliczona, lecz twoja przykrywka jest spalona.
+fail Wróg był szybszy. Walizka i plik zniknęły, a ty zostajesz na nabrzeżu z pustymi rękami.
+w นกแก้ว
+d สวัสดี ครับ รหัสผ่าน เป็น อะไร | Dzień dobry. Jakie jest hasło? | รหัสผ่าน เป็น นกแก้ว | Podaj hasło z dzisiejszej misji. | รหัสผ่าน to hasło, a dziś brzmi „นกแก้ว”. | รหัสผ่าน เป็น นกแก้ว
+k ดี ไฟล์ อยู่ ที่ไหน | Dobrze. Gdzie jest plik? | ไฟล์ อยู่ ใน กระเป๋า ของ ผม | ไฟล์ อยู่ ที่ ผู้หญิง; ไฟล์ เป็น ความลับ | Plik masz przy sobie, w torbie.; Kontakt pyta, gdzie jest plik, nie o tajemnicę.
+w เอา
+w กระเป๋าเดินทาง
+t ดี นี่ กระเป๋าเดินทาง เงิน อยู่ ข้างใน เอา ไป | Dobrze. Oto walizka. Pieniądze są w środku. Proszę ją wziąć. | ขอบคุณ ครับ ผม เอา กระเป๋าเดินทาง | Podziękuj i weź walizkę. | เอา znaczy „brać”. | ขอบคุณ ครับ ผม เอา กระเป๋าเดินทาง
+w เรา
+w ดื่ม
+w กาแฟ
+k ดู ผู้ชาย ที่นั่น เป็น ศัตรู เขา ตาม เรา เรา ทำ อะไร | Uwaga! Ten człowiek tam jest wrogiem. Idzie za nami. Co robimy? | เรา ไป เร็ว | เรา อยู่ ที่นี่ และ ดื่ม กาแฟ; เรา พูด กับ ผู้ชาย | Wróg idzie za wami, trzeba uciekać.; Nie rozmawia się z wrogiem.
+w ท่าเรือ
+w สถานี
+k ใช่ เร็ว ศัตรู มา จาก ซ้าย เรา ไป สถานี ทาง ซ้าย หรือ ท่าเรือ ทาง ขวา | Tak, szybko! Wróg idzie z lewej. Idziemy w lewo na dworzec czy w prawo do portu? | เรา ไป ท่าเรือ ทาง ขวา | เรา ไป สถานี ทาง ซ้าย; เรา ไป บ้าน | Wróg nadchodzi z lewej, więc idziecie w prawo, do portu.; Pytanie jest o port albo dworzec, a nie o dom.
+w ให้
+d หยุด ให้ กระเป๋าเดินทาง กับ ผม | Stać! Dajcie mi walizkę! | ไม่ ครับ ผม ไม่ ให้ กระเป๋าเดินทาง | Odmów oddania walizki. | ให้ znaczy „dawać”, a ไม่ stoi przed czasownikiem. | ไม่ ครับ ผม ไม่ ให้ กระเป๋าเดินทาง
+w ยัง
+t เร็ว เรือ ออก แล้ว คุณ มี กระเป๋าเดินทาง ไหม | Szybko! Łódź zaraz odpływa. Czy ma Pan jeszcze walizkę? | ใช่ ครับ ผม ยัง มี กระเป๋าเดินทาง | Potwierdź, że masz jeszcze walizkę. | ยัง znaczy „jeszcze”. | ใช่ ครับ ผม มี กระเป๋าเดินทาง
+e ดี มาก นกอินทรี งาน จบ แล้ว ลาก่อน | Dobra robota, Orle! Misja zakończona. Do widzenia!
+
+
+@larp zeitreise | Podróż w czasie | ทหาร | ท | Obudziłeś się w roku 1450 pod murami siamskiego miasta Ayutthaya. Nikt nie może się dowiedzieć, że jesteś z przyszłości, bo za dziwne rzeczy i dziwne słowa grozi kara. | Nie daj się wykryć jako przybysz z przyszłości: unikaj wszystkiego, co nie pasuje do roku 1450, i dotrwaj do końca dnia.
+fee 0
+reward 15
+strict yes
+story yes
+win Król kiwa głową: „Uczciwy podróżnik!” Nikt nie podejrzewa, skąd naprawdę jesteś. Wieczorem znajdujesz drogę powrotną, a w kieszeni zostaje ci tylko moneta na pamiątkę.
+partial Udało ci się przetrwać dzień, ale kilka razy ludzie patrzyli na ciebie podejrzliwie. Król każe cię obserwować, więc wymykasz się z miasta o świcie.
+fail Ktoś zauważył, że nie jesteś stąd. Straż woła: „Czarownik!” i musisz uciekać. Podróż w czasie skończyła się wcześniej, niż chciałeś.
+
+@level 1 | Brama miasta | patience=5 typed=0 extra=1 hint=none
+partner ทหาร | ท
+desc Rozdział 1: Brama miasta
+scene Rok 1450. Stoisz przed wielką drewnianą bramą miasta Ayutthaya. Strażnik zatrzymuje każdego podróżnego i zadaje pytania. Masz na sobie zwykłe ubranie, ale w kieszeniach zostały ci rzeczy z przyszłości.
+goal Odpowiedz na pytania strażnika tak, żeby nie wzbudzić podejrzeń: powiedz, czym się zajmujesz, skąd jesteś i jak podróżujesz. Zwróć uwagę na rzeczy, których w 1450 roku jeszcze nie było.
+win Strażnik otwiera bramę. Nic nie wzbudziło jego podejrzeń, a ty wchodzisz do miasta.
+partial Strażnik w końcu cię wpuszcza, ale przygląda ci się dłużej, niż byś chciał. Wchodzisz do miasta z uczuciem, że ktoś cię obserwuje.
+fail Strażnik podnosi włócznię: „Ty nie jesteś stąd!” Brama zamyka się z trzaskiem, a ty uciekasz w las.
+w เดิน
+w มา
+w จาก
+t หยุด นี่ ประตู เมือง คุณ ทำ อะไร | Stój! To brama miasta. Co tu robisz? | ผม เดิน มา จาก ไกล | Powiedz, że przyszedłeś pieszo z daleka. | เดิน znaczy „chodzić, iść pieszo”, ไกล to „daleko”.
+w ชาวนา
+w นักบิน
+w วิศวกร
+k คุณ ทำงาน อะไร | Czym się zajmujesz? | ผม เป็น ชาวนา | ผม เป็น นักบิน; ผม เป็น วิศวกร | Pilot? Samolotów jeszcze nie ma. Strażnik pomyśli, że jesteś szalony.;Inżynier z nowoczesnej epoki brzmiałby dziwnie.
+w โปแลนด์
+w อนาคต
+w อเมริกา
+k คุณ มา จาก ที่ไหน | Skąd przychodzisz? | ผม มา จาก โปแลนด์ | ผม มา จาก อนาคต; ผม มา จาก อเมริกา | Przyznanie się do przyszłości to dekonspiracja.; Ameryki jeszcze nie odkryto, Kolumb wypłynie dopiero w 1492 roku.
+w ขี่
+w ม้า
+w ขับรถ
+k คุณ มา อย่างไร เดิน หรือ ม้า | Jak podróżujesz? Pieszo czy konno? | ผม ขี่ ม้า | ผม ขับรถ; ผม ไป รถไฟ | Pociągów też jeszcze nie ma;pierwsza kolej pojawi się dopiero w XIX wieku.
+w ขนมปัง
+w ไวน์
+w เท่านั้น
+k เปิด กระเป๋า คุณ มี อะไร | Otwórz torbę. Co masz? | ผม มี ขนมปัง และ ไวน์ เท่านั้น | ผม มี มือถือ; ผม มี บัตร | Telefon w 1450 roku? Strażnik wziąłby go za czary.; Karta płatnicza z plastiku wyglądałaby jak magia. Pieniądze to wtedy monety.
+w หิว
+w ร้านอาหาร
+w อยู่
+t ดี เข้า เมือง ไป คุณ หิว ไหม | Dobrze, wejdź do miasta. Jesteś głodny? | ใช่ ครับ ผม หิว ร้านอาหาร อยู่ ที่ไหน | Powiedz, że jesteś głodny, i zapytaj, gdzie jest gospoda. | ร้านอาหาร znaczy „restauracja, gospoda”.
+e ร้านอาหาร อยู่ ทาง ซ้าย ใกล้ มาก | Gospoda jest po lewej, bardzo blisko.
+
+@level 2 | Gospoda | patience=5 typed=0.15 extra=3 hint=bank
+partner พ่อครัว | พ
+desc Rozdział 2: Gospoda
+scene Wchodzisz do gospody. Kucharz jest ciekawski i pyta o wszystko: co chcesz zjeść, jak podróżujesz i czego potrzebujesz na noc. W gospodzie nie ma elektryczności ani nowoczesnych napojów.
+goal Zamów jedzenie i picie, które mogli podać w 1450 roku, ustal nocleg i nie wspomnij o niczym z przyszłości.
+win Kucharz klepie cię po plecach: jesteś dobrym gościem. Dostajesz miejsce i pełny talerz. Nikt nie podejrzewa, że jesteś z przyszłości.
+partial Kucharz przygląda ci się podejrzliwie, ale podaje jedzenie. Śpisz źle, bo wciąż myślisz o tym, co powiedziałeś.
+fail Kucharz woła głośno: „Co to jest wifi?!” Goście odwracają się w twoją stronę, a ty ledwo uciekasz tylnym wyjściem.
+w อยาก
+w กิน
+w ซุป
+t สวัสดี คุณ อยาก กิน อะไร เรา มี ขนมปัง และ ซุป | Dzień dobry! Co chcesz zjeść? Mamy chleb i zupę. | ผม อยาก กิน ขนมปัง และ ซุป | Zamów chleb i zupę. | และ znaczy „i”.
+w ดื่ม
+w หนึ่ง
+w แก้ว
+k แล้ว คุณ ดื่ม อะไร เรา มี ไวน์ และ น้ำ | A co pijesz? Mamy wino i wodę. | ผม ดื่ม ไวน์ หนึ่ง แก้ว | ผม ดื่ม กาแฟ; ผม ดื่ม เบียร์ | Kawa dotarła do Azji dopiero znacznie później.; Zimne, butelkowane piwo to nowoczesny napój.
+w สิบ
+w วัน
+t ไวน์ ดี คุณ เดิน มา หลาย วัน ไหม | Wino dobre. Idziesz już wiele dni? | ใช่ ครับ ผม เดิน มา สิบ วัน | Powiedz, że idziesz już dziesięć dni. | หลาย znaczy „wiele”; สิบ วัน to „dziesięć dni”.
+w ช้าง
+w จักรยาน
+k สิบ วัน มาก พรุ่งนี้ ผม ไป ตลาด คุณ ไป ไหม เรา ขี่ ช้าง | Dziesięć dni, to dużo! Jutro idę na targ. Pójdziesz ze mną? Pojedziemy na słoniu. | ไป ครับ เรา ขี่ ช้าง | ไป ครับ เรา ขับรถ; ไม่ ไป ผม ขี่ จักรยาน | Samochodu nie ma. Kucharz nie zna takiego słowa.; Rower wynaleziono dopiero w XIX wieku.
+w ต้องการ
+w เทียน
+w ไวไฟ
+k ดี ห้อง มี เตียง คุณ ต้องการ บางอย่าง ไหม | Dobrze. W pokoju jest łóżko. Czy chcesz jeszcze coś? | ใช่ ครับ ผม ต้องการ เทียน | ผม ต้องการ ไวไฟ; ผม ต้องการ ไฟฟ้า | Nie ma internetu.;Prąd elektryczny wynaleziono setki lat później.
+w ขอบคุณ
+w อร่อย
+t นี่ เทียน และ ไวน์ สำหรับ คุณ | Oto świeca i wino dla ciebie. | ขอบคุณ ครับ ไวน์ อร่อย มาก | Podziękuj i pochwal wino. | อร่อย มาก znaczy „bardzo smaczne”.
+e ลาก่อน พรุ่งนี้ เช้า เรา ไป ตลาด | Do widzenia! Jutro rano idziemy na targ.
+
+@level 3 | Targ | patience=4 typed=0.3 extra=3 hint=bank reward=25
+partner คนขาย | ค
+desc Rozdział 3: Targ
+scene Następnego ranka na targu jest tłoczno. Sprzedawczyni sprzedaje chleb i ser. Przy płaceniu liczą się tylko monety, a ludzie przyglądają się twoim ubraniom.
+goal Kup chleb i ser, zapłać tak, jak płaci się w 1450 roku, i wyjaśnij, skąd masz dziwne ubranie.
+win Sprzedawczyni wsuwa ci do koszyka jabłko. Targ nic nie podejrzewa, a w oddali widać już pałac króla.
+partial Sprzedawczyni w końcu sprzedała ci chleb i ser, ale kilka osób szepcze za twoimi plecami. Zbliża się pałac.
+fail Sprzedawczyni krzyczy: „Co to za ubranie? Co to jest karta?” Tłum się zbiega, a ty uciekasz między straganami.
+w ซื้อ
+w ชีส
+t สวัสดี ค่ะ คุณ อยาก ซื้อ อะไร ขนมปัง ชีส หรือ แอปเปิล | Dzień dobry! Co chcesz kupić? Chleb, ser czy jabłka? | ผม อยาก ซื้อ ขนมปัง และ ชีส | Poproś o chleb i ser. | ซื้อ znaczy „kupować”.
+w ทั้งหมด
+w เท่าไร
+t ขนมปัง สอง เหรียญ ชีส สาม เหรียญ | Chleb kosztuje dwie monety, a ser trzy monety. | ทั้งหมด เท่าไร ครับ | Zapytaj, ile to kosztuje razem. | ทั้งหมด znaczy „razem, w sumie”.
+w จ่าย
+w เงิน
+w ธนบัตร
+k ห้า เหรียญ คุณ จ่าย อย่างไร | Pięć monet. Jak zapłacisz? | ผม จ่าย เงิน เหรียญ | ผม จ่าย บัตร; ผม จ่าย ธนบัตร | Karty płatnicze to wynalazek XX wieku.;Banknoty nie były wtedy w obiegu.
+w นั่น
+w ของ
+w ตะวันออก
+k ดี เสื้อผ้า ของ คุณ แปลก มาก นั่น อะไร | Dobrze. Twoje ubranie jest bardzo dziwne. Co to? | นั่น เป็น ของ จาก ทาง ตะวันออก | นั่น เป็น สูท; นั่น เนคไท | Garnitur to rzecz z dwudziestego wieku.;Krawat? Sprzedawczyni nie ma pojęcia, co to jest.
+w ด้วยกัน
+t ตะวันออก กษัตริย์ อยาก พบ คุณ คุณ ไป ด้วยกัน ไหม | Ze Wschodu. Król chce cię zobaczyć. Pójdziesz ze mną? | ไป ครับ ผม ไป ด้วยกัน | Zgódź się i idź z nią. | ด้วยกัน znaczy „razem”.
+e เร็ว พระราชวัง อยู่ ที่นั่น | Szybko! Pałac jest tam.
+
+@level 4 | Król | patience=4 typed=0.5 extra=4 hint=letters reward=25
+partner กษัตริย์ | ก
+desc Rozdział 4: W pałacu
+scene W pałacu czeka król. Słyszał dziwne plotki o obcym przybyszu. Zauważył coś błyszczącego na twojej ręce i zadaje pytania, a tobie została tylko jedna droga: wrócić do bramy, gdzie wszystko się zaczęło.
+goal Odpowiedz na pytania króla tak, żeby nie zdradzić zegarka, telefonu ani przyszłości, i wróć bezpiecznie do bramy.
+win Król macha ręką: „Dobrze, idź.” Wracasz do bramy, w powietrzu coś migocze i budzisz się we własnym czasie. Na dłoni masz monety z 1450 roku.
+partial Król pozwala ci odejść, ale pod nosem mruczy o czarownikach. Dopiero za bramą migotanie powietrza zabiera cię do domu.
+fail Król woła strażników: „Magiczne pudełko! On przychodzi z przyszłości!” Nie zdążysz dojść do bramy.
+t สวัสดี ฉัน เป็น กษัตริย์ คุณ เป็น ใคร | Witaj. Jestem królem. Kim jesteś? | ผม เป็น ชาวนา จาก โปแลนด์ | Przedstaw się: rolnik z Polski. | จาก znaczy „z, od”.
+w แหวน
+w นาฬิกาข้อมือ
+w แบตเตอรี่
+k อะไร อยู่ ที่ มือ ของ คุณ | Co to jest na twojej ręce? | นั่น เป็น แหวน | นั่น นาฬิกาข้อมือ มี แบตเตอรี่; นั่น เป็น มือถือ | Zegarek z baterią to wynalazek nowoczesny.;Telefon to rzecz z przyszłości.
+w พระอาทิตย์
+w บอก
+w ว่า
+k แหวน เท่านั้น ดี คุณ มี นาฬิกา ไหม | Tylko pierścień? Masz zegarek? | ไม่ มี ครับ พระอาทิตย์ บอก ว่า เที่ยง | ผม ดู มือถือ; ตอนนี้ สอง ชั่วโมง สามสิบ นาที | Telefon to rzecz z przyszłości.;Taka dokładna godzina z minutami to nowoczesny sposób liczenia czasu.
+w ปี
+w พัน
+w เก้า
+k เที่ยง ดี ตอนนี้ ปี อะไร | Południe, dobrze. Który mamy rok? | ตอนนี้ ปี หนึ่ง พัน เก้า ร้อย เก้าสิบ สาม | ตอนนี้ ปี สอง พัน; ผม ไม่ รู้ | Rok z przyszłości zdradza cię natychmiast.;Nie znać roku? Król uznałby, że ukrywasz coś.
+w จริง
+w กล่อง
+k ดี คน บอก ว่า คุณ มี กล่อง ที่ มี แสง จริง ไหม | Dobrze. Mówią, że masz pudełko ze światłem. Czy to prawda? | ไม่ จริง ผม ไม่ มี กล่อง | จริง นั่น เป็น มือถือ; จริง ผม มา จาก อนาคต | Przyznanie się do telefonu zakończy rozmowę.; Przyznanie się do podróży w czasie to najgorsza odpowiedź.
+w กลับ
+w หา
+w เครื่องจักร
+k ดี มืด แล้ว ตอนนี้ คุณ ไป ที่ไหน | Dobrze. Zrobiło się ciemno. Dokąd teraz idziesz? | ผม กลับ ไป ที่ ประตู | ผม ไป หา เครื่องจักร ของ อนาคต; ผม ไป รถยนต์ | Maszyna z przyszłości to najgorsza odpowiedź.; Samochodu w 1450 roku nie ma.
+e ดี คุณ ไป ลาก่อน | Dobrze, idź. Do widzenia!
+
+
+@larp politiker | Polityk | ผู้ลงคะแนน | ผ | Jesteś skorumpowanym politykiem. Dawno temu pewien bogacz dał ci worek pieniędzy, a „sprawa worka pieniędzy” wraca na każdym szczeblu twojej kariery. Wyborcy ci wierzą… i przestają… i zapominają. | Przekonaj wyborców, że nadajesz się na stanowisko. Nigdy się nie przyznaj i nie sprzeczaj sam sobie.
+fee 0
+reward 30
+strict yes
+story yes
+disclaimer Satyra. Wszystkie postacie, partie i afery są zmyślone; ewentualne podobieństwo do prawdziwych osób jest przypadkowe.
+win Wygrywasz wybory! Nikt już nie pamięta worka pieniędzy. Przed gmachem tłum skanduje twoje nazwisko, a ty obiecujesz „uczciwą politykę”. Bogacz macha z ostatniego rzędu.
+partial Wygrywasz o włos. Dziennikarze wciąż grzebią w sprawie, ale ty już podpisujesz pierwsze dokumenty. Kłamstwo trzyma się jeszcze na słowo honoru.
+fail Wiarygodność spadła do zera. Wyborcy wyciągają starą sprawę, a z tłumu ktoś krzyczy: „Worek pieniędzy!” Twoja kariera kończy się na pierwszej stronie gazet.
+
+@level 1 | Wieś | patience=4 cap=6 typed=0 extra=1 hint=none
+desc Szczebel 1: przywódca wsi
+partner ป้า | ป
+scene Zebranie wiejskie. Chcesz zostać przywódcą wsi (เจ้านาย ของ หมู่บ้าน). Ciocia zadaje pytania, a cała wieś słucha. Wszyscy pamiętają, że bogacz naprawił drogę, i że ktoś widział worek pieniędzy…
+goal Przekonaj wieś, że jesteś uczciwy, i zaprzecz plotkom o worku pieniędzy.
+win Wieś klaszcze. Zostajesz przywódcą wsi. Bogacz, w pierwszym rzędzie, puszcza do ciebie oko.
+partial Wygrywasz jednym głosem. Ciocia patrzy na ciebie podejrzliwie, ale podnosi rękę.
+fail Wieś ma dość. Ciocia mówi: „Wybierzemy kogoś innego.” Kończysz karierę, zanim się zaczęła.
+w อยาก
+w เจ้านาย
+w ของ
+t สวัสดี ค่ะ คุณ อยาก เป็น เจ้านาย ของ หมู่บ้าน ไหม | Dobry wieczór! Chce Pan zostać przywódcą wsi? | ใช่ ครับ ผม อยาก เป็น เจ้านาย ของ หมู่บ้าน | Powiedz, że chcesz zostać przywódcą wsi. | หมู่บ้าน znaczy „wieś”, a เจ้านาย „szef, pan”.
+w จริงใจ
+w เสมอ
+t คุณ จริงใจ ไหม | Czy jest Pan szczery? | จริงใจ ครับ ผม จริงใจ เสมอ | Zapewnij, że jesteś zawsze szczery. | เสมอ znaczy „zawsze”. | | gain=1
+w ซ่อม
+w ถนน
+t ถนน ไม่ ดี คุณ อยาก ทำ อะไร | Droga jest zła. Co chce Pan zrobić? | ผม ซ่อม ถนน ครับ | Obiecaj, że naprawisz drogę. | ซ่อม znaczy „naprawiać”. | | gain=1
+w จริง
+w รู้จัก
+w เขา
+t คน รวย ให้ ถุง เงิน คุณ ทุก คน เห็น | Bogacz dał Panu worek pieniędzy! Wszyscy widzieli! | ไม่ จริง ครับ ผม ไม่ รู้จัก เขา | Zaprzecz: to nieprawda, nie znasz go. | ไม่ จริง znaczy „to nieprawda”; ไม่ รู้จัก to „nie znam”. | ไม่ จริง ครับ ผม ไม่ รู้จัก เขา | shift=-2 loss=2
+w ขอบคุณ
+w ซาบซึ้ง
+t นั่น อดีต แล้ว เรา ลืม แล้ว | To już przeszłość. Zapomnieliśmy o tym. | ขอบคุณ ครับ ผม ซาบซึ้ง | Podziękuj wyborcom (jesteś im wdzięczny). | ซาบซึ้ง znaczy „być wdzięcznym”. | | shift=+2
+w ประหยัด
+w เอา
+w มาก
+o หมู่บ้าน มี หนี้ มาก คุณ อยาก ทำ อะไร | Wieś ma dużo długów. Co chce Pan zrobić? | ผม ประหยัด เงิน และ จริงใจ | ผม เอา เงิน มาก; ผม ไม่ รู้ | Dobra odpowiedź obiecuje oszczędzanie i szczerość.; Polityk, który mówi „wezmę więcej pieniędzy”, nie brzmi wiarygodnie. | gain=1
+w กับ
+t คุณ จริงใจ กับ เรา ไหม | Czy będzie Pan szczery wobec nas? | ใช่ ครับ ผม จริงใจ กับ คุณ เสมอ | Obiecaj szczerość wobec wyborców. | กับ znaczy „z, wobec”. | | gain=1
+e เรา เลือก คุณ ขอบคุณ ค่ะ | Wybieramy Pana! Dziękujemy!
+
+@level 2 | Miasto | patience=4 cap=6 typed=0.2 extra=2 hint=bank
+desc Szczebel 2: praca w mieście
+partner นักข่าว | น
+scene Miasto. Chcesz pracować w radzie miasta. Dziennikarka pyta o „bogacza” i o to, skąd masz nowy samochód.
+goal Zaprzecz, że brałeś pieniądze, i nie daj się złapać na kłamstwie.
+win Dziennikarka zamyka notes. Zostajesz w radzie miasta. Bogacz gratuluje przez telefon.
+partial Zostajesz w radzie, ale dziennikarka mówi, że będzie dalej drążyć.
+fail Wywiad ląduje w gazecie. Nikt na ciebie nie głosuje.
+w ทำงาน
+w ใน
+w เมือง
+t สวัสดี ค่ะ ฉัน เป็น นักข่าว คุณ อยาก ทำงาน ใน เมือง ไหม | Dzień dobry, jestem dziennikarką. Chce Pan pracować w radzie miasta? | ใช่ ครับ ผม อยาก ทำงาน ใน เมือง | Potwierdź, że chcesz pracować w mieście. | ทำงาน znaczy „pracować”. | | gain=1
+w นิดหน่อย
+t คุณ รู้จัก คน รวย ใช่ ไหม เขา เป็น เพื่อน ของ คุณ ไหม | Zna Pan bogacza, prawda? Czy to Pana przyjaciel? | ไม่ ครับ ผม รู้จัก เขา นิดหน่อย | Zaprzecz: znasz go tylko trochę. | นิดหน่อย znaczy „trochę”. | | gain=1
+w ซื้อ
+w รถยนต์
+t คุณ มี รถยนต์ ใหม่ เงิน มา จาก ที่ไหน | Ma Pan nowy samochód. Skąd są pieniądze? | เงิน ของ ผม ครับ ผม ซื้อ รถยนต์ | Powiedz, że kupiłeś go za własne pieniądze. | ซื้อ znaczy „kupować”. | เงิน ของ ผม ครับ
+w ไม่เคย
+w ได้รับ
+t คุณ ได้รับ เงิน จาก คน รวย ไหม | Czy dostawał Pan pieniądze od bogacza? | ไม่ ครับ ผม ไม่เคย ได้รับ เงิน | Zaprzecz, że kiedykolwiek dostałeś pieniądze. | ไม่เคย znaczy „nigdy”; ได้รับ to „dostawać”. | | loss=2
+w รูปภาพ
+t นี่ รูปถ่าย คุณ กับ คน รวย และ ถุง เงิน | Oto zdjęcie: Pan, bogacz i worek pieniędzy. | ผม ไม่ รู้จัก คน ใน รูปภาพ | Powiedz, że nie znasz ludzi na zdjęciu. | รูปภาพ znaczy „zdjęcie, obraz”. | | shift=-2
+w สำคัญ
+t รูปภาพ นี่ อดีต แล้ว ผู้คน ลืม เร็ว | To zdjęcie jest z przeszłości. Ludzie szybko zapominają. | รูปภาพ ไม่ สำคัญ ครับ | Zlekceważ zdjęcie: nie jest ważne. | สำคัญ znaczy „ważny”. | | shift=+2
+w คำโกหก
+w พูด
+o ผู้หญิง คน หนึ่ง บอก ว่า คุณ ได้รับ เงิน | Pewna kobieta mówi, że dostał Pan pieniądze. | ไม่ จริง นั่น คำโกหก | ใช่ ครับ เขา พูด จริง; ผม ไม่ รู้ | Przyznajesz się, więc przegrywasz.;„Nie wiem” nie przekona wyborców. | gain=1
+w ความจริง
+t ขอบคุณ ค่ะ คุณ อยาก พูด อะไร ไหม | Dziękuję. Czy chce Pan jeszcze coś powiedzieć? | ผม พูด ความจริง ครับ | Powiedz, że mówisz prawdę. | ความจริง znaczy „prawda”. | | gain=1
+e ฉัน เขียน ข่าว ลาก่อน ค่ะ | Napiszę artykuł. Do widzenia!
+
+@level 3 | Szef miasta | patience=4 cap=6 typed=0.4 extra=2 hint=bank
+desc Szczebel 3: szef miasta
+partner ผู้พิพากษา | ผ
+scene W sądzie. Sędzia bada sprawę nowego mostu. Firma bogacza wygrała dziwnie łatwo, a w aktach wraca „sprawa worka pieniędzy”.
+goal Wyjdź z przesłuchania jako szef miasta, nie przyznając się do niczego.
+win Sędzia zamyka teczkę. Zostajesz szefem miasta, a most otwiera się z pompą.
+partial Teczka zostaje otwarta, ale sędzia nie ma dowodów. Zostajesz szefem miasta z cieniem podejrzeń.
+fail Sędzia kładzie na stole zdjęcie i worek. Kończysz w więzieniu.
+w ต้องการ
+w ทนายความ
+t ฉัน เป็น ผู้พิพากษา คุณ ต้อง ตอบ คำถาม | Jestem sędzią. Musi Pan odpowiadać na pytania. | ผม ต้องการ ทนายความ ครับ | Poproś o adwokata. | ทนายความ znaczy „prawnik, adwokat”. | | gain=1
+w บริษัท
+w ราคา
+w ถูก
+t สะพาน ใหม่ ของ เมือง บริษัท ของ คน รวย ชนะ ทำไม | Firma bogacza wygrała przetarg na nowy most. Dlaczego? | บริษัท ของ เขา ดี มาก ราคา ถูก | Wyjaśnij, że jego firma jest dobra i tania. | ถูก znaczy „tani”. | | gain=1
+t เรา มี คำถาม มาก คุณ อยาก ตอบ ไหม | Mamy wiele pytań. Chce Pan odpowiadać? | ผม ไม่ ตอบ ครับ | Odmów odpowiedzi. | ไม่ ตอบ znaczy „nie odpowiadam”. | | shift=-1
+w ข้อมูล
+t ไม่ มี ข้อมูล ก็ ไม่ มี ปัญหา คุณ รู้ ผม รู้ | Bez informacji nie ma problemu. Pan wie, ja wiem. | คุณ ไม่ มี ข้อมูล ครับ | Powiedz sędziemu, że nie ma dowodów. | ข้อมูล znaczy „informacja, dowód”. | | shift=+2
+w ขอโทษ
+o อาจจะ ต้อง ไป ศาล คุณ พูด อะไร | Być może trzeba będzie iść do sądu. Co Pan na to? | ผม ไม่เคย ทำ อะไร | ใช่ ครับ ผม ทำ; ผม ขอโทษ ครับ | Przyznanie się to koniec.;Przeprosiny to przyznanie się. | gain=1
+t คน รวย บอก ว่า เขา ให้ ถุง เงิน คุณ | Bogacz mówi, że dał Panu worek pieniędzy. | นั่น คำโกหก ผม ไม่เคย ได้รับ ถุง เงิน | Zaprzecz: to kłamstwo, nigdy nie dostałeś worka. | คำโกหก znaczy „kłamstwo”. | นั่น คำโกหก ผม ไม่เคย ได้รับ ถุง เงิน | shift=-2 loss=2
+d พูด อีกครั้ง คุณ ได้รับ เงิน จาก คน รวย ไหม | Powiedz to jeszcze raz. Czy dostał Pan pieniądze od bogacza? | ไม่ ครับ ผม ไม่เคย ได้รับ เงิน จาก เขา | Zaprzeczaj do końca: nie dostałeś od niego pieniędzy. | จาก znaczy „od”. Jedna wpadka i koniec.
+e ดี คุณ เป็น เจ้านาย ของ เมือง ไม่ มี คำถาม แล้ว | Dobrze. Jest Pan szefem miasta. Nie mam już pytań.
+
+@level 4 | Rząd | patience=4 cap=6 typed=0.6 extra=2 hint=letters
+desc Szczebel 4: praca w rządzie
+partner ผู้อำนวยการ | ผ
+scene Rząd. Pracujesz w rządzie, a komisja wzywa cię na przesłuchanie. Dyrektorka mówi o „sprawie worka pieniędzy”. Tu każde zdanie musi zgadzać się z poprzednimi.
+goal Odpowiadaj tak, by nikt nie dowiódł, że kłamiesz.
+win Dyrektorka zamyka przesłuchanie. Wychodzisz z sali z uniesioną głową. Komisja nic nie ma.
+partial Komisja kończy pracę bez wniosków, ale jeden członek zapisał w notatniku: „Sprawdzić później!”
+fail Komisja nakazuje ci wyjaśnić sprzeczność. Zaplątałeś się, a prasa pisze o kłamliwym urzędniku.
+t สวัสดี ค่ะ คุณ ทำงาน ใน รัฐบาล ตอนนี้ คุณ ต้อง พูด ความจริง | Dzień dobry. Pracuje Pan w rządzie. Teraz musi Pan mówić prawdę. | ใช่ ครับ ผม รู้ ผม พูด ความจริง | Potwierdź i zapewnij, że mówisz prawdę. | รู้ znaczy „wiedzieć”. | | gain=1
+t ตำรวจ ไม่ จับ คุณ เพราะ คุณ ทำงาน ใน รัฐบาล คุณ อยาก ให้ ตำรวจ จับ คุณ ไหม | Policja Pana nie zatrzymuje, bo pracuje Pan w rządzie. Czy chce Pan, żeby zatrzymała? | ไม่ ครับ ผม ไม่ อยาก | Odmów: nie chcesz rezygnować z ochrony. | เพราะ znaczy „ponieważ”. | | shift=-1
+w ความลับ
+t สิ่ง ที่ คุณ พูด กับ ข้อมูล ไม่ เหมือนกัน ทำไม | Pana słowa nie zgadzają się z informacjami. Dlaczego? | ผม ไม่ มี ความลับ | Powiedz, że nie masz tajemnic. | ความลับ znaczy „tajemnica”. | | loss=2
+t นั่น อดีต ผู้คน ลืม แล้ว | To przeszłość. Ludzie już zapomnieli. | ใช่ ครับ นั่น อดีต | Machnij ręką: to przeszłość. | อดีต znaczy „przeszłość”. | | shift=+2
+w จดหมาย
+o นี่ จดหมาย จาก คน รวย คุณ รู้จัก ไหม | Oto list od bogacza. Zna go Pan? | ผม ไม่ รู้จัก จดหมาย | ใช่ ผม เขียน จดหมาย; ทนายความ ของ ผม เขียน จดหมาย | Przyznanie się, że to ty napisałeś list, to błąd.;Zwalanie na adwokata nie jest wiarygodne. | gain=1
+t ผู้ชาย คน หนึ่ง บอก ว่า คุณ ได้รับ ถุง เงิน | Pewien mężczyzna mówi, że dostał Pan worek pieniędzy. | นั่น คำโกหก ผม ไม่เคย ได้รับ เงิน | Nazwij to kłamstwem i zaprzecz, że dostałeś pieniądze. | นั่น คำโกหก = to kłamstwo. | | shift=-2 loss=2
+k ใน เมือง คุณ พูด ว่า คุณ รู้จัก เขา นิดหน่อย ตอนนี้ ยัง ใช่ ไหม | W mieście powiedział Pan, że zna go tylko trochę. Czy nadal to prawda? | ใช่ ครับ ผม รู้จัก เขา นิดหน่อย | ไม่ ครับ เขา เป็น เพื่อน ของ ผม; ไม่ ครับ ผม ไม่เคย เห็น เขา | Przyznajesz, że to twój przyjaciel: sprzeczność i koniec.;Wcześniej mówiłeś „znam trochę”, a nie „nigdy go nie widziałem”. | gain=1
+e ดี คุณ ไป แล้ว ลาก่อน ค่ะ | Dobrze, może Pan iść. Do widzenia.
+
+@level 5 | Minister | patience=4 cap=6 typed=0.8 extra=2 hint=bank
+desc Szczebel 5: wywiad w telewizji
+partner นักข่าว | น
+scene Studio telewizyjne, wywiad na żywo. Jesteś ministrem, a naprzeciw siedzi dziennikarz. Na ekranie nagle pojawia się stary dokument ze „sprawy worka pieniędzy”.
+goal Wyjdź ze studia nadal jako minister: nie daj się zapędzić w pułapkę na żywo.
+win Dziennikarz kończy wywiad: „Dziękuję, panie ministrze.” Sondaże rosną. Bogacz dzwoni: „Brawo!”
+partial Wywiad kończy się remisem. Opozycja domaga się dymisji, ale premier cię broni.
+fail Na wizji uciekasz od odpowiedzi, a widzowie wszystko widzą. Rano gazety krzyczą o dymisji.
+w กลัว
+t สวัสดี ครับ ตอนนี้ ผู้คน ดู เรา ทาง โทรทัศน์ คุณ กลัว ไหม | Dobry wieczór. Ludzie oglądają nas w telewizji. Czy Pan się boi? | ไม่ ครับ ผม ไม่ กลัว | Zaprzecz: nie boisz się. | กลัว znaczy „bać się”. | | gain=1
+w ปลอม
+w เท่านั้น
+t คน บอก ว่า มี ความลับ เรื่อง ถุง เงิน | Ludzie mówią, że jest tajemnica wokół worka pieniędzy. | นั่น เป็น ข่าว ปลอม เท่านั้น | Zbagatelizuj: to tylko fałszywa wiadomość. | ปลอม znaczy „fałszywy”. | | shift=-1
+t ชื่อ ของ คุณ อยู่ ใน จดหมาย | Pana imię jest w liście. | ผม ลืม แล้ว ครับ | Powiedz, że już zapomniałeś. | ลืม znaczy „zapominać”. | | shift=-2 loss=2
+t นี่ ชื่อ ของ คุณ คุณ พูด อย่างไร | To jest Pana imię. Co Pan na to? | นั่น ปลอม ครับ | Zaprzecz: to fałszywka. | ปลอม = fałszywy. | | gain=1
+w เชื่อ
+t ผู้คน เชื่อ คุณ มาก ข่าว ดี | Ludzie Panu wierzą. To dobra wiadomość. | ขอบคุณ ที่ เชื่อ ผม ครับ | Podziękuj za zaufanie. | เชื่อ znaczy „wierzyć”. | | shift=+2
+w บ่อย
+o คน รวย บอก ว่า เขา ช่วย คุณ ทำงาน จริง ไหม | Bogacz mówi, że pomagał Panu w pracy. Czy to prawda? | ไม่ จริง ผม ไม่เคย ทำงาน กับ เขา | จริง เขา ให้ เงิน ผม บ่อย; ผม ไม่ ตอบ | Przyznajesz się do pieniędzy: błąd.;Milczenie w telewizji wygląda na przyznanie się. | gain=1
+w ออก
+t คุณ อยาก ออก ไหม ถ้า ออก ก็ จบ | Czy chce Pan odejść? Jeśli tak, to koniec. | ไม่ ครับ ผม ไม่ ออก | Odmów odejścia. | ออก znaczy „wychodzić, odchodzić”. | | gain=1
+w สำหรับ
+w ของขวัญ
+k นี่ รูปภาพ คุณ กับ คน รวย และ ถุง เงิน ใน ถุง มี อะไร | Oto zdjęcie: Pan, bogacz i worek pieniędzy. Co jest w worku? | รูปภาพ นี่ อดีต ผม ไม่เคย ได้รับ ถุง เงิน | เป็น เงิน สำหรับ ผม; เป็น ของขวัญ เท่านั้น | Przyznanie się do pieniędzy: koniec.;„Prezent” to też przyznanie, bo wcześniej mówiłeś, że nie brałeś worka. | gain=1
+e ขอบคุณ ครับ สำหรับ ข่าว | Dziękuję za wywiad.
+
+@level 6 | Szef kraju | patience=4 cap=6 typed=1 extra=2 hint=none
+desc Szczebel 6: szef kraju
+partner ผู้หญิง | ผ
+scene Finałowa debata wyborcza w telewizji. Kandydujesz na szefa kraju. Naprzeciw stoi rywalka i jej teczka ze „sprawą worka pieniędzy”. Cały kraj ogląda.
+goal Wygraj debatę, zachowaj spokój i nie przyznaj się do niczego do samego końca.
+win Przegrywa nawet sondaż: 52 procent mówi, że chce ciebie. Zostajesz szefem kraju, a worek leży gdzieś na dnie szuflady.
+partial Debata kończy się remisem. Wybory wygrywasz minimalnie i obiecujesz „więcej przejrzystości”.
+fail Rywalka kładzie na stoliku zdjęcie. Kraj widzi sprzeczność w twoich słowach i na ekranie pojawia się napis o kłamcy.
+w ประเทศ
+t ตอนนี้ เรา ดู การเลือกตั้ง คุณ อยาก เป็น เจ้านาย ของ ประเทศ ไหม | Teraz oglądamy wybory. Czy chce Pan zostać szefem kraju? | ใช่ ครับ ผม อยาก เป็น เจ้านาย ของ ประเทศ | Powiedz, że chcesz zostać szefem kraju. | ประเทศ znaczy „kraj”. | | gain=1
+t ฉัน อยาก ให้ คุณ พูด ความจริง | Chcę, żeby Pan mówił prawdę. | ผม พูด ความจริง เสมอ | Zapewnij, że zawsze mówisz prawdę. | เสมอ znaczy „zawsze”. | | gain=1
+t คุณ ได้รับ เงิน ฉัน เห็น | Dostał Pan pieniądze. Widziałam. | ไม่ จริง ผม ไม่เคย ได้รับ เงิน | Zaprzecz stanowczo. | ไม่ จริง = to nieprawda. | | shift=-2 loss=2
+w สกปรก
+t นั่น เป็น เรื่อง ของ การเลือกตั้ง เท่านั้น นั่น อดีต | To tylko kampania wyborcza. To przeszłość. | การเลือกตั้ง ของ คุณ สกปรก | Zarzuć rywalce brudną kampanię. | สกปรก znaczy „brudny”. | | shift=+2
+t คุณ มี ข้อมูล ไหม | Czy ma Pani dowody? | ผม ไม่ เห็น ข้อมูล | Powtórz, że nie widzisz dowodów. | ข้อมูล znaczy „informacja, dowód”. | | gain=1
+w สร้าง
+w งาน
+t แล้ว แผน ของ คุณ สำหรับ ประเทศ | A jaki jest Pana plan dla kraju? | ผม สร้าง งาน ใหม่ | Obiecaj nowe miejsca pracy. | สร้าง znaczy „budować, tworzyć”; งาน ใหม่ to „nowa praca”. | | gain=1
+t เพื่อน ของ คุณ คน รวย บอก ว่า เขา ให้ เงิน คุณ มาก | Pański przyjaciel bogacz mówi, że dał Panu dużo pieniędzy. | นั่น คำโกหก เขา ไม่ ใช่ เพื่อน ของ ผม | Zaprzecz: to kłamstwo, on nie jest twoim przyjacielem. | ไม่ ใช่ znaczy „nie jest”. | | shift=-1 loss=2
+o ใน เมือง คุณ พูด ว่า เขา เป็น คน รู้จัก ตอนนี้ อย่างไร | W mieście powiedział Pan, że to tylko znajomy. A teraz? | เขา เป็น คน รู้จัก เท่านั้น | เขา เป็น เพื่อน ของ ผม; ผม ไม่เคย เห็น เขา | Zaprzeczasz sam sobie.;Wcześniej przyznałeś, że go znasz, więc „nigdy go nie widziałem” to sprzeczność. | gain=1
+k ผู้หญิง ถือ ถุง เงิน คุณ ได้รับ ไหม ใช่ หรือ ไม่ | Rywalka pokazuje worek. Dostał go Pan? Tak czy nie? | ไม่ ครับ ผม ไม่เคย ได้รับ | ใช่ ผม ได้รับ; ผม ไม่ ตอบ | Przyznanie się: koniec.;Milczenie na żywo wygląda jak przyznanie się. | 
+e คุณ ชนะ แล้ว คุณ เป็น เจ้านาย ของ ประเทศ | Pan wygrał! Zostaje Pan szefem kraju!
+
+
+@larp sanambin | Lotnisko | พนักงาน | พ | Bangkok, wczesny ranek. Lecisz do Polski na ślub najlepszego przyjaciela, a samolot nie poczeka. Masz walizkę, paszport i mało czasu. | Przejdź całą drogę: odprawa, kontrola bezpieczeństwa, bramka, lot i odbiór bagażu w Polsce.
+fee 0
+reward 20
+strict yes
+story yes
+win Docierasz do Polski z walizką, paszportem i pół godziny zapasu. Przyjaciel czeka w hali przylotów z bukietem: „Udało się! Wesele może się zacząć!”
+partial Dotarłeś do Polski, ale po drodze sporo się nagadałeś i trochę pobiegałeś. Walizka jest, ślub też, ty trochę zdyszany, ale na czas.
+fail Pomyliłeś coś w najgorszym momencie i samolot odleciał bez ciebie. Ślub oglądasz na telefonie, a przyjaciel obiecuje ci długą wyprawę „na pocieszenie”.
+
+@level 1 | Odprawa | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Odprawa
+partner พนักงาน | พ
+scene Lotnisko w Bangkoku, hala odlotów. Podchodzisz do stanowiska odprawy. Pracowniczka patrzy na ciebie życzliwie i czeka na dokumenty.
+goal Odpraw się na lot do Polski: pokaż paszport, nadaj walizkę i wybierz miejsce.
+win Pracowniczka podaje ci bilet: „Szczęśliwej podróży!” Walizka jedzie na taśmie, a ty idziesz do kontroli bezpieczeństwa.
+partial Odprawa udała się, ale pracowniczka kilka razy musiała się domyślać, o co ci chodzi. Bilet w ręku, czas ucieka.
+fail Pracowniczka nie rozumie, czego chcesz, i prosi następną osobę w kolejce. Musisz zacząć od nowa na końcu kolejki.
+w สวัสดี
+w บิน
+w โปแลนด์
+t สวัสดี ค่ะ คุณ ไป ที่ไหน | Dzień dobry! Dokąd Pan leci? | สวัสดี ครับ ผม บิน ไป โปแลนด์ | Przywitaj się i powiedz, że lecisz do Polski. | บิน znaczy „latać, lecieć”.
+w นี่
+w หนังสือเดินทาง
+w ของ
+t หนังสือเดินทาง ของ คุณ ค่ะ ทำไม คุณ ไป โปแลนด์ | Paszport, proszę. A po co Pan leci do Polski? | นี่ หนังสือเดินทาง ของ ผม ผม ไป งานแต่งงาน | Podaj paszport i powiedz, że lecisz na ślub. | งานแต่งงาน znaczy „wesele, ślub”.
+w อยาก
+w ส่ง
+w กระเป๋าเดินทาง
+t ดี มาก คุณ อยาก ส่ง กระเป๋าเดินทาง ไหม | Jak miło! Czy chce Pan nadać walizkę? | ใช่ ครับ ผม อยาก ส่ง กระเป๋าเดินทาง | Powiedz, że chcesz nadać walizkę. | ส่ง znaczy „wysyłać, nadawać”.
+w เป้
+t ตอนนี้ ชั่ง กระเป๋า ค่ะ ไม่ หนัก เกินไป คุณ มี กระเป๋า อื่น ไหม | Teraz zważymy walizkę. Nie jest za ciężka. Czy ma Pan inną torbę? | ใช่ ครับ ผม มี เป้ | Powiedz, że masz plecak jako bagaż podręczny. | เป้ znaczy „plecak”.
+w ข้าง
+w หน้าต่าง
+t คุณ อยาก นั่ง ข้าง หน้าต่าง ไหม | Czy chce Pan siedzieć przy oknie? | ใช่ ครับ ข้าง หน้าต่าง | Powiedz, że chcesz miejsce przy oknie. | ข้าง znaczy „obok”.
+w เครื่องบิน
+w มาสาย
+t นี่ ตั๋ว ของ คุณ เครื่องบิน ออก เช้า คุณ มี คำถาม ไหม | Oto bilet. Samolot odlatuje rano. Czy ma Pan pytanie? | ครับ เครื่องบิน มาสาย ไหม | Zapytaj, czy samolot się nie spóźni. | มาสาย znaczy „spóźniać się”.
+w ขอบคุณ
+w ลาก่อน
+t ไม่ ค่ะ ประตู สิบสอง ไป ตรงไป | Nie. Pana bramka to dwanaście. Proszę iść prosto. | ขอบคุณ ครับ ลาก่อน | Podziękuj i pożegnaj się. | ลาก่อน znaczy „do widzenia”.
+e การเดินทาง ดี ค่ะ | Szczęśliwej podróży!
+
+@level 2 | Kontrola bezpieczeństwa | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Kontrola bezpieczeństwa
+partner ตำรวจ | ต
+scene Masz bilet, a przed tobą długa kolejka do kontroli. Funkcjonariusz podaje plastikowe pojemniki i patrzy uważnie na twoją torbę.
+goal Przejdź kontrolę bezpieczeństwa: pokaż laptop, zdejmij pasek i odpowiedz na pytania.
+win Funkcjonariusz kiwa głową: wszystko w porządku. Zakładasz pasek i biegniesz do bramki z pełnym spokojem.
+partial Kontrola przebiegła w końcu bez problemów, ale funkcjonariusz kilka razy zmarszczył brwi. Zakładasz pasek w biegu.
+fail Funkcjonariusz uznaje twoje odpowiedzi za podejrzane. Zostajesz zatrzymany na dodatkową kontrolę, a samolot odlatuje bez ciebie.
+t สวัสดี ครับ วาง กระเป๋า ของ คุณ ที่ นี่ ครับ | Dzień dobry. Proszę położyć torbę tutaj. | ใช่ ครับ | Zgódź się. | วาง znaczy „kłaść, położyć”.
+w แล็ปท็อป
+t คุณ มี แล็ปท็อป ไหม เอา ออก ครับ | Czy ma Pan laptop? Proszę go wyjąć. | ใช่ ครับ นี่ แล็ปท็อป ของ ผม | Potwierdź i podaj laptop. | เอา … ออก znaczy „wyjąć”.
+w น้ำ
+t คุณ มี ขวด น้ำ ไหม | Czy ma Pan butelkę wody? | ไม่ ครับ ผม ไม่ มี น้ำ | Zaprzecz: nie masz wody. | ไม่ มี znaczy „nie mam”.
+w เข็มขัด
+w แจ็คเก็ต
+t เอา เข็มขัด และ แจ็คเก็ต ออก ครับ | Proszę zdjąć pasek i kurtkę. | ครับ นี่ เข็มขัด และ แจ็คเก็ต | Podaj pasek i kurtkę. | เข็มขัด znaczy „pasek”.
+w มีด
+w รู้
+w อาจจะ
+k คุณ มี มีด ไหม | Czy ma Pan nóż? | ไม่ ครับ ผม ไม่ มี มีด | ใช่ ผม มี มีด; ไม่ รู้ อาจจะ | Przyznanie się do noża to natychmiastowe zatrzymanie.; Niepewna odpowiedź przy takim pytaniu wzbudza podejrzenia.
+w กุญแจ
+w โทรศัพท์
+t ผ่าน ประตู นี้ ครับ คุณ มี อะไร ใน กระเป๋า กางเกง | Proszę przejść tędy. Czy ma Pan coś jeszcze w kieszeni spodni? | ผม มี กุญแจ และ โทรศัพท์ | Powiedz, że masz klucz i telefon. | กุญแจ znaczy „klucz”.
+e ดี มาก เชิญ ไป ครับ | Bardzo dobrze. Proszę iść dalej.
+
+@level 3 | Przy bramce | patience=4 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Przy bramce
+partner พนักงาน | พ
+scene Siedzisz przy bramce 12 i patrzysz na zegarek. Nagle w głośnikach coś trzaska, a na tablicy pojawia się informacja o spóźnieniu.
+goal Dowiedz się, co z lotem, zrozum komunikat o zmianie bramki i wejdź na pokład.
+win Biegniesz do nowej bramki i wsiadasz jako jeden z ostatnich. Pracownik zamyka drzwi: „Było blisko!”
+partial Znalazłeś w końcu właściwą bramkę, choć po drodze kilka razy musiałeś dopytywać. Wchodzisz na pokład spocony.
+fail Zrozumiałeś komunikat na opak i czekasz przy złej bramce. Kiedy orientujesz się w błędzie, drzwi samolotu są już zamknięte.
+t ขอโทษ ครับ คุณ เป็น ผู้โดยสาร ไป โปแลนด์ ไหม | Przepraszam! Czy jest Pan pasażerem do Polski? | ใช่ ครับ เครื่องบิน มาสาย ไหม | Potwierdź i zapytaj, czy samolot jest spóźniony. | มาสาย znaczy „spóźniać się”.
+w ขึ้น
+w เมื่อไร
+t ใช่ ครับ เครื่องบิน มาสาย สี่สิบ นาที | Tak, samolot ma czterdzieści minut spóźnienia. | ผม ขึ้น เครื่องบิน เมื่อไร ผม ไป งานแต่งงาน | Zapytaj, kiedy wsiadasz, i dodaj, że lecisz na ślub. | ขึ้น znaczy „wsiadać”.
+t งานแต่งงาน ดี มาก ครับ คุณ ต้อง เปลี่ยน เครื่องบิน ไหม | Ślub, jak miło! Czy musi Pan się przesiadać? | ไม่ ครับ ผม บิน ตรงไป | Odpowiedz, że nie, lecisz bezpośrednio. | ตรงไป znaczy „prosto”.
+w ห้า
+w อยู่
+w ทางออก
+k ดี ฟัง ข่าว เครื่องบิน ไป โปแลนด์ ออก จาก ประตู ห้า ประตู สิบสอง ปิด แล้ว คุณ เข้าใจ ไหม คุณ ไป ที่ไหน | Dobrze. Posłuchaj ogłoszenia: samolot do Polski odlatuje z bramki 5. Bramka 12 jest zamknięta. Rozumie Pan? Dokąd Pan idzie? | ผม ไป ประตู ห้า | ผม อยู่ ที่ ประตู สิบสอง; ผม ไป ทางออก | Bramka 12 jest zamknięta, więc czekanie tam kończy się spóźnieniem.; Wyjście to wyjście z lotniska, nie bramka na pokład.
+t เร็ว ครับ ขอ ตั๋ว ของ คุณ คุณ ขึ้น เครื่องบิน | Szybko! Poproszę bilet. Może Pan wsiadać. | นี่ ตั๋ว ของ ผม ผม ขึ้น เครื่องบิน แล้ว | Podaj bilet i powiedz, że już wsiadasz. | ขึ้น เครื่องบิน = wsiadać do samolotu.
+e การเดินทาง ดี ค่ะ | Szczęśliwej podróży!
+
+@level 4 | W samolocie i po lądowaniu | patience=4 typed=0.75 extra=3 hint=letters reward=30
+desc Rozdział 4: Lot i przylot
+partner พนักงาน | พ
+scene Wchodzisz na pokład. Stewardesa wita pasażerów przy drzwiach, a za chwilę wystartujecie do Polski. Po lądowaniu będziesz musiał jeszcze znaleźć kontrolę paszportową i swoją walizkę.
+goal Zajmij miejsce, poproś o picie, a po lądowaniu dowiedz się, gdzie pokazać paszport i odebrać bagaż.
+win Walizka wyjeżdża na taśmie jako pierwsza. Przyjaciel czeka w hali przylotów.
+partial Wszystko udało ci się znaleźć, ale po drodze trzy razy zapytałeś o drogę. Walizka dojechała, a ty do ślubu zdążysz.
+fail Poszedłeś w złą stronę i straciłeś czas na lotnisku. Walizka krąży samotnie po taśmie, a przyjaciel wydzwania co minutę.
+t สวัสดี ค่ะ ตั๋ว ของ คุณ ค่ะ | Dzień dobry! Pana bilet, proszę. | สวัสดี ครับ นี่ ตั๋ว ของ ผม | Przywitaj się i pokaż bilet. | ตั๋ว znaczy „bilet”.
+w ข้างบน
+t เก้าอี้ ของ คุณ ข้าง หน้าต่าง วาง กระเป๋า ข้างบน | Pana miejsce jest przy oknie. Proszę położyć torbę na górze. | ขอบคุณ ครับ ผม วาง กระเป๋า ข้างบน | Podziękuj i powiedz, że kładziesz torbę na górze. | ข้างบน znaczy „na górze”.
+t นั่ง ที่ เก้าอี้ เครื่องบิน ออก แล้ว คุณ นั่ง ไหม | Proszę usiąść. Samolot już rusza. Czy Pan siedzi? | ใช่ ครับ ผม นั่ง ที่ เก้าอี้ | Potwierdź, że siedzisz. | นั่ง znaczy „siedzieć”.
+w กาแฟ
+w หนึ่ง
+w แก้ว
+t คุณ อยาก ดื่ม อะไร ไหม | Czy chce Pan coś do picia? | ขอ กาแฟ หนึ่ง แก้ว ครับ | Poproś o kawę. | ขอ znaczy „poproszę”.
+w เรา
+w ถึง
+t นี่ กาแฟ ค่ะ คุณ อยาก ถาม อะไร | Oto kawa. Czy chce Pan o coś zapytać? | เรา ถึง โปแลนด์ เมื่อไร | Zapytaj, kiedy dolecicie do Polski. | ถึง znaczy „dojechać, dotrzeć”.
+w แสดง
+t สิบ นาที ถึง แล้ว | Za dziesięć minut będziemy na miejscu. | ขอบคุณ ครับ ผม ต้อง แสดง หนังสือเดินทาง ที่ไหน | Podziękuj i zapytaj, gdzie musisz pokazać paszport. | แสดง znaczy „pokazywać”.
+w ทาง
+w ซ้าย
+w ก่อน
+k แสดง ที่ ทาง ซ้าย จาก นั้น สัมภาระ แล้ว ทางออก คุณ ไป ที่ไหน ก่อน | Paszport pokazuje się po lewej. Potem bagaż, a potem wyjście. Dokąd Pan idzie najpierw? | ผม ไป ทาง ซ้าย ก่อน | ผม ไป ทางออก ก่อน; ผม ไป สัมภาระ ก่อน | Do wyjścia idziesz na końcu, po odbiorze walizki.; Walizkę odbierasz dopiero po kontroli paszportowej.
+t ใช่ แล้ว สัมภาระ ของ คุณ ที่ ที่สาม | Zgadza się. Pana bagaż jest na trzeciej taśmie. | ขอบคุณ ครับ ผม เอา กระเป๋าเดินทาง | Podziękuj i powiedz, że bierzesz walizkę. | เอา znaczy „brać”.
+t คุณ มี อะไร บางอย่าง ไหม | Czy ma Pan coś do oclenia? | ไม่ ครับ ผม ไม่ มี อะไร | Powiedz, że nie masz nic do oclenia. | ไม่ มี อะไร znaczy „nic nie mam”.
+e สนุก กับ งานแต่งงาน ค่ะ | Dobrej zabawy na weselu!

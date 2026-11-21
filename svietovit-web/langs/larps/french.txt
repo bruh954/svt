@@ -212,3 +212,806 @@ w libre | wolny
 w retard | spóźnienie
 t Cette place est libre. Le train a dix minutes de retard. | To miejsce jest wolne. Pociąg ma dziesięć minut spóźnienia. | Ce n'est pas un problème. Merci ! | Powiedz, że to nie problem, i podziękuj. | „To nie problem” to ce n'est pas un problème.
 e Bon voyage à Paris ! | Szczęśliwej podróży do Paryża!
+
+@larp oma | Babcia w parku | Mamie Odette | O | Niedziela w parku. Na ławce siedzi starsza pani, która uwielbia rozmawiać i ma całe popołudnie. | Posiedź z babcią Odette i porozmawiaj z nią. Nikt cię stąd nie wyrzuci.
+fee 0
+reward 10
+story yes
+win Mamie Odette promienieje: „Quel gentil jeune homme !” Zaprasza cię na niedzielną kawę i kawałek ciasta.
+partial Rozmowa się toczyła, choć kilka razy musiałeś prosić o powtórzenie. Mamie Odette uśmiecha się cierpliwie i zaprasza cię znowu.
+fail Mamie Odette się nie zniechęca, bo ma nieskończoną cierpliwość. Jeśli kiedyś zobaczysz ten komunikat, napisz do nas.
+
+@level 1 | Na ławce | patience=3 endless=yes typed=0 extra=2 hint=none
+desc Rozdział 1: Poznajecie się
+scene Park, ławka, słońce. Starsza pani karmi okruchami wróble i zaczyna rozmowę. Nie musisz się spieszyć: Mamie Odette poczeka.
+goal Przywitaj się, powiedz, jak się nazywasz i skąd jesteś.
+win Mamie Odette klepie ławkę obok siebie: „Asseyez-vous, Paul !” Zostajesz na dłużej.
+partial Rozmowa się udała, mimo kilku pomyłek. Mamie Odette zachowuje cierpliwość i robi ci miejsce na ławce.
+fail Mamie Odette nigdy się nie zniechęca.
+w beau | ładny, piękny (il fait beau = jest ładna pogoda)
+w n'est-ce | nieprawdaż (n'est-ce pas ?)
+t Bonjour, jeune homme ! Il fait beau aujourd'hui, n'est-ce pas ? | Dzień dobry, młody człowieku! Dziś jest ładna pogoda, prawda? | Oui, il fait très beau. | Zgódź się, że pogoda jest ładna. | „Pogoda jest ładna” to il fait beau. | Oui, il fait beau.; Oui, il fait très beau aujourd'hui.
+w appelez-vous | nazywa się pan(i) (s'appeler)
+w Moi | ja (zaimek wzmocniony)
+w Odette | Odette (imię)
+w m'appelle | nazywam się (je m'appelle)
+w Paul | Paul (imię)
+t Quel plaisir ! Comment vous appelez-vous ? Moi, je suis Odette. | Jak miło! Jak się Pan nazywa? Ja jestem Odette. | Je m'appelle Paul. | Powiedz, jak się nazywasz. | „Nazywam się” to je m'appelle. | Moi, c'est Paul.; Je suis Paul.
+w habitez | mieszka pan(i) (habiter)
+w n'habite | nie mieszkam (je n'habite pas)
+w ne | nie (ne … pas)
+w d'ici | stąd (je suis d'ici = jestem stąd)
+t Paul ! C'est un joli prénom. Vous habitez ici ? | Paul! To ładne imię. Mieszka Pan tutaj? | Non, je n'habite pas ici. Je viens de Pologne. | Zaprzecz i powiedz, że jesteś z Polski. | Przeczenie czasownika to ne … pas: je n'habite pas. | Non, je ne suis pas d'ici. Je viens de Pologne.
+t De Pologne ! C'est loin. Voulez-vous vous asseoir ? | Z Polski! To daleko. Czy chce się Pan przysiąść? | Oui, volontiers. Merci beaucoup ! | Zgódź się i podziękuj. | „Chętnie” to volontiers. | Oui, avec plaisir. Merci beaucoup !
+w en | w; (je vous en prie = proszę bardzo)
+w prie | proszę, błagam (je vous en prie = proszę bardzo)
+w y | tam; (il y a = jest, są)
+e Je vous en prie ! Il y a de la place. | Proszę bardzo! Jest miejsce.
+
+@level 2 | Wnuk i kaczki | patience=3 endless=yes typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Wnuk i ciasto
+scene Mały Léo biega po trawniku i karmi kaczki, a Mamie Odette pokazuje ci zdjęcia w portfelu. Z torby wyjmuje ciasto własnej roboty.
+goal Porozmawiaj o wnuku Léo, powiedz, czy masz dzieci, i spróbuj ciasta.
+win Mamie Odette wręcza ci drugi kawałek: „Mange, mange, tu es trop maigre !” Léo macha do ciebie z daleka.
+partial Zjadłeś ciasto, choć kilka razy brakowało ci słów. Mamie Odette dolewa herbaty z termosu.
+fail Mamie Odette nie traci cierpliwości.
+w Léo | Léo (imię)
+w six | sześć
+w ans | lata (j'ai six ans = mam sześć lat)
+w mignon | słodki, ładny
+t Voici mon petit-fils, Léo. Il a six ans. | Oto mój wnuk Léo. Ma sześć lat. | Il est très gentil. | Pochwal wnuka: powiedz, że jest bardzo miły. | „On jest” to il est. | Il est très mignon.; Léo est très gentil.
+w donne | daje (donner)
+w canards | kaczki
+w Avez-vous | czy ma pan(i) (avoir)
+w n'ai | nie mam (je n'ai pas)
+w d'enfants | dzieci (de + enfants, po przeczeniu)
+w d'enfant | dziecka, dziecko (de + enfant)
+t Merci ! Léo donne à manger aux canards. Avez-vous des enfants ? | Dziękuję! Léo karmi kaczki. Czy ma Pan dzieci? | Non, je n'ai pas d'enfants. | Powiedz, że nie masz dzieci. | Po przeczeniu rzeczownik stoi z de: pas d'enfants. | Non, je n'ai pas d'enfant.
+w Ah | ach
+w l'ai | go/ją mam, (je l'ai fait = zrobiłam to)
+w moi-même | sam, osobiście
+t Pas d'enfants ? Ah bon. Voulez-vous un morceau de gâteau ? Je l'ai fait moi-même. | Nie ma Pan dzieci? Ach tak. Chce Pan kawałek ciasta? Sam je upiekłam. | Oui, volontiers. Il est très bon ! | Przyjmij ciasto i pochwal je. | Gâteau jest rodzaju męskiego, więc „il est bon”. | Oui, avec plaisir. Il est délicieux !
+t Quel plaisir ! Et vous, quel âge avez-vous ? | Jak miło! A ile Pan ma lat? | J'ai trente ans. | Powiedz, że masz trzydzieści lat. | Po francusku wiek się „ma”: j'ai trente ans (dosłownie „mam trzydzieści lat”). | Moi, j'ai trente ans.
+e Ah, si jeune ! | Ach, tak młodo!
+
+@level 3 | Zaproszenie | patience=3 endless=yes typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Kawa w niedzielę
+scene Słońce chyli się ku zachodowi. Mamie Odette pakuje termos i prosi cię o pomoc. Zanim wstaniecie z ławki, chce cię jeszcze zaprosić.
+goal Przyjmij zaproszenie na niedzielną kawę i pomóż babci z torbą.
+win Mamie Odette zapisuje ci adres na serwetce: „Apportez de l'appétit !” Idziesz do domu w świetnym nastroju.
+partial Wszystko się wyjaśniło, choć trzeba było kilka razy powtarzać. Mamie Odette mówi: „À dimanche, mon petit !”
+fail Mamie Odette nie traci cierpliwości.
+w savez | wiecie, wie pan(i) (savoir)
+w tous | wszyscy; każdy (tous les jours = codziennie)
+w les | te, (rodzajnik liczby mnogiej)
+w jours | dni
+w vraiment | naprawdę
+t Vous savez, je viens au parc tous les jours. C'est si beau ici. | Wie Pan, przychodzę do parku codziennie. Jest tu tak ładnie. | Oui, le parc est vraiment très beau. | Zgódź się, że park jest piękny. | „Naprawdę” to vraiment. | Oui, c'est vraiment beau ici.; Oui, le parc est vraiment beau.
+w prépare | przygotowuję, parzę (préparer)
+t N'est-ce pas ? Le dimanche, je prépare du café. Voulez-vous venir ? | Prawda? W niedzielę parzę kawę. Chce Pan przyjść? | Oui, avec plaisir. Quand ? | Zgódź się i zapytaj, kiedy. | „Kiedy?” to quand ? | Oui, volontiers. Quand ?
+w Pouvez-vous | czy może pan(i) (pouvoir)
+w m'aider | mi pomóc (aider)
+t À trois heures. Mon sac est lourd. Pouvez-vous m'aider ? | O trzeciej. Moja torba jest ciężka. Czy może mi Pan pomóc? | Oui, bien sûr. Je porte le sac. | Zgódź się i zaproponuj, że poniesiesz torbę. | „Noszę” to je porte. | Bien sûr. Je vais porter le sac.
+w Comme | jak, jakże
+t Comme c'est gentil ! Vous êtes quelqu'un de bien. | Jak miło! Jest Pan dobrym człowiekiem. | Merci beaucoup ! À dimanche ! | Podziękuj i pożegnaj się do niedzieli. | „Do niedzieli” to à dimanche. | Merci ! À dimanche !
+e À dimanche ! Au revoir ! | Do niedzieli! Do widzenia!
+
+@larp spion | Szpieg | Le Contact | S | Jesteś agentem pod przykrywką. W Paryżu masz odebrać tajną teczkę z ambasady i przekazać ją dalej. Jedno złe słowo i jesteś zdemaskowany. | Zachowaj przykrywkę kupca Girarda, zdobądź dossier i uciekaj z walizką.
+fee 0
+reward 20
+strict yes
+story yes
+win Walizka jest w twoich rękach, a statek odpływa z portu. Ktoś w centrali szepcze: „Beau travail, Faucon.” Przykrywka nie pękła ani razu.
+partial Misja się udała, ale po drodze kilka razy omal się nie zdradziłeś. Centrala odnotowuje: „Il a eu de la chance.”
+fail Zdradziłeś się jednym słowem. Przykrywka pękła, a ty znikasz w ciemności bez teczki i bez walizki.
+
+@level 1 | Hasło na dworcu | patience=2 typed=0 extra=1 hint=none
+desc Rozdział 1: Kontakt na dworcu
+partner Un homme au chapeau | H
+scene Paryż, wieczór, peron na dworcu. Jesteś agentem „Faucon”, ale dla wszystkich jesteś monsieur Girard, handlarz zabawkami z Lyonu (Girard et Fils). Na peronie czeka człowiek w kapeluszu. Hasło: „L'hiver arrive tôt.” Odzew: „Et l'été arrive tard.”
+goal Podaj hasło, nie zdradź swojej przykrywki i przyjmij zadanie. Jedna zła odpowiedź i jesteś zdemaskowany.
+win Człowiek w kapeluszu znika w tłumie, a ty zostajesz z kopertą w kieszeni. Przykrywka nietknięta, a jutro o ósmej czeka cię ambasada.
+partial Dostałeś zadanie, ale kontakt zmarszczył brwi przy kilku twoich odpowiedziach. Lepiej uważaj jutro.
+fail Człowiek w kapeluszu spojrzał na ciebie zimno, odwrócił się i odszedł. Zadanie dostanie ktoś inny.
+w L'hiver | zima
+w arrive | przychodzi, nadchodzi (arriver)
+t Bonsoir. Il fait froid aujourd'hui, n'est-ce pas ? | Dobry wieczór. Dziś jest zimno, prawda? | Oui, il fait froid. L'hiver arrive tôt. | Zgódź się, że jest zimno, i powiedz hasło: zima przychodzi wcześnie. | Hasło brzmi: „L'hiver arrive tôt.” | Oui, très froid. L'hiver arrive tôt.
+w l'été | lato
+w Chut | cicho!
+w on | się, ludzie (on nous écoute = ktoś nas słucha)
+w écoute | słucha (écouter)
+w Girard | Girard (nazwisko z przykrywki)
+w négociant | kupiec, handlowiec
+w Faucon | Faucon (sokół; imię agenta)
+w agent | agent
+k Et l'été arrive tard. Chut ! Ici, on nous écoute. Comment vous appelez-vous ? | A lato przychodzi późno. Cicho! Tu ludzie słuchają. Jak się Pan nazywa? | Je m'appelle Girard. Je suis négociant. | Je m'appelle Faucon. Je suis agent.; Je m'appelle Girard. Je suis agent. | Faucon to twoje imię agenta, a ludzie słuchają.; Girard się zgadza, ale „agent” zdradza przykrywkę.
+w Est-ce | czy (est-ce que)
+w suit | śledzi, idzie za (suivre)
+w me | mnie, mi
+k Bien. Est-ce que quelqu'un vous suit ? | Dobrze. Czy ktoś Pana śledzi? | Non, personne ne me suit. | Oui, quelqu'un me suit.; Oui, je suis très fatigué. | Przyznanie, że ktoś cię śledzi, wystraszy kontakt.; Kontakt pyta, czy ktoś cię śledzi, a nie czy jesteś zmęczony.
+w mission | misja, zadanie
+w huit | osiem
+w allez | idzie pan(i), idziecie (aller)
+w l'ambassade | ambasada
+w compris | zrozumiany; „zrozumiałem”
+t Très bien. Voici votre mission. Demain à huit heures, vous allez à l'ambassade. Il y a une fête. | Bardzo dobrze. Oto Pana zadanie. Jutro o ósmej idzie Pan do ambasady. Jest tam przyjęcie. | J'ai compris. Demain à huit heures, je vais à l'ambassade. | Powiedz, że zrozumiałeś: jutro o ósmej idziesz do ambasady. | „Mission” to zadanie, a „à huit heures” znaczy „o ósmej”. | Compris. Demain à huit heures, je vais à l'ambassade.
+w Rossignol | Rossignol (słowik; hasło)
+t Bien. Le mot de passe pour la fête est Rossignol. Quel est le mot de passe ? | Dobrze. Hasło na przyjęcie to Rossignol. Jakie jest hasło? | Le mot de passe est Rossignol. | Powtórz hasło na przyjęcie. | Hasło wejściowe to mot de passe, a „Rossignol” to słowik. | C'est Rossignol.
+w connaissez-vous | czy zna pan(i) (connaître)
+w connais | znam (connaître)
+d Très bien. Chut ! Un policier arrive. Me connaissez-vous ? | Bardzo dobrze. Cicho! Idzie policjant. Czy Pan mnie zna? | Non, je ne vous connais pas. | Zaprzecz, że znasz tego człowieka. | Nie możesz zdradzić, że znasz kontakt. | Non, je ne vous connais pas !
+w monsieur | pan
+e Bonne nuit, monsieur Girard. | Dobranoc, panie Girard.
+
+@level 2 | Przyjęcie w ambasadzie | patience=2 typed=0.2 extra=3 hint=bank
+desc Rozdział 2: Przyjęcie w ambasadzie
+partner Madame Berger | B
+scene Następny wieczór. W ambasadzie trwa przyjęcie, a przy wejściu stoi pani Berger, sekretarka. Ona i goście zadają pytania o twoją „firmę”. Twoja przykrywka: Girard et Fils, zabawki, Lyon. Hasło wejściowe: Rossignol. Gabinet ambasadora jest po prawej, toalety po lewej.
+goal Wejdź na przyjęcie, nie zdradź się pytaniom o firmę i znajdź pretekst, żeby dotrzeć do gabinetu.
+win Pani Berger macha ci na pożegnanie, a w gabinecie leży teczka, o którą ci chodziło. Nikt niczego nie podejrzewa.
+partial Weszłeś i dotarłeś do gabinetu, ale pani Berger patrzyła na ciebie dłużej, niż trzeba.
+fail Pani Berger przestaje się uśmiechać i daje znak ochronie. Za chwilę wyprowadzą cię z ambasady.
+w bienvenue | witamy, witaj
+t Bonsoir et bienvenue à l'ambassade ! Quel est le mot de passe ? | Dobry wieczór i witamy w ambasadzie! Jakie jest hasło? | Le mot de passe est Rossignol. | Podaj hasło wejściowe. | Mot de passe to hasło, a „Rossignol” to słowik. | C'est Rossignol.
+w dois | muszę (devoir)
+w arme | broń
+w d'arme | broni (de + arme)
+w dossier | teczka, akta
+k Merci. Je dois vous poser une question. Avez-vous une arme sur vous ? | Dziękuję. Muszę o coś zapytać. Czy ma Pan przy sobie broń? | Non, je n'ai pas d'arme. | Oui, j'ai une arme.; Non, je n'ai pas de dossier. | Do przyjęcia nie wchodzi się z bronią.; Pytanie dotyczy broni (arme), nie teczki.
+w travaillez-vous | czy pracuje pan(i) (travailler)
+w travaille | pracuję, pracuje (travailler)
+w société | firma, spółka
+w centrale | centrala
+w Madame | pani
+w Berger | Berger (nazwisko)
+k Bien. Pour qui travaillez-vous ? | Dobrze. Dla kogo Pan pracuje? | Je travaille pour la société Girard. | Je travaille pour la centrale.; Je travaille pour Madame Berger. | „Centrale” to twoja centrala, tajna, a nie firma.; Pani Berger to sekretarka z ambasady.
+w vend | sprzedaje (vendre)
+w jouets | zabawki
+d Girard ! Que vend votre société ? | Girard! Co sprzedaje Pana firma? | Ma société vend des jouets. | Powiedz, co sprzedaje twoja „firma” (przykrywka). | Twoja przykrywka to handel zabawkami. | Elle vend des jouets.
+w Lyon | Lyon
+w s'appelle | nazywa się
+w Fils | Syn (Girard et Fils = Girard i Syn)
+k Des jouets ! Et où est votre société ? | Zabawki! A gdzie jest Pana firma? | Ma société est à Lyon. | Ma société vend des jouets.; Ma société s'appelle Girard et Fils. | „Où” znaczy „gdzie”, a nie „co sprzedaje”.; „Où” pyta o miejsce, nie o nazwę.
+w sont | są (être)
+w toilettes | toaleta
+w toilette | toaleta
+t À Lyon, comme c'est intéressant ! Voulez-vous manger quelque chose ? | W Lyonie, jak ciekawie! Czy chce Pan coś zjeść? | Non, merci. Où sont les toilettes, s'il vous plaît ? | Odmów i zapytaj o toaletę (to pretekst). | Où = gdzie, więc „Où sont les toilettes ?”. | Non, merci. Où est la toilette, s'il vous plaît ?
+w privé | prywatny
+k Les toilettes sont à gauche. Le bureau à droite est privé. | Toaleta jest po lewej. Gabinet po prawej jest prywatny. | Merci, je vais à gauche. | Merci, je vais à droite.; Merci, le bureau est très beau. | Gabinet po prawej jest prywatny, a ty idziesz do toalety po lewej.; Nie wolno ci mówić, że chcesz iść do gabinetu.
+w amusez-vous | bawcie się, niech pan(i) się bawi
+e Alors amusez-vous bien, monsieur Girard ! | W takim razie dobrej zabawy, panie Girard!
+
+@level 3 | Przesłuchanie | patience=1 typed=0.35 extra=3 hint=bank
+desc Rozdział 3: Przesłuchanie
+partner Monsieur Roche | R
+scene Masz teczkę (dossier) w torbie, ale na korytarzu zatrzymuje cię podejrzliwy ochroniarz, pan Roche. Zaraz zapyta o wszystko. Pamiętaj: Girard, négociant, Lyon. Tutaj każda zła odpowiedź kończy misję.
+goal Przekonaj ochroniarza, że jesteś zwykłym gościem, i wyjdź z teczką.
+win Roche przepuszcza cię z kwaśną miną. Wychodzisz z ambasady, a teczka w torbie jest ciężka jak ołów.
+partial Roche w końcu cię puszcza, ale zapisuje twoje nazwisko w notesie.
+fail Roche chwyta cię za ramię: „Suivez-moi !” Misja skończona, zanim naprawdę się zaczęła.
+w Halte | stój!
+w êtes-vous | czy jest pan(i) (être)
+w faites-vous | co pan(i) robi (faire)
+w cherche | szukam, szuka (chercher)
+t Halte ! Qui êtes-vous ? Que faites-vous ici ? | Stać! Kim Pan jest? Co Pan tu robi? | Je suis invité. Je cherche les toilettes. | Powiedz, że jesteś gościem i szukasz toalety. | Czasownik „chercher” znaczy „szukać”. | Je suis un invité. Je cherche les toilettes.
+w là-bas | tam
+w Étiez-vous | czy był pan(i) (être, czas przeszły)
+w n'étais | nie byłem
+w j'étais | byłem, byłam
+k Les toilettes sont là-bas. Étiez-vous dans le bureau ? | Toaleta jest tam. Czy był Pan w gabinecie? | Non, je n'étais pas dans le bureau. | Oui, j'étais dans le bureau.; Non, je n'étais pas aux toilettes. | Przyznanie się to koniec przykrywki.; Pytanie dotyczy gabinetu (bureau), nie toalety.
+w Hum | hm
+w Qu'avez-vous | co pan(i) ma
+w l'argent | pieniądze, srebro
+w portable | telefon komórkowy
+k Hum, bien. Qu'avez-vous dans votre sac ? | Hm, dobrze. Co ma Pan w torbie? | Dans mon sac, j'ai seulement de l'argent et mon portable. | Dans mon sac, j'ai un dossier.; J'ai un sac. | Teczka w torbie zdradziłaby cię od razu.; Ochroniarz pyta, co jest w torbie, a nie czy masz torbę.
+w habitez-vous | czy mieszka pan(i)
+w j'habite | mieszkam
+d Hum, de l'argent et un portable. Comment vous appelez-vous, et où habitez-vous ? | Hm, pieniądze i telefon. Jak się Pan nazywa i gdzie Pan mieszka? | Je m'appelle Girard et j'habite à Lyon. | Podaj nazwisko z przykrywki i miasto, w którym mieszkasz (Lyon). | Girard i Lyon to twoja przykrywka. | Je m'appelle Girard et j'habite à Lyon !
+k Girard, Lyon. Vous êtes agent, n'est-ce pas ? | Girard, Lyon. Jest Pan agentem, prawda? | Non, je ne suis pas agent. Je suis négociant. | Oui, mais c'est un secret.; Oui, je travaille pour la centrale. | Nawet żartem nie przyznawaj się do tajemnicy.; Przyznanie się do centrali to koniec.
+w appeler | dzwonić, wołać
+w connaît | zna (connaître)
+w invités | goście
+w connaît-elle | czy ona zna
+t Hum. Je vais appeler Madame Berger. Elle connaît tous les invités. Vous connaît-elle ? | Hm. Zadzwonię po panią Berger. Zna wszystkich gości. Czy zna Pana? | Oui, Madame Berger me connaît. Je suis invité. | Powiedz, że pani Berger cię zna. | „Me connaît” znaczy „mnie zna”. | Oui, elle me connaît. Je suis invité.
+w vu | widziany; „widziałem” (voir)
+d Bien. Un agent est dans l'ambassade. Avez-vous vu quelqu'un ? | Dobrze. Agent jest w ambasadzie. Czy Pan kogoś widział? | Non, je n'ai vu personne. | Zaprzecz, że kogokolwiek widziałeś. | Personne = nikt. Ty sam jesteś tym agentem. | Non, je n'ai vu personne !
+w d'accord | dobrze, zgoda
+w Rentrez | niech pan(i) wraca (rentrer)
+e Bon, d'accord. Rentrez chez vous, monsieur Girard. | No dobrze. Niech Pan idzie do domu, panie Girard.
+
+@level 4 | Walizka i ucieczka | patience=1 typed=0.5 extra=3 hint=letters reward=30
+desc Rozdział 4: Wymiana walizki
+partner Monsieur Leloup | L
+scene Następny ranek, port w Marsylii. Pan Leloup z centrali czeka z walizką pełną pieniędzy. Wymienisz ją na teczkę. Nowe hasło: „Corbeau”. Ale ktoś cię śledzi: w tłumie jest zdrajca (traître), który chce dostać teczkę dla siebie.
+goal Wymień teczkę na walizkę, nie daj się zdemaskować zdrajcy i wsiądź na statek.
+win Statek odpływa, a ty stoisz na pokładzie z walizką. Pan Leloup macha z nabrzeża: „Bon voyage, Faucon !”
+partial Udało się uciec, ale zdrajca zdążył zobaczyć twoją twarz. Misja zaliczona, lecz twoja przykrywka jest spalona.
+fail Zdrajca był szybszy. Walizka i teczka zniknęły, a ty zostajesz na nabrzeżu z pustymi rękami.
+w d'aujourd'hui | dzisiejszy (de + aujourd'hui)
+w Corbeau | Corbeau (kruk; hasło)
+d Bonjour. Quel est le mot de passe d'aujourd'hui ? | Dzień dobry. Jakie jest dzisiejsze hasło? | Le mot de passe d'aujourd'hui est Corbeau. | Podaj hasło z dzisiejszej misji. | Hasło to mot de passe, a dziś brzmi „Corbeau”. | C'est Corbeau !
+k Bien. Où est le dossier ? | Dobrze. Gdzie jest teczka? | Le dossier est dans mon sac. | Le dossier est chez Madame Berger.; Le dossier est un secret. | Teczkę masz przy sobie, w torbie.; Kontakt pyta, gdzie jest teczka, nie o tajemnicę.
+w dedans | w środku
+w Prenez-la | proszę ją wziąć (prendre)
+t Bien. Voici la valise. L'argent est dedans. Prenez-la. | Dobrze. Oto walizka. Pieniądze są w środku. Proszę ją wziąć. | Merci. Je prends la valise. | Podziękuj i weź walizkę. | „Walizka” to la valise, a „biorę” to je prends. | Merci. Je la prends.
+w Attention | uwaga
+w L'homme | mężczyzna, człowiek
+w traître | zdrajca
+w faisons-nous | co robimy (faire)
+w partons | wyruszamy, uciekamy (partir)
+w restons | zostajemy (rester)
+w buvons | pijemy (boire)
+w parlons | rozmawiamy (parler)
+w cet | ten (przed samogłoską)
+k Attention ! L'homme là-bas est un traître. Il nous suit. Que faisons-nous ? | Uwaga! Ten człowiek tam jest zdrajcą. Idzie za nami. Co robimy? | Nous partons vite. | Nous restons ici et nous buvons un café.; Nous parlons à cet homme. | Zdrajca idzie za wami, trzeba uciekać.; Nie rozmawia się ze zdrajcą.
+w vient | przychodzi (venir)
+w Allons-nous | czy idziemy (aller)
+w allons | idziemy (aller)
+w rentrons | wracamy (rentrer)
+k Oui, vite ! Le traître vient de la gauche. Allons-nous à gauche, à la gare, ou à droite, au port ? | Tak, szybko! Zdrajca idzie z lewej. Idziemy w lewo na dworzec czy w prawo do portu? | Nous allons à droite, au port. | Nous allons à gauche, à la gare.; Nous rentrons à la maison. | Zdrajca nadchodzi z lewej, więc idziecie w prawo, do portu.; Pytanie jest o port albo dworzec, a nie o dom.
+w Stop | stój
+w Donnez-moi | proszę mi dać (donner)
+d Stop ! Donnez-moi la valise ! J'ai une arme ! | Stać! Proszę dać mi walizkę! Mam broń! | Non, je ne vous donne pas la valise. | Odmów oddania walizki. | „Donner” to dawać, a przeczenie to ne … pas. | Non, je ne vous donne pas la valise !
+w joué | zagrany (bien joué = dobrze zagrane)
+t Bien joué, vite ! Le bateau part tout de suite. Avez-vous encore la valise ? | Dobrze zagrane, szybko! Statek zaraz odpływa. Czy ma Pan jeszcze walizkę? | Oui, je l'ai encore. | Potwierdź, że masz jeszcze walizkę. | „Encore” znaczy „jeszcze”. | Oui, j'ai encore la valise.; Oui, je l'ai toujours.
+w Bravo | brawo
+w terminée | zakończona
+e Bravo, Faucon ! La mission est terminée. Au revoir ! | Brawo, Faucon! Misja zakończona. Do widzenia!
+
+@larp zeitreise | Podróż w czasie | Le Garde | G | Obudziłeś się w roku 1450 pod murami francuskiego miasta Tilleval. Nikt nie może się dowiedzieć, że jesteś z przyszłości, bo za dziwne rzeczy i dziwne słowa w średniowieczu grozi stos. | Nie daj się wykryć jako przybysz z przyszłości: unikaj wszystkiego, co nie pasuje do roku 1450, i dotrwaj do końca dnia.
+fee 0
+reward 15
+strict yes
+story yes
+win Burmistrz kiwa głową: „Un honnête voyageur !” Nikt nie podejrzewa, skąd naprawdę jesteś. Wieczorem znajdujesz drogę powrotną, a w kieszeni zostaje ci tylko miedziana moneta na pamiątkę.
+partial Udało ci się przetrwać dzień, ale kilka razy ludzie patrzyli na ciebie podejrzliwie. Burmistrz każe cię obserwować, więc wymykasz się z miasta o świcie.
+fail Ktoś zauważył, że nie jesteś stąd. Straż woła: „Un sorcier ! Un magicien !” i musisz uciekać. Podróż w czasie skończyła się wcześniej, niż chciałeś.
+
+@level 1 | Brama miasta | patience=5 typed=0 extra=1 hint=none
+partner Le garde Gaspard | G
+desc Rozdział 1: Brama Tilleval
+scene Rok 1450. Stoisz przed wielką drewnianą bramą miasta Tilleval. Strażnik Gaspard zatrzymuje każdego podróżnego i zadaje pytania. Masz na sobie zwykłe ubranie, ale w kieszeniach zostały ci rzeczy z przyszłości.
+goal Odpowiedz na pytania strażnika tak, żeby nie wzbudzić podejrzeń: przedstaw się, powiedz skąd jesteś i jak podróżujesz. Zwróć uwagę na rzeczy, których w 1450 roku jeszcze nie było.
+win Gaspard otwiera bramę: „Bienvenue à Tilleval !” Nic nie wzbudziło jego podejrzeń, a ty wchodzisz do miasta.
+partial Gaspard w końcu cię wpuszcza, ale przygląda ci się dłużej, niż byś chciał. Wchodzisz do miasta z uczuciem, że ktoś cię obserwuje.
+fail Gaspard podnosi halabardę: „Tu n'es pas un voyageur !” Brama zamyka się z trzaskiem, a ty uciekasz w las.
+w Tilleval | Tilleval (fikcyjne miasto)
+w es-tu | czy jesteś (être)
+w voyageur | podróżnik
+t Halte ! Voici la porte de Tilleval. Qui es-tu ? | Stój! To brama miasta Tilleval. Kim jesteś? | Je suis un voyageur. | Powiedz, że jesteś podróżnikiem. | „Jestem podróżnikiem”: je suis un voyageur. | Je suis voyageur.
+w t'appelles-tu | jak się nazywasz
+w Jean | Jean (imię)
+w Kevin | Kevin (imię)
+w Jordan | Jordan (imię)
+k Bien. Comment t'appelles-tu ? | Dobrze. Jak się nazywasz? | Je m'appelle Jean. | Je m'appelle Kevin.; Je m'appelle Jordan. | Kevin i Jordan to imiona współczesne, w 1450 roku nikt tak nie nazywał dzieci. Strażnik uznałby cię za dziwaka.; Jordan to nowoczesne imię. W 1450 roku popularne były Jean, Pierre czy Guillaume.
+w viens-tu | skąd pochodzisz, czy przychodzisz (venir)
+w futur | przyszłość
+w d'Amérique | z Ameryki
+k Jean, bien. D'où viens-tu ? | Jean, dobrze. Skąd pochodzisz? | Je viens de Pologne. | Je viens du futur.; Je viens d'Amérique. | Przyznanie się do przyszłości to dekonspiracja. Nikt w 1450 roku nie zrozumie takich słów.; Ameryki jeszcze nie odkryto, Kolumb wypłynie dopiero w 1492 roku.
+w voyages-tu | czy podróżujesz (voyager)
+k De Pologne, c'est loin ! Comment voyages-tu ? À pied ou à cheval ? | Z Polski, to daleko! Jak podróżujesz? Pieszo czy konno? | Je voyage à cheval. | Je voyage en voiture.; Je voyage en train. | Samochodu w 1450 roku nie ma. Strażnik pomyśli, że jesteś szalony albo opętany.; Pociągów też jeszcze nie ma, pierwsza kolej pojawi się dopiero w XIX wieku.
+w Montre-moi | pokaż mi (montrer)
+w ton | twój
+w Qu'as-tu | co masz
+w bancaire | bankowy (carte bancaire = karta płatnicza)
+k À cheval, bien. Montre-moi ton sac. Qu'as-tu là ? | Na koniu, dobrze. Pokaż mi swoją torbę. Co tam masz? | J'ai seulement du pain et de la bière. | J'ai un portable.; J'ai une carte bancaire. | Telefon w 1450 roku? Strażnik wziąłby go za czarodziejskie urządzenie i zawołał straż.; Karta z plastiku wyglądałaby dla niego jak magia. Pieniądze to wtedy monety.
+w As-tu | czy masz (avoir)
+w faim | głód (j'ai faim = jestem głodny)
+w l'aubergiste | karczmarz
+t Bon, tu peux entrer. As-tu faim ? | Dobrze, możesz wejść. Jesteś głodny? | Oui, j'ai faim. Où est l'aubergiste ? | Powiedz, że jesteś głodny, i zapytaj, gdzie jest karczmarz. | „Gdzie” to où, a „karczmarz” to l'aubergiste. | Oui, j'ai très faim. Où est l'aubergiste ?
+w l'auberge | gospoda
+w séjour | pobyt
+e C'est tout de suite à gauche, l'auberge. Bon séjour à Tilleval ! | Zaraz po lewej jest gospoda. Miłego pobytu w Tilleval!
+
+@level 2 | Gospoda | patience=5 typed=0.15 extra=3 hint=bank
+partner L'aubergiste Gaston | G
+desc Rozdział 2: Gospoda „Au Bœuf Rouge”
+scene Wchodzisz do gospody. Karczmarz Gaston jest ciekawski i pyta o wszystko: co chcesz zjeść, jak podróżujesz i czego potrzebujesz na noc. W gospodzie nie ma elektryczności ani nowoczesnych napojów.
+goal Zamów jedzenie i picie, które mogli podać w średniowieczu, ustal nocleg i nie wspomnij o niczym z przyszłości.
+win Gaston klepie cię po plecach: „Tu es un bon client !” Dostajesz miejsce przy kominku i pełny talerz. Nikt nie podejrzewa, że jesteś z przyszłości.
+partial Gaston przygląda ci się podejrzliwie, ale podaje jedzenie. Śpisz źle, bo wciąż myślisz o tym, co powiedziałeś.
+fail Gaston woła głośno: „C'est quoi, un wifi ?!” Goście odwracają się w twoją stronę, a ty ledwo uciekasz tylnym wyjściem.
+w veux-tu | czy chcesz (vouloir)
+w te | ci, cię (s'il te plaît = proszę)
+t Bienvenue à l'auberge ! Que veux-tu manger ? Nous avons du pain et de la soupe. | Witaj w gospodzie! Co chcesz zjeść? Mamy chleb i zupę. | Je voudrais du pain et de la soupe, s'il te plaît. | Zamów chleb i zupę. | „Chleb i zupa”: du pain et de la soupe. | Je voudrais du pain et de la soupe, s'il vous plaît.
+w bois-tu | co pijesz (boire)
+w l'eau | woda
+w coca | cola
+k Et que bois-tu ? Nous avons de la bière, du vin et de l'eau. | A co pijesz? Mamy piwo, wino i wodę. | Je bois une bière. | Je voudrais du café.; Je voudrais un coca. | Kawa dotarła do Europy dopiero w XVII wieku.; Coca-Cola powstała w XIX wieku. W 1450 roku nikt jej nie zna.
+t Une bière, bien. Tu as voyagé loin. Depuis combien de temps voyages-tu ? | Piwo, dobrze. Daleko podróżowałeś. Jak długo już jedziesz? | Je voyage depuis dix jours. | Powiedz, że podróżujesz już dziesięć dni. | „Dziesięć dni”: dix jours. | Voilà dix jours que je voyage.
+w prenons | bierzemy (prendre)
+w charrette | wóz
+k Dix jours, c'est long ! Demain, je vais au marché. Tu viens avec moi ? Nous prenons la charrette. | Dziesięć dni, to długo! Jutro jadę na targ. Pojedziesz ze mną? Weźmiemy wóz. | Oui, avec plaisir. Nous allons au marché en charrette. | Oui, nous prenons la voiture.; Non, je vais en vélo. | Samochodu nie ma. Gaston rozejrzałby się za twoją „voiture”, ale tu jeżdżą wozem.; Rower wynaleziono dopiero w XIX wieku. W 1450 roku jeździ się wozem albo konno.
+w Parfait | doskonale
+w bougie | świeca
+w wifi | internet bezprzewodowy
+w prise | gniazdko (prise électrique)
+w électrique | elektryczny
+k Parfait. La chambre a un lit. Veux-tu autre chose ? | Doskonale. W pokoju jest łóżko. Czy chcesz jeszcze coś? | Oui, je voudrais une bougie, s'il te plaît. | As-tu le wifi ?; Je voudrais une prise électrique. | W 1450 roku nie ma internetu. Gaston nie wie, co to jest wifi.; Gniazdka elektryczne wymyślono setki lat później. Wieczorem świeci się świecami.
+w l'an | rok (l'an 1450)
+w ta | twoje (ta santé = twoje zdrowie)
+t Une bougie, voilà. Et encore une bière : une bonne bière en l'an mille quatre cent cinquante ! Santé ! | Świeca, proszę bardzo. A tu jeszcze piwo: dobre piwo w roku 1450! Na zdrowie! | Santé ! | Wznieś toast. | „Na zdrowie” to santé. | À ta santé !
+e Bonne nuit ! Demain matin, nous allons au marché. | Dobranoc! Jutro rano jedziemy na targ.
+
+@level 3 | Targ | patience=4 typed=0.3 extra=3 hint=bank reward=25
+partner La marchande Berthe | B
+desc Rozdział 3: Targ w Tilleval
+scene Następnego ranka na rynku jest tłoczno. Kupcowa Berthe sprzedaje chleb i ser. Przy płaceniu liczą się tylko monety, a ludzie przyglądają się twoim ubraniom.
+goal Kup chleb i ser, zapłać tak, jak płaci się w 1450 roku, i wyjaśnij, skąd masz dziwne ubranie.
+win Berthe wsuwa ci do koszyka jabłko: „Pour le gentil voyageur !” Targ nic nie podejrzewa, a w oddali widać już ratusz.
+partial Berthe w końcu sprzedała ci chleb i ser, ale kilka osób szepcze za twoimi plecami. Zbliża się ratusz.
+fail Berthe krzyczy: „C'est quoi, ces vêtements ? C'est quoi, un euro ?” Tłum się zbiega, a ty uciekasz między straganami.
+t Bonjour ! Que veux-tu acheter ? Du pain, du fromage ou des pommes ? | Dzień dobry! Co chcesz kupić? Chleb, ser czy jabłka? | Je voudrais du pain et du fromage. | Poproś o chleb i ser. | „Chleb i ser”: du pain et du fromage. | Je voudrais du pain et du fromage, s'il vous plaît.
+w deniers | denary (dawne monety)
+t Du pain et du fromage, bien. Le pain coûte deux deniers et le fromage trois deniers. | Chleb i ser, dobrze. Chleb kosztuje dwa denary, a ser trzy denary. | Ça fait combien en tout ? | Zapytaj, ile to kosztuje razem. | „W sumie” to en tout. | Combien ça coûte en tout ?
+w paie | płacę (payer)
+w pièces | monety
+k Ça fait cinq deniers. Comment veux-tu payer ? | To będzie pięć denarów. Jak chcesz zapłacić? | Je paie avec des pièces. | Je paie avec des euros.; Je paie avec la carte. | Euro wprowadzono dopiero w 2002 roku.; Karty płatnicze to wynalazek XX wieku. W 1450 roku płaci się monetami.
+w Tes | twoje
+w vêtements | ubranie
+w bizarres | dziwne
+w Qu'est-ce | co to jest (qu'est-ce que c'est)
+w mode | moda
+w l'Est | wschód
+w T-shirt | koszulka
+w jeans | dżinsy
+w baskets | buty sportowe
+k Bien, des pièces. Tes vêtements sont bizarres. Qu'est-ce que c'est ? | Dobrze, monety. Twoje ubranie jest dziwne. Co to jest? | C'est la mode de l'Est. | C'est un T-shirt.; Ce sont des jeans et des baskets. | T-shirty z napisami pojawiły się w XX wieku, a Berthe nigdy takiego nie widziała.; Dżinsy i buty sportowe to rzeczy z dwudziestego wieku. Berthe zawołałaby straż.
+w tiens | no proszę, patrz (tenir)
+w maire | burmistrz, wójt
+w veut | chce (vouloir)
+w toi | ty (zaimek wzmocniony)
+t De l'Est, tiens. Le maire veut te voir. Tu viens avec moi ? | Z Wschodu, tak. Burmistrz chce cię zobaczyć. Idziesz ze mną? | Oui, je viens avec toi. | Zgódź się i idź z nią. | „Idę z tobą” to je viens avec toi. | Oui, je viens avec vous.
+e Alors viens ! L'hôtel de ville est là-bas. | No to chodź! Ratusz jest tam.
+
+@level 4 | Burmistrz | patience=4 typed=0.5 extra=4 hint=letters reward=25
+partner Le maire Aubert | A
+desc Rozdział 4: W ratuszu
+scene W ratuszu czeka burmistrz Aubert. Słyszał dziwne plotki o obcym przybyszu. Zauważył coś błyszczącego na twoim nadgarstku i zadaje pytania, a tobie została tylko jedna droga: wrócić do bramy, gdzie wszystko się zaczęło.
+goal Odpowiedz na pytania burmistrza tak, żeby nie zdradzić zegarka, telefonu ani przyszłości, i wróć bezpiecznie do bramy.
+win Burmistrz macha ręką: „Bon, bon, va-t'en !” Wracasz do bramy, w powietrzu coś migocze i budzisz się we własnym czasie. Na dłoni masz denary z 1450 roku.
+partial Burmistrz pozwala ci odejść, ale pod nosem mruczy o czarodziejach. Dopiero za bramą migotanie powietrza zabiera cię do domu.
+fail Burmistrz woła strażników: „Une boîte magique ! Il vient du futur !” Nie zdążysz dojść do bramy.
+t Bonjour ! Je suis le maire de Tilleval. Qui es-tu ? | Dzień dobry! Jestem burmistrzem Tilleval. Kim jesteś? | Je m'appelle Jean, je suis un voyageur de Pologne. | Przedstaw się: Jean, podróżnik z Polski. | „Z Polski” to de Pologne. | Je suis Jean, un voyageur de Pologne.
+w poignet | nadgarstek
+w qu'un | tylko jeden (ce n'est qu'un = to tylko)
+w bracelet | bransoletka
+w numérique | cyfrowy
+k Bien, Jean. Qu'est-ce que tu as au poignet ? | Dobrze, Jean. Co masz na nadgarstku? | Ce n'est qu'un bracelet. | C'est une montre avec une pile.; C'est une montre numérique. | Zegarek z baterią to wynalazek nowoczesny. Burmistrz nie ma pojęcia, co to jest.; Cyfrowy zegarek wyglądałby dla niego jak czary. W 1450 roku są tylko wieże z zegarami i klepsydry.
+w pourtant | przecież, jednak
+w indique | wskazuje (indiquer)
+w regarde | patrzę (regarder)
+k Un bracelet ? Quelle heure est-il ? Tu as pourtant une montre. | Tylko bransoletka? Która godzina? Masz przecież zegarek. | Je n'ai pas de montre. Le soleil indique midi. | Il est quatorze heures trente.; Je regarde mon portable. | Taka dokładna godzina z minutami to nowoczesny sposób liczenia czasu.; Telefon to rzecz z przyszłości. Burmistrz uznałby ją za czarodziejską.
+w année | rok
+w sommes-nous | czy jesteśmy (être)
+w sommes | jesteśmy (être)
+w sais | wiem (savoir)
+k Midi, bon. Quelle année sommes-nous ? | Południe, dobrze. Który mamy rok? | Nous sommes en l'an mille quatre cent cinquante. | Nous sommes en l'an deux mille.; Je ne sais pas. | Jeśli podasz rok z przyszłości, zdradzisz się natychmiast.; Nie znać roku? Karczmarz dał ci wskazówkę wczoraj. Burmistrz uznałby, że ukrywasz coś.
+w dit | mówi (dire); mówią
+w magique | magiczny
+k Bien. On dit que tu as une boîte magique. Est-ce vrai ? | Dobrze. Mówią, że masz magiczną skrzynkę. Czy to prawda? | Non, je n'ai pas de boîte magique. | Oui, c'est un portable.; Oui, je viens du futur. | Przyznanie się do telefonu zakończy rozmowę. Burmistrz nie wie, co to jest.; Przyznanie się do podróży w czasie to najgorsza odpowiedź.
+w vas-tu | dokąd idziesz (aller)
+w retourne | wracam (retourner)
+w remonter | cofać (machine à remonter le temps = wehikuł czasu)
+k Bien. Il est déjà tard. Où vas-tu maintenant ? | Dobrze. Jest już późno. Dokąd teraz idziesz? | Je retourne à la porte. | Je vais à la machine à remonter le temps.; Je vais à la voiture. | Wehikuł czasu to najgorsza odpowiedź.; Samochodu w 1450 roku nie ma. Burmistrz pomyślałby, że kłamiesz.
+w vas-y | idź, ruszaj (allez-y)
+e Bon, alors vas-y. Bon voyage ! | Dobrze, to idź. Szczęśliwej podróży!
+
+@larp politiker | Polityk | L'électeur | É | Jesteś skorumpowanym politykiem. Dawno temu pan Pinson dał ci kopertę, a „affaire Coucou” (afera Kukułka) wraca na każdym szczeblu twojej kariery. Wyborcy ci wierzą… i przestają… i zapominają. | Przekonaj wyborców, że nadajesz się na stanowisko. Nigdy się nie przyznaj i nie sprzeczaj sam sobie.
+fee 0
+reward 30
+strict yes
+story yes
+disclaimer Satyra. Wszystkie postacie, partie i afery są zmyślone; ewentualne podobieństwo do prawdziwych osób jest przypadkowe.
+win Wygrywasz wybory! Nikt już nie pamięta koperty od pana Pinsona. Przed gmachem tłum skanduje twoje nazwisko, a ty obiecujesz „uczciwą politykę”. Pan Pinson macha z ostatniego rzędu.
+partial Wygrywasz o włos. Dziennikarze wciąż grzebią w aktach, ale ty już podpisujesz pierwsze dokumenty. Kłamstwo trzyma się jeszcze na słowo honoru.
+fail Wiarygodność spadła do zera. Wyborcy wyciągają stare akty, a z tłumu ktoś krzyczy: „L'enveloppe !” Twoja kariera kończy się na pierwszej stronie gazet.
+
+@level 1 | Maire délégué | patience=4 cap=6 typed=0 extra=1 hint=none
+desc Szczebel 1: sołtys wsi Valclair
+partner Madame Lambert | L
+scene Zebranie wiejskie w sali gimnastycznej w Valclair. Chcesz zostać „maire délégué”, czyli wiejskim burmistrzem (sołtysem). Madame Lambert zadaje pytania, a cała wieś słucha. Wszyscy pamiętają, że pan Pinson naprawił drogę, i że ktoś widział kopertę…
+goal Przekonaj wieś, że jesteś uczciwy, i zaprzecz plotkom o kopercie.
+win Wieś klaszcze. Zostajesz sołtysem Valclair. Pan Pinson, w pierwszym rzędzie, puszcza do ciebie oko.
+partial Wygrywasz jednym głosem. Madame Lambert patrzy na ciebie podejrzliwie, ale podnosi rękę.
+fail Wieś ma dość. Madame Lambert mówi: „Nous votons pour quelqu'un d'autre.” Kończysz karierę, zanim się zaczęła.
+w devenir | zostać, stać się
+w délégué | delegowany (maire délégué = wiejski burmistrz)
+w veux | chcę (vouloir)
+t Bonsoir ! Vous voulez devenir maire délégué ? | Dobry wieczór! Chce Pan zostać sołtysem? | Oui, je voudrais devenir maire délégué. | Powiedz, że chcesz zostać sołtysem. | „Devenir” znaczy „zostać, stawać się”. | Oui, je veux devenir maire délégué.
+w honnête | uczciwy
+t Bien. Êtes-vous honnête ? | Dobrze. Czy jest Pan uczciwy? | Oui, je suis toujours honnête. | Zapewnij, że jesteś zawsze uczciwy. | „Zawsze” to toujours; honnête po „suis” nie zmienia się w rodzaju męskim. | | gain=1
+w abîmée | zniszczona
+w ferez-vous | co zrobi pan(i) (faire, przyszły)
+w répare | naprawiam (réparer)
+t Très bien. Mais la route est abîmée. Que ferez-vous ? | Bardzo dobrze. Ale droga jest zniszczona. Co Pan zrobi? | Je vais réparer la route. | Obiecaj, że naprawisz drogę. | „Naprawić” to réparer; „je vais réparer” = zamierzam naprawić. | Je répare la route. | gain=1
+w Pinson | Pinson (nazwisko; zięba)
+w donné | dany; „dał” (donner)
+w enveloppe | koperta
+w l'a | go/ją (l'a vu = to widział)
+w peine | trud; à peine = ledwo
+t Très bien. Mais monsieur Pinson vous a donné une enveloppe ! Quelqu'un l'a vu ! | Dobrze. Ale pan Pinson dał Panu kopertę! Ktoś to widział! | C'est un mensonge ! Je connais à peine monsieur Pinson. | Zaprzecz: to kłamstwo, ledwo znasz pana Pinsona. | „À peine” znaczy „ledwo”; „connaître” to znać osobę. | | shift=-2 loss=2
+w c'était | to było
+w longtemps | długo (il y a longtemps = dawno temu)
+w toute | cała (de toute façon = tak czy inaczej)
+w façon | sposób
+w oublié | zapomniany; „zapomnieliśmy” (oublier)
+w reconnaissant | wdzięczny
+t Hum, c'était il y a longtemps, de toute façon. Nous avons oublié ça. | Hm… to było dawno, tak czy inaczej. Zapomnieliśmy o tym. | Merci, je vous en suis reconnaissant. | Podziękuj wyborcom za wyrozumiałość (jesteś im wdzięczny). | „Reconnaissant” to wdzięczny. | | shift=+2
+w dettes | długi
+w commune | gmina
+w J'économise | oszczędzam (économiser)
+w d'argent | pieniędzy (de + argent)
+o Pas de quoi. Mais nous avons beaucoup de dettes dans la commune. Que ferez-vous ? | Nie ma za co. Ale mamy w gminie wiele długów. Co Pan zrobi? | J'économise l'argent et je suis honnête. | Je prends plus d'argent.; Je ne sais pas. | Dobra odpowiedź obiecuje oszczędzanie i uczciwość.; Polityk, który mówi „zabiorę więcej pieniędzy”, nie brzmi wiarygodnie.; „Nie wiem” nie przekona wyborców. | gain=1
+w Serez-vous | czy będzie pan(i) (être, przyszły)
+t Très bien. Serez-vous honnête avec nous ? | Bardzo dobrze. Czy będzie Pan wobec nas uczciwy? | Oui, je suis toujours honnête avec vous. | Obiecaj uczciwość wobec wyborców. | „Avec vous” to „wobec państwa, z państwem”. | | gain=1
+w votons | głosujemy (voter)
+e Alors nous votons pour vous ! Bienvenue, monsieur le maire délégué ! | Wybieramy więc Pana! Witamy, Panie sołtysie!
+
+@level 2 | Conseil municipal | patience=4 cap=6 typed=0.2 extra=2 hint=bank
+desc Szczebel 2: radny miejski
+partner Madame Rivière | R
+scene Miasto Neuville. Jesteś kandydatem do rady miejskiej (conseil municipal). Dziennikarka Madame Rivière pyta o „biznesmenów” i o to, skąd masz nowy samochód.
+goal Zaprzecz, że brałeś pieniądze, i nie daj się złapać na kłamstwie.
+win Madame Rivière zamyka notes: „Bien, je n'ai plus de questions.” Zostajesz radnym. Pan Pinson gratuluje przez telefon.
+partial Zostajesz radnym, ale Madame Rivière mówi: „Je continue d'enquêter.” Będzie dalej drążyć.
+fail Wywiad ląduje w gazecie pod tytułem „Le conseiller et l'enveloppe”. Nikt na ciebie nie głosuje.
+w journaliste | dziennikarz, dziennikarka
+w conseiller | radny; doradca
+w municipal | miejski (conseil municipal = rada miejska)
+t Bonjour, je suis journaliste. Vous voulez devenir conseiller municipal ? | Dzień dobry, jestem dziennikarką. Chce Pan zostać radnym? | Oui, je voudrais devenir conseiller municipal. | Potwierdź, że chcesz zostać radnym. | „Conseiller municipal” to radny miejski. | | gain=1
+w connaissez | znacie, zna pan(i) (connaître)
+w d'affaires | biznesu (homme d'affaires = biznesmen)
+w connaissance | znajomy; znajomość
+t Bien. Vous connaissez l'homme d'affaires monsieur Pinson. Est-ce votre ami ? | Dobrze. Zna Pan biznesmena pana Pinsona. Czy to pański przyjaciel? | Non, c'est seulement une connaissance. | Zaprzecz: to tylko znajomy. | „Seulement” = tylko; „une connaissance” = znajomy. | | gain=1
+w vois | widzę (voir)
+w neuve | nowa
+w achetée | kupiona (acheter)
+w honnêtement | uczciwie
+w acheté | kupiony; „kupiłem”
+t Une connaissance, je vois. Vous avez une voiture neuve. D'où vient l'argent ? | Znajomy, rozumiem. Ma Pan nowy samochód. Skąd są pieniądze? | Je l'ai achetée honnêtement. | Powiedz, że kupiłeś go uczciwie. | Passé composé: je l'ai achetée (la voiture → l'ai achetée). | J'ai acheté la voiture honnêtement.
+w pris | wzięty; „wziąłem” (prendre)
+w pots-de-vin | łapówki
+t Honnêtement, bien sûr. Avez-vous pris des pots-de-vin ? | Uczciwie, oczywiście. Czy brał Pan łapówki? | Non, je n'ai jamais pris de pots-de-vin. | Zaprzecz, że kiedykolwiek brałeś łapówki. | „Jamais” = nigdy; po przeczeniu „de” zamiast „des”. | Je n'ai jamais pris de pots-de-vin. | loss=2
+w Regardez | proszę spojrzeć (regarder)
+w voit | widać, widzi (voir)
+w ces | te, ci
+t Jamais ? Regardez cette photo. On vous y voit avec monsieur Pinson et une enveloppe. | Nigdy? Proszę spojrzeć na to zdjęcie. Widać na nim Pana, pana Pinsona i kopertę. | Je ne connais pas ces gens. | Powiedz, że nie znasz tych ludzi. | „Ces gens” = ci ludzie; „ne … pas” otacza czasownik. | | shift=-2
+w ancienne | stara, dawna
+w électeurs | wyborcy
+w oublieront | zapomną (oublier)
+w importante | ważna
+t Cette photo est ancienne. Les électeurs oublieront vite. | To zdjęcie jest stare. Wyborcy szybko zapomną. | Cette photo n'est pas importante. | Zlekceważ zdjęcie: nie jest ważne. | „Ważny” to important; zaprzeczenie: n'est pas importante. | | shift=+2
+w témoin | świadek
+w ment | kłamie (mentir)
+o Un témoin dit que vous avez pris de l'argent. | Świadek mówi, że wziął Pan pieniądze. | Ce n'est pas vrai. Le témoin ment. | Oui, le témoin a raison.; Je suis un témoin. | Zaprzeczasz i mówisz, że świadek kłamie (ment).; Przyznajesz się, więc przegrywasz.; Témoin to „świadek”, a ty nim nie jesteś. | gain=1
+w l'interview | wywiad
+w innocent | niewinny
+t Merci pour l'interview. Avez-vous encore quelque chose à dire ? | Dziękuję za wywiad. Czy chce Pan coś jeszcze dodać? | Oui, je suis innocent. | Powiedz na koniec, że jesteś niewinny. | „Innocent” = niewinny. | | gain=1
+w J'écris | piszę (écrire)
+e J'écris ce que vous avez dit. Au revoir ! | Napiszę, co Pan powiedział. Do widzenia!
+
+@level 3 | Maire | patience=4 cap=6 typed=0.4 extra=2 hint=bank
+desc Szczebel 3: burmistrz
+partner Le procureur Delmas | D
+scene W ratuszu miasta Neuville. Prokurator Delmas bada przetarg (appel d'offres) na nowy most. Firma pana Pinsona wygrała dziwnie łatwo, a w aktach wraca „affaire Coucou”.
+goal Wyjdź z przesłuchania jako burmistrz, nie przyznając się do niczego.
+win Prokurator Delmas zamyka teczkę: „Pas de preuves. Le dossier reste fermé.” Zostajesz burmistrzem, a most otwiera się z pompą.
+partial Teczka zostaje otwarta, ale prokurator nie ma dowodów. Zostajesz burmistrzem z cieniem podejrzeń.
+fail Prokurator Delmas kładzie na stole kopertę i zdjęcie. „Je vous mets en examen !” – mówi. Kończysz w areszcie.
+w procureur | prokurator
+w Delmas | Delmas (nazwisko)
+w Ceci | to (to tutaj)
+w interrogatoire | przesłuchanie
+t Je suis le procureur Delmas. Ceci est un interrogatoire. | Jestem prokuratorem Delmasem. To jest przesłuchanie. | Je voudrais voir mon avocat. | Poproś o swojego adwokata. | „Mon avocat” = mój adwokat. | Je veux voir mon avocat. | gain=1
+w D'abord | najpierw
+w l'entreprise | firma, przedsiębiorstwo
+w remporté | wygrany; „wygrała” (remporter)
+w l'appel | wezwanie, apel (appel d'offres = przetarg)
+w d'offres | ofert (appel d'offres = przetarg)
+w avait | miała, miał (avoir)
+w meilleure | najlepsza, lepsza
+w offre | oferta
+t Plus tard. D'abord, l'entreprise de monsieur Pinson a remporté l'appel d'offres pour le pont. Pourquoi ? | Później. Najpierw: firma pana Pinsona wygrała przetarg na most. Dlaczego? | Elle avait la meilleure offre. | Wyjaśnij, że miała najlepszą ofertę. | „Elle” = ta firma (l'entreprise); avait = miała. | | gain=1
+w questions | pytania
+w déclaration | oświadczenie
+w refuse | odmawiam (refuser)
+w garde | strzegę, zachowuję (garder le silence = milczeć)
+t Hum. Nous avons beaucoup de questions. Voulez-vous faire une déclaration ? | Hm. Mamy wiele pytań. Czy chce Pan złożyć oświadczenie? | Je refuse de faire une déclaration. | Odmów składania oświadczeń. | „Garder le silence” = zachować milczenie (prawo do milczenia). | Je garde le silence. | shift=-1
+w refusez | odmawia pan(i)
+w preuves | dowody
+w n'y | nie tam (il n'y a pas = nie ma)
+w soupçons | podejrzenia
+w certes | owszem, to prawda
+w savons | wiemy (savoir)
+w n'avez | nie ma pan(i) (vous n'avez pas)
+w aucune | żadna
+w preuve | dowód
+t Vous refusez ? Sans preuves, il n'y a pas de soupçons, certes. Nous le savons tous les deux. | Odmawia Pan? Bez dowodów nie ma podejrzeń, to prawda. Wiemy to obaj. | Vous n'avez pas de preuves. | Powiedz prokuratorowi, że nie ma dowodów. | „Pas de preuves” = brak dowodów. | Vous n'avez aucune preuve. | shift=+2
+w aura | będzie miał (avoir, przyszły; il y aura = będzie)
+w mise | postawienie (mise en examen = postawienie zarzutów)
+w Qu'en | co o tym (qu'en dites-vous = co pan(i) na to)
+w dites-vous | mówi pan(i) (dire)
+w coupable | winny
+o Il y aura peut-être une mise en examen. Qu'en dites-vous ? | Być może będzie wszczęte postępowanie przeciwko Panu. Co Pan na to? | Je suis innocent. | Je suis coupable.; C'était moi. | „Innocent” = niewinny.; „Coupable” = winny, a to przyznanie.; „C'était moi” = to byłem ja, czyli przyznanie się. | gain=1
+w qu'il | że on
+w d'enveloppe | koperty (de + enveloppe)
+t Innocent ? Monsieur Pinson dit qu'il vous a donné une enveloppe. | Niewinny? Pan Pinson mówi, że dał Panu kopertę. | C'est un mensonge ! Je n'ai jamais pris d'enveloppe. | Zaprzecz: to kłamstwo, nigdy nie wziąłeś koperty. | Po przeczeniu: pas d'enveloppe; jamais = nigdy. | | shift=-2 loss=2
+w répétez-le | proszę to powtórzyć (répéter)
+w serment | przysięga
+d Alors répétez-le sous serment. Avez-vous pris de l'argent à monsieur Pinson ? | A więc powtórz to pod przysięgą: czy wziął Pan pieniądze od pana Pinsona? | Non, je n'ai pas pris d'argent à monsieur Pinson. | Zaprzeczaj pod przysięgą: nie wziąłeś od niego pieniędzy. | „Prendre à quelqu'un” = brać od kogoś. Jedna wpadka i koniec. | Non, je n'ai jamais pris d'argent à monsieur Pinson.
+e Bien. Vous êtes maire. Je n'ai plus de questions. | Dobrze. Jest Pan burmistrzem. Nie mam więcej pytań.
+
+@level 4 | Député | patience=4 cap=6 typed=0.6 extra=2 hint=letters
+desc Szczebel 4: poseł
+partner Madame Garnier | G
+scene Parlament krajowy. Jesteś posłem (député), a komisja śledcza (commission d'enquête) wzywa cię jako świadka. Przewodnicząca Madame Garnier mówi o „affaire Coucou”. Prawnicy mają dla ciebie nowe słowa: témoin, serment, immunité.
+goal Odpowiadaj pod przysięgą tak, by nikt nie dowiódł, że kłamiesz.
+win Madame Garnier: „L'audition est terminée.” Wychodzisz z sali z uniesioną głową. Komisja nic nie ma.
+partial Komisja kończy pracę bez wniosków, ale jeden członek zapisał w notatniku: „À vérifier !”
+fail Komisja nakazuje ci wyjaśnić sprzeczność. Zaplątałeś się, a prasa pisze o „député menteur”.
+w commission | komisja
+w d'enquête | śledcza (commission d'enquête = komisja śledcza)
+w témoignez | zeznaje pan(i) (témoigner)
+w dis | mówię (dire)
+t Bienvenue à la commission d'enquête. Vous témoignez sous serment. | Witamy w komisji śledczej. Zeznaje Pan pod przysięgą. | Oui, je sais. Je dis la vérité. | Potwierdź i zapewnij, że mówisz prawdę. | „Dire la vérité” = mówić prawdę. „Sous serment” = pod przysięgą. | | gain=1
+w tant | tak bardzo (en tant que = jako)
+w député | poseł
+w l'immunité | immunitet
+w renoncer | zrzec się
+w garder | zachować
+w immunité | immunitet
+t Merci. En tant que député, vous avez l'immunité. Voulez-vous y renoncer ? | Dziękuję. Jako poseł ma Pan immunitet. Czy chce Pan się go zrzec? | Non, je veux garder mon immunité. | Odmów zrzeczenia się immunitetu. | „Garder” = zachować; „renoncer” = zrzec się. | | shift=-1
+w déposition | zeznanie
+w contredit | jest sprzeczne z (contredire)
+w l'expliquez-vous | czy to pan(i) wyjaśnia (expliquer)
+w reprocher | zarzucać (se reprocher = mieć sobie coś do zarzucenia)
+t C'est noté. Votre déposition contredit le dossier. Comment l'expliquez-vous ? | Odnotowuję. Pańskie zeznanie jest sprzeczne z aktami. Jak Pan to wyjaśni? | Je n'ai rien à cacher. | Powiedz, że nie masz nic do ukrycia. | „Je n'ai rien à cacher” = nie mam nic do ukrycia. | Je n'ai rien à me reprocher. | loss=2
+w soit | niech będzie
+w puis | potem, zresztą
+w ancien | stary, dawny
+w pensent | myślą (penser)
+t Rien à cacher, soit. Et puis, c'est ancien : les électeurs n'y pensent plus. | Nic do ukrycia, niech będzie. Zresztą to stare: wyborcy już o tym nie myślą. | C'est du passé. | Machnij ręką: to przeszłość. | „Le passé” = przeszłość. | | shift=+2
+w ai | mam (avoir); (j'ai écrit = napisałem)
+w écrit | napisany; „napisał” (écrire)
+o Voici une lettre de monsieur Pinson. La connaissez-vous ? | Oto list od pana Pinsona. Zna go Pan? | Je ne connais pas cette lettre. | Oui, c'est moi qui ai écrit cette lettre.; Mon avocat a écrit cette lettre. | Zaprzeczasz, że znasz ten list.; Przyznajesz się, że to ty napisałeś list: to błąd.; Zwalanie na adwokata nie jest wiarygodne. | gain=1
+w reçu | otrzymany; „otrzymał” (recevoir)
+t Un témoin dit que vous avez reçu une enveloppe avec de l'argent. | Świadek mówi, że dostał Pan kopertę z pieniędzmi. | Le témoin ment. Je n'ai pas reçu d'argent. | Nazwij świadka kłamcą i zaprzecz, że dostałeś pieniądze. | „Le témoin ment” = świadek kłamie. „Pas d'argent” = żadnych pieniędzy. | | shift=-2 loss=2
+w conseil | rada
+w connaissiez | znał pan(i) (connaître, czas przeszły)
+k Au conseil municipal, vous avez dit que vous connaissiez à peine monsieur Pinson. Est-ce toujours vrai ? | W radzie miejskiej powiedział Pan: „Ledwo znam pana Pinsona.” Czy to nadal prawda? | Oui, je le connais à peine. | Non, c'est mon ami.; Non, je ne l'ai jamais vu. | Konsekwentnie powtarzasz wcześniejsze zeznanie: à peine.; Przyznajesz, że to twój przyjaciel: sprzeczność i koniec.; Wcześniej mówiłeś „à peine”, a nie „nigdy go nie widziałem”. | gain=1
+w pouvez | może pan(i) (pouvoir)
+w partir | odejść, wyjść
+w reverrons | zobaczymy się znów (revoir)
+e Merci. Vous pouvez partir. Nous nous reverrons bientôt. | Dziękuję. Może Pan iść. Wkrótce znów się zobaczymy.
+
+@level 5 | Ministre | patience=4 cap=6 typed=0.8 extra=2 hint=bank
+desc Szczebel 5: minister
+partner Monsieur Fabre | F
+scene Studio telewizyjne, wywiad na żywo. Jesteś ministrem (ministre) i siedzisz naprzeciw pana Fabre, prowadzącego wiadomości. Na ekranie nagle pojawia się stary dokument z „affaire Coucou”.
+goal Wyjdź ze studia nadal jako minister: nie daj się zapędzić w pułapkę na żywo.
+win Fabre kończy wywiad: „Merci, monsieur le ministre.” Sondaże rosną. Pan Pinson dzwoni: „Bien joué !”
+partial Wywiad kończy się remisem. Opozycja domaga się dymisji, ale premier cię broni.
+fail Na wizji uciekasz od odpowiedzi, a widzowie wszystko widzą. Rano gazety krzyczą: „Démission !”
+w direct | na żywo (en direct)
+w prêt | gotowy
+w ministre | minister
+t Bonsoir ! Nous sommes en direct à la télévision. Êtes-vous prêt, monsieur le ministre ? | Dobry wieczór! Jesteśmy na żywo w telewizji. Jest Pan gotów, Panie ministrze? | Oui, je suis prêt. Avec plaisir. | Potwierdź, że jesteś gotów. | „Être prêt” = być gotowym. | | gain=1
+w L'opposition | opozycja
+w affirme | twierdzi (affirmer)
+w scandale | skandal
+w Coucou | Coucou (kukułka; afera)
+w campagne | kampania; wieś
+t Merci. L'opposition affirme qu'il y a un scandale autour du dossier Coucou. | Dziękuję. Opozycja twierdzi: wokół afery Coucou jest skandal. | Ce n'est pas un scandale. C'est une campagne. | Zbagatelizuj: to nie skandal, tylko kampania. | „Campagne” = kampania; „pas un scandale” = żaden skandal. | | shift=-1
+w document | dokument
+w signature | podpis
+w m'en | mi z tego (je m'en souviens = pamiętam to)
+w souviens | przypominam sobie (se souvenir)
+t Une campagne ? Dans le journal, il y a un document. Il porte votre signature. | Kampania? W gazecie jest dokument. Ma Pański podpis. | Je ne m'en souviens pas. | Powiedz, że nie możesz sobie tego przypomnieć. | „Se souvenir de” = pamiętać; „je ne m'en souviens pas” = nie przypominam sobie tego. | | shift=-2 loss=2
+w souvenez | przypomina pan(i) sobie (se souvenir)
+t Vous ne vous en souvenez pas ? C'est votre signature. Comment l'expliquez-vous ? | Nie przypomina Pan sobie? To Pański podpis. Jak Pan to wyjaśni? | C'est un faux. | Zaprzecz: to fałszerstwo. | „Un faux” = fałszerstwo, podróbka. | | gain=1
+w sondages | sondaże
+w montent | rosną (monter)
+w font | robią (faire; font confiance = ufają)
+w confiance | zaufanie
+w remercie | dziękuję (remercier)
+t Un faux, dites-vous. Les sondages montent pour vous. Les électeurs vous font confiance. | Fałszerstwo, mówi Pan. Sondaże rosną na Pana korzyść. Wyborcy Panu ufają. | Je vous remercie de votre confiance. | Podziękuj wyborcom za zaufanie. | „La confiance” = zaufanie; „de votre confiance” = za państwa zaufanie. | | shift=+2
+w était | był (être)
+w travaillé | pracował (travailler)
+w lui | nim, jemu
+w m'a | mi (m'a donné = dał mi)
+o Monsieur Pinson dit qu'il était votre conseiller. Est-ce vrai ? | Pan Pinson mówi, że był Pańskim doradcą. Czy to prawda? | Non, je n'ai jamais travaillé avec lui. | Oui, il m'a souvent donné de l'argent.; Je refuse de répondre. | Zaprzeczasz konsekwentnie.; Przyznajesz się do pieniędzy: błąd.; Odmowa odpowiedzi w telewizji wygląda na przyznanie się, a Fabre to wykorzysta. | gain=1
+w démissionner | podać się do dymisji
+w fini | skończony
+w démissionne | podaję się do dymisji
+t Voulez-vous démissionner ? Alors tout est fini. | Czy chce Pan podać się do dymisji? Wtedy wszystko skończone. | Non, je ne démissionne pas. Je suis innocent. | Odmów dymisji i powiedz, że jesteś niewinny. | „Démissionner” = podać się do dymisji. | | gain=1
+w Qu'y | co tam (qu'y a-t-il = co tam jest)
+w a-t-il | czy jest
+w l'enveloppe | koperta
+k Voici une photo : vous et monsieur Pinson. Il y a aussi une enveloppe. Qu'y a-t-il dans l'enveloppe ? | Oto zdjęcie: Pan i pan Pinson. Jest tam też koperta. Co jest w kopercie? | La photo est ancienne. Je n'ai jamais pris d'enveloppe. | C'est de l'argent pour ma campagne.; C'était seulement un cadeau. | Powtarzasz to, co powiedziałeś prokuratorowi.; Przyznanie się do pieniędzy: koniec.; „Cadeau” to też przyznanie, bo wcześniej mówiłeś, że nie brałeś koperty. | gain=1
+w interview | wywiad
+e Merci pour cette interview, monsieur le ministre. | Dziękuję za wywiad, panie ministrze.
+
+@level 6 | Président | patience=4 cap=6 typed=1 extra=2 hint=none
+desc Szczebel 6: prezydent
+partner Madame Leclerc | L
+scene Debata finałowa w telewizji. Kandydujesz na prezydenta (président de la République). Naprzeciw stoi Madame Leclerc z partii „Nouvelle Honnêteté” i jej teczka z „affaire Coucou”. Cały kraj ogląda.
+goal Wygraj debatę, zachowaj spokój i nie przyznaj się do niczego do samego końca.
+win Przegrywa nawet sondaż: 52 procent mówi, że chce ciebie. Zostajesz prezydentem, a koperta pana Pinsona leży gdzieś na dnie szuflady.
+partial Debata kończy się remisem. Wybory wygrywasz minimalnie i obiecujesz „więcej przejrzystości”.
+fail Madame Leclerc kładzie na stoliku teczkę. Kraj widzi sprzeczność w twoich słowach i na ekranie pojawia się napis: „Le candidat ment.”
+w débat | debata
+w Leclerc | Leclerc (nazwisko)
+w candidat | kandydat
+w président | prezydent
+w République | republika
+t Bienvenue au débat ! Madame Leclerc, monsieur le candidat, je vous en prie. | Witamy na debacie! Pani Leclerc, panie kandydacie, proszę. | Bonsoir. Je voudrais devenir président de la République. | Przywitaj się i powiedz, że chcesz zostać prezydentem. | „Devenir président” = zostać prezydentem. | | gain=1
+w parti | partia
+w Nouvelle | nowa
+w Honnêteté | uczciwość
+w Dites | proszę mówić, niech pan(i) mówi (dire)
+t Je suis du parti Nouvelle Honnêteté. Dites la vérité, monsieur le candidat ! | Jestem z partii Nouvelle Honnêteté. Niech Pan mówi prawdę, Panie kandydacie! | Je dis toujours la vérité. | Zapewnij, że zawsze mówisz prawdę. | „Toujours” = zawsze. | | gain=1
+w reproche | zarzut
+w rejette | odrzucam (rejeter)
+w accusation | oskarżenie, zarzut
+t Vous avez pris des pots-de-vin. Voilà mon reproche. | Brał Pan łapówki. To mój zarzut. | Je rejette ce reproche. | Odrzuć ten zarzut. | „Rejeter” = odrzucać; „ce reproche” = ten zarzut. | Je rejette cette accusation. | shift=-2 loss=2
+w disent | mówią (dire)
+w Sa | jej (sa campagne = jej kampania)
+t Beaucoup de gens disent que c'est seulement de la campagne, et que c'est ancien. | Wielu ludzi mówi, że to tylko kampania i że to stare. | Sa campagne est sale. | Zarzuć rywalce brudną kampanię. | „Sale” = brudny; po „est” przymiotnik zgadza się z „campagne” (rodzaj żeński). | Votre campagne est sale. | shift=+2
+w n'en | nie z tego (je n'en vois pas = nie widzę ich)
+t Madame Leclerc, avez-vous des preuves ? Moi, je n'en vois pas ! | Pani Leclerc, ma Pani dowody? Ja ich nie widzę! | Je ne vois pas de preuves. | Powtórz, że nie widzisz żadnych dowodów. | „Pas de preuves” = żadnych dowodów. | Je ne vois aucune preuve. | gain=1
+w crée | tworzę (créer)
+w nouveaux | nowe
+w emplois | miejsca pracy
+w créer | tworzyć
+t Et votre plan pour le pays ? | A jaki jest Pański plan dla kraju? | Je crée de nouveaux emplois. | Obiecaj nowe miejsca pracy. | „Un emploi” = miejsce pracy; „de nouveaux emplois” = nowe miejsca pracy. | Je vais créer de nouveaux emplois. | gain=1
+t Votre ami monsieur Pinson dit qu'il vous a donné beaucoup d'argent ! | Pański przyjaciel pan Pinson mówi, że dał Panu dużo pieniędzy! | C'est un mensonge ! Il n'est pas mon ami. | Zaprzecz: to kłamstwo, on nie jest twoim przyjacielem. | „Pas mon ami” = nie mój przyjaciel. | | shift=-1 loss=2
+w n'était | nie był
+w qu'une | tylko jedna (ce n'était qu'une)
+o Au conseil municipal, vous avez dit que ce n'était qu'une connaissance. Et maintenant ? | W radzie miejskiej powiedział Pan, że to tylko znajomy. A teraz? | Ce n'est qu'une connaissance. | C'est mon ami.; Je ne l'ai jamais vu. | Trzymasz się wersji z rady.; Zaprzeczasz sam sobie.; Wcześniej przyznałeś, że go znasz, więc „nigdy go nie widziałem” to sprzeczność. | gain=1
+w L'avez-vous | czy ją pan(i) ma, wziął
+k Madame Leclerc montre l'enveloppe. L'avez-vous prise ? Oui ou non ? | Pani Leclerc pokazuje kopertę. Wziął ją Pan? Tak czy nie? | Non, je ne l'ai jamais prise. | Oui, je l'ai prise.; Je refuse de répondre. | Zaprzeczasz do końca.; Przyznanie się: koniec.; Milczenie na żywo wygląda jak przyznanie się. |
+w Félicitations | gratulacje
+e Et le président, c'est vous ! Félicitations ! | A prezydentem zostaje… Pan! Serdeczne gratulacje!
+
+@larp flughafen | Lotnisko | L'employée | E | Paryż, wczesny ranek. Lecisz do Warszawy na ślub najlepszego przyjaciela, a samolot nie poczeka. Masz walizkę, paszport i mało czasu. | Przejdź całą drogę: odprawa, kontrola bezpieczeństwa, bramka, lot i odbiór bagażu w Warszawie.
+fee 0
+reward 20
+strict yes
+story yes
+win Docierasz do Warszawy z walizką, paszportem i pół godziny zapasu. Przyjaciel czeka w hali przylotów z bukietem: „Tu as réussi ! Le mariage peut commencer !”
+partial Dotarłeś do Warszawy, ale po drodze sporo się nagadałeś i trochę pobiegałeś. Walizka jest, ślub też, ty trochę zdyszany, ale na czas.
+fail Pomyliłeś coś w najgorszym momencie i samolot odleciał bez ciebie. Ślub oglądasz na telefonie, a przyjaciel obiecuje ci długą wyprawę „na pocieszenie”.
+
+@level 1 | Odprawa | patience=6 typed=0 extra=1 hint=none
+desc Rozdział 1: Odprawa
+partner L'employée | E
+scene Lotnisko Roissy-Charles-de-Gaulle, hala odlotów. Podchodzisz do stanowiska odprawy linii Boréal Air. Pracowniczka patrzy na ciebie życzliwie i czeka na dokumenty.
+goal Odpraw się na lot do Warszawy: pokaż paszport, nadaj walizkę i wybierz miejsce.
+win Pracowniczka podaje ci kartę pokładową: „Bon voyage !” Walizka jedzie na taśmie, a ty idziesz do kontroli bezpieczeństwa.
+partial Odprawa udała się, ale pracowniczka kilka razy musiała się domyślać, o co ci chodzi. Karta pokładowa w ręku, czas ucieka.
+fail Pracowniczka nie rozumie, czego chcesz, i prosi następną osobę w kolejce. Musisz zacząć od nowa na końcu kolejki.
+w comptoir | stanowisko, lada
+w Boréal | Boréal (północny; nazwa linii)
+w Air | Air (powietrze; linia lotnicza)
+w allez-vous | dokąd pan(i) idzie, jedzie
+w Varsovie | Warszawa
+t Bonjour ! Bienvenue au comptoir de Boréal Air. Où allez-vous ? | Dzień dobry! Witamy przy stanowisku Boréal Air. Dokąd Pan leci? | Bonjour ! Je vais à Varsovie. | Przywitaj się i powiedz, że lecisz do Warszawy. | „Lecę, jadę” do miasta to je vais à. | Bonjour ! Je vais à Varsovie, s'il vous plaît.
+t Varsovie, très bien. Votre passeport, s'il vous plaît. Et pourquoi allez-vous à Varsovie ? | Warszawa, bardzo dobrze. Paszport, proszę. A po co Pan leci do Warszawy? | Voici mon passeport. Je vais à un mariage. | Podaj paszport i powiedz, że lecisz na ślub. | „Oto” to voici; „na ślub” to à un mariage. | Voici mon passeport. Je vais à un mariage à Varsovie.
+w agréable | miły, przyjemny
+w enregistrer | nadać, odprawić (bagaż)
+t Un mariage, comme c'est agréable ! Voulez-vous enregistrer une valise ? | Ślub, jak miło! Czy chce Pan nadać walizkę? | Oui, je voudrais enregistrer une valise. | Powiedz, że chcesz nadać walizkę. | „Nadać bagaż” to enregistrer une valise. | Oui, je voudrais enregistrer ma valise.
+w Posez | proszę postawić (poser)
+w balance | waga
+w pèse | waży (peser)
+w kilos | kilogramy
+w bagage | bagaż
+t Posez la valise sur la balance, s'il vous plaît. Elle pèse vingt kilos, c'est bon. Avez-vous aussi un bagage à main ? | Proszę postawić walizkę na wadze. Waży dwadzieścia kilo, jest w porządku. Czy ma Pan też bagaż podręczny? | Oui, j'ai un sac comme bagage à main. | Powiedz, że masz torbę jako bagaż podręczny. | „Bagaż podręczny” to bagage à main. | Oui, j'ai un sac en bagage à main.
+w hublot | okno samolotu (côté hublot = przy oknie)
+w couloir | korytarz, przejście
+t Très bien. Voulez-vous une place côté hublot ou côté couloir ? | Bardzo dobrze. Czy woli Pan miejsce przy oknie, czy przy przejściu? | Côté hublot, s'il vous plaît. | Powiedz, że wolisz miejsce przy oknie. | „Przy oknie” to côté hublot. | Une place côté hublot, s'il vous plaît.
+w d'embarquement | pokładowa (carte d'embarquement = karta pokładowa)
+w décollage | start (samolotu)
+w vol | lot
+w l'heure | godzina (à l'heure = na czas)
+t Parfait, côté hublot. Voici votre carte d'embarquement. Le décollage est à dix heures trente. Une autre question ? | Doskonale, przy oknie. Oto Pana karta pokładowa. Start jest o dziesiątej trzydzieści. Czy ma Pan jeszcze pytanie? | Oui, est-ce que le vol est à l'heure ? | Zapytaj, czy lot jest punktualny. | „Na czas” to à l'heure. | Oui, le vol est-il à l'heure ?
+t Oui, le vol est à l'heure. Votre porte est la douze. Allez tout droit. | Tak, lot jest punktualny. Pana bramka to 12. Proszę iść prosto. | Merci beaucoup ! Au revoir ! | Podziękuj i pożegnaj się. | „Do widzenia” to au revoir. | Merci ! Au revoir !
+e Bon voyage ! | Szczęśliwej podróży!
+
+@level 2 | Kontrola bezpieczeństwa | patience=5 typed=0.25 extra=3 hint=bank
+desc Rozdział 2: Kontrola bezpieczeństwa
+partner L'agent de sécurité | S
+scene Masz kartę pokładową, a przed tobą długa kolejka do kontroli. Funkcjonariusz podaje plastikowe pojemniki i patrzy uważnie na twoją torbę.
+goal Przejdź kontrolę bezpieczeństwa: pokaż laptop, zdejmij pasek i odpowiedz na pytania.
+win Funkcjonariusz kiwa głową: „Tout est en ordre. Continuez.” Zakładasz pasek i biegniesz do bramki z pełnym spokojem.
+partial Kontrola przebiegła w końcu bez problemów, ale funkcjonariusz kilka razy zmarszczył brwi. Zakładasz pasek w biegu.
+fail Funkcjonariusz uznaje twoje odpowiedzi za podejrzane. Zostajesz zatrzymany na dodatkową kontrolę, a samolot odlatuje bez ciebie.
+w contrôle | kontrola
+w sécurité | bezpieczeństwo
+t Bonjour ! Voici le contrôle de sécurité. Posez votre sac ici sur le tapis, s'il vous plaît. | Dzień dobry! To jest kontrola bezpieczeństwa. Proszę położyć torbę tutaj na taśmie. | Oui, bien sûr. | Zgódź się i powiedz, że oczywiście. | „Oczywiście” to bien sûr. | Bien sûr.
+w Sortez-le | proszę go wyjąć (sortir)
+t Merci. Avez-vous un ordinateur dans votre sac ? Sortez-le, s'il vous plaît. | Dziękuję. Czy ma Pan w torbie laptop? Proszę go wyjąć. | Oui, voici mon ordinateur. | Potwierdź i podaj laptop. | „Mój” przy rodzaju męskim to mon: mon ordinateur. | Oui, voilà mon ordinateur.
+w liquides | płyny
+w parfum | perfumy
+w aucun | żaden
+w liquide | płyn
+t Merci. Avez-vous des liquides sur vous ? Par exemple de l'eau, du parfum ou de la crème ? | Dziękuję. Czy ma Pan przy sobie płyny? Na przykład wodę, perfumy albo krem? | Non, je n'ai pas de liquides. | Zaprzecz: nie masz płynów. | Po przeczeniu: pas de liquides. | Non, je n'ai aucun liquide.
+w Enlevez | proszę zdjąć (enlever)
+t Très bien. Enlevez aussi votre ceinture et votre veste, s'il vous plaît. | Bardzo dobrze. Proszę też zdjąć pasek i kurtkę. | Oui, voici ma ceinture et ma veste. | Podaj pasek i kurtkę. | „Moja” przy rodzaju żeńskim to ma: ma ceinture, ma veste. | Oui, voilà ma ceinture et ma veste.
+w ni | ani (ni … ni)
+k Merci. Y a-t-il un couteau ou une arme dans votre sac ? | Dziękuję. Czy w Pana torbie jest nóż albo broń? | Non, je n'ai ni couteau ni arme. | Oui, j'ai un couteau.; Je ne sais pas, peut-être. | Przyznanie się do noża to natychmiastowe zatrzymanie.; Niepewna odpowiedź przy takim pytaniu wzbudza podejrzenia: zatrzymanie.
+w Passez | proszę przejść (passer)
+w portique | bramka (do skanowania)
+w Bip | pip (dźwięk)
+w poche | kieszeń
+w clés | klucze
+w mes | moje
+t Bien. Passez maintenant sous le portique. Bip ! Avez-vous encore quelque chose dans la poche ? | Dobrze. Proszę teraz przejść przez bramkę. Pip! Czy ma Pan jeszcze coś w kieszeni? | Oui, j'ai les clés et mon portable. | Powiedz, że masz klucze i telefon. | „Klucze” to les clés. | Oui, j'ai mes clés et mon portable.
+w ordre | porządek (en ordre = w porządku)
+w Continuez | proszę iść dalej (continuer)
+e Tout est en ordre. Continuez. Bon voyage ! | Wszystko w porządku. Proszę iść dalej. Szczęśliwej podróży!
+
+@level 3 | Przy bramce | patience=4 typed=0.5 extra=3 hint=bank
+desc Rozdział 3: Przy bramce
+partner L'employé de l'aéroport | E
+scene Siedzisz przy bramce 12 i patrzysz na zegarek. Nagle w głośnikach coś trzaska, a na tablicy pojawia się napis „Retard”.
+goal Dowiedz się, co z lotem, zrozum komunikat o zmianie bramki i wejdź na pokład.
+win Biegniesz do nowej bramki i wsiadasz jako jeden z ostatnich. Pracownik zamyka drzwi: „C'était juste !”
+partial Znalazłeś w końcu właściwą bramkę, choć po drodze kilka razy musiałeś dopytywać. Wchodzisz na pokład spocony.
+fail Zrozumiałeś komunikat na opak i czekasz przy złej bramce. Kiedy orientujesz się w błędzie, drzwi samolotu są już zamknięte.
+w Excusez-moi | przepraszam
+t Excusez-moi ! Êtes-vous passager du vol pour Varsovie ? | Przepraszam! Czy jest Pan pasażerem lotu do Warszawy? | Oui, mon vol a du retard, n'est-ce pas ? | Potwierdź i zapytaj, czy twój lot jest spóźniony. | „Spóźnienie” to retard; „avoir du retard” = mieć opóźnienie. | Oui, mon vol est en retard, n'est-ce pas ?
+w l'embarquement | wejście na pokład
+t Oui, le vol a quarante minutes de retard. | Tak, lot ma czterdzieści minut opóźnienia. | Et quand est l'embarquement ? Je vais à un mariage. | Zapytaj, kiedy jest boarding, i dodaj, że lecisz na ślub. | „Boarding” to embarquement; pytanie o czas: quand ? | À quelle heure est l'embarquement ? Je vais à un mariage.
+w Devez-vous | czy musi pan(i) (devoir)
+w d'avion | samolot (changer d'avion = przesiąść się)
+w directement | bezpośrednio
+w vole | lecę (voler)
+t À onze heures. Un mariage, comme c'est agréable ! Devez-vous changer d'avion à Varsovie ? | O jedenastej. Ślub, jak miło! Czy musi Pan się przesiadać w Warszawie? | Non, je vais directement à Varsovie. | Odpowiedz, że nie, lecisz bezpośrednio. | „Bezpośrednio” to directement. | Non, je vole directement à Varsovie.
+w annonce | ogłoszenie
+w fermée | zamknięta
+w reste | zostaję (rester)
+k Bien, directement. Attention, une annonce ! Le vol pour Varsovie part maintenant de la porte cinq. La porte douze est fermée. Avez-vous compris ? Où allez-vous ? | Dobrze, bezpośrednio. Uwaga, ogłoszenie! Lot do Warszawy odlatuje teraz z bramki 5. Bramka 12 jest zamknięta. Czy Pan zrozumiał? Dokąd Pan idzie? | Je vais à la porte cinq. | Je reste à la porte douze.; Je vais à la sortie. | Bramka 12 jest zamknięta, więc czekanie tam kończy się spóźnieniem.; Wyjście (sortie) to wyjście z lotniska, nie bramka na pokład.
+w bord | pokład (à bord = na pokładzie)
+w monte | wsiadam, wchodzę (monter)
+t Alors vite ! Votre carte d'embarquement, s'il vous plaît. Vous pouvez monter à bord maintenant. | W takim razie szybko! Karta pokładowa, proszę. Może Pan już wsiadać. | Voici ma carte d'embarquement. Je monte tout de suite. | Podaj kartę i powiedz, że już wsiadasz. | „Wsiadać” to monter à bord; „tout de suite” = zaraz. | Voici ma carte. Je monte maintenant.
+w ouvert | otwarty
+e Bon voyage ! L'embarquement est ouvert. | Szczęśliwej podróży! Boarding jest otwarty.
+
+@level 4 | W samolocie i po lądowaniu | patience=4 typed=0.75 extra=3 hint=letters reward=30
+desc Rozdział 4: Lot i przylot
+partner L'hôtesse de l'air | H
+scene Wchodzisz na pokład Boréal Air. Stewardesa wita pasażerów przy drzwiach, a za chwilę wystartujecie do Warszawy. Po lądowaniu będziesz musiał jeszcze znaleźć paszportówkę i swoją walizkę.
+goal Zajmij miejsce, zapnij pas, poproś o picie, a po lądowaniu dowiedz się, gdzie jest kontrola paszportowa, taśma bagażowa i odprawa celna.
+win Walizka wyjeżdża na taśmie jako pierwsza, a celnik życzy ci „Bienvenue en Pologne !” Przyjaciel czeka w hali przylotów.
+partial Wszystko udało ci się znaleźć, ale po drodze trzy razy zapytałeś o drogę. Walizka dojechała, a ty do ślubu zdążysz.
+fail Poszedłeś w złą stronę i stracił czas na lotnisku. Walizka krąży samotnie po taśmie, a przyjaciel wydzwania co minutę.
+t Bonjour et bienvenue à bord ! Votre carte d'embarquement, s'il vous plaît. | Dzień dobry i witamy na pokładzie! Proszę o kartę pokładową. | Bonjour ! Voici ma carte d'embarquement. | Przywitaj się i pokaż kartę pokładową. | „Oto” to voici. | Bonjour ! Voici ma carte.
+w Mettez | proszę włożyć (mettre)
+w compartiment | schowek, przedział
+w au-dessus | na górze, nad
+w mets | wkładam (mettre)
+t Merci. Votre place est la quatorze, côté hublot. Mettez votre sac dans le compartiment au-dessus, s'il vous plaît. | Dziękuję. Pana miejsce to 14, przy oknie. Proszę włożyć torbę do schowka na górze. | Merci, je mets le sac dans le compartiment. | Podziękuj i powiedz, że wkładasz torbę do schowka. | „Wkładam” to je mets. | Merci, je mets mon sac dans le compartiment.
+w Attachez | proszę zapiąć (attacher)
+w décollons | startujemy (décoller)
+w j'attache | zapinam (attacher)
+t Parfait. Attachez votre ceinture, s'il vous plaît. Nous décollons tout de suite. | Doskonale. Proszę zapiąć pas. Za chwilę startujemy. | Oui, j'attache ma ceinture. | Powiedz, że zapinasz pas. | „Zapinam pas” to j'attache ma ceinture. | Oui, j'attache ma ceinture !
+t Merci. Voulez-vous une boisson ? | Dziękuję. Czy chce Pan coś do picia? | Oui, un café, s'il vous plaît. | Poproś o kawę. | Café jest rodzaju męskiego, więc un café. | Oui, je voudrais un café, s'il vous plaît.
+w atterrissons-nous | czy lądujemy (atterrir)
+t Voici votre café. Avez-vous une autre question ? | Oto Pana kawa. Czy ma Pan jeszcze pytanie? | Oui, quand atterrissons-nous à Varsovie ? | Zapytaj, kiedy lądujecie w Warszawie. | „Kiedy” to quand, a „lądujemy” to atterrissons-nous. | Oui, à quelle heure atterrissons-nous à Varsovie ?
+w atterrissons | lądujemy
+w L'arrivée | przylot
+w passeports | paszporty
+w douane | cło, urząd celny
+t Nous atterrissons dans dix minutes. Bienvenue à Varsovie ! L'arrivée est à l'heure. | Lądujemy za dziesięć minut. Witamy w Warszawie! Przylot jest punktualny. | Merci ! Où est le contrôle des passeports, s'il vous plaît ? | Podziękuj i zapytaj, gdzie jest kontrola paszportowa. | Pytanie o miejsce zaczyna się od où : où est le contrôle des passeports ? | Merci ! Où est la douane, s'il vous plaît ?
+w Ensuite | następnie
+w viennent | przychodzą, następują (venir)
+w bagages | bagaże
+k Le contrôle des passeports est à gauche. Ensuite viennent le tapis des bagages, puis la douane. Où allez-vous d'abord ? | Kontrola paszportowa jest po lewej. Potem taśma bagażowa, a potem cło. Dokąd Pan idzie najpierw? | D'abord, je vais au contrôle des passeports. | D'abord, je vais à la douane.; D'abord, je vais au tapis des bagages. | Do cła idziesz na końcu, po odbiorze walizki.; Walizkę odbierasz dopiero po kontroli paszportowej.
+w Exactement | dokładnie
+t Exactement ! Et ensuite au tapis des bagages. Votre valise arrive sur le tapis quatre. | Dokładnie! A potem do taśmy bagażowej. Pana walizka przyjedzie na taśmie czwartej. | Merci beaucoup ! Je prends la valise sur le tapis. | Podziękuj i powiedz, że zdejmiesz walizkę z taśmy. | „Zdejmuję” to w tym zdaniu je prends, a „z taśmy” to sur le tapis. | Merci ! Je prends ma valise sur le tapis.
+w déclarer | zgłosić, oclić
+w demande | pyta, prosi (demander)
+t Avez-vous quelque chose à déclarer ? C'est ce que demande la douane. | Czy ma Pan coś do oclenia? O to zapyta cło. | Non, je n'ai rien à déclarer. | Powiedz, że nie masz nic do oclenia. | „Nic” to rien: rien à déclarer. | Non, rien à déclarer.
+w va | idzie, jedzie (aller; tout va bien = wszystko dobrze)
+e Alors tout va bien. Bienvenue en Pologne et bon mariage ! | Wtedy wszystko w porządku. Witamy w Polsce i dobrej zabawy na ślubie!
