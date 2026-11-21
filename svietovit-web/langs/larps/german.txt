@@ -1517,7 +1517,7 @@ w Tagen | dniach (Tag)
 t Ich verstehe. Haben Sie Fieber? Zeigen Sie mir bitte Ihre Hand. | Rozumiem. Ma Pani gorączkę? Proszę pokazać mi dłoń. | Ja, ich habe seit drei Tagen Fieber. | Powiedz, że masz gorączkę od trzech dni. | „Seit” + celownik: seit drei Tagen (od trzech dni). | | shift=-1
 w können | móc, umieć
 w schlafen | spać
-t Das ist nicht gut. Können Sie schlafen? | To niedobrze. Czy może Pani spać? | Nein, ich kann nachts nicht schlafen. | Powiedz, że nocą nie możesz spać. | „Kann nicht schlafen” = „nie mogę spać”. | | shift=-1
+t Das ist nicht gut. Können Sie schlafen? | To niedobrze. Czy może Pani spać? | Nein, ich kann nachts nicht schlafen. | Powiedz, że nocą nie możesz spać. | „Kann nicht schlafen” = „nie mogę spać”. „Nachts” = nocą (z -s). | Nein, nachts kann ich nicht schlafen. | shift=-1
 w Albtraum | koszmar | der | die Albträume
 w Traum | sen | der | die Träume
 w jeder | każdy
