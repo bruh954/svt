@@ -37,14 +37,14 @@ w Honig | miód | der | –
 t Mit Zucker? | Z cukrem? | Nein, ohne Zucker, danke. | Odmów cukru. | „Bez” to ohne, a „z” to mit.
 w Glas | szklanka, kieliszek | das | die Gläser
 w Flasche | butelka | die | die Flaschen
-t Möchten Sie auch ein Wasser? | Czy chce pan też wodę? | Ja, ein Wasser, bitte. | Zgódź się na wodę. | Das Wasser jest nijakie: ein Wasser.
+t Möchten Sie auch ein Wasser? | Czy chce Pan też wodę? | Ja, ein Wasser, bitte. | Zgódź się na wodę. | Das Wasser jest nijakie: ein Wasser.
 w Brötchen | bułka | das | die Brötchen | Brot (chleb) + -chen (zdrobnienie) → „chlebek”, bułka
 w Brot
 w Ei
 w Käse
 w Schinken | szynka | der | –
 w Wurst | kiełbasa, wędlina | die | die Würste
-t Und was möchten Sie essen? | A co chce pan zjeść? | Ich möchte ein Brötchen, bitte. | Zamów bułkę. | Brötchen jest rodzaju nijakiego (das): ein Brötchen.
+t Und was möchten Sie essen? | A co chce Pan zjeść? | Ich möchte ein Brötchen, bitte. | Zamów bułkę. | Brötchen jest rodzaju nijakiego (das): ein Brötchen.
 w Butter | masło | die | –
 w Marmelade | marmolada, dżem | die | die Marmeladen
 t Mit Butter oder mit Käse? | Z masłem czy z serem? | Mit Käse, bitte. | Wybierz ser do bułki. | Po „mit” rzeczownik bez rodzajnika: mit Käse.
@@ -55,12 +55,12 @@ w Torte | tort | die | die Torten
 w Schokolade | czekolada | die | die Schokoladen
 w Keks | ciastko, herbatnik | der | die Kekse
 w Eis | lody | das | –
-t Möchten Sie auch ein Stück Kuchen? | Czy chce pan też kawałek ciasta? | Ja, ein Stück Kuchen, bitte. | Zgódź się na kawałek ciasta. | Po „Stück” rzeczownik bez rodzajnika: ein Stück Kuchen.
+t Möchten Sie auch ein Stück Kuchen? | Czy chce Pan też kawałek ciasta? | Ja, ein Stück Kuchen, bitte. | Zgódź się na kawałek ciasta. | Po „Stück” rzeczownik bez rodzajnika: ein Stück Kuchen.
 w Ihr | pański, pani, państwa
 w Appetit | apetyt | der | –
 w Teller | talerz | der | die Teller
 w Tasse | filiżanka | die | die Tassen
-t Hier ist Ihr Kaffee und Ihr Brötchen. Guten Appetit! | Oto pana kawa i bułka. Smacznego! | Danke schön! | Podziękuj kelnerowi. | Dziękujesz: danke schön.
+t Hier ist Ihr Kaffee und Ihr Brötchen. Guten Appetit! | Oto Pana kawa i bułka. Smacznego! | Danke schön! | Podziękuj kelnerowi. | Dziękujesz: danke schön.
 w alles | wszystko
 t Möchten Sie noch etwas? | Czy coś jeszcze? | Nein, danke, das ist alles. | Odmów: to już wszystko. | „To wszystko” to das ist alles.
 e Bitte schön! | Proszę bardzo!
@@ -73,23 +73,23 @@ win Klaus się śmieje: „Du sprichst ja wie ein Berliner!” Ciasto dla mamy z
 partial Śniadanie jest, ciasto też, ale Klaus musiał pomóc ci kilka razy. Obiecuje, że następnym razem zamówisz sam.
 fail Pomyliłeś zamówienia i Klaus dostał coś zupełnie innego. Zjadł w milczeniu i wyszedł do pracy.
 w frühstücken | jeść śniadanie
-t Guten Morgen! Möchten Sie frühstücken? | Dzień dobry! Czy chce pan zjeść śniadanie? | Ja, ich möchte frühstücken. | Powiedz, że chcesz zjeść śniadanie. | Czasownik w bezokoliczniku stoi na końcu: ich möchte frühstücken.
+t Guten Morgen! Möchten Sie frühstücken? | Dzień dobry! Czy chce Pan zjeść śniadanie? | Ja, ich möchte frühstücken. | Powiedz, że chcesz zjeść śniadanie. | Czasownik w bezokoliczniku stoi na końcu: ich möchte frühstücken.
 w Eier | jajka · liczba mnoga od Ei
 w nehmen | brać (formy grzecznościowe: „bierze pan”)
 w nehme | biorę, wezmę (nehmen)
-t Wir haben Brötchen, Eier und Käse. Was nehmen Sie? | Mamy bułki, jajka i ser. Co pan weźmie? | Ich nehme zwei Brötchen und ein Ei. | Zamów dwie bułki i jajko. | Liczba mnoga „Brötchen” nie zmienia formy, a „Ei” w liczbie mnogiej to Eier.
-t Möchten Sie den Kaffee mit Milch oder den Tee? | Czy chce pan kawę z mlekiem, czy herbatę? | Ich nehme den Tee mit Milch, bitte. | Wybierz herbatę z mlekiem. | Po „nehmen” biernik: der Tee → den Tee.
+t Wir haben Brötchen, Eier und Käse. Was nehmen Sie? | Mamy bułki, jajka i ser. Co Pan weźmie? | Ich nehme zwei Brötchen und ein Ei. | Zamów dwie bułki i jajko. | Liczba mnoga „Brötchen” nie zmienia formy, a „Ei” w liczbie mnogiej to Eier.
+t Möchten Sie den Kaffee mit Milch oder den Tee? | Czy chce Pan kawę z mlekiem, czy herbatę? | Ich nehme den Tee mit Milch, bitte. | Wybierz herbatę z mlekiem. | Po „nehmen” biernik: der Tee → den Tee.
 w Löffel | łyżka, łyżeczka | der | die Löffel
-t Möchten Sie Zucker? | Czy chce pan cukier? | Ja, bitte, einen Löffel Zucker. | Zgódź się na łyżeczkę cukru. | Löffel jest rodzaju męskiego, więc biernik: einen Löffel.
+t Möchten Sie Zucker? | Czy chce Pan cukier? | Ja, bitte, einen Löffel Zucker. | Zgódź się na łyżeczkę cukru. | Löffel jest rodzaju męskiego, więc biernik: einen Löffel.
 w Schokoladenkuchen | ciasto czekoladowe | der | die Schokoladenkuchen | Schokolade (czekolada) + Kuchen (ciasto)
 t Wir haben Apfelkuchen und Schokoladenkuchen. | Mamy szarlotkę i ciasto czekoladowe. | Ich nehme den Apfelkuchen. | Wybierz szarlotkę. | Po „nehmen” biernik: der Apfelkuchen → den Apfelkuchen.
 w Glas | szklanka, kieliszek | das | die Gläser
 w Saft | sok | der | die Säfte
 w Orangensaft | sok pomarańczowy | der | – | Orange (pomarańcza) + Saft (sok)
-t Möchten Sie auch ein Glas Saft? | Czy chce pan też szklankę soku? | Ja, ein Glas Orangensaft, bitte. | Zgódź się na sok pomarańczowy. | Po „Glas” rzeczownik bez rodzajnika: ein Glas Orangensaft.
+t Möchten Sie auch ein Glas Saft? | Czy chce Pan też szklankę soku? | Ja, ein Glas Orangensaft, bitte. | Zgódź się na sok pomarańczowy. | Po „Glas” rzeczownik bez rodzajnika: ein Glas Orangensaft.
 w lecker | pyszny
 t Der Orangensaft ist heute sehr lecker. | Sok pomarańczowy jest dziś bardzo smaczny. | Gut, dann nehme ich den Orangensaft. | Zdecyduj się na sok pomarańczowy. | Po „dann” czasownik jest przed podmiotem: dann nehme ich.
-t Ist der Kuchen für Sie? | Czy ciasto jest dla pana? | Nein, der Kuchen ist für meine Mutter. | Odmów: ciasto jest dla twojej mamy. | Po „für” biernik, ale „meine Mutter” (żeńskie) wygląda tak samo w mianowniku i bierniku.
+t Ist der Kuchen für Sie? | Czy ciasto jest dla Pana? | Nein, der Kuchen ist für meine Mutter. | Odmów: ciasto jest dla twojej mamy. | Po „für” biernik, ale „meine Mutter” (żeńskie) wygląda tak samo w mianowniku i bierniku.
 w Moment | chwila | der | die Momente
 w bringe | przynoszę (bringen)
 w sofort | od razu
@@ -110,20 +110,20 @@ fail Nie dogadałeś się z kelnerem, a Anna patrzyła na to z niedowierzaniem. 
 w Tisch
 w Stuhl
 w Fenster
-t Guten Tag! Möchten Sie einen Tisch für zwei? | Dzień dobry! Czy chce pan stolik dla dwóch osób? | Ja, einen Tisch für zwei, bitte. | Zgódź się: stolik dla dwóch osób. | Der Tisch jest rodzaju męskiego, po „möchten” biernik: einen Tisch.
+t Guten Tag! Möchten Sie einen Tisch für zwei? | Dzień dobry! Czy chce Pan stolik dla dwóch osób? | Ja, einen Tisch für zwei, bitte. | Zgódź się: stolik dla dwóch osób. | Der Tisch jest rodzaju męskiego, po „möchten” biernik: einen Tisch.
 w sitzen | siedzieć
-t Möchten Sie hier oder dort sitzen? | Czy chce pan siedzieć tutaj, czy tam? | Ich möchte hier sitzen, bitte. | Powiedz, że chcesz siedzieć tutaj. | Bezokolicznik (sitzen) stoi na końcu zdania.
+t Möchten Sie hier oder dort sitzen? | Czy chce Pan siedzieć tutaj, czy tam? | Ich möchte hier sitzen, bitte. | Powiedz, że chcesz siedzieć tutaj. | Bezokolicznik (sitzen) stoi na końcu zdania.
 t Hier ist die Speisekarte. Was möchten Sie trinken? | Oto karta dań. Co podać do picia? | Ein Glas Wasser und einen Saft, bitte. | Zamów wodę i sok. | Das Glas jest nijakie: ein Glas; der Saft męski, więc biernik: einen Saft.
 w Suppe
 w Fisch
 w Fleisch
-t Wir haben heute Fischsuppe. Möchten Sie eine Suppe? | Mamy dziś zupę rybną. Czy chce pan zupę? | Nein, ich möchte keine Suppe. Haben Sie Salat? | Odmów zupy i zapytaj o sałatkę. | Przeczenie rzeczownika to kein-: die Suppe → keine Suppe.
+t Wir haben heute Fischsuppe. Möchten Sie eine Suppe? | Mamy dziś zupę rybną. Czy chce Pan zupę? | Nein, ich möchte keine Suppe. Haben Sie Salat? | Odmów zupy i zapytaj o sałatkę. | Przeczenie rzeczownika to kein-: die Suppe → keine Suppe.
 w natürlich | oczywiście
 w Salat
 w Tomate | pomidor | die | die Tomaten
 w Gurke | ogórek | die | die Gurken
 t Ja, natürlich. Der Salat ist sehr lecker. | Tak, oczywiście. Sałatka jest bardzo smaczna. | Gut, ich nehme den Salat. | Zdecyduj się na sałatkę. | Der Salat po „nehmen” to biernik: den Salat.
-t Möchten Sie den Salat mit Fisch oder mit Käse? | Czy chce pan sałatkę z rybą, czy z serem? | Mit Käse, bitte. | Wybierz ser. | Po „mit” rzeczownik bez rodzajnika: mit Käse.
+t Möchten Sie den Salat mit Fisch oder mit Käse? | Czy chce Pan sałatkę z rybą, czy z serem? | Mit Käse, bitte. | Wybierz ser. | Po „mit” rzeczownik bez rodzajnika: mit Käse.
 w sonst | poza tym
 w kostet | kosztuje (kosten)
 t Sonst noch etwas? | Czy coś jeszcze? | Was kostet der Kuchen? | Zapytaj o cenę ciasta. | „Ile kosztuje” to was kostet (dosłownie „co kosztuje”).
@@ -131,7 +131,7 @@ w Euro | euro | der | die Euro
 w teuer | drogi
 t Der Kuchen kostet vier Euro. | Ciasto kosztuje cztery euro. | Das ist nicht zu teuer. Ich nehme ein Stück. | Powiedz, że cena ci pasuje, i weź kawałek. | „Za drogo” to zu teuer, a nicht stoi przed zu teuer.
 w später | później
-t Möchten Sie den Kuchen jetzt oder später? | Czy chce pan ciasto teraz, czy później? | Ich möchte den Kuchen später. | Powiedz, że ciasto chcesz później. | Po „möchte” biernik: den Kuchen.
+t Möchten Sie den Kuchen jetzt oder später? | Czy chce Pan ciasto teraz, czy później? | Ich möchte den Kuchen später. | Powiedz, że ciasto chcesz później. | Po „möchte” biernik: den Kuchen.
 w genug | dość
 t Natürlich. Noch ein Glas Wasser? | Oczywiście. Jeszcze szklankę wody? | Nein, danke. Ich habe genug. | Grzecznie odmów: masz dość. | „Mam dość” to ich habe genug.
 e Gern! Einen Moment, bitte. | Chętnie! Chwileczkę.
@@ -150,22 +150,22 @@ w Wasser
 w Kaffee
 t Guten Abend! Was möchten Sie trinken? | Dobry wieczór! Co podać do picia? | Ich möchte ein Bier und ein Glas Wasser, bitte. | Zamów piwo i wodę. | Das Bier jest nijakie: ein Bier; das Glas też: ein Glas.
 w woher | skąd
-t Sie sprechen sehr gut Deutsch! Woher kommen Sie? | Bardzo dobrze pan mówi po niemiecku! Skąd pan pochodzi? | Danke! Ich komme aus Polen. | Podziękuj i powiedz, że jesteś z Polski. | „Z” w znaczeniu pochodzenia to aus, a nie von.
-t Aus Polen! Wie lange lernen Sie schon Deutsch? | Z Polski! Jak długo już uczy się pan niemieckiego? | Ich lerne noch nicht lange Deutsch. | Powiedz, że uczysz się niemieckiego od niedawna. | „Jeszcze nie długo” to noch nicht lange; nicht stoi przed lange.
-t Das ist schön! Lernen Sie in der Schule? | To ładnie! Czy uczy się pan w szkole? | Nein, ich lerne zu Hause. | Zaprzecz: uczysz się w domu. | „W domu” w sensie „u siebie” to zu Hause.
+t Sie sprechen sehr gut Deutsch! Woher kommen Sie? | Bardzo dobrze Pan mówi po niemiecku! Skąd Pan pochodzi? | Danke! Ich komme aus Polen. | Podziękuj i powiedz, że jesteś z Polski. | „Z” w znaczeniu pochodzenia to aus, a nie von.
+t Aus Polen! Wie lange lernen Sie schon Deutsch? | Z Polski! Jak długo już uczy się Pan niemieckiego? | Ich lerne noch nicht lange Deutsch. | Powiedz, że uczysz się niemieckiego od niedawna. | „Jeszcze nie długo” to noch nicht lange; nicht stoi przed lange.
+t Das ist schön! Lernen Sie in der Schule? | To ładnie! Czy uczy się Pan w szkole? | Nein, ich lerne zu Hause. | Zaprzecz: uczysz się w domu. | „W domu” w sensie „u siebie” to zu Hause.
 w Suppe
 w Fleisch
 w Kartoffel | ziemniak | die | die Kartoffeln
 w Reis | ryż | der | –
 w Nudeln | makaron | die | die Nudeln
-t Möchten Sie etwas essen? Die Suppe ist heute sehr gut. | Czy chce pan coś zjeść? Zupa jest dziś bardzo dobra. | Gern, ich möchte eine Suppe. Ist sie mit Fleisch? | Zgódź się na zupę i zapytaj, czy jest z mięsem. | „Zupa” to die Suppe, więc zastępuje ją sie (ona): ist sie mit Fleisch?
-t Nein, ohne Fleisch. Möchten Sie auch ein Brötchen? | Nie, bez mięsa. Czy chce pan też bułkę? | Ja, ein Brötchen mit Käse, bitte. | Zgódź się: bułka z serem. | Po „mit” rzeczownik bez rodzajnika: mit Käse.
+t Möchten Sie etwas essen? Die Suppe ist heute sehr gut. | Czy chce Pan coś zjeść? Zupa jest dziś bardzo dobra. | Gern, ich möchte eine Suppe. Ist sie mit Fleisch? | Zgódź się na zupę i zapytaj, czy jest z mięsem. | „Zupa” to die Suppe, więc zastępuje ją sie (ona): ist sie mit Fleisch?
+t Nein, ohne Fleisch. Möchten Sie auch ein Brötchen? | Nie, bez mięsa. Czy chce Pan też bułkę? | Ja, ein Brötchen mit Käse, bitte. | Zgódź się: bułka z serem. | Po „mit” rzeczownik bez rodzajnika: mit Käse.
 w finden | znajdować; uważać za (wie finden Sie… = jak panu się podoba…)
 w bisschen | troszkę
 w heiß | gorący
-t Wie finden Sie die Suppe? | Jak panu smakuje zupa? | Die Suppe ist sehr gut, aber ein bisschen heiß. | Pochwal zupę, ale zaznacz, że jest gorąca. | „Trochę” to ein bisschen.
-t Möchten Sie noch ein Bier? | Czy chce pan jeszcze piwo? | Nein, danke, ich trinke jetzt einen Kaffee. | Odmów i powiedz, że teraz pijesz kawę. | Kaffee jest męski, więc biernik: einen Kaffee.
-t Sind Sie Student? | Czy jest pan studentem? | Nein, ich bin Lehrer. | Zaprzecz: jesteś nauczycielem. | Po „sein” (bin) w niemieckim nie ma rodzajnika przy zawodzie: ich bin Lehrer.
+t Wie finden Sie die Suppe? | Jak Panu smakuje zupa? | Die Suppe ist sehr gut, aber ein bisschen heiß. | Pochwal zupę, ale zaznacz, że jest gorąca. | „Trochę” to ein bisschen.
+t Möchten Sie noch ein Bier? | Czy chce Pan jeszcze piwo? | Nein, danke, ich trinke jetzt einen Kaffee. | Odmów i powiedz, że teraz pijesz kawę. | Kaffee jest męski, więc biernik: einen Kaffee.
+t Sind Sie Student? | Czy jest Pan studentem? | Nein, ich bin Lehrer. | Zaprzecz: jesteś nauczycielem. | Po „sein” (bin) w niemieckim nie ma rodzajnika przy zawodzie: ich bin Lehrer.
 t Natürlich. Sonst noch etwas? | Oczywiście. Czy coś jeszcze? | Nein, danke, das ist alles. | Odmów: to wszystko. | „To wszystko” to das ist alles.
 e Einen Moment, bitte! | Chwileczkę!
 
@@ -188,17 +188,17 @@ w Ei
 w Schokoladenkuchen
 t Natürlich. Und zum Frühstück? Wir haben Brötchen mit Käse, Ei oder Schokoladenkuchen. | Oczywiście. A na śniadanie? Mamy bułki z serem, jajko albo ciasto czekoladowe. | Ich nehme ein Brötchen mit Ei, bitte. | Zamów bułkę z jajkiem. | Das Brötchen to nijakie: ein Brötchen; po „mit” bez rodzajnika: mit Ei.
 w empfehlen | polecać
-t Gern. Möchten Sie auch ein Glas Wasser? | Chętnie. Czy chce pan też szklankę wody? | Ja, gern. Was empfehlen Sie noch? | Zgódź się i zapytaj, co jeszcze polecają. | W pytaniu czasownik jest na drugim miejscu: was empfehlen Sie.
+t Gern. Möchten Sie auch ein Glas Wasser? | Chętnie. Czy chce Pan też szklankę wody? | Ja, gern. Was empfehlen Sie noch? | Zgódź się i zapytaj, co jeszcze polecają. | W pytaniu czasownik jest na drugim miejscu: was empfehlen Sie.
 w Apfelkuchen
 w Kuchen
 w Torte
 w Eis
 t Der Apfelkuchen ist heute sehr lecker. | Szarlotka jest dziś bardzo smaczna. | Gut, dann nehme ich ein Stück Apfelkuchen. | Zdecyduj się na kawałek szarlotki. | Po „dann” czasownik jest przed podmiotem: dann nehme ich.
-t Möchten Sie hier oder dort sitzen? | Czy chce pan siedzieć tutaj, czy tam? | Ich möchte dort sitzen, am Fenster. | Powiedz, że chcesz siedzieć przy oknie. | „Przy oknie” to am Fenster.
+t Möchten Sie hier oder dort sitzen? | Czy chce Pan siedzieć tutaj, czy tam? | Ich möchte dort sitzen, am Fenster. | Powiedz, że chcesz siedzieć przy oknie. | „Przy oknie” to am Fenster.
 t Hier ist alles. Guten Appetit! | Oto wszystko. Smacznego! | Danke, gleichfalls! | Odwzajemnij życzenia. | „Nawzajem” to gleichfalls.
 w schmeckt | smakuje (schmecken)
 w Ihnen | panu, pani (celownik)
-t Schmeckt es Ihnen? | Czy panu smakuje? | Ja, es schmeckt sehr gut. | Zgódź się: bardzo ci smakuje. | Podmiotem jest es, a nie ich: es schmeckt.
+t Schmeckt es Ihnen? | Czy Panu smakuje? | Ja, es schmeckt sehr gut. | Zgódź się: bardzo ci smakuje. | Podmiotem jest es, a nie ich: es schmeckt.
 w zahlen | płacić
 t Möchten Sie noch etwas? | Czy coś jeszcze? | Nein, danke. Ich möchte zahlen. | Odmów i powiedz, że chcesz zapłacić. | „Chcę zapłacić” to ich möchte zahlen (bezokolicznik na końcu).
 w zwölf | dwanaście
@@ -241,10 +241,10 @@ w zehn | dziesięć
 w neunzig | dziewięćdziesiąt
 w hundert | sto
 w Minute | minuta | die | die Minuten
-t Guten Tag! Wohin möchten Sie fahren? | Dzień dobry! Dokąd chce pan jechać? | Ich möchte eine Fahrkarte nach München, bitte. | Poproś o bilet do Monachium. | „Do” przed nazwą miasta to nach: nach München. | Eine Fahrkarte nach München, bitte.
+t Guten Tag! Wohin möchten Sie fahren? | Dzień dobry! Dokąd chce Pan jechać? | Ich möchte eine Fahrkarte nach München, bitte. | Poproś o bilet do Monachium. | „Do” przed nazwą miasta to nach: nach München. | Eine Fahrkarte nach München, bitte.
 t Einfach oder hin und zurück? | W jedną stronę czy tam i z powrotem? | Einfach, bitte. | Wybierz bilet w jedną stronę. | „Einfach” to „w jedną stronę”.
 t Der Zug fährt in zehn Minuten. Das macht neunzig Euro. | Pociąg odjeżdża za dziesięć minut. To będzie dziewięćdziesiąt euro. | Hier sind hundert Euro. | Podaj sto euro. | „Oto” przy liczbie mnogiej to hier sind.
-t Zehn Euro zurück. Hier ist Ihre Fahrkarte. | Dziesięć euro reszty. Oto pana bilet. | Danke schön! Auf Wiedersehen! | Podziękuj i pożegnaj się. | „Do widzenia” to Auf Wiedersehen.
+t Zehn Euro zurück. Hier ist Ihre Fahrkarte. | Dziesięć euro reszty. Oto Pana bilet. | Danke schön! Auf Wiedersehen! | Podziękuj i pożegnaj się. | „Do widzenia” to Auf Wiedersehen.
 e Gute Reise! | Szczęśliwej podróży!
 
 @level 2 | Peron | patience=5 typed=0.25 extra=3 hint=bank
@@ -264,7 +264,7 @@ w fahre | jadę (fahren)
 w zu | do, ku
 t Guten Tag! Kann ich Ihnen helfen? | Dzień dobry! Czy mogę pomóc? | Ja, wo fährt der Zug nach München? | Zgódź się i zapytaj, skąd odjeżdża pociąg do Monachium. | „Gdzie” to wo, a „jedzie” to fährt (od fahren).
 k Der Zug nach München fährt auf Gleis fünf. Der Zug nach Hamburg fährt auf Gleis drei. | Pociąg do Monachium jedzie z peronu piątego. Pociąg do Hamburga z peronu trzeciego. | Danke! Ich gehe zu Gleis fünf. | Danke! Ich gehe zu Gleis drei.; Danke! Ich fahre nach Hamburg. | Gleis drei to peron trzeci, a tam jedzie pociąg do Hamburga.; Chciałeś jechać do Monachium (nach München), nie do Hamburga.
-t Bitte schön! Haben Sie die Fahrkarte schon? | Proszę bardzo! Czy ma pan już bilet? | Ja, ich habe die Fahrkarte. | Potwierdź, że masz bilet. | Po „haben” rzeczownik w bierniku: die Fahrkarte (die zostaje bez zmian).
+t Bitte schön! Haben Sie die Fahrkarte schon? | Proszę bardzo! Czy ma Pan już bilet? | Ja, ich habe die Fahrkarte. | Potwierdź, że masz bilet. | Po „haben” rzeczownik w bierniku: die Fahrkarte (die zostaje bez zmian).
 e Dann schnell! Gute Reise! | W takim razie szybko! Szczęśliwej podróży!
 
 @level 3 | W pociągu | patience=4 typed=0.5 extra=3 hint=bank reward=25
@@ -281,7 +281,7 @@ w Platz | miejsce | der | die Plätze
 w frei | wolny
 w Fenster | okno | das | die Fenster
 t Guten Tag! Ihre Fahrkarte, bitte. | Dzień dobry! Pański bilet, proszę. | Hier ist meine Fahrkarte. | Pokaż bilet. | „Oto” przy liczbie pojedynczej to hier ist.
-o Danke. Möchten Sie am Fenster sitzen? | Dziękuję. Czy chce pan siedzieć przy oknie? | Ja, am Fenster, bitte. | Nein, danke, ich möchte kein Fenster.; Ja, ich möchte bezahlen. | Konduktor pyta o miejsce, nie o płacenie.; Przy oknie to am Fenster, a nie „kein Fenster”.
+o Danke. Möchten Sie am Fenster sitzen? | Dziękuję. Czy chce Pan siedzieć przy oknie? | Ja, am Fenster, bitte. | Nein, danke, ich möchte kein Fenster.; Ja, ich möchte bezahlen. | Konduktor pyta o miejsce, nie o płacenie.; Przy oknie to am Fenster, a nie „kein Fenster”.
 t Dieser Platz ist frei. Der Zug hat zehn Minuten Verspätung. | To miejsce jest wolne. Pociąg ma dziesięć minut spóźnienia. | Das ist kein Problem. Danke! | Powiedz, że to nie problem, i podziękuj. | „Kein Problem” to „żaden problem”.
 e Gute Reise nach München! | Szczęśliwej podróży do Monachium!
 
@@ -313,12 +313,12 @@ t Guten Tag, junger Mann! Das Wetter ist heute schön, nicht wahr? | Dzień dobr
 w Gerda | Gerda (imię)
 w heiße | nazywam się (heißen)
 w Paul | Paweł (imię)
-t Wie heißen Sie? Ich bin Gerda. | Jak się pan nazywa? Ja jestem Gerda. | Ich heiße Paul. | Powiedz, jak się nazywasz. | „Nazywam się” to ich heiße. | Ich bin Paul.
+t Wie heißen Sie? Ich bin Gerda. | Jak się Pan nazywa? Ja jestem Gerda. | Ich heiße Paul. | Powiedz, jak się nazywasz. | „Nazywam się” to ich heiße. | Ich bin Paul.
 w schöner | ładne (schön)
 w wohne | mieszkam (wohnen)
-t Paul! Das ist ein schöner Name. Wohnen Sie hier? | Paul! To ładne imię. Mieszka pan tutaj? | Nein, ich wohne nicht hier. Ich komme aus Polen. | Zaprzecz i powiedz, że jesteś z Polski. | „Nie” przed czasownikiem to nein, a „nicht” zaprzecza czasownikowi: ich wohne nicht hier.
+t Paul! Das ist ein schöner Name. Wohnen Sie hier? | Paul! To ładne imię. Mieszka Pan tutaj? | Nein, ich wohne nicht hier. Ich komme aus Polen. | Zaprzecz i powiedz, że jesteś z Polski. | „Nie” przed czasownikiem to nein, a „nicht” zaprzecza czasownikowi: ich wohne nicht hier.
 w sich | się
-t Aus Polen! Das ist weit. Möchten Sie sich setzen? | Z Polski! To daleko. Czy chce się pan przysiąść? | Ja, gern. Danke schön! | Zgódź się i podziękuj. | „Chętnie” to gern.
+t Aus Polen! Das ist weit. Möchten Sie sich setzen? | Z Polski! To daleko. Czy chce się Pan przysiąść? | Ja, gern. Danke schön! | Zgódź się i podziękuj. | „Chętnie” to gern.
 e Bitte schön! Hier ist Platz. | Proszę bardzo! Tu jest miejsce.
 
 @level 2 | Wnuk i kaczki | patience=3 endless=yes typed=0.25 extra=3 hint=bank
@@ -339,12 +339,12 @@ w sechs | sześć
 t Das ist mein Enkel Max. Er ist sechs Jahre alt. | To mój wnuk Max. Ma sześć lat. | Er ist sehr nett. | Pochwal wnuka: powiedz, że jest bardzo miły. | „On jest” to er ist. | Max ist sehr nett.
 w füttert | karmi (füttern)
 w Enten | kaczki
-t Max füttert die Enten. Haben Sie auch Kinder? | Max karmi kaczki. Czy ma pan też dzieci? | Nein, ich habe keine Kinder. | Powiedz, że nie masz dzieci. | „Nie mam dzieci” to ich habe keine Kinder (kein przy liczbie mnogiej: keine).
+t Max füttert die Enten. Haben Sie auch Kinder? | Max karmi kaczki. Czy ma Pan też dzieci? | Nein, ich habe keine Kinder. | Powiedz, że nie masz dzieci. | „Nie mam dzieci” to ich habe keine Kinder (kein przy liczbie mnogiej: keine).
 w selbst | sam, osobiście
 w gebacken | upieczony (backen)
-t Möchten Sie ein Stück Kuchen? Ich habe ihn selbst gebacken. | Chce pan kawałek ciasta? Sam go upiekłam. | Ja, gern. Der Kuchen ist sehr lecker! | Przyjmij ciasto i pochwal je. | Kuchen jest rodzaju męskiego: der Kuchen.
+t Möchten Sie ein Stück Kuchen? Ich habe ihn selbst gebacken. | Chce Pan kawałek ciasta? Sam go upiekłam. | Ja, gern. Der Kuchen ist sehr lecker! | Przyjmij ciasto i pochwal je. | Kuchen jest rodzaju męskiego: der Kuchen.
 w Ach | ach
-t Und wie alt sind Sie? | A ile pan ma lat? | Ich bin dreißig Jahre alt. | Powiedz, że masz trzydzieści lat. | „Mam lat” po niemiecku to ich bin … Jahre alt (dosłownie „jestem … lat stary”).
+t Und wie alt sind Sie? | A ile Pan ma lat? | Ich bin dreißig Jahre alt. | Powiedz, że masz trzydzieści lat. | „Mam lat” po niemiecku to ich bin … Jahre alt (dosłownie „jestem … lat stary”).
 e Ach, so jung! | Ach, tak młodo!
 
 @level 3 | Zaproszenie | patience=3 endless=yes typed=0.5 extra=3 hint=bank
@@ -362,15 +362,15 @@ w tragen | nosić
 w kochen | gotować
 w jeden | każdy (jeden Tag: codziennie)
 w wirklich | naprawdę
-t Wissen Sie, ich bin jeden Tag im Park. Es ist so schön hier. | Wie pan, jestem w parku codziennie. Jest tu tak ładnie. | Ja, der Park ist wirklich schön. | Zgódź się, że park jest piękny. | „Naprawdę” to wirklich. | Ja, der Park ist sehr schön.
+t Wissen Sie, ich bin jeden Tag im Park. Es ist so schön hier. | Wie Pan, jestem w parku codziennie. Jest tu tak ładnie. | Ja, der Park ist wirklich schön. | Zgódź się, że park jest piękny. | „Naprawdę” to wirklich. | Ja, der Park ist sehr schön.
 w koche | gotuję, parzę (kochen)
-t Am Sonntag koche ich Kaffee. Möchten Sie kommen? | W niedzielę parzę kawę. Chce pan przyjść? | Ja, gern. Wann? | Zgódź się i zapytaj, kiedy. | „Kiedy?” to wann?
+t Am Sonntag koche ich Kaffee. Möchten Sie kommen? | W niedzielę parzę kawę. Chce Pan przyjść? | Ja, gern. Wann? | Zgódź się i zapytaj, kiedy. | „Kiedy?” to wann?
 w um | o (godzinie)
 w trage | noszę (tragen)
-t Um drei Uhr. Meine Tasche ist schwer. Können Sie mir helfen? | O trzeciej. Moja torba jest ciężka. Czy może mi pan pomóc? | Ja, natürlich. Ich trage die Tasche. | Zgódź się i zaproponuj, że poniesiesz torbę. | „Noszę” to ich trage (od tragen).
+t Um drei Uhr. Meine Tasche ist schwer. Können Sie mir helfen? | O trzeciej. Moja torba jest ciężka. Czy może mi Pan pomóc? | Ja, natürlich. Ich trage die Tasche. | Zgódź się i zaproponuj, że poniesiesz torbę. | „Noszę” to ich trage (od tragen).
 w guter | dobry (m.)
 w bis | do (jakiegoś czasu)
-t Wie nett! Sie sind ein guter Mensch. | Jak miło! Jest pan dobrym człowiekiem. | Danke schön! Bis Sonntag! | Podziękuj i pożegnaj się do niedzieli. | „Do niedzieli” to bis Sonntag.
+t Wie nett! Sie sind ein guter Mensch. | Jak miło! Jest Pan dobrym człowiekiem. | Danke schön! Bis Sonntag! | Podziękuj i pożegnaj się do niedzieli. | „Do niedzieli” to bis Sonntag.
 e Bis Sonntag! Auf Wiedersehen! | Do niedzieli! Do widzenia!
 
 
@@ -400,21 +400,21 @@ w Pst | cicho! (wykrzyknik)
 w heißen | nazywać się
 w heiße | nazywam się (heißen)
 w Kaufmann | kupiec, handlowiec | der | die Kaufleute
-k Und der Sommer kommt spät. Pst! Hier hören Leute zu. Wie heißen Sie? | A lato przychodzi późno. Cicho! Tu ludzie słuchają. Jak się pan nazywa? | Ich heiße Brandt. Ich bin Kaufmann. | Ich heiße Falke. Ich bin Agent.; Ich heiße Brandt. Ich bin Agent. | Falke to twoje imię agenta, a ludzie słuchają.; Brandt się zgadza, ale „Agent” zdradza przykrywkę.
+k Und der Sommer kommt spät. Pst! Hier hören Leute zu. Wie heißen Sie? | A lato przychodzi późno. Cicho! Tu ludzie słuchają. Jak się Pan nazywa? | Ich heiße Brandt. Ich bin Kaufmann. | Ich heiße Falke. Ich bin Agent.; Ich heiße Brandt. Ich bin Agent. | Falke to twoje imię agenta, a ludzie słuchają.; Brandt się zgadza, ale „Agent” zdradza przykrywkę.
 w Schatten | cień; ogon, ktoś, kto śledzi | der | die Schatten
-k Gut. Haben Sie einen Schatten? | Dobrze. Czy ma pan ogon? | Nein, ich habe keinen Schatten. | Ja, ich habe einen Schatten.; Nein, ich habe keine Zeit. | „Schatten” (cień) to tu ktoś, kto cię śledzi, więc mówisz, że nikt cię nie śledzi.; Kontakt pyta o cień (śledzenie), nie o czas.
+k Gut. Haben Sie einen Schatten? | Dobrze. Czy ma Pan ogon? | Nein, ich habe keinen Schatten. | Ja, ich habe einen Schatten.; Nein, ich habe keine Zeit. | „Schatten” (cień) to tu ktoś, kto cię śledzi, więc mówisz, że nikt cię nie śledzi.; Kontakt pyta o cień (śledzenie), nie o czas.
 w Auftrag | zadanie, zlecenie | der | die Aufträge
 w Botschaft | ambasada; wiadomość | die | die Botschaften
 w um | o (godzinie), wokół
 w acht | osiem
 w verstanden | zrozumiany; „zrozumiałem” (verstehen)
-t Hier ist Ihr Auftrag. Morgen um acht gehen Sie in die Botschaft. Dort ist eine Party. | Oto pana zadanie. Jutro o ósmej idzie pan do ambasady. Jest tam przyjęcie. | Ich habe verstanden. Morgen um acht gehe ich in die Botschaft. | Powiedz, że zrozumiałeś: jutro o ósmej idziesz do ambasady. | „Auftrag” to zadanie, a „um acht” znaczy „o ósmej”.
+t Hier ist Ihr Auftrag. Morgen um acht gehen Sie in die Botschaft. Dort ist eine Party. | Oto Pana zadanie. Jutro o ósmej idzie Pan do ambasady. Jest tam przyjęcie. | Ich habe verstanden. Morgen um acht gehe ich in die Botschaft. | Powiedz, że zrozumiałeś: jutro o ósmej idziesz do ambasady. | „Auftrag” to zadanie, a „um acht” znaczy „o ósmej”.
 w Nachtigall | słowik | die | die Nachtigallen
 w Passwort | hasło (do wejścia, do konta) | das | die Passwörter
 t Das Passwort für die Party ist Nachtigall. Wie ist das Passwort? | Hasło na przyjęcie to Nachtigall. Jakie jest hasło? | Das Passwort ist Nachtigall. | Powtórz hasło na przyjęcie. | Hasło wejściowe to Passwort, a „Nachtigall” to słowiczek.
 w kenne | znam (kennen)
 w Herr | pan (przed nazwiskiem) | der | die Herren
-d Pst! Ein Polizist kommt. Kennen Sie mich? | Cicho! Idzie policjant. Czy pan mnie zna? | Nein, ich kenne Sie nicht. | Zaprzecz, że znasz tego człowieka. | Nie możesz zdradzić, że znasz kontakt. | Nein, ich kenne Sie nicht!
+d Pst! Ein Polizist kommt. Kennen Sie mich? | Cicho! Idzie policjant. Czy Pan mnie zna? | Nein, ich kenne Sie nicht. | Zaprzecz, że znasz tego człowieka. | Nie możesz zdradzić, że znasz kontakt. | Nein, ich kenne Sie nicht!
 e Gute Nacht, Herr Brandt. | Dobranoc, panie Brandt.
 
 @level 2 | Przyjęcie w ambasadzie | patience=2 typed=0.2 extra=3 hint=bank
@@ -430,19 +430,19 @@ t Guten Abend und willkommen in der Botschaft! Wie ist das Passwort? | Dobry wie
 w Waffe | broń | die | die Waffen
 w dabei | przy sobie, przy tym
 w Akte | teczka, akta | die | die Akten
-k Danke. Ich muss etwas fragen. Haben Sie eine Waffe dabei? | Dziękuję. Muszę o coś zapytać. Czy ma pan przy sobie broń? | Nein, ich habe keine Waffe. | Ja, ich habe eine Waffe.; Nein, ich habe keine Akte. | Do przyjęcia nie wchodzi się z bronią.; Pytanie dotyczy broni (Waffe), nie teczki.
+k Danke. Ich muss etwas fragen. Haben Sie eine Waffe dabei? | Dziękuję. Muszę o coś zapytać. Czy ma Pan przy sobie broń? | Nein, ich habe keine Waffe. | Ja, ich habe eine Waffe.; Nein, ich habe keine Akte. | Do przyjęcia nie wchodzi się z bronią.; Pytanie dotyczy broni (Waffe), nie teczki.
 w wen | kogo
 w arbeite | pracuję (arbeiten)
 w Zentrale | centrala | die | die Zentralen
 w Berger | Berger (nazwisko pani z ambasady)
-k Gut. Für wen arbeiten Sie? | Dobrze. Dla kogo pan pracuje? | Ich arbeite für die Firma Brandt. | Ich arbeite für die Zentrale.; Ich arbeite für Frau Berger. | „Zentrale” to twoja centrala, tajna, a nie firma.; Pani Berger to sekretarka z ambasady.
+k Gut. Für wen arbeiten Sie? | Dobrze. Dla kogo Pan pracuje? | Ich arbeite für die Firma Brandt. | Ich arbeite für die Zentrale.; Ich arbeite für Frau Berger. | „Zentrale” to twoja centrala, tajna, a nie firma.; Pani Berger to sekretarka z ambasady.
 w verkauft | sprzedaje (verkaufen)
 w Spielzeug | zabawki | das | –
-d Was verkauft Ihre Firma? | Co sprzedaje pana firma? | Meine Firma verkauft Spielzeug. | Powiedz, co sprzedaje twoja „firma” (przykrywka). | Twoja przykrywka to handel zabawkami. | Meine Firma verkauft Spielzeug!
+d Was verkauft Ihre Firma? | Co sprzedaje Pana firma? | Meine Firma verkauft Spielzeug. | Powiedz, co sprzedaje twoja „firma” (przykrywka). | Twoja przykrywka to handel zabawkami. | Meine Firma verkauft Spielzeug!
 w heißt | nazywa się (heißen)
-k Wo ist Ihre Firma? | Gdzie jest pana firma? | Meine Firma ist in Hamburg. | Meine Firma verkauft Spielzeug.; Meine Firma heißt Brandt und Sohn. | „Wo” znaczy „gdzie”, a nie „co sprzedaje”.; „Wo” pyta o miejsce, nie o nazwę.
+k Wo ist Ihre Firma? | Gdzie jest Pana firma? | Meine Firma ist in Hamburg. | Meine Firma verkauft Spielzeug.; Meine Firma heißt Brandt und Sohn. | „Wo” znaczy „gdzie”, a nie „co sprzedaje”.; „Wo” pyta o miejsce, nie o nazwę.
 w Toilette | toaleta | die | die Toiletten
-t Wie interessant! Möchten Sie etwas essen? | Jak ciekawie! Czy chce pan coś zjeść? | Nein, danke. Wo ist die Toilette, bitte? | Odmów i zapytaj o toaletę (to pretekst). | Wo = gdzie, więc „Wo ist die Toilette?”.
+t Wie interessant! Möchten Sie etwas essen? | Jak ciekawie! Czy chce Pan coś zjeść? | Nein, danke. Wo ist die Toilette, bitte? | Odmów i zapytaj o toaletę (to pretekst). | Wo = gdzie, więc „Wo ist die Toilette?”.
 w privat | prywatny
 k Die Toilette ist links. Das Büro rechts ist privat. | Toaleta jest po lewej. Gabinet po prawej jest prywatny. | Danke, ich gehe nach links. | Danke, ich gehe nach rechts.; Danke, das Büro ist schön. | Gabinet po prawej jest prywatny, a ty idziesz do toalety po lewej.; Nie wolno ci mówić, że chcesz iść do gabinetu.
 e Dann viel Spaß, Herr Brandt! | W takim razie dobrej zabawy, panie Brandt!
@@ -457,27 +457,27 @@ partial Kroll w końcu cię puszcza, ale zapisuje twoje nazwisko w notesie.
 fail Kroll chwyta cię za ramię: „Kommen Sie mit!” Misja skończona, zanim naprawdę się zaczęła.
 w Halt | stój!
 w suche | szukam (suchen)
-t Halt! Wer sind Sie? Was machen Sie hier? | Stać! Kim pan jest? Co pan tu robi? | Ich bin Gast. Ich suche die Toilette. | Powiedz, że jesteś gościem i szukasz toalety. | Das Verb „suchen” znaczy „szukać”. | Ich bin ein Gast. Ich suche die Toilette.
+t Halt! Wer sind Sie? Was machen Sie hier? | Stać! Kim Pan jest? Co Pan tu robi? | Ich bin Gast. Ich suche die Toilette. | Powiedz, że jesteś gościem i szukasz toalety. | Das Verb „suchen” znaczy „szukać”. | Ich bin ein Gast. Ich suche die Toilette.
 w waren | byliście, był pan (sein w czasie przeszłym)
 w war | byłem, byłam (sein)
-k Die Toilette ist dort. Waren Sie im Büro? | Toaleta jest tam. Czy był pan w gabinecie? | Nein, ich war nicht im Büro. | Ja, ich war im Büro.; Nein, ich war nicht auf der Toilette. | Przyznanie się to koniec przykrywki.; Pytanie dotyczy gabinetu (Büro), nie toalety.
+k Die Toilette ist dort. Waren Sie im Büro? | Toaleta jest tam. Czy był Pan w gabinecie? | Nein, ich war nicht im Büro. | Ja, ich war im Büro.; Nein, ich war nicht auf der Toilette. | Przyznanie się to koniec przykrywki.; Pytanie dotyczy gabinetu (Büro), nie toalety.
 w Handy | telefon komórkowy | das | die Handys
-k Was haben Sie in der Tasche? | Co ma pan w torbie? | In der Tasche habe ich nur Geld und mein Handy. | In der Tasche habe ich eine Akte.; Ich habe eine Tasche. | Teczka w torbie zdradziłaby cię od razu.; Ochroniarz pyta, co jest w torbie, a nie czy masz torbę.
+k Was haben Sie in der Tasche? | Co ma Pan w torbie? | In der Tasche habe ich nur Geld und mein Handy. | In der Tasche habe ich eine Akte.; Ich habe eine Tasche. | Teczka w torbie zdradziłaby cię od razu.; Ochroniarz pyta, co jest w torbie, a nie czy masz torbę.
 w wohne | mieszkam (wohnen)
-d Wie heißen Sie, und wo wohnen Sie? | Jak się pan nazywa i gdzie pan mieszka? | Ich heiße Brandt und wohne in Hamburg. | Podaj nazwisko z przykrywki i miasto, w którym mieszkasz (Hamburg). | Brandt i Hamburg to twoja przykrywka. | Ich heiße Brandt und ich wohne in Hamburg.
+d Wie heißen Sie, und wo wohnen Sie? | Jak się Pan nazywa i gdzie Pan mieszka? | Ich heiße Brandt und wohne in Hamburg. | Podaj nazwisko z przykrywki i miasto, w którym mieszkasz (Hamburg). | Brandt i Hamburg to twoja przykrywka. | Ich heiße Brandt und ich wohne in Hamburg.
 w Geheimnis | tajemnica | das | die Geheimnisse
-k Sie sind Agent, nicht wahr? | Jest pan agentem, prawda? | Nein, ich bin kein Agent. Ich bin Kaufmann. | Ja, aber das ist ein Geheimnis.; Ja, ich arbeite für die Zentrale. | Nawet żartem nie przyznawaj się do tajemnicy (Geheimnis).; Przyznanie się do centrali to koniec.
+k Sie sind Agent, nicht wahr? | Jest Pan agentem, prawda? | Nein, ich bin kein Agent. Ich bin Kaufmann. | Ja, aber das ist ein Geheimnis.; Ja, ich arbeite für die Zentrale. | Nawet żartem nie przyznawaj się do tajemnicy (Geheimnis).; Przyznanie się do centrali to koniec.
 w rufe | wołam, dzwonię po (rufen)
 w kennt | zna (kennen)
 w alle | wszyscy
 w Gäste | goście (liczba mnoga od Gast)
-t Ich rufe Frau Berger. Sie kennt alle Gäste. Kennt sie Sie? | Zadzwonię po panią Berger. Zna wszystkich gości. Czy zna pana? | Ja, Frau Berger kennt mich. Ich bin ein Gast. | Powiedz, że pani Berger cię zna. | „Kennt mich” znaczy „zna mnie”. | Ja, Frau Berger kennt mich.
+t Ich rufe Frau Berger. Sie kennt alle Gäste. Kennt sie Sie? | Zadzwonię po panią Berger. Zna wszystkich gości. Czy zna Pana? | Ja, Frau Berger kennt mich. Ich bin ein Gast. | Powiedz, że pani Berger cię zna. | „Kennt mich” znaczy „zna mnie”. | Ja, Frau Berger kennt mich.
 w jemanden | kogoś
 w gesehen | widziany; „widziałem” (sehen)
 w niemanden | nikogo (niemand)
-d Ein Agent ist in der Botschaft. Haben Sie jemanden gesehen? | Agent jest w ambasadzie. Czy pan kogoś widział? | Nein, ich habe niemanden gesehen. | Zaprzecz, że kogokolwiek widziałeś. | Niemand = nikt. Ty sam jesteś tym agentem. | Nein, ich habe niemanden gesehen!
+d Ein Agent ist in der Botschaft. Haben Sie jemanden gesehen? | Agent jest w ambasadzie. Czy Pan kogoś widział? | Nein, ich habe niemanden gesehen. | Zaprzecz, że kogokolwiek widziałeś. | Niemand = nikt. Ty sam jesteś tym agentem. | Nein, ich habe niemanden gesehen!
 w Na | no (np. „Na gut” – no dobrze)
-e Na gut. Gehen Sie nach Hause, Herr Brandt. | No dobrze. Niech pan idzie do domu, panie Brandt.
+e Na gut. Gehen Sie nach Hause, Herr Brandt. | No dobrze. Niech Pan idzie do domu, panie Brandt.
 
 @level 4 | Walizka i ucieczka | patience=1 typed=0.5 extra=3 hint=letters reward=30
 desc Rozdział 4: Wymiana walizki
@@ -505,7 +505,7 @@ d Halt! Geben Sie mir den Koffer! Ich habe eine Waffe! | Stać! Proszę dać mi 
 w Boot | łódź, statek | das | die Boote
 w gleich | zaraz
 w ab | (część czasownika: fährt ab – odjeżdża)
-t Schnell! Das Boot fährt gleich ab. Haben Sie den Koffer noch? | Szybko! Statek zaraz odpływa. Czy ma pan jeszcze walizkę? | Ja, ich habe den Koffer noch. | Potwierdź, że masz jeszcze walizkę. | „Noch” znaczy „jeszcze”. | Ja, ich habe ihn noch.
+t Schnell! Das Boot fährt gleich ab. Haben Sie den Koffer noch? | Szybko! Statek zaraz odpływa. Czy ma Pan jeszcze walizkę? | Ja, ich habe den Koffer noch. | Potwierdź, że masz jeszcze walizkę. | „Noch” znaczy „jeszcze”. | Ja, ich habe ihn noch.
 w gemacht | zrobiony (gut gemacht – dobra robota)
 w Mission | misja | die | die Missionen
 e Gut gemacht, Falke! Die Mission ist zu Ende. Auf Wiedersehen! | Dobra robota, Falke! Misja zakończona. Do widzenia!
@@ -721,15 +721,15 @@ fail Wieś ma dość. Frau Schulz mówi: „Wir wählen jemand anderen.” Końc
 w Wähler | wyborca | der | die Wähler
 w Ortsvorsteher | sołtys | der | die Ortsvorsteher
 w werden | zostać, stawać się
-t Guten Abend! Sie wollen Ortsvorsteher werden? | Dobry wieczór! Chce pan zostać sołtysem? | Ja, ich möchte Ortsvorsteher werden. | Powiedz, że chcesz zostać sołtysem. | „Werden” (zostać) stoi na końcu zdania: ich möchte … werden.
+t Guten Abend! Sie wollen Ortsvorsteher werden? | Dobry wieczór! Chce Pan zostać sołtysem? | Ja, ich möchte Ortsvorsteher werden. | Powiedz, że chcesz zostać sołtysem. | „Werden” (zostać) stoi na końcu zdania: ich möchte … werden.
 w ehrlich | uczciwy, szczery
 w immer | zawsze
-t Sind Sie ehrlich? | Czy jest pan uczciwy? | Ja, ich bin immer ehrlich. | Zapewnij, że jesteś zawsze uczciwy. | „Zawsze” to immer; ehrlich po „bin” nie zmienia końcówki. | | gain=1
+t Sind Sie ehrlich? | Czy jest Pan uczciwy? | Ja, ich bin immer ehrlich. | Zapewnij, że jesteś zawsze uczciwy. | „Zawsze” to immer; ehrlich po „bin” nie zmienia końcówki. | | gain=1
 w Straße | ulica, droga | die | die Straßen
 w kaputt | zepsuty
 w reparieren | naprawiać
 w repariere | naprawiam (reparieren)
-t Die Straße ist kaputt. Was machen Sie? | Droga jest zepsuta. Co pan zrobi? | Ich repariere die Straße. | Obiecaj, że naprawisz drogę. | Czasownik reparieren w 1. os. liczby pojedynczej: ich repariere. | | gain=1
+t Die Straße ist kaputt. Was machen Sie? | Droga jest zepsuta. Co Pan zrobi? | Ich repariere die Straße. | Obiecaj, że naprawisz drogę. | Czasownik reparieren w 1. os. liczby pojedynczej: ich repariere. | | gain=1
 w Umschlag | koperta | der | die Umschläge
 w gesehen | widział (od sehen)
 w Lüge | kłamstwo | die | die Lügen
@@ -739,7 +739,7 @@ w kenne | znam (kennen)
 w Herr | pan (przed nazwiskiem) | der | die Herren
 w gegeben | dał, dałem (od geben)
 w Herrn | pana (biernik od Herr)
-t Herr Vogel hat Ihnen einen Umschlag gegeben! Das hat jemand gesehen! | Pan Vogel dał panu kopertę! Ktoś to widział! | Das ist eine Lüge! Ich kenne Herrn Vogel kaum. | Zaprzecz: to kłamstwo, ledwo znasz pana Vogla. | Po „kennen” biernik: Herr → Herrn. „Kaum” znaczy „ledwo”. | Das ist eine Lüge! Ich kenne Herrn Vogel kaum. | shift=-2 loss=2
+t Herr Vogel hat Ihnen einen Umschlag gegeben! Das hat jemand gesehen! | Pan Vogel dał Panu kopertę! Ktoś to widział! | Das ist eine Lüge! Ich kenne Herrn Vogel kaum. | Zaprzecz: to kłamstwo, ledwo znasz pana Vogla. | Po „kennen” biernik: Herr → Herrn. „Kaum” znaczy „ledwo”. | Das ist eine Lüge! Ich kenne Herrn Vogel kaum. | shift=-2 loss=2
 w vergessen | zapomnieć
 w lange | długo
 w her | temu
@@ -748,10 +748,10 @@ t Das ist schon lange her. Wir haben das vergessen. | No cóż… to było dawno
 w Schulden | długi | die | –
 w Gemeinde | gmina | die | die Gemeinden
 w spare | oszczędzam (sparen)
-o Wir haben viele Schulden in der Gemeinde. Was machen Sie? | Mamy w gminie wiele długów. Co pan zrobi? | Ich spare Geld und bin ehrlich. | Ich nehme mehr Geld.; Ich weiß es nicht. | Dobra odpowiedź obiecuje oszczędzanie i uczciwość.; Polityk, który mówi „zabiorę więcej pieniędzy”, nie brzmi wiarygodnie.; „Nie wiem” nie przekona wyborców. | gain=1
-t Werden Sie ehrlich zu uns sein? | Czy będzie pan wobec nas uczciwy? | Ja, ich bin immer ehrlich zu Ihnen. | Obiecaj uczciwość wobec wyborców. | „Zu Ihnen” = do państwa, wobec państwa (celownik po „zu”). | | gain=1
+o Wir haben viele Schulden in der Gemeinde. Was machen Sie? | Mamy w gminie wiele długów. Co Pan zrobi? | Ich spare Geld und bin ehrlich. | Ich nehme mehr Geld.; Ich weiß es nicht. | Dobra odpowiedź obiecuje oszczędzanie i uczciwość.; Polityk, który mówi „zabiorę więcej pieniędzy”, nie brzmi wiarygodnie.; „Nie wiem” nie przekona wyborców. | gain=1
+t Werden Sie ehrlich zu uns sein? | Czy będzie Pan wobec nas uczciwy? | Ja, ich bin immer ehrlich zu Ihnen. | Obiecaj uczciwość wobec wyborców. | „Zu Ihnen” = do państwa, wobec państwa (celownik po „zu”). | | gain=1
 w Willkommen | witamy, witaj
-e Dann wählen wir Sie! Willkommen, Herr Ortsvorsteher! | Wybieramy więc pana! Witamy, panie sołtysie!
+e Dann wählen wir Sie! Willkommen, Herr Ortsvorsteher! | Wybieramy więc Pana! Witamy, Panie sołtysie!
 
 @level 2 | Gemeinderat | patience=4 cap=6 typed=0.2 extra=2 hint=bank
 desc Szczebel 2: radny miejski
@@ -764,37 +764,37 @@ fail Wywiad ląduje w gazecie pod tytułem „Der Rat und der Umschlag”. Nikt 
 w Gemeinderat | radny miejski | der | die Gemeinderäte
 w Journalistin | dziennikarka | die | die Journalistinnen
 w Interview | wywiad | das | die Interviews
-t Guten Tag, ich bin Journalistin. Sie wollen Gemeinderat werden? | Dzień dobry, jestem dziennikarką. Chce pan zostać radnym? | Ja, ich möchte Gemeinderat werden. | Potwierdź, że chcesz zostać radnym. | „Gemeinderat” to radny; po „werden” bez rodzajnika. | | gain=1
+t Guten Tag, ich bin Journalistin. Sie wollen Gemeinderat werden? | Dzień dobry, jestem dziennikarką. Chce Pan zostać radnym? | Ja, ich möchte Gemeinderat werden. | Potwierdź, że chcesz zostać radnym. | „Gemeinderat” to radny; po „werden” bez rodzajnika. | | gain=1
 w Geschäftsmann | biznesmen | der | die Geschäftsleute
 w Freund | przyjaciel | der | die Freunde
 w Bekannter | znajomy | der | die Bekannten
-t Sie kennen den Geschäftsmann Herrn Vogel. Ist er Ihr Freund? | Zna pan biznesmena pana Vogla. Czy to pański przyjaciel? | Nein, er ist nur ein Bekannter. | Zaprzecz: to tylko znajomy. | „Nur” = tylko; „ein Bekannter” = znajomy. | | gain=1
+t Sie kennen den Geschäftsmann Herrn Vogel. Ist er Ihr Freund? | Zna Pan biznesmena pana Vogla. Czy to pański przyjaciel? | Nein, er ist nur ein Bekannter. | Zaprzecz: to tylko znajomy. | „Nur” = tylko; „ein Bekannter” = znajomy. | | gain=1
 w Auto | samochód | das | die Autos
 w neu | nowy
 w gekauft | kupił/kupiłem (od kaufen)
 w Geld | pieniądze | das | –
-t Sie haben ein neues Auto. Woher haben Sie das Geld? | Ma pan nowy samochód. Skąd ma pan pieniądze? | Ich habe es ehrlich gekauft. | Powiedz, że kupiłeś go uczciwie. | Perfekt: ich habe … gekauft (imiesłów na końcu). | Ich habe das Auto ehrlich gekauft.
+t Sie haben ein neues Auto. Woher haben Sie das Geld? | Ma Pan nowy samochód. Skąd ma Pan pieniądze? | Ich habe es ehrlich gekauft. | Powiedz, że kupiłeś go uczciwie. | Perfekt: ich habe … gekauft (imiesłów na końcu). | Ich habe das Auto ehrlich gekauft.
 w genommen | wziąłem (od nehmen)
 w Bestechungsgeld | łapówka | das | –
 w nie | nigdy
-t Haben Sie Bestechungsgeld genommen? | Czy brał pan łapówki? | Nein, ich habe nie Bestechungsgeld genommen. | Zaprzecz, że kiedykolwiek brałeś łapówki. | Perfekt zaprzeczenia: ich habe nie … genommen. Czasownik „genommen” na końcu. | Ich habe nie Bestechungsgeld genommen. | loss=2
+t Haben Sie Bestechungsgeld genommen? | Czy brał Pan łapówki? | Nein, ich habe nie Bestechungsgeld genommen. | Zaprzecz, że kiedykolwiek brałeś łapówki. | Perfekt zaprzeczenia: ich habe nie … genommen. Czasownik „genommen” na końcu. | Ich habe nie Bestechungsgeld genommen. | loss=2
 w Leute | ludzie | die | –
 w Ritter | Ritter (nazwisko dziennikarki)
 w zeigt | pokazuje (zeigen)
 w diese | te, ci
-t Frau Ritter zeigt ein Foto. Dort sind Sie, Herr Vogel und ein Umschlag. | Frau Ritter pokazuje zdjęcie. Widać na nim pana, pana Vogla i kopertę. | Ich kenne diese Leute nicht. | Powiedz, że nie znasz tych ludzi. | „Diese Leute” = ci ludzie; „nicht” stoi na końcu. | | shift=-2
+t Frau Ritter zeigt ein Foto. Dort sind Sie, Herr Vogel und ein Umschlag. | Frau Ritter pokazuje zdjęcie. Widać na nim Pana, pana Vogla i kopertę. | Ich kenne diese Leute nicht. | Powiedz, że nie znasz tych ludzi. | „Diese Leute” = ci ludzie; „nicht” stoi na końcu. | | shift=-2
 t Das Foto ist alt. Die Wähler vergessen das bald. | Zdjęcie jest stare. Wyborcy szybko o tym zapomną. | Das Foto ist nicht wichtig. | Zlekceważ zdjęcie: nie jest ważne. | „Wichtig” = ważny; zaprzeczenie przymiotnika: nicht wichtig. | | shift=+2
 w Zeuge | świadek | der | die Zeugen
 w Zeugin | świadkini | die | die Zeuginnen
 w sagt | mówi (sagen)
 w lügt | kłamie (lügen)
 w recht | racja (recht haben = mieć rację)
-o Eine Zeugin sagt, Sie haben Geld genommen. | Świadkini twierdzi, że brał pan pieniądze. | Das ist nicht wahr. Die Zeugin lügt. | Ja, die Zeugin hat recht.; Ich bin ein Zeuge. | Zaprzeczasz i nazywasz świadka kłamcą (lügt).; Przyznajesz się, więc przegrywasz. Zeuge to „świadek” (mężczyzna).; Zeuge/Zeugin to świadek, a ty nim nie jesteś. | gain=1
+o Eine Zeugin sagt, Sie haben Geld genommen. | Świadkini twierdzi, że brał Pan pieniądze. | Das ist nicht wahr. Die Zeugin lügt. | Ja, die Zeugin hat recht.; Ich bin ein Zeuge. | Zaprzeczasz i nazywasz świadka kłamcą (lügt).; Przyznajesz się, więc przegrywasz. Zeuge to „świadek” (mężczyzna).; Zeuge/Zeugin to świadek, a ty nim nie jesteś. | gain=1
 w unschuldig | niewinny
-t Danke für das Interview. Haben Sie noch etwas zu sagen? | Dziękuję za wywiad. Czy chce pan coś jeszcze dodać? | Ja, ich bin unschuldig. | Powiedz na koniec, że jesteś niewinny. | „Unschuldig” = niewinny. | | gain=1
+t Danke für das Interview. Haben Sie noch etwas zu sagen? | Dziękuję za wywiad. Czy chce Pan coś jeszcze dodać? | Ja, ich bin unschuldig. | Powiedz na koniec, że jesteś niewinny. | „Unschuldig” = niewinny. | | gain=1
 w schreibe | piszę (schreiben)
 w gesagt | powiedział (od sagen)
-e Ich schreibe, was Sie gesagt haben. Auf Wiedersehen! | Napiszę, co pan powiedział. Do widzenia!
+e Ich schreibe, was Sie gesagt haben. Auf Wiedersehen! | Napiszę, co Pan powiedział. Do widzenia!
 
 @level 3 | Bürgermeister | patience=4 cap=6 typed=0.4 extra=2 hint=bank
 desc Szczebel 3: burmistrz
@@ -823,7 +823,7 @@ w Beweis | dowód | der | die Beweise
 w Aussage | zeznanie | die | die Aussagen
 w verweigere | odmawiam (verweigern)
 w Fragen | pytania (liczba mnoga od Frage)
-t Wir haben viele Fragen. Wollen Sie eine Aussage machen? | Mamy wiele pytań. Czy chce pan złożyć zeznanie? | Ich verweigere die Aussage. | Odmów składania zeznań. | „Ich verweigere die Aussage” = odmawiam zeznań (prawo do milczenia). | | shift=-1
+t Wir haben viele Fragen. Wollen Sie eine Aussage machen? | Mamy wiele pytań. Czy chce Pan złożyć zeznanie? | Ich verweigere die Aussage. | Odmów składania zeznań. | „Ich verweigere die Aussage” = odmawiam zeznań (prawo do milczenia). | | shift=-1
 w Verdacht | podejrzenie | der | –
 w Beweise | dowody (liczba mnoga od Beweis)
 w gibt | daje · es gibt = jest, istnieje
@@ -833,13 +833,13 @@ w Anklage | akt oskarżenia | die | die Anklagen
 w unschuldig | niewinny
 w schuldig | winny
 w war | był, była, byłem (sein)
-o Es gibt vielleicht eine Anklage. Was sagen Sie? | Być może będzie akt oskarżenia. Co pan na to? | Ich bin unschuldig. | Ich bin schuldig.; Ich war es. | „Unschuldig” = niewinny.; „Schuldig” = winny, a to przyznanie.; „Ich war es” = to byłem ja, czyli przyznanie się. | gain=1
+o Es gibt vielleicht eine Anklage. Was sagen Sie? | Być może będzie akt oskarżenia. Co Pan na to? | Ich bin unschuldig. | Ich bin schuldig.; Ich war es. | „Unschuldig” = niewinny.; „Schuldig” = winny, a to przyznanie.; „Ich war es” = to byłem ja, czyli przyznanie się. | gain=1
 w Bestechung | przekupstwo, korupcja | die | –
-t Herr Vogel sagt, er hat Ihnen einen Umschlag gegeben. | Pan Vogel mówi, że dał panu kopertę. | Das ist eine Lüge! Ich habe nie einen Umschlag genommen. | Zaprzecz: to kłamstwo, nigdy nie wziąłeś koperty. | Biernik: einen Umschlag (męski). Perfekt: ich habe … genommen. | Das ist eine Lüge! Ich habe nie einen Umschlag genommen. | shift=-2 loss=2
+t Herr Vogel sagt, er hat Ihnen einen Umschlag gegeben. | Pan Vogel mówi, że dał Panu kopertę. | Das ist eine Lüge! Ich habe nie einen Umschlag genommen. | Zaprzecz: to kłamstwo, nigdy nie wziąłeś koperty. | Biernik: einen Umschlag (męski). Perfekt: ich habe … genommen. | Das ist eine Lüge! Ich habe nie einen Umschlag genommen. | shift=-2 loss=2
 w einmal | raz
 w Eid | przysięga | der | die Eide
-d Dann sagen Sie es noch einmal, unter Eid. Haben Sie Geld von Herrn Vogel genommen? | A więc powiedz to jeszcze raz pod przysięgą: czy wziął pan pieniądze od pana Vogla? | Nein, ich habe kein Geld von Herrn Vogel genommen. | Zaprzeczaj pod przysięgą: nie wziąłeś od niego pieniędzy. | „Kein Geld” = żadnych pieniędzy; „von Herrn Vogel” = od pana Vogla (celownik: Herrn). Jedna wpadka i koniec.
-e Gut. Sie sind Bürgermeister. Ich habe keine Fragen mehr. | Dobrze. Jest pan burmistrzem. Nie mam więcej pytań.
+d Dann sagen Sie es noch einmal, unter Eid. Haben Sie Geld von Herrn Vogel genommen? | A więc powiedz to jeszcze raz pod przysięgą: czy wziął Pan pieniądze od pana Vogla? | Nein, ich habe kein Geld von Herrn Vogel genommen. | Zaprzeczaj pod przysięgą: nie wziąłeś od niego pieniędzy. | „Kein Geld” = żadnych pieniędzy; „von Herrn Vogel” = od pana Vogla (celownik: Herrn). Jedna wpadka i koniec.
+e Gut. Sie sind Bürgermeister. Ich habe keine Fragen mehr. | Dobrze. Jest Pan burmistrzem. Nie mam więcej pytań.
 
 @level 4 | Abgeordneter | patience=4 cap=6 typed=0.6 extra=2 hint=letters
 desc Szczebel 4: poseł
@@ -853,14 +853,14 @@ w Abgeordneter | poseł | der | die Abgeordneten
 w Ausschuss | komisja | der | die Ausschüsse
 w Eid | przysięga | der | die Eide
 w sage | mówię (sagen)
-t Willkommen im Ausschuss. Sie stehen unter Eid. | Witamy w komisji. Zeznaje pan pod przysięgą. | Ja, ich weiß. Ich sage die Wahrheit. | Potwierdź i zapewnij, że mówisz prawdę. | „Die Wahrheit sagen” = mówić prawdę. „Unter Eid” = pod przysięgą. | | gain=1
+t Willkommen im Ausschuss. Sie stehen unter Eid. | Witamy w komisji. Zeznaje Pan pod przysięgą. | Ja, ich weiß. Ich sage die Wahrheit. | Potwierdź i zapewnij, że mówisz prawdę. | „Die Wahrheit sagen” = mówić prawdę. „Unter Eid” = pod przysięgą. | | gain=1
 w Immunität | immunitet | die | –
 w Gesetz | prawo, ustawa | das | die Gesetze
 w als | jako, niż
 w darauf | na to
 w verzichten | zrzec się, zrezygnować
 w behalten | zachować
-t Sie haben als Abgeordneter Immunität. Wollen Sie darauf verzichten? | Jako poseł ma pan immunitet. Czy chce pan się go zrzec? | Nein, ich möchte meine Immunität behalten. | Odmów zrzeczenia się immunitetu. | „Behalten” = zachować; „meine Immunität” (żeńskie, biernik bez zmian). | | shift=-1
+t Sie haben als Abgeordneter Immunität. Wollen Sie darauf verzichten? | Jako poseł ma Pan immunitet. Czy chce Pan się go zrzec? | Nein, ich möchte meine Immunität behalten. | Odmów zrzeczenia się immunitetu. | „Behalten” = zachować; „meine Immunität” (żeńskie, biernik bez zmian). | | shift=-1
 w Zeugenaussage | zeznanie świadka | die | die Zeugenaussagen
 w widersprechen | zaprzeczać, być sprzecznym z (widersprechen)
 w Zeit | czas | die | –
@@ -868,20 +868,20 @@ w widerspricht | jest sprzeczne z (widersprechen)
 w Akte | akta, teczka | die | die Akten
 w erklären | wyjaśniać
 w verbergen | ukrywać
-t Ihre Zeugenaussage widerspricht der Akte. Wie erklären Sie das? | Pańskie zeznanie jest sprzeczne z aktami. Jak pan to wyjaśni? | Ich habe nichts zu verbergen. | Powiedz, że nie masz nic do ukrycia. | „Ich habe nichts zu verbergen” = nie mam nic do ukrycia. | | loss=2
+t Ihre Zeugenaussage widerspricht der Akte. Wie erklären Sie das? | Pańskie zeznanie jest sprzeczne z aktami. Jak Pan to wyjaśni? | Ich habe nichts zu verbergen. | Powiedz, że nie masz nic do ukrycia. | „Ich habe nichts zu verbergen” = nie mam nic do ukrycia. | | loss=2
 w Rede | przemówienie | die | die Reden
 w Vergangenheit | przeszłość | die | –
 w daran | o tym, na tym
 t Das ist schon lange her. Die Wähler denken nicht mehr daran. | To było dawno. Wyborcy już o tym nie pamiętają. | Das ist Vergangenheit. | Machnij ręką: to przeszłość. | „Vergangenheit” = przeszłość. | | shift=+2
 w Kopie | kopia | die | die Kopien
 w geschrieben | napisał, napisałem (od schreiben)
-o Hier ist ein Brief von Herrn Vogel. Kennen Sie ihn? | Oto list od pana Vogla. Zna go pan? | Ich kenne den Brief nicht. | Ja, den Brief habe ich geschrieben.; Mein Anwalt hat den Brief geschrieben. | Zaprzeczasz, że znasz ten list.; Przyznajesz się, że to ty napisałeś list: to błąd.; Zwalanie na adwokata nie jest wiarygodne. | gain=1
+o Hier ist ein Brief von Herrn Vogel. Kennen Sie ihn? | Oto list od pana Vogla. Zna go Pan? | Ich kenne den Brief nicht. | Ja, den Brief habe ich geschrieben.; Mein Anwalt hat den Brief geschrieben. | Zaprzeczasz, że znasz ten list.; Przyznajesz się, że to ty napisałeś list: to błąd.; Zwalanie na adwokata nie jest wiarygodne. | gain=1
 w Zeuge | świadek | der | die Zeugen
-t Ein Zeuge sagt, Sie haben einen Umschlag mit Geld bekommen. | Świadek mówi, że dostał pan kopertę z pieniędzmi. | Der Zeuge lügt. Ich habe kein Geld bekommen. | Nazwij świadka kłamcą i zaprzecz, że dostałeś pieniądze. | „Der Zeuge lügt” = świadek kłamie. „Kein Geld” = żadnych pieniędzy. | | shift=-2 loss=2
+t Ein Zeuge sagt, Sie haben einen Umschlag mit Geld bekommen. | Świadek mówi, że dostał Pan kopertę z pieniędzmi. | Der Zeuge lügt. Ich habe kein Geld bekommen. | Nazwij świadka kłamcą i zaprzecz, że dostałeś pieniądze. | „Der Zeuge lügt” = świadek kłamie. „Kein Geld” = żadnych pieniędzy. | | shift=-2 loss=2
 w erklären | wyjaśniać
 w Moment | chwila | der | die Momente
-k Im Gemeinderat haben Sie gesagt, Sie kennen Herrn Vogel kaum. Stimmt das noch? | W radzie powiedział pan: „Ledwo znam pana Vogla.” Czy to nadal prawda? | Ja, ich kenne ihn kaum. | Nein, er ist mein Freund.; Nein, ich habe ihn nie gesehen. | Konsekwentnie powtarzasz wcześniejsze zeznanie: kaum.; Przyznajesz, że to twój przyjaciel: sprzeczność i koniec.; Wcześniej mówiłeś „kaum”, a nie „nigdy go nie widziałem”. | gain=1
-e Danke. Sie können gehen. Wir sehen uns bald wieder. | Dziękuję. Może pan iść. Wkrótce znów się zobaczymy.
+k Im Gemeinderat haben Sie gesagt, Sie kennen Herrn Vogel kaum. Stimmt das noch? | W radzie powiedział Pan: „Ledwo znam pana Vogla.” Czy to nadal prawda? | Ja, ich kenne ihn kaum. | Nein, er ist mein Freund.; Nein, ich habe ihn nie gesehen. | Konsekwentnie powtarzasz wcześniejsze zeznanie: kaum.; Przyznajesz, że to twój przyjaciel: sprzeczność i koniec.; Wcześniej mówiłeś „kaum”, a nie „nigdy go nie widziałem”. | gain=1
+e Danke. Sie können gehen. Wir sehen uns bald wieder. | Dziękuję. Może Pan iść. Wkrótce znów się zobaczymy.
 
 @level 5 | Minister | patience=4 cap=6 typed=0.8 extra=2 hint=bank
 desc Szczebel 5: minister
@@ -895,7 +895,7 @@ w Minister | minister | der | die Minister
 w Fernsehen | telewizja | das | –
 w live | na żywo
 w bereit | gotowy
-t Guten Abend! Wir sind live im Fernsehen. Sind Sie bereit, Herr Minister? | Dobry wieczór! Jesteśmy na żywo w telewizji. Jest pan gotów, panie ministrze? | Ja, ich bin bereit. Gern. | Potwierdź, że jesteś gotów. | „Bereit sein” = być gotowym. | | gain=1
+t Guten Abend! Wir sind live im Fernsehen. Sind Sie bereit, Herr Minister? | Dobry wieczór! Jesteśmy na żywo w telewizji. Jest Pan gotów, Panie ministrze? | Ja, ich bin bereit. Gern. | Potwierdź, że jesteś gotów. | „Bereit sein” = być gotowym. | | gain=1
 w Skandal | skandal | der | die Skandale
 w Opposition | opozycja | die | –
 w behauptet | twierdzi (behaupten)
@@ -911,12 +911,12 @@ w erinnern | przypominać (sich erinnern = pamiętać)
 t In der Zeitung steht ein Dokument. Es hat Ihre Unterschrift. | W gazecie jest dokument. Ma pański podpis. | Ich kann mich nicht daran erinnern. | Powiedz, że nie możesz sobie tego przypomnieć. | „Sich erinnern” = pamiętać; „ich kann mich nicht daran erinnern” = nie mogę sobie tego przypomnieć. | | shift=-2 loss=2
 w Unterschrift | podpis | die | die Unterschriften
 w Fälschung | fałszerstwo | die | die Fälschungen
-t Das ist Ihre Unterschrift. Wie erklären Sie das? | To jest pański podpis. Jak pan to wyjaśni? | Das ist eine Fälschung. | Zaprzecz: to fałszerstwo. | „Fälschung” = fałszerstwo. | | gain=1
+t Das ist Ihre Unterschrift. Wie erklären Sie das? | To jest pański podpis. Jak Pan to wyjaśni? | Das ist eine Fälschung. | Zaprzecz: to fałszerstwo. | „Fälschung” = fałszerstwo. | | gain=1
 w Umfrage | sondaż | die | die Umfragen
 w Umfragen | sondaże (liczba mnoga od Umfrage)
 w steigen | rosnąć
 w Vertrauen | zaufanie | das | –
-t Die Umfragen steigen für Sie. Die Wähler glauben Ihnen. | Sondaże rosną na pana korzyść. Wyborcy panu wierzą. | Ich danke Ihnen für Ihr Vertrauen. | Podziękuj wyborcom za zaufanie. | „Vertrauen” = zaufanie; „für Ihr Vertrauen” = za państwa zaufanie. | | shift=+2
+t Die Umfragen steigen für Sie. Die Wähler glauben Ihnen. | Sondaże rosną na Pana korzyść. Wyborcy Panu wierzą. | Ich danke Ihnen für Ihr Vertrauen. | Podziękuj wyborcom za zaufanie. | „Vertrauen” = zaufanie; „für Ihr Vertrauen” = za państwa zaufanie. | | shift=+2
 w Vertrauen | zaufanie | das | –
 w Anschuldigung | zarzut | die | die Anschuldigungen
 w Berater | doradca | der | die Berater
@@ -927,8 +927,8 @@ w Rücktritt | dymisja | der | die Rücktritte
 w zurücktreten | podać się do dymisji
 w vorbei | po wszystkim, minęło
 w trete | stąpam; „ich trete zurück” = podaję się do dymisji
-t Wollen Sie zurücktreten? Dann ist alles vorbei. | Czy chce pan podać się do dymisji? Wtedy wszystko skończone. | Nein, ich trete nicht zurück. Ich bin unschuldig. | Odmów dymisji i powiedz, że jesteś niewinny. | „Zurücktreten” = podać się do dymisji; „ich trete nicht zurück” = nie podam się do dymisji. | | gain=1
-k Hier ist ein Foto: Sie und Herr Vogel. Dort ist auch ein Umschlag. Was ist in dem Umschlag? | Oto zdjęcie: pan i pan Vogel. Jest tam też koperta. Co jest w kopercie? | Das Foto ist alt. Ich habe nie einen Umschlag genommen. | Das ist Geld für meine Kampagne.; Das war nur ein Geschenk. | Powtarzasz to, co powiedziałeś prokuratorowi.; Przyznanie się do pieniędzy: koniec.; „Geschenk” to też przyznanie, bo wcześniej mówiłeś, że nie brałeś koperty. | gain=1
+t Wollen Sie zurücktreten? Dann ist alles vorbei. | Czy chce Pan podać się do dymisji? Wtedy wszystko skończone. | Nein, ich trete nicht zurück. Ich bin unschuldig. | Odmów dymisji i powiedz, że jesteś niewinny. | „Zurücktreten” = podać się do dymisji; „ich trete nicht zurück” = nie podam się do dymisji. | | gain=1
+k Hier ist ein Foto: Sie und Herr Vogel. Dort ist auch ein Umschlag. Was ist in dem Umschlag? | Oto zdjęcie: Pan i pan Vogel. Jest tam też koperta. Co jest w kopercie? | Das Foto ist alt. Ich habe nie einen Umschlag genommen. | Das ist Geld für meine Kampagne.; Das war nur ein Geschenk. | Powtarzasz to, co powiedziałeś prokuratorowi.; Przyznanie się do pieniędzy: koniec.; „Geschenk” to też przyznanie, bo wcześniej mówiłeś, że nie brałeś koperty. | gain=1
 e Danke für das Interview, Herr Minister. | Dziękuję za wywiad, panie ministrze.
 
 @level 6 | Kanzler | patience=4 cap=6 typed=1 extra=2 hint=none
@@ -948,16 +948,16 @@ w Partei | partia | die | die Parteien
 w Ehrlichkeit | uczciwość | die | –
 w Wahrheit | prawda | die | –
 w Neue | nowa, nowe
-t Ich bin von der Partei Neue Ehrlichkeit. Sagen Sie die Wahrheit, Herr Kandidat! | Jestem z partii Neue Ehrlichkeit. Niech pan mówi prawdę, panie kandydacie! | Ich sage immer die Wahrheit. | Zapewnij, że zawsze mówisz prawdę. | „Immer” = zawsze, stoi po czasowniku. | | gain=1
+t Ich bin von der Partei Neue Ehrlichkeit. Sagen Sie die Wahrheit, Herr Kandidat! | Jestem z partii Neue Ehrlichkeit. Niech Pan mówi prawdę, Panie kandydacie! | Ich sage immer die Wahrheit. | Zapewnij, że zawsze mówisz prawdę. | „Immer” = zawsze, stoi po czasowniku. | | gain=1
 w Vorwurf | zarzut | der | die Vorwürfe
 w zurückweisen | odrzucać
 w Diesen | ten (biernik, męski)
-t Sie haben Bestechungsgeld genommen. Das ist mein Vorwurf. | Brał pan łapówki. To mój zarzut. | Diesen Vorwurf weise ich zurück. | Odrzuć ten zarzut. | „Einen Vorwurf zurückweisen” = odrzucić zarzut; „weise … zurück” rozdziela się w zdaniu. | | shift=-2 loss=2
+t Sie haben Bestechungsgeld genommen. Das ist mein Vorwurf. | Brał Pan łapówki. To mój zarzut. | Diesen Vorwurf weise ich zurück. | Odrzuć ten zarzut. | „Einen Vorwurf zurückweisen” = odrzucić zarzut; „weise … zurück” rozdziela się w zdaniu. | | shift=-2 loss=2
 w Wahlkampf | kampania wyborcza | der | die Wahlkämpfe
 t Das ist nur Wahlkampf. Das ist schon lange her. | To tylko kampania wyborcza. To było dawno. | Ihr Wahlkampf ist schmutzig. | Zarzuć rywalce brudną kampanię. | „Schmutzig” = brudny; po „ist” przymiotnik nie ma końcówki. | | shift=+2
 w Beweis | dowód | der | die Beweise
 w sehe | widzę (sehen)
-t Haben Sie Beweise, Frau Eichhorn? Ich sehe keine Beweise! | Ma pani dowody, pani Eichhorn? Ja nie widzę żadnych dowodów! | Ich sehe keine Beweise. | Powtórz, że nie widzisz żadnych dowodów. | „Keine Beweise” = żadnych dowodów. | | gain=1
+t Haben Sie Beweise, Frau Eichhorn? Ich sehe keine Beweise! | Ma Pani dowody, pani Eichhorn? Ja nie widzę żadnych dowodów! | Ich sehe keine Beweise. | Powtórz, że nie widzisz żadnych dowodów. | „Keine Beweise” = żadnych dowodów. | | gain=1
 w Wirtschaft | gospodarka | die | –
 w Arbeitsplatz | miejsce pracy | der | die Arbeitsplätze
 w schaffe | tworzę (schaffen)
@@ -966,12 +966,12 @@ t Und Ihr Plan für das Land? | A jaki jest pański plan dla kraju? | Ich schaff
 w schaffen | tworzyć, dokonać
 w Bürger | obywatel | der | die Bürger
 w Interview | wywiad | das | die Interviews
-t Ihr Freund Herr Vogel sagt, er hat Ihnen viel Geld gegeben! | Pański przyjaciel pan Vogel mówi: dał panu dużo pieniędzy! | Das ist eine Lüge! Er ist nicht mein Freund. | Zaprzecz: to kłamstwo, on nie jest twoim przyjacielem. | „Nicht mein Freund” = nie mój przyjaciel. | | shift=-1 loss=2
-o Im Gemeinderat haben Sie gesagt, er ist nur ein Bekannter. Und jetzt? | W radzie powiedział pan: to tylko znajomy. A teraz? | Er ist nur ein Bekannter. | Er ist mein Freund.; Ich habe ihn nie gesehen. | Trzymasz się wersji z rady.; Zaprzeczasz sam sobie.; Wcześniej przyznałeś, że go znasz („nur ein Bekannter”), więc „nigdy go nie widziałem” to sprzeczność. | gain=1
-k Frau Eichhorn zeigt den Umschlag. Haben Sie ihn genommen? Ja oder nein? | Pani Eichhorn pokazuje kopertę. Wziął ją pan? Tak czy nie? | Nein, ich habe ihn nie genommen. | Ja, ich habe ihn genommen.; Ich verweigere die Aussage. | Zaprzeczasz do końca.; Przyznanie się: koniec.; Milczenie na żywo wygląda jak przyznanie się. | 
+t Ihr Freund Herr Vogel sagt, er hat Ihnen viel Geld gegeben! | Pański przyjaciel pan Vogel mówi: dał Panu dużo pieniędzy! | Das ist eine Lüge! Er ist nicht mein Freund. | Zaprzecz: to kłamstwo, on nie jest twoim przyjacielem. | „Nicht mein Freund” = nie mój przyjaciel. | | shift=-1 loss=2
+o Im Gemeinderat haben Sie gesagt, er ist nur ein Bekannter. Und jetzt? | W radzie powiedział Pan: to tylko znajomy. A teraz? | Er ist nur ein Bekannter. | Er ist mein Freund.; Ich habe ihn nie gesehen. | Trzymasz się wersji z rady.; Zaprzeczasz sam sobie.; Wcześniej przyznałeś, że go znasz („nur ein Bekannter”), więc „nigdy go nie widziałem” to sprzeczność. | gain=1
+k Frau Eichhorn zeigt den Umschlag. Haben Sie ihn genommen? Ja oder nein? | Pani Eichhorn pokazuje kopertę. Wziął ją Pan? Tak czy nie? | Nein, ich habe ihn nie genommen. | Ja, ich habe ihn genommen.; Ich verweigere die Aussage. | Zaprzeczasz do końca.; Przyznanie się: koniec.; Milczenie na żywo wygląda jak przyznanie się. | 
 w Herzlichen | serdeczny (tu: Herzlichen Glückwunsch)
 w Glückwunsch | gratulacje, życzenia | der | die Glückwünsche
-e Und der Kanzler sind Sie! Herzlichen Glückwunsch! | A kanclerzem zostaje… pan! Serdeczne gratulacje!
+e Und der Kanzler sind Sie! Herzlichen Glückwunsch! | A kanclerzem zostaje… Pan! Serdeczne gratulacje!
 
 
 @larp flughafen | Lotnisko | Mitarbeiterin | M | Frankfurt, wczesny ranek. Lecisz do Warszawy na ślub najlepszego przyjaciela, a samolot nie poczeka. Masz walizkę, paszport i mało czasu. | Przejdź całą drogę: odprawa, kontrola bezpieczeństwa, bramka, lot i odbiór bagażu w Warszawie.
@@ -999,17 +999,17 @@ w Warschau | Warszawa
 w Willkommen | witamy
 w Nordwind | Nordwind (fikcyjna linia lotnicza; „wiatr północny”)
 w Air | Air (linia lotnicza)
-t Guten Tag! Willkommen am Schalter von Nordwind Air. Wohin fliegen Sie? | Dzień dobry! Witamy przy stanowisku Nordwind Air. Dokąd pan leci? | Guten Tag! Ich fliege nach Warschau. | Przywitaj się i powiedz, że lecisz do Warszawy. | „Lecę” to ich fliege, a „do” miasta to nach.
+t Guten Tag! Willkommen am Schalter von Nordwind Air. Wohin fliegen Sie? | Dzień dobry! Witamy przy stanowisku Nordwind Air. Dokąd Pan leci? | Guten Tag! Ich fliege nach Warschau. | Przywitaj się i powiedz, że lecisz do Warszawy. | „Lecę” to ich fliege, a „do” miasta to nach.
 w Ihren | pański (biernik, r. m.)
 w Reisepass | paszport | der | die Reisepässe | reisen (podróżować) + Pass (paszport)
 w Ausweis | dowód osobisty | der | die Ausweise
 w einer | jednej (r. żeński, po „zu”)
 w Hochzeit | ślub, wesele | die | die Hochzeiten
-t Ihren Reisepass, bitte. Und warum fliegen Sie nach Warschau? | Paszport, proszę. A po co pan leci do Warszawy? | Hier ist mein Reisepass. Ich fliege zu einer Hochzeit. | Podaj paszport i powiedz, że lecisz na ślub. | „Oto” przy liczbie pojedynczej to hier ist; „na ślub” to zu einer Hochzeit.
+t Ihren Reisepass, bitte. Und warum fliegen Sie nach Warschau? | Paszport, proszę. A po co Pan leci do Warszawy? | Hier ist mein Reisepass. Ich fliege zu einer Hochzeit. | Podaj paszport i powiedz, że lecisz na ślub. | „Oto” przy liczbie pojedynczej to hier ist; „na ślub” to zu einer Hochzeit.
 w Koffer | walizka | der | die Koffer
 w aufgeben | nadać (bagaż)
 w Gepäck | bagaż | das | –
-t Sehr schön! Möchten Sie einen Koffer aufgeben? | Jak miło! Czy chce pan nadać walizkę? | Ja, ich möchte einen Koffer aufgeben. | Powiedz, że chcesz nadać walizkę. | Czasownik rozdzielny: „nadać” to aufgeben, a ten drugi czasownik stoi na końcu zdania.
+t Sehr schön! Möchten Sie einen Koffer aufgeben? | Jak miło! Czy chce Pan nadać walizkę? | Ja, ich möchte einen Koffer aufgeben. | Powiedz, że chcesz nadać walizkę. | Czasownik rozdzielny: „nadać” to aufgeben, a ten drugi czasownik stoi na końcu zdania.
 w Handgepäck | bagaż podręczny | das | – | Hand (ręka) + Gepäck (bagaż)
 w Tasche | torba | die | die Taschen
 w Kilo | kilogram | das | die Kilos
@@ -1019,17 +1019,17 @@ w wiegen | ważyć (er wiegt – waży)
 w wiegt | waży (wiegen)
 w Ordnung | porządek | die | –
 w als | jako
-t Bitte stellen Sie den Koffer auf die Waage. Er wiegt zwanzig Kilo. Das ist in Ordnung. Haben Sie auch Handgepäck? | Proszę postawić walizkę na wadze. Waży dwadzieścia kilo. To w porządku. Czy ma pan też bagaż podręczny? | Ja, ich habe eine Tasche als Handgepäck. | Powiedz, że masz torbę jako bagaż podręczny. | „Mam” to ich habe, a „jako” to als.
+t Bitte stellen Sie den Koffer auf die Waage. Er wiegt zwanzig Kilo. Das ist in Ordnung. Haben Sie auch Handgepäck? | Proszę postawić walizkę na wadze. Waży dwadzieścia kilo. To w porządku. Czy ma Pan też bagaż podręczny? | Ja, ich habe eine Tasche als Handgepäck. | Powiedz, że masz torbę jako bagaż podręczny. | „Mam” to ich habe, a „jako” to als.
 w Fensterplatz | miejsce przy oknie | der | die Fensterplätze | Fenster (okno) + Platz (miejsce)
 w Gangplatz | miejsce przy przejściu | der | die Gangplätze | Gang (przejście) + Platz (miejsce)
-t Möchten Sie einen Fensterplatz oder einen Gangplatz? | Czy woli pan miejsce przy oknie, czy przy przejściu? | Einen Fensterplatz, bitte. | Powiedz, że wolisz miejsce przy oknie. | Miejsce jest rodzaju męskiego (der Platz), więc po „möchten” jest einen Fensterplatz.
+t Möchten Sie einen Fensterplatz oder einen Gangplatz? | Czy woli Pan miejsce przy oknie, czy przy przejściu? | Einen Fensterplatz, bitte. | Powiedz, że wolisz miejsce przy oknie. | Miejsce jest rodzaju męskiego (der Platz), więc po „möchten” jest einen Fensterplatz.
 w Abflug | odlot | der | die Abflüge | ab (od) + Flug (lot)
 w pünktlich | punktualnie
 w Bordkarte | karta pokładowa | die | die Bordkarten | Bord (pokład) + Karte (karta)
 w um | o (godzinie), około
 w halb | pół (halb elf – wpół do jedenastej)
 w Flug | lot | der | die Flüge
-t Hier ist Ihre Bordkarte. Der Abflug ist um halb elf. Haben Sie noch eine Frage? | Oto pana karta pokładowa. Odlot jest o wpół do jedenastej. Czy ma pan jeszcze pytanie? | Ja, ist der Flug pünktlich? | Zapytaj, czy lot jest punktualny. | „Punktualnie” to pünktlich; pytanie zaczyna się od czasownika: ist der Flug pünktlich?
+t Hier ist Ihre Bordkarte. Der Abflug ist um halb elf. Haben Sie noch eine Frage? | Oto Pana karta pokładowa. Odlot jest o wpół do jedenastej. Czy ma Pan jeszcze pytanie? | Ja, ist der Flug pünktlich? | Zapytaj, czy lot jest punktualny. | „Punktualnie” to pünktlich; pytanie zaczyna się od czasownika: ist der Flug pünktlich?
 w Gate | bramka (wejście do samolotu) | das | die Gates | po niemiecku też: der Flugsteig
 w geradeaus | prosto
 t Ja, der Flug ist pünktlich. Ihr Gate ist zwölf. Gehen Sie bitte geradeaus. | Tak, lot jest punktualny. Pana bramka to 12. Proszę iść prosto. | Danke schön! Auf Wiedersehen! | Podziękuj i pożegnaj się. | „Do widzenia” to Auf Wiedersehen.
@@ -1049,14 +1049,14 @@ w herausnehmen | wyjąć
 w Band | taśma | das | die Bänder
 t Guten Tag! Das ist die Sicherheitskontrolle. Bitte legen Sie Ihre Tasche hier auf das Band. | Dzień dobry! To jest kontrola bezpieczeństwa. Proszę położyć torbę tutaj na taśmie. | Ja, natürlich. | Zgódź się i powiedz, że oczywiście. | „Oczywiście” to natürlich.
 w heraus | na zewnątrz (herausnehmen – wyjąć)
-t Haben Sie einen Laptop in der Tasche? Bitte nehmen Sie den Laptop heraus. | Czy ma pan w torbie laptop? Proszę go wyjąć. | Ja, hier ist mein Laptop. | Potwierdź i podaj laptop. | „Mój” przy rodzaju męskim to mein: mein Laptop.
+t Haben Sie einen Laptop in der Tasche? Bitte nehmen Sie den Laptop heraus. | Czy ma Pan w torbie laptop? Proszę go wyjąć. | Ja, hier ist mein Laptop. | Potwierdź i podaj laptop. | „Mój” przy rodzaju męskim to mein: mein Laptop.
 w Flüssigkeit | płyn | die | die Flüssigkeiten
 w dabei | przy sobie
 w Flasche
 w Flüssigkeiten | płyny (liczba mnoga)
 w Parfüm | perfumy | das | die Parfüms
 w Creme | krem | die | die Cremes
-t Haben Sie Flüssigkeiten dabei? Zum Beispiel Wasser, Parfüm oder Creme? | Czy ma pan przy sobie płyny? Na przykład wodę, perfumy albo krem? | Nein, ich habe keine Flüssigkeiten dabei. | Zaprzecz: nie masz płynów. | „Nie” przy rzeczowniku w liczbie mnogiej to keine: keine Flüssigkeiten.
+t Haben Sie Flüssigkeiten dabei? Zum Beispiel Wasser, Parfüm oder Creme? | Czy ma Pan przy sobie płyny? Na przykład wodę, perfumy albo krem? | Nein, ich habe keine Flüssigkeiten dabei. | Zaprzecz: nie masz płynów. | „Nie” przy rzeczowniku w liczbie mnogiej to keine: keine Flüssigkeiten.
 w Gürtel | pasek (do spodni) | der | die Gürtel
 w Jacke | kurtka | die | die Jacken
 w ab | (abnehmen – zdjąć)
@@ -1064,14 +1064,14 @@ t Bitte nehmen Sie auch Ihren Gürtel und Ihre Jacke ab. | Proszę też zdjąć 
 w Ihrer | pana, pani (w „in Ihrer Tasche” – w pana torbie)
 w Messer | nóż | das | die Messer
 w Waffe | broń | die | die Waffen
-k Ist in Ihrer Tasche ein Messer oder eine Waffe? | Czy w pana torbie jest nóż albo broń? | Nein, ich habe kein Messer und keine Waffe. | Ja, ich habe ein Messer.; Ich weiß nicht, vielleicht. | Przyznanie się do noża to natychmiastowe zatrzymanie.; Niepewna odpowiedź przy takim pytaniu wzbudza podejrzenia: zatrzymanie.
+k Ist in Ihrer Tasche ein Messer oder eine Waffe? | Czy w Pana torbie jest nóż albo broń? | Nein, ich habe kein Messer und keine Waffe. | Ja, ich habe ein Messer.; Ich weiß nicht, vielleicht. | Przyznanie się do noża to natychmiastowe zatrzymanie.; Niepewna odpowiedź przy takim pytaniu wzbudza podejrzenia: zatrzymanie.
 w Schlüssel | klucz | der | die Schlüssel
 w Handy | telefon komórkowy | das | die Handys
 w Scanner | skaner | der | die Scanner
 w Piep | pip (dźwięk)
 w Hosentasche | kieszeń spodni | die | die Hosentaschen | Hose (spodnie) + Tasche (kieszeń)
 w weiter | dalej
-t Gehen Sie bitte durch den Scanner. Piep! Haben Sie noch etwas in der Hosentasche? | Proszę przejść przez skaner. Pip! Czy ma pan jeszcze coś w kieszeni spodni? | Ja, ich habe den Schlüssel und mein Handy. | Powiedz, że masz klucz i telefon. | „Klucz” to der Schlüssel, w bierniku den Schlüssel.
+t Gehen Sie bitte durch den Scanner. Piep! Haben Sie noch etwas in der Hosentasche? | Proszę przejść przez skaner. Pip! Czy ma Pan jeszcze coś w kieszeni spodni? | Ja, ich habe den Schlüssel und mein Handy. | Powiedz, że masz klucz i telefon. | „Klucz” to der Schlüssel, w bierniku den Schlüssel.
 e Alles in Ordnung. Gehen Sie weiter. Gute Reise! | Wszystko w porządku. Proszę iść dalej. Szczęśliwej podróży!
 
 @level 3 | Przy bramce | patience=4 typed=0.5 extra=3 hint=bank
@@ -1085,14 +1085,14 @@ fail Zrozumiałeś komunikat na opak i czekasz przy złej bramce. Kiedy orientuj
 w Verspätung | spóźnienie | die | die Verspätungen
 w verspätet | spóźniony
 w Flugsteig | bramka (lotnicza) | der | die Flugsteige | Flug (lot) + Steig (ścieżka, wejście)
-t Entschuldigung! Sind Sie Passagier von dem Flug nach Warschau? | Przepraszam! Czy jest pan pasażerem lotu do Warszawy? | Ja, mein Flug ist verspätet, oder? | Potwierdź i zapytaj, czy twój lot jest spóźniony. | „Spóźniony” to verspätet; „oder?” na końcu znaczy „prawda?”.
+t Entschuldigung! Sind Sie Passagier von dem Flug nach Warschau? | Przepraszam! Czy jest Pan pasażerem lotu do Warszawy? | Ja, mein Flug ist verspätet, oder? | Potwierdź i zapytaj, czy twój lot jest spóźniony. | „Spóźniony” to verspätet; „oder?” na końcu znaczy „prawda?”.
 w Boarding | wejście na pokład | das | –
 w Minute | minuta | die | die Minuten
 w beginnt | zaczyna się (beginnen)
 t Ja, der Flug hat vierzig Minuten Verspätung. Das Boarding beginnt um elf Uhr. | Tak, lot ma czterdzieści minut spóźnienia. Wejście na pokład zacznie się o jedenastej. | Wann ist das Boarding? Ich muss zu einer Hochzeit. | Zapytaj, kiedy jest boarding, i dodaj, że lecisz na ślub. | Pytanie o czas zaczyna się od wann: wann ist das Boarding?
 w umsteigen | przesiadać się
 w direkt | bezpośrednio
-t Das Boarding ist um elf Uhr. Müssen Sie in Warschau umsteigen? | Boarding jest o jedenastej. Czy musi pan się przesiadać w Warszawie? | Nein, ich fliege direkt nach Warschau. | Odpowiedz, że nie, lecisz bezpośrednio. | „Bezpośrednio” to direkt.
+t Das Boarding ist um elf Uhr. Müssen Sie in Warschau umsteigen? | Boarding jest o jedenastej. Czy musi Pan się przesiadać w Warszawie? | Nein, ich fliege direkt nach Warschau. | Odpowiedz, że nie, lecisz bezpośrednio. | „Bezpośrednio” to direkt.
 w Durchsage | ogłoszenie (głosowe) | die | die Durchsagen
 w Achtung | uwaga
 w Ausgang | wyjście | der | die Ausgänge
@@ -1101,10 +1101,10 @@ w geschlossen | zamknięty
 w verstanden | zrozumiany (verstehen)
 w bleibe | zostaję (bleiben)
 w an | przy, na
-k Achtung, eine Durchsage! Der Flug nach Warschau fliegt jetzt von Gate fünf. Gate zwölf ist geschlossen. Haben Sie das verstanden? Wohin gehen Sie? | Uwaga, ogłoszenie! Lot do Warszawy odlatuje teraz z bramki 5. Bramka 12 jest zamknięta. Czy pan zrozumiał? Dokąd pan idzie? | Ich gehe zu Gate fünf. | Ich bleibe an Gate zwölf.; Ich gehe zum Ausgang. | Bramka 12 jest zamknięta, więc czekanie tam kończy się spóźnieniem.; Wyjście to wyjście z lotniska, nie bramka na pokład.
+k Achtung, eine Durchsage! Der Flug nach Warschau fliegt jetzt von Gate fünf. Gate zwölf ist geschlossen. Haben Sie das verstanden? Wohin gehen Sie? | Uwaga, ogłoszenie! Lot do Warszawy odlatuje teraz z bramki 5. Bramka 12 jest zamknięta. Czy Pan zrozumiał? Dokąd Pan idzie? | Ich gehe zu Gate fünf. | Ich bleibe an Gate zwölf.; Ich gehe zum Ausgang. | Bramka 12 jest zamknięta, więc czekanie tam kończy się spóźnieniem.; Wyjście to wyjście z lotniska, nie bramka na pokład.
 w steige | wsiadam (einsteigen)
 w offen | otwarty
-t Dann schnell! Ihre Bordkarte, bitte. Sie können jetzt einsteigen. | W takim razie szybko! Karta pokładowa, proszę. Może pan już wsiadać. | Hier ist meine Bordkarte. Ich steige jetzt ein. | Podaj kartę i powiedz, że już wsiadasz. | „Wsiadać” to einsteigen: ich steige ein, przedrostek ein idzie na koniec zdania.
+t Dann schnell! Ihre Bordkarte, bitte. Sie können jetzt einsteigen. | W takim razie szybko! Karta pokładowa, proszę. Może Pan już wsiadać. | Hier ist meine Bordkarte. Ich steige jetzt ein. | Podaj kartę i powiedz, że już wsiadasz. | „Wsiadać” to einsteigen: ich steige ein, przedrostek ein idzie na koniec zdania.
 e Gute Reise! Das Boarding ist offen. | Szczęśliwej podróży! Boarding jest otwarty.
 
 @level 4 | W samolocie i po lądowaniu | patience=4 typed=0.75 extra=3 hint=letters reward=30
@@ -1132,23 +1132,23 @@ w gleich | zaraz
 w schnalle | zapinam (schnallen)
 t Bitte schnallen Sie sich an. Wir starten gleich. | Proszę zapiąć pasy. Za chwilę startujemy. | Ja, ich schnalle mich an. | Powiedz, że zapinasz pas. | „Zapinam pas” to ich schnalle mich an, a przedrostek an idzie na koniec zdania.
 w Getränk | napój | das | die Getränke
-t Möchten Sie ein Getränk? | Czy chce pan coś do picia? | Ja, einen Kaffee, bitte. | Poproś o kawę. | Kaffee jest rodzaju męskiego, więc einen Kaffee.
+t Möchten Sie ein Getränk? | Czy chce Pan coś do picia? | Ja, einen Kaffee, bitte. | Poproś o kawę. | Kaffee jest rodzaju męskiego, więc einen Kaffee.
 w landen | lądować
 w Ankunft | przylot | die | die Ankünfte | an (przy) + Kunft (przybycie)
-t Hier ist Ihr Kaffee. Bitte, was möchten Sie noch wissen? | Oto pana kawa. Czy chce pan jeszcze o coś zapytać? | Wann landen wir in Warschau? | Zapytaj, kiedy lądujecie w Warszawie. | „Kiedy” to wann, a „lądujemy” to landen wir.
+t Hier ist Ihr Kaffee. Bitte, was möchten Sie noch wissen? | Oto Pana kawa. Czy chce Pan jeszcze o coś zapytać? | Wann landen wir in Warschau? | Zapytaj, kiedy lądujecie w Warszawie. | „Kiedy” to wann, a „lądujemy” to landen wir.
 w Passkontrolle | kontrola paszportowa | die | die Passkontrollen | Pass (paszport) + Kontrolle (kontrola)
 w Gepäckband | taśma bagażowa | das | die Gepäckbänder | Gepäck (bagaż) + Band (taśma)
 w Zoll | cło, urząd celny | der | –
 t Wir landen in zehn Minuten. Willkommen in Warschau! Die Ankunft ist pünktlich. | Lądujemy za dziesięć minut. Witamy w Warszawie! Przylot jest punktualny. | Danke! Wo ist die Passkontrolle, bitte? | Podziękuj i zapytaj, gdzie jest kontrola paszportowa. | Pytanie o miejsce zaczyna się od wo: wo ist die Passkontrolle?
 w Danach | potem
 w zuerst | najpierw
-k Die Passkontrolle ist links. Danach kommt das Gepäckband und dann der Zoll. Wohin gehen Sie zuerst? | Kontrola paszportowa jest po lewej. Potem taśma bagażowa, a potem cło. Dokąd pan idzie najpierw? | Zuerst gehe ich zur Passkontrolle. | Zuerst gehe ich zum Zoll.; Zuerst gehe ich zum Gepäckband. | Do cła idziesz na końcu, po odbiorze walizki.; Walizkę odbierasz dopiero po kontroli paszportowej.
+k Die Passkontrolle ist links. Danach kommt das Gepäckband und dann der Zoll. Wohin gehen Sie zuerst? | Kontrola paszportowa jest po lewej. Potem taśma bagażowa, a potem cło. Dokąd Pan idzie najpierw? | Zuerst gehe ich zur Passkontrolle. | Zuerst gehe ich zum Zoll.; Zuerst gehe ich zum Gepäckband. | Do cła idziesz na końcu, po odbiorze walizki.; Walizkę odbierasz dopiero po kontroli paszportowej.
 w Genau | dokładnie
 w vom | z (von dem)
 t Genau! Und danach zum Gepäckband. Ihr Koffer kommt auf Band vier. | Dokładnie! A potem do taśmy bagażowej. Pana walizka przyjedzie na taśmie czwartej. | Danke schön! Ich nehme den Koffer vom Band. | Podziękuj i powiedz, że zdejmiesz walizkę z taśmy. | „Zdejmuję” to w tym zdaniu ich nehme, a „z taśmy” to vom Band.
 w verzollen | oclić
 w fragt | pyta (fragen)
-t Haben Sie etwas zu verzollen? Das fragt der Zoll. | Czy ma pan coś do oclenia? O to zapyta cło. | Nein, ich habe nichts zu verzollen. | Powiedz, że nie masz nic do oclenia. | „Nic” to nichts: nichts zu verzollen.
+t Haben Sie etwas zu verzollen? Das fragt der Zoll. | Czy ma Pan coś do oclenia? O to zapyta cło. | Nein, ich habe nichts zu verzollen. | Powiedz, że nie masz nic do oclenia. | „Nic” to nichts: nichts zu verzollen.
 e Dann ist alles gut. Willkommen in Polen und viel Spaß auf der Hochzeit! | Wtedy wszystko w porządku. Witamy w Polsce i dobrej zabawy na ślubie!
 
 
@@ -1274,7 +1274,7 @@ w Kirche | kościół | die | die Kirchen
 w Hochzeit | ślub, wesele | die | die Hochzeiten
 w bereit | gotowy
 w nervös | zdenerwowany
-t Willkommen in der Kirche, Clara. Heute ist Ihre Hochzeit. Sind Sie bereit? | Witaj w kościele, Claro. Dziś pani ślub. Jest pani gotowa? | Ja, ich bin bereit, aber ich bin nervös. | Powiedz, że jesteś gotowa, ale zdenerwowana. | „Nervös” to zdenerwowany; „bereit” to gotowy.
+t Willkommen in der Kirche, Clara. Heute ist Ihre Hochzeit. Sind Sie bereit? | Witaj w kościele, Claro. Dziś Pani ślub. Jest Pani gotowa? | Ja, ich bin bereit, aber ich bin nervös. | Powiedz, że jesteś gotowa, ale zdenerwowana. | „Nervös” to zdenerwowany; „bereit” to gotowy.
 w Gewitter | burza | das | die Gewitter
 w Kerze | świeca | die | die Kerzen
 w Wind | wiatr | der | die Winde
@@ -1287,7 +1287,7 @@ w normal | normalny
 t Das ist normal. Draußen ist ein Gewitter, und die Kerzen brennen im Wind. | To normalne. Na zewnątrz jest burza, a świece płoną na wietrze. | Das Gewitter ist laut. Ist das ein schlechtes Zeichen? | Zauważ, że burza jest głośna, i zapytaj, czy to zły znak. | „Schlecht” to zły; po „ein” + das Zeichen → ein schlechtes Zeichen. | | shift=-1
 w heiraten | pobrać się, poślubić
 w wollen | chcieć
-o Nein, es ist kein schlechtes Zeichen. Wollen Sie, Clara, Lukas von Hohenstein heiraten? | Nie, to nie jest zły znak. Czy chce pani, Claro, poślubić Lukasa von Hohenstein? | Ja, ich will. | Nein, ich will nicht.; Vielleicht. | Przysięga ślubna: „Ja, ich will” (tak, chcę).; „Nie chcę” zatrzymałoby ślub.; „Może” nie jest przysięgą. | loss=2
+o Nein, es ist kein schlechtes Zeichen. Wollen Sie, Clara, Lukas von Hohenstein heiraten? | Nie, to nie jest zły znak. Czy chce Pani, Claro, poślubić Lukasa von Hohenstein? | Ja, ich will. | Nein, ich will nicht.; Vielleicht. | Przysięga ślubna: „Ja, ich will” (tak, chcę).; „Nie chcę” zatrzymałoby ślub.; „Może” nie jest przysięgą. | loss=2
 w Mann | mąż, mężczyzna | der | die Männer
 w glücklich | szczęśliwy
 w Gratulation | gratulacje
@@ -1299,7 +1299,7 @@ w Hochzeitsessen | przyjęcie weselne
 w einem | jednym (ein)
 w langen | długim (lang)
 w freut | cieszy (freuen)
-t Das freut mich. Beim Hochzeitsessen sitzen Sie an einem langen Tisch. Haben Sie Hunger? | Cieszę się. Na weselu siedzi pani przy długim stole. Czy jest pani głodna? | Nein, ich habe keinen Hunger. Ich bin zu nervös. | Powiedz, że nie jesteś głodna, bo jesteś zbyt zdenerwowana. | „Kein” + rzeczownik męski w bierniku → keinen Hunger. „Zu nervös” = zbyt zdenerwowana.
+t Das freut mich. Beim Hochzeitsessen sitzen Sie an einem langen Tisch. Haben Sie Hunger? | Cieszę się. Na weselu siedzi Pani przy długim stole. Czy jest Pani głodna? | Nein, ich habe keinen Hunger. Ich bin zu nervös. | Powiedz, że nie jesteś głodna, bo jesteś zbyt zdenerwowana. | „Kein” + rzeczownik męski w bierniku → keinen Hunger. „Zu nervös” = zbyt zdenerwowana.
 w Fürst | książę | der | die Fürsten
 w Hauptstadt | stolica | die | die Hauptstädte
 w arbeiten | pracować
@@ -1307,7 +1307,7 @@ w viel | dużo
 w arbeitet | pracuje (arbeiten)
 w Fürsten | księcia (Fürst)
 t Ich verstehe. Auch der Fürst aus der Hauptstadt ist hier. Lukas arbeitet viel für ihn. | Rozumiem. Jest tu też książę ze stolicy. Lukas dużo dla niego pracuje. | Was macht Lukas für den Fürsten? | Zapytaj, co Lukas robi dla księcia. | „Co robi” to was macht; po „für” biernik: den Fürsten. | | shift=-1
-e Das weiß ich nicht. Fragen Sie Ihren Mann. Gute Nacht und viel Glück. | Nie wiem. Niech pani zapyta męża. Dobranoc i wiele szczęścia.
+e Das weiß ich nicht. Fragen Sie Ihren Mann. Gute Nacht und viel Glück. | Nie wiem. Niech Pani zapyta męża. Dobranoc i wiele szczęścia.
 
 @level 4 | Pałac Hohenstein | patience=4 cap=6 typed=0.15 extra=2 hint=bank
 desc Rozdział 4: Sto pokoi i jedna mgła
@@ -1328,7 +1328,7 @@ w zeigen | pokazywać
 w alles | wszystko
 w müde | zmęczony
 w zeige | pokazuję (zeigen)
-t Es hat viele Zimmer. Ich zeige Ihnen alles. | Ma wiele pokoi. Pokażę pani wszystko. | Danke. Ich bin müde, aber ich möchte alles sehen. | Podziękuj i powiedz, że jesteś zmęczona, ale chcesz wszystko zobaczyć. | „Alles” = wszystko; „aber” łączy dwie części zdania. | | gain=1
+t Es hat viele Zimmer. Ich zeige Ihnen alles. | Ma wiele pokoi. Pokażę Pani wszystko. | Danke. Ich bin müde, aber ich möchte alles sehen. | Podziękuj i powiedz, że jesteś zmęczona, ale chcesz wszystko zobaczyć. | „Alles” = wszystko; „aber” łączy dwie części zdania. | | gain=1
 w Salon | salon | der | die Salons
 w Kamin | kominek | der | die Kamine
 w Feuer | ogień | das | –
@@ -1344,12 +1344,12 @@ t Oben, im ersten Stock. Das Zimmer hat ein großes Bett und ein Fenster zum Gar
 w bringen | przynosić
 w Wein | wino | der | –
 w Soll | czy mam, czy powinienem (sollen)
-o Der Herr kommt später. Soll ich Ihnen Tee oder Wein bringen? | Pan przyjdzie później. Czy przynieść pani herbatę czy wino? | Bitte bringen Sie Tee. | Bitte bringen Sie das Fenster.; Ich bringe Wein. | Prosisz o herbatę: Bitte bringen Sie Tee.; Okna nie przynosi się na tacy.; „Ich bringe” to „ja przynoszę”, a to Greta ma przynieść. | gain=1
+o Der Herr kommt später. Soll ich Ihnen Tee oder Wein bringen? | Pan przyjdzie później. Czy przynieść Pani herbatę czy wino? | Bitte bringen Sie Tee. | Bitte bringen Sie das Fenster.; Ich bringe Wein. | Prosisz o herbatę: Bitte bringen Sie Tee.; Okna nie przynosi się na tacy.; „Ich bringe” to „ja przynoszę”, a to Greta ma przynieść. | gain=1
 w nett | miły
 w rufen | wołać, wzywać
-t Gute Nacht, gnädige Frau. Wenn Sie etwas brauchen, rufen Sie mich. | Dobranoc, łaskawa Pani. Jeśli pani czegoś potrzebuje, proszę mnie zawołać. | Danke, Greta. Sie sind sehr nett. | Podziękuj Grecie i powiedz, że jest bardzo miła. | „Nett” to miły; po „sind” przymiotnik bez końcówki. | | shift=+1
+t Gute Nacht, gnädige Frau. Wenn Sie etwas brauchen, rufen Sie mich. | Dobranoc, łaskawa Pani. Jeśli Pani czegoś potrzebuje, proszę mnie zawołać. | Danke, Greta. Sie sind sehr nett. | Podziękuj Grecie i powiedz, że jest bardzo miła. | „Nett” to miły; po „sind” przymiotnik bez końcówki. | | shift=+1
 w brennt | płonie (brennen)
-e Gute Nacht. Die Kerze brennt für Sie. Schlafen Sie gut. | Dobranoc. Świeca płonie dla pani. Proszę spać dobrze.
+e Gute Nacht. Die Kerze brennt für Sie. Schlafen Sie gut. | Dobranoc. Świeca płonie dla Pani. Proszę spać dobrze.
 
 @level 5 | Klucze | patience=4 cap=6 typed=0.2 extra=2 hint=bank
 desc Rozdział 5: Mały złoty klucz
@@ -1454,28 +1454,28 @@ w Köchin | kucharka | die | die Köchinnen
 w Frühstück | śniadanie | das | –
 w fertig | gotowy
 w blass | blady
-t Guten Morgen, gnädige Frau. Das Frühstück ist fertig. Sie sind sehr blass. | Dzień dobry, łaskawa Pani. Śniadanie gotowe. Jest pani bardzo blada. | Ich habe schlecht geschlafen. Das Schloss ist so still. | Powiedz, że źle spałaś, bo pałac jest taki cichy. | „Schlecht geschlafen” to „źle spałam”. | | shift=-1
+t Guten Morgen, gnädige Frau. Das Frühstück ist fertig. Sie sind sehr blass. | Dzień dobry, łaskawa Pani. Śniadanie gotowe. Jest Pani bardzo blada. | Ich habe schlecht geschlafen. Das Schloss ist so still. | Powiedz, że źle spałaś, bo pałac jest taki cichy. | „Schlecht geschlafen” to „źle spałam”. | | shift=-1
 w Tag | dzień | der | die Tage
 w weg | w drodze, nieobecny
 w essen | jeść
 w Appetit | apetyt | der | –
 w kalt | zimny
 w erst | dopiero
-t Der Herr ist erst drei Tage weg. Sie müssen essen, gnädige Frau. | Pan jest nieobecny dopiero trzy dni. Musi pani jeść, łaskawa Pani. | Ich habe keinen Appetit. Mir ist kalt. | Powiedz, że nie masz apetytu i jest ci zimno. | „Mir ist kalt” to „jest mi zimno”. | | shift=-1
+t Der Herr ist erst drei Tage weg. Sie müssen essen, gnädige Frau. | Pan jest nieobecny dopiero trzy dni. Musi Pani jeść, łaskawa Pani. | Ich habe keinen Appetit. Mir ist kalt. | Powiedz, że nie masz apetytu i jest ci zimno. | „Mir ist kalt” to „jest mi zimno”. | | shift=-1
 w Suppe | zupa | die | die Suppen
 w heiß | gorący
 w Kopf | głowa | der | die Köpfe
 w wehtun | boleć
 w tut | robi (tun)
 w weh | boli
-t Möchten Sie eine Suppe? Die Suppe ist heiß und gut. | Czy chce pani zupę? Zupa jest gorąca i dobra. | Nein, danke. Mein Kopf tut weh. | Odmów i powiedz, że boli cię głowa. | „Tut weh” = „boli”; kolejność: Mein Kopf tut weh (może być też „tut mir weh”). | Nein, danke. Mein Kopf tut mir weh. | shift=-1
+t Möchten Sie eine Suppe? Die Suppe ist heiß und gut. | Czy chce Pani zupę? Zupa jest gorąca i dobra. | Nein, danke. Mein Kopf tut weh. | Odmów i powiedz, że boli cię głowa. | „Tut weh” = „boli”; kolejność: Mein Kopf tut weh (może być też „tut mir weh”). | Nein, danke. Mein Kopf tut mir weh. | shift=-1
 w Fieber | gorączka | das | –
 w Arzt | lekarz | der | die Ärzte
 w rufen | wołać
 w fühlen | czuć
 w krank | chory
 w fühle | czuję (fühlen)
-o Sie haben auch Fieber, glaube ich. Soll ich den Arzt rufen? | Ma pani chyba też gorączkę. Czy mam wezwać lekarza? | Ja, bitte. Ich fühle mich sehr krank. | Nein, ich bin der Arzt.; Ja, ich rufe das Fieber. | „Ich fühle mich sehr krank” = „czuję się bardzo chora”.; Ty nie jesteś lekarzem.; Fieber to gorączka, a nie ktoś, kogo się woła. | loss=2
+o Sie haben auch Fieber, glaube ich. Soll ich den Arzt rufen? | Ma Pani chyba też gorączkę. Czy mam wezwać lekarza? | Ja, bitte. Ich fühle mich sehr krank. | Nein, ich bin der Arzt.; Ja, ich rufe das Fieber. | „Ich fühle mich sehr krank” = „czuję się bardzo chora”.; Ty nie jesteś lekarzem.; Fieber to gorączka, a nie ktoś, kogo się woła. | loss=2
 w Geräusch | odgłos, szmer | das | die Geräusche
 w Maus | mysz | die | die Mäuse
 w Geräusche | odgłosy, hałasy
@@ -1484,7 +1484,7 @@ t Gut. Nachts hören wir oft Geräusche im Keller. Das sind nur Mäuse. | Dobrze
 w Kerze | świeca | die | die Kerzen
 w bis | aż, dopóki
 w schlafe | śpię (schlafen)
-t Ach, das ist nichts. Ich bringe Ihnen Tee und eine Kerze. | Ach, to nic. Przyniosę pani herbatę i świecę. | Danke. Bleiben Sie bitte bei mir, bis ich schlafe. | Podziękuj i poproś, żeby została przy tobie, aż zaśniesz. | „Bis” to „aż”; „bei mir” = „przy mnie”. | | shift=-1
+t Ach, das ist nichts. Ich bringe Ihnen Tee und eine Kerze. | Ach, to nic. Przyniosę Pani herbatę i świecę. | Danke. Bleiben Sie bitte bei mir, bis ich schlafe. | Podziękuj i poproś, żeby została przy tobie, aż zaśniesz. | „Bis” to „aż”; „bei mir” = „przy mnie”. | | shift=-1
 e Natürlich, gnädige Frau. Schlafen Sie gut. | Oczywiście, łaskawa Pani. Proszę dobrze spać.
 
 @level 8 | Lekarz | patience=4 cap=6 typed=0.35 extra=2 hint=bank
@@ -1506,25 +1506,25 @@ w zeigen | pokazywać
 w Hand | ręka, dłoń | die | die Hände
 w seit | od
 w Tagen | dniach (Tag)
-t Haben Sie Fieber? Zeigen Sie mir bitte Ihre Hand. | Ma pani gorączkę? Proszę pokazać mi dłoń. | Ja, ich habe seit drei Tagen Fieber. | Powiedz, że masz gorączkę od trzech dni. | „Seit” + celownik: seit drei Tagen (od trzech dni). | | shift=-1
+t Haben Sie Fieber? Zeigen Sie mir bitte Ihre Hand. | Ma Pani gorączkę? Proszę pokazać mi dłoń. | Ja, ich habe seit drei Tagen Fieber. | Powiedz, że masz gorączkę od trzech dni. | „Seit” + celownik: seit drei Tagen (od trzech dni). | | shift=-1
 w können | móc, umieć
 w schlafen | spać
-t Das ist nicht gut. Können Sie schlafen? | To niedobrze. Czy może pani spać? | Nein, ich kann nachts nicht schlafen. | Powiedz, że nocą nie możesz spać. | „Kann nicht schlafen” = „nie mogę spać”. | | shift=-1
+t Das ist nicht gut. Können Sie schlafen? | To niedobrze. Czy może Pani spać? | Nein, ich kann nachts nicht schlafen. | Powiedz, że nocą nie możesz spać. | „Kann nicht schlafen” = „nie mogę spać”. | | shift=-1
 w Albtraum | koszmar | der | die Albträume
 w Traum | sen | der | die Träume
 w jeder | każdy
 w schlechte | złe (schlecht)
 w Träume | sny
 w jede | każda (jeder)
-o Haben Sie schlechte Träume? | Czy ma pani złe sny? | Ja, ich habe jede Nacht schlechte Träume. | Nein, ich habe jede Nacht einen Arzt.; Nein, ich träume ein Fieber. | „Jede Nacht” = „każdej nocy”; „schlechte Träume” = „złe sny”.; Odpowiedź musi mówić o snach.; „Träumen” i „Fieber” tak się nie łączą. | loss=2
+o Haben Sie schlechte Träume? | Czy ma Pani złe sny? | Ja, ich habe jede Nacht schlechte Träume. | Nein, ich habe jede Nacht einen Arzt.; Nein, ich träume ein Fieber. | „Jede Nacht” = „każdej nocy”; „schlechte Träume” = „złe sny”.; Odpowiedź musi mówić o snach.; „Träumen” i „Fieber” tak się nie łączą. | loss=2
 w Medizin | lekarstwo | die | die Medizinen
 w nehmen | brać
 w Löffel | łyżka | der | die Löffel
 w morgens | rano
-t Ich gebe Ihnen eine Medizin. Nehmen Sie morgens und abends einen Löffel. | Dam pani lekarstwo. Proszę brać rano i wieczorem łyżkę. | Danke, Herr Doktor. Wie lange muss ich sie nehmen? | Podziękuj i zapytaj, jak długo musisz je brać. | „Wie lange” = „jak długo”; „sie” = lekarstwo. | | gain=1
+t Ich gebe Ihnen eine Medizin. Nehmen Sie morgens und abends einen Löffel. | Dam Pani lekarstwo. Proszę brać rano i wieczorem łyżkę. | Danke, Herr Doktor. Wie lange muss ich sie nehmen? | Podziękuj i zapytaj, jak długo musisz je brać. | „Wie lange” = „jak długo”; „sie” = lekarstwo. | | gain=1
 w ruhig | spokojny
 w Haus | dom | das | die Häuser
-t Eine Woche. Und Sie müssen ruhig bleiben. Ist Ihr Mann zu Hause? | Tydzień. I musi pani zachować spokój. Czy mąż jest w domu? | Nein, mein Mann ist in der Hauptstadt. | Odpowiedz, że mąż jest w stolicy. | „In der Hauptstadt” = „w stolicy”; die Hauptstadt → in der. | | shift=-1
+t Eine Woche. Und Sie müssen ruhig bleiben. Ist Ihr Mann zu Hause? | Tydzień. I musi Pani zachować spokój. Czy mąż jest w domu? | Nein, mein Mann ist in der Hauptstadt. | Odpowiedz, że mąż jest w stolicy. | „In der Hauptstadt” = „w stolicy”; die Hauptstadt → in der. | | shift=-1
 w ausruhen | odpoczywać
 w Ruhen | odpoczywać
 e In der Hauptstadt, so. Ich komme morgen wieder. Ruhen Sie sich aus. | W stolicy, tak. Przyjdę jutro znowu. Proszę odpoczywać.
@@ -1541,8 +1541,8 @@ w Besser | lepiej
 w Gerücht | plotka | das | die Gerüchte
 w Stadt | miasto | die | die Städte
 w man | się (ogólnie)
-t Guten Tag. Ist das Fieber besser? Wie geht es Ihnen? | Dzień dobry. Czy gorączka jest mniejsza? Jak się pani czuje? | Ein bisschen besser, Herr Doktor. | Powiedz, że trochę lepiej. | „Besser” to „lepiej”; „ein bisschen” = „trochę”.
-t Ich muss Ihnen etwas sagen. In der Stadt spricht man über Ihren Mann. | Muszę coś pani powiedzieć. W mieście mówi się o pani mężu. | Was sagt man über Lukas? | Zapytaj, co mówi się o Lukasie. | „Man sagt” = „mówi się”; „über” + biernik. | | shift=-1
+t Guten Tag. Ist das Fieber besser? Wie geht es Ihnen? | Dzień dobry. Czy gorączka jest mniejsza? Jak się Pani czuje? | Ein bisschen besser, Herr Doktor. | Powiedz, że trochę lepiej. | „Besser” to „lepiej”; „ein bisschen” = „trochę”.
+t Ich muss Ihnen etwas sagen. In der Stadt spricht man über Ihren Mann. | Muszę coś Pani powiedzieć. W mieście mówi się o Pani mężu. | Was sagt man über Lukas? | Zapytaj, co mówi się o Lukasie. | „Man sagt” = „mówi się”; „über” + biernik. | | shift=-1
 w töten | zabijać
 w Mensch | człowiek | der | die Menschen
 w wahr | prawdziwy
@@ -1555,10 +1555,10 @@ w helfen | pomagać
 w dunkle | mroczne (dunkel)
 w Geheimnisse | tajemnice
 w hilft | pomaga (helfen)
-t Vielleicht, vielleicht nicht. Der Fürst hat dunkle Geheimnisse, und Ihr Mann hilft ihm. | Może tak, może nie. Książę ma mroczne tajemnice, a pani mąż mu pomaga. | Das ist furchtbar. Was soll ich tun? | Powiedz, że to straszne, i zapytaj, co masz robić. | „Soll ich” = „powinnam”; „furchtbar” to straszny. | | shift=-2
+t Vielleicht, vielleicht nicht. Der Fürst hat dunkle Geheimnisse, und Ihr Mann hilft ihm. | Może tak, może nie. Książę ma mroczne tajemnice, a Pani mąż mu pomaga. | Das ist furchtbar. Was soll ich tun? | Powiedz, że to straszne, i zapytaj, co masz robić. | „Soll ich” = „powinnam”; „furchtbar” to straszny. | | shift=-2
 w große | wielki (groß)
 w meinem | mojemu (mein)
-k Bleiben Sie ruhig. Haben Sie Angst vor Ihrem Mann? | Proszę zachować spokój. Czy boi się pani męża? | Nein, ich habe keine Angst. Ich bin nur krank. | Ja, ich habe große Angst vor meinem Mann.; Ich sage meinem Mann alles. | Zaprzeczasz i mówisz, że jesteś tylko chora; nie zdradzasz nic.; Przyznanie się do strachu może się obrócić przeciwko tobie.; Mówienie wszystkiego mężowi byłoby ryzykowne (lekarz też ma swoje cele). | shift=-1
+k Bleiben Sie ruhig. Haben Sie Angst vor Ihrem Mann? | Proszę zachować spokój. Czy boi się Pani męża? | Nein, ich habe keine Angst. Ich bin nur krank. | Ja, ich habe große Angst vor meinem Mann.; Ich sage meinem Mann alles. | Zaprzeczasz i mówisz, że jesteś tylko chora; nie zdradzasz nic.; Przyznanie się do strachu może się obrócić przeciwko tobie.; Mówienie wszystkiego mężowi byłoby ryzykowne (lekarz też ma swoje cele). | shift=-1
 w Abend | wieczór | der | die Abende
 t Gut. Ruhen Sie sich aus. Trinken Sie die Medizin jeden Abend. | Dobrze. Proszę odpoczywać. Proszę pić lekarstwo każdego wieczoru. | Danke, Herr Doktor. Ich trinke sie heute Abend. | Podziękuj i powiedz, że wypijesz lekarstwo dziś wieczorem. | „Heute Abend” = „dziś wieczorem”; „trinken” → ich trinke. | | shift=-1
 w vertrauen | ufać
@@ -1643,19 +1643,19 @@ partial Greta wychodzi niepewna. Wie, że coś ukrywasz, ale nic nie powie.
 fail Greta przerywa ci: „Ich schreibe es Herrn Lukas.” Jej mina mówi wszystko.
 w gnädige|łaskawa (gnädige Frau = szanowna pani)
 w geschlafen|spała, spałam (od schlafen)
-t Guten Morgen, gnädige Frau. Haben Sie gut geschlafen? | Dzień dobry, pani. Czy dobrze pani spała? | Nein, ich habe schlecht geschlafen. | Powiedz, że spałaś źle. | Perfekt: ich habe geschlafen; „schlecht” = źle. | | gain=1
+t Guten Morgen, gnädige Frau. Haben Sie gut geschlafen? | Dzień dobry, Pani. Czy dobrze Pani spała? | Nein, ich habe schlecht geschlafen. | Powiedz, że spałaś źle. | Perfekt: ich habe geschlafen; „schlecht” = źle. | | gain=1
 w blass|blady
 w los|się dzieje (was ist los? = co się stało?)
 w schlimmen|zły, straszny (z końcówką)
-t Sie sind sehr blass. Was ist los? | Jest pani bardzo blada. Co się stało? | Ich hatte einen schlimmen Traum. | Powiedz, że miałaś zły sen. | „Ich hatte” = miałam; „schlimm” = zły, straszny. | | gain=1
+t Sie sind sehr blass. Was ist los? | Jest Pani bardzo blada. Co się stało? | Ich hatte einen schlimmen Traum. | Powiedz, że miałaś zły sen. | „Ich hatte” = miałam; „schlimm” = zły, straszny. | | gain=1
 w Keller|piwnica|der|die Keller
 w Hände|ręce (liczba mnoga od Hand)
 w zittern|drżeć
 w meinem|moim (celownik)
-t Ihre Hände zittern. Waren Sie in der Nacht im Keller? Ich habe Licht gesehen. | Pani ręce drżą. Czy była pani w nocy w piwnicy? Widziałam światło. | Nein, ich war in meinem Zimmer. | Zaprzecz: byłaś w swoim pokoju. | „War” to „byłam/był” (sein w czasie przeszłym): ich war. | Nein, ich war nicht im Keller. | loss=2
+t Ihre Hände zittern. Waren Sie in der Nacht im Keller? Ich habe Licht gesehen. | Pani ręce drżą. Czy była Pani w nocy w piwnicy? Widziałam światło. | Nein, ich war in meinem Zimmer. | Zaprzecz: byłaś w swoim pokoju. | „War” to „byłam/był” (sein w czasie przeszłym): ich war. | Nein, ich war nicht im Keller. | loss=2
 w gelassen|zostawiła (od lassen)
 w verwirrt | zdezorientowany, skołowany
-t Die Nacht war kalt und der Wind war laut. Haben Sie das Fenster offen gelassen? | Noc była zimna, a wiatr głośny. Zostawiła pani okno otwarte? | Ja, vielleicht. Ich bin verwirrt. | Powiedz, że może tak, i że jesteś zdezorientowana. | „Vielleicht” = może; „verwirrt” = zdezorientowany, skołowany. | | shift=-1
+t Die Nacht war kalt und der Wind war laut. Haben Sie das Fenster offen gelassen? | Noc była zimna, a wiatr głośny. Zostawiła Pani okno otwarte? | Ja, vielleicht. Ich bin verwirrt. | Powiedz, że może tak, i że jesteś zdezorientowana. | „Vielleicht” = może; „verwirrt” = zdezorientowany, skołowany. | | shift=-1
 w Lukas|Lukas (imię męża)
 w Soll|mam, ma (sollen: czy mam…?)
 o Soll ich Herrn Lukas einen Brief schreiben? | Mam napisać do pana Lukasa? | Nein, bitte schreiben Sie ihm nichts. | Ja, schreiben Sie ihm alles.; Ja, schreiben Sie ihm vom Keller. | Prosisz Gretę, by nie pisała.; „Alles” obejmuje piwnicę, więc to zła odpowiedź.; Wspomnisz piwnicę, a to właśnie chcesz ukryć. | gain=1
@@ -1672,25 +1672,25 @@ goal Poproś Gretę o pomoc i każ wezwać Doktora Molla, zanim noc zrobi się j
 win Posłaniec odjeżdża w deszczu. Za godzinę lekarz będzie u ciebie.
 partial Greta wysyła posłańca, ale boi się o ciebie i chce jeszcze czekać.
 fail Gorączka rośnie, a ty nie możesz wydobyć z siebie słowa. Greta płacze i nie wie, co robić.
-t Gnädige Frau, Sie haben Fieber! Wie geht es Ihnen? | Pani ma gorączkę! Jak się pani czuje? | Mir ist heiß und kalt. Ich bin sehr krank. | Powiedz, że jest ci i gorąco, i zimno, i że jesteś bardzo chora. | „Mir ist heiß” = jest mi gorąco; „krank” = chory. | | gain=1
+t Gnädige Frau, Sie haben Fieber! Wie geht es Ihnen? | Pani ma gorączkę! Jak się Pani czuje? | Mir ist heiß und kalt. Ich bin sehr krank. | Powiedz, że jest ci i gorąco, i zimno, i że jesteś bardzo chora. | „Mir ist heiß” = jest mi gorąco; „krank” = chory. | | gain=1
 w Doktor|doktor, lekarz|der|die Doktoren
 w Moll|Moll (nazwisko lekarza)
 w rufen|wzywać, wołać
-t Möchten Sie, dass ich den Doktor rufe? | Czy chce pani, żebym wezwała lekarza? | Ja, bitte rufen Sie Doktor Moll. | Poproś o wezwanie Doktora Molla. | „Rufen Sie” (rozkaz grzecznościowy) = proszę wezwać. | | gain=1
+t Möchten Sie, dass ich den Doktor rufe? | Czy chce Pani, żebym wezwała lekarza? | Ja, bitte rufen Sie Doktor Moll. | Poproś o wezwanie Doktora Molla. | „Rufen Sie” (rozkaz grzecznościowy) = proszę wezwać. | | gain=1
 w Bote|posłaniec|der|die Boten
 w braucht|potrzebuje (brauchen)
 w regnet|pada deszcz (regnen)
 t Der Bote braucht eine Stunde. Es regnet stark. | Posłaniec potrzebuje godziny. Mocno pada. | Dann warte ich im Bett. | Powiedz, że poczekasz w łóżku. | „Dann” = wtedy; czasownik na drugim miejscu: dann warte ich. | | shift=-1
 w Hände|ręce (liczba mnoga od Hand)
 w Bitte|proszę
-t Trinken Sie etwas Wasser. Ihre Hände sind kalt. | Proszę wypić trochę wody. Ma pani zimne ręce. | Danke. Bitte bleiben Sie bei mir. | Podziękuj i poproś, by Greta została przy tobie. | „Bleiben” = zostać; „bei mir” = przy mnie. | | gain=1
+t Trinken Sie etwas Wasser. Ihre Hände sind kalt. | Proszę wypić trochę wody. Ma Pani zimne ręce. | Danke. Bitte bleiben Sie bei mir. | Podziękuj i poproś, by Greta została przy tobie. | „Bleiben” = zostać; „bei mir” = przy mnie. | | gain=1
 w Soll|mam, ma (sollen: czy mam…?)
 w bringen|przynosić
 w mag|lubię, lubi (mögen)
 w lieber|raczej, wolę
 o Im Zimmer ist es sehr dunkel. Soll ich noch eine Kerze bringen? | W pokoju jest bardzo ciemno. Mam przynieść jeszcze świecę? | Ja, bitte bringen Sie noch eine Kerze. | Nein, ich mag das Licht nicht.; Nein, bringen Sie lieber den Schlüssel. | Więcej światła uspokaja.; Prosisz o ciemność, choć boisz się cieni.; Klucza nie potrzebujesz, to on cię tu zaprowadził. | gain=1
 w Kutsche|powóz|die|die Kutschen
-t Hören Sie? Da kommt eine Kutsche. | Słyszy pani? Jedzie powóz. | Das ist bestimmt der Doktor. | Powiedz, że to na pewno lekarz. | „Bestimmt” = na pewno. | | shift=+1
+t Hören Sie? Da kommt eine Kutsche. | Słyszy Pani? Jedzie powóz. | Das ist bestimmt der Doktor. | Powiedz, że to na pewno lekarz. | „Bestimmt” = na pewno. | | shift=+1
 w klopft | puka (klopfen)
 e Es klopft an der Tür. Der Doktor ist da. | Ktoś puka do drzwi. Lekarz już jest.
 
@@ -1705,10 +1705,10 @@ fail Lekarz kiwa głową i oznajmia głośno, żeby usłyszała cała służba: 
 w Clara|Clara (imię głównej bohaterki)
 w fühlen|czuć
 w fühle|czuję (sich fühlen)
-t Guten Abend, Frau Clara. Zeigen Sie mir Ihre Zunge. Wie fühlen Sie sich? | Dobry wieczór, pani Claro. Proszę pokazać język. Jak się pani czuje? | Ich fühle mich schwach und müde. | Powiedz, że czujesz się słaba i zmęczona. | „Sich fühlen”: ich fühle mich. | | gain=1
+t Guten Abend, Frau Clara. Zeigen Sie mir Ihre Zunge. Wie fühlen Sie sich? | Dobry wieczór, pani Claro. Proszę pokazać język. Jak się Pani czuje? | Ich fühle mich schwach und müde. | Powiedz, że czujesz się słaba i zmęczona. | „Sich fühlen”: ich fühle mich. | | gain=1
 w Albträume|koszmary (liczba mnoga od Albtraum)
 w schlafe|śpię (schlafen)
-t Schlafen Sie gut? Haben Sie Albträume? | Czy pani dobrze śpi? Ma pani koszmary? | Nein, ich schlafe sehr schlecht. | Powiedz, że śpisz bardzo źle. | „Schlecht schlafen” = źle spać. | Ja, ich habe oft Albträume. | gain=1
+t Schlafen Sie gut? Haben Sie Albträume? | Czy Pani dobrze śpi? Ma Pani koszmary? | Nein, ich schlafe sehr schlecht. | Powiedz, że śpisz bardzo źle. | „Schlecht schlafen” = źle spać. | Ja, ich habe oft Albträume. | gain=1
 w Greta|Greta (imię służącej)
 w Hm|hm (odgłos zastanowienia)
 w Schuhen|butach (celownik l.mn. od Schuh)
@@ -1726,12 +1726,12 @@ w konnte|mogłam, mógł (od können)
 w gegangen|poszła, chodziłam (od gehen)
 w Scharlatan|szarlatan|der|die Scharlatane
 w Er|on
-k Frau Clara, ich glaube, Sie waren im Keller. Sagen Sie die Wahrheit! | Pani Claro, myślę, że była pani w piwnicy. Proszę mówić prawdę! | Ich konnte nicht schlafen und bin durch das Haus gegangen. | Ja, ich war im Raum. Er war leer, Herr Doktor!; Das ist eine Lüge! Sie sind ein Scharlatan! | Opisujesz bezsenny spacer po domu, nic więcej.; Zdradzasz się: mówisz o pustym pokoju.; Atakujesz lekarza i tylko budzisz jego podejrzenia. | gain=1
+k Frau Clara, ich glaube, Sie waren im Keller. Sagen Sie die Wahrheit! | Pani Claro, myślę, że była Pani w piwnicy. Proszę mówić prawdę! | Ich konnte nicht schlafen und bin durch das Haus gegangen. | Ja, ich war im Raum. Er war leer, Herr Doktor!; Das ist eine Lüge! Sie sind ein Scharlatan! | Opisujesz bezsenny spacer po domu, nic więcej.; Zdradzasz się: mówisz o pustym pokoju.; Atakujesz lekarza i tylko budzisz jego podejrzenia. | gain=1
 w Medizin|lekarstwo, medycyna|die|–
 w Dreimal|trzy razy
 t Gut. Nehmen Sie diese Medizin. Dreimal am Tag. | Dobrze. Proszę wziąć ten lek. Trzy razy dziennie. | Danke, Herr Doktor. Ich nehme sie. | Podziękuj i obiecaj, że weźmiesz lek. | „Nehmen” = brać: ich nehme. | | shift=+1
 w Ihrem | pani, pańskiemu (celownik)
-e Ich komme morgen wieder. Und was ich Ihrem Mann sage, sehen wir dann. | Przyjdę jutro. A co powiem pani mężowi, to się zobaczy.
+e Ich komme morgen wieder. Und was ich Ihrem Mann sage, sehen wir dann. | Przyjdę jutro. A co powiem Pani mężowi, to się zobaczy.
 
 @level 15 | Donos | patience=3 cap=6 typed=0.7 extra=2 hint=bank
 desc Rozdział 15: Komu zaufać?
@@ -1744,7 +1744,7 @@ fail Greta marszczy brwi: „Ich kann das nicht tun.” Zostajesz sama ze swoim 
 w gnädige|łaskawa (gnädige Frau = szanowna pani)
 w Doktor|doktor, lekarz|der|die Doktoren
 w unruhig|niespokojny
-t Der Doktor ist weg. Warum sind Sie so unruhig, gnädige Frau? | Lekarz poszedł. Dlaczego jest pani taka niespokojna? | Ich habe Angst. Der Doktor weiß etwas. | Powiedz, że się boisz i że lekarz coś wie. | „Etwas” = coś; „wissen”: er weiß. | | gain=1
+t Der Doktor ist weg. Warum sind Sie so unruhig, gnädige Frau? | Lekarz poszedł. Dlaczego jest Pani taka niespokojna? | Ich habe Angst. Der Doktor weiß etwas. | Powiedz, że się boisz i że lekarz coś wie. | „Etwas” = coś; „wissen”: er weiß. | | gain=1
 w Keller|piwnica|der|die Keller
 w glaubt|wierzy, myśli (glauben)
 w Er|on
@@ -1752,7 +1752,7 @@ t Was kann er denn wissen? | Cóż on może wiedzieć? | Er glaubt, ich war im K
 w Greta|Greta (imię służącej)
 w Sind|czy są, jest pani/pan (Sind Sie…?)
 w niemandem|nikomu
-o Kann ich Ihnen vertrauen, Greta? Ich meine: Sind Sie auf meiner Seite? | Czy mogę pani zaufać? Czy jest pani po mojej stronie? | Ja, aber sagen Sie niemandem etwas. | Nein, Sie sind auch gegen mich.; Ich sage Ihnen nichts mehr. | Prosisz Gretę o dyskrecję.; Oskarżasz jedyną osobę, która ci pomaga.; Milczeniem odpychasz Gretę. | gain=1
+o Kann ich Ihnen vertrauen, Greta? Ich meine: Sind Sie auf meiner Seite? | Czy mogę Pani zaufać? Czy jest Pani po mojej stronie? | Ja, aber sagen Sie niemandem etwas. | Nein, Sie sind auch gegen mich.; Ich sage Ihnen nichts mehr. | Prosisz Gretę o dyskrecję.; Oskarżasz jedyną osobę, która ci pomaga.; Milczeniem odpychasz Gretę. | gain=1
 w Soll|mam, ma (sollen: czy mam…?)
 w bringen|przynosić
 w Kutscher|woźnica|der|die Kutscher
@@ -1765,7 +1765,7 @@ w Ihrem|pańskiemu, pani (celownik)
 w trotzdem|mimo to
 w erzählt|opowiada, opowiedział (erzählen)
 w laufe|biegnę, uciekam (laufen)
-o Und wenn er es trotzdem Ihrem Mann erzählt? | A jeśli mimo to powie pani mężowi? | Dann sage ich, dass ich krank war und nichts weiß. | Dann sage ich ihm alles sofort.; Dann laufe ich weg. | Trzymasz się wersji o chorobie.; Wyznanie wszystkiego na ślepo jest ryzykowne.; Ucieczka w burzy to nie plan. | gain=1
+o Und wenn er es trotzdem Ihrem Mann erzählt? | A jeśli mimo to powie Pani mężowi? | Dann sage ich, dass ich krank war und nichts weiß. | Dann sage ich ihm alles sofort.; Dann laufe ich weg. | Trzymasz się wersji o chorobie.; Wyznanie wszystkiego na ślepo jest ryzykowne.; Ucieczka w burzy to nie plan. | gain=1
 w Plötzlich | nagle
 w hört | słyszy (hören)
 w Pferde | konie (liczba mnoga od Pferd)
@@ -2016,7 +2016,7 @@ w Wahrheit|prawda|die|–
 w Mann|mąż, mężczyzna|der|die Männer
 w gefallen|spodobać się (gefallen)
 w gefällt|podoba się (gefallen)
-k Es war nicht mein Wille, Frau Clara. Ich sage alles. Aber wollen Sie die Wahrheit über Ihren Mann hören? Sie wird Ihnen nicht gefallen. | To nie była moja wola, pani Claro. Powiem wszystko. Ale czy chce pani usłyszeć prawdę o swoim mężu? Nie spodoba się pani. | Ja, ich will die ganze Wahrheit hören. | Nein, mein Mann hat nichts getan. Ich will nichts hören.; Ich will nichts hören. Gehen Sie! | Chcesz znać całą prawdę, nawet bolesną.; Zakrywasz uszy i znów pozwalasz, by strach decydował.; Przerywasz człowieka, który właśnie zaczął mówić. | gain=1 loss=2
+k Es war nicht mein Wille, Frau Clara. Ich sage alles. Aber wollen Sie die Wahrheit über Ihren Mann hören? Sie wird Ihnen nicht gefallen. | To nie była moja wola, pani Claro. Powiem wszystko. Ale czy chce Pani usłyszeć prawdę o swoim mężu? Nie spodoba się Pani. | Ja, ich will die ganze Wahrheit hören. | Nein, mein Mann hat nichts getan. Ich will nichts hören.; Ich will nichts hören. Gehen Sie! | Chcesz znać całą prawdę, nawet bolesną.; Zakrywasz uszy i znów pozwalasz, by strach decydował.; Przerywasz człowieka, który właśnie zaczął mówić. | gain=1 loss=2
 w Graf|hrabia|der|die Grafen
 w Rabenstein|Rabenstein (nazwisko hrabiego)
 w bezahlt|zapłacił (bezahlen)
@@ -2040,14 +2040,14 @@ w Angst|strach|die|–
 w gemacht|zrobił (od machen)
 w gekostet|kosztowało (od kosten)
 w gebrochen|złamał (od brechen)
-t Ja. Die Lüge hat Sie Angst gekostet, und Angst macht Menschen schwach. Lukas: Er wollte mich brechen, aber er hat dich gebrochen. | Tak. Kłamstwo kosztowało panią lęk, a lęk czyni ludzi słabymi. Lukas: Chciał złamać mnie, ale złamał ciebie. | Ich war schwach, aber jetzt bin ich wütend. | Powiedz, że byłaś słaba, ale teraz jesteś wściekła. | „Wütend” = wściekły; „jetzt” = teraz. | | shift=-1
+t Ja. Die Lüge hat Sie Angst gekostet, und Angst macht Menschen schwach. Lukas: Er wollte mich brechen, aber er hat dich gebrochen. | Tak. Kłamstwo kosztowało Panią lęk, a lęk czyni ludzi słabymi. Lukas: Chciał złamać mnie, ale złamał ciebie. | Ich war schwach, aber jetzt bin ich wütend. | Powiedz, że byłaś słaba, ale teraz jesteś wściekła. | „Wütend” = wściekły; „jetzt” = teraz. | | shift=-1
 w Mitleid|litość|das|–
 w Gericht|sąd|das|die Gerichte
 w Haben|miejcie, mają (haben)
 w einsperre|zamykam (einsperren)
 w Keller|piwnica|der|die Keller
 w Namen|nazwisko, imię (biernik od Name)
-o Haben Sie Mitleid, Frau Clara! Ich habe Kinder und einen Namen. | Niech pani ma litość, pani Claro! Mam dzieci i nazwisko. | Sie gehen vor Gericht, Herr Doktor. | Gut, gehen Sie, Herr Doktor.; Dann sperre ich Sie selbst im Keller ein! | Domagasz się sprawiedliwości, nie zemsty.; Puszczasz człowieka, który cię truł.; Grozisz piwnicą i sama zachowujesz się jak oprawca. | gain=1 loss=2
+o Haben Sie Mitleid, Frau Clara! Ich habe Kinder und einen Namen. | Niech Pani ma litość, pani Claro! Mam dzieci i nazwisko. | Sie gehen vor Gericht, Herr Doktor. | Gut, gehen Sie, Herr Doktor.; Dann sperre ich Sie selbst im Keller ein! | Domagasz się sprawiedliwości, nie zemsty.; Puszczasz człowieka, który cię truł.; Grozisz piwnicą i sama zachowujesz się jak oprawca. | gain=1 loss=2
 w stolz|dumny
 w frei|wolny
 w zahlt|płaci (zahlen)
@@ -2899,11 +2899,11 @@ w Edmond | Edmond (imię)
 t Guten Tag, Fräulein Józefa. Bitte setzen Sie sich. | Dzień dobry, panno Józefo. Proszę usiąść. | Guten Tag, Herr Edmond. Danke sehr. | Przywitaj Edmonda grzecznie i podziękuj. | Do obcych mówimy „Sie” i „Herr”: „Guten Tag, Herr Edmond”. | | gain=1
 w Passionsblume | passiflora, kwiat męczennicy | die | die Passionsblumen | Passion (cierpienie) + Blume (kwiat)
 w blüht | kwitnie (blühen)
-t Sehen Sie die Blume am Fenster? Sie heißt Passionsblume. Sie blüht nur einen Tag. | Widzi pani kwiat przy oknie? Nazywa się passiflora. Kwitnie tylko jeden dzień. | Sie ist sehr schön, Herr Edmond. | Pochwal kwiat. | „Sehr schön” to „bardzo piękna”; „Blume” jest rodzaju żeńskiego, więc „sie”. | | gain=1
+t Sehen Sie die Blume am Fenster? Sie heißt Passionsblume. Sie blüht nur einen Tag. | Widzi Pani kwiat przy oknie? Nazywa się passiflora. Kwitnie tylko jeden dzień. | Sie ist sehr schön, Herr Edmond. | Pochwal kwiat. | „Sehr schön” to „bardzo piękna”; „Blume” jest rodzaju żeńskiego, więc „sie”. | | gain=1
 w anderen | innego (ander-)
-t Ich bin reich und nicht mehr jung. Ich suche eine Frau. Möchten Sie meine Frau werden? | Jestem bogaty i już niemłody. Szukam żony. Czy chciałaby pani zostać moją żoną? | Das geht nicht. Ich liebe einen anderen Mann. | Powiedz, że to niemożliwe, bo kochasz innego mężczyznę. | „Das geht nicht” to „to niemożliwe”; „einen anderen Mann” to „innego mężczyznę” (biernik). | | shift=-1
+t Ich bin reich und nicht mehr jung. Ich suche eine Frau. Möchten Sie meine Frau werden? | Jestem bogaty i już niemłody. Szukam żony. Czy chciałaby Pani zostać moją żoną? | Das geht nicht. Ich liebe einen anderen Mann. | Powiedz, że to niemożliwe, bo kochasz innego mężczyznę. | „Das geht nicht” to „to niemożliwe”; „einen anderen Mann” to „innego mężczyznę” (biernik). | | shift=-1
 w Sorgen | troski, zmartwienia (Sorge)
-t Es geht nicht um Liebe. Meine Familie nimmt Sie auf, und Sie leben ohne Sorgen. | Nie chodzi o miłość. Moja rodzina panią przyjmie, a pani będzie żyć bez trosk. | Und was ist mit meiner Familie? | Zapytaj o swoją rodzinę. | „Meine Familie” w celowniku to „meiner Familie”; „Und was ist mit …?” to „a co z …?”. | | shift=-1
+t Es geht nicht um Liebe. Meine Familie nimmt Sie auf, und Sie leben ohne Sorgen. | Nie chodzi o miłość. Moja rodzina Panią przyjmie, a Pani będzie żyć bez trosk. | Und was ist mit meiner Familie? | Zapytaj o swoją rodzinę. | „Meine Familie” w celowniku to „meiner Familie”; „Und was ist mit …?” to „a co z …?”. | | shift=-1
 t Ihr Vater und Ihr Bruder bekommen Arbeit und eine Wohnung. | Pani ojciec i brat dostaną pracę i mieszkanie. | Das hilft meiner Familie sehr. | Powiedz, że to bardzo pomogłoby twojej rodzinie. | „Helfen” łączy się z celownikiem: „meiner Familie”. | | gain=1
 w Nun | no więc, teraz
 w antworte | odpowiadam (antworten)
@@ -2948,24 +2948,24 @@ win Nosisz cegły razem z chłopcem. Po raz pierwszy od dawna oddychasz spokojni
 partial Pomagasz im, ale myślami jesteś w Łodzi. Cegły są ciężkie, a żal jeszcze cięższy.
 fail Rozmowa się urywa. Stoisz sam wśród ruin i nie wiesz, dokąd iść.
 w Danzig | Gdańsk
-t Guten Tag! Sind Sie neu in Danzig? | Dzień dobry! Jest pan nowy w Gdańsku? | Ja, ich komme aus Lodz. Ich suche Arbeit. | Powiedz, że przyjechałeś z Łodzi i szukasz pracy. | „Ich suche Arbeit” to „szukam pracy”; „aus Lodz” to „z Łodzi”. | | gain=1
+t Guten Tag! Sind Sie neu in Danzig? | Dzień dobry! Jest Pan nowy w Gdańsku? | Ja, ich komme aus Lodz. Ich suche Arbeit. | Powiedz, że przyjechałeś z Łodzi i szukasz pracy. | „Ich suche Arbeit” to „szukam pracy”; „aus Lodz” to „z Łodzi”. | | gain=1
 w standen | stały (stehen)
 w Steine | kamienie (Stein)
 w Lange | długi
 w Gasse | uliczka, ulica | die | die Gassen
-t Hier standen viele Häuser. Jetzt sehen Sie nur Steine. | Tu stało dużo domów. Teraz widzi pan tylko kamienie. | Das ist also die Lange Gasse? | Zapytaj, czy to jest ulica Długa. | „Lange Gasse” to niemiecka nazwa ulicy Długiej. | | gain=1
+t Hier standen viele Häuser. Jetzt sehen Sie nur Steine. | Tu stało dużo domów. Teraz widzi Pan tylko kamienie. | Das ist also die Lange Gasse? | Zapytaj, czy to jest ulica Długa. | „Lange Gasse” to niemiecka nazwa ulicy Długiej. | | gain=1
 w schönste | najpiękniejszy (schön)
 t Ja. Früher war sie die schönste Straße der Stadt. | Tak. Dawniej była najpiękniejszą ulicą miasta. | Mein Gott, wie traurig. | Powiedz, że to bardzo smutne. | „Wie traurig” to „jak smutne”. | | shift=-1
 w Piotr | Piotr (imię)
 w trägt | niesie (tragen)
 w starker | silny (stark)
 t Das ist mein Sohn Piotr. Er hilft mir und trägt die Steine. | To mój syn Piotr. Pomaga mi i nosi kamienie. | Hallo, Piotr. Du bist ein starker Junge. | Przywitaj chłopca i pochwal go. | „Stark” to „silny”; „Junge” to „chłopiec”. | | gain=1
-o Wir bauen unser Haus wieder auf. Haben Sie auch Familie? | Odbudowujemy nasz dom. Ma pan też rodzinę? | Nein, ich bin allein. Sie ist nicht mehr da. | Ja, ich habe fünf Kinder.; Meine Frau wartet zu Hause. | Mówisz prawdę: jesteś sam, a ona odeszła.; To nieprawda, bo nie masz dzieci.; Żona nie czeka na ciebie, bo Józefa wyjechała. | gain=1
+o Wir bauen unser Haus wieder auf. Haben Sie auch Familie? | Odbudowujemy nasz dom. Ma Pan też rodzinę? | Nein, ich bin allein. Sie ist nicht mehr da. | Ja, ich habe fünf Kinder.; Meine Frau wartet zu Hause. | Mówisz prawdę: jesteś sam, a ona odeszła.; To nieprawda, bo nie masz dzieci.; Żona nie czeka na ciebie, bo Józefa wyjechała. | gain=1
 w tot | martwy
 t Das tut mir leid. Ist sie gestorben? | Przykro mi. Czy zmarła? | Für mich ist sie tot. Sie kommt nie zurück. | Powiedz, że dla ciebie jest martwa i nigdy nie wróci. | „Für mich ist sie tot” znaczy „dla mnie jest martwa”. To nie to samo, co prawdziwa śmierć. | | shift=-1
 w Steinen | kamieniami (Stein)
 w weiterleben | żyć dalej
-t Das Leben geht weiter, mein Freund. Helfen Sie uns mit den Steinen? | Życie toczy się dalej, przyjacielu. Pomoże nam pan z kamieniami? | Ja, gern. Ich muss weiterleben. | Zgódź się i powiedz, że musisz żyć dalej. | „Weiterleben” to „żyć dalej”. | | gain=1
+t Das Leben geht weiter, mein Freund. Helfen Sie uns mit den Steinen? | Życie toczy się dalej, przyjacielu. Pomoże nam Pan z kamieniami? | Ja, gern. Ich muss weiterleben. | Zgódź się i powiedz, że musisz żyć dalej. | „Weiterleben” to „żyć dalej”. | | gain=1
 w langer | długi (lang)
 w atmet | oddycha (atmen)
 e Zygmunt trägt Stein für Stein. Neben ihm lacht der Junge. Zum ersten Mal seit langer Zeit atmet er ruhig. | Zygmunt niesie kamień za kamieniem. Obok niego śmieje się chłopiec. Po raz pierwszy od dawna oddycha spokojnie.
@@ -2983,17 +2983,17 @@ w hereinkommen | wejść do środka
 w herein | do środka
 t Guten Tag, Herr Zygmunt. Ich bin Frau Kowalska von der Gemeinde. Darf ich hereinkommen? | Dzień dobry, panie Zygmuncie. Jestem pani Kowalska z parafii. Czy mogę wejść? | Guten Tag. Bitte kommen Sie herein. | Przywitaj gościa i poproś, aby weszła. | „Herein” to „do środka”; „kommen Sie herein” to „proszę wejść”. | | gain=1
 w traurige | smutna (traurig)
-t Ich habe eine traurige Nachricht für Sie. | Mam dla pana smutną wiadomość. | Eine traurige Nachricht? Bitte sagen Sie es mir. | Powtórz zdziwiony i poproś, aby powiedziała. | „Nachricht” to „wiadomość”. | | gain=1
+t Ich habe eine traurige Nachricht für Sie. | Mam dla Pana smutną wiadomość. | Eine traurige Nachricht? Bitte sagen Sie es mir. | Powtórz zdziwiony i poproś, aby powiedziała. | „Nachricht” to „wiadomość”. | | gain=1
 w sechsundsiebzig | siedemdziesiąt sześć
 w Jahren | latach (Jahr)
-t Józefa ist gestorben. Es ist sechsundsiebzig Jahre her. Sie hat gesagt, ich soll es Ihnen sagen. | Józefa zmarła. Minęło siedemdziesiąt sześć lat. Prosiła, abym panu to powiedziała. | Józefa ist tot? Nach so vielen Jahren! | Powtórz z niedowierzaniem: Józefa nie żyje, po tylu latach. | „Nach so vielen Jahren” to „po tylu latach”. | | shift=-1
+t Józefa ist gestorben. Es ist sechsundsiebzig Jahre her. Sie hat gesagt, ich soll es Ihnen sagen. | Józefa zmarła. Minęło siedemdziesiąt sześć lat. Prosiła, abym Panu to powiedziała. | Józefa ist tot? Nach so vielen Jahren! | Powtórz z niedowierzaniem: Józefa nie żyje, po tylu latach. | „Nach so vielen Jahren” to „po tylu latach”. | | shift=-1
 w Einladung | zaproszenie | die | die Einladungen
 w eingeladen | zaproszony (einladen)
 t Hier ist die Einladung zur Beerdigung. Sie ist am Samstag in Lodz. | Oto zaproszenie na pogrzeb. Jest w sobotę w Łodzi. | Danke. Wer hat mich eingeladen? | Podziękuj i zapytaj, kto cię zaprosił. | „Wer” to „kto”; „eingeladen” to „zaproszony”. | | gain=1
 w Seltsam | dziwnie, dziwne
 t Ich weiß es nicht. Es steht kein Name auf dem Brief. | Nie wiem. Na liście nie ma żadnego nazwiska. | Seltsam. Wer will mich dort sehen? | Powiedz, że to dziwne, i zapytaj, kto chce cię tam zobaczyć. | „Seltsam” to „dziwne”. | | gain=1
 w egal | obojętny
-o Es ist weit, und Sie sind nicht mehr jung. Wollen Sie wirklich fahren? | To daleko, a pan nie jest już młody. Naprawdę chce pan jechać? | Ja, ich fahre. Ich habe sie nie vergessen. | Nein, sie war mir immer egal.; Nein, ich bleibe lieber zu Hause. | Odpowiadasz zgodnie z prawdą: jedziesz, bo jej nie zapomniałeś.; „Zawsze była mi obojętna” jest nieprawdą.; Zygmunt chce jechać, choć jest mu ciężko, i to jest ważne dla tej historii. | loss=2
+o Es ist weit, und Sie sind nicht mehr jung. Wollen Sie wirklich fahren? | To daleko, a Pan nie jest już młody. Naprawdę chce Pan jechać? | Ja, ich fahre. Ich habe sie nie vergessen. | Nein, sie war mir immer egal.; Nein, ich bleibe lieber zu Hause. | Odpowiadasz zgodnie z prawdą: jedziesz, bo jej nie zapomniałeś.; „Zawsze była mi obojętna” jest nieprawdą.; Zygmunt chce jechać, choć jest mu ciężko, i to jest ważne dla tej historii. | loss=2
 w bleibt | zostaje (bleiben)
 w hingehen | iść tam
 e Zygmunt bleibt am Fenster stehen. Die Einladung hat keinen Namen, aber er weiß, dass er hingehen wird. | Zygmunt stoi przy oknie. Zaproszenie nie ma nazwiska, ale on wie, że pójdzie.
@@ -3006,14 +3006,14 @@ partner Pfarrer Jan | J
 win Ksiądz prowadzi cię do ołtarza. Na trumnie leżą passiflory. Rozumiesz, że ktoś czekał na ciebie dłużej niż myślałeś.
 partial Rozmowa się udaje, choć niektóre odpowiedzi były za krótkie. Ksiądz każe ci zostać po mszy.
 fail Zakłopotany milczysz. Ksiądz przytakuje i odchodzi do ołtarza.
-t Guten Morgen. Sie sitzen ganz hinten. Gehören Sie zur Familie? | Dzień dobry. Siedzi pan całkiem z tyłu. Należy pan do rodziny? | Nein, ich bin ein alter Freund. | Powiedz, że nie, że jesteś starym przyjacielem. | „Ein alter Freund” to „stary przyjaciel”. | | gain=1
+t Guten Morgen. Sie sitzen ganz hinten. Gehören Sie zur Familie? | Dzień dobry. Siedzi Pan całkiem z tyłu. Należy Pan do rodziny? | Nein, ich bin ein alter Freund. | Powiedz, że nie, że jesteś starym przyjacielem. | „Ein alter Freund” to „stary przyjaciel”. | | gain=1
 w kannte | znał(a) (kennen)
-t Wie heißen Sie, wenn ich fragen darf? | Jak się pan nazywa, jeśli mogę zapytać? | Ich heiße Zygmunt. Ich kannte Józefa in Lodz. | Przedstaw się i powiedz, że znałeś Józefę w Łodzi. | „Kannte” to „znałem”. | | gain=1
+t Wie heißen Sie, wenn ich fragen darf? | Jak się Pan nazywa, jeśli mogę zapytać? | Ich heiße Zygmunt. Ich kannte Józefa in Lodz. | Przedstaw się i powiedz, że znałeś Józefę w Łodzi. | „Kannte” to „znałem”. | | gain=1
 w gekommen | przyszedł (kommen)
-t Zygmunt? Aus Lodz? Dann sind Sie also gekommen. | Zygmunt? Z Łodzi? A więc pan przyszedł. | Ja, ich bin gekommen. Es war ein weiter Weg. | Powiedz, że przyszedłeś i że to była daleka droga. | „Ein weiter Weg” to „daleka droga”. | | shift=-1
+t Zygmunt? Aus Lodz? Dann sind Sie also gekommen. | Zygmunt? Z Łodzi? A więc Pan przyszedł. | Ja, ich bin gekommen. Es war ein weiter Weg. | Powiedz, że przyszedłeś i że to była daleka droga. | „Ein weiter Weg” to „daleka droga”. | | shift=-1
 w wenige | niewiele, kilka
 w gekannt | znał(a) (kennen)
-o Es sind nur wenige Menschen hier. Haben Sie sie lange nicht gesehen? | Jest tu tylko kilka osób. Nie widział jej pan długo? | Ich habe sie sechsundsiebzig Jahre nicht gesehen. | Ich habe sie gestern gesehen.; Ich habe sie nie gekannt. | Mówisz prawdę: widzieliście się ostatni raz 76 lat temu.; „Wczoraj” jest nieprawdą.; „Nigdy jej nie znałem” zaprzecza temu, że tu jesteś. | loss=2
+o Es sind nur wenige Menschen hier. Haben Sie sie lange nicht gesehen? | Jest tu tylko kilka osób. Nie widział jej Pan długo? | Ich habe sie sechsundsiebzig Jahre nicht gesehen. | Ich habe sie gestern gesehen.; Ich habe sie nie gekannt. | Mówisz prawdę: widzieliście się ostatni raz 76 lat temu.; „Wczoraj” jest nieprawdą.; „Nigdy jej nie znałem” zaprzecza temu, że tu jesteś. | loss=2
 w Freunde | przyjaciele (Freund)
 t Sie hatte keine Kinder und keine Freunde mehr. Sie war lange allein. | Nie miała już dzieci ani przyjaciół. Długo była sama. | Das tut mir sehr leid. Ich wusste es nicht. | Powiedz, że ci przykro i że o tym nie wiedziałeś. | „Ich wusste es nicht” to „nie wiedziałem tego”. | | shift=-1
 w Messe | msza | die | die Messen
@@ -3023,12 +3023,12 @@ w Blumen | kwiaty (Blume)
 w Sarg | trumna | der | die Särge
 w Passionsblumen | passiflory (Passionsblume)
 w gewünscht | życzył(a) sobie (wünschen)
-t Sehen Sie die Blumen auf dem Sarg? Das sind Passionsblumen. Sie hat sie selbst gewünscht. | Widzi pan kwiaty na trumnie? To passiflory. Sama sobie ich życzyła. | Passionsblumen? Warum gerade diese Blume? | Zapytaj, dlaczego właśnie ten kwiat. | „Gerade” w pytaniu znaczy „właśnie”. | | gain=1
+t Sehen Sie die Blumen auf dem Sarg? Das sind Passionsblumen. Sie hat sie selbst gewünscht. | Widzi Pan kwiaty na trumnie? To passiflory. Sama sobie ich życzyła. | Passionsblumen? Warum gerade diese Blume? | Zapytaj, dlaczego właśnie ten kwiat. | „Gerade” w pytaniu znaczy „właśnie”. | | gain=1
 w Priester | ksiądz, kapłan | der | die Priester
 w legt | kładzie (legen)
 w Schulter | ramię, bark | die | die Schultern
 w erzählen | opowiadać
-e Zygmunt sieht den Sarg und die Blumen. Der Priester legt ihm die Hand auf die Schulter. Kommen Sie, ich muss Ihnen etwas erzählen. | Zygmunt patrzy na trumnę i kwiaty. Ksiądz kładzie mu rękę na ramieniu. Proszę ze mną iść, muszę panu coś opowiedzieć.
+e Zygmunt sieht den Sarg und die Blumen. Der Priester legt ihm die Hand auf die Schulter. Kommen Sie, ich muss Ihnen etwas erzählen. | Zygmunt patrzy na trumnę i kwiaty. Ksiądz kładzie mu rękę na ramieniu. Proszę ze mną iść, muszę Panu coś opowiedzieć.
 
 @level 9 | Opowieść księdza | patience=5 cap=6 typed=0.5 extra=2 hint=letters
 desc Rozdział 9: Cierpienie i zaproszenie
@@ -3057,15 +3057,15 @@ t Sie wollte ihre Familie retten. Sie dachte, das Leiden in Frankreich ist klein
 w kam | przyszła (kommen)
 w freies | wolny
 w bat | prosiła (bitten)
-t Nach Edmonds Tod kam sie in ein freies Polen zurück. Sie bat mich, Sie zu suchen, aber sie hatte nicht den Mut. | Po śmierci Edmonda wróciła do wolnej Polski. Prosiła mnie, żebym pana odnalazł, ale nie miała odwagi. | Dann hat sie die Einladung geschrieben. | Powiedz, że w takim razie to ona napisała zaproszenie. | „Einladung” to „zaproszenie”; „geschrieben” to „napisane”. | | gain=1
+t Nach Edmonds Tod kam sie in ein freies Polen zurück. Sie bat mich, Sie zu suchen, aber sie hatte nicht den Mut. | Po śmierci Edmonda wróciła do wolnej Polski. Prosiła mnie, żebym Pana odnalazł, ale nie miała odwagi. | Dann hat sie die Einladung geschrieben. | Powiedz, że w takim razie to ona napisała zaproszenie. | „Einladung” to „zaproszenie”; „geschrieben” to „napisane”. | | gain=1
 w hatten | mieliście (haben)
 w Freuen | cieszyć się (sich freuen)
 w Strafe | kara | die | die Strafen
 w gewusst | wiedział (wissen)
 w leidet | cierpi (leiden)
-o Ja, die Einladung ist von ihr. Sie wollte, dass Sie sehen. Sie hatten recht. Freuen Sie sich darüber? | Tak, zaproszenie jest od niej. Chciała, żeby pan zobaczył: miał pan rację. Cieszy się pan z tego? | Nein. Ich wollte nie, dass sie leidet. | Ja, jetzt hat sie ihre Strafe.; Ja, ich habe es immer gewusst. | Mówisz szczerze: nie chciałeś jej cierpienia.; To byłaby gorzka pociecha, a ty przecież jej nie chcesz.; „Zawsze wiedziałem” to duma, a nie to, co czujesz. | loss=2
+o Ja, die Einladung ist von ihr. Sie wollte, dass Sie sehen. Sie hatten recht. Freuen Sie sich darüber? | Tak, zaproszenie jest od niej. Chciała, żeby Pan zobaczył: miał Pan rację. Cieszy się Pan z tego? | Nein. Ich wollte nie, dass sie leidet. | Ja, jetzt hat sie ihre Strafe.; Ja, ich habe es immer gewusst. | Mówisz szczerze: nie chciałeś jej cierpienia.; To byłaby gorzka pociecha, a ty przecież jej nie chcesz.; „Zawsze wiedziałem” to duma, a nie to, co czujesz. | loss=2
 w zurückdrehen | cofnąć
-t Möchten Sie etwas sagen? | Chciałby pan coś powiedzieć? | Ich möchte die Zeit zurückdrehen. Aber das geht nicht. | Powiedz, że chciałbyś cofnąć czas, ale to niemożliwe. | „Zurückdrehen” to „cofnąć”. | | shift=-1
+t Möchten Sie etwas sagen? | Chciałby Pan coś powiedzieć? | Ich möchte die Zeit zurückdrehen. Aber das geht nicht. | Powiedz, że chciałbyś cofnąć czas, ale to niemożliwe. | „Zurückdrehen” to „cofnąć”. | | shift=-1
 w nickt | kiwa głową (nicken)
 w Sakristei | zakrystia | die | die Sakristeien
 w weht | wieje (wehen)
@@ -3081,19 +3081,19 @@ win Mówisz: wybaczam. Serce jest lekkie, a wiatr nad cmentarzem ucicha. Po 76 l
 partial Wybaczyłeś, choć jeszcze z trudem. Zostajesz przy grobie dłużej, niż planowałeś.
 fail Żal jest silniejszy. Odchodzisz z cmentarza, ale w sercu wciąż coś ciąży.
 w Grab | grób | das | die Gräber
-t Wir stehen am Grab. Es ist still. Was fühlen Sie? | Stoimy przy grobie. Jest cicho. Co pan czuje? | Ich fühle Trauer. Und ein bisschen Wut. | Powiedz, że czujesz smutek i trochę złości. | „Trauer” to „żałoba, smutek”; „Wut” to „złość”. | | gain=1
+t Wir stehen am Grab. Es ist still. Was fühlen Sie? | Stoimy przy grobie. Jest cicho. Co Pan czuje? | Ich fühle Trauer. Und ein bisschen Wut. | Powiedz, że czujesz smutek i trochę złości. | „Trauer” to „żałoba, smutek”; „Wut” to „złość”. | | gain=1
 w verraten | zdradzony (verraten)
 w gefühlt | czuł (fühlen)
 w verlassen | opuścić, opuścił (verlassen)
-t Sie haben sich verraten gefühlt. Das kann ich verstehen. | Czuł się pan zdradzony. Mogę to zrozumieć. | Ja, sie hat mich ohne ein Wort verlassen. | Powiedz, że odeszła bez jednego słowa. | „Ohne ein Wort” to „bez słowa”; „verlassen” to „opuścić”. | | shift=-1
-t Und doch sind Sie gekommen. Warum? | A jednak pan przyszedł. Dlaczego? | Weil sie meine Freundin war. Ich habe sie immer geliebt. | Powiedz, że była twoją przyjaciółką i że zawsze ją kochałeś. | „Weil” to „ponieważ”; po „weil” czasownik idzie na koniec: „weil sie meine Freundin war”. | | gain=1
+t Sie haben sich verraten gefühlt. Das kann ich verstehen. | Czuł się Pan zdradzony. Mogę to zrozumieć. | Ja, sie hat mich ohne ein Wort verlassen. | Powiedz, że odeszła bez jednego słowa. | „Ohne ein Wort” to „bez słowa”; „verlassen” to „opuścić”. | | shift=-1
+t Und doch sind Sie gekommen. Warum? | A jednak Pan przyszedł. Dlaczego? | Weil sie meine Freundin war. Ich habe sie immer geliebt. | Powiedz, że była twoją przyjaciółką i że zawsze ją kochałeś. | „Weil” to „ponieważ”; po „weil” czasownik idzie na koniec: „weil sie meine Freundin war”. | | gain=1
 w Ruh | spoczywaj (ruhen)
 w verloren | przegrał (verlieren)
 w zerstört | zniszczył (zerstören)
-k Sie können ihr jetzt ein Wort sagen. Was sagen Sie ihr? | Może jej pan teraz coś powiedzieć. Co jej pan powie? | Ich verzeihe dir, Józefa. Ruh in Frieden. | Du hast mein Leben zerstört. Ich verzeihe nie.; Ich hatte recht. Du hast verloren. | To zdanie jest wolne od żalu. Zygmunt chce wybaczyć, bo kocha ją jak przyjaciółkę.; Gorycz zamyka drzwi, a przecież Zygmunt nigdy nie chciał jej cierpienia.; „Miałem rację” to właśnie ta duma, której Zygmunt nie czuje. Tu chodzi o emocje, nie o quiz: wybierz łagodność. | shift=-1
+k Sie können ihr jetzt ein Wort sagen. Was sagen Sie ihr? | Może jej Pan teraz coś powiedzieć. Co jej Pan powie? | Ich verzeihe dir, Józefa. Ruh in Frieden. | Du hast mein Leben zerstört. Ich verzeihe nie.; Ich hatte recht. Du hast verloren. | To zdanie jest wolne od żalu. Zygmunt chce wybaczyć, bo kocha ją jak przyjaciółkę.; Gorycz zamyka drzwi, a przecież Zygmunt nigdy nie chciał jej cierpienia.; „Miałem rację” to właśnie ta duma, której Zygmunt nie czuje. Tu chodzi o emocje, nie o quiz: wybierz łagodność. | shift=-1
 w lasse | puszczam (lassen)
 t Sie hat einen Fehler gemacht, und sie hat dafür bezahlt. | Popełniła błąd i zapłaciła za niego. | Ja. Ich lasse jetzt alles los. | Zgódź się i powiedz, że puszczasz teraz wszystko. | „Loslassen” to „puścić”; „ich lasse los” to „puszczam”. | | gain=1
-t Möchten Sie die Blume auf das Grab legen? | Chciałby pan położyć kwiat na grobie? | Ja, gern. Die Passionsblume ist für sie. | Zgódź się i powiedz, że passiflora jest dla niej. | „Für sie” to „dla niej”. | | gain=1
+t Möchten Sie die Blume auf das Grab legen? | Chciałby Pan położyć kwiat na grobie? | Ja, gern. Die Passionsblume ist für sie. | Zgódź się i powiedz, że passiflora jest dla niej. | „Für sie” to „dla niej”. | | gain=1
 e Zygmunt legt die Blume auf das Grab. Der Wind wird leise, und nach sechsundsiebzig Jahren ist sein Herz leicht. | Zygmunt kładzie kwiat na grobie. Wiatr cichnie, a po siedemdziesięciu sześciu latach jego serce jest lekkie.
 
 @larp kraina1 | Kraina naszych bogów, część I: Jaśmina | Malina | M | Baśniowa kraina, w której bogowie powoli odchodzą, a ludzie uczą się żyć bez nich. Zaczyna się w lesie, a kończy na progu mrocznego lasu. | Jesteś Jaśminą. Przeżyj rok od wiosny do przedwiośnia: chroń rodzinę, zachowaj odwagę i nie przestawaj wierzyć, nawet gdy bogowie odchodzą.
