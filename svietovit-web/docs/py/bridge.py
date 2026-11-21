@@ -239,8 +239,26 @@ def _nog(ref):
     return other - art
 
 
+def _decap(toks):
+    """Niemiecki: słowo na początku zdania ma w kursie wielką literę, ale to nie rzeczownik: wielka litera na klocku zdradzałaby początek zdania. Rzeczowniki (z rodzajem) zostają wielkie."""
+    if _cur.get("cid") != "german":
+        return list(toks)
+    import re as _re
+    nouns = set(json.loads(gender_map())) | {str(w.get("form")) for w in _cur["E"].WORDS.values()
+                                             if str(w.get("form") or "")[:1].isupper() and _re.search(r"imię|nazwisko|nazwa|miast|kraj|rzek", str(w.get("pl") or ""))}
+    out = []
+    for i, t in enumerate(toks):
+        t = str(t)
+        start = i == 0 or str(toks[i - 1]) in (".", "!", "?")
+        if start and t[:1].isupper() and t not in nouns:
+            t = t[0].lower() + t[1:]
+        out.append(t)
+    return out
+
+
 def _tiles(toks, ref=None):
     nog = _nog(ref)
+    toks = _decap(toks)
     return [({"v": t, "sub": _tok_sub(t), "nog": True} if str(t).lower() in nog else {"v": t, "sub": _tok_sub(t)}) for t in toks]
 
 
