@@ -1149,6 +1149,7 @@ def larp_answer(payload_json):
     p = json.loads(payload_json)
     res = {"verdict": None, "why": None, "text": None, "sub": None}
     nxt = None
+    _p0 = _larp["patience"]
     if "options" in n:
         toks, verdict, target, why = n["options"][int(p["option"])]
         res.update(verdict=verdict, why=why, text=_larp_disp(toks), sub=_sent_sub(toks))
@@ -1228,6 +1229,8 @@ def larp_answer(payload_json):
     if nxt and not endless and cfg["nodes"].get(nxt, {}).get("shift"):          # „amnezja” albo nowy skandal: zmiana nie zależy od odpowiedzi
         _larp["patience"] = max(1, min(cap, _larp["patience"] + int(cfg["nodes"][nxt]["shift"])))   # zmiana sama nie kończy sceny: tylko błąd może zabić
     res["patience"] = _larp["patience"]
+    if res["verdict"] in ("good", "weak") and _larp["patience"] != _p0:
+        res["delta"] = _larp["patience"] - _p0                       # wiarygodność zmieniła się bez błędu gracza (fabuła albo nagroda): UI to pokaże
     if nxt:
         _larp["node"] = nxt
         node = _larp_node(lp, nxt)
