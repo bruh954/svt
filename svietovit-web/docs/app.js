@@ -917,6 +917,7 @@ function larpScene(S, lid, lvl, R) {
     log.append(b); toBottom(); return b;
   };
   const note = (txt, cls) => { log.append(h("div", { class: "note" + (cls ? " " + cls : "") }, txt)); toBottom(); };
+  const narr = (text, sub, pl) => { const b = h("div", { class: "narr", dir: "auto", onclick: () => b.classList.toggle("open") }, text, sub ? h("small", {}, sub) : null, pl ? h("div", { class: "en" }, pl) : null); log.append(b); toBottom(); return b; };   // zakończenie sceny: narracja, nie wiadomość rozmówcy
   if (!R) { if (S.disclaimer) note(S.disclaimer); note(S.scene); note(t("tap_tr")); }
   const botSay = () => {
     reply.replaceChildren(); excluded.clear();
@@ -945,7 +946,7 @@ function larpScene(S, lid, lvl, R) {
     if (r.verdict === "bad") { sfx.wrong(); if (r.why) note(t("think") + " " + r.why); if (r.answer && !r.end) note(t("larp_correct") + r.answer); }
     else if (r.verdict === "weak") { sfx.tap(); note(t("larp_weak") + (r.why ? " " + r.why : "")); }
     else sfx.correct();
-    if (r.end) return setTimeout(() => { if (r.node && r.node.end) { bubble(r.node.bot_text, r.node.bot_sub, r.node.pl); speak(r.node.bot_text, true, true); } finish(r.end); }, 700);
+    if (r.end) return setTimeout(() => { if (r.node && r.node.end) { narr(r.node.bot_text, r.node.bot_sub, r.node.pl); speak(r.node.bot_text, true, true); } finish(r.end); }, 700);
     if (r.node) { node = r.node; return setTimeout(botSay, 500); }
     setTimeout(showReply, 900);
   };

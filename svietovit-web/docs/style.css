@@ -202,3 +202,5 @@ textarea.input{font-size:calc(16px*var(--k));min-height:90px}
 .prow:last-child{border-bottom:0}.prow.cur{background:var(--bluel)}
 .plab{color:var(--sub);font-size:calc(15px*var(--k))}.pform{font-size:calc(20px*var(--k));text-align:right}
 .gr-body .opt{min-height:52px}
+
+.narr{align-self:center;text-align:center;font-style:italic;color:var(--ink);background:transparent;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 8px;margin:8px 4px;font-size:calc(17px*var(--k));line-height:1.5}.narr small{display:block;font-style:normal;color:var(--sub);font-size:calc(14px*var(--k));margin-top:4px}.narr .en{display:block;font-style:normal;color:var(--sub);font-size:calc(14px*var(--k));margin-top:4px}
