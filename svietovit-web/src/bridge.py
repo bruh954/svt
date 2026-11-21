@@ -1117,6 +1117,25 @@ def _larp_lenient(given, cands):
     return None
 
 
+def _addr_variants(cands, lp):
+    """Zwrot do rozmówcy po imieniu („Danke, Greta.”) jest dodatkiem: odpowiedź bez imienia też jest dobra."""
+    names = set()
+    for lv in (lp.get("levels") or [lp]):
+        for w in str(lv.get("partner") or "").replace("|", " ").split():
+            if len(w) > 2:
+                names.add(w.lower())
+    out = []
+    for c in cands:
+        c = list(c)
+        for i, t in enumerate(c):
+            if str(t).lower() in names:
+                if i > 0 and c[i - 1] == ",":
+                    out.append(c[:i - 1] + c[i + 1:])
+                elif i + 1 < len(c) and c[i + 1] == ",":
+                    out.append(c[:i] + c[i + 2:])
+    return out
+
+
 def larp_answer(payload_json):
     """Odpowiedź w bieżącym węźle: {"option": i}, {"tokens": [...]} (klocki) albo {"text": "..."} (wpisana z klawiatury)."""
     if _larp["done"]:
@@ -1135,6 +1154,7 @@ def larp_answer(payload_json):
     else:
         toks, _pl = n["build"]
         cands = [toks] + list(n.get("alts") or [])
+        cands += _addr_variants(cands, lp)
         want = [_larp_norm(_larp_disp(c)) for c in cands]
         disp = _larp_disp(toks)
         if "text" in p:
