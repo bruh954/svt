@@ -2179,9 +2179,9 @@ partner Hochmeister Otto | O
 win Wielki Mistrz kiwa głową. Chłopiec jest spokojny i grzeczny, więc zostaje na zamku. Jutro zaczynają się lekcje.
 partial Otto zgadza się, ale patrzy na ciebie zbyt uważnie. Czuje, że coś ukrywasz.
 fail Otto traci cierpliwość. Mówi, że nie nadajesz się do nauki, a brat będzie musiał cię zabrać.
-w Marienburg | Malbork (nazwa zamku)
+w Mariograd | Mariogród (nazwa zamku)
 w Wojciech | Wojciech (imię)
-t Willkommen in Marienburg. Du bist Wojciech, nicht wahr? | Witaj w Marienburgu. Jesteś Wojciech, prawda? | Ja, ich bin Wojciech. | Przedstaw się Wielkiemu Mistrzowi.
+t Willkommen in Mariograd. Du bist Wojciech, nicht wahr? | Witaj w Mariogradzie. Jesteś Wojciech, prawda? | Ja, ich bin Wojciech. | Przedstaw się Wielkiemu Mistrzowi.
 w Exil | wygnanie | das | –
 t Gut, Wojciech. Dein Bruder bringt dich zu uns. Warum bist du hier? | Dobrze, Wojciechu. Twój brat przywozi cię do nas. Dlaczego tu jesteś? | Ich bin im Exil. | Powiedz, że jesteś na wygnaniu.
 w Hochmeister | Wielki Mistrz | der | die Hochmeister
@@ -2673,7 +2673,7 @@ t Der Fluss ist weit weg. Die Tore sind zu. Du lügst. | Rzeka jest daleko. Bram
 w sagst | mówisz (sagen)
 w dazu | na to
 w Gottes | Boga (Gott)
-o Darüber sprechen wir später. Pater Andrzej sagt: Das Mädchen darf die Firmung bekommen. Der König schaut auf Marienburg. Was sagst du dazu? | Porozmawiamy o tym później. Ojciec Andrzej mówi: Dziewczynka może przyjąć bierzmowanie. Król patrzy na Malbork. Co ty na to? | Das ist gut, Herr Hochmeister. Aldona ist ein Kind Gottes. | Das Mädchen soll im Keller bleiben.; Das ist mir egal. | Bierzmowanie to dobry krok, który ratuje Aldonę.; Aldona nie może wrócić do lochu.; Obojętność przy takiej sprawie zdradziłaby cię. | gain=1
+o Darüber sprechen wir später. Pater Andrzej sagt: Das Mädchen darf die Firmung bekommen. Der König schaut auf Mariograd. Was sagst du dazu? | Porozmawiamy o tym później. Ojciec Andrzej mówi: Dziewczynka może przyjąć bierzmowanie. Król patrzy na Mariogród. Co ty na to? | Das ist gut, Herr Hochmeister. Aldona ist ein Kind Gottes. | Das Mädchen soll im Keller bleiben.; Das ist mir egal. | Bierzmowanie to dobry krok, który ratuje Aldonę.; Aldona nie może wrócić do lochu.; Obojętność przy takiej sprawie zdradziłaby cię. | gain=1
 w zuschaut | przygląda się (zuschauen)
 t Ich gebe nach, weil der König zuschaut. Aber du bleibst unter meinen Augen. | Ustępuję, bo król patrzy. Ale zostajesz pod moim okiem. | Ich verstehe, Herr Hochmeister. | Powiedz, że rozumiesz.
 w Respekt | szacunek | der | –
@@ -2685,7 +2685,7 @@ w stickt | haftuje (sticken)
 w Tuch | płótno, chusta | das | die Tücher
 w kauft | kupuje (kaufen)
 w unsere | nasza
-t Vor Gott? Das werden wir sehen. Der König kauft Marienburg. Das Mädchen ist dann nicht mehr unsere Gefangene. | Przed Bogiem? Zobaczymy. Król kupuje Malbork. Dziewczynka nie będzie wtedy naszą jeńcem. | Dann ist Aldona frei? | Zapytaj, czy Aldona będzie wolna.
+t Vor Gott? Das werden wir sehen. Der König kauft Mariograd. Das Mädchen ist dann nicht mehr unsere Gefangene. | Przed Bogiem? Zobaczymy. Król kupuje Mariogród. Dziewczynka nie będzie wtedy naszą jeńcem. | Dann ist Aldona frei? | Zapytaj, czy Aldona będzie wolna.
 w Kapelle | kaplica | die | die Kapellen
 e Otto schaut dich lange an und geht. Er sagt kein Wort mehr. In der Kapelle wartet schon Aldona. | Otto długo na ciebie patrzy i odchodzi. Nie mówi już ani słowa. W kaplicy czeka już Aldona.
 
@@ -2741,7 +2741,7 @@ w danken | dziękować
 w verstehst | rozumiesz (verstehen)
 t Danke, dass du das verstehst. Du hast mich gerettet, Wojciech. Ich weiß nicht, wie ich danken soll. | Dziękuję, że to rozumiesz. Uratowałeś mnie, Wojciechu. Nie wiem, jak dziękować. | Du hast mich auch gerettet, mit deinem Traum. | Powiedz, że ona też ciebie uratowała swoim snem.
 t Das freut mich. Was hast du da in der Hand? | Cieszę się. Co tam trzymasz w dłoni? | Das ist ein Salzkristall. Er schützt dich vor dem Bösen. | Daj jej kryształ soli i powiedz, że chroni przed złem.
-t Danke, er ist schön. Der König hat Marienburg gekauft, und ich bin frei. | Dziękuję, jest piękny. Król kupił Malbork i jestem wolna. | Gott sei Dank! Ich freue mich für dich. | Ucieszyć się: dzięki Bogu, cieszysz się jej szczęściem.
+t Danke, er ist schön. Der König hat Mariograd gekauft, und ich bin frei. | Dziękuję, jest piękny. Król kupił Mariogród i jestem wolna. | Gott sei Dank! Ich freue mich für dich. | Ucieszyć się: dzięki Bogu, cieszysz się jej szczęściem.
 w Wirst | będziesz (werden)
 w besuche | odwiedzam (besuchen)
 t Danke, Wojciech. Wirst du mich besuchen? | Dziękuję, Wojciechu. Odwiedzisz mnie? | Ja, ich besuche dich bestimmt. | Obiecaj, że na pewno ją odwiedzisz.
