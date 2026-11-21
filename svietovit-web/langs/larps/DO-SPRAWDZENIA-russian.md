@@ -174,3 +174,210 @@ Nowe słowa: свобо́дно = wolno, wolne, опа́здывает = spóźn
 | 2 | Спаси́бо. Хоти́те сиде́ть у окна́? *(Dziękuję. Czy chce pan siedzieć przy oknie?)* | **Да, у окна́, пожа́луйста.** (dobra); złe: Нет, спаси́бо, я не хочу́ окно́.; Да, я хочу́ платить. | Konduktor pyta o miejsce, nie o płacenie.; Przy oknie to у окна, a nie „не хочу окно”. |
 | 3 | Э́то место свобо́дно. По́езд опа́здывает на де́сять мину́т. *(To miejsce jest wolne. Pociąg ma dziesięć minut spóźnienia.)* | **Э́то не проблема. Спаси́бо!** *(Powiedz, że to nie problem, i podziękuj.)* | „Nie problem” to не проблема. |
 | 4 | Сча́стливого пути́ в Петербу́рг! *(Szczęśliwej podróży do Petersburga!)* | — |  |
+
+## Красный Град (krasnygrad)
+
+**Scena:** Czerwona twierdza z baśni o ognistym ptaku, głodzie i klątwie. Jesteś I-Uanem, jedynym synem cara. Twoja „nadzieja” spada, gdy mówisz zimno albo okrutnie, a rośnie, gdy mówisz szczerze i z dobrym sercem.  
+**Cel:** Jesteś carewiczem I-Uanem. Przejdź drogę od twierdzy przez las i wojnę aż do rozmowy z przodkami: ratuj lud, nie ulegaj głodowi i nie zawieraj układu z diabłem.  
+**Rozmówca:** Ня́ня  
+**Zakończenia:** win: Czerwony Gród żyje. Przodkowie patrzą z dumą, Li-Sa i dzieci są bezpieczne, a ty, nieśmiertelny car, rządzisz mądrze i pamiętasz. Nad miastem szczęścia i bogactwa wstaje ognisty świt. · partial: Gród przetrwał, ale klątwa wciąż szepcze w twoim sercu. Rządzisz z bólem i uczysz się, jak nie pozwolić głodowi mówić za ciebie. · fail: Głód zwyciężył. Twoje myśli rozsypały się jak lód na wiosnę, a Czerwony Gród został tylko opowieścią, którą matki szepczą dzieciom ku przestrodze.  
+
+### Poziom 1: Legenda o grodzie  (typed=0, hint=none, cierpliwość 4)
+
+Nowe słowa: И-Уан = I-Uan (imię carewicza), спишь = śpisz (спать), сплю = śpię (спать), ска́зку = bajkę, baśń (biernik od ска́зка), жила́ = żyła, mieszkała (жить), постро́ила = zbudowała (постро́ить), кака́я = jaka (rodzaj żeński od како́й), о́гненная = ognista (rodzaj żeński), не́ба = nieba (dopełniacz od не́бо), кра́сная = czerwona (rodzaj żeński od кра́сный), краси́во = ładnie, pięknie, говоря́т = mówią (говори́ть), го́роде = mieście (miejscownik od го́род), хле́ба = chleba (dopełniacz od хлеб), голо́дные = głodni (liczba mnoga od голо́дный), лю́дям = ludziom (celownik od лю́ди), спи = śpij (спать), споко́йной = spokojnej (споко́йной но́чи = dobranoc), ня́ня = niania, царе́вич = carewicz, бу́дет = będzie (быть)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Wieczór w twierdzy. Jesteś I-Uanem, jedynym synem cara. Stara niania siada przy twoim łóżku i opowiada legendę o grodzie, a za oknem płonie czerwony zachód słońca.  
+*Cel:* Posłuchaj niani, zadawaj proste pytania i dowiedz się, skąd wzięła się nazwa Czerwony Gród.  
+*Zakończenia:* win: Niania uśmiecha się i otula cię kocem: „Ты хороший мальчик.” Zasypiasz z myślą o ognistym ptaku i o ludziach, którym trzeba pomóc. · partial: Niania dokończyła legendę, choć kilka razy musiała ci tłumaczyć. Zasypiasz, a w głowie wciąż brzmi: „Красный Град”. · fail: Niania nie rozumie, o co pytasz, i macha ręką: „Спи!” Zasypiasz w złym humorze i niczego się nie dowiadujesz.
+
+| 1 | Добрый ве́чер, И-Уан. Ты не спишь? *(Dobry wieczór, I-Uanie. Nie śpisz?)* | **Нет, я не сплю. Я хочу́ ска́зку.** *(Powiedz, że nie śpisz i że chcesz bajkę.)* | „Chcę” to я хочу, a „bajka” to сказка. |
+| 2 | Хорошо́. Давно здесь жила́ пти́ца. Она́ постро́ила наш город. *(Dobrze. Dawno temu mieszkał tu ptak. Zbudował nasz gród.)* | **Кака́я пти́ца?** *(Zapytaj, jaki to był ptak.)* | „Птица” jest rodzaju żeńskiego, więc „jaka”: какая. |
+| 3 | Э́то о́гненная пти́ца. Она́ короле́ва не́ба. *(To ognisty ptak. To królowa nieba.)* | **Она́ кра́сная?** *(Zapytaj, czy jest czerwona.)* | W rosyjskim w czasie teraźniejszym nie ma „jest”: она красная? |
+| 4 | Да, она́ кра́сная, как ого́нь. Поэ́тому наш город красный. *(Tak, jest czerwona jak ogień. Dlatego nasz gród jest czerwony.)* | **Как краси́во!** *(Zachwyć się: jak ładnie!)* | „Как” w okrzyku znaczy „jak”: как красиво! |
+| 5 | Твой оте́ц царь. Лю́ди говоря́т: он злой. *(Twój ojciec jest carem. Ludzie mówią, że jest zły.)* | **Нет, мой оте́ц не злой. Он добрый.** *(Zaprzecz: twój ojciec jest dobry.)* | Przeczenie to не: не злой. |
+| 6 | Но в го́роде нет хле́ба. Лю́ди о́чень голо́дные. Что ты хо́чешь? *(Ale w mieście nie ma chleba. Ludzie są bardzo głodni. Czego chcesz?)* | **Я хочу́ помочь лю́дям.** (dobra); złe: Я хочу́ спать.; Я хочу́ торт. | Ludzie są głodni, a ty chcesz spać? Trzeba im pomóc.; Ludzie głodują, a ty myślisz o torcie? |
+| 7 | Ты добрый ма́льчик. Теперь спи. *(Jesteś dobrym chłopcem. Teraz śpij.)* | **Споко́йной но́чи, ня́ня.** *(Życz niani dobrej nocy.)* | „Dobranoc” to спокойной ночи. |
+| 8 | Спи, мой царе́вич. За́втра бу́дет трудный день. *(Śpij, mój carewiczu. Jutro będzie ciężki dzień.)* | — |  |
+
+### Poziom 2: Car i głód  (typed=0.1, hint=bank, cierpliwość 4)
+
+Nowe słowa: спал = spałem, spał (спать), людьми́ = ludźmi (narzędnik od лю́ди), го́лодом = głodem (narzędnik od го́лод), нам = nam, молока́ = mleka (dopełniacz od молоко́), пла́чут = płaczą (пла́кать), помо́жешь = pomożesz (помо́чь), тебе́ = tobie, помогу́ = pomogę (помо́чь), зна́ю = znam, wiem (знать), оди́н = jeden, jedyny, люблю́ = kocham, lubię (люби́ть), боя́тся = boją się (боя́ться), они́ = oni, иди́ = idź (идти́), слу́шай = słuchaj (слу́шать), люде́й = ludzi (dopełniacz od лю́ди), бу́ду = będę (быть)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Rano, w sali tronowej. Ojciec, car, jest blady i zmęczony. Państwo walczy z głodem, a na rynku ludzie szepczą. Kocha tylko ciebie, swojego jedynego syna.  
+*Cel:* Rozmawiaj z ojcem prosto i serdecznie: zapytaj o głód, pociesz go i obiecaj pomoc.  
+*Zakończenia:* win: Ojciec obejmuje cię: „Ты мой свет.” Pierwszy raz od tygodni uśmiecha się, a ty idziesz do miasta słuchać ludzi. · partial: Ojciec jest wdzięczny, ale smutny. Wiesz, że rozmowa nie rozwiązała głodu, i idziesz do miasta z ciężkim sercem. · fail: Ojciec patrzy na ciebie z bólem: „Ты не понимаешь меня.” Wychodzisz z sali, a głód w mieście rośnie.
+
+| 1 | До́брое у́тро, сын. Ты здесь! Как ты спал? *(Dzień dobry, synu. Jesteś tu! Jak spałeś?)* | **До́брое у́тро, оте́ц. Я спал хорошо́.** *(Przywitaj ojca i powiedz, że spałeś dobrze.)* | „Spałem” to я спал. |
+| 2 | А я не спал. У нас война. Э́то не война с людьми́. Э́то война с го́лодом. *(A ja nie spałem. Mamy wojnę. To nie wojna z ludźmi. To wojna z głodem.)* | **Что нам делать?** *(Zapytaj, co wam robić.)* | „Co robić?” to что делать? |
+| 3 | Нет хле́ба, нет мя́са, нет молока́. Де́ти пла́чут. *(Nie ma chleba, mięsa, mleka. Dzieci płaczą.)* | **Мне о́чень жаль, оте́ц.** *(Wyraź współczucie.)* | „Jest mi żal” to мне жаль. |
+| 4 | Я твой оте́ц и царь. Я должен найти хлеб. Ты мне помо́жешь? *(Jestem twoim ojcem i carem. Muszę znaleźć chleb. Pomożesz mi?)* | **Да, оте́ц, я тебе́ помогу́.** (dobra); złe: Нет, я не хочу́.; Нет, я не зна́ю тебя́. | Ojciec potrzebuje syna.; To twój ojciec, więc go znasz. |
+| 5 | Ты оди́н у меня́. Я о́чень тебя́ люблю́. Ты мой царе́вич. *(Masz tylko mnie, a ja tylko ciebie. Bardzo cię kocham. Jesteś moim carewiczem.)* | **Я тоже тебя́ люблю́, оте́ц.** *(Powiedz ojcu, że też go kochasz.)* | „Też” to тоже; „ciebie” w bierniku to тебя. |
+| 6 | Лю́ди боя́тся меня́. Они́ говоря́т: он злой царь. Э́то правда? *(Ludzie się mnie boją. Mówią: to zły car. Czy to prawda?)* | **Нет, ты не злой. Ты хо́чешь помочь лю́дям.** *(Zaprzecz: ojciec nie jest zły, chce pomóc ludziom.)* | „Pomóc ludziom” to помочь людям. |
+| 7 | Спаси́бо, сын. Иди́ в город и слу́шай люде́й. *(Dziękuję, synu. Idź do miasta i słuchaj ludzi.)* | **Хорошо́, оте́ц. Я иду́.** *(Zgódź się i wyjdź.)* | „Idę” to я иду. |
+| 8 | Иди́. Я бу́ду ждать тебя́ здесь. *(Idź. Będę tu na ciebie czekał.)* | — |  |
+
+### Poziom 3: Diabeł Kou-Sje-I  (typed=0.2, hint=bank, cierpliwość 3)
+
+Nowe słowa: Коу-Сие-И = Kou-Sje-I (diabeł), зна́ешь = znasz (знать), твоего́ = twojego (dopełniacz od твой), де́да = dziadka (dopełniacz od дед), дал = dał (дать), ему́ = jemu, ел = jadł (есть), был = był (быть), бы́ли = były, byli (быть), их = ich, прокля́тье = klątwa, твою́ = twoją (biernik od твоя́), помоги́ = pomóż (помо́чь), пла́чешь = płaczesz (пла́кать), гру́стно = smutno, зна́ли = znali (знать), пра́вды = prawdy (dopełniacz od пра́вда), подпиши́ = podpisz (подписа́ть), дам = dam (дать), всем = wszystkim (celownik od все), подпишу́ = podpiszę (подписа́ть), живёт = żyje (жить), ва́шей = waszej (ваш), семье́ = rodzinie (miejscownik od семья́), бу́дешь = będziesz (быть), бо́льше = więcej, скажи́ = powiedz (сказа́ть), пра́вду = prawdę (biernik od пра́вда), ухожу́ = odchodzę (уходи́ть), ра́вно = równo (всё равно́ = wszystko jedno), дай = daj (дать), сме́лый = odważny, прихо́дит = przychodzi (приходи́ть), уходи́ = odejdź (уходи́ть), бою́сь = boję się (боя́ться), мы = my, уви́димся = zobaczymy się (уви́деться)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Noc w twierdzy. W ciemnym korytarzu stoi cień z uśmiechem: diabeł Kou-Sje-I. Wie, co zrobił dziad cara, i zaprasza cię do rozmowy. Jedno złe słowo i oddasz mu władzę nad sobą.  
+*Cel:* Wysłuchaj diabła, nie przyjmij żadnego jego daru i nie podpisuj żadnego układu.  
+*Zakończenia:* win: Diabeł syczy i rozpływa się w mroku. Zostaje tylko zimny wiatr, a ty wiesz jedno: żadne jego słowo nie jest darem. · partial: Diabeł znika, ale zostawia w twoim sercu niepokój. Nie podpisałeś niczego, lecz jego śmiech brzmi jeszcze w uszach. · fail: Diabeł śmieje się: „Ты мой!” Korytarz gaśnie, a ty słyszysz tylko swój własny, cichy głos, który już do ciebie nie należy.
+
+| 1 | Добрый ве́чер, царе́вич. Я Коу-Сие-И. Ты меня́ зна́ешь? *(Dobry wieczór, carewiczu. Jestem Kou-Sje-I. Czy mnie znasz?)* | **Нет, я тебя́ не зна́ю. Кто ты?** *(Powiedz, że go nie znasz, i zapytaj, kim jest.)* | „Kto ty?” to кто ты? |
+| 2 | Я друг твоего́ де́да. Давно я дал ему́ хлеб. Народ ел и ел. *(Jestem przyjacielem twojego dziadka. Dawno dałem mu chleb. Lud jadł i jadł.)* | **Како́й хлеб?** *(Zapytaj, jaki chleb.)* | „Jaki” przy rodzaju męskim to какой. |
+| 3 | Э́то был не хлеб. Э́то бы́ли их де́ти. Теперь у вас прокля́тье. Хо́чешь, я помогу́ тебе́? *(To nie był chleb. To były ich dzieci. Teraz macie klątwę. Chcesz, żebym ci pomógł?)* | **Нет, я не хочу́ твою́ помощь.** (dobra); złe: Да, помоги́ мне.; Да, я хочу́ твой хлеб. · ŚMIERTELNE | Diabeł nie pomaga za darmo, jego pomoc to pułapka.; Jego „chleb” to właśnie klątwa. |
+| 4 | Ты не пла́чешь? Лю́ди пла́чут. *(Nie płaczesz? Ludzie płaczą.)* | **Мне о́чень гру́стно. Лю́ди не зна́ли пра́вды.** *(Powiedz, że jest ci bardzo smutno i że ludzie nie znali prawdy.)* | „Nie znali” to не знали. |
+| 5 | Подпиши́ здесь. Я дам хлеб всем. Мно́го хле́ба! *(Podpisz tutaj. Dam chleb wszystkim. Dużo chleba!)* | **Нет, я ничего́ не подпишу́.** *(Odmów: niczego nie podpiszesz.)* · warianty: Нет, я не подпишу́. · ŚMIERTELNE | Układ z diabłem to pułapka. „Niczego nie” po rosyjsku to ничего не. |
+| 6 | Хорошо́. Тогда́ слу́шай. Прокля́тье живёт в ва́шей семье́. Твой оте́ц уже́ голодный. Ско́ро ты бу́дешь голодный. Хо́чешь знать бо́льше? *(Dobrze. Wtedy słuchaj. Klątwa żyje w waszej rodzinie. Twój ojciec jest już głodny. Wkrótce i ty będziesz głodny. Chcesz wiedzieć więcej?)* | **Да, скажи́ мне пра́вду. Но я ничего́ не возьму́.** (dobra); złe: Нет, я ухожу́. Мне всё ра́вно.; Да, дай мне свой хлеб. · ŚMIERTELNE | Nie możesz tak zostawić ojca.; Chleb diabła to znowu pułapka. |
+| 7 | Ты сме́лый, царе́вич. Но я бу́ду ждать. Голод всегда́ прихо́дит. *(Jesteś odważny, carewiczu. Ale będę czekał. Głód zawsze przychodzi.)* | **Уходи́! Я не бою́сь тебя́.** *(Każ mu odejść.)* | „Nie boję się” to я не боюсь. |
+| 8 | Я ухожу́. Но мы ещё уви́димся. *(Odchodzę. Ale jeszcze się zobaczymy.)* | — |  |
+
+### Poziom 4: Wybór klątwy  (typed=0.25, hint=bank, cierpliwość 3)
+
+Nowe słowa: короле́вы = królowej (dopełniacz od короле́ва), ви́дишь = widzisz (ви́деть), ви́жу = widzę (ви́деть), бойся = bój się (боя́ться), пришёл = przyszedł (прийти́), бо́лен = chory (krótka forma od больно́й), мо́жет = może (мочь), нём = nim (miejscownik od он: в нём), перейдёт = przejdzie (перейти́), так = tak, w ten sposób, говори́т = mówi (говори́ть), возьмёт = weźmie (взять), бу́дут = będą (быть), возьму́т = wezmą (взять), умру́т = umrą (умере́ть), возьмёшь = weźmiesz (взять), сказа́л = powiedział (сказа́ть), тобо́й = tobą, оста́влю = zostawię (оста́вить), жди = czekaj (ждать), придёт = przyjdzie (прийти́), умира́ет = umiera (умира́ть), по́мни = pamiętaj (по́мнить)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Wysokie góry, zimny wiatr. Lud wygnał twojego ojca z grodu, a ty poszedłeś za nim. Z płomieni wychodzi ognisty anioł, ptak królowej nieba, i proponuje układ, który ocali lud.  
+*Cel:* Pomóż ojcu zrozumieć, co znaczy układ z aniołem, i wybierz mądrze: ratuj lud, a nie siebie.  
+*Zakończenia:* win: Anioł kłania się: „Так будет.” Ojciec dźwiga klątwę, lud jest ocalony, a ty wiesz, co cię czeka. Nie boisz się, bo wybrałeś dobrze. · partial: Anioł zgadza się na układ, ale patrzy na ciebie ze smutkiem. Wybór został podjęty, choć nie z całą mądrością. · fail: Płomienie gasną, a anioł znika. Zimny wiatr zabiera twoje słowa, a lud zostaje sam z głodem.
+
+| 1 | Ты И-Уан? Я ангел, пти́ца короле́вы не́ба. Что ты ви́дишь? *(Jesteś I-Uan? Jestem aniołem, ptakiem królowej nieba. Co widzisz?)* | **Я ви́жу ого́нь. Он красивый, но я бою́сь.** *(Powiedz, że widzisz ogień, ładny, ale się boisz.)* | „Boję się” to я боюсь. |
+| 2 | Не бойся. Я пришёл помочь. Твой оте́ц о́чень бо́лен. *(Nie bój się. Przyszedłem pomóc. Twój ojciec jest bardzo chory.)* | **Помоги́ ему́, пожа́луйста!** *(Poproś anioła o pomoc dla ojca.)* | „Pomóż mu” to помоги ему. |
+| 3 | Твой оте́ц мо́жет взять прокля́тье. Тогда́ народ бу́дет жить. Но голод бу́дет жить в нём. *(Twój ojciec może przyjąć klątwę. Wtedy lud będzie żył. Ale głód będzie żył w nim.)* | **Что бу́дет потом?** *(Zapytaj, co będzie potem.)* | „Potem” to потом. |
+| 4 | Потом прокля́тье перейдёт на тебя́. Так говори́т закон. Кто возьмёт прокля́тье сейча́с? *(Potem klątwa przejdzie na ciebie. Tak mówi prawo. Kto weźmie klątwę teraz?)* | **Пусть возьмёт оте́ц. Лю́ди бу́дут жить.** (dobra); złe: Пусть возьму́т лю́ди. Я не хочу́.; Пусть никто́ не возьмёт. Пусть лю́ди умру́т. · ŚMIERTELNE | Ludzie nie mogą przyjąć klątwy, od tego jest car.; Gdyby nikt nie wziął klątwy, lud by zginął. |
+| 5 | Ты возьмёшь прокля́тье потом? То́лько пра́вду! *(Weźmiesz klątwę potem? Tylko prawdę!)* | **Да, я возьму́ прокля́тье потом.** *(Zgódź się, że weźmiesz klątwę później.)* · warianty: Да, я возьму́ потом.; Да, потом возьму́ я. · ŚMIERTELNE | Przyjmujesz ją, żeby uratować lud. |
+| 6 | Хорошо́. Твой оте́ц тоже сказа́л да. Теперь голод бу́дет жить в нём. *(Dobrze. Twój ojciec też powiedział tak. Teraz głód będzie żył w nim.)* | **Оте́ц, я с тобо́й. Я тебя́ не оста́влю.** *(Powiedz ojcu, że jesteś z nim.)* | „Nie zostawię cię” to я тебя не оставлю. |
+| 7 | Иди́ в город и жди. Придёт время. *(Idź do miasta i czekaj. Przyjdzie czas.)* | **Спаси́бо, ангел. Я бу́ду ждать.** *(Podziękuj aniołowi.)* | „Będę czekał” to я буду ждать. |
+| 8 | Ого́нь не умира́ет. По́мни э́то. *(Ogień nie umiera. Pamiętaj o tym.)* | — |  |
+
+### Poziom 5: Kłamstwo ojca  (typed=0.3, hint=bank, cierpliwość 3)
+
+Nowe słowa: верну́лся = wrócił (верну́ться), на́ша = nasza (rodzaj żeński od наш), могу́ = mogę (мочь), об = o (przyimek: об э́том = o tym), э́том = tym (miejscownik od э́то: об э́том), бо́льно = boli, bolesno (мне бо́льно = boli mnie), спря́тала = ukryła (спря́тать), ма́ленькую = małą (biernik od ма́ленькая), флейти́ста = fleciarza (dopełniacz od флейти́ст), найду́ = znajdę (найти́), за́ле = sali (miejscownik od зал), скажу́ = powiem (сказа́ть), им = im (celownik od они́), ска́жешь = powiesz (сказа́ть), уйду́ = odejdę (уйти́), лжёшь = kłamiesz (лгать), оста́нусь = zostanę (оста́ться), убью́ = zabiję (уби́ть), го́рода = miasta (dopełniacz od го́род), проща́й = żegnaj, лгу = kłamię (лгать), хо́чет = chce (хоте́ть), се́ржусь = gniewam się (серди́ться), найди́ = znajdź (найти́), но́вую = nową (biernik od но́вая), верну́сь = wrócę (верну́ться), смогу́ = będę mógł (смочь)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Wracasz do twierdzy. Głód usiadł w sercu cara. Pałac jest cichy: nie ma matki, nie ma rodzeństwa. Ojciec patrzy na ciebie dziwnie i wiesz, że to już nie ten sam człowiek.  
+*Cel:* Dowiedz się, co się stało. Gdy ojciec w sali oskarży cię, nie przeklinaj go. Odejdź z honorem.  
+*Zakończenia:* win: Wychodzisz z grodu z podniesioną głową. Nikogo nie przeklinasz, a w kieszeni masz tylko jedno: obietnicę powrotu. · partial: Odchodzisz, ale w gniewie. Ojciec patrzy za tobą, a w jego oczach jest łza. · fail: Zamiast odejść, rzucasz oskarżenia. Straż wypycha cię z twierdzy, a brama zatrzaskuje się z hukiem.
+
+| 1 | Сын, ты верну́лся. Ты здесь, но ма́мы нет. *(Synu, wróciłeś. Jesteś tu, ale mamy nie ma.)* | **Где ма́ма? Где на́ша семья́?** *(Zapytaj, gdzie jest mama i gdzie jest wasza rodzina.)* | „Gdzie” to где. |
+| 2 | Их нет. Голод был сильный. Я не могу́ говорить об э́том. *(Nie ma ich. Głód był silny. Nie mogę o tym mówić.)* | **Мне о́чень бо́льно, оте́ц.** *(Powiedz, że bardzo cię to boli.)* | „Boli mnie” to мне больно. |
+| 3 | Ма́ма спря́тала ма́ленькую дочь у флейти́ста. Я не зна́ю, где они́. *(Mama ukryła małą córkę u fleciarza. Nie wiem, gdzie są.)* | **Хорошо́. Я найду́ их.** *(Obiecaj, że ich znajdziesz.)* | „Znajdę” to я найду. |
+| 4 | В за́ле лю́ди. Я скажу́ им: ты чужой. Ты не мой сын. Что ты ска́жешь? *(W sali są ludzie. Powiem im: jesteś obcy. Nie jesteś moim synem. Co powiesz?)* | **Я не скажу́ ничего́. Я уйду́.** (dobra); złe: Ты лжёшь! Я твой сын!; Я оста́нусь и убью́ тебя́. · ŚMIERTELNE | Krzyk w sali rozwścieczy ludzi.; Zabijanie ojca nie jest wyjściem. |
+| 5 | Он чужой! Он не мой сын! Уходи́ из го́рода! *(On jest obcy! To nie mój syn! Wyjdź z miasta!)* | **Я ухожу́. Проща́й, оте́ц.** *(Pożegnaj się z ojcem i wyjdź.)* | „Odchodzę” to я ухожу. |
+| 6 | Сын, слу́шай. Я лгу, чтобы спасти тебя́. Голод хо́чет и тебя́. *(Synu, słuchaj. Kłamię, żeby cię ocalić. Głód chce i ciebie.)* | **Я зна́ю, оте́ц. Я не се́ржусь.** *(Powiedz, że wiesz i że się nie gniewasz.)* | „Nie gniewam się” to я не сержусь. |
+| 7 | Иди́ далеко́. Найди́ но́вую жизнь. *(Idź daleko. Znajdź nowe życie.)* | **Я верну́сь, когда́ смогу́.** *(Obiecaj powrót.)* | „Wrócę” to я вернусь. |
+| 8 | Проща́й, мой царе́вич. *(Żegnaj, mój carewiczu.)* | — |  |
+
+### Poziom 6: Flet w lesie  (typed=0.4, hint=bank, cierpliwość 3)
+
+Nowe słowa: слы́шала = słyszałam (слы́шать), и́щешь = szukasz (иска́ть), му́зыку = muzykę (biernik od му́зыка), здра́вствуй = witaj, cześć (nieformalnie), э́та = ta (rodzaj żeński od э́тот), краси́вая = ładna, piękna, зову́т = nazywają (меня́ зову́т = mam na imię), Ли-Са = Li-Sa (imię), живу́ = mieszkam, żyję (жить), Я-Гой = Ja-Gą (narzędnik od Я-Га), зову́ = wołam, nazywam (звать), его́ = jego, go, ба́бой = babcią (narzędnik od ба́ба), зовёшь = wołasz, nazywasz (звать), стро́гий = surowy, ста́рая = stara, фле́йта = flet, игра́ю = gram (игра́ть), Кра́сного = Czerwonego (dopełniacz od Кра́сный), Гра́да = Grodu (dopełniacz od Град), отпра́вил = wysłał (отпра́вить), Кра́сный = Czerwony (w nazwie Красный Град), Град = Gród (w nazwie Красный Град), нужна́ = potrzebna, пойдём = chodźmy (пойти́), Я-Ге = Ja-Gi (celownik od Я-Га), лю́бит = lubi, kocha (люби́ть), госте́й = gości (dopełniacz od гость)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Daleko od grodu, w głębi lasu, słyszysz muzykę fletu. Idziesz za dźwiękiem i spotykasz młodą kobietę o jasnej twarzy. To Li-Sa. Mieszka tu z Ja-Gą, którego nazywa babcią, choć jest dla niej jak ojciec.  
+*Cel:* Poznaj Li-Sę, powiedz jej, co cię tu sprowadza, i zdobądź jej zaufanie.  
+*Zakończenia:* win: Li-Sa śmieje się i bierze cię za rękę: „Пойдём к Я-Ге.” W lesie pachnie żywicą, a ty czujesz po raz pierwszy od dawna, że nie jesteś sam. · partial: Li-Sa jest uprzejma, ale ostrożna. Prowadzi cię do chaty, choć nie do końca ci ufa. · fail: Li-Sa wstaje i odchodzi: „Мне пора.” Muzyka cichnie, a ty zostajesz sam wśród drzew.
+
+| 1 | Кто ты? Я слы́шала, ты и́щешь му́зыку. *(Kim jesteś? Słyszałam, że szukasz muzyki.)* | **Здра́вствуй! Я И-Уан. Э́та му́зыка о́чень краси́вая.** *(Przywitaj się, podaj imię i pochwal muzykę.)* | „Ta muzyka” to эта музыка. |
+| 2 | Меня́ зову́т Ли-Са. Я живу́ здесь с Я-Гой. Я зову́ его́ ба́бой. *(Mam na imię Li-Sa. Mieszkam tu z Ja-Gą. Nazywam go babcią.)* | **Почему́ ты зовёшь его́ ба́бой?** *(Zapytaj, dlaczego nazywa go babcią.)* | „Dlaczego” to почему. |
+| 3 | Он стро́гий, как ста́рая ба́бушка. Но я его́ люблю́. Он мне как оте́ц. *(Jest surowy jak stara babcia. Ale go kocham. Jest mi jak ojciec.)* | **А откуда э́та му́зыка?** *(Zapytaj, skąd ta muzyka.)* | „Skąd” to откуда. |
+| 4 | Э́то фле́йта. Я игра́ю ка́ждый день. А ты кто? Откуда ты? *(To flet. Gram codziennie. A ty kim jesteś? Skąd jesteś?)* | **Я из Кра́сного Гра́да. Оте́ц отпра́вил меня́ далеко́.** *(Powiedz, że jesteś z Czerwonego Grodu i że ojciec wysłał cię daleko.)* | „Z Czerwonego Grodu” to из Красного Града (dopełniacz). |
+| 5 | Кра́сный Град... Там голод. Ты голодный? Хо́чешь воды́? *(Czerwony Gród... Tam jest głód. Czy jesteś głodny? Chcesz wody?)* | **Да, спаси́бо. Мне о́чень нужна́ вода́.** (dobra); złe: Нет, я не хочу́ ничего́.; Дай мне свой хлеб! | Odmowa jest niegrzeczna.; Żądanie chleba jest niegrzeczne. |
+| 6 | Ты добрый, И-Уан. Мне хорошо́ с тобо́й. *(Jesteś dobry, I-Uanie. Dobrze mi z tobą.)* | **Мне тоже хорошо́ с тобо́й, Ли-Са.** *(Powiedz, że tobie też jest dobrze z nią.)* | „Z tobą” to с тобой. |
+| 7 | Пойдём к Я-Ге. Он лю́бит госте́й. *(Chodźmy do Ja-Gi. On lubi gości.)* | **Да, пойдём. Я хочу́ его́ увидеть.** *(Zgódź się i powiedz, że chcesz go zobaczyć.)* | „Chcę zobaczyć” to я хочу увидеть. |
+| 8 | То́лько не бойся. Он стро́гий, но добрый. *(Tylko się nie bój. Jest surowy, ale dobry.)* | — |  |
+
+### Poziom 7: Błogosławieństwo Ja-Gi  (typed=0.45, hint=bank, cierpliwość 3)
+
+Nowe słowa: де́лает = robi (де́лать), ми́ром = pokojem (narzędnik od мир), Ли-Сы = Li-Sy (dopełniacz od Ли-Са), её = ją, jej, ней = niej (с ней = z nią), зна́ете = znacie (знать), дру́га = drugiego (друг дру́га = nawzajem), хоти́м = chcemy (хоте́ть), Ли-Се = Li-Sie (celownik/miejscownik od Ли-Са), поклони́мся = pokłonimy się (поклони́ться), небеса́м = niebiosom (celownik od небеса́), пре́дкам = przodkom (celownik od пре́док), дру́гу = drugiemu (друг дру́гу = sobie nawzajem), кому́ = komu, поклони́шься = pokłonisz się (поклони́ться), пе́рвым = pierwszym, себе́ = sobie, прошли́ = minęły (пройти́), го́ды = lata (liczba mnoga od год), по = po, przez, лесу́ = lesie (miejscownik od лес), иду́т = idą (идти́), слу́хи = plotki (liczba mnoga od слух), возвраща́йся = wracaj (возвраща́ться)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Mała chata w lesie. Ja-Ga, stary poeta i fleciarz, mierzy cię wzrokiem. Li-Sa stoi obok. Kochacie się, a czasu nie ma. Dziś możecie zostać mężem i żoną, ale potrzebujecie jego błogosławieństwa.  
+*Cel:* Poproś Ja-Gę o błogosławieństwo, odpowiadaj szczerze na jego pytania i weź ślub jeszcze dziś.  
+*Zakończenia:* win: Ja-Ga uśmiecha się i unosi flet: „Благословляю вас!” Jeszcze tego samego dnia kłaniacie się niebiosom, przodkom i sobie nawzajem. W lesie rodzą się dzieci, a życie jest spokojne. · partial: Ja-Ga błogosławi was niechętnie. Ślub się odbywa, ale w jego głosie słychać wątpliwość. · fail: Ja-Ga się złości: „Уходи!” Wychodzisz z chaty bez błogosławieństwa, a Li-Sa płacze przy płocie.
+
+| 1 | Кто э́то, Ли-Са? Что здесь де́лает чужой челове́к? *(Kto to, Li-Sa? Co tu robi obcy człowiek?)* | **Я И-Уан. Я пришёл с ми́ром.** *(Przedstaw się i powiedz, że przyszedłeś w pokoju.)* | „W pokoju” to z миром. |
+| 2 | Откуда ты? И кто твой оте́ц? *(Skąd jesteś? I kto jest twoim ojcem?)* | **Мой оте́ц царь Кра́сного Гра́да. Я его́ сын.** *(Powiedz prawdę: ojciec jest carem, ty jego synem.)* | „Syn cara” to сын царя. |
+| 3 | Лю́ди говоря́т: он злой царь. Что ты хо́чешь от мое́й Ли-Сы? *(Ludzie mówią, że to zły car. Czego chcesz od mojej Li-Sy?)* | **Я люблю́ её. Я хочу́ быть с ней.** (dobra); złe: Я хочу́ твой дом.; Я ничего́ не хочу́. | Dom Ja-Gi nie jest ci potrzebny.; Skoro nic nie chcesz, po co tu jesteś? |
+| 4 | Любовь? Вы зна́ете друг дру́га оди́н день! *(Miłość? Znacie się jeden dzień!)* | **Э́то правда. Но время бы́стро идёт. Мы хоти́м жить вме́сте.** *(Przyznaj, że to prawda, ale czas szybko płynie i chcecie żyć razem.)* | „Szybko” to быстро. |
+| 5 | Хорошо́. Я ви́жу: ты честный. Ты хо́чешь жениться на Ли-Се? *(Dobrze. Widzę: jesteś uczciwy. Czy chcesz ożenić się z Li-Są?)* | **Да, я хочу́ жениться на Ли-Се.** *(Potwierdź, że chcesz się ożenić.)* | „Ożenić się z” to жениться на. |
+| 6 | Тогда́ сего́дня. Мы поклони́мся небеса́м, пре́дкам и друг дру́гу. Кому́ ты поклони́шься пе́рвым? *(Wtedy dziś. Pokłonimy się niebiosom, przodkom i sobie nawzajem. Komu pokłonisz się pierwszemu?)* | **Небеса́м.** (dobra); złe: Себе́.; То́лько Ли-Се. | Ślub nie jest o tobie, a pokłon sobie to pycha.; Najpierw niebiosa, potem żona. |
+| 7 | Прошли́ го́ды. У вас де́ти. Но по лесу́ иду́т слу́хи. Говоря́т, в го́роде кровь и голод. *(Minęły lata. Macie dzieci. Ale po lesie krążą plotki. Mówią, że w mieście jest krew i głód.)* | **Я должен вернуться в город.** *(Powiedz, że musisz wrócić do miasta.)* | „Muszę” to я должен. |
+| 8 | Иди́. Но возвраща́йся с ми́ром. *(Idź. Ale wracaj w pokoju.)* | — |  |
+
+### Poziom 8: Wojna z królem zimy  (typed=0.5, hint=letters, cierpliwość 3)
+
+Nowe słowa: зимы́ = zimy (dopełniacz od зима́), Сюэ-Е = Sjue-E (król zimy), де́лаешь = robisz (де́лать), моего́ = mojego (dopełniacz od мой), отца́ = ojca (dopełniacz od оте́ц), ты́сячи = tysiące, во́инов = wojowników (dopełniacz od во́ин), сда́шься = poddasz się (сда́ться), сда́мся = poddam się (сда́ться), сдаю́сь = poddaję się (сдава́ться), возьми́ = weź (взять), смотри́ = patrz (смотре́ть), упа́л = upadł (упа́сть), жив = żyw, żywy, хо́лодно = zimno, во́ины = wojownicy (liczba mnoga od во́ин), у́мерли = umarli (умере́ть), ста́ли = stali się (стать), тума́ном = mgłą (narzędnik od тума́н), взял = wziął (взять), си́лу = siłę (biernik od си́ла), мёртвых = martwych (dopełniacz od мёртвый), цено́й = ceną (narzędnik od цена́), сильне́е = silniejszy (stopień wyższy od си́льный), горжу́сь = jestem dumny (горди́ться), э́тим = tym (narzędnik od э́то), бессме́ртный = nieśmiertelny, хотя́т = chcą (хоте́ть), э́того = tego (dopełniacz od э́то), тяжело́ = ciężko, ждёт = czeka (ждать), ним = nim (с ним = z nim), вернётся = wróci (верну́ться)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Wracasz do grodu z wojskiem. Na polu pod murami czeka król zimy Sjue-E w lodowej koronie, a za nim mróz. Wygrywasz bitwę, lecz zima uderza i padasz. Poległym zostaje cisza.  
+*Cel:* Odpowiedz królowi zimy odważnie. Po bitwie nie ukrywaj prawdy o tym, co zrobiłeś, żeby przetrwać, i przyjmij to z winą, a nie z dumą.  
+*Zakończenia:* win: Sjue-E milknie. Przyznałeś się do winy bez dumy i bez strachu. Mgła rozstępuje się, a ty idziesz do grodu, gdzie umiera twój ojciec. · partial: Sjue-E odchodzi, ale mróz zostaje w twoich kościach. Jesteś nieśmiertelny, a mimo to nie czujesz zwycięstwa. · fail: Sjue-E się śmieje, a mróz zamyka ci usta. Zwycięzcą jest zima, a ty nie możesz już wstać.
+
+| 1 | Я коро́ль зимы́, Сюэ-Е. Э́то мой лёд, моя́ земля́. Что ты здесь де́лаешь? *(Jestem królem zimy, Sjue-E. To mój lód, moja ziemia. Co tu robisz?)* | **Э́то земля́ моего́ отца́. Уходи́!** *(Powiedz stanowczo, że to ziemia twojego ojca, i każ mu odejść.)* | „Ziemia ojca” to земля отца. |
+| 2 | Я сильный. У меня́ ты́сячи во́инов. Ты оди́н. Ты сда́шься? *(Jestem silny. Mam tysiące wojowników. Jesteś sam. Czy się poddasz?)* | **Нет, я не сда́мся.** (dobra); złe: Да, я сдаю́сь.; Да, возьми́ мой город. · ŚMIERTELNE | Poddanie się oddałoby gród królowi zimy.; Oddanie miasta to zdrada ludu. |
+| 3 | Смотри́! Идёт мороз! Ты упа́л. Ты ещё жив? *(Patrz! Idzie mróz! Upadłeś. Czy jeszcze żyjesz?)* | **Да, я жив. Но мне о́чень хо́лодно.** *(Powiedz, że żyjesz, ale ci bardzo zimno.)* | „Jest mi zimno” to мне холодно. |
+| 4 | Во́ины у́мерли. Они́ ста́ли тума́ном. Ты ви́дишь? *(Wojownicy umarli. Stali się mgłą. Widzisz?)* | **Да, я ви́жу тума́н. Мне их жаль.** *(Powiedz, że widzisz mgłę i że ci ich żal.)* | „Żal mi” to мне жаль. |
+| 5 | Ты взял си́лу мёртвых во́инов! Како́й цено́й? Скажи́ пра́вду! *(Wziąłeś siłę poległych wojowników! Jaką ceną? Powiedz prawdę!)* | **Голод был сильне́е меня́. Я не горжу́сь э́тим.** *(Przyznaj, że głód był silniejszy od ciebie i że nie jesteś z tego dumny.)* · warianty: Голод был сильне́е. Я не горжу́сь э́тим.; Я не горжу́сь э́тим. Голод был сильне́е меня́. · ŚMIERTELNE | Prawda bez dumy to jedyna uczciwa odpowiedź. |
+| 6 | Ты теперь бессме́ртный. Многие хотя́т э́того. Ты рад? *(Jesteś teraz nieśmiertelny. Wielu tego pragnie. Czy się cieszysz?)* | **Нет, я не рад. Э́то тяжело́.** *(Odpowiedz, że się nie cieszysz, bo to ciężkie.)* | „Nie cieszę się” to я не рад. |
+| 7 | Иди́ в город. Твой оте́ц ждёт. Он умира́ет. *(Idź do miasta. Twój ojciec czeka. Umiera.)* | **Я иду́. Я хочу́ быть с ним.** *(Powiedz, że idziesz i chcesz być z ojcem.)* | „Z nim” to с ним. |
+| 8 | Проща́й, бессме́ртный царе́вич. Зима́ вернётся. *(Żegnaj, nieśmiertelny carewiczu. Zima wróci.)* | — |  |
+
+### Poziom 9: Nowy car i rozstanie  (typed=0.6, hint=letters, cierpliwość 3)
+
+Nowe słowa: сказа́ли = powiedzieli (сказа́ть), у́мер = umarł (умере́ть), бле́дный = blady, ешь = jesz (есть), оно́ = ono, во = w (во мне = we mnie), приходи́л = przychodził (приходи́ть), смея́лся = śmiał się (смея́ться), стал = stał się (стать), Я-Га = Ja-Ga (imię), войны́ = wojny (dopełniacz od война́), должна́ = powinna, musi (rodzaj żeński od до́лжен), детьми́ = dziećmi (narzędnik od де́ти), со = z (со мной = ze mną), мной = mną (narzędnik od я), твоя́ = twoja, сме́лая = odważna, прошу́ = proszę, błagam (проси́ть), пойду́ = pójdę (пойти́), слы́шишь = słyszysz (слы́шать), слы́шу = słyszę (слы́шать), береги́ = dbaj, strzeż (бере́чь), дете́й = dzieci (dopełniacz od де́ти)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Ojciec zmarł w twoich ramionach i klątwa przeszła na ciebie. Jesteś nowym carem, a głód szepcze w twoim sercu. Ja-Ga, teraz twój wróg, krąży wokół grodu, a diabeł się śmieje. Wzywasz Li-Sę i musisz zdecydować, jak ją chronić.  
+*Cel:* Wyjaśnij Li-Sie, że musi odejść z dziećmi, żeby była bezpieczna. Nie pozwól głodowi mówić za ciebie.  
+*Zakończenia:* win: Li-Sa kiwa głową i bierze dzieci za ręce: „Я вернусь.” Odchodzi z grodu, a ty zostajesz z klątwą, lecz z lżejszym sercem, bo wiesz, że jest bezpieczna. · partial: Li-Sa odchodzi, ale z żalem i gniewem. Zostawiasz ją w złym nastroju, choć jest bezpieczna. · fail: Li-Sa zostaje, a głód coraz głośniej szepcze. Wołasz ją, ale jest za późno: twój wzrok mętnieje, a gród wstrzymuje oddech.
+
+| 1 | Мне сказа́ли: твой оте́ц у́мер. Мне о́чень жаль, И-Уан. *(Powiedziano mi: twój ojciec umarł. Bardzo mi przykro, I-Uanie.)* | **Спаси́бо, Ли-Са. Теперь я царь.** *(Podziękuj i powiedz, że teraz jesteś carem.)* | „Teraz” to теперь. |
+| 2 | Ты бле́дный. Ты не ешь. Что с тобо́й? *(Jesteś blady. Nie jesz. Co z tobą?)* | **Э́то прокля́тье. Теперь оно́ во мне.** *(Powiedz, że to klątwa i że teraz jest w tobie.)* | „We mnie” to во мне. |
+| 3 | Дьявол приходи́л? Он смея́лся над тобо́й? *(Czy diabeł przychodził? Śmiał się z ciebie?)* | **Да, он приходи́л. Но я не стал с ним ссориться.** *(Przyznaj, że przyszedł, ale że nie wdałeś się z nim w kłótnię.)* | „Kłócić się” to ссориться. |
+| 4 | А мой оте́ц Я-Га? Он теперь твой враг. Я бою́сь. *(A mój ojciec Ja-Ga? Jest teraz twoim wrogiem. Boję się.)* | **Я зна́ю. Но я не хочу́ войны́ с ним.** *(Powiedz, że wiesz, ale nie chcesz z nim wojny.)* | „Wojna z nim” to война с ним. |
+| 5 | Голод сильный. Я бою́сь за тебя́, Ли-Са. Что нам делать? *(Głód jest silny. Boję się o ciebie, Li-Sa. Co mamy robić?)* | **Ты должна́ уйти в лес с детьми́.** (dobra); złe: Ты должна́ остаться со мной.; Ты должна́ ждать меня́ здесь. · ŚMIERTELNE | Pozostanie przy tobie jest niebezpieczne, głód nie wybiera.; Czekanie w grodzie jest niebezpieczne. |
+| 6 | Я не хочу́ уходить! Я твоя́ жена́. Я не бою́сь! *(Nie chcę odchodzić! Jestem twoją żoną. Nie boję się!)* | **Я зна́ю, ты сме́лая. Но я не хочу́ тебя́ потерять. Иди́, прошу́.** *(Powiedz, że wiesz, że jest odważna, ale nie chcesz jej stracić, i poproś, żeby odeszła.)* · warianty: Я зна́ю, ты сме́лая. Но я не хочу́ тебя́ потерять. Иди́, пожа́луйста. · ŚMIERTELNE | Prośba z miłością, a nie rozkaz z głodem. |
+| 7 | Хорошо́, я пойду́. Но я верну́сь. Ты слы́шишь? *(Dobrze, odejdę. Ale wrócę. Słyszysz?)* | **Да, я слы́шу. Береги́ дете́й.** *(Powiedz, że słyszysz, i poproś, by dbała o dzieci.)* | „Dbaj o dzieci” to береги детей. |
+| 8 | Я люблю́ тебя́, И-Уан. До свида́ния. *(Kocham cię, I-Uanie. Do widzenia.)* | — |  |
+
+### Poziom 10: Rozmowa z przodkami  (typed=0.7, hint=none, cierpliwość 2)
+
+Nowe słowa: пре́дки = przodkowie, зна́ем = wiemy (знать), ва́ми = wami (narzędnik od вы), ви́дел = widział, widziałeś (ви́деть), бо́ли = bólu (dopełniacz od боль), ду́маешь = myślisz (ду́мать), е́ли = jedli (есть), забы́ли = zapomnieli (забы́ть), забу́дешь = zapomnisz (забы́ть), забу́ду = zapomnę (забы́ть), де́тям = dzieciom (celownik od де́ти), смо́трим = patrzymy (смотре́ть), го́рдо = dumnie, ру́ки = ręce, царя́ = cara (dopełniacz od царь), исправля́ют = naprawiają (исправля́ть), обеща́ешь = obiecujesz (обеща́ть), обеща́ю = obiecuję (обеща́ть), голода́ть = głodować, му́дрым = mądrym (narzędnik od му́дрый), царём = carem (narzędnik od царь), покляни́сь = przysięgnij (покля́сться), пото́мки = potomkowie, забу́дут = zapomną (забы́ть), кляну́сь = przysięgam (покля́сться), му́дро = mądrze, пра́вить = rządzić, го́родом = miastem (narzędnik od го́род), сча́стья = szczęścia (dopełniacz od сча́стье), бога́тства = bogactwa (dopełniacz od бога́тство)
+
+| # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
+|---|---|---|---|
+
+*Scena:* Sala przodków pod czerwonym dachem. Z portretów patrzą na ciebie święci przodkowie, którzy wszystko już dawno wiedzą. Przysięgasz im, że potomkowie zapomną o klątwie, a gród będzie żył.  
+*Cel:* Odpowiedz przodkom z pokorą: przyznaj winę, złóż przysięgę i obiecaj mądre rządy.  
+*Zakończenia:* win: Przodkowie milczą z dumą. Na dachu zapala się ognisty ptak, a Czerwony Gród staje się grodem szczęścia i bogactwa. Klątwa blednie jak stary sen. · partial: Przodkowie przyjmują twoją przysięgę, choć w ich oczach jest cień wątpliwości. Gród będzie żył, ale klątwa zostanie jeszcze przez pokolenia. · fail: Przodkowie odwracają się od ciebie. Portrety bledną, a w sali gaśnie ostatnia świeca. Przysięga nie została złożona.
+
+| 1 | Мы пре́дки го́рода, И-Уан. Мы всё зна́ем. Ты пришёл сам? *(Jesteśmy przodkami miasta, I-Uanie. Wszystko wiemy. Czy przyszedłeś sam?)* | **Да, я пришёл сам. Я хочу́ говорить с ва́ми.** *(Powiedz, że przyszedłeś sam i chcesz z nimi rozmawiać.)* | „Z wami” to с вами. |
+| 2 | Ты ви́дел мно́го бо́ли. Что ты ду́маешь о прокля́тье? *(Widziałeś dużo bólu. Co myślisz o klątwie?)* | **Э́то тяжёлый долг, но я бу́ду нести его́.** *(Powiedz, że to ciężki obowiązek, ale że go poniesiesz.)* | „Będę nieść” to я буду нести. |
+| 3 | Лю́ди е́ли и забы́ли. Ты тоже забу́дешь? *(Ludzie jedli i zapomnieli. Czy ty też zapomnisz?)* | **Нет, я не забу́ду. Я бу́ду помнить всё.** (dobra); złe: Да, надо забыть всё.; Нет, э́то не моя́ вина. · ŚMIERTELNE | Zapomnienie to powrót klątwy.; Odpowiedzialność jest twoja, bo klątwa jest teraz w tobie. |
+| 4 | Что ты ска́жешь Ли-Се и де́тям? *(Co powiesz Li-Sie i dzieciom?)* | **Я скажу́ им пра́вду. Я люблю́ их.** *(Powiedz, że powiesz im prawdę i że ich kochasz.)* | „Powiem” to я скажу. |
+| 5 | Мы смо́трим го́рдо. Ру́ки царя́ исправля́ют город. Что ты обеща́ешь? *(Patrzymy z dumą. Ręce cara naprawiają miasto. Co obiecujesz?)* | **Я обеща́ю: лю́ди не бу́дут голода́ть. Я бу́ду му́дрым царём.** *(Obiecaj, że ludzie nie będą głodować i że będziesz mądrym carem.)* | „Nie będą głodować” to не будут голодать. |
+| 6 | Покляни́сь нам! Пото́мки забу́дут прокля́тье? *(Przysięgnij nam! Czy potomkowie zapomną klątwę?)* | **Кляну́сь: пото́мки забу́дут прокля́тье.** *(Złóż przysięgę: potomkowie zapomną klątwę.)* · warianty: Кляну́сь, пото́мки забу́дут прокля́тье.; Я кляну́сь: пото́мки забу́дут прокля́тье. · ŚMIERTELNE | Przysięga przodkom brzmi jak „клянусь”. |
+| 7 | Тогда́ иди́. Твой Кра́сный Град бу́дет жить. *(Wtedy idź. Twój Czerwony Gród będzie żył.)* | **Спаси́бо, пре́дки. Я бу́ду му́дро пра́вить го́родом.** *(Podziękuj przodkom i obiecaj mądre rządy.)* | „Mądrze” to мудро. |
+| 8 | Пусть Кра́сный Град бу́дет го́родом сча́стья и бога́тства! *(Niech Czerwony Gród będzie grodem szczęścia i bogactwa!)* | — |  |
