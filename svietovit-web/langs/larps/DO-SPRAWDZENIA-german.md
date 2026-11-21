@@ -703,7 +703,7 @@ Nowe słowa: gnädige Frau = łaskawa pani (zwrot do pani domu), gnädige = łas
 
 ### Poziom 5: Klucze  (typed=0.2, hint=bank, cierpliwość 4)
 
-Nowe słowa: geschlafen = spałam, spałaś (schlafen), Herrin = pani (domu), Türen = drzwi (l. mn.), Welche = która, jaka, meinst = masz na myśli (meinen), Keller = piwnica, golden = złoty, kleine = mała (klein), goldene = złoty (golden), öffnet = otwiera (öffnen), versprechen = obiecywać, neugierig = ciekawski, dieses = ten (dieser), Versprichst = obiecujesz (versprechen), verspreche = obiecuję (versprechen), zögern = wahać się, zögerst = wahasz się (zögern), einig = zgodny
+Nowe słowa: geschlafen = spałam, spałaś (schlafen), Herrin = pani (domu), Türen = drzwi (l. mn.), Welche = która, jaka, meinst = masz na myśli (meinen), Keller = piwnica, golden = złoty, kleine = mała (klein), goldene = złoty (golden), öffnet = otwiera (öffnen), darf = wolno, mogę (dürfen), versprechen = obiecywać, neugierig = ciekawski, dieses = ten (dieser), Versprichst = obiecujesz (versprechen), verspreche = obiecuję (versprechen), zögern = wahać się, zögerst = wahasz się (zögern), einig = zgodny
 
 | # | Rozmówca | Uczeń (poprawnie) | Wyjaśnienie |
 |---|---|---|---|
