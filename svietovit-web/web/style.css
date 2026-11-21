@@ -45,7 +45,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none;paddin
 .unit .nm{font-size:calc(18px*var(--k));font-weight:700}.unit .cr{font-size:calc(13px*var(--k));color:var(--accent);margin-top:2px;letter-spacing:.1em}.unit.locked .cr{color:var(--sub2);letter-spacing:0}
 .unit .hint{font-size:calc(12.5px*var(--k));margin-top:2px;color:var(--good2)}.unit .warn{color:var(--bad2)}
 .sheet-bg{position:fixed;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:flex-end;justify-content:center;z-index:20}
-.sheet{width:100%;max-width:520px;background:var(--paper);color:var(--ink);border-radius:20px 20px 0 0;padding:20px 18px calc(18px + var(--safe-b));display:flex;flex-direction:column;gap:10px;font-family:var(--cfont,var(--font))}
+.sheet{max-height:calc(100vh - 16px);max-height:calc(100dvh - 16px);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;width:100%;max-width:520px;background:var(--paper);color:var(--ink);border-radius:20px 20px 0 0;padding:20px 18px calc(18px + var(--safe-b));display:flex;flex-direction:column;gap:10px;font-family:var(--cfont,var(--font))}
 .sheet.mid{border-radius:20px;margin:auto 14px}.sheet-bg.mid{align-items:center}
 .sheet h3{margin:0;font-size:calc(21px*var(--k))}.sheet p{margin:0;color:var(--sub)}
 .btn{display:block;width:100%;padding:14px;border-radius:14px;background:var(--accent);color:var(--btnt)!important;font-weight:700;font-size:calc(16px*var(--k));letter-spacing:.05em;text-align:center;box-shadow:0 4px 0 rgba(0,0,0,.25);text-transform:uppercase}
