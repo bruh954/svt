@@ -273,7 +273,7 @@ def home():
         larps.append({"id": lp["id"], "title": lp["title"], "partner": lp["partner"], "avatar": lp["avatar"],
                       "fee": lp["fee"], "scene": lp["scene"], "goal": lp["goal"], "unlocked": un,
                       "best": d.get("larps", {}).get(lp["id"]), "can_pay": d["xp_total"] >= lp["fee"],
-                      "levels": _larp_levels_view(lp), "story": bool(lp.get("story")), "disclaimer": lp.get("disclaimer"), "reward": lp.get("reward")})
+                      "levels": _larp_levels_view(lp), "has_hidden": any(c.get("hidden") for c in (lp.get("levels") or [])), "story": bool(lp.get("story")), "disclaimer": lp.get("disclaimer"), "warning": lp.get("warning"), "reward": lp.get("reward")})
     return json.dumps({"larps": larps, "paradigms": _paradigm_list(),
         "units": units, "tracks": getattr(C, "TRACKS", {}), "current": current, "chats": chats,
         "hearts": st.hearts(), "heart_max": E.HEART_MAX, "next_heart": st.seconds_to_next_heart(),
@@ -826,14 +826,44 @@ def _larp_rank(lid, lvl):
     return (_cur["state"].data.get("larp_lv", {}).get(lid) or {}).get(str(lvl))
 
 
+_reveal = {"on": False}
+
+
+def larp_reveal(on):
+    """Tryb testowy: pokaż i odblokuj ukryte poziomy larpów (przycisk w arkuszu larpa)."""
+    _reveal["on"] = bool(on)
+    return _reveal["on"]
+
+
+def _larp_perfect(lid, lvl):
+    return bool(((_cur["state"].data.get("larp_perfect") or {}).get(lid) or {}).get(str(lvl)))
+
+
+def _larp_unlocked(lp, lvl):
+    """Poziom N odblokowuje się po przejściu poprzedniego, a „after=20” (albo „after=21,22”) wskazuje inne poziomy: równoległe zakończenia."""
+    if lvl <= 1:
+        return True
+    cfgs = lp.get("levels") or []
+    if _reveal["on"] and 0 < lvl <= len(cfgs) and cfgs[lvl - 1].get("hidden"):
+        return True
+    if 0 < lvl <= len(cfgs) and cfgs[lvl - 1].get("barely"):            # ukryty poziom dla tych, którzy ledwo przeszli poziom N
+        return bool(((_cur["state"].data.get("larp_barely") or {}).get(lp["id"]) or {}).get(str(cfgs[lvl - 1]["barely"])))
+    if 0 < lvl <= len(cfgs) and cfgs[lvl - 1].get("secret"):           # ukryty poziom: tylko po bezbłędnym przejściu poziomu N
+        return _larp_perfect(lp["id"], cfgs[lvl - 1]["secret"])
+    after = (cfgs[lvl - 1].get("after") if 0 < lvl <= len(cfgs) else None) or [lvl - 1]
+    return all((_larp_rank(lp["id"], int(a)) or 0) >= 1 for a in after)
+
+
 def _larp_levels_view(lp):
     lv = lp.get("levels")
     if not lv:
         return None
     out = []
     for i, c in enumerate(lv, 1):
+        if c.get("hidden") and not _larp_unlocked(lp, i):
+            continue                                                   # sekret jeszcze nieodkryty: nie ma go na liście
         out.append({"lvl": i, "title": c.get("title"), "desc": c.get("desc"), "best": _larp_rank(lp["id"], i),
-                    "unlocked": i == 1 or (_larp_rank(lp["id"], i - 1) or 0) >= 1})
+                    "unlocked": _larp_unlocked(lp, i), "secret": bool(c.get("hidden"))})
     return out
 
 
@@ -915,7 +945,7 @@ def larp_start(lid, lvl=1):
     cfg = _larp_cfg(lp, lvl)
     st = _cur["state"]
     d = st.data
-    if lvl > 1 and not (lp.get("levels") and (_larp_rank(lid, lvl - 1) or 0) >= 1):
+    if lvl > 1 and not (lp.get("levels") and _larp_unlocked(lp, lvl)):
         return json.dumps({"ok": False, "reason": "locked"})
     if d["xp_total"] < lp["fee"]:
         return json.dumps({"ok": False, "reason": "xp"})
@@ -962,12 +992,27 @@ def _larp_finish(lp, outcome):
     lv = d.setdefault("larp_lv", {}).setdefault(lp["id"], {})
     lv[str(lvl)] = max(rank, lv.get(str(lvl), 0))
     _larp["done"] = True
+    perfect = outcome == "win" and _larp["mistakes"] == 0 and _larp["weak"] == 0
+    found = []
+    if outcome != "fail" and _larp["patience"] <= 1 and not cfg.get("endless"):        # ledwo żywy: odblokowuje „ledwo” sekrety
+        bd = d.setdefault("larp_barely", {}).setdefault(lp["id"], {})
+        fresh_b = not bd.get(str(lvl))
+        bd[str(lvl)] = True
+        if fresh_b:
+            found += [{"lvl": i, "title": c.get("title")} for i, c in enumerate(lp.get("levels") or [], 1) if c.get("barely") == lvl]
+    if perfect:
+        pf = d.setdefault("larp_perfect", {}).setdefault(lp["id"], {})
+        fresh = not pf.get(str(lvl))
+        pf[str(lvl)] = True
+        if fresh:
+            found += [{"lvl": i, "title": c.get("title")} for i, c in enumerate(lp.get("levels") or [], 1) if c.get("secret") == lvl]
     st.save()
-    nxt = lvl + 1 if lp.get("levels") and lvl < len(lp["levels"]) and outcome != "fail" else None
+    nxt = lvl + 1 if lp.get("levels") and lvl < len(lp["levels"]) and outcome != "fail" and not lp["levels"][lvl].get("hidden") else None
     endings = cfg.get("endings") or lp["endings"]
     return {"outcome": outcome, "fee": fee, "gain": gain, "net": gain - fee, "text": endings[outcome], "level": lvl, "next_level": nxt,
             "gems": 5 if outcome == "win" else 0, "streak_extended": bool(streak), "streak": d["streak"],
-            "mistakes": _larp["mistakes"], "weak": _larp["weak"]}
+            "mistakes": _larp["mistakes"], "weak": _larp["weak"], "perfect": perfect, "secret_found": found,
+            "is_secret": bool(cfg.get("hidden")), "larp_title": lp.get("title")}
 
 
 def _de_fold(t, mode):
@@ -1140,11 +1185,7 @@ def larp_answer(payload_json):
             res["end"] = _larp_finish(lp, "fail")
             return json.dumps(res, ensure_ascii=False)
     if nxt and not endless and cfg["nodes"].get(nxt, {}).get("shift"):          # „amnezja” albo nowy skandal: zmiana nie zależy od odpowiedzi
-        _larp["patience"] = min(cap, _larp["patience"] + int(cfg["nodes"][nxt]["shift"]))
-        if _larp["patience"] <= 0:
-            res["patience"] = 0
-            res["end"] = _larp_finish(lp, "fail")
-            return json.dumps(res, ensure_ascii=False)
+        _larp["patience"] = max(1, min(cap, _larp["patience"] + int(cfg["nodes"][nxt]["shift"])))   # zmiana sama nie kończy sceny: tylko błąd może zabić
     res["patience"] = _larp["patience"]
     if nxt:
         _larp["node"] = nxt
