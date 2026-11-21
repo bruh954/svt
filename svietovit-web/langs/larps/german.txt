@@ -1328,7 +1328,7 @@ w zeigen | pokazywać
 w alles | wszystko
 w müde | zmęczony
 w zeige | pokazuję (zeigen)
-t Es hat viele Zimmer. Ich zeige Ihnen alles. | Ma wiele pokoi. Pokażę pani wszystko. | Danke, Greta. Ich bin müde, aber ich möchte alles sehen. | Podziękuj i powiedz, że jesteś zmęczona, ale chcesz wszystko zobaczyć. | „Alles” = wszystko; „aber” łączy dwie części zdania. | | gain=1
+t Es hat viele Zimmer. Ich zeige Ihnen alles. | Ma wiele pokoi. Pokażę pani wszystko. | Danke. Ich bin müde, aber ich möchte alles sehen. | Podziękuj i powiedz, że jesteś zmęczona, ale chcesz wszystko zobaczyć. | „Alles” = wszystko; „aber” łączy dwie części zdania. | | gain=1
 w Salon | salon | der | die Salons
 w Kamin | kominek | der | die Kamine
 w Feuer | ogień | das | –
