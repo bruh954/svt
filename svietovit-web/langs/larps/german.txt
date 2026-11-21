@@ -1468,7 +1468,7 @@ w Kopf | głowa | der | die Köpfe
 w wehtun | boleć
 w tut | robi (tun)
 w weh | boli
-t Möchten Sie eine Suppe? Die Suppe ist heiß und gut. | Czy chce pani zupę? Zupa jest gorąca i dobra. | Nein, danke. Mein Kopf tut weh. | Odmów i powiedz, że boli cię głowa. | „Tut weh” = „boli”; kolejność: Mein Kopf tut weh. | | shift=-1
+t Möchten Sie eine Suppe? Die Suppe ist heiß und gut. | Czy chce pani zupę? Zupa jest gorąca i dobra. | Nein, danke. Mein Kopf tut weh. | Odmów i powiedz, że boli cię głowa. | „Tut weh” = „boli”; kolejność: Mein Kopf tut weh (może być też „tut mir weh”). | Nein, danke. Mein Kopf tut mir weh. | shift=-1
 w Fieber | gorączka | das | –
 w Arzt | lekarz | der | die Ärzte
 w rufen | wołać
